@@ -315,6 +315,12 @@ html, body {
   transform: scale(0.97);
 }
 
+.word-btn:hover {
+  background: rgba(43, 87, 154, 0.16);
+  border-color: #2b579a;
+  color: #6ea8e8;
+}
+
 /* ── CONTENT AREA ── */
 .content-area {
   height: calc(100vh - var(--titlebar-h) - var(--navbar-h));
@@ -565,6 +571,19 @@ html, body {
 .page-content a { color: var(--accent); text-decoration: none; }
 .page-content a:hover { text-decoration: underline; }
 
+/* Markdown görselleri */
+.md-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 8px 0;
+}
+.md-table .md-img {
+  max-width: 60px;
+  margin: 0 auto;
+}
+.md-p .md-img { display: inline-block; vertical-align: middle; margin: 0 4px; }
+
 /* ── KAPAK SAYFASI ── */
 .cover-page {
   padding: 0;
@@ -655,18 +674,40 @@ html, body {
 }
 
 /* ── PRINT ── */
+@page {
+  size: A4;
+  margin: 0;
+}
+
 @media print {
+  html, body {
+    height: auto !important;
+    overflow: visible !important;
+    background: #fff !important;
+  }
   .titlebar, .navbar { display: none !important; }
   .content-area {
-    height: auto;
-    overflow: visible;
-    padding: 0;
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    gap: 0 !important;
     background: white;
+  }
+  .pages-container {
+    display: block !important;
+    gap: 0 !important;
+    width: auto !important;
   }
   .a4-page {
     box-shadow: none;
     border-radius: 0;
+    break-after: page;
     page-break-after: always;
     margin: 0;
+  }
+  .a4-page:last-child {
+    break-after: auto;
+    page-break-after: auto;
   }
 }

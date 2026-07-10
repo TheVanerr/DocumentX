@@ -8,27 +8,17 @@ bolumler:
     dosya: "introduction.md"
     alt_bolumler:
 
-      - id: "01-title-page"
-        dosya: "title-page.md"
-        parcalar:
-          - "logo-alani"
-
-      - id: "02-table-content"
-        dosya: "table-content.md"
-        parcalar:
-          - "otomatik-listeleme"
-
-      - id: "03-intro-handbook"
+      - id: "01-intro-handbook"
         dosya: "intro-handbook.md"
         parcalar:
           - "amac-ve-kapsam"
 
-      - id: "04-symbols-conventions"
-        dosya: "symbols-conentions.md"
+      - id: "02-symbols-conventions"
+        dosya: "symbols-conventions.md"
         parcalar:
           - "amac-ve-kapsam"
 
-      - id: "05-support-service"
+      - id: "03-support-service"
         dosya: "support-service.md"
         parcalar:
           - "amac-ve-kapsam"

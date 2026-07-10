@@ -250,9 +250,14 @@ function openDatePicker() {
   dateInput.click();
 }
 
+function isHeadingEl(el) {
+  return el && el.nodeType === 1 && /^H[1-6]$/.test(el.tagName);
+}
+
 /* ── A4 Sayfalama: blokları ölçüp sayfa dizilerine böler ── */
 function computePages(blocks) {
   const MAX = usableHeight();
+  const ORPHAN_MIN = 72; // başlık altında bulunması gereken ~3 satırlık min. yükseklik
 
   const pages = [[]];
   let cur = pages[0];
@@ -321,6 +326,13 @@ function computePages(blocks) {
   function place(el) {
     mContent.appendChild(el);
     if (h() <= MAX) {
+      // Başlık yalnız kalmasın: altında en az ~3 satır yer yoksa sonraki sayfaya al
+      if (isHeadingEl(el) && cur.length > 0 && (MAX - h()) < ORPHAN_MIN) {
+        mContent.removeChild(el);
+        newPage();
+        place(el);
+        return;
+      }
       cur.push(el);
       return;
     }
@@ -553,6 +565,7 @@ function inline(text) {
   s = s.replace(/__([^_]+)__/g, '<strong>$1</strong>');
   s = s.replace(/(^|[^*])\*([^*]+)\*/g, '$1<em>$2</em>');
   s = s.replace(/(^|[^_])_([^_]+)_/g, '$1<em>$2</em>');
+  s = s.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img class="md-img" src="$2" alt="$1" />');
   s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
   return s;
 }
@@ -583,6 +596,49 @@ async function exportPDF() {
     showToast('PDF kaydedildi', 'success');
   } else {
     showToast('PDF kaydedilemedi', 'error');
+  }
+}
+
+/* Ekrandaki sayfalardan Word (docx) için HTML üretir. */
+function buildWordHtml() {
+  const container = document.getElementById('pagesContainer');
+  const pages = container.querySelectorAll('.a4-page');
+  let html = '';
+
+  pages.forEach((page, idx) => {
+    let inner = '';
+    if (page.classList.contains('cover-page')) {
+      const title = page.querySelector('.cover-title');
+      const info = page.querySelector('.cover-info');
+      const img = page.querySelector('.cover-image');
+      inner += `<h1 style="color:#ff0000;text-align:center;font-family:Calibri;">${title ? title.textContent : ''}</h1>`;
+      inner += `<p style="color:#ff0000;text-align:center;font-family:Calibri;font-weight:bold;">${info ? info.textContent : ''}</p>`;
+      if (img) inner += `<p style="text-align:center;"><img src="${img.getAttribute('src')}" width="342" height="214" /></p>`;
+    } else {
+      const content = page.querySelector('.page-content');
+      inner = content ? content.innerHTML : '';
+    }
+    html += `<div>${inner}</div>`;
+    if (idx < pages.length - 1) {
+      html += '<p style="page-break-before:always;">&nbsp;</p>';
+    }
+  });
+
+  return html;
+}
+
+async function exportWord() {
+  if (!currentModel) {
+    showToast('Önce bir model seçin', 'error');
+    return;
+  }
+  showToast('Word oluşturuluyor…', 'success');
+  const html = buildWordHtml();
+  const result = await window.electronAPI.exportWord({ model: currentModel, html });
+  if (result.success) {
+    showToast('Word kaydedildi', 'success');
+  } else {
+    showToast('Word kaydedilemedi' + (result.error ? ': ' + result.error : ''), 'error');
   }
 }
 

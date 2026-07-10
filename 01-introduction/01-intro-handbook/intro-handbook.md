@@ -1,6 +1,6 @@
-# 1.3 Kılavuz Hakkında (About This Manual)
+# 1.1 Kılavuz Hakkında (About This Manual)
 
-## 1.3.1 Kılavuzun Amacı, Kapsamı ve Uygulama Alanı
+## 1.1.1 Kılavuzun Amacı, Kapsamı ve Uygulama Alanı
 Bu kullanım kılavuzu, endüstriyel yıkama makinesinin ayrılmaz, temel ve yasal olarak bağlayıcı bir bileşenidir. Makinenin güvenli, verimli, çevreye duyarlı ve tasarım amacına en uygun şekilde işletilmesini sağlamak üzere, yürürlükteki Makine Emniyeti Yönetmeliği ve ilgili uluslararası standartlar (EN ISO 12100, EN ISO 20607) gözetilerek titizlikle hazırlanmıştır. 
 
 Dokümanın kapsamı, makinenin tüm yaşam döngüsünü (lifecycle) kapsayacak şekilde yapılandırılmıştır. Bu yaşam döngüsü aşağıdaki aşamaları içerir:
@@ -15,7 +15,7 @@ Bu doküman, temel mühendislik, genel mekanik veya temel elektrik eğitimi verm
 
 ---
 
-## 1.3.2 Kılavuzun Geçerliliği, Güncelliği ve Doküman Kontrolü
+## 1.1.2 Kılavuzun Geçerliliği, Güncelliği ve Doküman Kontrolü
 Bu kılavuzda yer alan metinler, teknik veriler, teknik resimler, hidrolik/pnömatik şemalar ve elektrik devre diyagramları, makinenin üretildiği ve son kalite kontrol (QC) testlerinden geçerek fabrikadan sevk edildiği tarihteki fiziksel donanım ve yazılım konfigürasyonunu ("As-Built" durumunu) yansıtmaktadır. 
 
 * **Versiyon Kontrolü:** Kılavuzun her bir sayfası veya kapağı, benzersiz bir doküman revizyon numarası ve yayın tarihi taşır. Makineye özel konfigürasyonlar (özel ölçüler, opsiyonel donanımlar) ekler (Appendix) bölümünde ayrıca belirtilmiştir.
@@ -23,7 +23,7 @@ Bu kılavuzda yer alan metinler, teknik veriler, teknik resimler, hidrolik/pnöm
 
 ---
 
-## 1.3.3 Hedef Kitle, Personel Kalifikasyonu ve Sorumluluk Dağılımı
+## 1.1.3 Hedef Kitle, Personel Kalifikasyonu ve Sorumluluk Dağılımı
 Endüstriyel yıkama makineleri; yüksek voltaj, sıcak su, basınçlı sistemler, kimyasal solüsyonlar ve hareketli mekanik parçalar içerdiğinden, makineye müdahale edecek personelin yetkinliği kritik bir iş güvenliği unsurudur. İşveren (makineyi işleten kurum), personelin aşağıdaki yetki matrisine uygun olarak görevlendirilmesinden tek başına sorumludur:
 
 1. **Operatör:** * **Yetkisi:** Makinenin günlük çalıştırılması, parçaların yüklenmesi ve boşaltılması, standart HMI arayüzü üzerinden mevcut yıkama reçetelerinin seçilmesi ve başlatılması/durdurulması.
@@ -39,7 +39,7 @@ Endüstriyel yıkama makineleri; yüksek voltaj, sıcak su, basınçlı sistemle
 
 ---
 
-## 1.3.4 Kılavuzun Fiziksel Muhafazası ve Erişilebilirliği
+## 1.1.4 Kılavuzun Fiziksel Muhafazası ve Erişilebilirliği
 Bu doküman, makinenin operasyonel bütünlüğünün bir parçası olarak değerlendirilmelidir. 
 * Kılavuzun orijinal basılı nüshası veya endüstriyel ortama dayanıklı kaplanmış bir kopyası, her an erişilebilir olacak şekilde makinenin hemen yakınında, özel bir doküman cebinde veya kontrol panosu civarında muhafaza edilmelidir.
 * Doküman; endüstriyel yağlardan, kimyasal sıçramalarından, aşırı nemden ve doğrudan yüksek ısıdan korunmalıdır. 
@@ -48,7 +48,7 @@ Bu doküman, makinenin operasyonel bütünlüğünün bir parçası olarak değe
 
 ---
 
-## 1.3.5 Amacına Uygun Kullanım, Sorumluluk Sınırlandırması ve Garanti İptali
+## 1.1.5 Amacına Uygun Kullanım, Sorumluluk Sınırlandırması ve Garanti İptali
 Üretici firma, makinenin tasarımını ve imalatını kabul görmüş iyi mühendislik uygulamalarına ve katı güvenlik normlarına göre gerçekleştirmiştir. Makinenin garantisi ve üreticinin yasal sorumluluğu, sistemin yalnızca tasarlandığı "Amacına Uygun Kullanım" (Intended Use) sınırları içerisinde işletilmesi koşuluna bağlıdır.
 
 Aşağıda detaylandırılan (ancak bunlarla sınırlı olmayan) kullanım hataları, yetkisiz müdahaleler ve işletme kusurlarından kaynaklanabilecek doğrudan veya dolaylı personel yaralanmaları, can kayıpları, tesis hasarları, ürün firesi, çevresel kirlilik veya ticari kâr kayıpları durumunda üretici firma hiçbir hukuki, cezai veya mali sorumluluk kabul etmez; bu durumlarda makine **derhal garanti kapsamı dışında** kalır:
@@ -63,7 +63,7 @@ Aşağıda detaylandırılan (ancak bunlarla sınırlı olmayan) kullanım hatal
 
 ---
 
-## 1.3.6 Fikri ve Sınai Mülkiyet Hakları ile Gizlilik
+## 1.1.6 Fikri ve Sınai Mülkiyet Hakları ile Gizlilik
 Bu kullanım kılavuzu ve içeriğinde yer alan tüm editoryal metinler, 3D/2D teknik resimler, hidrolik/pnömatik/elektrik devre şemaları, sistem algoritmaları, akış diyagramları, tablolar ve HMI yazılım arayüzü tasarımları ulusal ve uluslararası telif hakkı yasaları (ve ilgili sınai mülkiyet mevzuatları) ile katı bir şekilde korunmaktadır. 
 
 Bu dokümanın mülkiyeti münhasıran üretici firmaya aittir. Üretici firmanın önceden verilmiş, ıslak imzalı ve resmi yazılı izni olmaksızın;

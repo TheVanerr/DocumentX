@@ -7,5 +7,6 @@ contextBridge.exposeInMainWorld('electronAPI', {
   readYaml: (modelName) => ipcRenderer.invoke('read-yaml', modelName),
   getGuide: (modelName) => ipcRenderer.invoke('get-guide', modelName),
   readAsset: (name) => ipcRenderer.invoke('read-asset', name),
-  printPdf: () => ipcRenderer.invoke('print-pdf')
+  printPdf: () => ipcRenderer.invoke('print-pdf'),
+  exportWord: (payload) => ipcRenderer.invoke('export-word', payload)
 });

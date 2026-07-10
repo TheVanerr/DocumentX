@@ -11,10 +11,11 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "electron": "^36.4.0"
+    "electron": "^36.9.5"
   },
   "dependencies": {
     "electron-reload": "^2.0.0-alpha.1",
+    "html-to-docx": "^1.8.0",
     "js-yaml": "^4.1.0"
   }
 }

@@ -6,10 +6,18 @@ const yaml = require('js-yaml');
 const PROJECT_ROOT = path.join(__dirname, '..');
 
 try {
-  require('electron-reload')(__dirname, {
-    electron: path.join(__dirname, 'node_modules', '.bin', 'electron')
+  const electronPath = process.platform === 'win32'
+    ? path.join(__dirname, 'node_modules', '.bin', 'electron.cmd')
+    : path.join(__dirname, 'node_modules', '.bin', 'electron');
+
+  require('electron-reload')(PROJECT_ROOT, {
+    electron: electronPath,
+    awaitWriteFinish: true,
+    ignored: [/node_modules/, /\.git/, /[\/\\]\./]
   });
-} catch (e) {}
+} catch (e) {
+  console.warn('electron-reload aktif değil:', e.message);
+}
 
 let mainWindow;
 
@@ -150,9 +158,57 @@ ipcMain.handle('print-pdf', async () => {
   const data = await mainWindow.webContents.printToPDF({
     printBackground: true,
     pageSize: 'A4',
-    marginsType: 0
+    margins: { top: 0, bottom: 0, left: 0, right: 0 },
+    preferCSSPageSize: true
   });
 
   fs.writeFileSync(filePath, data);
   return { success: true, filePath };
+});
+
+function inlineImagesToBase64(html) {
+  return html.replace(/<img\b[^>]*\bsrc="([^"]+)"[^>]*>/gi, (tag, src) => {
+    if (/^data:/i.test(src)) return tag;
+    try {
+      const rel = decodeURIComponent(src);
+      const abs = path.resolve(__dirname, rel);
+      if (!fs.existsSync(abs)) return tag;
+      const ext = path.extname(abs).slice(1).toLowerCase();
+      const mime = ext === 'svg' ? 'svg+xml' : (ext === 'jpg' ? 'jpeg' : ext);
+      const b64 = fs.readFileSync(abs).toString('base64');
+      const dataUri = `data:image/${mime};base64,${b64}`;
+      return tag.replace(src, dataUri);
+    } catch (e) {
+      return tag;
+    }
+  });
+}
+
+ipcMain.handle('export-word', async (event, payload) => {
+  const model = (payload && payload.model) || 'klavuz';
+  const html = (payload && payload.html) || '';
+
+  const { canceled, filePath } = await dialog.showSaveDialog(mainWindow, {
+    defaultPath: `${model}-klavuz.docx`,
+    filters: [{ name: 'Word', extensions: ['docx'] }]
+  });
+  if (canceled || !filePath) return { success: false };
+
+  try {
+    const HTMLtoDOCX = require('html-to-docx');
+    const inlined = inlineImagesToBase64(html);
+    const fullHtml = `<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>${inlined}</body></html>`;
+
+    const buffer = await HTMLtoDOCX(fullHtml, null, {
+      table: { row: { cantSplit: true } },
+      footer: false,
+      pageNumber: false,
+      orientation: 'portrait'
+    });
+
+    fs.writeFileSync(filePath, buffer);
+    return { success: true, filePath };
+  } catch (e) {
+    return { success: false, error: e.message };
+  }
 });
