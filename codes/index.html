@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocumentX</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Title Bar -->
+  <div class="titlebar">
+    <div class="titlebar-drag">
+      <div class="app-logo">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="#6c8ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 2V8H20" stroke="#6c8ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <span class="app-title">DocumentX</span>
+    </div>
+    <div class="titlebar-controls">
+      <button class="tb-btn tb-min" onclick="window.electronAPI.minimize()" title="Küçült">&#x2212;</button>
+      <button class="tb-btn tb-max" onclick="window.electronAPI.maximize()" title="Büyüt">&#x25A1;</button>
+      <button class="tb-btn tb-close" onclick="window.electronAPI.close()" title="Kapat">&#x2715;</button>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <!-- Model Seçici -->
+    <div class="navbar-left">
+      <label class="select-label">Model</label>
+      <div class="custom-select-wrapper">
+        <select id="modelSelect" class="model-select" onchange="onModelChange(this.value)">
+          <option value="">— Seçiniz —</option>
+          <option value="LYM">LYM</option>
+          <option value="VDL">VDL</option>
+          <option value="KBN">KBN</option>
+          <option value="KNV">KNV</option>
+          <option value="RTS">RTS</option>
+          <option value="MST">MST</option>
+          <option value="PYT">PYT</option>
+          <option value="ULT">ULT</option>
+        </select>
+        <span class="select-arrow">&#9662;</span>
+      </div>
+
+      <!-- Antet Seçici -->
+      <label class="select-label">Antet</label>
+      <div class="custom-select-wrapper">
+        <select id="headerSelect" class="model-select select-sm" onchange="onHeaderChange(this.value)">
+          <option value="DOLFIN">DOLFIN</option>
+          <option value="ENVA">ENVA</option>
+          <option value="VICO">VICO</option>
+          <option value="KSYSTEM">KSYSTEM</option>
+        </select>
+        <span class="select-arrow">&#9662;</span>
+      </div>
+
+      <!-- Kapak Seçici -->
+      <label class="select-label">Kapak</label>
+      <div class="custom-select-wrapper">
+        <select id="coverSelect" class="model-select select-sm" onchange="onCoverVariantChange(this.value)">
+          <option value="DOLFIN">DOLFIN</option>
+          <option value="ENVA">ENVA</option>
+          <option value="VICO">VICO</option>
+          <option value="KSYSTEM">KSYSTEM</option>
+        </select>
+        <span class="select-arrow">&#9662;</span>
+      </div>
+
+      <!-- Kapak Meta -->
+      <div class="cover-controls">
+        <label class="select-label">Rev</label>
+        <input type="text" id="revInput" class="rev-input" placeholder="00" maxlength="6"
+               oninput="onCoverMetaChange()" />
+        <input type="date" id="dateInput" class="date-input" onchange="onCoverMetaChange()" />
+        <button class="date-btn" id="dateBtn" onclick="openDatePicker()" title="Tarih seç">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+            <path d="M3 9H21M8 2V6M16 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span id="dateLabel">Tarih</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Sağ Aksiyonlar -->
+    <div class="navbar-right">
+      <!-- Dil Seçici -->
+      <div class="lang-wrapper">
+        <button class="lang-btn active" data-lang="tr" onclick="setLanguage('tr')" title="Türkçe">
+          <img src="flags/tr.svg" alt="TR" class="flag-icon" />
+          <span>TR</span>
+        </button>
+        <button class="lang-btn" data-lang="en" onclick="setLanguage('en')" title="English">
+          <img src="flags/en.svg" alt="EN" class="flag-icon" />
+          <span>EN</span>
+        </button>
+        <button class="lang-btn" data-lang="de" onclick="setLanguage('de')" title="Deutsch">
+          <img src="flags/de.svg" alt="DE" class="flag-icon" />
+          <span>DE</span>
+        </button>
+      </div>
+
+      <div class="nav-divider"></div>
+
+      <!-- PDF Butonu -->
+      <button class="pdf-btn" onclick="exportPDF()" title="PDF Olarak Kaydet">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M12 16L12 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M9 13L12 16L15 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M20 16V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        PDF Çıktı
+      </button>
+    </div>
+  </nav>
+
+  <!-- İçerik Alanı -->
+  <main class="content-area" id="contentArea">
+    <div class="empty-state" id="emptyState">
+      <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+        <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="#3a4257" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 2V8H20" stroke="#3a4257" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="8" y1="13" x2="16" y2="13" stroke="#3a4257" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="8" y1="17" x2="13" y2="17" stroke="#3a4257" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <p>Görüntülemek için yukarıdan bir model seçin</p>
+    </div>
+    <div class="pages-container" id="pagesContainer"></div>
+  </main>
+
+  <script src="cover.js"></script>
+  <script src="header.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>

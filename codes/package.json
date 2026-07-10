@@ -1,0 +1,20 @@
+{
+  "name": "documentx",
+  "version": "1.0.0",
+  "description": "DocumentX - Kullanım Kılavuzu Görüntüleyici",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^36.4.0"
+  },
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1",
+    "js-yaml": "^4.1.0"
+  }
+}

@@ -1,0 +1,347 @@
+# Makineye Özel Reçete (Örn: LYM-Reçete.yaml)
+model_adi: "LYM"
+
+# Ana Bölüm Hiyerarşisi
+bolumler:
+  - id: "01-introduction"
+    aktif: true
+    dosya: "introduction.md"
+    alt_bolumler:
+
+      - id: "01-title-page"
+        dosya: "title-page.md"
+        parcalar:
+          - "logo-alani"
+
+      - id: "02-table-content"
+        dosya: "table-content.md"
+        parcalar:
+          - "otomatik-listeleme"
+
+      - id: "03-intro-handbook"
+        dosya: "intro-handbook.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+      - id: "04-symbols-conventions"
+        dosya: "symbols-conentions.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+      - id: "05-support-service"
+        dosya: "support-service.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+  - id: "02-safety"
+    aktif: true
+    dosya: "safety.md"
+    alt_bolumler:
+
+      - id: "01-safety-info"
+        dosya: "safety-info.md"
+        parcalar:
+          - "logo-alani"
+
+
+      - id: "02-safety-intro"
+        dosya: "safety-intro.md"
+        parcalar:
+          - "otomatik-listeleme"
+
+      - id: "03-safety-rules"
+        dosya: "safety-rules.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+  - id: "03-overview"
+    aktif: true
+    dosya: "overview.md"
+    alt_bolumler:
+
+      - id: "01-machine-description"
+        dosya: "machine-description.md"
+        parcalar:
+          - "logo-alani"
+
+
+      - id: "02-intended-use"
+        dosya: "intended-use.md"
+        parcalar:
+          - "otomatik-listeleme"
+
+      - id: "03-machine-spec"
+        dosya: "machine-spec.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+
+      - id: "04-machine-controls"
+        dosya: "machine-controls.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+      - id: "05-machine-layout"
+        dosya: "machine-layout.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+  - id: "04-transport"
+    aktif: true
+    dosya: "transport.md"
+    alt_bolumler:
+
+      - id: "01-transport"
+        dosya: "transport.md"
+        parcalar:
+          - "logo-alani"
+
+      - id: "02-handling-storing"
+        dosya: "handling-storing.md"
+        parcalar:
+          - "otomatik-listeleme"
+
+  - id: "05-assembly"
+    aktif: true
+    dosya: "assembly.md"
+    alt_bolumler:
+
+      - id: "01-machine-assembly"
+        dosya: "machine-assembly.md"
+        parcalar:
+          - "logo-alani"
+
+      - id: "02-machine-position"
+        dosya: "machine-position.md"
+        parcalar:
+          - "otomatik-listeleme"
+
+      - id: "03-machine-install"
+        dosya: "machine-install.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+      - id: "04-safety-test"
+        dosya: "safety-test.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+      - id: "05-install-test"
+        dosya: "install-test.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+      - id: "06-comm"
+        dosya: "comm.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+  - id: "06-settings"
+    aktif: true
+    dosya: "settings.md"
+    alt_bolumler:
+
+      - id: "01-mechanical-settings"
+        dosya: "mechanical-settings.md"
+        parcalar:
+          - "logo-alani"
+
+      - id: "02-safety-settings"
+        dosya: "safety-settings.md"
+        parcalar:
+          - "otomatik-listeleme"
+
+      - id: "03-electrical-settings"
+        dosya: "electrical-settings.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+      - id: "04-hydrolic-settings"
+        dosya: "hydrolic-settings"
+        parcalar:
+          - "amac-ve-kapsam"
+
+      - id: "05-pnomatic-settings"
+        dosya: "pnomatic-settings.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+      - id: "06-vacuum-settings"
+        dosya: "vacuum-settings.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+      - id: "07-other-settings"
+        dosya: "other-settings.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+  - id: "07-operation"
+    aktif: true
+    dosya: "operation.md"
+    alt_bolumler:
+
+      - id: "01-operating-modes"
+        dosya: "operating-modes.md"
+        parcalar:
+          - "logo-alani"
+
+      - id: "02-machine-start"
+        dosya: "machine-start.md"
+        parcalar:
+          - "otomatik-listeleme"
+
+      - id: "03-shut-down"
+        dosya: "shut-down.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+      - id: "04-operating-sequence"
+        dosya: "operating-sequence"
+        parcalar:
+          - "amac-ve-kapsam"
+
+      - id: "05-operating-chronology"
+        dosya: "operating-chronology.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+      - id: "06-operation-other"
+        dosya: "operation-other.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+  - id: "08-capacity"
+    aktif: true
+    dosya: "capacity.md"
+    alt_bolumler:
+
+      - id: "01-product-capacity"
+        dosya: "product-capacity.md"
+        parcalar:
+          - "logo-alani"
+
+      - id: "02-specific-setup"
+        dosya: "specific-setup.md"
+        parcalar:
+          - "otomatik-listeleme"
+
+  - id: "09-main-inst"
+    aktif: true
+    dosya: "maintenance.md"
+    alt_bolumler:
+
+      - id: "01-main-inst"
+        dosya: "main-inst.md"
+        parcalar:
+          - "logo-alani"
+
+  - id: "10-cleaning"
+    aktif: true
+    dosya: "cleaning.md"
+    alt_bolumler:
+
+      - id: "01-clean-sanitize"
+        dosya: "clean-sanitize.md"
+        parcalar:
+          - "logo-alani"
+
+  - id: "11-troubleshooting"
+    aktif: true
+    dosya: "troubleshooting.md"
+    alt_bolumler:
+
+      - id: "01-fault-finding"
+        dosya: "fault-finding.md"
+        parcalar:
+          - "logo-alani"
+
+      - id: "02-trob-general"
+        dosya: "trob-general.md"
+        parcalar:
+          - "otomatik-listeleme"
+
+      - id: "03-trob-electrical"
+        dosya: "trob-electrical.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+      - id: "04-trob-hydro"
+        dosya: "trob-hydro"
+        parcalar:
+          - "amac-ve-kapsam"
+
+      - id: "05-trob-pnemo"
+        dosya: "trob-pnemo.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+      - id: "06-trob-vacuum"
+        dosya: "trob-vacuum.md"
+        parcalar:
+          - "amac-ve-kapsam"
+    
+      - id: "07-trob-sensors"
+        dosya: "trob-sensors.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+  - id: "12-dismantle"
+    aktif: true
+    dosya: "dismantle.md"
+    alt_bolumler:
+
+      - id: "01-dismantle"
+        dosya: "dismantle.md"
+        parcalar:
+          - "logo-alani"
+
+      - id: "02-disable"
+        dosya: "disable.md"
+        parcalar:
+          - "otomatik-listeleme"
+
+      - id: "03-scrapping"
+        dosya: "scrapping.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+  - id: "13-documents"
+    aktif: true
+    dosya: "documents.md"
+    alt_bolumler:
+
+      - id: "01-documents"
+        dosya: "dismantle.md"
+        parcalar:
+          - "logo-alani"
+
+      - id: "02-drawings"
+        dosya: "drawings.md"
+        parcalar:
+          - "otomatik-listeleme"
+
+      - id: "03-part-list"
+        dosya: "part-list.md"
+        parcalar:
+          - "amac-ve-kapsam"
+
+  - id: "14-index"
+    aktif: true
+    dosya: "index.md"
+    alt_bolumler:
+
+      - id: "01-annexes"
+        dosya: "glossary.md"
+        parcalar:
+          - "logo-alani"
+
+      - id: "02-glossary"
+        dosya: "glossary.md"
+        parcalar:
+          - "otomatik-listeleme"
+
+      - id: "03-indexes"
+        dosya: "indexes.md"
+        parcalar:
+          - "amac-ve-kapsam"
