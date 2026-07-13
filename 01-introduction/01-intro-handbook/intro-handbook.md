@@ -1,6 +1,7 @@
-# 1.1 Kılavuz Hakkında (About This Manual)
+# 1.1 Kılavuz Hakkında
 
 ## 1.1.1 Kılavuzun Amacı, Kapsamı ve Uygulama Alanı
+
 Bu kullanım kılavuzu, endüstriyel yıkama makinesinin ayrılmaz, temel ve yasal olarak bağlayıcı bir bileşenidir. Makinenin güvenli, verimli, çevreye duyarlı ve tasarım amacına en uygun şekilde işletilmesini sağlamak üzere, yürürlükteki Makine Emniyeti Yönetmeliği ve ilgili uluslararası standartlar (EN ISO 12100, EN ISO 20607) gözetilerek titizlikle hazırlanmıştır. 
 
 Dokümanın kapsamı, makinenin tüm yaşam döngüsünü (lifecycle) kapsayacak şekilde yapılandırılmıştır. Bu yaşam döngüsü aşağıdaki aşamaları içerir:
@@ -16,6 +17,7 @@ Bu doküman, temel mühendislik, genel mekanik veya temel elektrik eğitimi verm
 ---
 
 ## 1.1.2 Kılavuzun Geçerliliği, Güncelliği ve Doküman Kontrolü
+
 Bu kılavuzda yer alan metinler, teknik veriler, teknik resimler, hidrolik/pnömatik şemalar ve elektrik devre diyagramları, makinenin üretildiği ve son kalite kontrol (QC) testlerinden geçerek fabrikadan sevk edildiği tarihteki fiziksel donanım ve yazılım konfigürasyonunu ("As-Built" durumunu) yansıtmaktadır. 
 
 * **Versiyon Kontrolü:** Kılavuzun her bir sayfası veya kapağı, benzersiz bir doküman revizyon numarası ve yayın tarihi taşır. Makineye özel konfigürasyonlar (özel ölçüler, opsiyonel donanımlar) ekler (Appendix) bölümünde ayrıca belirtilmiştir.
@@ -24,9 +26,12 @@ Bu kılavuzda yer alan metinler, teknik veriler, teknik resimler, hidrolik/pnöm
 ---
 
 ## 1.1.3 Hedef Kitle, Personel Kalifikasyonu ve Sorumluluk Dağılımı
+
 Endüstriyel yıkama makineleri; yüksek voltaj, sıcak su, basınçlı sistemler, kimyasal solüsyonlar ve hareketli mekanik parçalar içerdiğinden, makineye müdahale edecek personelin yetkinliği kritik bir iş güvenliği unsurudur. İşveren (makineyi işleten kurum), personelin aşağıdaki yetki matrisine uygun olarak görevlendirilmesinden tek başına sorumludur:
 
-1. **Operatör:** * **Yetkisi:** Makinenin günlük çalıştırılması, parçaların yüklenmesi ve boşaltılması, standart HMI arayüzü üzerinden mevcut yıkama reçetelerinin seçilmesi ve başlatılması/durdurulması.
+1. **Operatör:**
+
+   * **Yetkisi:** Makinenin günlük çalıştırılması, parçaların yüklenmesi ve boşaltılması, standart HMI arayüzü üzerinden mevcut yıkama reçetelerinin seçilmesi ve başlatılması/durdurulması.
    * **Gereksinim:** İşveren tarafından makine işleyişi ve acil durdurma prosedürleri hakkında eğitilmiş olmalıdır. Operatörün makine muhafazalarını (kapaklarını) alet kullanarak sökmesi, elektrik panosunu açması veya parametre ayarlarına müdahale etmesi kesinlikle yasaktır.
 
 2. **Bakım Personeli (Mekanik / Pnömatik / Elektrik):**
@@ -39,16 +44,19 @@ Endüstriyel yıkama makineleri; yüksek voltaj, sıcak su, basınçlı sistemle
 
 ---
 
-## 1.1.4 Kılavuzun Fiziksel Muhafazası ve Erişilebilirliği
-Bu doküman, makinenin operasyonel bütünlüğünün bir parçası olarak değerlendirilmelidir. 
-* Kılavuzun orijinal basılı nüshası veya endüstriyel ortama dayanıklı kaplanmış bir kopyası, her an erişilebilir olacak şekilde makinenin hemen yakınında, özel bir doküman cebinde veya kontrol panosu civarında muhafaza edilmelidir.
-* Doküman; endüstriyel yağlardan, kimyasal sıçramalarından, aşırı nemden ve doğrudan yüksek ısıdan korunmalıdır. 
-* Sayfaların eksilmesi, yırtılması veya uyarı işaretlerinin okunamaz hale gelmesi durumunda, iş sağlığı ve güvenliği risklerini önlemek adına işveren, derhal üretici firmadan yeni bir revizyon talep etmelidir.
-* Makinenin üçüncü şahıslara satılması, kiralanması veya başka bir üretim tesisine transfer edilmesi durumunda, bu kullanım kılavuzu (ve varsa tüm ekleri) makineyle birlikte devredilmek zorundadır.
+## 1.1.4 Kılavuzun Muhafazası ve Erişilebilirliği
+
+Bu dijital doküman, makinenin operasyonel bütünlüğünün ayrılmaz bir parçası olarak değerlendirilmelidir. Çevresel sürdürülebilirlik ilkeleri ve güncel dokümantasyon standartları gereği, bu kullanım kılavuzu dijital formatta (Soft Copy) sunulmaktadır.
+
+* **Erişilebilirlik:** Kılavuzun güncel dijital kopyası, makine üzerinde yer alan bilgi etiketindeki (Örn: QR kod) yönlendirmeler aracılığıyla veya üretici tarafından sağlanan dijital kanallar üzerinden her an erişilebilir durumdadır.
+* **İşverenin Sorumluluğu:** İşletmeci/Tesis Yönetimi, operatörlerin ve bakım personelinin makinenin bulunduğu çalışma alanında (endüstriyel tabletler, bilgisayar terminalleri veya HMI ekranı üzerinden) bu dijital dokümana kesintisiz erişimini sağlamakla yükümlüdür.
+* **Basılı Kullanım Tercihi:** Tesis yönetiminin kendi iç prosedürleri gereği kılavuzu basılı (Hard Copy) olarak bulundurmak istemesi durumunda; sayfa bütünlüğünün korunması, endüstriyel kirlilikten (yağ, kimyasal, nem) muhafaza edilmesi ve yeni dijital revizyonların fiziksel kopyaya entegre edilmesi tamamen işletmecinin sorumluluğundadır.
+* **Makinenin Devri:** Ekipmanın üçüncü şahıslara satılması, kiralanması veya başka bir tesise transfer edilmesi durumunda, makinenin dijital dokümantasyonuna ait erişim bilgileri veya güncel dijital dosyalar makineyle birlikte yeni kullanıcıya devredilmek zorundadır.
 
 ---
 
 ## 1.1.5 Amacına Uygun Kullanım, Sorumluluk Sınırlandırması ve Garanti İptali
+
 Üretici firma, makinenin tasarımını ve imalatını kabul görmüş iyi mühendislik uygulamalarına ve katı güvenlik normlarına göre gerçekleştirmiştir. Makinenin garantisi ve üreticinin yasal sorumluluğu, sistemin yalnızca tasarlandığı "Amacına Uygun Kullanım" (Intended Use) sınırları içerisinde işletilmesi koşuluna bağlıdır.
 
 Aşağıda detaylandırılan (ancak bunlarla sınırlı olmayan) kullanım hataları, yetkisiz müdahaleler ve işletme kusurlarından kaynaklanabilecek doğrudan veya dolaylı personel yaralanmaları, can kayıpları, tesis hasarları, ürün firesi, çevresel kirlilik veya ticari kâr kayıpları durumunda üretici firma hiçbir hukuki, cezai veya mali sorumluluk kabul etmez; bu durumlarda makine **derhal garanti kapsamı dışında** kalır:
