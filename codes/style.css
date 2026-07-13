@@ -407,11 +407,35 @@ html, body {
 
 .page-number {
   position: absolute;
-  bottom: 28px;
-  right: 40px;
-  font-size: 11px;
+  bottom: 66px;
+  right: 79px;
+  font-size: 11pt;
   color: #999;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Calibri', sans-serif;
+}
+
+/* ── FOOTER LINE ── */
+.ph-footer-line {
+  position: absolute;
+  bottom: 99px;
+  left: 79px;
+  right: 79px;
+  height: 0;
+  border-top: 2px solid var(--brand-color, #ff0000);
+}
+
+/* ── FOOTER TEXT (CNK) ── */
+.ph-footer {
+  position: absolute;
+  left: 79px;
+  bottom: 65px;
+  width: 199px;
+  height: 16px;
+  font-family: 'Calibri', sans-serif;
+  font-size: 10pt;
+  color: #838383;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /* ── ANTET (LETTERHEAD) ── */
@@ -457,9 +481,15 @@ html, body {
   align-items: flex-end;
   gap: 8px;
   font-size: 13px;
-  color: #2d3748;
+  color: #2d3748 !important;
   margin-bottom: 9px;
   line-height: 1.4;
+  text-decoration: none !important;
+  cursor: default;
+}
+.toc-row * {
+  color: inherit !important;
+  text-decoration: none !important;
 }
 .toc-num { font-weight: 700; color: #1a2540; flex-shrink: 0; min-width: 20px; }
 .toc-l1 { font-weight: 700; font-size: 14px; color: #1a2540; margin-top: 4px; }
@@ -565,6 +595,8 @@ html, body {
   background: #eef2fb;
   font-weight: 700;
   color: #1a2540;
+  text-align: center;
+  vertical-align: middle;
 }
 .md-table tr:nth-child(even) td { background: #f8fafc; }
 

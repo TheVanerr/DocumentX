@@ -75,6 +75,40 @@ function renderGuide(modelName, tree, container) {
     model: modelName, rev: currentRev, date: currentDate, variant: currentCoverVariant
   });
   container.insertBefore(cover, container.firstChild);
+
+  // Bölüm başlıkları → İçindekiler dönüş linkleri
+  container.querySelectorAll('[data-toc-anchor]').forEach(el => {
+    const anchorId = el.dataset.tocAnchor;
+    const a = document.createElement('a');
+    a.href = '#toc-row-' + anchorId;
+    a.style.cssText = 'color:inherit;text-decoration:none;display:block;';
+    a.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      const target = document.getElementById('toc-row-' + anchorId);
+      if (target) scrollToPage(target);
+    });
+    while (el.firstChild) a.appendChild(el.firstChild);
+    el.appendChild(a);
+  });
+
+  // PDF hrefs → A4 sayfa başlarına güncelle (tam sayfa görünümü)
+  container.querySelectorAll('a.toc-row[id]').forEach(row => {
+    const anchorId = row.id.replace('toc-row-', '');
+    const target = document.getElementById('toc-anchor-' + anchorId);
+    if (target) {
+      const pg = target.closest('.a4-page');
+      if (pg) row.href = '#' + pg.id;
+    }
+  });
+
+  container.querySelectorAll('[data-toc-anchor] a[href]').forEach(a => {
+    const rowId = a.getAttribute('href').replace('#', '');
+    const tocRow = document.getElementById(rowId);
+    if (tocRow) {
+      const pg = tocRow.closest('.a4-page');
+      if (pg) a.href = '#' + pg.id;
+    }
+  });
 }
 
 function mdLevel(el) { return parseInt(el.tagName.slice(1), 10); }
@@ -95,6 +129,8 @@ function buildBlocks(tree) {
   let anchorIdx = 0;
 
   function addEntry(number, title, level, el) {
+    const id = 'toc-anchor-' + anchorIdx;
+    el.id = id;
     el.dataset.tocAnchor = String(anchorIdx);
     entries.push({ number, title, level, anchorId: String(anchorIdx), contentIdx: 0 });
     anchorIdx++;
@@ -179,9 +215,16 @@ function buildTocBlocks(entries) {
   blocks.push(h);
 
   for (const e of entries) {
-    const row = document.createElement('div');
+    const row = document.createElement('a');
     row.className = `toc-row toc-l${Math.min(e.level, 4)}`;
+    row.id = 'toc-row-' + e.anchorId;
+    row.href = '#toc-anchor-' + e.anchorId;
     row.style.paddingLeft = ((e.level - 1) * 22) + 'px';
+    row.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      const target = document.getElementById('toc-anchor-' + e.anchorId);
+      if (target) scrollToPage(target);
+    });
 
     const num = document.createElement('span');
     num.className = 'toc-num';
@@ -256,8 +299,10 @@ function isHeadingEl(el) {
 
 /* ── A4 Sayfalama: blokları ölçüp sayfa dizilerine böler ── */
 function computePages(blocks) {
-  const MAX = usableHeight();
-  const ORPHAN_MIN = 72; // başlık altında bulunması gereken ~3 satırlık min. yükseklik
+  const LINE_H = 22;
+  const BOTTOM_RESERVE = LINE_H * 2;   // her sayfada alt 2 satır rezervi
+  const ORPHAN_MIN = LINE_H * 3;        // başlık altında en az 3 satır boşluk
+  const MAX = usableHeight() - BOTTOM_RESERVE;
 
   const pages = [[]];
   let cur = pages[0];
@@ -323,7 +368,82 @@ function computePages(blocks) {
     cur.push(part);
   }
 
+  function placeTable(tableEl) {
+    const thead = tableEl.querySelector('thead');
+    const tbody = tableEl.querySelector('tbody');
+    const TABLE_RESERVE = LINE_H;
+    const TABLE_MAX = MAX - TABLE_RESERVE;
+
+    if (!thead || !tbody || tbody.rows.length === 0) {
+      mContent.appendChild(tableEl);
+      if (h() <= TABLE_MAX) { cur.push(tableEl); return; }
+      if (cur.length === 0) {
+        cur.push(tableEl);
+        return;
+      }
+      mContent.removeChild(tableEl);
+      newPage();
+      placeTable(tableEl);
+      return;
+    }
+
+    const bodyRows = Array.from(tbody.rows);
+
+    const makeSubTable = (rows) => {
+      const t = tableEl.cloneNode(false);
+      t.appendChild(thead.cloneNode(true));
+      const tb = document.createElement('tbody');
+      rows.forEach(r => tb.appendChild(r.cloneNode(true)));
+      t.appendChild(tb);
+      return t;
+    };
+
+    let start = 0;
+
+    while (start < bodyRows.length) {
+      let end = start;
+      let sub = makeSubTable([]);
+      mContent.appendChild(sub);
+
+      while (end < bodyRows.length) {
+        const next = makeSubTable(bodyRows.slice(start, end + 1));
+        mContent.removeChild(sub);
+        mContent.appendChild(next);
+        if (h() <= TABLE_MAX) {
+          sub = next;
+          end++;
+        } else {
+          mContent.removeChild(next);
+          mContent.appendChild(sub);
+          break;
+        }
+      }
+
+      // Mevcut sayfaya başlık + tek satır + 1 satır rezerv bile sığmıyorsa
+      // tabloyu sonraki sayfadan devam ettir.
+      if (end === start && cur.length > 0) {
+        mContent.removeChild(sub);
+        newPage();
+        continue;
+      }
+
+      // Tek bir tablo satırı boş A4 sayfaya dahi sığmıyorsa satırı bölmeden
+      // yerleştir; aksi halde sonsuz sayfalama döngüsü oluşur.
+      if (end === start) {
+        mContent.removeChild(sub);
+        sub = makeSubTable([bodyRows[start]]);
+        mContent.appendChild(sub);
+        end++;
+      }
+
+      cur.push(sub);
+      start = end;
+      if (start < bodyRows.length) newPage();
+    }
+  }
+
   function place(el) {
+    if (el.tagName === 'TABLE') { placeTable(el); return; }
     mContent.appendChild(el);
     if (h() <= MAX) {
       // Başlık yalnız kalmasın: altında en az ~3 satır yer yoksa sonraki sayfaya al
@@ -362,10 +482,19 @@ function renderPages(pages, container, startNumber, modelName) {
 
     const page = document.createElement('div');
     page.className = 'a4-page';
+    page.id = 'a4-page-' + n;
+
+    const _brand = (typeof HEADER_BRANDS !== 'undefined' && HEADER_BRANDS[currentHeaderVariant])
+      ? HEADER_BRANDS[currentHeaderVariant] : { color: '#ff0000' };
+    page.style.setProperty('--brand-color', _brand.color);
 
     if (currentHeaderVariant && typeof buildHeader === 'function') {
       page.appendChild(buildHeader(currentHeaderVariant, modelName));
     }
+
+    const footerLine = document.createElement('div');
+    footerLine.className = 'ph-footer-line';
+    page.appendChild(footerLine);
 
     const content = document.createElement('div');
     content.className = 'page-content';
@@ -377,8 +506,32 @@ function renderPages(pages, container, startNumber, modelName) {
     num.textContent = n++;
     page.appendChild(num);
 
+    const cnkFooter = document.createElement('div');
+    cnkFooter.className = 'ph-footer';
+    cnkFooter.textContent = 'CNK ELEKTRONİK MAKİNE SAN A.Ş.';
+    page.appendChild(cnkFooter);
+
     container.appendChild(page);
   }
+}
+
+/* Hedef elementin bulunduğu A4 sayfasını content-area içinde tam görünecek şekilde kaydırır */
+function scrollToPage(el) {
+  const page = el.closest('.a4-page');
+  const area = document.querySelector('.content-area');
+  if (!page || !area) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
+
+  const areaRect = area.getBoundingClientRect();
+  const pageRect = page.getBoundingClientRect();
+  const pageTopInArea = pageRect.top - areaRect.top + area.scrollTop;
+
+  let targetScroll;
+  if (page.offsetHeight <= area.clientHeight) {
+    targetScroll = pageTopInArea - (area.clientHeight - page.offsetHeight) / 2;
+  } else {
+    targetScroll = pageTopInArea;
+  }
+  area.scrollTo({ top: Math.max(0, targetScroll), behavior: 'smooth' });
 }
 
 function usableHeight() {
