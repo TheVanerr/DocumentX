@@ -629,6 +629,7 @@ function mdToBlocks(md) {
     // Table
     if (line.includes('|') && i + 1 < lines.length && /^\s*\|?[\s:|-]+\|?\s*$/.test(lines[i + 1]) && lines[i + 1].includes('-')) {
       const header = splitRow(line);
+      const aligns = parseAlignRow(lines[i + 1]);
       i += 2;
       const rows = [];
       while (i < lines.length && lines[i].includes('|') && lines[i].trim()) {
@@ -639,9 +640,10 @@ function mdToBlocks(md) {
       table.className = 'md-table';
       const thead = document.createElement('thead');
       const htr = document.createElement('tr');
-      for (const c of header) {
+      for (let ci = 0; ci < header.length; ci++) {
         const th = document.createElement('th');
-        th.innerHTML = inline(c);
+        th.innerHTML = inline(header[ci]);
+        applyCellAlign(th, aligns[ci]);
         htr.appendChild(th);
       }
       thead.appendChild(htr);
@@ -649,9 +651,10 @@ function mdToBlocks(md) {
       const tbody = document.createElement('tbody');
       for (const r of rows) {
         const tr = document.createElement('tr');
-        for (const c of r) {
+        for (let ci = 0; ci < r.length; ci++) {
           const td = document.createElement('td');
-          td.innerHTML = inline(c);
+          td.innerHTML = inline(r[ci]);
+          applyCellAlign(td, aligns[ci]);
           tr.appendChild(td);
         }
         tbody.appendChild(tr);
@@ -712,6 +715,19 @@ function splitRow(line) {
   if (s.startsWith('|')) s = s.slice(1);
   if (s.endsWith('|')) s = s.slice(0, -1);
   return s.split('|').map(c => c.trim());
+}
+
+function parseAlignRow(line) {
+  return splitRow(line).map(cell => {
+    const s = cell.replace(/\s/g, '');
+    if (/^:-+:$/.test(s)) return 'center';
+    if (/^-+:$/.test(s)) return 'right';
+    return 'left';
+  });
+}
+
+function applyCellAlign(el, align) {
+  if (align && align !== 'left') el.style.textAlign = align;
 }
 
 /* ── Satır içi markdown ── */
@@ -810,3 +826,75 @@ function showToast(msg, type = 'success') {
 
   setTimeout(() => toast.remove(), 3000);
 }
+
+const ZOOM_MIN = 50;
+const ZOOM_MAX = 200;
+const ZOOM_STEP = 10;
+let zoomLevel = 100;
+
+function applyZoom() {
+  const container = document.getElementById('pagesContainer');
+  if (container) container.style.zoom = zoomLevel / 100;
+  const label = document.getElementById('zoomLabel');
+  if (label) label.textContent = `${zoomLevel}%`;
+}
+
+function setZoom(level) {
+  zoomLevel = Math.min(ZOOM_MAX, Math.max(ZOOM_MIN, level));
+  applyZoom();
+}
+
+function zoomIn() {
+  setZoom(zoomLevel + ZOOM_STEP);
+}
+
+function zoomOut() {
+  setZoom(zoomLevel - ZOOM_STEP);
+}
+
+function resetZoom() {
+  setZoom(100);
+}
+
+function handleWheelZoom(e) {
+  if (!e.ctrlKey) return;
+  const contentArea = document.getElementById('contentArea');
+  if (!contentArea) return;
+
+  e.preventDefault();
+  e.stopPropagation();
+
+  const scrollTop = contentArea.scrollTop;
+  if (e.deltaY < 0) zoomIn();
+  else if (e.deltaY > 0) zoomOut();
+
+  requestAnimationFrame(() => {
+    contentArea.scrollTop = scrollTop;
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const sel = document.getElementById('modelSelect');
+  if (sel) {
+    sel.value = 'LYM';
+    onModelChange('LYM');
+  }
+
+  applyZoom();
+
+  document.addEventListener('wheel', handleWheelZoom, { capture: true, passive: false });
+});
+
+document.addEventListener('keydown', (e) => {
+  if (!e.ctrlKey) return;
+  if (e.key === '=' || e.key === '+') {
+    e.preventDefault();
+    zoomIn();
+  } else if (e.key === '-') {
+    e.preventDefault();
+    zoomOut();
+  } else if (e.key === '0') {
+    e.preventDefault();
+    resetZoom();
+  }
+});

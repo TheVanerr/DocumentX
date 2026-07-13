@@ -23,7 +23,7 @@ function buildCoverPage({ model, rev, date, variant }) {
   bg.alt = '';
   page.appendChild(bg);
 
-  // 1. Katman: tüm sayfayı kaplayan siyah dikdörtgen (opacity %90)
+  // 1. Katman: tüm sayfayı kaplayan siyah dikdörtgen (opacity %100)
   const overlay = document.createElement('div');
   overlay.className = 'cover-overlay';
   page.appendChild(overlay);

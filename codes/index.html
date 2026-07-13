@@ -34,7 +34,7 @@
       <div class="custom-select-wrapper">
         <select id="modelSelect" class="model-select" onchange="onModelChange(this.value)">
           <option value="">— Seçiniz —</option>
-          <option value="LYM">LYM</option>
+          <option value="LYM" selected>LYM</option>
           <option value="VDL">VDL</option>
           <option value="KBN">KBN</option>
           <option value="KNV">KNV</option>
@@ -88,6 +88,15 @@
 
     <!-- Sağ Aksiyonlar -->
     <div class="navbar-right">
+      <!-- Zoom -->
+      <div class="zoom-controls">
+        <button class="zoom-btn" onclick="zoomOut()" title="Uzaklaştır (Ctrl+-)">&#x2212;</button>
+        <button class="zoom-label" id="zoomLabel" onclick="resetZoom()" title="Sıfırla (Ctrl+0)">100%</button>
+        <button class="zoom-btn" onclick="zoomIn()" title="Yakınlaştır (Ctrl++)">+</button>
+      </div>
+
+      <div class="nav-divider"></div>
+
       <!-- Dil Seçici -->
       <div class="lang-wrapper">
         <button class="lang-btn active" data-lang="tr" onclick="setLanguage('tr')" title="Türkçe">

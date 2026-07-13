@@ -280,6 +280,66 @@ html, body {
   object-fit: cover;
 }
 
+/* ── ZOOM CONTROLS ── */
+.zoom-controls {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--bg-tertiary);
+  padding: 3px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.zoom-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.15s;
+  line-height: 1;
+}
+
+.zoom-btn:hover {
+  background: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.zoom-btn:active {
+  transform: scale(0.95);
+}
+
+.zoom-label {
+  min-width: 46px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.15s;
+  user-select: none;
+}
+
+.zoom-label:hover {
+  background: var(--bg-card);
+  color: var(--text-primary);
+}
+
 /* ── NAV DIVIDER ── */
 .nav-divider {
   width: 1px;
@@ -593,14 +653,12 @@ html, body {
   border: 1px solid #cbd5e0;
   padding: 7px 10px;
   text-align: left;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .md-table th {
   background: #eef2fb;
   font-weight: 700;
   color: #1a2540;
-  text-align: center;
-  vertical-align: middle;
 }
 .md-table tr:nth-child(even) td { background: #f8fafc; }
 
@@ -616,7 +674,12 @@ html, body {
 }
 .md-table .md-img {
   max-width: 60px;
-  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+.md-table th > *, .md-table td > * {
+  vertical-align: middle;
 }
 .md-p .md-img { display: inline-block; vertical-align: middle; margin: 0 4px; }
 
@@ -640,7 +703,7 @@ html, body {
   position: absolute;
   inset: 0;
   background: #000000;
-  opacity: 0.9;
+  opacity: 1;
   z-index: 1;
 }
 
@@ -734,6 +797,7 @@ html, body {
     display: block !important;
     gap: 0 !important;
     width: auto !important;
+    zoom: 1 !important;
   }
   .a4-page {
     box-shadow: none;
