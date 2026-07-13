@@ -158,6 +158,7 @@ function buildBlocks(tree) {
         secBlocks.unshift(titleEl);
       }
       addEntry(N, nodeTitle, level, titleEl);
+      if (level === 1) titleEl.dataset.pageBreakBefore = 'true';
 
       // md içindeki diğer başlıklar → alt kırılım (N.1, N.1.1 ...)
       let counters = [];
@@ -300,7 +301,7 @@ function isHeadingEl(el) {
 /* ── A4 Sayfalama: blokları ölçüp sayfa dizilerine böler ── */
 function computePages(blocks) {
   const LINE_H = 22;
-  const BOTTOM_RESERVE = LINE_H * 2;   // her sayfada alt 2 satır rezervi
+  const BOTTOM_RESERVE = LINE_H * 3;   // mevcut 2 satıra 1 satır eklendi: toplam 4 satır
   const ORPHAN_MIN = LINE_H * 3;        // başlık altında en az 3 satır boşluk
   const MAX = usableHeight() - BOTTOM_RESERVE;
 
@@ -444,6 +445,9 @@ function computePages(blocks) {
 
   function place(el) {
     if (el.tagName === 'TABLE') { placeTable(el); return; }
+    if (el.dataset && el.dataset.pageBreakBefore === 'true' && cur.length > 0) {
+      newPage();
+    }
     mContent.appendChild(el);
     if (h() <= MAX) {
       // Başlık yalnız kalmasın: altında en az ~3 satır yer yoksa sonraki sayfaya al
