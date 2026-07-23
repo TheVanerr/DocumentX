@@ -437,15 +437,28 @@ html, body {
 }
 
 .a4-page {
+  --a4-height: 1123px;
+  --line-h: 22px;
+  /* .page-header alt kırmızı çizgi alt kenarı (top+height+padding+border) */
+  --header-rule-y: 71px;
+  /* .ph-footer-line — sayfa altından mesafe */
+  --footer-rule-inset: 99px;
+  --content-pad-top: calc(var(--header-rule-y) + var(--line-h));
+  --content-pad-bottom: calc(var(--footer-rule-inset) + var(--line-h));
+  --content-max-h: calc(var(--a4-height) - var(--content-pad-top) - var(--content-pad-bottom));
+
   width: 794px;
-  min-height: 1123px;
+  height: var(--a4-height);
+  min-height: var(--a4-height);
   background: #ffffff;
   color: #1a1a2e;
   border-radius: 4px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3);
-  padding: 82px 70px 55px;
+  padding: var(--content-pad-top) 70px var(--content-pad-bottom) 70px;
   position: relative;
   flex-shrink: 0;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .a4-page.measure {
@@ -459,10 +472,14 @@ html, body {
 
 .page-content {
   width: 100%;
+  max-height: var(--content-max-h);
   color: #1a1a2e;
   font-family: 'Calibri', sans-serif;
   font-size: 10pt;
   line-height: 1.65;
+  display: flow-root;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .page-number {
@@ -652,25 +669,41 @@ html, body {
 .md-table th, .md-table td {
   border: 1px solid #cbd5e0;
   padding: 7px 10px;
-  text-align: left;
   vertical-align: middle;
 }
 .md-table th {
+  text-align: center;
   background: #eef2fb;
   font-weight: 700;
   color: #1a2540;
+}
+.md-table td {
+  text-align: left;
 }
 .md-table tr:nth-child(even) td { background: #f8fafc; }
 
 .page-content a { color: var(--accent); text-decoration: none; }
 .page-content a:hover { text-decoration: underline; }
 
-/* Markdown görselleri */
+/* Markdown görselleri — içerik fotoğrafları yatayda ortalı; tablo ikonları ayrı */
 .md-img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 8px 0;
+  margin: 8px auto;
+}
+.md-p.md-figure {
+  text-align: center;
+  margin: 0 0 11px;
+}
+.md-p.md-figure .md-img {
+  display: block;
+  margin: 8px auto;
+  max-width: 100%;
+  max-height: var(--content-max-h);
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 .md-table .md-img {
   max-width: 60px;
@@ -681,9 +714,18 @@ html, body {
 .md-table th > *, .md-table td > * {
   vertical-align: middle;
 }
-.md-p .md-img { display: inline-block; vertical-align: middle; margin: 0 4px; }
+.md-p:not(.md-figure) .md-img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 4px;
+}
 
 /* ── KAPAK SAYFASI ── */
+.a4-page.cover-page {
+  padding: 0;
+  overflow: hidden;
+}
+
 .cover-page {
   padding: 0;
   overflow: hidden;

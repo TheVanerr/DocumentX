@@ -1,4 +1,4 @@
-# DocumentX Görsel ve Sayfalama Ayarları
+﻿# DocumentX Görsel ve Sayfalama Ayarları
 
 Bu dosya ekran ve PDF yerleşimini elle ayarlamak için referanstır. Satır numaraları kod değiştikçe kayabilir; belirtilen CSS seçicisini veya JavaScript fonksiyonunu arayın.
 
@@ -77,8 +77,9 @@ Dosya: `codes/style.css`.
 - Alıntı boşluğu: `.md-quote`.
 - Kod bloğu boşluğu: `.md-code`.
 - Yatay çizgi boşluğu: `.md-hr`.
-- Görsel boşluğu: `.md-img`.
-- Tablo içi görsel boyutu: `.md-table .md-img`.
+- İçerik fotoğrafları (yalnızca \![...](...)\ satırı): \.md-p.md-figure\ — yatayda ortalı; enderer.js\ bu paragraflara \md-figure\ sınıfını ekler.
+- Görsel boşluğu / genişlik: \.md-img\ (\margin: 8px auto\, \max-width: 100%\).
+- Tablo sembol/ikonları (ayrı kural): \.md-table .md-img\ — küçük, hücre içi; ortalanmaz.
 
 ## Antet, alt bilgi ve numara
 

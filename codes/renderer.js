@@ -37,7 +37,7 @@ async function onModelChange(value) {
     return;
   }
 
-  renderGuide(res.model, res.tree, pagesContainer);
+  await renderGuide(res.model, res.tree, pagesContainer);
 }
 
 function infoCard(html) {
@@ -48,9 +48,30 @@ function infoCard(html) {
     </div>`;
 }
 
+function collectImageSrcs(blocks) {
+  const srcs = new Set();
+  for (const el of blocks) {
+    el.querySelectorAll?.('img.md-img').forEach(img => {
+      const s = img.getAttribute('src');
+      if (s && !/^data:/i.test(s)) srcs.add(s);
+    });
+  }
+  return [...srcs];
+}
+
+function preloadImages(srcs) {
+  if (!srcs.length) return Promise.resolve();
+  return Promise.all(srcs.map(src => new Promise(resolve => {
+    const img = new Image();
+    img.onload = img.onerror = () => resolve();
+    img.src = src;
+  })));
+}
+
 /* ── Kılavuzu oluştur ── */
-function renderGuide(modelName, tree, container) {
+async function renderGuide(modelName, tree, container) {
   const { blocks, entries } = buildBlocks(tree);
+  await preloadImages(collectImageSrcs(blocks));
   const contentPages = computePages(blocks);
 
   for (const e of entries) {
@@ -299,11 +320,24 @@ function isHeadingEl(el) {
 }
 
 /* ── A4 Sayfalama: blokları ölçüp sayfa dizilerine böler ── */
+function getContentMetrics() {
+  const probe = document.createElement('div');
+  probe.className = 'a4-page';
+  probe.style.cssText = 'position:absolute;visibility:hidden;left:-9999px;top:0';
+  document.body.appendChild(probe);
+  const cs = getComputedStyle(probe);
+  const lineH = parseFloat(cs.getPropertyValue('--line-h')) || 22;
+  const pageH = parseFloat(cs.height) || parseFloat(cs.minHeight) || 1123;
+  const pt = parseFloat(cs.paddingTop);
+  const pb = parseFloat(cs.paddingBottom);
+  const maxH = pageH - pt - pb;
+  document.body.removeChild(probe);
+  return { MAX: maxH > 0 ? maxH : 909, LINE_H: lineH };
+}
+
 function computePages(blocks) {
-  const LINE_H = 22;
-  const BOTTOM_RESERVE = LINE_H * 3;   // mevcut 2 satıra 1 satır eklendi: toplam 4 satır
-  const ORPHAN_MIN = LINE_H * 3;        // başlık altında en az 3 satır boşluk
-  const MAX = usableHeight() - BOTTOM_RESERVE;
+  const { MAX, LINE_H } = getContentMetrics();
+  const ORPHAN_MIN = LINE_H * 3;
 
   const pages = [[]];
   let cur = pages[0];
@@ -372,8 +406,8 @@ function computePages(blocks) {
   function placeTable(tableEl) {
     const thead = tableEl.querySelector('thead');
     const tbody = tableEl.querySelector('tbody');
-    const TABLE_RESERVE = LINE_H;
-    const TABLE_MAX = MAX - TABLE_RESERVE;
+    const TABLE_RESERVE = 0;
+    const TABLE_MAX = MAX;
 
     if (!thead || !tbody || tbody.rows.length === 0) {
       mContent.appendChild(tableEl);
@@ -443,9 +477,20 @@ function computePages(blocks) {
     }
   }
 
+  function placeFigureIfNeeded(el) {
+    if (el.tagName !== 'P' || !el.classList.contains('md-figure')) return false;
+    mContent.appendChild(el);
+    const fits = h() <= MAX;
+    mContent.removeChild(el);
+    return !fits;
+  }
+
   function place(el) {
     if (el.tagName === 'TABLE') { placeTable(el); return; }
     if (el.dataset && el.dataset.pageBreakBefore === 'true' && cur.length > 0) {
+      newPage();
+    }
+    if (placeFigureIfNeeded(el) && cur.length > 0) {
       newPage();
     }
     mContent.appendChild(el);
@@ -536,19 +581,6 @@ function scrollToPage(el) {
     targetScroll = pageTopInArea;
   }
   area.scrollTo({ top: Math.max(0, targetScroll), behavior: 'smooth' });
-}
-
-function usableHeight() {
-  const probe = document.createElement('div');
-  probe.className = 'a4-page';
-  probe.style.position = 'absolute';
-  probe.style.visibility = 'hidden';
-  probe.style.left = '-9999px';
-  document.body.appendChild(probe);
-  const cs = getComputedStyle(probe);
-  const h = parseFloat(cs.minHeight) - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
-  document.body.removeChild(probe);
-  return (h && h > 100) ? h - 8 : 995;
 }
 
 /* ── Markdown → blok elemanları ── */
@@ -643,7 +675,6 @@ function mdToBlocks(md) {
       for (let ci = 0; ci < header.length; ci++) {
         const th = document.createElement('th');
         th.innerHTML = inline(header[ci]);
-        applyCellAlign(th, aligns[ci]);
         htr.appendChild(th);
       }
       thead.appendChild(htr);
@@ -703,7 +734,11 @@ function mdToBlocks(md) {
     }
     const p = document.createElement('p');
     p.className = 'md-p';
-    p.innerHTML = inline(buf.join(' '));
+    const html = inline(buf.join(' '));
+    p.innerHTML = html;
+    if (/^\s*<img class="md-img"[^>]*\/?>\s*(<img class="md-img"[^>]*\/?>\s*)*$/i.test(html)) {
+      p.classList.add('md-figure');
+    }
     blocks.push(p);
   }
 
