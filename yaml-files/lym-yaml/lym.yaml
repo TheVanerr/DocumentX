@@ -50,7 +50,7 @@ bolumler:
     alt_bolumler:
 
       - id: "01-machine-description"
-        dosya: "machine-description.md"
+        dosya: "lymmachine-description.md"
         parcalar:
           - "logo-alani"
 
@@ -61,18 +61,18 @@ bolumler:
           - "otomatik-listeleme"
 
       - id: "03-machine-spec"
-        dosya: "machine-spec.md"
+        dosya: "lymmachine-spec.md"
         parcalar:
           - "amac-ve-kapsam"
 
 
       - id: "04-machine-controls"
-        dosya: "machine-controls.md"
+        dosya: "lymmachine-controls.md"
         parcalar:
           - "amac-ve-kapsam"
 
       - id: "05-machine-layout"
-        dosya: "machine-layout.md"
+        dosya: "lymmachine-layout.md"
         parcalar:
           - "amac-ve-kapsam"
 
