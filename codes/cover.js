@@ -4,6 +4,15 @@
 const CM_PX = 37.7953;
 const cm = (n) => (n * CM_PX).toFixed(2) + 'px';
 
+const COVER_BRANDS = {
+  DOLFIN:  { logo: '../assets/logos/dolfin.png',   accent: '#ff0000' },
+  ENVA:    { logo: '../assets/logos/enva.svg',     accent: '#007938' },
+  VICO:    { logo: '../assets/logos/vico.png',     accent: '#C41E3A' },
+  KSYSTEM: { logo: '../assets/logos/ksystem.svg',  accent: '#8a3fa0' }
+};
+
+const COVER_LOGO_BOX = { left: 4.8, top: 14.48, width: 9.04, height: 5.67 };
+
 function formatCoverDate(iso) {
   if (!iso) return 'xx.xx.xxxx';
   const p = iso.split('-');
@@ -12,23 +21,13 @@ function formatCoverDate(iso) {
 }
 
 function buildCoverPage({ model, rev, date, variant }) {
+  const brand = COVER_BRANDS[variant] || COVER_BRANDS.DOLFIN;
+
   const page = document.createElement('div');
   page.className = 'a4-page cover-page';
   if (variant) page.dataset.variant = variant;
+  page.style.setProperty('--cover-accent', brand.accent);
 
-  // 0. Katman: en altta, sayfada tam ortalı arka plan görseli
-  const bg = document.createElement('img');
-  bg.className = 'cover-bg';
-  bg.src = '../assets/backgd.png';
-  bg.alt = '';
-  page.appendChild(bg);
-
-  // 1. Katman: tüm sayfayı kaplayan siyah dikdörtgen (opacity %100)
-  const overlay = document.createElement('div');
-  overlay.className = 'cover-overlay';
-  page.appendChild(overlay);
-
-  // 2. Katman: kırmızı dikey dikdörtgen
   const rect = document.createElement('div');
   rect.className = 'cover-rect';
   rect.style.left = cm(2.1);
@@ -37,7 +36,6 @@ function buildCoverPage({ model, rev, date, variant }) {
   rect.style.height = cm(25.5);
   page.appendChild(rect);
 
-  // 2. Katman: başlık
   const title = document.createElement('div');
   title.className = 'cover-title';
   title.style.left = cm(4.8);
@@ -47,7 +45,6 @@ function buildCoverPage({ model, rev, date, variant }) {
   title.textContent = `${(model || '').toUpperCase()} SERİSİ KULLANIM KILAVUZU`;
   page.appendChild(title);
 
-  // 2. Katman: rev / tarih / hazırlayan
   const info = document.createElement('div');
   info.className = 'cover-info';
   info.style.left = cm(4.8);
@@ -56,15 +53,14 @@ function buildCoverPage({ model, rev, date, variant }) {
   info.textContent = `Rev.${revText} / Hazırlanma Tarihi : ${formatCoverDate(date)} / Hazırlayan : Fatih GÜRAL`;
   page.appendChild(info);
 
-  // 2. Katman: dolfin görseli (arka planı şeffaflaştırılır)
   const img = document.createElement('img');
   img.className = 'cover-image';
-  img.src = '../assets/dolfin.png';
-  img.alt = '';
-  img.style.left = cm(4.8);
-  img.style.top = cm(14.48);
-  img.style.width = cm(9.04);
-  img.style.height = cm(5.67);
+  img.src = brand.logo;
+  img.alt = variant || 'DOLFIN';
+  img.style.left = cm(COVER_LOGO_BOX.left);
+  img.style.top = cm(COVER_LOGO_BOX.top);
+  img.style.width = cm(COVER_LOGO_BOX.width);
+  img.style.height = cm(COVER_LOGO_BOX.height);
   page.appendChild(img);
 
   return page;

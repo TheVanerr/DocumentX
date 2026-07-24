@@ -1,16 +1,42 @@
 /* Antet (letterhead) modülü — numaralı sayfaların üst kenarına yerleşir.
-   Combobox'tan seçilen markaya göre değişir. Yeni marka/logo eklemek için
-   BRANDS nesnesini genişletmen yeterli. */
+   Firma combobox seçimine göre logo veya metin gösterir. */
 
 const HEADER_BRANDS = {
-  'DOLFIN':  { name: 'DOLFIN',  sub: 'Makine Sanayi', color: '#ff0000' },
-  'ENVA':    { name: 'ENVA',    sub: 'Group',         color: '#1a5f9e' },
-  'VICO':    { name: 'VICO',    sub: 'Group',         color: '#0f8a5f' },
-  'KSYSTEM': { name: 'KSYSTEM', sub: 'Group',         color: '#8a3fa0' }
+  DOLFIN: {
+    type: 'text',
+    name: 'DOLFIN',
+    sub: 'Makine Sanayi',
+    footer: 'CNK ELEKTRONİK MAKİNE SAN A.Ş.',
+    color: '#ff0000'
+  },
+  ENVA: {
+    type: 'logo',
+    logo: '../assets/logos/enva.svg',
+    footer: 'Enva Specialist Waste Ltd',
+    color: '#007938'
+  },
+  VICO: {
+    type: 'logo',
+    logo: '../assets/logos/vico.png',
+    footer: 'vico AB',
+    color: '#C41E3A'
+  },
+  KSYSTEM: {
+    type: 'text',
+    name: 'KSYSTEM',
+    sub: 'Group',
+    footer: 'CNK ELEKTRONİK MAKİNE SAN A.Ş.',
+    color: '#8a3fa0'
+  }
 };
 
+function getFirmaFooter(variant) {
+  const brand = HEADER_BRANDS[variant] || HEADER_BRANDS.DOLFIN;
+  return brand.footer || 'CNK ELEKTRONİK MAKİNE SAN A.Ş.';
+}
+
 function buildHeader(variant, model) {
-  const brand = HEADER_BRANDS[variant] || HEADER_BRANDS['DOLFIN'];
+  const brand = HEADER_BRANDS[variant] || HEADER_BRANDS.DOLFIN;
 
   const header = document.createElement('div');
   header.className = 'page-header';
@@ -18,14 +44,30 @@ function buildHeader(variant, model) {
 
   const left = document.createElement('div');
   left.className = 'ph-brand';
-  const name = document.createElement('span');
-  name.className = 'ph-name';
-  name.textContent = brand.name;
-  const sub = document.createElement('span');
-  sub.className = 'ph-sub';
-  sub.textContent = brand.sub;
-  left.appendChild(name);
-  left.appendChild(sub);
+
+  if (brand.type === 'logo') {
+    left.classList.add('ph-brand-logo');
+    const img = document.createElement('img');
+    img.className = 'ph-logo';
+    img.src = brand.logo;
+    img.alt = variant;
+    left.appendChild(img);
+    if (brand.sub) {
+      const sub = document.createElement('span');
+      sub.className = 'ph-sub';
+      sub.textContent = brand.sub;
+      left.appendChild(sub);
+    }
+  } else {
+    const name = document.createElement('span');
+    name.className = 'ph-name';
+    name.textContent = brand.name;
+    const sub = document.createElement('span');
+    sub.className = 'ph-sub';
+    sub.textContent = brand.sub;
+    left.appendChild(name);
+    left.appendChild(sub);
+  }
 
   const right = document.createElement('div');
   right.className = 'ph-model';

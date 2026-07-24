@@ -10,10 +10,17 @@ try {
     ? path.join(__dirname, 'node_modules', '.bin', 'electron.cmd')
     : path.join(__dirname, 'node_modules', '.bin', 'electron');
 
-  require('electron-reload')(PROJECT_ROOT, {
+  require('electron-reload')(__dirname, {
     electron: electronPath,
     awaitWriteFinish: true,
-    ignored: [/node_modules/, /\.git/, /[\/\\]\./]
+    hardResetMethod: 'exit',
+    ignored: [
+      /node_modules/,
+      /\.git/,
+      /[\/\\]\./,
+      /[\/\\]\.vscode/,
+      /[\/\\]\.cursor/
+    ]
   });
 } catch (e) {
   console.warn('electron-reload aktif değil:', e.message);
@@ -53,6 +60,7 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
+  registerIpcHandlers();
   createWindow();
 
   app.on('activate', () => {
@@ -64,14 +72,25 @@ app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit();
 });
 
-ipcMain.on('minimize-window', () => mainWindow.minimize());
-ipcMain.on('maximize-window', () => {
-  if (mainWindow.isMaximized()) mainWindow.unmaximize();
-  else mainWindow.maximize();
-});
-ipcMain.on('close-window', () => mainWindow.close());
+function registerIpcHandlers() {
+  ipcMain.removeHandler('read-yaml');
+  ipcMain.removeHandler('read-asset');
+  ipcMain.removeHandler('get-guide');
+  ipcMain.removeHandler('print-pdf');
+  ipcMain.removeHandler('export-html');
+  ipcMain.removeAllListeners('minimize-window');
+  ipcMain.removeAllListeners('maximize-window');
+  ipcMain.removeAllListeners('close-window');
 
-ipcMain.handle('read-yaml', async (event, modelName) => {
+  ipcMain.on('minimize-window', () => mainWindow && mainWindow.minimize());
+  ipcMain.on('maximize-window', () => {
+    if (!mainWindow) return;
+    if (mainWindow.isMaximized()) mainWindow.unmaximize();
+    else mainWindow.maximize();
+  });
+  ipcMain.on('close-window', () => mainWindow && mainWindow.close());
+
+  ipcMain.handle('read-yaml', async (event, modelName) => {
   const folder = `${modelName.toLowerCase()}-yaml`;
   const yamlPath = path.join(PROJECT_ROOT, 'yaml-files', folder, `${modelName.toLowerCase()}.yaml`);
   try {
@@ -190,31 +209,68 @@ function inlineImagesToBase64(html) {
   });
 }
 
-ipcMain.handle('export-word', async (event, payload) => {
+ipcMain.handle('export-html', async (event, payload) => {
   const model = (payload && payload.model) || 'klavuz';
-  const html = (payload && payload.html) || '';
+  const bodyHtml = (payload && payload.bodyHtml) || '';
+  const title = (payload && payload.title) || `${model} Kullanım Kılavuzu`;
 
   const { canceled, filePath } = await dialog.showSaveDialog(mainWindow, {
-    defaultPath: `${model}-klavuz.docx`,
-    filters: [{ name: 'Word', extensions: ['docx'] }]
+    defaultPath: `${model}-klavuz.html`,
+    filters: [{ name: 'HTML', extensions: ['html'] }]
   });
   if (canceled || !filePath) return { success: false };
 
   try {
-    const HTMLtoDOCX = require('html-to-docx');
-    const inlined = inlineImagesToBase64(html);
-    const fullHtml = `<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>${inlined}</body></html>`;
+    const cssPath = path.join(__dirname, 'html-export.css');
+    const css = fs.existsSync(cssPath) ? fs.readFileSync(cssPath, 'utf8') : '';
+    const inlined = inlineImagesToBase64(bodyHtml);
+    const safeTitle = String(title)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
 
-    const buffer = await HTMLtoDOCX(fullHtml, null, {
-      table: { row: { cantSplit: true } },
-      footer: false,
-      pageNumber: false,
-      orientation: 'portrait'
-    });
+    const fullHtml = `<!DOCTYPE html>
+<html lang="tr" class="html-export">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>${safeTitle}</title>
+  <style>${css}</style>
+</head>
+<body class="html-export">
+${inlined}
+<script>
+document.querySelectorAll('a.toc-html').forEach(function(row) {
+  row.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    var id = row.getAttribute('href');
+    if (!id || id.charAt(0) !== '#') return;
+    var target = document.getElementById(id.slice(1));
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+document.querySelectorAll('[data-toc-anchor]').forEach(function(el) {
+  var anchorId = el.dataset.tocAnchor;
+  if (!anchorId) return;
+  var a = document.createElement('a');
+  a.href = '#toc-row-' + anchorId;
+  a.style.cssText = 'color:inherit;text-decoration:none;display:block;';
+  a.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    var target = document.getElementById('toc-row-' + anchorId);
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+  while (el.firstChild) a.appendChild(el.firstChild);
+  el.appendChild(a);
+});
+</script>
+</body>
+</html>`;
 
-    fs.writeFileSync(filePath, buffer);
+    fs.writeFileSync(filePath, fullHtml, 'utf8');
     return { success: true, filePath };
   } catch (e) {
     return { success: false, error: e.message };
   }
-});
+  });
+}

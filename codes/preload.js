@@ -8,5 +8,5 @@ contextBridge.exposeInMainWorld('electronAPI', {
   getGuide: (modelName) => ipcRenderer.invoke('get-guide', modelName),
   readAsset: (name) => ipcRenderer.invoke('read-asset', name),
   printPdf: () => ipcRenderer.invoke('print-pdf'),
-  exportWord: (payload) => ipcRenderer.invoke('export-word', payload)
+  exportHtml: (payload) => ipcRenderer.invoke('export-html', payload)
 });

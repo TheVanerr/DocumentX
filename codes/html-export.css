@@ -1,0 +1,379 @@
+/* HTML belge grafik kuralları — PDF (style.css) ile bağımsız, dışa aktarım dosyası */
+
+:root {
+  --html-accent: #4a7cf7;
+  --html-text: #1a1a2e;
+  --html-muted: #4a5568;
+}
+
+html.html-export,
+body.html-export {
+  margin: 0;
+  padding: 0;
+  background: #eef1f6;
+  color: var(--html-text);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body.html-export {
+  padding: 32px 16px 48px;
+}
+
+.html-document.html-unified {
+  width: 100%;
+  max-width: 794px;
+  margin: 0 auto;
+  background: #ffffff;
+  color: var(--html-text);
+  border-radius: 4px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: visible;
+}
+
+.html-cover-section {
+  position: relative;
+  width: 100%;
+  height: 1123px;
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+}
+
+.html-inline-cover,
+.html-cover-section .cover-page {
+  position: relative;
+  width: 100% !important;
+  height: 1123px !important;
+  min-height: 1123px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.html-toc-section {
+  padding: 56px 70px 48px;
+  font-family: 'Calibri', sans-serif;
+  border-top: 1px solid #e8ecf2;
+}
+
+.html-content-section {
+  padding: 0 70px 64px;
+  font-family: 'Calibri', sans-serif;
+  font-size: 10pt;
+  line-height: 1.65;
+  color: var(--html-text);
+  border-top: 1px solid #e8ecf2;
+}
+
+.html-content-section .html-doc-header,
+.html-content-section .page-header {
+  position: static;
+  top: auto;
+  left: auto;
+  right: auto;
+  height: auto;
+  margin: 0;
+  padding: 36px 0 12px;
+}
+
+.html-content-section .html-flow-content {
+  padding: 16px 0 0;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.html-flow-content .md-img,
+.html-flow-content .md-p.md-figure .md-img {
+  max-height: none;
+}
+
+/* ── Kapak ── */
+.cover-page { padding: 0; overflow: hidden; background: #ffffff; }
+
+.cover-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 0;
+}
+
+.cover-overlay {
+  position: absolute;
+  inset: 0;
+  background: #000000;
+  opacity: 1;
+  z-index: 1;
+}
+
+.cover-rect {
+  position: absolute;
+  background: var(--cover-accent, #ff0000);
+  z-index: 2;
+}
+
+.cover-title {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  color: var(--cover-accent, #ff0000);
+  font-family: 'Calibri', 'Segoe UI', sans-serif;
+  font-size: 22pt;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.cover-info {
+  position: absolute;
+  z-index: 2;
+  color: var(--cover-accent, #ff0000);
+  font-family: 'Calibri', 'Segoe UI', sans-serif;
+  font-size: 16pt;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.cover-image {
+  position: absolute;
+  z-index: 2;
+  object-fit: contain;
+}
+
+/* ── Antet ── */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--brand-color, #ff0000);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.ph-brand { display: flex; align-items: baseline; gap: 8px; }
+
+.ph-brand-logo {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  line-height: 1;
+}
+
+.ph-logo {
+  display: block;
+  height: 16px;
+  width: auto;
+  max-width: 72px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.ph-name {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--brand-color, #ff0000);
+  letter-spacing: 0.5px;
+}
+
+.ph-sub {
+  font-size: 10px;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.ph-brand-logo .ph-sub {
+  text-transform: none;
+  letter-spacing: 0.2px;
+  font-size: 9px;
+}
+
+.ph-model {
+  font-size: 11px;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 0.5px;
+}
+
+/* ── İçindekiler ── */
+.toc-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--html-text);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--html-accent);
+}
+
+.toc-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  font-size: 13px;
+  color: #2d3748 !important;
+  margin-bottom: 9px;
+  line-height: 1.4;
+  text-decoration: none !important;
+}
+
+.toc-row * {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.toc-row.toc-html {
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.toc-row.toc-html:hover,
+.toc-row.toc-html:hover * {
+  color: var(--html-accent) !important;
+}
+
+.toc-row.toc-html .toc-label { flex: 1; }
+
+.toc-num { font-weight: 700; color: #1a2540; flex-shrink: 0; min-width: 20px; }
+.toc-l1 { font-weight: 700; font-size: 14px; color: #1a2540; margin-top: 4px; }
+.toc-l1 .toc-num { color: var(--html-accent); }
+.toc-label { flex-shrink: 1; }
+
+/* ── Tipografi ── */
+.md-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--html-text);
+  margin-bottom: 6px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--html-accent);
+  line-height: 1.25;
+}
+
+.md-h { color: #1a2540; font-family: 'Calibri', sans-serif; font-weight: 700; line-height: 1.3; }
+.md-h1 { font-size: 12pt; margin: 22px 0 10px; }
+.md-h2 { font-size: 11pt; margin: 20px 0 9px; padding-bottom: 4px; border-bottom: 1px solid #e2e8f0; }
+.md-h3 { font-size: 11pt; margin: 16px 0 7px; }
+.md-h4 { font-size: 11pt; margin: 14px 0 6px; }
+.md-h5 { font-size: 11pt; margin: 12px 0 5px; }
+.md-h6 { font-size: 11pt; margin: 12px 0 5px; color: var(--html-muted); }
+
+.sec-h { color: #1a2540; font-family: 'Calibri', sans-serif; font-weight: 700; line-height: 1.3; }
+.sec-h1 {
+  font-size: 12pt;
+  margin: 4px 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--html-accent);
+}
+.sec-h2 { font-size: 11pt; margin: 20px 0 9px; }
+.sec-h3 { font-size: 11pt; margin: 16px 0 7px; }
+.sec-h4 { font-size: 11pt; margin: 13px 0 6px; }
+.sec-h5, .sec-h6 { font-size: 11pt; margin: 12px 0 5px; color: var(--html-muted); }
+
+.md-p { margin: 0 0 11px; text-align: justify; }
+
+.md-list { margin: 0 0 11px; padding-left: 22px; }
+.md-list li { margin-bottom: 5px; text-align: justify; }
+
+.md-quote {
+  margin: 0 0 12px;
+  padding: 8px 16px;
+  border-left: 4px solid var(--html-accent);
+  background: #f4f7ff;
+  color: #33415c;
+  font-style: italic;
+}
+
+.md-code {
+  margin: 0 0 12px;
+  padding: 12px 14px;
+  background: #f5f6fa;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.md-code code {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 12px;
+  color: #2d3748;
+  white-space: pre-wrap;
+}
+
+.md-inline-code {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 12px;
+  background: #eef1f7;
+  padding: 1px 5px;
+  border-radius: 4px;
+  color: #c026d3;
+}
+
+.md-hr {
+  border: none;
+  border-top: 1px solid #cbd5e0;
+  margin: 16px 0;
+}
+
+.md-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0 14px;
+  font-family: 'Calibri', sans-serif;
+  font-size: 10pt;
+}
+
+.md-table th, .md-table td {
+  border: 1px solid #cbd5e0;
+  padding: 7px 10px;
+  vertical-align: middle;
+}
+
+.md-table th {
+  text-align: center;
+  background: #eef2fb;
+  font-weight: 700;
+  color: #1a2540;
+}
+
+.md-table td { text-align: left; }
+.md-table tr:nth-child(even) td { background: #f8fafc; }
+
+.html-flow-content a { color: var(--html-accent); text-decoration: none; }
+.html-flow-content a:hover { text-decoration: underline; }
+
+.md-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 8px auto;
+}
+
+.md-p.md-figure { text-align: center; margin: 0 0 11px; }
+
+.md-p.md-figure .md-img {
+  display: block;
+  margin: 8px auto;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.md-table .md-img {
+  max-width: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.md-table th > *, .md-table td > * { vertical-align: middle; }
+
+.md-p:not(.md-figure) .md-img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 4px;
+}

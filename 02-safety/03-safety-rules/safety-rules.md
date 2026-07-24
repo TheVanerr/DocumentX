@@ -1,4 +1,4 @@
-# 2.3 Operasyonel Güvenlik Kuralları (Safety Rules)
+# 2.3 Operasyonel Güvenlik Kuralları
 
 Bu bölüm, makinenin çalıştırılması, temizlenmesi ve bakım işlemleri sırasında sahada uygulanması zorunlu olan somut ve yasal bağlayıcılığı en yüksek eylem kurallarını tanımlar. İş kazalarını, ciddi yaralanmaları ve tesis hasarlarını önlemek için tasarlanmış bu kuralların ihlali durumunda, makine derhal durdurulmalı ve operasyon güvenliği tekrar sağlanana kadar devreye alınmamalıdır. Bu kuralların etrafından dolaşılması (bypass edilmesi) durumunda üretici firma tüm hukuki sorumluluktan muaf tutulur.
 

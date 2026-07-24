@@ -1,18 +1,2212 @@
 {
-  // Sol menüde makine koduna göre renklendirme (Folder Regex Color eklentisi gerekir)
-  // Extensions → "Folder Regex Color" ara ve yükle (jterrazz.folder-regex-color)
-  "folder-regex-color.folders": [
-    { "regex": "kbn", "color": "red", "symbol": "K", "tooltip": "KBN makinesi" },
-    { "regex": "knv", "color": "cyan", "symbol": "N", "tooltip": "KNV makinesi" },
-    { "regex": "lym", "color": "blue", "symbol": "L", "tooltip": "LYM makinesi" },
-    { "regex": "mst", "color": "green", "symbol": "M", "tooltip": "MST makinesi" },
-    { "regex": "pyt", "color": "yellow", "symbol": "P", "tooltip": "PYT makinesi" },
-    { "regex": "rts", "color": "magenta", "symbol": "R", "tooltip": "RTS makinesi" },
-    { "regex": "ult", "color": "custom1", "symbol": "U", "tooltip": "ULT makinesi" },
-    { "regex": "vdl", "color": "custom2", "symbol": "V", "tooltip": "VDL makinesi" }
+  "explorer.decorations.colors": true,
+  "explorer.decorations.badges": true,
+  "folder-color.pathColors": [
+    {
+      "color": "foldercolorizer.color_ff0000",
+      "folderPath": "kbn",
+      "badge": "K"
+    },
+    {
+      "color": "foldercolorizer.color_00ffff",
+      "folderPath": "knv",
+      "badge": "N"
+    },
+    {
+      "color": "foldercolorizer.color_0087ff",
+      "folderPath": "lym",
+      "badge": "L"
+    },
+    {
+      "color": "foldercolorizer.color_00ff00",
+      "folderPath": "mst",
+      "badge": "M"
+    },
+    {
+      "color": "foldercolorizer.color_ffff00",
+      "folderPath": "pyt",
+      "badge": "P"
+    },
+    {
+      "color": "foldercolorizer.color_ff00ff",
+      "folderPath": "rts",
+      "badge": "R"
+    },
+    {
+      "color": "foldercolorizer.color_ff8800",
+      "folderPath": "ult",
+      "badge": "U"
+    },
+    {
+      "color": "foldercolorizer.color_aa44ff",
+      "folderPath": "vdl",
+      "badge": "V"
+    }
+  ],
+  "folder-path-color.folders": [
+    {
+      "path": "yaml-files/kbn-yaml",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "assets/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN assets"
+    },
+    {
+      "path": "yaml-files/knv-yaml",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "assets/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV assets"
+    },
+    {
+      "path": "yaml-files/lym-yaml",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "assets/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM assets"
+    },
+    {
+      "path": "yaml-files/mst-yaml",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "assets/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST assets"
+    },
+    {
+      "path": "yaml-files/pyt-yaml",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "assets/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT assets"
+    },
+    {
+      "path": "yaml-files/rts-yaml",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "assets/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS assets"
+    },
+    {
+      "path": "yaml-files/ult-yaml",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "assets/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT assets"
+    },
+    {
+      "path": "yaml-files/vdl-yaml",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "assets/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL assets"
+    },
+    {
+      "path": "03-overview/01-machine-description/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "03-overview/01-machine-description/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "03-overview/01-machine-description/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "03-overview/01-machine-description/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "03-overview/01-machine-description/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "03-overview/01-machine-description/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "03-overview/01-machine-description/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "03-overview/01-machine-description/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "03-overview/03-machine-spec/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "03-overview/03-machine-spec/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "03-overview/03-machine-spec/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "03-overview/03-machine-spec/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "03-overview/03-machine-spec/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "03-overview/03-machine-spec/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "03-overview/03-machine-spec/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "03-overview/03-machine-spec/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "03-overview/04-machine-controls/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "03-overview/04-machine-controls/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "03-overview/04-machine-controls/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "03-overview/04-machine-controls/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "03-overview/04-machine-controls/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "03-overview/04-machine-controls/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "03-overview/04-machine-controls/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "03-overview/04-machine-controls/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "03-overview/05-machine-layout/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "03-overview/05-machine-layout/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "03-overview/05-machine-layout/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "03-overview/05-machine-layout/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "03-overview/05-machine-layout/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "03-overview/05-machine-layout/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "03-overview/05-machine-layout/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "03-overview/05-machine-layout/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "05-assembly/01-machine-assembly/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "05-assembly/01-machine-assembly/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "05-assembly/01-machine-assembly/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "05-assembly/01-machine-assembly/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "05-assembly/01-machine-assembly/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "05-assembly/01-machine-assembly/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "05-assembly/01-machine-assembly/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "05-assembly/01-machine-assembly/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "05-assembly/02-machine-position/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "05-assembly/02-machine-position/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "05-assembly/02-machine-position/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "05-assembly/02-machine-position/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "05-assembly/02-machine-position/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "05-assembly/02-machine-position/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "05-assembly/02-machine-position/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "05-assembly/02-machine-position/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "05-assembly/03-machine-install/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "05-assembly/03-machine-install/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "05-assembly/03-machine-install/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "05-assembly/03-machine-install/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "05-assembly/03-machine-install/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "05-assembly/03-machine-install/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "05-assembly/03-machine-install/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "05-assembly/03-machine-install/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "05-assembly/04-safety-test/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "05-assembly/04-safety-test/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "05-assembly/04-safety-test/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "05-assembly/04-safety-test/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "05-assembly/04-safety-test/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "05-assembly/04-safety-test/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "05-assembly/04-safety-test/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "05-assembly/04-safety-test/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "05-assembly/05-install-test/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "05-assembly/05-install-test/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "05-assembly/05-install-test/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "05-assembly/05-install-test/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "05-assembly/05-install-test/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "05-assembly/05-install-test/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "05-assembly/05-install-test/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "05-assembly/05-install-test/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "05-assembly/06-comm/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "05-assembly/06-comm/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "05-assembly/06-comm/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "05-assembly/06-comm/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "05-assembly/06-comm/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "05-assembly/06-comm/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "05-assembly/06-comm/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "05-assembly/06-comm/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "06-settings/01-mechanical-settings/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "06-settings/01-mechanical-settings/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "06-settings/01-mechanical-settings/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "06-settings/01-mechanical-settings/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "06-settings/01-mechanical-settings/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "06-settings/01-mechanical-settings/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "06-settings/01-mechanical-settings/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "06-settings/01-mechanical-settings/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "06-settings/02-safety-settings/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "06-settings/02-safety-settings/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "06-settings/02-safety-settings/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "06-settings/02-safety-settings/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "06-settings/02-safety-settings/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "06-settings/02-safety-settings/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "06-settings/02-safety-settings/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "06-settings/02-safety-settings/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "06-settings/03-electrical-settings/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "06-settings/03-electrical-settings/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "06-settings/03-electrical-settings/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "06-settings/03-electrical-settings/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "06-settings/03-electrical-settings/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "06-settings/03-electrical-settings/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "06-settings/03-electrical-settings/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "06-settings/03-electrical-settings/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "06-settings/04-hydrolic-settings/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "06-settings/04-hydrolic-settings/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "06-settings/04-hydrolic-settings/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "06-settings/04-hydrolic-settings/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "06-settings/04-hydrolic-settings/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "06-settings/04-hydrolic-settings/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "06-settings/04-hydrolic-settings/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "06-settings/04-hydrolic-settings/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "06-settings/05-pnomatic-settings/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "06-settings/05-pnomatic-settings/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "06-settings/05-pnomatic-settings/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "06-settings/05-pnomatic-settings/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "06-settings/05-pnomatic-settings/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "06-settings/05-pnomatic-settings/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "06-settings/05-pnomatic-settings/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "06-settings/05-pnomatic-settings/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "06-settings/06-vacuum-settings/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "06-settings/06-vacuum-settings/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "06-settings/06-vacuum-settings/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "06-settings/06-vacuum-settings/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "06-settings/06-vacuum-settings/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "06-settings/06-vacuum-settings/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "06-settings/06-vacuum-settings/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "06-settings/06-vacuum-settings/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "06-settings/07-other-settings/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "06-settings/07-other-settings/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "06-settings/07-other-settings/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "06-settings/07-other-settings/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "06-settings/07-other-settings/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "06-settings/07-other-settings/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "06-settings/07-other-settings/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "06-settings/07-other-settings/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "07-operation/01-operating-modes/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "07-operation/01-operating-modes/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "07-operation/01-operating-modes/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "07-operation/01-operating-modes/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "07-operation/01-operating-modes/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "07-operation/01-operating-modes/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "07-operation/01-operating-modes/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "07-operation/01-operating-modes/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "07-operation/02-machine-start/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "07-operation/02-machine-start/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "07-operation/02-machine-start/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "07-operation/02-machine-start/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "07-operation/02-machine-start/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "07-operation/02-machine-start/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "07-operation/02-machine-start/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "07-operation/02-machine-start/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "07-operation/03-shut-down/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "07-operation/03-shut-down/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "07-operation/03-shut-down/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "07-operation/03-shut-down/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "07-operation/03-shut-down/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "07-operation/03-shut-down/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "07-operation/03-shut-down/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "07-operation/03-shut-down/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "07-operation/04-operating-sequence/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "07-operation/04-operating-sequence/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "07-operation/04-operating-sequence/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "07-operation/04-operating-sequence/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "07-operation/04-operating-sequence/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "07-operation/04-operating-sequence/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "07-operation/04-operating-sequence/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "07-operation/04-operating-sequence/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "07-operation/05-operating-chronology/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "07-operation/05-operating-chronology/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "07-operation/05-operating-chronology/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "07-operation/05-operating-chronology/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "07-operation/05-operating-chronology/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "07-operation/05-operating-chronology/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "07-operation/05-operating-chronology/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "07-operation/05-operating-chronology/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "07-operation/06-operation-other/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "07-operation/06-operation-other/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "07-operation/06-operation-other/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "07-operation/06-operation-other/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "07-operation/06-operation-other/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "07-operation/06-operation-other/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "07-operation/06-operation-other/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "07-operation/06-operation-other/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "08-capacity/01-product-capacity/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "08-capacity/01-product-capacity/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "08-capacity/01-product-capacity/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "08-capacity/01-product-capacity/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "08-capacity/01-product-capacity/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "08-capacity/01-product-capacity/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "08-capacity/01-product-capacity/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "08-capacity/01-product-capacity/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "08-capacity/02-specific-setup/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "08-capacity/02-specific-setup/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "08-capacity/02-specific-setup/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "08-capacity/02-specific-setup/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "08-capacity/02-specific-setup/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "08-capacity/02-specific-setup/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "08-capacity/02-specific-setup/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "08-capacity/02-specific-setup/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "09-maintenance/01-main-inst/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "09-maintenance/01-main-inst/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "09-maintenance/01-main-inst/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "09-maintenance/01-main-inst/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "09-maintenance/01-main-inst/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "09-maintenance/01-main-inst/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "09-maintenance/01-main-inst/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "09-maintenance/01-main-inst/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "10-cleaning/01-clean-sanitize/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "10-cleaning/01-clean-sanitize/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "10-cleaning/01-clean-sanitize/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "10-cleaning/01-clean-sanitize/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "10-cleaning/01-clean-sanitize/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "10-cleaning/01-clean-sanitize/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "10-cleaning/01-clean-sanitize/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "10-cleaning/01-clean-sanitize/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "11-troubleshooting/01-fault-finding/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "11-troubleshooting/01-fault-finding/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "11-troubleshooting/01-fault-finding/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "11-troubleshooting/01-fault-finding/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "11-troubleshooting/01-fault-finding/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "11-troubleshooting/01-fault-finding/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "11-troubleshooting/01-fault-finding/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "11-troubleshooting/01-fault-finding/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "11-troubleshooting/02-trob-general/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "11-troubleshooting/02-trob-general/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "11-troubleshooting/02-trob-general/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "11-troubleshooting/02-trob-general/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "11-troubleshooting/02-trob-general/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "11-troubleshooting/02-trob-general/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "11-troubleshooting/02-trob-general/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "11-troubleshooting/02-trob-general/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "11-troubleshooting/03-trob-electrical/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "11-troubleshooting/03-trob-electrical/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "11-troubleshooting/03-trob-electrical/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "11-troubleshooting/03-trob-electrical/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "11-troubleshooting/03-trob-electrical/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "11-troubleshooting/03-trob-electrical/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "11-troubleshooting/03-trob-electrical/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "11-troubleshooting/03-trob-electrical/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "11-troubleshooting/04-trob-hydro/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "11-troubleshooting/04-trob-hydro/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "11-troubleshooting/04-trob-hydro/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "11-troubleshooting/04-trob-hydro/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "11-troubleshooting/04-trob-hydro/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "11-troubleshooting/04-trob-hydro/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "11-troubleshooting/04-trob-hydro/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "11-troubleshooting/04-trob-hydro/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "11-troubleshooting/05-trob-pnemo/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "11-troubleshooting/05-trob-pnemo/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "11-troubleshooting/05-trob-pnemo/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "11-troubleshooting/05-trob-pnemo/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "11-troubleshooting/05-trob-pnemo/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "11-troubleshooting/05-trob-pnemo/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "11-troubleshooting/05-trob-pnemo/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "11-troubleshooting/05-trob-pnemo/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "11-troubleshooting/06-trob-vacuum/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "11-troubleshooting/06-trob-vacuum/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "11-troubleshooting/06-trob-vacuum/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "11-troubleshooting/06-trob-vacuum/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "11-troubleshooting/06-trob-vacuum/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "11-troubleshooting/06-trob-vacuum/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "11-troubleshooting/06-trob-vacuum/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "11-troubleshooting/06-trob-vacuum/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "11-troubleshooting/07-trob-sensors/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "11-troubleshooting/07-trob-sensors/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "11-troubleshooting/07-trob-sensors/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "11-troubleshooting/07-trob-sensors/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "11-troubleshooting/07-trob-sensors/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "11-troubleshooting/07-trob-sensors/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "11-troubleshooting/07-trob-sensors/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "11-troubleshooting/07-trob-sensors/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "12-dismantle/01-dismantle/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "12-dismantle/01-dismantle/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "12-dismantle/01-dismantle/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "12-dismantle/01-dismantle/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "12-dismantle/01-dismantle/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "12-dismantle/01-dismantle/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "12-dismantle/01-dismantle/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "12-dismantle/01-dismantle/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "12-dismantle/02-disable/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "12-dismantle/02-disable/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "12-dismantle/02-disable/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "12-dismantle/02-disable/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "12-dismantle/02-disable/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "12-dismantle/02-disable/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "12-dismantle/02-disable/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "12-dismantle/02-disable/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "12-dismantle/03-scrapping/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "12-dismantle/03-scrapping/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "12-dismantle/03-scrapping/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "12-dismantle/03-scrapping/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "12-dismantle/03-scrapping/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "12-dismantle/03-scrapping/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "12-dismantle/03-scrapping/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "12-dismantle/03-scrapping/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "13-documents/01-documents/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "13-documents/01-documents/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "13-documents/01-documents/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "13-documents/01-documents/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "13-documents/01-documents/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "13-documents/01-documents/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "13-documents/01-documents/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "13-documents/01-documents/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "13-documents/02-drawings/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "13-documents/02-drawings/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "13-documents/02-drawings/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "13-documents/02-drawings/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "13-documents/02-drawings/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "13-documents/02-drawings/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "13-documents/02-drawings/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "13-documents/02-drawings/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "13-documents/03-part-list/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "13-documents/03-part-list/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "13-documents/03-part-list/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "13-documents/03-part-list/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "13-documents/03-part-list/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "13-documents/03-part-list/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "13-documents/03-part-list/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "13-documents/03-part-list/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "14-index/01-annexes/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "14-index/01-annexes/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "14-index/01-annexes/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "14-index/01-annexes/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "14-index/01-annexes/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "14-index/01-annexes/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "14-index/01-annexes/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "14-index/01-annexes/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "14-index/02-glossary/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "14-index/02-glossary/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "14-index/02-glossary/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "14-index/02-glossary/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "14-index/02-glossary/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "14-index/02-glossary/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "14-index/02-glossary/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "14-index/02-glossary/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    },
+    {
+      "path": "14-index/03-indexes/kbn",
+      "color": "red",
+      "symbol": "K",
+      "tooltip": "KBN makinesi"
+    },
+    {
+      "path": "14-index/03-indexes/knv",
+      "color": "cyan",
+      "symbol": "N",
+      "tooltip": "KNV makinesi"
+    },
+    {
+      "path": "14-index/03-indexes/lym",
+      "color": "blue",
+      "symbol": "L",
+      "tooltip": "LYM makinesi"
+    },
+    {
+      "path": "14-index/03-indexes/mst",
+      "color": "green",
+      "symbol": "M",
+      "tooltip": "MST makinesi"
+    },
+    {
+      "path": "14-index/03-indexes/pyt",
+      "color": "yellow",
+      "symbol": "P",
+      "tooltip": "PYT makinesi"
+    },
+    {
+      "path": "14-index/03-indexes/rts",
+      "color": "magenta",
+      "symbol": "R",
+      "tooltip": "RTS makinesi"
+    },
+    {
+      "path": "14-index/03-indexes/ult",
+      "color": "custom1",
+      "symbol": "U",
+      "tooltip": "ULT makinesi"
+    },
+    {
+      "path": "14-index/03-indexes/vdl",
+      "color": "custom2",
+      "symbol": "V",
+      "tooltip": "VDL makinesi"
+    }
   ],
   "workbench.colorCustomizations": {
-    "folderRegexColor.custom1": "#FF8800",
-    "folderRegexColor.custom2": "#AA44FF"
+    "folderPathColor.custom1": "#FF8800",
+    "folderPathColor.custom2": "#AA44FF"
   }
 }

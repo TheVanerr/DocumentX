@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DocumentX</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="html-view.css" />
 </head>
-<body>
+<body class="view-pdf">
 
   <!-- Custom Title Bar -->
   <div class="titlebar">
@@ -46,22 +47,10 @@
         <span class="select-arrow">&#9662;</span>
       </div>
 
-      <!-- Antet Seçici -->
-      <label class="select-label">Antet</label>
+      <!-- Firma Seçici -->
+      <label class="select-label">Firma</label>
       <div class="custom-select-wrapper">
-        <select id="headerSelect" class="model-select select-sm" onchange="onHeaderChange(this.value)">
-          <option value="DOLFIN">DOLFIN</option>
-          <option value="ENVA">ENVA</option>
-          <option value="VICO">VICO</option>
-          <option value="KSYSTEM">KSYSTEM</option>
-        </select>
-        <span class="select-arrow">&#9662;</span>
-      </div>
-
-      <!-- Kapak Seçici -->
-      <label class="select-label">Kapak</label>
-      <div class="custom-select-wrapper">
-        <select id="coverSelect" class="model-select select-sm" onchange="onCoverVariantChange(this.value)">
+        <select id="firmaSelect" class="model-select select-sm" onchange="onFirmaChange(this.value)">
           <option value="DOLFIN">DOLFIN</option>
           <option value="ENVA">ENVA</option>
           <option value="VICO">VICO</option>
@@ -83,6 +72,14 @@
           </svg>
           <span id="dateLabel">Tarih</span>
         </button>
+      </div>
+    </div>
+
+    <!-- Görünüm Modu -->
+    <div class="navbar-center">
+      <div class="view-toggle">
+        <button class="view-btn" data-view="html" onclick="setViewMode('html')" title="Sürekli kaydırmalı HTML görünümü">HTML</button>
+        <button class="view-btn active" data-view="pdf" onclick="setViewMode('pdf')" title="Sayfalı A4 PDF önizleme">PDF</button>
       </div>
     </div>
 
@@ -125,13 +122,13 @@
         PDF Çıktı
       </button>
 
-      <!-- WORD Butonu -->
-      <button class="pdf-btn word-btn" onclick="exportWord()" title="Word Olarak Kaydet">
+      <!-- HTML Butonu -->
+      <button class="pdf-btn html-btn" onclick="exportHtml()" title="HTML Olarak Kaydet">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
           <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-          <path d="M8 13L9.5 18L11 14L12.5 18L14 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 10H16M8 14H13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
         </svg>
-        WORD Çıktı
+        HTML Çıktı
       </button>
     </div>
   </nav>

@@ -93,9 +93,9 @@ html, body {
   height: var(--navbar-h);
   background: var(--bg-secondary);
   border-bottom: 1px solid var(--border);
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
   padding: 0 20px;
   gap: 16px;
   position: relative;
@@ -108,12 +108,56 @@ html, body {
   gap: 8px;
   flex-wrap: nowrap;
   min-width: 0;
+  justify-self: start;
+}
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+  justify-self: center;
 }
 
 .navbar-right {
   display: flex;
   align-items: center;
   gap: 12px;
+  justify-self: end;
+}
+
+/* ── VIEW TOGGLE (HTML / PDF) ── */
+.view-toggle {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-tertiary);
+  padding: 3px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.view-btn {
+  min-width: 64px;
+  padding: 6px 16px;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.15s;
+  letter-spacing: 0.4px;
+}
+
+.view-btn:hover {
+  background: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.view-btn.active {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(74, 124, 247, 0.35);
 }
 
 .select-label {
@@ -375,10 +419,10 @@ html, body {
   transform: scale(0.97);
 }
 
-.word-btn:hover {
-  background: rgba(43, 87, 154, 0.16);
-  border-color: #2b579a;
-  color: #6ea8e8;
+.html-btn:hover {
+  background: rgba(56, 161, 105, 0.16);
+  border-color: #38a169;
+  color: #68d391;
 }
 
 /* ── CONTENT AREA ── */
@@ -530,6 +574,20 @@ html, body {
   font-family: 'Segoe UI', sans-serif;
 }
 .ph-brand { display: flex; align-items: baseline; gap: 8px; }
+.ph-brand-logo {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  line-height: 1;
+}
+.ph-logo {
+  display: block;
+  height: 16px;
+  width: auto;
+  max-width: 72px;
+  object-fit: contain;
+  object-position: left center;
+}
 .ph-name {
   font-size: 17px;
   font-weight: 800;
@@ -541,6 +599,11 @@ html, body {
   color: #777;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+}
+.ph-brand-logo .ph-sub {
+  text-transform: none;
+  letter-spacing: 0.2px;
+  font-size: 9px;
 }
 .ph-model { font-size: 11px; font-weight: 600; color: #555; letter-spacing: 0.5px; }
 
@@ -724,11 +787,13 @@ html, body {
 .a4-page.cover-page {
   padding: 0;
   overflow: hidden;
+  background: #ffffff;
 }
 
 .cover-page {
   padding: 0;
   overflow: hidden;
+  background: #ffffff;
 }
 
 .cover-bg {
@@ -751,7 +816,7 @@ html, body {
 
 .cover-rect {
   position: absolute;
-  background: #ff0000;
+  background: var(--cover-accent, #ff0000);
   z-index: 2;
 }
 
@@ -760,7 +825,7 @@ html, body {
   z-index: 2;
   display: flex;
   align-items: center;
-  color: #ff0000;
+  color: var(--cover-accent, #ff0000);
   font-family: 'Calibri', 'Segoe UI', sans-serif;
   font-size: 22pt;
   font-weight: 700;
@@ -770,7 +835,7 @@ html, body {
 .cover-info {
   position: absolute;
   z-index: 2;
-  color: #ff0000;
+  color: var(--cover-accent, #ff0000);
   font-family: 'Calibri', 'Segoe UI', sans-serif;
   font-size: 16pt;
   font-weight: 700;

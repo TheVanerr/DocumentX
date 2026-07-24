@@ -1,4 +1,4 @@
-# 4.0. Taşıma ve Nakliye
+# 4.0. TAŞIMA VE NAKLİYE
 
 Bu bölüm, makinenin tesise ulaştıktan sonra güvenli bir şekilde indirilmesi, saha içinde taşınması ve nihai çalışma alanına konumlandırılması için izlenmesi gereken temel prosedürleri kapsar. 
 

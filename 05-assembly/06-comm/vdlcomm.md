@@ -27,13 +27,13 @@ Tanklar uygun sıcaklığa ve seviyeye ulaştıktan sonra sistem parçasız olar
 2. Tambur devir hızı, frekans sürücüsü üzerinden [...] Hz başlangıç değerine ayarlanır.
 3. Pompalar devreye alınır. Püskürtme kollarından su çıkışının düzgün ve homojen olduğu gözle kontrol edilir.
 4. Tüm bağlantı noktaları, flanşlar ve boru hatları sıvı kaçağı açısından kontrol edilir. Kaçak tespit edilmesi durumunda sistem durdurulur, ilgili bağlantı sıkılaştırılır ve kontrol tekrarlanır.
-5. Sistem [...] dakika süreyle parçasız çalıştırılarak kararlı çalışma doğrulanır.
+5. Sistem 30 dakika süreyle parçasız çalıştırılarak kararlı çalışma doğrulanır.
 
 ## 5.6.4. Tambur Devir Hızının Ayarlanması
 
 Tambur devir hızı, işlenecek parçaların boyutuna, geometrisine ve ağırlığına göre frekans sürücüsü üzerinden optimize edilmelidir. Devir hızı çok yüksek ayarlandığında parçalar tambur içinde kontrolsüz yuvarlanarak birbirine veya tambur yüzeyine zarar verebilir; çok düşük ayarlandığında ise parçaların ilerlemesi yavaşlayarak yıkama verimliliği düşer. Optimum değer, farklı hız kademelerinde gerçek parçalarla yapılacak kısa test koşuları ile belirlenelidir.
 
-## 5.6.5. Opsiyonel Kurutma Ünitesinin Devreye Alınması
+## 5.6.5. Kurutma Ünitesinin Devreye Alınması
 
 Kurutma ünitesi mevcut ise sistem tambur ve pompalarla birlikte çalışır duruma geldikten sonra devreye alınır:
 

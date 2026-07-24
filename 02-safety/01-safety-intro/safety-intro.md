@@ -1,10 +1,10 @@
-# 2.1 Güvenliğe Giriş ve İşletme Sorumlulukları (Safety Introduction)
+# 2.1 Güvenliğe Giriş ve İşletme Sorumlulukları
 
 Bu bölüm, endüstriyel yıkama makinesinin güvenli çalışma sınırlarını, tesis yöneticisinin (işverenin) yasal yükümlülüklerini ve kullanıcı personel için geçerli olan emniyet çerçevesini belirler. Bu kılavuzda yer alan güvenlik talimatları, uluslararası Makine Emniyeti Yönetmeliği (2006/42/AT) gereksinimlerine göre hazırlanmıştır. Kılavuzdaki güvenlik kurallarının ihlali, telafisi mümkün olmayan yaralanmalara, maddi hasarlara ve çevre felaketlerine yol açabilir; bu tür ihlallerden doğacak tüm hukuki ve cezai mesuliyet münhasıran makineyi işleten kuruma aittir.
 
 ---
 
-### 2.1.1 Amacına Uygun Kullanım (Intended Use)
+### 2.1.1 Amacına Uygun Kullanım
 Bu makine; metal, plastik veya kompozit alaşımlı spesifik endüstriyel parçaların yüzeylerindeki yağ, talaş, toz ve diğer üretim kalıntılarının, su bazlı ve üretici tarafından onaylanmış kimyasal solüsyonlar kullanılarak termal ve mekanik etkilerle (basınçlı su jeti) temizlenmesi amacıyla tasarlanmış ve üretilmiştir. 
 
 Makinenin "Amacına Uygun Kullanımı", yalnızca aşağıdaki koşulların tamamının eşzamanlı olarak sağlanması durumunda geçerlidir:
@@ -17,7 +17,7 @@ Bu makine, sadece kapalı ve endüstriyel üretim alanlarında kullanılmak üze
 
 ---
 
-### 2.1.2 Öngörülebilir Yanlış Kullanım (Foreseeable Misuse) ve Kimyasal Güvenlik
+### 2.1.2 Öngörülebilir Yanlış Kullanım ve Kimyasal Güvenlik
 Makinenin, tasarlandığı temel mühendislik prensipleri ve güvenlik normları dışında kullanılması "Öngörülebilir Yanlış Kullanım" olarak kabul edilir. Aşağıda listelenen eylemler kesinlikle yasaktır ve tespit edilmesi durumunda makine **derhal garanti kapsamı dışında kalır**. Bu eylemlerden doğacak iş kazaları veya tesis hasarları tamamen işletmecinin sorumluluğundadır.
 
 **1. Malzeme ve Parça Hataları:**

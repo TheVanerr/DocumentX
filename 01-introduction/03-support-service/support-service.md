@@ -1,4 +1,4 @@
-# 1.3 Destek ve Servis (Support and Service)
+# 1.3 Destek ve Servis
 
 ## 1.3.1 Üretici ve Merkez Servis İletişim Bilgileri
 

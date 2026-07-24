@@ -1,10 +1,10 @@
-# 2.2 Genel Güvenlik Verileri ve Bilgileri (Safety Information)
+# 2.2 Genel Güvenlik Verileri ve Bilgileri
 
 Bu bölüm, endüstriyel yıkama makinesinin tasarım ve imalat aşamalarında gerçekleştirilen EN ISO 12100 risk değerlendirmesi sonuçlarını içerir. Tasarımla alınan güvenlik önlemlerine rağmen ortadan kaldırılamayan "kalıntı riskler", makine üzerindeki uyarı etiketleri, çevresel emisyon değerleri ve zorunlu Kişisel Koruyucu Donanım (KKD) matrisi aşağıda detaylandırılmıştır.
 
 ---
 
-### 2.2.1 Kalıntı Riskler (Residual Risks)
+### 2.2.1 Kalıntı Riskler
 Makinenin çevresine entegre edilen fiziki muhafazalar, kapı kilitleri (interlock) ve elektronik emniyet sistemlerine rağmen makinenin doğası gereği barındırdığı, tamamen sıfırlanamayan kalıntı riskler şunlardır. Operatör ve bakım personeli bu risklerin bilincinde olmalı ve ilgili KKD'leri kullanmalıdır:
 
 * **Termal Riskler (Sıcak Yüzey ve Buhar):** Yıkama döngüsü tamamlandıktan hemen sonra yükleme kapağı açıldığında, kabin içerisinden dışarıya doğru ani bir sıcak buhar salınımı gerçekleşir. Ayrıca, yıkama işlemi biten galvanizli sepetler ve iş parçaları yüksek sıcaklıkta (genellikle 50°C - 80°C arası) çıkmaktadır. Çıplak elle temas halinde birinci veya ikinci derece yanık riski mevcuttur.

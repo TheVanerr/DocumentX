@@ -2,8 +2,9 @@ let currentModel = '';
 let currentLang = 'tr';
 let currentRev = '';
 let currentDate = '';
-let currentHeaderVariant = 'DOLFIN';
-let currentCoverVariant = 'DOLFIN';
+let currentFirma = 'DOLFIN';
+let viewMode = 'pdf';
+let lastGuideCache = null;
 
 async function onModelChange(value) {
   currentModel = value;
@@ -70,6 +71,15 @@ function preloadImages(srcs) {
 
 /* ── Kılavuzu oluştur ── */
 async function renderGuide(modelName, tree, container) {
+  lastGuideCache = { modelName, tree };
+  if (viewMode === 'html') {
+    await renderHtmlGuide(modelName, tree, container);
+  } else {
+    await renderPdfGuide(modelName, tree, container);
+  }
+}
+
+async function renderPdfGuide(modelName, tree, container) {
   const { blocks, entries } = buildBlocks(tree);
   await preloadImages(collectImageSrcs(blocks));
   const contentPages = computePages(blocks);
@@ -88,12 +98,13 @@ async function renderGuide(modelName, tree, container) {
   }
 
   container.innerHTML = '';
+  container.className = 'pages-container';
   renderPages(tocPages, container, 1, modelName);
   renderPages(contentPages, container, T + 1, modelName);
 
   // Kapak sayfası: 1. sayfa, numarasız
   const cover = buildCoverPage({
-    model: modelName, rev: currentRev, date: currentDate, variant: currentCoverVariant
+    model: modelName, rev: currentRev, date: currentDate, variant: currentFirma
   });
   container.insertBefore(cover, container.firstChild);
 
@@ -130,6 +141,86 @@ async function renderGuide(modelName, tree, container) {
       if (pg) a.href = '#' + pg.id;
     }
   });
+}
+
+async function renderHtmlGuide(modelName, tree, container) {
+  const { blocks, entries } = buildBlocks(tree);
+  await preloadImages(collectImageSrcs(blocks));
+
+  const tocBlocks = buildHtmlTocBlocks(entries);
+
+  container.innerHTML = '';
+  container.className = 'pages-container';
+
+  const doc = document.createElement('div');
+  doc.className = 'html-document html-unified';
+
+  const coverSection = document.createElement('div');
+  coverSection.className = 'html-cover-section';
+  const cover = buildCoverPage({
+    model: modelName, rev: currentRev, date: currentDate, variant: currentFirma
+  });
+  cover.classList.add('html-inline-cover');
+  coverSection.appendChild(cover);
+  doc.appendChild(coverSection);
+
+  const tocSection = document.createElement('div');
+  tocSection.className = 'html-toc-section';
+  tocSection.id = 'html-toc';
+  for (const b of tocBlocks) tocSection.appendChild(b);
+  doc.appendChild(tocSection);
+
+  const contentSection = document.createElement('div');
+  contentSection.className = 'html-content-section';
+
+  if (currentFirma && typeof buildHeader === 'function') {
+    const header = buildHeader(currentFirma, modelName);
+    header.classList.add('html-doc-header');
+    const _brand = (typeof HEADER_BRANDS !== 'undefined' && HEADER_BRANDS[currentFirma])
+      ? HEADER_BRANDS[currentFirma] : { color: '#ff0000' };
+    contentSection.style.setProperty('--brand-color', _brand.color);
+    contentSection.appendChild(header);
+  }
+
+  const mainContent = document.createElement('div');
+  mainContent.className = 'html-flow-content';
+  for (const b of blocks) mainContent.appendChild(b);
+  contentSection.appendChild(mainContent);
+  doc.appendChild(contentSection);
+
+  container.appendChild(doc);
+
+  container.querySelectorAll('[data-toc-anchor]').forEach(el => {
+    const anchorId = el.dataset.tocAnchor;
+    const a = document.createElement('a');
+    a.href = '#toc-row-' + anchorId;
+    a.style.cssText = 'color:inherit;text-decoration:none;display:block;';
+    a.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      const target = document.getElementById('toc-row-' + anchorId);
+      if (target) scrollToPage(target);
+    });
+    while (el.firstChild) a.appendChild(el.firstChild);
+    el.appendChild(a);
+  });
+}
+
+async function setViewMode(mode) {
+  if (mode !== 'html' && mode !== 'pdf') return;
+  if (viewMode === mode) return;
+
+  viewMode = mode;
+  document.body.classList.toggle('view-html', mode === 'html');
+  document.body.classList.toggle('view-pdf', mode === 'pdf');
+  document.querySelectorAll('.view-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.view === mode);
+  });
+
+  if (lastGuideCache) {
+    const container = document.getElementById('pagesContainer');
+    await renderGuide(lastGuideCache.modelName, lastGuideCache.tree, container);
+    applyZoom();
+  }
 }
 
 function mdLevel(el) { return parseInt(el.tagName.slice(1), 10); }
@@ -273,6 +364,43 @@ function buildTocBlocks(entries) {
   return { blocks, rows };
 }
 
+/* HTML görünümü — sayfa numarası ve leader olmadan içindekiler */
+function buildHtmlTocBlocks(entries) {
+  const blocks = [];
+
+  const h = document.createElement('h1');
+  h.className = 'toc-title';
+  h.textContent = 'İçindekiler';
+  blocks.push(h);
+
+  for (const e of entries) {
+    const row = document.createElement('a');
+    row.className = `toc-row toc-html toc-l${Math.min(e.level, 4)}`;
+    row.id = 'toc-row-' + e.anchorId;
+    row.href = '#toc-anchor-' + e.anchorId;
+    row.style.paddingLeft = ((e.level - 1) * 22) + 'px';
+    row.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      const target = document.getElementById('toc-anchor-' + e.anchorId);
+      if (target) scrollToPage(target);
+    });
+
+    const num = document.createElement('span');
+    num.className = 'toc-num';
+    num.textContent = fmtNum(e.number);
+
+    const label = document.createElement('span');
+    label.className = 'toc-label';
+    label.textContent = e.title;
+
+    row.appendChild(num);
+    row.appendChild(label);
+    blocks.push(row);
+  }
+
+  return blocks;
+}
+
 /* ── Kapak meta (Rev / Tarih) ── */
 function onCoverMetaChange() {
   const revInput = document.getElementById('revInput');
@@ -286,13 +414,8 @@ function onCoverMetaChange() {
   updateCover();
 }
 
-function onCoverVariantChange(v) {
-  currentCoverVariant = v;
-  updateCover();
-}
-
-function onHeaderChange(v) {
-  currentHeaderVariant = v;
+function onFirmaChange(v) {
+  currentFirma = v;
   if (currentModel) onModelChange(currentModel);
 }
 
@@ -300,9 +423,11 @@ function updateCover() {
   const container = document.getElementById('pagesContainer');
   const existing = container.querySelector('.cover-page');
   if (existing && currentModel) {
-    existing.replaceWith(buildCoverPage({
-      model: currentModel, rev: currentRev, date: currentDate, variant: currentCoverVariant
-    }));
+    const cover = buildCoverPage({
+      model: currentModel, rev: currentRev, date: currentDate, variant: currentFirma
+    });
+    if (viewMode === 'html') cover.classList.add('html-inline-cover');
+    existing.replaceWith(cover);
   }
 }
 
@@ -533,12 +658,12 @@ function renderPages(pages, container, startNumber, modelName) {
     page.className = 'a4-page';
     page.id = 'a4-page-' + n;
 
-    const _brand = (typeof HEADER_BRANDS !== 'undefined' && HEADER_BRANDS[currentHeaderVariant])
-      ? HEADER_BRANDS[currentHeaderVariant] : { color: '#ff0000' };
+    const _brand = (typeof HEADER_BRANDS !== 'undefined' && HEADER_BRANDS[currentFirma])
+      ? HEADER_BRANDS[currentFirma] : { color: '#ff0000' };
     page.style.setProperty('--brand-color', _brand.color);
 
-    if (currentHeaderVariant && typeof buildHeader === 'function') {
-      page.appendChild(buildHeader(currentHeaderVariant, modelName));
+    if (currentFirma && typeof buildHeader === 'function') {
+      page.appendChild(buildHeader(currentFirma, modelName));
     }
 
     const footerLine = document.createElement('div');
@@ -557,18 +682,28 @@ function renderPages(pages, container, startNumber, modelName) {
 
     const cnkFooter = document.createElement('div');
     cnkFooter.className = 'ph-footer';
-    cnkFooter.textContent = 'CNK ELEKTRONİK MAKİNE SAN A.Ş.';
+    cnkFooter.textContent = getFirmaFooter(currentFirma);
     page.appendChild(cnkFooter);
 
     container.appendChild(page);
   }
 }
 
-/* Hedef elementin bulunduğu A4 sayfasını content-area içinde tam görünecek şekilde kaydırır */
+/* Hedef elementi görünür alana kaydırır */
 function scrollToPage(el) {
-  const page = el.closest('.a4-page');
   const area = document.querySelector('.content-area');
-  if (!page || !area) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
+  if (!el || !area) return;
+
+  if (viewMode === 'html') {
+    const areaRect = area.getBoundingClientRect();
+    const elRect = el.getBoundingClientRect();
+    const top = elRect.top - areaRect.top + area.scrollTop - 24;
+    area.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+    return;
+  }
+
+  const page = el.closest('.a4-page');
+  if (!page) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
 
   const areaRect = area.getBoundingClientRect();
   const pageRect = page.getBoundingClientRect();
@@ -799,7 +934,13 @@ async function exportPDF() {
     showToast('Önce bir model seçin', 'error');
     return;
   }
+  const prevMode = viewMode;
+  if (prevMode === 'html') {
+    await setViewMode('pdf');
+    await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
+  }
   const result = await window.electronAPI.printPdf();
+  if (prevMode === 'html') await setViewMode('html');
   if (result.success) {
     showToast('PDF kaydedildi', 'success');
   } else {
@@ -807,46 +948,42 @@ async function exportPDF() {
   }
 }
 
-/* Ekrandaki sayfalardan Word (docx) için HTML üretir. */
-function buildWordHtml() {
-  const container = document.getElementById('pagesContainer');
-  const pages = container.querySelectorAll('.a4-page');
-  let html = '';
-
-  pages.forEach((page, idx) => {
-    let inner = '';
-    if (page.classList.contains('cover-page')) {
-      const title = page.querySelector('.cover-title');
-      const info = page.querySelector('.cover-info');
-      const img = page.querySelector('.cover-image');
-      inner += `<h1 style="color:#ff0000;text-align:center;font-family:Calibri;">${title ? title.textContent : ''}</h1>`;
-      inner += `<p style="color:#ff0000;text-align:center;font-family:Calibri;font-weight:bold;">${info ? info.textContent : ''}</p>`;
-      if (img) inner += `<p style="text-align:center;"><img src="${img.getAttribute('src')}" width="342" height="214" /></p>`;
-    } else {
-      const content = page.querySelector('.page-content');
-      inner = content ? content.innerHTML : '';
-    }
-    html += `<div>${inner}</div>`;
-    if (idx < pages.length - 1) {
-      html += '<p style="page-break-before:always;">&nbsp;</p>';
-    }
-  });
-
-  return html;
+function buildExportHtmlBody() {
+  const doc = document.querySelector('.html-document.html-unified');
+  return doc ? doc.outerHTML : null;
 }
 
-async function exportWord() {
+async function exportHtml() {
   if (!currentModel) {
     showToast('Önce bir model seçin', 'error');
     return;
   }
-  showToast('Word oluşturuluyor…', 'success');
-  const html = buildWordHtml();
-  const result = await window.electronAPI.exportWord({ model: currentModel, html });
+
+  const prevMode = viewMode;
+  if (prevMode === 'pdf') {
+    await setViewMode('html');
+    await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
+  }
+
+  const bodyHtml = buildExportHtmlBody();
+  if (!bodyHtml) {
+    showToast('HTML içeriği bulunamadı', 'error');
+    if (prevMode === 'pdf') await setViewMode('pdf');
+    return;
+  }
+
+  showToast('HTML oluşturuluyor…', 'success');
+  const title = `${currentModel} SERİSİ KULLANIM KILAVUZU`;
+  const result = await window.electronAPI.exportHtml({ model: currentModel, bodyHtml, title });
+
+  if (prevMode === 'pdf') await setViewMode('pdf');
+
   if (result.success) {
-    showToast('Word kaydedildi', 'success');
+    showToast('HTML kaydedildi', 'success');
+  } else if (result.error) {
+    showToast('HTML kaydedilemedi: ' + result.error, 'error');
   } else {
-    showToast('Word kaydedilemedi' + (result.error ? ': ' + result.error : ''), 'error');
+    showToast('HTML kaydedilemedi', 'error');
   }
 }
 
