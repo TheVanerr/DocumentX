@@ -1,0 +1,282 @@
+# Makineye Özel Reçete (Örn: PYT-Reçete.yaml)
+model_adi: "PYT"
+
+# Ana Bölüm Hiyerarşisi
+bolumler:
+  - id: "01-introduction"
+    aktif: true
+    dosya: "introduction.md"
+    alt_bolumler:
+
+      - id: "01-intro-handbook"
+        dosya: "intro-handbook.md"
+        parcalar:
+
+      - id: "02-symbols-conventions"
+        dosya: "symbols-conventions.md"
+        parcalar:
+
+      - id: "03-support-service"
+        dosya: "support-service.md"
+        parcalar:
+
+  - id: "02-safety"
+    aktif: true
+    dosya: "safety.md"
+    alt_bolumler:
+
+      - id: "01-safety-info"
+        dosya: "safety-info.md"
+        parcalar:
+
+      - id: "02-safety-intro"
+        dosya: "safety-intro.md"
+        parcalar:
+
+      - id: "03-safety-rules"
+        dosya: "safety-rules.md"
+        parcalar:
+
+  - id: "03-overview"
+    aktif: true
+    dosya: "overview.md"
+    alt_bolumler:
+
+      - id: "01-machine-description"
+        dosya: "pytmachine-description.md"
+        parcalar:
+
+      - id: "02-intended-use"
+        dosya: "intended-use.md"
+        parcalar:
+
+      - id: "03-machine-spec"
+        dosya: "pytmachine-spec.md"
+        parcalar:
+
+      - id: "04-machine-controls"
+        dosya: "pytmachine-controls.md"
+        parcalar:
+
+      - id: "05-machine-layout"
+        dosya: "pytmachine-layout.md"
+        parcalar:
+
+  - id: "04-transport"
+    aktif: true
+    dosya: "transport.md"
+    alt_bolumler:
+
+      - id: "01-transport"
+        dosya: "transport.md"
+        parcalar:
+
+      - id: "02-handling-storing"
+        dosya: "handling-storing.md"
+        parcalar:
+
+  - id: "05-assembly"
+    aktif: true
+    dosya: "assembly.md"
+    alt_bolumler:
+
+      - id: "01-machine-assembly"
+        dosya: "pytmachine-assembly.md"
+        parcalar:
+
+      - id: "02-machine-position"
+        dosya: "pytmachine-position.md"
+        parcalar:
+
+      - id: "03-machine-install"
+        dosya: "pytmachine-install.md"
+        parcalar:
+
+      - id: "04-safety-test"
+        dosya: "pytsafety-test.md"
+        parcalar:
+
+      - id: "05-install-test"
+        dosya: "pytinstall-test.md"
+        parcalar:
+
+      - id: "06-comm"
+        dosya: "pytcomm.md"
+        parcalar:
+
+  - id: "06-settings"
+    aktif: true
+    dosya: "settings.md"
+    alt_bolumler:
+
+      - id: "01-mechanical-settings"
+        dosya: "pytmechanical-settings.md"
+        parcalar:
+
+      - id: "02-safety-settings"
+        dosya: "pytsafety-settings.md"
+        parcalar:
+
+      - id: "03-electrical-settings"
+        dosya: "pytelectrical-settings.md"
+        parcalar:
+
+      - id: "04-hydrolic-settings"
+        dosya: "pythydrolic-settings"
+        parcalar:
+
+      - id: "05-pnomatic-settings"
+        dosya: "pytpnomatic-settings.md"
+        parcalar:
+
+      - id: "06-vacuum-settings"
+        dosya: "pytvacuum-settings.md"
+        parcalar:
+
+      - id: "07-other-settings"
+        dosya: "pytother-settings.md"
+        parcalar:
+
+  - id: "07-operation"
+    aktif: true
+    dosya: "operation.md"
+    alt_bolumler:
+
+      - id: "01-operating-modes"
+        dosya: "pytoperating-modes.md"
+        parcalar:
+
+      - id: "02-machine-start"
+        dosya: "pytmachine-start.md"
+        parcalar:
+
+      - id: "03-shut-down"
+        dosya: "pytshut-down.md"
+        parcalar:
+
+      - id: "04-operating-sequence"
+        dosya: "pytoperating-sequence"
+        parcalar:
+
+      - id: "05-operating-chronology"
+        dosya: "pytoperating-chronology.md"
+        parcalar:
+
+      - id: "06-operation-other"
+        dosya: "pytoperation-other.md"
+        parcalar:
+
+  - id: "08-capacity"
+    aktif: true
+    dosya: "capacity.md"
+    alt_bolumler:
+
+      - id: "01-product-capacity"
+        dosya: "pytproduct-capacity.md"
+        parcalar:
+
+      - id: "02-specific-setup"
+        dosya: "pytspecific-setup.md"
+        parcalar:
+
+  - id: "09-main-inst"
+    aktif: true
+    dosya: "maintenance.md"
+    alt_bolumler:
+
+      - id: "01-main-inst"
+        dosya: "pytmain-inst.md"
+        parcalar:
+
+  - id: "10-cleaning"
+    aktif: true
+    dosya: "cleaning.md"
+    alt_bolumler:
+
+      - id: "01-clean-sanitize"
+        dosya: "pytclean-sanitize.md"
+        parcalar:
+
+  - id: "11-troubleshooting"
+    aktif: true
+    dosya: "troubleshooting.md"
+    alt_bolumler:
+
+      - id: "01-fault-finding"
+        dosya: "pytfault-finding.md"
+        parcalar:
+
+      - id: "02-trob-general"
+        dosya: "pyttrob-general.md"
+        parcalar:
+
+      - id: "03-trob-electrical"
+        dosya: "pyttrob-electrical.md"
+        parcalar:
+
+      - id: "04-trob-hydro"
+        dosya: "pyttrob-hydro"
+        parcalar:
+
+      - id: "05-trob-pnemo"
+        dosya: "pyttrob-pnemo.md"
+        parcalar:
+
+      - id: "06-trob-vacuum"
+        dosya: "pyttrob-vacuum.md"
+        parcalar:
+    
+      - id: "07-trob-sensors"
+        dosya: "pyttrob-sensors.md"
+        parcalar:
+
+  - id: "12-dismantle"
+    aktif: true
+    dosya: "dismantle.md"
+    alt_bolumler:
+
+      - id: "01-dismantle"
+        dosya: "pytdismantle.md"
+        parcalar:
+
+      - id: "02-disable"
+        dosya: "pytdisable.md"
+        parcalar:
+
+      - id: "03-scrapping"
+        dosya: "pytscrapping.md"
+        parcalar:
+
+  - id: "13-documents"
+    aktif: true
+    dosya: "documents.md"
+    alt_bolumler:
+
+      - id: "01-documents"
+        dosya: "pytdocuments.md"
+        parcalar:
+
+      - id: "02-drawings"
+        dosya: "pytdrawings.md"
+        parcalar:
+
+      - id: "03-part-list"
+        dosya: "pytpart-list.md"
+        parcalar:
+
+  - id: "14-index"
+    aktif: true
+    dosya: "index.md"
+    alt_bolumler:
+
+      - id: "01-annexes"
+        dosya: "pytglossary.md"
+        parcalar:
+
+      - id: "02-glossary"
+        dosya: "pytglossary.md"
+        parcalar:
+
+      - id: "03-indexes"
+        dosya: "pytindexes.md"
+        parcalar:

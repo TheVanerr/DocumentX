@@ -1,0 +1,18 @@
+{
+  // Sol menüde makine koduna göre renklendirme (Folder Regex Color eklentisi gerekir)
+  // Extensions → "Folder Regex Color" ara ve yükle (jterrazz.folder-regex-color)
+  "folder-regex-color.folders": [
+    { "regex": "kbn", "color": "red", "symbol": "K", "tooltip": "KBN makinesi" },
+    { "regex": "knv", "color": "cyan", "symbol": "N", "tooltip": "KNV makinesi" },
+    { "regex": "lym", "color": "blue", "symbol": "L", "tooltip": "LYM makinesi" },
+    { "regex": "mst", "color": "green", "symbol": "M", "tooltip": "MST makinesi" },
+    { "regex": "pyt", "color": "yellow", "symbol": "P", "tooltip": "PYT makinesi" },
+    { "regex": "rts", "color": "magenta", "symbol": "R", "tooltip": "RTS makinesi" },
+    { "regex": "ult", "color": "custom1", "symbol": "U", "tooltip": "ULT makinesi" },
+    { "regex": "vdl", "color": "custom2", "symbol": "V", "tooltip": "VDL makinesi" }
+  ],
+  "workbench.colorCustomizations": {
+    "folderRegexColor.custom1": "#FF8800",
+    "folderRegexColor.custom2": "#AA44FF"
+  }
+}

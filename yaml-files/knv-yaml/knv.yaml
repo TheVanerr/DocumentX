@@ -1,0 +1,282 @@
+# Makineye Özel Reçete (Örn: KNV-Reçete.yaml)
+model_adi: "KNV"
+
+# Ana Bölüm Hiyerarşisi
+bolumler:
+  - id: "01-introduction"
+    aktif: true
+    dosya: "introduction.md"
+    alt_bolumler:
+
+      - id: "01-intro-handbook"
+        dosya: "intro-handbook.md"
+        parcalar:
+
+      - id: "02-symbols-conventions"
+        dosya: "symbols-conventions.md"
+        parcalar:
+
+      - id: "03-support-service"
+        dosya: "support-service.md"
+        parcalar:
+
+  - id: "02-safety"
+    aktif: true
+    dosya: "safety.md"
+    alt_bolumler:
+
+      - id: "01-safety-info"
+        dosya: "safety-info.md"
+        parcalar:
+
+      - id: "02-safety-intro"
+        dosya: "safety-intro.md"
+        parcalar:
+
+      - id: "03-safety-rules"
+        dosya: "safety-rules.md"
+        parcalar:
+
+  - id: "03-overview"
+    aktif: true
+    dosya: "overview.md"
+    alt_bolumler:
+
+      - id: "01-machine-description"
+        dosya: "knvmachine-description.md"
+        parcalar:
+
+      - id: "02-intended-use"
+        dosya: "intended-use.md"
+        parcalar:
+
+      - id: "03-machine-spec"
+        dosya: "knvmachine-spec.md"
+        parcalar:
+
+      - id: "04-machine-controls"
+        dosya: "knvmachine-controls.md"
+        parcalar:
+
+      - id: "05-machine-layout"
+        dosya: "knvmachine-layout.md"
+        parcalar:
+
+  - id: "04-transport"
+    aktif: true
+    dosya: "transport.md"
+    alt_bolumler:
+
+      - id: "01-transport"
+        dosya: "transport.md"
+        parcalar:
+
+      - id: "02-handling-storing"
+        dosya: "handling-storing.md"
+        parcalar:
+
+  - id: "05-assembly"
+    aktif: true
+    dosya: "assembly.md"
+    alt_bolumler:
+
+      - id: "01-machine-assembly"
+        dosya: "knvmachine-assembly.md"
+        parcalar:
+
+      - id: "02-machine-position"
+        dosya: "knvmachine-position.md"
+        parcalar:
+
+      - id: "03-machine-install"
+        dosya: "knvmachine-install.md"
+        parcalar:
+
+      - id: "04-safety-test"
+        dosya: "knvsafety-test.md"
+        parcalar:
+
+      - id: "05-install-test"
+        dosya: "knvinstall-test.md"
+        parcalar:
+
+      - id: "06-comm"
+        dosya: "knvcomm.md"
+        parcalar:
+
+  - id: "06-settings"
+    aktif: true
+    dosya: "settings.md"
+    alt_bolumler:
+
+      - id: "01-mechanical-settings"
+        dosya: "knvmechanical-settings.md"
+        parcalar:
+
+      - id: "02-safety-settings"
+        dosya: "knvsafety-settings.md"
+        parcalar:
+
+      - id: "03-electrical-settings"
+        dosya: "knvelectrical-settings.md"
+        parcalar:
+
+      - id: "04-hydrolic-settings"
+        dosya: "knvhydrolic-settings"
+        parcalar:
+
+      - id: "05-pnomatic-settings"
+        dosya: "knvpnomatic-settings.md"
+        parcalar:
+
+      - id: "06-vacuum-settings"
+        dosya: "knvvacuum-settings.md"
+        parcalar:
+
+      - id: "07-other-settings"
+        dosya: "knvother-settings.md"
+        parcalar:
+
+  - id: "07-operation"
+    aktif: true
+    dosya: "operation.md"
+    alt_bolumler:
+
+      - id: "01-operating-modes"
+        dosya: "knvoperating-modes.md"
+        parcalar:
+
+      - id: "02-machine-start"
+        dosya: "knvmachine-start.md"
+        parcalar:
+
+      - id: "03-shut-down"
+        dosya: "knvshut-down.md"
+        parcalar:
+
+      - id: "04-operating-sequence"
+        dosya: "knvoperating-sequence"
+        parcalar:
+
+      - id: "05-operating-chronology"
+        dosya: "knvoperating-chronology.md"
+        parcalar:
+
+      - id: "06-operation-other"
+        dosya: "knvoperation-other.md"
+        parcalar:
+
+  - id: "08-capacity"
+    aktif: true
+    dosya: "capacity.md"
+    alt_bolumler:
+
+      - id: "01-product-capacity"
+        dosya: "knvproduct-capacity.md"
+        parcalar:
+
+      - id: "02-specific-setup"
+        dosya: "knvspecific-setup.md"
+        parcalar:
+
+  - id: "09-main-inst"
+    aktif: true
+    dosya: "maintenance.md"
+    alt_bolumler:
+
+      - id: "01-main-inst"
+        dosya: "knvmain-inst.md"
+        parcalar:
+
+  - id: "10-cleaning"
+    aktif: true
+    dosya: "cleaning.md"
+    alt_bolumler:
+
+      - id: "01-clean-sanitize"
+        dosya: "knvclean-sanitize.md"
+        parcalar:
+
+  - id: "11-troubleshooting"
+    aktif: true
+    dosya: "troubleshooting.md"
+    alt_bolumler:
+
+      - id: "01-fault-finding"
+        dosya: "knvfault-finding.md"
+        parcalar:
+
+      - id: "02-trob-general"
+        dosya: "knvtrob-general.md"
+        parcalar:
+
+      - id: "03-trob-electrical"
+        dosya: "knvtrob-electrical.md"
+        parcalar:
+
+      - id: "04-trob-hydro"
+        dosya: "knvtrob-hydro"
+        parcalar:
+
+      - id: "05-trob-pnemo"
+        dosya: "knvtrob-pnemo.md"
+        parcalar:
+
+      - id: "06-trob-vacuum"
+        dosya: "knvtrob-vacuum.md"
+        parcalar:
+    
+      - id: "07-trob-sensors"
+        dosya: "knvtrob-sensors.md"
+        parcalar:
+
+  - id: "12-dismantle"
+    aktif: true
+    dosya: "dismantle.md"
+    alt_bolumler:
+
+      - id: "01-dismantle"
+        dosya: "knvdismantle.md"
+        parcalar:
+
+      - id: "02-disable"
+        dosya: "knvdisable.md"
+        parcalar:
+
+      - id: "03-scrapping"
+        dosya: "knvscrapping.md"
+        parcalar:
+
+  - id: "13-documents"
+    aktif: true
+    dosya: "documents.md"
+    alt_bolumler:
+
+      - id: "01-documents"
+        dosya: "knvdocuments.md"
+        parcalar:
+
+      - id: "02-drawings"
+        dosya: "knvdrawings.md"
+        parcalar:
+
+      - id: "03-part-list"
+        dosya: "knvpart-list.md"
+        parcalar:
+
+  - id: "14-index"
+    aktif: true
+    dosya: "index.md"
+    alt_bolumler:
+
+      - id: "01-annexes"
+        dosya: "knvglossary.md"
+        parcalar:
+
+      - id: "02-glossary"
+        dosya: "knvglossary.md"
+        parcalar:
+
+      - id: "03-indexes"
+        dosya: "knvindexes.md"
+        parcalar:

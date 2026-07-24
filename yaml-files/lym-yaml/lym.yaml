@@ -11,17 +11,14 @@ bolumler:
       - id: "01-intro-handbook"
         dosya: "intro-handbook.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "02-symbols-conventions"
         dosya: "symbols-conventions.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "03-support-service"
         dosya: "support-service.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "02-safety"
     aktif: true
@@ -31,18 +28,14 @@ bolumler:
       - id: "01-safety-info"
         dosya: "safety-info.md"
         parcalar:
-          - "logo-alani"
-
 
       - id: "02-safety-intro"
         dosya: "safety-intro.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-safety-rules"
         dosya: "safety-rules.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "03-overview"
     aktif: true
@@ -52,29 +45,22 @@ bolumler:
       - id: "01-machine-description"
         dosya: "lymmachine-description.md"
         parcalar:
-          - "logo-alani"
-
 
       - id: "02-intended-use"
         dosya: "intended-use.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-machine-spec"
         dosya: "lymmachine-spec.md"
         parcalar:
-          - "amac-ve-kapsam"
-
 
       - id: "04-machine-controls"
         dosya: "lymmachine-controls.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "05-machine-layout"
         dosya: "lymmachine-layout.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "04-transport"
     aktif: true
@@ -84,12 +70,10 @@ bolumler:
       - id: "01-transport"
         dosya: "transport.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-handling-storing"
         dosya: "handling-storing.md"
         parcalar:
-          - "otomatik-listeleme"
 
   - id: "05-assembly"
     aktif: true
@@ -97,34 +81,28 @@ bolumler:
     alt_bolumler:
 
       - id: "01-machine-assembly"
-        dosya: "machine-assembly.md"
+        dosya: "lymmachine-assembly.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-machine-position"
-        dosya: "machine-position.md"
+        dosya: "lymmachine-position.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-machine-install"
-        dosya: "machine-install.md"
+        dosya: "lymmachine-install.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "04-safety-test"
-        dosya: "safety-test.md"
+        dosya: "lymsafety-test.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "05-install-test"
-        dosya: "install-test.md"
+        dosya: "lyminstall-test.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "06-comm"
-        dosya: "comm.md"
+        dosya: "lymcomm.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "06-settings"
     aktif: true
@@ -132,39 +110,32 @@ bolumler:
     alt_bolumler:
 
       - id: "01-mechanical-settings"
-        dosya: "mechanical-settings.md"
+        dosya: "lymmechanical-settings.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-safety-settings"
-        dosya: "safety-settings.md"
+        dosya: "lymsafety-settings.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-electrical-settings"
-        dosya: "electrical-settings.md"
+        dosya: "lymelectrical-settings.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "04-hydrolic-settings"
-        dosya: "hydrolic-settings"
+        dosya: "lymhydrolic-settings"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "05-pnomatic-settings"
-        dosya: "pnomatic-settings.md"
+        dosya: "lympnomatic-settings.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "06-vacuum-settings"
-        dosya: "vacuum-settings.md"
+        dosya: "lymvacuum-settings.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "07-other-settings"
-        dosya: "other-settings.md"
+        dosya: "lymother-settings.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "07-operation"
     aktif: true
@@ -172,34 +143,28 @@ bolumler:
     alt_bolumler:
 
       - id: "01-operating-modes"
-        dosya: "operating-modes.md"
+        dosya: "lymoperating-modes.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-machine-start"
-        dosya: "machine-start.md"
+        dosya: "lymmachine-start.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-shut-down"
-        dosya: "shut-down.md"
+        dosya: "lymshut-down.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "04-operating-sequence"
-        dosya: "operating-sequence"
+        dosya: "lymoperating-sequence"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "05-operating-chronology"
-        dosya: "operating-chronology.md"
+        dosya: "lymoperating-chronology.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "06-operation-other"
-        dosya: "operation-other.md"
+        dosya: "lymoperation-other.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "08-capacity"
     aktif: true
@@ -207,14 +172,12 @@ bolumler:
     alt_bolumler:
 
       - id: "01-product-capacity"
-        dosya: "product-capacity.md"
+        dosya: "lymproduct-capacity.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-specific-setup"
-        dosya: "specific-setup.md"
+        dosya: "lymspecific-setup.md"
         parcalar:
-          - "otomatik-listeleme"
 
   - id: "09-main-inst"
     aktif: true
@@ -222,9 +185,8 @@ bolumler:
     alt_bolumler:
 
       - id: "01-main-inst"
-        dosya: "main-inst.md"
+        dosya: "lymmain-inst.md"
         parcalar:
-          - "logo-alani"
 
   - id: "10-cleaning"
     aktif: true
@@ -232,9 +194,8 @@ bolumler:
     alt_bolumler:
 
       - id: "01-clean-sanitize"
-        dosya: "clean-sanitize.md"
+        dosya: "lymclean-sanitize.md"
         parcalar:
-          - "logo-alani"
 
   - id: "11-troubleshooting"
     aktif: true
@@ -242,39 +203,32 @@ bolumler:
     alt_bolumler:
 
       - id: "01-fault-finding"
-        dosya: "fault-finding.md"
+        dosya: "lymfault-finding.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-trob-general"
-        dosya: "trob-general.md"
+        dosya: "lymtrob-general.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-trob-electrical"
-        dosya: "trob-electrical.md"
+        dosya: "lymtrob-electrical.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "04-trob-hydro"
-        dosya: "trob-hydro"
+        dosya: "lymtrob-hydro"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "05-trob-pnemo"
-        dosya: "trob-pnemo.md"
+        dosya: "lymtrob-pnemo.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "06-trob-vacuum"
-        dosya: "trob-vacuum.md"
+        dosya: "lymtrob-vacuum.md"
         parcalar:
-          - "amac-ve-kapsam"
     
       - id: "07-trob-sensors"
-        dosya: "trob-sensors.md"
+        dosya: "lymtrob-sensors.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "12-dismantle"
     aktif: true
@@ -282,19 +236,16 @@ bolumler:
     alt_bolumler:
 
       - id: "01-dismantle"
-        dosya: "dismantle.md"
+        dosya: "lymdismantle.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-disable"
-        dosya: "disable.md"
+        dosya: "lymdisable.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-scrapping"
-        dosya: "scrapping.md"
+        dosya: "lymscrapping.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "13-documents"
     aktif: true
@@ -302,19 +253,16 @@ bolumler:
     alt_bolumler:
 
       - id: "01-documents"
-        dosya: "dismantle.md"
+        dosya: "lymdocuments.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-drawings"
-        dosya: "drawings.md"
+        dosya: "lymdrawings.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-part-list"
-        dosya: "part-list.md"
+        dosya: "lympart-list.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "14-index"
     aktif: true
@@ -322,16 +270,13 @@ bolumler:
     alt_bolumler:
 
       - id: "01-annexes"
-        dosya: "glossary.md"
+        dosya: "lymglossary.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-glossary"
-        dosya: "glossary.md"
+        dosya: "lymglossary.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-indexes"
-        dosya: "indexes.md"
+        dosya: "lymindexes.md"
         parcalar:
-          - "amac-ve-kapsam"

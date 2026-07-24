@@ -11,17 +11,14 @@ bolumler:
       - id: "01-intro-handbook"
         dosya: "intro-handbook.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "02-symbols-conventions"
         dosya: "symbols-conventions.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "03-support-service"
         dosya: "support-service.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "02-safety"
     aktif: true
@@ -31,17 +28,14 @@ bolumler:
       - id: "01-safety-info"
         dosya: "safety-info.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-safety-intro"
         dosya: "safety-intro.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-safety-rules"
         dosya: "safety-rules.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "03-overview"
     aktif: true
@@ -51,27 +45,22 @@ bolumler:
       - id: "01-machine-description"
         dosya: "vdlmachine-description.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-intended-use"
         dosya: "intended-use.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-machine-spec"
         dosya: "vdlmachine-spec.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "04-machine-controls"
         dosya: "vdlmachine-controls.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "05-machine-layout"
         dosya: "vdlmachine-layout.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "04-transport"
     aktif: true
@@ -81,12 +70,10 @@ bolumler:
       - id: "01-transport"
         dosya: "transport.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-handling-storing"
         dosya: "handling-storing.md"
         parcalar:
-          - "otomatik-listeleme"
 
   - id: "05-assembly"
     aktif: true
@@ -94,34 +81,28 @@ bolumler:
     alt_bolumler:
 
       - id: "01-machine-assembly"
-        dosya: "machine-assembly.md"
+        dosya: "vdlmachine-assembly.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-machine-position"
-        dosya: "machine-position.md"
+        dosya: "vdlmachine-position.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-machine-install"
-        dosya: "machine-install.md"
+        dosya: "vdlmachine-install.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "04-safety-test"
-        dosya: "safety-test.md"
+        dosya: "vdlsafety-test.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "05-install-test"
-        dosya: "install-test.md"
+        dosya: "vdlinstall-test.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "06-comm"
-        dosya: "comm.md"
+        dosya: "vdlcomm.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "06-settings"
     aktif: true
@@ -129,39 +110,32 @@ bolumler:
     alt_bolumler:
 
       - id: "01-mechanical-settings"
-        dosya: "mechanical-settings.md"
+        dosya: "vdlmechanical-settings.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-safety-settings"
-        dosya: "safety-settings.md"
+        dosya: "vdlsafety-settings.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-electrical-settings"
-        dosya: "electrical-settings.md"
+        dosya: "vdlelectrical-settings.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "04-hydrolic-settings"
-        dosya: "hydrolic-settings"
+        dosya: "vdlhydrolic-settings"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "05-pnomatic-settings"
-        dosya: "pnomatic-settings.md"
+        dosya: "vdlpnomatic-settings.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "06-vacuum-settings"
-        dosya: "vacuum-settings.md"
+        dosya: "vdlvacuum-settings.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "07-other-settings"
-        dosya: "other-settings.md"
+        dosya: "vdlother-settings.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "07-operation"
     aktif: true
@@ -169,34 +143,28 @@ bolumler:
     alt_bolumler:
 
       - id: "01-operating-modes"
-        dosya: "operating-modes.md"
+        dosya: "vdloperating-modes.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-machine-start"
-        dosya: "machine-start.md"
+        dosya: "vdlmachine-start.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-shut-down"
-        dosya: "shut-down.md"
+        dosya: "vdlshut-down.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "04-operating-sequence"
-        dosya: "operating-sequence"
+        dosya: "vdloperating-sequence"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "05-operating-chronology"
-        dosya: "operating-chronology.md"
+        dosya: "vdloperating-chronology.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "06-operation-other"
-        dosya: "operation-other.md"
+        dosya: "vdloperation-other.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "08-capacity"
     aktif: true
@@ -204,14 +172,12 @@ bolumler:
     alt_bolumler:
 
       - id: "01-product-capacity"
-        dosya: "product-capacity.md"
+        dosya: "vdlproduct-capacity.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-specific-setup"
-        dosya: "specific-setup.md"
+        dosya: "vdlspecific-setup.md"
         parcalar:
-          - "otomatik-listeleme"
 
   - id: "09-main-inst"
     aktif: true
@@ -219,9 +185,8 @@ bolumler:
     alt_bolumler:
 
       - id: "01-main-inst"
-        dosya: "main-inst.md"
+        dosya: "vdlmain-inst.md"
         parcalar:
-          - "logo-alani"
 
   - id: "10-cleaning"
     aktif: true
@@ -229,9 +194,8 @@ bolumler:
     alt_bolumler:
 
       - id: "01-clean-sanitize"
-        dosya: "clean-sanitize.md"
+        dosya: "vdlclean-sanitize.md"
         parcalar:
-          - "logo-alani"
 
   - id: "11-troubleshooting"
     aktif: true
@@ -239,39 +203,32 @@ bolumler:
     alt_bolumler:
 
       - id: "01-fault-finding"
-        dosya: "fault-finding.md"
+        dosya: "vdlfault-finding.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-trob-general"
-        dosya: "trob-general.md"
+        dosya: "vdltrob-general.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-trob-electrical"
-        dosya: "trob-electrical.md"
+        dosya: "vdltrob-electrical.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "04-trob-hydro"
-        dosya: "trob-hydro"
+        dosya: "vdltrob-hydro"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "05-trob-pnemo"
-        dosya: "trob-pnemo.md"
+        dosya: "vdltrob-pnemo.md"
         parcalar:
-          - "amac-ve-kapsam"
 
       - id: "06-trob-vacuum"
-        dosya: "trob-vacuum.md"
+        dosya: "vdltrob-vacuum.md"
         parcalar:
-          - "amac-ve-kapsam"
     
       - id: "07-trob-sensors"
-        dosya: "trob-sensors.md"
+        dosya: "vdltrob-sensors.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "12-dismantle"
     aktif: true
@@ -279,19 +236,16 @@ bolumler:
     alt_bolumler:
 
       - id: "01-dismantle"
-        dosya: "dismantle.md"
+        dosya: "vdldismantle.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-disable"
-        dosya: "disable.md"
+        dosya: "vdldisable.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-scrapping"
-        dosya: "scrapping.md"
+        dosya: "vdlscrapping.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "13-documents"
     aktif: true
@@ -299,19 +253,16 @@ bolumler:
     alt_bolumler:
 
       - id: "01-documents"
-        dosya: "dismantle.md"
+        dosya: "vdldocuments.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-drawings"
-        dosya: "drawings.md"
+        dosya: "vdldrawings.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-part-list"
-        dosya: "part-list.md"
+        dosya: "vdlpart-list.md"
         parcalar:
-          - "amac-ve-kapsam"
 
   - id: "14-index"
     aktif: true
@@ -319,16 +270,13 @@ bolumler:
     alt_bolumler:
 
       - id: "01-annexes"
-        dosya: "glossary.md"
+        dosya: "vdlglossary.md"
         parcalar:
-          - "logo-alani"
 
       - id: "02-glossary"
-        dosya: "glossary.md"
+        dosya: "vdlglossary.md"
         parcalar:
-          - "otomatik-listeleme"
 
       - id: "03-indexes"
-        dosya: "indexes.md"
+        dosya: "vdlindexes.md"
         parcalar:
-          - "amac-ve-kapsam"
