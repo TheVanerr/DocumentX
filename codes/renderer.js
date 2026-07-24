@@ -69,6 +69,24 @@ function preloadImages(srcs) {
   })));
 }
 
+function measureImages(srcs) {
+  if (!srcs.length) return Promise.resolve(new Map());
+  return Promise.all(srcs.map(src => new Promise(resolve => {
+    const img = new Image();
+    img.onload = () => resolve({
+      src,
+      w: img.naturalWidth || 1,
+      h: img.naturalHeight || 1
+    });
+    img.onerror = () => resolve({ src, w: 4, h: 3 });
+    img.src = src;
+  }))).then(list => {
+    const map = new Map();
+    list.forEach(({ src, w, h }) => map.set(src, { w, h }));
+    return map;
+  });
+}
+
 /* ── Kılavuzu oluştur ── */
 async function renderGuide(modelName, tree, container) {
   lastGuideCache = { modelName, tree };
@@ -145,7 +163,8 @@ async function renderPdfGuide(modelName, tree, container) {
 
 async function renderHtmlGuide(modelName, tree, container) {
   const { blocks, entries } = buildBlocks(tree);
-  await preloadImages(collectImageSrcs(blocks));
+  const imageSrcs = collectImageSrcs(blocks);
+  const imageDims = await measureImages(imageSrcs);
 
   const tocBlocks = buildHtmlTocBlocks(entries);
 
@@ -184,11 +203,13 @@ async function renderHtmlGuide(modelName, tree, container) {
 
   const mainContent = document.createElement('div');
   mainContent.className = 'html-flow-content';
-  for (const b of blocks) mainContent.appendChild(b);
+  const htmlBlocks = applyHtmlFigureLayout(blocks);
+  for (const b of htmlBlocks) mainContent.appendChild(b);
   contentSection.appendChild(mainContent);
   doc.appendChild(contentSection);
 
   container.appendChild(doc);
+  applyHtmlFigureSmartFit(mainContent, imageDims);
 
   container.querySelectorAll('[data-toc-anchor]').forEach(el => {
     const anchorId = el.dataset.tocAnchor;
@@ -324,7 +345,7 @@ function buildTocBlocks(entries) {
 
   const h = document.createElement('h1');
   h.className = 'toc-title';
-  h.textContent = 'İçindekiler';
+  h.textContent = 'İÇİNDEKİLER';
   blocks.push(h);
 
   for (const e of entries) {
@@ -370,7 +391,7 @@ function buildHtmlTocBlocks(entries) {
 
   const h = document.createElement('h1');
   h.className = 'toc-title';
-  h.textContent = 'İçindekiler';
+  h.textContent = 'İÇİNDEKİLER';
   blocks.push(h);
 
   for (const e of entries) {
@@ -602,6 +623,149 @@ function computePages(blocks) {
     }
   }
 
+  function splitListItemAcrossPages(listEl, li, olStart) {
+    const tag = listEl.tagName;
+    let continuation = false;
+
+    function startPart() {
+      const list = document.createElement(tag.toLowerCase());
+      list.className = listEl.className;
+      if (tag === 'OL' && olStart > 1 && !continuation) list.start = olStart;
+      const newLi = document.createElement('li');
+      if (continuation) newLi.classList.add('li-continued');
+      list.appendChild(newLi);
+      mContent.appendChild(list);
+      return { list, newLi };
+    }
+
+    function appendWords(target, text) {
+      const words = text.split(/(\s+)/);
+      let tn = document.createTextNode('');
+      target.appendChild(tn);
+      for (const w of words) {
+        const prev = tn.textContent;
+        tn.textContent = prev + w;
+        if (h() > MAX && prev.trim()) {
+          tn.textContent = prev;
+          commitPart();
+          tn = document.createTextNode(w.replace(/^\s+/, ''));
+          partLi.appendChild(tn);
+        }
+      }
+    }
+
+    function splitElementWords(el) {
+      const shell = el.cloneNode(false);
+      partLi.appendChild(shell);
+      if (el.childNodes.length === 1 && el.firstChild.nodeType === Node.TEXT_NODE) {
+        const words = el.firstChild.textContent.split(/(\s+)/);
+        let tn = document.createTextNode('');
+        shell.appendChild(tn);
+        for (const w of words) {
+          const prev = tn.textContent;
+          tn.textContent = prev + w;
+          if (h() > MAX && prev.trim()) {
+            tn.textContent = prev;
+            commitPart();
+            const nextShell = el.cloneNode(false);
+            partLi.appendChild(nextShell);
+            tn = document.createTextNode(w.replace(/^\s+/, ''));
+            nextShell.appendChild(tn);
+          }
+        }
+        return;
+      }
+      shell.appendChild(el.cloneNode(true));
+    }
+
+    let partList;
+    let partLi;
+
+    function commitPart() {
+      cur.push(partList);
+      newPage();
+      continuation = true;
+      ({ list: partList, newLi: partLi } = startPart());
+    }
+
+    ({ list: partList, newLi: partLi } = startPart());
+    const kids = Array.from(li.cloneNode(true).childNodes);
+
+    for (const kid of kids) {
+      partLi.appendChild(kid.cloneNode(true));
+      if (h() <= MAX) continue;
+
+      partLi.removeChild(partLi.lastChild);
+
+      if (kid.nodeType === Node.TEXT_NODE) {
+        appendWords(partLi, kid.textContent);
+      } else if (partLi.childNodes.length === 0) {
+        splitElementWords(kid);
+        if (h() > MAX) {
+          partLi.lastChild.remove();
+          commitPart();
+          partLi.appendChild(kid.cloneNode(true));
+        }
+      } else {
+        commitPart();
+        partLi.appendChild(kid.cloneNode(true));
+        if (h() > MAX) {
+          partLi.removeChild(partLi.lastChild);
+          splitElementWords(kid);
+        }
+      }
+    }
+
+    cur.push(partList);
+  }
+
+  function placeList(listEl) {
+    const tag = listEl.tagName;
+    const items = Array.from(listEl.children).filter(c => c.tagName === 'LI');
+    if (!items.length) return;
+
+    const makeSubList = (lis, olStart) => {
+      const list = document.createElement(tag.toLowerCase());
+      list.className = listEl.className;
+      if (tag === 'OL' && olStart > 1) list.start = olStart;
+      lis.forEach(li => list.appendChild(li.cloneNode(true)));
+      return list;
+    };
+
+    let start = 0;
+
+    while (start < items.length) {
+      let end = start;
+      let sub = makeSubList([], tag === 'OL' ? start + 1 : 1);
+      mContent.appendChild(sub);
+
+      while (end < items.length) {
+        const next = makeSubList(items.slice(start, end + 1), tag === 'OL' ? start + 1 : 1);
+        mContent.removeChild(sub);
+        mContent.appendChild(next);
+        if (h() <= MAX) {
+          sub = next;
+          end++;
+        } else {
+          mContent.removeChild(next);
+          mContent.appendChild(sub);
+          break;
+        }
+      }
+
+      if (end === start) {
+        mContent.removeChild(sub);
+        splitListItemAcrossPages(listEl, items[start], tag === 'OL' ? start + 1 : 1);
+        start++;
+        continue;
+      }
+
+      cur.push(sub);
+      start = end;
+      if (start < items.length) newPage();
+    }
+  }
+
   function placeFigureIfNeeded(el) {
     if (el.tagName !== 'P' || !el.classList.contains('md-figure')) return false;
     mContent.appendChild(el);
@@ -612,6 +776,7 @@ function computePages(blocks) {
 
   function place(el) {
     if (el.tagName === 'TABLE') { placeTable(el); return; }
+    if (el.tagName === 'UL' || el.tagName === 'OL') { placeList(el); return; }
     if (el.dataset && el.dataset.pageBreakBefore === 'true' && cur.length > 0) {
       newPage();
     }
@@ -733,6 +898,7 @@ function mdToBlocks(md) {
       list.appendChild(li);
     }
     blocks.push(list);
+    markFigureListItems(list);
   };
 
   while (i < lines.length) {
@@ -871,13 +1037,161 @@ function mdToBlocks(md) {
     p.className = 'md-p';
     const html = inline(buf.join(' '));
     p.innerHTML = html;
-    if (/^\s*<img class="md-img"[^>]*\/?>\s*(<img class="md-img"[^>]*\/?>\s*)*$/i.test(html)) {
-      p.classList.add('md-figure');
-    }
+    markFigureParagraph(p);
     blocks.push(p);
   }
 
   return blocks;
+}
+
+function markFigureParagraph(p) {
+  if (!p.querySelector(':scope > img.md-img')) return;
+  const clone = p.cloneNode(true);
+  clone.querySelectorAll('img.md-img, br').forEach(el => el.remove());
+  if (!clone.textContent.trim()) p.classList.add('md-figure');
+}
+
+function markFigureListItems(list) {
+  list.querySelectorAll(':scope > li').forEach(li => {
+    if (!li.querySelector(':scope > img.md-img')) return;
+    const clone = li.cloneNode(true);
+    clone.querySelectorAll('img.md-img, br').forEach(el => el.remove());
+    if (!clone.textContent.trim()) li.classList.add('li-figure');
+  });
+}
+
+function isStandaloneFigure(el) {
+  if (el.tagName === 'P' && el.classList.contains('md-figure')) return true;
+  if (el.tagName === 'UL' || el.tagName === 'OL') {
+    const items = el.querySelectorAll(':scope > li');
+    return items.length === 1 && items[0].classList.contains('li-figure');
+  }
+  return false;
+}
+
+function extractFigureImage(el) {
+  if (el.tagName === 'P') return el.querySelector(':scope > img.md-img');
+  if (el.tagName === 'UL' || el.tagName === 'OL') {
+    return el.querySelector(':scope > li.li-figure img.md-img');
+  }
+  return null;
+}
+
+function normalizeHtmlFigureBlocks(blocks) {
+  const out = [];
+  for (const b of blocks) {
+    if (b.tagName === 'P' && b.classList.contains('md-figure')) {
+      const imgs = b.querySelectorAll(':scope > img.md-img');
+      if (imgs.length > 1) {
+        imgs.forEach(img => {
+          const p = document.createElement('p');
+          p.className = 'md-p md-figure';
+          p.appendChild(img.cloneNode(true));
+          out.push(p);
+        });
+        continue;
+      }
+    }
+    out.push(b);
+  }
+  return out;
+}
+
+function tagFigureImage(img) {
+  const src = img.getAttribute('src') || '';
+  if (/\.svg(\?|#|$)/i.test(src)) img.classList.add('md-img-vector');
+}
+
+function figureBlockToCell(el, fitMode) {
+  const cell = document.createElement('div');
+  cell.className = 'md-figure-cell' + (fitMode ? ' md-figure-cell--' + fitMode : '');
+  const img = extractFigureImage(el);
+  if (img) {
+    const clone = img.cloneNode(true);
+    tagFigureImage(clone);
+    cell.appendChild(clone);
+  }
+  return cell;
+}
+
+function groupHtmlFigureBlocks(blocks) {
+  const out = [];
+  let i = 0;
+
+  while (i < blocks.length) {
+    if (!isStandaloneFigure(blocks[i])) {
+      out.push(blocks[i]);
+      i++;
+      continue;
+    }
+
+    const run = [blocks[i]];
+    i++;
+    while (i < blocks.length && isStandaloneFigure(blocks[i])) {
+      run.push(blocks[i]);
+      i++;
+    }
+
+    if (run.length === 1) {
+      const frame = document.createElement('div');
+      frame.className = 'md-figure-frame md-figure-layout-single';
+      frame.appendChild(figureBlockToCell(run[0]));
+      out.push(frame);
+      continue;
+    }
+
+    const group = document.createElement('div');
+    group.className = run.length <= 4
+      ? 'md-figure-group md-figure-group--' + run.length
+      : 'md-figure-group md-figure-group--multi';
+    group.dataset.figureCount = String(run.length);
+    run.forEach(el => group.appendChild(figureBlockToCell(el, 'cover')));
+    out.push(group);
+  }
+
+  return out;
+}
+
+function applyHtmlFigureLayout(blocks) {
+  return groupHtmlFigureBlocks(normalizeHtmlFigureBlocks(blocks));
+}
+
+function getHtmlFigureMaxHeight(root) {
+  const styles = getComputedStyle(root);
+  const pageH = parseFloat(styles.getPropertyValue('--html-page-h'));
+  if (Number.isFinite(pageH) && pageH > 0) return pageH / 2;
+  const probe = document.createElement('div');
+  probe.style.cssText = 'position:absolute;visibility:hidden;height:var(--html-figure-max-h)';
+  root.appendChild(probe);
+  const h = probe.offsetHeight;
+  root.removeChild(probe);
+  return h > 0 ? h : 561;
+}
+
+function applyHtmlFigureSmartFit(root, dimMap) {
+  if (!root) return;
+  const contentW = root.clientWidth || 654;
+  const maxH = getHtmlFigureMaxHeight(root);
+
+  root.querySelectorAll('.md-figure-layout-single .md-figure-cell').forEach(cell => {
+    cell.classList.remove('md-figure-cell--contain', 'md-figure-cell--cover');
+    const img = cell.querySelector('img.md-img');
+    if (!img) return;
+
+    const src = img.getAttribute('src') || '';
+    const dims = dimMap.get(src);
+    const w = dims?.w || img.naturalWidth || 4;
+    const h = dims?.h || img.naturalHeight || 3;
+    const isSvg = /\.svg(\?|#|$)/i.test(src);
+
+    if (isSvg || w >= h * 1.02) {
+      cell.classList.add('md-figure-cell--contain');
+      return;
+    }
+
+    const hAtFullW = contentW * (h / w);
+    cell.classList.add(hAtFullW <= maxH ? 'md-figure-cell--contain' : 'md-figure-cell--cover');
+  });
 }
 
 function splitRow(line) {

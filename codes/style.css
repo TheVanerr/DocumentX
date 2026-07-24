@@ -487,8 +487,8 @@ html, body {
   --header-rule-y: 71px;
   /* .ph-footer-line — sayfa altından mesafe */
   --footer-rule-inset: 99px;
-  --content-pad-top: calc(var(--header-rule-y) + var(--line-h));
-  --content-pad-bottom: calc(var(--footer-rule-inset) + var(--line-h));
+  --content-pad-top: calc(var(--header-rule-y) + var(--line-h) / 2);
+  --content-pad-bottom: calc(var(--footer-rule-inset) + var(--line-h) / 2);
   --content-max-h: calc(var(--a4-height) - var(--content-pad-top) - var(--content-pad-bottom));
 
   width: 794px;
@@ -531,7 +531,7 @@ html, body {
   bottom: 66px;
   right: 79px;
   font-size: 11pt;
-  color: #999;
+  color: var(--brand-color, #ff0000);
   font-family: 'Calibri', sans-serif;
 }
 
@@ -554,7 +554,7 @@ html, body {
   height: 16px;
   font-family: 'Calibri', sans-serif;
   font-size: 10pt;
-  color: #838383;
+  color: var(--brand-color, #ff0000);
   white-space: nowrap;
   overflow: hidden;
 }
@@ -584,7 +584,7 @@ html, body {
   display: block;
   height: 16px;
   width: auto;
-  max-width: 72px;
+  max-width: 110px;
   object-fit: contain;
   object-position: left center;
 }
@@ -605,16 +605,17 @@ html, body {
   letter-spacing: 0.2px;
   font-size: 9px;
 }
-.ph-model { font-size: 11px; font-weight: 600; color: #555; letter-spacing: 0.5px; }
+.ph-model { font-size: 11px; font-weight: 600; color: var(--brand-color, #ff0000); letter-spacing: 0.5px; }
 
 /* ── İÇİNDEKİLER ── */
 .toc-title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
   color: #1a1a2e;
+  text-transform: uppercase;
   margin-bottom: 20px;
-  padding-bottom: 12px;
-  border-bottom: 3px solid var(--accent);
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000000;
 }
 .toc-row {
   display: flex;
@@ -668,7 +669,7 @@ html, body {
   font-size: 12pt;
   margin: 4px 0 14px;
   padding-bottom: 8px;
-  border-bottom: 2px solid var(--accent);
+  border-bottom: 1px solid #000000;
 }
 .sec-h2 { font-size: 11pt; margin: 20px 0 9px; }
 .sec-h3 { font-size: 11pt; margin: 16px 0 7px; }
@@ -681,6 +682,10 @@ html, body {
 .md-list li {
   margin-bottom: 5px;
   text-align: justify;
+}
+.md-list li.li-continued {
+  list-style: none;
+  margin-top: -2px;
 }
 
 .md-quote {

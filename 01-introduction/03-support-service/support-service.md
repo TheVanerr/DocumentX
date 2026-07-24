@@ -7,7 +7,7 @@ Bu kullanım kılavuzunda geçen “üretici” ifadesi, endüstriyel yıkama ma
 Makinenin kurulumu, devreye alınması, işletimi, periyodik bakımı veya arıza durumları ile ilgili her türlü teknik destek talebi, yedek parça siparişi ve garanti işlemleri için aşağıda belirtilen resmi iletişim kanalları üzerinden üretici firma ile irtibata geçilmelidir.
 
 | Üretici Bilgileri | Detay |
-| :--- | :--- |
+| :--- | :---: |
 | **Üretici Firma Adı** | CNK MAKİNE SANAYİ AŞ |
 | **Fabrika / Merkez Adresi** | 1. Organize Sanayi Bölgesi Prof. Orhan Işık Caddesi No:8 |
 | **İlçe / Şehir / Ülke** | Sincan / Ankara / Türkiye |

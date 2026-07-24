@@ -8,7 +8,11 @@ const COVER_BRANDS = {
   DOLFIN:  { logo: '../assets/logos/dolfin.png',   accent: '#ff0000' },
   ENVA:    { logo: '../assets/logos/enva.svg',     accent: '#007938' },
   VICO:    { logo: '../assets/logos/vico.png',     accent: '#C41E3A' },
-  KSYSTEM: { logo: '../assets/logos/ksystem.svg',  accent: '#8a3fa0' }
+  KSYSTEM: {
+    logo: '../assets/logos/ksystem.png',
+    accent: '#1B04AE',
+    logoBox: { left: 4.8, top: 14.2, width: 11.2, height: 6.5 }
+  },
 };
 
 const COVER_LOGO_BOX = { left: 4.8, top: 14.48, width: 9.04, height: 5.67 };
@@ -53,14 +57,16 @@ function buildCoverPage({ model, rev, date, variant }) {
   info.textContent = `Rev.${revText} / Hazırlanma Tarihi : ${formatCoverDate(date)} / Hazırlayan : Fatih GÜRAL`;
   page.appendChild(info);
 
+  const logoBox = brand.logoBox || COVER_LOGO_BOX;
+
   const img = document.createElement('img');
   img.className = 'cover-image';
   img.src = brand.logo;
   img.alt = variant || 'DOLFIN';
-  img.style.left = cm(COVER_LOGO_BOX.left);
-  img.style.top = cm(COVER_LOGO_BOX.top);
-  img.style.width = cm(COVER_LOGO_BOX.width);
-  img.style.height = cm(COVER_LOGO_BOX.height);
+  img.style.left = cm(logoBox.left);
+  img.style.top = cm(logoBox.top);
+  img.style.width = cm(logoBox.width);
+  img.style.height = cm(logoBox.height);
   page.appendChild(img);
 
   return page;

@@ -40,7 +40,7 @@ Aşağıdaki tablolarda LYM serisindeki dört farklı modelin (LYM 950, LYM 1150
 | **Ana Tank Kapasitesi** | L | 100 | 150 | 225 | 350 |
 | **Yıkama Pompası Gücü** | kW | 1,5 | 2,2 | 2,2 | 2,2 |
 | **Yıkama Pompası Adedi** | Adet | 1 | 1 | 1 | 2 |
-| **Nozul Tipi (Standart)** | - | Açılı geniş ağız | Açılı geniş ağız | Açılı geniş ağız | Açılı geniş ağız |
+| **Nozul Tipi (Standart)** | - | Delikli Dik Ağız | Delikli Dik Ağız | Delikli Dik Ağız | Delikli Dik Ağız |
 | **Isıtıcı (Rezistans) Gücü** | kW | 8,25 | 8,25 | 8,25 | 16,5 |
 | **Maksimum Proses Sıcaklığı** | °C | 70 | 70 | 70 | 70 |
 

@@ -22,11 +22,12 @@ const HEADER_BRANDS = {
     color: '#C41E3A'
   },
   KSYSTEM: {
-    type: 'text',
-    name: 'KSYSTEM',
-    sub: 'Group',
-    footer: 'CNK ELEKTRONİK MAKİNE SAN A.Ş.',
-    color: '#8a3fa0'
+    type: 'logo',
+    logo: '../assets/logos/ksystem.png',
+    footer: 'K.SYSTEM GMBH',
+    color: '#1B04AE',
+    logoHeight: 22,
+    logoMaxWidth: 148
   }
 };
 
@@ -51,6 +52,8 @@ function buildHeader(variant, model) {
     img.className = 'ph-logo';
     img.src = brand.logo;
     img.alt = variant;
+    if (brand.logoHeight) img.style.height = brand.logoHeight + 'px';
+    if (brand.logoMaxWidth) img.style.maxWidth = brand.logoMaxWidth + 'px';
     left.appendChild(img);
     if (brand.sub) {
       const sub = document.createElement('span');
