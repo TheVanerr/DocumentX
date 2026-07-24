@@ -1,4 +1,4 @@
-# 3.3. Teknik Özellikler (LYM Serisi)
+# 3.3. Teknik Özellikler
 
 Aşağıdaki tablolarda LYM serisindeki dört farklı modelin (LYM 950, LYM 1150, LYM 1350 ve LYM 1500) standart konfigürasyonlarına ait fiziksel, elektriksel ve operasyonel teknik veriler yer almaktadır. Modele ve özel müşteri taleplerine göre yapılan modifikasyonlar "As-Built" (imalat sonu) dokümanlarında ayrıca belirtilmiştir.
 

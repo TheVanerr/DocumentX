@@ -25,12 +25,12 @@ bolumler:
     dosya: "safety.md"
     alt_bolumler:
 
-      - id: "01-safety-info"
-        dosya: "safety-info.md"
+      - id: "01-safety-intro"
+        dosya: "safety-intro.md"
         parcalar:
 
-      - id: "02-safety-intro"
-        dosya: "safety-intro.md"
+      - id: "02-safety-info"
+        dosya: "safety-info.md"
         parcalar:
 
       - id: "03-safety-rules"

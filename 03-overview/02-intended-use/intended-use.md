@@ -1,4 +1,4 @@
-# 3.2. Kullanım Amacı (Intended Use)
+# 3.2. Kullanım Amacı
 
 Bu bölüm, makinenin tasarım amacını, kullanım sınırlarını ve yasal yükümlülükleri belirler. Makinenin güvenli ve verimli çalışabilmesi için aşağıda belirtilen şartlara harfiyen uyulması zorunludur.
 

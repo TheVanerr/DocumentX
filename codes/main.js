@@ -10,7 +10,7 @@ try {
     ? path.join(__dirname, 'node_modules', '.bin', 'electron.cmd')
     : path.join(__dirname, 'node_modules', '.bin', 'electron');
 
-  require('electron-reload')(__dirname, {
+  require('electron-reload')([__dirname, PROJECT_ROOT], {
     electron: electronPath,
     awaitWriteFinish: true,
     hardResetMethod: 'exit',
@@ -19,7 +19,9 @@ try {
       /\.git/,
       /[\/\\]\./,
       /[\/\\]\.vscode/,
-      /[\/\\]\.cursor/
+      /[\/\\]\.cursor/,
+      /[\/\\]versions[\/\\]/,
+      /[\/\\]codes[\/\\]node_modules/
     ]
   });
 } catch (e) {
