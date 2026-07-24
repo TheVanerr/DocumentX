@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <!-- Arka Plan ve Bileşen Gradyanları -->
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4f4f2"/>
+      <stop offset="100%" stop-color="#e8e8e5"/>
+    </linearGradient>
+    
+    <radialGradient id="lightGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#e6e6e6"/>
+      <stop offset="100%" stop-color="#c0c0c0"/>
+    </radialGradient>
+    
+    <radialGradient id="redBtnGrad" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#ff4d4d"/>
+      <stop offset="100%" stop-color="#cc0000"/>
+    </radialGradient>
+    
+    <linearGradient id="silverBezel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0e0e0"/>
+      <stop offset="50%" stop-color="#808080"/>
+      <stop offset="100%" stop-color="#d0d0d0"/>
+    </linearGradient>
+
+    <!-- Şalter (Rotary Switch) -->
+    <g id="rotary-switch">
+      <!-- Dış Gümüş Çerçeve -->
+      <circle cx="0" cy="0" r="32" fill="url(#silverBezel)"/>
+      <!-- Siyah İç Yüzey -->
+      <circle cx="0" cy="0" r="28" fill="#1a1a1a"/>
+      <!-- Çevirme Kolu -->
+      <path d="M-6,-15 L6,-15 L9,22 L-9,22 Z" fill="#2a2a2a" transform="rotate(45)"/>
+      <rect x="-4" y="-24" width="8" height="15" fill="#111" rx="2" transform="rotate(45)"/>
+      <!-- Vida/Gösterge noktası -->
+      <circle cx="0" cy="-18" r="2" fill="#fff" transform="rotate(45)"/>
+    </g>
+
+    <!-- Gösterge Işığı (Indicator Light) -->
+    <g id="indicator-light">
+      <circle cx="0" cy="0" r="28" fill="url(#silverBezel)"/>
+      <circle cx="0" cy="0" r="24" fill="url(#lightGrad)"/>
+      <!-- Işık dokusu -->
+      <path d="M-15,-15 L15,15 M-10,-18 L18,10 M-18,-10 L10,18 M15,-15 L-15,15 M10,-18 L-18,10 M18,-10 L-10,18" stroke="#ccc" stroke-width="1.5" opacity="0.6"/>
+      <circle cx="0" cy="0" r="10" fill="#fff" opacity="0.3"/>
+    </g>
+
+    <!-- GEMO Sıcaklık Kontrol Cihazı -->
+    <g id="gemo-controller">
+      <!-- Dış Kasa -->
+      <rect x="-85" y="-40" width="170" height="80" fill="#1e1e1e" rx="4" stroke="#444" stroke-width="2"/>
+      <!-- GEMO Logosu -->
+      <text x="-75" y="-15" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#fff">GEMO</text>
+      
+      <!-- Göstergeler -->
+      <text x="-30" y="-15" font-family="sans-serif" font-size="9" fill="#aaa">Pv</text>
+      <rect x="-15" y="-25" width="40" height="14" fill="#000"/>
+      <text x="-8" y="-14" font-family="monospace" font-size="12" fill="#0f0">024</text>
+
+      <text x="-30" y="10" font-family="sans-serif" font-size="9" fill="#aaa">Sv</text>
+      <rect x="-15" y="-3" width="40" height="14" fill="#000"/>
+      <text x="-8" y="8" font-family="monospace" font-size="12" fill="#f00">060</text>
+
+      <!-- Sağ Tuş Takımı -->
+      <!-- Yukarı -->
+      <path d="M50,-20 L45,-12 L55,-12 Z" fill="#fff"/>
+      <!-- Aşağı -->
+      <path d="M50,20 L45,12 L55,12 Z" fill="#fff"/>
+      <!-- Sol -->
+      <path d="M30,0 L38,-5 L38,5 Z" fill="#fff"/>
+      <!-- Sağ -->
+      <path d="M70,0 L62,-5 L62,5 Z" fill="#fff"/>
+      <circle cx="50" cy="0" r="3" fill="#555"/>
+    </g>
+  </defs>
+
+  <!-- Pano Zemin -->
+  <rect x="5" y="5" width="790" height="990" fill="url(#panelGrad)" stroke="#cccccc" stroke-width="4" rx="8"/>
+
+  <!-- ================= ÜST BÖLÜM (LOGOLAR) ================= -->
+  
+  <!-- TÜV Logosu -->
+  <g transform="translate(100, 120)">
+    <polygon points="-45,-45 45,-45 65,0 45,45 -45,45 -65,0" fill="#fff" stroke="#111" stroke-width="14"/>
+    <text x="0" y="-5" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#111" text-anchor="middle" letter-spacing="-1">TÜV</text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="8" fill="#111" text-anchor="middle" font-weight="bold">MANAGEMENT SERVICE</text>
+    <rect x="-35" y="22" width="70" height="12" fill="#111"/>
+    <text x="0" y="31" font-family="Arial, sans-serif" font-size="9" fill="#fff" text-anchor="middle" font-weight="bold">ISO 9001</text>
+  </g>
+
+  <!-- Dolfin Yazısı -->
+  <text x="400" y="130" font-family="Arial, sans-serif" font-size="95" font-weight="900" fill="#cd262c" text-anchor="middle" letter-spacing="-2">Dolfin</text>
+  
+  <!-- CE İşareti -->
+  <text x="680" y="130" font-family="Arial, sans-serif" font-size="85" font-weight="bold" fill="#333" text-anchor="middle" letter-spacing="-4">CE</text>
+  
+  <!-- Web Sitesi -->
+  <text x="400" y="190" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#333" text-anchor="middle">www.dolfintr.com</text>
+
+  <!-- ================= ORTA BÖLÜM (KONTROLLER) ================= -->
+
+  <!-- SATIR 1: Yıkama Bölümü -->
+  <use href="#rotary-switch" x="120" y="330"/>
+  <use href="#gemo-controller" x="290" y="330"/>
+  <text x="205" y="410" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#cd262c" text-anchor="middle">YIKAMA ISITICI</text>
+
+  <use href="#rotary-switch" x="520" y="330"/>
+  <use href="#indicator-light" x="680" y="330"/>
+  <text x="600" y="410" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#cd262c" text-anchor="middle">YIKAMA POMPASI</text>
+
+  <!-- SATIR 2: Durulama Bölümü -->
+  <use href="#rotary-switch" x="120" y="490"/>
+  <use href="#gemo-controller" x="290" y="490"/>
+  <text x="205" y="570" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#cd262c" text-anchor="middle">DURULAMA ISITICISI</text>
+
+  <use href="#rotary-switch" x="520" y="490"/>
+  <use href="#indicator-light" x="680" y="490"/>
+  <text x="600" y="570" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#cd262c" text-anchor="middle">DURULAMA POMPASI</text>
+
+  <!-- SATIR 3: Kurutma Bölümü -->
+  <use href="#rotary-switch" x="120" y="650"/>
+  <use href="#gemo-controller" x="290" y="650"/>
+  <text x="205" y="730" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#cd262c" text-anchor="middle">KURUTMA ISITICISI</text>
+
+  <use href="#rotary-switch" x="520" y="650"/>
+  <use href="#indicator-light" x="680" y="650"/>
+  <text x="600" y="730" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#cd262c" text-anchor="middle">KURUTMA FANI</text>
+
+  <!-- SATIR 4: Tambur & Acil Stop -->
+  <use href="#rotary-switch" x="120" y="830"/>
+  <use href="#indicator-light" x="290" y="830"/>
+  <text x="205" y="910" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#cd262c" text-anchor="middle">TAMBUR</text>
+
+  <!-- Acil Stop Butonu (Türkçe Çeviri) -->
+  <g transform="translate(480, 830)">
+    <!-- Sarı zemin -->
+    <circle cx="0" cy="0" r="48" fill="#e8c91a"/>
+    <circle cx="0" cy="0" r="48" fill="none" stroke="#cca808" stroke-width="2"/>
+    <!-- Kavisli Yazılar -->
+    <path id="curveUp" d="M -30,0 A 30,30 0 0,1 30,0" fill="transparent"/>
+    <text font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#cc1111" text-anchor="middle" letter-spacing="1">
+      <textPath href="#curveUp" startOffset="50%">ACİL</textPath>
+    </text>
+    <path id="curveDown" d="M 32,5 A 32,32 0 0,1 -32,5" fill="transparent"/>
+    <text font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#cc1111" text-anchor="middle" letter-spacing="1">
+      <textPath href="#curveDown" startOffset="50%">STOP</textPath>
+    </text>
+    <!-- Kırmızı Mantar Buton -->
+    <circle cx="0" cy="0" r="32" fill="url(#redBtnGrad)"/>
+    <ellipse cx="0" cy="-15" rx="16" ry="8" fill="#ff9999" opacity="0.3"/>
+  </g>
+
+  <!-- Küçük Potansiyometre / Ayar Düğmesi -->
+  <g transform="translate(680, 830)">
+    <circle cx="0" cy="0" r="26" fill="url(#silverBezel)"/>
+    <circle cx="0" cy="0" r="20" fill="#1a1a1a"/>
+    <!-- Çizgiler (Ticks) -->
+    <line x1="-13" y1="13" x2="-16" y2="16" stroke="#fff" stroke-width="2"/>
+    <line x1="-18" y1="0" x2="-22" y2="0" stroke="#fff" stroke-width="2"/>
+    <line x1="-13" y1="-13" x2="-16" y2="-16" stroke="#fff" stroke-width="2"/>
+    <line x1="0" y1="-18" x2="0" y2="-22" stroke="#fff" stroke-width="2"/>
+    <line x1="13" y1="-13" x2="16" y2="-16" stroke="#fff" stroke-width="2"/>
+    <line x1="18" y1="0" x2="22" y2="0" stroke="#fff" stroke-width="2"/>
+    <line x1="13" y1="13" x2="16" y2="16" stroke="#fff" stroke-width="2"/>
+    <!-- Merkez ve Gösterge -->
+    <circle cx="0" cy="0" r="14" fill="#111"/>
+    <circle cx="8" cy="-8" r="2.5" fill="#fff"/>
+  </g>
+
+  <!-- Panel Vidaları -->
+  <circle cx="35" cy="35" r="5" fill="url(#silverBezel)"/>
+  <circle cx="765" cy="35" r="5" fill="url(#silverBezel)"/>
+  <circle cx="35" cy="965" r="5" fill="url(#silverBezel)"/>
+  <circle cx="765" cy="965" r="5" fill="url(#silverBezel)"/>
+  <circle cx="35" cy="485" r="5" fill="url(#silverBezel)"/>
+  <circle cx="765" cy="485" r="5" fill="url(#silverBezel)"/>
+</svg>
