@@ -490,6 +490,8 @@ html, body {
   --content-pad-top: calc(var(--header-rule-y) + var(--line-h) / 2);
   --content-pad-bottom: calc(var(--footer-rule-inset) + var(--line-h) / 2);
   --content-max-h: calc(var(--a4-height) - var(--content-pad-top) - var(--content-pad-bottom));
+  --figure-max-h: calc(var(--a4-height) / 2);
+  --block-gap: 24px;
 
   width: 794px;
   height: var(--a4-height);
@@ -524,6 +526,53 @@ html, body {
   display: flow-root;
   overflow: hidden;
   box-sizing: border-box;
+}
+
+/* PDF — evrensel blok yığını aralığı (HTML ile aynı vertical rhythm) */
+.page-content > :is(
+  .sec-h,
+  .md-h,
+  .md-p,
+  .md-table,
+  .md-quote,
+  .md-list,
+  .md-code,
+  .md-hr,
+  .md-figure-frame,
+  .md-figure-group
+) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.page-content > :is(
+  .sec-h,
+  .md-h,
+  .md-p,
+  .md-table,
+  .md-quote,
+  .md-list,
+  .md-code,
+  .md-hr,
+  .md-figure-frame,
+  .md-figure-group
+) + :is(
+  .sec-h,
+  .md-h,
+  .md-p,
+  .md-table,
+  .md-quote,
+  .md-list,
+  .md-code,
+  .md-hr,
+  .md-figure-frame,
+  .md-figure-group
+) {
+  margin-top: var(--block-gap);
+}
+
+.page-content .md-hr {
+  margin: 28px 0;
 }
 
 .page-number {
@@ -786,6 +835,164 @@ html, body {
   display: inline-block;
   vertical-align: middle;
   margin: 0 4px;
+}
+
+/* PDF — fotoğraf / SVG yerleşimi (HTML ile aynı kurallar) */
+.page-content .md-figure-group,
+.page-content .md-figure-frame.md-figure-layout-single {
+  width: 100%;
+}
+
+.page-content .md-figure-layout-single .md-figure-cell {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  line-height: 0;
+}
+
+.page-content .md-figure-layout-single .md-figure-cell .md-img,
+.page-content .md-figure-group .md-img,
+.page-content .md-list > li.li-figure .md-img {
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.page-content .md-figure-layout-single .md-figure-cell--contain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: var(--figure-max-h);
+}
+
+.page-content .md-figure-layout-single .md-figure-cell--contain .md-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: var(--figure-max-h);
+  margin: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+.page-content .md-figure-layout-single .md-figure-cell--cover {
+  width: 100%;
+  height: var(--figure-max-h);
+  max-height: var(--figure-max-h);
+  position: relative;
+}
+
+.page-content .md-figure-layout-single .md-figure-cell--cover .md-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.page-content .md-figure-cell {
+  overflow: hidden;
+  background: #fff;
+  max-height: var(--figure-max-h);
+}
+
+.page-content .md-figure-group .md-figure-cell {
+  position: relative;
+  display: block;
+}
+
+.page-content .md-figure-cell--cover .md-img,
+.page-content .md-figure-group .md-figure-cell .md-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0;
+  max-width: none;
+  max-height: none;
+}
+
+.page-content .md-figure-group--2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.page-content .md-figure-group--2 .md-figure-cell {
+  aspect-ratio: 4 / 3;
+}
+
+.page-content .md-figure-group--3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.page-content .md-figure-group--3 .md-figure-cell {
+  aspect-ratio: 4 / 3;
+}
+
+.page-content .md-figure-group--3 .md-figure-cell:nth-child(3) {
+  grid-column: 1 / -1;
+  width: calc(50% - 7px);
+  justify-self: center;
+}
+
+.page-content .md-figure-group--4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.page-content .md-figure-group--4 .md-figure-cell {
+  aspect-ratio: 4 / 3;
+}
+
+.page-content .md-figure-group--multi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.page-content .md-figure-group--multi .md-figure-cell {
+  aspect-ratio: 4 / 3;
+}
+
+.page-content .md-figure-group--multi .md-figure-cell:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  width: calc(50% - 7px);
+  justify-self: center;
+}
+
+.page-content .md-list > li.li-figure {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-height: var(--figure-max-h);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.page-content .md-list > li.li-figure .md-img {
+  display: block;
+  max-width: 100%;
+  max-height: var(--figure-max-h);
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: center;
 }
 
 /* ── KAPAK SAYFASI ── */

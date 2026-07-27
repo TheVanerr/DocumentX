@@ -99,8 +99,11 @@ async function renderGuide(modelName, tree, container) {
 
 async function renderPdfGuide(modelName, tree, container) {
   const { blocks, entries } = buildBlocks(tree);
-  await preloadImages(collectImageSrcs(blocks));
-  const contentPages = computePages(blocks);
+  const imageSrcs = collectImageSrcs(blocks);
+  await preloadImages(imageSrcs);
+  const imageDims = await measureImages(imageSrcs);
+  const layoutBlocks = prepareFigureBlocks(blocks, imageDims);
+  const contentPages = computePages(layoutBlocks);
 
   for (const e of entries) {
     const idx = pageIndexOfAnchor(contentPages, e.anchorId);
@@ -563,7 +566,7 @@ function computePages(blocks) {
         return;
       }
       mContent.removeChild(tableEl);
-      newPage();
+      startNewPageWithOrphanFix();
       placeTable(tableEl);
       return;
     }
@@ -604,7 +607,7 @@ function computePages(blocks) {
       // tabloyu sonraki sayfadan devam ettir.
       if (end === start && cur.length > 0) {
         mContent.removeChild(sub);
-        newPage();
+        startNewPageWithOrphanFix();
         continue;
       }
 
@@ -766,31 +769,81 @@ function computePages(blocks) {
     }
   }
 
+  function isFigureBlock(el) {
+    if (!el || el.nodeType !== 1) return false;
+    if (el.classList.contains('md-figure-frame') || el.classList.contains('md-figure-group')) return true;
+    if (el.tagName === 'P' && el.classList.contains('md-figure')) return true;
+    if (el.tagName === 'UL' || el.tagName === 'OL') {
+      const items = el.querySelectorAll(':scope > li');
+      return items.length === 1 && items[0].classList.contains('li-figure');
+    }
+    return false;
+  }
+
+  function isLargeBlock(el) {
+    return isFigureBlock(el) || (el && el.tagName === 'TABLE');
+  }
+
+  function wouldFitIfAppended(...elements) {
+    const clones = elements.map(el => el.cloneNode(true));
+    clones.forEach(c => mContent.appendChild(c));
+    const fits = h() <= MAX;
+    clones.forEach(c => mContent.removeChild(c));
+    return fits;
+  }
+
+  function startNewPageWithOrphanFix() {
+    if (cur.length > 1 && isHeadingEl(cur[cur.length - 1])) {
+      const orphanHeading = cur.pop();
+      if (mContent.contains(orphanHeading)) mContent.removeChild(orphanHeading);
+      newPage();
+      cur.push(orphanHeading);
+      mContent.appendChild(orphanHeading);
+      return;
+    }
+    newPage();
+  }
+
   function placeFigureIfNeeded(el) {
-    if (el.tagName !== 'P' || !el.classList.contains('md-figure')) return false;
+    if (!isFigureBlock(el)) return false;
     mContent.appendChild(el);
     const fits = h() <= MAX;
     mContent.removeChild(el);
     return !fits;
   }
 
-  function place(el) {
+  function place(el, nextEl) {
     if (el.tagName === 'TABLE') { placeTable(el); return; }
     if (el.tagName === 'UL' || el.tagName === 'OL') { placeList(el); return; }
     if (el.dataset && el.dataset.pageBreakBefore === 'true' && cur.length > 0) {
       newPage();
     }
-    if (placeFigureIfNeeded(el) && cur.length > 0) {
+
+    // Başlık + sonraki blok birlikte sığmıyorsa ikisini sonraki sayfada tut
+    if (isHeadingEl(el) && nextEl && cur.length > 0 && !wouldFitIfAppended(el, nextEl)) {
       newPage();
     }
+
+    if (placeFigureIfNeeded(el) && cur.length > 0) {
+      startNewPageWithOrphanFix();
+    }
+
     mContent.appendChild(el);
     if (h() <= MAX) {
-      // Başlık yalnız kalmasın: altında en az ~3 satır yer yoksa sonraki sayfaya al
-      if (isHeadingEl(el) && cur.length > 0 && (MAX - h()) < ORPHAN_MIN) {
-        mContent.removeChild(el);
-        newPage();
-        place(el);
-        return;
+      if (isHeadingEl(el) && cur.length > 0) {
+        const remaining = MAX - h();
+        if (nextEl && isLargeBlock(nextEl) && !wouldFitIfAppended(nextEl)) {
+          mContent.removeChild(el);
+          newPage();
+          place(el, nextEl);
+          return;
+        }
+        if (remaining < ORPHAN_MIN) {
+          mContent.removeChild(el);
+          newPage();
+          place(el, nextEl);
+          return;
+        }
       }
       cur.push(el);
       return;
@@ -803,13 +856,25 @@ function computePages(blocks) {
     }
     mContent.removeChild(el);
     newPage();
-    place(el);
+    place(el, nextEl);
   }
 
-  for (const b of blocks) place(b);
+  for (let i = 0; i < blocks.length; i++) {
+    place(blocks[i], blocks[i + 1]);
+  }
 
   document.body.removeChild(measure);
 
+  return fixOrphanHeadingPages(pages.filter(p => p.length));
+}
+
+function fixOrphanHeadingPages(pages) {
+  for (let i = 0; i < pages.length - 1; i++) {
+    const page = pages[i];
+    while (page.length > 0 && isHeadingEl(page[page.length - 1])) {
+      pages[i + 1].unshift(page.pop());
+    }
+  }
   return pages.filter(p => p.length);
 }
 
@@ -1156,22 +1221,40 @@ function applyHtmlFigureLayout(blocks) {
   return groupHtmlFigureBlocks(normalizeHtmlFigureBlocks(blocks));
 }
 
-function getHtmlFigureMaxHeight(root) {
-  const styles = getComputedStyle(root);
-  const pageH = parseFloat(styles.getPropertyValue('--html-page-h'));
-  if (Number.isFinite(pageH) && pageH > 0) return pageH / 2;
+function prepareFigureBlocks(blocks, dimMap) {
+  const layoutBlocks = applyHtmlFigureLayout(blocks);
+  const prep = document.createElement('div');
+  prep.className = 'a4-page measure';
+  const content = document.createElement('div');
+  content.className = 'page-content';
+  prep.appendChild(content);
+  document.body.appendChild(prep);
+  for (const b of layoutBlocks) content.appendChild(b);
+  applyHtmlFigureSmartFit(content, dimMap);
+  const out = Array.from(content.childNodes);
+  document.body.removeChild(prep);
+  return out;
+}
+
+function getFigureMaxHeight(root) {
+  const pageRoot = root.closest('.a4-page, .html-document, .html-unified') || root;
   const probe = document.createElement('div');
-  probe.style.cssText = 'position:absolute;visibility:hidden;height:var(--html-figure-max-h)';
-  root.appendChild(probe);
+  probe.style.cssText = 'position:absolute;visibility:hidden;height:var(--figure-max-h, var(--html-figure-max-h))';
+  pageRoot.appendChild(probe);
   const h = probe.offsetHeight;
-  root.removeChild(probe);
-  return h > 0 ? h : 561;
+  pageRoot.removeChild(probe);
+  if (h > 0) return h;
+  const styles = getComputedStyle(pageRoot);
+  const pageH = parseFloat(styles.getPropertyValue('--html-page-h'))
+    || parseFloat(styles.getPropertyValue('--a4-height'));
+  if (Number.isFinite(pageH) && pageH > 0) return pageH / 2;
+  return 561;
 }
 
 function applyHtmlFigureSmartFit(root, dimMap) {
   if (!root) return;
   const contentW = root.clientWidth || 654;
-  const maxH = getHtmlFigureMaxHeight(root);
+  const maxH = getFigureMaxHeight(root);
 
   root.querySelectorAll('.md-figure-layout-single .md-figure-cell').forEach(cell => {
     cell.classList.remove('md-figure-cell--contain', 'md-figure-cell--cover');
