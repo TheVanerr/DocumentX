@@ -101,8 +101,7 @@ async function renderPdfGuide(modelName, tree, container) {
   const { blocks, entries } = buildBlocks(tree);
   const imageSrcs = collectImageSrcs(blocks);
   await preloadImages(imageSrcs);
-  const imageDims = await measureImages(imageSrcs);
-  const layoutBlocks = prepareFigureBlocks(blocks, imageDims);
+  const layoutBlocks = prepareFigureBlocks(blocks);
   const contentPages = computePages(layoutBlocks);
 
   for (const e of entries) {
@@ -212,7 +211,7 @@ async function renderHtmlGuide(modelName, tree, container) {
   doc.appendChild(contentSection);
 
   container.appendChild(doc);
-  applyHtmlFigureSmartFit(mainContent, imageDims);
+  applyHtmlFigureSmartFit(mainContent);
 
   container.querySelectorAll('[data-toc-anchor]').forEach(el => {
     const anchorId = el.dataset.tocAnchor;
@@ -479,7 +478,8 @@ function getContentMetrics() {
   const pageH = parseFloat(cs.height) || parseFloat(cs.minHeight) || 1123;
   const pt = parseFloat(cs.paddingTop);
   const pb = parseFloat(cs.paddingBottom);
-  const maxH = pageH - pt - pb;
+  const contentMax = parseFloat(cs.getPropertyValue('--content-max-h'));
+  const maxH = Number.isFinite(contentMax) && contentMax > 0 ? contentMax : pageH - pt - pb;
   document.body.removeChild(probe);
   return { MAX: maxH > 0 ? maxH : 909, LINE_H: lineH };
 }
@@ -648,12 +648,30 @@ function computePages(blocks) {
       for (const w of words) {
         const prev = tn.textContent;
         tn.textContent = prev + w;
-        if (h() > MAX && prev.trim()) {
-          tn.textContent = prev;
+        if (h() <= MAX) continue;
+
+        if (!prev.trim()) {
           commitPart();
           tn = document.createTextNode(w.replace(/^\s+/, ''));
           partLi.appendChild(tn);
+          continue;
         }
+
+        tn.textContent = prev;
+        if (partList.offsetHeight < ORPHAN_MIN) {
+          mContent.removeChild(partList);
+          newPage();
+          continuation = true;
+          ({ list: partList, newLi: partLi } = startPart());
+          tn = document.createTextNode('');
+          partLi.appendChild(tn);
+          tn.textContent = prev + w;
+          if (h() <= MAX) continue;
+        }
+
+        commitPart();
+        tn = document.createTextNode(w.replace(/^\s+/, ''));
+        partLi.appendChild(tn);
       }
     }
 
@@ -667,14 +685,36 @@ function computePages(blocks) {
         for (const w of words) {
           const prev = tn.textContent;
           tn.textContent = prev + w;
-          if (h() > MAX && prev.trim()) {
-            tn.textContent = prev;
+          if (h() <= MAX) continue;
+
+          if (!prev.trim()) {
             commitPart();
             const nextShell = el.cloneNode(false);
             partLi.appendChild(nextShell);
             tn = document.createTextNode(w.replace(/^\s+/, ''));
             nextShell.appendChild(tn);
+            continue;
           }
+
+          tn.textContent = prev;
+          if (partList.offsetHeight < ORPHAN_MIN) {
+            mContent.removeChild(partList);
+            newPage();
+            continuation = true;
+            ({ list: partList, newLi: partLi } = startPart());
+            const nextShell = el.cloneNode(false);
+            partLi.appendChild(nextShell);
+            tn = document.createTextNode('');
+            nextShell.appendChild(tn);
+            tn.textContent = prev + w;
+            if (h() <= MAX) continue;
+          }
+
+          commitPart();
+          const nextShell = el.cloneNode(false);
+          partLi.appendChild(nextShell);
+          tn = document.createTextNode(w.replace(/^\s+/, ''));
+          nextShell.appendChild(tn);
         }
         return;
       }
@@ -758,7 +798,19 @@ function computePages(blocks) {
 
       if (end === start) {
         mContent.removeChild(sub);
-        splitListItemAcrossPages(listEl, items[start], tag === 'OL' ? start + 1 : 1);
+        const olStart = tag === 'OL' ? start + 1 : 1;
+        if (cur.length > 0) {
+          newPage();
+          const single = makeSubList([items[start]], olStart);
+          mContent.appendChild(single);
+          if (h() <= MAX) {
+            cur.push(single);
+            start++;
+            continue;
+          }
+          mContent.removeChild(single);
+        }
+        splitListItemAcrossPages(listEl, items[start], olStart);
         start++;
         continue;
       }
@@ -795,6 +847,8 @@ function computePages(blocks) {
   function startNewPageWithOrphanFix() {
     if (cur.length > 1 && isHeadingEl(cur[cur.length - 1])) {
       const orphanHeading = cur.pop();
+      delete orphanHeading.dataset.pageBreakBefore;
+      orphanHeading.dataset.orphanMoved = 'true';
       if (mContent.contains(orphanHeading)) mContent.removeChild(orphanHeading);
       newPage();
       cur.push(orphanHeading);
@@ -865,17 +919,32 @@ function computePages(blocks) {
 
   document.body.removeChild(measure);
 
-  return fixOrphanHeadingPages(pages.filter(p => p.length));
+  return normalizePageStarts(fixOrphanHeadingPages(pages.filter(p => p.length)));
 }
 
 function fixOrphanHeadingPages(pages) {
   for (let i = 0; i < pages.length - 1; i++) {
     const page = pages[i];
     while (page.length > 0 && isHeadingEl(page[page.length - 1])) {
-      pages[i + 1].unshift(page.pop());
+      const heading = page.pop();
+      delete heading.dataset.pageBreakBefore;
+      heading.dataset.orphanMoved = 'true';
+      pages[i + 1].unshift(heading);
     }
   }
   return pages.filter(p => p.length);
+}
+
+function normalizePageStarts(pages) {
+  for (const page of pages) {
+    while (page.length && page[0].classList && page[0].classList.contains('md-hr')) {
+      page.shift();
+    }
+    if (page.length && page[0].dataset) {
+      delete page[0].dataset.pageBreakBefore;
+    }
+  }
+  return pages;
 }
 
 /* ── Sayfa dizilerini gerçek A4 sayfalarına dönüştürür (antet + numara) ── */
@@ -1221,7 +1290,7 @@ function applyHtmlFigureLayout(blocks) {
   return groupHtmlFigureBlocks(normalizeHtmlFigureBlocks(blocks));
 }
 
-function prepareFigureBlocks(blocks, dimMap) {
+function prepareFigureBlocks(blocks) {
   const layoutBlocks = applyHtmlFigureLayout(blocks);
   const prep = document.createElement('div');
   prep.className = 'a4-page measure';
@@ -1230,50 +1299,19 @@ function prepareFigureBlocks(blocks, dimMap) {
   prep.appendChild(content);
   document.body.appendChild(prep);
   for (const b of layoutBlocks) content.appendChild(b);
-  applyHtmlFigureSmartFit(content, dimMap);
+  applyHtmlFigureSmartFit(content);
   const out = Array.from(content.childNodes);
   document.body.removeChild(prep);
   return out;
 }
 
-function getFigureMaxHeight(root) {
-  const pageRoot = root.closest('.a4-page, .html-document, .html-unified') || root;
-  const probe = document.createElement('div');
-  probe.style.cssText = 'position:absolute;visibility:hidden;height:var(--figure-max-h, var(--html-figure-max-h))';
-  pageRoot.appendChild(probe);
-  const h = probe.offsetHeight;
-  pageRoot.removeChild(probe);
-  if (h > 0) return h;
-  const styles = getComputedStyle(pageRoot);
-  const pageH = parseFloat(styles.getPropertyValue('--html-page-h'))
-    || parseFloat(styles.getPropertyValue('--a4-height'));
-  if (Number.isFinite(pageH) && pageH > 0) return pageH / 2;
-  return 561;
-}
-
-function applyHtmlFigureSmartFit(root, dimMap) {
+function applyHtmlFigureSmartFit(root) {
   if (!root) return;
-  const contentW = root.clientWidth || 654;
-  const maxH = getFigureMaxHeight(root);
 
   root.querySelectorAll('.md-figure-layout-single .md-figure-cell').forEach(cell => {
     cell.classList.remove('md-figure-cell--contain', 'md-figure-cell--cover');
-    const img = cell.querySelector('img.md-img');
-    if (!img) return;
-
-    const src = img.getAttribute('src') || '';
-    const dims = dimMap.get(src);
-    const w = dims?.w || img.naturalWidth || 4;
-    const h = dims?.h || img.naturalHeight || 3;
-    const isSvg = /\.svg(\?|#|$)/i.test(src);
-
-    if (isSvg || w >= h * 1.02) {
-      cell.classList.add('md-figure-cell--contain');
-      return;
-    }
-
-    const hAtFullW = contentW * (h / w);
-    cell.classList.add(hAtFullW <= maxH ? 'md-figure-cell--contain' : 'md-figure-cell--cover');
+    if (!cell.querySelector('img.md-img')) return;
+    cell.classList.add('md-figure-cell--contain');
   });
 }
 

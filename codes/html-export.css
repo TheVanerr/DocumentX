@@ -139,6 +139,14 @@ body.html-export {
   border-top: 1px solid #e8ecf2;
 }
 
+.html-flow-content > [data-orphan-moved="true"].sec-h1 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
 .html-flow-content .md-hr {
   margin: 28px 0;
 }
@@ -315,13 +323,18 @@ body.html-export {
 
 .md-h { color: #1a2540; font-family: 'Calibri', sans-serif; font-weight: 700; line-height: 1.3; }
 .md-h1 { font-size: 12pt; margin: 22px 0 10px; }
-.md-h2 { font-size: 11pt; margin: 20px 0 9px; padding-bottom: 4px; border-bottom: 1px solid #e2e8f0; }
+.md-h2:not(.sec-h) { font-size: 11pt; margin: 20px 0 9px; padding-bottom: 4px; border-bottom: 1px solid #e2e8f0; }
 .md-h3 { font-size: 11pt; margin: 16px 0 7px; }
 .md-h4 { font-size: 11pt; margin: 14px 0 6px; }
 .md-h5 { font-size: 11pt; margin: 12px 0 5px; }
 .md-h6 { font-size: 11pt; margin: 12px 0 5px; color: var(--html-muted); }
 
-.sec-h { color: #1a2540; font-family: 'Calibri', sans-serif; font-weight: 700; line-height: 1.3; }
+.sec-h {
+  color: #1a2540;
+  font-family: 'Calibri', sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+}
 .sec-h1 {
   font-size: 12pt;
   margin: 4px 0 14px;

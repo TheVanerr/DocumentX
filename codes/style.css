@@ -487,8 +487,10 @@ html, body {
   --header-rule-y: 71px;
   /* .ph-footer-line — sayfa altından mesafe */
   --footer-rule-inset: 99px;
+  /* İçerik son satırı ile alt antet çizgisi arası minimum boşluk */
+  --content-footer-gap: 24px;
   --content-pad-top: calc(var(--header-rule-y) + var(--line-h) / 2);
-  --content-pad-bottom: calc(var(--footer-rule-inset) + var(--line-h) / 2);
+  --content-pad-bottom: calc(var(--footer-rule-inset) + var(--content-footer-gap));
   --content-max-h: calc(var(--a4-height) - var(--content-pad-top) - var(--content-pad-bottom));
   --figure-max-h: calc(var(--a4-height) / 2);
   --block-gap: 24px;
@@ -573,6 +575,20 @@ html, body {
 
 .page-content .md-hr {
   margin: 28px 0;
+}
+
+/* Yeni sayfa başında üstte metin yokken ayırıcı çizgi gösterme */
+.page-content > :first-child[data-page-break-before="true"],
+.page-content > :first-child[data-orphan-moved="true"].sec-h1 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.page-content > :first-child[data-orphan-moved="true"].sec-h1 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .page-number {
@@ -706,14 +722,19 @@ html, body {
 
 .md-h { color: #1a2540; font-family: 'Calibri', sans-serif; font-weight: 700; line-height: 1.3; }
 .md-h1 { font-size: 12pt; margin: 22px 0 10px; }
-.md-h2 { font-size: 11pt; margin: 20px 0 9px; padding-bottom: 4px; border-bottom: 1px solid #e2e8f0; }
+.md-h2:not(.sec-h) { font-size: 11pt; margin: 20px 0 9px; padding-bottom: 4px; border-bottom: 1px solid #e2e8f0; }
 .md-h3 { font-size: 11pt; margin: 16px 0 7px; }
 .md-h4 { font-size: 11pt; margin: 14px 0 6px; }
 .md-h5 { font-size: 11pt; margin: 12px 0 5px; }
 .md-h6 { font-size: 11pt; margin: 12px 0 5px; color: #4a5568; }
 
-/* Numaralı bölüm başlıkları */
-.sec-h { color: #1a2540; font-family: 'Calibri', sans-serif; font-weight: 700; line-height: 1.3; }
+/* Numaralı bölüm başlıkları — siyah alt çizgi yalnızca ana bölümlerde (1. 2. 3. …) */
+.sec-h {
+  color: #1a2540;
+  font-family: 'Calibri', sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+}
 .sec-h1 {
   font-size: 12pt;
   margin: 4px 0 14px;
