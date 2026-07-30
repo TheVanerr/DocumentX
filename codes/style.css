@@ -808,15 +808,12 @@ html, body {
   border: 1px solid #cbd5e0;
   padding: 7px 10px;
   vertical-align: middle;
+  text-align: center;
 }
 .md-table th {
-  text-align: center;
   background: #eef2fb;
   font-weight: 700;
   color: #1a2540;
-}
-.md-table td {
-  text-align: left;
 }
 .md-table tr:nth-child(even) td { background: #f8fafc; }
 

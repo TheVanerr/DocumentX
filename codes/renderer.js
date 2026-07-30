@@ -1096,7 +1096,6 @@ function mdToBlocks(md) {
     // Table
     if (line.includes('|') && i + 1 < lines.length && /^\s*\|?[\s:|-]+\|?\s*$/.test(lines[i + 1]) && lines[i + 1].includes('-')) {
       const header = splitRow(line);
-      const aligns = parseAlignRow(lines[i + 1]);
       i += 2;
       const rows = [];
       while (i < lines.length && lines[i].includes('|') && lines[i].trim()) {
@@ -1120,7 +1119,6 @@ function mdToBlocks(md) {
         for (let ci = 0; ci < r.length; ci++) {
           const td = document.createElement('td');
           td.innerHTML = inline(r[ci]);
-          applyCellAlign(td, aligns[ci]);
           tr.appendChild(td);
         }
         tbody.appendChild(tr);
@@ -1320,19 +1318,6 @@ function splitRow(line) {
   if (s.startsWith('|')) s = s.slice(1);
   if (s.endsWith('|')) s = s.slice(0, -1);
   return s.split('|').map(c => c.trim());
-}
-
-function parseAlignRow(line) {
-  return splitRow(line).map(cell => {
-    const s = cell.replace(/\s/g, '');
-    if (/^:-+:$/.test(s)) return 'center';
-    if (/^-+:$/.test(s)) return 'right';
-    return 'left';
-  });
-}
-
-function applyCellAlign(el, align) {
-  if (align && align !== 'left') el.style.textAlign = align;
 }
 
 /* ── Satır içi markdown ── */

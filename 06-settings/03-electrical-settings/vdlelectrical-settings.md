@@ -30,7 +30,7 @@ Tambur dönüş hızı, kontrol panosu bünyesindeki frekans sürücüsü aracı
 Tambur çalışma frekansı (dolayısıyla devir hızı) kontrol panosu üzerinden aşağıdaki sınırlar içinde değiştirilebilir:
 
 | Parametre | Değer |
-|---|---|
+|:---:|:---:|
 | Minimum çalışma frekansı | [...] Hz |
 | Maksimum çalışma frekansı | [...] Hz |
 | Fabrika çıkış değeri | [...] Hz |
@@ -48,7 +48,7 @@ Tambur tahrik motoru ve pompa motorları, aşırı akım durumlarında motorlar�
 **Nominal akım değerleri:**
 
 | Bileşen | Nominal Akım (A) |
-|---|:---:|
+|:---:|:---:|
 | Tambur tahrik motoru | 1,00 A |
 | Yıkama pompası | [...] A |
 | Durulama pompası (2B modellerde) | [...] A |
