@@ -1,4 +1,4 @@
-# 7. İşletim
+# 7. İŞLETİM
 
 Bu bölüm, endüstriyel yıkama makinesinin güvenli, verimli ve optimum performansla çalıştırılması için gerekli olan temel işletim prensiplerini kapsamaktadır. Ekipmanın günlük kullanımı, standart yıkama döngülerinin yönetimi ve genel çalışma prosedürleri bu başlık altında tanımlanmıştır. 
 
