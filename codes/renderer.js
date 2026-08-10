@@ -1,5 +1,7 @@
+let currentGuideId = '';
 let currentModel = '';
 let currentLang = 'tr';
+let currentDiller = ['tr'];
 let currentRev = '';
 let currentDate = '';
 let currentFirma = 'DOLFIN';
@@ -7,38 +9,38 @@ let viewMode = 'pdf';
 let lastGuideCache = null;
 
 async function onModelChange(value) {
-  currentModel = value;
+  currentGuideId = value;
   const emptyState = document.getElementById('emptyState');
   const pagesContainer = document.getElementById('pagesContainer');
 
   pagesContainer.innerHTML = '';
 
   if (!value) {
+    currentModel = '';
     emptyState.style.display = 'flex';
     return;
   }
 
   emptyState.style.display = 'none';
 
-  const res = await window.electronAPI.getGuide(value);
+  const res = await window.electronAPI.getGuide(value, currentLang);
 
   if (!res || !res.ok) {
-    pagesContainer.innerHTML = infoCard(
-      res && res.error === 'yaml-parse'
-        ? `<strong>${value}</strong> YAML dosyası okunamadı.<br><span style="font-size:12px;color:#a00;">${escapeHtml(res.message || '')}</span>`
-        : `<strong>${value}</strong> için YAML dosyası bulunamadı.`
-    );
+    pagesContainer.innerHTML = infoCard(`<strong>${escapeHtml(value)}</strong> için kılavuz bulunamadı.`);
     return;
   }
+
+  currentModel = res.label || res.model || value;
+  syncLangButtons(res.diller || ['tr'], res.lang || currentLang);
 
   if (!res.tree || !res.tree.length) {
     pagesContainer.innerHTML = infoCard(
-      `<strong>${res.model}</strong> için içerik bulunamadı. Tüm md dosyaları boş görünüyor.`
+      `<strong>${escapeHtml(res.label || res.model)}</strong> için içerik bulunamadı.`
     );
     return;
   }
 
-  await renderGuide(res.model, res.tree, pagesContainer);
+  await renderGuide(currentModel, res.tree, pagesContainer);
 }
 
 function infoCard(html) {
@@ -439,7 +441,7 @@ function onCoverMetaChange() {
 
 function onFirmaChange(v) {
   currentFirma = v;
-  if (currentModel) onModelChange(currentModel);
+  if (currentGuideId) onModelChange(currentGuideId);
 }
 
 function updateCover() {
@@ -1019,7 +1021,9 @@ function scrollToPage(el) {
 
 /* ── Markdown → blok elemanları ── */
 function mdToBlocks(md) {
-  const lines = md.replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
+  const lines = md
+    .replace(/<!--[\s\S]*?-->/g, '')
+    .replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
   const blocks = [];
   let i = 0;
 
@@ -1341,12 +1345,34 @@ function escapeHtml(str) {
 }
 
 /* ── Dil / PDF / Toast ── */
-function setLanguage(lang) {
+/* Guide'ın mevcut dillerine göre butonları etkinleştirir/pasifleştirir. */
+function syncLangButtons(diller, activeLang) {
+  currentDiller = Array.isArray(diller) && diller.length ? diller.map(s => s.toLowerCase()) : ['tr'];
+  currentLang = (activeLang || currentLang || 'tr').toLowerCase();
+  if (!currentDiller.includes(currentLang)) currentLang = currentDiller[0];
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    const l = btn.dataset.lang;
+    const available = currentDiller.includes(l);
+    btn.classList.toggle('active', l === currentLang);
+    btn.classList.toggle('lang-disabled', !available);
+    btn.disabled = !available;
+    btn.title = available ? btn.title.replace(/ \(çeviri yok\)$/, '') : `${l.toUpperCase()} (çeviri yok)`;
+  });
+}
+
+async function setLanguage(lang) {
+  lang = String(lang).toLowerCase();
+  if (!currentDiller.includes(lang)) {
+    showToast(`${lang.toUpperCase()} için çeviri bulunmuyor`, 'error');
+    return;
+  }
+  if (lang === currentLang) return;
   currentLang = lang;
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
-  showToast(`Dil değiştirildi: ${lang.toUpperCase()}`, 'success');
+  if (currentGuideId) await onModelChange(currentGuideId);
 }
 
 async function exportPDF() {
@@ -1465,19 +1491,82 @@ function handleWheelZoom(e) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+async function populateGuides(guides) {
   const sel = document.getElementById('modelSelect');
-  if (sel) {
-    sel.value = 'LYM';
-    onModelChange('LYM');
+  if (!sel || !Array.isArray(guides)) return;
+
+  sel.innerHTML = '<option value="">— Seçiniz —</option>';
+
+  const models = guides.filter(g => g.type === 'model');
+  const projects = guides.filter(g => g.type === 'project');
+
+  if (models.length) {
+    const grp = document.createElement('optgroup');
+    grp.label = 'Modeller';
+    for (const g of models) {
+      const opt = document.createElement('option');
+      opt.value = g.id;
+      opt.textContent = g.label;
+      grp.appendChild(opt);
+    }
+    sel.appendChild(grp);
   }
 
-  applyZoom();
+  let firstProject = '';
+  if (projects.length) {
+    const grp = document.createElement('optgroup');
+    grp.label = 'Projeler';
+    for (const g of projects) {
+      const opt = document.createElement('option');
+      opt.value = g.id;
+      opt.textContent = g.label;
+      grp.appendChild(opt);
+      if (!firstProject) firstProject = g.id;
+    }
+    sel.appendChild(grp);
+  }
 
+  const preferred = firstProject || (models[0] && models[0].id) || '';
+  if (preferred && sel.value !== preferred) {
+    sel.value = preferred;
+    await onModelChange(preferred);
+  }
+}
+
+window.__populateGuides = populateGuides;
+
+async function loadModelSelect() {
+  try {
+    if (window.electronAPI?.listGuides) {
+      const guides = await window.electronAPI.listGuides();
+      await populateGuides(guides);
+    }
+  } catch (e) {
+    console.error('Kılavuz listesi yüklenemedi:', e);
+  }
+}
+
+function initApp() {
+  loadModelSelect();
+  applyZoom();
   document.addEventListener('wheel', handleWheelZoom, { capture: true, passive: false });
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
 
 document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && document.getElementById('npOverlay')?.style.display === 'flex') {
+    closeNewProject();
+    return;
+  }
+  if (e.key === 'Escape' && document.getElementById('trOverlay')?.style.display === 'flex') {
+    closeTranslate();
+    return;
+  }
   if (!e.ctrlKey) return;
   if (e.key === '=' || e.key === '+') {
     e.preventDefault();
@@ -1490,3 +1579,346 @@ document.addEventListener('keydown', (e) => {
     resetZoom();
   }
 });
+
+/* ══════════════ YENİ PROJE ══════════════ */
+async function openNewProject() {
+  const overlay = document.getElementById('npOverlay');
+  const sel = document.getElementById('npModel');
+  const status = document.getElementById('npStatus');
+  status.textContent = '';
+  status.className = 'np-status';
+  document.getElementById('npName').value = '';
+  document.getElementById('npGo').disabled = false;
+
+  try {
+    const models = await window.electronAPI.listModels();
+    sel.innerHTML = '';
+    (models || []).forEach(m => {
+      const o = document.createElement('option');
+      o.value = m; o.textContent = m.toUpperCase();
+      sel.appendChild(o);
+    });
+  } catch (e) {
+    sel.innerHTML = '<option value="">model yok</option>';
+  }
+
+  overlay.style.display = 'flex';
+  setTimeout(() => document.getElementById('npName').focus(), 50);
+}
+
+function closeNewProject() {
+  document.getElementById('npOverlay').style.display = 'none';
+}
+
+async function submitNewProject() {
+  const name = document.getElementById('npName').value.trim();
+  const model = document.getElementById('npModel').value;
+  const status = document.getElementById('npStatus');
+  const go = document.getElementById('npGo');
+
+  if (!name) {
+    status.textContent = 'Proje adı gerekli';
+    status.className = 'np-status err';
+    return;
+  }
+  const langs = [...document.querySelectorAll('.np-lang input:checked')].map(i => i.value);
+
+  go.disabled = true;
+  status.textContent = 'Oluşturuluyor…';
+  status.className = 'np-status';
+
+  try {
+    const r = await window.electronAPI.createProject(name, model, langs);
+    if (!r || !r.ok) {
+      status.textContent = (r && r.error) || 'Oluşturulamadı';
+      status.className = 'np-status err';
+      go.disabled = false;
+      return;
+    }
+    const guides = await window.electronAPI.listGuides();
+    await populateGuides(guides);
+    const sel = document.getElementById('modelSelect');
+    sel.value = r.id;
+    await onModelChange(r.id);
+    closeNewProject();
+    showToast(`Proje oluşturuldu: ${r.label} (${r.files.length} bölüm kopyalandı)`, 'success');
+  } catch (e) {
+    status.textContent = e.message;
+    status.className = 'np-status err';
+    go.disabled = false;
+  }
+}
+
+/* ══════════════ ÇEVİRİ PANELİ ══════════════ */
+const TR_LANG_ORDER = ['en', 'de'];
+let trLangs = ['en', 'de'];      // üretilecek diller (sırayla)
+let trSelected = new Set();      // seçili srcRel
+let trFileIndex = new Map();     // srcRel -> { statuses:{en,de}, combined }
+let trRunning = false;
+
+function trActiveLangs() {
+  return TR_LANG_ORDER.filter(l => trLangs.includes(l));
+}
+
+/* Farklı sürümlerden gelebilecek biçimleri güvenli normalize eder. */
+function trNormStatuses(f) {
+  if (f && f.statuses && typeof f.statuses === 'object') return f.statuses;
+  if (f && typeof f.status === 'string') return { en: f.status, de: f.status };
+  return {};
+}
+
+/* Aktif dillere göre birleşik durum: hepsi güncelse güncel; biri yoksa yok;
+   biri eskimişse eskimiş; aksi halde placeholder. */
+function trCombined(statuses) {
+  const s = statuses || {};
+  const act = trActiveLangs();
+  const vals = act.map(l => s[l] || 'yok');
+  if (!vals.length) return 'yok';
+  if (vals.every(v => v === 'guncel')) return 'guncel';
+  if (vals.some(v => v === 'yok')) return 'yok';
+  if (vals.some(v => v === 'eskimis')) return 'eskimis';
+  return 'placeholder';
+}
+
+async function openTranslate() {
+  const overlay = document.getElementById('trOverlay');
+  overlay.style.display = 'flex';
+  document.getElementById('trProgress').innerHTML = '';
+  await trRefreshKey();
+  await trReload();
+}
+
+function closeTranslate() {
+  if (trRunning) return;
+  document.getElementById('trOverlay').style.display = 'none';
+}
+
+async function trRefreshKey() {
+  const el = document.getElementById('trKeyStatus');
+  try {
+    const k = await window.electronAPI.trKey();
+    if (k && k.ready) {
+      el.textContent = `● anahtar hazır (${k.provider})`;
+      el.className = 'tr-key-status ok';
+    } else {
+      el.textContent = '● anahtar yok — .env dosyasına ekleyin';
+      el.className = 'tr-key-status bad';
+    }
+  } catch (e) {
+    el.textContent = '● anahtar durumu okunamadı';
+    el.className = 'tr-key-status bad';
+  }
+}
+
+async function trToggleLang(lang) {
+  if (trRunning) return;
+  const has = trLangs.includes(lang);
+  if (has && trLangs.length === 1) return; // en az bir dil açık kalsın
+  trLangs = has ? trLangs.filter(l => l !== lang) : trLangs.concat(lang);
+  document.querySelectorAll('.tr-lang-btn').forEach(b => b.classList.toggle('active', trLangs.includes(b.dataset.lang)));
+  await trReload();
+}
+
+async function trReload() {
+  const res = await window.electronAPI.trList(trActiveLangs());
+  const tree = document.getElementById('trTree');
+  trSelected.clear();
+  trFileIndex.clear();
+  if (!res || !res.ok) {
+    tree.innerHTML = `<div style="padding:16px;color:#ff6b6b;">Liste alınamadı: ${escapeHtml(res && res.error || '')}</div>`;
+    trUpdateCount();
+    return;
+  }
+  try {
+    const rendered = trRenderNode(res.tree, true);
+    tree.innerHTML = '';
+    tree.appendChild(rendered);
+  } catch (e) {
+    tree.innerHTML = `<div style="padding:16px;color:#ff6b6b;">Ağaç çizilemedi: ${escapeHtml(e.message)}. Uygulamayı yeniden başlatın.</div>`;
+  }
+  trUpdateCount();
+}
+
+function trRenderNode(node, isRoot) {
+  const frag = document.createDocumentFragment();
+
+  for (const dir of node.dirs) {
+    const wrap = document.createElement('div');
+    wrap.className = 'tr-dir';
+    const label = document.createElement('div');
+    label.className = 'tr-dir-label';
+    label.textContent = '📁 ' + dir.name;
+    wrap.appendChild(label);
+    const inner = document.createElement('div');
+    inner.style.paddingLeft = '14px';
+    inner.appendChild(trRenderNode(dir, false));
+    wrap.appendChild(inner);
+    frag.appendChild(wrap);
+  }
+
+  for (const f of node.files) {
+    const statuses = trNormStatuses(f);
+    const combined = trCombined(statuses);
+    trFileIndex.set(f.srcRel, { statuses, combined });
+    const row = document.createElement('label');
+    row.className = 'tr-file';
+    row.dataset.rel = f.srcRel;
+
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.checked = false;
+    cb.onchange = () => { cb.checked ? trSelected.add(f.srcRel) : trSelected.delete(f.srcRel); trUpdateCount(); };
+
+    const dot = document.createElement('span');
+    dot.className = 'tr-dot s-' + combined;
+
+    const name = document.createElement('span');
+    name.className = 'tr-file-name';
+    name.textContent = f.name.replace(/\.tr\.md$/, '');
+
+    const st = document.createElement('span');
+    st.className = 'tr-file-state';
+    st.textContent = trActiveLangs().map(l => l.toUpperCase() + ':' + (statuses[l] || 'yok')).join('  ');
+
+    row.appendChild(cb);
+    row.appendChild(dot);
+    row.appendChild(name);
+    row.appendChild(st);
+    frag.appendChild(row);
+  }
+
+  const container = document.createElement('div');
+  container.appendChild(frag);
+  return container;
+}
+
+function trSelectByStatus(statuses) {
+  trSelected.clear();
+  for (const [rel, info] of trFileIndex) {
+    if (statuses.includes(info.combined)) trSelected.add(rel);
+  }
+  trSyncCheckboxes();
+  trUpdateCount();
+}
+
+function trSelectAll(on) {
+  trSelected.clear();
+  if (on) for (const rel of trFileIndex.keys()) trSelected.add(rel);
+  trSyncCheckboxes();
+  trUpdateCount();
+}
+
+function trSyncCheckboxes() {
+  document.querySelectorAll('.tr-file').forEach(row => {
+    const rel = row.dataset.rel;
+    const cb = row.querySelector('input');
+    const on = trSelected.has(rel);
+    if (cb) cb.checked = on;
+    row.style.display = row.dataset.hidden === '1' ? 'none' : '';
+  });
+}
+
+function trApplyFilter(q) {
+  q = (q || '').toLowerCase().trim();
+  document.querySelectorAll('.tr-file').forEach(row => {
+    const match = !q || row.dataset.rel.toLowerCase().includes(q);
+    row.dataset.hidden = match ? '0' : '1';
+    row.style.display = match ? '' : 'none';
+  });
+}
+
+function trUpdateCount() {
+  document.getElementById('trCount').textContent = `${trSelected.size} seçili`;
+  document.getElementById('trGo').disabled = trSelected.size === 0 || trRunning;
+}
+
+async function trRun() {
+  if (trRunning || !trSelected.size) return;
+  trRunning = true;
+  trUpdateCount();
+  document.querySelectorAll('.tr-lang-btn, .tr-tool, .tr-close').forEach(b => b.disabled = true);
+
+  const prog = document.getElementById('trProgress');
+  const langsOrdered = trActiveLangs();          // ['en','de'] sırayla
+  const files = [...trSelected];
+  let ok = 0, err = 0;
+
+  // İş listesi: her dosya için, çeviri gereken diller (güncel olanı atla).
+  const jobs = [];
+  for (const rel of files) {
+    const info = trFileIndex.get(rel);
+    for (const lang of langsOrdered) {
+      const st = info && info.statuses[lang];
+      if (st !== 'guncel') jobs.push({ rel, lang });
+    }
+  }
+
+  if (!jobs.length) {
+    trRunning = false;
+    document.querySelectorAll('.tr-lang-btn, .tr-tool, .tr-close').forEach(b => b.disabled = false);
+    trUpdateCount();
+    showToast('Seçilenlerin tüm dilleri zaten güncel', 'success');
+    return;
+  }
+
+  for (let i = 0; i < jobs.length; i++) {
+    const { rel, lang } = jobs[i];
+    const line = document.createElement('div');
+    line.className = 'row-run';
+    line.textContent = `→ (${i + 1}/${jobs.length}) ${lang.toUpperCase()} · ${rel} …`;
+    prog.appendChild(line);
+    prog.scrollTop = prog.scrollHeight;
+
+    try {
+      const r = await window.electronAPI.trOne(rel, lang);
+      if (r && r.ok) {
+        line.className = 'row-ok';
+        line.textContent = `✓ (${i + 1}/${jobs.length}) ${lang.toUpperCase()} · ${rel}`;
+        ok++;
+        const info = trFileIndex.get(rel);
+        if (info) {
+          info.statuses[lang] = 'guncel';
+          info.combined = trCombined(info.statuses);
+          const row = document.querySelector(`.tr-file[data-rel="${CSS.escape(rel)}"]`);
+          if (row) {
+            const dot = row.querySelector('.tr-dot');
+            const stt = row.querySelector('.tr-file-state');
+            if (dot) dot.className = 'tr-dot s-' + info.combined;
+            if (stt) stt.textContent = langsOrdered.map(l => l.toUpperCase() + ':' + (info.statuses[l] || 'yok')).join('  ');
+            if (info.combined === 'guncel') {
+              const cb = row.querySelector('input'); if (cb) cb.checked = false;
+              trSelected.delete(rel);
+            }
+          }
+        }
+      } else {
+        line.className = 'row-err';
+        line.textContent = `✗ ${lang.toUpperCase()} · ${rel}: ${(r && r.error) || 'bilinmeyen hata'}`;
+        err++;
+      }
+    } catch (e) {
+      line.className = 'row-err';
+      line.textContent = `✗ ${lang.toUpperCase()} · ${rel}: ${e.message}`;
+      err++;
+    }
+    prog.scrollTop = prog.scrollHeight;
+    await new Promise(r => setTimeout(r, 1200)); // kota dostu bekleme
+  }
+
+  const summary = document.createElement('div');
+  summary.className = ok && !err ? 'row-ok' : 'row-err';
+  summary.textContent = `Bitti — ${ok} çeviri yapıldı, ${err} hata.`;
+  prog.appendChild(summary);
+  prog.scrollTop = prog.scrollHeight;
+
+  trRunning = false;
+  document.querySelectorAll('.tr-lang-btn, .tr-tool, .tr-close').forEach(b => b.disabled = false);
+  trUpdateCount();
+  showToast(`Çeviri bitti: ${ok} başarılı${err ? ', ' + err + ' hata' : ''}`, err ? 'error' : 'success');
+
+  // Aktif kılavuz gösteriliyorsa dil butonlarını tazele
+  if (currentGuideId) {
+    const merged = [...new Set(currentDiller.concat(langsOrdered))];
+    syncLangButtons(merged, currentLang);
+  }
+}

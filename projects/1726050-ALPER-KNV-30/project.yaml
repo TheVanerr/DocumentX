@@ -1,0 +1,13 @@
+# Proje receta: yalnizca model + diller + kapak + (varsa) override dosyalari.
+# Icerik content/_models/<model> ve content/_common katmanlarindan miras alinir.
+
+proje_adi: 1726050-ALPER-KNV 30
+model: vdl
+diller:
+  - tr
+varsayilan_dil: tr
+extends: templates/base.yaml
+kapak:
+  rev: ''
+  tarih: ''
+  firma: DOLFIN

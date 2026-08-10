@@ -5,3 +5,8 @@ out/
 *.log
 .DS_Store
 Thumbs.db
+
+# API anahtarları ve çeviri durumu (gizli / yerel)
+.env
+scripts/.translation-state.json
+BACKUP/

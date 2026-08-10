@@ -31,21 +31,20 @@
   <nav class="navbar">
     <!-- Model Seçici -->
     <div class="navbar-left">
-      <label class="select-label">Model</label>
+      <label class="select-label">Kılavuz</label>
       <div class="custom-select-wrapper">
         <select id="modelSelect" class="model-select" onchange="onModelChange(this.value)">
           <option value="">— Seçiniz —</option>
-          <option value="LYM" selected>LYM</option>
-          <option value="VDL">VDL</option>
-          <option value="KBN">KBN</option>
-          <option value="KNV">KNV</option>
-          <option value="RTS">RTS</option>
-          <option value="MST">MST</option>
-          <option value="PYT">PYT</option>
-          <option value="ULT">ULT</option>
         </select>
         <span class="select-arrow">&#9662;</span>
       </div>
+
+      <button class="np-btn" onclick="openNewProject()" title="Yeni proje oluştur">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+          <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        Yeni Proje
+      </button>
 
       <!-- Firma Seçici -->
       <label class="select-label">Firma</label>
@@ -130,8 +129,92 @@
         </svg>
         HTML Çıktı
       </button>
+
+      <!-- Çeviri Butonu -->
+      <button class="pdf-btn tr-btn" onclick="openTranslate()" title="Çeviri Panelini Aç">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M3 5H13M8 3V5M11 5C11 9 8 13 3 15M6 9C6 11 9 13 12 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 19L17.5 11L21 19M14.8 17H20.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Çeviri
+      </button>
     </div>
   </nav>
+
+  <!-- Çeviri Modalı -->
+  <div class="tr-overlay" id="trOverlay" style="display:none;">
+    <div class="tr-modal">
+      <div class="tr-head">
+        <div class="tr-title">Çeviri Paneli</div>
+        <div class="tr-lang" id="trLangBar">
+          <span class="tr-lang-label">Diller:</span>
+          <button class="tr-lang-btn active" data-lang="en" onclick="trToggleLang('en')">EN</button>
+          <button class="tr-lang-btn active" data-lang="de" onclick="trToggleLang('de')">DE</button>
+        </div>
+        <button class="tr-close" onclick="closeTranslate()" title="Kapat">&#x2715;</button>
+      </div>
+
+      <div class="tr-toolbar">
+        <button class="tr-tool" onclick="trSelectByStatus(['yok','placeholder','eskimis'])">Çevrilmeyenleri seç</button>
+        <button class="tr-tool" onclick="trSelectByStatus(['eskimis'])">Sadece değişenler</button>
+        <button class="tr-tool" onclick="trSelectAll(false)">Temizle</button>
+        <input type="text" id="trFilter" class="tr-filter" placeholder="Dosya ara…" oninput="trApplyFilter(this.value)" />
+        <span class="tr-key-status" id="trKeyStatus"></span>
+      </div>
+
+      <div class="tr-tree" id="trTree"></div>
+
+      <div class="tr-foot">
+        <div class="tr-legend">
+          <span class="tr-dot s-guncel"></span> güncel
+          <span class="tr-dot s-eskimis"></span> değişmiş
+          <span class="tr-dot s-placeholder"></span> placeholder
+          <span class="tr-dot s-yok"></span> yok
+        </div>
+        <div class="tr-actions">
+          <span class="tr-count" id="trCount">0 seçili</span>
+          <button class="tr-go" id="trGo" onclick="trRun()" disabled>Seçilenleri Çevir</button>
+        </div>
+      </div>
+      <div class="tr-progress" id="trProgress"></div>
+    </div>
+  </div>
+
+  <!-- Yeni Proje Modalı -->
+  <div class="np-overlay" id="npOverlay" style="display:none;">
+    <div class="np-modal">
+      <div class="np-head">
+        <div class="np-title">Yeni Proje</div>
+        <button class="np-close" onclick="closeNewProject()" title="Kapat">&#x2715;</button>
+      </div>
+
+      <div class="np-body">
+        <label class="np-label">Proje adı</label>
+        <input type="text" id="npName" class="np-input" placeholder="örn. 1730000-XYZ-KNV 40" autocomplete="off" />
+
+        <label class="np-label">Model</label>
+        <div class="custom-select-wrapper np-select-wrap">
+          <select id="npModel" class="model-select"></select>
+          <span class="select-arrow">&#9662;</span>
+        </div>
+
+        <label class="np-label">Diller</label>
+        <div class="np-langs">
+          <label class="np-lang"><input type="checkbox" value="tr" checked disabled /> TR</label>
+          <label class="np-lang"><input type="checkbox" value="en" checked /> EN</label>
+          <label class="np-lang"><input type="checkbox" value="de" checked /> DE</label>
+        </div>
+
+        <p class="np-hint">Yalnızca modele özel bölümler proje klasörüne, modelin içeriğiyle kopyalanır. Ortak/güvenlik bölümleri mirasla gelir.</p>
+      </div>
+
+      <div class="np-foot">
+        <span class="np-status" id="npStatus"></span>
+        <button class="np-cancel" onclick="closeNewProject()">Vazgeç</button>
+        <button class="np-go" id="npGo" onclick="submitNewProject()">Oluştur</button>
+      </div>
+    </div>
+  </div>
 
   <!-- İçerik Alanı -->
   <main class="content-area" id="contentArea">
@@ -142,7 +225,7 @@
         <line x1="8" y1="13" x2="16" y2="13" stroke="#3a4257" stroke-width="1.5" stroke-linecap="round"/>
         <line x1="8" y1="17" x2="13" y2="17" stroke="#3a4257" stroke-width="1.5" stroke-linecap="round"/>
       </svg>
-      <p>Görüntülemek için yukarıdan bir model seçin</p>
+      <p>Görüntülemek için yukarıdan bir kılavuz seçin</p>
     </div>
     <div class="pages-container" id="pagesContainer"></div>
   </main>
