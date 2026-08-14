@@ -117,9 +117,10 @@ Ana şalter tipi / In (A):100A
 Ana şalter marka:Schneider
 Toplam sigorta / devre kesici değeri (A):100A
 UPS / jeneratör gereksinimi (varsa):Hayır
+
 [MOTOR_SURUCU_LISTESI]
 # Her satır: Ad | Güç (kW) | Devir (rpm) | Marka | Model | Not
-Konveyör Redüktörü motoru :
+Konveyör Redüktörü motoru :1,5kW/
 Yıkama Pompası Motoru:
 Durulama Pompası Motoru:
 Yağ Sıyırıcı Redüktörü Motoru:
@@ -131,7 +132,7 @@ Yağ Sıyırıcı Redüktörü Motoru:
 [HIDROLIK]
 Hidrolik sistem var mı (Evet/Hayır): Evet
 Hidrolik ünite marka / model:
-Tank kapasitesi (L):
+Tank kapasitesi (L):250L
 Çalışma basıncı (bar):
 Maksimum basınç (bar):
 Akış debisi (L/dk):
@@ -142,12 +143,10 @@ Silindir adedi:
 Silindir çap / strok (mm):
 
 [SIKIŞTIRILMIŞ_HAVA_SU]
-Basınçlı hava girişi (bar):
-Su girişi basıncı (bar):
-Su debisi nominal (L/dk):
-Su debisi max (L/dk):
-Su sıcaklığı min / max (°C):
-Su kalitesi / filtre gereksinimi:
+Basınçlı hava girişi (bar):6
+Su girişi basıncı (bar):1
+Su sıcaklığı min / max (°C):+10°C - +70°C
+Su kalitesi / filtre gereksinimi:Şebeke suyu ya da arıtılmış su kullanılmalıdır.
 Drain / atık su hattı çap (mm):
 
 [ORTAM_KOSULLARI]
@@ -162,7 +161,7 @@ Gürültü seviyesi (dB(A)):65dB(A)
 [KONTROLLER]
 Ana kontrol panosu konumu:Elektrik Panosu üzerinde
 Pano koruma sınıfı (IP):55
-Pano boyutları W×H×D (mm):
+Pano boyutları W×H×D (mm):800X1200X300
 HMI ekran boyutu (inch):7
 HMI marka / model:SIMATIC HMI KTP700 Basic PN (6AV2123-2GB03-0AX0)
 PLC marka / model:SIEMENS SIMATIC S7-1200
@@ -187,7 +186,7 @@ Uzaktan erişim (Evet/Hayır — protokol):
 # --- 03.5 Makine yerleşimi (machine-layout) ---
 
 [LAYOUT]
-Genel yerleşim planı dosya adı:
+Genel yerleşim planı dosya adı: 1726050-ALPER-KNV 30 LAYOUT.pdf
 Operatör tarafı (ön / sol / sağ):Sağ
 Besleme tarafı (giriş yönü):Sol
 Boşaltma tarafı (çıkış yönü):Sağ
@@ -229,94 +228,76 @@ Depolama ortam koşulları:Depolama ortamında nem ve korozif maddeler olmamalı
 Montaj süresi tahmini (saat / gün):1 gün
 Montaj ekip sayısı:1
 Gerekli vinç / ekipman:Forklift
-Montaj alanı min boyut (m × m):10m × 10m
+Montaj alanı min boyut (m × m):5m × 3m
 Zemin düzgünlük toleransı (mm/m):0,5mm/m
 Zemin mukavemet gereksinimi:Zemin mukavemet gereksinimi:Zemin yüzeyi sert ve düz olmalıdır.
 
 [MONTAJ_ADIMLARI]
 # Her adım: Sıra | Açıklama | Tork / tolerans | Not
-Adım 1:
-Adım 2:
-Adım 3:
-Adım 4:
-Adım 5:
+Adım 1:Makine kurulacağı bölgeye getirildi ve indirildi.
+Adım 2:Makine Ambalajı Soyuldu.
+Adım 3:Makine Zemine oturtuldu ve yüksekliği ayarlanabilir ayakları makine terazide olacak şekilde ayarlandı.
+Adım 4:Makineye 6 bar basınçlı hava takıldı. 3/4 Bağlantıya sahip. 
+Adım 5:Makineye 1 bar basınçlı su takıldı. 1/2 Bağlantıya sahip. 
+Adım 5:Makineye 50Kw-100A kurulu güce göre 380V 50Hz trifaze besleme hattı takıldı.
+Adım 6:Makine elektriği pano üzerinden açıldı.
+Adım 7:Makineye gelen fazların yönü faz sıra rölesi üzerinden kontrol edildi. Ters ise iki faz değiştirilerek yönü düzeltildi.
+Adım 8:Makine kullanıma hazır.
 
 [KONUMLANDIRMA]
-Hizalama toleransı (mm):
-Nivelman toleransı (mm):
-Ankraj cıvata tipi / adet:
-Ankraj tork değeri (Nm):
-Seviye ayar mekanizması (ayak tipi):
+Hizalama toleransı (mm):0,5mm
+Seviye ayar mekanizması (ayak tipi):Ayarlanabilir ayaklar
 
 [KURULUM_TEST]
-Mekanik kurulum test checklist:
-Elektrik devreye alma test checklist:
-Pnömatik / hidrolik dolum test:
-Boş koşu test süresi (dk):
-Güvenlik fonksiyon test listesi:
+Mekanik kurulum test checklist:Makine terzide mi?
+Elektrik devreye alma test checklist:Faz Koruma Rölesi çıkış veriyor mu? Makinede elektrik var mı? Acil Stop a basıldığında makine duruyor mu?
+Pnömatik / hidrolik dolum test:Makinede hava bağlantısı yapıldıktan sonra HMI arayüzündeki manuel sayfasındaki hava bilgisi yeşil yanıyor mu? Makinede su bağlantısı yapıldıktan sonra HMI arayüzündeki manuel sayfasındaki su bilgisi yeşil yanıyor mu? 
+Boş koşu test süresi (dk):15
+Güvenlik fonksiyon test listesi:Acil Stop a basıldığında makine duruyor mu? Makine kullanıma hazır mı? Kapaklar açıldığında RFID sensörü makineyi durduruyor mu?
 
 [ILETISIM]
-Fieldbus / protokol (Profinet / EtherCAT / Modbus / vb.):
-Üst sistem (MES / SCADA) bağlantısı:
-I/O listesi dosya referansı:
-Kablo listesi dosya referansı:
-
+Fieldbus / protokol (Profinet / EtherCAT / Modbus / vb.):Profinet
+Üst sistem (MES / SCADA) bağlantısı:Bilinmiyor
+I/O listesi dosya referansı:1726050-ALPER-KNV 30 I/O LISTESI.pdf
 
 # =============================================================================
 # 06 — AYARLAR (settings)
 # =============================================================================
 
 [MEKANIK_AYARLAR]
-Mekanik ayar noktaları listesi:
-Referans / home pozisyon ayarı:
-Zincir / kayış gerginlik değeri:
-Mesafe / limit switch ayarları:
-Nozzle / doldurma kafası ayar aralığı (mm):
-Format değişim prosedürü özeti:
+Mekanik ayar noktaları listesi:Herhangi bir ayara gerek yoktur.
+Referans / home pozisyon ayarı:Referans olarak konveyörün başı kullanılmalıdır.
+Zincir / kayış gerginlik değeri:Herhangi bir ayara gerek yoktur.
+Mesafe / limit switch ayarları:Herhangi bir ayara gerek yoktur.
+Nozzle / doldurma kafası ayar aralığı (mm):Herhangi bir ayara gerek yoktur.
+Format değişim prosedürü özeti:Format değişim prosedürü yoktur.
 
 [GUVENLIK_AYARLARI]
-Emniyet kapısı bypass (varsa — sadece bakım):
-Işık perdesi ayar mesafesi (mm):
-Acil stop test periyodu:
-Safety PLC parametre dosyası:
+Emniyet kapısı bypass (varsa — sadece bakım):Emniyet kapısı kesinlikle bypass edilmemelidir. Bakım için makine elektriği kesildikten sonra kapakları açılmalıdır. Elektrik kesildiğinde mutlaka LOTO prosedürü uygulanmalıdır.
+Işık perdesi ayar mesafesi (mm): Makinede Işık Perdesi yoktur.
+Acil stop test periyodu:Her ay bir kez acil stop testi yapılmalıdır.
 
 [ELEKTRIK_AYARLARI]
-Inverter parametre grubu özeti:
-Motor yönü / faz kontrolü:
-Encoder / feedback ayarı:
-Analog ölçeklendirme (basınç / sıcaklık):
-Tarih / saat / dil ayarı:
-
-[HIDROLIK_AYARLAR]
-Basınç relief valve ayarı (bar):
-Akış ayar valfi konumu:
-Sıcaklık switch eşiği (°C):
+Motor yönü / faz kontrolü:Motor tek bir yönde çalıştırılmalıdır. Bunun için bir ayar yapmaya gerek yoktur.
+Encoder / feedback ayarı:PLC Programı içerisinde gömülüdür. Ayar firmamız tarafından yapılmalıdır.
+Analog ölçeklendirme (basınç / sıcaklık):Basınç ayarı yoktur. Sıcaklık ayarı için HMI arayüzündeki ayar sayfası kullanılmalıdır.
+Tarih / saat / dil ayarı:HMI Arayüzündeki ayar sayfasından yapılmalıdır.
 
 [PNEOMATIK_AYARLAR]
-Regülatör basınç ayarı (bar):
-Silindir hız ayarı:
-Sensör ON/OFF gecikmeleri (ms):
-
-[VACUUM_AYARLAR]
-Vakum hedef değeri (mbar):
-Vakum gecikme / emiş süresi (ms):
-
-[DIGER_AYARLAR]
-Reçete no / ürün kodu eşleme:
-Sayım / hedef adet reset:
-Özel müşteri parametreleri:
-
+Regülatör basınç ayarı (bar):6
+Silindir hız ayarı:Silindir hızı ayarı yoktur.
+Sensör ON/OFF gecikmeleri (ms):Sensör ON/OFF gecikmeleri yoktur.
 
 # =============================================================================
 # 07 — OPERASYON (operation)
 # =============================================================================
 
 [CALISMA_MODLARI]
-Manuel mod açıklaması:
-Otomatik mod açıklaması:
-Bakım / setup modu:
-Step / tek adım modu:
-Mod geçiş koşulları:
+Manuel mod açıklaması:Manuel mod yoktur. HMI Arayüzündeki çalışma sayfasında yıkama, durulama, kurutma 1, kurutma 2, egzos seçenekleri vardır. Bunları müşteri istediği gibi on/off ayarlayıp makineyi çalıştırabilir.
+Otomatik mod açıklaması:HMI Arayüzündeki çalışma sayfasında yıkama, durulama, kurutma 1, kurutma 2, egzos seçenekleri vardır. Bunları müşteri istediği gibi on/off ayarlayıp makineyi çalıştırabilir.
+Bakım / setup modu:Bakım için özel bir mod yoktur. Bakım için makine elektriği kesildikten sonra kapakları açılmalıdır. Elektrik kesildiğinde mutlaka LOTO prosedürü uygulanmalıdır.
+Step / tek adım modu:Step / tek adım modu yoktur.
+Mod geçiş koşulları:Mod geçiş koşulları yoktur.
 
 [BASLATMA]
 Devreye alma ön koşulları (checklist):
@@ -359,17 +340,16 @@ Operatör müdahale noktaları:
 # =============================================================================
 
 [URUN_KAPASITE]
-Nominal kapasite tablosu (ürün × adet/saat):
-Test edilen kapasite (adet/saat):
-Kapasite test koşulları:
-Darboğaz noktası:
-Maksimum sürekli çalışma süresi (saat/gün):
+Nominal kapasite tablosu (ürün × adet/saat):Kullanıcı firma tarafından ayarlanır.
+Test edilen kapasite (adet/saat):Kullanıcı firma tarafından ayarlanır.
+Kapasite test koşulları:Kullanıcı firma tarafından ayarlanır.
+Maksimum sürekli çalışma süresi (saat/gün):24/7 çalışabilir.
 
 [OZEL_KURULUM]
-Ürün A parametreleri:
-Ürün B parametreleri:
-Ürün C parametreleri:
-Reçete no listesi:
+Ürün A parametreleri:Kullanıcı firma tarafından ayarlanır.
+Ürün B parametreleri:Kullanıcı firma tarafından ayarlanır.
+Ürün C parametreleri:Kullanıcı firma tarafından ayarlanır.
+Reçete no listesi:Kullanıcı firma tarafından ayarlanır.
 
 
 # =============================================================================
@@ -377,9 +357,9 @@ Reçete no listesi:
 # =============================================================================
 
 [BAKIM_GENEL]
-Bakım felsefesi (önleyici / kestirimci):
-Bakım personeli yeterlilik seviyesi:
-Lubrication chart dosya referansı:
+Bakım felsefesi (önleyici / kestirimci):Önleyici bakım felsefesi uygulanır.
+Bakım personeli yeterlilik seviyesi:Makinenin kullanıldığı ülkenin mevcut bakım personeli yeterlilik seviyesi uygulanmalıdır. 
+Lubrication chart dosya referansı:Lubrication chart dosya referansı yoktur.
 
 [BAKIM_PERIYOT]
 Günlük bakım maddeleri:

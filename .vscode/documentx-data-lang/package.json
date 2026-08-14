@@ -1,0 +1,27 @@
+{
+  "name": "documentx-data-lang",
+  "displayName": "DocumentX DATA Syntax",
+  "description": "1726050-ALPER-KNV 30 DATA dosyalari icin renkli alan vurgusu",
+  "version": "0.1.0",
+  "publisher": "documentx-local",
+  "engines": { "vscode": "^1.74.0" },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "documentx-data",
+        "aliases": ["DocumentX DATA", "documentx-data"],
+        "filenames": [],
+        "filenamePatterns": ["* DATA", "*-datas"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "documentx-data",
+        "scopeName": "source.documentx-data",
+        "path": "./syntaxes/documentx-data.tmLanguage.json"
+      }
+    ]
+  }
+}
