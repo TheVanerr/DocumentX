@@ -1,0 +1,547 @@
+# =============================================================================
+# 1726050-ALPER-KNV 30 — MAKİNE VERİ DOSYASI (SSOT)
+# =============================================================================
+# Bu dosya kılavuz yazımının TEK kaynağıdır. Bölüm .md dosyaları buradan üretilir.
+# Doldurma: "Değer:" satırına yaz. Bilinmiyorsa [EKSİK] bırak. Uydurma yapma.
+# Son güncelleme:
+# Hazırlayan:
+# Onaylayan:
+# =============================================================================
+
+
+# =============================================================================
+# 0 — PROJE VE MAKİNE KİMLİĞİ
+# =============================================================================
+
+[PROJE]
+Proje / sipariş no: 1726050
+Müşteri adı: ALPER
+Makine ticari adı:
+Makine model kodu: KNV-30
+Seri numarası: 1726050
+Üretim yılı: 2026
+İmalat / sevk tarihi: 2026-08-12
+
+# =============================================================================
+# 01 — GİRİŞ (introduction)
+# =============================================================================
+
+[GIRIS_GENEL]
+Kılavuz kapsamı (hangi makine, hangi opsiyonlar): KNV 30 3000 2B
+Kılavuz hedef kitlesi (operatör / bakım / kurulum): Operatör, Bakım, Kurulum
+Makine tipi kısa tanım (1-2 cümle): KNV 30 3000 2B, girişten yüklemeli konveyörlü iki banyolu (yıkama + durulama) endüstriyel parça yıkama makinesidir. Parçalar konveyör üzerinde ilerleyerek yıkama, durulama ve kurutma proseslerini tamamlar.
+
+# =============================================================================
+# 02 — GÜVENLİK (safety)
+# =============================================================================
+
+[ACIL_DURDURMA]
+Acil stop butonu adedi: 4
+Acil stop konumları (fiziksel yer): 1. Elektrik Panosu üzerinde, 2. Makine girişinde konveyörün sağında, 3. Makine girişinde konveyörün solunda, 4. Makine Çıkışında konveyörün solunda
+Acil stop reset prosedürü: Acil Stop butonu kaldırılıp fiziksel tehditin giderildiği kesinleştirildikten sonra pano etiketi üzerindeki reset butonununa operatör tarafından lambası yanana kadar basılmalı
+Acil stop sonrası makine durumu: Acil Stopa basıldığında makinedeki her fonksiyon durur
+
+[GUVENLIK_CIT]
+Emniyet kapısı / bariyer sayısı: 0
+Kapı switch tipi / marka: RFID Güvenlik Sensörü var.
+Makine stop kategorisi (Cat.):
+Işık perdesi var mı (Evet/Hayır — tip / marka): Hayır
+
+
+# =============================================================================
+# 03 — GENEL BAKIŞ (overview)
+# =============================================================================
+
+# --- 03.1 Makine tanımı (machine-description) ---
+
+[MAKINE_TANIMI]
+Makinenin ana işlevi: Parça üzerindeki endüstriyel işlemlerden kalan yağı ve kirliliği temizlemek
+Makine tipi (ör. dolum / paketleme / yıkama / konveyör): Konveyör 
+Proses akışı özeti (adım adım): Yıkama,Durulama,Kurutma
+Makine bileşenleri listesi (ana modüller): 
+Opsiyon / varyant listesi (bu projeye özel):
+Makine fotoğraf / çizim referans dosyası:
+Genel görünüm açıklaması:
+
+# --- 03.2 Amaçlanan kullanım (intended-use) ---
+
+[AMACLANAN_KULLANIM]
+Amaçlanan kullanım alanı:Endüstriyel parçaların kirliliğinin giderilmesi
+İşlenebilir ürün tipleri:Endüstriyel parçalar(metal,plastik,kauçuk vb.)
+İşlenemez / yasak ürün tipleri:Canlı herhangi bir organizma(insan,hayvan,bitki vb.)
+Ortam koşulları (iç mekan / dış mekan):İç mekan
+Ortam sıcaklığı min / max (°C):+10°C - +30°C
+Ortam nemi max (% RH)30% -50%
+Operatör sayısı (min / max):1-2
+Yetkinlik / eğitim gereksinimi:İşletme ve bakım personeli eğitimi,makine kullanımı ve bakımı ile ilgili eğitim
+
+# --- 03.3 Teknik özellikler (machine-spec) ---
+
+[BOYUT_AGIRLIK]
+Dış genişlik W (mm):1730
+Dış uzunluk L (mm):3770
+Dış yükseklik H — normal (mm):2122
+Boş ağırlık — kuru (kg):
+Çalışma ağırlığı — dolu (kg):
+Zemin yükü / nokta yük (kg/m² veya kN):
+Şase tipi (sabit ayak / ayarlanabilir ayak / ankraj):
+Ankraj delik sayısı / çap / derinlik:
+Taşıma için demonte parça listesi:
+
+[KAPASITE_PROSES]
+Nominal kapasite (adet/saat veya kg/saat):
+Maksimum kapasite (adet/saat):Bilinmiyor
+Minimum kapasite (adet/saat):730
+Ürün formatı / ambalaj tipi:Bilinmiyor
+Ürün boyutu min (mm):Bilinmiyor
+Ürün boyutu max (mm):Bilinmiyor
+Ürün ağırlığı min (g):Bilinmiyor
+Ürün ağırlığı max (g):Bilinmiyor
+Proses adım sayısı:3
+Proses adı 1:Yıkama
+Proses adı 2:Durulama       
+Proses adı 3:Kurutma
+Döngü süresi nominal (sn):900
+
+[ELEKTRIK]
+Besleme gerilimi (V):380V
+Besleme frekansı (Hz):50Hz
+Faz sayısı:3
+Toplam kurulu güç (kW):50kW 
+Toplam kurulu güç — ısıtma dahil (kW):50kW
+Maksimum akım çekişi (A):100A
+Güç faktörü (cos φ):0,9
+Kısa devre akımı / ICC gereksinimi (kA):10kA
+Besleme konfigürasyonu (3P+N+PE / vb.):3P+N+PE
+Ana şalter tipi / In (A):100A
+Ana şalter marka:Schneider
+Toplam sigorta / devre kesici değeri (A):100A
+UPS / jeneratör gereksinimi (varsa):Hayır
+[MOTOR_SURUCU_LISTESI]
+# Her satır: Ad | Güç (kW) | Devir (rpm) | Marka | Model | Not
+Konveyör Redüktörü motoru :
+Yıkama Pompası Motoru:
+Durulama Pompası Motoru:
+Yağ Sıyırıcı Redüktörü Motoru:
+1. Kurutma Fanı Motoru:
+2. Kurutma Fanı Motoru:
+3. Kurutma Fanı Motoru:
+4. Kurutma Fanı Motoru:
+
+[HIDROLIK]
+Hidrolik sistem var mı (Evet/Hayır): Evet
+Hidrolik ünite marka / model:
+Tank kapasitesi (L):
+Çalışma basıncı (bar):
+Maksimum basınç (bar):
+Akış debisi (L/dk):
+Hidrolik yağ tipi / viskozite: Yok
+Yağ değişim periyodu (saat / ay):
+Filtre tipi / değişim aralığı:
+Silindir adedi:
+Silindir çap / strok (mm):
+
+[SIKIŞTIRILMIŞ_HAVA_SU]
+Basınçlı hava girişi (bar):
+Su girişi basıncı (bar):
+Su debisi nominal (L/dk):
+Su debisi max (L/dk):
+Su sıcaklığı min / max (°C):
+Su kalitesi / filtre gereksinimi:
+Drain / atık su hattı çap (mm):
+
+[ORTAM_KOSULLARI]
+Çalışma sıcaklığı min / max (°C):+10°C - +30°C
+Depolama sıcaklığı min / max (°C):+10°C - +30°C
+Göreceli nem min / max (%):30% - 50 %
+Koruma sınıfı (IP):IP55
+Gürültü seviyesi (dB(A)):65dB(A)
+
+# --- 03.4 Makine kontrolleri (machine-controls) ---
+
+[KONTROLLER]
+Ana kontrol panosu konumu:Elektrik Panosu üzerinde
+Pano koruma sınıfı (IP):55
+Pano boyutları W×H×D (mm):
+HMI ekran boyutu (inch):7
+HMI marka / model:SIMATIC HMI KTP700 Basic PN (6AV2123-2GB03-0AX0)
+PLC marka / model:SIEMENS SIMATIC S7-1200
+PLC CPU model:S7-1200 CPU 1215C DC/DC/DC (6ES7215-1AG40-0XB0)
+I/O modül özeti:36I/24O
+Ana şalter konumu:Elektrik Panosu Üzerinde
+Start / Stop düğme konumu:HMI Arayüzünde Dijital Buton
+Acil stop konumu:Elektrik Panosu Üzerinde + Makine Konveyör girişi ve Çıkışında
+Mod seçici (Manuel / Otomatik / Bakım):Otomatik / Bakım
+Jog / inching düğmeleri: Bulunmamaktadır
+Sinyal lambaları listesi: Kırmızı Lamba (Alarm) , Sarı Lamba (Makine Kullanıma Hazır) , Yeşil Lamba (Makine Çalışıyor)
+Operatör paneli dilleri:Türkçe,İngilizce, Almanca
+Şifre seviyeleri (operatör / bakım / admin):HMI Arayüzünde bir şifre bulunmaktadır.
+
+[KONTROL_FONKSIYONLARI]
+Ana ekran menü yapısı:
+Alarm ekranı davranışı:
+Reçete / program kayıt sayısı:
+Trend / log kayıt süresi:
+Uzaktan erişim (Evet/Hayır — protokol):
+
+# --- 03.5 Makine yerleşimi (machine-layout) ---
+
+[LAYOUT]
+Genel yerleşim planı dosya adı:
+Operatör tarafı (ön / sol / sağ):Sağ
+Besleme tarafı (giriş yönü):Sol
+Boşaltma tarafı (çıkış yönü):Sağ
+Bakım erişim bölgeleri:Makine arkasındaki kapakların tamamı sökülebilir ve erişilebilir
+Minimum etraf boşluğu — ön (mm):1000
+Minimum etraf boşluği — arka (mm):1000
+Minimum etraf boşluğu — yan (mm):1000
+Minimum tavan yüksekliği (mm):2500
+Vinç / forklift erişim noktaları:Makine taşınmasında vinç kesinlikle kullanılmamalıdır. Forklift ile taşıma için makine altındaki profiller kullanılmalıdır.
+Ağırlık merkezi notu:Makine ağırlık merkezi makine konveyörünün ortasındadır.
+
+
+# =============================================================================
+# 04 — TAŞIMA (transport)
+# =============================================================================
+
+[TASIMA]
+Taşıma ağırlığı — demonte max parça (kg):1300
+Taşıma ağırlığı — montajlı (kg):1300 (Taşıma durumunda herhangi bir parça ayrılmayacak şekilde taşınmalıdır.)
+Ambalaj tipi (kasa / shrink / konteyner):Konteyner
+Kaldırma aparatı / travers referans çizimi:Forklift çatalı
+Forklift çatal girişi var mı (Evet/Hayır):Evet
+Taşıma sırasında sabitleme / bağlama:Forklift çatalı ile taşıma yapılmalıdır.
+Nem koruma / korozyon koruma:Taşıma sırasında nem ve korozif maddeler olmamalıdır.
+Taşıma sıcaklığı aralığı (°C):+10°C - +30°C
+Taşıma yüksekliği max (m — deniz / kara):
+
+[DEPOLAMA]
+Depolama pozisyonu (dikey / yatay):Yatay
+Max depolama süresi (ay):12
+Depolama ortam koşulları:Depolama ortamında nem ve korozif maddeler olmamalıdır.
+
+
+# =============================================================================
+# 05 — MONTAJ (assembly)
+# =============================================================================
+
+[MONTAJ_GENEL]
+Montaj süresi tahmini (saat / gün):1 gün
+Montaj ekip sayısı:1
+Gerekli vinç / ekipman:Forklift
+Montaj alanı min boyut (m × m):10m × 10m
+Zemin düzgünlük toleransı (mm/m):0,5mm/m
+Zemin mukavemet gereksinimi:Zemin mukavemet gereksinimi:Zemin yüzeyi sert ve düz olmalıdır.
+
+[MONTAJ_ADIMLARI]
+# Her adım: Sıra | Açıklama | Tork / tolerans | Not
+Adım 1:
+Adım 2:
+Adım 3:
+Adım 4:
+Adım 5:
+
+[KONUMLANDIRMA]
+Hizalama toleransı (mm):
+Nivelman toleransı (mm):
+Ankraj cıvata tipi / adet:
+Ankraj tork değeri (Nm):
+Seviye ayar mekanizması (ayak tipi):
+
+[KURULUM_TEST]
+Mekanik kurulum test checklist:
+Elektrik devreye alma test checklist:
+Pnömatik / hidrolik dolum test:
+Boş koşu test süresi (dk):
+Güvenlik fonksiyon test listesi:
+
+[ILETISIM]
+Fieldbus / protokol (Profinet / EtherCAT / Modbus / vb.):
+Üst sistem (MES / SCADA) bağlantısı:
+I/O listesi dosya referansı:
+Kablo listesi dosya referansı:
+
+
+# =============================================================================
+# 06 — AYARLAR (settings)
+# =============================================================================
+
+[MEKANIK_AYARLAR]
+Mekanik ayar noktaları listesi:
+Referans / home pozisyon ayarı:
+Zincir / kayış gerginlik değeri:
+Mesafe / limit switch ayarları:
+Nozzle / doldurma kafası ayar aralığı (mm):
+Format değişim prosedürü özeti:
+
+[GUVENLIK_AYARLARI]
+Emniyet kapısı bypass (varsa — sadece bakım):
+Işık perdesi ayar mesafesi (mm):
+Acil stop test periyodu:
+Safety PLC parametre dosyası:
+
+[ELEKTRIK_AYARLARI]
+Inverter parametre grubu özeti:
+Motor yönü / faz kontrolü:
+Encoder / feedback ayarı:
+Analog ölçeklendirme (basınç / sıcaklık):
+Tarih / saat / dil ayarı:
+
+[HIDROLIK_AYARLAR]
+Basınç relief valve ayarı (bar):
+Akış ayar valfi konumu:
+Sıcaklık switch eşiği (°C):
+
+[PNEOMATIK_AYARLAR]
+Regülatör basınç ayarı (bar):
+Silindir hız ayarı:
+Sensör ON/OFF gecikmeleri (ms):
+
+[VACUUM_AYARLAR]
+Vakum hedef değeri (mbar):
+Vakum gecikme / emiş süresi (ms):
+
+[DIGER_AYARLAR]
+Reçete no / ürün kodu eşleme:
+Sayım / hedef adet reset:
+Özel müşteri parametreleri:
+
+
+# =============================================================================
+# 07 — OPERASYON (operation)
+# =============================================================================
+
+[CALISMA_MODLARI]
+Manuel mod açıklaması:
+Otomatik mod açıklaması:
+Bakım / setup modu:
+Step / tek adım modu:
+Mod geçiş koşulları:
+
+[BASLATMA]
+Devreye alma ön koşulları (checklist):
+Güç açma sırası:
+Hava / su / vakum açma:
+Isıtma ön ısınma süresi (dk):
+Start öncesi kontrol listesi:
+İlk ürün / kurşun atma prosedürü:
+
+[KAPATMA]
+Normal stop prosedürü:
+Acil stop sonrası yeniden başlatma:
+Güç kapatma sırası:
+Uzun süreli durdurma (hafta sonu) prosedürü:
+
+[OPERASYON_SEKANS]
+Otomatik cycle adım 1:
+Otomatik cycle adım 2:
+Otomatik cycle adım 3:
+Otomatik cycle adım 4:
+Otomatik cycle adım 5:
+Cycle süresi nominal (sn):
+Ürün giriş senaryosu:
+Ürün çıkış senaryosu:
+Hata durumunda makine davranışı:
+
+[KRONOLOJI]
+Günlük operasyon zaman çizelgesi:
+Vardiya devir teslim maddeleri:
+Shift başlangıç kontrol listesi:
+
+[OPERASYON_DIGER]
+Format / ürün değişim süresi (dk):
+Fire / hurda yönetimi:
+Operatör müdahale noktaları:
+
+
+# =============================================================================
+# 08 — KAPASİTE (capacity)
+# =============================================================================
+
+[URUN_KAPASITE]
+Nominal kapasite tablosu (ürün × adet/saat):
+Test edilen kapasite (adet/saat):
+Kapasite test koşulları:
+Darboğaz noktası:
+Maksimum sürekli çalışma süresi (saat/gün):
+
+[OZEL_KURULUM]
+Ürün A parametreleri:
+Ürün B parametreleri:
+Ürün C parametreleri:
+Reçete no listesi:
+
+
+# =============================================================================
+# 09 — BAKIM (maintenance)
+# =============================================================================
+
+[BAKIM_GENEL]
+Bakım felsefesi (önleyici / kestirimci):
+Bakım personeli yeterlilik seviyesi:
+Lubrication chart dosya referansı:
+
+[BAKIM_PERIYOT]
+Günlük bakım maddeleri:
+Haftalık bakım maddeleri:
+Aylık bakım maddeleri:
+250 saat bakım maddeleri:
+500 saat bakım maddeleri:
+1000 saat bakım maddeleri:
+Yıllık bakım maddeleri:
+
+[BAKIM_YAGLAMA]
+Yağlama noktası listesi (konum / yağ tipi / periyot):
+Gres tipi:
+Redüktör yağ değişim:
+
+[BAKIM_YEDEK_PARCA]
+Kritik yedek parça listesi:
+Önerilen stok miktarları:
+Yedek parça sipariş kodu referansı:
+
+
+# =============================================================================
+# 10 — TEMİZLİK (cleaning)
+# =============================================================================
+
+[TEMIZLIK]
+Temizlik tipi (kuru / ıslak / CIP / COP):kuru/ıslak
+Günlük temizlik prosedürü:
+Haftalık derin temizlik: Tanklarda bulunan filtreler çıkartılıp temizlenmelidir. Pompa çıkışındaki hassas filtrelerdeki torba filtreler sökülüp temizlenmelidir.
+Kullanılan temizlik maddeleri (onaylı liste):
+Yasak temizlik maddeleri:Asit bazlı temizlik maddeleri kullanılmamalıdır. Paslanmaz çeliğe zarar verecek temizlik maddeleri kullanılmamalıdır.
+Dezenfeksiyon prosedürü:Makine tanklarındaki su boşaltılıp tank içerisi sabunlu su ile yıkanmalıdır.
+Temizlik sonrası kurutma:Makine dışı kuru bir bez ile silinmelidir.
+Atık su / kimyasal bertaraf:Makinenin kullanıldığı ülkenin mevcut atık su / kimyasal bertaraf gereksinimleri uygulanmalıdır.
+
+
+# =============================================================================
+# 11 — ARIZA GİDERME (troubleshooting)
+# =============================================================================
+
+[ARIZA_GENEL]
+Alarm kod listesi dosya referansı:
+HMI alarm metinleri dili:
+Servis çağrısı kriterleri:
+
+[ARIZA_TABLO]
+# Format: Belirti | Olası neden | Kontrol | Çözüm
+Arıza 1 belirti:
+Arıza 1 neden:
+Arıza 1 çözüm:
+Arıza 2 belirti:
+Arıza 2 neden:
+Arıza 2 çözüm:
+Arıza 3 belirti:
+Arıza 3 neden:
+Arıza 3 çözüm:
+
+[ELEKTRIK_ARIZA]
+Faz kaybı davranışı:
+Motor koruma trip:
+Inverter alarm kodları özeti:
+Sensör kablo renk kodu:
+
+[HIDROLIK_ARIZA]
+Basınç düşük alarm:
+Yağ kaçağı noktaları:
+Pompa sesi anormal:
+
+[PNEOMATIK_ARIZA]
+Basınç düşük:
+Silindir yavaş / takılma:
+Valf bobini arıza:
+
+[VACUUM_ARIZA]
+Vakum düşük alarm eşiği:
+Filtre tıkanma belirtisi:
+
+[SENSOR_ARIZA]
+Kritik sensör listesi (tip / konum):
+Sensör LED / durum göstergesi:
+
+
+# =============================================================================
+# 12 — DEMONTAJ (dismantle)
+# =============================================================================
+
+[DEMONTAJ]
+Demontaj ön koşulları:Demontaj sırasında makine elektriği kesilmelidir. Makine tanklarındaki su boşaltılmalıdır.
+Enerji izolasyon prosedürü (LOTO):Loto Prosedürü uygulanmalıdır.
+Demontaj sırası:Demontaj sırasında makine elektriği kesilmelidir. Makine tanklarındaki su boşaltılmalıdır. Makine parçalarının çıkarılması sağlanmalıdır.
+Geri dönüşüm / bertaraf talimatı:Kullanıldığı ülkenin mevcut çevresel bertaraf gereksinimleri uygulanmalıdır.
+Tehlikeli madde (yağ / akü / kimyasal):Yok
+Çevresel bertaraf gereksinimleri:Kullanıldığı ülkenin mevcut çevresel bertaraf gereksinimleri uygulanmalıdır.
+
+[DEVRE_DISI]
+Kalıcı devre dışı bırakma:Kalıcı devre dışı bırakma yapılmalıdır.
+Geçici devre dışı bırakma:Geçici devre dışı bırakma yapılmalıdır.
+
+[HURDA]
+Hurda değerlendirme:Hurda değerlendirme yapılmalıdır.
+Parça geri dönüşüm malzemeleri:Parça geri dönüşüm malzemeleri:Kullanıldığı ülkenin mevcut parça geri dönüşüm malzemeleri uygulanmalıdır.
+
+# =============================================================================
+# 13 — DÖKÜMANLAR (documents)
+# =============================================================================
+
+[DOKUMANLAR]
+Elektrik şeması dosya adı / rev:
+Pnömatik şema dosya adı / rev:
+Hidrolik şema dosya adı / rev:
+Layout çizimi dosya adı / rev:
+Parça listesi (BOM) dosya adı / rev:
+I/O listesi dosya adı / rev:
+PLC program yedek dosya adı:
+HMI proje yedek dosya adı:
+CE dosyası referansı:
+Kalibrasyon sertifikaları:
+
+[CIZIMLER]
+Genel montaj çizimi:
+Kaldırma noktaları çizimi:
+Zemin ankraj çizimi:
+Müşteriye teslim çizim paketi:
+
+[PARCA_LISTESI]
+Mekanik parça listesi referansı:
+Elektrik parça listesi referansı:
+Wear part / aşınan parça listesi:
+
+
+# =============================================================================
+# 14 — EKLER / SÖZLÜK / İNDEKS (index)
+# =============================================================================
+
+[EKLER]
+Ek A — Alarm listesi:
+Ek B — Parametre listesi:
+Ek C — Reçete örnekleri:
+Ek D — Garanti belgesi:
+
+[SOZLUK]
+Terim 1 / açıklama:
+Terim 2 / açıklama:
+Terim 3 / açıklama:
+Kısaltmalar (PLC, HMI, FRL, vb.):
+
+[INDEKS]
+Anahtar kelime listesi (opsiyonel):
+
+
+# =============================================================================
+# EK — MÜŞTERİ / PROJE ÖZEL NOTLAR
+# =============================================================================
+
+[OZEL_NOTLAR]
+Siparişe özel opsiyonlar:
+Müşteri talep sapmaları:
+Saha kurulum notları:
+Bilinen açık konular / TODO:
+Revizyon geçmişi:
+  - Rev  | Tarih | Açıklama | Yazar
+
+# =============================================================================
+# SON — DOSYA SONU
+# =============================================================================
