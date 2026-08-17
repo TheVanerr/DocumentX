@@ -1,47 +1,104 @@
-<!-- ÇEVİRİ GEREKLİ → EN | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 5.5. Installation Verification and Testing
 
-# 5.5. Kurulum Kontrolü
+This section defines procedures for verifying mechanical, electrical, pneumatic/media, and safety functions after installation of the KNV 30 3000 2B machine, including the **15-minute empty run test**.
 
-Aşağıdaki kontrol listesi, makineye ilk kez start verilmeden önce kurulumu gerçekleştiren ekip tarafından eksiksiz olarak uygulanmalıdır. Her madde bağımsız olarak doğrulanmalı ve tamamlananlar işaretlenmelidir. Herhangi bir maddede uygunsuzluk tespit edilmesi durumunda makine devreye alınmamalı, ilgili kurulum adımı tamamlanarak kontrol tekrarlanmalıdır.
+Tests shall be performed after Section **5.4** safety tests are completed. Do not proceed to operation until all checks are **OK**.
 
-## 5.5.1. Mekanik Kurulum Kontrolleri
+---
 
-- Tüm ambalaj malzemeleri ve nakliye sabitleme elemanları makineden uzaklaştırılmıştır.
-- Makine, düz ve yük taşıma kapasitesi yeterli bir beton zemin üzerine yerleştirilmiştir.
-- Makine her iki eksende su terazisi ile teraziye alınmıştır.
-- Tüm ayak somunları karşı somun ile kilitlenmiştir.
-- Makine çevresinde bakım ve erişim için gerekli minimum boşluklar sağlanmıştır.
-- Opsiyonel kurutma ünitesi mekanik olarak monte edilmiş ve tambur çıkışıyla hizalaması doğrulanmıştır.
+## 5.5.1. Mechanical Installation Test
 
-## 5.5.2. Elektrik Bağlantısı Kontrolleri
+| # | Check | Expected result | Status |
+|---|-------|-----------------|--------|
+| 1 | Is the machine level? | Yes — within 0.5 mm tolerance via adjustable feet | ☐ |
 
-- Besleme hattı 3P+1N+1PE konfigürasyonunda bağlanmıştır.
-- Koruma iletkeni (PE) pano topraklama klemensine eksiksiz iletilmiştir.
-- Hat gerilimi ve faz sırası ölçüm aleti ile doğrulanmıştır.
+The mechanical installation test is performed after Section 5.2 positioning and levelling is complete. Check both axes with a spirit level or equivalent measuring tool.
 
-## 5.5.3. Su, Hava ve Drenaj Bağlantısı Kontrolleri
+<!-- PHOTO: Level check with spirit level -->
+![Mechanical test — level check](../../assets/FOTO-5-5-0-terazi-test.png)
 
-- Tank drenaj vanaları atık su tahliye hattına bağlanmıştır.
-- Taşma hatları uygun gider hattına yönlendirilmiştir.
-- *(Standart otomatik dolum seçildiyse)* Su girişi şebeke hattına bağlanmıştır.
-- *(Standart otomatik dolum seçildiyse)* Hava girişi minimum 6 bar sağlayan pnömatik hatta bağlanmıştır.
-- *(Standart otomatik dolum seçildiyse)* Su ve hava basınç sensörlerinin tesis koşullarına göre doğru değerde ayarlı olduğu doğrulanmıştır.
-- *(Solenoid vanalı otomatik dolum seçildiyse)* Su girişi şebeke hattına bağlanmıştır.
-- *(Solenoid vanalı otomatik dolum seçildiyse)* Su basınç sensörü tesis koşullarına göre ayarlanmıştır.
-- *(Yağ sıyırıcı opsiyonu varsa)* Tahliye hattı uygun gider veya toplama kabına bağlanmıştır.
-- *(Hassas filtre opsiyonu varsa)* Filtre tahliye vanası uygun gider hattına bağlanmıştır.
-- Tüm bağlantı noktalarında sıvı veya hava kaçağı olmadığı gözle kontrol edilmiştir.
+---
 
-## 5.5.4. Güvenlik Sistemleri Kontrolleri
+## 5.5.2. Electrical Commissioning Test
 
-- Pano üzerindeki acil stop butonu test edilmiş ve kabul kriteri sağlanmıştır. *(Bkz. Bölüm 5.4.1)*
-- *(4 metreden uzun modellerde)* Köşe acil stop butonlarının tamamı ayrı ayrı test edilmiş ve kabul kriterleri sağlanmıştır. *(Bkz. Bölüm 5.4.1)*
-- Alt seviye sensörü test edilmiş; düşük seviye koşulunda pompalar ve ısıtıcıların devre dışı kaldığı, reset prosedürü uygulanmadan start alınamadığı doğrulanmıştır. *(Bkz. Bölüm 5.4.2)*
-- *(Açılabilir kapak konfigürasyonu varsa)* Her kapak için güvenlik kilidi sistemi ayrı ayrı test edilmiş ve kabul kriterleri sağlanmıştır. *(Bkz. Bölüm 5.4.3)*
+| # | Check | Expected result | Status |
+|---|-------|-----------------|--------|
+| 1 | Is phase protection relay output active? | Yes | ☐ |
+| 2 | Is there power on the machine? | Yes | ☐ |
+| 3 | Does the machine stop when emergency stop is activated? | Yes | ☐ |
 
-## 5.5.5. Devreye Alma Öncesi Son Kontrol
+Electrical tests are performed after energisation via the panel. Phase rotation shall have been verified via the phase sequence relay.
 
-- Yukarıdaki tüm maddeler eksiksiz olarak tamamlanmıştır.
-- Güvenlik sistemlerinin hiçbirinde uygunsuzluk tespit edilmemiştir.
-- Tanklar uygun seviyeye doldurulmuş ve reset prosedürü uygulanmıştır.
-- Makine devreye almaya hazırdır.
+<!-- PHOTO: Panel open — commissioning test -->
+![Electrical commissioning test](../../assets/FOTO-5-5-1-elektrik-test.png)
+
+---
+
+## 5.5.3. Pneumatic and Media Connection Test
+
+| # | Check | Expected result | Status |
+|---|-------|-----------------|--------|
+| 1 | After air connection, does air status on HMI manual page indicate green? | Yes | ☐ |
+| 2 | After water connection, does water status on HMI manual page indicate green? | Yes | ☐ |
+
+Connection parameters:
+
+| Medium | Value |
+|--------|-------|
+| Compressed air | 6 bar — 3/4" |
+| Water | 1 bar — 1/2" |
+
+<!-- PHOTO: HMI manual page — air and water green -->
+![Pneumatic/media test — HMI manual](../../assets/FOTO-5-5-2-medya-test.png)
+
+---
+
+## 5.5.4. Safety Function Test
+
+| # | Check | Expected result | Status |
+|---|-------|-----------------|--------|
+| 1 | Does the machine stop when emergency stop is activated? | Yes — every function stops | ☐ |
+| 2 | Is the machine ready for operation? | Yes — yellow stack light | ☐ |
+| 3 | Does the RFID sensor stop the machine when covers are opened? | Yes | ☐ |
+
+For detailed emergency stop test procedure, see Section **5.4**.
+
+<!-- PHOTO: Safety test — RFID sensor trigger -->
+![Safety function test](../../assets/FOTO-5-5-3-guvenlik-test.png)
+
+---
+
+## 5.5.5. Empty Run Test
+
+| Parameter | Value |
+|-----------|-------|
+| Empty run test duration | **15 minutes** |
+
+### Test procedure
+
+1. All Section 5.5.1–5.5.4 checks shall be completed as **OK**.
+2. Run the machine **without parts** (empty) for **15 minutes**.
+3. Stop the machine when the test duration is complete.
+
+| # | Check | Status |
+|---|-------|--------|
+| 1 | 15 min empty run test completed | ☐ OK / ☐ NOK |
+
+If the empty run test is successful, the machine is accepted as **ready for operation** (Section 5.1 Step 9).
+
+<!-- PHOTO: Empty run test — machine running -->
+![Empty run test — 15 min](../../assets/FOTO-5-5-4-bos-kosu.png)
+
+---
+
+## 5.5.6. Installation Verification Summary Checklist
+
+| Section | Test | Completed |
+|---------|------|:---------:|
+| 5.5.1 | Mechanical — level | ☐ |
+| 5.5.2 | Electrical — phase protection, e-stop | ☐ |
+| 5.5.3 | Media — HMI air/water green | ☐ |
+| 5.5.4 | Safety — RFID, ready for operation | ☐ |
+| 5.5.5 | Empty run — 15 min | ☐ |
+
+**Date:** _______________ **Tested by:** _______________ **Approved by:** _______________

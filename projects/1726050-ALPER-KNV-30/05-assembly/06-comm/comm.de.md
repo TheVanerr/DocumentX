@@ -1,65 +1,75 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 5.6. Kommunikation und Automatisierungsschnittstelle
 
-# 5.6. Devreye Alma
+Dieser Abschnitt beschreibt Feldbus-Kommunikation, Profinet-Infrastruktur, SPS/HMI-Integration und E/A-Dokumentationsreferenzen der Maschine KNV 30 3000 2B.
 
-Devreye alma prosedürü, Bölüm 5.5'teki kurulum kontrolünün eksiksiz tamamlanmasının ve tüm maddelerin doğrulanmasının ardından uygulanmalıdır. Prosedür sırayla takip edilmeli, her adım tamamlanmadan bir sonrakine geçilmemelidir.
+---
 
-## 5.6.1. Ön Hazırlık
+## 5.6.1. Feldbus und Protokoll
 
-Makineye ilk start verilmeden önce aşağıdaki hazırlıklar yapılmalıdır:
+| Parameter | Wert |
+|-----------|------|
+| Fieldbus / Protokoll | **Profinet** |
 
-- Makine iç ve dış yüzeylerindeki koruyucu filmler ve yapıştırıcı etiket artıkları temizlenir.
-- Tambur içinde ve tank bölgelerinde nakliye sırasında oluşmuş olabilecek yabancı madde, toz veya tortu bulunmadığı kontrol edilir.
-- Manuel dolum konfigürasyonunda tanklar uygun seviyeye kadar su ile doldurulur ve alt seviye sensörünün üzerinde olduğu doğrulanır.
-- Otomatik dolum konfigürasyonunda su ve/veya hava bağlantıları açılır, dolumun başladığı gözlemlenir ve tankların uygun seviyeye ulaştığı beklenir.
-- Tüm tanklar doldurulduktan sonra pano üzerindeki reset butonuna basılarak sistem devreye almaya hazır hâle getirilir.
+Die Automatisierungsinfrastruktur der Maschine kommuniziert über das Profinet-Protokoll. SPS und HMI sind in dieser Infrastruktur integriert.
 
-## 5.6.2. Isıtma Sisteminin Devreye Alınması
+| Komponente | Marke / Modell |
+|------------|----------------|
+| SPS | SIEMENS SIMATIC S7-1200 — CPU 1215C DC/DC/DC (6ES7215-1AG40-0XB0) |
+| HMI | SIMATIC HMI KTP700 Basic PN (6AV2123-2GB03-0AX0) |
+| E/A-Übersicht | 36 Eingänge / 24 Ausgänge |
 
-1. Kontrol panosundan ısıtıcılar aktive edilir.
-2. Her tank için termostat, hedeflenen proses sıcaklığına ayarlanır. Başlangıç ayarı olarak [...] °C önerilir; proses gereksinimlerine göre operatör tarafından revize edilebilir.
-3. Sıcaklığın hedefe ulaşması beklenir. Bu süreçte ısıtıcıların çalıştığı ve termostatın doğru sıcaklıkta devreyi kestiği gözlemlenir.
-4. Termostat hedef sıcaklığa ulaştığında ısıtıcıların devre dışı kaldığı, sıcaklık düştüğünde yeniden devreye girdiği doğrulanır.
+Encoder-/Feedback-Einstellungen sind im SPS-Programm integriert; die Einstellung ist durch den **Hersteller** vorzunehmen.
 
-## 5.6.3. Tambur ve Pompa Sisteminin İlk Çalıştırılması
+<!-- FOTO: SPS und HMI — Profinet-Anschlussstellen -->
+![Profinet-Infrastruktur — SPS/HMI](../../assets/FOTO-5-6-0-profinet.png)
 
-Tanklar uygun sıcaklığa ve seviyeye ulaştıktan sonra sistem parçasız olarak çalıştırılır:
+---
 
-1. Kontrol panosundan tambur motoru devreye alınır. Tambur dönüşünün düzgün ve titreşimsiz olduğu gözlemlenir.
-2. Tambur devir hızı, frekans sürücüsü üzerinden [...] Hz başlangıç değerine ayarlanır.
-3. Pompalar devreye alınır. Püskürtme kollarından su çıkışının düzgün ve homojen olduğu gözle kontrol edilir.
-4. Tüm bağlantı noktaları, flanşlar ve boru hatları sıvı kaçağı açısından kontrol edilir. Kaçak tespit edilmesi durumunda sistem durdurulur, ilgili bağlantı sıkılaştırılır ve kontrol tekrarlanır.
-5. Sistem 30 dakika süreyle parçasız çalıştırılarak kararlı çalışma doğrulanır.
+## 5.6.2. Anbindung Leitsystem
 
-## 5.6.4. Tambur Devir Hızının Ayarlanması
+| Parameter | Wert |
+|-----------|------|
+| Leitsystem (MES / SCADA) — Anbindung | Unbekannt |
 
-Tambur devir hızı, işlenecek parçaların boyutuna, geometrisine ve ağırlığına göre frekans sürücüsü üzerinden optimize edilmelidir. Devir hızı çok yüksek ayarlandığında parçalar tambur içinde kontrolsüz yuvarlanarak birbirine veya tambur yüzeyine zarar verebilir; çok düşük ayarlandığında ise parçaların ilerlemesi yavaşlayarak yıkama verimliliği düşer. Optimum değer, farklı hız kademelerinde gerçek parçalarla yapılacak kısa test koşuları ile belirlenelidir.
+MES- oder SCADA-Integration ist im Projektumfang nicht definiert. Leitsystemanbindung ist bei Bedarf mit dem Anwenderunternehmen zu bewerten.
 
-## 5.6.5. Kurutma Ünitesinin Devreye Alınması
+---
 
-Kurutma ünitesi mevcut ise sistem tambur ve pompalarla birlikte çalışır duruma geldikten sonra devreye alınır:
+## 5.6.3. Fernzugriff
 
-1. Kurutma ünitesi kontrol panosundan aktive edilir.
-2. Fan çalışmasının ve ısıtıcı devreye girişinin düzgün olduğu doğrulanır.
-3. Hava akışının tambur çıkışına düzgün biçimde yönlendirildiği kontrol edilir.
-4. VDL 80 modelinde her iki ünitenin de bağımsız olarak çalıştığı ayrı ayrı doğrulanır.
+| Parameter | Wert |
+|-----------|------|
+| Fernzugriff | Ja |
+| Modul | Secomea |
 
-## 5.6.6. Parçalı İlk Koşu
+Fernzugriff wird über das Secomea-Modul bereitgestellt. Modulinstallation und -konfiguration sind nach der Montage in Betrieb zu nehmen.
 
-Sistem parçasız koşuda kararlı çalışma sergiledikten sonra gerçek parçalarla ilk koşu gerçekleştirilir:
+<!-- FOTO: Secomea-Fernzugriffsmodul — im Schrank -->
+![Secomea-Modul](../../assets/FOTO-5-6-1-secomea.png)
 
-1. Tambur giriş tarafından temsil niteliğinde bir miktar parça yüklenir.
-2. Parçaların tambur boyunca düzgün biçimde ilerlediği ve çıkış tarafından eksiksiz ulaştığı gözlemlenir.
-3. Yıkama kalitesi değerlendirilir; sonuç beklentileri karşılamıyorsa sıcaklık, devir hızı ve pompa parametreleri proses gereksinimlerine göre revize edilir.
-4. Kurutma ünitesi mevcutsa çıkış parçalarının yüzey nemi gözle değerlendirilir.
+---
 
-## 5.6.7. Devreye Alma Tamamlama Kontrolü
+## 5.6.4. E/A-Liste und Dokumentation
 
-Aşağıdaki koşulların tamamı sağlandığında makine devreye alınmış kabul edilir:
+| Dokument | Dateiname |
+|----------|-----------|
+| E/A-Liste | **1726050-ALPER-KNV 30 I/O LISTESI.pdf** |
 
-- Isıtma sistemi hedef sıcaklığa ulaşmakta ve termostat kontrolü doğru çalışmaktadır.
-- Tambur belirlenen devir hızında düzgün ve kararlı biçimde dönmektedir.
-- Pompalar çalışmakta, püskürtme kollarından homojen su çıkışı sağlanmaktadır.
-- Sistemde sıvı kaçağı bulunmamaktadır.
-- Parçalar tambur boyunca düzgün ilerlemekte ve beklenen yıkama kalitesi elde edilmektedir.
-- Opsiyonel kurutma ünitesi çalışmakta ve çıkış parçalarında yeterli kuruluk sağlanmaktadır.
+Die E/A-Liste ist das Referenzdokument für Ein-/Ausgangsadressen und Sensor-/Aktuatordefinitionen. Elektrische Anschlüsse sind bei Installation und Inbetriebnahme anhand dieser Liste zu verifizieren.
+
+<!-- FOTO: E/A-Liste Beispielseite — PDF-Referenz -->
+![E/A-Listenreferenz](../../assets/FOTO-5-6-2-io-listesi.png)
+
+---
+
+## 5.6.5. Kommunikations-Checkliste
+
+| # | Prüfung | Status |
+|---|---------|--------|
+| 1 | Profinet-Netzwerk konfiguriert | ☐ |
+| 2 | SPS — HMI-Kommunikation verifiziert | ☐ |
+| 3 | E/A-Liste referenziert | ☐ |
+| 4 | Secomea-Modul installiert (falls zutreffend) | ☐ |
+| 5 | Encoder/Feedback durch Hersteller eingestellt | ☐ |
+
+**Datum:** _______________ **Geprüft von:** _______________

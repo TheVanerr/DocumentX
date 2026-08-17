@@ -1,45 +1,104 @@
-# 5.5. Kurulum Kontrolü
+# 5.5. Kurulum Doğrulama ve Test
 
-Aşağıdaki kontrol listesi, makineye ilk kez start verilmeden önce kurulumu gerçekleştiren ekip tarafından eksiksiz olarak uygulanmalıdır. Her madde bağımsız olarak doğrulanmalı ve tamamlananlar işaretlenmelidir. Herhangi bir maddede uygunsuzluk tespit edilmesi durumunda makine devreye alınmamalı, ilgili kurulum adımı tamamlanarak kontrol tekrarlanmalıdır.
+Bu bölüm, KNV 30 3000 2B makinesinin kurulum sonrası mekanik, elektrik, pnömatik/medya ve güvenlik fonksiyonlarının doğrulanması ile **15 dakikalık boş koşu testi** prosedürlerini tanımlar.
 
-## 5.5.1. Mekanik Kurulum Kontrolleri
+Testler, Bölüm **5.4** güvenlik testleri tamamlandıktan sonra uygulanmalıdır. Tüm kontroller **OK** olmadan operasyona geçilmemelidir.
 
-- Tüm ambalaj malzemeleri ve nakliye sabitleme elemanları makineden uzaklaştırılmıştır.
-- Makine, düz ve yük taşıma kapasitesi yeterli bir beton zemin üzerine yerleştirilmiştir.
-- Makine her iki eksende su terazisi ile teraziye alınmıştır.
-- Tüm ayak somunları karşı somun ile kilitlenmiştir.
-- Makine çevresinde bakım ve erişim için gerekli minimum boşluklar sağlanmıştır.
-- Opsiyonel kurutma ünitesi mekanik olarak monte edilmiş ve tambur çıkışıyla hizalaması doğrulanmıştır.
+---
 
-## 5.5.2. Elektrik Bağlantısı Kontrolleri
+## 5.5.1. Mekanik Kurulum Testi
 
-- Besleme hattı 3P+1N+1PE konfigürasyonunda bağlanmıştır.
-- Koruma iletkeni (PE) pano topraklama klemensine eksiksiz iletilmiştir.
-- Hat gerilimi ve faz sırası ölçüm aleti ile doğrulanmıştır.
+| # | Kontrol | Beklenen sonuç | Durum |
+|---|---------|-----------------|-------|
+| 1 | Makine terzide mi? | Evet — ayarlanabilir ayaklar ile 0,5 mm tolerans içinde | ☐ |
 
-## 5.5.3. Su, Hava ve Drenaj Bağlantısı Kontrolleri
+Mekanik kurulum testi, Bölüm 5.2 konumlandırma ve seviye ayarı tamamlandıktan sonra yapılır. Su terazisi veya eşdeğer ölçüm aleti ile her iki eksende kontrol edilmelidir.
 
-- Tank drenaj vanaları atık su tahliye hattına bağlanmıştır.
-- Taşma hatları uygun gider hattına yönlendirilmiştir.
-- *(Standart otomatik dolum seçildiyse)* Su girişi şebeke hattına bağlanmıştır.
-- *(Standart otomatik dolum seçildiyse)* Hava girişi minimum 6 bar sağlayan pnömatik hatta bağlanmıştır.
-- *(Standart otomatik dolum seçildiyse)* Su ve hava basınç sensörlerinin tesis koşullarına göre doğru değerde ayarlı olduğu doğrulanmıştır.
-- *(Solenoid vanalı otomatik dolum seçildiyse)* Su girişi şebeke hattına bağlanmıştır.
-- *(Solenoid vanalı otomatik dolum seçildiyse)* Su basınç sensörü tesis koşullarına göre ayarlanmıştır.
-- *(Yağ sıyırıcı opsiyonu varsa)* Tahliye hattı uygun gider veya toplama kabına bağlanmıştır.
-- *(Hassas filtre opsiyonu varsa)* Filtre tahliye vanası uygun gider hattına bağlanmıştır.
-- Tüm bağlantı noktalarında sıvı veya hava kaçağı olmadığı gözle kontrol edilmiştir.
+<!-- FOTO: Su terazisi ile terazi kontrolü -->
+![Mekanik test — terazi kontrolü](../../assets/FOTO-5-5-0-terazi-test.png)
 
-## 5.5.4. Güvenlik Sistemleri Kontrolleri
+---
 
-- Pano üzerindeki acil stop butonu test edilmiş ve kabul kriteri sağlanmıştır. *(Bkz. Bölüm 5.4.1)*
-- *(4 metreden uzun modellerde)* Köşe acil stop butonlarının tamamı ayrı ayrı test edilmiş ve kabul kriterleri sağlanmıştır. *(Bkz. Bölüm 5.4.1)*
-- Alt seviye sensörü test edilmiş; düşük seviye koşulunda pompalar ve ısıtıcıların devre dışı kaldığı, reset prosedürü uygulanmadan start alınamadığı doğrulanmıştır. *(Bkz. Bölüm 5.4.2)*
-- *(Açılabilir kapak konfigürasyonu varsa)* Her kapak için güvenlik kilidi sistemi ayrı ayrı test edilmiş ve kabul kriterleri sağlanmıştır. *(Bkz. Bölüm 5.4.3)*
+## 5.5.2. Elektrik Devreye Alma Testi
 
-## 5.5.5. Devreye Alma Öncesi Son Kontrol
+| # | Kontrol | Beklenen sonuç | Durum |
+|---|---------|-----------------|-------|
+| 1 | Faz koruma rölesi çıkış veriyor mu? | Evet | ☐ |
+| 2 | Makinede elektrik var mı? | Evet | ☐ |
+| 3 | Acil stop'a basıldığında makine duruyor mu? | Evet | ☐ |
 
-- Yukarıdaki tüm maddeler eksiksiz olarak tamamlanmıştır.
-- Güvenlik sistemlerinin hiçbirinde uygunsuzluk tespit edilmemiştir.
-- Tanklar uygun seviyeye doldurulmuş ve reset prosedürü uygulanmıştır.
-- Makine devreye almaya hazırdır.
+Elektrik testleri pano üzerinden devreye alma sonrasında gerçekleştirilir. Faz yönü faz sıra rölesi ile doğrulanmış olmalıdır.
+
+<!-- FOTO: Pano açık — devreye alma testi -->
+![Elektrik devreye alma testi](../../assets/FOTO-5-5-1-elektrik-test.png)
+
+---
+
+## 5.5.3. Pnömatik ve Medya Bağlantı Testi
+
+| # | Kontrol | Beklenen sonuç | Durum |
+|---|---------|-----------------|-------|
+| 1 | Hava bağlantısı yapıldıktan sonra HMI manuel sayfasında hava bilgisi yeşil yanıyor mu? | Evet | ☐ |
+| 2 | Su bağlantısı yapıldıktan sonra HMI manuel sayfasında su bilgisi yeşil yanıyor mu? | Evet | ☐ |
+
+Bağlantı parametreleri:
+
+| Medya | Değer |
+|-------|-------|
+| Basınçlı hava | 6 bar — 3/4" |
+| Su | 1 bar — 1/2" |
+
+<!-- FOTO: HMI manuel sayfa — hava ve su yeşil -->
+![Pnömatik/medya test — HMI manuel](../../assets/FOTO-5-5-2-medya-test.png)
+
+---
+
+## 5.5.4. Güvenlik Fonksiyon Testi
+
+| # | Kontrol | Beklenen sonuç | Durum |
+|---|---------|-----------------|-------|
+| 1 | Acil stop'a basıldığında makine duruyor mu? | Evet — her fonksiyon durur | ☐ |
+| 2 | Makine kullanıma hazır mı? | Evet — sarı tepe lambası | ☐ |
+| 3 | Kapaklar açıldığında RFID sensörü makineyi durduruyor mu? | Evet | ☐ |
+
+Detaylı acil stop test prosedürü için bkz. Bölüm **5.4**.
+
+<!-- FOTO: Güvenlik test — RFID sensör tetikleme -->
+![Güvenlik fonksiyon testi](../../assets/FOTO-5-5-3-guvenlik-test.png)
+
+---
+
+## 5.5.5. Boş Koşu Testi
+
+| Parametre | Değer |
+|-----------|-------|
+| Boş koşu test süresi | **15 dakika** |
+
+### Test prosedürü
+
+1. Tüm Bölüm 5.5.1–5.5.4 kontrolleri **OK** olarak tamamlanmış olmalıdır.
+2. Makine **parça olmadan** (boş) **15 dakika** çalıştırılır.
+3. Test süresi tamamlandığında makine durdurulur.
+
+| # | Kontrol | Durum |
+|---|---------|-------|
+| 1 | 15 dk boş koşu testi tamamlandı | ☐ OK / ☐ NOK |
+
+Boş koşu testi başarılı ise makine **kullanıma hazır** kabul edilir (Bölüm 5.1 Adım 9).
+
+<!-- FOTO: Boş koşu testi — makine çalışır durumda -->
+![Boş koşu testi — 15 dk](../../assets/FOTO-5-5-4-bos-kosu.png)
+
+---
+
+## 5.5.6. Kurulum Doğrulama Özet Kontrol Listesi
+
+| Bölüm | Test | Tamamlandı |
+|-------|------|:----------:|
+| 5.5.1 | Mekanik — terazi | ☐ |
+| 5.5.2 | Elektrik — faz koruma, acil stop | ☐ |
+| 5.5.3 | Medya — HMI hava/su yeşil | ☐ |
+| 5.5.4 | Güvenlik — RFID, kullanıma hazır | ☐ |
+| 5.5.5 | Boş koşu — 15 dk | ☐ |
+
+**Tarih:** _______________ **Test eden:** _______________ **Onaylayan:** _______________

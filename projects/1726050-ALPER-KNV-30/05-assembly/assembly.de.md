@@ -1,29 +1,37 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 5. Montage und Inbetriebnahme
 
-# 5. KURULUM VE DEVREYE ALMA
+Dieser Abschnitt umfasst Montage, Positionierung, Medienanschlüsse, Sicherheitstests und Installationsprüfung — vom Transport der Maschine **KNV 30 3000 2B** (Projekt-Nr.: **1726050**) zum Aufstellungsort bis zur Inbetriebnahme.
 
-Bu bölüm; makinenin kurulum lokasyonuna taşınmasından itibaren devreye alınmasına kadar gerçekleştirilmesi gereken tüm mekanik, elektriksel ve tesisata ilişkin işlemleri kapsamaktadır. Bölüm içeriği sırasıyla makine montajı, konumlandırma, sistem bağlantıları, güvenlik sistemlerinin testi, kurulum doğrulama kontrolü ve devreye alma prosedürlerinden oluşmaktadır.
+Die Montagearbeiten dauern schätzungsweise **1 Tag** und werden von einem **1-köpfigen** Team durchgeführt. Für Transport und Aufstellung ist ein **Gabelstapler** zu verwenden; beim Transport der Maschine darf ein **Kran unter keinen Umständen** eingesetzt werden. Für Gabelstapler-Transport sind die Profile unter der Maschine zu verwenden.
 
--Kurulum ve devreye alma işlemleri; bu kılavuzu eksiksiz okumuş ve içeriğini kavramış olmanın ötesinde, mekanik, elektrik ve hidrolik sistemler konusunda mesleki yetkinliğe sahip, ilgili iş sağlığı ve güvenliği mevzuatı hakkında bilgi sahibi olan yetkili personel tarafından gerçekleştirilmelidir. 
--Elektrik bağlantıları yalnızca yerel elektrik yönetmeliklerinin öngördüğü niteliklere sahip elektrik teknisyeni veya mühendisi tarafından yapılmalıdır. 
--Kaldırma ve taşıma operasyonları ise yalnızca ilgili ekipmanı güvenli biçimde kullanma yetkinliğine sahip operatörler tarafından yürütülmelidir. 
+---
 
-> ⚠️ **UYARI — YETKİSİZ KURULUM**
->
-> Belirtilen mesleki yeterliliklere sahip olmayan kişilerin bu bölümdeki prosedürleri uygulamaya çalışması; kişisel yaralanmaya, kalıcı iş göremezliğe, ekipman hasarına ve üçüncü şahıslara zarar verilmesine yol açabilir. Kurulumun yetersiz teknik bilgiye sahip kişilerce gerçekleştirilmesi aynı zamanda makinenin güvenli çalışma koşullarını kalıcı olarak bozabilir. Bu tür durumlardan doğacak her türlü hukuki, mali ve cezai sorumluluk tamamen kurulumu gerçekleştiren tarafa aittir; üretici firma hiçbir koşulda sorumlu tutulamaz ve garanti yükümlülükleri sona erer.
+## Abschnittsinhalt
 
-> ⚠️ **UYARI — ELEKTRİK BAĞLANTILARI**
->
-> Kurulum veya devreye alma sürecinde herhangi bir elektrik bağlantısına müdahale edilmeden önce tesisin ilgili devresini besleyen ana şalter kapalı konuma alınmalı ve yetkisiz kişilerce yeniden devreye sokulmasını engellemek amacıyla kilit altına alınmalı ya da uyarı etiketi ile işaretlenmelidir. Enerji altındaki iletkenlerle temas; elektrik çarpması, yanık veya ölüm ile sonuçlanabilir. Bu prosedür, bağlantı işlemi ne kadar kısa sürecek olursa olsun hiçbir koşulda atlanmamalıdır.
+| Abschnitt | Titel | Thema |
+|-----------|-------|-------|
+| **5.1** | Maschinenmontage | Montageschritte — Aufstellung, Verpackungsentfernung, Nivellierung, Medien- und Elektroanschlüsse |
+| **5.2** | Maschinenpositionierung | Verstellbare Füße, Ausrichtungstoleranz, Nivellierung |
+| **5.3** | Systemanschlüsse | Druckluft (6 bar, 3/4"), Wasser (1 bar, 1/2"), Drehstrom (380 V, 50 Hz, 50 kW / 100 A) |
+| **5.4** | Sicherheitssystem-Tests | Not-Halt, RFID-Sensor, Phasenschutzrelais |
+| **5.5** | Installationsprüfung und Test | Mechanische, elektrische, pneumatische Tests; 15 Min. Leerlauflauf |
+| **5.6** | Kommunikation | Profinet, E/A-Listenreferenz |
 
-> ⚠️ **UYARI — KALDIRMA VE TAŞIMA**
->
-> Makinenin kaldırılması ve nihai konumuna taşınması işlemleri yalnızca makinenin toplam ağırlığını taşıyacak kapasitede forklift veya transpalet kaldırma ekipmanıyla gerçekleştirilmelidir. Kaldırma öncesinde ekipmanın yük kapasitesi model bazlı ağırlık değerleriyle karşılaştırılarak doğrulanmalıdır. Yetersiz kapasiteli ekipman kullanılması, dengesiz yükleme yapılması veya kaldırma sırasında personelin makine altında ya da yük yolunda bulunması; makinenin devrilmesine veya düşmesine bağlı olarak ağır yaralanmalara ve ölüme yol açabilir.
+---
 
-> ⚠️ **UYARI — PROSEDÜR SIRASI**
->
-> Bu bölümde tanımlanan kurulum prosedürleri, belirtilen sıra takip edilerek eksiksiz biçimde uygulanmalıdır. Herhangi bir adımın atlanması, eksik tamamlanması veya yanlış sırayla uygulanması; güvenlik sistemlerinin kısmen ya da tamamen işlevsiz kalmasına, ekipman hasarına veya kişisel yaralanmaya neden olabilir. Bölüm 5.5'teki kurulum kontrol listesi eksiksiz tamamlanmadan makineye kesinlikle start verilmemelidir.
+## Zusammenfassung Montagevoraussetzungen
 
-> 📝 **NOT — TANIMLANMAMIŞ DURUMLAR VE ÜRETİCİ İLE İLETİŞİM**
->
-> Kurulum veya devreye alma sürecinde bu kılavuzda öngörülmeyen ya da açıkça tanımlanmamış bir durumla karşılaşılması halinde prosedüre devam edilmemeli, mevcut adım güvenli biçimde sonlandırılmalı ve üretici firma teknik desteği ile iletişime geçilmelidir. Kılavuz kapsamı dışında gerçekleştirilen her türlü müdahale yetkisiz işlem olarak değerlendirilir; bu müdahalelerden kaynaklanan ekipman hasarı, kişisel yaralanma veya üçüncü şahıslara verilen zararlar garanti kapsamı dışında olup tüm sorumluluk müdahaleyi gerçekleştiren tarafa aittir.
+| Parameter | Anforderung |
+|-----------|-------------|
+| Mindestgröße Montagefläche | 5 m × 3 m |
+| Bodenebenheit-Toleranz | 0,5 mm/m |
+| Bodenfestigkeit | Bodenoberfläche muss hart und eben sein |
+| Erforderliche Ausrüstung | Gabelstapler |
+| Transportgewicht (montiert) | 1300 kg |
+| Mindestfreiraum | Vorne, hinten, seitlich: 1000 mm |
+| Mindestraumhöhe | 2500 mm |
+
+Nach Abschluss der Montage wird die Maschine in den Status **betriebsbereit** versetzt. Detaillierte Schritte, Checklisten und Testverfahren sind in den jeweiligen Unterabschnitten beschrieben. Für die E/A-Liste siehe **1726050-ALPER-KNV 30 I/O LISTESI.pdf**.
+
+<!-- FOTO: Montagebereich — Aufstellung mit Gabelstapler -->
+![Montagebereich — Maschinenaufstellung](../assets/FOTO-5-0-assembly-genel.png)

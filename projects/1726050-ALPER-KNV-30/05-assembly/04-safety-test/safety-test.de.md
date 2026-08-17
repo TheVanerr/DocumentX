@@ -1,51 +1,113 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 5.4. Sicherheitssystem-Tests
 
-# 5.4. Güvenlik Sistemlerinin Kontrolü ve Testi
+Dieser Abschnitt beschreibt das Testen der Sicherheitsfunktionen der Maschine KNV 30 3000 2B nach der Installation. Die Tests sind vollständig abzuschließen, bevor der Betrieb aufgenommen wird.
 
-Kurulum tamamlandıktan ve elektrik bağlantıları yapıldıktan sonra, makineye ilk kez start verilmeden önce aşağıdaki güvenlik sistemlerinin her biri ayrı ayrı test edilmeli ve kabul kriterleri sağlanmadan bir sonraki adıma geçilmemelidir.
-
-## 5.4.1. Acil Stop Butonları
-
-**Kapsam:** Tüm modellerde kontrol panosu üzerinde bir adet acil stop butonu bulunur. Toplam uzunluğu 4 metreyi aşan modellerde ek olarak makinenin her köşesine birer adet acil stop butonu yerleştirilir.
-
-**Test prosedürü:**
-1. Makine çalışır durumdayken pano üzerindeki acil stop butonuna basılır.
-2. Tüm hareketli ve elektrikli elemanların (tambur motoru, pompalar, ısıtıcılar) derhal durduğu gözlemlenir.
-3. Butonu serbest bırakmadan makineye start komutu verilmeye çalışılır.
-4. Köşe butonları mevcut ise aynı test her bir buton için ayrı ayrı tekrarlanır.
-
-**Kabul kriteri:** Her acil stop butonuna basıldığında tüm sistem anında durmalı ve buton serbest bırakılıp reset yapılmadan makine yeniden start alamamalıdır. Aksi durumda makine devreye alınmamalı ve yetkili servis ile iletişime geçilmelidir.
+Stop-Kategorie der Maschine: **Kat. 3**. Ein **RFID-Sicherheitssensor** ist an der Maschine installiert. **Keine Lichtschranke** vorhanden. Anzahl Schutz Türen / Barrieren: **0**.
 
 ---
 
-## 5.4.2. Alt Seviye (Kuru Çalışma Koruma) Sensörü
+## 5.4.1. Not-Halt-Test
 
-**Kapsam:** Her tankta, pompalar ve ısıtıcıların kuru çalışmasını engellemek amacıyla alt seviye sensörü bulunur. Tank su seviyesi bu sensörün altına düştüğünde pompalar ve ısıtıcılar otomatik olarak devre dışı kalır; aynı zamanda pano üzerindeki reset butonu aktive olur. Operatör suyu yeterli seviyeye tamamlamadan ve reset butonuna basmadan sisteme start verilemez.
+An der Maschine befinden sich insgesamt **4** Not-Halt-Taster:
 
-**Test prosedürü:**
-1. Tank kasıtlı olarak düşük seviyede bırakılır ya da sensörün bağlantı kablosu geçici olarak çıkarılarak düşük seviye koşulu simüle edilir.
-2. Makineye start komutu verilir.
-3. Pompalar ve ısıtıcıların devreye girmediği, pano üzerinde reset uyarısının aktive olduğu doğrulanır.
-4. Tank uygun seviyeye doldurulur (veya sensör bağlantısı yeniden yapılır).
-5. Reset butonuna basılmadan start komutu verilir; sistemin start almadığı doğrulanır.
-6. Reset butonuna basılır ve ardından start komutu verilir; sistemin normal biçimde devreye girdiği gözlemlenir.
+| # | Position |
+|---|----------|
+| 1 | Am Elektroschrank |
+| 2 | Rechts am Förderband am Maschineneinlauf |
+| 3 | Links am Förderband am Maschineneinlauf |
+| 4 | Links am Förderband am Maschinenauslauf |
 
-**Kabul kriteri:** Düşük seviye koşulunda pompalar ve ısıtıcılar kesinlikle çalışmamalıdır. Tank doldurulduktan sonra sistem yalnızca reset butonuna basılmasının ardından start alabilmelidir. Bu sıralamadan herhangi bir sapma tespit edilmesi durumunda makine devreye alınmamalı ve yetkili servis ile iletişime geçilmelidir.
+### Testverfahren
+
+Für jeden Not-Halt-Taster einzeln:
+
+1. Bei laufender oder betriebsbereiter Maschine Not-Halt-Taster betätigen.
+2. Prüfen, dass **jede Funktion der Maschine stoppt**.
+3. Prüfen, dass das Signalelement **rot** leuchtet.
+4. Not-Halt-Taster freigeben; sicherstellen, dass die Gefahr behoben ist.
+5. **Reset-Taste** am Schranketikett drücken, bis die Leuchte aufleuchtet.
+6. Maschine in Normalzustand zurückführen.
+
+| Prüfung | Erwartetes Ergebnis |
+|---------|---------------------|
+| Stoppt die Maschine bei Not-Halt? | Ja — jede Funktion stoppt |
+
+Not-Halt-Testperiode: **monatlich** wiederholen.
+
+<!-- FOTO: Not-Halt-Taster — 4 Stellen -->
+![Not-Halt-Stellen](../../assets/FOTO-5-4-0-acil-stop.png)
+
+<!-- FOTO: Reset-Taste — am Schranketikett -->
+![Reset-Taste — Schranketikett](../../assets/FOTO-5-4-1-reset-butonu.png)
 
 ---
 
-## 5.4.3. Üst Kapak Güvenlik Sistemi
+## 5.4.2. RFID-Sicherheitssensor-Test
 
-VDL serisinde üst kapaklar standart konfigürasyonda cıvatalı bağlantı sistemiyle sabitlenmiş olup yalnızca bilinçli bir teknik müdahaleyle açılabilir. Bu yapı, operasyon sırasında kapakların istem dışı açılmasını yapısal olarak engellediğinden ek elektriksel bir kilit sistemi gerektirmez. Cıvatalı kapak konfigürasyonuna sahip makinelerde bu bölüm kapsamında yapılacak ek bir test bulunmamaktadır.
+| Parameter | Wert |
+|-----------|------|
+| Sensortyp | RFID-Sicherheitssensor |
+| Anzahl Schutz Türen | 0 |
 
-### Opsiyonel: Açılabilir Kapak + Güvenlik Kilidi Sistemi
+### Testverfahren
 
-Açılabilir kapak konfigürasyonu talep edilmişse her kapağa manipüle edilemeyen güvenlik tipi (RFID) switch entegre edilir ve bu switchler bir emniyet rölesine bağlanır. Bu konfigürasyonda herhangi bir kapak açık konumdayken sistem start alamamaktadır.
+1. Bei laufender oder betriebsbereiter Maschine eine Abdeckung öffnen.
+2. Prüfen, dass der RFID-Sensor die Maschine **stoppt**.
+3. Abdeckung schließen und Reset-Verfahren anwenden.
 
-**Test prosedürü:**
-1. Tüm kapaklar kapalıyken makineye start komutu verilir ve sistemin normal biçimde devreye girdiği doğrulanır.
-2. Makine çalışır durumdayken herhangi bir kapak açılır.
-3. Sistemin derhal durduğu ve kapak tekrar kapatılmadan start alınamadığı doğrulanır.
-4. Test, mevcut her kapak için ayrı ayrı tekrarlanır.
+| Prüfung | Erwartetes Ergebnis |
+|---------|---------------------|
+| Stoppt der RFID-Sensor die Maschine beim Öffnen der Abdeckungen? | Ja |
 
-**Kabul kriteri:** Herhangi bir kapak açık konumdayken sistem hiçbir koşulda start alamamalıdır. Kapak kapatıldıktan sonra sistem normal biçimde devreye girebilmelidir. Bu davranıştan herhangi bir sapma tespit edilmesi durumunda makine devreye alınmamalı ve yetkili servis ile iletişime geçilmelidir.
+Bypass der Schutzvorrichtung ist **streng untersagt**. Für Wartung Abdeckungen erst nach Abschaltung öffnen; **LOTO-Verfahren** anwenden.
+
+<!-- FOTO: RFID-Sicherheitssensor — Abdeckungsbereich -->
+![RFID-Sicherheitssensor](../../assets/FOTO-5-4-2-rfid-sensor.png)
+
+---
+
+## 5.4.3. Phasenschutz- und Elektrosicherheitstest
+
+Checkliste elektrische Inbetriebnahme:
+
+| # | Prüfung | Erwartetes Ergebnis |
+|---|---------|---------------------|
+| 1 | Gibt das Phasenschutzrelais einen Ausgang? | Ja |
+| 2 | Liegt Spannung an der Maschine an? | Ja |
+| 3 | Stoppt die Maschine bei Not-Halt? | Ja |
+
+<!-- FOTO: Phasenschutzrelais — im Schrank -->
+![Phasenschutzrelais](../../assets/FOTO-5-4-3-faz-koruma.png)
+
+---
+
+## 5.4.4. Test Betriebsbereitschaft
+
+| Prüfung | Erwartetes Ergebnis |
+|---------|---------------------|
+| Ist die Maschine betriebsbereit? | Ja |
+| Signalelement gelb (betriebsbereit) | Ja |
+
+Auf der HMI-Oberfläche darf kein Alarm vorliegen. Ist die Maschine nicht betriebsbereit, werden Alarmbildschirm und rotes Signalelement aktiviert.
+
+<!-- FOTO: Signalelement — gelb (betriebsbereit) -->
+![Signalelement — betriebsbereit](../../assets/FOTO-5-4-4-tepe-lambasi-sari.png)
+
+---
+
+## 5.4.5. Checkliste Sicherheitsfunktionsprüfung
+
+Nach Abschluss aller Sicherheitstests folgende Liste ausfüllen:
+
+| # | Test | Ergebnis | Datum | Geprüft von |
+|---|------|----------|-------|-------------|
+| 1 | Not-Halt #1 — Schrank | ☐ OK / ☐ NOK | | |
+| 2 | Not-Halt #2 — Einlauf rechts | ☐ OK / ☐ NOK | | |
+| 3 | Not-Halt #3 — Einlauf links | ☐ OK / ☐ NOK | | |
+| 4 | Not-Halt #4 — Auslauf links | ☐ OK / ☐ NOK | | |
+| 5 | Reset-Verfahren | ☐ OK / ☐ NOK | | |
+| 6 | RFID-Sensor — Abdeckung offen | ☐ OK / ☐ NOK | | |
+| 7 | Phasenschutzrelais | ☐ OK / ☐ NOK | | |
+| 8 | Maschine betriebsbereit | ☐ OK / ☐ NOK | | |
+
+Erst wenn alle Punkte **OK** sind, zu Abschnitt 5.5 Installationsprüfungen und Betrieb übergehen.

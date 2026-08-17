@@ -1,11 +1,15 @@
-<!-- ÇEVİRİ GEREKLİ → EN | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 6.7. Other Settings
 
-# 6.8 Diğer Ayarlar
+This section defines other operator adjustment points of the KNV 30 3000 2B machine.
 
-VDL serisi makinelerde hidrolik ve pnömatik altyapılar fabrikasyon olarak sabitlenmiş olsa da; operatörün işlenecek parçanın kirlilik derecesine, materyaline ve hedeflenen üretim kapasitesine göre periyodik olarak optimize edebileceği temel proses ayarları bulunmaktadır. Bu ayarların tamamı, makinenin donanım yapısına fiziksel bir müdahale gerektirmeksizin doğrudan ana kontrol paneli üzerinden dijital olarak yönetilir:
+There are **no additional adjustment points** to be defined under this section on this machine. No adjustment is required.
 
-* **Tambur Dönüş Hızı (Parça İlerleme Süresi):** Parçaların yıkama, durulama ve kurutma bölgelerinde kalma süresini belirleyen en kritik ayardır. Kontrol panelindeki frekans konvertörü (invertör) arayüzü üzerinden 1 ile 5 d/d (devir/dakika) aralığında kademesiz olarak ayarlanabilir. Yoğun yağlı veya kompleks geometrili parçaların temizliğinde devir hızı düşürülerek kimyasal daldırma ve pülverize spreyleme süresi uzatılabilir.
-* **Proses Sıcaklıkları (Termostat Ayarları):** Her bir yıkama banyosu ve kurutma ünitesi için bağımsız dijital termostatlar bulunur. İdeal temizlik performansı ve enerji verimliliği için, su bazlı alkali kimyasalların türüne de bağlı olarak yıkama sıcaklıkları panel üzerinden 50°C - 80°C aralığında set edilebilir. Sıcak hava üflemeli kurutma rezistansları ise parçanın kütlesine göre 70°C - 110°C aralığına ayarlanmalıdır. 
-* **Opsiyonel Donanım Zamanlayıcıları:** Makine konfigürasyonunda disk tipi yağ sıyırıcı (oil skimmer) veya otomatik tahliye sistemleri gibi opsiyonel eklentiler mevcutsa, bu ünitelerin hangi aralıklarla devreye girip çıkacağı (çalışma/durma periyotları) kontrol panelindeki zaman röleleri veya PLC HMI ekranı üzerinden prosesin ihtiyacına göre programlanabilir.
+Operator settings are defined in Sections **6.1**–**6.5**.
 
-**Güvenlik Uyarısı:** Kontrol paneli üzerinden yapılan bu operasyonel ayar değişiklikleri, makinenin donanım tabanlı emniyet kilitlerini, kapak koruma siviçlerini veya acil durdurma fonksiyonlarını hiçbir şekilde etkilemez. Makinenin temel emniyet lojiği sabit olup, operatör tarafından değiştirilemez veya bypass edilemez.
+---
+
+## 6.7.1. Other Settings Status
+
+| Parameter | Value / Description |
+|-----------|---------------------|
+| Other adjustment points | No adjustment required |

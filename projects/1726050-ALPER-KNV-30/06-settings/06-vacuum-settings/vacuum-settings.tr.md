@@ -1,5 +1,14 @@
-# 6.7 Vakum Ayarları
+# 6.6. Vakum Ayarları
 
-VDL serisi makinelerin standart donanımında veya opsiyonel paketlerinde herhangi bir vakum sistemi (örneğin vakumlu kurutma ünitesi) kesinlikle bulunmamaktadır. Serinin tüm yıkama, durulama ve kurutma işlemleri tamamen atmosferik basınç altında çalışan kapalı çevrim sistemlerle (sıcak hava üfleme vb.) gerçekleştirilmektedir.
+Bu bölüm, KNV 30 3000 2B makinesinin vakum ayar noktalarını tanımlar.
 
-Makine mimarisi vakum teknolojisi içermediğinden; donanım üzerinde operatörün müdahale edebileceği, erişimine açık olan veya kalibre etmesi gereken herhangi bir vakum ayarı, valfi veya parametresi mevcut değildir. Bu nedenle, makine devreye alma veya günlük işletim süreçlerinde bu başlık altında uygulanabilecek bir prosedür bulunmamaktadır.
+Makinede **vakum sistemi bulunmamaktadır**. Operatör veya yetkili personel tarafından yapılacak vakum ayarı **bulunmamaktadır**.
+
+---
+
+## 6.6.1. Vakum Ayar Durumu
+
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Vakum sistemi | Makinede vakum sistemi yoktur |
+| Vakum ayarları | Herhangi bir ayara gerek yoktur |

@@ -1,69 +1,120 @@
-# 5.3. Mekanik, Pnömatik, Hidrolik ve Elektrik Kurulumu
+# 5.3. Sistem Bağlantıları ve Devreye Alma
 
-## 5.3.1. Elektrik Bağlantısı
+Bu bölüm, KNV 30 3000 2B makinesinin basınçlı hava, su ve elektrik tesisat bağlantılarının yapılması ile pano üzerinden devreye alınması ve faz kontrolü prosedürlerini tanımlar.
 
-VDL serisi **3P+1N+1PE** (üç faz + nötr + koruma toprağı) besleme gerektirir. Kurulum öncesinde tesisin elektrik altyapısının makinenin kurulu gücünü karşılayacak kapasitede olduğu doğrulanmalıdır. Model bazında kurulu güç değerleri aşağıda verilmiştir:
+Bağlantı işlemleri, Bölüm 5.1 montaj adımlarının **Adım 4–8** kapsamında gerçekleştirilir.
 
-| Model | Isıtıcı (kW) | Pompa (kW) | Tambur Motoru (kW) | Toplam Kurulu Güç (kW) |
-|---|---|---|---|---|
-| VDL 40 2500 1B | [...] | [...] | [...] | [...] |
-| VDL 40 3500 2B | 2× [...] | [...] | [...] | [...] |
-| VDL 40 4250 2B | 2× [...] | [...] | [...] | [...] |
-| VDL 60 5500 2B | 2× [...] | [...] | [...] | [...] |
-| VDL 80 6500 2B | 3× [...] | [...] | [...] | [...] |
+---
 
-> **Not:** Tablodaki ısıtıcı güçleri tek banyo başına değerleri ifade etmektedir. İki banyolu modellerde toplam ısıtıcı gücü iki katına çıkmaktadır.
+## 5.3.1. Basınçlı Hava Bağlantısı
 
-Güç kablosu, kontrol panosunun giriş bornasına bağlanmalı; koruma iletkeni (PE) pano üzerindeki topraklama klemensine eksiksiz biçimde iletilmelidir. Kablo kesiti, hat uzunluğu ve sigorta değeri için yerel elektrik yönetmeliği esas alınmalıdır.
+| Parametre | Değer |
+|-----------|-------|
+| Basınçlı hava girişi | 6 bar |
+| Bağlantı tipi | 3/4" |
+| Pnömatik regülatör ayarı | 6 bar |
+
+### Bağlantı prosedürü
+
+1. Tesisat basınçlı hava hattı makine girişine bağlanır (3/4").
+2. Regülatör **6 bar** olacak şekilde ayarlanır.
+3. HMI arayüzündeki **manuel sayfa** açılır.
+4. Hava bağlantı durumu **yeşil** yanana kadar kontrol edilir.
+
+Pnömatik dolum testi: *Makinede hava bağlantısı yapıldıktan sonra HMI manuel sayfasındaki hava bilgisi yeşil yanıyor mu?*
+
+<!-- FOTO: Basınçlı hava bağlantı noktası — 3/4" ve regülatör -->
+![Basınçlı hava bağlantısı](../../assets/FOTO-5-3-0-hava-baglantisi.png)
+
+---
 
 ## 5.3.2. Su Bağlantısı
 
-### Standart Konfigürasyon (Manuel Dolum)
+| Parametre | Değer |
+|-----------|-------|
+| Su girişi basıncı | 1 bar |
+| Bağlantı tipi | 1/2" |
+| Su sıcaklığı | +10°C – +70°C |
+| Su kalitesi | Şebeke suyu veya arıtılmış su |
 
-Otomatik dolum opsiyonu talep edilmemişse herhangi bir su veya hava bağlantısı yapılmasına gerek yoktur. Tank dolumu operatör tarafından manuel olarak gerçekleştirilir.
+### Bağlantı prosedürü
 
-### Opsiyonel Otomatik Dolum — Standart (Su + Hava)
+1. Tesisat su hattı makine girişine bağlanır (1/2").
+2. Su basıncının **1 bar** olduğu doğrulanır.
+3. HMI arayüzündeki **manuel sayfa** açılır.
+4. Su bağlantı durumu **yeşil** yanana kadar kontrol edilir.
 
-Bu opsiyon seçilmişse makineye iki ayrı bağlantı yapılmalıdır:
+Pnömatik/hidrolik dolum testi (su): *Makinede su bağlantısı yapıldıktan sonra HMI manuel sayfasındaki su bilgisi yeşil yanıyor mu?*
 
-**Su bağlantısı:** Su girişi, tesisin şebeke hattına bağlanır. Giriş hattında basınç ve akış sensörü mevcuttur; sensör üretici firmanın fabrikasındada uygun değere ayarlanmış olarak teslim edilir. Tesis şebeke basıncının beklenen değerin altında kalması durumunda sensör ayarı aşağıdaki şekilde revize edilmelidir:
+<!-- FOTO: Su bağlantı noktası — 1/2" -->
+![Su bağlantısı](../../assets/FOTO-5-3-1-su-baglantisi.png)
 
-1. Sensör kafası yukarı kaldırılır.
-2. **( − )** yönünde döndürülerek daha düşük basınç değerinde tetiklenecek biçimde ayarlanır.
-3. Sensör kafası yerine oturtulur ve çalışma testi yapılır.
+---
 
-**Hava bağlantısı:** Hava girişi, tesiste minimum **6 bar** basınç sağlayabilen bir pnömatik hatta bağlanmalıdır. Hava basınç sensörü fabrikada 6 bar için ayarlıdır.
+## 5.3.3. Elektrik Bağlantısı
 
-> ⚠️ **UYARI**
->
-> Makinenin pnömatik sisteminin güvenli çalışabilmesi için hava girişinde sürekli olarak minimum **6 bar** basınç sağlanması zorunludur. Bu gereksinim, operatör güvenliği açısından kritik öneme sahip olup kullanıcı tarafından karşılanması gereken bir yükümlülüktür.
->
-> Belirtilen basınç eşiğinin altında gerçekleştirilen operasyonlar hayati tehlike içeren durumlara yol açabilir. Bu nedenle hava basınç sensörü, su basınç sensöründen farklı olarak **hiçbir koşulda düşük basınç değerine yeniden ayarlanmamalı veya devre dışı bırakılmamalıdır.**
->
-> Söz konusu uyarının dikkate alınmaması sonucu meydana gelen kişisel yaralanma, ekipman hasarı veya üçüncü şahıslara verilen zararlar üreticinin sorumluluğu dışında olup tüm sorumluluk kullanıcıya aittir.
+| Parametre | Değer |
+|-----------|-------|
+| Besleme gerilimi | 380 V |
+| Besleme frekansı | 50 Hz |
+| Faz sayısı | 3 (trifaze) |
+| Toplam kurulu güç | 50 kW |
+| Maksimum akım çekişi | 100 A |
+| Besleme konfigürasyonu | 3P+N+PE |
+| Ana şalter | 100 A, Schneider |
+| Toplam sigorta / devre kesici | 100 A |
+| Kısa devre akımı (ICC) gereksinimi | 10 kA |
+| UPS / jeneratör gereksinimi | Hayır |
 
-### Opsiyonel Otomatik Dolum — Solenoid Vanalı
+Elektrik bağlantısı, **50 kW / 100 A** kurulu güce uygun **380 V, 50 Hz** trifaze besleme hattı ile yapılmalıdır. Bağlantı yalnızca yetkili elektrik personeli tarafından gerçekleştirilmelidir.
 
-Bu opsiyon seçilmişse yalnızca su bağlantısı yapılmalıdır; hava bağlantısı gerekmez. Su girişi tesisin şebeke hattına bağlandıktan sonra su basınç sensörünün yukarıda tarif edilen prosedüre göre tesis basıncına uygun şekilde ayarlandığı doğrulanmalıdır.
+<!-- FOTO: Elektrik panosu — besleme kablo girişi -->
+![Elektrik bağlantısı](../../assets/FOTO-5-3-2-elektrik-baglantisi.png)
 
-## 5.3.3. Drenaj ve Taşma Bağlantıları
+---
 
-Aşağıdaki bağlantılar kurulumun zorunlu bir parçasını oluşturur ve tüm modeller için uygulanır.
+## 5.3.4. Devreye Alma ve Faz Kontrolü
 
-**Tank drenaj hatları:** Her tankın alt seviyesinde birer drenaj vanası bulunmaktadır. Bu vanalar, tesisin atık su tahliye altyapısına bağlanmalıdır. Bağlantı hattı, proses sıcaklığındaki sıvıya uygun malzemeden seçilmeli ve akışın yerçekimiyle serbestçe tahliye edilebileceği eğimde döşenmelidir.
+### Devreye alma prosedürü
 
-**Taşma hatları:** Makine üst kotlarında her banyo için birer taşma çıkışı mevcuttur. Bu çıkışlar, tank dolumunun kontrolsüz yükselmesi durumunda sıvıyı güvenli biçimde tahliye etmek amacıyla uygun bir gider hattına bağlanmalıdır.
+| Sıra | İşlem |
+|:----:|-------|
+| 1 | Trifaze besleme hattı panoya bağlanır |
+| 2 | Makine elektriği **pano üzerinden** açılır |
+| 3 | **Faz sıra rölesi** üzerinden faz yönü kontrol edilir |
+| 4 | Faz yönü ters ise **iki faz değiştirilerek** düzeltilir |
 
-## 5.3.4. Opsiyonel Ekipman Bağlantıları
+### Elektrik devreye alma test checklist
 
-### Yağ Sıyırıcı
+| Kontrol | Beklenen sonuç |
+|---------|----------------|
+| Faz koruma rölesi çıkış veriyor mu? | Evet |
+| Makinede elektrik var mı? | Evet |
+| Acil stop'a basıldığında makine duruyor mu? | Evet |
 
-Yağ sıyırıcı opsiyonu talep edilmişse ünitenin tahliye hattı, ayrıştırılan yağın birikmesi için uygun bir gider veya toplama kabına yönlendirilmelidir.
+Motor yönü tek yönde çalıştırılmalıdır; faz yönü doğru ayarlanmalıdır.
 
-### Hassas Filtre
+<!-- FOTO: Faz sıra rölesi ve faz koruma rölesi — pano içi -->
+![Faz kontrolü — pano içi](../../assets/FOTO-5-3-3-faz-kontrol.png)
 
-Hassas filtre opsiyonu talep edilmişse filtre gövdesinin altında yer alan tahliye vanası, uygun bir gider hattına bağlanmalıdır. Filtre temizliği sırasında bu hat üzerinden kontaminan içerikli sıvı tahliye edilecektir.
+---
 
-## 5.3.5. Havalandırma
+## 5.3.5. Bağlantı Tamamlama Kontrol Listesi
 
-VDL serisi, yüksek sıcaklıkta çalışan proses sıvısı nedeniyle operasyon sırasında buhar ve ısı açığa çıkarır. Makinenin kapalı veya yetersiz havalandırmalı bir alanda konumlandırılması durumunda çalışma ortamındaki nem ve sıcaklık artışını önlemek amacıyla uygun bir egzoz veya genel havalandırma sistemi tesis edilmelidir.
+Tüm bağlantılar tamamlandığında aşağıdaki kontroller yapılmalıdır:
+
+| # | Kontrol | Durum |
+|---|---------|-------|
+| 1 | Basınçlı hava bağlantısı yapıldı (6 bar, 3/4") | ☐ |
+| 2 | HMI manuel sayfasında hava bilgisi yeşil | ☐ |
+| 3 | Su bağlantısı yapıldı (1 bar, 1/2") | ☐ |
+| 4 | HMI manuel sayfasında su bilgisi yeşil | ☐ |
+| 5 | Trifaze elektrik bağlantısı yapıldı (380 V, 50 Hz) | ☐ |
+| 6 | Faz yönü doğrulandı | ☐ |
+| 7 | Pano üzerinden elektrik açıldı | ☐ |
+| 8 | Faz koruma rölesi çıkış veriyor | ☐ |
+
+Bağlantılar tamamlandıktan sonra Bölüm **5.4** güvenlik testleri ve Bölüm **5.5** kurulum doğrulama testleri uygulanmalıdır.
+
+<!-- FOTO: HMI manuel sayfa — hava ve su yeşil gösterge -->
+![HMI manuel sayfa — bağlantı durumu](../../assets/FOTO-5-3-4-hmi-manuel-durum.png)

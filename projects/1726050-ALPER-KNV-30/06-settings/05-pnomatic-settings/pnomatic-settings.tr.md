@@ -1,8 +1,45 @@
-# 6.5 Pnomatik Ayarları
+# 6.5. Pnömatik Ayarlar
 
-VDL serisi makinelerdeki pnömatik sistem gereksinimleri, sahip olunan opsiyonel donanımlara göre fabrikasyon sürecinde standartlaştırılmış ve kalibre edilmiştir. Makine üzerinde operatörün periyodik olarak yapması gereken veya değiştirmesine izin verilen herhangi bir pnömatik ayar işlemi bulunmamaktadır:
+Bu bölüm, KNV 30 3000 2B makinesinin pnömatik ayar noktalarını tanımlar.
 
-* **Otomatik Su Dolum Opsiyonuna Sahip Makineler:** Makinenin hava girişinde bir pnömatik basınç regülatörü bulunmaktadır. Bu donanım, sistem içerisindeki valflerin ve bileşenlerin kusursuz çalışması için gereken 6 bar basınç değerine fabrikada kalibre edilmiş ve sabitlenmiştir. Sistem güvenliği ve donanım ömrü açısından, **operatörün bu regülatör ayarına kesinlikle müdahale etmemesi ve fabrika değerini değiştirmemesi gerekmektedir.** Kurulum aşamasında tesisat üzerinden makineye doğrudan 6 bar hava beslemesi sağlanması sistemin sorunsuz çalışması için yeterlidir.
-* **Otomatik Su Dolum Opsiyonu Bulunmayan Makineler:** Sistem herhangi bir pnömatik (basınçlı hava) bağlantısına veya hava regülasyonuna ihtiyaç duymamaktadır.
+Makine basınçlı hava bağlantısı: **6 bar — 3/4"** (bkz. Bölüm **5.3**).
 
-*(Not: Gerekli pnömatik besleme değerleri "Enerji Besleme Karakteristikleri" kapsamında değerlendirildiği için, tesisat ve bağlantı detayları kılavuzun Kurulum bölümünde belirtilmiştir.)*
+---
+
+## 6.5.1. Regülatör Basınç Ayarı
+
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Regülatör basınç ayarı (bar) | **6** |
+
+Pnömatik regülatör, makine girişinde **6 bar** olacak şekilde ayarlanmalıdır. Ayar sonrası HMI manuel sayfasında hava bilgisinin yeşil yandığı doğrulanmalıdır (bkz. Bölüm **5.5.3**).
+
+<!-- FOTO: Pnömatik regülatör — 6 bar ayarı -->
+![Pnömatik regülatör 6 bar](../../assets/FOTO-6-5-0-regulator.png)
+
+---
+
+## 6.5.2. Silindir Hız Ayarı
+
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Silindir hız ayarı | Silindir hızı ayarı yoktur |
+
+---
+
+## 6.5.3. Sensör Gecikmeleri
+
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Sensör ON/OFF gecikmeleri (ms) | Sensör ON/OFF gecikmeleri yoktur |
+
+---
+
+## 6.5.4. Pnömatik Ayar Kontrol Listesi
+
+| # | Kontrol | Durum |
+|---|---------|-------|
+| 1 | Regülatör 6 bar'a ayarlandı | ☐ OK / ☐ NOK |
+| 2 | HMI manuel sayfada hava yeşil | ☐ OK / ☐ NOK |
+
+**Tarih:** _______________ **Kontrol eden:** _______________

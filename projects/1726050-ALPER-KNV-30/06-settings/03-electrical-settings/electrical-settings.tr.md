@@ -1,69 +1,61 @@
 # 6.3. Elektrik Ayarları
 
-Bu bölüm; makinenin elektriksel bileşenlerine ait operatör veya yetkili teknik personel tarafından yapılabilecek ayarları kapsamaktadır. Aşağıdaki prosedürlerin tamamı yalnızca ilgili elektrik yönetmelikleri kapsamında yetkinliğe sahip elektrik teknisyeni veya mühendisi tarafından uygulanmalıdır. Herhangi bir ayar işlemi öncesinde makinenin enerjisiz hale getirildiği ve yetkisiz kişilerce enerji verilmesinin engellendiği doğrulanmalıdır.
+Bu bölüm, KNV 30 3000 2B makinesinin elektrik ve otomasyon ayarlarını tanımlar. Elektrik ayarları yalnızca yetkili elektrik teknisyeni veya mühendisi tarafından yapılmalıdır.
 
-## 6.3.1. Termostat Ayarı
+---
 
-Her tankın proses sıcaklığı, tank üzerindeki termostat aracılığıyla bağımsız olarak ayarlanır. Termostat; hedef sıcaklığa ulaşıldığında ısıtıcıları devre dışı bırakır, sıcaklık belirlenen eşiğin altına düştüğünde yeniden devreye alır.
+## 6.3.1. Motor Yönü / Faz Kontrolü
 
-**Ayar prosedürü:**
-1. Termostat ayar kadranı veya düğmesi, istenen proses sıcaklığına getirilir.
-2. Makine devreye alınarak sıcaklığın hedefe ulaşıp ulaşmadığı izlenir.
-3. Hedef sıcaklığa ulaşıldığında ısıtıcıların devre dışı kaldığı, sıcaklık düştüğünde yeniden devreye girdiği doğrulanır.
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Motor yönü / faz kontrolü | Motor tek bir yönde çalıştırılmalıdır. Bunun için bir ayar yapmaya gerek yoktur |
 
-| Parametre | Değer |
-|---|---|
-| Minimum ayar sıcaklığı | [...] °C |
-| Maksimum ayar sıcaklığı | [...] °C |
-| Önerilen başlangıç değeri | [...] °C |
+Faz yönü ve sırası, kurulum sırasında faz sıra rölesi ile doğrulanmıştır (bkz. Bölüm **5.3**).
 
-> ⚠️ **UYARI**
->
-> Termostat, makinenin tasarlandığı maksimum proses sıcaklığının üzerine ayarlanmamalıdır. Aşırı sıcaklık; proses sıvısının hızla bozulmasına, contaların ve hidrolik bileşenlerin zarar görmesine ve buhar yoğunluğunun artmasına bağlı olarak çalışma ortamında güvenlik risklerine yol açabilir.
+---
 
-## 6.3.2. Frekans Sürücüsü Parametreleri
+## 6.3.2. Encoder / Feedback
 
-Tambur dönüş hızı, kontrol panosu bünyesindeki frekans sürücüsü aracılığıyla ayarlanır. Frekans sürücüsü; minimum ve maksimum frekans sınırları, hızlanma (rampa-up) ve yavaşlama (rampa-down) süreleri gibi temel parametrelerle yapılandırılmıştır. Bu parametreler fabrikada optimum çalışma koşulları için ayarlanmış olarak teslim edilir.
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Encoder / feedback ayarı | PLC programı içerisinde gömülüdür. Ayar firmamız tarafından yapılmalıdır |
 
-**Operatör tarafından ayarlanabilecek parametre:**
+Encoder ayarı operatör tarafından yapılmamalıdır.
 
-Tambur çalışma frekansı (dolayısıyla devir hızı) kontrol panosu üzerinden aşağıdaki sınırlar içinde değiştirilebilir:
+<!-- FOTO: PLC panosu — encoder ayarı üretici -->
+![Encoder ayarı — PLC](../../assets/FOTO-6-3-0-encoder.png)
 
-| Parametre | Değer |
-|:---:|:---:|
-| Minimum çalışma frekansı | [...] Hz |
-| Maksimum çalışma frekansı | [...] Hz |
-| Fabrika çıkış değeri | [...] Hz |
-| Hızlanma süresi (rampa-up) | [...] s |
-| Yavaşlama süresi (rampa-down) | [...] s |
+---
 
-> ⚠️ **UYARI**
->
-> Hızlanma ve yavaşlama süreleri ile minimum/maksimum frekans sınırları yalnızca yetkili teknik personel tarafından ve yalnızca zorunlu hallerde değiştirilebilir. Rampa sürelerinin çok kısa ayarlanması tambur tahrik motoruna aşırı akım yükü bindirerek termik koruma sistemini devreye sokabilir veya motora kalıcı hasar verebilir. Maksimum frekans sınırının aşılması tambur mekanik bileşenlerinin tasarım hızı üzerinde çalışmasına neden olur.
+## 6.3.3. Analog Ölçeklendirme
 
-## 6.3.3. Motor Koruma Rölesi (Termik Röle) Ayarı
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Analog ölçeklendirme (basınç / sıcaklık) | Basınç ayarı yoktur. Sıcaklık ayarı için HMI arayüzündeki ayar sayfası kullanılmalıdır |
 
-Tambur tahrik motoru ve pompa motorları, aşırı akım durumlarında motorları korumak amacıyla termik koruma röleleriyle donatılmıştır. Bu röleler fabrikada motor nominal akım değerlerine göre ayarlanmış olarak teslim edilir.
+<!-- FOTO: HMI ayar sayfası — sıcaklık -->
+![HMI sıcaklık ayarı](../../assets/FOTO-6-3-1-sicaklik-ayar.png)
 
-**Nominal akım değerleri:**
+---
 
-| Bileşen | Nominal Akım (A) |
-|:---:|:---:|
-| Tambur tahrik motoru | 1,00 A |
-| Yıkama pompası | [...] A |
-| Durulama pompası (2B modellerde) | [...] A |
-| Kurutma ünitesi motoru (opsiyonel) | [...] A |
+## 6.3.4. Tarih / Saat / Dil
 
-Termik röle ayarı yalnızca motor değişimi veya yetkili teknik servis müdahalesi sonrasında, motor etiket değerleri esas alınarak yeniden yapılmalıdır.
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Tarih / saat / dil ayarı | HMI arayüzündeki ayar sayfasından yapılmalıdır |
 
-> ⚠️ **UYARI**
->
-> Termik röle ayar değerinin motor nominal akımının üzerine çıkarılması aşırı ısınmaya bağlı motor sargı hasarına ve yangın riskine yol açabilir. Termik röle sık sık devreye giriyorsa ayar değeri yükseltilmek yerine motorun elektriksel ve mekanik durumu yetkili teknik personel tarafından incelenmelidir.
+<!-- FOTO: HMI ayar sayfası — tarih saat dil -->
+![HMI tarih saat dil ayarı](../../assets/FOTO-6-3-2-hmi-tarih-dil.png)
 
-## 6.3.4. Opsiyonel PLC Parametreleri
+---
 
-Opsiyonel PLC donanımı talep edilmiş makinelerde proses parametreleri; çevrim süreleri, sıcaklık setpoint değerleri ve dolum sekansları PLC üzerinden merkezi olarak yönetilebilir. PLC parametrelerine erişim yetki seviyelerine göre kısıtlanmış olup operatör seviyesinde yalnızca proses sıcaklığı ve çevrim süresi gibi temel parametreler değiştirilebilir; sistem konfigürasyon parametreleri yalnızca yetkili teknik personel erişimine açıktır.
+## 6.3.5. Elektrik Ayar Kontrol Listesi
 
-PLC parametre listesi ve programlama kılavuzu, PLC opsiyonu talep edilmiş makinelerle birlikte ayrıca teslim edilmektedir.
+| # | Kontrol | Durum |
+|---|---------|-------|
+| 1 | Motor yönü doğrulandı | ☐ OK / ☐ NOK |
+| 2 | Encoder ayarı üretici tarafından yapıldı | ☐ OK / ☐ NOK |
+| 3 | HMI sıcaklık ayarı yapıldı (gerekiyorsa) | ☐ OK / ☐ NOK |
+| 4 | HMI tarih / saat / dil ayarlandı | ☐ OK / ☐ NOK |
 
-> **NOT:** PLC yazılımında yetkisiz değişiklik yapılması proses güvenliğini ve makine performansını olumsuz etkileyebilir. PLC yazılımına müdahale edilmesi gerektiğinde üretici firma teknik desteği ile iletişime geçilmesi tavsiye edilir.
+**Tarih:** _______________ **Kontrol eden:** _______________

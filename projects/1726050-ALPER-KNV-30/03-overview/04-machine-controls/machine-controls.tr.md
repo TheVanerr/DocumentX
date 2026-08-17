@@ -1,36 +1,114 @@
 # 3.4. Makine Kontrolleri
 
-Bu bölüm, Dolfin Industrial Washing Systems kontrol panosu üzerinde yer alan tüm şalter, buton, dijital gösterge ve sinyal lambalarının işlevlerini tanımlar. Operatörün makineyi güvenli ve verimli bir şekilde kullanabilmesi için aşağıdaki donanımların görevlerini eksiksiz bilmesi şarttır.
+Bu bölüm, KNV 30 3000 2B makinesinin elektrik panosu, HMI operatör arayüzü, PLC otomasyon sistemi, start/stop fonksiyonları, sinyal lambaları ve alarm/uzaktan erişim özelliklerini tanımlar.
 
-![Kontrol Panosu Butonları](../assets/vdl/3/3-4-controls.svg)
+---
 
-**1. YIKAMA ISITICI (Washing Heater - Siyah Döner Anahtar + Kırmızı LED Ekran)**
-Yıkama haznesi ısıtıcısının devreye alınmasını ve çalışma sıcaklığının izlenmesini sağlar. Döner anahtar saat yönünde çevrilerek ısıtıcı aktif hale getirilir. Yanındaki dijital gösterge, haznedeki anlık su sıcaklığını santigrat derece (°C) cinsinden sürekli olarak görüntüler. Döner anahtar kapalı (0) konumunda iken ısıtıcı devre dışıdır.
+## 3.4.1. Kontrol Panosu — Genel Yapı
 
-**2. YIKAMA POMPASI (Wash Pump - Siyah Döner Anahtar + Pilot Lamba)**
-Yıkama sıvısını hazne içinde dolaştıran pompanın çalışma komutunu verir. Döner anahtar açık konuma getirildiğinde pompa devreye girer. Yanındaki gri/beyaz pilot lamba, pompa devresinin aktif olduğunu teyit eder; lamba sönükse pompa çalışmıyor demektir.
+| Parametre | Değer |
+|-----------|-------|
+| Ana kontrol panosu konumu | Elektrik panosu üzerinde |
+| Pano koruma sınıfı (IP) | IP55 |
+| Pano boyutları (W × H × D) | 800 × 1200 × 300 mm |
+| Ana şalter konumu | Elektrik panosu üzerinde |
+| Ana şalter | 100 A, Schneider |
 
-**3. KURUTMA ISITICI (Drying Heater - Siyah Döner Anahtar + Kırmızı LED Ekran)**
-Kurutma bölümü ısıtıcısını devreye alır. Yanındaki dijital gösterge, kurutma haznesindeki anlık sıcaklığı santigrat derece (°C) cinsinden görüntüler. Hedeflenen sıcaklığa ulaşıldığında sistem rezistansları otomatik olarak kapatır; sıcaklık düştüğünde tekrar devreye alır. Döner anahtar kapalı (0) konumunda iken ısıtıcı devre dışıdır.
+Elektrik panosu; güç dağıtımı, motor koruma, otomasyon bileşenleri (PLC, HMI) ve sinyal lambalarını barındırır.
 
-**4. KURUTMA FANI (Drying Fan - Siyah Döner Anahtar + Pilot Lamba)**
-Kurutma haznesi içinde sıcak havayı sirküle eden fanı çalıştırır. Döner anahtar açık konuma getirildiğinde fan devreye girer. Yanındaki gri/beyaz pilot lamba, fan motorunun enerjili durumda olduğunu gösterir.
+<!-- FOTO: Elektrik panosu — genel görünüm, kapak açık -->
+![Kontrol panosu genel görünüm](../../assets/FOTO-3-4-0-kontrol-panosu.png)
 
-**5. TAMBUR (Drum - Siyah Döner Anahtar + Pilot Lamba)**
-Yıkama tamburunun dönüş hareketini başlatır. Döner anahtar açık konuma getirildiğinde tambur motoru devreye girer. Yanındaki gri/beyaz pilot lamba, tambur motorunun enerjili olduğunu gösterir. Tamburu döndürmeden önce kapağın tam olarak kapandığından emin olunuz.
+---
 
-**6. YAĞ AYIRICI (Oil Separator - Siyah Döner Anahtar + Pilot Lamba)**
-Yıkama sıvısının yüzeyinde biriken endüstriyel yağları ve katı partikülleri mekanik olarak sistemden uzaklaştıran üniteyi kontrol eder. Yanındaki gri/beyaz pilot lamba, ünite çalışırken yanar. Yıkama döngüsü aktif değilken (dinlenme durumunda) çalıştırılması önerilir.
+## 3.4.2. HMI Operatör Arayüzü
 
-**7. YIKAMA SEVİYESİ (Washing Level - Kırmızı Pilot Lamba)**
-Yıkama tankındaki sıvı seviyesini izleyen sinyal göstergesidir. Lamba yandığında sıvı seviyesinin güvenli çalışma sınırlarının üzerinde olduğunu belirtir. Lamba söndüğünde tank sıvı seviyesi kritik minimumun altına düşmüş demektir; bu durumda sisteme sıvı ikmali yapılmalı ve işleme devam edilmemelidir.
+| Parametre | Değer |
+|-----------|-------|
+| HMI ekran boyutu | 7" |
+| HMI marka / model | SIMATIC HMI KTP700 Basic PN (6AV2123-2GB03-0AX0) |
+| Start / Stop konumu | HMI arayüzünde dijital buton |
+| Operatör paneli dilleri | Türkçe, İngilizce, Almanca |
+| Şifre koruması | HMI arayüzünde bir şifre bulunmaktadır |
 
-> **ÖNEMLİ UYARI:** Yıkama seviyesi lambası sönük olduğunda makine çalıştırılmamalıdır. Susuz çalışan rezistanslar ve pompa telafi edilemez mekanik hasara uğrar. Sıvı seviyesi güvenli sınırlara döndükten sonra operasyona devam edilebilir.
+HMI **çalışma sayfasında** yıkama, durulama, kurutma 1, kurutma 2 ve egzoz seçenekleri bulunur; operatör bu fonksiyonları ihtiyaca göre açıp kapatarak makineyi çalıştırabilir. **Manuel mod** bulunmamaktadır.
 
-**8. RESET (Donanımsal Onay - Mavi Buton)**
-Makinenin yeniden başlama (restart) korumasını onaylayan fiziksel güvenlik butonudur. Acil Stop devreye girdiğinde veya bir arıza nedeniyle sistem kilitlendiğinde, tehlike ortadan kalktıktan sonra Acil Stop kilidi açılsa dahi sistem otomatik olarak yeniden çalışmaz. Operatörün, sistemi kasıtlı ve bilinçli olarak yeniden yetkilendirmek için bu butona basması zorunludur.
+HMI **manuel sayfasında** hava ve su bağlantı durumu izlenir; bağlantı yapıldıktan sonra ilgili bilgi **yeşil** yanar.
 
-**9. ACİL STOP (Emergency Stop - Sarı Zemin/Kırmızı Mantar Başlık)**
-Tehlike anında makinenin tüm hareketli parçalarını ve güç tüketen sistemlerini (pompalar, ısıtıcılar, motorlar) anında durdurur. Butona basıldığında mekanik olarak kilitlenir. Sistemi tekrar devreye alabilmek için kilitli butonun ¼ tur saat yönünde döndürülerek serbest bırakılması ve ardından mavi "Reset" butonuna basılarak güvenlik devresinin donanımsal olarak onaylanması gerekir.
+HMI **ayar sayfasından** sıcaklık, tarih/saat ve dil ayarları yapılabilir.
 
-> **ÖNEMLİ UYARI:** Acil Stop butonu standart bir makine durdurma mekanizması değildir ve rutin operasyonlar sırasında makineyi kapatmak için kullanılmamalıdır. Bu donanım yalnızca can güvenliğini veya sistem bütünlüğünü tehdit eden acil durumlarda enerjiyi anında kesmek için tasarlanmıştır.
+<!-- FOTO: HMI ekran — çalışma sayfası -->
+![HMI çalışma sayfası](../../assets/FOTO-3-4-1-hmi-calisma.png)
+
+<!-- FOTO: HMI ekran — manuel sayfa (hava/su durumu) -->
+![HMI manuel sayfa](../../assets/FOTO-3-4-2-hmi-manuel.png)
+
+---
+
+## 3.4.3. PLC ve G/Ç Altyapısı
+
+| Parametre | Değer |
+|-----------|-------|
+| PLC marka / model | SIEMENS SIMATIC S7-1200 |
+| PLC CPU model | S7-1200 CPU 1215C DC/DC/DC (6ES7215-1AG40-0XB0) |
+| I/O modül özeti | 36 giriş / 24 çıkış |
+| Fieldbus / protokol | Profinet |
+
+Encoder / feedback ayarı PLC programı içerisinde gömülüdür; ayar üretici firma tarafından yapılmalıdır.
+
+<!-- FOTO: PLC modülleri — pano içi montaj -->
+![PLC modülleri](../../assets/FOTO-3-4-3-plc-modul.png)
+
+---
+
+## 3.4.4. Çalışma Modları, Start/Stop ve Acil Stop
+
+| Parametre | Değer |
+|-----------|-------|
+| Mod seçici | Otomatik / Bakım |
+| Manuel mod | Bulunmamaktadır |
+| Step / tek adım modu | Bulunmamaktadır |
+| Mod geçiş koşulları | Bulunmamaktadır |
+| Jog / inching düğmeleri | Bulunmamaktadır |
+
+**Bakım modu:** Bakım için özel bir mod yoktur. Bakım için makine elektriği kesildikten sonra kapaklar açılmalıdır; elektrik kesildiğinde **LOTO prosedürü** uygulanmalıdır.
+
+**Acil stop konumları (4 adet):**
+1. Elektrik panosu üzerinde
+2. Makine girişinde konveyörün sağında
+3. Makine girişinde konveyörün solunda
+4. Makine çıkışında konveyörün solunda
+
+Acil stop'a basıldığında makinedeki **her fonksiyon durur**. Reset: Acil stop butonu kaldırılıp fiziksel tehdit giderildikten sonra pano etiketi üzerindeki reset butonuna lambası yanana kadar basılmalıdır.
+
+<!-- FOTO: Acil stop butonları — giriş ve çıkış konumları -->
+![Acil stop konumları](../../assets/FOTO-3-4-4-acil-stop.png)
+
+---
+
+## 3.4.5. Sinyal Lambaları (Tepe Lambası)
+
+| Renk | Anlam |
+|------|-------|
+| Kırmızı | Alarm |
+| Sarı | Makine kullanıma hazır |
+| Yeşil | Makine çalışıyor |
+
+Tepe lambası makinenin anlık durumunu operatöre görsel olarak iletir. Alarm durumunda kırmızı lamba yanar.
+
+<!-- FOTO: Tepe lambası — makine üstü -->
+![Tepe lambası](../../assets/FOTO-3-4-5-tepe-lambasi.png)
+
+---
+
+## 3.4.6. Alarm, Reçete ve Uzaktan Erişim
+
+| Fonksiyon | Davranış |
+|-----------|----------|
+| Alarm ekranı | HMI arayüzünde alarm ekranı bulunmaktadır; alarm durumunda tepe lambası kırmızı yanar |
+| Reçete / program kaydı | Herhangi bir reçete sınırı bulunmamaktadır |
+| Trend / log kayıt süresi | [EKSİK] |
+| Uzaktan erişim | Evet — Secomea modülü |
+
+<!-- FOTO: HMI alarm ekranı -->
+![HMI alarm ekranı](../../assets/FOTO-3-4-6-hmi-alarm.png)

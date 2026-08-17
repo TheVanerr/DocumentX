@@ -1,13 +1,33 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 6. Einstellungen
 
-# 6. AYARLAR
+Dieser Abschnitt definiert die mechanischen, sicherheitsrelevanten, elektrischen und pneumatischen Einstellpunkte der Maschine **KNV 30 3000 2B** (Projekt-Nr.: **1726050**) nach der Installation. Einstellungen sind nach Abschluss von Kapitel **5** (Installation und Inbetriebnahme) durchzuführen.
 
-Bu bölüm; makinenin proses gereksinimlerine, işlenecek parça özelliklerine ve üretim koşullarına göre optimize edilmesi amacıyla operatör veya yetkili teknik personel tarafından yapılabilecek ayar ve konfigürasyon işlemlerini kapsamaktadır.
+---
 
-Endüstriyel yıkama makinelerinde nihai temizleme kalitesi; yalnızca makinenin mekanik ve elektriksel performansına değil, proses parametrelerinin işlenecek malzemeye özgü biçimde doğru yapılandırılmasına da doğrudan bağlıdır. Yıkama sıcaklığı, çevrim süresi, deterjan konsantrasyonu ve mekanik etki gibi temel parametreler birbirleriyle etkileşim içindedir; bu nedenle herhangi bir parametrede yapılacak değişikliğin diğerleri üzerindeki etkisi göz önünde bulundurularak ayarlamalar bütüncül bir yaklaşımla gerçekleştirilmelidir.
+## Abschnittsinhalt
 
-> ⚠️ **UYARI**
->
->Bu bölümde açıklanan ayar prosedürleri yalnızca bu kılavuzu okumuş ve makine sistemleri hakkında yeterli teknik bilgiye sahip yetkili personel tarafından uygulanmalıdır. Tanımlanan parametre aralıklarının dışına çıkılması; yetersiz temizleme kalitesine, proses sıvısının erken bozulmasına, mekanik bileşenlerin aşınan ömrünün kısalmasına veya güvenli çalışma koşullarının bozulmasına yol açabilir. Üretici firma tarafından belirlenen parametre sınırları aşılarak gerçekleştirilen ayarlamalardan kaynaklanan ekipman hasarı ve proses kayıpları garanti kapsamı dışındadır.
+| Abschnitt | Titel | Thema |
+|-----------|-------|-------|
+| **6.1** | Mechanische Einstellungen | Referenz-/Home-Position; mechanische Einstellanforderungen |
+| **6.2** | Sicherheitseinstellungen | Sicherheitstür, Not-Halt-Testintervall, Lichtvorhang |
+| **6.3** | Elektrische Einstellungen | Motordrehrichtung, Encoder, analoge Skalierung, HMI Datum/Uhrzeit/Sprache |
+| **6.4** | Hydraulikeinstellungen | Kein Hydrauliksystem — keine Einstellung erforderlich |
+| **6.5** | Pneumatikeinstellungen | Reglerdruck (6 bar), Zylindergeschwindigkeit, Sensorverzögerungen |
+| **6.6** | Vakuumeinstellungen | Kein Vakuumsystem — keine Einstellung erforderlich |
+| **6.7** | Sonstige Einstellungen | Keine zusätzlichen Einstellpunkte — keine Einstellung erforderlich |
 
-Fabrika çıkış ayarları, makinenin standart çalışma koşullarında güvenli ve verimli biçimde çalışacağı şekilde yapılandırılmış olup referans değerler bu bölümün ilgili alt başlıklarında belirtilmiştir. Gerçekleştirilen tüm ayar değişikliklerinin kaydedilmesi ve orijinal fabrika değerlerinin ayrıca muhafaza edilmesi, olası sorunlarda başlangıç konfigürasyonuna dönüş imkânı sağlaması açısından tavsiye edilir.
+---
+
+## Allgemeine Hinweise
+
+| Thema | Beschreibung |
+|-------|--------------|
+| Encoder / Feedback | Im PLC-Programm eingebettet; Einstellung durch den **Hersteller** |
+| Temperatureinstellung | **Einstellseite** auf der HMI-Oberfläche verwenden |
+| Not-Halt-Test | **Einmal monatlich** wiederholen (siehe Kapitel **5.4**) |
+| Wartungszugang | Sicherheitstür nicht überbrücken; Abdeckungen nach Spannungsabschaltung öffnen; **LOTO** anwenden |
+
+Detaillierte Einstellverfahren sind in den jeweiligen Unterabschnitten beschrieben.
+
+<!-- PHOTO: HMI-Einstellseite Gesamtansicht -->
+![HMI-Einstellseite](../assets/FOTO-6-0-settings-genel.png)

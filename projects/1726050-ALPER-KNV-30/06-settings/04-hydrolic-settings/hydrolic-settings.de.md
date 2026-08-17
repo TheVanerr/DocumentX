@@ -1,8 +1,14 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 6.4. Hydraulikeinstellungen
 
-# 6.4 Hidrolik Ayarları
+Dieser Abschnitt definiert die hydraulischen Einstellpunkte der Maschine KNV 30 3000 2B.
 
-Makinede operatör tarafından yapılabilecek pompa debisi, nozul açısı veya genel yıkama basıncı gibi hidrolik akış ayarları bulunmamaktadır; bu değerlerin tümü fabrikasyon olarak sabitlenmiştir.
+An der Maschine ist **kein Hydrauliksystem** vorhanden. Es sind **keine** hydraulischen Einstellungen durch Bediener oder autorisiertes Personal durchzuführen.
 
-**Otomatik Dolum Basınç Sensörü Ayarı:**
-Sadece otomatik su dolum sistemine sahip makinelerde, tesis şebeke su basıncının düşük olması nedeniyle makine üzerindeki su basınç sensörünün akışı algılayamadığı istisnai durumlar oluşabilir. Böyle bir durumda, operatör su alım sürecinin sorunsuz başlaması için basınç sensörünün tetiklenme eşik değerini (hassasiyetini) kısarak mevcut şebeke basıncına uygun seviyeye ayarlayabilir.
+---
+
+## 6.4.1. Status Hydraulikeinstellungen
+
+| Parameter | Wert / Beschreibung |
+|-----------|---------------------|
+| Hydrauliksystem | Kein Hydrauliksystem an dieser Maschine |
+| Hydraulikeinstellungen | Keine Einstellung erforderlich |

@@ -1,10 +1,45 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 6.5. Pneumatikeinstellungen
 
-# 6.5 Pnomatik Ayarları
+Dieser Abschnitt definiert die pneumatischen Einstellpunkte der Maschine KNV 30 3000 2B.
 
-VDL serisi makinelerdeki pnömatik sistem gereksinimleri, sahip olunan opsiyonel donanımlara göre fabrikasyon sürecinde standartlaştırılmış ve kalibre edilmiştir. Makine üzerinde operatörün periyodik olarak yapması gereken veya değiştirmesine izin verilen herhangi bir pnömatik ayar işlemi bulunmamaktadır:
+Druckluftanschluss: **6 bar — 3/4"** (siehe Abschnitt **5.3**).
 
-* **Otomatik Su Dolum Opsiyonuna Sahip Makineler:** Makinenin hava girişinde bir pnömatik basınç regülatörü bulunmaktadır. Bu donanım, sistem içerisindeki valflerin ve bileşenlerin kusursuz çalışması için gereken 6 bar basınç değerine fabrikada kalibre edilmiş ve sabitlenmiştir. Sistem güvenliği ve donanım ömrü açısından, **operatörün bu regülatör ayarına kesinlikle müdahale etmemesi ve fabrika değerini değiştirmemesi gerekmektedir.** Kurulum aşamasında tesisat üzerinden makineye doğrudan 6 bar hava beslemesi sağlanması sistemin sorunsuz çalışması için yeterlidir.
-* **Otomatik Su Dolum Opsiyonu Bulunmayan Makineler:** Sistem herhangi bir pnömatik (basınçlı hava) bağlantısına veya hava regülasyonuna ihtiyaç duymamaktadır.
+---
 
-*(Not: Gerekli pnömatik besleme değerleri "Enerji Besleme Karakteristikleri" kapsamında değerlendirildiği için, tesisat ve bağlantı detayları kılavuzun Kurulum bölümünde belirtilmiştir.)*
+## 6.5.1. Reglerdruckeinstellung
+
+| Parameter | Wert / Beschreibung |
+|-----------|---------------------|
+| Reglerdruckeinstellung (bar) | **6** |
+
+Der pneumatische Regler am Maschineneingang ist auf **6 bar** einzustellen. Nach der Einstellung prüfen, dass die Luftanzeige auf der HMI-Handseite grün leuchtet (siehe Abschnitt **5.5.3**).
+
+<!-- PHOTO: Pneumatischer Regler — 6 bar Einstellung -->
+![Pneumatischer Regler 6 bar](../../assets/FOTO-6-5-0-regulator.png)
+
+---
+
+## 6.5.2. Zylindergeschwindigkeit
+
+| Parameter | Wert / Beschreibung |
+|-----------|---------------------|
+| Zylindergeschwindigkeitseinstellung | Keine Zylindergeschwindigkeitseinstellung |
+
+---
+
+## 6.5.3. Sensorverzögerungen
+
+| Parameter | Wert / Beschreibung |
+|-----------|---------------------|
+| Sensor ON/OFF-Verzögerungen (ms) | Keine Sensor ON/OFF-Verzögerungen |
+
+---
+
+## 6.5.4. Checkliste Pneumatikeinstellungen
+
+| # | Prüfung | Status |
+|---|---------|--------|
+| 1 | Regler auf 6 bar eingestellt | ☐ OK / ☐ NOK |
+| 2 | Luft grün auf HMI-Handseite | ☐ OK / ☐ NOK |
+
+**Datum:** _______________ **Geprüft von:** _______________

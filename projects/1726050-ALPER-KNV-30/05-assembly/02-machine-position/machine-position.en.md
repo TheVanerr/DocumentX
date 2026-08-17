@@ -1,44 +1,86 @@
-<!-- ÇEVİRİ GEREKLİ → EN | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 5.2. Machine Positioning
 
-# 5.2. Makinenin Konumlandırılması
+This section defines procedures for positioning the KNV 30 3000 2B machine at the installation site, orientation, levelling with adjustable feet, and compliance with alignment tolerances.
 
-## 5.2.1. Zemin Gereksinimleri ve Taşıma Kapasitesi
+Positioning operations are performed within **Step 3** of Section 5.1 assembly steps; they are detailed in this section.
 
-VDL serisi, düz ve yeterli taşıma kapasitesine sahip betonarme bir zemin üzerine yerleştirilmelidir. Zemin yüzeyi, makine boyunca sürekli titreşim yükü oluşturabileceğinden çatlak, oyuk veya eğrilik içermemelidir. Model bazında minimum zemin taşıma kapasitesi gereksinimleri aşağıda verilmiştir:
+---
 
-| Model | Makine Ağırlığı (kg) | Min. Zemin Kapasitesi (kg/m²) |
-|---|:---:|:---:|
-| VDL 40 2500 1B | 585 | 1000 |
-| VDL 40 3500 2B | 700 | 1200 |
-| VDL 40 4250 2B | 750 | 1400 |
-| VDL 60 5500 2B | 800 | 1600 |
-| VDL 80 6500 2B | 1000 | 2000 |
+## 5.2.1. Installation Area Requirements
 
-Mevcut zeminin bu gereksinimleri karşılayıp karşılamadığından emin olunamaması durumunda kurulum öncesinde yetkili bir inşaat mühendisine danışılmalıdır.
+Before placing the machine, the installation area shall meet the following conditions:
 
-## 5.2.2. Teraziye Alma
+| Parameter | Requirement |
+|-----------|-------------|
+| Minimum assembly area size | 5 m × 3 m |
+| Floor flatness tolerance | 0.5 mm/m |
+| Floor strength | Floor surface shall be hard and level |
+| Minimum clearance — front | 1000 mm |
+| Minimum clearance — rear | 1000 mm |
+| Minimum clearance — sides | 1000 mm |
+| Minimum ceiling height | 2500 mm |
 
-Makinenin yatay düzlemde tam olarak terazide konumlandırılması; tamburun düzgün çalışması, yatak yüklerinin dengeli dağılması ve uzun vadeli mekanik ömür açısından kritik önem taşır. Teraziye alma işlemi aşağıdaki adımlarla gerçekleştirilmelidir:
+Reference layout plan: **1726050-ALPER-KNV 30 LAYOUT.pdf**
 
-1. Makine nihai konumuna yerleştirildikten sonra su terazisi, makine gövdesinin hem boyuna hem enine eksenine alınarak eğim kontrol edilir.
-2. Sapma tespit edilmesi durumunda makine ayaklarının yüksekliği regüle edilerek düzeltme yapılır.
-3. Düzeltme sonrasında ölçüm her iki eksende tekrarlanır ve makine terazide olduğu doğrulanana kadar işlem sürdürülür.
-4. Teraziye alma tamamlandıktan sonra tüm ayak somunları karşı somun ile kilitlenerek sabitlenir.
+<!-- PHOTO: Installation area plan — clearances marked -->
+![Installation area — clearance plan](../../assets/FOTO-5-2-0-kurulum-alani.png)
 
-## 5.2.3. Zemine Sabitleme (Ankraj)
+---
 
-VDL serisi, normal çalışma koşullarında zemine ankraj gerektirmeyecek ağırlık ve titreşim profiline sahiptir.
+## 5.2.2. Orientation Definitions and Placement
 
-## 5.2.4. Bakım ve Erişim Boşlukları
+The machine shall be positioned according to the following orientations:
 
-Makinenin çevresinde; rutin bakım, temizlik ve teknik müdahale operasyonlarının güvenli biçimde gerçekleştirilebilmesi için aşağıdaki minimum boşluklar bırakılmalıdır:
+| Definition | Direction |
+|------------|-----------|
+| Operator side | Right |
+| Feed side (infeed) | Left |
+| Discharge side (outfeed) | Right |
+| Conveyor flow direction | Left → Right |
 
-| Konum | Minimum Boşluk |
-|---|:---:|
-| Giriş tarafı (yükleme) | 1000 mm |
-| Çıkış tarafı (boşaltma / kurutma ünitesi erişimi) | 1000 mm |
-| Sağ yan (kontrol panosu tarafı) | 1000 mm |
-| Sol yan | 1000 mm |
-| Üst (pompa ve tank bakımı) | 3000 mm |
+Parts are loaded from the left and removed from the right. The HMI panel and electrical panel are accessible from the operator side (right). A crane shall **not be used under any circumstances** when transporting the machine; profiles under the machine shall be used for forklift transport.
 
-> **ÖNEMLİ UYARI:** Belirtilen boşluklar minimum değerler olup mümkün olan durumlarda daha geniş çalışma alanı sağlanması tavsiye edilir.
+| Parameter | Value |
+|-----------|-------|
+| Centre of gravity | Midpoint of machine conveyor |
+| Transport weight (assembled) | 1300 kg |
+
+<!-- PHOTO: Machine orientation — feed left, discharge right -->
+![Orientation definitions](../../assets/FOTO-5-2-1-yon-tanimlari.png)
+
+---
+
+## 5.2.3. Levelling and Alignment
+
+| Parameter | Value |
+|-----------|-------|
+| Levelling mechanism | Adjustable feet |
+| Alignment tolerance | 0.5 mm |
+
+### Positioning procedure
+
+1. The machine is brought to its final position with a forklift and placed on the floor.
+2. **Adjustable feet** are used to set the machine **level**.
+3. Alignment tolerance shall not exceed **0.5 mm**.
+4. Check both axes with a spirit level or equivalent measuring tool.
+5. If deviation is detected, adjust foot heights and repeat measurement.
+
+Mechanical installation test check: *Is the machine level?*
+
+<!-- PHOTO: Adjustable foot — levelling detail -->
+![Adjustable foot — levelling](../../assets/FOTO-5-2-2-seviye-ayari.png)
+
+---
+
+## 5.2.4. Maintenance Access
+
+Care shall be taken not to obstruct maintenance access zones during positioning:
+
+| Zone | Access |
+|------|--------|
+| Rear of machine | All covers are removable and accessible |
+
+A minimum clearance of **1000 mm** shall be maintained at the rear of the machine.
+
+<!-- PHOTO: Rear of machine — maintenance covers and access clearance -->
+![Maintenance access area — rear](../../assets/FOTO-5-2-3-bakim-erisim.png)

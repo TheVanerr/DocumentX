@@ -1,39 +1,130 @@
-<!-- ÇEVİRİ GEREKLİ → EN | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 5.1. Machine Assembly
 
-# 5.1. Makine Montajı
+This section defines all assembly steps from delivery of the KNV 30 3000 2B machine to the installation area through unpacking, mounting on the floor, levelling with adjustable feet, and connection of compressed air, water, and electrical supply.
 
-VDL serisi, tüm mekanik alt sistemleri fabrikada eksiksiz biçimde birleştirilmiş ve işlevsel olarak doğrulanmış hâlde sevk edilir. Son kullanıcı veya yetkili kurulum ekibi tarafından gerçekleştirilmesi gereken mekanik birleştirme (assembly) işlemi bulunmamaktadır. Saha kurulumu; konumlandırma, tambur eğim doğrulaması, opsiyonel birimlerin bağlantısı ile su ve elektrik tesisatından ibarettir.
+Assembly is estimated to take **1 day** and is performed by a **1-person** team. A **forklift** shall be used for transport and placement; a **crane shall not be used under any circumstances** when transporting the machine. Transport shall be performed with forklift forks; the profiles under the machine are used for fork entry. Transport weight (assembled): **1300 kg** — the machine shall be transported without disassembly of any parts.
 
-## 5.1.1. Montaj Prosedürleri ve Gereksinimler
+---
 
-### Konumlandırma
+## 5.1.1. Pre-Assembly Preparation
 
-Makine, forklift veya transpalet ile nihai konumuna taşınarak düz ve yük taşıma kapasitesi yeterli bir beton zemin üzerine yerleştirilmelidir. Zemin taşıma kapasitesi gereksinimleri için Bölüm 4'teki teknik veriler esas alınmalıdır.
+The following conditions shall be met before starting assembly:
 
-### Makinenin Teraziye Alınması
+| Parameter | Requirement |
+|-----------|-------------|
+| Minimum assembly area size | 5 m × 3 m |
+| Floor flatness tolerance | 0.5 mm/m |
+| Floor strength | Floor surface shall be hard and level |
+| Required equipment | Forklift |
+| Packaging type | Container |
+| Transport temperature | +10°C – +30°C |
+| Transport environment | No moisture or corrosive substances |
 
-VDL serisinde parçaların tambur boyunca giriş tarafından çıkış tarafına düzenli biçimde ilerlemesi, tambur içindeki sonsuz helisel vida mekanizması tarafından sağlanır. Bu yapı sayesinde parça ilerlemesi makine eğimine bağlı değildir; ancak makinenin yatay düzlemde tam olarak terazide konumlandırılması, tamburun düzgün çalışması ve yatak yüklerinin dengeli dağılması açısından kritik önem taşır. Kurulum ekibi, makineyi yerine yerleştirdikten sonra su terazisi ile yatay düzlemi her iki eksende doğrulamalıdır. Sapma tespit edilmesi durumunda makine ayaklarının yüksekliği regüle edilerek teraziye alınmalı ve ölçüm tekrarlanmalıdır.
+The machine is shipped in container packaging. Forklift fork entry (profiles under the machine) shall be used when transporting to the installation area.
 
-## 5.1.2. Özel Alet ve Ekipman Gereksinimleri
+<!-- PHOTO: Machine transport with forklift — fork entry via lower profiles -->
+![Forklift transport](../../assets/FOTO-5-1-0-forklift-tasima.png)
 
-Kurulum sırasında aşağıdaki ekipman ve aletlerin hazır bulundurulması gerekmektedir:
+---
 
-- **Forklift veya transpalet:** Makinenin nihai konumuna taşınması için. Gerekli kaldırma kapasitesi için model bazlı ağırlık değerleri teknik veri sayfasından kontrol edilmelidir.
-- **Su terazisi:** Tambur eğim açısının doğrulanması için.
+## 5.1.2. Assembly Steps
 
-## 5.1.3. Ambalaj ve Koruyucu Malzemelerin Sökülmesi
+Assembly shall be performed in the following sequence:
 
-Sevkiyat sırasında makine; naylon örtü, ahşap palet ve gerekli görülen noktalarda nakliye sabitleme bağlantı elemanlarıyla korunmaktadır. Konumlandırma işlemi tamamlandıktan sonra tüm ambalaj malzemeleri aşağıdaki sıraya göre uzaklaştırılmalıdır:
+| Step | Operation | Detail |
+|:----:|-----------|--------|
+| 1 | Machine delivered to installation area and unloaded | Transport to final position with forklift |
+| 2 | Machine packaging removed | Removal of container packaging |
+| 3 | Machine placed on floor; adjustable feet levelled | Alignment tolerance: **0.5 mm** |
+| 4 | Compressed air connection made | **6 bar**, **3/4"** connection |
+| 5 | Water connection made | **1 bar**, **1/2"** connection |
+| 6 | Three-phase electrical supply connected | **380 V**, **50 Hz** line suitable for **50 kW / 100 A** installed power |
+| 7 | Machine power switched on via panel | Main switch — electrical panel |
+| 8 | Phase rotation checked | Phase sequence relay; if reversed, correct by swapping two phases |
+| 9 | Machine ready for operation | Section 5.5 installation tests shall be completed |
 
-1. Naylon örtü ve bağlama elemanları kesilerek çıkarılır; kesici aletlerin makine yüzeyine temas etmemesine dikkat edilmelidir.
-2. Nakliye sabitleme elemanları (varsa) sökülür ve makine yüzeyinde artık kalmadığı kontrol edilir.
-3. Ahşap palet forklift yardımıyla uzaklaştırılır.
+> **Note:** In the DATA file, water and electrical connections are listed under the same step number (Step 5). In this manual, the connection sequence is preserved with steps numbered 5 (water) and 6 (electrical) separately.
 
-Tüm ambalaj malzemeleri yerel çevre mevzuatları ve atık yönetimi yönetmeliklerine uygun biçimde bertaraf edilmelidir.
+### Step 3 — Levelling
 
-## 5.1.4. Montaj Sonrası Mekanik Kontroller
+The machine is placed on the **adjustable foot** system. Feet shall be adjusted so the machine is **level**. Alignment tolerance is **0.5 mm**. Mechanical installation test check: *Is the machine level?*
 
-Elektrik, su ve drenaj bağlantıları yapılmadan önce aşağıdaki kontroller gerçekleştirilmelidir:
+<!-- PHOTO: Adjustable feet — levelling -->
+![Adjustable feet — levelling](../../assets/FOTO-5-1-1-ayarlanabilir-ayak.png)
 
-- Makine her iki eksende su terazisi ile terazide olduğu doğrulanır.
-- Sevkiyat sabitleme elemanlarından hiçbirinin makinede kalmadığı doğrulanır.
+### Step 4 — Compressed Air Connection
+
+| Parameter | Value |
+|-----------|-------|
+| Pressure | 6 bar |
+| Connection | 3/4" |
+| Regulator setting | 6 bar |
+
+After connection, air status on the HMI manual page shall indicate **green**.
+
+<!-- PHOTO: Compressed air connection point — 3/4" -->
+![Compressed air connection](../../assets/FOTO-5-1-2-hava-baglantisi.png)
+
+### Step 5 — Water Connection
+
+| Parameter | Value |
+|-----------|-------|
+| Pressure | 1 bar |
+| Connection | 1/2" |
+| Water quality | Mains water or purified water |
+| Water temperature | +10°C – +70°C |
+
+After connection, water status on the HMI manual page shall indicate **green**.
+
+<!-- PHOTO: Water connection point — 1/2" -->
+![Water connection](../../assets/FOTO-5-1-3-su-baglantisi.png)
+
+### Step 6 — Electrical Connection
+
+| Parameter | Value |
+|-----------|-------|
+| Voltage | 380 V |
+| Frequency | 50 Hz |
+| Phases | 3 (three-phase) |
+| Installed power | 50 kW |
+| Maximum current | 100 A |
+| Configuration | 3P+N+PE |
+| Main switch | 100 A, Schneider |
+
+Electrical connection shall be performed by authorised electrical personnel only.
+
+<!-- PHOTO: Electrical supply connection — panel inlet -->
+![Electrical supply connection](../../assets/FOTO-5-1-4-elektrik-baglantisi.png)
+
+### Steps 7–8 — Energisation and Phase Check
+
+1. Machine power is switched on **via the panel**.
+2. Phase rotation is checked via the **phase sequence relay**.
+3. If phase rotation is reversed, **swap two phases** to correct.
+
+Electrical commissioning test checklist:
+- Is the phase protection relay output active?
+- Is there power on the machine?
+- Does the machine stop when emergency stop is activated?
+
+<!-- PHOTO: Phase sequence relay — inside panel -->
+![Phase sequence relay](../../assets/FOTO-5-1-5-faz-sira-role.png)
+
+---
+
+## 5.1.3. Assembly Completion
+
+In Step 9, the machine is brought to **ready for operation** status. Before starting operation, tests in the following sections shall be completed:
+
+| Test | Section |
+|------|---------|
+| Safety function tests | 5.4 |
+| Installation verification and empty run (15 min) | 5.5 |
+
+Safety function test list:
+- Does the machine stop when emergency stop is activated?
+- Is the machine ready for operation?
+- Does the RFID sensor stop the machine when covers are opened?
+
+<!-- PHOTO: Assembly complete — machine ready for operation -->
+![Assembly complete](../../assets/FOTO-5-1-6-montaj-tamamlandi.png)

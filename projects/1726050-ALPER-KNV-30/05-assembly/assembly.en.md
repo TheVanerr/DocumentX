@@ -1,29 +1,37 @@
-<!-- ÇEVİRİ GEREKLİ → EN | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 5. Installation and Commissioning
 
-# 5. KURULUM VE DEVREYE ALMA
+This section covers assembly, positioning, utility connections, safety tests, and installation verification from transport of the **KNV 30 3000 2B** machine (project no.: **1726050**) to the installation site through to commissioning.
 
-Bu bölüm; makinenin kurulum lokasyonuna taşınmasından itibaren devreye alınmasına kadar gerçekleştirilmesi gereken tüm mekanik, elektriksel ve tesisata ilişkin işlemleri kapsamaktadır. Bölüm içeriği sırasıyla makine montajı, konumlandırma, sistem bağlantıları, güvenlik sistemlerinin testi, kurulum doğrulama kontrolü ve devreye alma prosedürlerinden oluşmaktadır.
+Assembly operations are estimated to take **1 day** and are performed by a **1-person** team. A **forklift** shall be used for transport and placement; a **crane shall not be used under any circumstances** when transporting the machine. For forklift transport, the profiles under the machine shall be used.
 
--Kurulum ve devreye alma işlemleri; bu kılavuzu eksiksiz okumuş ve içeriğini kavramış olmanın ötesinde, mekanik, elektrik ve hidrolik sistemler konusunda mesleki yetkinliğe sahip, ilgili iş sağlığı ve güvenliği mevzuatı hakkında bilgi sahibi olan yetkili personel tarafından gerçekleştirilmelidir. 
--Elektrik bağlantıları yalnızca yerel elektrik yönetmeliklerinin öngördüğü niteliklere sahip elektrik teknisyeni veya mühendisi tarafından yapılmalıdır. 
--Kaldırma ve taşıma operasyonları ise yalnızca ilgili ekipmanı güvenli biçimde kullanma yetkinliğine sahip operatörler tarafından yürütülmelidir. 
+---
 
-> ⚠️ **UYARI — YETKİSİZ KURULUM**
->
-> Belirtilen mesleki yeterliliklere sahip olmayan kişilerin bu bölümdeki prosedürleri uygulamaya çalışması; kişisel yaralanmaya, kalıcı iş göremezliğe, ekipman hasarına ve üçüncü şahıslara zarar verilmesine yol açabilir. Kurulumun yetersiz teknik bilgiye sahip kişilerce gerçekleştirilmesi aynı zamanda makinenin güvenli çalışma koşullarını kalıcı olarak bozabilir. Bu tür durumlardan doğacak her türlü hukuki, mali ve cezai sorumluluk tamamen kurulumu gerçekleştiren tarafa aittir; üretici firma hiçbir koşulda sorumlu tutulamaz ve garanti yükümlülükleri sona erer.
+## Section Contents
 
-> ⚠️ **UYARI — ELEKTRİK BAĞLANTILARI**
->
-> Kurulum veya devreye alma sürecinde herhangi bir elektrik bağlantısına müdahale edilmeden önce tesisin ilgili devresini besleyen ana şalter kapalı konuma alınmalı ve yetkisiz kişilerce yeniden devreye sokulmasını engellemek amacıyla kilit altına alınmalı ya da uyarı etiketi ile işaretlenmelidir. Enerji altındaki iletkenlerle temas; elektrik çarpması, yanık veya ölüm ile sonuçlanabilir. Bu prosedür, bağlantı işlemi ne kadar kısa sürecek olursa olsun hiçbir koşulda atlanmamalıdır.
+| Section | Title | Subject |
+|---------|-------|---------|
+| **5.1** | Machine Assembly | Assembly steps — placement, unpacking, levelling, utility and electrical connections |
+| **5.2** | Machine Positioning | Adjustable feet, alignment tolerance, levelling |
+| **5.3** | System Connections | Compressed air (6 bar, 3/4"), water (1 bar, 1/2"), three-phase power (380 V, 50 Hz, 50 kW / 100 A) |
+| **5.4** | Safety System Tests | Emergency stop, RFID sensor, phase protection relay |
+| **5.5** | Installation Verification and Testing | Mechanical, electrical, pneumatic tests; 15 min empty run |
+| **5.6** | Communication | Profinet, I/O list reference |
 
-> ⚠️ **UYARI — KALDIRMA VE TAŞIMA**
->
-> Makinenin kaldırılması ve nihai konumuna taşınması işlemleri yalnızca makinenin toplam ağırlığını taşıyacak kapasitede forklift veya transpalet kaldırma ekipmanıyla gerçekleştirilmelidir. Kaldırma öncesinde ekipmanın yük kapasitesi model bazlı ağırlık değerleriyle karşılaştırılarak doğrulanmalıdır. Yetersiz kapasiteli ekipman kullanılması, dengesiz yükleme yapılması veya kaldırma sırasında personelin makine altında ya da yük yolunda bulunması; makinenin devrilmesine veya düşmesine bağlı olarak ağır yaralanmalara ve ölüme yol açabilir.
+---
 
-> ⚠️ **UYARI — PROSEDÜR SIRASI**
->
-> Bu bölümde tanımlanan kurulum prosedürleri, belirtilen sıra takip edilerek eksiksiz biçimde uygulanmalıdır. Herhangi bir adımın atlanması, eksik tamamlanması veya yanlış sırayla uygulanması; güvenlik sistemlerinin kısmen ya da tamamen işlevsiz kalmasına, ekipman hasarına veya kişisel yaralanmaya neden olabilir. Bölüm 5.5'teki kurulum kontrol listesi eksiksiz tamamlanmadan makineye kesinlikle start verilmemelidir.
+## Installation Prerequisites Summary
 
-> 📝 **NOT — TANIMLANMAMIŞ DURUMLAR VE ÜRETİCİ İLE İLETİŞİM**
->
-> Kurulum veya devreye alma sürecinde bu kılavuzda öngörülmeyen ya da açıkça tanımlanmamış bir durumla karşılaşılması halinde prosedüre devam edilmemeli, mevcut adım güvenli biçimde sonlandırılmalı ve üretici firma teknik desteği ile iletişime geçilmelidir. Kılavuz kapsamı dışında gerçekleştirilen her türlü müdahale yetkisiz işlem olarak değerlendirilir; bu müdahalelerden kaynaklanan ekipman hasarı, kişisel yaralanma veya üçüncü şahıslara verilen zararlar garanti kapsamı dışında olup tüm sorumluluk müdahaleyi gerçekleştiren tarafa aittir.
+| Parameter | Requirement |
+|-----------|-------------|
+| Minimum assembly area size | 5 m × 3 m |
+| Floor flatness tolerance | 0.5 mm/m |
+| Floor strength | Floor surface shall be hard and level |
+| Required equipment | Forklift |
+| Transport weight (assembled) | 1300 kg |
+| Minimum clearance | Front, rear, sides: 1000 mm |
+| Minimum ceiling height | 2500 mm |
+
+Upon completion of assembly, the machine is brought to **ready for operation** status. Detailed steps, checklists, and test procedures are described in the relevant subsections. For the I/O list, see **1726050-ALPER-KNV 30 I/O LISTESI.pdf**.
+
+<!-- PHOTO: Installation area — machine placement with forklift -->
+![Installation area — machine placement](../assets/FOTO-5-0-assembly-genel.png)

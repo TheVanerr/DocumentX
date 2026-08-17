@@ -1,7 +1,14 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 6.6. Vakuumeinstellungen
 
-# 6.7 Vakum Ayarları
+Dieser Abschnitt definiert die Vakuumeinstellpunkte der Maschine KNV 30 3000 2B.
 
-VDL serisi makinelerin standart donanımında veya opsiyonel paketlerinde herhangi bir vakum sistemi (örneğin vakumlu kurutma ünitesi) kesinlikle bulunmamaktadır. Serinin tüm yıkama, durulama ve kurutma işlemleri tamamen atmosferik basınç altında çalışan kapalı çevrim sistemlerle (sıcak hava üfleme vb.) gerçekleştirilmektedir.
+An der Maschine ist **kein Vakuumsystem** vorhanden. Es sind **keine** Vakuumeinstellungen durch Bediener oder autorisiertes Personal durchzuführen.
 
-Makine mimarisi vakum teknolojisi içermediğinden; donanım üzerinde operatörün müdahale edebileceği, erişimine açık olan veya kalibre etmesi gereken herhangi bir vakum ayarı, valfi veya parametresi mevcut değildir. Bu nedenle, makine devreye alma veya günlük işletim süreçlerinde bu başlık altında uygulanabilecek bir prosedür bulunmamaktadır.
+---
+
+## 6.6.1. Status Vakuumeinstellungen
+
+| Parameter | Wert / Beschreibung |
+|-----------|---------------------|
+| Vakuumsystem | Kein Vakuumsystem an dieser Maschine |
+| Vakuumeinstellungen | Keine Einstellung erforderlich |

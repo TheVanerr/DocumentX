@@ -1,27 +1,37 @@
-# 5. KURULUM VE DEVREYE ALMA
+# 5. Kurulum ve Devreye Alma
 
-Bu bölüm; makinenin kurulum lokasyonuna taşınmasından itibaren devreye alınmasına kadar gerçekleştirilmesi gereken tüm mekanik, elektriksel ve tesisata ilişkin işlemleri kapsamaktadır. Bölüm içeriği sırasıyla makine montajı, konumlandırma, sistem bağlantıları, güvenlik sistemlerinin testi, kurulum doğrulama kontrolü ve devreye alma prosedürlerinden oluşmaktadır.
+Bu bölüm, **KNV 30 3000 2B** makinesinin (proje no: **1726050**) kurulum lokasyonuna taşınmasından devreye alınmasına kadar gerçekleştirilmesi gereken montaj, konumlandırma, tesisat bağlantıları, güvenlik testleri ve kurulum doğrulama işlemlerini kapsar.
 
--Kurulum ve devreye alma işlemleri; bu kılavuzu eksiksiz okumuş ve içeriğini kavramış olmanın ötesinde, mekanik, elektrik ve hidrolik sistemler konusunda mesleki yetkinliğe sahip, ilgili iş sağlığı ve güvenliği mevzuatı hakkında bilgi sahibi olan yetkili personel tarafından gerçekleştirilmelidir. 
--Elektrik bağlantıları yalnızca yerel elektrik yönetmeliklerinin öngördüğü niteliklere sahip elektrik teknisyeni veya mühendisi tarafından yapılmalıdır. 
--Kaldırma ve taşıma operasyonları ise yalnızca ilgili ekipmanı güvenli biçimde kullanma yetkinliğine sahip operatörler tarafından yürütülmelidir. 
+Montaj işlemleri tahmini **1 gün** sürmekte olup **1 kişilik** ekip ile gerçekleştirilir. Taşıma ve yerleştirme için **forklift** kullanılmalıdır; makine taşınmasında **vinç kesinlikle kullanılmamalıdır**. Forklift ile taşıma için makine altındaki profiller kullanılmalıdır.
 
-> ⚠️ **UYARI — YETKİSİZ KURULUM**
->
-> Belirtilen mesleki yeterliliklere sahip olmayan kişilerin bu bölümdeki prosedürleri uygulamaya çalışması; kişisel yaralanmaya, kalıcı iş göremezliğe, ekipman hasarına ve üçüncü şahıslara zarar verilmesine yol açabilir. Kurulumun yetersiz teknik bilgiye sahip kişilerce gerçekleştirilmesi aynı zamanda makinenin güvenli çalışma koşullarını kalıcı olarak bozabilir. Bu tür durumlardan doğacak her türlü hukuki, mali ve cezai sorumluluk tamamen kurulumu gerçekleştiren tarafa aittir; üretici firma hiçbir koşulda sorumlu tutulamaz ve garanti yükümlülükleri sona erer.
+---
 
-> ⚠️ **UYARI — ELEKTRİK BAĞLANTILARI**
->
-> Kurulum veya devreye alma sürecinde herhangi bir elektrik bağlantısına müdahale edilmeden önce tesisin ilgili devresini besleyen ana şalter kapalı konuma alınmalı ve yetkisiz kişilerce yeniden devreye sokulmasını engellemek amacıyla kilit altına alınmalı ya da uyarı etiketi ile işaretlenmelidir. Enerji altındaki iletkenlerle temas; elektrik çarpması, yanık veya ölüm ile sonuçlanabilir. Bu prosedür, bağlantı işlemi ne kadar kısa sürecek olursa olsun hiçbir koşulda atlanmamalıdır.
+## Bölüm İçeriği
 
-> ⚠️ **UYARI — KALDIRMA VE TAŞIMA**
->
-> Makinenin kaldırılması ve nihai konumuna taşınması işlemleri yalnızca makinenin toplam ağırlığını taşıyacak kapasitede forklift veya transpalet kaldırma ekipmanıyla gerçekleştirilmelidir. Kaldırma öncesinde ekipmanın yük kapasitesi model bazlı ağırlık değerleriyle karşılaştırılarak doğrulanmalıdır. Yetersiz kapasiteli ekipman kullanılması, dengesiz yükleme yapılması veya kaldırma sırasında personelin makine altında ya da yük yolunda bulunması; makinenin devrilmesine veya düşmesine bağlı olarak ağır yaralanmalara ve ölüme yol açabilir.
+| Bölüm | Başlık | Konu |
+|-------|--------|------|
+| **5.1** | Makine Montajı | Montaj adımları — yerleştirme, ambalaj sökümü, seviye ayarı, medya ve elektrik bağlantıları |
+| **5.2** | Makine Konumlandırma | Ayarlanabilir ayaklar, hizalama toleransı, seviye ayarı |
+| **5.3** | Sistem Bağlantıları | Basınçlı hava (6 bar, 3/4"), su (1 bar, 1/2"), trifaze elektrik (380 V, 50 Hz, 50 kW / 100 A) |
+| **5.4** | Güvenlik Sistemleri Testi | Acil stop, RFID sensörü, faz koruma rölesi |
+| **5.5** | Kurulum Doğrulama ve Test | Mekanik, elektrik, pnömatik testler; 15 dk boş koşu |
+| **5.6** | İletişim | Profinet, I/O listesi referansı |
 
-> ⚠️ **UYARI — PROSEDÜR SIRASI**
->
-> Bu bölümde tanımlanan kurulum prosedürleri, belirtilen sıra takip edilerek eksiksiz biçimde uygulanmalıdır. Herhangi bir adımın atlanması, eksik tamamlanması veya yanlış sırayla uygulanması; güvenlik sistemlerinin kısmen ya da tamamen işlevsiz kalmasına, ekipman hasarına veya kişisel yaralanmaya neden olabilir. Bölüm 5.5'teki kurulum kontrol listesi eksiksiz tamamlanmadan makineye kesinlikle start verilmemelidir.
+---
 
-> 📝 **NOT — TANIMLANMAMIŞ DURUMLAR VE ÜRETİCİ İLE İLETİŞİM**
->
-> Kurulum veya devreye alma sürecinde bu kılavuzda öngörülmeyen ya da açıkça tanımlanmamış bir durumla karşılaşılması halinde prosedüre devam edilmemeli, mevcut adım güvenli biçimde sonlandırılmalı ve üretici firma teknik desteği ile iletişime geçilmelidir. Kılavuz kapsamı dışında gerçekleştirilen her türlü müdahale yetkisiz işlem olarak değerlendirilir; bu müdahalelerden kaynaklanan ekipman hasarı, kişisel yaralanma veya üçüncü şahıslara verilen zararlar garanti kapsamı dışında olup tüm sorumluluk müdahaleyi gerçekleştiren tarafa aittir.
+## Kurulum Ön Koşulları Özeti
+
+| Parametre | Gereksinim |
+|-----------|------------|
+| Montaj alanı min. boyut | 5 m × 3 m |
+| Zemin düzgünlük toleransı | 0,5 mm/m |
+| Zemin mukavemeti | Zemin yüzeyi sert ve düz olmalıdır |
+| Gerekli ekipman | Forklift |
+| Taşıma ağırlığı (montajlı) | 1300 kg |
+| Minimum etraf boşluğu | Ön, arka, yan: 1000 mm |
+| Minimum tavan yüksekliği | 2500 mm |
+
+Montaj tamamlandığında makine **kullanıma hazır** duruma getirilir. Detaylı adımlar, kontrol listeleri ve test prosedürleri ilgili alt bölümlerde açıklanmıştır. I/O listesi için bkz. **1726050-ALPER-KNV 30 I/O LISTESI.pdf**.
+
+<!-- FOTO: Makine kurulum alanı — forklift ile yerleştirme -->
+![Kurulum alanı — makine yerleştirme](../assets/FOTO-5-0-assembly-genel.png)

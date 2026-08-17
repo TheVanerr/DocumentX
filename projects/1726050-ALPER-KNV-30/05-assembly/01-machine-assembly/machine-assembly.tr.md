@@ -1,37 +1,130 @@
 # 5.1. Makine Montajı
 
-VDL serisi, tüm mekanik alt sistemleri fabrikada eksiksiz biçimde birleştirilmiş ve işlevsel olarak doğrulanmış hâlde sevk edilir. Son kullanıcı veya yetkili kurulum ekibi tarafından gerçekleştirilmesi gereken mekanik birleştirme (assembly) işlemi bulunmamaktadır. Saha kurulumu; konumlandırma, tambur eğim doğrulaması, opsiyonel birimlerin bağlantısı ile su ve elektrik tesisatından ibarettir.
+Bu bölüm, KNV 30 3000 2B makinesinin kurulum alanına getirilmesi, ambalajının sökülmesi, zemine oturtulması, ayarlanabilir ayaklarla teraziye alınması ve basınçlı hava, su ile elektrik bağlantılarının yapılmasına kadar tüm montaj adımlarını tanımlar.
 
-## 5.1.1. Montaj Prosedürleri ve Gereksinimler
+Montaj tahmini **1 gün** sürer ve **1 kişilik** ekip ile gerçekleştirilir. Taşıma ve yerleştirme için **forklift** kullanılmalıdır; makine taşınmasında **vinç kesinlikle kullanılmamalıdır**. Forklift çatalı ile taşıma yapılmalıdır; makine altındaki profiller forklift girişi için kullanılır. Taşıma ağırlığı (montajlı): **1300 kg** — taşıma sırasında herhangi bir parça ayrılmayacak şekilde taşınmalıdır.
 
-### Konumlandırma
+---
 
-Makine, forklift veya transpalet ile nihai konumuna taşınarak düz ve yük taşıma kapasitesi yeterli bir beton zemin üzerine yerleştirilmelidir. Zemin taşıma kapasitesi gereksinimleri için Bölüm 4'teki teknik veriler esas alınmalıdır.
+## 5.1.1. Montaj Ön Hazırlık
 
-### Makinenin Teraziye Alınması
+Montaja başlamadan önce aşağıdaki koşullar sağlanmalıdır:
 
-VDL serisinde parçaların tambur boyunca giriş tarafından çıkış tarafına düzenli biçimde ilerlemesi, tambur içindeki sonsuz helisel vida mekanizması tarafından sağlanır. Bu yapı sayesinde parça ilerlemesi makine eğimine bağlı değildir; ancak makinenin yatay düzlemde tam olarak terazide konumlandırılması, tamburun düzgün çalışması ve yatak yüklerinin dengeli dağılması açısından kritik önem taşır. Kurulum ekibi, makineyi yerine yerleştirdikten sonra su terazisi ile yatay düzlemi her iki eksende doğrulamalıdır. Sapma tespit edilmesi durumunda makine ayaklarının yüksekliği regüle edilerek teraziye alınmalı ve ölçüm tekrarlanmalıdır.
+| Parametre | Gereksinim |
+|-----------|------------|
+| Montaj alanı min. boyut | 5 m × 3 m |
+| Zemin düzgünlük toleransı | 0,5 mm/m |
+| Zemin mukavemeti | Zemin yüzeyi sert ve düz olmalıdır |
+| Gerekli ekipman | Forklift |
+| Ambalaj tipi | Konteyner |
+| Taşıma sıcaklığı | +10°C – +30°C |
+| Taşıma ortamı | Nem ve korozif maddeler bulunmamalıdır |
 
-## 5.1.2. Özel Alet ve Ekipman Gereksinimleri
+Makine, konteyner ambalajı ile sevk edilir. Kurulum alanına taşınırken forklift çatal girişi (makine alt profilleri) kullanılmalıdır.
 
-Kurulum sırasında aşağıdaki ekipman ve aletlerin hazır bulundurulması gerekmektedir:
+<!-- FOTO: Forklift ile makine taşıma — alt profil çatal girişi -->
+![Forklift taşıma](../../assets/FOTO-5-1-0-forklift-tasima.png)
 
-- **Forklift veya transpalet:** Makinenin nihai konumuna taşınması için. Gerekli kaldırma kapasitesi için model bazlı ağırlık değerleri teknik veri sayfasından kontrol edilmelidir.
-- **Su terazisi:** Tambur eğim açısının doğrulanması için.
+---
 
-## 5.1.3. Ambalaj ve Koruyucu Malzemelerin Sökülmesi
+## 5.1.2. Montaj Adımları
 
-Sevkiyat sırasında makine; naylon örtü, ahşap palet ve gerekli görülen noktalarda nakliye sabitleme bağlantı elemanlarıyla korunmaktadır. Konumlandırma işlemi tamamlandıktan sonra tüm ambalaj malzemeleri aşağıdaki sıraya göre uzaklaştırılmalıdır:
+Montaj aşağıdaki sırayla gerçekleştirilmelidir:
 
-1. Naylon örtü ve bağlama elemanları kesilerek çıkarılır; kesici aletlerin makine yüzeyine temas etmemesine dikkat edilmelidir.
-2. Nakliye sabitleme elemanları (varsa) sökülür ve makine yüzeyinde artık kalmadığı kontrol edilir.
-3. Ahşap palet forklift yardımıyla uzaklaştırılır.
+| Adım | İşlem | Detay |
+|:----:|-------|-------|
+| 1 | Makine kurulacağı bölgeye getirildi ve indirildi | Forklift ile nihai konuma taşıma |
+| 2 | Makine ambalajı soyuldu | Konteyner ambalajının sökülmesi |
+| 3 | Makine zemine oturtuldu; ayarlanabilir ayaklar teraziye alındı | Hizalama toleransı: **0,5 mm** |
+| 4 | Basınçlı hava bağlantısı yapıldı | **6 bar**, **3/4"** bağlantı |
+| 5 | Su bağlantısı yapıldı | **1 bar**, **1/2"** bağlantı |
+| 6 | Trifaze elektrik beslemesi bağlandı | **380 V**, **50 Hz**, **50 kW / 100 A** kurulu güce uygun hat |
+| 7 | Makine elektriği pano üzerinden açıldı | Ana şalter — elektrik panosu |
+| 8 | Faz yönü kontrol edildi | Faz sıra rölesi; ters ise iki faz değiştirilerek düzeltilir |
+| 9 | Makine kullanıma hazır | Bölüm 5.5 kurulum testleri tamamlanmalıdır |
 
-Tüm ambalaj malzemeleri yerel çevre mevzuatları ve atık yönetimi yönetmeliklerine uygun biçimde bertaraf edilmelidir.
+> **Not:** DATA dosyasında su ve elektrik bağlantıları aynı adım numarası (Adım 5) altında listelenmiştir. Bu kılavuzda bağlantı sırası korunarak adımlar 5 (su) ve 6 (elektrik) olarak ayrılmıştır.
 
-## 5.1.4. Montaj Sonrası Mekanik Kontroller
+### Adım 3 — Teraziye Alma
 
-Elektrik, su ve drenaj bağlantıları yapılmadan önce aşağıdaki kontroller gerçekleştirilmelidir:
+Makine **ayarlanabilir ayak** sistemi üzerine oturtulur. Ayaklar, makinenin **terazide** olacak şekilde ayarlanmalıdır. Hizalama toleransı **0,5 mm**'dir. Mekanik kurulum testinde kontrol sorusu: *Makine terzide mi?*
 
-- Makine her iki eksende su terazisi ile terazide olduğu doğrulanır.
-- Sevkiyat sabitleme elemanlarından hiçbirinin makinede kalmadığı doğrulanır.
+<!-- FOTO: Ayarlanabilir ayaklar — seviye ayarı -->
+![Ayarlanabilir ayaklar — terazi](../../assets/FOTO-5-1-1-ayarlanabilir-ayak.png)
+
+### Adım 4 — Basınçlı Hava Bağlantısı
+
+| Parametre | Değer |
+|-----------|-------|
+| Basınç | 6 bar |
+| Bağlantı | 3/4" |
+| Regülatör ayarı | 6 bar |
+
+Bağlantı sonrası HMI manuel sayfasında hava bilgisi **yeşil** yanmalıdır.
+
+<!-- FOTO: Basınçlı hava bağlantı noktası — 3/4" -->
+![Basınçlı hava bağlantısı](../../assets/FOTO-5-1-2-hava-baglantisi.png)
+
+### Adım 5 — Su Bağlantısı
+
+| Parametre | Değer |
+|-----------|-------|
+| Basınç | 1 bar |
+| Bağlantı | 1/2" |
+| Su kalitesi | Şebeke suyu veya arıtılmış su |
+| Su sıcaklığı | +10°C – +70°C |
+
+Bağlantı sonrası HMI manuel sayfasında su bilgisi **yeşil** yanmalıdır.
+
+<!-- FOTO: Su bağlantı noktası — 1/2" -->
+![Su bağlantısı](../../assets/FOTO-5-1-3-su-baglantisi.png)
+
+### Adım 6 — Elektrik Bağlantısı
+
+| Parametre | Değer |
+|-----------|-------|
+| Gerilim | 380 V |
+| Frekans | 50 Hz |
+| Faz | 3 (trifaze) |
+| Kurulu güç | 50 kW |
+| Maksimum akım | 100 A |
+| Konfigürasyon | 3P+N+PE |
+| Ana şalter | 100 A, Schneider |
+
+Elektrik bağlantısı yalnızca yetkili elektrik personeli tarafından yapılmalıdır.
+
+<!-- FOTO: Elektrik besleme bağlantısı — pano girişi -->
+![Elektrik besleme bağlantısı](../../assets/FOTO-5-1-4-elektrik-baglantisi.png)
+
+### Adım 7–8 — Devreye Alma ve Faz Kontrolü
+
+1. Makine elektriği **pano üzerinden** açılır.
+2. **Faz sıra rölesi** üzerinden faz yönü kontrol edilir.
+3. Faz yönü ters ise **iki faz değiştirilerek** düzeltilir.
+
+Elektrik devreye alma testi kontrol listesi:
+- Faz koruma rölesi çıkış veriyor mu?
+- Makinede elektrik var mı?
+- Acil stop'a basıldığında makine duruyor mu?
+
+<!-- FOTO: Faz sıra rölesi — pano içi -->
+![Faz sıra rölesi](../../assets/FOTO-5-1-5-faz-sira-role.png)
+
+---
+
+## 5.1.3. Montaj Tamamlama
+
+Adım 9'da makine **kullanıma hazır** duruma getirilir. Operasyona geçmeden önce aşağıdaki bölümlerdeki testler tamamlanmalıdır:
+
+| Test | Bölüm |
+|------|-------|
+| Güvenlik fonksiyon testleri | 5.4 |
+| Kurulum doğrulama ve boş koşu (15 dk) | 5.5 |
+
+Güvenlik fonksiyon test listesi:
+- Acil stop'a basıldığında makine duruyor mu?
+- Makine kullanıma hazır mı?
+- Kapaklar açıldığında RFID sensörü makineyi durduruyor mu?
+
+<!-- FOTO: Montaj tamamlandı — makine kullanıma hazır -->
+![Montaj tamamlandı](../../assets/FOTO-5-1-6-montaj-tamamlandi.png)

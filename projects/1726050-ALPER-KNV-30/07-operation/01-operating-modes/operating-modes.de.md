@@ -1,27 +1,62 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 7.1. Betriebsarten
 
-# 7.1 Çalışma Modları
+Dieser Abschnitt definiert die Betriebsarten und Prozessauswahl über HMI für die Maschine KNV 30 3000 2B.
 
-VDL serisi endüstriyel yıkama makineleri, farklı üretim tesislerinin dinamiklerine ve operatör alışkanlıklarına uyum sağlayabilmek adına, karmaşadan uzak ve doğrudan kontrol prensibine (manuel döngü) dayalı bir altyapı ile tasarlanmıştır. Donanım konfigürasyonuna bağlı olarak operatör arayüzü görsel farklılıklar gösterse de, makinenin kalbinde yatan "anlık aç/kapa" işletim mantığı her iki versiyonda da ortaktır.
+Start-/Stopp-Tasten sind als **digitale Tasten auf der HMI-Oberfläche** vorhanden.
 
-## 7.1.1 Standart Elektromekanik Kontrol Paneli
-Makinenin standart versiyonunda, tüm operasyonel komutlar doğrudan kontrol panosu üzerinde yer alan fiziksel butonlar, pako şalterler ve sinyal lambaları üzerinden yürütülür. Makinenin sahip olduğu tank sayısına (1 banyolu veya 2 banyolu modeller) bağlı olarak pano üzerindeki buton sayısı ve etiketlendirmeler değişiklik gösterir.
+---
 
-* **Doğrudan Müdahale:** Isıtma sisteminin devreye alınması, yıkama pompalarının çalıştırılması veya durdurulması gibi temel işlemler ilgili fiziksel butona (Start / Stop) basılarak anında gerçekleştirilir.
-* **Görsel Bildirim:** Her fonksiyon, aktif olduğunda panel üzerindeki ilgili sinyal lambası (genellikle yeşil) ile operatöre donanımın çalıştığını bildirir.
-* **Bağımsız Çalışma:** Fonksiyonlar birbirinden bağımsız olarak manuel yönetilir. Önceden tanımlanmış bir zamanlayıcıya veya ardışık döngüye bağlı kalmaksızın, operatör süreci yüklenen parçanın kirlilik durumuna göre kendi inisiyatifiyle başlatır ve sonlandırır.
-* **Model Bazlı Etiketlendirme:** 1 banyolu modellerde tek bir sisteme ait kontroller yer alırken, 2 banyolu modellerde her bir tankın (Örn: Tank 1, Tank 2) ısıtıcı ve pompa butonları panele ayrı ayrı konumlandırılmış ve etiketlenmiştir.
+## 7.1.1. Handbetrieb
 
-![VDL 1B Pano Operasyonu](../assets/vdl/7/7-1-1-1-pano.png)
+| Parameter | Wert / Beschreibung |
+|-----------|---------------------|
+| Handbetrieb | Kein Handbetrieb |
 
-## 7.1.2 Opsiyonel PLC / HMI Dokunmatik Ekran Kontrolü
-Müşteri talebine istinaden makinenin PLC (Programlanabilir Lojik Kontrolör) altyapısı ile donatıldığı durumlarda, geleneksel elektromekanik butonların yerini yüksek çözünürlüklü dokunmatik HMI (İnsan-Makine Arayüzü) ekranı alır. Ancak bu teknolojik yükseltme, makinenin temel çalışma felsefesini değiştirmez.
+Auf der **Betriebsseite** der HMI-Oberfläche stehen Waschen, Spülen, Trocknen 1, Trocknen 2 und Abluft zur Verfügung. Der Kunde kann diese nach Bedarf On/Off einstellen und die Maschine starten.
 
-* **Sanal Buton Mantığı:** Ekran arayüzü, karmaşık menüler arasında kaybolmayı önleyecek şekilde tasarlanmıştır. Fiziksel kontrol panelindeki butonların birebir karşılığı olan sanal butonlar HMI ana ekranında yer alır.
-* **Anlık Geri Bildirim:** Operatör ekrandaki ilgili fonksiyona dokunduğunda işlem aktifleşir ve sanal butonun rengi değişerek (örneğin griden yeşile dönerek) veya yanıp sönerek komutun alındığını teyit eder. Tekrar basıldığında ise fonksiyon devre dışı kalır.
-* **Kolay İzlenebilirlik:** Manuel kontrol esnekliğinin yanı sıra; yıkama tankı sıcaklık değerleri (Set ve Gerçekleşen), motor termik arızaları, kapı kilit durumları veya Acil Stop alarmları aynı ekran üzerinden sayısal ve metin bazlı olarak anlık olarak takip edilebilir.
+<!-- PHOTO: HMI-Betriebsseite — Prozessoptionen -->
+![HMI-Prozessoptionen](../../assets/FOTO-7-1-0-calisma-sayfasi.png)
 
-> **📸 Görsel Önerisi:** *PLC/HMI ekranının "Ana Çalışma Sayfasının" (Main Screen) doğrudan sistemden alınmış temiz bir ekran görüntüsünü (screenshot) veya parlamasız bir fotoğrafını ekleyin. Ekranda bir butonun aktif (yeşil), diğerinin pasif (gri) olduğu bir anı gösterirseniz operatör, sistemin nasıl tepki verdiğini daha rahat anlar.*
+---
 
-**Özetle:** 
-Her iki kontrol arayüzünde de VDL serisi, operatöre tam bağımsızlık sunan manuel döngü prensibiyle çalışır. Karmaşık kapalı çevrim senaryoları veya zorunlu zamanlanmış otomatik programlar yerine; güvenlik şartları (kapalı kapılar, aktif donanımsal reset) sağlandığı sürece hangi sistemin ne zaman ve ne kadar süreyle çalışacağına tamamen operatör karar verir.
+## 7.1.2. Automatikbetrieb
+
+| Parameter | Wert / Beschreibung |
+|-----------|---------------------|
+| Automatikbetrieb | Auf der HMI-Betriebsseite stehen Waschen, Spülen, Trocknen 1, Trocknen 2 und Abluft zur Verfügung. Der Kunde kann diese nach Bedarf On/Off einstellen und die Maschine starten |
+
+---
+
+## 7.1.3. Wartungs- / Setup-Modus
+
+| Parameter | Wert / Beschreibung |
+|-----------|---------------------|
+| Wartungs- / Setup-Modus | Kein spezieller Wartungsmodus. Für Wartung Abdeckungen nach Spannungsabschaltung öffnen. Bei Spannungsabschaltung ist LOTO-Verfahren zwingend anzuwenden |
+
+---
+
+## 7.1.4. Schritt- / Einzelschrittmodus
+
+| Parameter | Wert / Beschreibung |
+|-----------|---------------------|
+| Schritt- / Einzelschrittmodus | Kein Schritt- / Einzelschrittmodus |
+
+---
+
+## 7.1.5. Moduswechsel-Bedingungen
+
+| Parameter | Wert / Beschreibung |
+|-----------|---------------------|
+| Moduswechsel-Bedingungen | Keine Moduswechsel-Bedingungen |
+
+---
+
+## 7.1.6. HMI-Prozessoptionen (Übersicht)
+
+| Option | Beschreibung |
+|--------|--------------|
+| Waschen | On / Off |
+| Spülen | On / Off |
+| Trocknen 1 | On / Off |
+| Trocknen 2 | On / Off |
+| Abluft | On / Off |

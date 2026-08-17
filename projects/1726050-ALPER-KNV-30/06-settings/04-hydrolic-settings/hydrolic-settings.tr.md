@@ -1,6 +1,14 @@
-# 6.4 Hidrolik Ayarları
+# 6.4. Hidrolik Ayarlar
 
-Makinede operatör tarafından yapılabilecek pompa debisi, nozul açısı veya genel yıkama basıncı gibi hidrolik akış ayarları bulunmamaktadır; bu değerlerin tümü fabrikasyon olarak sabitlenmiştir.
+Bu bölüm, KNV 30 3000 2B makinesinin hidrolik ayar noktalarını tanımlar.
 
-**Otomatik Dolum Basınç Sensörü Ayarı:**
-Sadece otomatik su dolum sistemine sahip makinelerde, tesis şebeke su basıncının düşük olması nedeniyle makine üzerindeki su basınç sensörünün akışı algılayamadığı istisnai durumlar oluşabilir. Böyle bir durumda, operatör su alım sürecinin sorunsuz başlaması için basınç sensörünün tetiklenme eşik değerini (hassasiyetini) kısarak mevcut şebeke basıncına uygun seviyeye ayarlayabilir.
+Makinede **hidrolik sistem bulunmamaktadır**. Operatör veya yetkili personel tarafından yapılacak hidrolik ayar **bulunmamaktadır**.
+
+---
+
+## 6.4.1. Hidrolik Ayar Durumu
+
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Hidrolik sistem | Makinede hidrolik sistem yoktur |
+| Hidrolik ayarlar | Herhangi bir ayara gerek yoktur |

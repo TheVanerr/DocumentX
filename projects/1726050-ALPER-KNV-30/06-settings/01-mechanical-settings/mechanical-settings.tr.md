@@ -1,15 +1,60 @@
 # 6.1. Mekanik Ayarlar
 
-## 6.1.1. Tambur Devir Hızı
+Bu bölüm, KNV 30 3000 2B makinesinin mekanik ayar noktalarını tanımlar.
 
-Tambur devir hızı, kontrol panosu üzerindeki frekans sürücüsü aracılığıyla ayarlanabilir. Bu ayar; işlenecek parçaların boyutuna, geometrisine ve ağırlığına göre optimize edilmeli ve proses koşulları değiştikçe revize edilmelidir.
+---
 
-Devir hızı doğrudan temizleme kalitesini ve parça ilerlemesini etkiler. Hız çok yüksek ayarlandığında parçalar tambur içinde kontrolsüz yuvarlanarak birbirine veya tambur yüzeyine zarar verebilir; çok düşük ayarlandığında ise parçaların ilerlemesi yavaşlayarak yıkama verimliliği düşer ve tambur çıkışında birikim oluşabilir.
+## 6.1.1. Mekanik Ayar Noktaları
 
-Optimum devir hızı değeri, işlenecek parça grubuna bağlı olarak değişkenlik gösterdiğinden her yeni parça tipi için kısa test koşuları yapılarak deneysel olarak belirlenmesi tavsiye edilir.
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Mekanik ayar noktaları listesi | Herhangi bir ayara gerek yoktur |
 
-| Parametre | Değer |
-|---|---|
-| Minimum frekans | [...] Hz |
-| Maksimum frekans | [...] Hz |
-| Önerilen başlangıç değeri | [...] Hz |
+---
+
+## 6.1.2. Referans / Home Pozisyonu
+
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Referans / home pozisyon ayarı | Referans olarak konveyörün başı kullanılmalıdır |
+
+Konveyör başı, makine referans noktası olarak kabul edilir. Parça konumlandırma ve proses senkronizasyonu bu referansa göre yapılır.
+
+<!-- FOTO: Konveyör başı — referans/home pozisyonu -->
+![Referans pozisyon — konveyör başı](../../assets/FOTO-6-1-0-referans-home.png)
+
+---
+
+## 6.1.3. Zincir / Kayış ve Limit Ayarları
+
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Zincir / kayış gerginlik değeri | Herhangi bir ayara gerek yoktur |
+| Mesafe / limit switch ayarları | Herhangi bir ayara gerek yoktur |
+
+---
+
+## 6.1.4. Nozzle / Doldurma Kafası
+
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Nozzle / doldurma kafası ayar aralığı (mm) | Herhangi bir ayara gerek yoktur |
+
+---
+
+## 6.1.5. Format Değişimi
+
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Format değişim prosedürü özeti | Format değişim prosedürü yoktur |
+
+---
+
+## 6.1.6. Mekanik Ayar Kontrol Listesi
+
+| # | Kontrol | Durum |
+|---|---------|-------|
+| 1 | Referans noktası (konveyör başı) doğrulandı | ☐ OK / ☐ NOK |
+| 2 | Mekanik ayar gereksinimi yok — kayıt altına alındı | ☐ OK / ☐ NOK |
+
+**Tarih:** _______________ **Kontrol eden:** _______________

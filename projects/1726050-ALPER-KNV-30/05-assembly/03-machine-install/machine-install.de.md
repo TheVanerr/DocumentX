@@ -1,71 +1,120 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 5.3. Systemanschlüsse und Inbetriebnahme
 
-# 5.3. Mekanik, Pnömatik, Hidrolik ve Elektrik Kurulumu
+Dieser Abschnitt beschreibt das Anschließen von Druckluft, Wasser und Elektroversorgung an die Maschine KNV 30 3000 2B, das Einschalten am Schrank und die Phasenfolgeprüfung.
 
-## 5.3.1. Elektrik Bağlantısı
+Anschlussarbeiten werden im Rahmen von **Schritt 4–8** der Montageschritte in Abschnitt 5.1 durchgeführt.
 
-VDL serisi **3P+1N+1PE** (üç faz + nötr + koruma toprağı) besleme gerektirir. Kurulum öncesinde tesisin elektrik altyapısının makinenin kurulu gücünü karşılayacak kapasitede olduğu doğrulanmalıdır. Model bazında kurulu güç değerleri aşağıda verilmiştir:
+---
 
-| Model | Isıtıcı (kW) | Pompa (kW) | Tambur Motoru (kW) | Toplam Kurulu Güç (kW) |
-|---|---|---|---|---|
-| VDL 40 2500 1B | [...] | [...] | [...] | [...] |
-| VDL 40 3500 2B | 2× [...] | [...] | [...] | [...] |
-| VDL 40 4250 2B | 2× [...] | [...] | [...] | [...] |
-| VDL 60 5500 2B | 2× [...] | [...] | [...] | [...] |
-| VDL 80 6500 2B | 3× [...] | [...] | [...] | [...] |
+## 5.3.1. Druckluftanschluss
 
-> **Not:** Tablodaki ısıtıcı güçleri tek banyo başına değerleri ifade etmektedir. İki banyolu modellerde toplam ısıtıcı gücü iki katına çıkmaktadır.
+| Parameter | Wert |
+|-----------|------|
+| Drucklufteinlass | 6 bar |
+| Anschlusstyp | 3/4" |
+| Pneumatikregler-Einstellung | 6 bar |
 
-Güç kablosu, kontrol panosunun giriş bornasına bağlanmalı; koruma iletkeni (PE) pano üzerindeki topraklama klemensine eksiksiz biçimde iletilmelidir. Kablo kesiti, hat uzunluğu ve sigorta değeri için yerel elektrik yönetmeliği esas alınmalıdır.
+### Anschlussverfahren
 
-## 5.3.2. Su Bağlantısı
+1. Werks-Druckluftleitung an Maschineneingang anschließen (3/4").
+2. Regler auf **6 bar** einstellen.
+3. **Handseite** auf der HMI-Oberfläche öffnen.
+4. Prüfen, dass Luftanschlussstatus **grün** anzeigt.
 
-### Standart Konfigürasyon (Manuel Dolum)
+Pneumatik-Fülltest: *Leuchtet die Luftanzeige auf der HMI-Handseite nach dem Luftanschluss grün?*
 
-Otomatik dolum opsiyonu talep edilmemişse herhangi bir su veya hava bağlantısı yapılmasına gerek yoktur. Tank dolumu operatör tarafından manuel olarak gerçekleştirilir.
+<!-- FOTO: Druckluftanschlussstelle — 3/4" und Regler -->
+![Druckluftanschluss](../../assets/FOTO-5-3-0-hava-baglantisi.png)
 
-### Opsiyonel Otomatik Dolum — Standart (Su + Hava)
+---
 
-Bu opsiyon seçilmişse makineye iki ayrı bağlantı yapılmalıdır:
+## 5.3.2. Wasseranschluss
 
-**Su bağlantısı:** Su girişi, tesisin şebeke hattına bağlanır. Giriş hattında basınç ve akış sensörü mevcuttur; sensör üretici firmanın fabrikasındada uygun değere ayarlanmış olarak teslim edilir. Tesis şebeke basıncının beklenen değerin altında kalması durumunda sensör ayarı aşağıdaki şekilde revize edilmelidir:
+| Parameter | Wert |
+|-----------|------|
+| Wassereinlassdruck | 1 bar |
+| Anschlusstyp | 1/2" |
+| Wassertemperatur | +10°C – +70°C |
+| Wasserqualität | Leitungswasser oder aufbereitetes Wasser |
 
-1. Sensör kafası yukarı kaldırılır.
-2. **( − )** yönünde döndürülerek daha düşük basınç değerinde tetiklenecek biçimde ayarlanır.
-3. Sensör kafası yerine oturtulur ve çalışma testi yapılır.
+### Anschlussverfahren
 
-**Hava bağlantısı:** Hava girişi, tesiste minimum **6 bar** basınç sağlayabilen bir pnömatik hatta bağlanmalıdır. Hava basınç sensörü fabrikada 6 bar için ayarlıdır.
+1. Werks-Wasserleitung an Maschineneingang anschließen (1/2").
+2. Wasserdruck **1 bar** verifizieren.
+3. **Handseite** auf der HMI-Oberfläche öffnen.
+4. Prüfen, dass Wasseranschlussstatus **grün** anzeigt.
 
-> ⚠️ **UYARI**
->
-> Makinenin pnömatik sisteminin güvenli çalışabilmesi için hava girişinde sürekli olarak minimum **6 bar** basınç sağlanması zorunludur. Bu gereksinim, operatör güvenliği açısından kritik öneme sahip olup kullanıcı tarafından karşılanması gereken bir yükümlülüktür.
->
-> Belirtilen basınç eşiğinin altında gerçekleştirilen operasyonlar hayati tehlike içeren durumlara yol açabilir. Bu nedenle hava basınç sensörü, su basınç sensöründen farklı olarak **hiçbir koşulda düşük basınç değerine yeniden ayarlanmamalı veya devre dışı bırakılmamalıdır.**
->
-> Söz konusu uyarının dikkate alınmaması sonucu meydana gelen kişisel yaralanma, ekipman hasarı veya üçüncü şahıslara verilen zararlar üreticinin sorumluluğu dışında olup tüm sorumluluk kullanıcıya aittir.
+Pneumatik-/Hydraulik-Fülltest (Wasser): *Leuchtet die Wasseranzeige auf der HMI-Handseite nach dem Wasseranschluss grün?*
 
-### Opsiyonel Otomatik Dolum — Solenoid Vanalı
+<!-- FOTO: Wasseranschlussstelle — 1/2" -->
+![Wasseranschluss](../../assets/FOTO-5-3-1-su-baglantisi.png)
 
-Bu opsiyon seçilmişse yalnızca su bağlantısı yapılmalıdır; hava bağlantısı gerekmez. Su girişi tesisin şebeke hattına bağlandıktan sonra su basınç sensörünün yukarıda tarif edilen prosedüre göre tesis basıncına uygun şekilde ayarlandığı doğrulanmalıdır.
+---
 
-## 5.3.3. Drenaj ve Taşma Bağlantıları
+## 5.3.3. Elektroanschluss
 
-Aşağıdaki bağlantılar kurulumun zorunlu bir parçasını oluşturur ve tüm modeller için uygulanır.
+| Parameter | Wert |
+|-----------|------|
+| Versorgungsspannung | 380 V |
+| Versorgungsfrequenz | 50 Hz |
+| Phasenzahl | 3 (Drehstrom) |
+| Installierte Gesamtleistung | 50 kW |
+| Maximaler Strombezug | 100 A |
+| Versorgungskonfiguration | 3P+N+PE |
+| Hauptschalter | 100 A, Schneider |
+| Gesamtsicherung / Leistungsschalter | 100 A |
+| Kurzschlussstrom (ICC) — Anforderung | 10 kA |
+| USV / Generator — Anforderung | Nein |
 
-**Tank drenaj hatları:** Her tankın alt seviyesinde birer drenaj vanası bulunmaktadır. Bu vanalar, tesisin atık su tahliye altyapısına bağlanmalıdır. Bağlantı hattı, proses sıcaklığındaki sıvıya uygun malzemeden seçilmeli ve akışın yerçekimiyle serbestçe tahliye edilebileceği eğimde döşenmelidir.
+Der Elektroanschluss ist mit einer **380 V, 50 Hz** Drehstromleitung für **50 kW / 100 A** installierte Leistung herzustellen. Anschluss nur durch autorisiertes Elektrofachpersonal.
 
-**Taşma hatları:** Makine üst kotlarında her banyo için birer taşma çıkışı mevcuttur. Bu çıkışlar, tank dolumunun kontrolsüz yükselmesi durumunda sıvıyı güvenli biçimde tahliye etmek amacıyla uygun bir gider hattına bağlanmalıdır.
+<!-- FOTO: Elektroschrank — Versorgungskabel-Eingang -->
+![Elektroanschluss](../../assets/FOTO-5-3-2-elektrik-baglantisi.png)
 
-## 5.3.4. Opsiyonel Ekipman Bağlantıları
+---
 
-### Yağ Sıyırıcı
+## 5.3.4. Einschalten und Phasenprüfung
 
-Yağ sıyırıcı opsiyonu talep edilmişse ünitenin tahliye hattı, ayrıştırılan yağın birikmesi için uygun bir gider veya toplama kabına yönlendirilmelidir.
+### Inbetriebnahmeverfahren
 
-### Hassas Filtre
+| Schritt | Vorgang |
+|:-------:|---------|
+| 1 | Drehstromleitung an Schrank anschließen |
+| 2 | Maschinenstrom **am Schrank** einschalten |
+| 3 | Phasenfolge über **Phasenfolgerelais** prüfen |
+| 4 | Bei falscher Folge **zwei Phasen tauschen** |
 
-Hassas filtre opsiyonu talep edilmişse filtre gövdesinin altında yer alan tahliye vanası, uygun bir gider hattına bağlanmalıdır. Filtre temizliği sırasında bu hat üzerinden kontaminan içerikli sıvı tahliye edilecektir.
+### Checkliste elektrische Inbetriebnahme
 
-## 5.3.5. Havalandırma
+| Prüfung | Erwartetes Ergebnis |
+|---------|---------------------|
+| Gibt das Phasenschutzrelais einen Ausgang? | Ja |
+| Liegt Spannung an der Maschine an? | Ja |
+| Stoppt die Maschine bei Not-Halt? | Ja |
 
-VDL serisi, yüksek sıcaklıkta çalışan proses sıvısı nedeniyle operasyon sırasında buhar ve ısı açığa çıkarır. Makinenin kapalı veya yetersiz havalandırmalı bir alanda konumlandırılması durumunda çalışma ortamındaki nem ve sıcaklık artışını önlemek amacıyla uygun bir egzoz veya genel havalandırma sistemi tesis edilmelidir.
+Motor nur in einer Richtung betreiben; Phasenfolge korrekt einstellen.
+
+<!-- FOTO: Phasenfolgerelais und Phasenschutzrelais — im Schrank -->
+![Phasenprüfung — Schrankinnenseite](../../assets/FOTO-5-3-3-faz-kontrol.png)
+
+---
+
+## 5.3.5. Checkliste Anschlussabschluss
+
+Nach Abschluss aller Anschlüsse folgende Prüfungen durchführen:
+
+| # | Prüfung | Status |
+|---|---------|--------|
+| 1 | Druckluft angeschlossen (6 bar, 3/4") | ☐ |
+| 2 | Luftanzeige grün auf HMI-Handseite | ☐ |
+| 3 | Wasser angeschlossen (1 bar, 1/2") | ☐ |
+| 4 | Wasseranzeige grün auf HMI-Handseite | ☐ |
+| 5 | Drehstrom angeschlossen (380 V, 50 Hz) | ☐ |
+| 6 | Phasenfolge verifiziert | ☐ |
+| 7 | Strom am Schrank eingeschaltet | ☐ |
+| 8 | Phasenschutzrelais gibt Ausgang | ☐ |
+
+Nach Abschluss der Anschlüsse Abschnitt **5.4** Sicherheitstests und Abschnitt **5.5** Installationsprüfungen durchführen.
+
+<!-- FOTO: HMI-Handseite — Luft- und Wasseranzeige grün -->
+![HMI-Handseite — Anschlussstatus](../../assets/FOTO-5-3-4-hmi-manuel-durum.png)

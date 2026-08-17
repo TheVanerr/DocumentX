@@ -1,64 +1,126 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 3.3. Technische Daten
 
-# 3.3. Teknik Özellikler
+Dieser Abschnitt enthält die physikalischen, elektrischen, prozessbezogenen, motorischen und umgebungsbedingten technischen Daten der Maschine KNV 30 3000 2B. Die Tabellenwerte stammen aus der Projekt-DATA-Datei.
 
-Aşağıdaki tablolarda VDL serisindeki beş farklı modelin (VDL 40 2500 1B, VDL 40 3500 2B, VDL 40 4250 2B, VDL 60 5500 2B ve VDL 80 6500 2B) standart konfigürasyonlarına ait fiziksel, elektriksel ve operasyonel teknik veriler yer almaktadır. Modele ve özel müşteri taleplerine göre yapılan modifikasyonlar "As-Built" (imalat sonu) dokümanlarında ayrıca belirtilmiştir.
+---
 
-## 3.3.1. Fiziksel Boyutlar ve Ağırlık
+## 3.3.1. Abmessungen und Gewicht
 
-| Parametre | Birim | VDL 40 2500 1B | VDL 40 3500 2B | VDL 40 4250 2B | VDL 60 5500 2B | VDL 80 6500 2B |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Dış Genişlik (W)** | mm | [Değer] | [Değer] | [Değer] | [Değer] | [Değer] |
-| **Dış Uzunluk (L)** | mm | [Değer] | [Değer] | [Değer] | [Değer] | [Değer] |
-| **Dış Yükseklik (H)** | mm | [Değer] | [Değer] | [Değer] | [Değer] | [Değer] |
-| **Boş Ağırlık (Kuru)** | kg | [Değer] | [Değer] | [Değer] | [Değer] | [Değer] |
-| **Dolu Ağırlık (Çalışma Durumu)** | kg | [Değer] | [Değer] | [Değer] | [Değer] | [Değer] |
-| **Şase Yapısı** | - | Sabit çelik ayaklı | Sabit çelik ayaklı | Sabit çelik ayaklı | Sabit çelik ayaklı | Sabit çelik ayaklı |
+| Parameter | Einheit | Wert |
+|-----------|:-------:|-----:|
+| Außenlänge (L) | mm | 3770 |
+| Außenbreite (B) | mm | 1730 |
+| Außenhöhe (H) — normal | mm | 2122 |
+| Leergewicht — trocken | kg | 1300 |
+| Betriebsgewicht — gefüllt | kg | 1500 |
+| Gestelltyp | — | Verstellbare Füße |
 
-## 3.3.2. Tambur ve Kapasite Değerleri
+Die Maschine wird auf einem System mit verstellbaren Füßen montiert, das Nivellierung und Ausrichtung ermöglicht. Der Schwerpunkt liegt in der Mitte der Förderstrecke.
 
-| Parametre | Birim | VDL 40 2500 1B | VDL 40 3500 2B | VDL 40 4250 2B | VDL 60 5500 2B | VDL 80 6500 2B |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Tambur Çapı** | mm | 400 | 400 | 400 | 600 | 800 |
-| **Tambur Uzunluğu** | mm | [Değer] | [Değer] | [Değer] | [Değer] | [Değer] |
-| **Maksimum Taşıma Kapasitesi** | kg | [Değer] | [Değer] | [Değer] | [Değer] | [Değer] |
-| **Yükleme Tipi** | - | Girişten Yüklemeli | Girişten Yüklemeli | Girişten Yüklemeli | Girişten Yüklemeli | Girişten Yüklemeli |
-| **Proses Sayısı** | - | 1 (Yıkama) | 2 (Yıkama + Durulama) | 2 (Yıkama + Durulama) | 2 (Yıkama + Durulama) | 2 (Yıkama + Durulama) |
+<!-- FOTO: Außenabmessungen — Vorder-/Rechtsansicht -->
+![Außenabmessungen](../../assets/FOTO-3-3-0-dis-boyutlar.png)
 
-## 3.3.3. Elektrik ve Otomasyon Verileri
+---
 
-| Parametre | Birim | VDL 40 2500 1B | VDL 40 3500 2B | VDL 40 4250 2B | VDL 60 5500 2B | VDL 80 6500 2B |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Çalışma Voltajı ve Frekansı** | V / Hz | 380-415V / 50Hz | 380-415V / 50Hz | 380-415V / 50Hz | 380-415V / 50Hz | 380-415V / 50Hz |
-| **Toplam Kurulu Güç** | kW | [Değer] | [Değer] | [Değer] | [Değer] | [Değer] |
-| **Maksimum Akım Çekişi** | A | [Değer] | [Değer] | [Değer] | [Değer] | [Değer] |
-| **Besleme Konfigürasyonu** | - | 3P+1N+1PE | 3P+1N+1PE | 3P+1N+1PE | 3P+1N+1PE | 3P+1N+1PE |
-| **Otomasyon Şalt Ekipmanları** | - | Schneider Electric | Schneider Electric | Schneider Electric | Schneider Electric | Schneider Electric |
+## 3.3.2. Kapazität und Prozessparameter
 
-## 3.3.4. Hidrolik Sistem ve Proses Verileri
+| Parameter | Wert |
+|-----------|------|
+| Anzahl Prozessschritte | 3 |
+| Prozessschritt 1 | Waschen |
+| Prozessschritt 2 | Spülen |
+| Prozessschritt 3 | Trocknen |
+| Zykluszeit — Nennwert | 900 s (15 Min.) |
+| Nennkapazität | [EKSİK] |
+| Maximalkapazität | Unbekannt |
+| Mindestkapazität | 730 Teile/Stunde |
+| Produktformat / Verpackungstyp | Unbekannt |
+| Produktgröße min | Unbekannt |
+| Produktgröße max | Unbekannt |
+| Produktgewicht min | Unbekannt |
+| Produktgewicht max | Unbekannt |
 
-| Parametre | Birim | VDL 40 2500 1B | VDL 40 3500 2B | VDL 40 4250 2B | VDL 60 5500 2B | VDL 80 6500 2B |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Tank Adedi** | Adet | 1 | 2 | 2 | 2 | 2 |
-| **Tank Kapasitesi (Banyo Başına)** | L | [Değer] | [Değer] | [Değer] | [Değer] | [Değer] |
-| **Pompa Adedi** | Adet | 1 | 2 | 2 | 2 | 2 |
-| **Pompa Gücü (Pompa Başına)** | kW | [Değer] | [Değer] | [Değer] | [Değer] | [Değer] |
-| **Isıtıcı Adedi (Banyo Başına)** | Adet | [Değer] | 2 | 2 | 2 | 3 |
-| **Toplam Isıtıcı Gücü** | kW | [Değer] | [Değer] | [Değer] | [Değer] | [Değer] |
-| **Maksimum Proses Sıcaklığı** | °C | [Değer] | [Değer] | [Değer] | [Değer] | [Değer] |
-| **Tambur Tahrik Motor Gücü** | kW | [Değer] | [Değer] | [Değer] | [Değer] | [Değer] |
+Nenn- und Maximalkapazität sowie Produktgrößen-/Gewichtsgrenzen werden vom Anwenderunternehmen entsprechend den Prozessbedingungen festgelegt.
 
-> **Not:** Tesis içi elektrik şebekesi veya hidrolik bağlantılar yapılmadan önce, makine üzerindeki metal kimlik etiketinde (Nameplate) yer alan değerlerin tablodaki besleme verileriyle eşleştiği mutlaka kontrol edilmelidir.
+<!-- FOTO: Prozesszonen — Waschen, Spülen, Trocknen entlang der Strecke -->
+![Prozesszonen](../../assets/FOTO-3-3-1-proses-bolgeleri.png)
 
-> **Not:** Makine kurulu güç değerleri makinelerin standart (opsiyon içermeyen) konfigürasyonlarını baz alır. Makinenizde eklenmiş bir opsiyon varsa aşağıdaki tablodan o opsiyonun tükettiği güç de bu kurulu güce dahil edilmelidir.
+---
 
-| Opsiyon Adı | Güç Değeri (kW) |
-| :--- | :---: |
-| **Kurutma Ünitesi — 6 kW Isıtıcılı (VDL 40 / VDL 60, Tek Ünite)** | 6,37 |
-| **Kurutma Ünitesi — 12 kW Isıtıcılı (VDL 40 / VDL 60, Tek Ünite)** | 12,37 |
-| **Kurutma Ünitesi — 6 kW Isıtıcılı (VDL 80, Çift Ünite)** | 12,74 |
-| **Kurutma Ünitesi — 12 kW Isıtıcılı (VDL 80, Çift Ünite)** | 24,74 |
-| **Yağ Sıyırıcı** | [Değer] |
-| **Hassas Filtre** | [Değer] |
-| **Otomatik Dolum (Standart)** | [Değer] |
-| **Otomatik Dolum (Solenoid Vanalı)** | [Değer] |
+## 3.3.3. Elektrische Daten
+
+| Parameter | Wert |
+|-----------|------|
+| Versorgungsspannung | 380 V |
+| Versorgungsfrequenz | 50 Hz |
+| Phasenzahl | 3 |
+| Installierte Gesamtleistung | 50 kW |
+| Installierte Gesamtleistung — inkl. Heizung | 50 kW |
+| Maximaler Strombezug | 100 A |
+| Leistungsfaktor (cos φ) | 0,9 |
+| Kurzschlussstrom / ICC-Anforderung | 10 kA |
+| Versorgungskonfiguration | 3P+N+PE |
+| Hauptschalter — In | 100 A |
+| Hauptschalter Marke | Schneider |
+| Gesamtsicherung / Leistungsschalter | 100 A |
+| USV / Generator — Anforderung | Nein |
+
+Die Stromversorgung wird bei der Montage über eine 380 V, 50 Hz, Drehstromleitung an den Schrank angeschlossen. Die Phasenfolge ist über das Phasenfolgerelais zu prüfen.
+
+<!-- FOTO: Elektroschrank — Hauptschalter und Versorgungsetikett -->
+![Stromversorgung](../../assets/FOTO-3-3-2-elektrik-besleme.png)
+
+---
+
+## 3.3.4. Motor- und Antriebsliste
+
+| Motor | Leistung | Drehzahl | Marke | Modell |
+|-------|----------|----------|-------|--------|
+| Förderband-Getriebemotor | 1,5 kW | 2000 U/min | Siemens | SIMOTICS S-1FL6 |
+| Waschpumpenmotor | 3 kW | 2900 U/min | Lowara | ESHE 40-160/30 |
+| Spülpumpenmotor | 1,85 kW | 2900 U/min | GOULDS | GCEA 370/3 |
+| Ölabscheider-Getriebemotor | 0,04 kW | — | FINEX | E1610-40-150-17B-C |
+| Abluftventilatormotor | 0,37 kW | 2800 U/min | ENA | ENA 2 |
+| Trocknungsventilator 1 | 4 kW | 2900 U/min | — | — |
+| Trocknungsventilator 2 | 4 kW | 2900 U/min | — | — |
+| Trocknungsventilator 3 | 4 kW | 2900 U/min | — | — |
+| Trocknungsventilator 4 | 4 kW | 2900 U/min | — | — |
+
+Gesamtleistung Trocknungsventilatoren: **16 kW**. Marken-/Modellangaben der Trocknungsventilatoren sind in der DATA-Datei als [EKSİK] gekennzeichnet.
+
+<!-- FOTO: Motorgruppen — Pumpen- und Ventilatorantriebe -->
+![Motorliste — Antriebseinheiten](../../assets/FOTO-3-3-3-motor-gruplari.png)
+
+---
+
+## 3.3.5. Druckluft und Wasser
+
+| Parameter | Wert |
+|-----------|------|
+| Drucklufteinlass | 6 bar |
+| Wassereinlassdruck | 1 bar |
+| Wassertemperatur min / max | +10°C – +70°C |
+| Wasserqualität | Leitungswasser oder aufbereitetes Wasser |
+| Drain / Abwasserleitung — Durchmesser | [EKSİK] |
+
+Montageanschlüsse: Druckluft **3/4"**, Wasser **1/2"**. Druckluftregler-Einstellung: **6 bar**.
+
+<!-- FOTO: Druckluft- und Wasseranschlussstellen — beschriftet -->
+![Medienanschlüsse](../../assets/FOTO-3-3-4-medya-baglantilari.png)
+
+---
+
+## 3.3.6. Umgebungsbedingungen
+
+| Parameter | Min | Max |
+|-----------|-----|-----|
+| Betriebstemperatur | +10°C | +30°C |
+| Lagertemperatur | +10°C | +30°C |
+| Relative Luftfeuchtigkeit | 30% | 50% |
+
+| Parameter | Wert |
+|-----------|------|
+| Schutzart (IP) | IP55 |
+| Geräuschpegel | 65 dB(A) |
+
+Die Maschine ist ausschließlich für den Einsatz in **Innenräumen** ausgelegt.

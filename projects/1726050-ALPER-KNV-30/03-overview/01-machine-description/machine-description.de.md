@@ -1,47 +1,250 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 3.1. Maschinenbeschreibung und Systemaufbau
 
-# 3.1. Makine Tanımı ve Sistematik Yapı
+KNV-30 3000 2B (Seriennummer: **1726050**, Kunde: **ALPER ÖZLEM IDEA**, Baujahr: **2026**) ist eine industrielle Teilewaschanlage mit Einlauf-Beschickung, Förderband und zwei Prozessbädern (Waschen + Spülen). Die Teile durchlaufen auf dem Förderband nacheinander Waschen, Spülen und Trocknen; die Hauptfunktion der Maschine ist die **Entfernung von Öl und Verschmutzungen**, die von industriellen Bearbeitungsprozessen auf den Teileoberflächen verbleiben.
 
-VDL serisi; endüstriyel parça yıkama, yağ alma ve yüzey hazırlama operasyonları için yüksek mühendislik standartlarında tasarlanmış, sürekli besleme prensibine dayalı tambur tipi bir endüstriyel yıkama makinesidir. Parçalar makinenin giriş tarafından yüklenir; dönen tambur mekanizması aracılığıyla proses boyunca kendi iç dinamiğiyle ilerleyerek çıkış tarafından temizlenmiş olarak alınır. Bu sürekli akış prensibi, yüksek hacimli üretim hatlarına kesintisiz entegrasyon imkânı sunar. Makinenin ana gövdesi ve tambur iç yüzeyleri, korozyon direncini ve temizlenebilirliği maksimize etmek amacıyla paslanmaz çelikten imal edilmiştir.
+Die Maschine ist nach dem Prinzip der **kontinuierlichen Förderband**-Beschickung ausgelegt. Die Beschickungsseite befindet sich **links**, die Entnahmeseite **rechts**, die Bedienseite **rechts**. Der Prozessablauf umfasst drei Schritte: **Waschen → Spülen → Trocknen**. Die Nenn-Zykluszeit ist mit **900 Sekunden** (15 Minuten) festgelegt.
 
-## 3.1.1. Tambur Mekanizması ve Proses Akışı
+<!-- FOTO: Allgemeine Maschinenansicht — Bedienseite (rechts), Beschickung links / Entnahme rechts -->
+![KNV-30 3000 2B Gesamtansicht](../../assets/FOTO-3-1-0-genel-gorunum.png)
 
-VDL serisinin işlevsel temeli, dönerek parçaları proses boyunca taşıyan tambur mekanizmasına dayanır. Giriş tarafından yüklenen parçalar, tambur içindeki sarmal profil aracılığıyla yuvarlanarak hem mekanik temas yoluyla kir katmanlarından arındırılır hem de proses bölgeleri boyunca düzenli bir hızla ilerleme sağlanır.
+---
 
-Seri, proses kapasitelerine göre iki yapısal konfigürasyonda sunulmaktadır:
+## 3.1.1. Allgemeine Beschreibung und Prozesskonzept
 
-* **VDL 40 2500 1B:** Tek banyolu, yalnızca yıkama prosesini kapsayan modeldir. Tek tank mimarisi sayesinde yatırım maliyetinin optimize edilmesi gereken ve durulama gerektirmeyen uygulamalar için tercih edilir.
+KNV 30 3000 2B ist ein Waschsystem zur Oberflächenreinigung bearbeiteter Teile in industriellen Fertigungslinien, bei dem die auf dem Förderband fortlaufenden Teile feste Prozesszonen durchfahren. Die Bezeichnung **2B** bedeutet, dass die Maschine über **zwei unabhängige Prozessbäder** — Waschen und Spülen — verfügt; jedes Bad arbeitet mit eigenem Umwälzkreis, und eine Flüssigkeitsvermischung zwischen den Bädern ist konstruktiv verhindert.
 
-* **VDL 40 3500 2B / VDL 40 4250 2B / VDL 60 5500 2B / VDL 80 6500 2B:** İki banyolu bu modeller, birbiri ardına konumlandırılmış yıkama ve durulama proses bölgelerini bünyesinde barındırır. Parçalar yıkama bölgesinden çıktıktan sonra durulama bölgesine geçerek deterjan ve kirlilik kalıntılarından tam anlamıyla arındırılır.
+Teile werden von links (Beschickung/Einlauf) auf das Förderband verladen. Entlang der Förderstrecke durchlaufen sie nacheinander die Waschzone, Spülzone und Trockenzone und werden rechts (Entnahme/Auslauf) gereinigt und getrocknet entnommen. Dieses kontinuierliche Flussprinzip ermöglicht unterbrechungsfreie Produktion und ist für die Linienintegration geeignet.
 
-## 3.1.2. Hidrolik Sistem ve Püskürtme Dinamikleri
+Die Außenabmessungen der Maschine betragen **3770 × 1730 × 2122 mm** (L × B × H), das Leergewicht **1300 kg**, das Betriebsgewicht (gefüllt) **1500 kg**. Die Maschine ist auf einem System mit **verstellbaren Füßen** montiert; der Schwerpunkt liegt in der Mitte der Förderstrecke.
 
-Yıkama ve durulama proseslerindeki temizleme gücü, tambur iç çeperinde eksenel olarak konumlandırılmış boru manifold sistemine ve bu manifoldlara entegre edilmiş nozul dizilimine dayanır. Dönen tamburun aksine sabit konumda kalan bu püskürtme sistemi, parçaların tambur içinde sürekli devridaim ederek hareket ettiği sırada her yüzeye kesintisiz ve kapsamlı basınçlı sıvı teması sağlar.
+| Prozessschritt | Reihenfolge | Beschreibung |
+|----------------|-------------|--------------|
+| Waschen | 1 | Entfernung industrieller Öl- und Schmutzschichten |
+| Spülen | 2 | Entfernung von Waschrückständen und Verschmutzung |
+| Trocknen | 3 | Entfernung der Oberflächenfeuchtigkeit der Teile |
 
-Sirkülasyon pompası, tank içerisindeki proses sıvısını çekerek boru manifoldları aracılığıyla nozullara iletir. Tek banyolu **VDL 40 2500 1B** modelinde yıkama devresi tek pompa ile tahrik edilirken, iki banyolu modellerde yıkama ve durulama banyolarının her biri bağımsız pompa devresine sahip olup banyolar arası sıvı kontaminasyonu yapısal olarak önlenmektedir.
+Nenn-Zykluszeit: **900 s**
 
-## 3.1.3. Termal Yönetim
+<!-- FOTO: Prozessflussdiagramm oder Zonenansicht entlang der Förderstrecke -->
+![Prozessablauf — Waschen, Spülen, Trocknen](../../assets/FOTO-3-1-1-proses-akisi.png)
 
-Her banyo, proses sıvısını hedeflenen çalışma sıcaklığına hızla ulaştırmak ve stabilize etmek amacıyla tank bünyesine entegre edilmiş elektrikli ısıtıcılar (rezistanslar) ile donatılmıştır. Isıtma kapasitesi, modelin proses hacmi ve termal kayıp profiliyle orantılı biçimde ölçeklendirilmiştir:
+---
 
-* **VDL 40 2500 1B** Yıkama Tankında 1 adet 8 kW / 380V ısıtıcı ile dengeli termal kapasite sağlanır.
-* **VDL 40 3500 2B, VDL 40 4250 2B, VDL 60 5500 2B:** Her banyoda 2 adet 8 kW / 380V ısıtıcı ile dengeli termal kapasite sağlanır.
-* **VDL 80 6500 2B:** Serinin en büyük hacimli modeli olan bu yapıda yükselen termal kayıpları karşılamak ve proses sıcaklığını stabilize etmek üzere her banyoya 3 adet 8 kW / 380V ısıtıcı entegre edilmiştir.
+## 3.1.2. Förderband-Transportsystem
 
-## 3.1.4. Kurutma Sistemi (Opsiyonel)
+Das Förderband bildet das Transportsystem und das Rückgrat der Maschine. Es gewährleistet die kontrollierte und kontinuierliche Fortbewegung der Teile zwischen den Prozesszonen. Ein- und Auslaufstellen sind für den Bediener zugänglich; Beschickung **links**, Entnahme **rechts**.
 
-Opsiyonel donanım olarak makinenin çıkış tarafına entegre edilebilen kurutma sistemi, temizleme prosesinin hemen ardından parçalar üzerinde kalan yüzey sıvısını güçlü ve yönlendirilmiş hava akışıyla uzaklaştırır. Sistemin temeli; 0,37 kW tahrik motoruyla çalışan ERF 1 serisi endüstriyel fana ve bu fanın ürettiği hava debisini proses sıcaklığına ulaştıran elektrikli ısıtma ünitesine dayanır.
+Der Förderantrieb erfolgt über einen Getriebemotor:
 
-**VDL 40 ve VDL 60** modellerinde tek bir kurutma ünitesi standart konfigürasyonu oluşturur. Isıtma kapasitesi, parça geometrisine ve hat hızına bağlı olarak **6 kW** veya **12 kW** olmak üzere iki seçenek arasından belirlenir; 6 kW konfigürasyonu standart uygulamaları karşılarken, 12 kW seçeneği yüksek ısı talebi olan kompleks geometrili ya da kör delikli parçalar için tercih edilir.
+| Parameter | Wert |
+|-----------|------|
+| Motorbezeichnung | Förderband-Getriebemotor |
+| Leistung | 1,5 kW |
+| Drehzahl | 2000 U/min |
+| Marke | Siemens |
+| Modell | SIMOTICS S-1FL6 |
 
-**VDL 80** modelinde ise artan tambur kesiti ve çıkış alanını tam kapsamlı kurutabilmek amacıyla bu ünitelerden **2 adet** paralel olarak konumlandırılır. Her iki ünite de bağımsız çalışma kapasitesine sahip olup toplam ısıtma ve debi gücü, büyük kesitli parça profillerinde homojen ve eksiksiz bir yüzey kuruluğu sağlayacak biçimde ölçeklendirilmiştir.
+Die Förderstrecke ist entlang der Prozesszonen so angeordnet, dass die Teile unter den Wasch- und Spüldüsen hindurchgeführt werden. Als Referenz- / Home-Position ist der **Förderbandanfang** zu verwenden.
 
-Bu sistem; boyama, kaplama ve montaj gibi yüzey kalitesinin kritik önem taşıdığı sonraki proses adımları için parçaların nemden arındırılmış olarak hatta geçişini güvence altına alır.
+Am Förderband befinden sich insgesamt **4 Schmierstellen**: 2 an der Einlaufseite und 2 an der Auslaufseite. Periodische Schmierung ist für lange Lebensdauer und zuverlässigen Förderbetrieb erforderlich (Einzelheiten im Wartungsabschnitt).
 
-## 3.1.5. İş Sağlığı, Güvenliği (İSG) ve Kontrol Otomasyonu
+<!-- FOTO: Förderband Ein- und Auslauf — Beschickung (links) / Entnahme (rechts) -->
+![Förderband Ein-Auslaufansicht](../../assets/FOTO-3-1-2-konveyor-giris-cikis.png)
 
-Makinenin tambur kapakları cıvatalı bağlantı sistemiyle sabitlenmiş olup yalnızca bilinçli bir müdahaleyle açılabilir yapıdadır; bu tasarım, operasyon sırasında istem dışı erişimi yapısal olarak engeller.
+<!-- FOTO: Förderantrieb — Getriebe und Motor -->
+![Förderband-Getriebemotor](../../assets/FOTO-3-1-3-konveyor-motor.png)
 
-Operasyon yönetimi, Schneider marka endüstri standardı şalt malzemeleri ve otomasyon bileşenleriyle donatılmış merkezi kontrol panosu üzerinden gerçekleştirilir. Tambur dönüş hızı, sürücü üzerinden ayarlanabilir olup farklı parça geometrilerine ve kirlilik profillerine göre proses optimizasyonuna imkân tanır. Proses sıcaklığı termostat kontrolü ile izlenir ve hedef değerde sabit tutulur. Tank dolum ve boşaltım işlemleri standart konfigürasyonda operatör tarafından manuel olarak yönetilmekte olup bu fonksiyonların otomasyona alınması opsiyonel donanım olarak temin edilebilmektedir.
+---
 
-Kontrol altyapısının üst seviyeye taşınması gereken uygulamalarda makine, PLC entegrasyonuna hazır yapısıyla opsiyonel olarak programlanabilir lojik kontrolör ile donatılabilir. Bu opsiyon; proses parametrelerinin merkezi yönetimini, hata kaydını ve üst sistemlere entegrasyonu mümkün kılar.
+## 3.1.3. Waschbad und Umwälzkreislauf
+
+Das Waschbad ist die erste Prozesszone, in der industrielle Öl- und Schmutzschichten auf den Teileoberflächen entfernt werden. Das Prozessmedium im Tank wird von der Waschpumpe angesaugt und dem Sprühsystem zugeführt; die Teile kommen beim Fortlauf auf dem Förderband mit dem Druckmedium aus den Düsen in Kontakt.
+
+Der Wasch-Umwälzkreis wird von einem unabhängigen Pumpenmotor angetrieben:
+
+| Parameter | Wert |
+|-----------|------|
+| Motorbezeichnung | Waschpumpenmotor |
+| Leistung | 3 kW |
+| Drehzahl | 2900 U/min |
+| Marke | Lowara |
+| Modell | ESHE 40-160/30 |
+
+Der Waschtank ist das Hauptbehältervolumen zur Speicherung und Erwärmung des Prozessmediums. Im Tank befinden sich **Vorfilter**; diese müssen bei der täglichen Wartung ausgebaut und gereinigt werden. An der Pumpenleitung sind **Feinbeutelfilter** installiert; diese müssen bei der wöchentlichen Tiefenreinigung ausgebaut und gereinigt werden.
+
+Als Prozesswasser ist **Leitungswasser** oder **aufbereitetes Wasser** zu verwenden. Der Wassereinlassdruck beträgt **1 bar**, die Wassertemperatur **+10°C bis +70°C**.
+
+<!-- FOTO: Waschbad — Gesamtansicht Tank, Pumpe und Filter -->
+![Waschbad Gesamtansicht](../../assets/FOTO-3-1-4-yikama-banyosu.png)
+
+<!-- FOTO: Waschpumpe — Lowara ESHE 40-160/30 -->
+![Waschpumpe](../../assets/FOTO-3-1-5-yikama-pompasi.png)
+
+---
+
+## 3.1.4. Spülbad und Umwälzkreislauf
+
+Das Spülbad ist die zweite Prozesszone, in der Reinigungsmittel-, Ölrückstände und Verschmutzungen von den nach dem Waschprozess verbleibenden Teilen entfernt werden. Es verfügt über einen vom Waschbad unabhängigen Tank- und Pumpenkreis; eine Flüssigkeitsvermischung zwischen beiden Bädern ist konstruktiv ausgeschlossen.
+
+Spül-Umwälzkreis:
+
+| Parameter | Wert |
+|-----------|------|
+| Motorbezeichnung | Spülpumpenmotor |
+| Leistung | 1,85 kW |
+| Drehzahl | 2900 U/min |
+| Marke | GOULDS |
+| Modell | GCEA 370/3 |
+
+Auch im Spültank sind Filter installiert; im Rahmen der wöchentlichen Tiefenreinigung müssen Tankfilter und Beutelfilter an der Pumpenausleitung ausgebaut und gereinigt werden. **Säurehaltige** Reinigungsmittel oder Mittel, die **Edelstahl angreifen**, dürfen nicht verwendet werden.
+
+<!-- FOTO: Spülbad — Gesamtansicht Tank und Pumpe -->
+![Spülbad Gesamtansicht](../../assets/FOTO-3-1-6-durulama-banyosu.png)
+
+---
+
+## 3.1.5. Ölabscheider-Einheit
+
+Zur kontinuierlichen Entfernung schwimmender Ölschichten im Waschtank ist eine Ölabscheider-Einheit integriert. Bei der industriellen Teilewäsche reduziert Ölanreicherung die Wirksamkeit des Prozessmediums und erhöht den Wartungsbedarf; der Ölabscheider verhindert diese Anreicherung und sichert die Prozessqualität im Tank.
+
+| Parameter | Wert |
+|-----------|------|
+| Motorbezeichnung | Ölabscheider-Getriebemotor |
+| Leistung | 0,04 kW |
+| Marke | FINEX |
+| Modell | E1610-40-150-17B-C |
+
+<!-- FOTO: Ölabscheider-Einheit — Position am Waschtank -->
+![Ölabscheider-Einheit](../../assets/FOTO-3-1-7-yag-siyirici.png)
+
+---
+
+## 3.1.6. Trocknungs- und Abluftsystem
+
+Die Trockenzone ist der dritte und letzte Prozessschritt, in dem die Oberflächenfeuchtigkeit der Teile nach dem Spülprozess durch kräftigen, gerichteten Luftstrom entfernt wird. Die Trocknung stellt sicher, dass Teile feuchtigkeitsfrei aus der Linie ausgetragen werden — für nachfolgende Prozessschritte mit kritischer Oberflächenqualität wie Lackieren, Beschichten und Montage.
+
+Die Maschine ist mit **4 Trocknungsventilatoren** ausgestattet:
+
+| Ventilator | Leistung | Drehzahl |
+|------------|----------|----------|
+| Trocknungsventilator 1 | 4 kW | 2900 U/min |
+| Trocknungsventilator 2 | 4 kW | 2900 U/min |
+| Trocknungsventilator 3 | 4 kW | 2900 U/min |
+| Trocknungsventilator 4 | 4 kW | 2900 U/min |
+
+Die Gesamtleistung der Trocknungsventilatoren beträgt **16 kW**. Zur Ableitung feuchter Luft aus der Trockenzone dient ein **Abluftventilator**:
+
+| Parameter | Wert |
+|-----------|------|
+| Motorbezeichnung | Abluftventilatormotor |
+| Leistung | 0,37 kW |
+| Drehzahl | 2800 U/min |
+| Marke | ENA |
+| Modell | ENA 2 |
+
+Auf der Betriebsseite der HMI-Oberfläche können Waschen, Spülen, **Trocknen 1**, **Trocknen 2** und **Abluft** unabhängig ein- und ausgeschaltet werden; der Bediener kann diese Funktionen entsprechend dem Prozessbedarf konfigurieren.
+
+<!-- FOTO: Trockenzone — Gesamtansicht der Ventilatoreinheiten -->
+![Trocknungsventilatoren](../../assets/FOTO-3-1-8-kurutma-fanlari.png)
+
+<!-- FOTO: Abluftventilator -->
+![Abluftventilator](../../assets/FOTO-3-1-9-egzost-fani.png)
+
+---
+
+## 3.1.7. Elektrische, Steuerungs- und Automatisierungsinfrastruktur
+
+Die elektrische und automatisierungstechnische Infrastruktur der Maschine ist im zentralen **Elektroschrank** zusammengeführt. Schutzart des Schrankes: **IP55**; Abmessungen: **800 × 1200 × 300 mm** (B × H × T).
+
+### Stromversorgung
+
+| Parameter | Wert |
+|-----------|------|
+| Versorgungsspannung | 380 V |
+| Frequenz | 50 Hz |
+| Phasen | 3 |
+| Installierte Gesamtleistung | 50 kW |
+| Maximaler Strombezug | 100 A |
+| Versorgungskonfiguration | 3P+N+PE |
+| Hauptschalter | 100 A, Schneider |
+| Gesamtsicherung / Leistungsschalter | 100 A |
+| Leistungsfaktor (cos φ) | 0,9 |
+| Kurzschlussstrom (ICC) — Anforderung | 10 kA |
+| USV / Generator — Anforderung | Nein |
+
+### Automatisierungskomponenten
+
+| Komponente | Marke / Modell | Merkmal |
+|------------|----------------|---------|
+| HMI | SIMATIC HMI KTP700 Basic PN (6AV2123-2GB03-0AX0) | 7" Display |
+| SPS | SIEMENS SIMATIC S7-1200 | CPU 1215C DC/DC/DC (6ES7215-1AG40-0XB0) |
+| E/A | — | 36 Eingänge / 24 Ausgänge |
+| Hauptschalter — Position | Am Elektroschrank | — |
+| Start / Stopp | HMI-Oberfläche — digitale Taste | — |
+
+### Signalleuchten (Signalelement)
+
+| Farbe | Bedeutung |
+|-------|-----------|
+| Rot | Alarm |
+| Gelb | Maschine betriebsbereit |
+| Grün | Maschine in Betrieb |
+
+Bei Alarmzustand wird der HMI-Alarmbildschirm aktiviert; gleichzeitig leuchtet das Signalelement **rot**. Für Rezept- / Programmspeicherung besteht keine Begrenzung. Fernzugriff ist über das **Secomea**-Modul möglich.
+
+HMI-Sprachen: **Türkisch**, **Englisch**, **Deutsch**. Auf der HMI-Oberfläche ist Passwortschutz vorhanden. Betriebsarten: **Automatik** und **Wartung**. Jog- / Tipp-Tasten sind nicht vorhanden.
+
+### Sicherheitsintegration
+
+An der Maschine ist ein **RFID-Sicherheitssensor** installiert; beim Öffnen der Abdeckungen stoppt der Sensor die Maschine. Stop-Kategorie der Maschine: **Kat. 3**. Insgesamt **4 Not-Halt-Taster** sind an folgenden Stellen angeordnet: (1) am Elektroschrank, (2) rechts am Förderband am Maschineneinlauf, (3) links am Förderband am Maschineneinlauf, (4) links am Förderband am Maschinenauslauf. Bei Betätigung des Not-Halt stoppt **jede Funktion der Maschine**.
+
+<!-- FOTO: Elektroschrank — HMI, Hauptschalter und Signalleuchten -->
+![Elektroschrank](../../assets/FOTO-3-1-10-elektrik-panosu.png)
+
+<!-- FOTO: HMI-Bildschirm — Hauptbetriebsseite -->
+![HMI-Oberfläche](../../assets/FOTO-3-1-11-hmi-ekran.png)
+
+---
+
+## 3.1.8. Hilfsmedien-Anschlüsse
+
+Für Prozess- und pneumatische Funktionen der Maschine sind Medienanschlüsse erforderlich:
+
+| Medium | Wert | Hinweis |
+|--------|------|---------|
+| Drucklufteinlass | 6 bar | 3/4"-Anschluss (Montageschritt 4) |
+| Wassereinlassdruck | 1 bar | 1/2"-Anschluss (Montageschritt 5) |
+| Wassertemperatur | +10°C – +70°C | Leitungs- oder aufbereitetes Wasser |
+| Wasserqualität | Leitungswasser oder aufbereitetes Wasser | — |
+
+Der Druckluftregler ist auf **6 bar** eingestellt. Auf der HMI-Handseite werden Luft- und Wasseranschlussstatus durch eine grüne Anzeige dargestellt.
+
+<!-- FOTO: Druckluft- und Wasseranschlussstellen -->
+![Medienanschlussstellen](../../assets/FOTO-3-1-12-medya-baglantilari.png)
+
+---
+
+## 3.1.9. Übersicht der Hauptkomponenten
+
+Die folgende Tabelle fasst die Hauptmodule der Maschine und ihre Funktionen zusammen:
+
+| Komponente | Funktion |
+|------------|----------|
+| Förderband | Teiletransport; kontinuierlicher Fluss zwischen Prozesszonen |
+| Waschpumpe | Waschbad-Umwälzung; Drucksprühen |
+| Spülpumpe | Spülbad-Umwälzung; Rückstandsentfernung |
+| Ölabscheider | Entfernung schwimmenden Öls aus dem Waschtank |
+| Trocknungsventilator (×4) | Oberflächentrocknung der Teile; gesamt 16 kW |
+| Abluftventilator | Feuchtigkeitsabführung aus der Trockenzone |
+| Elektroschrank | Stromverteilung, Schutz und Automatisierungszentrale |
+| HMI | Bedienoberfläche; Start/Stopp, Alarme, Parameter |
+| SPS | Prozessautomatisierung und E/A-Verwaltung |
+| Hauptschalter | 100 A — Schneider |
+| Sicherung | 100 A Gesamtleistungsschalter |
+
+Die Maschine ist für den Betrieb in **Innenräumen** bei **+10°C bis +30°C** und **30%–50%** relativer Luftfeuchtigkeit ausgelegt. Schutzart: **IP55**; Geräuschpegel: **65 dB(A)**.
+
+Sämtliche Abdeckungen an der Maschinenrückseite sind abnehmbar und für Wartungszugang zugänglich. Mindestabstand vorne, hinten und seitlich: **1000 mm**; Mindestraumhöhe: **2500 mm**.
+
+<!-- FOTO: Maschinenrückseite — Wartungsabdeckungen -->
+![Wartungszugangsabdeckungen — Maschinenrückseite](../../assets/FOTO-3-1-13-bakim-kapaklari.png)

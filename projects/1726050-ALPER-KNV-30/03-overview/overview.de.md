@@ -1,9 +1,39 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 3. Übersicht
 
-# 3. GENEL BAKIŞ
+Dieser Abschnitt umfasst die allgemeine Beschreibung, bestimmungsgemäße Verwendung, technischen Daten, Bedienelemente und Layout-Informationen der industriellen Teilewaschanlage **KNV 30 3000 2B** (Projekt-Nr.: **1726050**, Serien-Nr.: **1726050**). Die im Umfang dieser Anleitung beschriebene Maschine ist eine einlauf-beschickte, förderbandgeführte Anlage mit zwei Bädern (Waschen + Spülen); Teile durchlaufen auf dem Förderband die Prozesse **Waschen, Spülen und Trocknen**.
 
-Bu endüstriyel yıkama makinesi; talaşlı imalat, döküm, presleme veya bakım-onarım süreçleri sonucunda parça yüzeylerinde biriken yağ, talaş, karbon kalıntıları ve endüstriyel kirleri arındırmak amacıyla tasarlanmış bir yüzey temizleme sistemidir. İşletmelerin üretim hatlarında veya revizyon atölyelerinde, parçaların bir sonraki işleme (kaplama, boyama, kaynak veya montaj) uygun kalite standartlarında hazır hale getirilmesini sağlar.
+Die Hauptfunktion der Maschine ist die **Entfernung von Öl und Verschmutzungen**, die von industriellen Bearbeitungsprozessen auf den Teileoberflächen verbleiben. Die in diesem Abschnitt dargestellten Informationen sind so aufgebaut, dass Bediener, Wartungs- und Montagepersonal die Maschine versteht, ihre Grenzen kennt und den technischen Rahmen für einen sicheren Betrieb erhält.
 
-Sistemin temel çalışma prensibi; su ve uygun alkali kimyasal karışımının sıcaklık ve basınç ile birleştirilerek parça yüzeyine uygulanmasına dayanır. Yıkama solüsyonu, sistemdeki ısıtıcılar yardımıyla proses için belirlenen sıcaklık değerlerine ulaştırılır. Ardından pompalar aracılığıyla basınçlandırılan bu sıvı, yıkama hattı boyunca parça yüzeylerine temas ettirilir. Bu süreçte ısının çözücü etkisi, kimyasalın bağ kırıcı özelliği ve suyun mekanik çarpma gücü eşzamanlı olarak çalışarak inatçı kirleri yüzeyden uzaklaştırır.
+---
 
-Ağır sanayi koşullarındaki zorlu mesailere dayanacak şekilde tasarlanan ana konstrüksiyon, korozyon direncine sahip paslanmaz çelik malzemeden üretilmiştir. Makinenin genel tasarımı, farklı yapıdaki parçalara zarar vermeden tutarlı ve standart bir temizlik performansı sunmayı hedefler. Aynı zamanda, makinenin çalışması sırasındaki tüm süreçler, operatör emniyetini temel alan elektriksel ve donanımsal güvenlik standartlarıyla desteklenmiştir.
+## Abschnittsinhalt
+
+Die folgenden Unterabschnitte liefern fortschreifend detailliertere Informationen zur Maschine:
+
+| Abschnitt | Titel | Thema |
+|-----------|-------|-------|
+| **3.1** | Maschinenbeschreibung und Systemaufbau | Förderband, Wasch-/Spülbäder, Trocknung, Ölabscheider, Automatisierungsinfrastruktur |
+| **3.2** | Bestimmungsgemäße Verwendung | Verarbeitbare Teiletypen, verbotene Verwendungen, Umgebungsbedingungen, Bedieneranforderungen |
+| **3.3** | Technische Daten | Abmessungen/Gewicht, Kapazität, elektrische Daten, Motorliste, Medienanschlüsse, Umgebungsdaten |
+| **3.4** | Maschinenbedienung und Steuerung | Elektroschrank, HMI, SPS, Start/Stopp, Not-Halt, Signalleuchten, Alarme |
+| **3.5** | Maschinenlayout | Richtungsdefinitionen, Freiräume, Wartungszugang, Transportbeschränkungen |
+
+---
+
+## Maschinenübersicht
+
+| Parameter | Wert |
+|-----------|------|
+| Modell | KNV-30 3000 2B |
+| Maschinentyp | Förderband — zweibadige industrielle Teilewaschanlage |
+| Prozessablauf | Waschen → Spülen → Trocknen |
+| Nenn-Zykluszeit | 900 s (15 Min.) |
+| Beschickung / Entnahme | Links / Rechts |
+| Bedienseite | Rechts |
+| Installierte Leistung | 50 kW |
+| Schutzart | IP55 |
+
+Detaillierte technische Daten, Komponentenbeschreibungen und Layout-Zeichnungen sind in den jeweiligen Unterabschnitten aufgeführt. Für den allgemeinen Layout-Plan siehe **1726050-ALPER-KNV 30 LAYOUT.pdf**.
+
+<!-- FOTO: KNV 30 3000 2B — Abschnitts-Gesamtansicht -->
+![KNV 30 3000 2B Gesamtansicht](../assets/FOTO-3-0-overview-genel.png)

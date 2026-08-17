@@ -1,38 +1,114 @@
-<!-- ÇEVİRİ GEREKLİ → EN | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 3.4. Machine Controls
 
-# 3.4. Makine Kontrolleri
+This section defines the electrical control panel, HMI operator interface, PLC automation system, start/stop functions, signal lamps, and alarm/remote access features of the KNV 30 3000 2B machine.
 
-Bu bölüm, Dolfin Industrial Washing Systems kontrol panosu üzerinde yer alan tüm şalter, buton, dijital gösterge ve sinyal lambalarının işlevlerini tanımlar. Operatörün makineyi güvenli ve verimli bir şekilde kullanabilmesi için aşağıdaki donanımların görevlerini eksiksiz bilmesi şarttır.
+---
 
-![Kontrol Panosu Butonları](../assets/vdl/3/3-4-controls.svg)
+## 3.4.1. Control Panel — General Structure
 
-**1. YIKAMA ISITICI (Washing Heater - Siyah Döner Anahtar + Kırmızı LED Ekran)**
-Yıkama haznesi ısıtıcısının devreye alınmasını ve çalışma sıcaklığının izlenmesini sağlar. Döner anahtar saat yönünde çevrilerek ısıtıcı aktif hale getirilir. Yanındaki dijital gösterge, haznedeki anlık su sıcaklığını santigrat derece (°C) cinsinden sürekli olarak görüntüler. Döner anahtar kapalı (0) konumunda iken ısıtıcı devre dışıdır.
+| Parameter | Value |
+|-----------|-------|
+| Main control panel location | On electrical panel |
+| Panel protection rating (IP) | IP55 |
+| Panel dimensions (W × H × D) | 800 × 1200 × 300 mm |
+| Main switch location | On electrical panel |
+| Main switch | 100 A, Schneider |
 
-**2. YIKAMA POMPASI (Wash Pump - Siyah Döner Anahtar + Pilot Lamba)**
-Yıkama sıvısını hazne içinde dolaştıran pompanın çalışma komutunu verir. Döner anahtar açık konuma getirildiğinde pompa devreye girer. Yanındaki gri/beyaz pilot lamba, pompa devresinin aktif olduğunu teyit eder; lamba sönükse pompa çalışmıyor demektir.
+The electrical panel houses power distribution, motor protection, automation components (PLC, HMI), and signal lamps.
 
-**3. KURUTMA ISITICI (Drying Heater - Siyah Döner Anahtar + Kırmızı LED Ekran)**
-Kurutma bölümü ısıtıcısını devreye alır. Yanındaki dijital gösterge, kurutma haznesindeki anlık sıcaklığı santigrat derece (°C) cinsinden görüntüler. Hedeflenen sıcaklığa ulaşıldığında sistem rezistansları otomatik olarak kapatır; sıcaklık düştüğünde tekrar devreye alır. Döner anahtar kapalı (0) konumunda iken ısıtıcı devre dışıdır.
+<!-- PHOTO: Electrical panel — general view, door open -->
+![Control panel general view](../../assets/FOTO-3-4-0-kontrol-panosu.png)
 
-**4. KURUTMA FANI (Drying Fan - Siyah Döner Anahtar + Pilot Lamba)**
-Kurutma haznesi içinde sıcak havayı sirküle eden fanı çalıştırır. Döner anahtar açık konuma getirildiğinde fan devreye girer. Yanındaki gri/beyaz pilot lamba, fan motorunun enerjili durumda olduğunu gösterir.
+---
 
-**5. TAMBUR (Drum - Siyah Döner Anahtar + Pilot Lamba)**
-Yıkama tamburunun dönüş hareketini başlatır. Döner anahtar açık konuma getirildiğinde tambur motoru devreye girer. Yanındaki gri/beyaz pilot lamba, tambur motorunun enerjili olduğunu gösterir. Tamburu döndürmeden önce kapağın tam olarak kapandığından emin olunuz.
+## 3.4.2. HMI Operator Interface
 
-**6. YAĞ AYIRICI (Oil Separator - Siyah Döner Anahtar + Pilot Lamba)**
-Yıkama sıvısının yüzeyinde biriken endüstriyel yağları ve katı partikülleri mekanik olarak sistemden uzaklaştıran üniteyi kontrol eder. Yanındaki gri/beyaz pilot lamba, ünite çalışırken yanar. Yıkama döngüsü aktif değilken (dinlenme durumunda) çalıştırılması önerilir.
+| Parameter | Value |
+|-----------|-------|
+| HMI display size | 7" |
+| HMI brand / model | SIMATIC HMI KTP700 Basic PN (6AV2123-2GB03-0AX0) |
+| Start / Stop location | Digital button on HMI interface |
+| Operator panel languages | Turkish, English, German |
+| Password protection | A password is provided on the HMI interface |
 
-**7. YIKAMA SEVİYESİ (Washing Level - Kırmızı Pilot Lamba)**
-Yıkama tankındaki sıvı seviyesini izleyen sinyal göstergesidir. Lamba yandığında sıvı seviyesinin güvenli çalışma sınırlarının üzerinde olduğunu belirtir. Lamba söndüğünde tank sıvı seviyesi kritik minimumun altına düşmüş demektir; bu durumda sisteme sıvı ikmali yapılmalı ve işleme devam edilmemelidir.
+The HMI **operating page** provides wash, rinse, drying 1, drying 2, and exhaust options; the operator can switch these functions on/off as required and run the machine. **Manual mode** is not provided.
 
-> **ÖNEMLİ UYARI:** Yıkama seviyesi lambası sönük olduğunda makine çalıştırılmamalıdır. Susuz çalışan rezistanslar ve pompa telafi edilemez mekanik hasara uğrar. Sıvı seviyesi güvenli sınırlara döndükten sonra operasyona devam edilebilir.
+On the HMI **manual page**, air and water connection status is monitored; after connection is established, the corresponding indication turns **green**.
 
-**8. RESET (Donanımsal Onay - Mavi Buton)**
-Makinenin yeniden başlama (restart) korumasını onaylayan fiziksel güvenlik butonudur. Acil Stop devreye girdiğinde veya bir arıza nedeniyle sistem kilitlendiğinde, tehlike ortadan kalktıktan sonra Acil Stop kilidi açılsa dahi sistem otomatik olarak yeniden çalışmaz. Operatörün, sistemi kasıtlı ve bilinçli olarak yeniden yetkilendirmek için bu butona basması zorunludur.
+From the HMI **settings page**, temperature, date/time, and language settings can be configured.
 
-**9. ACİL STOP (Emergency Stop - Sarı Zemin/Kırmızı Mantar Başlık)**
-Tehlike anında makinenin tüm hareketli parçalarını ve güç tüketen sistemlerini (pompalar, ısıtıcılar, motorlar) anında durdurur. Butona basıldığında mekanik olarak kilitlenir. Sistemi tekrar devreye alabilmek için kilitli butonun ¼ tur saat yönünde döndürülerek serbest bırakılması ve ardından mavi "Reset" butonuna basılarak güvenlik devresinin donanımsal olarak onaylanması gerekir.
+<!-- PHOTO: HMI screen — operating page -->
+![HMI operating page](../../assets/FOTO-3-4-1-hmi-calisma.png)
 
-> **ÖNEMLİ UYARI:** Acil Stop butonu standart bir makine durdurma mekanizması değildir ve rutin operasyonlar sırasında makineyi kapatmak için kullanılmamalıdır. Bu donanım yalnızca can güvenliğini veya sistem bütünlüğünü tehdit eden acil durumlarda enerjiyi anında kesmek için tasarlanmıştır.
+<!-- PHOTO: HMI screen — manual page (air/water status) -->
+![HMI manual page](../../assets/FOTO-3-4-2-hmi-manuel.png)
+
+---
+
+## 3.4.3. PLC and I/O Infrastructure
+
+| Parameter | Value |
+|-----------|-------|
+| PLC brand / model | SIEMENS SIMATIC S7-1200 |
+| PLC CPU model | S7-1200 CPU 1215C DC/DC/DC (6ES7215-1AG40-0XB0) |
+| I/O module summary | 36 inputs / 24 outputs |
+| Fieldbus / protocol | Profinet |
+
+Encoder / feedback settings are embedded in the PLC program; adjustment shall be performed by the manufacturer.
+
+<!-- PHOTO: PLC modules — internal panel mounting -->
+![PLC modules](../../assets/FOTO-3-4-3-plc-modul.png)
+
+---
+
+## 3.4.4. Operating Modes, Start/Stop and Emergency Stop
+
+| Parameter | Value |
+|-----------|-------|
+| Mode selector | Automatic / Maintenance |
+| Manual mode | Not provided |
+| Step / single-step mode | Not provided |
+| Mode change conditions | Not provided |
+| Jog / inching buttons | Not provided |
+
+**Maintenance mode:** No dedicated maintenance mode is provided. For maintenance, covers shall be opened only after machine power is isolated; **LOTO procedure** shall be applied when power is isolated.
+
+**Emergency stop locations (4 units):**
+1. On electrical panel
+2. On the right of the conveyor at machine infeed
+3. On the left of the conveyor at machine infeed
+4. On the left of the conveyor at machine outfeed
+
+When emergency stop is activated, **every function on the machine stops**. Reset: After releasing the emergency stop button and confirming the physical hazard is cleared, press the reset button on the panel label until the lamp illuminates.
+
+<!-- PHOTO: Emergency stop buttons — infeed and outfeed locations -->
+![Emergency stop locations](../../assets/FOTO-3-4-4-acil-stop.png)
+
+---
+
+## 3.4.5. Signal Lamps (Stack Light)
+
+| Colour | Meaning |
+|--------|---------|
+| Red | Alarm |
+| Yellow | Machine ready for operation |
+| Green | Machine running |
+
+The stack light visually communicates the instantaneous machine status to the operator. In alarm conditions, the red lamp illuminates.
+
+<!-- PHOTO: Stack light — on top of machine -->
+![Stack light](../../assets/FOTO-3-4-5-tepe-lambasi.png)
+
+---
+
+## 3.4.6. Alarm, Recipe and Remote Access
+
+| Function | Behaviour |
+|----------|-----------|
+| Alarm screen | Alarm screen is available on the HMI interface; stack light illuminates red in alarm conditions |
+| Recipe / program storage | No recipe limit applies |
+| Trend / log recording duration | [MISSING] |
+| Remote access | Yes — Secomea module |
+
+<!-- PHOTO: HMI alarm screen -->
+![HMI alarm screen](../../assets/FOTO-3-4-6-hmi-alarm.png)

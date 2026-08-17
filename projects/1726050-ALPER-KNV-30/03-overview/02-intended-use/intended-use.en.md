@@ -1,39 +1,121 @@
-<!-- ÇEVİRİ GEREKLİ → EN | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 3.2. Intended Use
 
-# 3.2. Kullanım Amacı
+This section defines the intended purpose, processable product limits, prohibited uses, environmental conditions, and operator requirements for the KNV 30 3000 2B industrial parts washing machine. Compliance with the limits specified below is mandatory for safe, efficient, and intended operation of the machine.
 
-Bu bölüm, makinenin tasarım amacını, kullanım sınırlarını ve yasal yükümlülükleri belirler. Makinenin güvenli ve verimli çalışabilmesi için aşağıda belirtilen şartlara harfiyen uyulması zorunludur.
+---
 
-## 3.2.1. Tasarlanan Kullanım Kapsamı
+## 3.2.1. Designed Scope of Use
 
-Bu endüstriyel yıkama makinesi; imalat, döküm, presleme, talaşlı imalat ve bakım-onarım atölyelerinde işlem gören endüstriyel parçaların yüzey temizliği için tasarlanmış ve üretilmiştir. Makinenin temel kullanım amacı; metal, uygun plastik veya kompozit parçaların yüzeylerindeki endüstriyel yağ, gres, karbon kalıntıları, talaş ve benzeri kirlerin arındırılmasıdır. 
+KNV 30 3000 2B is an industrial parts washing machine with front loading, conveyor feed, and two process baths (wash + rinse). Parts travel on the conveyor and complete washing, rinsing, and drying processes.
 
-Sistem, parçaları kaplama, boyama, kaynak veya montaj gibi bir sonraki üretim aşamasına uygun kalitede hazırlar. Makine, yalnızca endüstriyel tesis ortamlarında, bu kılavuzda belirtilen teknik sınırlar dahilinde ve gerekli iş güvenliği eğitimlerini almış yetkili personel tarafından kullanılmalıdır.
+The **intended use** of the machine is **removal of contamination from industrial parts**. The designed primary function is **cleaning of oil and contamination** remaining on part surfaces from industrial processes. The machine processes parts on a continuous-flow principle along the conveyor line; the feed side is on the **left**, the discharge side on the **right**.
 
-## 3.2.2. İzin Verilen Akışkan ve Kimyasal Sınırları
+This machine is designed for use only in **indoor** industrial facility environments, within the technical and environmental limits specified in this manual.
 
-Makinenin tüm mekanik, hidrolik ve sızdırmazlık sistemleri, yalnızca **su ve su bazlı alkali yıkama kimyasalları** ile çalışacak şekilde tasarlanmıştır. Kullanılacak kimyasalların özellikleri, makinenin paslanmaz çelik yapısına zarar vermeyecek endüstriyel standartlarda olmalıdır. Yıkama tankına temiz su ve uygun alkali kimyasal dışında herhangi bir sıvı eklenemez.
+<!-- PHOTO: Typical use — loading parts onto the conveyor line (feed side) -->
+![Typical use — part loading](../../assets/FOTO-3-2-0-parca-yukleme.png)
 
-## 3.2.3. Öngörülebilir Hatalı Kullanım ve Yasaklar
+---
 
-Makinenin belirtilen kullanım amacı dışında çalıştırılması hatalı kullanım olarak kabul edilir. İş güvenliği ve yasal mevzuatlar gereği, aşağıda belirtilen kullanımlar **kesinlikle yasaktır**:
+## 3.2.2. Processable Product and Material Types
 
-*   **Canlılar:** İnsanların, hayvanların veya herhangi bir canlının makine ile yıkanması, temizlenmesi veya makine kabini içerisine girmesi.
-*   **Gıda ve Sağlık:** Gıda ürünlerinin, gıda ile doğrudan temas eden ambalajların veya tıbbi/cerrahi cihazların yıkanması, dezenfeksiyonu veya sterilize edilmesi. Makine hijyenik medikal standartları karşılayacak bir sterilizatör değildir.
-*   **Yanıcı ve Patlayıcı Maddeler:** Solvent, tiner, aseton, benzin, motorin, alkol gibi yanıcı, parlayıcı veya patlayıcı maddelerin makine tankına eklenmesi veya makine çevresinde kullanılması. Makine, patlayıcı ortamlarda (ATEX) çalışmaya uygun donanıma sahip değildir.
-*   **Asidik ve Aşındırıcı Kimyasallar:** Hidroklorik asit, nitrik asit, sülfürik asit gibi aşındırıcı (korozif) kimyasalların veya yüksek konsantrasyonlu tuzlu sıvıların kullanılması.
-*   **Uyumsuz Materyaller:** Yüksek basınç ve sıcaklık altında dağılarak makine filtrelerini veya pompalarını tıkayabilecek ahşap, tekstil, sünger veya kağıt gibi ürünlerin yıkanması.
+The following product types may be processed with the machine:
 
-## 3.2.4. Sorumluluk Reddi ve Yasal Uyarı
+| Category | Description |
+|----------|-------------|
+| General | Industrial parts |
+| Material examples | Metal, plastic, rubber, etc. |
 
-Makinenin yalnızca bu kılavuzda belirtilen amaca ve sınırlara uygun olarak kullanılmasından tamamen kullanıcı işletme sorumludur. 
+Parts pass through wash and rinse processes to remove surface contamination; surface moisture is then removed in the drying zone. Suitability of parts for process fluid, temperature, and conveyor transport capacity is the responsibility of the user company.
 
-Makinede asit, solvent, yanıcı veya patlayıcı maddelerin kullanılması; makinenin canlılar, gıda veya tıbbi amaçlarla çalıştırılması ya da yetkisiz modifikasyonlar yapılması durumunda makine anında **garanti kapsamı dışında kalır.**
+The nominal process cycle time is defined as **900 seconds** (15 minutes). The minimum capacity reference value is specified as **730 parts/hour**; nominal and maximum capacity values are determined by the user company according to process conditions.
 
-Bu güvenlik uyarılarına ve sınırlamalara uyulmaması neticesinde meydana gelebilecek:
-1. İş kazaları, yaralanmalar veya can kayıpları,
-2. Tesis yangınları, kimyasal tepkimeler veya patlamalar,
-3. Çevresel kirlilik veya tehlikeli madde sızıntıları,
-4. Makinede, tesiste veya yıkanan parçalarda oluşabilecek tüm maddi hasarlar,
+<!-- PHOTO: Examples of processable industrial parts — on the conveyor -->
+![Processable part examples](../../assets/FOTO-3-2-1-islenebilir-parcalar.png)
 
-durumlarında üretici firma hiçbir hukuki, cezai veya maddi tazminat sorumluluğu kabul etmez. Meydana gelebilecek olaylardaki tüm yasal sorumluluk, hatalı kullanım talimatını veren veya uygulayan işletmeye aittir.
+---
+
+## 3.2.3. Prohibited and Unsuitable Uses
+
+The following product and use types are **not suitable** for the machine and are **strictly prohibited**:
+
+| Prohibited category | Description |
+|---------------------|-------------|
+| Living organisms | Humans, animals, plants, or any living organism |
+
+Use of the machine outside the specified purpose is considered foreseeable misuse. Washing, cleaning, or entry of living organisms into machine process zones is prohibited.
+
+The machine is equipped with an RFID safety sensor; when covers are opened, the machine stops. Safety door bypass must not be performed. For maintenance, covers shall be opened only after machine power is isolated; **LOTO procedure** shall be applied when power is isolated.
+
+<!-- PHOTO: Machine process zone — industrial parts only -->
+![Process zone — industrial part use only](../../assets/FOTO-3-2-2-yasak-kullanim-uyari.png)
+
+---
+
+## 3.2.4. Process Water and Cleaning Agent Limits
+
+Water used in the wash and rinse processes of the machine shall comply with the following conditions:
+
+| Parameter | Value / Requirement |
+|-----------|---------------------|
+| Water source | Mains water or purified water |
+| Water inlet pressure | 1 bar |
+| Water temperature | +10°C – +70°C |
+
+**Prohibited cleaning agents:**
+- Acid-based cleaning agents shall not be used.
+- Cleaning agents harmful to stainless steel shall not be used.
+
+For disinfection of machine tanks, after draining the tank, the interior shall be washed with **soapy water**. Disposal of waste water and chemicals shall comply with the regulations applicable in the country of use.
+
+Cleaning type: **dry / wet**
+
+<!-- PHOTO: Water connection point and process tanks -->
+![Process water connection](../../assets/FOTO-3-2-3-su-baglantisi.png)
+
+---
+
+## 3.2.5. Environmental and Facility Conditions
+
+The machine is designed for use in **indoor** environments only. Operating and storage environmental conditions shall remain within the following limits:
+
+| Parameter | Min | Max |
+|-----------|-----|-----|
+| Ambient / operating temperature | +10°C | +30°C |
+| Storage temperature | +10°C | +30°C |
+| Relative humidity | 30% | 50% |
+
+Additional environmental characteristics:
+
+| Parameter | Value |
+|-----------|-------|
+| Protection rating (IP) | IP55 |
+| Noise level | 65 dB(A) |
+
+The floor where the machine is installed shall be **hard and level**. Minimum clearance at front, rear and sides is **1000 mm**; minimum ceiling height is **2500 mm**. During transport, moisture and corrosive substances shall not be present; storage environments shall also be free of moisture and corrosive substances.
+
+Compressed air supply shall be provided at **6 bar** pressure (3/4" connection).
+
+<!-- PHOTO: Machine installation area — indoor, clearance zones -->
+![Installation area — indoor](../../assets/FOTO-3-2-4-kurulum-alani.png)
+
+---
+
+## 3.2.6. Operator, Training and Target Audience
+
+The machine is designed to be used by the following personnel groups:
+
+| Personnel | Role |
+|-----------|------|
+| Operator | Daily operation, start/stop, process monitoring |
+| Maintenance | Periodic maintenance, filter cleaning, lubrication |
+| Installation | Assembly, utility connections, commissioning |
+
+The number of operators required at the machine at the same time is **1–2** persons.
+
+**Competency / training requirement:** Operations and maintenance personnel training; training related to machine operation and maintenance shall be completed. Personnel shall be instructed on the HMI interface (Turkish, English, German), emergency stop procedure, and basic safety rules.
+
+The machine is defined as suitable for **24/7** continuous operation; nevertheless, operation shall be carried out under supervision of trained personnel and within the limits specified in this section.
+
+<!-- PHOTO: Operator — monitoring the machine from HMI panel -->
+![Operator — HMI panel](../../assets/FOTO-3-2-5-operator-hmi.png)

@@ -1,44 +1,86 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 5.2. Maschinenpositionierung
 
-# 5.2. Makinenin Konumlandırılması
+Dieser Abschnitt beschreibt das Positionieren der Maschine KNV 30 3000 2B am Aufstellungsort, die Ausrichtung, das Nivellieren mit verstellbaren Füßen und die Einhaltung der Ausrichtungstoleranzen.
 
-## 5.2.1. Zemin Gereksinimleri ve Taşıma Kapasitesi
+Positionierungsarbeiten werden im Rahmen von **Schritt 3** der Montageschritte in Abschnitt 5.1 durchgeführt und hier detailliert beschrieben.
 
-VDL serisi, düz ve yeterli taşıma kapasitesine sahip betonarme bir zemin üzerine yerleştirilmelidir. Zemin yüzeyi, makine boyunca sürekli titreşim yükü oluşturabileceğinden çatlak, oyuk veya eğrilik içermemelidir. Model bazında minimum zemin taşıma kapasitesi gereksinimleri aşağıda verilmiştir:
+---
 
-| Model | Makine Ağırlığı (kg) | Min. Zemin Kapasitesi (kg/m²) |
-|---|:---:|:---:|
-| VDL 40 2500 1B | 585 | 1000 |
-| VDL 40 3500 2B | 700 | 1200 |
-| VDL 40 4250 2B | 750 | 1400 |
-| VDL 60 5500 2B | 800 | 1600 |
-| VDL 80 6500 2B | 1000 | 2000 |
+## 5.2.1. Anforderungen an den Aufstellungsbereich
 
-Mevcut zeminin bu gereksinimleri karşılayıp karşılamadığından emin olunamaması durumunda kurulum öncesinde yetkili bir inşaat mühendisine danışılmalıdır.
+Vor dem Aufstellen der Maschine muss der Aufstellungsbereich folgende Bedingungen erfüllen:
 
-## 5.2.2. Teraziye Alma
+| Parameter | Anforderung |
+|-----------|-------------|
+| Mindestgröße Montagefläche | 5 m × 3 m |
+| Bodenebenheit-Toleranz | 0,5 mm/m |
+| Bodenfestigkeit | Bodenoberfläche muss hart und eben sein |
+| Mindestfreiraum — vorne | 1000 mm |
+| Mindestfreiraum — hinten | 1000 mm |
+| Mindestfreiraum — seitlich | 1000 mm |
+| Mindestraumhöhe | 2500 mm |
 
-Makinenin yatay düzlemde tam olarak terazide konumlandırılması; tamburun düzgün çalışması, yatak yüklerinin dengeli dağılması ve uzun vadeli mekanik ömür açısından kritik önem taşır. Teraziye alma işlemi aşağıdaki adımlarla gerçekleştirilmelidir:
+Referenz-Layout-Plan: **1726050-ALPER-KNV 30 LAYOUT.pdf**
 
-1. Makine nihai konumuna yerleştirildikten sonra su terazisi, makine gövdesinin hem boyuna hem enine eksenine alınarak eğim kontrol edilir.
-2. Sapma tespit edilmesi durumunda makine ayaklarının yüksekliği regüle edilerek düzeltme yapılır.
-3. Düzeltme sonrasında ölçüm her iki eksende tekrarlanır ve makine terazide olduğu doğrulanana kadar işlem sürdürülür.
-4. Teraziye alma tamamlandıktan sonra tüm ayak somunları karşı somun ile kilitlenerek sabitlenir.
+<!-- FOTO: Aufstellungsbereich — Freiräume markiert -->
+![Aufstellungsbereich — Freiraumplan](../../assets/FOTO-5-2-0-kurulum-alani.png)
 
-## 5.2.3. Zemine Sabitleme (Ankraj)
+---
 
-VDL serisi, normal çalışma koşullarında zemine ankraj gerektirmeyecek ağırlık ve titreşim profiline sahiptir.
+## 5.2.2. Richtungsdefinitionen und Aufstellung
 
-## 5.2.4. Bakım ve Erişim Boşlukları
+Die Maschine ist nach folgenden Richtungen auszurichten:
 
-Makinenin çevresinde; rutin bakım, temizlik ve teknik müdahale operasyonlarının güvenli biçimde gerçekleştirilebilmesi için aşağıdaki minimum boşluklar bırakılmalıdır:
+| Bezeichnung | Richtung |
+|-------------|----------|
+| Bedienseite | Rechts |
+| Beschickungsseite (Einlauf) | Links |
+| Entnahmeseite (Auslauf) | Rechts |
+| Förderband-Flussrichtung | Links → Rechts |
 
-| Konum | Minimum Boşluk |
-|---|:---:|
-| Giriş tarafı (yükleme) | 1000 mm |
-| Çıkış tarafı (boşaltma / kurutma ünitesi erişimi) | 1000 mm |
-| Sağ yan (kontrol panosu tarafı) | 1000 mm |
-| Sol yan | 1000 mm |
-| Üst (pompa ve tank bakımı) | 3000 mm |
+Teile werden von links verladen und rechts entnommen. HMI-Panel und Elektroschrank sind von der Bedienseite (rechts) zugänglich. Beim Transport darf ein Kran **unter keinen Umständen** verwendet werden; für Gabelstapler-Transport sind die Profile unter der Maschine zu verwenden.
 
-> **ÖNEMLİ UYARI:** Belirtilen boşluklar minimum değerler olup mümkün olan durumlarda daha geniş çalışma alanı sağlanması tavsiye edilir.
+| Parameter | Wert |
+|-----------|------|
+| Schwerpunkt | Mitte des Maschinenförderbandes |
+| Transportgewicht (montiert) | 1300 kg |
+
+<!-- FOTO: Maschinenorientierung — Beschickung links, Entnahme rechts -->
+![Richtungsdefinitionen](../../assets/FOTO-5-2-1-yon-tanimlari.png)
+
+---
+
+## 5.2.3. Nivellierung und Ausrichtung
+
+| Parameter | Wert |
+|-----------|------|
+| Nivelliermechanismus | Verstellbare Füße |
+| Ausrichtungstoleranz | 0,5 mm |
+
+### Positionierungsverfahren
+
+1. Die Maschine wird mit Gabelstapler zur Endposition gebracht und auf den Boden gestellt.
+2. Mit **verstellbaren Füßen** wird die Maschine **waagerecht** ausgerichtet.
+3. Die Ausrichtungstoleranz darf **0,5 mm** nicht überschreiten.
+4. Beide Achsen mit Wasserwaage oder gleichwertigem Messgerät prüfen.
+5. Bei Abweichung Fußhöhen anpassen und Messung wiederholen.
+
+Prüffrage mechanische Installation: *Ist die Maschine waagerecht?*
+
+<!-- FOTO: Verstellbarer Fuß — Nivellierungsdetail -->
+![Verstellbarer Fuß — Nivellierung](../../assets/FOTO-5-2-2-seviye-ayari.png)
+
+---
+
+## 5.2.4. Wartungszugang
+
+Beim Positionieren darf der Wartungszugang nicht blockiert werden:
+
+| Bereich | Zugang |
+|---------|--------|
+| Maschinenrückseite | Sämtliche Abdeckungen sind abnehmbar und zugänglich |
+
+An der Maschinenrückseite ist ein Mindestfreiraum von **1000 mm** einzuhalten.
+
+<!-- FOTO: Maschinenrückseite — Wartungsabdeckungen und Zugangsfreiraum -->
+![Wartungszugang — hinten](../../assets/FOTO-5-2-3-bakim-erisim.png)

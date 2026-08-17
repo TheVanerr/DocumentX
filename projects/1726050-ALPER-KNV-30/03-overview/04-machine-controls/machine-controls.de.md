@@ -1,38 +1,114 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 3.4. Maschinenbedienung und Steuerung
 
-# 3.4. Makine Kontrolleri
+Dieser Abschnitt beschreibt den Elektroschrank, die HMI-Bedienoberfläche, das SPS-Automatisierungssystem, Start/Stopp-Funktionen, Signalleuchten sowie Alarm-/Fernzugriffsfunktionen der Maschine KNV 30 3000 2B.
 
-Bu bölüm, Dolfin Industrial Washing Systems kontrol panosu üzerinde yer alan tüm şalter, buton, dijital gösterge ve sinyal lambalarının işlevlerini tanımlar. Operatörün makineyi güvenli ve verimli bir şekilde kullanabilmesi için aşağıdaki donanımların görevlerini eksiksiz bilmesi şarttır.
+---
 
-![Kontrol Panosu Butonları](../assets/vdl/3/3-4-controls.svg)
+## 3.4.1. Steuerschrank — Allgemeiner Aufbau
 
-**1. YIKAMA ISITICI (Washing Heater - Siyah Döner Anahtar + Kırmızı LED Ekran)**
-Yıkama haznesi ısıtıcısının devreye alınmasını ve çalışma sıcaklığının izlenmesini sağlar. Döner anahtar saat yönünde çevrilerek ısıtıcı aktif hale getirilir. Yanındaki dijital gösterge, haznedeki anlık su sıcaklığını santigrat derece (°C) cinsinden sürekli olarak görüntüler. Döner anahtar kapalı (0) konumunda iken ısıtıcı devre dışıdır.
+| Parameter | Wert |
+|-----------|------|
+| Hauptsteuerschrank — Position | Am Elektroschrank |
+| Schrank-Schutzart (IP) | IP55 |
+| Schrankabmessungen (B × H × T) | 800 × 1200 × 300 mm |
+| Hauptschalter — Position | Am Elektroschrank |
+| Hauptschalter | 100 A, Schneider |
 
-**2. YIKAMA POMPASI (Wash Pump - Siyah Döner Anahtar + Pilot Lamba)**
-Yıkama sıvısını hazne içinde dolaştıran pompanın çalışma komutunu verir. Döner anahtar açık konuma getirildiğinde pompa devreye girer. Yanındaki gri/beyaz pilot lamba, pompa devresinin aktif olduğunu teyit eder; lamba sönükse pompa çalışmıyor demektir.
+Der Elektroschrank enthält Stromverteilung, Motorschutz, Automatisierungskomponenten (SPS, HMI) und Signalleuchten.
 
-**3. KURUTMA ISITICI (Drying Heater - Siyah Döner Anahtar + Kırmızı LED Ekran)**
-Kurutma bölümü ısıtıcısını devreye alır. Yanındaki dijital gösterge, kurutma haznesindeki anlık sıcaklığı santigrat derece (°C) cinsinden görüntüler. Hedeflenen sıcaklığa ulaşıldığında sistem rezistansları otomatik olarak kapatır; sıcaklık düştüğünde tekrar devreye alır. Döner anahtar kapalı (0) konumunda iken ısıtıcı devre dışıdır.
+<!-- FOTO: Elektroschrank — Gesamtansicht, Tür geöffnet -->
+![Steuerschrank Gesamtansicht](../../assets/FOTO-3-4-0-kontrol-panosu.png)
 
-**4. KURUTMA FANI (Drying Fan - Siyah Döner Anahtar + Pilot Lamba)**
-Kurutma haznesi içinde sıcak havayı sirküle eden fanı çalıştırır. Döner anahtar açık konuma getirildiğinde fan devreye girer. Yanındaki gri/beyaz pilot lamba, fan motorunun enerjili durumda olduğunu gösterir.
+---
 
-**5. TAMBUR (Drum - Siyah Döner Anahtar + Pilot Lamba)**
-Yıkama tamburunun dönüş hareketini başlatır. Döner anahtar açık konuma getirildiğinde tambur motoru devreye girer. Yanındaki gri/beyaz pilot lamba, tambur motorunun enerjili olduğunu gösterir. Tamburu döndürmeden önce kapağın tam olarak kapandığından emin olunuz.
+## 3.4.2. HMI-Bedienoberfläche
 
-**6. YAĞ AYIRICI (Oil Separator - Siyah Döner Anahtar + Pilot Lamba)**
-Yıkama sıvısının yüzeyinde biriken endüstriyel yağları ve katı partikülleri mekanik olarak sistemden uzaklaştıran üniteyi kontrol eder. Yanındaki gri/beyaz pilot lamba, ünite çalışırken yanar. Yıkama döngüsü aktif değilken (dinlenme durumunda) çalıştırılması önerilir.
+| Parameter | Wert |
+|-----------|------|
+| HMI-Bildschirmgröße | 7" |
+| HMI Marke / Modell | SIMATIC HMI KTP700 Basic PN (6AV2123-2GB03-0AX0) |
+| Start / Stopp — Position | Digitale Taste auf HMI-Oberfläche |
+| Bedienpanel-Sprachen | Türkisch, Englisch, Deutsch |
+| Passwortschutz | Auf der HMI-Oberfläche ist ein Passwort vorhanden |
 
-**7. YIKAMA SEVİYESİ (Washing Level - Kırmızı Pilot Lamba)**
-Yıkama tankındaki sıvı seviyesini izleyen sinyal göstergesidir. Lamba yandığında sıvı seviyesinin güvenli çalışma sınırlarının üzerinde olduğunu belirtir. Lamba söndüğünde tank sıvı seviyesi kritik minimumun altına düşmüş demektir; bu durumda sisteme sıvı ikmali yapılmalı ve işleme devam edilmemelidir.
+Auf der HMI-**Betriebsseite** stehen Waschen, Spülen, Trocknen 1, Trocknen 2 und Abluft zur Verfügung; der Bediener kann diese Funktionen nach Bedarf ein-/ausschalten und die Maschine starten. **Handbetrieb** ist nicht vorhanden.
 
-> **ÖNEMLİ UYARI:** Yıkama seviyesi lambası sönük olduğunda makine çalıştırılmamalıdır. Susuz çalışan rezistanslar ve pompa telafi edilemez mekanik hasara uğrar. Sıvı seviyesi güvenli sınırlara döndükten sonra operasyona devam edilebilir.
+Auf der HMI-**Handseite** werden Luft- und Wasseranschlussstatus überwacht; nach Herstellung der Verbindung leuchtet die entsprechende Anzeige **grün**.
 
-**8. RESET (Donanımsal Onay - Mavi Buton)**
-Makinenin yeniden başlama (restart) korumasını onaylayan fiziksel güvenlik butonudur. Acil Stop devreye girdiğinde veya bir arıza nedeniyle sistem kilitlendiğinde, tehlike ortadan kalktıktan sonra Acil Stop kilidi açılsa dahi sistem otomatik olarak yeniden çalışmaz. Operatörün, sistemi kasıtlı ve bilinçli olarak yeniden yetkilendirmek için bu butona basması zorunludur.
+Über die HMI-**Einstellseite** können Temperatur, Datum/Uhrzeit und Sprache eingestellt werden.
 
-**9. ACİL STOP (Emergency Stop - Sarı Zemin/Kırmızı Mantar Başlık)**
-Tehlike anında makinenin tüm hareketli parçalarını ve güç tüketen sistemlerini (pompalar, ısıtıcılar, motorlar) anında durdurur. Butona basıldığında mekanik olarak kilitlenir. Sistemi tekrar devreye alabilmek için kilitli butonun ¼ tur saat yönünde döndürülerek serbest bırakılması ve ardından mavi "Reset" butonuna basılarak güvenlik devresinin donanımsal olarak onaylanması gerekir.
+<!-- FOTO: HMI-Bildschirm — Betriebsseite -->
+![HMI Betriebsseite](../../assets/FOTO-3-4-1-hmi-calisma.png)
 
-> **ÖNEMLİ UYARI:** Acil Stop butonu standart bir makine durdurma mekanizması değildir ve rutin operasyonlar sırasında makineyi kapatmak için kullanılmamalıdır. Bu donanım yalnızca can güvenliğini veya sistem bütünlüğünü tehdit eden acil durumlarda enerjiyi anında kesmek için tasarlanmıştır.
+<!-- FOTO: HMI-Bildschirm — Handseite (Luft/Wasser-Status) -->
+![HMI Handseite](../../assets/FOTO-3-4-2-hmi-manuel.png)
+
+---
+
+## 3.4.3. SPS und E/A-Infrastruktur
+
+| Parameter | Wert |
+|-----------|------|
+| SPS Marke / Modell | SIEMENS SIMATIC S7-1200 |
+| SPS-CPU-Modell | S7-1200 CPU 1215C DC/DC/DC (6ES7215-1AG40-0XB0) |
+| E/A-Modul — Übersicht | 36 Eingänge / 24 Ausgänge |
+| Fieldbus / Protokoll | Profinet |
+
+Encoder-/Feedback-Einstellungen sind im SPS-Programm integriert; die Einstellung ist durch den Hersteller vorzunehmen.
+
+<!-- FOTO: SPS-Module — Schrankinnenseite -->
+![SPS-Module](../../assets/FOTO-3-4-3-plc-modul.png)
+
+---
+
+## 3.4.4. Betriebsarten, Start/Stopp und Not-Halt
+
+| Parameter | Wert |
+|-----------|------|
+| Betriebsartwahlschalter | Automatik / Wartung |
+| Handbetrieb | Nicht vorhanden |
+| Schritt-/Tippbetrieb | Nicht vorhanden |
+| Bedingungen für Betriebsartwechsel | Nicht vorhanden |
+| Jog-/Tipp-Tasten | Nicht vorhanden |
+
+**Wartungsbetrieb:** Es gibt keinen separaten Wartungsmodus. Für Wartungsarbeiten dürfen Abdeckungen erst nach Abschaltung der Maschine geöffnet werden; bei abgeschalteter Spannung ist das **LOTO-Verfahren** anzuwenden.
+
+**Not-Halt-Stellen (4 Stück):**
+1. Am Elektroschrank
+2. Rechts am Förderband am Maschineneinlauf
+3. Links am Förderband am Maschineneinlauf
+4. Links am Förderband am Maschinenauslauf
+
+Bei Betätigung des Not-Halt stoppt **jede Funktion der Maschine**. Reset: Nach Freigabe des Not-Halt-Tasters und Bestätigung, dass die Gefahr behoben ist, Reset-Taste am Schranketikett drücken, bis die Leuchte aufleuchtet.
+
+<!-- FOTO: Not-Halt-Taster — Ein- und Auslaufstellen -->
+![Not-Halt-Stellen](../../assets/FOTO-3-4-4-acil-stop.png)
+
+---
+
+## 3.4.5. Signalleuchten (Signalelement)
+
+| Farbe | Bedeutung |
+|-------|-----------|
+| Rot | Alarm |
+| Gelb | Maschine betriebsbereit |
+| Grün | Maschine in Betrieb |
+
+Das Signalelement zeigt dem Bediener den aktuellen Maschinenstatus visuell an. Bei Alarm leuchtet die rote Lampe.
+
+<!-- FOTO: Signalelement — Maschinenoberseite -->
+![Signalelement](../../assets/FOTO-3-4-5-tepe-lambasi.png)
+
+---
+
+## 3.4.6. Alarm, Rezept und Fernzugriff
+
+| Funktion | Verhalten |
+|----------|-----------|
+| Alarmbildschirm | Alarmbildschirm ist auf der HMI-Oberfläche vorhanden; bei Alarm leuchtet das Signalelement rot |
+| Rezept- / Programmspeicher | Keine Rezeptbegrenzung |
+| Trend- / Log-Speicherdauer | [EKSİK] |
+| Fernzugriff | Ja — Secomea-Modul |
+
+<!-- FOTO: HMI-Alarmbildschirm -->
+![HMI-Alarmbildschirm](../../assets/FOTO-3-4-6-hmi-alarm.png)

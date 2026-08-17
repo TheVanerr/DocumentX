@@ -1,39 +1,130 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 5.1. Maschinenmontage
 
-# 5.1. Makine Montajı
+Dieser Abschnitt beschreibt alle Montageschritte — vom Transport der Maschine KNV 30 3000 2B zum Aufstellungsort über das Auspacken, das Aufstellen auf dem Boden, das Nivellieren mit verstellbaren Füßen bis hin zum Anschluss von Druckluft, Wasser und Stromversorgung.
 
-VDL serisi, tüm mekanik alt sistemleri fabrikada eksiksiz biçimde birleştirilmiş ve işlevsel olarak doğrulanmış hâlde sevk edilir. Son kullanıcı veya yetkili kurulum ekibi tarafından gerçekleştirilmesi gereken mekanik birleştirme (assembly) işlemi bulunmamaktadır. Saha kurulumu; konumlandırma, tambur eğim doğrulaması, opsiyonel birimlerin bağlantısı ile su ve elektrik tesisatından ibarettir.
+Die Montage dauert schätzungsweise **1 Tag** und wird von einem **1-köpfigen** Team durchgeführt. Für Transport und Aufstellung ist ein **Gabelstapler** zu verwenden; beim Transport der Maschine darf ein **Kran unter keinen Umständen** eingesetzt werden. Der Transport erfolgt mit Gabelstaplerm-Gabeln; die Profile unter der Maschine dienen als Gabelzugang. Transportgewicht (montiert): **1300 kg** — die Maschine ist ohne Demontage einzelner Teile zu transportieren.
 
-## 5.1.1. Montaj Prosedürleri ve Gereksinimler
+---
 
-### Konumlandırma
+## 5.1.1. Montagevorbereitung
 
-Makine, forklift veya transpalet ile nihai konumuna taşınarak düz ve yük taşıma kapasitesi yeterli bir beton zemin üzerine yerleştirilmelidir. Zemin taşıma kapasitesi gereksinimleri için Bölüm 4'teki teknik veriler esas alınmalıdır.
+Vor Beginn der Montage müssen folgende Bedingungen erfüllt sein:
 
-### Makinenin Teraziye Alınması
+| Parameter | Anforderung |
+|-----------|-------------|
+| Mindestgröße Montagefläche | 5 m × 3 m |
+| Bodenebenheit-Toleranz | 0,5 mm/m |
+| Bodenfestigkeit | Bodenoberfläche muss hart und eben sein |
+| Erforderliche Ausrüstung | Gabelstapler |
+| Verpackungsart | Container |
+| Transporttemperatur | +10°C – +30°C |
+| Transportumgebung | Keine Feuchtigkeit oder korrosive Stoffe |
 
-VDL serisinde parçaların tambur boyunca giriş tarafından çıkış tarafına düzenli biçimde ilerlemesi, tambur içindeki sonsuz helisel vida mekanizması tarafından sağlanır. Bu yapı sayesinde parça ilerlemesi makine eğimine bağlı değildir; ancak makinenin yatay düzlemde tam olarak terazide konumlandırılması, tamburun düzgün çalışması ve yatak yüklerinin dengeli dağılması açısından kritik önem taşır. Kurulum ekibi, makineyi yerine yerleştirdikten sonra su terazisi ile yatay düzlemi her iki eksende doğrulamalıdır. Sapma tespit edilmesi durumunda makine ayaklarının yüksekliği regüle edilerek teraziye alınmalı ve ölçüm tekrarlanmalıdır.
+Die Maschine wird in Containerverpackung geliefert. Beim Transport zum Aufstellungsort ist der Gabelstapler-Gabelzugang (Profile unter der Maschine) zu verwenden.
 
-## 5.1.2. Özel Alet ve Ekipman Gereksinimleri
+<!-- FOTO: Maschinentransport mit Gabelstapler — Gabelzugang über Unterprofile -->
+![Gabelstapler-Transport](../../assets/FOTO-5-1-0-forklift-tasima.png)
 
-Kurulum sırasında aşağıdaki ekipman ve aletlerin hazır bulundurulması gerekmektedir:
+---
 
-- **Forklift veya transpalet:** Makinenin nihai konumuna taşınması için. Gerekli kaldırma kapasitesi için model bazlı ağırlık değerleri teknik veri sayfasından kontrol edilmelidir.
-- **Su terazisi:** Tambur eğim açısının doğrulanması için.
+## 5.1.2. Montageschritte
 
-## 5.1.3. Ambalaj ve Koruyucu Malzemelerin Sökülmesi
+Die Montage ist in folgender Reihenfolge durchzuführen:
 
-Sevkiyat sırasında makine; naylon örtü, ahşap palet ve gerekli görülen noktalarda nakliye sabitleme bağlantı elemanlarıyla korunmaktadır. Konumlandırma işlemi tamamlandıktan sonra tüm ambalaj malzemeleri aşağıdaki sıraya göre uzaklaştırılmalıdır:
+| Schritt | Vorgang | Detail |
+|:-------:|---------|--------|
+| 1 | Maschine zum Aufstellungsort gebracht und abgeladen | Transport zur Endposition mit Gabelstapler |
+| 2 | Maschinenverpackung entfernt | Entfernung der Containerverpackung |
+| 3 | Maschine aufgestellt; verstellbare Füße nivelliert | Ausrichtungstoleranz: **0,5 mm** |
+| 4 | Druckluftanschluss hergestellt | **6 bar**, **3/4"**-Anschluss |
+| 5 | Wasseranschluss hergestellt | **1 bar**, **1/2"**-Anschluss |
+| 6 | Drehstromversorgung angeschlossen | **380 V**, **50 Hz** Leitung für **50 kW / 100 A** installierte Leistung |
+| 7 | Maschinenstrom am Schrank eingeschaltet | Hauptschalter — Elektroschrank |
+| 8 | Phasenfolge geprüft | Phasenfolgerelais; bei falscher Folge zwei Phasen tauschen |
+| 9 | Maschine betriebsbereit | Abschnitt 5.5 Installationsprüfungen abschließen |
 
-1. Naylon örtü ve bağlama elemanları kesilerek çıkarılır; kesici aletlerin makine yüzeyine temas etmemesine dikkat edilmelidir.
-2. Nakliye sabitleme elemanları (varsa) sökülür ve makine yüzeyinde artık kalmadığı kontrol edilir.
-3. Ahşap palet forklift yardımıyla uzaklaştırılır.
+> **Hinweis:** In der DATA-Datei sind Wasser- und Elektroanschluss unter derselben Schrittnummer (Schritt 5) aufgeführt. In dieser Anleitung wird die Anschlussreihenfolge beibehalten und in Schritt 5 (Wasser) und Schritt 6 (Elektrik) getrennt nummeriert.
 
-Tüm ambalaj malzemeleri yerel çevre mevzuatları ve atık yönetimi yönetmeliklerine uygun biçimde bertaraf edilmelidir.
+### Schritt 3 — Nivellierung
 
-## 5.1.4. Montaj Sonrası Mekanik Kontroller
+Die Maschine wird auf dem System mit **verstellbaren Füßen** aufgestellt. Die Füße sind so einzustellen, dass die Maschine **waagerecht** steht. Ausrichtungstoleranz: **0,5 mm**. Prüffrage mechanische Installation: *Ist die Maschine waagerecht?*
 
-Elektrik, su ve drenaj bağlantıları yapılmadan önce aşağıdaki kontroller gerçekleştirilmelidir:
+<!-- FOTO: Verstellbare Füße — Nivellierung -->
+![Verstellbare Füße — Nivellierung](../../assets/FOTO-5-1-1-ayarlanabilir-ayak.png)
 
-- Makine her iki eksende su terazisi ile terazide olduğu doğrulanır.
-- Sevkiyat sabitleme elemanlarından hiçbirinin makinede kalmadığı doğrulanır.
+### Schritt 4 — Druckluftanschluss
+
+| Parameter | Wert |
+|-----------|------|
+| Druck | 6 bar |
+| Anschluss | 3/4" |
+| Regler-Einstellung | 6 bar |
+
+Nach dem Anschluss muss die Luftanzeige auf der HMI-Handseite **grün** leuchten.
+
+<!-- FOTO: Druckluftanschlussstelle — 3/4" -->
+![Druckluftanschluss](../../assets/FOTO-5-1-2-hava-baglantisi.png)
+
+### Schritt 5 — Wasseranschluss
+
+| Parameter | Wert |
+|-----------|------|
+| Druck | 1 bar |
+| Anschluss | 1/2" |
+| Wasserqualität | Leitungswasser oder aufbereitetes Wasser |
+| Wassertemperatur | +10°C – +70°C |
+
+Nach dem Anschluss muss die Wasseranzeige auf der HMI-Handseite **grün** leuchten.
+
+<!-- FOTO: Wasseranschlussstelle — 1/2" -->
+![Wasseranschluss](../../assets/FOTO-5-1-3-su-baglantisi.png)
+
+### Schritt 6 — Elektroanschluss
+
+| Parameter | Wert |
+|-----------|------|
+| Spannung | 380 V |
+| Frequenz | 50 Hz |
+| Phasen | 3 (Drehstrom) |
+| Installierte Leistung | 50 kW |
+| Maximaler Strom | 100 A |
+| Konfiguration | 3P+N+PE |
+| Hauptschalter | 100 A, Schneider |
+
+Der Elektroanschluss darf ausschließlich durch autorisiertes Elektrofachpersonal erfolgen.
+
+<!-- FOTO: Stromversorgungsanschluss — Schrankeingang -->
+![Stromversorgungsanschluss](../../assets/FOTO-5-1-4-elektrik-baglantisi.png)
+
+### Schritte 7–8 — Einschalten und Phasenprüfung
+
+1. Maschinenstrom wird **am Schrank** eingeschaltet.
+2. Phasenfolge wird über das **Phasenfolgerelais** geprüft.
+3. Ist die Phasenfolge falsch, **zwei Phasen tauschen** zur Korrektur.
+
+Checkliste elektrische Inbetriebnahme:
+- Gibt das Phasenschutzrelais einen Ausgang?
+- Liegt Spannung an der Maschine an?
+- Stoppt die Maschine bei Betätigung des Not-Halt?
+
+<!-- FOTO: Phasenfolgerelais — im Schrank -->
+![Phasenfolgerelais](../../assets/FOTO-5-1-5-faz-sira-role.png)
+
+---
+
+## 5.1.3. Montageabschluss
+
+In Schritt 9 wird die Maschine **betriebsbereit** gesetzt. Vor Inbetriebnahme sind die Prüfungen in folgenden Abschnitten abzuschließen:
+
+| Prüfung | Abschnitt |
+|---------|-----------|
+| Sicherheitsfunktionsprüfungen | 5.4 |
+| Installationsprüfung und Leerlauflauf (15 Min.) | 5.5 |
+
+Liste Sicherheitsfunktionsprüfung:
+- Stoppt die Maschine bei Betätigung des Not-Halt?
+- Ist die Maschine betriebsbereit?
+- Stoppt der RFID-Sensor die Maschine beim Öffnen der Abdeckungen?
+
+<!-- FOTO: Montage abgeschlossen — Maschine betriebsbereit -->
+![Montage abgeschlossen](../../assets/FOTO-5-1-6-montaj-tamamlandi.png)

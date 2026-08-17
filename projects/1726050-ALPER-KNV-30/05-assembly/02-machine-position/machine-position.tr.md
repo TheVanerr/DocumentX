@@ -1,42 +1,86 @@
-# 5.2. Makinenin Konumlandırılması
+# 5.2. Makine Konumlandırma
 
-## 5.2.1. Zemin Gereksinimleri ve Taşıma Kapasitesi
+Bu bölüm, KNV 30 3000 2B makinesinin kurulum alanındaki konumlandırılması, yön tayini, ayarlanabilir ayaklarla seviye alınması ve hizalama toleranslarına uyulması prosedürlerini tanımlar.
 
-VDL serisi, düz ve yeterli taşıma kapasitesine sahip betonarme bir zemin üzerine yerleştirilmelidir. Zemin yüzeyi, makine boyunca sürekli titreşim yükü oluşturabileceğinden çatlak, oyuk veya eğrilik içermemelidir. Model bazında minimum zemin taşıma kapasitesi gereksinimleri aşağıda verilmiştir:
+Konumlandırma işlemleri, Bölüm 5.1 montaj adımlarının **Adım 3** kapsamında gerçekleştirilir; bu bölümde detaylandırılmıştır.
 
-| Model | Makine Ağırlığı (kg) | Min. Zemin Kapasitesi (kg/m²) |
-|---|:---:|:---:|
-| VDL 40 2500 1B | 585 | 1000 |
-| VDL 40 3500 2B | 700 | 1200 |
-| VDL 40 4250 2B | 750 | 1400 |
-| VDL 60 5500 2B | 800 | 1600 |
-| VDL 80 6500 2B | 1000 | 2000 |
+---
 
-Mevcut zeminin bu gereksinimleri karşılayıp karşılamadığından emin olunamaması durumunda kurulum öncesinde yetkili bir inşaat mühendisine danışılmalıdır.
+## 5.2.1. Kurulum Alanı Gereksinimleri
 
-## 5.2.2. Teraziye Alma
+Makine yerleştirilmeden önce kurulum alanı aşağıdaki koşulları karşılamalıdır:
 
-Makinenin yatay düzlemde tam olarak terazide konumlandırılması; tamburun düzgün çalışması, yatak yüklerinin dengeli dağılması ve uzun vadeli mekanik ömür açısından kritik önem taşır. Teraziye alma işlemi aşağıdaki adımlarla gerçekleştirilmelidir:
+| Parametre | Gereksinim |
+|-----------|------------|
+| Montaj alanı min. boyut | 5 m × 3 m |
+| Zemin düzgünlük toleransı | 0,5 mm/m |
+| Zemin mukavemeti | Zemin yüzeyi sert ve düz olmalıdır |
+| Minimum etraf boşluğu — ön | 1000 mm |
+| Minimum etraf boşluğu — arka | 1000 mm |
+| Minimum etraf boşluğu — yan | 1000 mm |
+| Minimum tavan yüksekliği | 2500 mm |
 
-1. Makine nihai konumuna yerleştirildikten sonra su terazisi, makine gövdesinin hem boyuna hem enine eksenine alınarak eğim kontrol edilir.
-2. Sapma tespit edilmesi durumunda makine ayaklarının yüksekliği regüle edilerek düzeltme yapılır.
-3. Düzeltme sonrasında ölçüm her iki eksende tekrarlanır ve makine terazide olduğu doğrulanana kadar işlem sürdürülür.
-4. Teraziye alma tamamlandıktan sonra tüm ayak somunları karşı somun ile kilitlenerek sabitlenir.
+Referans yerleşim planı: **1726050-ALPER-KNV 30 LAYOUT.pdf**
 
-## 5.2.3. Zemine Sabitleme (Ankraj)
+<!-- FOTO: Kurulum alanı planı — etraf boşlukları işaretli -->
+![Kurulum alanı — boşluk planı](../../assets/FOTO-5-2-0-kurulum-alani.png)
 
-VDL serisi, normal çalışma koşullarında zemine ankraj gerektirmeyecek ağırlık ve titreşim profiline sahiptir.
+---
 
-## 5.2.4. Bakım ve Erişim Boşlukları
+## 5.2.2. Yön Tanımları ve Yerleşim
 
-Makinenin çevresinde; rutin bakım, temizlik ve teknik müdahale operasyonlarının güvenli biçimde gerçekleştirilebilmesi için aşağıdaki minimum boşluklar bırakılmalıdır:
+Makine aşağıdaki yönlere göre konumlandırılmalıdır:
 
-| Konum | Minimum Boşluk |
-|---|:---:|
-| Giriş tarafı (yükleme) | 1000 mm |
-| Çıkış tarafı (boşaltma / kurutma ünitesi erişimi) | 1000 mm |
-| Sağ yan (kontrol panosu tarafı) | 1000 mm |
-| Sol yan | 1000 mm |
-| Üst (pompa ve tank bakımı) | 3000 mm |
+| Tanım | Yön |
+|-------|-----|
+| Operatör tarafı | Sağ |
+| Besleme tarafı (giriş) | Sol |
+| Boşaltma tarafı (çıkış) | Sağ |
+| Konveyör akış yönü | Sol → Sağ |
 
-> **ÖNEMLİ UYARI:** Belirtilen boşluklar minimum değerler olup mümkün olan durumlarda daha geniş çalışma alanı sağlanması tavsiye edilir.
+Parçalar sol taraftan yüklenir, sağ taraftan alınır. HMI paneli ve elektrik panosu operatör tarafında (sağ) erişilebilir konumdadır. Makine taşınmasında vinç **kesinlikle kullanılmamalıdır**; forklift ile taşıma için makine altındaki profiller kullanılmalıdır.
+
+| Parametre | Değer |
+|-----------|-------|
+| Ağırlık merkezi | Makine konveyörünün ortası |
+| Taşıma ağırlığı (montajlı) | 1300 kg |
+
+<!-- FOTO: Makine yön tanımları — besleme sol, boşaltma sağ -->
+![Yön tanımları](../../assets/FOTO-5-2-1-yon-tanimlari.png)
+
+---
+
+## 5.2.3. Seviye Ayarı ve Hizalama
+
+| Parametre | Değer |
+|-----------|-------|
+| Seviye ayar mekanizması | Ayarlanabilir ayaklar |
+| Hizalama toleransı | 0,5 mm |
+
+### Konumlandırma prosedürü
+
+1. Makine forklift ile nihai konumuna getirilir ve zemine oturtulur.
+2. **Ayarlanabilir ayaklar** kullanılarak makine **terazide** olacak şekilde ayarlanır.
+3. Hizalama toleransı **0,5 mm**'yi aşmamalıdır.
+4. Su terazisi veya eşdeğer ölçüm aleti ile her iki eksende kontrol yapılır.
+5. Sapma tespit edilirse ayak yükseklikleri ayarlanır ve ölçüm tekrarlanır.
+
+Mekanik kurulum test kontrol sorusu: *Makine terzide mi?*
+
+<!-- FOTO: Ayarlanabilir ayak — seviye ayarı detay -->
+![Ayarlanabilir ayak — seviye](../../assets/FOTO-5-2-2-seviye-ayari.png)
+
+---
+
+## 5.2.4. Bakım Erişimi
+
+Konumlandırma sırasında bakım erişim bölgelerinin engellenmemesine dikkat edilmelidir:
+
+| Bölge | Erişim |
+|-------|--------|
+| Makine arkası | Kapakların tamamı sökülebilir ve erişilebilir |
+
+Makine arkasında minimum **1000 mm** boşluk bırakılmalıdır.
+
+<!-- FOTO: Makine arka taraf — bakım kapakları ve erişim boşluğu -->
+![Bakım erişim alanı — arka](../../assets/FOTO-5-2-3-bakim-erisim.png)

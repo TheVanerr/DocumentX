@@ -1,93 +1,73 @@
-<!-- ÇEVİRİ GEREKLİ → EN | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 3.5. Machine Layout
 
-# 3.5. Makine Yerleşim Planı
+This section defines the layout orientations, maintenance access zones, minimum clearances, transport restrictions, and centre of gravity information for the KNV 30 3000 2B machine.
 
-Bu bölüm, VDL serisi makinelerin genel dış boyutlarını, referans ölçü tanımlarını ve paket boyutlarını içerir. Kurulum alanı planlaması, nakliye organizasyonu ve zemin ankraj çalışmaları için bu verilerin eksiksiz değerlendirilmesi zorunludur.
+**Reference drawing:** `1726050-ALPER-KNV 30 LAYOUT.pdf`
 
----
+The layout drawing is available in the project assets folder: `1726050-ALPER-KNV 30 3000 2B PRO IDE LAYOUT.PDF`
 
-## 3.5.1. VDL 1B Yerleşim Planı
-
-![VDL 1B Yerleşim Planı](../assets/vdl/3/3-5-1-vdl1layout.png)
-
-### Referans Ölçü Tanımları
-
-| Sembol | Tanım |
-|:--------:|:-------:|
-| **W** | Toplam makine genişliği |
-| **W1** | Giriş/çıkış konveyör genişliği |
-| **L** | Toplam makine uzunluğu |
-| **L1** | Ana gövde uzunluğu |
-| **L2** | Giriş rampası uzunluğu |
-| **H** | Toplam makine yüksekliği |
-| **H1** | Ana gövde yüksekliği |
-| **H2** | Zemin boşluk yüksekliği |
-| **X / Y / Z** | Nakliye kasası boyutları (En / Boy / Yükseklik) |
-
-### Genel Boyutlar — VDL 1B
-
-| Boyut | Model: VDL 40 1B 2500 |
-|:-------:|:-----------------------:|
-| W | 1360 mm |
-| W1 | 600 mm |
-| L | 2620 mm |
-| L1 | 2000 mm |
-| L2 | 330 mm |
-| H | 1735 mm |
-| H1 | 1100 mm |
-| H2 | 725 mm |
-
-### Nakliye Kasası Boyutları — VDL 1B
-
-| Boyut | Ölçü |
-|:-------:|:------:|
-| X (En) | 770 mm |
-| Y (Boy) | 2760 mm |
-| Z (Yükseklik) | 2020 mm |
-
-> **NOT:** Brüt ağırlık (Gross Weight) değeri, makine konfigürasyonuna ve opsiyonel donanımlara bağlı olarak değişiklik gösterebilir. Kesin ağırlık bilgisi için teknik servis ile iletişime geçiniz.
+<!-- PHOTO: General layout plan — from layout drawing or top view -->
+![General layout plan](../../assets/FOTO-3-5-0-layout-genel.png)
 
 ---
 
-## 3.5.2. VDL 2B Yerleşim Planı
+## 3.5.1. Orientation Definitions and Operator Side
 
-![VDL 2B Yerleşim Planı](../assets/vdl/3/3-5-2-vdl2layout.png)
+| Definition | Direction / Location |
+|------------|---------------------|
+| Operator side | Right |
+| Feed side (infeed) | Left |
+| Discharge side (outfeed) | Right |
+| Conveyor flow direction | Left → Right |
 
-### Referans Ölçü Tanımları
+Parts are loaded from the left, pass through process zones along the conveyor, and are removed from the right. The operator accesses the HMI panel and main control elements from the right side.
 
-| Sembol | Tanım |
-|:--------:|:-------:|
-| **W** | Toplam makine genişliği |
-| **W1** | Giriş/çıkış konveyör genişliği |
-| **L** | Toplam makine uzunluğu |
-| **L1** | Ana gövde uzunluğu |
-| **H** | Toplam makine yüksekliği |
-| **H1** | Ana gövde yüksekliği |
-| **H2** | Zemin boşluk yüksekliği |
-| **X / Y / Z** | Nakliye kasası boyutları (En / Boy / Yükseklik) |
-
-### Genel Boyutlar — VDL 2B
-
-| Boyut | VDL 40 3500 2B | VDL 50 4250 2B | VDL 60 5500 2B |
-|:-------:|:----------------:|:----------------:|:----------------:|
-| W | 1435 mm | 1635 mm | 1835 mm |
-| W1 | 700 mm | 800 mm | 900 mm |
-| L | 3610 mm | 4630 mm | 5845 mm |
-| L1 | 3000 mm | 3800 mm | 5000 mm |
-| H | 1865 mm | 2260 mm | 2295 mm |
-| H1 | 1105 mm | 1375 mm | 1400 mm |
-| H2 | 725 mm | 810 mm | 875 mm |
-
-### Nakliye Kasası Boyutları — VDL 2B
-
-| Boyut | VDL 40 3500 2B | VDL 50 4250 2B | VDL 60 5500 2B |
-|:-------:|:----------------:|:----------------:|:----------------:|
-| X (En) | 1605 mm | 1805 mm | 2005 mm |
-| Y (Boy) | 3749 mm | 4770 mm | 5985 mm |
-| Z (Yükseklik) | 2162 mm | 2540 mm | 2575 mm |
-
-> **NOT:** Brüt ağırlık (Gross Weight) değeri, makine konfigürasyonuna ve opsiyonel donanımlara bağlı olarak değişiklik gösterebilir. Kesin ağırlık bilgisi için teknik servis ile iletişime geçiniz.
+<!-- PHOTO: Machine orientation — feed (left) and discharge (right) marked -->
+![Orientation definitions](../../assets/FOTO-3-5-1-yon-tanimlari.png)
 
 ---
 
-> **KURULUM UYARISI:** Yukarıdaki boyutlar, makine etrafında öngörülen asgari servis ve bakım mesafelerini içermemektedir. Kurulum alanı planlanırken makinenin her iki yanında en az **1000 mm**, arka kısmında en az **1000 mm** serbest alan bırakılması zorunludur. Tavan yüksekliği, toplam makine yüksekliğinin (H) en az **3000 mm** üzerinde olmalıdır.
+## 3.5.2. Minimum Clearances and Ceiling Height
+
+The following minimum clearances shall be provided when planning the installation area:
+
+| Zone | Minimum clearance |
+|------|-------------------|
+| Front | 1000 mm |
+| Rear | 1000 mm |
+| Side (both sides) | 1000 mm |
+| Ceiling height | 2500 mm |
+
+Minimum assembly area size: **5 m × 3 m**. Floor flatness tolerance: **0.5 mm/m**. Floor surface shall be **hard and level**.
+
+<!-- PHOTO: Installation area — clearance diagram -->
+![Clearances](../../assets/FOTO-3-5-2-etraf-bosluklari.png)
+
+---
+
+## 3.5.3. Maintenance Access Zones
+
+| Zone | Access |
+|------|--------|
+| Rear of machine | All covers are removable and accessible |
+
+For periodic maintenance, filter cleaning, and mechanical intervention, covers on the rear of the machine are removed to access internal components. During maintenance, machine power shall be isolated and **LOTO procedure** applied.
+
+<!-- PHOTO: Rear of machine — maintenance covers -->
+![Maintenance access covers](../../assets/FOTO-3-5-3-bakim-kapaklari.png)
+
+---
+
+## 3.5.4. Transport, Forklift and Centre of Gravity
+
+| Parameter | Value / Note |
+|-----------|--------------|
+| Crane use during transport | Shall not be used under any circumstances |
+| Forklift transport | Profiles under the machine shall be used |
+| Forklift fork entry | Yes |
+| Centre of gravity | Midpoint of machine conveyor |
+
+A crane shall **not be used under any circumstances** when transporting the machine. For forklift transport, the profiles under the machine shall be used. Moisture and corrosive substances shall not be present during transport.
+
+<!-- PHOTO: Forklift fork entry points — profiles under machine -->
+![Forklift transport points](../../assets/FOTO-3-5-4-forklift-noktalari.png)

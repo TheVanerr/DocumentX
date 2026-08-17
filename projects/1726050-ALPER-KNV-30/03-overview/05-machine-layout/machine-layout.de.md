@@ -1,93 +1,73 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 3.5. Maschinenlayout
 
-# 3.5. Makine Yerleşim Planı
+Dieser Abschnitt beschreibt die Layout-Orientierungen, Wartungszugangsbereiche, Mindestfreiräume, Transportbeschränkungen und Schwerpunktinformationen der Maschine KNV 30 3000 2B.
 
-Bu bölüm, VDL serisi makinelerin genel dış boyutlarını, referans ölçü tanımlarını ve paket boyutlarını içerir. Kurulum alanı planlaması, nakliye organizasyonu ve zemin ankraj çalışmaları için bu verilerin eksiksiz değerlendirilmesi zorunludur.
+**Referenzzeichnung:** `1726050-ALPER-KNV 30 LAYOUT.pdf`
 
----
+Die Layout-Zeichnung liegt im Projekt-Assets-Ordner vor: `1726050-ALPER-KNV 30 3000 2B PRO IDE LAYOUT.PDF`
 
-## 3.5.1. VDL 1B Yerleşim Planı
-
-![VDL 1B Yerleşim Planı](../assets/vdl/3/3-5-1-vdl1layout.png)
-
-### Referans Ölçü Tanımları
-
-| Sembol | Tanım |
-|:--------:|:-------:|
-| **W** | Toplam makine genişliği |
-| **W1** | Giriş/çıkış konveyör genişliği |
-| **L** | Toplam makine uzunluğu |
-| **L1** | Ana gövde uzunluğu |
-| **L2** | Giriş rampası uzunluğu |
-| **H** | Toplam makine yüksekliği |
-| **H1** | Ana gövde yüksekliği |
-| **H2** | Zemin boşluk yüksekliği |
-| **X / Y / Z** | Nakliye kasası boyutları (En / Boy / Yükseklik) |
-
-### Genel Boyutlar — VDL 1B
-
-| Boyut | Model: VDL 40 1B 2500 |
-|:-------:|:-----------------------:|
-| W | 1360 mm |
-| W1 | 600 mm |
-| L | 2620 mm |
-| L1 | 2000 mm |
-| L2 | 330 mm |
-| H | 1735 mm |
-| H1 | 1100 mm |
-| H2 | 725 mm |
-
-### Nakliye Kasası Boyutları — VDL 1B
-
-| Boyut | Ölçü |
-|:-------:|:------:|
-| X (En) | 770 mm |
-| Y (Boy) | 2760 mm |
-| Z (Yükseklik) | 2020 mm |
-
-> **NOT:** Brüt ağırlık (Gross Weight) değeri, makine konfigürasyonuna ve opsiyonel donanımlara bağlı olarak değişiklik gösterebilir. Kesin ağırlık bilgisi için teknik servis ile iletişime geçiniz.
+<!-- FOTO: Allgemeiner Layout-Plan — aus Layout-Zeichnung oder Draufsicht -->
+![Allgemeiner Layout-Plan](../../assets/FOTO-3-5-0-layout-genel.png)
 
 ---
 
-## 3.5.2. VDL 2B Yerleşim Planı
+## 3.5.1. Richtungsdefinitionen und Bedienseite
 
-![VDL 2B Yerleşim Planı](../assets/vdl/3/3-5-2-vdl2layout.png)
+| Bezeichnung | Richtung / Position |
+|-------------|---------------------|
+| Bedienseite | Rechts |
+| Beschickungsseite (Einlauf) | Links |
+| Entnahmeseite (Auslauf) | Rechts |
+| Förderband-Flussrichtung | Links → Rechts |
 
-### Referans Ölçü Tanımları
+Teile werden von links verladen, durchlaufen entlang des Förderbandes die Prozesszonen und werden rechts entnommen. Der Bediener greift von rechts auf HMI-Panel und Hauptbedienelemente zu.
 
-| Sembol | Tanım |
-|:--------:|:-------:|
-| **W** | Toplam makine genişliği |
-| **W1** | Giriş/çıkış konveyör genişliği |
-| **L** | Toplam makine uzunluğu |
-| **L1** | Ana gövde uzunluğu |
-| **H** | Toplam makine yüksekliği |
-| **H1** | Ana gövde yüksekliği |
-| **H2** | Zemin boşluk yüksekliği |
-| **X / Y / Z** | Nakliye kasası boyutları (En / Boy / Yükseklik) |
-
-### Genel Boyutlar — VDL 2B
-
-| Boyut | VDL 40 3500 2B | VDL 50 4250 2B | VDL 60 5500 2B |
-|:-------:|:----------------:|:----------------:|:----------------:|
-| W | 1435 mm | 1635 mm | 1835 mm |
-| W1 | 700 mm | 800 mm | 900 mm |
-| L | 3610 mm | 4630 mm | 5845 mm |
-| L1 | 3000 mm | 3800 mm | 5000 mm |
-| H | 1865 mm | 2260 mm | 2295 mm |
-| H1 | 1105 mm | 1375 mm | 1400 mm |
-| H2 | 725 mm | 810 mm | 875 mm |
-
-### Nakliye Kasası Boyutları — VDL 2B
-
-| Boyut | VDL 40 3500 2B | VDL 50 4250 2B | VDL 60 5500 2B |
-|:-------:|:----------------:|:----------------:|:----------------:|
-| X (En) | 1605 mm | 1805 mm | 2005 mm |
-| Y (Boy) | 3749 mm | 4770 mm | 5985 mm |
-| Z (Yükseklik) | 2162 mm | 2540 mm | 2575 mm |
-
-> **NOT:** Brüt ağırlık (Gross Weight) değeri, makine konfigürasyonuna ve opsiyonel donanımlara bağlı olarak değişiklik gösterebilir. Kesin ağırlık bilgisi için teknik servis ile iletişime geçiniz.
+<!-- FOTO: Maschinenorientierung — Beschickung (links) und Entnahme (rechts) markiert -->
+![Richtungsdefinitionen](../../assets/FOTO-3-5-1-yon-tanimlari.png)
 
 ---
 
-> **KURULUM UYARISI:** Yukarıdaki boyutlar, makine etrafında öngörülen asgari servis ve bakım mesafelerini içermemektedir. Kurulum alanı planlanırken makinenin her iki yanında en az **1000 mm**, arka kısmında en az **1000 mm** serbest alan bırakılması zorunludur. Tavan yüksekliği, toplam makine yüksekliğinin (H) en az **3000 mm** üzerinde olmalıdır.
+## 3.5.2. Mindestfreiräume und Raumhöhe
+
+Bei der Planung des Aufstellungsbereichs sind folgende Mindestfreiräume einzuhalten:
+
+| Bereich | Mindestfreiraum |
+|---------|-----------------|
+| Vorn | 1000 mm |
+| Hinten | 1000 mm |
+| Seitlich (beide Seiten) | 1000 mm |
+| Raumhöhe | 2500 mm |
+
+Mindestgröße Montagefläche: **5 m × 3 m**. Bodenebenheit-Toleranz: **0,5 mm/m**. Der Boden muss **hart und eben** sein.
+
+<!-- FOTO: Aufstellungsbereich — Freiraumschema -->
+![Freiräume](../../assets/FOTO-3-5-2-etraf-bosluklari.png)
+
+---
+
+## 3.5.3. Wartungszugangsbereiche
+
+| Bereich | Zugang |
+|---------|--------|
+| Maschinenrückseite | Sämtliche Abdeckungen sind abnehmbar und zugänglich |
+
+Für periodische Wartung, Filterreinigung und mechanische Eingriffe werden die Abdeckungen an der Maschinenrückseite abgenommen, um interne Komponenten zu erreichen. Während der Wartung ist die Maschine spannungsfrei zu schalten und das **LOTO-Verfahren** anzuwenden.
+
+<!-- FOTO: Maschinenrückseite — Wartungsabdeckungen -->
+![Wartungszugangsabdeckungen](../../assets/FOTO-3-5-3-bakim-kapaklari.png)
+
+---
+
+## 3.5.4. Transport, Gabelstapler und Schwerpunkt
+
+| Parameter | Wert / Hinweis |
+|-----------|----------------|
+| Kranverwendung beim Transport | Darf unter keinen Umständen erfolgen |
+| Gabelstapler-Transport | Profile unter der Maschine sind zu verwenden |
+| Gabelstapler-Gabelzugang | Ja |
+| Schwerpunkt | Mitte des Maschinenförderbandes |
+
+Beim Transport der Maschine darf ein Kran **unter keinen Umständen** verwendet werden. Für Gabelstapler-Transport sind die Profile unter der Maschine zu verwenden. Während des Transports dürfen Feuchtigkeit und korrosive Stoffe nicht vorhanden sein.
+
+<!-- FOTO: Gabelstapler-Gabelzugang — Profile unter der Maschine -->
+![Gabelstapler-Transportpunkte](../../assets/FOTO-3-5-4-forklift-noktalari.png)
