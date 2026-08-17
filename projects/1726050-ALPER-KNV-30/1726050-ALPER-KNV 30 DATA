@@ -8,7 +8,6 @@
 # Onaylayan:
 # =============================================================================
 
-
 # =============================================================================
 # 0 — PROJE VE MAKİNE KİMLİĞİ
 # =============================================================================
@@ -44,9 +43,8 @@ Acil stop sonrası makine durumu: Acil Stopa basıldığında makinedeki her fon
 [GUVENLIK_CIT]
 Emniyet kapısı / bariyer sayısı: 0
 Kapı switch tipi / marka: RFID Güvenlik Sensörü var.
-Makine stop kategorisi (Cat.):
+Makine stop kategorisi (Cat.):CAT3
 Işık perdesi var mı (Evet/Hayır — tip / marka): Hayır
-
 
 # =============================================================================
 # 03 — GENEL BAKIŞ (overview)
@@ -58,10 +56,8 @@ Işık perdesi var mı (Evet/Hayır — tip / marka): Hayır
 Makinenin ana işlevi: Parça üzerindeki endüstriyel işlemlerden kalan yağı ve kirliliği temizlemek
 Makine tipi (ör. dolum / paketleme / yıkama / konveyör): Konveyör 
 Proses akışı özeti (adım adım): Yıkama,Durulama,Kurutma
-Makine bileşenleri listesi (ana modüller): 
+Makine bileşenleri listesi (ana modüller): Konveyör,Yıkama Pompası,Durulama Pompası,Yağ Sıyırıcı,Kurutma Fanı,Elektrik Panosu,HMI,PLC,Ana şalter,Sigorta
 Opsiyon / varyant listesi (bu projeye özel):
-Makine fotoğraf / çizim referans dosyası:
-Genel görünüm açıklaması:
 
 # --- 03.2 Amaçlanan kullanım (intended-use) ---
 
@@ -81,12 +77,9 @@ Yetkinlik / eğitim gereksinimi:İşletme ve bakım personeli eğitimi,makine ku
 Dış genişlik W (mm):1730
 Dış uzunluk L (mm):3770
 Dış yükseklik H — normal (mm):2122
-Boş ağırlık — kuru (kg):
-Çalışma ağırlığı — dolu (kg):
-Zemin yükü / nokta yük (kg/m² veya kN):
-Şase tipi (sabit ayak / ayarlanabilir ayak / ankraj):
-Ankraj delik sayısı / çap / derinlik:
-Taşıma için demonte parça listesi:
+Boş ağırlık — kuru (kg):1300
+Çalışma ağırlığı — dolu (kg):1500
+Şase tipi (sabit ayak / ayarlanabilir ayak / ankraj):Ayarlanabilir ayak
 
 [KAPASITE_PROSES]
 Nominal kapasite (adet/saat veya kg/saat):
@@ -119,28 +112,16 @@ Toplam sigorta / devre kesici değeri (A):100A
 UPS / jeneratör gereksinimi (varsa):Hayır
 
 [MOTOR_SURUCU_LISTESI]
-# Her satır: Ad | Güç (kW) | Devir (rpm) | Marka | Model | Not
-Konveyör Redüktörü motoru :1,5kW/
-Yıkama Pompası Motoru:
-Durulama Pompası Motoru:
-Yağ Sıyırıcı Redüktörü Motoru:
-1. Kurutma Fanı Motoru:
-2. Kurutma Fanı Motoru:
-3. Kurutma Fanı Motoru:
-4. Kurutma Fanı Motoru:
-
-[HIDROLIK]
-Hidrolik sistem var mı (Evet/Hayır): Evet
-Hidrolik ünite marka / model:
-Tank kapasitesi (L):250L
-Çalışma basıncı (bar):
-Maksimum basınç (bar):
-Akış debisi (L/dk):
-Hidrolik yağ tipi / viskozite: Yok
-Yağ değişim periyodu (saat / ay):
-Filtre tipi / değişim aralığı:
-Silindir adedi:
-Silindir çap / strok (mm):
+# Her satır: Ad | Güç (kW) | Devir (rpm) | Marka | Model
+Konveyör Redüktörü motoru :1,5kW/2000rpm/Siemens/SIMOTICS S-1FL6
+Yıkama Pompası Motoru:3kW/2900rpm/Lowara/ESHE 40-160/30
+Durulama Pompası Motoru:1,85kW/2900rpm/GOULDS/GCEA 370/3
+Yağ Sıyırıcı Redüktörü Motoru:0,04kW/  /FINEX/E1610-40-150-17B-C
+Egzost Fanı Motoru:0,37kW/2800rpm/ENA/ENA 2
+1. Kurutma Fanı Motoru:4kW/2900rpm/
+2. Kurutma Fanı Motoru:4kW/2900rpm/
+3. Kurutma Fanı Motoru:4kW/2900rpm/  
+4. Kurutma Fanı Motoru:4kW/2900rpm/
 
 [SIKIŞTIRILMIŞ_HAVA_SU]
 Basınçlı hava girişi (bar):6
@@ -178,10 +159,10 @@ Operatör paneli dilleri:Türkçe,İngilizce, Almanca
 
 [KONTROL_FONKSIYONLARI]
 Ana ekran menü yapısı:
-Alarm ekranı davranışı:
-Reçete / program kayıt sayısı:
+Alarm ekranı davranışı:HMI Arayüzünde alarm ekranı bulunmaktadır. Ayrıca makinede alarm olduğunda tepe lambası kırmızı yanmaktadır.
+Reçete / program kayıt sayısı:Herhangi bir reçete sınırı bulunmamaktadır.
 Trend / log kayıt süresi:
-Uzaktan erişim (Evet/Hayır — protokol):
+Uzaktan erişim (Evet/Hayır — protokol):Evet/Modül(secomea)
 
 # --- 03.5 Makine yerleşimi (machine-layout) ---
 
@@ -197,7 +178,6 @@ Minimum etraf boşluğu — yan (mm):1000
 Minimum tavan yüksekliği (mm):2500
 Vinç / forklift erişim noktaları:Makine taşınmasında vinç kesinlikle kullanılmamalıdır. Forklift ile taşıma için makine altındaki profiller kullanılmalıdır.
 Ağırlık merkezi notu:Makine ağırlık merkezi makine konveyörünün ortasındadır.
-
 
 # =============================================================================
 # 04 — TAŞIMA (transport)
@@ -218,7 +198,6 @@ Taşıma yüksekliği max (m — deniz / kara):
 Depolama pozisyonu (dikey / yatay):Yatay
 Max depolama süresi (ay):12
 Depolama ortam koşulları:Depolama ortamında nem ve korozif maddeler olmamalıdır.
-
 
 # =============================================================================
 # 05 — MONTAJ (assembly)
@@ -334,7 +313,6 @@ Format / ürün değişim süresi (dk):
 Fire / hurda yönetimi:
 Operatör müdahale noktaları:
 
-
 # =============================================================================
 # 08 — KAPASİTE (capacity)
 # =============================================================================
@@ -350,7 +328,6 @@ Maksimum sürekli çalışma süresi (saat/gün):24/7 çalışabilir.
 Ürün B parametreleri:Kullanıcı firma tarafından ayarlanır.
 Ürün C parametreleri:Kullanıcı firma tarafından ayarlanır.
 Reçete no listesi:Kullanıcı firma tarafından ayarlanır.
-
 
 # =============================================================================
 # 09 — BAKIM (maintenance)
@@ -371,7 +348,7 @@ Aylık bakım maddeleri:
 Yıllık bakım maddeleri:
 
 [BAKIM_YAGLAMA]
-Yağlama noktası listesi (konum / yağ tipi / periyot):
+Yağlama noktası listesi (konum / yağ tipi / periyot):Konveyör girişinde 2 adet, çıkışında 2 adet olmak üzere toplam 4 adet yağlama noktası vardır. Bunlar kullanım kılavuzunda belirtilmiştir.
 Gres tipi:
 Redüktör yağ değişim:
 
@@ -380,21 +357,19 @@ Kritik yedek parça listesi:
 Önerilen stok miktarları:
 Yedek parça sipariş kodu referansı:
 
-
 # =============================================================================
 # 10 — TEMİZLİK (cleaning)
 # =============================================================================
 
 [TEMIZLIK]
 Temizlik tipi (kuru / ıslak / CIP / COP):kuru/ıslak
-Günlük temizlik prosedürü:
+Günlük temizlik prosedürü:Yıkama tankı içerisindeki ön filtreler sökülüp temizlenmelidir. Bunun dışında günlük herhangi bir temizliğe gerek yoktur.
 Haftalık derin temizlik: Tanklarda bulunan filtreler çıkartılıp temizlenmelidir. Pompa çıkışındaki hassas filtrelerdeki torba filtreler sökülüp temizlenmelidir.
 Kullanılan temizlik maddeleri (onaylı liste):
 Yasak temizlik maddeleri:Asit bazlı temizlik maddeleri kullanılmamalıdır. Paslanmaz çeliğe zarar verecek temizlik maddeleri kullanılmamalıdır.
 Dezenfeksiyon prosedürü:Makine tanklarındaki su boşaltılıp tank içerisi sabunlu su ile yıkanmalıdır.
 Temizlik sonrası kurutma:Makine dışı kuru bir bez ile silinmelidir.
 Atık su / kimyasal bertaraf:Makinenin kullanıldığı ülkenin mevcut atık su / kimyasal bertaraf gereksinimleri uygulanmalıdır.
-
 
 # =============================================================================
 # 11 — ARIZA GİDERME (troubleshooting)
@@ -432,10 +407,6 @@ Pompa sesi anormal:
 Basınç düşük:
 Silindir yavaş / takılma:
 Valf bobini arıza:
-
-[VACUUM_ARIZA]
-Vakum düşük alarm eşiği:
-Filtre tıkanma belirtisi:
 
 [SENSOR_ARIZA]
 Kritik sensör listesi (tip / konum):
@@ -508,19 +479,6 @@ Kısaltmalar (PLC, HMI, FRL, vb.):
 
 [INDEKS]
 Anahtar kelime listesi (opsiyonel):
-
-
-# =============================================================================
-# EK — MÜŞTERİ / PROJE ÖZEL NOTLAR
-# =============================================================================
-
-[OZEL_NOTLAR]
-Siparişe özel opsiyonlar:
-Müşteri talep sapmaları:
-Saha kurulum notları:
-Bilinen açık konular / TODO:
-Revizyon geçmişi:
-  - Rev  | Tarih | Açıklama | Yazar
 
 # =============================================================================
 # SON — DOSYA SONU
