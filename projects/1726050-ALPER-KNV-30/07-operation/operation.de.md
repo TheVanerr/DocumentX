@@ -1,14 +1,14 @@
-# 7. Betrieb
+# 7. BETRIEB
 
-Dieser Abschnitt definiert den täglichen Betrieb, das Abschalten und die Betriebsverfahren der Maschine **KNV 30 3000 2B** (Projekt-Nr.: **1726050**). Der Betrieb beginnt nach Abschluss von Kapitel **5** (Installation/Inbetriebnahme) und Kapitel **6** (Einstellungen).
-
-Die Maschine ist eine frontbeladene Förderband-Teilewaschanlage mit zwei Bädern (Waschen + Spülen). Prozessablauf: **Waschen → Spülen → Trocknen**.
+Die Maschine ist eine zufuhrbeladene Förderband-Teilewaschanlage mit zwei Bädern (Waschen + Spülen). Prozessablauf: **Waschen → Spülen → Trocknen**. Die Maschine arbeitet **vollautomatisch** und **24/7 mit Roboter** Zufuhr/Abfuhr; kein Bediener oder Schichtübergabe.
 
 | Parameter | Wert |
 |-----------|------|
-| Bedieneranzahl (min / max) | 1–2 |
-| Start / Stopp | Digitale Tasten auf der HMI-Oberfläche |
-| Bedienpanel-Sprachen | Türkisch, Englisch, Deutsch |
+| Betriebsmodus | 24/7 automatisch — Roboter Zufuhr/Abfuhr |
+| Bediener | Keiner (bei Störung greift Wartungspersonal ein) |
+| Vorbereitung | HMI-Vorbereitungstaste (Tankfüllung + Erwärmung) |
+| Start / Stop | Digitale Tasten am HMI |
+| Bedienfeld-Sprachen | Türkisch, Englisch, Deutsch |
 
 ---
 
@@ -16,24 +16,24 @@ Die Maschine ist eine frontbeladene Förderband-Teilewaschanlage mit zwei Bäder
 
 | Abschnitt | Titel | Thema |
 |-----------|-------|-------|
-| **7.1** | Betriebsarten | HMI-Betriebsseite, Prozessoptionen, Wartungszugang |
-| **7.2** | Maschinenstart | Inbetriebnahme-Voraussetzungen, Spannung/Luft/Wasser ein, Vorstart-Prüfung |
-| **7.3** | Maschinenstopp | Normaler Stopp, Neustart nach Not-Halt, Spannungsabschaltung |
-| **7.4** | Betriebssequenz | Automatische Zyklusschritte, Teileein-/auslauf, Fehlerverhalten |
-| **7.5** | Betriebschronologie | Tagesplan, Schichtübergabe |
-| **7.6** | Sonstige Betriebsthemen | Formatwechsel, Ausschuss, Bediener-Eingriffspunkte |
+| **7.1** | Betriebsarten | HMI-Betriebsbildschirm, Prozessoptionen, Wartungszugang |
+| **7.2** | Maschinenstart | Vorbereitungstaste, Tankfüllung/Erwärmung, Prüfungen vor Start |
+| **7.3** | Maschinenstillstand | Normales Stoppen, Neustart nach Not-Aus, Abschalten |
+| **7.4** | Betriebsablauf | Automatische Zyklusschritte, Roboter-Zufuhr/Abfuhr, Störverhalten |
+| **7.5** | Betriebschronologie | 24/7-Roboterbetrieb — kein Schichtübergabe |
+| **7.6** | Sonstige Betriebsthemen | Kein Formatwechsel; kein Bediener — Wartung bei Störung |
 
 ---
 
-## Signalelement-Status
+## Signalleuchten-Zustände
 
 | Lampe | Bedeutung |
 |-------|-----------|
 | Gelb | Maschine betriebsbereit |
-| Grün | Maschine in Betrieb |
+| Grün | Maschine läuft |
 | Rot | Alarm |
 
-Detaillierte Verfahren sind in den jeweiligen Unterabschnitten beschrieben.
+Detaillierte Prozeduren in den jeweiligen Unterabschnitten.
 
-<!-- PHOTO: HMI-Betriebsseite Gesamtansicht -->
-![HMI-Betriebsseite](../assets/FOTO-7-0-operation-genel.png)
+<!-- FOTO: HMI Betriebsbildschirm Übersicht -->
+![HMI Betriebsbildschirm](../assets/FOTO-7-0-operation-genel.png)

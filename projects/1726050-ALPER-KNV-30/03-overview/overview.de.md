@@ -1,6 +1,4 @@
-# 3. Übersicht
-
-Dieser Abschnitt umfasst die allgemeine Beschreibung, bestimmungsgemäße Verwendung, technischen Daten, Bedienelemente und Layout-Informationen der industriellen Teilewaschanlage **KNV 30 3000 2B** (Projekt-Nr.: **1726050**, Serien-Nr.: **1726050**). Die im Umfang dieser Anleitung beschriebene Maschine ist eine einlauf-beschickte, förderbandgeführte Anlage mit zwei Bädern (Waschen + Spülen); Teile durchlaufen auf dem Förderband die Prozesse **Waschen, Spülen und Trocknen**.
+# 3. ÜBERSICHT
 
 Die Hauptfunktion der Maschine ist die **Entfernung von Öl und Verschmutzungen**, die von industriellen Bearbeitungsprozessen auf den Teileoberflächen verbleiben. Die in diesem Abschnitt dargestellten Informationen sind so aufgebaut, dass Bediener, Wartungs- und Montagepersonal die Maschine versteht, ihre Grenzen kennt und den technischen Rahmen für einen sicheren Betrieb erhält.
 

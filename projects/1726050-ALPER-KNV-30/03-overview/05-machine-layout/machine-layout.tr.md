@@ -1,7 +1,5 @@
 # 3.5. Makine Yerleşim Planı
 
-Bu bölüm, KNV 30 3000 2B makinesinin yerleşim yönlerini, bakım erişim bölgelerini, minimum etraf boşluklarını, taşıma kısıtlarını ve ağırlık merkezi bilgisini tanımlar.
-
 **Referans çizim:** `1726050-ALPER-KNV 30 LAYOUT.pdf`
 
 Proje assets klasöründe layout çizimi mevcuttur: `1726050-ALPER-KNV 30 3000 2B PRO IDE LAYOUT.PDF`

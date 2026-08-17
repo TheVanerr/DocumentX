@@ -1,7 +1,5 @@
 # 6.1. Mechanical Settings
 
-This section defines the mechanical adjustment points of the KNV 30 3000 2B machine.
-
 ---
 
 ## 6.1.1. Mechanical Adjustment Points

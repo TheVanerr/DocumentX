@@ -1,5 +1,7 @@
-<!-- CEVIRI GEREKLI -> DE | kaynak: TR | bu satiri ceviri bitince silin. Baslik/gorsel/tablo yapisini koruyun. -->
+# 14. ANHÄNGE, GLOSSAR UND INDEX
 
-# index
-
-<!-- 1726050-ALPER-KNV 30 | proje ozel icerik -->
+| Abschnitt | Titel | Thema |
+|-----------|-------|-------|
+| **14.1** | Anhänge | Alarmliste, Parameter, Rezepte, Garantiereferenzen |
+| **14.2** | Glossar | Begriffe und Abkürzungen |
+| **14.3** | Stichwortindex | LOTO, HMI, Not-Aus usw. — Abschnittsreferenzen |

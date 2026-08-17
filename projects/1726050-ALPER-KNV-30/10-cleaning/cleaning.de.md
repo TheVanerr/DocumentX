@@ -1,5 +1,23 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 10. REINIGUNG
 
-# 10. TEMİZLİK (CLEANING)
+Die Maschine eignet sich für **trockene/feuchte** Reinigung. **Kein CIP- oder COP-System**. Reinigung durch Wartungspersonal nach Maschinenstopp und **LOTO**.
 
-Bu bölüm, endüstriyel yıkama makinelerimizin kendi iç ve dış temizlik prosedürlerini kapsamaktadır. Makinenin uzun ömürlü, hijyenik ve kesintisiz bir şekilde çalışabilmesi için; yıkanan parçaların kalitesini tehdit edebilecek kimyasal kalıntı birikimlerinin, tıkanıklıkların ve korozyon risklerinin önlenmesi amacıyla düzenli temizlik şarttır. Makinenin temizliği yalnızca görsel bir düzen sağlamak için değil; sensörlerin, filtrelerin, tahliye hatlarının ve kapak contalarının doğru çalışmasını güvence altına almak için kritik bir bakım operasyonudur. Temizlik prosedürlerine başlamadan önce makinenin tamamen durdurulması, enerji izolasyonunun (LOTO) sağlanması ve makine içi basınçlı sistemlerin tamamen tahliye edilmesi zorunludur. Ayrıca, temizlik esnasında kullanılacak kimyasalların ve su sistemlerinin operatöre veya makine yüzeylerine zarar vermemesi için ilgili kişisel koruyucu ekipmanların (KKE) kullanılması ve bu bölümde belirtilen kurallara strictly uyulması gerekmektedir.
+| Parameter | Wert |
+|-----------|------|
+| Reinigungstyp | Trocken / feucht |
+| Tägliche Reinigung | Vorfilter Waschtank |
+| Wöchentliche Reinigung | Tankfilter + Beutelfilter Pumpenausgang |
+| Zugelassene Reinigungsmittel | [FEHLEND] |
+
+Periodische Wartung siehe Abschnitt **9.1.3**.
+
+---
+
+## Abschnittsinhalt
+
+| Abschnitt | Titel | Thema |
+|-----------|-------|-------|
+| **10.1** | Reinigung und Desinfektion | Tägliche/wöchentliche Prozeduren, verbotene Mittel, Entsorgung |
+
+<!-- FOTO: Tank- und Filterreinigung Übersicht -->
+![Tank- und Filterreinigung](../assets/FOTO-10-0-cleaning-genel.png)

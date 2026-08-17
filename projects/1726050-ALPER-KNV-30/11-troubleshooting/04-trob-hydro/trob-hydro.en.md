@@ -1,5 +1,9 @@
-<!-- CEVIRI GEREKLI -> EN | kaynak: TR | bu satiri ceviri bitince silin. Baslik/gorsel/tablo yapisini koruyun. -->
+# 11.4. Hydraulic Faults
 
-# trob hydro
+The KNV 30 3000 2B machine has **no hydraulic system**. This section does not apply.
 
-<!-- 1726050-ALPER-KNV 30 | proje ozel icerik -->
+| Parameter | Value / Description |
+|-----------|---------------------|
+| Low pressure alarm | Not applicable |
+| Oil leak points | Not applicable |
+| Abnormal pump noise | Not applicable |

@@ -1,6 +1,4 @@
-# 3. Overview
-
-This section covers the general description, intended use, technical specifications, control elements, and layout information for the **KNV 30 3000 2B** industrial parts washing machine (project no.: **1726050**, serial no.: **1726050**). The machine within the scope of this manual is a front-loaded, conveyor-fed, two-bath (wash + rinse) unit; parts complete **wash, rinse, and drying** processes on the conveyor.
+# 3. OVERVIEW
 
 The primary function of the machine is **removal of oil and contamination** remaining on part surfaces from industrial processes. The information presented in this section is structured to help operators, maintenance, and installation personnel understand the machine, know its limits, and establish the technical framework required for safe use.
 

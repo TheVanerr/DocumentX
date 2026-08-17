@@ -1,7 +1,5 @@
 # 6.3. Elektrik Ayarları
 
-Bu bölüm, KNV 30 3000 2B makinesinin elektrik ve otomasyon ayarlarını tanımlar. Elektrik ayarları yalnızca yetkili elektrik teknisyeni veya mühendisi tarafından yapılmalıdır.
-
 ---
 
 ## 6.3.1. Motor Yönü / Faz Kontrolü

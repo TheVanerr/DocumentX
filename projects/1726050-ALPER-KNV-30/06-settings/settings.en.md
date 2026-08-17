@@ -1,6 +1,4 @@
-# 6. Settings
-
-This section defines the mechanical, safety, electrical, and pneumatic adjustment points for the **KNV 30 3000 2B** machine (project no: **1726050**) after installation. Settings shall be applied after completion of Chapter **5** installation and commissioning.
+# 6. SETTINGS
 
 ---
 

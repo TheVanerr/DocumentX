@@ -106,19 +106,19 @@ fs.writeFileSync(
 
 const project = {
   proje_adi: '1726050-ALPER-KNV 30',
-  model: 'vdl',
-  diller: ['tr'],
+  model: 'knv',
+  diller: ['tr', 'en', 'de'],
   varsayilan_dil: 'tr',
   extends: 'templates/base.yaml',
   kapak: { rev: '', tarih: '', firma: 'DOLFIN' },
 };
 fs.mkdirSync(path.join(ROOT, 'projects', '1726050-ALPER-KNV-30'), { recursive: true });
 fs.writeFileSync(
-  path.join(ROOT, 'projects', '1726050-ALPER-KNV-30', 'project.yaml'),
-  '# Proje receta: yalnizca model + diller + kapak + (varsa) override dosyalari.\n' +
+  path.join(ROOT, 'projects', '1726050-ALPER-KNV-30', '1726050-ALPER-KNV 30.yaml'),
+  '# Proje receta: model + diller + kapak. Dil secimi .<dil>.md dosyasini derler.\n' +
   '# Icerik content/_models/<model> ve content/_common katmanlarindan miras alinir.\n\n' +
   yaml.dump(project, { lineWidth: -1 }),
   'utf8'
 );
 
-console.log('base.yaml ve project.yaml yazildi.');
+console.log('base.yaml ve 1726050-ALPER-KNV 30.yaml yazildi.');

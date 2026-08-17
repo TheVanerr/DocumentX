@@ -1,6 +1,6 @@
 # 7.5. Operasyon Kronolojisi
 
-Bu bölüm, KNV 30 3000 2B makinesinin günlük operasyon zaman çizelgesi ve vardiya prosedürlerini tanımlar.
+Makine **7/24 robot** ile çalışır. Operatör veya vardiya teslimi **bulunmaz**.
 
 ---
 
@@ -8,7 +8,7 @@ Bu bölüm, KNV 30 3000 2B makinesinin günlük operasyon zaman çizelgesi ve va
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| Günlük operasyon zaman çizelgesi | [EKSİK] |
+| Günlük operasyon zaman çizelgesi | Makine **7/24** robot ile çalışır; vardiya bazlı günlük operasyon çizelgesi **uygulanmaz** |
 
 ---
 
@@ -16,7 +16,7 @@ Bu bölüm, KNV 30 3000 2B makinesinin günlük operasyon zaman çizelgesi ve va
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| Vardiya devir teslim maddeleri | [EKSİK] |
+| Vardiya devir teslim maddeleri | **Yoktur** — operatör/vardiya teslimi bulunmamaktadır |
 
 ---
 
@@ -24,4 +24,4 @@ Bu bölüm, KNV 30 3000 2B makinesinin günlük operasyon zaman çizelgesi ve va
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| Shift başlangıç kontrol listesi | [EKSİK] |
+| Shift başlangıç kontrol listesi | **Yoktur** — makine sürekli otomatik çalışır |

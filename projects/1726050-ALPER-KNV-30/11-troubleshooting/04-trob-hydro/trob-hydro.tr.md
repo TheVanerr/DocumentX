@@ -1,3 +1,9 @@
-# trob hydro
+# 11.4. Hidrolik Arızaları
 
-<!-- 1726050-ALPER-KNV 30 | proje ozel icerik -->
+**hidrolik sistem bulunmamaktadır**. Bu bölüm uygulanmaz.
+
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Basınç düşük alarm | Uygulanmaz |
+| Yağ kaçağı noktaları | Uygulanmaz |
+| Pompa sesi anormal | Uygulanmaz |

@@ -1,7 +1,5 @@
 # 5.6. Communication and Automation Interface
 
-This section defines fieldbus communication, Profinet infrastructure, PLC/HMI integration, and I/O documentation references for the KNV 30 3000 2B machine.
-
 ---
 
 ## 5.6.1. Fieldbus and Protocol

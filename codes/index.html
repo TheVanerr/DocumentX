@@ -130,55 +130,8 @@
         HTML Çıktı
       </button>
 
-      <!-- Çeviri Butonu -->
-      <button class="pdf-btn tr-btn" onclick="openTranslate()" title="Çeviri Panelini Aç">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-          <path d="M3 5H13M8 3V5M11 5C11 9 8 13 3 15M6 9C6 11 9 13 12 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M14 19L17.5 11L21 19M14.8 17H20.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        Çeviri
-      </button>
     </div>
   </nav>
-
-  <!-- Çeviri Modalı -->
-  <div class="tr-overlay" id="trOverlay" style="display:none;">
-    <div class="tr-modal">
-      <div class="tr-head">
-        <div class="tr-title">Çeviri Paneli</div>
-        <div class="tr-lang" id="trLangBar">
-          <span class="tr-lang-label">Diller:</span>
-          <button class="tr-lang-btn active" data-lang="en" onclick="trToggleLang('en')">EN</button>
-          <button class="tr-lang-btn active" data-lang="de" onclick="trToggleLang('de')">DE</button>
-        </div>
-        <button class="tr-close" onclick="closeTranslate()" title="Kapat">&#x2715;</button>
-      </div>
-
-      <div class="tr-toolbar">
-        <button class="tr-tool" onclick="trSelectByStatus(['yok','placeholder','eskimis'])">Çevrilmeyenleri seç</button>
-        <button class="tr-tool" onclick="trSelectByStatus(['eskimis'])">Sadece değişenler</button>
-        <button class="tr-tool" onclick="trSelectAll(false)">Temizle</button>
-        <input type="text" id="trFilter" class="tr-filter" placeholder="Dosya ara…" oninput="trApplyFilter(this.value)" />
-        <span class="tr-key-status" id="trKeyStatus"></span>
-      </div>
-
-      <div class="tr-tree" id="trTree"></div>
-
-      <div class="tr-foot">
-        <div class="tr-legend">
-          <span class="tr-dot s-guncel"></span> güncel
-          <span class="tr-dot s-eskimis"></span> değişmiş
-          <span class="tr-dot s-placeholder"></span> placeholder
-          <span class="tr-dot s-yok"></span> yok
-        </div>
-        <div class="tr-actions">
-          <span class="tr-count" id="trCount">0 seçili</span>
-          <button class="tr-go" id="trGo" onclick="trRun()" disabled>Seçilenleri Çevir</button>
-        </div>
-      </div>
-      <div class="tr-progress" id="trProgress"></div>
-    </div>
-  </div>
 
   <!-- Yeni Proje Modalı -->
   <div class="np-overlay" id="npOverlay" style="display:none;">

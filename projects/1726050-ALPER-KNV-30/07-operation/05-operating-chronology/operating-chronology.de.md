@@ -1,6 +1,6 @@
 # 7.5. Betriebschronologie
 
-Dieser Abschnitt definiert den täglichen Betriebsplan und Schichtverfahren für die Maschine KNV 30 3000 2B.
+Die Maschine arbeitet **24/7 mit Roboter**. Es gibt **keinen Bediener oder Schichtübergabe**.
 
 ---
 
@@ -8,7 +8,7 @@ Dieser Abschnitt definiert den täglichen Betriebsplan und Schichtverfahren für
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
-| Täglicher Betriebsplan | [FEHLEND] |
+| Täglicher Betriebsplan | Maschine arbeitet **24/7** mit Roboter; schichtbasierter Tagesplan **entfällt** |
 
 ---
 
@@ -16,7 +16,7 @@ Dieser Abschnitt definiert den täglichen Betriebsplan und Schichtverfahren für
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
-| Schichtübergabe-Punkte | [FEHLEND] |
+| Schichtübergabe-Punkte | **Keine** — kein Bediener/Schichtübergabe |
 
 ---
 
@@ -24,4 +24,4 @@ Dieser Abschnitt definiert den täglichen Betriebsplan und Schichtverfahren für
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
-| Schichtstart-Checkliste | [FEHLEND] |
+| Schichtstart-Checkliste | **Keine** — Maschine läuft durchgehend automatisch |

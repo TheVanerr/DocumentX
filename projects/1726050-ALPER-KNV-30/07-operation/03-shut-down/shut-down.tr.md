@@ -1,7 +1,5 @@
 # 7.3. Makine Durdurma
 
-Bu bölüm, KNV 30 3000 2B makinesinin normal durdurma, acil stop sonrası yeniden başlatma ve güç kapatma prosedürlerini tanımlar.
-
 Stop düğmesi **HMI arayüzünde dijital buton** olarak bulunur.
 
 ---
@@ -10,7 +8,7 @@ Stop düğmesi **HMI arayüzünde dijital buton** olarak bulunur.
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| Normal stop prosedürü | [EKSİK] |
+| Normal stop prosedürü | HMI **stop** butonuna basıldığında konveyör, pompalar, fanlar ve tüm fonksiyonlar durur |
 
 ---
 
@@ -18,7 +16,7 @@ Stop düğmesi **HMI arayüzünde dijital buton** olarak bulunur.
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| Acil stop sonrası yeniden başlatma | Acil stop butonu kaldırılıp fiziksel tehdidin giderildiği kesinleştirildikten sonra pano etiketi üzerindeki reset butonuna operatör tarafından lambası yanana kadar basılmalıdır |
+| Acil stop sonrası yeniden başlatma | Fiziksel tehdit giderildikten sonra acil stop butonu kaldırılır; pano etiketi üzerindeki reset butonuna lambası yanana kadar basılır |
 
 Acil stop'a basıldığında makinedeki **her fonksiyon durur**. Tepe lambası **kırmızı** yanar.
 
@@ -33,7 +31,7 @@ Detaylı acil stop test prosedürü için bkz. Bölüm **5.4.1**.
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| Güç kapatma sırası | [EKSİK] |
+| Güç kapatma sırası | **1.** HMI stop ile makineyi durdur → **2.** Ana şalteri kapat |
 
 ---
 
@@ -41,4 +39,4 @@ Detaylı acil stop test prosedürü için bkz. Bölüm **5.4.1**.
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| Uzun süreli durdurma (hafta sonu) prosedürü | [EKSİK] |
+| Uzun süreli durdurma (hafta sonu) prosedürü | Tanklar **mutlaka boşaltılıp temizlenmelidir** (bkz. Bölüm **10**) |

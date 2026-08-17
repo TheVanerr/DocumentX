@@ -1,6 +1,23 @@
-# 9. BAKIM (MAINTENANCE)
+# 9. BAKIM
 
-Bu bölüm, endüstriyel yıkama makinelerimizin periyodik bakım, rutin kontrol ve onarım prosedürlerini kapsamaktadır. Makinelerin tasarlandığı uzun ömre ulaşması, kesintisiz ve yüksek verimle çalışması, beklenmedik arızaların ve üretim duruşlarının minimize edilmesi ile iş sağlığı ve güvenliği şartlarının korunması amacıyla düzenli bakım şarttır. Bu kılavuzda belirtilen periyodik bakım aralıkları ve talimatları, makinenizin mekanik, elektriksel, pnömatik ve hidrolik sistemlerinin güvenilirliğini doğrudan etkilemektedir. Bu nedenle, tüm bakım ve onarım faaliyetlerinin yalnızca makineyi tanıyan, gerekli eğitimleri almış yetkili personeller tarafından, ilgili güvenlik kuralları (LOTO vb.) gözetilerek uygulanması zorunludur.
+Makine **7/24 robot** hattında çalışır; operatör bulunmaz. Arıza durumunda müdahale **bakım personeli** tarafından yapılır (bkz. Bölüm **11**). Tüm bakım işlemleri makine durdurulduktan sonra, enerji izolasyonu (LOTO) uygulanarak gerçekleştirilmelidir.
 
+| Parametre | Değer |
+|-----------|-------|
+| Bakım felsefesi | Önleyici bakım |
+| Lubrication chart | Yok |
+| Yağlama noktası | 4 adet (konveyör giriş 2 + çıkış 2) |
+| Bakım modu | Yok — elektrik kesilip LOTO uygulanır |
 
+Temizlik prosedürleri için bkz. Bölüm **10**.
 
+---
+
+## Bölüm İçeriği
+
+| Bölüm | Başlık | Konu |
+|-------|--------|------|
+| **9.1** | Bakım Talimatları | Periyodik bakım, yağlama, yedek parça, güvenlik |
+
+<!-- FOTO: Bakım erişim bölgeleri genel görünüm -->
+![Bakım erişim bölgeleri](../assets/FOTO-9-0-maintenance-genel.png)

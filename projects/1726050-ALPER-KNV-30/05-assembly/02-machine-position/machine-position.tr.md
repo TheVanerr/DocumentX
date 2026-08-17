@@ -1,7 +1,5 @@
 # 5.2. Makine Konumlandırma
 
-Bu bölüm, KNV 30 3000 2B makinesinin kurulum alanındaki konumlandırılması, yön tayini, ayarlanabilir ayaklarla seviye alınması ve hizalama toleranslarına uyulması prosedürlerini tanımlar.
-
 Konumlandırma işlemleri, Bölüm 5.1 montaj adımlarının **Adım 3** kapsamında gerçekleştirilir; bu bölümde detaylandırılmıştır.
 
 ---

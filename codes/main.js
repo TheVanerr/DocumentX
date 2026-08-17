@@ -4,7 +4,11 @@ const fs = require('fs');
 const yaml = require('js-yaml');
 
 const PROJECT_ROOT = path.join(__dirname, '..');
-const translator = require(path.join(PROJECT_ROOT, 'scripts', 'translate-core'));
+/** Uygulama içi otomatik çeviri paneli (dil seçici ayrı dosyalara geçer). */
+const TRANSLATION_UI_ENABLED = false;
+const translator = TRANSLATION_UI_ENABLED
+  ? require(path.join(PROJECT_ROOT, 'scripts', 'translate-core'))
+  : null;
 const projectCore = require(path.join(PROJECT_ROOT, 'scripts', 'project-core'));
 const CONTENT_COMMON = path.join(PROJECT_ROOT, 'content', '_common');
 const CONTENT_MODELS = path.join(PROJECT_ROOT, 'content', '_models');
@@ -81,7 +85,9 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
-  try { translator.loadEnv(PROJECT_ROOT); } catch (e) { /* .env yoksa sorun değil */ }
+  if (translator) {
+    try { translator.loadEnv(PROJECT_ROOT); } catch (e) { /* .env yoksa sorun değil */ }
+  }
   registerIpcHandlers();
   createWindow();
 
@@ -141,7 +147,7 @@ function listModelIds() {
 function listProjectDirs() {
   if (!fs.existsSync(PROJECTS_DIR)) return [];
   return fs.readdirSync(PROJECTS_DIR, { withFileTypes: true })
-    .filter(d => d.isDirectory() && fs.existsSync(path.join(PROJECTS_DIR, d.name, 'project.yaml')))
+    .filter(d => d.isDirectory() && projectCore.findProjectYaml(path.join(PROJECTS_DIR, d.name)))
     .map(d => d.name)
     .sort();
 }
@@ -156,9 +162,10 @@ function guideRoots(guide) {
 
 function listGuides() {
   const projects = listProjectDirs().map(dir => {
-    const doc = safeReadYaml(path.join(PROJECTS_DIR, dir, 'project.yaml')) || {};
+    const projectDir = path.join(PROJECTS_DIR, dir);
+    const doc = safeReadYaml(projectCore.findProjectYaml(projectDir)) || {};
     const model = String(doc.model || '').toLowerCase();
-    const guide = { id: 'proje:' + dir, projectDir: path.join(PROJECTS_DIR, dir), model };
+    const guide = { id: 'proje:' + dir, projectDir, model };
     return {
       id: guide.id,
       label: doc.proje_adi || dir,
@@ -186,8 +193,8 @@ function resolveGuide(guideId) {
   if (id.startsWith('proje:')) {
     const dir = id.slice('proje:'.length);
     const projectDir = path.join(PROJECTS_DIR, dir);
-    const yp = path.join(projectDir, 'project.yaml');
-    if (!fs.existsSync(yp)) return null;
+    const yp = projectCore.findProjectYaml(projectDir);
+    if (!yp) return null;
     const doc = safeReadYaml(yp) || {};
     const extendsRel = doc.extends || 'templates/base.yaml';
     const base = safeReadYaml(path.join(PROJECT_ROOT, extendsRel)) || {};
@@ -222,18 +229,21 @@ function resolveGuide(guideId) {
 function resolveContent(roots, folderParts, base, lang) {
   if (!base) return '';
   const langs = lang === DEFAULT_LANG ? [lang] : [lang, DEFAULT_LANG];
-  for (const root of roots) {
-    for (const L of langs) {
+  for (const L of langs) {
+    for (const root of roots) {
       const p = path.join(root, ...folderParts, `${base}.${L}.md`);
       if (fs.existsSync(p)) {
         const c = fs.readFileSync(p, 'utf8');
         if (c.trim()) return c;
       }
     }
-    const legacy = path.join(root, ...folderParts, `${base}.md`);
-    if (fs.existsSync(legacy)) {
-      const c = fs.readFileSync(legacy, 'utf8');
-      if (c.trim()) return c;
+    if (L !== DEFAULT_LANG) continue;
+    for (const root of roots) {
+      const legacy = path.join(root, ...folderParts, `${base}.md`);
+      if (fs.existsSync(legacy)) {
+        const c = fs.readFileSync(legacy, 'utf8');
+        if (c.trim()) return c;
+      }
     }
   }
   return '';
@@ -318,29 +328,31 @@ function registerIpcHandlers() {
     };
   });
 
-  ipcMain.handle('tr-key', async () => {
-    try { return translator.keyStatus(); }
-    catch (e) { return { ready: false, error: e.message }; }
-  });
+  if (TRANSLATION_UI_ENABLED) {
+    ipcMain.handle('tr-key', async () => {
+      try { return translator.keyStatus(); }
+      catch (e) { return { ready: false, error: e.message }; }
+    });
 
-  ipcMain.handle('tr-list', async (event, langs) => {
-    try {
-      const list = Array.isArray(langs) ? langs : [langs || 'en'];
-      return { ok: true, tree: translator.buildFileTree(PROJECT_ROOT, list) };
-    } catch (e) { return { ok: false, error: e.message }; }
-  });
+    ipcMain.handle('tr-list', async (event, langs) => {
+      try {
+        const list = Array.isArray(langs) ? langs : [langs || 'en'];
+        return { ok: true, tree: translator.buildFileTree(PROJECT_ROOT, list) };
+      } catch (e) { return { ok: false, error: e.message }; }
+    });
 
-  ipcMain.handle('tr-one', async (event, srcRel, lang, provider) => {
-    try {
-      const r = await translator.translateOne(
-        PROJECT_ROOT, String(srcRel), String(lang).toLowerCase(),
-        provider || translator.defaultProvider()
-      );
-      return r;
-    } catch (e) {
-      return { ok: false, rel: srcRel, error: e.message };
-    }
-  });
+    ipcMain.handle('tr-one', async (event, srcRel, lang, provider) => {
+      try {
+        const r = await translator.translateOne(
+          PROJECT_ROOT, String(srcRel), String(lang).toLowerCase(),
+          provider || translator.defaultProvider()
+        );
+        return r;
+      } catch (e) {
+        return { ok: false, rel: srcRel, error: e.message };
+      }
+    });
+  }
 
   ipcMain.handle('read-asset', async (event, name) => {
     try {

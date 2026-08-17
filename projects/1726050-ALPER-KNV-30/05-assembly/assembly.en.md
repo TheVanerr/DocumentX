@@ -1,6 +1,4 @@
-# 5. Installation and Commissioning
-
-This section covers assembly, positioning, utility connections, safety tests, and installation verification from transport of the **KNV 30 3000 2B** machine (project no.: **1726050**) to the installation site through to commissioning.
+# 5. INSTALLATION AND COMMISSIONING
 
 Assembly operations are estimated to take **1 day** and are performed by a **1-person** team. A **forklift** shall be used for transport and placement; a **crane shall not be used under any circumstances** when transporting the machine. For forklift transport, the profiles under the machine shall be used.
 

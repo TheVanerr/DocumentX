@@ -1,7 +1,5 @@
 # 6.2. Güvenlik Ayarları
 
-Bu bölüm, KNV 30 3000 2B makinesinin güvenlikle ilgili ayar ve prosedürlerini tanımlar. Güvenlik parametreleri yalnızca yetkili teknik personel tarafından değiştirilmelidir.
-
 ---
 
 ## 6.2.1. Emniyet Kapısı / Bypass

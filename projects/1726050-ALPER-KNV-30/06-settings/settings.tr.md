@@ -1,6 +1,4 @@
-# 6. Ayarlar
-
-Bu bölüm, **KNV 30 3000 2B** makinesinin (proje no: **1726050**) kurulum sonrası mekanik, güvenlik, elektrik ve pnömatik ayar noktalarını tanımlar. Ayarlar, Bölüm **5** kurulum ve devreye alma tamamlandıktan sonra uygulanmalıdır.
+# 6. AYARLAR
 
 ---
 

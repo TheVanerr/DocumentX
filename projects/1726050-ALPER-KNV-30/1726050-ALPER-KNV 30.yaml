@@ -1,0 +1,28 @@
+# 1726050-ALPER-KNV 30 - proje recetesi
+# Dil derleme: ustteki TR / EN / DE secimine gore ayni bolumun
+#   <dosya>.tr.md  |  <dosya>.en.md  |  <dosya>.de.md
+# dosyasi kullanilir. Once secilen dil tum katmanlarda aranir.
+#
+# Cozumleme sirasi:
+#   projects/1726050-ALPER-KNV-30/...
+#   content/_models/knv/...
+#   content/_common/...
+#
+# Ortak (_common; proje klasorunde dosya YOK):
+#   01-introduction, 02-safety, 04-transport
+#
+# Proje ozel (projects/1726050-ALPER-KNV-30/ altindaki .<dil>.md):
+#   03-overview, 05-assembly .. 14-index
+
+proje_adi: 1726050-ALPER-KNV 30
+model: knv
+diller:
+  - tr
+  - en
+  - de
+varsayilan_dil: tr
+extends: templates/base.yaml
+kapak:
+  rev: ''
+  tarih: ''
+  firma: DOLFIN

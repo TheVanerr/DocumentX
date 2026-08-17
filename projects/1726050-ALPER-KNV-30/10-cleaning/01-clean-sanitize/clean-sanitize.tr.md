@@ -1,93 +1,136 @@
-# 10.1 TEMİZLİK VE DEZENFEKSİYON (CLEANING & SANITIZING)
-
-Bu bölüm, makinenin iç yüzeylerinde, tahliye hatlarında ve tamburunda zamanla oluşabilecek biyofilm tabakalarının, kimyasal kalıntıların ve kireç birikintilerinin giderilmesi ile makinenin mikrobiyolojik hijyen standartlarının sağlanması amacıyla yapılması gereken temizlik ve dezenfeksiyon (sanitizasyon) işlemlerini detaylandırmaktadır. Özellikle gıda, medikal veya yüksek hassasiyet gerektiren endüstrilerde, makinenin kendisinin yıkanacak parçalar kadar temiz ve mikro-organizmalardan arındırılmış olması zorunludur.
+# 10.1. Temizlik ve Dezenfeksiyon
 
 ---
 
-## 10.1.1 Sistemin Kendi Kendini Temizlemesi (CIP - Cleaning in Place)
+## 10.1.1. Temizlik Tipi
 
-Makinenin tambur ve boru hatlarında biriken yağ, kir ve sabun kalıntılarını gidermek için makinenin kendi sistemi kullanılarak yapılan otomatik temizlik işlemidir.
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Temizlik tipi | **Kuru / ıslak** |
 
-**Amaç:** Tambur iç yüzeylerindeki ve tahliye hattındaki organik kir birikimlerini (biyofilm) parçalayarak tahliye etmek.
-
-**İşlem Adımları:**
-
-1. Tambur tamamen boşaltılır (içinde parça olmamalıdır).
-2. Makinenin kimyasal dozaj tankasına, normal yıkama kimyasalından farklı olarak, düşük köpüren ağır dereceli bir **"Tank Temizleyici / CIP Kimyasalı"** doldurulur.
-3. HMI üzerinden yüksek sıcaklıklı *(80-90°C)* ve uzun süreli *(30-45 dk)* bir **"Temizlik Programı"** başlatılır. Su seviyesi normalden biraz daha yüksek tutulur.
-4. Program tamamlandıktan sonra tahliye vanası açık bırakılarak sistem tamamen boşaltılır.
-
-> ⚠️ **DİKKAT:** CIP işlemi sırasında tambur içinde kesinlikle yıkanacak üretim parçası bulundurulmamalıdır. CIP kimyasalları parçalara zarar verebilir veya aşındırabilir.
+Makinede otomatik CIP (Cleaning in Place) veya COP (Cleaning out of Place) sistemi **bulunmamaktadır**. Temizlik manuel olarak uygulanır.
 
 ---
 
-## 10.1.2 Kireç ve Mineral Birikintilerinin Giderilmesi (Descaling)
+## 10.1.2. Temizlik Öncesi Güvenlik
 
-Makinenin kullanıldığı suyun sertlik derecesine (kalsiyum ve magnezyum oranına) göre, ısıtıcı rezistanslarında, tambur deliklerinde ve su seviye sensörlerinde (elektrotlarda) zamanla kireç tortuları oluşur.
-
-**Amaç:** Kireç tabakasının ısı transferini engellemesini (enerji tasarrufu), sensör hassasiyetinin düşmesini ve tambur deliklerinin tıkanarak suyun boşalamamasını önlemek.
-
-**İşlem Adımları:**
-
-1. Makine boşken sisteme su alınır ve tambur alt seviyeye kadar doldurulur.
-2. Sisteme uygun miktarda asidik temizleyici *(örn: sitrik asit veya sülfamik asit bazlı kireç çözücü)* eldivenli bir şekilde tambur içine veya dozaj tankından sisteme verilir.
-3. Isıtma sistemi devreye alınır ve su 50-60°C'ye getirilir. *(Kaynatılmaz; buharlaşan asit zararlı olabilir.)*
-4. Tambur 20-30 dakika boyunca düşük devirde döndürülür.
-5. Kireç çözüldükten sonra kirli su tahliye edilir ve sistem içi en az 2 kez temiz su ile durulanır.
+| # | Kural |
+|---|-------|
+| 1 | Makine **HMI stop** ile durdurulmalıdır |
+| 2 | Gerekirse ana şalter kapatılmalıdır |
+| 3 | Filtre/tank erişimi için **LOTO prosedürü** uygulanmalıdır (bkz. Bölüm **9.1.2**) |
+| 4 | Emniyet kapısı bypass **edilmemelidir** |
+| 5 | Uzun süreli durdurma/temizlik öncesi tanklar **boşaltılmalıdır** (bkz. Bölüm **7.3.4**) |
 
 ---
 
-## 10.1.3 Dezenfeksiyon ve Mikrobiyolojik Arındırma (Sanitizing)
+## 10.1.3. Günlük Temizlik
 
-Sistemin içinde nemli ve sıcak ortamda üreyebilecek bakteri, küf ve mayaların yok edilmesi işlemidir. Bu işlem özellikle bir önceki yıkamada uzun süre bekletilen parçaların veya organik kirlerin (gıda atığı vb.) bulunduğu proseslerden sonra zorunludur.
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Günlük temizlik prosedürü | Yıkama tankı içerisindeki **ön filtreler** sökülüp temizlenmelidir. Bunun dışında günlük herhangi bir temizliğe gerek yoktur |
 
-- **Kimyasal Seçimi:** Sodyum hipoklorit (çamaşır suyu), perasetik asit veya hidrojen peroksit bazlı dezenfektanlar kullanılabilir. *(Makinenin paslanmaz çelik (AISI 304/316) ile uyumlu olmasına dikkat edilmelidir.)*
+### Günlük temizlik adımları
 
-- **Termal Dezenfeksiyon (Isıl İşlem):** Kimyasal kullanmadan, makineyi 90°C+ sıcaklıkta 15 dakika süreyle boş olarak çalıştırarak termal sanitizasyon sağlanabilir.
+| # | Adım |
+|---|------|
+| 1 | Makineyi durdur, gerekli güvenlik önlemlerini al (LOTO) |
+| 2 | Yıkama tankı ön filtrelerini sök |
+| 3 | Filtreleri temizle (uygun yöntemle — bkz. 10.1.7) |
+| 4 | Filtreleri yerine tak |
+| 5 | Makineyi devreye almadan önce filtrelerin doğru oturduğunu kontrol et |
 
-**Kimyasal İşlem Adımları:**
-
-1. Kireç temizliği ve durulama yapıldıktan sonra sisteme temiz su alınır.
-2. Dezenfektan kimyasal sisteme dozajlanır.
-3. Makine 40-50°C'de *(kimyasalın etki sıcaklığına göre)* 15 dakika döndürülür.
-4. Kimyasal tahliye edilir ve makine içi bol temiz su ile en az 2 kez durulanır.
-
----
-
-## 10.1.4 Tahliye Hatları ve Filtrelerin Mekanik Temizliği
-
-CIP ve Descaling işlemleri boru hatlarını temizlese de, büyük partiküller, talaşlar ve çapaklar tahliye filtrelerinde birikir ve dezenfeksiyonun etkinliğini engeller.
-
-**İşlem Adımları:**
-
-1. Makinenin enerjisini tamamen izole edin *(LOTO).*
-2. Tahliye hattındaki filtre kapak vidalarını sökün ve filtre sepetini çıkarın.
-3. Filtre sepetindeki çapak ve talaşları bir fırça ile temizleyin. Filtre gözlerindeki tıkanıklıkları açmak için basınçlı su veya uygun bir çözücü kullanın.
-4. Filtrenin oturduğu yuvaları ve contalarını silerek temizleyin. Contalarda kimyasal şişmesi veya yırtık varsa değiştirin.
-5. Filtreyi yerine takıp kapağı sıkıca kapatın.
+<!-- FOTO: Yıkama tankı ön filtreleri -->
+![Yıkama tankı ön filtreleri](../../assets/FOTO-10-1-3-on-filtre.png)
 
 ---
 
-## 10.1.5 Dış Yüzey ve Kontrol Paneli Temizliği
+## 10.1.4. Haftalık Derin Temizlik
 
-Makinenin dış gövdesinde biriken kimyasal sıçramaları ve kirler, paslanmaz çeliğin paslanmasına veya boya/kaplamanın bozulmasına neden olabilir.
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Haftalık derin temizlik | Tanklarda bulunan **filtreler** çıkartılıp temizlenmelidir. Pompa çıkışındaki hassas filtrelerdeki **torba filtreler** sökülüp temizlenmelidir |
 
-- **Gövde Temizliği:** Makine dış yüzeyleri yumuşak bir bez ve nötr pH'lı (hafif deterjanlı) su ile silinmelidir. Asit, çamaşır suyu veya aşındırıcı temizlik süngeri paslanmaz çeliğin koruyucu krom oksit tabakasına zarar verir.
+### Haftalık temizlik adımları
 
-- **Panel ve Elektronik Temizliği:** HMI dokunmatik ekranı ve elektrik panosu suyla yıkanmamalıdır. Ekran temizliği için elektronik cihaz temizleyici spreyler veya mikrofiber nemli bez kullanılmalıdır. Sıvının panel aralarına veya buton kenarlarına sızmasına izin verilmemelidir.
+| # | Adım |
+|---|------|
+| 1 | Makineyi durdur, LOTO uygula |
+| 2 | Yıkama ve durulama tanklarındaki filtreleri çıkart |
+| 3 | Filtreleri temizle |
+| 4 | Pompa çıkışı hassas filtrelerdeki torba filtreleri sök |
+| 5 | Torba filtreleri temizle veya gerekirse değiştir |
+| 6 | Tüm filtreleri yerine tak, contaları kontrol et |
+| 7 | Günlük prosedürdeki ön filtre temizliğini de uygula |
+
+<!-- FOTO: Tank filtreleri -->
+![Tank filtreleri](../../assets/FOTO-10-1-4-tank-filtre.png)
+
+<!-- FOTO: Pompa çıkışı torba filtre -->
+![Pompa çıkışı torba filtre](../../assets/FOTO-10-1-4-torba-filtre.png)
 
 ---
 
-## 10.1.6 Temizlik ve Dezenfeksiyon Sıklığı (Sanitizing Frequency)
+## 10.1.5. Dezenfeksiyon Prosedürü
 
-Makinenin çalıştığı sektöre ve kirlilik derecesine göre bu işlemlerin periyotları aşağıdaki gibi tavsiye edilir:
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Dezenfeksiyon prosedürü | Makine tanklarındaki su **boşaltılıp** tank içerisi **sabunlu su** ile yıkanmalıdır |
 
-- **Günlük (Her Vardiya Sonu):** Makine içi ve filtrelerin mekanik temizliği, tambur ve tahliye hattının temiz su ile boş durulanması. Dış yüzeylerin silinmesi.
+### Dezenfeksiyon adımları
 
-- **Haftalık:** CIP (Cleaning in Place) ile sistem içi ağır temizlik. Kireç çözücü (Descaling) uygulaması.
+| # | Adım |
+|---|------|
+| 1 | Makineyi durdur, LOTO uygula |
+| 2 | Tanklardaki suyu boşalt |
+| 3 | Tank içerisini sabunlu su ile yıka |
+| 4 | Sabunlu suyu boşalt |
+| 5 | Tank içerisini temiz su ile durula |
+| 6 | Bkz. 10.1.6 — dış yüzey kurutma |
 
-- **Aylık / Sezonluk:** Tam dezenfeksiyon (Sanitizing) prosedürü, tahliye vanalarının sökülerek iç mekanik temizliği, su seviye sensörlerinin (elektrot) el ile temizliği.
+> **Not:** Dezenfeksiyon, uzun süreli durdurma veya derin temizlik ihtiyacında uygulanmalıdır.
 
 ---
 
-> ⚠️ **GÜVENLİK UYARISI:** Kireç çözücü (asidik) kimyasallar ile dezenfektan (klor/bazlı) kimyasalları **KESİNLİKLE AYNI ANDA VE AYNI TANKTA KARIŞTIRMAYIN.** Bu iki kimyasalın birleşmesi ölümcül seviyede zehirli klor gazı açığa çıkarır. Asidik temizlik yapıldıktan sonra sistemi mutlaka temiz su ile durulayıp tahliye ettikten sonra bazlı/klorlu dezenfeksiyon işlemine geçilmelidir. Tüm bu işlemler esnasında operatör mutlaka **koruyucu gözlük, kimyasal eldiven ve maske** kullanmalıdır.
+## 10.1.6. Temizlik Sonrası Kurutma
+
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Temizlik sonrası kurutma | Makine **dışı** kuru bir bez ile silinmelidir |
+
+Tank içi kurutma için tank suyu boşaltıldıktan sonra doğal kurumaya bırakılabilir veya uygun yöntemle kurulanır. HMI ve elektrik panosu **su ile yıkanmamalıdır**.
+
+---
+
+## 10.1.7. Temizlik Maddeleri
+
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Kullanılan temizlik maddeleri (onaylı liste) | [EKSİK] |
+| Yasak temizlik maddeleri | **Asit bazlı** temizlik maddeleri kullanılmamalıdır. **Paslanmaz çeliğe zarar verecek** temizlik maddeleri kullanılmamalıdır |
+
+Dezenfeksiyon için **sabunlu su** kullanılabilir. Onaylı kimyasal listesi tanımlandığında bu bölüm güncellenecektir.
+
+---
+
+## 10.1.8. Atık Su / Kimyasal Bertaraf
+
+| Parametre | Değer / Açıklama |
+|-----------|------------------|
+| Atık su / kimyasal bertaraf | Makinenin kullanıldığı ülkenin mevcut atık su / kimyasal bertaraf gereksinimleri uygulanmalıdır |
+
+Tank boşaltma suyu ve temizlik atıkları yerel mevzuata uygun şekilde bertaraf edilmelidir.
+
+---
+
+## 10.1.9. Temizlik Kayıt Formu
+
+| # | İşlem | Periyot | Tarih | Yapan | OK/NOK |
+|---|-------|---------|-------|-------|--------|
+| 1 | Yıkama tankı ön filtre temizliği | Günlük | | | |
+| 2 | Tank filtre temizliği | Haftalık | | | |
+| 3 | Pompa çıkışı torba filtre temizliği | Haftalık | | | |
+| 4 | Dezenfeksiyon (sabunlu su) | Gerektiğinde | | | |
+| 5 | Dış yüzey kurutma | Her temizlik sonrası | | | |
+
+**Onay:** _______________

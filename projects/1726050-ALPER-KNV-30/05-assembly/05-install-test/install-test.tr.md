@@ -1,7 +1,5 @@
 # 5.5. Kurulum Doğrulama ve Test
 
-Bu bölüm, KNV 30 3000 2B makinesinin kurulum sonrası mekanik, elektrik, pnömatik/medya ve güvenlik fonksiyonlarının doğrulanması ile **15 dakikalık boş koşu testi** prosedürlerini tanımlar.
-
 Testler, Bölüm **5.4** güvenlik testleri tamamlandıktan sonra uygulanmalıdır. Tüm kontroller **OK** olmadan operasyona geçilmemelidir.
 
 ---

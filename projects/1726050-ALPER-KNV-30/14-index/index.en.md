@@ -1,5 +1,7 @@
-<!-- CEVIRI GEREKLI -> EN | kaynak: TR | bu satiri ceviri bitince silin. Baslik/gorsel/tablo yapisini koruyun. -->
+# 14. ANNEXES, GLOSSARY AND INDEX
 
-# index
-
-<!-- 1726050-ALPER-KNV 30 | proje ozel icerik -->
+| Section | Title | Topic |
+|---------|-------|-------|
+| **14.1** | Annexes | Alarm list, parameters, recipes, warranty references |
+| **14.2** | Glossary | Terms and abbreviations |
+| **14.3** | Keyword Index | LOTO, HMI, emergency stop, etc. — section references |

@@ -1,3 +1,23 @@
-# 10. TEMİZLİK (CLEANING)
+# 10. TEMİZLİK
 
-Bu bölüm, endüstriyel yıkama makinelerimizin kendi iç ve dış temizlik prosedürlerini kapsamaktadır. Makinenin uzun ömürlü, hijyenik ve kesintisiz bir şekilde çalışabilmesi için; yıkanan parçaların kalitesini tehdit edebilecek kimyasal kalıntı birikimlerinin, tıkanıklıkların ve korozyon risklerinin önlenmesi amacıyla düzenli temizlik şarttır. Makinenin temizliği yalnızca görsel bir düzen sağlamak için değil; sensörlerin, filtrelerin, tahliye hatlarının ve kapak contalarının doğru çalışmasını güvence altına almak için kritik bir bakım operasyonudur. Temizlik prosedürlerine başlamadan önce makinenin tamamen durdurulması, enerji izolasyonunun (LOTO) sağlanması ve makine içi basınçlı sistemlerin tamamen tahliye edilmesi zorunludur. Ayrıca, temizlik esnasında kullanılacak kimyasalların ve su sistemlerinin operatöre veya makine yüzeylerine zarar vermemesi için ilgili kişisel koruyucu ekipmanların (KKE) kullanılması ve bu bölümde belirtilen kurallara strictly uyulması gerekmektedir.
+Makine **kuru/ıslak** temizlik yöntemlerine uygundur. CIP veya COP sistemi **bulunmamaktadır**. Temizlik işlemleri bakım personeli tarafından, makine durdurulduktan ve **LOTO** uygulandıktan sonra yapılmalıdır.
+
+| Parametre | Değer |
+|-----------|-------|
+| Temizlik tipi | Kuru / ıslak |
+| Günlük temizlik | Yıkama tankı ön filtreleri |
+| Haftalık temizlik | Tank filtreleri + pompa çıkışı torba filtreler |
+| Onaylı temizlik maddeleri | [EKSİK] |
+
+Periyodik bakım referansı için bkz. Bölüm **9.1.3**.
+
+---
+
+## Bölüm İçeriği
+
+| Bölüm | Başlık | Konu |
+|-------|--------|------|
+| **10.1** | Temizlik ve Dezenfeksiyon | Günlük/haftalık prosedürler, yasak maddeler, bertaraf |
+
+<!-- FOTO: Tank ve filtre temizlik genel görünüm -->
+![Tank ve filtre temizlik genel görünüm](../assets/FOTO-10-0-cleaning-genel.png)

@@ -1,8 +1,23 @@
-<!-- ÇEVİRİ GEREKLİ → EN | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 9. MAINTENANCE
 
-# 9. BAKIM (MAINTENANCE)
+The machine runs on a **24/7 robot** line; there is no operator. On fault, **maintenance personnel** intervene (see Section **11**). All maintenance must be performed after machine stop with energy isolation (LOTO).
 
-Bu bölüm, endüstriyel yıkama makinelerimizin periyodik bakım, rutin kontrol ve onarım prosedürlerini kapsamaktadır. Makinelerin tasarlandığı uzun ömre ulaşması, kesintisiz ve yüksek verimle çalışması, beklenmedik arızaların ve üretim duruşlarının minimize edilmesi ile iş sağlığı ve güvenliği şartlarının korunması amacıyla düzenli bakım şarttır. Bu kılavuzda belirtilen periyodik bakım aralıkları ve talimatları, makinenizin mekanik, elektriksel, pnömatik ve hidrolik sistemlerinin güvenilirliğini doğrudan etkilemektedir. Bu nedenle, tüm bakım ve onarım faaliyetlerinin yalnızca makineyi tanıyan, gerekli eğitimleri almış yetkili personeller tarafından, ilgili güvenlik kuralları (LOTO vb.) gözetilerek uygulanması zorunludur.
+| Parameter | Value |
+|-----------|-------|
+| Maintenance philosophy | Preventive maintenance |
+| Lubrication chart | None |
+| Lubrication points | 4 (conveyor infeed 2 + outfeed 2) |
+| Maintenance mode | None — power off and apply LOTO |
 
+For cleaning procedures, see Section **10**.
 
+---
 
+## Section Contents
+
+| Section | Title | Topic |
+|---------|-------|-------|
+| **9.1** | Maintenance Instructions | Periodic maintenance, lubrication, spare parts, safety |
+
+<!-- FOTO: Maintenance access areas overview -->
+![Maintenance access areas](../assets/FOTO-9-0-maintenance-genel.png)

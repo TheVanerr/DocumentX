@@ -1,7 +1,5 @@
 # 6.5. Pneumatikeinstellungen
 
-Dieser Abschnitt definiert die pneumatischen Einstellpunkte der Maschine KNV 30 3000 2B.
-
 Druckluftanschluss: **6 bar — 3/4"** (siehe Abschnitt **5.3**).
 
 ---

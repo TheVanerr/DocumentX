@@ -1,7 +1,5 @@
 # 6.2. Safety Settings
 
-This section defines safety-related settings and procedures for the KNV 30 3000 2B machine. Safety parameters shall only be changed by authorized technical personnel.
-
 ---
 
 ## 6.2.1. Safety Door / Bypass

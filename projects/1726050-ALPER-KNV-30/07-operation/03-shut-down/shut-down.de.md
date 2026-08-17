@@ -1,31 +1,29 @@
-# 7.3. Maschinenstopp
+# 7.3. Maschinenstillstand
 
-Dieser Abschnitt definiert normales Abschalten, Neustart nach Not-Halt und Spannungsabschaltung für die Maschine KNV 30 3000 2B.
-
-Die Stopp-Taste ist als **digitale Taste auf der HMI-Oberfläche** vorhanden.
+Die Stopptaste ist eine **digitale Taste am HMI**.
 
 ---
 
-## 7.3.1. Normales Stopp-Verfahren
+## 7.3.1. Normales Stoppen
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
-| Normales Stopp-Verfahren | [FEHLEND] |
+| Normales Stoppen | Bei Betätigung der HMI-**Stopptaste** stoppen Förderer, Pumpen, Ventilatoren und alle Funktionen |
 
 ---
 
-## 7.3.2. Neustart nach Not-Halt
+## 7.3.2. Neustart nach Not-Aus
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
-| Neustart nach Not-Halt | Nach Lösen des Not-Halt-Tasters und Bestätigung, dass die physische Gefahr behoben ist, drückt der Bediener die Reset-Taste auf dem Schranketikett, bis die Lampe leuchtet |
+| Neustart nach Not-Aus | Nach Beseitigung der Gefahr Not-Aus-Taste lösen; Reset-Taste am Schaltschrank bis Lampe leuchtet drücken |
 
-Bei Not-Halt stoppt **jede Funktion** der Maschine. Signalelement leuchtet **rot**.
+Bei Not-Aus stoppen **alle Funktionen**. Signalleuchte **rot**.
 
-Detailliertes Not-Halt-Testverfahren siehe Abschnitt **5.4.1**.
+Detaillierte Not-Aus-Testprozedur siehe Abschnitt **5.4.1**.
 
-<!-- PHOTO: Schrank-Reset-Taste — nach Not-Halt -->
-![Reset-Taste — nach Not-Halt](../../assets/FOTO-7-3-0-reset.png)
+<!-- FOTO: Reset-Taste nach Not-Aus -->
+![Reset-Taste nach Not-Aus](../../assets/FOTO-7-3-0-reset.png)
 
 ---
 
@@ -33,12 +31,12 @@ Detailliertes Not-Halt-Testverfahren siehe Abschnitt **5.4.1**.
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
-| Abschaltreihenfolge | [FEHLEND] |
+| Abschaltreihenfolge | **1.** Maschine über HMI-Stop anhalten → **2.** Hauptschalter ausschalten |
 
 ---
 
-## 7.3.4. Langzeitstopp
+## 7.3.4. Langzeitstillstand
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
-| Langzeitstopp (Wochenende) Verfahren | [FEHLEND] |
+| Langzeitstillstand (Wochenende) | Tanks **müssen entleert und gereinigt werden** (siehe Abschnitt **10**) |

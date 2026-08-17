@@ -1,7 +1,5 @@
 # 5.5. Installation Verification and Testing
 
-This section defines procedures for verifying mechanical, electrical, pneumatic/media, and safety functions after installation of the KNV 30 3000 2B machine, including the **15-minute empty run test**.
-
 Tests shall be performed after Section **5.4** safety tests are completed. Do not proceed to operation until all checks are **OK**.
 
 ---

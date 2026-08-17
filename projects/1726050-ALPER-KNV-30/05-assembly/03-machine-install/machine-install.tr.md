@@ -1,7 +1,5 @@
 # 5.3. Sistem Bağlantıları ve Devreye Alma
 
-Bu bölüm, KNV 30 3000 2B makinesinin basınçlı hava, su ve elektrik tesisat bağlantılarının yapılması ile pano üzerinden devreye alınması ve faz kontrolü prosedürlerini tanımlar.
-
 Bağlantı işlemleri, Bölüm 5.1 montaj adımlarının **Adım 4–8** kapsamında gerçekleştirilir.
 
 ---

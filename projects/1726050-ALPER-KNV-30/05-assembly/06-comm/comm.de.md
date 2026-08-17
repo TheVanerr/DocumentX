@@ -1,7 +1,5 @@
 # 5.6. Kommunikation und Automatisierungsschnittstelle
 
-Dieser Abschnitt beschreibt Feldbus-Kommunikation, Profinet-Infrastruktur, SPS/HMI-Integration und E/A-Dokumentationsreferenzen der Maschine KNV 30 3000 2B.
-
 ---
 
 ## 5.6.1. Feldbus und Protokoll

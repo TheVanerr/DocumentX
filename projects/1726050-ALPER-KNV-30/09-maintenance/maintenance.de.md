@@ -1,8 +1,23 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 9. WARTUNG
 
-# 9. BAKIM (MAINTENANCE)
+Die Maschine arbeitet in **24/7-Roboter**-Linie; kein Bediener. Bei Störung greift **Wartungspersonal** ein (siehe Abschnitt **11**). Alle Wartung nach Maschinenstopp mit Energieisolierung (LOTO).
 
-Bu bölüm, endüstriyel yıkama makinelerimizin periyodik bakım, rutin kontrol ve onarım prosedürlerini kapsamaktadır. Makinelerin tasarlandığı uzun ömre ulaşması, kesintisiz ve yüksek verimle çalışması, beklenmedik arızaların ve üretim duruşlarının minimize edilmesi ile iş sağlığı ve güvenliği şartlarının korunması amacıyla düzenli bakım şarttır. Bu kılavuzda belirtilen periyodik bakım aralıkları ve talimatları, makinenizin mekanik, elektriksel, pnömatik ve hidrolik sistemlerinin güvenilirliğini doğrudan etkilemektedir. Bu nedenle, tüm bakım ve onarım faaliyetlerinin yalnızca makineyi tanıyan, gerekli eğitimleri almış yetkili personeller tarafından, ilgili güvenlik kuralları (LOTO vb.) gözetilerek uygulanması zorunludur.
+| Parameter | Wert |
+|-----------|------|
+| Wartungsphilosophie | Vorbeugende Wartung |
+| Schmierplan | Keiner |
+| Schmierstellen | 4 (Förderer Zufuhr 2 + Abfuhr 2) |
+| Wartungsmodus | Keiner — Strom abschalten und LOTO |
 
+Reinigungsprozeduren siehe Abschnitt **10**.
 
+---
 
+## Abschnittsinhalt
+
+| Abschnitt | Titel | Thema |
+|-----------|-------|-------|
+| **9.1** | Wartungsanweisungen | Periodische Wartung, Schmierung, Ersatzteile, Sicherheit |
+
+<!-- FOTO: Wartungszugang Übersicht -->
+![Wartungszugang](../assets/FOTO-9-0-maintenance-genel.png)

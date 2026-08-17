@@ -1,7 +1,5 @@
 # 3.4. Machine Controls
 
-This section defines the electrical control panel, HMI operator interface, PLC automation system, start/stop functions, signal lamps, and alarm/remote access features of the KNV 30 3000 2B machine.
-
 ---
 
 ## 3.4.1. Control Panel — General Structure

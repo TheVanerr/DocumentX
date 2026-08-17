@@ -1,10 +1,26 @@
-<!-- ÇEVİRİ GEREKLİ → EN | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 11. TROUBLESHOOTING
 
-# 11. ARIZA TESPİTİ VE SORUN GİDERME (TROUBLESHOOTING)
+There is **no operator** on the machine; fault intervention is by **maintenance personnel**. Stop machine before intervention; apply **LOTO** for electrical/panel work (see Section **9.1.2**).
 
-Bu bölüm, endüstriyel yıkama makinelerimizin çalışması esnasında karşılaşılabilecek olası arıza, sorun ve operasyonel anormalliklerin tespit edilmesi ve giderilmesi amacıyla hazırlanmıştır. Makinelerin mekanik, elektriksel, pnömatik ve yazılımsal (PLC/HMI) tüm alt sistemlerinde meydana gelebilecek yaygın hatalar, bu bölümde "Belirti (Semptom) -> Olası Neden -> Çözüm Yöntemi" mantığıyla listelenmiştir. Sorun giderme sürecine başlamadan önce, operatörün ve bakım personelinin makinenin çalışma prensiplerini ve bu kılavuzun ilgili işletim bölümlerini tam anlamıyla bilmesi gerekmektedir.
+| Parameter | Value |
+|-----------|-------|
+| Alarm display | HMI alarm screen + stack light red |
+| HMI languages | Turkish, English, German |
+| Remote access | Yes — Secomea module |
 
-Herhangi bir arıza müdahalesine başlamadan önce makinenin tamamen durdurulması, ana elektrik şalterinin "0" konumuna alınması ve enerji izolasyonunun (LOTO - Lockout/Tagout) sağlanması zorunludur. Bu kılavuzda yer alan müdahale yöntemleri, yetkili ve eğitimli operatörlerin uygulayabileceği rutin kontrolleri kapsamaktadır. Belirtilen çözüm önerilerine rağmen sorun devam ediyorsa, arızanın PLC yazılımı, inverter parametreleri veya major mekanik bileşenler gibi ileri düzey teknik bilgi gerektiren bir alanda olduğu anlaşılmalı ve derhal CNK ELEKTRONİK / DOLFIN MAKİNE yetkili servis departasına başvurulmalıdır. Yetkisiz ve bilinçsiz müdahaleler makineye kalıcı hasar verebilir ve cihazın garanti koşullarını tamamen geçersiz kılabilir.
+---
 
+## Section Contents
 
+| Section | Title | Topic |
+|---------|-------|-------|
+| **11.1** | Fault Finding | Alarm code list, general diagnosis |
+| **11.2** | General | HMI alarm behaviour, service criteria |
+| **11.3** | Electrical | Phase, motor, heater faults |
+| **11.4** | Hydraulic | Not applicable |
+| **11.5** | Pneumatic | Air pressure, valve faults |
+| **11.6** | Vacuum | Not applicable |
+| **11.7** | Sensors | RFID, level sensors |
 
+<!-- FOTO: HMI alarm screen -->
+![HMI alarm screen](../assets/FOTO-11-0-alarm-genel.png)

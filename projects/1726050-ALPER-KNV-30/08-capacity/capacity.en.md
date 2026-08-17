@@ -1,5 +1,27 @@
-<!-- ÇEVİRİ GEREKLİ → EN | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 8. CAPACITY
 
-# 8. KAPASİTE (CAPACITY)
+The machine is an infeed-loaded conveyor industrial parts washer with two baths (wash + rinse). Capacity depends on part geometry, robot feed rate, recipe parameters (temperature, process times) and process functions activated on HMI (wash, rinse, drying 1/2).
 
-Bu bölüm, endüstriyel yıkama makinelerimizin yükleme kapasitelerini ve optimum çalışma sınırlarını tanımlamaktadır. Makinenin kapasitesi yalnızca tamburun fiziksel hacmi (litre) ile sınırlı olmayıp; yıkanacak parçaların malzeme yoğunluğu, geometrisi ve toplam ağırlığı gibi operasyonel faktörlere göre değişkenlik gösterir. Doğru kapasite planlaması; hem maksimum yıkama verimliliğini ve kalitesini sağlamak hem de tambur, motor ve yataklar gibi kritik mekanik bileşenlerin ömrünü garanti altına almak için zorunludur.
+The machine is designed for **24/7 robot** line operation.
+
+| Parameter | Value |
+|-----------|-------|
+| Minimum capacity | **730 pcs/hour** |
+| Nominal cycle time | **900 s** (15 min) |
+| Maximum continuous operation | **24/7** |
+| Nominal / maximum capacity | Defined by end user |
+| Product size / weight limits | Defined by end user |
+
+For technical dimensions and process summary, see Section **3.3.2**.
+
+---
+
+## Section Contents
+
+| Section | Title | Topic |
+|---------|-------|-------|
+| **8.1** | Product Capacity | Capacity table, test conditions, continuous operation limit |
+| **8.2** | Specific Setup | Recipe parameters, product-based setup |
+
+<!-- FOTO: Conveyor capacity overview -->
+![Conveyor capacity overview](../assets/FOTO-8-0-capacity-genel.png)

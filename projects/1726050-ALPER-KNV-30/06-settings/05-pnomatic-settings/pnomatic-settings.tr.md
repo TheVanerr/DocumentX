@@ -1,7 +1,5 @@
 # 6.5. Pnömatik Ayarlar
 
-Bu bölüm, KNV 30 3000 2B makinesinin pnömatik ayar noktalarını tanımlar.
-
 Makine basınçlı hava bağlantısı: **6 bar — 3/4"** (bkz. Bölüm **5.3**).
 
 ---

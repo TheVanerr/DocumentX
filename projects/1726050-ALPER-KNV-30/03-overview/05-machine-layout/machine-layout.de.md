@@ -1,7 +1,5 @@
 # 3.5. Maschinenlayout
 
-Dieser Abschnitt beschreibt die Layout-Orientierungen, Wartungszugangsbereiche, Mindestfreiräume, Transportbeschränkungen und Schwerpunktinformationen der Maschine KNV 30 3000 2B.
-
 **Referenzzeichnung:** `1726050-ALPER-KNV 30 LAYOUT.pdf`
 
 Die Layout-Zeichnung liegt im Projekt-Assets-Ordner vor: `1726050-ALPER-KNV 30 3000 2B PRO IDE LAYOUT.PDF`

@@ -71,7 +71,7 @@ for (const { parts, base: baseName } of needed) {
 const projectDoc = {
   proje_adi: '1726050-ALPER-KNV 30',
   model: 'knv',
-  diller: ['tr'],
+  diller: ['tr', 'en', 'de'],
   varsayilan_dil: 'tr',
   extends: 'templates/base.yaml',
   kapak: { rev: '', tarih: '', firma: 'DOLFIN' }
@@ -79,20 +79,21 @@ const projectDoc = {
 
 const header =
   '# 1726050-ALPER-KNV 30 - proje recetesi\n' +
+  '# Dil derleme: TR -> .<dil=tr>.md, EN -> .en.md, DE -> .de.md\n' +
   '# Cozumleme: projects/... -> content/_models/knv/... -> content/_common/...\n' +
   '#\n' +
   '# Ortak (_common; proje klasorunde dosya YOK):\n' +
   '#   01-introduction, 02-safety, 04-transport\n' +
   '#\n' +
-  '# Proje ozel (projects/1726050-ALPER-KNV-30/ altindaki .tr.md):\n' +
+  '# Proje ozel (projects/1726050-ALPER-KNV-30/ altindaki .<dil>.md):\n' +
   '#   03-overview, 05-assembly .. 14-index\n\n';
 
 fs.mkdirSync(PROJ, { recursive: true });
 fs.writeFileSync(
-  path.join(PROJ, 'project.yaml'),
+  path.join(PROJ, '1726050-ALPER-KNV 30.yaml'),
   header + yaml.dump(projectDoc, { lineWidth: -1 }),
   'utf8'
 );
 
-console.log('\nproject.yaml guncellendi (model: knv)');
+console.log('\n1726050-ALPER-KNV 30.yaml guncellendi (model: knv)');
 console.log(`Olusturulan: ${created} | Atlanan: ${skipped} | Hedef: ${needed.length} dosya`);

@@ -1,7 +1,5 @@
 # 6.2. Sicherheitseinstellungen
 
-Dieser Abschnitt definiert sicherheitsrelevante Einstellungen und Verfahren für die Maschine KNV 30 3000 2B. Sicherheitsparameter dürfen nur von autorisiertem Fachpersonal geändert werden.
-
 ---
 
 ## 6.2.1. Sicherheitstür / Bypass

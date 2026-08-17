@@ -1,7 +1,5 @@
 # 3.2. Intended Use
 
-This section defines the intended purpose, processable product limits, prohibited uses, environmental conditions, and operator requirements for the KNV 30 3000 2B industrial parts washing machine. Compliance with the limits specified below is mandatory for safe, efficient, and intended operation of the machine.
-
 ---
 
 ## 3.2.1. Designed Scope of Use

@@ -1,6 +1,6 @@
 # 7.2. Makine Başlatma
 
-Bu bölüm, KNV 30 3000 2B makinesinin devreye alma ve start prosedürlerini tanımlar.
+Makinede HMI ekranında **1 adet hazırlık butonu** bulunur. Start verilmeden önce hazırlık tamamlanmalıdır.
 
 ---
 
@@ -8,7 +8,12 @@ Bu bölüm, KNV 30 3000 2B makinesinin devreye alma ve start prosedürlerini tan
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| Devreye alma ön koşulları (checklist) | [EKSİK] |
+| Devreye alma ön koşulları (checklist) | HMI **hazırlık** butonu ile tank dolumu ve ısıtma yapılır. Tankta su yoksa üst seviyeye kadar dolar, ardından reçetede ayarlanan sıcaklığa ısınır. Tankta su varsa doğrudan ısınır. Başka hazırlık gerekmez |
+
+**Dolum sorunu:** Tankta su yoksa ve hazırlığa basıldığında dolum olmuyorsa, **otomatik dolum su giriş vanası kapalıdır** — vanayı açın. Makineye **6 bar** basınçlı hava bağlı olmalıdır.
+
+<!-- FOTO: HMI hazırlık butonu -->
+![HMI hazırlık butonu](../../assets/FOTO-7-2-1-hazirlik.png)
 
 ---
 
@@ -16,7 +21,7 @@ Bu bölüm, KNV 30 3000 2B makinesinin devreye alma ve start prosedürlerini tan
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| Güç açma sırası | [EKSİK] |
+| Güç açma sırası | **1.** Ana şalter açık → **2.** HMI hazırlık butonuna bas → **3.** Hazırlık tamamlandıktan sonra start ver |
 
 ---
 
@@ -24,7 +29,7 @@ Bu bölüm, KNV 30 3000 2B makinesinin devreye alma ve start prosedürlerini tan
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| Hava / su / vakum açma | [EKSİK] |
+| Hava / su / vakum açma | **6 bar** basınçlı hava bağlantısı hazırlık/dolum için gereklidir. Su, otomatik dolum vanası üzerinden tanklara dolar. **Vakum yoktur** |
 
 ---
 
@@ -32,15 +37,23 @@ Bu bölüm, KNV 30 3000 2B makinesinin devreye alma ve start prosedürlerini tan
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| Isıtma ön ısınma süresi (dk) | [EKSİK] |
+| Isıtma ön ısınma süresi (dk) | **Değişken** — tanktaki mevcut su miktarı ve sıcaklığına bağlıdır (ör. önceki vardiyadan kalan su). Reçetede ayarlanan sıcaklığa ulaşılana kadar ısınır; sabit süre verilemez |
 
 ---
 
 ## 7.2.5. Start Öncesi Kontrol Listesi
 
-| Parametre | Değer / Açıklama |
-|-----------|------------------|
-| Start öncesi kontrol listesi | [EKSİK] |
+| # | Kontrol | Durum |
+|---|---------|-------|
+| 1 | Konveyör hattında sıkıştıracak parça/cisim yok | ☐ OK / ☐ NOK |
+| 2 | Pompa önündeki vanalar açık (kapalıysa mutlaka aç) | ☐ OK / ☐ NOK |
+| 3 | Hazırlık tamamlandı (tank dolumu + ısıtma) | ☐ OK / ☐ NOK |
+| 4 | Acil stop resetli, makine kullanıma hazır (sarı lamba) | ☐ OK / ☐ NOK |
+
+**Tarih:** _______________ **Kontrol eden:** _______________
+
+<!-- FOTO: HMI start butonu -->
+![HMI start butonu](../../assets/FOTO-7-2-0-start.png)
 
 ---
 
@@ -48,7 +61,4 @@ Bu bölüm, KNV 30 3000 2B makinesinin devreye alma ve start prosedürlerini tan
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| İlk ürün / kurşun atma prosedürü | [EKSİK] |
-
-<!-- FOTO: HMI start butonu -->
-![HMI start butonu](../../assets/FOTO-7-2-0-start.png)
+| İlk ürün / kurşun atma prosedürü | **Yoktur** |

@@ -1,6 +1,4 @@
-# 5. Montage und Inbetriebnahme
-
-Dieser Abschnitt umfasst Montage, Positionierung, Medienanschlüsse, Sicherheitstests und Installationsprüfung — vom Transport der Maschine **KNV 30 3000 2B** (Projekt-Nr.: **1726050**) zum Aufstellungsort bis zur Inbetriebnahme.
+# 5. MONTAGE UND INBETRIEBNAHME
 
 Die Montagearbeiten dauern schätzungsweise **1 Tag** und werden von einem **1-köpfigen** Team durchgeführt. Für Transport und Aufstellung ist ein **Gabelstapler** zu verwenden; beim Transport der Maschine darf ein **Kran unter keinen Umständen** eingesetzt werden. Für Gabelstapler-Transport sind die Profile unter der Maschine zu verwenden.
 

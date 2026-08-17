@@ -1,7 +1,5 @@
 # 3.2. Bestimmungsgemäße Verwendung
 
-Dieser Abschnitt definiert den bestimmungsgemäßen Verwendungszweck, die verarbeitbaren Produktgrenzen, verbotene Verwendungen, Umgebungsbedingungen und Bedieneranforderungen der industriellen Teilewaschanlage KNV 30 3000 2B. Die Einhaltung der nachstehend genannten Grenzen ist für einen sicheren, effizienten und bestimmungsgemäßen Betrieb der Maschine zwingend erforderlich.
-
 ---
 
 ## 3.2.1. Bestimmungsgemäßer Verwendungsbereich

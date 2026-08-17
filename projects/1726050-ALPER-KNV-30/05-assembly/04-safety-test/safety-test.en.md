@@ -1,7 +1,5 @@
 # 5.4. Safety System Tests
 
-This section defines procedures for testing safety functions of the KNV 30 3000 2B machine after installation. Tests shall be completed in full before starting operation.
-
 Machine stop category: **Cat. 3**. An **RFID safety sensor** is installed on the machine. **No light curtain** is provided. Number of safety doors / barriers: **0**.
 
 ---

@@ -1,5 +1,23 @@
-<!-- ÇEVİRİ GEREKLİ → EN | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 10. CLEANING
 
-# 10. TEMİZLİK (CLEANING)
+The machine supports **dry/wet** cleaning methods. There is **no CIP or COP system**. Cleaning must be performed by maintenance personnel after machine stop and **LOTO** application.
 
-Bu bölüm, endüstriyel yıkama makinelerimizin kendi iç ve dış temizlik prosedürlerini kapsamaktadır. Makinenin uzun ömürlü, hijyenik ve kesintisiz bir şekilde çalışabilmesi için; yıkanan parçaların kalitesini tehdit edebilecek kimyasal kalıntı birikimlerinin, tıkanıklıkların ve korozyon risklerinin önlenmesi amacıyla düzenli temizlik şarttır. Makinenin temizliği yalnızca görsel bir düzen sağlamak için değil; sensörlerin, filtrelerin, tahliye hatlarının ve kapak contalarının doğru çalışmasını güvence altına almak için kritik bir bakım operasyonudur. Temizlik prosedürlerine başlamadan önce makinenin tamamen durdurulması, enerji izolasyonunun (LOTO) sağlanması ve makine içi basınçlı sistemlerin tamamen tahliye edilmesi zorunludur. Ayrıca, temizlik esnasında kullanılacak kimyasalların ve su sistemlerinin operatöre veya makine yüzeylerine zarar vermemesi için ilgili kişisel koruyucu ekipmanların (KKE) kullanılması ve bu bölümde belirtilen kurallara strictly uyulması gerekmektedir.
+| Parameter | Value |
+|-----------|-------|
+| Cleaning type | Dry / wet |
+| Daily cleaning | Wash tank pre-filters |
+| Weekly cleaning | Tank filters + pump outlet bag filters |
+| Approved cleaning agents | [MISSING] |
+
+For periodic maintenance reference, see Section **9.1.3**.
+
+---
+
+## Section Contents
+
+| Section | Title | Topic |
+|---------|-------|-------|
+| **10.1** | Cleaning and Sanitizing | Daily/weekly procedures, prohibited agents, disposal |
+
+<!-- FOTO: Tank and filter cleaning overview -->
+![Tank and filter cleaning overview](../assets/FOTO-10-0-cleaning-genel.png)

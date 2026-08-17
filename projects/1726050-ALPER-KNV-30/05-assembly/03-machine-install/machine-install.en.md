@@ -1,7 +1,5 @@
 # 5.3. System Connections and Commissioning
 
-This section defines procedures for connecting compressed air, water, and electrical utilities to the KNV 30 3000 2B machine, energisation via the panel, and phase rotation check.
-
 Connection operations are performed within **Steps 4–8** of Section 5.1 assembly steps.
 
 ---

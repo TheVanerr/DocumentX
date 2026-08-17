@@ -1,5 +1,21 @@
-<!-- CEVIRI GEREKLI -> EN | kaynak: TR | bu satiri ceviri bitince silin. Baslik/gorsel/tablo yapisini koruyun. -->
+# 13.2. Drawings
 
-# drawings
+Drawings are supplied in a **separate document package**.
 
-<!-- 1726050-ALPER-KNV 30 | proje ozel icerik -->
+---
+
+## 13.2.1. Drawing List
+
+| Drawing | File name / rev | Delivery |
+|---------|-----------------|----------|
+| General assembly drawing | Supplied as separate document | Delivery package |
+| Lifting point drawing | Supplied as separate document | Delivery package |
+| Floor anchor drawing | Supplied as separate document (if applicable) | Delivery package |
+| Customer delivery drawing package | Supplied as separate document | Delivery package |
+| General layout plan | `1726050-ALPER-KNV 30 LAYOUT.pdf` | See **3.5** |
+
+---
+
+## 13.2.2. Image References Used in Manual
+
+Machine images are in project `assets/` folder. Placeholders marked `<!-- FOTO: ... -->` in manual text link to relevant images.

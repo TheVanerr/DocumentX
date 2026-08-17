@@ -1,8 +1,8 @@
-# 7.4. Betriebssequenz
+# 7.4. Betriebsablauf
 
-Dieser Abschnitt definiert die automatische Betriebssequenz der Maschine KNV 30 3000 2B.
+Die Maschine arbeitet **vollautomatisch**. Am HMI-Betriebsbildschirm gibt es **Ein/Aus-Tasten** für Waschen, Spülen, Trocknung 1, Trocknung 2 und Abluft.
 
-Prozessablauf (Kurz): **Waschen → Spülen → Trocknen**
+Prozessablauf: **Waschen → Spülen → Trocknen**
 
 | Prozess | Bezeichnung |
 |---------|-------------|
@@ -16,11 +16,11 @@ Prozessablauf (Kurz): **Waschen → Spülen → Trocknen**
 
 | Schritt | Beschreibung |
 |---------|--------------|
-| Automatischer Zyklusschritt 1 | [FEHLEND] |
-| Automatischer Zyklusschritt 2 | [FEHLEND] |
-| Automatischer Zyklusschritt 3 | [FEHLEND] |
-| Automatischer Zyklusschritt 4 | [FEHLEND] |
-| Automatischer Zyklusschritt 5 | [FEHLEND] |
+| 1 | Am HMI-Betriebsbildschirm Waschen, Spülen, Trocknung 1, Trocknung 2 nach Bedarf **Ein/Aus** einstellen |
+| 2 | Nach abgeschlossener Vorbereitung **Start** drücken; Förderer und gewählte Prozessfunktionen laufen automatisch |
+| 3 | Teil passiert **Wasch**bad auf Förderer (wenn Waschen aktiv) |
+| 4 | Teil passiert **Spül**bad (wenn Spülen aktiv) |
+| 5 | Teil passiert **Trocknungs**zone (wenn Trocknung 1/2 aktiv); erreicht Ausgang |
 
 ---
 
@@ -28,28 +28,28 @@ Prozessablauf (Kurz): **Waschen → Spülen → Trocknen**
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
-| Nominale Zykluszeit (s) | [FEHLEND] |
+| Nominale Zykluszeit (s) | **900** |
 
 ---
 
-## 7.4.3. Teileein- / -auslauf
+## 7.4.3. Produktzufuhr / -abfuhr
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
-| Teileeinlauf-Szenario | [FEHLEND] |
-| Teileauslauf-Szenario | [FEHLEND] |
+| Zufuhrszenario | An der Zufuhr **kein Bediener**; Teil wird vom **Roboter** auf Förderer gelegt. Zufuhrprozedur liegt beim **Kunden** |
+| Abfuhr-Szenario | An der Abfuhr **kein Bediener**; Teil wird vom **Roboter** entnommen. Abfuhrprozedur liegt beim **Kunden** |
 
-Teile durchlaufen die Prozesse auf dem Förderband (Frontbeladung).
+Teile durchlaufen Prozesse auf dem Förderer (Zufuhrbeladung).
 
-<!-- PHOTO: Förderband — Teileein-/auslauf -->
-![Förderband-Teilefluss](../../assets/FOTO-7-4-0-konveyor.png)
+<!-- FOTO: Förderer Produktfluss -->
+![Förderer Produktfluss](../../assets/FOTO-7-4-0-konveyor.png)
 
 ---
 
-## 7.4.4. Maschinenverhalten bei Fehler
+## 7.4.4. Verhalten bei Störung
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
-| Maschinenverhalten bei Fehler | [FEHLEND] |
+| Verhalten bei Störung | Maschine stoppt bei **betriebsrelevanten** Störungen (z. B. Wartungsklappe offen, RFID-Schalter nicht erkannt). Bei **keinem unmittelbaren Luftbedarf** (z. B. Luft abgekoppelt während Betrieb) kann Maschine weiterlaufen |
 
-Bei Alarm wird der Alarmbildschirm auf der HMI-Oberfläche angezeigt; Signalelement leuchtet **rot**.
+Bei Alarm erscheint Alarmbildschirm am HMI; Signalleuchte **rot**.

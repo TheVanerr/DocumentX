@@ -1,5 +1,9 @@
-<!-- CEVIRI GEREKLI -> DE | kaynak: TR | bu satiri ceviri bitince silin. Baslik/gorsel/tablo yapisini koruyun. -->
+# 11.4. Hydraulische Störungen
 
-# trob hydro
+Die KNV 30 3000 2B Maschine hat **kein Hydrauliksystem**. Dieser Abschnitt entfällt.
 
-<!-- 1726050-ALPER-KNV 30 | proje ozel icerik -->
+| Parameter | Wert / Beschreibung |
+|-----------|---------------------|
+| Niederdruckalarm | Nicht anwendbar |
+| Ölleckstellen | Nicht anwendbar |
+| Abnormale Pumpengeräusche | Nicht anwendbar |

@@ -1,179 +1,66 @@
-# 11.1 ARIZA BULMA (FAULT FINDING)
-
-Bu bölüm, makinede meydana gelen arızaların veya operasyonel sapmaların kök nedenlerini (root cause) belirlemek için sistematik bir teşhis sürecini tanımlar. Makine herhangi bir nedenle durduğunda veya beklenmedik bir davranış sergilediğinde, izlenecek adımlar aşağıda **"Belirti → Olası Neden → Yapılacak Kontrol ve Çözüm"** formatında sınıflandırılmıştır.
+# 11.1. Arıza Bulma
 
 ---
 
-## 11.1.1 Mekanik ve Tahrik Arızaları
+## 11.1.1. Genel Teşhis Adımları
 
-Bu alt grup, tamburun dönmemesi, anormal ses çıkarması veya titreşim üretmesi gibi durumlarda izlenecek adımları kapsar.
+| # | Adım |
+|---|------|
+| 1 | HMI **alarm ekranını** aç — aktif alarm kodunu ve metnini oku |
+| 2 | Tepe lambası **kırmızı** mı kontrol et |
+| 3 | Aşağıdaki alarm tablosunda kodu bul |
+| 4 | Önerilen kontrol/çözüm adımlarını uygula |
+| 5 | Acil stop aktifse önce reset prosedürünü uygula (bkz. **7.3.2**) |
+| 6 | Sorun devam ederse LOTO uygulayıp ilgili alt bölüme bak (11.3–11.7) |
 
----
-
-**Belirti: Tambur dönmüyor veya dönüş zayıf/güçsüz gerçekleşiyor.**
-
-**Olası Nedenler:**
-
-- Tambur aşırı yükleme veya dengesiz yükleme (Unbalance) nedeniyle sıkışmış.
-- Tahrik kayışları (V-Kayış) kopmuş, gevşemiş veya zamanlama dişlisi atlamış.
-- Redüktör veya tambur milinde mekanik tıkanıklık/kilitlenme.
-- Motor veya invertör (sürücü) aşırı akım korumasına geçmiş.
-
-**Yapılacak Kontrol ve Çözüm:**
-
-1. Makineyi durdurun ve tambur içindeki malzemeyi hafifleterek dağılımını kontrol edin.
-2. Makinenin arka/yan kapağını açıp tahrik kayışlarının ve kasnaklarının durumunu görsel olarak inceleyin. Kopuk veya gevşek kayış varsa değiştirin/gerginliğini ayarlayın.
-3. Tamburu elinizle çevirmeyi deneyin. Serbestçe dönmüyorsa mil veya redüktörde mekanik bir kilitlenme olabilir; bu durumda servisi arayın.
-4. HMI ekranında **"Motor Overload"** veya **"Inverter Fault"** alarmı varsa yükü azaltın ve enerjiyi kesip tekrar vererek invertörü resetleyin.
+**Hata davranışı:** Çalışmayı etkileyen hatalarda makine durur (ör. bakım kapağı açık, RFID görmedi). Anlık hava ihtiyacı olmayan durumlarda (ör. çalışırken hava sökülmesi) makine devam edebilir (bkz. **7.4.4**).
 
 ---
 
-**Belirti: Makinede yüksek ses veya şiddetli titreşim var.**
+## 11.1.2. Alarm Kod Listesi
 
-**Olası Nedenler:**
-
-- Tambur yatakları (rulmanlar) aşınmış veya hasar görmüş.
-- Makinenin montaj ayakları düzgün zemine oturmamış veya ayak seviyeleri bozuk.
-- Sıkma (spin) aşamasında aşırı asimetrik (tek taraflı) malzeme yüklemesi.
-
-**Yapılacak Kontrol ve Çözüm:**
-
-1. Makineyi boş ve düşük devirde çalıştırın. Titreşim devam ediyorsa yataklarda veya milden kaynaklı bir sorun olabilir.
-2. Ayak bağlantı civatalarının sıkılığını ve zemine tam oturduğunu kontrol edin; gerekirse ayak krankları ile makineyi teraziye alın.
-3. Sıkma devrinde titreşim oluşuyorsa malzeme dağılımını tambur içinde dengeleyin.
-
----
-
-## 11.1.2 Su ve Tahliye Sistemi Arızaları
-
-Su alımı, drenaj ve seviye kontrolü ile ilgili sorunların teşhis edilmesini kapsar.
-
----
-
-**Belirti: Makine su almıyor veya su seviyesi yeterli miktara ulaşmıyor.**
-
-**Olası Nedenler:**
-
-- Ana su giriş vanası kapalı veya tesisat su basıncı çok düşük.
-- Giriş elektrovalfi elektrik sinyali almıyor veya mekanik olarak arızalı/kireçlenmiş.
-- Su seviye sensörü (basınç şalteri veya elektrot) kirlenmiş veya arızalı.
-
-**Yapılacak Kontrol ve Çözüm:**
-
-1. Tesisattan makineye giden hattın vanasının tam açık olduğundan ve yeterli su basıncının *(min. 2-3 bar)* mevcut olduğundan emin olun.
-2. Giriş hattındaki yalancı (filtre) tıkanmış mı kontrol edin, gerekirse temizleyin.
-3. Makine su alırken giriş valfine giden elektrik sinyalini (LED ışığı veya multimetre) kontrol edin. Sinyal geliyorsa valf mekanik arızalıdır; gelmiyorsa PLC çıkışını veya kabloyu kontrol edin.
-
----
-
-**Belirti: Kirli su tahliye edilmiyor veya tahliye çok yavaş.**
-
-**Olası Nedenler:**
-
-- Tahliye vanası/filtresi üretim talaşı veya çapakla tıkanmış.
-- Tahliye pompası *(eğer mevcutsa)* çalışmıyor veya pervanesi dolmuş.
-- Tahliye hattında (kanalizasyon tarafında) geri basınç (ters akış) var.
-
-**Yapılacak Kontrol ve Çözüm:**
-
-1. Makineyi durdurun. Tahliye hattındaki filtre sepetini söküp temizleyin.
-2. Tahliye vanasının tam açıldığından (pnömatik veya elektrikli) mekanik olarak emin olun.
-3. Kanalizasyon borusunun eğimini ve herhangi bir tıkanıklık olup olmadığını kontrol edin.
+| Kod | Alarm metni | Kontrol / çözüm |
+|-----|-------------|-----------------|
+| Error-229 | Acil Stop Devrede | Acil stop butonunu kaldır, tehdidi gider, pano reset butonuna bas (bkz. 7.3.2) |
+| Error-410 | Faz Sırası Hatalı | Faz sıra rölesi kontrolü; gerekirse iki faz değiştir (bkz. 5.1 Adım 7) |
+| Error-422 | Kapak Kapalı Değil | Bakım kapağının kapalı ve RFID sensörün gördüğünü kontrol et |
+| Error-100 | Yıkama Pompası Motoru Hata | Motor koruma, pompa önü vana, elektrik bağlantısı kontrol et |
+| Error-101 | Durulama Pompası Motoru Hata | Motor koruma, pompa önü vana, elektrik bağlantısı kontrol et |
+| Error-110 | Egzoz Fan Motoru Hata | Egzoz fan motoru ve koruma devresi kontrol et |
+| Error-111 | Kurutma Fan Motoru Hata | 1. kurutma fan motoru ve koruma devresi kontrol et |
+| Error-112 | Kurutma Fan Motoru 2 Hata | 2. kurutma fan motoru ve koruma devresi kontrol et |
+| Error-113 | Kurutma Fan Motoru 3 Hata | 3. kurutma fan motoru ve koruma devresi kontrol et |
+| Error-114 | Kurutma Fan Motoru 4 Hata | 4. kurutma fan motoru ve koruma devresi kontrol et |
+| Error-130 | Yağ Sıyırıcı Motor Hata | Yağ sıyırıcı motor ve koruma devresi kontrol et |
+| Error-150 | Yıkama Tank Sıcaklığı Düşük | Isıtıcı, reçete sıcaklığı, hazırlık tamamlandı mı kontrol et |
+| Error-151 | Durulama Tank Sıcaklığı Düşük | Isıtıcı, reçete sıcaklığı, hazırlık tamamlandı mı kontrol et |
+| Error-170 | Isıtıcı Kaçak Akım F2 | Yıkama tankı ısıtıcı kaçak akım koruma F2 kontrol et |
+| Error-171 | Isıtıcı Kaçak Akım F3 | Isıtıcı kaçak akım koruma F3 kontrol et |
+| Error-172 | Isıtıcı Kaçak Akım F4 | Isıtıcı kaçak akım koruma F4 kontrol et |
+| Error-200 | Yıkama Tankı Su Seviyesi Pompa Seviyesinin Altında | Yıkama tankı su seviyesi, dolum vanası kontrol et |
+| Error-201 | Yıkama Tankı Su Seviyesi Yetersiz | Yıkama tankı dolumu, otomatik dolum su vanası açık mı kontrol et |
+| Error-202 | Durulama Tankı Su Seviyesi Pompa Seviyesinin Altında | Durulama tankı su seviyesi, dolum vanası kontrol et |
+| Error-203 | Durulama Tankı Su Seviyesi Yetersiz | Durulama tankı dolumu, otomatik dolum su vanası kontrol et |
+| Error-235 | Giriş Hava Basıncı Düşük | **6 bar** hava bağlantısı ve regülatör kontrol et (HMI manuel sayfa) |
+| Error-236 | Giriş Su Basıncı Düşük | **1 bar** su bağlantısı kontrol et (HMI manuel sayfa) |
+| Error-300 | Yıkama Otomatik Dolum Vanası Açılamadı | 6 bar hava, vana mekanik/elektrik kontrolü |
+| Error-301 | Yıkama Otomatik Dolum Vanası Kapanamadı | Yıkama dolum vanası mekanik/elektrik kontrolü |
+| Error-302 | Durulama Otomatik Dolum Vanası Açılamadı | 6 bar hava, vana mekanik/elektrik kontrolü |
+| Error-303 | Durulama Otomatik Dolum Vanası Kapanamadı | Durulama dolum vanası mekanik/elektrik kontrolü |
+| Error-304 | Aktarma Vanası Açılamadı | Aktarma vanası mekanik/elektrik, 6 bar hava kontrol et |
+| Error-305 | Aktarma Vanası Kapanamadı | Aktarma vanası mekanik/elektrik kontrol et |
+| Error-452 | Sızıntı Tavasında Su Tesbit Edildi | Sızıntı tavası, tank/conta kaçağı kontrol et |
+| Error-460 | Servo Motor Hata | Servo motor ve sürücü kontrol et — servis gerekebilir |
+| Error-461 | Çıkış Konveyöründe Ürün Algılandı | HMI'da ürünün alındığını onayla; robot çıkış prosedürünü kontrol et |
 
 ---
 
-## 11.1.3 Isıtma Sistemi Arızaları
+## 11.1.3. Genel Arıza Tablosu
 
-Suyun ısınamaması veya aşırı ısınması gibi durumların teşhis edilmesini kapsar.
+| Belirti | Olası neden | Kontrol | Çözüm |
+|---------|-------------|---------|-------|
+| Arıza 1 | [EKSİK] | [EKSİK] | [EKSİK] |
+| Arıza 2 | [EKSİK] | [EKSİK] | [EKSİK] |
+| Arıza 3 | [EKSİK] | [EKSİK] | [EKSİK] |
 
----
-
-**Belirti: Su istenen sıcaklığa ulaşmıyor veya hiç ısınmıyor.**
-
-**Olası Nedenler:**
-
-- Isıtıcı rezistans grubu açık (kopuk) durumda.
-- Buhar valfi çalışmıyor veya buhar basıncı yetersiz.
-- Isıtma kontaktörleri (termik) atmış.
-- Sıcaklık sensörü (PT100) arızalı, düşük sıcaklık okuyor.
-
-**Yapılacak Kontrol ve Çözüm:**
-
-1. HMI üzerinden sıcaklık değerini kontrol edin. Sensör sapıyorsa *(-50°C veya +200°C gösteriyorsa)* sensör değiştirilmelidir.
-2. Elektrik panosundaki ısıtıcı kontaktörlerinin çekip çekmediğini kontrol edin.
-3. Rezistansların uçlarını multimetre ile ölçerek direnç (ohm) değerlerini kontrol edin; açık (sonsuz ohm) ise rezistans değiştirilmelidir.
-
----
-
-**Belirti: Makine aşırı ısınıyor (Overheat) veya güvenlik limiti açıyor.**
-
-**Olası Nedenler:**
-
-- Isıtma kontaktörü yapışmış (sürekli ısıtmaya devam ediyor).
-- PT100 sensörü arızalı (gerçek değerden düşük sıcaklık okuyor).
-
-**Yapılacak Kontrol ve Çözüm:**
-
-1. Isıtma işlemi bittiğinde rezistanslara giden gücün kesilip kesilmediğini multimetre veya ampermetre ile kontrol edin. Güç kesilmiyorsa kontaktör değiştirilmelidir.
-
----
-
-## 11.1.4 Pnömatik ve Kapak Emniyet Arızaları
-
-Kapak kilitlerinin çalışmaması ve valflerin hareket etmemesi durumlarını kapsar.
-
----
-
-**Belirti: Tambur kapağı kapanmıyor veya kilitlenmiyor.**
-
-**Olası Nedenler:**
-
-- Sisteme gelen basınçlı hava yetersiz veya pnömatik hatta kaçak var.
-- Kapak silindiri mekanik olarak sıkışmış.
-- Kapak emniyet limit switch'leri (mikro switch) konumundan kaymış veya arızalı.
-
-**Yapılacak Kontrol ve Çözüm:**
-
-1. Hava haznesindeki basınç göstergesini kontrol edin *(genellikle 6 bar olmalı).*
-2. Kapak silindirinin hava giriş/çıkışını manuel olarak test edin (el valfinden).
-3. Kapak kapanmadan limit switch'in plastiğe değip değmediğini kontrol edin, konumunu ayarlayın.
-
----
-
-## 11.1.5 Kontrol (PLC/HMI) ve İletişim Arızaları
-
-Yazılımsal hatalar, sensör okuma kopuklukları ve panel arızalarını kapsar.
-
----
-
-**Belirti: HMI ekranı donuyor, geç açılıyor veya hiç açılmıyor.**
-
-**Olası Nedenler:**
-
-- HMI ve PLC arasındaki iletişim kablosu (Ethernet/RS485) gevşek veya kopmuş.
-- Panel arka aydınlatması ömrünü doldurmuş.
-- PLC'de yazılımsal takılma (Watchdog hatası) var.
-
-**Yapılacak Kontrol ve Çözüm:**
-
-1. Makinenin ana elektrik şalterini kapatın, 1 dakika bekleyip tekrar açarak sistemi yeniden başlatın (Reboot).
-2. Panel arkasındaki kablo bağlantılarını kontrol edin.
-3. Sorun devam ediyorsa PLC programında veya donanımında arıza olabilir; **CNK ELEKTRONİK / DOLFIN MAKİNE** teknik servisi ile iletişime geçin.
-
----
-
-**Belirti: Makine sürekli "Kapak Açık" veya "Düşük Su" alarmı veriyor (sensör tetiklenmiyor).**
-
-**Olası Nedenler:**
-
-- İlgili sensörün kablosu kopmuş veya oksitlenmiş.
-- Sensör fiziksel olarak ıslanmış/kirlenmiş ve yanlış sinyal üretiyor.
-
-**Yapılacak Kontrol ve Çözüm:**
-
-1. İlgili sensörün bağlantı uçlarını multimetre ile kontrol edin.
-2. Su seviye sensörü (elektrot) ise temizliğini yapın.
-
----
-
-> ⚠️ **DİKKAT:** Arıza bulma (Fault Finding) süreçlerinde elektriksel ölçümler yapılırken makinenin tamamen enerjili olması gerekebilir. Bu durumda elektrik panosu içine müdahale ederken iletken aletlerin kullanımına dikkat edilmeli, mutlaka **yalıtımlı eldiven** giyilmeli ve yetkisiz personelin pano içine müdahalesi kesinlikle yasaklanmalıdır. Karşılaştığınız arıza bu listede yer almayan kompleks bir hasarsa, sorunu zorla çözmeye çalışmak makineyi daha büyük hasarlara uğratabilir; bu durumda derhal **profesyonel teknik destek** talep edin.
+> **Not:** Genel arıza tablosu DATA dosyasında henüz tanımlanmamıştır.

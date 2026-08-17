@@ -1,6 +1,4 @@
-# 5. Kurulum ve Devreye Alma
-
-Bu bölüm, **KNV 30 3000 2B** makinesinin (proje no: **1726050**) kurulum lokasyonuna taşınmasından devreye alınmasına kadar gerçekleştirilmesi gereken montaj, konumlandırma, tesisat bağlantıları, güvenlik testleri ve kurulum doğrulama işlemlerini kapsar.
+# 5. KURULUM VE DEVREYE ALMA
 
 Montaj işlemleri tahmini **1 gün** sürmekte olup **1 kişilik** ekip ile gerçekleştirilir. Taşıma ve yerleştirme için **forklift** kullanılmalıdır; makine taşınmasında **vinç kesinlikle kullanılmamalıdır**. Forklift ile taşıma için makine altındaki profiller kullanılmalıdır.
 

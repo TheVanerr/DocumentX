@@ -1,5 +1,27 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 8. KAPAZITÄT
 
-# 8. KAPASİTE (CAPACITY)
+Die Maschine ist eine zufuhrbeladene Förderband-Teilewaschanlage mit zwei Bädern (Waschen + Spülen). Kapazität hängt ab von Teilgeometrie, Roboter-Zufuhrgeschwindigkeit, Rezeptparametern (Temperatur, Prozesszeiten) und am HMI aktivierten Prozessfunktionen (Waschen, Spülen, Trocknung 1/2).
 
-Bu bölüm, endüstriyel yıkama makinelerimizin yükleme kapasitelerini ve optimum çalışma sınırlarını tanımlamaktadır. Makinenin kapasitesi yalnızca tamburun fiziksel hacmi (litre) ile sınırlı olmayıp; yıkanacak parçaların malzeme yoğunluğu, geometrisi ve toplam ağırlığı gibi operasyonel faktörlere göre değişkenlik gösterir. Doğru kapasite planlaması; hem maksimum yıkama verimliliğini ve kalitesini sağlamak hem de tambur, motor ve yataklar gibi kritik mekanik bileşenlerin ömrünü garanti altına almak için zorunludur.
+Die Maschine ist für **24/7-Roboter**-Linienbetrieb ausgelegt.
+
+| Parameter | Wert |
+|-----------|------|
+| Mindestkapazität | **730 Stk./h** |
+| Nominale Zykluszeit | **900 s** (15 min) |
+| Maximaler Dauerbetrieb | **24/7** |
+| Nominale / maximale Kapazität | Vom Anwender festgelegt |
+| Produktgrößen- / -gewichtsgrenzen | Vom Anwender festgelegt |
+
+Technische Abmessungen und Prozessübersicht siehe Abschnitt **3.3.2**.
+
+---
+
+## Abschnittsinhalt
+
+| Abschnitt | Titel | Thema |
+|-----------|-------|-------|
+| **8.1** | Produktkapazität | Kapazitätstabelle, Testbedingungen, Dauerbetriebsgrenze |
+| **8.2** | Spezifische Einrichtung | Rezeptparameter, produktbezogene Einrichtung |
+
+<!-- FOTO: Förderer Kapazität Übersicht -->
+![Förderer Kapazität Übersicht](../assets/FOTO-8-0-capacity-genel.png)

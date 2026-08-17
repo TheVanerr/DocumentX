@@ -1,5 +1,18 @@
-<!-- CEVIRI GEREKLI -> DE | kaynak: TR | bu satiri ceviri bitince silin. Baslik/gorsel/tablo yapisini koruyun. -->
+# 13. DOKUMENTE
 
-# documents
+Technische Dokumente (P&ID, Elektrikschema, Pneumatikschema usw.) werden als **separates Dokumentenpaket** geliefert; dieses Handbuch enthält die Referenzliste.
 
-<!-- 1726050-ALPER-KNV 30 | proje ozel icerik -->
+| Lieferung | Beschreibung |
+|-----------|--------------|
+| Separate Unterlagen | P&ID, Elektrik-/Pneumatikschemata, BOM, PLC/HMI-Backups |
+| Handbuchreferenz | Layout- und I/O-Listen-Dateinamen (unten) |
+
+---
+
+## Abschnittsinhalt
+
+| Abschnitt | Titel | Thema |
+|-----------|-------|-------|
+| **13.1** | Dokumentenliste | Schema-, Backup-, Zertifikatreferenzen |
+| **13.2** | Zeichnungen | Montage-, Hebe-, Layout-Zeichnungen |
+| **13.3** | Stückliste | Mechanische / elektrische / Verschleißteile |

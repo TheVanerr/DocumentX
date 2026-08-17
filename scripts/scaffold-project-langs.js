@@ -5,6 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 const yaml = require(path.join(__dirname, '..', 'codes', 'node_modules', 'js-yaml'));
+const projectCore = require('./project-core');
 
 const ROOT = path.resolve(__dirname, '..');
 const [, , slugRaw, ...langArgs] = process.argv;
@@ -85,7 +86,7 @@ function walk(dir, relParts) {
 
 walk(PROJ, []);
 
-const yamlPath = path.join(PROJ, 'project.yaml');
+const yamlPath = projectCore.findProjectYaml(PROJ) || path.join(PROJ, 'project.yaml');
 if (fs.existsSync(yamlPath)) {
   const raw = fs.readFileSync(yamlPath, 'utf8');
   const headerEnd = raw.indexOf('\nproje_adi:');

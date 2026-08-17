@@ -1,10 +1,26 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 11. STÖRUNGSBEHEBUNG
 
-# 11. ARIZA TESPİTİ VE SORUN GİDERME (TROUBLESHOOTING)
+**Kein Bediener** an der Maschine; Störungseingriff durch **Wartungspersonal**. Maschine vor Eingriff anhalten; **LOTO** bei Elektrik/Schrank (siehe Abschnitt **9.1.2**).
 
-Bu bölüm, endüstriyel yıkama makinelerimizin çalışması esnasında karşılaşılabilecek olası arıza, sorun ve operasyonel anormalliklerin tespit edilmesi ve giderilmesi amacıyla hazırlanmıştır. Makinelerin mekanik, elektriksel, pnömatik ve yazılımsal (PLC/HMI) tüm alt sistemlerinde meydana gelebilecek yaygın hatalar, bu bölümde "Belirti (Semptom) -> Olası Neden -> Çözüm Yöntemi" mantığıyla listelenmiştir. Sorun giderme sürecine başlamadan önce, operatörün ve bakım personelinin makinenin çalışma prensiplerini ve bu kılavuzun ilgili işletim bölümlerini tam anlamıyla bilmesi gerekmektedir.
+| Parameter | Wert |
+|-----------|------|
+| Alarmanzeige | HMI-Alarmbildschirm + Signalleuchte rot |
+| HMI-Sprachen | Türkisch, Englisch, Deutsch |
+| Fernzugriff | Ja — Secomea-Modul |
 
-Herhangi bir arıza müdahalesine başlamadan önce makinenin tamamen durdurulması, ana elektrik şalterinin "0" konumuna alınması ve enerji izolasyonunun (LOTO - Lockout/Tagout) sağlanması zorunludur. Bu kılavuzda yer alan müdahale yöntemleri, yetkili ve eğitimli operatörlerin uygulayabileceği rutin kontrolleri kapsamaktadır. Belirtilen çözüm önerilerine rağmen sorun devam ediyorsa, arızanın PLC yazılımı, inverter parametreleri veya major mekanik bileşenler gibi ileri düzey teknik bilgi gerektiren bir alanda olduğu anlaşılmalı ve derhal CNK ELEKTRONİK / DOLFIN MAKİNE yetkili servis departasına başvurulmalıdır. Yetkisiz ve bilinçsiz müdahaleler makineye kalıcı hasar verebilir ve cihazın garanti koşullarını tamamen geçersiz kılabilir.
+---
 
+## Abschnittsinhalt
 
+| Abschnitt | Titel | Thema |
+|-----------|-------|-------|
+| **11.1** | Fehlersuche | Alarmcodeliste, allgemeine Diagnose |
+| **11.2** | Allgemein | HMI-Alarmverhalten, Servicekriterien |
+| **11.3** | Elektrik | Phase, Motor, Heizung |
+| **11.4** | Hydraulik | Nicht anwendbar |
+| **11.5** | Pneumatik | Luftdruck, Ventile |
+| **11.6** | Vakuum | Nicht anwendbar |
+| **11.7** | Sensoren | RFID, Niveausensoren |
 
+<!-- FOTO: HMI Alarmbildschirm -->
+![HMI Alarmbildschirm](../assets/FOTO-11-0-alarm-genel.png)

@@ -1,6 +1,6 @@
 # 7.5. Operating Chronology
 
-This section defines the daily operating schedule and shift procedures for the KNV 30 3000 2B machine.
+The machine runs **24/7 with robot**. There is **no operator or shift handover**.
 
 ---
 
@@ -8,7 +8,7 @@ This section defines the daily operating schedule and shift procedures for the K
 
 | Parameter | Value / Description |
 |-----------|---------------------|
-| Daily operating schedule | [MISSING] |
+| Daily operating schedule | Machine runs **24/7** with robot; shift-based daily schedule **does not apply** |
 
 ---
 
@@ -16,7 +16,7 @@ This section defines the daily operating schedule and shift procedures for the K
 
 | Parameter | Value / Description |
 |-----------|---------------------|
-| Shift handover items | [MISSING] |
+| Shift handover items | **None** — no operator/shift handover |
 
 ---
 
@@ -24,4 +24,4 @@ This section defines the daily operating schedule and shift procedures for the K
 
 | Parameter | Value / Description |
 |-----------|---------------------|
-| Shift start checklist | [MISSING] |
+| Shift start checklist | **None** — machine runs continuously automatic |

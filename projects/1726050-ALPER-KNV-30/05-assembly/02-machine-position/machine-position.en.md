@@ -1,7 +1,5 @@
 # 5.2. Machine Positioning
 
-This section defines procedures for positioning the KNV 30 3000 2B machine at the installation site, orientation, levelling with adjustable feet, and compliance with alignment tolerances.
-
 Positioning operations are performed within **Step 3** of Section 5.1 assembly steps; they are detailed in this section.
 
 ---

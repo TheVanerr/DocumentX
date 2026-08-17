@@ -1,6 +1,6 @@
 # 7.6. Other Operation Topics
 
-This section defines format change, scrap management, and operator intervention points for the KNV 30 3000 2B machine.
+There is **no operator** on the machine. No human intervention is required during normal operation.
 
 ---
 
@@ -8,7 +8,7 @@ This section defines format change, scrap management, and operator intervention 
 
 | Parameter | Value / Description |
 |-----------|---------------------|
-| Format / product change time (min) | [MISSING] |
+| Format / product change time (min) | **None** |
 
 No format change procedure (see Section **6.1.5**).
 
@@ -18,12 +18,14 @@ No format change procedure (see Section **6.1.5**).
 
 | Parameter | Value / Description |
 |-----------|---------------------|
-| Scrap management | [MISSING] |
+| Scrap management | **Not applicable** — no operator on machine; scrap management is customer line responsibility |
 
 ---
 
-## 7.6.3. Operator Intervention Points
+## 7.6.3. Intervention Points
 
 | Parameter | Value / Description |
 |-----------|---------------------|
-| Operator intervention points | [MISSING] |
+| Operator intervention points | **None** — no operator on machine |
+
+On fault, intervention is performed by **maintenance personnel**. For troubleshooting procedures, see Section **11**.

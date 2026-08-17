@@ -1,7 +1,5 @@
 # 3.5. Machine Layout
 
-This section defines the layout orientations, maintenance access zones, minimum clearances, transport restrictions, and centre of gravity information for the KNV 30 3000 2B machine.
-
 **Reference drawing:** `1726050-ALPER-KNV 30 LAYOUT.pdf`
 
 The layout drawing is available in the project assets folder: `1726050-ALPER-KNV 30 3000 2B PRO IDE LAYOUT.PDF`

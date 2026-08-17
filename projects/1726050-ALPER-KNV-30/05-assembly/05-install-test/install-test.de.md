@@ -1,7 +1,5 @@
 # 5.5. Installationsprüfung und Test
 
-Dieser Abschnitt beschreibt die Verifizierung der mechanischen, elektrischen, pneumatischen/Medien- und Sicherheitsfunktionen nach der Installation der Maschine KNV 30 3000 2B einschließlich des **15-minütigen Leerlauflaufs**.
-
 Die Tests sind nach Abschluss der Sicherheitstests in Abschnitt **5.4** durchzuführen. Erst wenn alle Prüfungen **OK** sind, den Betrieb aufnehmen.
 
 ---

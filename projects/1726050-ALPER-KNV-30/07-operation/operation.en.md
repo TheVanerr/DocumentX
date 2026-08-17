@@ -1,39 +1,39 @@
-# 7. Operation
+# 7. OPERATION
 
-This section defines the daily operation, shutdown, and operating procedures of the **KNV 30 3000 2B** machine (project no: **1726050**). Operation shall begin after completion of Chapter **5** (installation/commissioning) and Chapter **6** (settings).
-
-The machine is a front-loaded conveyor-type two-tank (wash + rinse) industrial parts washing machine. Process flow: **Wash → Rinse → Drying**.
+The machine is an infeed-loaded conveyor industrial parts washer with two baths (wash + rinse). Process flow: **Wash → Rinse → Dry**. The machine runs **fully automatic** and operates **24/7 with robot** infeed/outfeed; no operator or shift handover.
 
 | Parameter | Value |
 |-----------|-------|
-| Number of operators (min / max) | 1–2 |
+| Operation mode | 24/7 automatic — robot infeed/outfeed |
+| Operator | None (maintenance personnel intervene on fault) |
+| Preparation | HMI preparation button (tank fill + heating) |
 | Start / Stop | Digital buttons on HMI interface |
 | Operator panel languages | Turkish, English, German |
 
 ---
 
-## Chapter Contents
+## Section Contents
 
-| Section | Title | Subject |
-|---------|-------|---------|
+| Section | Title | Topic |
+|---------|-------|-------|
 | **7.1** | Operating Modes | HMI operating page, process options, maintenance access |
-| **7.2** | Machine Start | Commissioning prerequisites, power/air/water on, pre-start checks |
-| **7.3** | Shut Down | Normal stop, restart after e-stop, power off |
-| **7.4** | Operating Sequence | Automatic cycle steps, part in/out, fault behavior |
-| **7.5** | Operating Chronology | Daily schedule, shift handover |
-| **7.6** | Other Operation Topics | Format change, scrap management, operator intervention points |
+| **7.2** | Machine Start | Preparation button, tank fill/heating, pre-start checks |
+| **7.3** | Machine Shutdown | Normal stop, restart after emergency stop, power-off |
+| **7.4** | Operating Sequence | Automatic cycle steps, robot infeed/outfeed, fault behaviour |
+| **7.5** | Operating Chronology | 24/7 robot operation — no shift handover |
+| **7.6** | Other Operation Topics | No format change; no operator — maintenance on fault |
 
 ---
 
-## Stack Light Status
+## Stack Light States
 
-| Light | Meaning |
-|-------|---------|
-| Yellow | Machine ready for use |
+| Lamp | Meaning |
+|------|---------|
+| Yellow | Machine ready |
 | Green | Machine running |
 | Red | Alarm |
 
 Detailed procedures are described in the relevant subsections.
 
-<!-- PHOTO: HMI operating page general view -->
+<!-- FOTO: HMI operating page overview -->
 ![HMI operating page](../assets/FOTO-7-0-operation-genel.png)

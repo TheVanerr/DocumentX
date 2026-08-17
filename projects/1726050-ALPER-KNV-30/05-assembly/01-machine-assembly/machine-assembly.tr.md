@@ -1,7 +1,5 @@
 # 5.1. Makine Montajı
 
-Bu bölüm, KNV 30 3000 2B makinesinin kurulum alanına getirilmesi, ambalajının sökülmesi, zemine oturtulması, ayarlanabilir ayaklarla teraziye alınması ve basınçlı hava, su ile elektrik bağlantılarının yapılmasına kadar tüm montaj adımlarını tanımlar.
-
 Montaj tahmini **1 gün** sürer ve **1 kişilik** ekip ile gerçekleştirilir. Taşıma ve yerleştirme için **forklift** kullanılmalıdır; makine taşınmasında **vinç kesinlikle kullanılmamalıdır**. Forklift çatalı ile taşıma yapılmalıdır; makine altındaki profiller forklift girişi için kullanılır. Taşıma ağırlığı (montajlı): **1300 kg** — taşıma sırasında herhangi bir parça ayrılmayacak şekilde taşınmalıdır.
 
 ---

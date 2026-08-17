@@ -1,7 +1,5 @@
 # 6.3. Electrical Settings
 
-This section defines the electrical and automation settings of the KNV 30 3000 2B machine. Electrical adjustments shall only be performed by authorized electrical technicians or engineers.
-
 ---
 
 ## 6.3.1. Motor Direction / Phase Check

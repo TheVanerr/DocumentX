@@ -1,7 +1,5 @@
 # 3.3. Teknik Özellikler
 
-Bu bölüm, KNV 30 3000 2B makinesinin fiziksel, elektriksel, proses, motor ve ortam teknik verilerini içerir. Tablolardaki değerler proje DATA dosyasından alınmıştır.
-
 ---
 
 ## 3.3.1. Fiziksel Boyutlar ve Ağırlık

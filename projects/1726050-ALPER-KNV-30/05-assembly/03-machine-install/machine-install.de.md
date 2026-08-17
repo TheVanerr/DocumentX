@@ -1,7 +1,5 @@
 # 5.3. Systemanschlüsse und Inbetriebnahme
 
-Dieser Abschnitt beschreibt das Anschließen von Druckluft, Wasser und Elektroversorgung an die Maschine KNV 30 3000 2B, das Einschalten am Schrank und die Phasenfolgeprüfung.
-
 Anschlussarbeiten werden im Rahmen von **Schritt 4–8** der Montageschritte in Abschnitt 5.1 durchgeführt.
 
 ---

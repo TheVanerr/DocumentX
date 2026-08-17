@@ -23,6 +23,31 @@ function slugify(name) {
   return String(name).trim().replace(/\s+/g, '-');
 }
 
+/* Proje kökünde project.yaml veya "<proje adı>.yaml" arar. */
+function findProjectYaml(projectDir) {
+  if (!projectDir || !fs.existsSync(projectDir)) return null;
+  const preferred = path.join(projectDir, 'project.yaml');
+  if (fs.existsSync(preferred)) return preferred;
+
+  const files = fs.readdirSync(projectDir).filter((n) => {
+    if (!/\.ya?ml$/i.test(n)) return false;
+    try { return fs.statSync(path.join(projectDir, n)).isFile(); }
+    catch (e) { return false; }
+  });
+  if (!files.length) return null;
+
+  const dirKey = path.basename(projectDir).toLowerCase();
+  files.sort((a, b) => {
+    const ka = a.replace(/\s+/g, '-').replace(/\.ya?ml$/i, '').toLowerCase();
+    const kb = b.replace(/\s+/g, '-').replace(/\.ya?ml$/i, '').toLowerCase();
+    const da = ka === dirKey ? 0 : 1;
+    const db = kb === dirKey ? 0 : 1;
+    if (da !== db) return da - db;
+    return a.localeCompare(b);
+  });
+  return path.join(projectDir, files[0]);
+}
+
 /* content/_models/<model> altindaki tum .tr.md dosyalarini (rel yol) bulur. */
 function modelSources(modelDir) {
   const out = [];
@@ -61,7 +86,7 @@ function createProject(root, name, modelRaw, langsRaw) {
 
   const slug = slugify(nameTrim);
   const projDir = path.join(root, 'projects', slug);
-  if (fs.existsSync(path.join(projDir, 'project.yaml'))) {
+  if (findProjectYaml(projDir)) {
     return { ok: false, error: `Bu proje zaten var: ${slug}` };
   }
   fs.mkdirSync(projDir, { recursive: true });
@@ -104,4 +129,4 @@ function createProject(root, name, modelRaw, langsRaw) {
   };
 }
 
-module.exports = { createProject, listModels, slugify };
+module.exports = { createProject, listModels, slugify, findProjectYaml };

@@ -1,7 +1,5 @@
 # 6.5. Pneumatic Settings
 
-This section defines the pneumatic adjustment points of the KNV 30 3000 2B machine.
-
 Compressed air connection: **6 bar — 3/4"** (see Section **5.3**).
 
 ---

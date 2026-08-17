@@ -1,7 +1,5 @@
 # 5.1. Machine Assembly
 
-This section defines all assembly steps from delivery of the KNV 30 3000 2B machine to the installation area through unpacking, mounting on the floor, levelling with adjustable feet, and connection of compressed air, water, and electrical supply.
-
 Assembly is estimated to take **1 day** and is performed by a **1-person** team. A **forklift** shall be used for transport and placement; a **crane shall not be used under any circumstances** when transporting the machine. Transport shall be performed with forklift forks; the profiles under the machine are used for fork entry. Transport weight (assembled): **1300 kg** — the machine shall be transported without disassembly of any parts.
 
 ---

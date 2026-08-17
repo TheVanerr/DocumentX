@@ -1,7 +1,5 @@
 # 6.3. Elektrische Einstellungen
 
-Dieser Abschnitt definiert die elektrischen und Automatisierungseinstellungen der Maschine KNV 30 3000 2B. Elektrische Einstellungen dürfen nur von autorisierten Elektrotechnikern oder -ingenieuren durchgeführt werden.
-
 ---
 
 ## 6.3.1. Motordrehrichtung / Phasenprüfung

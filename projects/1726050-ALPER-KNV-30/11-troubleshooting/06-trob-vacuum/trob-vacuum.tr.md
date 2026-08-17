@@ -1,3 +1,3 @@
-# trob vacuum
+# 11.6. Vakum Arızaları
 
-<!-- 1726050-ALPER-KNV 30 | proje ozel icerik -->
+**vakum sistemi bulunmamaktadır**. Bu bölüm uygulanmaz (bkz. Bölüm **6.6**).

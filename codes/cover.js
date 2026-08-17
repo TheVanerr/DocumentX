@@ -17,6 +17,32 @@ const COVER_BRANDS = {
 
 const COVER_LOGO_BOX = { left: 4.8, top: 14.48, width: 9.04, height: 5.67 };
 
+const DOC_I18N = {
+  tr: {
+    coverTitle: '{MODEL} SERİSİ KULLANIM KILAVUZU',
+    coverInfo: 'Rev.{REV} / Hazırlanma Tarihi : {DATE} / Hazırlayan : Fatih GÜRAL',
+    toc: 'İÇİNDEKİLER'
+  },
+  en: {
+    coverTitle: '{MODEL} SERIES USER MANUAL',
+    coverInfo: 'Rev.{REV} / Date of Preparation : {DATE} / Prepared by : Fatih GÜRAL',
+    toc: 'CONTENTS'
+  },
+  de: {
+    coverTitle: '{MODEL} SERIE BEDIENUNGSANLEITUNG',
+    coverInfo: 'Rev.{REV} / Erstellungsdatum : {DATE} / Erstellt von : Fatih GÜRAL',
+    toc: 'INHALTSVERZEICHNIS'
+  }
+};
+
+function tDoc(lang) {
+  return DOC_I18N[String(lang || '').toLowerCase()] || DOC_I18N.tr;
+}
+
+function coverDocumentTitle(model, lang) {
+  return tDoc(lang).coverTitle.replace('{MODEL}', (model || '').toUpperCase());
+}
+
 function formatCoverDate(iso) {
   if (!iso) return 'xx.xx.xxxx';
   const p = iso.split('-');
@@ -24,8 +50,9 @@ function formatCoverDate(iso) {
   return `${p[2]}.${p[1]}.${p[0]}`;
 }
 
-function buildCoverPage({ model, rev, date, variant }) {
+function buildCoverPage({ model, rev, date, variant, lang }) {
   const brand = COVER_BRANDS[variant] || COVER_BRANDS.DOLFIN;
+  const i18n = tDoc(lang);
 
   const page = document.createElement('div');
   page.className = 'a4-page cover-page';
@@ -46,7 +73,7 @@ function buildCoverPage({ model, rev, date, variant }) {
   title.style.top = cm(9.63);
   title.style.width = cm(11.34);
   title.style.height = cm(0.93);
-  title.textContent = `${(model || '').toUpperCase()} SERİSİ KULLANIM KILAVUZU`;
+  title.textContent = coverDocumentTitle(model, lang);
   page.appendChild(title);
 
   const info = document.createElement('div');
@@ -54,7 +81,9 @@ function buildCoverPage({ model, rev, date, variant }) {
   info.style.left = cm(4.8);
   info.style.top = cm(12.19);
   const revText = (rev && rev.trim()) ? rev.trim() : 'xx';
-  info.textContent = `Rev.${revText} / Hazırlanma Tarihi : ${formatCoverDate(date)} / Hazırlayan : Fatih GÜRAL`;
+  info.textContent = i18n.coverInfo
+    .replace('{REV}', revText)
+    .replace('{DATE}', formatCoverDate(date));
   page.appendChild(info);
 
   const logoBox = brand.logoBox || COVER_LOGO_BOX;

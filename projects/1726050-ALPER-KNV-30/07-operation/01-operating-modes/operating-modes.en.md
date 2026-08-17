@@ -1,8 +1,6 @@
 # 7.1. Operating Modes
 
-This section defines the operating modes and process selection via HMI for the KNV 30 3000 2B machine.
-
-Start / Stop buttons are available as **digital buttons on the HMI interface**.
+The machine runs **fully automatic**. Start / Stop buttons are **digital buttons on the HMI interface**.
 
 ---
 
@@ -12,9 +10,9 @@ Start / Stop buttons are available as **digital buttons on the HMI interface**.
 |-----------|---------------------|
 | Manual mode | No manual mode |
 
-On the **operating page** of the HMI interface, wash, rinse, drying 1, drying 2, and exhaust options are available. The customer can set these on/off as desired and run the machine.
+The HMI **operating page** has wash, rinse, drying 1, drying 2 and exhaust options. The customer can set them on/off as required and run the machine.
 
-<!-- PHOTO: HMI operating page — process options -->
+<!-- FOTO: HMI operating page process options -->
 ![HMI process options](../../assets/FOTO-7-1-0-calisma-sayfasi.png)
 
 ---
@@ -23,7 +21,7 @@ On the **operating page** of the HMI interface, wash, rinse, drying 1, drying 2,
 
 | Parameter | Value / Description |
 |-----------|---------------------|
-| Automatic mode | On the HMI operating page, wash, rinse, drying 1, drying 2, and exhaust options are available. The customer can set these on/off as desired and run the machine |
+| Automatic mode | Machine is fully automatic. HMI operating page has on/off buttons for wash, rinse, drying 1, drying 2 and exhaust. After activating desired functions and pressing start, the machine runs automatically |
 
 ---
 
@@ -31,7 +29,7 @@ On the **operating page** of the HMI interface, wash, rinse, drying 1, drying 2,
 
 | Parameter | Value / Description |
 |-----------|---------------------|
-| Maintenance / setup mode | No dedicated maintenance mode. For maintenance, open covers after machine power is disconnected. LOTO procedure shall always be applied when power is disconnected |
+| Maintenance / setup mode | No dedicated maintenance mode. For maintenance, open covers after power is off. LOTO procedure must be applied when power is off |
 
 ---
 

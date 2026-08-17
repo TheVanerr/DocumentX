@@ -1,6 +1,6 @@
 # 7.6. Diğer Operasyon Konuları
 
-Bu bölüm, KNV 30 3000 2B makinesinin format değişimi, fire/hurda yönetimi ve operatör müdahale noktalarını tanımlar.
+Makinede **operatör bulunmaz**. Normal çalışmada insan müdahalesi gerekmez.
 
 ---
 
@@ -8,7 +8,7 @@ Bu bölüm, KNV 30 3000 2B makinesinin format değişimi, fire/hurda yönetimi v
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| Format / ürün değişim süresi (dk) | [EKSİK] |
+| Format / ürün değişim süresi (dk) | **Yoktur** |
 
 Format değişim prosedürü yoktur (bkz. Bölüm **6.1.5**).
 
@@ -18,12 +18,14 @@ Format değişim prosedürü yoktur (bkz. Bölüm **6.1.5**).
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| Fire / hurda yönetimi | [EKSİK] |
+| Fire / hurda yönetimi | **Uygulanmaz** — makinede operatör bulunmaz; hurda yönetimi müşteri hattına aittir |
 
 ---
 
-## 7.6.3. Operatör Müdahale Noktaları
+## 7.6.3. Müdahale Noktaları
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| Operatör müdahale noktaları | [EKSİK] |
+| Operatör müdahale noktaları | **Yoktur** — makinede operatör bulunmaz |
+
+Hata oluştuğunda müdahale **bakım personeli** tarafından yapılır. Arıza giderme prosedürleri için bkz. Bölüm **11**.

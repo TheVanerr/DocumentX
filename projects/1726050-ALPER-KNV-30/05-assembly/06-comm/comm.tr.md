@@ -1,7 +1,5 @@
 # 5.6. İletişim ve Otomasyon Arayüzü
 
-Bu bölüm, KNV 30 3000 2B makinesinin saha bus iletişimi, Profinet altyapısı, PLC/HMI entegrasyonu ve I/O dokümantasyon referanslarını tanımlar.
-
 ---
 
 ## 5.6.1. Fieldbus ve Protokol

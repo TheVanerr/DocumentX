@@ -1,7 +1,5 @@
 # 6.1. Mekanik Ayarlar
 
-Bu bölüm, KNV 30 3000 2B makinesinin mekanik ayar noktalarını tanımlar.
-
 ---
 
 ## 6.1.1. Mekanik Ayar Noktaları

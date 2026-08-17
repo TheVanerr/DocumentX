@@ -1,7 +1,5 @@
 # 5.4. Sicherheitssystem-Tests
 
-Dieser Abschnitt beschreibt das Testen der Sicherheitsfunktionen der Maschine KNV 30 3000 2B nach der Installation. Die Tests sind vollständig abzuschließen, bevor der Betrieb aufgenommen wird.
-
 Stop-Kategorie der Maschine: **Kat. 3**. Ein **RFID-Sicherheitssensor** ist an der Maschine installiert. **Keine Lichtschranke** vorhanden. Anzahl Schutz Türen / Barrieren: **0**.
 
 ---

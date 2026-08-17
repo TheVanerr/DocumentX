@@ -273,45 +273,45 @@ Sensör ON/OFF gecikmeleri (ms):Sensör ON/OFF gecikmeleri yoktur.
 
 [CALISMA_MODLARI]
 Manuel mod açıklaması:Manuel mod yoktur. HMI Arayüzündeki çalışma sayfasında yıkama, durulama, kurutma 1, kurutma 2, egzos seçenekleri vardır. Bunları müşteri istediği gibi on/off ayarlayıp makineyi çalıştırabilir.
-Otomatik mod açıklaması:HMI Arayüzündeki çalışma sayfasında yıkama, durulama, kurutma 1, kurutma 2, egzos seçenekleri vardır. Bunları müşteri istediği gibi on/off ayarlayıp makineyi çalıştırabilir.
+Otomatik mod açıklaması:Makine tam otomatiktir. HMI çalışma sayfasında yıkama, durulama, kurutma 1, kurutma 2, egzos için açma/kapama butonları vardır. İstenen fonksiyonlar aktif edilip start verildiğinde makine kendiliğinden çalışır.
 Bakım / setup modu:Bakım için özel bir mod yoktur. Bakım için makine elektriği kesildikten sonra kapakları açılmalıdır. Elektrik kesildiğinde mutlaka LOTO prosedürü uygulanmalıdır.
 Step / tek adım modu:Step / tek adım modu yoktur.
 Mod geçiş koşulları:Mod geçiş koşulları yoktur.
 
 [BASLATMA]
-Devreye alma ön koşulları (checklist):
-Güç açma sırası:
-Hava / su / vakum açma:
-Isıtma ön ısınma süresi (dk):
-Start öncesi kontrol listesi:
-İlk ürün / kurşun atma prosedürü:
+Devreye alma ön koşulları (checklist): HMI hazırlık butonu ile tank dolumu ve ısıtma yapılır. Tankta su yoksa üst seviyeye kadar dolar, ardından reçetede ayarlanan sıcaklığa ısınır. Tankta su varsa doğrudan ısınır. Başka hazırlık gerekmez. Tankta su yoksa ve dolum olmuyorsa otomatik dolum su giriş vanası kapalıdır — açılmalıdır; makineye 6 bar hava bağlı olmalıdır.
+Güç açma sırası: Ana şalter açık; HMI hazırlık butonuna basılır; hazırlık tamamlandıktan sonra start verilir.
+Hava / su / vakum açma: 6 bar basınçlı hava bağlantısı hazırlık/dolum için gereklidir. Su otomatik dolum vanası üzerinden tanklara dolar. Vakum yoktur.
+Isıtma ön ısınma süresi (dk): Değişken — tanktaki mevcut su miktarı ve sıcaklığına bağlıdır; sabit süre verilemez.
+Start öncesi kontrol listesi: Konveyör hattında sıkıştıracak parça/cisim kalmadığı kontrol edilmeli. Pompa önündeki vanalar açık olmalıdır; kapalıysa mutlaka açılmalıdır.
+İlk ürün / kurşun atma prosedürü: Yoktur.
 
 [KAPATMA]
-Normal stop prosedürü:
-Acil stop sonrası yeniden başlatma:
-Güç kapatma sırası:
-Uzun süreli durdurma (hafta sonu) prosedürü:
+Normal stop prosedürü: HMI stop butonuna basıldığında konveyör, pompalar, fanlar ve tüm fonksiyonlar durur.
+Acil stop sonrası yeniden başlatma: Fiziksel tehdit giderildikten sonra acil stop butonu kaldırılır; pano reset butonuna lambası yanana kadar basılır.
+Güç kapatma sırası: Makine HMI stop ile durdurulduktan sonra ana şalter kapatılır.
+Uzun süreli durdurma (hafta sonu) prosedürü: Tanklar mutlaka boşaltılıp temizlenmelidir.
 
 [OPERASYON_SEKANS]
-Otomatik cycle adım 1:
-Otomatik cycle adım 2:
-Otomatik cycle adım 3:
-Otomatik cycle adım 4:
-Otomatik cycle adım 5:
-Cycle süresi nominal (sn):
-Ürün giriş senaryosu:
-Ürün çıkış senaryosu:
-Hata durumunda makine davranışı:
+Otomatik cycle adım 1: HMI çalışma sayfasında yıkama, durulama, kurutma 1, kurutma 2 seçenekleri istenen şekilde on/off ayarlanır.
+Otomatik cycle adım 2: Hazırlık tamamlandıktan sonra start verilir; konveyör ve seçili proses fonksiyonları otomatik çalışır.
+Otomatik cycle adım 3: Parça konveyör üzerinde yıkama banyosundan geçer (yıkama aktifse).
+Otomatik cycle adım 4: Parça durulama banyosundan geçer (durulama aktifse).
+Otomatik cycle adım 5: Parça kurutma bölgesinden geçer (kurutma 1/2 aktifse); çıkışa ulaşır.
+Cycle süresi nominal (sn): 900
+Ürün giriş senaryosu: Girişte operatör çalışmaz; parça robot tarafından konveyöre yerleştirilir. Giriş prosedürü müşteriye aittir.
+Ürün çıkış senaryosu: Çıkışta operatör çalışmaz; parça robot tarafından alınır. Çıkış prosedürü müşteriye aittir.
+Hata durumunda makine davranışı: Çalışmayı etkileyen hatalarda makine durur (ör. bakım kapağı açıldı, RFID switch görmedi). Anlık hava ihtiyacı olmayan durumlarda (ör. çalışırken hava sökülmesi) makine çalışmaya devam edebilir. Alarm HMI'da görüntülenir; tepe lambası kırmızı yanar.
 
 [KRONOLOJI]
-Günlük operasyon zaman çizelgesi:
-Vardiya devir teslim maddeleri:
-Shift başlangıç kontrol listesi:
+Günlük operasyon zaman çizelgesi: Makine 7/24 robot ile çalışır; vardiya bazlı günlük operasyon çizelgesi uygulanmaz.
+Vardiya devir teslim maddeleri: Yoktur — operatör/vardiya teslimi bulunmamaktadır.
+Shift başlangıç kontrol listesi: Yoktur — makine sürekli otomatik çalışır.
 
 [OPERASYON_DIGER]
-Format / ürün değişim süresi (dk):
-Fire / hurda yönetimi:
-Operatör müdahale noktaları:
+Format / ürün değişim süresi (dk): Yoktur (format değişim prosedürü yoktur).
+Fire / hurda yönetimi: Uygulanmaz — makinede operatör bulunmaz; hurda yönetimi müşteri hattına aittir.
+Operatör müdahale noktaları: Yoktur — makinede operatör bulunmaz. Hata oluştuğunda müdahale bakım personeli tarafından yapılır (bkz. Bölüm 11).
 
 # =============================================================================
 # 08 — KAPASİTE (capacity)
@@ -377,6 +377,37 @@ Atık su / kimyasal bertaraf:Makinenin kullanıldığı ülkenin mevcut atık su
 
 [ARIZA_GENEL]
 Alarm kod listesi dosya referansı:
+- Error-410 Faz Sırası Hatalı
+- Error-422 Kapak Kapalı Değil
+- Error-229 Acil Stop Devrede
+- Error-100 Yıkama Pompası Motoru Hata
+- Error-101 Durulama Pompası Motoru Hata
+- Error-111 Kurutma Fan Motoru Hata
+- Error-112 Kurutma Fan Motoru 2 Hata
+- Error-113 Kurutma Fan Motoru 3 Hata
+- Error-114 Kurutma Fan Motoru 4 Hata
+- Error-110 Egzoz Fan Motoru Hata
+- Error-130 Yağ Sıyırıcı Motor Hata
+- Error-170 Isıtıcı Kaçak Akım F2
+- Error-171 Isıtıcı Kaçak Akım F3
+- Error-172 Isıtıcı Kaçak Akım F4
+- Error-200 Yıkama Tankı Su Seviyesi Pompa Seviyesinin Altında
+- Error-201 Yıkama Tankı Su Seviyesi Yetersiz
+- Error-150 Yıkama Tank Sıcaklığı Düşük
+- Error-202 Durulama Tankı Su Seviyesi Pompa Seviyesinin Altında
+- Error-203 Durulama Tankı Su Seviyesi Yetersiz
+- Error-151 Durulama Tank Sıcaklığı Düşük
+- Error-452 Sızıntı Tavasında Su Tesbit Edildi
+- Error-300 Yıkama Otomatik Dolum Vanası Açılamadı
+- Error-301 Yıkama Otomatik Dolum Vanası Kapanamadı
+- Error-302 Durulama Otomatik Dolum Vanası Açılamadı
+- Error-303 Durulama Otomatik Dolum Vanası Kapanamadı
+- Error-461 Çıkış Konveyöründe Ürün Algılandı. Çalışmaya Devam Etmek İçin Ürünün Alındığını Onaylayınız!
+- Error-305 Aktarma Vanası Kapanamadı
+- Error-236 Giriş Su Basıncı Düşük
+- Error-235 Giriş Hava Basıncı Düşük
+- Error-460 Servo Motor Hata
+- Error-304 Aktarma Vanası Açılamadı
 HMI alarm metinleri dili:
 Servis çağrısı kriterleri:
 
@@ -438,27 +469,28 @@ Parça geri dönüşüm malzemeleri:Parça geri dönüşüm malzemeleri:Kullanı
 # =============================================================================
 
 [DOKUMANLAR]
-Elektrik şeması dosya adı / rev:
-Pnömatik şema dosya adı / rev:
-Hidrolik şema dosya adı / rev:
-Layout çizimi dosya adı / rev:
-Parça listesi (BOM) dosya adı / rev:
-I/O listesi dosya adı / rev:
-PLC program yedek dosya adı:
-HMI proje yedek dosya adı:
-CE dosyası referansı:
-Kalibrasyon sertifikaları:
+Elektrik şeması dosya adı / rev:Ayrı evrak olarak teslim edilir
+Pnömatik şema dosya adı / rev:Ayrı evrak olarak teslim edilir
+Hidrolik şema dosya adı / rev:Uygulanmaz — hidrolik sistem yok
+Layout çizimi dosya adı / rev:1726050-ALPER-KNV 30 LAYOUT.pdf
+Parça listesi (BOM) dosya adı / rev:Ayrı evrak olarak teslim edilir
+I/O listesi dosya adı / rev:1726050-ALPER-KNV 30 I/O LISTESI.pdf
+PLC program yedek dosya adı:Ayrı evrak olarak teslim edilir
+HMI proje yedek dosya adı:Ayrı evrak olarak teslim edilir
+CE dosyası referansı:Ayrı evrak olarak teslim edilir
+Kalibrasyon sertifikaları:Ayrı evrak olarak teslim edilir (varsa)
+P&ID dosya adı / rev:Ayrı evrak olarak teslim edilir
 
 [CIZIMLER]
-Genel montaj çizimi:
-Kaldırma noktaları çizimi:
-Zemin ankraj çizimi:
-Müşteriye teslim çizim paketi:
+Genel montaj çizimi:Ayrı evrak olarak teslim edilir
+Kaldırma noktaları çizimi:Ayrı evrak olarak teslim edilir
+Zemin ankraj çizimi:Ayrı evrak olarak teslim edilir (varsa)
+Müşteriye teslim çizim paketi:Ayrı evrak olarak teslim edilir
 
 [PARCA_LISTESI]
-Mekanik parça listesi referansı:
-Elektrik parça listesi referansı:
-Wear part / aşınan parça listesi:
+Mekanik parça listesi referansı:Ayrı evrak olarak teslim edilir
+Elektrik parça listesi referansı:Ayrı evrak olarak teslim edilir
+Wear part / aşınan parça listesi:Ayrı evrak olarak teslim edilir
 
 
 # =============================================================================
@@ -466,19 +498,19 @@ Wear part / aşınan parça listesi:
 # =============================================================================
 
 [EKLER]
-Ek A — Alarm listesi:
-Ek B — Parametre listesi:
-Ek C — Reçete örnekleri:
-Ek D — Garanti belgesi:
+Ek A — Alarm listesi:Bölüm 11.1.2 (kılavuz içi)
+Ek B — Parametre listesi:HMI ayar sayfası (6.3) / ayrı evrak
+Ek C — Reçete örnekleri:Kullanıcı firma (8.2)
+Ek D — Garanti belgesi:Ayrı evrak (13.1.3)
 
 [SOZLUK]
-Terim 1 / açıklama:
-Terim 2 / açıklama:
-Terim 3 / açıklama:
-Kısaltmalar (PLC, HMI, FRL, vb.):
+Terim 1 / açıklama:Bkz. 14.2.2
+Terim 2 / açıklama:Bkz. 14.2.2
+Terim 3 / açıklama:Bkz. 14.2.2
+Kısaltmalar (PLC, HMI, LOTO, RFID, P&ID, BOM vb.):Bkz. 14.2.1
 
 [INDEKS]
-Anahtar kelime listesi (opsiyonel):
+Anahtar kelime listesi (opsiyonel):Bkz. 14.3 — LOTO, HMI, acil stop, RFID, konveyör, bakım, temizlik, alarm vb.
 
 # =============================================================================
 # SON — DOSYA SONU

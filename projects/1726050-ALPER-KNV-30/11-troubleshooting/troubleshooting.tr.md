@@ -1,8 +1,26 @@
-# 11. ARIZA TESPİTİ VE SORUN GİDERME (TROUBLESHOOTING)
+# 11. ARIZA GİDERME
 
-Bu bölüm, endüstriyel yıkama makinelerimizin çalışması esnasında karşılaşılabilecek olası arıza, sorun ve operasyonel anormalliklerin tespit edilmesi ve giderilmesi amacıyla hazırlanmıştır. Makinelerin mekanik, elektriksel, pnömatik ve yazılımsal (PLC/HMI) tüm alt sistemlerinde meydana gelebilecek yaygın hatalar, bu bölümde "Belirti (Semptom) -> Olası Neden -> Çözüm Yöntemi" mantığıyla listelenmiştir. Sorun giderme sürecine başlamadan önce, operatörün ve bakım personelinin makinenin çalışma prensiplerini ve bu kılavuzun ilgili işletim bölümlerini tam anlamıyla bilmesi gerekmektedir.
+Makinede **operatör bulunmaz**; arıza müdahalesi **bakım personeli** tarafından yapılır. Müdahale öncesi makine durdurulmalı; elektrik/pano işlemlerinde **LOTO** uygulanmalıdır (bkz. Bölüm **9.1.2**).
 
-Herhangi bir arıza müdahalesine başlamadan önce makinenin tamamen durdurulması, ana elektrik şalterinin "0" konumuna alınması ve enerji izolasyonunun (LOTO - Lockout/Tagout) sağlanması zorunludur. Bu kılavuzda yer alan müdahale yöntemleri, yetkili ve eğitimli operatörlerin uygulayabileceği rutin kontrolleri kapsamaktadır. Belirtilen çözüm önerilerine rağmen sorun devam ediyorsa, arızanın PLC yazılımı, inverter parametreleri veya major mekanik bileşenler gibi ileri düzey teknik bilgi gerektiren bir alanda olduğu anlaşılmalı ve derhal CNK ELEKTRONİK / DOLFIN MAKİNE yetkili servis departasına başvurulmalıdır. Yetkisiz ve bilinçsiz müdahaleler makineye kalıcı hasar verebilir ve cihazın garanti koşullarını tamamen geçersiz kılabilir.
+| Parametre | Değer |
+|-----------|-------|
+| Alarm gösterimi | HMI alarm ekranı + tepe lambası kırmızı |
+| HMI dilleri | Türkçe, İngilizce, Almanca |
+| Uzaktan erişim | Evet — Secomea modül |
 
+---
 
+## Bölüm İçeriği
 
+| Bölüm | Başlık | Konu |
+|-------|--------|------|
+| **11.1** | Arıza Bulma | Alarm kod listesi, genel teşhis |
+| **11.2** | Genel | HMI alarm davranışı, servis kriterleri |
+| **11.3** | Elektrik | Faz, motor, ısıtıcı arızaları |
+| **11.4** | Hidrolik | Uygulanmaz |
+| **11.5** | Pnömatik | Hava basıncı, vana arızaları |
+| **11.6** | Vakum | Uygulanmaz |
+| **11.7** | Sensörler | RFID, seviye sensörleri |
+
+<!-- FOTO: HMI alarm ekranı -->
+![HMI alarm ekranı](../assets/FOTO-11-0-alarm-genel.png)

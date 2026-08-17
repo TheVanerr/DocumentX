@@ -1,7 +1,5 @@
 # 3.3. Technische Daten
 
-Dieser Abschnitt enthält die physikalischen, elektrischen, prozessbezogenen, motorischen und umgebungsbedingten technischen Daten der Maschine KNV 30 3000 2B. Die Tabellenwerte stammen aus der Projekt-DATA-Datei.
-
 ---
 
 ## 3.3.1. Abmessungen und Gewicht

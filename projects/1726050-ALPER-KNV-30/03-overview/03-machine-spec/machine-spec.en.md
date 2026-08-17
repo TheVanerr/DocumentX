@@ -1,7 +1,5 @@
 # 3.3. Technical Specifications
 
-This section contains the physical, electrical, process, motor, and environmental technical data of the KNV 30 3000 2B machine. Values in the tables are taken from the project DATA file.
-
 ---
 
 ## 3.3.1. Physical Dimensions and Weight

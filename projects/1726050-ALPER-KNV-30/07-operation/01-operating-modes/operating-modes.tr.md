@@ -1,8 +1,6 @@
 # 7.1. Çalışma Modları
 
-Bu bölüm, KNV 30 3000 2B makinesinin çalışma modlarını ve HMI üzerinden proses seçimini tanımlar.
-
-Start / Stop düğmeleri **HMI arayüzünde dijital buton** olarak bulunur.
+Makine **tam otomatik** çalışır. Start / Stop düğmeleri **HMI arayüzünde dijital buton** olarak bulunur.
 
 ---
 
@@ -23,7 +21,7 @@ HMI arayüzündeki **çalışma sayfasında** yıkama, durulama, kurutma 1, kuru
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| Otomatik mod | HMI arayüzündeki çalışma sayfasında yıkama, durulama, kurutma 1, kurutma 2, egzos seçenekleri vardır. Bunları müşteri istediği gibi on/off ayarlayıp makineyi çalıştırabilir |
+| Otomatik mod | Makine tam otomatiktir. HMI çalışma sayfasında yıkama, durulama, kurutma 1, kurutma 2, egzos için açma/kapama butonları vardır. İstenen fonksiyonlar aktif edilip start verildiğinde makine kendiliğinden çalışır |
 
 ---
 

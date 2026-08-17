@@ -1,5 +1,3 @@
-<!-- CEVIRI GEREKLI -> DE | kaynak: TR | bu satiri ceviri bitince silin. Baslik/gorsel/tablo yapisini koruyun. -->
+# 11.6. Vakuumstörungen
 
-# trob vacuum
-
-<!-- 1726050-ALPER-KNV 30 | proje ozel icerik -->
+Die KNV 30 3000 2B Maschine hat **kein Vakuumsystem**. Dieser Abschnitt entfällt (siehe Abschnitt **6.6**).

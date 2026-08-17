@@ -1,16 +1,16 @@
 # 7.6. Sonstige Betriebsthemen
 
-Dieser Abschnitt definiert Formatwechsel, Ausschussmanagement und Bediener-Eingriffspunkte für die Maschine KNV 30 3000 2B.
+An der Maschine gibt es **keinen Bediener**. Im Normalbetrieb ist kein menschlicher Eingriff erforderlich.
 
 ---
 
-## 7.6.1. Format- / Produktwechsel
+## 7.6.1. Format / Produktwechsel
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
-| Format- / Produktwechselzeit (Min.) | [FEHLEND] |
+| Format / Produktwechselzeit (min) | **Keine** |
 
-Kein Formatwechselverfahren (siehe Abschnitt **6.1.5**).
+Keine Formatwechselprozedur (siehe Abschnitt **6.1.5**).
 
 ---
 
@@ -18,12 +18,14 @@ Kein Formatwechselverfahren (siehe Abschnitt **6.1.5**).
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
-| Ausschussmanagement | [FEHLEND] |
+| Ausschussmanagement | **Nicht anwendbar** — kein Bediener an Maschine; Ausschuss liegt in Kundenlinie |
 
 ---
 
-## 7.6.3. Bediener-Eingriffspunkte
+## 7.6.3. Eingriffspunkte
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
-| Bediener-Eingriffspunkte | [FEHLEND] |
+| Bediener-Eingriffspunkte | **Keine** — kein Bediener an Maschine |
+
+Bei Störung erfolgt Eingriff durch **Wartungspersonal**. Störungsbehebung siehe Abschnitt **11**.

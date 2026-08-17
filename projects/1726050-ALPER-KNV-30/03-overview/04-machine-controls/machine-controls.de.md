@@ -1,7 +1,5 @@
 # 3.4. Maschinenbedienung und Steuerung
 
-Dieser Abschnitt beschreibt den Elektroschrank, die HMI-Bedienoberfläche, das SPS-Automatisierungssystem, Start/Stopp-Funktionen, Signalleuchten sowie Alarm-/Fernzugriffsfunktionen der Maschine KNV 30 3000 2B.
-
 ---
 
 ## 3.4.1. Steuerschrank — Allgemeiner Aufbau

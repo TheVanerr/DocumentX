@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const yaml = require(path.join(ROOT, 'codes', 'node_modules', 'js-yaml'));
+const projectCore = require(path.join(ROOT, 'scripts', 'project-core'));
 
 const CONTENT_COMMON = path.join(ROOT, 'content', '_common');
 const CONTENT_MODELS = path.join(ROOT, 'content', '_models');
@@ -14,8 +15,8 @@ const base = yaml.load(fs.readFileSync(path.join(ROOT, 'templates', 'base.yaml')
 function resolveContent(roots, folderParts, baseName, lang) {
   if (!baseName) return null;
   const langs = lang === DEFAULT_LANG ? [lang] : [lang, DEFAULT_LANG];
-  for (const root of roots) {
-    for (const L of langs) {
+  for (const L of langs) {
+    for (const root of roots) {
       const p = path.join(root, ...folderParts, `${baseName}.${L}.md`);
       if (fs.existsSync(p) && fs.readFileSync(p, 'utf8').trim()) return { p, L };
     }
@@ -38,28 +39,31 @@ function testGuide(name, roots, lang) {
   const common = out.filter(o => o.from.includes('_common')).length;
   const model = out.filter(o => o.from.includes('_models')).length;
   const proj = out.filter(o => o.from.startsWith('projects')).length;
-  console.log(`\n[${name}] lang=${lang} → ${out.length} dolu bölüm  (ortak:${common} model:${model} proje:${proj})`);
-  return out.length;
+  const mixed = out.filter(o => o.lang !== lang).length;
+  console.log(`\n[${name}] lang=${lang} → ${out.length} dolu bölüm  (ortak:${common} model:${model} proje:${proj} karisik:${mixed})`);
+  return { n: out.length, mixed, out };
 }
 
-// Proje: 1726050 → model vdl + common
-const projDoc = yaml.load(fs.readFileSync(path.join(PROJECTS_DIR, '1726050-ALPER-KNV-30', 'project.yaml'), 'utf8'));
+const projYaml = projectCore.findProjectYaml(path.join(PROJECTS_DIR, '1726050-ALPER-KNV-30'));
+if (!projYaml) {
+  console.error('Proje yaml bulunamadi');
+  process.exit(1);
+}
+const projDoc = yaml.load(fs.readFileSync(projYaml, 'utf8'));
 const projRoots = [
   path.join(PROJECTS_DIR, '1726050-ALPER-KNV-30'),
   path.join(CONTENT_MODELS, projDoc.model),
   CONTENT_COMMON
 ];
-const nProj = testGuide('PROJE 1726050 (model=' + projDoc.model + ')', projRoots, 'tr');
 
-// Model vdl (tek başına)
-const nVdl = testGuide('MODEL vdl', [path.join(CONTENT_MODELS, 'vdl'), CONTENT_COMMON], 'tr');
+const rTr = testGuide('PROJE 1726050 TR', projRoots, 'tr');
+const rEn = testGuide('PROJE 1726050 EN', projRoots, 'en');
+const rDe = testGuide('PROJE 1726050 DE', projRoots, 'de');
 
-// Model lym (kısmi) — common fallback çalışıyor mu?
-const nLym = testGuide('MODEL lym', [path.join(CONTENT_MODELS, 'lym'), CONTENT_COMMON], 'tr');
+const nVdl = testGuide('MODEL vdl', [path.join(CONTENT_MODELS, 'vdl'), CONTENT_COMMON], 'tr').n;
+const nLym = testGuide('MODEL lym', [path.join(CONTENT_MODELS, 'lym'), CONTENT_COMMON], 'tr').n;
 
-// EN istendi ama yok → tr fallback tüm dosyalarda çalışmalı
-const nEn = testGuide('PROJE 1726050 EN-iste-tr-fallback', projRoots, 'en');
-
-console.log('\nSONUC:',
-  (nProj > 30 && nProj === nEn && nVdl > 30 && nLym >= nVdl - 30) ? 'OK ✓' : 'KONTROL ET');
-console.log('Not: proje ve model vdl ayni sayida bolum vermeli:', nProj === nVdl);
+const ok = rTr.n > 30 && rTr.n === rEn.n && rTr.n === rDe.n && rEn.mixed === 0 && rDe.mixed === 0;
+console.log('\nSONUC:', ok ? 'OK ✓' : 'KONTROL ET');
+console.log('yaml:', path.relative(ROOT, projYaml), '| diller:', (projDoc.diller || []).join(','));
+console.log('vdl/lym:', nVdl, nLym);

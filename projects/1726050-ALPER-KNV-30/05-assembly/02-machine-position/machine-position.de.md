@@ -1,7 +1,5 @@
 # 5.2. Maschinenpositionierung
 
-Dieser Abschnitt beschreibt das Positionieren der Maschine KNV 30 3000 2B am Aufstellungsort, die Ausrichtung, das Nivellieren mit verstellbaren Füßen und die Einhaltung der Ausrichtungstoleranzen.
-
 Positionierungsarbeiten werden im Rahmen von **Schritt 3** der Montageschritte in Abschnitt 5.1 durchgeführt und hier detailliert beschrieben.
 
 ---

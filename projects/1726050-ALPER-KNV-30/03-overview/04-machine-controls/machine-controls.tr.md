@@ -1,7 +1,5 @@
 # 3.4. Makine Kontrolleri
 
-Bu bölüm, KNV 30 3000 2B makinesinin elektrik panosu, HMI operatör arayüzü, PLC otomasyon sistemi, start/stop fonksiyonları, sinyal lambaları ve alarm/uzaktan erişim özelliklerini tanımlar.
-
 ---
 
 ## 3.4.1. Kontrol Panosu — Genel Yapı

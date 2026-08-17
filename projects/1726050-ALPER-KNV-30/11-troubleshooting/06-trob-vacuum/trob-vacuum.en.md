@@ -1,5 +1,3 @@
-<!-- CEVIRI GEREKLI -> EN | kaynak: TR | bu satiri ceviri bitince silin. Baslik/gorsel/tablo yapisini koruyun. -->
+# 11.6. Vacuum Faults
 
-# trob vacuum
-
-<!-- 1726050-ALPER-KNV 30 | proje ozel icerik -->
+The KNV 30 3000 2B machine has **no vacuum system**. This section does not apply (see Section **6.6**).

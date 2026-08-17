@@ -1,8 +1,6 @@
-# 7.3. Shut Down
+# 7.3. Machine Shutdown
 
-This section defines normal shutdown, restart after e-stop, and power-off procedures for the KNV 30 3000 2B machine.
-
-The stop button is available as a **digital button on the HMI interface**.
+The stop button is a **digital button on the HMI interface**.
 
 ---
 
@@ -10,22 +8,22 @@ The stop button is available as a **digital button on the HMI interface**.
 
 | Parameter | Value / Description |
 |-----------|---------------------|
-| Normal stop procedure | [MISSING] |
+| Normal stop procedure | When the HMI **stop** button is pressed, conveyor, pumps, fans and all functions stop |
 
 ---
 
-## 7.3.2. Restart After E-Stop
+## 7.3.2. Restart After Emergency Stop
 
 | Parameter | Value / Description |
 |-----------|---------------------|
-| Restart after e-stop | After releasing the e-stop button and confirming the physical hazard is cleared, the operator shall press the reset button on the panel label until its lamp illuminates |
+| Restart after emergency stop | After the physical hazard is cleared, release the emergency stop button; press the panel reset button until its lamp lights |
 
-When e-stop is pressed, **every function** on the machine stops. Stack light shows **red**.
+When emergency stop is pressed, **all machine functions stop**. Stack light turns **red**.
 
-For detailed e-stop test procedure, see Section **5.4.1**.
+For detailed emergency stop test procedure, see Section **5.4.1**.
 
-<!-- PHOTO: Panel reset button — after e-stop -->
-![Reset button — after e-stop](../../assets/FOTO-7-3-0-reset.png)
+<!-- FOTO: Panel reset button after emergency stop -->
+![Reset button after emergency stop](../../assets/FOTO-7-3-0-reset.png)
 
 ---
 
@@ -33,7 +31,7 @@ For detailed e-stop test procedure, see Section **5.4.1**.
 
 | Parameter | Value / Description |
 |-----------|---------------------|
-| Power-off sequence | [MISSING] |
+| Power-off sequence | **1.** Stop machine via HMI stop → **2.** Turn off main switch |
 
 ---
 
@@ -41,4 +39,4 @@ For detailed e-stop test procedure, see Section **5.4.1**.
 
 | Parameter | Value / Description |
 |-----------|---------------------|
-| Long-term shutdown (weekend) procedure | [MISSING] |
+| Long-term shutdown (weekend) procedure | Tanks **must be drained and cleaned** (see Section **10**) |

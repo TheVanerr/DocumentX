@@ -1,7 +1,5 @@
 # 3.2. Amaçlanan Kullanım
 
-Bu bölüm, KNV 30 3000 2B endüstriyel parça yıkama makinesinin tasarlandığı kullanım amacını, işlenebilir ürün sınırlarını, yasak kullanımları, ortam koşullarını ve operatör gereksinimlerini tanımlar. Makinenin güvenli, verimli ve amacına uygun çalışabilmesi için aşağıda belirtilen sınırlara uyulması zorunludur.
-
 ---
 
 ## 3.2.1. Tasarlanan Kullanım Kapsamı

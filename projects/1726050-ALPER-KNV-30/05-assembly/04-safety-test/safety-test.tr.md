@@ -1,7 +1,5 @@
 # 5.4. Güvenlik Sistemleri Testi
 
-Bu bölüm, KNV 30 3000 2B makinesinin kurulum sonrası güvenlik fonksiyonlarının test edilmesi prosedürlerini tanımlar. Testler, operasyona geçmeden önce eksiksiz tamamlanmalıdır.
-
 Makine stop kategorisi: **Cat.3**. Makinede **RFID güvenlik sensörü** bulunmaktadır. **Işık perdesi bulunmamaktadır**. Emniyet kapısı / bariyer sayısı: **0**.
 
 ---

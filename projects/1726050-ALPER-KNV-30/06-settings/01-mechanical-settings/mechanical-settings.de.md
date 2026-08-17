@@ -1,7 +1,5 @@
 # 6.1. Mechanische Einstellungen
 
-Dieser Abschnitt definiert die mechanischen Einstellpunkte der Maschine KNV 30 3000 2B.
-
 ---
 
 ## 6.1.1. Mechanische Einstellpunkte

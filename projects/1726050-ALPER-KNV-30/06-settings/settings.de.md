@@ -1,6 +1,4 @@
-# 6. Einstellungen
-
-Dieser Abschnitt definiert die mechanischen, sicherheitsrelevanten, elektrischen und pneumatischen Einstellpunkte der Maschine **KNV 30 3000 2B** (Projekt-Nr.: **1726050**) nach der Installation. Einstellungen sind nach Abschluss von Kapitel **5** (Installation und Inbetriebnahme) durchzuführen.
+# 6. EINSTELLUNGEN
 
 ---
 

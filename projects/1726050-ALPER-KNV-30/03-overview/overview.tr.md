@@ -1,6 +1,4 @@
-# 3. Genel Bakış
-
-Bu bölüm, **KNV 30 3000 2B** endüstriyel parça yıkama makinesine (proje no: **1726050**, seri no: **1726050**) ilişkin genel tanım, amaçlanan kullanım, teknik özellikler, kontrol elemanları ve yerleşim bilgilerini kapsar. Kılavuz kapsamındaki makine; girişten yüklemeli konveyörlü, iki banyolu (yıkama + durulama) yapıda olup parçalar konveyör üzerinde **yıkama, durulama ve kurutma** proseslerini tamamlar.
+# 3. GENEL BAKIŞ
 
 Makinenin ana işlevi, parça yüzeyinde endüstriyel işlemlerden kalan **yağ ve kirliliğin giderilmesidir**. Bu bölümde sunulan bilgiler; operatör, bakım ve kurulum personelinin makineyi tanıması, sınırlarını bilmesi ve güvenli kullanım için gerekli teknik çerçeveyi oluşturması amacıyla düzenlenmiştir.
 

@@ -1,7 +1,5 @@
 # 5.1. Maschinenmontage
 
-Dieser Abschnitt beschreibt alle Montageschritte — vom Transport der Maschine KNV 30 3000 2B zum Aufstellungsort über das Auspacken, das Aufstellen auf dem Boden, das Nivellieren mit verstellbaren Füßen bis hin zum Anschluss von Druckluft, Wasser und Stromversorgung.
-
 Die Montage dauert schätzungsweise **1 Tag** und wird von einem **1-köpfigen** Team durchgeführt. Für Transport und Aufstellung ist ein **Gabelstapler** zu verwenden; beim Transport der Maschine darf ein **Kran unter keinen Umständen** eingesetzt werden. Der Transport erfolgt mit Gabelstaplerm-Gabeln; die Profile unter der Maschine dienen als Gabelzugang. Transportgewicht (montiert): **1300 kg** — die Maschine ist ohne Demontage einzelner Teile zu transportieren.
 
 ---
