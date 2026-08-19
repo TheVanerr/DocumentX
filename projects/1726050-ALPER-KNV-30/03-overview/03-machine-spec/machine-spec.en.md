@@ -1,8 +1,8 @@
-# 3.3. Technical Specifications
+# 3.3 Technical specifications
 
 ---
 
-## 3.3.1. Physical Dimensions and Weight
+## 3.3.1 Physical dimensions and weight
 
 | Parameter | Unit | Value |
 |-----------|:----:|------:|
@@ -20,7 +20,7 @@ The machine is installed on an adjustable foot system allowing levelling and ali
 
 ---
 
-## 3.3.2. Capacity and Process Parameters
+## 3.3.2 Capacity and process parameters
 
 | Parameter | Value |
 |-----------|-------|
@@ -45,7 +45,7 @@ Nominal and maximum capacity values and product size/weight limits are determine
 
 ---
 
-## 3.3.3. Electrical Specifications
+## 3.3.3 Electrical specifications
 
 | Parameter | Value |
 |-----------|-------|
@@ -70,7 +70,7 @@ Electrical supply is connected during assembly via a 380 V, 50 Hz, three-phase l
 
 ---
 
-## 3.3.4. Motor and Drive List
+## 3.3.4 Motor and drive list
 
 | Motor | Power | Speed | Brand | Model |
 |-------|-------|-------|-------|-------|
@@ -91,7 +91,7 @@ Total drying fan power: **16 kW**. Brand/model information for drying fans is ma
 
 ---
 
-## 3.3.5. Compressed Air and Water
+## 3.3.5 Compressed air and water
 
 | Parameter | Value |
 |-----------|-------|
@@ -108,7 +108,7 @@ Assembly connections: compressed air **3/4"**, water **1/2"**. Pneumatic regulat
 
 ---
 
-## 3.3.6. Environmental Conditions
+## 3.3.6 Environmental conditions
 
 | Parameter | Min | Max |
 |-----------|-----|-----|

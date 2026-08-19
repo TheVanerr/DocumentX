@@ -35,11 +35,7 @@ function loadState() { try { return JSON.parse(fs.readFileSync(STATE_FILE, 'utf8
 function saveState(st) { fs.writeFileSync(STATE_FILE, JSON.stringify(st, null, 2), 'utf8'); }
 
 function scanDirs(root) {
-  return [
-    path.join(root, 'content', '_common'),
-    path.join(root, 'content', '_models'),
-    path.join(root, 'projects')
-  ];
+  return [path.join(root, 'projects')];
 }
 
 function findSources(root) {

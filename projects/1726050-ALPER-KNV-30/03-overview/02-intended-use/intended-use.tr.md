@@ -1,8 +1,8 @@
-# 3.2. Amaçlanan Kullanım
+# 3.2 Amaçlanan kullanım
 
 ---
 
-## 3.2.1. Tasarlanan Kullanım Kapsamı
+## 3.2.1 Tasarlanan kullanım kapsamı
 
 KNV 30 3000 2B, girişten yüklemeli konveyörlü, iki banyolu (yıkama + durulama) endüstriyel parça yıkama makinesidir. Parçalar konveyör üzerinde ilerleyerek yıkama, durulama ve kurutma proseslerini tamamlar.
 
@@ -15,7 +15,7 @@ Bu makine yalnızca **iç mekan** endüstriyel tesis ortamlarında, bu kılavuzd
 
 ---
 
-## 3.2.2. İşlenebilir Ürün ve Malzeme Türleri
+## 3.2.2 İşlenebilir ürün ve malzeme türleri
 
 Makine ile işlenebilir ürün tipleri aşağıdaki gibidir:
 
@@ -33,7 +33,7 @@ Nominal proses döngü süresi **900 saniye** (15 dakika) olarak tanımlanmışt
 
 ---
 
-## 3.2.3. Yasak ve Uygun Olmayan Kullanımlar
+## 3.2.3 Yasak ve uygun olmayan kullanımlar
 
 Aşağıdaki ürün ve kullanım tipleri makine için **uygun değildir** ve **kesinlikle yasaktır**:
 
@@ -50,7 +50,7 @@ Makine, RFID güvenlik sensörü ile donatılmıştır; kapaklar açıldığınd
 
 ---
 
-## 3.2.4. Proses Suyu ve Temizlik Maddesi Sınırları
+## 3.2.4 Proses suyu ve temizlik maddesi sınırları
 
 Makinenin yıkama ve durulama proseslerinde kullanılacak su aşağıdaki koşullara uygun olmalıdır:
 
@@ -73,7 +73,7 @@ Temizlik tipi: **kuru / ıslak**
 
 ---
 
-## 3.2.5. Ortam ve Tesis Koşulları
+## 3.2.5 Ortam ve tesis koşulları
 
 Makine yalnızca **iç mekan** ortamında kullanılmak üzere tasarlanmıştır. Çalışma ve depolama ortam koşulları aşağıdaki sınırlar içinde olmalıdır:
 
@@ -99,7 +99,7 @@ Basınçlı hava beslemesi **6 bar** basınçta sağlanmalıdır (3/4" bağlant�
 
 ---
 
-## 3.2.6. Operatör, Eğitim ve Hedef Kitle
+## 3.2.6 Operatör, eğitim ve hedef kitle
 
 Makine aşağıdaki personel grupları tarafından kullanılmak üzere tasarlanmıştır:
 

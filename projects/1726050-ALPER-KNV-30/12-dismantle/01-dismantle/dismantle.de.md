@@ -1,8 +1,8 @@
-# 12.1. Demontage
+# 12.1 Demontage
 
 ---
 
-## 12.1.1. Voraussetzungen
+## 12.1.1 Voraussetzungen
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -12,7 +12,7 @@ Langzeitstillstand und Tankreinigung siehe Abschnitte **7.3.4** und **10.1.5**.
 
 ---
 
-## 12.1.2. Energieisolierung (LOTO)
+## 12.1.2 Energieisolierung (LOTO)
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -28,7 +28,7 @@ Langzeitstillstand und Tankreinigung siehe Abschnitte **7.3.4** und **10.1.5**.
 
 ---
 
-## 12.1.3. Demontagereihenfolge
+## 12.1.3 Demontagereihenfolge
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -45,7 +45,7 @@ Langzeitstillstand und Tankreinigung siehe Abschnitte **7.3.4** und **10.1.5**.
 
 ---
 
-## 12.1.4. Recycling und Entsorgung
+## 12.1.4 Recycling und Entsorgung
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|

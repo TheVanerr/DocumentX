@@ -1,10 +1,10 @@
-# 5.1. Machine Assembly
+# 5.1 Machine assembly
 
 Assembly is estimated to take **1 day** and is performed by a **1-person** team. A **forklift** shall be used for transport and placement; a **crane shall not be used under any circumstances** when transporting the machine. Transport shall be performed with forklift forks; the profiles under the machine are used for fork entry. Transport weight (assembled): **1300 kg** — the machine shall be transported without disassembly of any parts.
 
 ---
 
-## 5.1.1. Pre-Assembly Preparation
+## 5.1.1 Pre-assembly preparation
 
 The following conditions shall be met before starting assembly:
 
@@ -25,7 +25,7 @@ The machine is shipped in container packaging. Forklift fork entry (profiles und
 
 ---
 
-## 5.1.2. Assembly Steps
+## 5.1.2 Assembly steps
 
 Assembly shall be performed in the following sequence:
 
@@ -110,7 +110,7 @@ Electrical commissioning test checklist:
 
 ---
 
-## 5.1.3. Assembly Completion
+## 5.1.3 Assembly completion
 
 In Step 9, the machine is brought to **ready for operation** status. Before starting operation, tests in the following sections shall be completed:
 

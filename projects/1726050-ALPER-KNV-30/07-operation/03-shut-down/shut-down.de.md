@@ -1,10 +1,10 @@
-# 7.3. Maschinenstillstand
+# 7.3 Maschinenstillstand
 
 Die Stopptaste ist eine **digitale Taste am HMI**.
 
 ---
 
-## 7.3.1. Normales Stoppen
+## 7.3.1 Normales Stoppen
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -12,7 +12,7 @@ Die Stopptaste ist eine **digitale Taste am HMI**.
 
 ---
 
-## 7.3.2. Neustart nach Not-Aus
+## 7.3.2 Neustart nach Not-Aus
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -27,7 +27,7 @@ Detaillierte Not-Aus-Testprozedur siehe Abschnitt **5.4.1**.
 
 ---
 
-## 7.3.3. Abschaltreihenfolge
+## 7.3.3 Abschaltreihenfolge
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -35,7 +35,7 @@ Detaillierte Not-Aus-Testprozedur siehe Abschnitt **5.4.1**.
 
 ---
 
-## 7.3.4. Langzeitstillstand
+## 7.3.4 Langzeitstillstand
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|

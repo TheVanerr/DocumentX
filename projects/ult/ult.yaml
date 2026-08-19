@@ -1,0 +1,16 @@
+# ULT model sablonu — icerik yalnizca bu klasorden okunur.
+
+proje_adi: ULT
+model: ult
+sablon: true
+tip: sablon
+diller:
+  - tr
+  - en
+  - de
+varsayilan_dil: tr
+extends: templates/base.yaml
+kapak:
+  rev: ''
+  tarih: ''
+  firma: DOLFIN

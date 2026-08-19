@@ -1,10 +1,10 @@
-# 5.4. Güvenlik Sistemleri Testi
+# 5.4 Güvenlik sistemleri testi
 
 Makine stop kategorisi: **Cat.3**. Makinede **RFID güvenlik sensörü** bulunmaktadır. **Işık perdesi bulunmamaktadır**. Emniyet kapısı / bariyer sayısı: **0**.
 
 ---
 
-## 5.4.1. Acil Stop Testi
+## 5.4.1 Acil Stop testi
 
 Makinede toplam **4 adet** acil stop butonu bulunur:
 
@@ -40,7 +40,7 @@ Acil stop test periyodu: **Her ay bir kez** tekrarlanmalıdır.
 
 ---
 
-## 5.4.2. RFID Güvenlik Sensörü Testi
+## 5.4.2 RFID güvenlik sensörü testi
 
 | Parametre | Değer |
 |-----------|-------|
@@ -64,7 +64,7 @@ Emniyet kapısı **kesinlikle bypass edilmemelidir**. Bakım için makine elektr
 
 ---
 
-## 5.4.3. Faz Koruma ve Elektrik Güvenlik Testi
+## 5.4.3 Faz koruma ve elektrik güvenlik testi
 
 Elektrik devreye alma test checklist:
 
@@ -79,7 +79,7 @@ Elektrik devreye alma test checklist:
 
 ---
 
-## 5.4.4. Makine Hazır Durumu Testi
+## 5.4.4 Makine hazır durumu testi
 
 | Kontrol | Beklenen sonuç |
 |---------|----------------|
@@ -93,7 +93,7 @@ HMI arayüzünde alarm bulunmamalıdır. Makine kullanıma hazır değilse alarm
 
 ---
 
-## 5.4.5. Güvenlik Fonksiyon Test Kontrol Listesi
+## 5.4.5 Güvenlik fonksiyon test kontrol listesi
 
 Tüm güvenlik testleri tamamlandığında aşağıdaki liste doldurulmalıdır:
 

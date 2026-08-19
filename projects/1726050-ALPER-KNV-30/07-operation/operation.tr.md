@@ -12,7 +12,7 @@ Makine; girişten yüklemeli konveyörlü iki banyolu (yıkama + durulama) endü
 
 ---
 
-## Bölüm İçeriği
+## Bölüm içeriği
 
 | Bölüm | Başlık | Konu |
 |-------|--------|------|
@@ -25,7 +25,7 @@ Makine; girişten yüklemeli konveyörlü iki banyolu (yıkama + durulama) endü
 
 ---
 
-## Tepe Lambası Durumları
+## Tepe lambası durumları
 
 | Lamba | Anlam |
 |-------|-------|

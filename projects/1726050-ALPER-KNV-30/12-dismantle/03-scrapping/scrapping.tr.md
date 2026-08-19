@@ -1,8 +1,8 @@
-# 12.3. Hurda
+# 12.3 Hurda
 
 ---
 
-## 12.3.1. Hurda Değerlendirme
+## 12.3.1 Hurda değerlendirme
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -12,7 +12,7 @@ Demontaj sonrası parçalar; malzeme tipine (metal, plastik, elektronik, kablo v
 
 ---
 
-## 12.3.2. Parça Geri Dönüşüm Malzemeleri
+## 12.3.2 Parça geri dönüşüm malzemeleri
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|

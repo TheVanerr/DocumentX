@@ -1,10 +1,10 @@
-# 6.5. Pneumatic Settings
+# 6.5 Pneumatic settings
 
 Compressed air connection: **6 bar — 3/4"** (see Section **5.3**).
 
 ---
 
-## 6.5.1. Regulator Pressure Setting
+## 6.5.1 Regulator pressure setting
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -17,7 +17,7 @@ The pneumatic regulator at the machine inlet shall be set to **6 bar**. After ad
 
 ---
 
-## 6.5.2. Cylinder Speed Setting
+## 6.5.2 Cylinder speed setting
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -25,7 +25,7 @@ The pneumatic regulator at the machine inlet shall be set to **6 bar**. After ad
 
 ---
 
-## 6.5.3. Sensor Delays
+## 6.5.3 Sensor delays
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -33,7 +33,7 @@ The pneumatic regulator at the machine inlet shall be set to **6 bar**. After ad
 
 ---
 
-## 6.5.4. Pneumatic Settings Checklist
+## 6.5.4 Pneumatic settings checklist
 
 | # | Check | Status |
 |---|-------|--------|

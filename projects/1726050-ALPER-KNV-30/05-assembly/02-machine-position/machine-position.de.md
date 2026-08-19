@@ -1,10 +1,10 @@
-# 5.2. Maschinenpositionierung
+# 5.2 Maschinenpositionierung
 
 Positionierungsarbeiten werden im Rahmen von **Schritt 3** der Montageschritte in Abschnitt 5.1 durchgeführt und hier detailliert beschrieben.
 
 ---
 
-## 5.2.1. Anforderungen an den Aufstellungsbereich
+## 5.2.1 Anforderungen an den Aufstellungsbereich
 
 Vor dem Aufstellen der Maschine muss der Aufstellungsbereich folgende Bedingungen erfüllen:
 
@@ -25,7 +25,7 @@ Referenz-Layout-Plan: **1726050-ALPER-KNV 30 LAYOUT.pdf**
 
 ---
 
-## 5.2.2. Richtungsdefinitionen und Aufstellung
+## 5.2.2 Richtungsdefinitionen und Aufstellung
 
 Die Maschine ist nach folgenden Richtungen auszurichten:
 
@@ -48,7 +48,7 @@ Teile werden von links verladen und rechts entnommen. HMI-Panel und Elektroschra
 
 ---
 
-## 5.2.3. Nivellierung und Ausrichtung
+## 5.2.3 Nivellierung und Ausrichtung
 
 | Parameter | Wert |
 |-----------|------|
@@ -70,7 +70,7 @@ Prüffrage mechanische Installation: *Ist die Maschine waagerecht?*
 
 ---
 
-## 5.2.4. Wartungszugang
+## 5.2.4 Wartungszugang
 
 Beim Positionieren darf der Wartungszugang nicht blockiert werden:
 

@@ -1,8 +1,8 @@
-# 5.6. Communication and Automation Interface
+# 5.6 Communication and automation interface
 
 ---
 
-## 5.6.1. Fieldbus and Protocol
+## 5.6.1 Fieldbus and protocol
 
 | Parameter | Value |
 |-----------|-------|
@@ -23,7 +23,7 @@ Encoder / feedback settings are embedded in the PLC program; adjustment shall be
 
 ---
 
-## 5.6.2. Upper System Connection
+## 5.6.2 Upper system connection
 
 | Parameter | Value |
 |-----------|-------|
@@ -33,7 +33,7 @@ MES or SCADA integration is not defined within the scope of this project. Upper 
 
 ---
 
-## 5.6.3. Remote Access
+## 5.6.3 Remote access
 
 | Parameter | Value |
 |-----------|-------|
@@ -47,7 +47,7 @@ Remote access is provided via the Secomea module. Module installation and config
 
 ---
 
-## 5.6.4. I/O List and Documentation
+## 5.6.4 I/O list and documentation
 
 | Document | File name |
 |----------|-----------|
@@ -60,7 +60,7 @@ The I/O list is the reference document for input/output addresses and sensor/act
 
 ---
 
-## 5.6.5. Communication Checklist
+## 5.6.5 Communication checklist
 
 | # | Check | Status |
 |---|-------|--------|

@@ -1,0 +1,45 @@
+---
+description: DocumentX bölüm haritası ve dosya konumları
+globs: projects/**/*
+alwaysApply: false
+---
+
+# Kılavuz Bölüm Haritası (01–14)
+
+DocumentX klasör yapısı, `CURSOR USER MANUEL TEMPLATE.md` Bölüm 1–13 ile hizalıdır:
+
+| Klasör | Template | İçerik özeti |
+|--------|----------|--------------|
+| `01-introduction` | Bölüm 1 | Kapsam, hedef kitle, doküman kontrolü, Fikri mülkiyet |
+| `02-safety` | Bölüm 2 | Güvenlik, kalıntı risk, LOTO (**SSOT**), E-Stop, KKD |
+| `03-overview` | Bölüm 3 | Tanım, amaçlanan kullanım, **alan (SSOT)**, **teknik tablo (SSOT)** |
+| `04-transport` | Bölüm 4 | Nakliye, kaldırma, depolama |
+| `05-assembly` | Bölüm 5 | Kurulum, elektrik/pnömatik bağlantı, güvenlik testi |
+| `06-settings` | Bölüm 6 | OEM ayarları, devreye alma parametreleri |
+| `07-operation` | Bölüm 7 | Modlar, start/stop, operasyon sekansı |
+| `08-capacity` | Bölüm 8 | Kapasite, reçete yönetimi |
+| `09-maintenance` | Bölüm 9 | Periyodik bakım tablosu, yağlama (LOTO → Bölüm 2) |
+| `10-cleaning` | Bölüm 10 | Temizlik/dezenfeksiyon (LOTO → Bölüm 2) |
+| `11-troubleshooting` | Bölüm 11 | HMI alarm tablosu, teşhis adımları |
+| `12-dismantle` | Bölüm 12 | Demontaj, bertaraf |
+| `13-documents` | Bölüm 13 | Harici doküman listesi, ekler |
+| `14-index` | Bölüm 13 | Sözlük, kısaltmalar, anahtar kelime indeksi |
+
+## Dosya çözümleme
+
+Her kılavuz yalnızca kendi proje klasöründen okunur:
+
+`projects/<proje>/<bölüm>/.../*.<dil>.md`
+
+Model sablonları: `projects/knv`, `projects/vdl`, … (`sablon: true` yaml)  
+Müşteri projeleri: `projects/1726050-ALPER-KNV-30`, …  
+Yedek klasör kullanılmaz.
+
+## DATA → bölüm eşlemesi
+
+`* DATA` dosyasındaki `[BLOK]` etiketleri bölümlere karşılık gelir (ör. `[GIRIS_GENEL]` → 01, `[ACIL_DURDURMA]` → 02, `[MAKINE_TANIMI]` → 03). Yazmadan önce ilgili bloğu oku.
+
+## Görseller
+
+- Proje görselleri: `projects/<proje>/assets/`
+- Ortak etiket/ikon: `assets/labels/`

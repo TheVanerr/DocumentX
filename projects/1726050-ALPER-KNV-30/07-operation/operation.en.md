@@ -12,7 +12,7 @@ The machine is an infeed-loaded conveyor industrial parts washer with two baths 
 
 ---
 
-## Section Contents
+## Section contents
 
 | Section | Title | Topic |
 |---------|-------|-------|
@@ -25,7 +25,7 @@ The machine is an infeed-loaded conveyor industrial parts washer with two baths 
 
 ---
 
-## Stack Light States
+## Stack light states
 
 | Lamp | Meaning |
 |------|---------|

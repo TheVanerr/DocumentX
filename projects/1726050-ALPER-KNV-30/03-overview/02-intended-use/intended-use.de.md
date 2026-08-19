@@ -1,8 +1,8 @@
-# 3.2. Bestimmungsgemäße Verwendung
+# 3.2 Bestimmungsgemäße Verwendung
 
 ---
 
-## 3.2.1. Bestimmungsgemäßer Verwendungsbereich
+## 3.2.1 Bestimmungsgemäßer Verwendungsbereich
 
 KNV 30 3000 2B ist eine industrielle Teilewaschanlage mit Einlauf-Beschickung, Förderband und zwei Prozessbädern (Waschen + Spülen). Die Teile durchlaufen auf dem Förderband Waschen, Spülen und Trocknen.
 
@@ -15,7 +15,7 @@ Die Maschine ist ausschließlich für den Einsatz in **Innenräumen** industriel
 
 ---
 
-## 3.2.2. Verarbeitbare Produkt- und Materialtypen
+## 3.2.2 Verarbeitbare Produkt- und Materialtypen
 
 Mit der Maschine können folgende Produkttypen bearbeitet werden:
 
@@ -33,7 +33,7 @@ Die Nenn-Prozesszykluszeit ist mit **900 Sekunden** (15 Minuten) festgelegt. Der
 
 ---
 
-## 3.2.3. Verbotene und ungeeignete Verwendungen
+## 3.2.3 Verbotene und ungeeignete Verwendungen
 
 Die folgenden Produkt- und Verwendungstypen sind für die Maschine **nicht geeignet** und **streng verboten**:
 
@@ -50,7 +50,7 @@ Die Maschine ist mit einem RFID-Sicherheitssensor ausgestattet; beim Öffnen der
 
 ---
 
-## 3.2.4. Prozesswasser- und Reinigungsmittelgrenzen
+## 3.2.4 Prozesswasser- und Reinigungsmittelgrenzen
 
 Für Wasch- und Spülprozesse der Maschine muss das verwendete Wasser folgenden Bedingungen entsprechen:
 
@@ -73,7 +73,7 @@ Reinigungsart: **trocken / nass**
 
 ---
 
-## 3.2.5. Umgebungs- und Anlagenbedingungen
+## 3.2.5 Umgebungs- und Anlagenbedingungen
 
 Die Maschine ist ausschließlich für den Einsatz in **Innenräumen** ausgelegt. Betriebs- und Lagerumgebung müssen folgende Grenzen einhalten:
 
@@ -99,7 +99,7 @@ Die Druckluftversorgung muss mit **6 bar** Druck bereitgestellt werden (3/4"-Ans
 
 ---
 
-## 3.2.6. Bediener, Schulung und Zielgruppe
+## 3.2.6 Bediener, Schulung und Zielgruppe
 
 Die Maschine ist für folgende Personalgruppen vorgesehen:
 

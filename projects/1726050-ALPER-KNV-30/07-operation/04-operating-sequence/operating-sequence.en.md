@@ -1,4 +1,4 @@
-# 7.4. Operating Sequence
+# 7.4 Operating sequence
 
 The machine runs **fully automatic**. The HMI operating page has **on/off buttons** for wash, rinse, drying 1, drying 2 and exhaust.
 
@@ -12,7 +12,7 @@ Process flow summary: **Wash → Rinse → Dry**
 
 ---
 
-## 7.4.1. Automatic Cycle Steps
+## 7.4.1 Automatic Cycle steps
 
 | Step | Description |
 |------|-------------|
@@ -24,7 +24,7 @@ Process flow summary: **Wash → Rinse → Dry**
 
 ---
 
-## 7.4.2. Cycle Time
+## 7.4.2 Cycle time
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -32,7 +32,7 @@ Process flow summary: **Wash → Rinse → Dry**
 
 ---
 
-## 7.4.3. Product Infeed / Outfeed
+## 7.4.3 Product infeed / outfeed
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -46,7 +46,7 @@ Parts complete processes while advancing on the conveyor (infeed loading).
 
 ---
 
-## 7.4.4. Machine Behaviour on Fault
+## 7.4.4 Machine behaviour on fault
 
 | Parameter | Value / Description |
 |-----------|---------------------|

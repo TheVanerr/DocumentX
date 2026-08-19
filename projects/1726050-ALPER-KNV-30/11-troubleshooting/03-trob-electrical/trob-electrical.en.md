@@ -1,8 +1,8 @@
-# 11.3. Electrical Faults
+# 11.3 Electrical faults
 
 ---
 
-## 11.3.1. Phase and Emergency Stop
+## 11.3.1 Phase and emergency Stop
 
 | Alarm | Topic | Reference |
 |-------|-------|-----------|
@@ -15,7 +15,7 @@
 
 ---
 
-## 11.3.2. Motor Faults
+## 11.3.2 Motor faults
 
 | Alarm | Motor |
 |-------|-------|
@@ -35,7 +35,7 @@
 
 ---
 
-## 11.3.3. Heater Faults
+## 11.3.3 Heater faults
 
 | Alarm | Topic |
 |-------|-------|

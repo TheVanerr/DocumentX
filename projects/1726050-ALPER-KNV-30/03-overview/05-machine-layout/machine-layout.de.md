@@ -1,4 +1,4 @@
-# 3.5. Maschinenlayout
+# 3.5 Maschinenlayout
 
 **Referenzzeichnung:** `1726050-ALPER-KNV 30 LAYOUT.pdf`
 
@@ -9,7 +9,7 @@ Die Layout-Zeichnung liegt im Projekt-Assets-Ordner vor: `1726050-ALPER-KNV 30 3
 
 ---
 
-## 3.5.1. Richtungsdefinitionen und Bedienseite
+## 3.5.1 Richtungsdefinitionen und Bedienseite
 
 | Bezeichnung | Richtung / Position |
 |-------------|---------------------|
@@ -25,7 +25,7 @@ Teile werden von links verladen, durchlaufen entlang des Förderbandes die Proze
 
 ---
 
-## 3.5.2. Mindestfreiräume und Raumhöhe
+## 3.5.2 Mindestfreiräume und Raumhöhe
 
 Bei der Planung des Aufstellungsbereichs sind folgende Mindestfreiräume einzuhalten:
 
@@ -43,7 +43,7 @@ Mindestgröße Montagefläche: **5 m × 3 m**. Bodenebenheit-Toleranz: **0,5 mm/
 
 ---
 
-## 3.5.3. Wartungszugangsbereiche
+## 3.5.3 Wartungszugangsbereiche
 
 | Bereich | Zugang |
 |---------|--------|
@@ -56,7 +56,7 @@ Für periodische Wartung, Filterreinigung und mechanische Eingriffe werden die A
 
 ---
 
-## 3.5.4. Transport, Gabelstapler und Schwerpunkt
+## 3.5.4 Transport, Gabelstapler und Schwerpunkt
 
 | Parameter | Wert / Hinweis |
 |-----------|----------------|

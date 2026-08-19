@@ -1,8 +1,8 @@
-# 6.3. Elektrik Ayarları
+# 6.3 Elektrik ayarları
 
 ---
 
-## 6.3.1. Motor Yönü / Faz Kontrolü
+## 6.3.1 Motor yönü / faz kontrolü
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -12,7 +12,7 @@ Faz yönü ve sırası, kurulum sırasında faz sıra rölesi ile doğrulanmış
 
 ---
 
-## 6.3.2. Encoder / Feedback
+## 6.3.2 Encoder / feedback
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -25,7 +25,7 @@ Encoder ayarı operatör tarafından yapılmamalıdır.
 
 ---
 
-## 6.3.3. Analog Ölçeklendirme
+## 6.3.3 Analog ölçeklendirme
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -36,7 +36,7 @@ Encoder ayarı operatör tarafından yapılmamalıdır.
 
 ---
 
-## 6.3.4. Tarih / Saat / Dil
+## 6.3.4 Tarih / saat / dil
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -47,7 +47,7 @@ Encoder ayarı operatör tarafından yapılmamalıdır.
 
 ---
 
-## 6.3.5. Elektrik Ayar Kontrol Listesi
+## 6.3.5 Elektrik ayar kontrol listesi
 
 | # | Kontrol | Durum |
 |---|---------|-------|

@@ -1,0 +1,41 @@
+---
+description: DocumentX kılavuz yazımı — SSOT, ISO 20607 uyumu, temel iş akışı
+alwaysApply: true
+---
+
+# DocumentX — Kılavuz Yazım Çekirdek Kuralları
+
+Bu proje endüstriyel makine **kullanım kılavuzu** üretir. Her oturumda şu kaynakları esas al:
+
+- `CURSOR USER MANUEL TEMPLATE.md` — yapı, SSOT noktaları, bölüm yönergeleri
+- `EN ISO 20607 2019.pdf` — resmi yazım ve içerik gereksinimleri (ISO 12100 ile uyumlu)
+- `projects/<proje>/* DATA` — makineye özel **tek kaynak veri (SSOT)**; bölüm `.md` dosyaları buradan türetilir
+
+## Veri ve dürüstlük
+
+- DATA dosyasındaki değerleri esas al; **uydurma yapma**.
+- Bilinmeyen alanları `[EKSİK]` bırak; tahmin etme.
+- Sayısal/teknik değerleri birden fazla bölümde **tekrarlama** — SSOT noktasına çapraz referans ver.
+
+## SSOT (tek kaynak) — çapraz referans zorunlu
+
+| Konu | SSOT bölüm | Diğer bölümlerde |
+|------|------------|------------------|
+| LOTO / enerji izolasyonu | `02-safety` (safety-rules) | "Bkz. Bölüm 2.4 / LOTO" — adımları tekrarlama |
+| Alan / tesis gereksinimleri | `03-overview` (machine-spec vb.) | Kurulumda "Bkz. Bölüm 3.4" |
+| Elektrik / tesisat / teknik tablolar | `03-overview` | Kurulum/ayarlarda tablo tekrarlama |
+| Acil stop / reset | `02-safety` | Arıza tablosunda referans |
+| Periyodik bakım takvimi | `09-maintenance` | Temizlikte filtre periyotlarına referans |
+
+## İş akışı
+
+1. İlgili projenin `* DATA` dosyasını oku.
+2. Hedef bölüm klasöründeki mevcut `.tr.md` dosyasını oku (proje klasörü tek kaynak).
+3. ISO 20607 + template kurallarına göre yaz; emir kipi, numaralı adımlar.
+4. Tüm bölümler `projects/<proje>/01-introduction` … `14-index` altında (tr/en/de).
+
+## Güvenlik
+
+- Genel güvenlik `02-safety` altında merkezileştirilir.
+- Prosedür adımlarında yalnızca **o adıma özel** tehlike varsa uyarı ekle; sayfa başına uyarı kopyalama.
+- Sinyal kelimeleri: **TEHLİKE** / **UYARI** / **DİKKAT** (ISO 3864-2 ile uyumlu).

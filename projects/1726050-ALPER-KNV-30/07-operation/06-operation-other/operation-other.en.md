@@ -1,10 +1,10 @@
-# 7.6. Other Operation Topics
+# 7.6 Other operation topics
 
 There is **no operator** on the machine. No human intervention is required during normal operation.
 
 ---
 
-## 7.6.1. Format / Product Change
+## 7.6.1 Format / product change
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -14,7 +14,7 @@ No format change procedure (see Section **6.1.5**).
 
 ---
 
-## 7.6.2. Scrap Management
+## 7.6.2 Scrap management
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -22,7 +22,7 @@ No format change procedure (see Section **6.1.5**).
 
 ---
 
-## 7.6.3. Intervention Points
+## 7.6.3 Intervention points
 
 | Parameter | Value / Description |
 |-----------|---------------------|

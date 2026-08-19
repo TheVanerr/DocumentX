@@ -1,10 +1,10 @@
-# 7.1. Çalışma Modları
+# 7.1 Çalışma modları
 
 Makine **tam otomatik** çalışır. Start / Stop düğmeleri **HMI arayüzünde dijital buton** olarak bulunur.
 
 ---
 
-## 7.1.1. Manuel Mod
+## 7.1.1 Manuel mod
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -17,7 +17,7 @@ HMI arayüzündeki **çalışma sayfasında** yıkama, durulama, kurutma 1, kuru
 
 ---
 
-## 7.1.2. Otomatik Mod
+## 7.1.2 Otomatik mod
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -25,7 +25,7 @@ HMI arayüzündeki **çalışma sayfasında** yıkama, durulama, kurutma 1, kuru
 
 ---
 
-## 7.1.3. Bakım / Setup Modu
+## 7.1.3 Bakım / Setup modu
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -33,7 +33,7 @@ HMI arayüzündeki **çalışma sayfasında** yıkama, durulama, kurutma 1, kuru
 
 ---
 
-## 7.1.4. Step / Tek Adım Modu
+## 7.1.4 Step / tek adım modu
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -41,7 +41,7 @@ HMI arayüzündeki **çalışma sayfasında** yıkama, durulama, kurutma 1, kuru
 
 ---
 
-## 7.1.5. Mod Geçiş Koşulları
+## 7.1.5 Mod geçiş koşulları
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -49,7 +49,7 @@ HMI arayüzündeki **çalışma sayfasında** yıkama, durulama, kurutma 1, kuru
 
 ---
 
-## 7.1.6. HMI Proses Seçenekleri Özeti
+## 7.1.6 HMI proses seçenekleri özeti
 
 | Seçenek | Açıklama |
 |---------|----------|

@@ -1,8 +1,8 @@
-# 3.4. Makine Kontrolleri
+# 3.4 Makine kontrolleri
 
 ---
 
-## 3.4.1. Kontrol Panosu — Genel Yapı
+## 3.4.1 Kontrol panosu — genel yapı
 
 | Parametre | Değer |
 |-----------|-------|
@@ -19,7 +19,7 @@ Elektrik panosu; güç dağıtımı, motor koruma, otomasyon bileşenleri (PLC, 
 
 ---
 
-## 3.4.2. HMI Operatör Arayüzü
+## 3.4.2 HMI operatör arayüzü
 
 | Parametre | Değer |
 |-----------|-------|
@@ -43,7 +43,7 @@ HMI **ayar sayfasından** sıcaklık, tarih/saat ve dil ayarları yapılabilir.
 
 ---
 
-## 3.4.3. PLC ve G/Ç Altyapısı
+## 3.4.3 PLC ve G/Ç altyapısı
 
 | Parametre | Değer |
 |-----------|-------|
@@ -59,7 +59,7 @@ Encoder / feedback ayarı PLC programı içerisinde gömülüdür; ayar üretici
 
 ---
 
-## 3.4.4. Çalışma Modları, Start/Stop ve Acil Stop
+## 3.4.4 Çalışma modları, Start/Stop ve acil Stop
 
 | Parametre | Değer |
 |-----------|-------|
@@ -84,7 +84,7 @@ Acil stop'a basıldığında makinedeki **her fonksiyon durur**. Reset: Acil sto
 
 ---
 
-## 3.4.5. Sinyal Lambaları (Tepe Lambası)
+## 3.4.5 Sinyal lambaları (tepe lambası)
 
 | Renk | Anlam |
 |------|-------|
@@ -99,7 +99,7 @@ Tepe lambası makinenin anlık durumunu operatöre görsel olarak iletir. Alarm 
 
 ---
 
-## 3.4.6. Alarm, Reçete ve Uzaktan Erişim
+## 3.4.6 Alarm, reçete ve uzaktan erişim
 
 | Fonksiyon | Davranış |
 |-----------|----------|

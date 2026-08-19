@@ -1,10 +1,10 @@
-# 7.2. Maschinenstart
+# 7.2 Maschinenstart
 
 Am HMI-Bildschirm gibt es **eine Vorbereitungstaste**. Die Vorbereitung muss vor dem Start abgeschlossen sein.
 
 ---
 
-## 7.2.1. Inbetriebnahme-Voraussetzungen
+## 7.2.1 Inbetriebnahme-Voraussetzungen
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -17,7 +17,7 @@ Am HMI-Bildschirm gibt es **eine Vorbereitungstaste**. Die Vorbereitung muss vor
 
 ---
 
-## 7.2.2. Einschaltreihenfolge
+## 7.2.2 Einschaltreihenfolge
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -25,7 +25,7 @@ Am HMI-Bildschirm gibt es **eine Vorbereitungstaste**. Die Vorbereitung muss vor
 
 ---
 
-## 7.2.3. Luft / Wasser / Vakuum
+## 7.2.3 Luft / Wasser / Vakuum
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -33,7 +33,7 @@ Am HMI-Bildschirm gibt es **eine Vorbereitungstaste**. Die Vorbereitung muss vor
 
 ---
 
-## 7.2.4. Vorwärmen
+## 7.2.4 Vorwärmen
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -41,7 +41,7 @@ Am HMI-Bildschirm gibt es **eine Vorbereitungstaste**. Die Vorbereitung muss vor
 
 ---
 
-## 7.2.5. Checkliste vor Start
+## 7.2.5 Checkliste vor Start
 
 | # | Prüfung | Status |
 |---|---------|--------|
@@ -57,7 +57,7 @@ Am HMI-Bildschirm gibt es **eine Vorbereitungstaste**. Die Vorbereitung muss vor
 
 ---
 
-## 7.2.6. Erstes Produkt / Einlauf
+## 7.2.6 Erstes Produkt / Einlauf
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|

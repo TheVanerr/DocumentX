@@ -12,7 +12,13 @@ const api = {
   createProject: (name, model, langs) => ipcRenderer.invoke('create-project', name, model, langs),
   readAsset: (name) => ipcRenderer.invoke('read-asset', name),
   printPdf: () => ipcRenderer.invoke('print-pdf'),
-  exportHtml: (payload) => ipcRenderer.invoke('export-html', payload)
+  exportHtml: (payload) => ipcRenderer.invoke('export-html', payload),
+  onContentChanged: (callback) => {
+    if (typeof callback !== 'function') return () => {};
+    const handler = (_event, payload) => callback(payload || {});
+    ipcRenderer.on('content-changed', handler);
+    return () => ipcRenderer.removeListener('content-changed', handler);
+  }
 };
 
 if (TRANSLATION_UI_ENABLED) {

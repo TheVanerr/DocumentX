@@ -1,10 +1,10 @@
-# 13.2. Çizimler
+# 13.2 Çizimler
 
 Çizimler **ayrı evrak paketi** içinde teslim edilir.
 
 ---
 
-## 13.2.1. Çizim Listesi
+## 13.2.1 Çizim listesi
 
 | Çizim | Dosya adı / rev | Teslim |
 |-------|-----------------|--------|
@@ -16,6 +16,6 @@
 
 ---
 
-## 13.2.2. Kılavuzda Kullanılan Görsel Referansları
+## 13.2.2 Kılavuzda kullanılan görsel referansları
 
 Makine görselleri proje `assets/` klasöründedir. Kılavuz metinlerinde `<!-- FOTO: ... -->` ile işaretlenmiş yer tutucular ilgili görsellere bağlanır.

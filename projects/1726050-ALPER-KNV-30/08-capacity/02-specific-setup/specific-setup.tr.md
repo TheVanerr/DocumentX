@@ -1,10 +1,10 @@
-# 8.2. Spesifik Kurulum
+# 8.2 Spesifik kurulum
 
 Makinede **format değişim prosedürü yoktur** (bkz. Bölüm **6.1.5**). Ürün/reçete parametreleri HMI üzerinden kullanıcı firma tarafından ayarlanır.
 
 ---
 
-## 8.2.1. Reçete / Program Parametreleri
+## 8.2.1 Reçete / program parametreleri
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -19,7 +19,7 @@ Reçete parametreleri (sıcaklık, proses süreleri vb.) kullanıcı firmanın p
 
 ---
 
-## 8.2.2. Ürün Bazlı Parametreler
+## 8.2.2 Ürün bazlı parametreler
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -31,7 +31,7 @@ Her ürün tipi için ayrı reçete oluşturulabilir. Parametreler (sıcaklık, 
 
 ---
 
-## 8.2.3. Reçete Numarası Listesi
+## 8.2.3 Reçete numarası listesi
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -41,7 +41,7 @@ Reçete numaralandırması ve ürün eşleştirmesi kullanıcı firma tarafında
 
 ---
 
-## 8.2.4. Spesifik Kurulum Kontrol Listesi
+## 8.2.4 Spesifik kurulum kontrol listesi
 
 | # | Kontrol | Durum |
 |---|---------|-------|

@@ -1,10 +1,10 @@
-# 8.1. Produktkapazität
+# 8.1 Produktkapazität
 
 Kapazitätsbewertung gilt für Teile auf dem Förderer; Trommelvolumen- oder Gewichtsgrenzen gelten nicht.
 
 ---
 
-## 8.1.1. Kapazitätsparameter
+## 8.1.1 Kapazitätsparameter
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -16,7 +16,7 @@ Kapazitätsbewertung gilt für Teile auf dem Förderer; Trommelvolumen- oder Gew
 
 ---
 
-## 8.1.2. Produktgrenzen
+## 8.1.2 Produktgrenzen
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -30,7 +30,7 @@ Teilgröße und -gewicht müssen zu Fördererbreite, Roboter-Greifpunkt und Badg
 
 ---
 
-## 8.1.3. Nominale Kapazitätstabelle
+## 8.1.3 Nominale Kapazitätstabelle
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -40,7 +40,7 @@ Stk./h-Werte pro Produkttyp müssen vom Anwender zusammen mit HMI-Rezepten und R
 
 ---
 
-## 8.1.4. Getestete Kapazität und Bedingungen
+## 8.1.4 Getestete Kapazität und Bedingungen
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -51,7 +51,7 @@ Kapazitätstest muss vor Ort mit tatsächlicher Teilgeometrie, Ziel-Reinigungskr
 
 ---
 
-## 8.1.5. Maximaler Dauerbetrieb
+## 8.1.5 Maximaler Dauerbetrieb
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -61,7 +61,7 @@ Maschine ist für ununterbrochenen Betrieb in 24/7-Roboterlinie geeignet. Period
 
 ---
 
-## 8.1.6. Kapazitätsbeeinflussende Faktoren
+## 8.1.6 Kapazitätsbeeinflussende Faktoren
 
 | Faktor | Einfluss |
 |--------|----------|

@@ -1,8 +1,8 @@
-# 6.2. Güvenlik Ayarları
+# 6.2 Güvenlik ayarları
 
 ---
 
-## 6.2.1. Emniyet Kapısı / Bypass
+## 6.2.1 Emniyet kapısı / bypass
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -10,7 +10,7 @@
 
 ---
 
-## 6.2.2. Işık Perdesi
+## 6.2.2 Işık perdesi
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -18,7 +18,7 @@
 
 ---
 
-## 6.2.3. Acil Stop Test Periyodu
+## 6.2.3 Acil Stop test periyodu
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -31,7 +31,7 @@ Detaylı test prosedürü için bkz. Bölüm **5.4.1**.
 
 ---
 
-## 6.2.4. Güvenlik Ayar Kontrol Listesi
+## 6.2.4 Güvenlik ayar kontrol listesi
 
 | # | Kontrol | Durum |
 |---|---------|-------|

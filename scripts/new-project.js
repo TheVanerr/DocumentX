@@ -3,9 +3,7 @@
  * Kullanim:
  *   node scripts/new-project.js "1730000-XYZ-KNV 40" knv tr,en,de
  *
- * Yalnizca makineye ozel bolumler (content/_models/<model>) projeye kopyalanir;
- * icerik modelin mevcut .tr.md'sinden alinir. Ortak bolumler mirasla gelir.
- * Projeye ozel farkli bir metin gerekiyorsa dosyayi duzenlemen yeterli.
+ * Seçilen model sablonunun (projects/<model>/) tüm dosyaları yeni proje klasörüne kopyalanır.
  */
 const path = require('path');
 const { createProject } = require(path.join(__dirname, 'project-core'));

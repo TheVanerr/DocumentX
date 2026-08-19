@@ -1,10 +1,10 @@
-# 14.3. Stichwortindex
+# 14.3 Stichwortindex
 
 Die Tabelle listet Abschnittsreferenzen für häufig gesuchte Themen.
 
 ---
 
-## 14.3.1. A–H
+## 14.3.1 A–H
 
 | Stichwort | Abschnitt(e) |
 |-----------|--------------|
@@ -31,7 +31,7 @@ Die Tabelle listet Abschnittsreferenzen für häufig gesuchte Themen.
 
 ---
 
-## 14.3.2. I–R
+## 14.3.2 I–R
 
 | Stichwort | Abschnitt(e) |
 |-----------|--------------|
@@ -55,7 +55,7 @@ Die Tabelle listet Abschnittsreferenzen für häufig gesuchte Themen.
 
 ---
 
-## 14.3.3. S–Z
+## 14.3.3 S–Z
 
 | Stichwort | Abschnitt(e) |
 |-----------|--------------|

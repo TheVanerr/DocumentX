@@ -1,8 +1,8 @@
-# 11.3. Elektrik Arızaları
+# 11.3 Elektrik arızaları
 
 ---
 
-## 11.3.1. Faz ve Acil Stop
+## 11.3.1 Faz ve acil Stop
 
 | Alarm | Konu | Referans |
 |-------|------|----------|
@@ -15,7 +15,7 @@
 
 ---
 
-## 11.3.2. Motor Arızaları
+## 11.3.2 Motor arızaları
 
 | Alarm | Motor |
 |-------|-------|
@@ -35,7 +35,7 @@
 
 ---
 
-## 11.3.3. Isıtıcı Arızaları
+## 11.3.3 Isıtıcı arızaları
 
 | Alarm | Konu |
 |-------|------|

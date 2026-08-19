@@ -1,10 +1,10 @@
-# 5.1. Maschinenmontage
+# 5.1 Maschinenmontage
 
 Die Montage dauert schätzungsweise **1 Tag** und wird von einem **1-köpfigen** Team durchgeführt. Für Transport und Aufstellung ist ein **Gabelstapler** zu verwenden; beim Transport der Maschine darf ein **Kran unter keinen Umständen** eingesetzt werden. Der Transport erfolgt mit Gabelstaplerm-Gabeln; die Profile unter der Maschine dienen als Gabelzugang. Transportgewicht (montiert): **1300 kg** — die Maschine ist ohne Demontage einzelner Teile zu transportieren.
 
 ---
 
-## 5.1.1. Montagevorbereitung
+## 5.1.1 Montagevorbereitung
 
 Vor Beginn der Montage müssen folgende Bedingungen erfüllt sein:
 
@@ -25,7 +25,7 @@ Die Maschine wird in Containerverpackung geliefert. Beim Transport zum Aufstellu
 
 ---
 
-## 5.1.2. Montageschritte
+## 5.1.2 Montageschritte
 
 Die Montage ist in folgender Reihenfolge durchzuführen:
 
@@ -110,7 +110,7 @@ Checkliste elektrische Inbetriebnahme:
 
 ---
 
-## 5.1.3. Montageabschluss
+## 5.1.3 Montageabschluss
 
 In Schritt 9 wird die Maschine **betriebsbereit** gesetzt. Vor Inbetriebnahme sind die Prüfungen in folgenden Abschnitten abzuschließen:
 

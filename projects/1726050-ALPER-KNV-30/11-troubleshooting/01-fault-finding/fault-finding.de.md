@@ -1,8 +1,8 @@
-# 11.1. Fehlersuche
+# 11.1 Fehlersuche
 
 ---
 
-## 11.1.1. Allgemeine Diagnoseschritte
+## 11.1.1 Allgemeine Diagnoseschritte
 
 | # | Schritt |
 |---|---------|
@@ -17,7 +17,7 @@
 
 ---
 
-## 11.1.2. Alarmcodeliste
+## 11.1.2 Alarmcodeliste
 
 | Code | Alarmtext | Prüfung / Abhilfe |
 |------|-----------|------------------|
@@ -55,7 +55,7 @@
 
 ---
 
-## 11.1.3. Allgemeine Störungstabelle
+## 11.1.3 Allgemeine Störungstabelle
 
 | Symptom | Mögliche Ursache | Prüfung | Abhilfe |
 |---------|------------------|---------|---------|

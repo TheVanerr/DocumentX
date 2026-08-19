@@ -1,10 +1,10 @@
-# 14.3. Keyword Index
+# 14.3 Keyword index
 
 The table below lists section references for frequently searched topics.
 
 ---
 
-## 14.3.1. A–H
+## 14.3.1 A–h
 
 | Keyword | Section(s) |
 |---------|------------|
@@ -31,7 +31,7 @@ The table below lists section references for frequently searched topics.
 
 ---
 
-## 14.3.2. I–R
+## 14.3.2 I–r
 
 | Keyword | Section(s) |
 |---------|------------|
@@ -55,7 +55,7 @@ The table below lists section references for frequently searched topics.
 
 ---
 
-## 14.3.3. S–Z
+## 14.3.3 S–z
 
 | Keyword | Section(s) |
 |---------|------------|

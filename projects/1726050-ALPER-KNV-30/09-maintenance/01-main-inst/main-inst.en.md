@@ -1,8 +1,8 @@
-# 9.1. Maintenance Instructions
+# 9.1 Maintenance instructions
 
 ---
 
-## 9.1.1. Maintenance Philosophy and Personnel
+## 9.1.1 Maintenance philosophy and personnel
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -14,7 +14,7 @@ Maintenance personnel must be trained in machine operation and maintenance (see 
 
 ---
 
-## 9.1.2. Safety Before Maintenance
+## 9.1.2 Safety before maintenance
 
 There is **no dedicated maintenance mode**. The following rules apply:
 
@@ -30,7 +30,7 @@ All rear covers are removable for maintenance access (see Section **3.5**).
 
 ---
 
-## 9.1.3. Periodic Maintenance
+## 9.1.3 Periodic maintenance
 
 | Period | Maintenance items |
 |--------|-------------------|
@@ -54,7 +54,7 @@ All rear covers are removable for maintenance access (see Section **3.5**).
 
 ---
 
-## 9.1.4. Lubrication
+## 9.1.4 Lubrication
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -72,7 +72,7 @@ All rear covers are removable for maintenance access (see Section **3.5**).
 
 ---
 
-## 9.1.5. Spare Parts
+## 9.1.5 Spare parts
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -84,7 +84,7 @@ This section will be updated when spare parts list and stock recommendations are
 
 ---
 
-## 9.1.6. Maintenance Record Form
+## 9.1.6 Maintenance record form
 
 | # | Task | Period | Date | Performed by | OK/NOK |
 |---|------|--------|------|--------------|--------|

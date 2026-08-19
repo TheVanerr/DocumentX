@@ -1,8 +1,8 @@
-# 14.1. Annexes
+# 14.1 Annexes
 
 ---
 
-## 14.1.1. Annex List
+## 14.1.1 Annex list
 
 | Annex | Topic | Reference |
 |-------|-------|-----------|
@@ -13,7 +13,7 @@
 
 ---
 
-## 14.1.2. In-Manual Annexes
+## 14.1.2 In-manual annexes
 
 The following content is in the manual body; no separate printed annex required:
 

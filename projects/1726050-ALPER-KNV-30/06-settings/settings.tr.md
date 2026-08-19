@@ -2,7 +2,7 @@
 
 ---
 
-## Bölüm İçeriği
+## Bölüm içeriği
 
 | Bölüm | Başlık | Konu |
 |-------|--------|------|
@@ -16,7 +16,7 @@
 
 ---
 
-## Genel Notlar
+## Genel notlar
 
 | Konu | Açıklama |
 |------|----------|

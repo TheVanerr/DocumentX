@@ -1,8 +1,8 @@
-# 3.3. Technische Daten
+# 3.3 Technische Daten
 
 ---
 
-## 3.3.1. Abmessungen und Gewicht
+## 3.3.1 Abmessungen und Gewicht
 
 | Parameter | Einheit | Wert |
 |-----------|:-------:|-----:|
@@ -20,7 +20,7 @@ Die Maschine wird auf einem System mit verstellbaren Füßen montiert, das Nivel
 
 ---
 
-## 3.3.2. Kapazität und Prozessparameter
+## 3.3.2 Kapazität und Prozessparameter
 
 | Parameter | Wert |
 |-----------|------|
@@ -45,7 +45,7 @@ Nenn- und Maximalkapazität sowie Produktgrößen-/Gewichtsgrenzen werden vom An
 
 ---
 
-## 3.3.3. Elektrische Daten
+## 3.3.3 Elektrische Daten
 
 | Parameter | Wert |
 |-----------|------|
@@ -70,7 +70,7 @@ Die Stromversorgung wird bei der Montage über eine 380 V, 50 Hz, Drehstromleitu
 
 ---
 
-## 3.3.4. Motor- und Antriebsliste
+## 3.3.4 Motor- und Antriebsliste
 
 | Motor | Leistung | Drehzahl | Marke | Modell |
 |-------|----------|----------|-------|--------|
@@ -91,7 +91,7 @@ Gesamtleistung Trocknungsventilatoren: **16 kW**. Marken-/Modellangaben der Troc
 
 ---
 
-## 3.3.5. Druckluft und Wasser
+## 3.3.5 Druckluft und Wasser
 
 | Parameter | Wert |
 |-----------|------|
@@ -108,7 +108,7 @@ Montageanschlüsse: Druckluft **3/4"**, Wasser **1/2"**. Druckluftregler-Einstel
 
 ---
 
-## 3.3.6. Umgebungsbedingungen
+## 3.3.6 Umgebungsbedingungen
 
 | Parameter | Min | Max |
 |-----------|-----|-----|

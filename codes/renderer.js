@@ -1,4 +1,5 @@
 let currentGuideId = '';
+let currentProjectRel = '';
 let currentModel = '';
 let currentLang = 'tr';
 let currentDiller = ['tr'];
@@ -8,15 +9,18 @@ let currentFirma = 'DOLFIN';
 let viewMode = 'pdf';
 let lastGuideCache = null;
 
-async function onModelChange(value) {
+async function onModelChange(value, opts = {}) {
   currentGuideId = value;
   const emptyState = document.getElementById('emptyState');
   const pagesContainer = document.getElementById('pagesContainer');
+  const contentArea = document.getElementById('contentArea');
+  const scrollTop = opts.preserveScroll && contentArea ? contentArea.scrollTop : null;
 
   pagesContainer.innerHTML = '';
 
   if (!value) {
     currentModel = '';
+    currentProjectRel = '';
     emptyState.style.display = 'flex';
     return;
   }
@@ -31,6 +35,7 @@ async function onModelChange(value) {
   }
 
   currentModel = res.label || res.model || value;
+  currentProjectRel = (res.projectRel || '').replace(/\\/g, '/');
   syncLangButtons(res.diller || ['tr'], res.lang || currentLang);
 
   if (!res.tree || !res.tree.length) {
@@ -41,6 +46,35 @@ async function onModelChange(value) {
   }
 
   await renderGuide(currentModel, res.tree, pagesContainer);
+
+  if (scrollTop != null && contentArea) {
+    requestAnimationFrame(() => {
+      contentArea.scrollTop = scrollTop;
+    });
+  }
+}
+
+function contentChangeAffectsGuide(paths) {
+  if (!currentGuideId || !currentProjectRel) return false;
+  const prefix = currentProjectRel.replace(/\\/g, '/').replace(/\/+$/, '') + '/';
+  return paths.some((p) => {
+    const rel = String(p).replace(/\\/g, '/');
+    if (rel.startsWith(prefix)) return true;
+    if (rel.startsWith('assets/')) return true;
+    if (rel.startsWith('templates/')) return true;
+    return false;
+  });
+}
+
+let contentReloadBusy = false;
+async function reloadGuideFromDisk(opts = {}) {
+  if (!currentGuideId || contentReloadBusy) return;
+  contentReloadBusy = true;
+  try {
+    await onModelChange(currentGuideId, { preserveScroll: opts.preserveScroll !== false });
+  } finally {
+    contentReloadBusy = false;
+  }
 }
 
 function infoCard(html) {
@@ -248,6 +282,33 @@ async function setViewMode(mode) {
   }
 }
 
+/* Bölüm başlığı seçili dilde dosyada bulunamazsa kullanılan yedek adlar.
+   Klasör id'leri İngilizce olduğundan (01-introduction …) prettifyId "Introduction"
+   üretir; bu, Türkçe/Almanca kılavuzda dil sızıntısına yol açar. Yedek başlık,
+   seçili dile göre verilir; asla klasör id'sinden İngilizce isim türetilmez. */
+const SECTION_TITLES = {
+  '01-introduction':    { tr: 'Giriş',              en: 'Introduction',    de: 'Einleitung' },
+  '02-safety':          { tr: 'Güvenlik',           en: 'Safety',          de: 'Sicherheit' },
+  '03-overview':        { tr: 'Genel Bakış',        en: 'Overview',        de: 'Übersicht' },
+  '04-transport':       { tr: 'Nakliye',            en: 'Transport',       de: 'Transport' },
+  '05-assembly':        { tr: 'Montaj',             en: 'Assembly',        de: 'Montage' },
+  '06-settings':        { tr: 'Ayarlar',            en: 'Settings',        de: 'Einstellungen' },
+  '07-operation':       { tr: 'İşletim',            en: 'Operation',       de: 'Betrieb' },
+  '08-capacity':        { tr: 'Kapasite',           en: 'Capacity',        de: 'Kapazität' },
+  '09-maintenance':     { tr: 'Bakım',              en: 'Maintenance',     de: 'Wartung' },
+  '10-cleaning':        { tr: 'Temizlik',           en: 'Cleaning',        de: 'Reinigung' },
+  '11-troubleshooting': { tr: 'Arıza Giderme',      en: 'Troubleshooting', de: 'Fehlerbehebung' },
+  '12-dismantle':       { tr: 'Sökme ve Bertaraf',  en: 'Dismantling',     de: 'Demontage' },
+  '13-documents':       { tr: 'Dokümanlar',         en: 'Documents',       de: 'Dokumente' },
+  '14-index':           { tr: 'Ekler ve Dizin',     en: 'Index',           de: 'Anhang und Index' }
+};
+
+function sectionFallbackTitle(id, lang) {
+  const entry = SECTION_TITLES[String(id)];
+  if (entry) return entry[String(lang || 'tr').toLowerCase()] || entry.tr;
+  return prettifyId(id);
+}
+
 function mdLevel(el) { return parseInt(el.tagName.slice(1), 10); }
 
 /* Üst seviye tek numaraya nokta ekler: "1" -> "1.", "1.1" -> "1.1" */
@@ -258,7 +319,8 @@ function stripNum(t) { return String(t).replace(/^\s*\d+(?:\.\d+)*\.?(?=\s)\s*/,
 
 /* Bölüm ağacını numaralandırarak bloklara çevirir.
    - Klasör hiyerarşisi: 1 (ana bölüm), 1.1 (alt bölüm) ...
-   - md dosyası içindeki başlıklar: 1.1.1, 1.1.2 (bir alt seviye)
+   - md dosyasındaki # / ## / ### hiyerarşisi korunur; yalnızca numara öneki güncellenir.
+   - Dosyada başlık yoksa yedek başlık (SECTION_TITLES) eklenir.
    İçindekiler için her başlık işaretlenir. */
 function buildBlocks(tree) {
   const blocks = [];
@@ -281,9 +343,9 @@ function buildBlocks(tree) {
       const headings = secBlocks.filter(b => /^H[1-6]$/.test(b.tagName));
       const anchorLevel = headings.length ? mdLevel(headings[0]) : null;
 
-      // Bölümün kendi başlığı (numara = N)
       let titleEl = headings.length ? headings[0] : null;
-      let nodeTitle = titleEl ? (stripNum(titleEl.textContent.trim()) || prettifyId(node.id)) : prettifyId(node.id);
+      const fallbackTitle = sectionFallbackTitle(node.id, currentLang);
+      let nodeTitle = titleEl ? (stripNum(titleEl.textContent.trim()) || fallbackTitle) : fallbackTitle;
 
       if (titleEl) {
         titleEl.textContent = `${fmtNum(N)} ${nodeTitle}`;
@@ -297,7 +359,6 @@ function buildBlocks(tree) {
       addEntry(N, nodeTitle, level, titleEl);
       if (level === 1) titleEl.dataset.pageBreakBefore = 'true';
 
-      // md içindeki diğer başlıklar → alt kırılım (N.1, N.1.1 ...)
       let counters = [];
       for (const b of secBlocks) {
         if (!/^H[1-6]$/.test(b.tagName) || b === titleEl) continue;
@@ -483,11 +544,13 @@ function getContentMetrics() {
   const contentMax = parseFloat(cs.getPropertyValue('--content-max-h'));
   const maxH = Number.isFinite(contentMax) && contentMax > 0 ? contentMax : pageH - pt - pb;
   document.body.removeChild(probe);
-  return { MAX: maxH > 0 ? maxH : 909, LINE_H: lineH };
+  const MAX = maxH > 0 ? maxH : 909;
+  const FIT = Math.max(0, MAX - lineH);
+  return { MAX, FIT, LINE_H: lineH };
 }
 
 function computePages(blocks) {
-  const { MAX, LINE_H } = getContentMetrics();
+  const { FIT, LINE_H } = getContentMetrics();
   const ORPHAN_MIN = LINE_H * 3;
 
   const pages = [[]];
@@ -524,7 +587,7 @@ function computePages(blocks) {
 
     for (const kid of kids) {
       part.appendChild(kid);
-      if (h() <= MAX) continue;
+      if (h() <= FIT) continue;
 
       if (kid.nodeType === Node.TEXT_NODE) {
         part.removeChild(kid);
@@ -534,7 +597,7 @@ function computePages(blocks) {
         for (const w of words) {
           const prev = tn.textContent;
           tn.textContent = prev + w;
-          if (h() > MAX && prev.trim()) {
+          if (h() > FIT && prev.trim()) {
             tn.textContent = prev;
             commit();
             tn = document.createTextNode(w.replace(/^\s+/, ''));
@@ -558,7 +621,7 @@ function computePages(blocks) {
     const thead = tableEl.querySelector('thead');
     const tbody = tableEl.querySelector('tbody');
     const TABLE_RESERVE = 0;
-    const TABLE_MAX = MAX;
+    const TABLE_MAX = FIT;
 
     if (!thead || !tbody || tbody.rows.length === 0) {
       mContent.appendChild(tableEl);
@@ -650,7 +713,7 @@ function computePages(blocks) {
       for (const w of words) {
         const prev = tn.textContent;
         tn.textContent = prev + w;
-        if (h() <= MAX) continue;
+        if (h() <= FIT) continue;
 
         if (!prev.trim()) {
           commitPart();
@@ -668,7 +731,7 @@ function computePages(blocks) {
           tn = document.createTextNode('');
           partLi.appendChild(tn);
           tn.textContent = prev + w;
-          if (h() <= MAX) continue;
+          if (h() <= FIT) continue;
         }
 
         commitPart();
@@ -687,7 +750,7 @@ function computePages(blocks) {
         for (const w of words) {
           const prev = tn.textContent;
           tn.textContent = prev + w;
-          if (h() <= MAX) continue;
+          if (h() <= FIT) continue;
 
           if (!prev.trim()) {
             commitPart();
@@ -709,7 +772,7 @@ function computePages(blocks) {
             tn = document.createTextNode('');
             nextShell.appendChild(tn);
             tn.textContent = prev + w;
-            if (h() <= MAX) continue;
+            if (h() <= FIT) continue;
           }
 
           commitPart();
@@ -738,7 +801,7 @@ function computePages(blocks) {
 
     for (const kid of kids) {
       partLi.appendChild(kid.cloneNode(true));
-      if (h() <= MAX) continue;
+      if (h() <= FIT) continue;
 
       partLi.removeChild(partLi.lastChild);
 
@@ -746,7 +809,7 @@ function computePages(blocks) {
         appendWords(partLi, kid.textContent);
       } else if (partLi.childNodes.length === 0) {
         splitElementWords(kid);
-        if (h() > MAX) {
+        if (h() > FIT) {
           partLi.lastChild.remove();
           commitPart();
           partLi.appendChild(kid.cloneNode(true));
@@ -754,7 +817,7 @@ function computePages(blocks) {
       } else {
         commitPart();
         partLi.appendChild(kid.cloneNode(true));
-        if (h() > MAX) {
+        if (h() > FIT) {
           partLi.removeChild(partLi.lastChild);
           splitElementWords(kid);
         }
@@ -788,7 +851,7 @@ function computePages(blocks) {
         const next = makeSubList(items.slice(start, end + 1), tag === 'OL' ? start + 1 : 1);
         mContent.removeChild(sub);
         mContent.appendChild(next);
-        if (h() <= MAX) {
+        if (h() <= FIT) {
           sub = next;
           end++;
         } else {
@@ -805,9 +868,19 @@ function computePages(blocks) {
           newPage();
           const single = makeSubList([items[start]], olStart);
           mContent.appendChild(single);
-          if (h() <= MAX) {
+          if (h() <= FIT) {
             cur.push(single);
             start++;
+            while (start < items.length) {
+              single.appendChild(items[start].cloneNode(true));
+              if (h() <= FIT) {
+                start++;
+              } else {
+                single.removeChild(single.lastChild);
+                break;
+              }
+            }
+            if (start < items.length) newPage();
             continue;
           }
           mContent.removeChild(single);
@@ -841,7 +914,7 @@ function computePages(blocks) {
   function wouldFitIfAppended(...elements) {
     const clones = elements.map(el => el.cloneNode(true));
     clones.forEach(c => mContent.appendChild(c));
-    const fits = h() <= MAX;
+    const fits = h() <= FIT;
     clones.forEach(c => mContent.removeChild(c));
     return fits;
   }
@@ -863,12 +936,17 @@ function computePages(blocks) {
   function placeFigureIfNeeded(el) {
     if (!isFigureBlock(el)) return false;
     mContent.appendChild(el);
-    const fits = h() <= MAX;
+    const fits = h() <= FIT;
     mContent.removeChild(el);
     return !fits;
   }
 
-  function place(el, nextEl) {
+  function place(el, nextEl, depth = 0) {
+    if (depth > blocks.length + 200) {
+      console.error('computePages: yerleştirme sınırı aşıldı', el);
+      cur.push(el);
+      return;
+    }
     if (el.tagName === 'TABLE') { placeTable(el); return; }
     if (el.tagName === 'UL' || el.tagName === 'OL') { placeList(el); return; }
     if (el.dataset && el.dataset.pageBreakBefore === 'true' && cur.length > 0) {
@@ -885,19 +963,19 @@ function computePages(blocks) {
     }
 
     mContent.appendChild(el);
-    if (h() <= MAX) {
+    if (h() <= FIT) {
       if (isHeadingEl(el) && cur.length > 0) {
-        const remaining = MAX - h();
+        const remaining = FIT - h();
         if (nextEl && isLargeBlock(nextEl) && !wouldFitIfAppended(nextEl)) {
           mContent.removeChild(el);
           newPage();
-          place(el, nextEl);
+          place(el, nextEl, depth + 1);
           return;
         }
         if (remaining < ORPHAN_MIN) {
           mContent.removeChild(el);
           newPage();
-          place(el, nextEl);
+          place(el, nextEl, depth + 1);
           return;
         }
       }
@@ -912,7 +990,7 @@ function computePages(blocks) {
     }
     mContent.removeChild(el);
     newPage();
-    place(el, nextEl);
+    place(el, nextEl, depth + 1);
   }
 
   for (let i = 0; i < blocks.length; i++) {
@@ -1021,7 +1099,8 @@ function scrollToPage(el) {
 
 /* ── Markdown → blok elemanları ── */
 function mdToBlocks(md) {
-  const lines = md
+  const lines = String(md || '')
+    .replace(/^\uFEFF/, '')
     .replace(/<!--[\s\S]*?-->/g, '')
     .replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
   const blocks = [];
@@ -1324,6 +1403,30 @@ function splitRow(line) {
   return s.split('|').map(c => c.trim());
 }
 
+/* ── Görsel yolu çözümleme ──────────────────────────────────────────
+   Kural (tek ve öngörülebilir):
+   - Paylaşılan görseller (assets/labels/…, assets/logos/…) → kök assets/
+   - Diğer her şey → o kılavuzun KENDİ klasörü (projects/<id>/assets/…)
+   md dosyaları kaç ../ yazarsa yazsın (../assets, ../../assets) fark etmez;
+   yol içindeki "assets/…" parçası baz alınır. Tarayıcı tabanı codes/. */
+const SHARED_ASSET_RE = /^(labels|logos)\//i;
+
+function resolveImageSrc(src) {
+  if (!src || /^data:/i.test(src) || /^https?:/i.test(src)) return src;
+
+  let s = String(src).replace(/\\/g, '/');
+  if (s.startsWith('/')) return s;
+
+  const m = s.match(/(?:^|\/)assets\/(.+)$/);
+  if (!m) return s;
+
+  const sub = m[1];
+  if (SHARED_ASSET_RE.test(sub) || !currentProjectRel) {
+    return '../assets/' + sub;
+  }
+  return '../' + currentProjectRel + '/assets/' + sub;
+}
+
 /* ── Satır içi markdown ── */
 function inline(text) {
   let s = escapeHtml(text);
@@ -1332,7 +1435,8 @@ function inline(text) {
   s = s.replace(/__([^_]+)__/g, '<strong>$1</strong>');
   s = s.replace(/(^|[^*])\*([^*]+)\*/g, '$1<em>$2</em>');
   s = s.replace(/(^|[^_])_([^_]+)_/g, '$1<em>$2</em>');
-  s = s.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img class="md-img" src="$2" alt="$1" />');
+  s = s.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_, alt, src) =>
+    `<img class="md-img" src="${resolveImageSrc(src)}" alt="${alt}" />`);
   s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
   return s;
 }
@@ -1550,6 +1654,17 @@ function initApp() {
   loadModelSelect();
   applyZoom();
   document.addEventListener('wheel', handleWheelZoom, { capture: true, passive: false });
+
+  if (window.electronAPI?.onContentChanged) {
+    window.electronAPI.onContentChanged(({ paths }) => {
+      if (!Array.isArray(paths) || !paths.length) return;
+      if (contentChangeAffectsGuide(paths)) {
+        reloadGuideFromDisk({ preserveScroll: true });
+      }
+    });
+  } else {
+    console.warn('Canlı içerik yenileme kullanılamıyor — uygulamayı yeniden başlatın.');
+  }
 }
 
 if (document.readyState === 'loading') {

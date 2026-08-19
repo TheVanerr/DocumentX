@@ -1,8 +1,8 @@
-# 6.3. Electrical Settings
+# 6.3 Electrical settings
 
 ---
 
-## 6.3.1. Motor Direction / Phase Check
+## 6.3.1 Motor direction / phase check
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -12,7 +12,7 @@ Phase direction and sequence were verified during installation with the phase se
 
 ---
 
-## 6.3.2. Encoder / Feedback
+## 6.3.2 Encoder / feedback
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -25,7 +25,7 @@ Encoder adjustment shall not be performed by the operator.
 
 ---
 
-## 6.3.3. Analog Scaling
+## 6.3.3 Analog scaling
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -36,7 +36,7 @@ Encoder adjustment shall not be performed by the operator.
 
 ---
 
-## 6.3.4. Date / Time / Language
+## 6.3.4 Date / time / language
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -47,7 +47,7 @@ Encoder adjustment shall not be performed by the operator.
 
 ---
 
-## 6.3.5. Electrical Settings Checklist
+## 6.3.5 Electrical settings checklist
 
 | # | Check | Status |
 |---|-------|--------|

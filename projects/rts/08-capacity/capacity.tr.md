@@ -1,0 +1,3 @@
+# 8. KAPASİTE (CAPACITY)
+
+Bu bölüm, endüstriyel yıkama makinelerimizin yükleme kapasitelerini ve optimum çalışma sınırlarını tanımlamaktadır. Makinenin kapasitesi yalnızca tamburun fiziksel hacmi (litre) ile sınırlı olmayıp; yıkanacak parçaların malzeme yoğunluğu, geometrisi ve toplam ağırlığı gibi operasyonel faktörlere göre değişkenlik gösterir. Doğru kapasite planlaması; hem maksimum yıkama verimliliğini ve kalitesini sağlamak hem de tambur, motor ve yataklar gibi kritik mekanik bileşenlerin ömrünü garanti altına almak için zorunludur.

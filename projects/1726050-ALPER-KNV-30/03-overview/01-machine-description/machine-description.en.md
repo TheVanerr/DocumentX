@@ -1,4 +1,4 @@
-# 3.1. Machine Description and System Architecture
+# 3.1 Machine description and system architecture
 
 KNV-30 3000 2B (serial no.: **1726050**, customer: **ALPER ÖZLEM IDEA**, year of manufacture: **2026**) is an industrial parts washing machine with front loading, conveyor feed, and two process baths (wash + rinse). Parts travel on the conveyor line and complete washing, rinsing, and drying in sequence; the primary function of the machine is **removal of oil and contamination** remaining on part surfaces from industrial processes.
 
@@ -9,7 +9,7 @@ The machine is designed on the principle of **continuous conveyor** feed. The fe
 
 ---
 
-## 3.1.1. General Description and Process Concept
+## 3.1.1 General description and process concept
 
 KNV 30 3000 2B is a washing system used for surface cleaning of machined parts in industrial production lines, where parts advancing on the conveyor pass through fixed process zones. The designation **2B** indicates that the machine has **two independent process baths** — wash and rinse; each bath operates with its own circulation circuit, and cross-contamination of fluids between baths is structurally prevented.
 
@@ -30,7 +30,7 @@ Nominal cycle time: **900 s**
 
 ---
 
-## 3.1.2. Conveyor Transport System
+## 3.1.2 Conveyor transport system
 
 The conveyor is the transport system forming the backbone of the machine. It ensures controlled and continuous advancement of parts between process zones. Infeed and outfeed points are positioned for operator access; feed is on the **left**, discharge on the **right**.
 
@@ -56,7 +56,7 @@ A total of **4 lubrication points** are provided on the conveyor: 2 at the infee
 
 ---
 
-## 3.1.3. Wash Bath and Circulation System
+## 3.1.3 Wash bath and circulation system
 
 The wash bath is the first process zone where industrial oil and contamination layers on part surfaces are removed. Process fluid in the tank is drawn by the wash pump and supplied to the spray system; parts contact pressurised fluid from the nozzles as they advance on the conveyor.
 
@@ -82,7 +82,7 @@ The wash tank is the main vessel where process fluid is stored and heated. **Pre
 
 ---
 
-## 3.1.4. Rinse Bath and Circulation System
+## 3.1.4 Rinse bath and circulation system
 
 The rinse bath is the second process zone where detergent, oil residue, and contamination remaining on parts after the wash process are removed. It has an independent tank and pump circuit from the wash bath; mixing of fluids between the two baths is structurally prevented.
 
@@ -103,7 +103,7 @@ Filters are also installed in the rinse tank; as part of the weekly deep cleanin
 
 ---
 
-## 3.1.5. Oil Skimmer Unit
+## 3.1.5 Oil skimmer unit
 
 An oil skimmer unit is integrated to continuously remove floating oil layers accumulating in the wash tank. In industrial parts washing, oil accumulation reduces process fluid effectiveness and increases maintenance requirements; the oil skimmer prevents this build-up and maintains in-tank process quality.
 
@@ -119,7 +119,7 @@ An oil skimmer unit is integrated to continuously remove floating oil layers acc
 
 ---
 
-## 3.1.6. Drying and Exhaust System
+## 3.1.6 Drying and exhaust system
 
 The drying zone is the third and final process step where surface moisture on parts leaving the rinse process is removed by powerful, directed airflow. Drying ensures that parts exit the line free of moisture for subsequent process steps where surface quality is critical, such as painting, coating, and assembly.
 
@@ -152,7 +152,7 @@ On the operating page of the HMI interface, wash, rinse, **drying 1**, **drying 
 
 ---
 
-## 3.1.7. Electrical, Control and Automation Infrastructure
+## 3.1.7 Electrical, control and automation infrastructure
 
 The electrical and automation infrastructure of the machine is consolidated in the central **electrical control panel**. Panel protection rating is **IP55**; dimensions are **800 × 1200 × 300 mm** (W × H × D).
 
@@ -206,7 +206,7 @@ An **RFID safety sensor** is installed on the machine; when covers are opened, t
 
 ---
 
-## 3.1.8. Auxiliary Media Connections
+## 3.1.8 Auxiliary media connections
 
 Utility connections are required for process and pneumatic functions of the machine:
 
@@ -224,7 +224,7 @@ Pneumatic regulator pressure setting is defined as **6 bar**. On the HMI manual 
 
 ---
 
-## 3.1.9. Summary of Main Components
+## 3.1.9 Summary of main components
 
 The following table summarises the main modules of the machine and their functions:
 

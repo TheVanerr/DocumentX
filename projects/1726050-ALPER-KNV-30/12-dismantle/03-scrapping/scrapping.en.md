@@ -1,8 +1,8 @@
-# 12.3. Scrapping
+# 12.3 Scrapping
 
 ---
 
-## 12.3.1. Scrap Evaluation
+## 12.3.1 Scrap evaluation
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -12,7 +12,7 @@ After dismantling, parts must be classified by material type (metal, plastic, el
 
 ---
 
-## 12.3.2. Part Recycling Materials
+## 12.3.2 Part recycling materials
 
 | Parameter | Value / Description |
 |-----------|---------------------|

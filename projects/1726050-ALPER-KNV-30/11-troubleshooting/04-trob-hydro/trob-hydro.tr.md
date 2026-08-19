@@ -1,4 +1,4 @@
-# 11.4. Hidrolik Arızaları
+# 11.4 Hidrolik arızaları
 
 **hidrolik sistem bulunmamaktadır**. Bu bölüm uygulanmaz.
 

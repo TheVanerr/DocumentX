@@ -1,10 +1,10 @@
-# 5.3. System Connections and Commissioning
+# 5.3 System connections and commissioning
 
 Connection operations are performed within **Steps 4–8** of Section 5.1 assembly steps.
 
 ---
 
-## 5.3.1. Compressed Air Connection
+## 5.3.1 Compressed air connection
 
 | Parameter | Value |
 |-----------|-------|
@@ -26,7 +26,7 @@ Pneumatic fill test: *After air connection, does air status on the HMI manual pa
 
 ---
 
-## 5.3.2. Water Connection
+## 5.3.2 Water connection
 
 | Parameter | Value |
 |-----------|-------|
@@ -49,7 +49,7 @@ Pneumatic/hydraulic fill test (water): *After water connection, does water statu
 
 ---
 
-## 5.3.3. Electrical Connection
+## 5.3.3 Electrical connection
 
 | Parameter | Value |
 |-----------|-------|
@@ -71,7 +71,7 @@ Electrical connection shall be made with a **380 V, 50 Hz** three-phase supply l
 
 ---
 
-## 5.3.4. Energisation and Phase Check
+## 5.3.4 Energisation and phase check
 
 ### Commissioning procedure
 
@@ -97,7 +97,7 @@ Motor shall run in one direction only; phase rotation shall be set correctly.
 
 ---
 
-## 5.3.5. Connection Completion Checklist
+## 5.3.5 Connection completion checklist
 
 When all connections are complete, perform the following checks:
 

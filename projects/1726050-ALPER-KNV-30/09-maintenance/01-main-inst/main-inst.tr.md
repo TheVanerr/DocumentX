@@ -1,8 +1,8 @@
-# 9.1. Bakım Talimatları
+# 9.1 Bakım talimatları
 
 ---
 
-## 9.1.1. Bakım Felsefesi ve Personel
+## 9.1.1 Bakım felsefesi ve personel
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -14,7 +14,7 @@ Bakım personeli; makine kullanımı ve bakımı ile ilgili eğitim almış olma
 
 ---
 
-## 9.1.2. Bakım Öncesi Güvenlik
+## 9.1.2 Bakım öncesi güvenlik
 
 Bakım için **özel bir mod yoktur**. Aşağıdaki kurallara uyulmalıdır:
 
@@ -30,7 +30,7 @@ Makine arkasındaki kapakların tamamı sökülebilir ve bakım erişimi için k
 
 ---
 
-## 9.1.3. Periyodik Bakım
+## 9.1.3 Periyodik bakım
 
 | Periyot | Bakım maddeleri |
 |---------|-----------------|
@@ -54,7 +54,7 @@ Makine arkasındaki kapakların tamamı sökülebilir ve bakım erişimi için k
 
 ---
 
-## 9.1.4. Yağlama
+## 9.1.4 Yağlama
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -72,7 +72,7 @@ Makine arkasındaki kapakların tamamı sökülebilir ve bakım erişimi için k
 
 ---
 
-## 9.1.5. Yedek Parça
+## 9.1.5 Yedek parça
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -84,7 +84,7 @@ Yedek parça listesi ve stok önerileri tanımlandığında bu bölüm güncelle
 
 ---
 
-## 9.1.6. Bakım Kayıt Formu
+## 9.1.6 Bakım kayıt formu
 
 | # | İşlem | Periyot | Tarih | Yapan | OK/NOK |
 |---|-------|---------|-------|-------|--------|

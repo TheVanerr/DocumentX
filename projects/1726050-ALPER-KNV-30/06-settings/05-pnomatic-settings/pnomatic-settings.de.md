@@ -1,10 +1,10 @@
-# 6.5. Pneumatikeinstellungen
+# 6.5 Pneumatikeinstellungen
 
 Druckluftanschluss: **6 bar — 3/4"** (siehe Abschnitt **5.3**).
 
 ---
 
-## 6.5.1. Reglerdruckeinstellung
+## 6.5.1 Reglerdruckeinstellung
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -17,7 +17,7 @@ Der pneumatische Regler am Maschineneingang ist auf **6 bar** einzustellen. Nach
 
 ---
 
-## 6.5.2. Zylindergeschwindigkeit
+## 6.5.2 Zylindergeschwindigkeit
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -25,7 +25,7 @@ Der pneumatische Regler am Maschineneingang ist auf **6 bar** einzustellen. Nach
 
 ---
 
-## 6.5.3. Sensorverzögerungen
+## 6.5.3 Sensorverzögerungen
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -33,7 +33,7 @@ Der pneumatische Regler am Maschineneingang ist auf **6 bar** einzustellen. Nach
 
 ---
 
-## 6.5.4. Checkliste Pneumatikeinstellungen
+## 6.5.4 Checkliste Pneumatikeinstellungen
 
 | # | Prüfung | Status |
 |---|---------|--------|

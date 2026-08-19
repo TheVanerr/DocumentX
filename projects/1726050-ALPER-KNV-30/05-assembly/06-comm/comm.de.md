@@ -1,8 +1,8 @@
-# 5.6. Kommunikation und Automatisierungsschnittstelle
+# 5.6 Kommunikation und Automatisierungsschnittstelle
 
 ---
 
-## 5.6.1. Feldbus und Protokoll
+## 5.6.1 Feldbus und Protokoll
 
 | Parameter | Wert |
 |-----------|------|
@@ -23,7 +23,7 @@ Encoder-/Feedback-Einstellungen sind im SPS-Programm integriert; die Einstellung
 
 ---
 
-## 5.6.2. Anbindung Leitsystem
+## 5.6.2 Anbindung Leitsystem
 
 | Parameter | Wert |
 |-----------|------|
@@ -33,7 +33,7 @@ MES- oder SCADA-Integration ist im Projektumfang nicht definiert. Leitsystemanbi
 
 ---
 
-## 5.6.3. Fernzugriff
+## 5.6.3 Fernzugriff
 
 | Parameter | Wert |
 |-----------|------|
@@ -47,7 +47,7 @@ Fernzugriff wird über das Secomea-Modul bereitgestellt. Modulinstallation und -
 
 ---
 
-## 5.6.4. E/A-Liste und Dokumentation
+## 5.6.4 E/A-Liste und Dokumentation
 
 | Dokument | Dateiname |
 |----------|-----------|
@@ -60,7 +60,7 @@ Die E/A-Liste ist das Referenzdokument für Ein-/Ausgangsadressen und Sensor-/Ak
 
 ---
 
-## 5.6.5. Kommunikations-Checkliste
+## 5.6.5 Kommunikations-Checkliste
 
 | # | Prüfung | Status |
 |---|---------|--------|

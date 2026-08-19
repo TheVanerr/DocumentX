@@ -1,10 +1,10 @@
-# 7.6. Diğer Operasyon Konuları
+# 7.6 Diğer operasyon konuları
 
 Makinede **operatör bulunmaz**. Normal çalışmada insan müdahalesi gerekmez.
 
 ---
 
-## 7.6.1. Format / Ürün Değişimi
+## 7.6.1 Format / ürün değişimi
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -14,7 +14,7 @@ Format değişim prosedürü yoktur (bkz. Bölüm **6.1.5**).
 
 ---
 
-## 7.6.2. Fire / Hurda Yönetimi
+## 7.6.2 Fire / hurda yönetimi
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -22,7 +22,7 @@ Format değişim prosedürü yoktur (bkz. Bölüm **6.1.5**).
 
 ---
 
-## 7.6.3. Müdahale Noktaları
+## 7.6.3 Müdahale noktaları
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|

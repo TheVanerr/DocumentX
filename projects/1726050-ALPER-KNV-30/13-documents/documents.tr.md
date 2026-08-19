@@ -9,7 +9,7 @@ Teknik dokümanlar (P&ID, elektrik şeması, pnömatik şema vb.) **ayrı evrak 
 
 ---
 
-## Bölüm İçeriği
+## Bölüm içeriği
 
 | Bölüm | Başlık | Konu |
 |-------|--------|------|

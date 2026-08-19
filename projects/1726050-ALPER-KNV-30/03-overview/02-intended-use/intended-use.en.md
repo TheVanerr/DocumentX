@@ -1,8 +1,8 @@
-# 3.2. Intended Use
+# 3.2 Intended use
 
 ---
 
-## 3.2.1. Designed Scope of Use
+## 3.2.1 Designed scope of use
 
 KNV 30 3000 2B is an industrial parts washing machine with front loading, conveyor feed, and two process baths (wash + rinse). Parts travel on the conveyor and complete washing, rinsing, and drying processes.
 
@@ -15,7 +15,7 @@ This machine is designed for use only in **indoor** industrial facility environm
 
 ---
 
-## 3.2.2. Processable Product and Material Types
+## 3.2.2 Processable product and material types
 
 The following product types may be processed with the machine:
 
@@ -33,7 +33,7 @@ The nominal process cycle time is defined as **900 seconds** (15 minutes). The m
 
 ---
 
-## 3.2.3. Prohibited and Unsuitable Uses
+## 3.2.3 Prohibited and unsuitable uses
 
 The following product and use types are **not suitable** for the machine and are **strictly prohibited**:
 
@@ -50,7 +50,7 @@ The machine is equipped with an RFID safety sensor; when covers are opened, the 
 
 ---
 
-## 3.2.4. Process Water and Cleaning Agent Limits
+## 3.2.4 Process water and cleaning agent limits
 
 Water used in the wash and rinse processes of the machine shall comply with the following conditions:
 
@@ -73,7 +73,7 @@ Cleaning type: **dry / wet**
 
 ---
 
-## 3.2.5. Environmental and Facility Conditions
+## 3.2.5 Environmental and facility conditions
 
 The machine is designed for use in **indoor** environments only. Operating and storage environmental conditions shall remain within the following limits:
 
@@ -99,7 +99,7 @@ Compressed air supply shall be provided at **6 bar** pressure (3/4" connection).
 
 ---
 
-## 3.2.6. Operator, Training and Target Audience
+## 3.2.6 Operator, training and target audience
 
 The machine is designed to be used by the following personnel groups:
 

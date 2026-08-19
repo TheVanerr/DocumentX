@@ -1,10 +1,10 @@
-# 6.5. Pnömatik Ayarlar
+# 6.5 Pnömatik ayarlar
 
 Makine basınçlı hava bağlantısı: **6 bar — 3/4"** (bkz. Bölüm **5.3**).
 
 ---
 
-## 6.5.1. Regülatör Basınç Ayarı
+## 6.5.1 Regülatör basınç ayarı
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -17,7 +17,7 @@ Pnömatik regülatör, makine girişinde **6 bar** olacak şekilde ayarlanmalıd
 
 ---
 
-## 6.5.2. Silindir Hız Ayarı
+## 6.5.2 Silindir hız ayarı
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -25,7 +25,7 @@ Pnömatik regülatör, makine girişinde **6 bar** olacak şekilde ayarlanmalıd
 
 ---
 
-## 6.5.3. Sensör Gecikmeleri
+## 6.5.3 Sensör gecikmeleri
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -33,7 +33,7 @@ Pnömatik regülatör, makine girişinde **6 bar** olacak şekilde ayarlanmalıd
 
 ---
 
-## 6.5.4. Pnömatik Ayar Kontrol Listesi
+## 6.5.4 Pnömatik ayar kontrol listesi
 
 | # | Kontrol | Durum |
 |---|---------|-------|

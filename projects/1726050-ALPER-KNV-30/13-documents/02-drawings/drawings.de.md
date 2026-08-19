@@ -1,10 +1,10 @@
-# 13.2. Zeichnungen
+# 13.2 Zeichnungen
 
 Zeichnungen werden im **separaten Dokumentenpaket** geliefert.
 
 ---
 
-## 13.2.1. Zeichnungsliste
+## 13.2.1 Zeichnungsliste
 
 | Zeichnung | Dateiname / Rev | Lieferung |
 |-----------|-----------------|-----------|
@@ -16,6 +16,6 @@ Zeichnungen werden im **separaten Dokumentenpaket** geliefert.
 
 ---
 
-## 13.2.2. Bildreferenzen im Handbuch
+## 13.2.2 Bildreferenzen im Handbuch
 
 Maschinenbilder im Projektordner `assets/`. Platzhalter `<!-- FOTO: ... -->` im Handbuch verweisen auf zugehörige Bilder.

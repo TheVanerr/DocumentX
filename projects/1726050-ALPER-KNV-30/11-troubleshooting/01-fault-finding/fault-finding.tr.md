@@ -1,8 +1,8 @@
-# 11.1. Arıza Bulma
+# 11.1 Arıza bulma
 
 ---
 
-## 11.1.1. Genel Teşhis Adımları
+## 11.1.1 Genel teşhis adımları
 
 | # | Adım |
 |---|------|
@@ -17,7 +17,7 @@
 
 ---
 
-## 11.1.2. Alarm Kod Listesi
+## 11.1.2 Alarm kod listesi
 
 | Kod | Alarm metni | Kontrol / çözüm |
 |-----|-------------|-----------------|
@@ -55,7 +55,7 @@
 
 ---
 
-## 11.1.3. Genel Arıza Tablosu
+## 11.1.3 Genel arıza tablosu
 
 | Belirti | Olası neden | Kontrol | Çözüm |
 |---------|-------------|---------|-------|

@@ -1,8 +1,8 @@
-# 11.2. Genel Arıza Giderme
+# 11.2 Genel arıza giderme
 
 ---
 
-## 11.2.1. HMI Alarm Davranışı
+## 11.2.1 HMI alarm davranışı
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -14,7 +14,7 @@ Aktif ve geçmiş alarmlar HMI alarm ekranından görüntülenir. Alarm kodları
 
 ---
 
-## 11.2.2. Servis Çağrısı Kriterleri
+## 11.2.2 Servis çağrısı kriterleri
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|

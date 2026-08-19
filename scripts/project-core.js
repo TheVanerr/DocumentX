@@ -1,8 +1,7 @@
 /*
  * Proje olusturma cekirdegi (CLI + Electron ortak).
- * Kapsam: yalnizca makineye ozel bolumler (content/_models/<model>) projeye
- * kopyalanir; icerik modelin mevcut .tr.md'sinden alinir (gercek taslak).
- * Ortak/guvenlik/intro bolumleri content/_common'dan mirasla gelmeye devam eder.
+ * Her proje kendi klasorunde tam icerik tasir (01-14, assets, yaml).
+ * Yeni proje: projects/<model> sablonundan kopyalanir.
  */
 const fs = require('fs');
 const path = require('path');
@@ -10,17 +9,14 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const yaml = require(path.join(ROOT, 'codes', 'node_modules', 'js-yaml'));
 
-function listModels(root = ROOT) {
-  const dir = path.join(root, 'content', '_models');
-  if (!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir, { withFileTypes: true })
-    .filter(d => d.isDirectory())
-    .map(d => d.name)
-    .sort();
-}
+const MODEL_IDS = ['kbn', 'knv', 'lym', 'mst', 'pyt', 'rts', 'ult', 'vdl'];
 
 function slugify(name) {
   return String(name).trim().replace(/\s+/g, '-');
+}
+
+function safeReadYaml(p) {
+  try { return yaml.load(fs.readFileSync(p, 'utf8')); } catch (e) { return null; }
 }
 
 /* Proje kökünde project.yaml veya "<proje adı>.yaml" arar. */
@@ -48,18 +44,56 @@ function findProjectYaml(projectDir) {
   return path.join(projectDir, files[0]);
 }
 
-/* content/_models/<model> altindaki tum .tr.md dosyalarini (rel yol) bulur. */
-function modelSources(modelDir) {
+function isModelTemplate(projectDir) {
+  const yp = findProjectYaml(projectDir);
+  if (!yp) return false;
+  const doc = safeReadYaml(yp) || {};
+  return doc.sablon === true || doc.tip === 'sablon';
+}
+
+/** Model sablonlari: projects/ altinda sablon: true olan klasorler. */
+function listModels(root = ROOT) {
+  const projectsDir = path.join(root, 'projects');
+  if (!fs.existsSync(projectsDir)) return [];
+
   const out = [];
-  const walk = (abs) => {
+  for (const e of fs.readdirSync(projectsDir, { withFileTypes: true })) {
+    if (!e.isDirectory() || e.name.toLowerCase() === 'backup') continue;
+    const dir = path.join(projectsDir, e.name);
+    if (isModelTemplate(dir)) out.push(e.name.toLowerCase());
+  }
+  return out.sort();
+}
+
+function copyTemplateTree(templateDir, destDir) {
+  const files = [];
+  const skipNames = new Set(['backup']);
+
+  const walk = (rel) => {
+    const abs = rel ? path.join(templateDir, rel) : templateDir;
     for (const e of fs.readdirSync(abs, { withFileTypes: true })) {
-      const p = path.join(abs, e.name);
-      if (e.isDirectory()) walk(p);
-      else if (/\.tr\.md$/i.test(e.name)) out.push(path.relative(modelDir, p));
+      const relPath = rel ? path.join(rel, e.name) : e.name;
+      if (skipNames.has(e.name.toLowerCase())) continue;
+
+      if (e.isDirectory()) {
+        fs.mkdirSync(path.join(destDir, relPath), { recursive: true });
+        walk(relPath);
+        continue;
+      }
+
+      if (/\.ya?ml$/i.test(e.name)) continue;
+      if (/\sDATA$/i.test(e.name)) continue;
+
+      const src = path.join(templateDir, relPath);
+      const dest = path.join(destDir, relPath);
+      fs.mkdirSync(path.dirname(dest), { recursive: true });
+      fs.copyFileSync(src, dest);
+      files.push(relPath.replace(/\\/g, '/'));
     }
   };
-  walk(modelDir);
-  return out.sort();
+
+  walk('');
+  return files;
 }
 
 /*
@@ -74,9 +108,12 @@ function createProject(root, name, modelRaw, langsRaw) {
   if (!nameTrim) return { ok: false, error: 'Proje adi bos olamaz.' };
   if (!model) return { ok: false, error: 'Model secilmedi.' };
 
-  const modelDir = path.join(root, 'content', '_models', model);
-  if (!fs.existsSync(modelDir)) {
-    return { ok: false, error: `Model bulunamadi: ${model}. Mevcut: ${listModels(root).join(', ')}` };
+  const templateDir = path.join(root, 'projects', model);
+  if (!fs.existsSync(templateDir) || !findProjectYaml(templateDir)) {
+    return {
+      ok: false,
+      error: `Model sablonu bulunamadi: projects/${model}. Mevcut: ${listModels(root).join(', ')}`
+    };
   }
 
   const langs = (Array.isArray(langsRaw) ? langsRaw : String(langsRaw || 'tr').split(','))
@@ -91,31 +128,26 @@ function createProject(root, name, modelRaw, langsRaw) {
   }
   fs.mkdirSync(projDir, { recursive: true });
 
-  // project.yaml
+  const templateDoc = safeReadYaml(findProjectYaml(templateDir)) || {};
   const doc = {
     proje_adi: nameTrim,
     model,
+    tip: 'proje',
     diller,
     varsayilan_dil: diller[0] || 'tr',
-    extends: 'templates/base.yaml',
+    extends: templateDoc.extends || 'templates/base.yaml',
     kapak: { rev: '', tarih: '', firma: 'DOLFIN' }
   };
   fs.writeFileSync(
     path.join(projDir, 'project.yaml'),
-    '# Proje receta: model + diller + kapak. Makineye ozel bolumler asagida,\n' +
-    '# ortak bolumler content/_common katmanindan mirasla gelir.\n\n' +
+    '# Proje recetesi — icerik yalnizca bu klasorden okunur.\n\n' +
     yaml.dump(doc, { lineWidth: -1 }),
     'utf8'
   );
 
-  // Makineye ozel bolumleri modelin icerigiyle kopyala (yalniz .tr.md)
-  const files = [];
-  for (const rel of modelSources(modelDir)) {
-    const src = path.join(modelDir, rel);
-    const dest = path.join(projDir, rel);
-    fs.mkdirSync(path.dirname(dest), { recursive: true });
-    fs.writeFileSync(dest, fs.readFileSync(src, 'utf8'), 'utf8');
-    files.push(rel.replace(/\\/g, '/'));
+  const files = copyTemplateTree(templateDir, projDir);
+  if (!fs.existsSync(path.join(projDir, 'assets'))) {
+    fs.mkdirSync(path.join(projDir, 'assets'), { recursive: true });
   }
 
   return {
@@ -129,4 +161,11 @@ function createProject(root, name, modelRaw, langsRaw) {
   };
 }
 
-module.exports = { createProject, listModels, slugify, findProjectYaml };
+module.exports = {
+  createProject,
+  listModels,
+  slugify,
+  findProjectYaml,
+  isModelTemplate,
+  MODEL_IDS
+};

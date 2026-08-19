@@ -1,10 +1,10 @@
-# 5.5. Installationsprüfung und Test
+# 5.5 Installationsprüfung und Test
 
 Die Tests sind nach Abschluss der Sicherheitstests in Abschnitt **5.4** durchzuführen. Erst wenn alle Prüfungen **OK** sind, den Betrieb aufnehmen.
 
 ---
 
-## 5.5.1. Mechanischer Installationstest
+## 5.5.1 Mechanischer Installationstest
 
 | # | Prüfung | Erwartetes Ergebnis | Status |
 |---|---------|---------------------|--------|
@@ -17,7 +17,7 @@ Der mechanische Installationstest wird nach Abschluss der Positionierung und Niv
 
 ---
 
-## 5.5.2. Elektrische Inbetriebnahmeprüfung
+## 5.5.2 Elektrische Inbetriebnahmeprüfung
 
 | # | Prüfung | Erwartetes Ergebnis | Status |
 |---|---------|---------------------|--------|
@@ -32,7 +32,7 @@ Elektrische Tests werden nach dem Einschalten am Schrank durchgeführt. Die Phas
 
 ---
 
-## 5.5.3. Pneumatik- und Medienanschlusstest
+## 5.5.3 Pneumatik- und Medienanschlusstest
 
 | # | Prüfung | Erwartetes Ergebnis | Status |
 |---|---------|---------------------|--------|
@@ -51,7 +51,7 @@ Anschlussparameter:
 
 ---
 
-## 5.5.4. Sicherheitsfunktionsprüfung
+## 5.5.4 Sicherheitsfunktionsprüfung
 
 | # | Prüfung | Erwartetes Ergebnis | Status |
 |---|---------|---------------------|--------|
@@ -66,7 +66,7 @@ Detailliertes Not-Halt-Testverfahren siehe Abschnitt **5.4**.
 
 ---
 
-## 5.5.5. Leerlauflauf-Test
+## 5.5.5 Leerlauflauf-Test
 
 | Parameter | Wert |
 |-----------|------|
@@ -89,7 +89,7 @@ Bei erfolgreichem Leerlauflauf gilt die Maschine als **betriebsbereit** (Abschni
 
 ---
 
-## 5.5.6. Zusammenfassende Installationsprüfliste
+## 5.5.6 Zusammenfassende Installationsprüfliste
 
 | Abschnitt | Test | Abgeschlossen |
 |-----------|------|:-------------:|

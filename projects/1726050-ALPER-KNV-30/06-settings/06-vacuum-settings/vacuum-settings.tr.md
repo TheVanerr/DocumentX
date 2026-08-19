@@ -1,10 +1,10 @@
-# 6.6. Vakum Ayarları
+# 6.6 Vakum ayarları
 
 Makinede **vakum sistemi bulunmamaktadır**. Operatör veya yetkili personel tarafından yapılacak vakum ayarı **bulunmamaktadır**.
 
 ---
 
-## 6.6.1. Vakum Ayar Durumu
+## 6.6.1 Vakum ayar durumu
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|

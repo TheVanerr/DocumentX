@@ -1,8 +1,8 @@
-# 3.4. Maschinenbedienung und Steuerung
+# 3.4 Maschinenbedienung und Steuerung
 
 ---
 
-## 3.4.1. Steuerschrank — Allgemeiner Aufbau
+## 3.4.1 Steuerschrank — Allgemeiner Aufbau
 
 | Parameter | Wert |
 |-----------|------|
@@ -19,7 +19,7 @@ Der Elektroschrank enthält Stromverteilung, Motorschutz, Automatisierungskompon
 
 ---
 
-## 3.4.2. HMI-Bedienoberfläche
+## 3.4.2 HMI-Bedienoberfläche
 
 | Parameter | Wert |
 |-----------|------|
@@ -43,7 +43,7 @@ Auf der HMI-**Handseite** werden Luft- und Wasseranschlussstatus überwacht; nac
 
 ---
 
-## 3.4.3. SPS und E/A-Infrastruktur
+## 3.4.3 SPS und E/A-Infrastruktur
 
 | Parameter | Wert |
 |-----------|------|
@@ -59,7 +59,7 @@ Encoder-/Feedback-Einstellungen sind im SPS-Programm integriert; die Einstellung
 
 ---
 
-## 3.4.4. Betriebsarten, Start/Stopp und Not-Halt
+## 3.4.4 Betriebsarten, Start/Stopp und Not-Halt
 
 | Parameter | Wert |
 |-----------|------|
@@ -84,7 +84,7 @@ Bei Betätigung des Not-Halt stoppt **jede Funktion der Maschine**. Reset: Nach 
 
 ---
 
-## 3.4.5. Signalleuchten (Signalelement)
+## 3.4.5 Signalleuchten (Signalelement)
 
 | Farbe | Bedeutung |
 |-------|-----------|
@@ -99,7 +99,7 @@ Das Signalelement zeigt dem Bediener den aktuellen Maschinenstatus visuell an. B
 
 ---
 
-## 3.4.6. Alarm, Rezept und Fernzugriff
+## 3.4.6 Alarm, Rezept und Fernzugriff
 
 | Funktion | Verhalten |
 |----------|-----------|

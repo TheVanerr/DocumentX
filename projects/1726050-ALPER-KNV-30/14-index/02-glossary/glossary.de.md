@@ -1,8 +1,8 @@
-# 14.2. Glossar
+# 14.2 Glossar
 
 ---
 
-## 14.2.1. Abkürzungen
+## 14.2.1 Abkürzungen
 
 | Kürzel | Beschreibung |
 |--------|--------------|
@@ -23,7 +23,7 @@
 
 ---
 
-## 14.2.2. Begriffe
+## 14.2.2 Begriffe
 
 | Begriff | Beschreibung |
 |---------|--------------|

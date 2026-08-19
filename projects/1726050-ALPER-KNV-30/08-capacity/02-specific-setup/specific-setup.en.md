@@ -1,10 +1,10 @@
-# 8.2. Specific Setup
+# 8.2 Specific Setup
 
 There is **no format change procedure** on the machine (see Section **6.1.5**). Product/recipe parameters are set by end user via HMI.
 
 ---
 
-## 8.2.1. Recipe / Program Parameters
+## 8.2.1 Recipe / program parameters
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -19,7 +19,7 @@ Recipe parameters (temperature, process times, etc.) must be defined on HMI by e
 
 ---
 
-## 8.2.2. Product-Based Parameters
+## 8.2.2 Product-based parameters
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -31,7 +31,7 @@ A separate recipe can be created for each product type. Parameters (temperature,
 
 ---
 
-## 8.2.3. Recipe Number List
+## 8.2.3 Recipe number list
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -41,7 +41,7 @@ Recipe numbering and product mapping must be defined by end user. If robot PLC /
 
 ---
 
-## 8.2.4. Specific Setup Checklist
+## 8.2.4 Specific Setup checklist
 
 | # | Check | Status |
 |---|-------|--------|

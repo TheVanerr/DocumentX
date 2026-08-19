@@ -1,10 +1,10 @@
-# 8.1. Ürün Kapasitesi
+# 8.1 Ürün kapasitesi
 
 Kapasite değerlendirmesi konveyör üzerinde ilerleyen parçalar için yapılır; tambur hacmi veya ağırlık sınırı geçerli değildir.
 
 ---
 
-## 8.1.1. Kapasite Parametreleri
+## 8.1.1 Kapasite parametreleri
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -16,7 +16,7 @@ Kapasite değerlendirmesi konveyör üzerinde ilerleyen parçalar için yapılı
 
 ---
 
-## 8.1.2. Ürün Sınırları
+## 8.1.2 Ürün sınırları
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -30,7 +30,7 @@ Parça boyutu ve ağırlığı; konveyör genişliği, robot tutuş noktası ve 
 
 ---
 
-## 8.1.3. Nominal Kapasite Tablosu
+## 8.1.3 Nominal kapasite tablosu
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -40,7 +40,7 @@ Parça boyutu ve ağırlığı; konveyör genişliği, robot tutuş noktası ve 
 
 ---
 
-## 8.1.4. Test Edilen Kapasite ve Koşulları
+## 8.1.4 Test edilen kapasite ve koşulları
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -51,7 +51,7 @@ Kapasite testi; gerçek parça geometrisi, hedef temizlik kriterleri, reçete s�
 
 ---
 
-## 8.1.5. Maksimum Sürekli Çalışma
+## 8.1.5 Maksimum sürekli çalışma
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -61,7 +61,7 @@ Makine 7/24 robot hattında kesintisiz çalışmaya uygundur. Periyodik bakım v
 
 ---
 
-## 8.1.6. Kapasiteyi Etkileyen Faktörler
+## 8.1.6 Kapasiteyi etkileyen faktörler
 
 | Faktör | Etki |
 |--------|------|

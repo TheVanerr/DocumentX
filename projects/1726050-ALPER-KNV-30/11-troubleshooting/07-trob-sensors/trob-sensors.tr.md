@@ -1,8 +1,8 @@
-# 11.7. Sensör Arızaları
+# 11.7 Sensör arızaları
 
 ---
 
-## 11.7.1. Alarm Tablosundan İlgili Sensörler
+## 11.7.1 Alarm tablosundan ilgili sensörler
 
 | Alarm | Sensör / konu | Kontrol |
 |-------|---------------|---------|
@@ -14,7 +14,7 @@
 
 ---
 
-## 11.7.2. Sensör Parametreleri
+## 11.7.2 Sensör parametreleri
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|

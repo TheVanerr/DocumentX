@@ -1,10 +1,10 @@
-# 5.2. Machine Positioning
+# 5.2 Machine positioning
 
 Positioning operations are performed within **Step 3** of Section 5.1 assembly steps; they are detailed in this section.
 
 ---
 
-## 5.2.1. Installation Area Requirements
+## 5.2.1 Installation area requirements
 
 Before placing the machine, the installation area shall meet the following conditions:
 
@@ -25,7 +25,7 @@ Reference layout plan: **1726050-ALPER-KNV 30 LAYOUT.pdf**
 
 ---
 
-## 5.2.2. Orientation Definitions and Placement
+## 5.2.2 Orientation definitions and placement
 
 The machine shall be positioned according to the following orientations:
 
@@ -48,7 +48,7 @@ Parts are loaded from the left and removed from the right. The HMI panel and ele
 
 ---
 
-## 5.2.3. Levelling and Alignment
+## 5.2.3 Levelling and alignment
 
 | Parameter | Value |
 |-----------|-------|
@@ -70,7 +70,7 @@ Mechanical installation test check: *Is the machine level?*
 
 ---
 
-## 5.2.4. Maintenance Access
+## 5.2.4 Maintenance access
 
 Care shall be taken not to obstruct maintenance access zones during positioning:
 

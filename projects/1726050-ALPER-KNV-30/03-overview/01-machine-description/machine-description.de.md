@@ -1,4 +1,4 @@
-# 3.1. Maschinenbeschreibung und Systemaufbau
+# 3.1 Maschinenbeschreibung und Systemaufbau
 
 KNV-30 3000 2B (Seriennummer: **1726050**, Kunde: **ALPER ÖZLEM IDEA**, Baujahr: **2026**) ist eine industrielle Teilewaschanlage mit Einlauf-Beschickung, Förderband und zwei Prozessbädern (Waschen + Spülen). Die Teile durchlaufen auf dem Förderband nacheinander Waschen, Spülen und Trocknen; die Hauptfunktion der Maschine ist die **Entfernung von Öl und Verschmutzungen**, die von industriellen Bearbeitungsprozessen auf den Teileoberflächen verbleiben.
 
@@ -9,7 +9,7 @@ Die Maschine ist nach dem Prinzip der **kontinuierlichen Förderband**-Beschicku
 
 ---
 
-## 3.1.1. Allgemeine Beschreibung und Prozesskonzept
+## 3.1.1 Allgemeine Beschreibung und Prozesskonzept
 
 KNV 30 3000 2B ist ein Waschsystem zur Oberflächenreinigung bearbeiteter Teile in industriellen Fertigungslinien, bei dem die auf dem Förderband fortlaufenden Teile feste Prozesszonen durchfahren. Die Bezeichnung **2B** bedeutet, dass die Maschine über **zwei unabhängige Prozessbäder** — Waschen und Spülen — verfügt; jedes Bad arbeitet mit eigenem Umwälzkreis, und eine Flüssigkeitsvermischung zwischen den Bädern ist konstruktiv verhindert.
 
@@ -30,7 +30,7 @@ Nenn-Zykluszeit: **900 s**
 
 ---
 
-## 3.1.2. Förderband-Transportsystem
+## 3.1.2 Förderband-Transportsystem
 
 Das Förderband bildet das Transportsystem und das Rückgrat der Maschine. Es gewährleistet die kontrollierte und kontinuierliche Fortbewegung der Teile zwischen den Prozesszonen. Ein- und Auslaufstellen sind für den Bediener zugänglich; Beschickung **links**, Entnahme **rechts**.
 
@@ -56,7 +56,7 @@ Am Förderband befinden sich insgesamt **4 Schmierstellen**: 2 an der Einlaufsei
 
 ---
 
-## 3.1.3. Waschbad und Umwälzkreislauf
+## 3.1.3 Waschbad und Umwälzkreislauf
 
 Das Waschbad ist die erste Prozesszone, in der industrielle Öl- und Schmutzschichten auf den Teileoberflächen entfernt werden. Das Prozessmedium im Tank wird von der Waschpumpe angesaugt und dem Sprühsystem zugeführt; die Teile kommen beim Fortlauf auf dem Förderband mit dem Druckmedium aus den Düsen in Kontakt.
 
@@ -82,7 +82,7 @@ Als Prozesswasser ist **Leitungswasser** oder **aufbereitetes Wasser** zu verwen
 
 ---
 
-## 3.1.4. Spülbad und Umwälzkreislauf
+## 3.1.4 Spülbad und Umwälzkreislauf
 
 Das Spülbad ist die zweite Prozesszone, in der Reinigungsmittel-, Ölrückstände und Verschmutzungen von den nach dem Waschprozess verbleibenden Teilen entfernt werden. Es verfügt über einen vom Waschbad unabhängigen Tank- und Pumpenkreis; eine Flüssigkeitsvermischung zwischen beiden Bädern ist konstruktiv ausgeschlossen.
 
@@ -103,7 +103,7 @@ Auch im Spültank sind Filter installiert; im Rahmen der wöchentlichen Tiefenre
 
 ---
 
-## 3.1.5. Ölabscheider-Einheit
+## 3.1.5 Ölabscheider-Einheit
 
 Zur kontinuierlichen Entfernung schwimmender Ölschichten im Waschtank ist eine Ölabscheider-Einheit integriert. Bei der industriellen Teilewäsche reduziert Ölanreicherung die Wirksamkeit des Prozessmediums und erhöht den Wartungsbedarf; der Ölabscheider verhindert diese Anreicherung und sichert die Prozessqualität im Tank.
 
@@ -119,7 +119,7 @@ Zur kontinuierlichen Entfernung schwimmender Ölschichten im Waschtank ist eine 
 
 ---
 
-## 3.1.6. Trocknungs- und Abluftsystem
+## 3.1.6 Trocknungs- und Abluftsystem
 
 Die Trockenzone ist der dritte und letzte Prozessschritt, in dem die Oberflächenfeuchtigkeit der Teile nach dem Spülprozess durch kräftigen, gerichteten Luftstrom entfernt wird. Die Trocknung stellt sicher, dass Teile feuchtigkeitsfrei aus der Linie ausgetragen werden — für nachfolgende Prozessschritte mit kritischer Oberflächenqualität wie Lackieren, Beschichten und Montage.
 
@@ -152,7 +152,7 @@ Auf der Betriebsseite der HMI-Oberfläche können Waschen, Spülen, **Trocknen 1
 
 ---
 
-## 3.1.7. Elektrische, Steuerungs- und Automatisierungsinfrastruktur
+## 3.1.7 Elektrische, Steuerungs- und Automatisierungsinfrastruktur
 
 Die elektrische und automatisierungstechnische Infrastruktur der Maschine ist im zentralen **Elektroschrank** zusammengeführt. Schutzart des Schrankes: **IP55**; Abmessungen: **800 × 1200 × 300 mm** (B × H × T).
 
@@ -206,7 +206,7 @@ An der Maschine ist ein **RFID-Sicherheitssensor** installiert; beim Öffnen der
 
 ---
 
-## 3.1.8. Hilfsmedien-Anschlüsse
+## 3.1.8 Hilfsmedien-Anschlüsse
 
 Für Prozess- und pneumatische Funktionen der Maschine sind Medienanschlüsse erforderlich:
 
@@ -224,7 +224,7 @@ Der Druckluftregler ist auf **6 bar** eingestellt. Auf der HMI-Handseite werden 
 
 ---
 
-## 3.1.9. Übersicht der Hauptkomponenten
+## 3.1.9 Übersicht der Hauptkomponenten
 
 Die folgende Tabelle fasst die Hauptmodule der Maschine und ihre Funktionen zusammen:
 

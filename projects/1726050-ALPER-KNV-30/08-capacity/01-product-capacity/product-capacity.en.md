@@ -1,10 +1,10 @@
-# 8.1. Product Capacity
+# 8.1 Product capacity
 
 Capacity assessment applies to parts advancing on the conveyor; drum volume or weight limits do not apply.
 
 ---
 
-## 8.1.1. Capacity Parameters
+## 8.1.1 Capacity parameters
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -16,7 +16,7 @@ Capacity assessment applies to parts advancing on the conveyor; drum volume or w
 
 ---
 
-## 8.1.2. Product Limits
+## 8.1.2 Product limits
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -30,7 +30,7 @@ Part size and weight must suit conveyor width, robot grip point and bath geometr
 
 ---
 
-## 8.1.3. Nominal Capacity Table
+## 8.1.3 Nominal capacity table
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -40,7 +40,7 @@ Pcs/hour values per product type must be defined by end user together with HMI r
 
 ---
 
-## 8.1.4. Tested Capacity and Conditions
+## 8.1.4 Tested capacity and conditions
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -51,7 +51,7 @@ Capacity testing must be performed on site with actual part geometry, target cle
 
 ---
 
-## 8.1.5. Maximum Continuous Operation
+## 8.1.5 Maximum continuous operation
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -61,7 +61,7 @@ Machine is suitable for uninterrupted operation on 24/7 robot line. For periodic
 
 ---
 
-## 8.1.6. Factors Affecting Capacity
+## 8.1.6 Factors affecting capacity
 
 | Factor | Effect |
 |--------|--------|

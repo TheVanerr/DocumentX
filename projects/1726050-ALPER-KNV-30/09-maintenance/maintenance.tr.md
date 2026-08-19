@@ -13,7 +13,7 @@ Temizlik prosedürleri için bkz. Bölüm **10**.
 
 ---
 
-## Bölüm İçeriği
+## Bölüm içeriği
 
 | Bölüm | Başlık | Konu |
 |-------|--------|------|

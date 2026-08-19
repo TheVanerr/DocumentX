@@ -1,10 +1,10 @@
-# 13.1. Dokumentenliste
+# 13.1 Dokumentenliste
 
 Folgende Dokumente werden als **separate Unterlagen** geliefert. Dateiname/Rev im Lieferpaket.
 
 ---
 
-## 13.1.1. Schema- und Planunterlagen
+## 13.1.1 Schema- und Planunterlagen
 
 | Dokument | Dateiname / Rev | Lieferung |
 |----------|-----------------|-----------|
@@ -17,7 +17,7 @@ Folgende Dokumente werden als **separate Unterlagen** geliefert. Dateiname/Rev i
 
 ---
 
-## 13.1.2. Stückliste und Backups
+## 13.1.2 Stückliste und Backups
 
 | Dokument | Dateiname / Rev | Lieferung |
 |----------|-----------------|-----------|
@@ -27,7 +27,7 @@ Folgende Dokumente werden als **separate Unterlagen** geliefert. Dateiname/Rev i
 
 ---
 
-## 13.1.3. Zertifikate und Konformität
+## 13.1.3 Zertifikate und Konformität
 
 | Dokument | Dateiname / Rev | Lieferung |
 |----------|-----------------|-----------|
@@ -36,7 +36,7 @@ Folgende Dokumente werden als **separate Unterlagen** geliefert. Dateiname/Rev i
 
 ---
 
-## 13.1.4. Referenzen im Handbuch
+## 13.1.4 Referenzen im Handbuch
 
 | Thema | Referenz |
 |-------|----------|

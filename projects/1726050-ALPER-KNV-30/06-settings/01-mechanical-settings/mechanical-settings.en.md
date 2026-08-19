@@ -1,8 +1,8 @@
-# 6.1. Mechanical Settings
+# 6.1 Mechanical settings
 
 ---
 
-## 6.1.1. Mechanical Adjustment Points
+## 6.1.1 Mechanical adjustment points
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -10,7 +10,7 @@
 
 ---
 
-## 6.1.2. Reference / Home Position
+## 6.1.2 Reference / Home position
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -23,7 +23,7 @@ The conveyor head is accepted as the machine reference point. Part positioning a
 
 ---
 
-## 6.1.3. Chain / Belt and Limit Settings
+## 6.1.3 Chain / belt and limit settings
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -32,7 +32,7 @@ The conveyor head is accepted as the machine reference point. Part positioning a
 
 ---
 
-## 6.1.4. Nozzle / Fill Head
+## 6.1.4 Nozzle / fill head
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -40,7 +40,7 @@ The conveyor head is accepted as the machine reference point. Part positioning a
 
 ---
 
-## 6.1.5. Format Change
+## 6.1.5 Format change
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -48,7 +48,7 @@ The conveyor head is accepted as the machine reference point. Part positioning a
 
 ---
 
-## 6.1.6. Mechanical Settings Checklist
+## 6.1.6 Mechanical settings checklist
 
 | # | Check | Status |
 |---|-------|--------|

@@ -13,7 +13,7 @@ Periyodik bakım referansı için bkz. Bölüm **9.1.3**.
 
 ---
 
-## Bölüm İçeriği
+## Bölüm içeriği
 
 | Bölüm | Başlık | Konu |
 |-------|--------|------|

@@ -1,8 +1,8 @@
-# 11.7. Sensor Faults
+# 11.7 Sensor faults
 
 ---
 
-## 11.7.1. Related Sensors from Alarm Table
+## 11.7.1 Related sensors from alarm table
 
 | Alarm | Sensor / topic | Check |
 |-------|----------------|-------|
@@ -14,7 +14,7 @@
 
 ---
 
-## 11.7.2. Sensor Parameters
+## 11.7.2 Sensor parameters
 
 | Parameter | Value / Description |
 |-----------|---------------------|

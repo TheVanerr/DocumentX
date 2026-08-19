@@ -9,7 +9,7 @@ Technical documents (P&ID, electrical schematic, pneumatic diagram, etc.) are su
 
 ---
 
-## Section Contents
+## Section contents
 
 | Section | Title | Topic |
 |---------|-------|-------|

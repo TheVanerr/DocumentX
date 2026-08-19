@@ -1,10 +1,10 @@
-# 13.3. Parça Listesi
+# 13.3 Parça listesi
 
 Parça listeleri **ayrı evrak** olarak teslim edilir.
 
 ---
 
-## 13.3.1. Parça Listesi Referansları
+## 13.3.1 Parça listesi referansları
 
 | Liste | Referans | Teslim |
 |-------|----------|--------|
@@ -15,7 +15,7 @@ Parça listeleri **ayrı evrak** olarak teslim edilir.
 
 ---
 
-## 13.3.2. Kılavuz İlişkisi
+## 13.3.2 Kılavuz ilişkisi
 
 | Konu | Referans |
 |------|----------|

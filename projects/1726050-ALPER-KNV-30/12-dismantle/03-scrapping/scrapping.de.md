@@ -1,8 +1,8 @@
-# 12.3. Verschrottung
+# 12.3 Verschrottung
 
 ---
 
-## 12.3.1. Schrottbewertung
+## 12.3.1 Schrottbewertung
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -12,7 +12,7 @@ Nach Demontage Teile nach Materialtyp (Metall, Kunststoff, Elektronik, Kabel usw
 
 ---
 
-## 12.3.2. Teil-Recyclingmaterialien
+## 12.3.2 Teil-Recyclingmaterialien
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|

@@ -1,4 +1,4 @@
-# 3.1. Makine Tanımı ve Sistematik Yapı
+# 3.1 Makine tanımı ve sistematik yapı
 
 KNV-30 3000 2B (Seri no: **1726050**, müşteri: **ALPER ÖZLEM IDEA**, üretim yılı: **2026**), girişten yüklemeli konveyörlü, iki banyolu (yıkama + durulama) endüstriyel parça yıkama makinesidir. Parçalar konveyör hattı üzerinde ilerleyerek yıkama, durulama ve kurutma proseslerini ardışık olarak tamamlar; makinenin ana işlevi, parça yüzeyinde endüstriyel işlemlerden kalan **yağ ve kirliliğin giderilmesidir**.
 
@@ -9,7 +9,7 @@ Makine, **konveyör** tipi sürekli besleme prensibiyle tasarlanmıştır. Besle
 
 ---
 
-## 3.1.1. Genel Tanım ve Proses Konsepti
+## 3.1.1 Genel tanım ve proses konsepti
 
 KNV 30 3000 2B, endüstriyel üretim hatlarında işlenmiş parçaların yüzey temizliği için kullanılan, konveyör üzerinde ilerleyen parçaların sabit proses bölgelerinden geçirildiği bir yıkama sistemidir. **2B** tanımı, makinenin **iki bağımsız proses banyosuna** — yıkama ve durulama — sahip olduğunu ifade eder; her banyo kendi sirkülasyon devresi ile çalışır ve banyolar arası sıvı karışımı yapısal olarak engellenir.
 
@@ -30,7 +30,7 @@ Nominal döngü süresi: **900 sn**
 
 ---
 
-## 3.1.2. Konveyör Taşıma Sistemi
+## 3.1.2 Konveyör taşıma sistemi
 
 Konveyör, makinenin omurgasını oluşturan taşıma sistemidir. Parçaların proses bölgeleri arasında kontrollü ve sürekli ilerlemesini sağlar. Giriş ve çıkış noktaları operatör erişimine açık konumdadır; besleme **sol**, boşaltma **sağ** yöndedir.
 
@@ -56,7 +56,7 @@ Konveyör üzerinde toplam **4 adet yağlama noktası** bulunur: giriş tarafın
 
 ---
 
-## 3.1.3. Yıkama Banyosu ve Sirkülasyon Sistemi
+## 3.1.3 Yıkama banyosu ve sirkülasyon sistemi
 
 Yıkama banyosu, parça yüzeyindeki endüstriyel yağ ve kir tabakasının giderildiği birinci proses bölgesidir. Tank içerisindeki proses sıvısı, yıkama pompası tarafından emilerek püskürtme sistemine basılır; parçalar konveyör üzerinde ilerlerken nozullardan gelen basınçlı sıvı ile temas eder.
 
@@ -82,7 +82,7 @@ Proses suyu için **şebeke suyu** veya **arıtılmış su** kullanılmalıdır.
 
 ---
 
-## 3.1.4. Durulama Banyosu ve Sirkülasyon Sistemi
+## 3.1.4 Durulama banyosu ve sirkülasyon sistemi
 
 Durulama banyosu, yıkama prosesinden geçen parçalar üzerinde kalan deterjan, yağ kalıntısı ve kirliliğin uzaklaştırıldığı ikinci proses bölgesidir. Yıkama banyosundan bağımsız tank ve pompa devresine sahiptir; iki banyo arasında sıvı karışımı yapısal olarak engellenmiştir.
 
@@ -103,7 +103,7 @@ Durulama tankında da filtreler bulunur; haftalık derin temizlik prosedürü ka
 
 ---
 
-## 3.1.5. Yağ Sıyırıcı Ünitesi
+## 3.1.5 Yağ sıyırıcı ünitesi
 
 Yıkama tankında biriken yüzen yağ tabakasının sürekli olarak uzaklaştırılması için yağ sıyırıcı ünite entegre edilmiştir. Endüstriyel parça yıkamada yağ birikimi, proses sıvısının etkinliğini düşürür ve bakım ihtiyacını artırır; yağ sıyırıcı bu birikimi önleyerek tank içi proses kalitesini korur.
 
@@ -119,7 +119,7 @@ Yıkama tankında biriken yüzen yağ tabakasının sürekli olarak uzaklaştır
 
 ---
 
-## 3.1.6. Kurutma ve Egzost Sistemi
+## 3.1.6 Kurutma ve egzost sistemi
 
 Kurutma bölgesi, durulama prosesinden çıkan parçalar üzerindeki yüzey neminin güçlü ve yönlendirilmiş hava akışı ile uzaklaştırıldığı üçüncü ve son proses adımıdır. Kurutma, boyama, kaplama ve montaj gibi yüzey kalitesinin kritik olduğu sonraki proses adımları için parçaların nemden arındırılmış olarak hattan çıkmasını sağlar.
 
@@ -152,7 +152,7 @@ HMI arayüzündeki çalışma sayfasında yıkama, durulama, **kurutma 1**, **ku
 
 ---
 
-## 3.1.7. Elektrik, Kontrol ve Otomasyon Altyapısı
+## 3.1.7 Elektrik, kontrol ve otomasyon altyapısı
 
 Makinenin elektrik ve otomasyon altyapısı, merkezi **elektrik panosu** üzerinde toplanmıştır. Pano koruma sınıfı **IP55**, boyutları **800 × 1200 × 300 mm** (W × H × D)'dir.
 
@@ -206,7 +206,7 @@ Makinede **RFID güvenlik sensörü** bulunmaktadır; kapaklar açıldığında 
 
 ---
 
-## 3.1.8. Yardımcı Medya Bağlantıları
+## 3.1.8 Yardımcı medya bağlantıları
 
 Makinenin proses ve pnömatik fonksiyonları için tesisat bağlantıları gereklidir:
 
@@ -224,7 +224,7 @@ Pnömatik regülatör basınç ayarı **6 bar** olarak tanımlanmıştır. HMI m
 
 ---
 
-## 3.1.9. Ana Bileşenler Özeti
+## 3.1.9 Ana bileşenler özeti
 
 Aşağıdaki tablo, makinenin ana modüllerini ve işlevlerini özetler:
 

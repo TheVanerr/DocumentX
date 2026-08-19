@@ -2,7 +2,7 @@
 
 ---
 
-## Chapter Contents
+## Chapter contents
 
 | Section | Title | Subject |
 |---------|-------|---------|
@@ -16,7 +16,7 @@
 
 ---
 
-## General Notes
+## General notes
 
 | Topic | Description |
 |-------|-------------|

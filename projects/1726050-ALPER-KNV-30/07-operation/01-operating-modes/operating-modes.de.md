@@ -1,10 +1,10 @@
-# 7.1. Betriebsarten
+# 7.1 Betriebsarten
 
 Die Maschine arbeitet **vollautomatisch**. Start-/Stopptasten sind **digitale Tasten am HMI**.
 
 ---
 
-## 7.1.1. Handbetrieb
+## 7.1.1 Handbetrieb
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -17,7 +17,7 @@ Am HMI-**Betriebsbildschirm** gibt es Optionen Waschen, Spülen, Trocknung 1, Tr
 
 ---
 
-## 7.1.2. Automatikbetrieb
+## 7.1.2 Automatikbetrieb
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -25,7 +25,7 @@ Am HMI-**Betriebsbildschirm** gibt es Optionen Waschen, Spülen, Trocknung 1, Tr
 
 ---
 
-## 7.1.3. Wartung / Setup
+## 7.1.3 Wartung / Setup
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -33,7 +33,7 @@ Am HMI-**Betriebsbildschirm** gibt es Optionen Waschen, Spülen, Trocknung 1, Tr
 
 ---
 
-## 7.1.4. Schritt / Einzelschritt
+## 7.1.4 Schritt / Einzelschritt
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -41,7 +41,7 @@ Am HMI-**Betriebsbildschirm** gibt es Optionen Waschen, Spülen, Trocknung 1, Tr
 
 ---
 
-## 7.1.5. Moduswechsel-Bedingungen
+## 7.1.5 Moduswechsel-Bedingungen
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -49,7 +49,7 @@ Am HMI-**Betriebsbildschirm** gibt es Optionen Waschen, Spülen, Trocknung 1, Tr
 
 ---
 
-## 7.1.6. HMI-Prozessoptionen Übersicht
+## 7.1.6 HMI-Prozessoptionen Übersicht
 
 | Option | Beschreibung |
 |--------|--------------|

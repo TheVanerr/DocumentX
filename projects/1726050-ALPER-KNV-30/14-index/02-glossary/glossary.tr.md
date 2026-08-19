@@ -1,8 +1,8 @@
-# 14.2. Sözlük
+# 14.2 Sözlük
 
 ---
 
-## 14.2.1. Kısaltmalar
+## 14.2.1 Kısaltmalar
 
 | Kısaltma | Açıklama |
 |----------|----------|
@@ -23,7 +23,7 @@
 
 ---
 
-## 14.2.2. Terimler
+## 14.2.2 Terimler
 
 | Terim | Açıklama |
 |-------|----------|

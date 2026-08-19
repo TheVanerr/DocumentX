@@ -1,10 +1,10 @@
-# 7.5. Operasyon Kronolojisi
+# 7.5 Operasyon kronolojisi
 
 Makine **7/24 robot** ile çalışır. Operatör veya vardiya teslimi **bulunmaz**.
 
 ---
 
-## 7.5.1. Günlük Operasyon Zaman Çizelgesi
+## 7.5.1 Günlük operasyon zaman çizelgesi
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -12,7 +12,7 @@ Makine **7/24 robot** ile çalışır. Operatör veya vardiya teslimi **bulunmaz
 
 ---
 
-## 7.5.2. Vardiya Devir Teslim
+## 7.5.2 Vardiya devir teslim
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -20,7 +20,7 @@ Makine **7/24 robot** ile çalışır. Operatör veya vardiya teslimi **bulunmaz
 
 ---
 
-## 7.5.3. Shift Başlangıç Kontrol Listesi
+## 7.5.3 Shift başlangıç kontrol listesi
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|

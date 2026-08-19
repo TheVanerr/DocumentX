@@ -9,7 +9,7 @@ Before dismantling, stop the machine, drain tanks and apply **LOTO** (see **9.1.
 
 ---
 
-## Section Contents
+## Section contents
 
 | Section | Title | Topic |
 |---------|-------|-------|

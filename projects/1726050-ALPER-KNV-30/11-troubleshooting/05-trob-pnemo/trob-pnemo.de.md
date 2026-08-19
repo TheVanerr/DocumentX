@@ -1,10 +1,10 @@
-# 11.5. Pneumatische Störungen
+# 11.5 Pneumatische Störungen
 
 Maschine nutzt **6 bar** Druckluft (siehe Abschnitt **6.5**).
 
 ---
 
-## 11.5.1. Druckalarme
+## 11.5.1 Druckalarme
 
 | Alarm | Thema | Prüfung |
 |-------|-------|---------|
@@ -19,7 +19,7 @@ Maschine nutzt **6 bar** Druckluft (siehe Abschnitt **6.5**).
 
 ---
 
-## 11.5.2. Ventilstörungen
+## 11.5.2 Ventilstörungen
 
 | Alarm | Thema |
 |-------|-------|

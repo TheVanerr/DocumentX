@@ -1,8 +1,8 @@
-# 11.1. Fault Finding
+# 11.1 Fault finding
 
 ---
 
-## 11.1.1. General Diagnosis Steps
+## 11.1.1 General diagnosis steps
 
 | # | Step |
 |---|------|
@@ -17,7 +17,7 @@
 
 ---
 
-## 11.1.2. Alarm Code List
+## 11.1.2 Alarm code list
 
 | Code | Alarm text | Check / remedy |
 |------|------------|----------------|
@@ -55,7 +55,7 @@
 
 ---
 
-## 11.1.3. General Fault Table
+## 11.1.3 General fault table
 
 | Symptom | Possible cause | Check | Remedy |
 |---------|----------------|-------|--------|

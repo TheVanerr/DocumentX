@@ -1,10 +1,10 @@
-# 11.5. Pneumatic Faults
+# 11.5 Pneumatic faults
 
 Machine uses **6 bar** compressed air (see Section **6.5**).
 
 ---
 
-## 11.5.1. Pressure Alarms
+## 11.5.1 Pressure alarms
 
 | Alarm | Topic | Check |
 |-------|-------|-------|
@@ -19,7 +19,7 @@ Machine uses **6 bar** compressed air (see Section **6.5**).
 
 ---
 
-## 11.5.2. Valve Faults
+## 11.5.2 Valve faults
 
 | Alarm | Topic |
 |-------|-------|

@@ -1,4 +1,4 @@
-# 7.4. Operasyon Sekansı
+# 7.4 Operasyon sekansı
 
 Makine **tam otomatik** çalışır. HMI çalışma sayfasında yıkama, durulama, kurutma 1, kurutma 2 ve egzos için **açma/kapama (on/off) butonları** bulunur.
 
@@ -12,7 +12,7 @@ Proses akışı özeti: **Yıkama → Durulama → Kurutma**
 
 ---
 
-## 7.4.1. Otomatik Cycle Adımları
+## 7.4.1 Otomatik Cycle adımları
 
 | Adım | Açıklama |
 |------|----------|
@@ -24,7 +24,7 @@ Proses akışı özeti: **Yıkama → Durulama → Kurutma**
 
 ---
 
-## 7.4.2. Cycle Süresi
+## 7.4.2 Cycle süresi
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -32,7 +32,7 @@ Proses akışı özeti: **Yıkama → Durulama → Kurutma**
 
 ---
 
-## 7.4.3. Ürün Giriş / Çıkış
+## 7.4.3 Ürün giriş / çıkış
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -46,7 +46,7 @@ Parçalar konveyör üzerinde ilerleyerek prosesleri tamamlar (girişten yüklem
 
 ---
 
-## 7.4.4. Hata Durumunda Makine Davranışı
+## 7.4.4 Hata durumunda makine davranışı
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|

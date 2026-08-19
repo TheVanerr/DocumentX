@@ -1,4 +1,4 @@
-# 3.5. Makine Yerleşim Planı
+# 3.5 Makine yerleşim planı
 
 **Referans çizim:** `1726050-ALPER-KNV 30 LAYOUT.pdf`
 
@@ -9,7 +9,7 @@ Proje assets klasöründe layout çizimi mevcuttur: `1726050-ALPER-KNV 30 3000 2
 
 ---
 
-## 3.5.1. Yön Tanımları ve Operatör Tarafı
+## 3.5.1 Yön tanımları ve operatör tarafı
 
 | Tanım | Yön / Konum |
 |-------|-------------|
@@ -25,7 +25,7 @@ Parçalar sol taraftan yüklenir, konveyör boyunca proses bölgelerinden geçer
 
 ---
 
-## 3.5.2. Minimum Etraf Boşlukları ve Tavan Yüksekliği
+## 3.5.2 Minimum etraf boşlukları ve tavan yüksekliği
 
 Kurulum alanı planlamasında aşağıdaki minimum boşluklar sağlanmalıdır:
 
@@ -43,7 +43,7 @@ Montaj alanı minimum boyutu: **5 m × 3 m**. Zemin düzgünlük toleransı: **0
 
 ---
 
-## 3.5.3. Bakım Erişim Bölgeleri
+## 3.5.3 Bakım erişim bölgeleri
 
 | Bölge | Erişim |
 |-------|--------|
@@ -56,7 +56,7 @@ Periyodik bakım, filtre temizliği ve mekanik müdahaleler için makine arkası
 
 ---
 
-## 3.5.4. Taşıma, Forklift ve Ağırlık Merkezi
+## 3.5.4 Taşıma, forklift ve ağırlık merkezi
 
 | Parametre | Değer / Not |
 |-----------|-------------|

@@ -1,8 +1,8 @@
-# 10.1. Reinigung und Desinfektion
+# 10.1 Reinigung und Desinfektion
 
 ---
 
-## 10.1.1. Reinigungstyp
+## 10.1.1 Reinigungstyp
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -12,7 +12,7 @@ Es gibt **kein automatisches CIP- (Cleaning in Place) oder COP-System (Cleaning 
 
 ---
 
-## 10.1.2. Sicherheit vor Reinigung
+## 10.1.2 Sicherheit vor Reinigung
 
 | # | Regel |
 |---|-------|
@@ -24,7 +24,7 @@ Es gibt **kein automatisches CIP- (Cleaning in Place) oder COP-System (Cleaning 
 
 ---
 
-## 10.1.3. Tägliche Reinigung
+## 10.1.3 Tägliche Reinigung
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -45,7 +45,7 @@ Es gibt **kein automatisches CIP- (Cleaning in Place) oder COP-System (Cleaning 
 
 ---
 
-## 10.1.4. Wöchentliche Tiefenreinigung
+## 10.1.4 Wöchentliche Tiefenreinigung
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -71,7 +71,7 @@ Es gibt **kein automatisches CIP- (Cleaning in Place) oder COP-System (Cleaning 
 
 ---
 
-## 10.1.5. Desinfektionsprozedur
+## 10.1.5 Desinfektionsprozedur
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -92,7 +92,7 @@ Es gibt **kein automatisches CIP- (Cleaning in Place) oder COP-System (Cleaning 
 
 ---
 
-## 10.1.6. Trocknung nach Reinigung
+## 10.1.6 Trocknung nach Reinigung
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -102,7 +102,7 @@ Tankinnenseite kann nach Entleeren an der Luft trocknen. HMI und Schaltschrank *
 
 ---
 
-## 10.1.7. Reinigungsmittel
+## 10.1.7 Reinigungsmittel
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -113,7 +113,7 @@ Tankinnenseite kann nach Entleeren an der Luft trocknen. HMI und Schaltschrank *
 
 ---
 
-## 10.1.8. Abwasser / Chemikalienentsorgung
+## 10.1.8 Abwasser / Chemikalienentsorgung
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -123,7 +123,7 @@ Tankabwasser und Reinigungsabfälle gemäß lokaler Vorschriften entsorgen.
 
 ---
 
-## 10.1.9. Reinigungsprotokoll
+## 10.1.9 Reinigungsprotokoll
 
 | # | Tätigkeit | Periode | Datum | Ausgeführt von | OK/NOK |
 |---|-----------|---------|-------|----------------|--------|

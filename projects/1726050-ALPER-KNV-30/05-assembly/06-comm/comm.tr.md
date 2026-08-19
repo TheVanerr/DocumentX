@@ -1,8 +1,8 @@
-# 5.6. İletişim ve Otomasyon Arayüzü
+# 5.6 İletişim ve otomasyon arayüzü
 
 ---
 
-## 5.6.1. Fieldbus ve Protokol
+## 5.6.1 Fieldbus ve protokol
 
 | Parametre | Değer |
 |-----------|-------|
@@ -23,7 +23,7 @@ Encoder / feedback ayarı PLC programı içerisinde gömülüdür; ayar **üreti
 
 ---
 
-## 5.6.2. Üst Sistem Bağlantısı
+## 5.6.2 Üst sistem bağlantısı
 
 | Parametre | Değer |
 |-----------|-------|
@@ -33,7 +33,7 @@ MES veya SCADA entegrasyonu bu proje kapsamında tanımlanmamıştır. Üst sist
 
 ---
 
-## 5.6.3. Uzaktan Erişim
+## 5.6.3 Uzaktan erişim
 
 | Parametre | Değer |
 |-----------|-------|
@@ -47,7 +47,7 @@ Uzaktan erişim, Secomea modülü üzerinden sağlanır. Modül kurulumu ve yap�
 
 ---
 
-## 5.6.4. I/O Listesi ve Dokümantasyon
+## 5.6.4 I/O listesi ve dokümantasyon
 
 | Doküman | Dosya adı |
 |---------|-------------|
@@ -60,7 +60,7 @@ I/O listesi; giriş/çıkış adresleri, sensör ve aktüatör tanımları için
 
 ---
 
-## 5.6.5. İletişim Kontrol Listesi
+## 5.6.5 İletişim kontrol listesi
 
 | # | Kontrol | Durum |
 |---|---------|-------|

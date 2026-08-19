@@ -1,8 +1,8 @@
-# 11.2. Allgemeine Störungsbehebung
+# 11.2 Allgemeine Störungsbehebung
 
 ---
 
-## 11.2.1. HMI-Alarmverhalten
+## 11.2.1 HMI-Alarmverhalten
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -14,7 +14,7 @@ Aktive und historische Alarme am HMI-Alarmbildschirm. Alarmcodes in Abschnitt **
 
 ---
 
-## 11.2.2. Service-Anfragekriterien
+## 11.2.2 Service-Anfragekriterien
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|

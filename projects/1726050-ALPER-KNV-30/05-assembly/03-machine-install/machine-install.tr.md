@@ -1,10 +1,10 @@
-# 5.3. Sistem Bağlantıları ve Devreye Alma
+# 5.3 Sistem bağlantıları ve devreye alma
 
 Bağlantı işlemleri, Bölüm 5.1 montaj adımlarının **Adım 4–8** kapsamında gerçekleştirilir.
 
 ---
 
-## 5.3.1. Basınçlı Hava Bağlantısı
+## 5.3.1 Basınçlı hava bağlantısı
 
 | Parametre | Değer |
 |-----------|-------|
@@ -26,7 +26,7 @@ Pnömatik dolum testi: *Makinede hava bağlantısı yapıldıktan sonra HMI manu
 
 ---
 
-## 5.3.2. Su Bağlantısı
+## 5.3.2 Su bağlantısı
 
 | Parametre | Değer |
 |-----------|-------|
@@ -49,7 +49,7 @@ Pnömatik/hidrolik dolum testi (su): *Makinede su bağlantısı yapıldıktan so
 
 ---
 
-## 5.3.3. Elektrik Bağlantısı
+## 5.3.3 Elektrik bağlantısı
 
 | Parametre | Değer |
 |-----------|-------|
@@ -71,7 +71,7 @@ Elektrik bağlantısı, **50 kW / 100 A** kurulu güce uygun **380 V, 50 Hz** tr
 
 ---
 
-## 5.3.4. Devreye Alma ve Faz Kontrolü
+## 5.3.4 Devreye alma ve faz kontrolü
 
 ### Devreye alma prosedürü
 
@@ -97,7 +97,7 @@ Motor yönü tek yönde çalıştırılmalıdır; faz yönü doğru ayarlanmalı
 
 ---
 
-## 5.3.5. Bağlantı Tamamlama Kontrol Listesi
+## 5.3.5 Bağlantı tamamlama kontrol listesi
 
 Tüm bağlantılar tamamlandığında aşağıdaki kontroller yapılmalıdır:
 

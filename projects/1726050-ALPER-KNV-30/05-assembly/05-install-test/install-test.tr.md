@@ -1,10 +1,10 @@
-# 5.5. Kurulum Doğrulama ve Test
+# 5.5 Kurulum doğrulama ve test
 
 Testler, Bölüm **5.4** güvenlik testleri tamamlandıktan sonra uygulanmalıdır. Tüm kontroller **OK** olmadan operasyona geçilmemelidir.
 
 ---
 
-## 5.5.1. Mekanik Kurulum Testi
+## 5.5.1 Mekanik kurulum testi
 
 | # | Kontrol | Beklenen sonuç | Durum |
 |---|---------|-----------------|-------|
@@ -17,7 +17,7 @@ Mekanik kurulum testi, Bölüm 5.2 konumlandırma ve seviye ayarı tamamlandıkt
 
 ---
 
-## 5.5.2. Elektrik Devreye Alma Testi
+## 5.5.2 Elektrik devreye alma testi
 
 | # | Kontrol | Beklenen sonuç | Durum |
 |---|---------|-----------------|-------|
@@ -32,7 +32,7 @@ Elektrik testleri pano üzerinden devreye alma sonrasında gerçekleştirilir. F
 
 ---
 
-## 5.5.3. Pnömatik ve Medya Bağlantı Testi
+## 5.5.3 Pnömatik ve medya bağlantı testi
 
 | # | Kontrol | Beklenen sonuç | Durum |
 |---|---------|-----------------|-------|
@@ -51,7 +51,7 @@ Bağlantı parametreleri:
 
 ---
 
-## 5.5.4. Güvenlik Fonksiyon Testi
+## 5.5.4 Güvenlik fonksiyon testi
 
 | # | Kontrol | Beklenen sonuç | Durum |
 |---|---------|-----------------|-------|
@@ -66,7 +66,7 @@ Detaylı acil stop test prosedürü için bkz. Bölüm **5.4**.
 
 ---
 
-## 5.5.5. Boş Koşu Testi
+## 5.5.5 Boş koşu testi
 
 | Parametre | Değer |
 |-----------|-------|
@@ -89,7 +89,7 @@ Boş koşu testi başarılı ise makine **kullanıma hazır** kabul edilir (Böl
 
 ---
 
-## 5.5.6. Kurulum Doğrulama Özet Kontrol Listesi
+## 5.5.6 Kurulum doğrulama özet kontrol listesi
 
 | Bölüm | Test | Tamamlandı |
 |-------|------|:----------:|

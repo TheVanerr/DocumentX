@@ -1,4 +1,4 @@
-# 11.4. Hydraulische Störungen
+# 11.4 Hydraulische Störungen
 
 Die KNV 30 3000 2B Maschine hat **kein Hydrauliksystem**. Dieser Abschnitt entfällt.
 

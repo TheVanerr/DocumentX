@@ -1,10 +1,10 @@
-# 5.2. Makine Konumlandırma
+# 5.2 Makine konumlandırma
 
 Konumlandırma işlemleri, Bölüm 5.1 montaj adımlarının **Adım 3** kapsamında gerçekleştirilir; bu bölümde detaylandırılmıştır.
 
 ---
 
-## 5.2.1. Kurulum Alanı Gereksinimleri
+## 5.2.1 Kurulum alanı gereksinimleri
 
 Makine yerleştirilmeden önce kurulum alanı aşağıdaki koşulları karşılamalıdır:
 
@@ -25,7 +25,7 @@ Referans yerleşim planı: **1726050-ALPER-KNV 30 LAYOUT.pdf**
 
 ---
 
-## 5.2.2. Yön Tanımları ve Yerleşim
+## 5.2.2 Yön tanımları ve yerleşim
 
 Makine aşağıdaki yönlere göre konumlandırılmalıdır:
 
@@ -48,7 +48,7 @@ Parçalar sol taraftan yüklenir, sağ taraftan alınır. HMI paneli ve elektrik
 
 ---
 
-## 5.2.3. Seviye Ayarı ve Hizalama
+## 5.2.3 Seviye ayarı ve hizalama
 
 | Parametre | Değer |
 |-----------|-------|
@@ -70,7 +70,7 @@ Mekanik kurulum test kontrol sorusu: *Makine terzide mi?*
 
 ---
 
-## 5.2.4. Bakım Erişimi
+## 5.2.4 Bakım erişimi
 
 Konumlandırma sırasında bakım erişim bölgelerinin engellenmemesine dikkat edilmelidir:
 

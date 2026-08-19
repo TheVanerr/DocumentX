@@ -1,8 +1,8 @@
-# 6.2. Safety Settings
+# 6.2 Safety settings
 
 ---
 
-## 6.2.1. Safety Door / Bypass
+## 6.2.1 Safety door / bypass
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -10,7 +10,7 @@
 
 ---
 
-## 6.2.2. Light Curtain
+## 6.2.2 Light curtain
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -18,7 +18,7 @@
 
 ---
 
-## 6.2.3. E-Stop Test Interval
+## 6.2.3 E-Stop test interval
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -31,7 +31,7 @@ For detailed test procedure, see Section **5.4.1**.
 
 ---
 
-## 6.2.4. Safety Settings Checklist
+## 6.2.4 Safety settings checklist
 
 | # | Check | Status |
 |---|-------|--------|

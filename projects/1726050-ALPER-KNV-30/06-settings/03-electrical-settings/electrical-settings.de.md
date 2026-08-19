@@ -1,8 +1,8 @@
-# 6.3. Elektrische Einstellungen
+# 6.3 Elektrische Einstellungen
 
 ---
 
-## 6.3.1. Motordrehrichtung / Phasenprüfung
+## 6.3.1 Motordrehrichtung / Phasenprüfung
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -12,7 +12,7 @@ Phasenrichtung und -folge wurden bei der Installation mit dem Phasenfolgerelais 
 
 ---
 
-## 6.3.2. Encoder / Feedback
+## 6.3.2 Encoder / Feedback
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -25,7 +25,7 @@ Encoder-Einstellung darf nicht durch den Bediener erfolgen.
 
 ---
 
-## 6.3.3. Analoge Skalierung
+## 6.3.3 Analoge Skalierung
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -36,7 +36,7 @@ Encoder-Einstellung darf nicht durch den Bediener erfolgen.
 
 ---
 
-## 6.3.4. Datum / Uhrzeit / Sprache
+## 6.3.4 Datum / Uhrzeit / Sprache
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -47,7 +47,7 @@ Encoder-Einstellung darf nicht durch den Bediener erfolgen.
 
 ---
 
-## 6.3.5. Checkliste elektrische Einstellungen
+## 6.3.5 Checkliste elektrische Einstellungen
 
 | # | Prüfung | Status |
 |---|---------|--------|

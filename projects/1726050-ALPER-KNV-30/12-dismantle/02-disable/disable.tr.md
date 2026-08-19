@@ -1,8 +1,8 @@
-# 12.2. Devre Dışı Bırakma
+# 12.2 Devre dışı bırakma
 
 ---
 
-## 12.2.1. Kalıcı Devre Dışı Bırakma
+## 12.2.1 Kalıcı devre dışı bırakma
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -20,7 +20,7 @@ Makinenin kalıcı olarak hizmet dışı bırakılması durumunda:
 
 ---
 
-## 12.2.2. Geçici Devre Dışı Bırakma
+## 12.2.2 Geçici devre dışı bırakma
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|

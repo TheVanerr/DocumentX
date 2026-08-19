@@ -10,8 +10,6 @@ const translator = TRANSLATION_UI_ENABLED
   ? require(path.join(PROJECT_ROOT, 'scripts', 'translate-core'))
   : null;
 const projectCore = require(path.join(PROJECT_ROOT, 'scripts', 'project-core'));
-const CONTENT_COMMON = path.join(PROJECT_ROOT, 'content', '_common');
-const CONTENT_MODELS = path.join(PROJECT_ROOT, 'content', '_models');
 const PROJECTS_DIR = path.join(PROJECT_ROOT, 'projects');
 const TEMPLATES_DIR = path.join(PROJECT_ROOT, 'templates');
 const DEFAULT_LANG = 'tr';
@@ -45,6 +43,100 @@ try {
 }
 
 let mainWindow;
+let contentWatcher = null;
+let contentWatchDebounce = null;
+const contentWatchPending = new Set();
+
+/** projects/, assets/, templates/ — yalnızca açık kılavuzu yeniler (tam uygulama restart değil). */
+function startContentWatcher() {
+  if (contentWatcher) return;
+
+  let chokidar;
+  try {
+    chokidar = require('chokidar');
+  } catch (e) {
+    console.warn('İçerik izleyici başlatılamadı:', e.message);
+    return;
+  }
+
+  const exists = (p) => {
+    try { return fs.existsSync(p); } catch { return false; }
+  };
+
+  // Tüm projects/ ağacı yerine dosya türlerine göre izle (Windows EPERM riskini azaltır).
+  const watchGlobs = [
+    path.join(PROJECT_ROOT, 'projects', '**', '*.md'),
+    path.join(PROJECT_ROOT, 'projects', '**', '*.yaml'),
+    path.join(PROJECT_ROOT, 'projects', '**', '*.yml'),
+    path.join(PROJECT_ROOT, 'projects', '**', '*.svg'),
+    path.join(PROJECT_ROOT, 'projects', '**', '*.png'),
+    path.join(PROJECT_ROOT, 'projects', '**', '*.jpg'),
+    path.join(PROJECT_ROOT, 'projects', '**', '*.jpeg'),
+    path.join(PROJECT_ROOT, 'projects', '**', '*.webp'),
+    path.join(PROJECT_ROOT, 'assets', '**', '*'),
+    path.join(PROJECT_ROOT, 'templates', '**', '*.yaml'),
+    path.join(PROJECT_ROOT, 'templates', '**', '*.yml')
+  ].filter(p => {
+    const root = p.split('*')[0];
+    return exists(root);
+  });
+
+  if (!watchGlobs.length) return;
+
+  const flushContentWatch = () => {
+    contentWatchDebounce = null;
+    if (!contentWatchPending.size) return;
+    const paths = [...contentWatchPending];
+    contentWatchPending.clear();
+    if (!mainWindow || mainWindow.isDestroyed()) return;
+    mainWindow.webContents.send('content-changed', { paths });
+  };
+
+  const queueChange = (absPath) => {
+    const rel = path.relative(PROJECT_ROOT, absPath).split(path.sep).join('/');
+    if (!rel || rel.startsWith('..')) return;
+    contentWatchPending.add(rel);
+    clearTimeout(contentWatchDebounce);
+    contentWatchDebounce = setTimeout(flushContentWatch, 450);
+  };
+
+  contentWatcher = chokidar.watch(watchGlobs, {
+    ignored: [
+      /(^|[\\/])\../,
+      /node_modules/,
+      /\.git/,
+      /[\\/]BACKUP[\\/]/i,
+      /[\\/]versions[\\/]/i,
+      /[\\/]\.cursor[\\/]/,
+      /[\\/]__TEST-/i,
+      /\.translation-state\.json$/
+    ],
+    ignoreInitial: true,
+    ignorePermissionErrors: true,
+    awaitWriteFinish: { stabilityThreshold: 280, pollInterval: 100 },
+    usePolling: process.platform === 'win32',
+    interval: 500,
+    binaryInterval: 800
+  });
+
+  contentWatcher
+    .on('add', queueChange)
+    .on('change', queueChange)
+    .on('unlink', queueChange)
+    .on('error', (err) => {
+      if (err && err.code === 'EPERM') return;
+      console.warn('İçerik izleyici:', err.message || err);
+    });
+}
+
+function stopContentWatcher() {
+  clearTimeout(contentWatchDebounce);
+  contentWatchPending.clear();
+  if (contentWatcher) {
+    contentWatcher.close().catch(() => {});
+    contentWatcher = null;
+  }
+}
 
 function createWindow() {
   mainWindow = new BrowserWindow({
@@ -90,6 +182,7 @@ app.whenReady().then(() => {
   }
   registerIpcHandlers();
   createWindow();
+  startContentWatcher();
 
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
@@ -97,11 +190,16 @@ app.whenReady().then(() => {
 });
 
 app.on('window-all-closed', () => {
+  stopContentWatcher();
   if (process.platform !== 'darwin') app.quit();
 });
 
+app.on('before-quit', () => {
+  stopContentWatcher();
+});
+
 /* ────────────────────────────────────────────────────────────
-   İçerik çözümleme (katmanlı: proje → model → ortak, dil fallback)
+   İçerik çözümleme (yalnızca proje klasörü, dil fallback)
    ──────────────────────────────────────────────────────────── */
 
 function safeReadYaml(p) {
@@ -137,30 +235,55 @@ function detectLangs(roots) {
 }
 
 function listModelIds() {
-  if (!fs.existsSync(CONTENT_MODELS)) return [];
-  return fs.readdirSync(CONTENT_MODELS, { withFileTypes: true })
-    .filter(d => d.isDirectory())
-    .map(d => d.name)
-    .sort();
+  return projectCore.listModels(PROJECT_ROOT);
 }
+
+const PROJECT_DIR_SKIP = new Set(['backup']);
 
 function listProjectDirs() {
   if (!fs.existsSync(PROJECTS_DIR)) return [];
   return fs.readdirSync(PROJECTS_DIR, { withFileTypes: true })
-    .filter(d => d.isDirectory() && projectCore.findProjectYaml(path.join(PROJECTS_DIR, d.name)))
+    .filter(d => {
+      if (!d.isDirectory() || PROJECT_DIR_SKIP.has(d.name.toLowerCase())) return false;
+      const dir = path.join(PROJECTS_DIR, d.name);
+      if (!projectCore.findProjectYaml(dir)) return false;
+      if (projectCore.isModelTemplate(dir)) return false;
+      return true;
+    })
+    .map(d => d.name)
+    .sort();
+}
+
+function listTemplateDirs() {
+  if (!fs.existsSync(PROJECTS_DIR)) return [];
+  return fs.readdirSync(PROJECTS_DIR, { withFileTypes: true })
+    .filter(d => {
+      if (!d.isDirectory() || PROJECT_DIR_SKIP.has(d.name.toLowerCase())) return false;
+      return projectCore.isModelTemplate(path.join(PROJECTS_DIR, d.name));
+    })
     .map(d => d.name)
     .sort();
 }
 
 function guideRoots(guide) {
-  const roots = [];
-  if (guide.projectDir) roots.push(guide.projectDir);
-  if (guide.model) roots.push(path.join(CONTENT_MODELS, guide.model));
-  roots.push(CONTENT_COMMON);
-  return roots;
+  return guide.projectDir ? [guide.projectDir] : [];
 }
 
 function listGuides() {
+  const templates = listTemplateDirs().map(dir => {
+    const projectDir = path.join(PROJECTS_DIR, dir);
+    const doc = safeReadYaml(projectCore.findProjectYaml(projectDir)) || {};
+    const model = String(doc.model || dir).toLowerCase();
+    const guide = { id: 'proje:' + dir, projectDir, model };
+    return {
+      id: guide.id,
+      label: doc.proje_adi || dir.toUpperCase(),
+      type: 'model',
+      model: model.toUpperCase(),
+      diller: detectLangs(guideRoots(guide))
+    };
+  });
+
   const projects = listProjectDirs().map(dir => {
     const projectDir = path.join(PROJECTS_DIR, dir);
     const doc = safeReadYaml(projectCore.findProjectYaml(projectDir)) || {};
@@ -175,75 +298,47 @@ function listGuides() {
     };
   });
 
-  const models = listModelIds().map(m => ({
-    id: 'model:' + m,
-    label: m.toUpperCase(),
-    type: 'model',
-    model: m.toUpperCase(),
-    diller: detectLangs([path.join(CONTENT_MODELS, m), CONTENT_COMMON])
-  }));
-
-  return [...models, ...projects];
+  return [...templates, ...projects];
 }
 
 /* guideId → { type, label, model, projectDir, bolumler, diller } */
 function resolveGuide(guideId) {
   const id = String(guideId || '');
+  if (!id.startsWith('proje:')) return null;
 
-  if (id.startsWith('proje:')) {
-    const dir = id.slice('proje:'.length);
-    const projectDir = path.join(PROJECTS_DIR, dir);
-    const yp = projectCore.findProjectYaml(projectDir);
-    if (!yp) return null;
-    const doc = safeReadYaml(yp) || {};
-    const extendsRel = doc.extends || 'templates/base.yaml';
-    const base = safeReadYaml(path.join(PROJECT_ROOT, extendsRel)) || {};
-    const guide = {
-      type: 'project',
-      label: doc.proje_adi || dir,
-      model: String(doc.model || '').toLowerCase(),
-      projectDir,
-      bolumler: Array.isArray(base.bolumler) ? base.bolumler : [],
-      diller: normLangs(doc.diller)
-    };
-    // Fiziksel olarak var olan dilleri de kat (fallback için)
-    guide.diller = [...new Set(guide.diller.concat(detectLangs(guideRoots(guide))))];
-    return guide;
-  }
+  const dir = id.slice('proje:'.length);
+  const projectDir = path.join(PROJECTS_DIR, dir);
+  const yp = projectCore.findProjectYaml(projectDir);
+  if (!yp) return null;
 
-  const model = id.startsWith('model:') ? id.slice('model:'.length) : id.toLowerCase();
-  const modelDir = path.join(CONTENT_MODELS, model);
-  if (!fs.existsSync(modelDir)) return null;
-  const base = safeReadYaml(path.join(TEMPLATES_DIR, 'base.yaml')) || {};
+  const doc = safeReadYaml(yp) || {};
+  const extendsRel = doc.extends || 'templates/base.yaml';
+  const base = safeReadYaml(path.join(PROJECT_ROOT, extendsRel)) || {};
+  const isTemplate = projectCore.isModelTemplate(projectDir);
   const guide = {
-    type: 'model',
-    label: model.toUpperCase(),
-    model,
-    projectDir: null,
-    bolumler: Array.isArray(base.bolumler) ? base.bolumler : []
+    type: isTemplate ? 'model' : 'project',
+    label: doc.proje_adi || dir,
+    model: String(doc.model || dir).toLowerCase(),
+    projectDir,
+    bolumler: Array.isArray(doc.bolumler) ? doc.bolumler : (Array.isArray(base.bolumler) ? base.bolumler : []),
+    diller: normLangs(doc.diller)
   };
-  guide.diller = detectLangs([modelDir, CONTENT_COMMON]);
+  guide.diller = [...new Set(guide.diller.concat(detectLangs(guideRoots(guide))))];
   return guide;
 }
 
+/* Kılavuz, seçili dilin (sağ üst dil butonu) dosyalarından derlenir.
+   tr → <base>.tr.md, en → <base>.en.md, de → <base>.de.md.
+   Diller ASLA karışmaz: seçili dilin dosyası yoksa/boşsa o bölüm boş kalır,
+   başka dile veya eski (dilsiz) .md dosyasına düşülmez. */
 function resolveContent(roots, folderParts, base, lang) {
   if (!base) return '';
-  const langs = lang === DEFAULT_LANG ? [lang] : [lang, DEFAULT_LANG];
-  for (const L of langs) {
-    for (const root of roots) {
-      const p = path.join(root, ...folderParts, `${base}.${L}.md`);
-      if (fs.existsSync(p)) {
-        const c = fs.readFileSync(p, 'utf8');
-        if (c.trim()) return c;
-      }
-    }
-    if (L !== DEFAULT_LANG) continue;
-    for (const root of roots) {
-      const legacy = path.join(root, ...folderParts, `${base}.md`);
-      if (fs.existsSync(legacy)) {
-        const c = fs.readFileSync(legacy, 'utf8');
-        if (c.trim()) return c;
-      }
+  const L = String(lang || DEFAULT_LANG).toLowerCase();
+  for (const root of roots) {
+    const p = path.join(root, ...folderParts, `${base}.${L}.md`);
+    if (fs.existsSync(p)) {
+      const c = fs.readFileSync(p, 'utf8');
+      if (c.trim()) return c;
     }
   }
   return '';
@@ -316,12 +411,17 @@ function registerIpcHandlers() {
     const roots = guideRoots(guide);
     const tree = buildTree(guide.bolumler, [], roots, lang);
 
+    const projectRel = guide.projectDir
+      ? path.relative(PROJECT_ROOT, guide.projectDir).split(path.sep).join('/')
+      : '';
+
     return {
       ok: true,
       id: guideId,
       label: guide.label,
       model: (guide.model || '').toUpperCase(),
       type: guide.type,
+      projectRel,
       diller: guide.diller,
       lang,
       tree
@@ -452,13 +552,23 @@ document.querySelectorAll('[data-toc-anchor]').forEach(function(el) {
   });
 }
 
+function normalizeImagePathForDisk(src) {
+  if (/^data:/i.test(src)) return null;
+  let s = decodeURIComponent(String(src)).replace(/\\/g, '/');
+  if (s.startsWith('../../assets/')) {
+    s = '../assets/' + s.slice('../../assets/'.length);
+  } else if (!s.startsWith('../') && s.startsWith('assets/')) {
+    s = '../' + s;
+  }
+  return path.resolve(__dirname, s);
+}
+
 function inlineImagesToBase64(html) {
   return html.replace(/<img\b[^>]*\bsrc="([^"]+)"[^>]*>/gi, (tag, src) => {
     if (/^data:/i.test(src)) return tag;
     try {
-      const rel = decodeURIComponent(src);
-      const abs = path.resolve(__dirname, rel);
-      if (!fs.existsSync(abs)) return tag;
+      const abs = normalizeImagePathForDisk(src);
+      if (!abs || !fs.existsSync(abs)) return tag;
       const ext = path.extname(abs).slice(1).toLowerCase();
       const mime = ext === 'svg' ? 'svg+xml' : (ext === 'jpg' ? 'jpeg' : ext);
       const b64 = fs.readFileSync(abs).toString('base64');

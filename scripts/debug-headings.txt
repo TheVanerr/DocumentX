@@ -1,0 +1,5 @@
+01-introduction\03-support-service\support-service.tr.md L74: ## 1.3.5 İletişim öncesi kontrol listesi
+03-overview\02-intended-use\intended-use.tr.md L18: ## 3.2.2 İşlenebilir ürün ve malzeme türleri
+05-assembly\06-comm\comm.tr.md L1: # 5.6 İletişim ve otomasyon arayüzü
+05-assembly\06-comm\comm.tr.md L63: ## 5.6.5 İletişim kontrol listesi
+07-operation\02-machine-start\machine-start.tr.md L60: ## 7.2.6 İlk ürün / kurşun atma

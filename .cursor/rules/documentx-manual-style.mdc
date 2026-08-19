@@ -1,0 +1,95 @@
+---
+description: EN ISO 20607 yazım dili ve prosedür formatı
+alwaysApply: true
+---
+
+# Kılavuz Yazım Dili (ISO 20607)
+
+## İçerik tipine göre stil (EN KRİTİK)
+
+Stili içeriğe göre seç; tek stili tüm kılavuza dayatma:
+
+| İçerik tipi | Stil | ISO |
+|---|---|---|
+| **Prosedür / talimat** | Kısa, emir kipi, numaralı adım; adım başına tek işlem | §6.4 |
+| **Açıklayıcı / kavramsal** | Akıcı, tam paragraf; bağlam + gerekçe + sonuç | §4.4, §6.3 |
+| **Yasal / sorumluluk** | Resmi, gerekçeli tam paragraf | §5.2.1 |
+| **Güvenlik uyarısı** | 4 bileşenli (bkz. aşağı) | §6.5 |
+| **Veri / referans** | Tablo, net sütun | §4.4 |
+
+**Altın kural:** Prosedürde kısalık erdemdir; açıklamada eksiklik kusurdur. Bir konuyu tek cümleyle geçiştirme — *neden* önemli, *hangi koşulda* geçerli, *yapılmazsa ne olur* bilgisini de ver.
+
+## Kalite rubriği (prosedürel olmayan alt bölümler)
+
+En az: (1) giriş paragrafı, (2) ana içerik, (3) gerekçe/bağlam, (4) gerekirse uyarı, (5) çapraz referans. Alt bölüm, konuyu bilmeyen nitelikli teknisyenin "neden / ne zaman / nasıl / ya olmazsa" sorularını yanıtlamalı.
+
+## Başlık hiyerarşisi — en fazla 3 katman (içindekiler)
+
+Numaralandırma en fazla **3 seviye** iner; dördüncü seviye başlık açılmaz:
+
+| Katman | Numara örneği | Markdown | Örnek |
+|--------|---------------|----------|--------|
+| 1 | Bölüm / `X` | `#` | `# 1. GİRİŞ`, `# 5. KURULUM` |
+| 2 | `X.Y` | `##` | `## 5.2 Makine konumlandırma` |
+| 3 | `X.Y.Z` | `##` | `## 5.2.1 Zemin hazırlığı` |
+
+### Bölüm başlığı büyük/küçük harf (zorunlu)
+
+Ana bölüm (`1.`, `2.`, … `14.`) ile alt bölüm (`1.1`, `2.4`, `3.5.1`) başlıklarında farklı yazım kuralı uygulanır. Güncelleme ve yeniden yazımda bu kuralı **her zaman** koru:
+
+| Seviye | Numara | Yazım | Doğru | Yanlış |
+|--------|--------|-------|-------|--------|
+| **Ana bölüm** | `X.` (1–14) | **Tüm harfler BÜYÜK** | `# 1. GİRİŞ`, `# 3. GENEL BAKIŞ`, `# 5. KURULUM` | `# 1. Giriş`, `# 3. Genel bakış` |
+| **Alt bölüm** | `X.Y` | **Yalnızca ilk harf(ler) büyük** (cümle başı) | `## 1.1 Kılavuz hakkında`, `## 2.4 Tehlikeli enerji kontrolü` | `## 1.1 KILAVUZ HAKKINDA` |
+| **Alt alt bölüm** | `X.Y.Z` | Alt bölümle aynı (cümle başı) | `## 3.3.1 Boyut ve ağırlık` | `## 3.3.1 BOYUT VE AĞIRLIK` |
+
+- Ana bölüm başlığında Türkçe karakterler dahil **tüm kelimeler** büyük yazılır: `GİRİŞ`, `GÜVENLİK`, `BAKIM`.
+- Alt bölüm başlıklarında bağlaç/edat küçük kalabilir; anlam bozulmuyorsa cümle başı yeterlidir.
+- İçindekiler ve çapraz referans metninde de aynı kural geçerlidir.
+
+**Yasak:** `X.Y.Z.W` (ör. `5.2.1.1`, `####` başlık). Dördüncü düzey içerik, bir üst başlığın (`X.Y.Z`) altında **kalın metin** veya numaralı liste olarak yazılır; yeni başlık açılmaz.
+
+- `###` ve `####` kullanma.
+- Prosedür alt başlıkları (`Adım 3`, `Test prosedürü`, `Operatör` vb.) → `**Kalın metin**` satırı.
+- Üç parçalı numara (`2.4.1`) varsa `## 2.4.1 …` olarak ver; alt detay için tekrar numaralandırma yapma.
+
+## Ton ve cümle yapısı
+
+- **Emir kipi + aktif ses** (prosedürde): "Düğmeye basın" — "basılmalıdır" değil.
+- Prosedürde madde başına **tek işlem**; kronolojiyi bozan "önce/sonra/ardından" yerine **numaralı liste** (1'den başla).
+- Açıklayıcı metinde tam, bağlam veren cümleler kur; telgraf üslubundan kaçın.
+- Aynı parça/eylem için projede **tek terim** kullan.
+- SI birimleri; tutarlı yazım.
+
+## Prosedür yapısı
+
+Her prosedür bir **hedef başlık** ile başlar (ör. "Tank boşaltma", "Filtre sökme").
+
+Adım formatı:
+1. Numara
+2. Emir cümlesi
+3. Gerekirse kısa gerekçe/açıklama
+4. Gerekirse beklenen sonuç veya anormal durum tespiti
+
+## Uyarılar (ISO 20607 §6.5)
+
+Uyarı şunları içermeli:
+1. Sinyal kelimesi (TEHLİKE / UYARI / DİKKAT)
+2. Tehlike türü
+3. Olası yaralanma/hasar
+4. Nasıl önlenir
+
+## Kalıntı riskler (§4.10)
+
+- Genel ifadelerden kaçın; **spesifik** kalıntı riskleri yaz.
+- Makinedeki sinyal/lamba/etiket anlamlarını açıkla (ISO 7010 piktogramları).
+
+## Yasaklar (anti-pattern)
+
+- Her konuyu tek cümlelik maddeye indirgemek (açıklayıcı bölümlerde).
+- Temel mühendislik/eğitim vermek (kılavuz kapsamı dışı).
+- Bilinmeyen teknik değer uydurmak → `[EKSİK]` bırak.
+- "Uygun/gerekli/yeterli" gibi ölçülemeyen ifadeler → somut değer ver.
+- Aynı prosedürü/LOTO adımlarını birden fazla bölümde kopyalamak.
+
+Ayrıntılı yapı ve derinlik yönergeleri için kök dizindeki `CURSOR USER MANUEL TEMPLATE.md` (Bölüm A + Bölüm D kalite kontrol listesi).

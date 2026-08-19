@@ -1,0 +1,560 @@
+# =============================================================================
+# PYT — MAKİNE VERİ DOSYASI (SSOT)
+# =============================================================================
+# Bu dosya kılavuz yazımının TEK kaynağıdır. Bölüm .md dosyaları buradan üretilir.
+# Doldurma: ':' sonrasına yaz. Bilinmiyorsa [EKSİK] bırak. Uydurma yapma.
+# Son güncelleme:
+# Hazırlayan:
+# Onaylayan:
+# =============================================================================
+
+# =============================================================================
+# 0 — MAKİNE VE ÜRETİCİ BİLGİLERİ
+# =============================================================================
+
+[PROJE]
+Makine ticari adı: 
+Makine model kodu: PYT
+Üretim yılı: 
+İmalat / sevk tarihi: 
+
+[URETICI]
+Üretici firma adı: CNK ELEKTRONİK MAKİNE SANAYİ AŞ
+Fabrika adresi: 1.Organize Sanayi Bölgesi Prof. Orhan Işık Caddesi No:8
+İlçe: Sincan
+Şehir: Ankara
+Ülke: Türkiye
+Telefon: +90 312 267 30 15
+Fax: +90 312 267 30 11
+Web sitesi: https://dolfintr.com
+E-posta: dolfin@dolfintr.com
+Yetkili servis / teknik destek: CNK ELEKTRONİK MAKİNE SANAYİ AŞ — yukarıdaki iletişim kanalları
+
+[MODEL_VARYANTLARI]
+# Bu model ailesindeki tüm varyantlar — kılavuzda kapasite/teknik tablolarda kullanılır
+Varyant 1 (PYT 40): 
+Varyant 2 (PYT 90): 
+Varyant 3 (PYT 750): 
+Varyant 4 (PYT 800): 
+
+# =============================================================================
+# 01 — GİRİŞ (introduction)
+# =============================================================================
+
+[GIRIS_GENEL]
+Kılavuz kapsamı (hangi makine, hangi opsiyonlar): 
+Kılavuz hedef kitlesi (operatör / bakım / kurulum): 
+Makine tipi kısa tanım (1-2 cümle): 
+
+# =============================================================================
+# 02 — GÜVENLİK (safety)
+# =============================================================================
+
+
+[ACIL_DURDURMA]
+Acil stop butonu adedi: 
+Acil stop konumları (fiziksel yer): 
+Acil stop reset prosedürü: 
+Acil stop sonrası makine durumu: 
+
+
+[GUVENLIK_CIT]
+Emniyet kapısı / bariyer sayısı: 
+Kapı switch tipi / marka: 
+Makine stop kategorisi (Cat.): 
+Işık perdesi var mı (Evet/Hayır — tip / marka): 
+
+# =============================================================================
+# 03 — GENEL BAKIŞ (overview)
+# =============================================================================
+
+# --- 03.1 Makine tanımı (machine-description) ---
+
+
+[MAKINE_TANIMI]
+Makinenin ana işlevi: 
+Makine tipi (ör. dolum / paketleme / yıkama / konveyör): 
+Proses akışı özeti (adım adım): 
+Makine bileşenleri listesi (ana modüller): 
+Opsiyon / varyant listesi (bu projeye özel): 
+
+# --- 03.2 Amaçlanan kullanım (intended-use) ---
+
+
+[AMACLANAN_KULLANIM]
+Amaçlanan kullanım alanı: 
+İşlenebilir ürün tipleri: 
+İşlenemez / yasak ürün tipleri: 
+Ortam koşulları (iç mekan / dış mekan): 
+Ortam sıcaklığı min / max (°C): 
+Ortam nemi max (% RH)30% -50%
+Operatör sayısı (min / max): 
+Yetkinlik / eğitim gereksinimi: 
+
+# --- 03.3 Teknik özellikler (machine-spec) ---
+
+
+[BOYUT_AGIRLIK]
+# Ozellik | PYT 40 | PYT 90 | PYT 750 | PYT 800
+Dış genişlik W (mm) |  |  |  | 
+Dış uzunluk L (mm) |  |  |  | 
+Dış yükseklik H — normal (mm) |  |  |  | 
+Boş ağırlık — kuru (kg) |  |  |  | 
+Çalışma ağırlığı — dolu (kg) |  |  |  | 
+Şase tipi (sabit ayak / ayarlanabilir ayak / ankraj) |  |  |  | 
+
+[KAPASITE_PROSES]
+# Ozellik | PYT 40 | PYT 90 | PYT 750 | PYT 800
+Nominal kapasite (adet/saat veya kg/saat) |  |  |  | 
+Maksimum kapasite (adet/saat) |  |  |  | 
+Minimum kapasite (adet/saat) |  |  |  | 
+Ürün formatı / ambalaj tipi |  |  |  | 
+Ürün boyutu min (mm) |  |  |  | 
+Ürün boyutu max (mm) |  |  |  | 
+Ürün ağırlığı min (g) |  |  |  | 
+Ürün ağırlığı max (g) |  |  |  | 
+Proses adım sayısı |  |  |  | 
+Proses adı 1 |  |  |  | 
+Proses adı 2 |  |  |  | 
+Proses adı 3 |  |  |  | 
+Döngü süresi nominal (sn) |  |  |  | 
+
+[ELEKTRIK]
+# Ozellik | PYT 40 | PYT 90 | PYT 750 | PYT 800
+Besleme gerilimi (V) |  |  |  | 
+Besleme frekansı (Hz) |  |  |  | 
+Faz sayısı |  |  |  | 
+Toplam kurulu güç (kW) |  |  |  | 
+Toplam kurulu güç — ısıtma dahil (kW) |  |  |  | 
+Maksimum akım çekişi (A) |  |  |  | 
+Güç faktörü (cos φ) |  |  |  | 
+Kısa devre akımı / ICC gereksinimi (kA) |  |  |  | 
+Besleme konfigürasyonu (3P+N+PE / vb.) |  |  |  | 
+Ana şalter tipi / In (A) |  |  |  | 
+Ana şalter marka |  |  |  | 
+Toplam sigorta / devre kesici değeri (A) |  |  |  | 
+UPS / jeneratör gereksinimi (varsa) |  |  |  | 
+
+[MOTOR_SURUCU_LISTESI]
+# Her varyant icin motor listesi — satir: Ad | Güç (kW) | Devir (rpm) | Marka | Model
+## PYT 40
+Motor 1: 
+Motor 2: 
+Motor 3: 
+
+## PYT 90
+Motor 1: 
+Motor 2: 
+Motor 3: 
+
+## PYT 750
+Motor 1: 
+Motor 2: 
+Motor 3: 
+
+## PYT 800
+Motor 1: 
+Motor 2: 
+Motor 3: 
+
+[SIKIŞTIRILMIŞ_HAVA_SU]
+# Ozellik | PYT 40 | PYT 90 | PYT 750 | PYT 800
+Basınçlı hava girişi (bar) |  |  |  | 
+Su girişi basıncı (bar) |  |  |  | 
+Su sıcaklığı min / max (°C) |  |  |  | 
+Su kalitesi / filtre gereksinimi |  |  |  | 
+Drain / atık su hattı çap (mm) |  |  |  | 
+
+[ORTAM_KOSULLARI]
+# Ozellik | PYT 40 | PYT 90 | PYT 750 | PYT 800
+Çalışma sıcaklığı min / max (°C) |  |  |  | 
+Depolama sıcaklığı min / max (°C) |  |  |  | 
+Göreceli nem min / max (%) |  |  |  | 
+Koruma sınıfı (IP) |  |  |  | 
+Gürültü seviyesi (dB(A)) |  |  |  | 
+
+# --- 03.4 Makine kontrolleri (machine-controls) ---
+
+[KONTROLLER]
+Ana kontrol panosu konumu: 
+Pano koruma sınıfı (IP): 
+Pano boyutları W×H×D (mm): 
+HMI ekran boyutu (inch): 
+HMI marka / model: 
+PLC marka / model: 
+PLC CPU model: 
+I/O modül özeti: 
+Ana şalter konumu: 
+Start / Stop düğme konumu: 
+Acil stop konumu: 
+Mod seçici (Manuel / Otomatik / Bakım): 
+Jog / inching düğmeleri: 
+Sinyal lambaları listesi: 
+Operatör paneli dilleri: 
+Şifre seviyeleri (operatör / bakım / admin): 
+
+
+[KONTROL_FONKSIYONLARI]
+Ana ekran menü yapısı: 
+Alarm ekranı davranışı: 
+Reçete / program kayıt sayısı: 
+Trend / log kayıt süresi: 
+Uzaktan erişim (Evet/Hayır — protokol): 
+
+# --- 03.5 Makine yerleşimi (machine-layout) ---
+
+
+[LAYOUT]
+Genel yerleşim planı dosya adı: 
+Operatör tarafı (ön / sol / sağ): 
+Besleme tarafı (giriş yönü): 
+Boşaltma tarafı (çıkış yönü): 
+Bakım erişim bölgeleri: 
+Minimum etraf boşluğu — ön (mm): 
+Minimum etraf boşluği — arka (mm): 
+Minimum etraf boşluğu — yan (mm): 
+Minimum tavan yüksekliği (mm): 
+Vinç / forklift erişim noktaları: 
+Ağırlık merkezi notu: 
+
+# =============================================================================
+# 04 — TAŞIMA (transport)
+# =============================================================================
+
+
+[TASIMA]
+Taşıma ağırlığı — demonte max parça (kg): 
+Taşıma ağırlığı — montajlı (kg): 
+Ambalaj tipi (kasa / shrink / konteyner): 
+Kaldırma aparatı / travers referans çizimi: 
+Forklift çatal girişi var mı (Evet/Hayır): 
+Taşıma sırasında sabitleme / bağlama: 
+Nem koruma / korozyon koruma: 
+Taşıma sıcaklığı aralığı (°C): 
+Taşıma yüksekliği max (m — deniz / kara): 
+
+
+[DEPOLAMA]
+Depolama pozisyonu (dikey / yatay): 
+Max depolama süresi (ay): 
+Depolama ortam koşulları: 
+
+# =============================================================================
+# 05 — MONTAJ (assembly)
+# =============================================================================
+
+
+[MONTAJ_GENEL]
+Montaj süresi tahmini (saat / gün): 
+Montaj ekip sayısı: 
+Gerekli vinç / ekipman: 
+Montaj alanı min boyut (m × m): 
+Zemin düzgünlük toleransı (mm/m): 
+Zemin mukavemet gereksinimi: 
+
+
+[MONTAJ_ADIMLARI]
+# Her adım: Sıra | Açıklama | Tork / tolerans | Not
+Adım 1: 
+Adım 2: 
+Adım 3: 
+Adım 4: 
+Adım 5: 
+Adım 6: 
+Adım 7: 
+Adım 8: 
+
+[KONUMLANDIRMA]
+Hizalama toleransı (mm): 
+Seviye ayar mekanizması (ayak tipi): 
+
+
+[KURULUM_TEST]
+Mekanik kurulum test checklist: 
+Elektrik devreye alma test checklist: 
+Pnömatik / hidrolik dolum test: 
+Boş koşu test süresi (dk): 
+Güvenlik fonksiyon test listesi: 
+
+
+[ILETISIM]
+Fieldbus / protokol (Profinet / EtherCAT / Modbus / vb.): 
+Üst sistem (MES / SCADA) bağlantısı: 
+I/O listesi dosya referansı: 
+
+# =============================================================================
+# 06 — AYARLAR (settings)
+# =============================================================================
+
+
+[MEKANIK_AYARLAR]
+Mekanik ayar noktaları listesi: 
+Referans / home pozisyon ayarı: 
+Zincir / kayış gerginlik değeri: 
+Mesafe / limit switch ayarları: 
+Nozzle / doldurma kafası ayar aralığı (mm): 
+Format değişim prosedürü özeti: 
+
+
+[GUVENLIK_AYARLARI]
+Emniyet kapısı bypass (varsa — sadece bakım): 
+Işık perdesi ayar mesafesi (mm): 
+Acil stop test periyodu: 
+
+
+[ELEKTRIK_AYARLARI]
+Motor yönü / faz kontrolü: 
+Encoder / feedback ayarı: 
+Analog ölçeklendirme (basınç / sıcaklık): 
+Tarih / saat / dil ayarı: 
+
+
+[PNEOMATIK_AYARLAR]
+Regülatör basınç ayarı (bar): 
+Silindir hız ayarı: 
+Sensör ON/OFF gecikmeleri (ms): 
+
+# =============================================================================
+# 07 — OPERASYON (operation)
+# =============================================================================
+
+
+[CALISMA_MODLARI]
+Manuel mod açıklaması: 
+Otomatik mod açıklaması: 
+Bakım / setup modu: 
+Step / tek adım modu: 
+Mod geçiş koşulları: 
+
+
+[BASLATMA]
+Devreye alma ön koşulları (checklist): 
+Güç açma sırası: 
+Hava / su / vakum açma: 
+Isıtma ön ısınma süresi (dk): 
+Start öncesi kontrol listesi: 
+İlk ürün / kurşun atma prosedürü: 
+
+
+[KAPATMA]
+Normal stop prosedürü: 
+Acil stop sonrası yeniden başlatma: 
+Güç kapatma sırası: 
+Uzun süreli durdurma (hafta sonu) prosedürü: 
+
+
+[OPERASYON_SEKANS]
+Otomatik cycle adım 1: 
+Otomatik cycle adım 2: 
+Otomatik cycle adım 3: 
+Otomatik cycle adım 4: 
+Otomatik cycle adım 5: 
+Cycle süresi nominal (sn): 
+Ürün giriş senaryosu: 
+Ürün çıkış senaryosu: 
+Hata durumunda makine davranışı: 
+
+
+[KRONOLOJI]
+Günlük operasyon zaman çizelgesi: 
+Vardiya devir teslim maddeleri: 
+Shift başlangıç kontrol listesi: 
+
+
+[OPERASYON_DIGER]
+Format / ürün değişim süresi (dk): 
+Fire / hurda yönetimi: 
+Operatör müdahale noktaları: 
+
+# =============================================================================
+# 08 — KAPASİTE (capacity)
+# =============================================================================
+
+
+[URUN_KAPASITE]
+# Ozellik | PYT 40 | PYT 90 | PYT 750 | PYT 800
+Nominal kapasite tablosu (ürün × adet/saat) |  |  |  | 
+Test edilen kapasite (adet/saat) |  |  |  | 
+Kapasite test koşulları |  |  |  | 
+Maksimum sürekli çalışma süresi (saat/gün) |  |  |  | 
+
+[OZEL_KURULUM]
+# Varyant bazli urun parametreleri
+# Varyant | Ürün A | Ürün B | Ürün C | Reçete no listesi
+PYT 40 | | | | 
+PYT 90 | | | | 
+PYT 750 | | | | 
+PYT 800 | | | | 
+
+[BAKIM_GENEL]
+Bakım felsefesi (önleyici / kestirimci): 
+Bakım personeli yeterlilik seviyesi: 
+Lubrication chart dosya referansı: 
+
+
+[BAKIM_PERIYOT]
+Günlük bakım maddeleri: 
+Haftalık bakım maddeleri: 
+Aylık bakım maddeleri: 
+250 saat bakım maddeleri: 
+500 saat bakım maddeleri: 
+1000 saat bakım maddeleri: 
+Yıllık bakım maddeleri: 
+
+
+[BAKIM_YAGLAMA]
+Yağlama noktası listesi (konum / yağ tipi / periyot): 
+Gres tipi: 
+Redüktör yağ değişim: 
+
+
+[BAKIM_YEDEK_PARCA]
+# Varyant | Kritik yedek parça | Önerilen stok | Sipariş kodu
+PYT 40 | | | 
+PYT 90 | | | 
+PYT 750 | | | 
+PYT 800 | | | 
+
+[TEMIZLIK]
+Temizlik tipi (kuru / ıslak / CIP / COP): 
+Günlük temizlik prosedürü: 
+Haftalık derin temizlik: 
+Kullanılan temizlik maddeleri (onaylı liste): 
+Yasak temizlik maddeleri: 
+Dezenfeksiyon prosedürü: 
+Temizlik sonrası kurutma: 
+Atık su / kimyasal bertaraf: 
+
+# =============================================================================
+# 11 — ARIZA GİDERME (troubleshooting)
+# =============================================================================
+
+
+[ARIZA_GENEL]
+# Alarm kod listesi — her satir: - Error-XXX Açıklama
+- Error-: 
+- Error-: 
+- Error-: 
+HMI alarm metinleri dili: 
+Servis çağrısı kriterleri: 
+
+[ARIZA_TABLO]
+# Format: Belirti | Olası neden | Kontrol | Çözüm
+Arıza 1 belirti: 
+Arıza 1 neden: 
+Arıza 1 çözüm: 
+Arıza 2 belirti: 
+Arıza 2 neden: 
+Arıza 2 çözüm: 
+Arıza 3 belirti: 
+Arıza 3 neden: 
+Arıza 3 çözüm: 
+
+[ELEKTRIK_ARIZA]
+Faz kaybı davranışı: 
+Motor koruma trip: 
+Inverter alarm kodları özeti: 
+Sensör kablo renk kodu: 
+
+
+[HIDROLIK_ARIZA]
+Basınç düşük alarm: 
+Yağ kaçağı noktaları: 
+Pompa sesi anormal: 
+
+
+[PNEOMATIK_ARIZA]
+Basınç düşük: 
+Silindir yavaş / takılma: 
+Valf bobini arıza: 
+
+
+[SENSOR_ARIZA]
+Kritik sensör listesi (tip / konum): 
+Sensör LED / durum göstergesi: 
+
+
+# =============================================================================
+# 12 — DEMONTAJ (dismantle)
+# =============================================================================
+
+
+[DEMONTAJ]
+Demontaj ön koşulları: 
+Enerji izolasyon prosedürü (LOTO): 
+Demontaj sırası: 
+Geri dönüşüm / bertaraf talimatı: 
+Tehlikeli madde (yağ / akü / kimyasal): 
+Çevresel bertaraf gereksinimleri: 
+
+
+[DEVRE_DISI]
+Kalıcı devre dışı bırakma: 
+Geçici devre dışı bırakma: 
+
+
+[HURDA]
+Hurda değerlendirme: 
+Parça geri dönüşüm malzemeleri: 
+
+# =============================================================================
+# 13 — DÖKÜMANLAR (documents)
+# =============================================================================
+
+
+[DOKUMANLAR]
+Elektrik şeması dosya adı / rev: 
+Pnömatik şema dosya adı / rev: 
+Hidrolik şema dosya adı / rev: 
+Layout çizimi dosya adı / rev: 
+Parça listesi (BOM) dosya adı / rev: 
+I/O listesi dosya adı / rev: 
+PLC program yedek dosya adı: 
+HMI proje yedek dosya adı: 
+CE dosyası referansı: 
+Kalibrasyon sertifikaları: 
+P&ID dosya adı / rev: 
+
+
+[CIZIMLER]
+Genel montaj çizimi: 
+Kaldırma noktaları çizimi: 
+Zemin ankraj çizimi: 
+Teslim çizim paketi: 
+
+
+[PARCA_LISTESI]
+Mekanik parça listesi referansı: 
+Elektrik parça listesi referansı: 
+Wear part / aşınan parça listesi: 
+
+
+# =============================================================================
+# 14 — EKLER / SÖZLÜK / İNDEKS (index)
+# =============================================================================
+
+
+[EKLER]
+Ek A — Alarm listesi: 
+Ek B — Parametre listesi: 
+Ek C — Reçete örnekleri: 
+Ek D — Garanti belgesi: 
+
+
+[SOZLUK]
+Terim 1 / açıklama: 
+Terim 2 / açıklama: 
+Terim 3 / açıklama: 
+Kısaltmalar (PLC, HMI, LOTO, RFID, P&ID, BOM vb.): 
+
+
+[INDEKS]
+Anahtar kelime listesi (opsiyonel): 
+
+# =============================================================================
+# SON — DOSYA SONU
+# =============================================================================
+
+# =============================================================================
+# SON — DOSYA SONU
+# =============================================================================

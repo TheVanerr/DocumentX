@@ -13,7 +13,7 @@ For periodic maintenance reference, see Section **9.1.3**.
 
 ---
 
-## Section Contents
+## Section contents
 
 | Section | Title | Topic |
 |---------|-------|-------|

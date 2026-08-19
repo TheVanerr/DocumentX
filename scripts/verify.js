@@ -1,12 +1,10 @@
-/* main.js'teki çözümleme mantığını taklit ederek yeni mimariyi doğrular. */
+/* main.js'teki çözümleme mantığını taklit ederek proje-tek-kaynak mimarisini doğrular. */
 const fs = require('fs');
 const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const yaml = require(path.join(ROOT, 'codes', 'node_modules', 'js-yaml'));
 const projectCore = require(path.join(ROOT, 'scripts', 'project-core'));
 
-const CONTENT_COMMON = path.join(ROOT, 'content', '_common');
-const CONTENT_MODELS = path.join(ROOT, 'content', '_models');
 const PROJECTS_DIR = path.join(ROOT, 'projects');
 const DEFAULT_LANG = 'tr';
 
@@ -36,12 +34,11 @@ function walk(items, dirParts, roots, lang, out) {
 function testGuide(name, roots, lang) {
   const out = [];
   walk(base.bolumler, [], roots, lang, out);
-  const common = out.filter(o => o.from.includes('_common')).length;
-  const model = out.filter(o => o.from.includes('_models')).length;
+  const legacy = out.filter(o => o.from.includes('_common') || o.from.includes('_models')).length;
   const proj = out.filter(o => o.from.startsWith('projects')).length;
   const mixed = out.filter(o => o.lang !== lang).length;
-  console.log(`\n[${name}] lang=${lang} → ${out.length} dolu bölüm  (ortak:${common} model:${model} proje:${proj} karisik:${mixed})`);
-  return { n: out.length, mixed, out };
+  console.log(`\n[${name}] lang=${lang} → ${out.length} dolu bölüm  (proje:${proj} legacy:${legacy} karisik:${mixed})`);
+  return { n: out.length, mixed, legacy, out };
 }
 
 const projYaml = projectCore.findProjectYaml(path.join(PROJECTS_DIR, '1726050-ALPER-KNV-30'));
@@ -50,20 +47,19 @@ if (!projYaml) {
   process.exit(1);
 }
 const projDoc = yaml.load(fs.readFileSync(projYaml, 'utf8'));
-const projRoots = [
-  path.join(PROJECTS_DIR, '1726050-ALPER-KNV-30'),
-  path.join(CONTENT_MODELS, projDoc.model),
-  CONTENT_COMMON
-];
+const projRoots = [path.join(PROJECTS_DIR, '1726050-ALPER-KNV-30')];
 
 const rTr = testGuide('PROJE 1726050 TR', projRoots, 'tr');
 const rEn = testGuide('PROJE 1726050 EN', projRoots, 'en');
 const rDe = testGuide('PROJE 1726050 DE', projRoots, 'de');
 
-const nVdl = testGuide('MODEL vdl', [path.join(CONTENT_MODELS, 'vdl'), CONTENT_COMMON], 'tr').n;
-const nLym = testGuide('MODEL lym', [path.join(CONTENT_MODELS, 'lym'), CONTENT_COMMON], 'tr').n;
+const vdlDir = path.join(PROJECTS_DIR, 'vdl');
+const nVdl = fs.existsSync(projectCore.findProjectYaml(vdlDir) || '')
+  ? testGuide('SABLON vdl', [vdlDir], 'tr').n
+  : 0;
 
-const ok = rTr.n > 30 && rTr.n === rEn.n && rTr.n === rDe.n && rEn.mixed === 0 && rDe.mixed === 0;
+const ok = rTr.n > 30 && rTr.n === rEn.n && rTr.n === rDe.n
+  && rEn.mixed === 0 && rDe.mixed === 0 && rTr.legacy === 0;
 console.log('\nSONUC:', ok ? 'OK ✓' : 'KONTROL ET');
 console.log('yaml:', path.relative(ROOT, projYaml), '| diller:', (projDoc.diller || []).join(','));
-console.log('vdl/lym:', nVdl, nLym);
+console.log('sablon vdl:', nVdl);

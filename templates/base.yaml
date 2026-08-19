@@ -1,8 +1,6 @@
-# Ortak kilavuz iskeleti (dil ve modelden bagimsiz).
-# 'dosya' = uzantisiz temel ad. Cozumleyici sirayla dener:
+# Kilavuz bolum iskeleti (dil ve modelden bagimsiz).
+# 'dosya' = uzantisiz temel ad. Cozumleyici yalnizca proje klasorune bakar:
 #   projects/<proje>/<yol>/<dosya>.<dil>.md
-#   content/_models/<model>/<yol>/<dosya>.<dil>.md
-#   content/_common/<yol>/<dosya>.<dil>.md
 # Dil bulunamazsa varsayilan dile (tr) duser.
 
 bolumler:

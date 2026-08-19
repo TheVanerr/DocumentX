@@ -1,10 +1,10 @@
-# 6.4. Hydraulic Settings
+# 6.4 Hydraulic settings
 
 The machine has **no hydraulic system**. There are **no** hydraulic adjustments to be performed by the operator or authorized personnel.
 
 ---
 
-## 6.4.1. Hydraulic Settings Status
+## 6.4.1 Hydraulic settings status
 
 | Parameter | Value / Description |
 |-----------|---------------------|

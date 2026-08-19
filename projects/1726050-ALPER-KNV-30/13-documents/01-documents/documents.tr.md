@@ -1,10 +1,10 @@
-# 13.1. Doküman Listesi
+# 13.1 Doküman listesi
 
 Aşağıdaki dokümanlar **ayrı evrak** olarak teslim edilir. Dosya adı/rev bilgisi teslim paketinde yer alır.
 
 ---
 
-## 13.1.1. Şema ve Plan Dokümanları
+## 13.1.1 Şema ve plan dokümanları
 
 | Doküman | Dosya adı / rev | Teslim |
 |---------|-----------------|--------|
@@ -17,7 +17,7 @@ Aşağıdaki dokümanlar **ayrı evrak** olarak teslim edilir. Dosya adı/rev bi
 
 ---
 
-## 13.1.2. Parça Listesi ve Yedekler
+## 13.1.2 Parça listesi ve yedekler
 
 | Doküman | Dosya adı / rev | Teslim |
 |---------|-----------------|--------|
@@ -27,7 +27,7 @@ Aşağıdaki dokümanlar **ayrı evrak** olarak teslim edilir. Dosya adı/rev bi
 
 ---
 
-## 13.1.3. Sertifika ve Uygunluk
+## 13.1.3 Sertifika ve uygunluk
 
 | Doküman | Dosya adı / rev | Teslim |
 |---------|-----------------|--------|
@@ -36,7 +36,7 @@ Aşağıdaki dokümanlar **ayrı evrak** olarak teslim edilir. Dosya adı/rev bi
 
 ---
 
-## 13.1.4. Kılavuz İçi Referanslar
+## 13.1.4 Kılavuz içi referanslar
 
 | Konu | Referans |
 |------|----------|

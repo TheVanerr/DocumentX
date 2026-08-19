@@ -10,7 +10,7 @@ Makinede **operatör bulunmaz**; arıza müdahalesi **bakım personeli** tarafı
 
 ---
 
-## Bölüm İçeriği
+## Bölüm içeriği
 
 | Bölüm | Başlık | Konu |
 |-------|--------|------|

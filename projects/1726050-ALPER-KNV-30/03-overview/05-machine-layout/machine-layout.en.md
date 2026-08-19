@@ -1,4 +1,4 @@
-# 3.5. Machine Layout
+# 3.5 Machine layout
 
 **Reference drawing:** `1726050-ALPER-KNV 30 LAYOUT.pdf`
 
@@ -9,7 +9,7 @@ The layout drawing is available in the project assets folder: `1726050-ALPER-KNV
 
 ---
 
-## 3.5.1. Orientation Definitions and Operator Side
+## 3.5.1 Orientation definitions and operator side
 
 | Definition | Direction / Location |
 |------------|---------------------|
@@ -25,7 +25,7 @@ Parts are loaded from the left, pass through process zones along the conveyor, a
 
 ---
 
-## 3.5.2. Minimum Clearances and Ceiling Height
+## 3.5.2 Minimum clearances and ceiling height
 
 The following minimum clearances shall be provided when planning the installation area:
 
@@ -43,7 +43,7 @@ Minimum assembly area size: **5 m × 3 m**. Floor flatness tolerance: **0.5 mm/m
 
 ---
 
-## 3.5.3. Maintenance Access Zones
+## 3.5.3 Maintenance access zones
 
 | Zone | Access |
 |------|--------|
@@ -56,7 +56,7 @@ For periodic maintenance, filter cleaning, and mechanical intervention, covers o
 
 ---
 
-## 3.5.4. Transport, Forklift and Centre of Gravity
+## 3.5.4 Transport, forklift and centre of gravity
 
 | Parameter | Value / Note |
 |-----------|--------------|

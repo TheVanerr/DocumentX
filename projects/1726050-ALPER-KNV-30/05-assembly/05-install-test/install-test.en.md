@@ -1,10 +1,10 @@
-# 5.5. Installation Verification and Testing
+# 5.5 Installation verification and testing
 
 Tests shall be performed after Section **5.4** safety tests are completed. Do not proceed to operation until all checks are **OK**.
 
 ---
 
-## 5.5.1. Mechanical Installation Test
+## 5.5.1 Mechanical installation test
 
 | # | Check | Expected result | Status |
 |---|-------|-----------------|--------|
@@ -17,7 +17,7 @@ The mechanical installation test is performed after Section 5.2 positioning and 
 
 ---
 
-## 5.5.2. Electrical Commissioning Test
+## 5.5.2 Electrical commissioning test
 
 | # | Check | Expected result | Status |
 |---|-------|-----------------|--------|
@@ -32,7 +32,7 @@ Electrical tests are performed after energisation via the panel. Phase rotation 
 
 ---
 
-## 5.5.3. Pneumatic and Media Connection Test
+## 5.5.3 Pneumatic and media connection test
 
 | # | Check | Expected result | Status |
 |---|-------|-----------------|--------|
@@ -51,7 +51,7 @@ Connection parameters:
 
 ---
 
-## 5.5.4. Safety Function Test
+## 5.5.4 Safety function test
 
 | # | Check | Expected result | Status |
 |---|-------|-----------------|--------|
@@ -66,7 +66,7 @@ For detailed emergency stop test procedure, see Section **5.4**.
 
 ---
 
-## 5.5.5. Empty Run Test
+## 5.5.5 Empty run test
 
 | Parameter | Value |
 |-----------|-------|
@@ -89,7 +89,7 @@ If the empty run test is successful, the machine is accepted as **ready for oper
 
 ---
 
-## 5.5.6. Installation Verification Summary Checklist
+## 5.5.6 Installation verification summary checklist
 
 | Section | Test | Completed |
 |---------|------|:---------:|

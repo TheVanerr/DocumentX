@@ -13,7 +13,7 @@ For cleaning procedures, see Section **10**.
 
 ---
 
-## Section Contents
+## Section contents
 
 | Section | Title | Topic |
 |---------|-------|-------|

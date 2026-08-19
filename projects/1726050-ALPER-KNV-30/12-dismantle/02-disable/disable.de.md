@@ -1,8 +1,8 @@
-# 12.2. Außerbetriebnahme
+# 12.2 Außerbetriebnahme
 
 ---
 
-## 12.2.1. Dauerhafte Außerbetriebnahme
+## 12.2.1 Dauerhafte Außerbetriebnahme
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -20,7 +20,7 @@ Bei endgültiger Stilllegung:
 
 ---
 
-## 12.2.2. Temporäre Außerbetriebnahme
+## 12.2.2 Temporäre Außerbetriebnahme
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|

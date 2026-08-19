@@ -16,7 +16,7 @@ For technical dimensions and process summary, see Section **3.3.2**.
 
 ---
 
-## Section Contents
+## Section contents
 
 | Section | Title | Topic |
 |---------|-------|-------|

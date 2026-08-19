@@ -4,7 +4,7 @@ The primary function of the machine is **removal of oil and contamination** rema
 
 ---
 
-## Section Contents
+## Section contents
 
 The following subsections provide progressively detailed information about the machine:
 
@@ -18,7 +18,7 @@ The following subsections provide progressively detailed information about the m
 
 ---
 
-## Machine Summary
+## Machine summary
 
 | Parameter | Value |
 |-----------|-------|

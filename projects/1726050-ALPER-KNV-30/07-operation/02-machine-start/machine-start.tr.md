@@ -1,10 +1,10 @@
-# 7.2. Makine Başlatma
+# 7.2 Makine başlatma
 
 Makinede HMI ekranında **1 adet hazırlık butonu** bulunur. Start verilmeden önce hazırlık tamamlanmalıdır.
 
 ---
 
-## 7.2.1. Devreye Alma Ön Koşulları
+## 7.2.1 Devreye alma ön koşulları
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -17,7 +17,7 @@ Makinede HMI ekranında **1 adet hazırlık butonu** bulunur. Start verilmeden �
 
 ---
 
-## 7.2.2. Güç Açma Sırası
+## 7.2.2 Güç açma sırası
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -25,7 +25,7 @@ Makinede HMI ekranında **1 adet hazırlık butonu** bulunur. Start verilmeden �
 
 ---
 
-## 7.2.3. Hava / Su / Vakum Açma
+## 7.2.3 Hava / su / vakum açma
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -33,7 +33,7 @@ Makinede HMI ekranında **1 adet hazırlık butonu** bulunur. Start verilmeden �
 
 ---
 
-## 7.2.4. Isıtma Ön Isınma
+## 7.2.4 Isıtma ön isınma
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -41,7 +41,7 @@ Makinede HMI ekranında **1 adet hazırlık butonu** bulunur. Start verilmeden �
 
 ---
 
-## 7.2.5. Start Öncesi Kontrol Listesi
+## 7.2.5 Start öncesi kontrol listesi
 
 | # | Kontrol | Durum |
 |---|---------|-------|
@@ -57,7 +57,7 @@ Makinede HMI ekranında **1 adet hazırlık butonu** bulunur. Start verilmeden �
 
 ---
 
-## 7.2.6. İlk Ürün / Kurşun Atma
+## 7.2.6 İlk ürün / kurşun atma
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|

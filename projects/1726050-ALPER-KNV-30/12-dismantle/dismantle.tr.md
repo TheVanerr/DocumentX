@@ -9,7 +9,7 @@ Demontaj öncesi makine durdurulmalı, tanklar boşaltılmalı ve **LOTO** uygul
 
 ---
 
-## Bölüm İçeriği
+## Bölüm içeriği
 
 | Bölüm | Başlık | Konu |
 |-------|--------|------|

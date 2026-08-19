@@ -1,8 +1,8 @@
-# 3.4. Machine Controls
+# 3.4 Machine controls
 
 ---
 
-## 3.4.1. Control Panel — General Structure
+## 3.4.1 Control panel — general structure
 
 | Parameter | Value |
 |-----------|-------|
@@ -19,7 +19,7 @@ The electrical panel houses power distribution, motor protection, automation com
 
 ---
 
-## 3.4.2. HMI Operator Interface
+## 3.4.2 HMI operator interface
 
 | Parameter | Value |
 |-----------|-------|
@@ -43,7 +43,7 @@ From the HMI **settings page**, temperature, date/time, and language settings ca
 
 ---
 
-## 3.4.3. PLC and I/O Infrastructure
+## 3.4.3 PLC and I/O infrastructure
 
 | Parameter | Value |
 |-----------|-------|
@@ -59,7 +59,7 @@ Encoder / feedback settings are embedded in the PLC program; adjustment shall be
 
 ---
 
-## 3.4.4. Operating Modes, Start/Stop and Emergency Stop
+## 3.4.4 Operating modes, Start/Stop and emergency Stop
 
 | Parameter | Value |
 |-----------|-------|
@@ -84,7 +84,7 @@ When emergency stop is activated, **every function on the machine stops**. Reset
 
 ---
 
-## 3.4.5. Signal Lamps (Stack Light)
+## 3.4.5 Signal lamps (stack light)
 
 | Colour | Meaning |
 |--------|---------|
@@ -99,7 +99,7 @@ The stack light visually communicates the instantaneous machine status to the op
 
 ---
 
-## 3.4.6. Alarm, Recipe and Remote Access
+## 3.4.6 Alarm, recipe and remote access
 
 | Function | Behaviour |
 |----------|-----------|

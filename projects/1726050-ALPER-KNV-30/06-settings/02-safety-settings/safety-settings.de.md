@@ -1,8 +1,8 @@
-# 6.2. Sicherheitseinstellungen
+# 6.2 Sicherheitseinstellungen
 
 ---
 
-## 6.2.1. Sicherheitstür / Bypass
+## 6.2.1 Sicherheitstür / Bypass
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -10,7 +10,7 @@
 
 ---
 
-## 6.2.2. Lichtvorhang
+## 6.2.2 Lichtvorhang
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -18,7 +18,7 @@
 
 ---
 
-## 6.2.3. Not-Halt-Testintervall
+## 6.2.3 Not-Halt-Testintervall
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -31,7 +31,7 @@ Detailliertes Testverfahren siehe Abschnitt **5.4.1**.
 
 ---
 
-## 6.2.4. Checkliste Sicherheitseinstellungen
+## 6.2.4 Checkliste Sicherheitseinstellungen
 
 | # | Prüfung | Status |
 |---|---------|--------|

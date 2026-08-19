@@ -4,7 +4,7 @@ Assembly operations are estimated to take **1 day** and are performed by a **1-p
 
 ---
 
-## Section Contents
+## Section contents
 
 | Section | Title | Subject |
 |---------|-------|---------|
@@ -17,7 +17,7 @@ Assembly operations are estimated to take **1 day** and are performed by a **1-p
 
 ---
 
-## Installation Prerequisites Summary
+## Installation prerequisites summary
 
 | Parameter | Requirement |
 |-----------|-------------|

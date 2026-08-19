@@ -1,8 +1,8 @@
-# 11.7. Sensorstörungen
+# 11.7 Sensorstörungen
 
 ---
 
-## 11.7.1. Zugehörige Sensoren aus Alarmtabelle
+## 11.7.1 Zugehörige Sensoren aus Alarmtabelle
 
 | Alarm | Sensor / Thema | Prüfung |
 |-------|----------------|---------|
@@ -14,7 +14,7 @@
 
 ---
 
-## 11.7.2. Sensorparameter
+## 11.7.2 Sensorparameter
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|

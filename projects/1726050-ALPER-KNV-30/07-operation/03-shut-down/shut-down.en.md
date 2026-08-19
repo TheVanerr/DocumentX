@@ -1,10 +1,10 @@
-# 7.3. Machine Shutdown
+# 7.3 Machine shutdown
 
 The stop button is a **digital button on the HMI interface**.
 
 ---
 
-## 7.3.1. Normal Stop Procedure
+## 7.3.1 Normal Stop procedure
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -12,7 +12,7 @@ The stop button is a **digital button on the HMI interface**.
 
 ---
 
-## 7.3.2. Restart After Emergency Stop
+## 7.3.2 Restart after emergency Stop
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -27,7 +27,7 @@ For detailed emergency stop test procedure, see Section **5.4.1**.
 
 ---
 
-## 7.3.3. Power-Off Sequence
+## 7.3.3 Power-off sequence
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -35,7 +35,7 @@ For detailed emergency stop test procedure, see Section **5.4.1**.
 
 ---
 
-## 7.3.4. Long-Term Shutdown
+## 7.3.4 Long-term shutdown
 
 | Parameter | Value / Description |
 |-----------|---------------------|

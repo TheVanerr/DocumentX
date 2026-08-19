@@ -1,0 +1,28 @@
+---
+description: Kılavuz yazım görev planı (6 aşama)
+alwaysApply: true
+---
+
+# Kılavuz Yazım Görev Sırası
+
+Yeni proje veya büyük güncellemede bölümleri **sırayla** işle; her aşamada DATA dosyasını referans al.
+
+| Aşama | Bölümler | Odak |
+|-------|----------|------|
+| 1 | 01 + 02 | LOTO'yu `02-safety` altında **tek kaynak** olarak tam yaz |
+| 2 | 03 + 04 | 03.4 alan ve 03.5 teknik tablo = SSOT; sayıları başka yerde tekrarlama |
+| 3 | 05 + 06 | Kurulum/ayar; altyapı → Bölüm 3, güvenlik testi → Bölüm 2 referans |
+| 4 | 07 + 08 | Operasyon sekansı, start/stop, reçete/kapasite |
+| 5 | 09 + 10 | Bakım/temizlik; LOTO adımlarını tekrarlama → Bölüm 2.4 referans |
+| 6 | 11 + 12 + 13 + 14 | Hata kodları tablosu, demontaj, doküman listesi, indeks/sözlük |
+
+## Her görevde kontrol listesi
+
+- [ ] DATA'daki ilgili bloklar okundu mu?
+- [ ] Emir kipi ve numaralı adımlar kullanıldı mı?
+- [ ] SSOT tekrarları önlendi mi (LOTO, teknik tablo, alan)?
+- [ ] Bilinmeyen veri `[EKSİK]` mi bırakıldı?
+- [ ] Hedef kitle (operatör / bakım / kurulum) net mi?
+- [ ] Ana bölüm başlıkları (`1.`–`14.`) tamamı BÜYÜK; alt bölümler (`1.1`, `2.4`) cümle başı büyük harf mi? (A.6.1)
+
+Detaylı alt başlık yönergeleri için kök dizindeki `CURSOR USER MANUEL TEMPLATE.md` Bölüm B'ye bak.

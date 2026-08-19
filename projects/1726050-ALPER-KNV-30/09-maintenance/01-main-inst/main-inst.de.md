@@ -1,8 +1,8 @@
-# 9.1. Wartungsanweisungen
+# 9.1 Wartungsanweisungen
 
 ---
 
-## 9.1.1. Wartungsphilosophie und Personal
+## 9.1.1 Wartungsphilosophie und Personal
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -14,7 +14,7 @@ Wartungspersonal muss in Maschinenbetrieb und -wartung geschult sein (siehe Absc
 
 ---
 
-## 9.1.2. Sicherheit vor Wartung
+## 9.1.2 Sicherheit vor Wartung
 
 Es gibt **keinen speziellen Wartungsmodus**. Folgende Regeln gelten:
 
@@ -30,7 +30,7 @@ Alle Heckklappen sind für Wartungszugang abnehmbar (siehe Abschnitt **3.5**).
 
 ---
 
-## 9.1.3. Periodische Wartung
+## 9.1.3 Periodische Wartung
 
 | Periode | Wartungspunkte |
 |---------|----------------|
@@ -54,7 +54,7 @@ Alle Heckklappen sind für Wartungszugang abnehmbar (siehe Abschnitt **3.5**).
 
 ---
 
-## 9.1.4. Schmierung
+## 9.1.4 Schmierung
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -72,7 +72,7 @@ Alle Heckklappen sind für Wartungszugang abnehmbar (siehe Abschnitt **3.5**).
 
 ---
 
-## 9.1.5. Ersatzteile
+## 9.1.5 Ersatzteile
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -84,7 +84,7 @@ Dieser Abschnitt wird aktualisiert, sobald Ersatzteilliste und Lagerempfehlungen
 
 ---
 
-## 9.1.6. Wartungsprotokoll
+## 9.1.6 Wartungsprotokoll
 
 | # | Tätigkeit | Periode | Datum | Ausgeführt von | OK/NOK |
 |---|-----------|---------|-------|----------------|--------|

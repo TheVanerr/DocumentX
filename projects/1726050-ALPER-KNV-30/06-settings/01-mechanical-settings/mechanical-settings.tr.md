@@ -1,8 +1,8 @@
-# 6.1. Mekanik Ayarlar
+# 6.1 Mekanik ayarlar
 
 ---
 
-## 6.1.1. Mekanik Ayar Noktaları
+## 6.1.1 Mekanik ayar noktaları
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -10,7 +10,7 @@
 
 ---
 
-## 6.1.2. Referans / Home Pozisyonu
+## 6.1.2 Referans / Home pozisyonu
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -23,7 +23,7 @@ Konveyör başı, makine referans noktası olarak kabul edilir. Parça konumland
 
 ---
 
-## 6.1.3. Zincir / Kayış ve Limit Ayarları
+## 6.1.3 Zincir / kayış ve limit ayarları
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -32,7 +32,7 @@ Konveyör başı, makine referans noktası olarak kabul edilir. Parça konumland
 
 ---
 
-## 6.1.4. Nozzle / Doldurma Kafası
+## 6.1.4 Nozzle / doldurma kafası
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -40,7 +40,7 @@ Konveyör başı, makine referans noktası olarak kabul edilir. Parça konumland
 
 ---
 
-## 6.1.5. Format Değişimi
+## 6.1.5 Format değişimi
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -48,7 +48,7 @@ Konveyör başı, makine referans noktası olarak kabul edilir. Parça konumland
 
 ---
 
-## 6.1.6. Mekanik Ayar Kontrol Listesi
+## 6.1.6 Mekanik ayar kontrol listesi
 
 | # | Kontrol | Durum |
 |---|---------|-------|

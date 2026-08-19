@@ -1,10 +1,10 @@
-# 7.5. Operating Chronology
+# 7.5 Operating chronology
 
 The machine runs **24/7 with robot**. There is **no operator or shift handover**.
 
 ---
 
-## 7.5.1. Daily Operating Schedule
+## 7.5.1 Daily operating schedule
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -12,7 +12,7 @@ The machine runs **24/7 with robot**. There is **no operator or shift handover**
 
 ---
 
-## 7.5.2. Shift Handover
+## 7.5.2 Shift handover
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -20,7 +20,7 @@ The machine runs **24/7 with robot**. There is **no operator or shift handover**
 
 ---
 
-## 7.5.3. Shift Start Checklist
+## 7.5.3 Shift Start checklist
 
 | Parameter | Value / Description |
 |-----------|---------------------|

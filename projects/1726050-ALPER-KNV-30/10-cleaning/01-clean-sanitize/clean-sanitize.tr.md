@@ -1,8 +1,8 @@
-# 10.1. Temizlik ve Dezenfeksiyon
+# 10.1 Temizlik ve dezenfeksiyon
 
 ---
 
-## 10.1.1. Temizlik Tipi
+## 10.1.1 Temizlik tipi
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -12,7 +12,7 @@ Makinede otomatik CIP (Cleaning in Place) veya COP (Cleaning out of Place) siste
 
 ---
 
-## 10.1.2. Temizlik Öncesi Güvenlik
+## 10.1.2 Temizlik öncesi güvenlik
 
 | # | Kural |
 |---|-------|
@@ -24,7 +24,7 @@ Makinede otomatik CIP (Cleaning in Place) veya COP (Cleaning out of Place) siste
 
 ---
 
-## 10.1.3. Günlük Temizlik
+## 10.1.3 Günlük temizlik
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -45,7 +45,7 @@ Makinede otomatik CIP (Cleaning in Place) veya COP (Cleaning out of Place) siste
 
 ---
 
-## 10.1.4. Haftalık Derin Temizlik
+## 10.1.4 Haftalık derin temizlik
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -71,7 +71,7 @@ Makinede otomatik CIP (Cleaning in Place) veya COP (Cleaning out of Place) siste
 
 ---
 
-## 10.1.5. Dezenfeksiyon Prosedürü
+## 10.1.5 Dezenfeksiyon prosedürü
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -92,7 +92,7 @@ Makinede otomatik CIP (Cleaning in Place) veya COP (Cleaning out of Place) siste
 
 ---
 
-## 10.1.6. Temizlik Sonrası Kurutma
+## 10.1.6 Temizlik sonrası kurutma
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -102,7 +102,7 @@ Tank içi kurutma için tank suyu boşaltıldıktan sonra doğal kurumaya bırak
 
 ---
 
-## 10.1.7. Temizlik Maddeleri
+## 10.1.7 Temizlik maddeleri
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -113,7 +113,7 @@ Dezenfeksiyon için **sabunlu su** kullanılabilir. Onaylı kimyasal listesi tan
 
 ---
 
-## 10.1.8. Atık Su / Kimyasal Bertaraf
+## 10.1.8 Atık su / kimyasal bertaraf
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -123,7 +123,7 @@ Tank boşaltma suyu ve temizlik atıkları yerel mevzuata uygun şekilde bertara
 
 ---
 
-## 10.1.9. Temizlik Kayıt Formu
+## 10.1.9 Temizlik kayıt formu
 
 | # | İşlem | Periyot | Tarih | Yapan | OK/NOK |
 |---|-------|---------|-------|-------|--------|

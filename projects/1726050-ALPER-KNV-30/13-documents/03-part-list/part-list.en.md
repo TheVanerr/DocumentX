@@ -1,10 +1,10 @@
-# 13.3. Parts List
+# 13.3 Parts list
 
 Parts lists are supplied as **separate documents**.
 
 ---
 
-## 13.3.1. Parts List References
+## 13.3.1 Parts list references
 
 | List | Reference | Delivery |
 |------|-----------|----------|
@@ -15,7 +15,7 @@ Parts lists are supplied as **separate documents**.
 
 ---
 
-## 13.3.2. Manual Cross-Reference
+## 13.3.2 Manual cross-reference
 
 | Topic | Reference |
 |-------|-----------|

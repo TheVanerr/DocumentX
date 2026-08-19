@@ -26,11 +26,7 @@ if (!langs.length) {
   process.exit(1);
 }
 
-const SCAN_DIRS = [
-  path.join(ROOT, 'content', '_common'),
-  path.join(ROOT, 'content', '_models'),
-  path.join(ROOT, 'projects')
-];
+const SCAN_DIRS = [path.join(ROOT, 'projects')];
 
 const SRC_RX = new RegExp(`\\.${SOURCE_LANG}\\.md$`, 'i');
 

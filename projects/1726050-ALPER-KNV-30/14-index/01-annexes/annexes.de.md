@@ -1,8 +1,8 @@
-# 14.1. Anhänge
+# 14.1 Anhänge
 
 ---
 
-## 14.1.1. Anlagenverzeichnis
+## 14.1.1 Anlagenverzeichnis
 
 | Anlage | Thema | Referenz |
 |--------|-------|----------|
@@ -13,7 +13,7 @@
 
 ---
 
-## 14.1.2. Anhänge im Handbuch
+## 14.1.2 Anhänge im Handbuch
 
 Folgende Inhalte sind im Handbuch enthalten; kein separates Anhangsdokument erforderlich:
 

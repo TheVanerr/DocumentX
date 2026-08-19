@@ -1,10 +1,10 @@
-# 5.4. Sicherheitssystem-Tests
+# 5.4 Sicherheitssystem-Tests
 
 Stop-Kategorie der Maschine: **Kat. 3**. Ein **RFID-Sicherheitssensor** ist an der Maschine installiert. **Keine Lichtschranke** vorhanden. Anzahl Schutz Türen / Barrieren: **0**.
 
 ---
 
-## 5.4.1. Not-Halt-Test
+## 5.4.1 Not-Halt-Test
 
 An der Maschine befinden sich insgesamt **4** Not-Halt-Taster:
 
@@ -40,7 +40,7 @@ Not-Halt-Testperiode: **monatlich** wiederholen.
 
 ---
 
-## 5.4.2. RFID-Sicherheitssensor-Test
+## 5.4.2 RFID-Sicherheitssensor-Test
 
 | Parameter | Wert |
 |-----------|------|
@@ -64,7 +64,7 @@ Bypass der Schutzvorrichtung ist **streng untersagt**. Für Wartung Abdeckungen 
 
 ---
 
-## 5.4.3. Phasenschutz- und Elektrosicherheitstest
+## 5.4.3 Phasenschutz- und Elektrosicherheitstest
 
 Checkliste elektrische Inbetriebnahme:
 
@@ -79,7 +79,7 @@ Checkliste elektrische Inbetriebnahme:
 
 ---
 
-## 5.4.4. Test Betriebsbereitschaft
+## 5.4.4 Test Betriebsbereitschaft
 
 | Prüfung | Erwartetes Ergebnis |
 |---------|---------------------|
@@ -93,7 +93,7 @@ Auf der HMI-Oberfläche darf kein Alarm vorliegen. Ist die Maschine nicht betrie
 
 ---
 
-## 5.4.5. Checkliste Sicherheitsfunktionsprüfung
+## 5.4.5 Checkliste Sicherheitsfunktionsprüfung
 
 Nach Abschluss aller Sicherheitstests folgende Liste ausfüllen:
 

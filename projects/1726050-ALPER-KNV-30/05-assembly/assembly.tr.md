@@ -4,7 +4,7 @@ Montaj işlemleri tahmini **1 gün** sürmekte olup **1 kişilik** ekip ile ger�
 
 ---
 
-## Bölüm İçeriği
+## Bölüm içeriği
 
 | Bölüm | Başlık | Konu |
 |-------|--------|------|
@@ -17,7 +17,7 @@ Montaj işlemleri tahmini **1 gün** sürmekte olup **1 kişilik** ekip ile ger�
 
 ---
 
-## Kurulum Ön Koşulları Özeti
+## Kurulum ön koşulları özeti
 
 | Parametre | Gereksinim |
 |-----------|------------|

@@ -1,8 +1,8 @@
-# 10.1. Cleaning and Sanitizing
+# 10.1 Cleaning and sanitizing
 
 ---
 
-## 10.1.1. Cleaning Type
+## 10.1.1 Cleaning type
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -12,7 +12,7 @@ There is **no automatic CIP (Cleaning in Place) or COP (Cleaning out of Place) s
 
 ---
 
-## 10.1.2. Safety Before Cleaning
+## 10.1.2 Safety before cleaning
 
 | # | Rule |
 |---|------|
@@ -24,7 +24,7 @@ There is **no automatic CIP (Cleaning in Place) or COP (Cleaning out of Place) s
 
 ---
 
-## 10.1.3. Daily Cleaning
+## 10.1.3 Daily cleaning
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -45,7 +45,7 @@ There is **no automatic CIP (Cleaning in Place) or COP (Cleaning out of Place) s
 
 ---
 
-## 10.1.4. Weekly Deep Cleaning
+## 10.1.4 Weekly deep cleaning
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -71,7 +71,7 @@ There is **no automatic CIP (Cleaning in Place) or COP (Cleaning out of Place) s
 
 ---
 
-## 10.1.5. Disinfection Procedure
+## 10.1.5 Disinfection procedure
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -92,7 +92,7 @@ There is **no automatic CIP (Cleaning in Place) or COP (Cleaning out of Place) s
 
 ---
 
-## 10.1.6. Drying After Cleaning
+## 10.1.6 Drying after cleaning
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -102,7 +102,7 @@ Tank interior may air-dry after draining or be dried by appropriate method. HMI 
 
 ---
 
-## 10.1.7. Cleaning Agents
+## 10.1.7 Cleaning agents
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -113,7 +113,7 @@ Tank interior may air-dry after draining or be dried by appropriate method. HMI 
 
 ---
 
-## 10.1.8. Wastewater / Chemical Disposal
+## 10.1.8 Wastewater / chemical disposal
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -123,7 +123,7 @@ Tank drain water and cleaning waste must be disposed of according to local regul
 
 ---
 
-## 10.1.9. Cleaning Record Form
+## 10.1.9 Cleaning record form
 
 | # | Task | Period | Date | Performed by | OK/NOK |
 |---|------|--------|------|--------------|--------|

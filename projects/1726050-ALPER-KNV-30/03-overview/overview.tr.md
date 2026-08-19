@@ -4,7 +4,7 @@ Makinenin ana işlevi, parça yüzeyinde endüstriyel işlemlerden kalan **yağ 
 
 ---
 
-## Bölüm İçeriği
+## Bölüm içeriği
 
 Aşağıdaki alt bölümler, makine hakkında giderek detaylandırılmış bilgi sunar:
 
@@ -18,7 +18,7 @@ Aşağıdaki alt bölümler, makine hakkında giderek detaylandırılmış bilgi
 
 ---
 
-## Makine Özeti
+## Makine özeti
 
 | Parametre | Değer |
 |-----------|-------|

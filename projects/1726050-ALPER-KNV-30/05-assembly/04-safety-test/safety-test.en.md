@@ -1,10 +1,10 @@
-# 5.4. Safety System Tests
+# 5.4 Safety system tests
 
 Machine stop category: **Cat. 3**. An **RFID safety sensor** is installed on the machine. **No light curtain** is provided. Number of safety doors / barriers: **0**.
 
 ---
 
-## 5.4.1. Emergency Stop Test
+## 5.4.1 Emergency Stop test
 
 The machine has a total of **4** emergency stop buttons:
 
@@ -40,7 +40,7 @@ Emergency stop test period: shall be repeated **once per month**.
 
 ---
 
-## 5.4.2. RFID Safety Sensor Test
+## 5.4.2 RFID safety sensor test
 
 | Parameter | Value |
 |-----------|-------|
@@ -64,7 +64,7 @@ Safety door bypass shall **not** be performed under any circumstances. For maint
 
 ---
 
-## 5.4.3. Phase Protection and Electrical Safety Test
+## 5.4.3 Phase protection and electrical safety test
 
 Electrical commissioning test checklist:
 
@@ -79,7 +79,7 @@ Electrical commissioning test checklist:
 
 ---
 
-## 5.4.4. Machine Ready State Test
+## 5.4.4 Machine ready state test
 
 | Check | Expected result |
 |-------|-----------------|
@@ -93,7 +93,7 @@ No alarm shall be present on the HMI interface. If the machine is not ready, the
 
 ---
 
-## 5.4.5. Safety Function Test Checklist
+## 5.4.5 Safety function test checklist
 
 When all safety tests are complete, complete the following list:
 

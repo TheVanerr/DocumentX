@@ -1,8 +1,8 @@
-# 11.3. Elektrische Störungen
+# 11.3 Elektrische Störungen
 
 ---
 
-## 11.3.1. Phase und Not-Aus
+## 11.3.1 Phase und Not-Aus
 
 | Alarm | Thema | Referenz |
 |-------|-------|----------|
@@ -15,7 +15,7 @@
 
 ---
 
-## 11.3.2. Motorstörungen
+## 11.3.2 Motorstörungen
 
 | Alarm | Motor |
 |-------|-------|
@@ -35,7 +35,7 @@
 
 ---
 
-## 11.3.3. Heizungsstörungen
+## 11.3.3 Heizungsstörungen
 
 | Alarm | Thema |
 |-------|-------|

@@ -1,8 +1,8 @@
-# 12.2. Decommissioning
+# 12.2 Decommissioning
 
 ---
 
-## 12.2.1. Permanent Decommissioning
+## 12.2.1 Permanent decommissioning
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -20,7 +20,7 @@ When permanently taking machine out of service:
 
 ---
 
-## 12.2.2. Temporary Decommissioning
+## 12.2.2 Temporary decommissioning
 
 | Parameter | Value / Description |
 |-----------|---------------------|

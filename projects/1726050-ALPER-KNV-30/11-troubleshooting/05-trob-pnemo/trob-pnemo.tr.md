@@ -1,10 +1,10 @@
-# 11.5. Pnömatik Arızalar
+# 11.5 Pnömatik arızalar
 
 Makine **6 bar** basınçlı hava kullanır (bkz. Bölüm **6.5**).
 
 ---
 
-## 11.5.1. Basınç Alarmları
+## 11.5.1 Basınç alarmları
 
 | Alarm | Konu | Kontrol |
 |-------|------|---------|
@@ -19,7 +19,7 @@ Makine **6 bar** basınçlı hava kullanır (bkz. Bölüm **6.5**).
 
 ---
 
-## 11.5.2. Vana Arızaları
+## 11.5.2 Vana arızaları
 
 | Alarm | Konu |
 |-------|------|

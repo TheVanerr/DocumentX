@@ -1,10 +1,10 @@
-# 7.1. Operating Modes
+# 7.1 Operating modes
 
 The machine runs **fully automatic**. Start / Stop buttons are **digital buttons on the HMI interface**.
 
 ---
 
-## 7.1.1. Manual Mode
+## 7.1.1 Manual mode
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -17,7 +17,7 @@ The HMI **operating page** has wash, rinse, drying 1, drying 2 and exhaust optio
 
 ---
 
-## 7.1.2. Automatic Mode
+## 7.1.2 Automatic mode
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -25,7 +25,7 @@ The HMI **operating page** has wash, rinse, drying 1, drying 2 and exhaust optio
 
 ---
 
-## 7.1.3. Maintenance / Setup Mode
+## 7.1.3 Maintenance / Setup mode
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -33,7 +33,7 @@ The HMI **operating page** has wash, rinse, drying 1, drying 2 and exhaust optio
 
 ---
 
-## 7.1.4. Step / Single-Step Mode
+## 7.1.4 Step / single-Step mode
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -41,7 +41,7 @@ The HMI **operating page** has wash, rinse, drying 1, drying 2 and exhaust optio
 
 ---
 
-## 7.1.5. Mode Change Conditions
+## 7.1.5 Mode change conditions
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -49,7 +49,7 @@ The HMI **operating page** has wash, rinse, drying 1, drying 2 and exhaust optio
 
 ---
 
-## 7.1.6. HMI Process Options Summary
+## 7.1.6 HMI process options summary
 
 | Option | Description |
 |--------|-------------|

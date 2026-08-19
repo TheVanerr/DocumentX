@@ -1,10 +1,10 @@
-# 7.2. Machine Start
+# 7.2 Machine Start
 
 The HMI screen has **one preparation button**. Preparation must be completed before start.
 
 ---
 
-## 7.2.1. Commissioning Prerequisites
+## 7.2.1 Commissioning prerequisites
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -17,7 +17,7 @@ The HMI screen has **one preparation button**. Preparation must be completed bef
 
 ---
 
-## 7.2.2. Power-Up Sequence
+## 7.2.2 Power-up sequence
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -25,7 +25,7 @@ The HMI screen has **one preparation button**. Preparation must be completed bef
 
 ---
 
-## 7.2.3. Air / Water / Vacuum Start-Up
+## 7.2.3 Air / water / vacuum Start-up
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -33,7 +33,7 @@ The HMI screen has **one preparation button**. Preparation must be completed bef
 
 ---
 
-## 7.2.4. Heating Pre-Warm
+## 7.2.4 Heating pre-warm
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -41,7 +41,7 @@ The HMI screen has **one preparation button**. Preparation must be completed bef
 
 ---
 
-## 7.2.5. Pre-Start Checklist
+## 7.2.5 Pre-Start checklist
 
 | # | Check | Status |
 |---|-------|--------|
@@ -57,7 +57,7 @@ The HMI screen has **one preparation button**. Preparation must be completed bef
 
 ---
 
-## 7.2.6. First Product / Run-In
+## 7.2.6 First product / run-in
 
 | Parameter | Value / Description |
 |-----------|---------------------|

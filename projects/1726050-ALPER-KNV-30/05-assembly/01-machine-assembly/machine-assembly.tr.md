@@ -1,10 +1,10 @@
-# 5.1. Makine Montajı
+# 5.1 Makine montajı
 
 Montaj tahmini **1 gün** sürer ve **1 kişilik** ekip ile gerçekleştirilir. Taşıma ve yerleştirme için **forklift** kullanılmalıdır; makine taşınmasında **vinç kesinlikle kullanılmamalıdır**. Forklift çatalı ile taşıma yapılmalıdır; makine altındaki profiller forklift girişi için kullanılır. Taşıma ağırlığı (montajlı): **1300 kg** — taşıma sırasında herhangi bir parça ayrılmayacak şekilde taşınmalıdır.
 
 ---
 
-## 5.1.1. Montaj Ön Hazırlık
+## 5.1.1 Montaj ön hazırlık
 
 Montaja başlamadan önce aşağıdaki koşullar sağlanmalıdır:
 
@@ -25,7 +25,7 @@ Makine, konteyner ambalajı ile sevk edilir. Kurulum alanına taşınırken fork
 
 ---
 
-## 5.1.2. Montaj Adımları
+## 5.1.2 Montaj adımları
 
 Montaj aşağıdaki sırayla gerçekleştirilmelidir:
 
@@ -110,7 +110,7 @@ Elektrik devreye alma testi kontrol listesi:
 
 ---
 
-## 5.1.3. Montaj Tamamlama
+## 5.1.3 Montaj tamamlama
 
 Adım 9'da makine **kullanıma hazır** duruma getirilir. Operasyona geçmeden önce aşağıdaki bölümlerdeki testler tamamlanmalıdır:
 

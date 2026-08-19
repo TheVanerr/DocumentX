@@ -1,4 +1,4 @@
-# 7.4. Betriebsablauf
+# 7.4 Betriebsablauf
 
 Die Maschine arbeitet **vollautomatisch**. Am HMI-Betriebsbildschirm gibt es **Ein/Aus-Tasten** für Waschen, Spülen, Trocknung 1, Trocknung 2 und Abluft.
 
@@ -12,7 +12,7 @@ Prozessablauf: **Waschen → Spülen → Trocknen**
 
 ---
 
-## 7.4.1. Automatische Zyklusschritte
+## 7.4.1 Automatische Zyklusschritte
 
 | Schritt | Beschreibung |
 |---------|--------------|
@@ -24,7 +24,7 @@ Prozessablauf: **Waschen → Spülen → Trocknen**
 
 ---
 
-## 7.4.2. Zykluszeit
+## 7.4.2 Zykluszeit
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -32,7 +32,7 @@ Prozessablauf: **Waschen → Spülen → Trocknen**
 
 ---
 
-## 7.4.3. Produktzufuhr / -abfuhr
+## 7.4.3 Produktzufuhr / -abfuhr
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -46,7 +46,7 @@ Teile durchlaufen Prozesse auf dem Förderer (Zufuhrbeladung).
 
 ---
 
-## 7.4.4. Verhalten bei Störung
+## 7.4.4 Verhalten bei Störung
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|

@@ -10,7 +10,7 @@ There is **no operator** on the machine; fault intervention is by **maintenance 
 
 ---
 
-## Section Contents
+## Section contents
 
 | Section | Title | Topic |
 |---------|-------|-------|

@@ -1,10 +1,10 @@
-# 13.2. Drawings
+# 13.2 Drawings
 
 Drawings are supplied in a **separate document package**.
 
 ---
 
-## 13.2.1. Drawing List
+## 13.2.1 Drawing list
 
 | Drawing | File name / rev | Delivery |
 |---------|-----------------|----------|
@@ -16,6 +16,6 @@ Drawings are supplied in a **separate document package**.
 
 ---
 
-## 13.2.2. Image References Used in Manual
+## 13.2.2 Image references used in manual
 
 Machine images are in project `assets/` folder. Placeholders marked `<!-- FOTO: ... -->` in manual text link to relevant images.

@@ -1,8 +1,8 @@
-# 14.1. Ekler
+# 14.1 Ekler
 
 ---
 
-## 14.1.1. Ek Listesi
+## 14.1.1 Ek listesi
 
 | Ek | Konu | Referans |
 |----|------|----------|
@@ -13,7 +13,7 @@
 
 ---
 
-## 14.1.2. Kılavuz İçi Ekler
+## 14.1.2 Kılavuz içi ekler
 
 Aşağıdaki içerikler kılavuz gövdesinde yer alır; ayrı basılı ek gerekmez:
 

@@ -1,8 +1,8 @@
-# 12.1. Demontaj
+# 12.1 Demontaj
 
 ---
 
-## 12.1.1. Demontaj Ön Koşulları
+## 12.1.1 Demontaj ön koşulları
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -12,7 +12,7 @@ Uzun süreli durdurma ve tank temizliği için bkz. Bölüm **7.3.4** ve **10.1.
 
 ---
 
-## 12.1.2. Enerji İzolasyonu (LOTO)
+## 12.1.2 Enerji izolasyonu (LOTO)
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -28,7 +28,7 @@ Uzun süreli durdurma ve tank temizliği için bkz. Bölüm **7.3.4** ve **10.1.
 
 ---
 
-## 12.1.3. Demontaj Sırası
+## 12.1.3 Demontaj sırası
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -45,7 +45,7 @@ Uzun süreli durdurma ve tank temizliği için bkz. Bölüm **7.3.4** ve **10.1.
 
 ---
 
-## 12.1.4. Geri Dönüşüm ve Bertaraf
+## 12.1.4 Geri dönüşüm ve bertaraf
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|

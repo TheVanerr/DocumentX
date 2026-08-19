@@ -1,10 +1,10 @@
-# 13.3. Stückliste
+# 13.3 Stückliste
 
 Stücklisten werden als **separate Unterlagen** geliefert.
 
 ---
 
-## 13.3.1. Stücklisten-Referenzen
+## 13.3.1 Stücklisten-Referenzen
 
 | Liste | Referenz | Lieferung |
 |-------|----------|-----------|
@@ -15,7 +15,7 @@ Stücklisten werden als **separate Unterlagen** geliefert.
 
 ---
 
-## 13.3.2. Handbuch-Querverweis
+## 13.3.2 Handbuch-Querverweis
 
 | Thema | Referenz |
 |-------|----------|

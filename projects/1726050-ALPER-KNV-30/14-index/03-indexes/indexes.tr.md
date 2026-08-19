@@ -1,10 +1,10 @@
-# 14.3. Anahtar Kelime İndeksi
+# 14.3 Anahtar kelime indeksi
 
 Aşağıdaki tablo, kılavuz içinde sık aranan konuların bölüm referanslarını listeler.
 
 ---
 
-## 14.3.1. A–H
+## 14.3.1 A–h
 
 | Anahtar kelime | Bölüm(ler) |
 |----------------|------------|
@@ -31,7 +31,7 @@ Aşağıdaki tablo, kılavuz içinde sık aranan konuların bölüm referanslar�
 
 ---
 
-## 14.3.2. I–R
+## 14.3.2 I–r
 
 | Anahtar kelime | Bölüm(ler) |
 |----------------|------------|
@@ -55,7 +55,7 @@ Aşağıdaki tablo, kılavuz içinde sık aranan konuların bölüm referanslar�
 
 ---
 
-## 14.3.3. S–Z
+## 14.3.3 S–z
 
 | Anahtar kelime | Bölüm(ler) |
 |----------------|------------|

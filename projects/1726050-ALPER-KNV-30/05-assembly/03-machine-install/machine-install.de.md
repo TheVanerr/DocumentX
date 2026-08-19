@@ -1,10 +1,10 @@
-# 5.3. Systemanschlüsse und Inbetriebnahme
+# 5.3 Systemanschlüsse und Inbetriebnahme
 
 Anschlussarbeiten werden im Rahmen von **Schritt 4–8** der Montageschritte in Abschnitt 5.1 durchgeführt.
 
 ---
 
-## 5.3.1. Druckluftanschluss
+## 5.3.1 Druckluftanschluss
 
 | Parameter | Wert |
 |-----------|------|
@@ -26,7 +26,7 @@ Pneumatik-Fülltest: *Leuchtet die Luftanzeige auf der HMI-Handseite nach dem Lu
 
 ---
 
-## 5.3.2. Wasseranschluss
+## 5.3.2 Wasseranschluss
 
 | Parameter | Wert |
 |-----------|------|
@@ -49,7 +49,7 @@ Pneumatik-/Hydraulik-Fülltest (Wasser): *Leuchtet die Wasseranzeige auf der HMI
 
 ---
 
-## 5.3.3. Elektroanschluss
+## 5.3.3 Elektroanschluss
 
 | Parameter | Wert |
 |-----------|------|
@@ -71,7 +71,7 @@ Der Elektroanschluss ist mit einer **380 V, 50 Hz** Drehstromleitung für **50 k
 
 ---
 
-## 5.3.4. Einschalten und Phasenprüfung
+## 5.3.4 Einschalten und Phasenprüfung
 
 ### Inbetriebnahmeverfahren
 
@@ -97,7 +97,7 @@ Motor nur in einer Richtung betreiben; Phasenfolge korrekt einstellen.
 
 ---
 
-## 5.3.5. Checkliste Anschlussabschluss
+## 5.3.5 Checkliste Anschlussabschluss
 
 Nach Abschluss aller Anschlüsse folgende Prüfungen durchführen:
 

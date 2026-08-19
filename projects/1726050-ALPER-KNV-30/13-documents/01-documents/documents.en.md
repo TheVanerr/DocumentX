@@ -1,10 +1,10 @@
-# 13.1. Document List
+# 13.1 Document list
 
 The following documents are supplied as **separate documents**. File name/rev is included in the delivery package.
 
 ---
 
-## 13.1.1. Schematic and Plan Documents
+## 13.1.1 Schematic and plan documents
 
 | Document | File name / rev | Delivery |
 |----------|-----------------|----------|
@@ -17,7 +17,7 @@ The following documents are supplied as **separate documents**. File name/rev is
 
 ---
 
-## 13.1.2. Parts List and Backups
+## 13.1.2 Parts list and backups
 
 | Document | File name / rev | Delivery |
 |----------|-----------------|----------|
@@ -27,7 +27,7 @@ The following documents are supplied as **separate documents**. File name/rev is
 
 ---
 
-## 13.1.3. Certificates and Compliance
+## 13.1.3 Certificates and compliance
 
 | Document | File name / rev | Delivery |
 |----------|-----------------|----------|
@@ -36,7 +36,7 @@ The following documents are supplied as **separate documents**. File name/rev is
 
 ---
 
-## 13.1.4. In-Manual References
+## 13.1.4 In-manual references
 
 | Topic | Reference |
 |-------|-----------|

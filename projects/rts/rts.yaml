@@ -1,0 +1,16 @@
+# RTS model sablonu — icerik yalnizca bu klasorden okunur.
+
+proje_adi: RTS
+model: rts
+sablon: true
+tip: sablon
+diller:
+  - tr
+  - en
+  - de
+varsayilan_dil: tr
+extends: templates/base.yaml
+kapak:
+  rev: ''
+  tarih: ''
+  firma: DOLFIN

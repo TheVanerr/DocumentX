@@ -1,8 +1,8 @@
-# 6.1. Mechanische Einstellungen
+# 6.1 Mechanische Einstellungen
 
 ---
 
-## 6.1.1. Mechanische Einstellpunkte
+## 6.1.1 Mechanische Einstellpunkte
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -10,7 +10,7 @@
 
 ---
 
-## 6.1.2. Referenz- / Home-Position
+## 6.1.2 Referenz- / Home-Position
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -23,7 +23,7 @@ Der Förderbandanfang gilt als Maschinenreferenzpunkt. Teilepositionierung und P
 
 ---
 
-## 6.1.3. Kette / Riemen und Endschalter
+## 6.1.3 Kette / Riemen und Endschalter
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -32,7 +32,7 @@ Der Förderbandanfang gilt als Maschinenreferenzpunkt. Teilepositionierung und P
 
 ---
 
-## 6.1.4. Düse / Füllkopf
+## 6.1.4 Düse / Füllkopf
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -40,7 +40,7 @@ Der Förderbandanfang gilt als Maschinenreferenzpunkt. Teilepositionierung und P
 
 ---
 
-## 6.1.5. Formatwechsel
+## 6.1.5 Formatwechsel
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -48,7 +48,7 @@ Der Förderbandanfang gilt als Maschinenreferenzpunkt. Teilepositionierung und P
 
 ---
 
-## 6.1.6. Checkliste mechanische Einstellungen
+## 6.1.6 Checkliste mechanische Einstellungen
 
 | # | Prüfung | Status |
 |---|---------|--------|

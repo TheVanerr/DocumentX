@@ -1,8 +1,8 @@
-# 11.2. General Troubleshooting
+# 11.2 General troubleshooting
 
 ---
 
-## 11.2.1. HMI Alarm Behaviour
+## 11.2.1 HMI alarm behaviour
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -14,7 +14,7 @@ Active and historical alarms are shown on HMI alarm screen. Alarm codes are list
 
 ---
 
-## 11.2.2. Service Call Criteria
+## 11.2.2 Service call criteria
 
 | Parameter | Value / Description |
 |-----------|---------------------|

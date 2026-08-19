@@ -1,10 +1,10 @@
-# 7.3. Makine Durdurma
+# 7.3 Makine durdurma
 
 Stop düğmesi **HMI arayüzünde dijital buton** olarak bulunur.
 
 ---
 
-## 7.3.1. Normal Stop Prosedürü
+## 7.3.1 Normal Stop prosedürü
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -12,7 +12,7 @@ Stop düğmesi **HMI arayüzünde dijital buton** olarak bulunur.
 
 ---
 
-## 7.3.2. Acil Stop Sonrası Yeniden Başlatma
+## 7.3.2 Acil Stop sonrası yeniden başlatma
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -27,7 +27,7 @@ Detaylı acil stop test prosedürü için bkz. Bölüm **5.4.1**.
 
 ---
 
-## 7.3.3. Güç Kapatma Sırası
+## 7.3.3 Güç kapatma sırası
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
@@ -35,7 +35,7 @@ Detaylı acil stop test prosedürü için bkz. Bölüm **5.4.1**.
 
 ---
 
-## 7.3.4. Uzun Süreli Durdurma
+## 7.3.4 Uzun süreli durdurma
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|

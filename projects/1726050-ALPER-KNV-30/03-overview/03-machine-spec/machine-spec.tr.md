@@ -1,8 +1,8 @@
-# 3.3. Teknik Özellikler
+# 3.3 Teknik özellikler
 
 ---
 
-## 3.3.1. Fiziksel Boyutlar ve Ağırlık
+## 3.3.1 Fiziksel boyutlar ve ağırlık
 
 | Parametre | Birim | Değer |
 |-----------|:-----:|------:|
@@ -20,7 +20,7 @@ Makine, ayarlanabilir ayak sistemi üzerinde terazi ve seviye ayarı yapılabili
 
 ---
 
-## 3.3.2. Kapasite ve Proses Parametreleri
+## 3.3.2 Kapasite ve proses parametreleri
 
 | Parametre | Değer |
 |-----------|-------|
@@ -45,7 +45,7 @@ Nominal ve maksimum kapasite değerleri ile ürün boyut/ağırlık sınırları
 
 ---
 
-## 3.3.3. Elektrik Özellikleri
+## 3.3.3 Elektrik özellikleri
 
 | Parametre | Değer |
 |-----------|-------|
@@ -70,7 +70,7 @@ Elektrik beslemesi montaj sırasında 380 V, 50 Hz, trifaze hat ile pano üzerin
 
 ---
 
-## 3.3.4. Motor ve Sürücü Listesi
+## 3.3.4 Motor ve sürücü listesi
 
 | Motor | Güç | Devir | Marka | Model |
 |-------|-----|-------|-------|-------|
@@ -91,7 +91,7 @@ Toplam kurutma fan gücü: **16 kW**. Kurutma fanları marka/model bilgisi DATA 
 
 ---
 
-## 3.3.5. Basınçlı Hava ve Su
+## 3.3.5 Basınçlı hava ve su
 
 | Parametre | Değer |
 |-----------|-------|
@@ -108,7 +108,7 @@ Montaj bağlantıları: basınçlı hava **3/4"**, su **1/2"**. Pnömatik regül
 
 ---
 
-## 3.3.6. Ortam Koşulları
+## 3.3.6 Ortam koşulları
 
 | Parametre | Min | Max |
 |-----------|-----|-----|

@@ -1,8 +1,8 @@
-# 12.1. Dismantling
+# 12.1 Dismantling
 
 ---
 
-## 12.1.1. Dismantling Prerequisites
+## 12.1.1 Dismantling prerequisites
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -12,7 +12,7 @@ For long shutdown and tank cleaning, see Sections **7.3.4** and **10.1.5**.
 
 ---
 
-## 12.1.2. Energy Isolation (LOTO)
+## 12.1.2 Energy isolation (LOTO)
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -28,7 +28,7 @@ For long shutdown and tank cleaning, see Sections **7.3.4** and **10.1.5**.
 
 ---
 
-## 12.1.3. Dismantling Sequence
+## 12.1.3 Dismantling sequence
 
 | Parameter | Value / Description |
 |-----------|---------------------|
@@ -45,7 +45,7 @@ For long shutdown and tank cleaning, see Sections **7.3.4** and **10.1.5**.
 
 ---
 
-## 12.1.4. Recycling and Disposal
+## 12.1.4 Recycling and disposal
 
 | Parameter | Value / Description |
 |-----------|---------------------|

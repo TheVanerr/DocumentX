@@ -1,10 +1,10 @@
-# 8.2. Spezifische Einrichtung
+# 8.2 Spezifische Einrichtung
 
 Es gibt **keine Formatwechselprozedur** an der Maschine (siehe Abschnitt **6.1.5**). Produkt-/Rezeptparameter werden vom Anwender über HMI eingestellt.
 
 ---
 
-## 8.2.1. Rezept / Programmparameter
+## 8.2.1 Rezept / Programmparameter
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -19,7 +19,7 @@ Rezeptparameter (Temperatur, Prozesszeiten usw.) müssen vom Anwender am HMI nac
 
 ---
 
-## 8.2.2. Produktbezogene Parameter
+## 8.2.2 Produktbezogene Parameter
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -31,7 +31,7 @@ Für jeden Produkttyp kann ein separates Rezept erstellt werden. Parameter (Temp
 
 ---
 
-## 8.2.3. Rezeptnummernliste
+## 8.2.3 Rezeptnummernliste
 
 | Parameter | Wert / Beschreibung |
 |-----------|---------------------|
@@ -41,7 +41,7 @@ Rezeptnummerierung und Produktzuordnung müssen vom Anwender definiert werden. B
 
 ---
 
-## 8.2.4. Checkliste spezifische Einrichtung
+## 8.2.4 Checkliste spezifische Einrichtung
 
 | # | Prüfung | Status |
 |---|---------|--------|
