@@ -1,21 +1,29 @@
 # 13.2 Çizimler
 
-Çizimler **ayrı evrak paketi** içinde teslim edilir.
+---
+
+## 13.2.1 Ayrı evrak — makine layout
+
+Makine **layout çizimi** ayrı evrak olarak teslim edilir.
+
+| Parametre | Değer |
+|-----------|--------|
+| Doküman | Makine layout çizimi |
+| Dosya adı | `1726050-ALPER-KNV 30 LAYOUT.pdf` |
+| Teslim | Ayrı evrak (PDF) — teslim paketi |
+| Kılavuzda kullanım | Bölüm **3.5** (yerleşim planı) |
+
+Layout üzerinde besleme yönü (sol), boşaltma yönü (sağ), operatör tarafı (sağ) ve minimum etraf boşlukları gösterilir. Kurulum ve taşıma prosedürleri için bkz. Bölüm **4**, **5**.
 
 ---
 
-## 13.2.1 Çizim listesi
+## 13.2.2 Kılavuza gömülü görseller
 
-| Çizim | Dosya adı / rev | Teslim |
-|-------|-----------------|--------|
-| Genel montaj çizimi | Ayrı evrak olarak teslim edilir | Teslim paketi |
-| Kaldırma noktaları çizimi | Ayrı evrak olarak teslim edilir | Teslim paketi |
-| Zemin ankraj çizimi | Ayrı evrak olarak teslim edilir (varsa) | Teslim paketi |
-| Müşteriye teslim çizim paketi | Ayrı evrak olarak teslim edilir | Teslim paketi |
-| Genel yerleşim planı | `1726050-ALPER-KNV 30 LAYOUT.pdf` | Bkz. **3.5** |
+Makine fotoğrafları ve parça görselleri proje `assets/` klasöründedir. Kılavuz metinlerinde referans verilen görseller ilgili bölümlerde yer alır; ayrı çizim paketi **oluşturulmaz**.
 
----
+| Görsel tipi | Konum | Örnek |
+|-------------|-------|--------|
+| Makine / modül fotoğrafları | `assets/FOTO-*` | Bölüm **3**, **5**, **7** |
+| Yedek parça fotoğrafları | `assets/9.1/{sipariş kodu}.png` | Bölüm **9.1.5**, **13.3** |
+| Sembol / uyarı ikonları | `assets/1.2.2/` | Bölüm **1.2**, **2** |
 
-## 13.2.2 Kılavuzda kullanılan görsel referansları
-
-Makine görselleri proje `assets/` klasöründedir. Kılavuz metinlerinde `<!-- FOTO: ... -->` ile işaretlenmiş yer tutucular ilgili görsellere bağlanır.

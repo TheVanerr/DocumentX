@@ -3,13 +3,13 @@
 import re
 from pathlib import Path
 from collections import defaultdict
+from urllib.parse import unquote
 
 ROOT = Path(r"c:\Users\fatih.gural\Desktop\FULL DATABASE\PROG\DocumentX\projects\1726050-ALPER-KNV-30")
 DATA_FILE = ROOT / "1726050-ALPER-KNV 30 DATA"
 OUT_FILE = ROOT / "EKSIK.md"
 ASSETS = ROOT / "assets"
 
-# Section map from folder prefix
 SECTION_MAP = {
     "01-introduction": "Bölüm 1 — Giriş",
     "02-safety": "Bölüm 2 — Güvenlik",
@@ -27,6 +27,66 @@ SECTION_MAP = {
     "14-index": "Bölüm 14 — Ekler/indeks",
 }
 
+# Tamamlanan — EKSIK listesine alınmaz
+SKIP_DATA_BLOCKS = {
+    "BAKIM_PERIYOT",
+    "PARCA_LISTESI",
+    "BAKIM_YEDEK_PARCA",
+    "BAKIM_YEDEK_PARCA_NOT",
+    "DOKUMANLAR",
+    "CIZIMLER",
+    "URUN_KAPASITE",
+    "OZEL_KURULUM",
+    "EKLER",
+    "SOZLUK",
+    "INDEKS",
+}
+
+SKIP_DATA_KEY_SUBSTR = (
+    "kapasite",
+    "reçete",
+    "recete",
+    "ürün a",
+    "ürün b",
+    "ürün c",
+    "ürün boyut",
+    "ürün ağırlık",
+    "ürün format",
+    "nominal kapasite",
+    "maksimum kapasite",
+    "test edilen kapasite",
+    "ambalaj tipi",
+)
+
+SKIP_VAL_PREFIXES = (
+    "KD",
+    "Kılavuz",
+    "Kullanıcı firma",
+    "Bkz.",
+    "Bkz ",
+    "Bu dosya",
+    "Ayrı evrak — teslim",
+    "P&ID +",
+    "Uygulanmaz",
+    "Gömülü",
+    "Tablo",
+)
+
+SKIP_MD_PATH_PARTS = (
+    "08-capacity",
+    "13-documents",
+    "14-index",
+)
+
+SKIP_MD_LINE_SUBSTR = (
+    "kapasite",
+    "Kapasite",
+    "reçete",
+    "Reçete",
+    "ürün a",
+    "Ürün A",
+)
+
 
 def section_for(path: str) -> str:
     for k, v in SECTION_MAP.items():
@@ -37,11 +97,13 @@ def section_for(path: str) -> str:
 
 def resolve_asset(ref: str, md_path: Path) -> Path | None:
     ref = ref.strip().split("#")[0].split("?")[0]
-    ref = ref.replace("\\", "/")
+    ref = unquote(ref.replace("\\", "/"))
     candidates = []
     if ref.startswith("assets/"):
         candidates.append(ROOT / ref)
     elif ref.startswith("../../assets/"):
+        candidates.append((md_path.parent / ref).resolve())
+    elif ref.startswith("../assets/"):
         candidates.append((md_path.parent / ref).resolve())
     elif ref.startswith("../"):
         candidates.append((md_path.parent / ref).resolve())
@@ -57,25 +119,49 @@ def resolve_asset(ref: str, md_path: Path) -> Path | None:
     return None
 
 
+def should_skip_data_gap(block: str, key: str, val: str) -> bool:
+    if block in SKIP_DATA_BLOCKS:
+        return True
+    kl = key.lower()
+    if any(s in kl for s in SKIP_DATA_KEY_SUBSTR):
+        return True
+    if block == "KAPASITE_PROSES":
+        return True
+    for p in SKIP_VAL_PREFIXES:
+        if val.startswith(p):
+            return True
+    if val.startswith("Ayrı evrak") and "teslim paketi" in val:
+        return True  # P&ID / elektrik / layout — kılavuz metni tamam
+    return False
+
+
 def parse_data_gaps(text: str) -> list[tuple[str, str, str]]:
     gaps = []
     current_block = ""
     for line in text.splitlines():
         s = line.strip()
-        if s.startswith("# ---") or s.startswith("[") and s.endswith("]"):
-            if s.startswith("[") and not s.startswith("[#"):
-                current_block = s.strip("[]")
+        if s.startswith("[") and s.endswith("]") and not s.startswith("[#"):
+            current_block = s.strip("[]")
             continue
-        if ":" in s and not s.startswith("#"):
+        if s.startswith("#") or s.startswith("- ") or s.startswith("X:"):
+            continue
+        if ":" in s:
             key, _, val = s.partition(":")
             key, val = key.strip(), val.strip()
-            if not val or val in ("Bilinmiyor", "Bilinmiyor.", ""):
+            if should_skip_data_gap(current_block, key, val):
+                continue
+            if not val or val in ("Bilinmiyor", "Bilinmiyor."):
                 gaps.append((current_block, key, val or "(boş)"))
-            elif val.startswith("Kullanıcı firma"):
-                gaps.append((current_block, key, val))
-            elif val.startswith("Ayrı evrak"):
-                gaps.append((current_block, key, val))
     return gaps
+
+
+def should_skip_md_eksik(rel: str, line: str) -> bool:
+    rp = rel.replace("\\", "/")
+    if any(p in rp for p in SKIP_MD_PATH_PARTS):
+        return True
+    if any(s in line for s in SKIP_MD_LINE_SUBSTR):
+        return True
+    return False
 
 
 def main():
@@ -88,7 +174,6 @@ def main():
     eksik_md = []
     missing_imgs: dict[str, set[str]] = defaultdict(set)
     img_desc: dict[str, str] = {}
-
     img_link = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)")
 
     for md in sorted(ROOT.rglob("*.tr.md")):
@@ -97,7 +182,7 @@ def main():
         sec = section_for(rel)
 
         for i, line in enumerate(text.splitlines(), 1):
-            if "EKSİK" in line or "EKSIK" in line:
+            if ("EKSİK" in line or "EKSIK" in line) and not should_skip_md_eksik(rel, line):
                 eksik_md.append((rel, i, line.strip(), sec))
 
             for m in img_link.finditer(line):
@@ -108,45 +193,72 @@ def main():
                     if alt and alt not in ("", "Görsel"):
                         img_desc[norm] = alt
 
-    data_text = DATA_FILE.read_text(encoding="utf-8-sig")
-    data_gaps = parse_data_gaps(data_text)
+    data_gaps = parse_data_gaps(DATA_FILE.read_text(encoding="utf-8-sig"))
 
-    # Build markdown
+    # Split missing images: spare parts 9.1 vs FOTO vs other
+    parca_imgs = {k: v for k, v in missing_imgs.items() if "9.1/" in k.replace("\\", "/") or "9.1%2F" in k}
+    hmi_imgs = {
+        k: v for k, v in missing_imgs.items()
+        if k not in parca_imgs
+        and any(x in k.lower() for x in ("hmi", "alarm", "calisma", "manuel", "recete", "hazirlik", "start", "sicaklik", "settings", "operation"))
+    }
+    other_imgs = {k: v for k, v in missing_imgs.items() if k not in parca_imgs and k not in hmi_imgs}
+
     lines = [
         "# 1726050-ALPER-KNV-30 — KILAVUZ TAMAMLAMA EKSİK LİSTESİ",
         "",
-        "> **Amaç:** Kılavuzun tamamlanması için sizden beklenen bilgi, fotoğraf, çizim ve dokümanlar.",
-        "> **Kaynak:** DATA dosyası + tüm `.tr.md` dosyaları + `assets/` taraması.",
-        "> **Klasör:** Fotoğrafları belirtilen dosya adıyla `projects/1726050-ALPER-KNV-30/assets/` altına koyun.",
+        "> **Son güncelleme:** Bakım periyodu, yedek parça/BOM, Bölüm 13 (dokümanlar/çizimler/parça listesi) tamamlandı.",
+        "> **Kaynak:** DATA + `.tr.md` + `assets/` taraması.",
+        "> **Yenile:** `python scripts/scan-eksik-alper.py`",
         "",
         "---",
         "",
-        "## ÖNCELİK ÖZETİ",
+        "## TAMAMLANAN (EKSIK listesinden çıkarıldı)",
         "",
-        "| Öncelik | Konu | Neden |",
-        "|---------|------|-------|",
-        "| P1 | HMI ekran görüntüleri | Bölüm 3.4, 6, 7, 11 tamamlanamaz |",
-        "| P1 | Makine / modül fotoğrafları | Bölüm 3.1–3.5, 5 görselleri boş |",
-        "| P1 | Kimlik etiketi gerçek fotoğrafı | Bölüm 1.3 placeholder SVG |",
-        "| P2 | Bakım periyodu tablosu | Bölüm 9.1.3 DATA'da tamamen boş |",
-        "| P2 | Kapasite / ürün limitleri | Bölüm 3.3, 8 tabloları |",
-        "| P3 | Harici evraklar (şema, BOM, CE) | Bölüm 13 referansları |",
+        "| Konu | Durum | Konum |",
+        "|------|--------|-------|",
+        "| Yedek parça / BOM (22 kalem) | [x] | DATA `[PARCA_LISTESI]` → **9.1.5**, **13.3** |",
+        "| Bakım periyodu (günlük → yıllık) | [x] | DATA `[BAKIM_PERIYOT]` → **9.1.3** |",
+        "| Bölüm 13 — Doküman listesi | [x] | **13.1** (P&ID + Elektrik + Layout ayrı evrak) |",
+        "| Bölüm 13 — Çizimler / layout | [x] | **13.2** |",
+        "| Bölüm 13 — Parça listesi (gömülü) | [x] | **13.3.1** |",
+        "| Bölüm 14 — Ekler / sözlük / indeks | [x] | **14** (kılavuz içi referanslar) |",
+        "| Kapasite / reçete / ürün parametreleri | KD | **Bölüm 8** — kullanıcı hattı ayarı; kılavuzda doldurulmaz |",
         "",
         "---",
         "",
-        f"## A — DATA DOSYASINDA EKSİK / BELİRSİZ ALANLAR ({len(data_gaps)} madde)",
+        "## ÖNCELİK ÖZETİ (kalan işler)",
         "",
-        "| Blok | Alan | Mevcut |",
-        "|------|------|--------|",
+        "| Öncelik | Konu | Not |",
+        "|---------|------|-----|",
+        "| P1 | HMI ekran görüntüleri | Bölüm 3.4, 6, 7, 11 |",
+        "| P1 | Makine / modül FOTO-* | Bölüm 3, 5, 7 |",
+        "| P1 | Kimlik etiketi fotoğrafı | Bölüm 1.3 |",
+        "| P2 | Yedek parça fotoğrafları | `assets/9.1/{sipariş kodu}.png` — 22 adet |",
+        "| P2 | Yağlama (gres tipi, redüktör yağı) | Bölüm 9.1.4 |",
+        "| P2 | Arıza tablosu + servis kriterleri | Bölüm 11 |",
+        "| P3 | Revizyon tablosu (1.1) | Kapak / doküman kontrolü |",
+        "",
+        "---",
+        "",
+        f"## A — DATA'DA KALAN BOŞ / BELİRSİZ ALANLAR ({len(data_gaps)} madde)",
+        "",
     ]
-    for block, key, val in data_gaps:
-        lines.append(f"| {block} | {key} | {val} |")
+
+    if data_gaps:
+        lines += ["| Blok | Alan | Mevcut |", "|------|------|--------|"]
+        for block, key, val in data_gaps:
+            lines.append(f"| {block} | {key} | {val} |")
+    else:
+        lines.append("_Kapasite/KD ve tamamlanan bloklar hariç DATA boş alan kalmadı._")
 
     lines += [
         "",
         "---",
         "",
-        f"## B — MD DOSYALARINDA [EKSİK] İŞARETLİ SATIRLAR ({len(eksik_md)} satır)",
+        f"## B — MD'DE [EKSİK] İŞARETLİ SATIRLAR ({len(eksik_md)} satır)",
+        "",
+        "_Bölüm 8 (kapasite), 13, 14 hariç._",
         "",
     ]
     if eksik_md:
@@ -155,72 +267,83 @@ def main():
             content = content.replace("|", "\\|")[:100]
             lines.append(f"| {sec} | `{rel}` | {ln} | {content} |")
     else:
-        lines.append("_MD dosyalarında [EKSİK] işareti bulunamadı; eksikler DATA ve görsellerde._")
-
-    # HMI-critical subset for quick reference
-    hmi_keys = [
-        k for k in missing_imgs
-        if any(x in k.lower() for x in ("hmi", "alarm", "calisma", "manuel", "recete", "hazirlik", "start", "sicaklik", "settings", "operation"))
-    ]
+        lines.append("_Kalan bölümlerde [EKSİK] satırı yok._")
 
     lines += [
         "",
         "---",
         "",
-        "## B.1 — KRİTİK: HMI EKRAN GÖRÜNTÜLERİ (P1)",
+        f"## C — YEDEK PARÇA FOTOĞRAFLARI — `assets/9.1/` ({len(parca_imgs)} eksik)",
         "",
-        "Kontrol panosu ve operasyon bölümleri bu fotoğraflar olmadan tamamlanamaz. Hepsini `assets/` köküne aşağıdaki **dosya adlarıyla** kaydedin.",
+        "Tablo hazır; fotoğrafları **sipariş kodu.png** adıyla yükleyin (ör. `10 06675.png`).",
         "",
-        "| Dosya adı | Ne çekilecek | Bölüm |",
-        "|-----------|--------------|-------|",
+        "| Sipariş kodu | Dosya | Bölüm |",
+        "|--------------|-------|-------|",
     ]
-    for k in sorted(hmi_keys):
+    for ref in sorted(parca_imgs.keys()):
+        fname = unquote(Path(ref.replace("\\", "/")).name)
+        code = fname.replace(".png", "").replace("%20", " ")
+        secs = "; ".join(sorted(parca_imgs[ref]))
+        sec_short = secs.split(" — ")[0] if secs else ""
+        lines.append(f"| `{code}` | `assets/9.1/{fname}` | {sec_short} |")
+
+    if not parca_imgs:
+        lines.append("| _Tüm yedek parça görselleri yüklü_ | | |")
+
+    lines += [
+        "",
+        "---",
+        "",
+        "## D — HMI EKRAN GÖRÜNTÜLERİ (P1)",
+        "",
+        "| Dosya adı | Açıklama | Bölüm |",
+        "|-----------|----------|-------|",
+    ]
+    for k in sorted(hmi_imgs.keys()):
         fname = Path(k.replace("\\", "/")).name
         desc = img_desc.get(k, "HMI ekran görüntüsü")
-        secs = "; ".join(sorted(missing_imgs[k]))
-        sec_short = secs.split(" — ")[0] if secs else ""
-        lines.append(f"| `{fname}` | {desc} | {sec_short} |")
+        sec_short = sorted(hmi_imgs[k])[0].split(" — ")[0] if hmi_imgs[k] else ""
+        lines.append(f"| `{fname}` | {desc[:60]} | {sec_short} |")
 
     lines += [
         "",
-        "**Ek DATA bilgisi (HMI ile birlikte verin):**",
-        "- Ana ekran menü yapısı (ekran görüntüsü veya madde listesi)",
-        "- Trend / log kayıt süresi",
-        "- Şifre seviyeleri (operatör / bakım / admin) ayrımı varsa",
-        "",
-        "**Kurutma fan motorları:** DATA'da 4 kurutma fanı için marka/model boş — motor etiketi fotoğrafı veya teknik bilgi gerekli (Bölüm 3.3.4).",
-        "",
         "---",
         "",
-        f"## C — EKSİK FOTOĞRAF / GÖRSEL DOSYALARI ({len(missing_imgs)} referans)",
+        f"## E — DİĞER EKSİK GÖRSELLER (FOTO-* vb.) ({len(other_imgs)} referans)",
         "",
-        "Her satırda: hedef dosya yolu, açıklama (varsa alt metin), kullanıldığı bölüm.",
-        "",
-        "| # | Hedef dosya / yol | Açıklama (çekilecek fotoğraf) | Kullanıldığı bölüm |",
-        "|---|-------------------|-------------------------------|-------------------|",
+        "| # | Hedef yol | Açıklama | Bölüm |",
+        "|---|-----------|----------|-------|",
     ]
-
-    for idx, (ref, secs) in enumerate(sorted(missing_imgs.items()), 1):
-        desc = img_desc.get(ref, "")
+    for idx, (ref, secs) in enumerate(sorted(other_imgs.items()), 1):
+        desc = img_desc.get(ref, "")[:60]
+        norm = ref.replace("\\", "/")
+        if "FOTO-" in norm:
+            norm = "assets/" + Path(norm).name
+        elif "/assets/" in norm:
+            norm = "assets/" + norm.split("/assets/", 1)[1]
+        norm = unquote(norm.replace("../../assets/", "assets/").replace("../assets/", "assets/"))
         sec_str = "; ".join(sorted(secs))
-        norm_ref = ref.replace("\\", "/")
-        if "FOTO-" in norm_ref:
-            norm_ref = "assets/" + Path(norm_ref).name
-        elif norm_ref.startswith("../../assets/"):
-            norm_ref = norm_ref.replace("../../assets/", "assets/")
-        elif norm_ref.startswith("../assets/"):
-            norm_ref = norm_ref.replace("../assets/", "assets/")
-        ref_esc = norm_ref.replace("|", "\\|")
-        desc_esc = desc.replace("|", "\\|")[:80]
-        lines.append(f"| C{idx} | `{ref_esc}` | {desc_esc or '_(alt metin yok — bölüm metnine bakın)_'} | {sec_str} |")
+        lines.append(f"| E{idx} | `{norm}` | {desc or '—'} | {sec_str.split(' — ')[0]} |")
 
     lines += [
         "",
         "---",
         "",
-        "## D — MEVCUT ASSETS KLASÖRÜ",
+        "## F — AYRI EVRAK TESLİMİ (kılavuz metni tamam)",
         "",
-        "Şu an projede yüklü dosyalar:",
+        "Aşağıdaki **3 PDF** müşteriye fiziksel/dijital paket olarak verilir; kılavuz Bölüm **13.1.1** referansları güncel.",
+        "",
+        "| # | Doküman | Dosya / not |",
+        "|---|---------|-------------|",
+        "| 1 | P&ID şeması | Teslim paketi PDF |",
+        "| 2 | Elektrik şeması | Teslim paketi PDF |",
+        "| 3 | Makine layout | `1726050-ALPER-KNV 30 LAYOUT.pdf` |",
+        "",
+        "**Not:** BOM kılavuza gömülü (**13.3**); ayrı PDF **yok**.",
+        "",
+        "---",
+        "",
+        "## G — MEVCUT ASSETS",
         "",
     ]
     for a in existing_assets:
@@ -228,63 +351,22 @@ def main():
 
     lines += [
         "",
-        "**Not:** Kök dizinde adlandırılmamış genel makine PNG/PDF dosyaları varsa bunları yukarıdaki FOTO-* isimlerine eşleştirin.",
-        "",
-        "---",
-        "",
-        "## E — SAHA ZİYARETİ HIZLI FOTOĞRAF LİSTESİ",
-        "",
-        "Tek seferde çekilebilecek minimum set:",
-        "",
-        "1. Makine genel — 4 açı (ön, arka, sol, sağ)",
-        "2. Elektrik panosu — kapak kapalı + açık (PLC, şalter, reset, faz rölesi)",
-        "3. **HMI ekran serisi** — çalışma, manuel, alarm, ayar, hazırlık, start, reçete, sıcaklık",
-        "4. Acil stop — 4 konum",
-        "5. Medya bağlantıları — hava regülatör 6 bar, su 1 bar, elektrik 380V",
-        "6. Tank bölgeleri — yıkama, durulama, yağ sıyırıcı, kurutma fanları",
-        "7. Filtreler — ön filtre, tank filtresi, torba filtre",
-        "8. Yağlama noktaları — konveyör giriş/çıkış (4 nokta işaretli)",
-        "9. Kimlik etiketi — okunaklı close-up",
-        "10. Tepe lambası — sarı (hazır) ve kırmızı (alarm)",
-        "11. RFID sensör + bakım kapakları",
-        "12. Forklift noktaları — makine alt profil",
-        "",
-        "---",
-        "",
-        "## F — HARİCİ DOKÜMANLAR (ayrı teslim)",
-        "",
-        "| Doküman | DATA durumu | Bölüm |",
-        "|---------|-------------|-------|",
-        "| Elektrik şeması | Ayrı evrak | 13.1 |",
-        "| Pnömatik şema | Ayrı evrak | 13.1 |",
-        "| Layout PDF | `1726050-ALPER-KNV 30 LAYOUT.pdf` | 3.5, 13.1 |",
-        "| I/O listesi PDF | `1726050-ALPER-KNV 30 I/O LISTESI.pdf` | 5.6, 13.1 |",
-        "| BOM / parça listesi | Ayrı evrak | 13.3 |",
-        "| PLC program yedek | Ayrı evrak | 13.1 |",
-        "| HMI proje yedek (.fw7) | Ayrı evrak | 13.1 |",
-        "| CE dosyası | Ayrı evrak | 13.1, Ek D |",
-        "| Kalibrasyon sertifikaları | Varsa | 13.1 |",
-        "| P&ID | Ayrı evrak | 13.1 |",
-        "| Montaj / kaldırma / ankraj çizimleri | Ayrı evrak | 13.2 |",
-        "| Garanti belgesi | Ayrı evrak | Ek D |",
-        "",
         "---",
         "",
         "## TOPLAM",
         "",
-        f"| Kategori | Adet |",
-        f"|----------|------|",
-        f"| DATA boş / belirsiz alan | {len(data_gaps)} |",
-        f"| MD [EKSİK] satırı | {len(eksik_md)} |",
-        f"| Eksik görsel referansı | {len(missing_imgs)} |",
+        "| Kategori | Adet |",
+        "|----------|------|",
+        f"| DATA kalan boş alan | {len(data_gaps)} |",
+        f"| MD [EKSİK] (8/13/14 hariç) | {len(eksik_md)} |",
+        f"| Eksik yedek parça fotoğrafı (9.1) | {len(parca_imgs)} |",
+        f"| Eksik HMI / FOTO görsel | {len(hmi_imgs) + len(other_imgs)} |",
         f"| Mevcut asset dosyası | {len(existing_assets)} |",
-        "",
-        "*Tamamlanan maddeleri işaretleyin; liste güncellendiğinde script yeniden çalıştırılabilir: `python scripts/scan-eksik-alper.py`*",
     ]
 
     OUT_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"Written: {OUT_FILE}")
-    print(f"DATA gaps: {len(data_gaps)}, EKSİK lines: {len(eksik_md)}, Missing imgs: {len(missing_imgs)}")
+    print(f"DATA gaps: {len(data_gaps)}, EKSİK: {len(eksik_md)}, imgs: {len(missing_imgs)} (9.1: {len(parca_imgs)})")
 
 
 if __name__ == "__main__":
