@@ -1,0 +1,16 @@
+# Genel proje sablonu — yeni proje olustururken bu klasor kopyalanir.
+
+proje_adi: ''
+model: ''
+sablon: true
+tip: sablon
+diller:
+  - tr
+  - en
+  - de
+varsayilan_dil: tr
+extends: templates/base.yaml
+kapak:
+  rev: ''
+  tarih: ''
+  firma: DOLFIN
