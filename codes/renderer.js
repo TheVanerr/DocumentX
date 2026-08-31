@@ -16,8 +16,6 @@ async function onModelChange(value, opts = {}) {
   const contentArea = document.getElementById('contentArea');
   const scrollTop = opts.preserveScroll && contentArea ? contentArea.scrollTop : null;
 
-  pagesContainer.innerHTML = '';
-
   if (!value) {
     currentModel = '';
     currentProjectRel = '';
@@ -126,11 +124,14 @@ function measureImages(srcs) {
 /* ── Kılavuzu oluştur ── */
 async function renderGuide(modelName, tree, container) {
   lastGuideCache = { modelName, tree };
+  const staging = document.createElement('div');
   if (viewMode === 'html') {
-    await renderHtmlGuide(modelName, tree, container);
+    await renderHtmlGuide(modelName, tree, staging);
   } else {
-    await renderPdfGuide(modelName, tree, container);
+    await renderPdfGuide(modelName, tree, staging);
   }
+  container.replaceChildren(...Array.from(staging.childNodes));
+  container.className = staging.className;
 }
 
 async function renderPdfGuide(modelName, tree, container) {
