@@ -1,4 +1,34 @@
+# Tüm md dosyalarını gizle; LYM kılavuz klasörü istisna (tutarlı yazım için agent erişimi)
 *.md
+!CURSOR USER MANUEL TEMPLATE.md
+
+#!projects/lym/
+#!projects/lym/**
+
+#!projects/vdl/
+#!projects/vdl/**
+
+#!projects/kbn/
+#!projects/kbn/**
+
+#!projects/ult/
+#!projects/ult/**
+
+#!projects/mst/
+#!projects/mst/**
+
+#!projects/rts/
+#!projects/rts/**
+
+#!projects/pyt/
+#!projects/pyt/**
+
+#!projects/knv/
+#!projects/knv/**
+
+!projects/1726050-ALPER-KNV-30/
+!projects/1726050-ALPER-KNV-30/**
+
 *.yaml
 *.yml
 node_modules/

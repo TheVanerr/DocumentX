@@ -1,6 +1,8 @@
-# 3. GENEL BAKIŞ
+﻿# 3. GENEL BAKIŞ
 
-Makinenin ana işlevi, parça yüzeyinde endüstriyel işlemlerden kalan **yağ ve kirliliğin giderilmesidir**. Bu bölümde sunulan bilgiler; operatör, bakım ve kurulum personelinin makineyi tanıması, sınırlarını bilmesi ve güvenli kullanım için gerekli teknik çerçeveyi oluşturması amacıyla düzenlenmiştir.
+KNV-30 3000 2B, endüstriyel parçaların yüzeylerindeki yağ ve kirliliğin giderilmesi amacıyla tasarlanmış konveyörlü, iki banyolu (yıkama + durulama) bir parça yıkama makinesidir. Bu bölümde sunulan bilgiler, operatör, bakım ve kurulum personelinin makineyi tanıması, sınırlarını bilmesi ve güvenli kullanım için gerekli teknik çerçeveyi oluşturması amacıyla düzenlenmiştir.
+
+Makine, parçaların konveyör üzerinde ilerleyerek yıkama, durulama ve kurutma proseslerinden sırasıyla geçmesini sağlar. Proses konsepti sürekliliğe dayalıdır; parçalar sol taraftan (giriş) yüklenir, proses bölgelerinden geçer ve sağ taraftan (çıkış) temiz ve kuru olarak alınır. Bu yapı, robot veya otomasyon hatları ile entegrasyon için uygundur.
 
 ---
 
@@ -10,11 +12,11 @@ Aşağıdaki alt bölümler, makine hakkında giderek detaylandırılmış bilgi
 
 | Bölüm | Başlık | Konu |
 |-------|--------|------|
-| **3.1** | Makine Tanımı ve Sistematik Yapı | Konveyör, yıkama/durulama banyoları, kurutma, yağ sıyırıcı, otomasyon altyapısı |
-| **3.2** | Amaçlanan Kullanım | İşlenebilir parça tipleri, yasak kullanımlar, ortam koşulları, operatör gereksinimleri |
-| **3.3** | Teknik Özellikler | Boyut/ağırlık, kapasite, elektrik, motor listesi, medya bağlantıları, ortam verileri |
-| **3.4** | Makine Kontrolleri | Elektrik panosu, HMI, PLC, start/stop, acil stop, sinyal lambaları, alarm |
-| **3.5** | Makine Yerleşim Planı | Yön tanımları, etraf boşlukları, bakım erişimi, taşıma kısıtları |
+| **3.1** | Makine tanımı ve sistematik yapı | Konveyör, yıkama/durulama banyoları, kurutma, yağ sıyırıcı, otomasyon altyapısı |
+| **3.2** | Amaçlanan kullanım | İşlenebilir parça tipleri, yasak kullanımlar, ortam koşulları, operatör gereksinimleri |
+| **3.3** | Teknik özellikler | Boyut/ağırlık, kapasite, elektrik, motor listesi, medya bağlantıları, ortam verileri |
+| **3.4** | Makine kontrolleri | Elektrik panosu, HMI, PLC, start/stop, acil stop, sinyal lambaları, alarm |
+| **3.5** | Makine yerleşim planı | Yön tanımları, etraf boşlukları, bakım erişimi, taşıma kısıtları |
 
 ---
 

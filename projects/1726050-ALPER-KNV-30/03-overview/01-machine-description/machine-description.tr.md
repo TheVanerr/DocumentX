@@ -1,4 +1,4 @@
-# 3.1 Makine tanımı ve sistematik yapı
+﻿# 3.1 Makine tanımı ve sistematik yapı
 
 KNV-30 3000 2B (Seri no: **1726050**, müşteri: **ALPER ÖZLEM IDEA**, üretim yılı: **2026**), girişten yüklemeli konveyörlü, iki banyolu (yıkama + durulama) endüstriyel parça yıkama makinesidir. Parçalar konveyör hattı üzerinde ilerleyerek yıkama, durulama ve kurutma proseslerini ardışık olarak tamamlar; makinenin ana işlevi, parça yüzeyinde endüstriyel işlemlerden kalan **yağ ve kirliliğin giderilmesidir**.
 
@@ -13,7 +13,7 @@ Makine, **konveyör** tipi sürekli besleme prensibiyle tasarlanmıştır. Besle
 
 KNV 30 3000 2B, endüstriyel üretim hatlarında işlenmiş parçaların yüzey temizliği için kullanılan, konveyör üzerinde ilerleyen parçaların sabit proses bölgelerinden geçirildiği bir yıkama sistemidir. **2B** tanımı, makinenin **iki bağımsız proses banyosuna** — yıkama ve durulama — sahip olduğunu ifade eder; her banyo kendi sirkülasyon devresi ile çalışır ve banyolar arası sıvı karışımı yapısal olarak engellenir.
 
-Parçalar sol taraftan (besleme/giriş) konveyöre yüklenir. Konveyör hattı boyunca sırasıyla yıkama bölgesi, durulama bölgesi ve kurutma bölgesinden geçen parçalar, sağ taraftan (boşaltma/çıkış) temizlenmiş ve kurutulmuş olarak alınır. Bu sürekli akış prensibi, hat entegrasyonuna uygun kesintisiz üretim imkânı sağlar.
+Parçalar sol taraftan (besleme/giriş) konveyöre yüklenir. Konveyör hattı boyunca sırasıyla yıkama bölgesi, durulama bölgesi ve kurutma bölgesinden geçen parçalar, sağ taraftan (boşaltma/çıkış) temizlenmiş ve kurutulmuş olarak alınır. Bu sürekli akış prensibi, hat entegrasyonuna uygun kesintisiz üretim imkanı sağlar.
 
 Makinenin dış boyutları **3770 × 1730 × 2122 mm** (L × W × H), boş ağırlığı **1300 kg**, çalışma ağırlığı (dolu) **1500 kg**'dır. Makine, **ayarlanabilir ayak** sistemi üzerine monte edilmiştir; ağırlık merkezi konveyör hattının ortasındadır.
 
@@ -46,7 +46,7 @@ Konveyör tahriki, redüktörlü elektrik motoru ile gerçekleştirilir:
 
 Konveyör hattı, parçaların yıkama nozulları ve durulama nozulları altından geçmesini sağlayacak şekilde proses bölgeleri boyunca konumlandırılmıştır. Referans / home pozisyonu olarak **konveyörün başı** kullanılmalıdır.
 
-Konveyör üzerinde toplam **4 adet yağlama noktası** bulunur: giriş tarafında 2 adet, çıkış tarafında 2 adet. Periyodik yağlama, konveyörün uzun ömürlü ve sorunsuz çalışması için gereklidir (ayrıntılar bakım bölümünde).
+Konveyör üzerinde toplam **4 adet yağlama noktası** bulunur: giriş tarafında 2 adet, çıkış tarafında 2 adet. Periyodik yağlama, konveyörün uzun ömürlü ve sorunsuz çalışması için gereklidir (bkz. Bölüm 9.1.4 — Aylık bakım maddeleri).
 
 <!-- FOTO: Konveyör giriş ve çıkış — besleme (sol) / boşaltma (sağ) -->
 ![Konveyör giriş-çıkış görünümü](../../assets/FOTO-3-1-2-konveyor-giris-cikis.png)
@@ -70,9 +70,9 @@ Yıkama sirkülasyon devresi, bağımsız pompa motoru ile tahrik edilir:
 | Marka | Lowara |
 | Model | ESHE 40-160/30 |
 
-Yıkama tankı, proses sıvısının depolandığı ve ısıtıldığı ana haznedir. Tank içerisinde **ön filtreler** bulunur; günlük bakımda sökülüp temizlenmeleri gerekir. Pompa çıkış hattında **hassas torba filtreler** yer alır; haftalık derin temizlikte sökülüp temizlenmelidir.
+Yıkama tankı, proses sıvısının depolandığı ve ısıtıldığı ana haznedir. Tank içerisinde **ön filtreler** bulunur; günlük bakımda sökülüp temizlenmeleri gerekir (bkz. Bölüm 10.1.3). Pompa çıkış hattında **hassas torba filtreler** yer alır; haftalık derin temizlikte sökülüp temizlenmelidir (bkz. Bölüm 10.1.4).
 
-Proses suyu için **şebeke suyu** veya **arıtılmış su** kullanılmalıdır. Su giriş basıncı **1 bar**, su sıcaklığı **+10°C ile +70°C** aralığında olmalıdır.
+Proses suyu için **şebeke suyu** veya **arıtılmış su** kullanılmalıdır. Su giriş basıncı **1 bar**, su sıcaklığı **+10°C ile +70°C** aralığında olmalıdır (bkz. Bölüm 3.3 — Sıkıştırılmış hava/su).
 
 <!-- FOTO: Yıkama banyosu — tank, pompa ve filtre genel görünüm -->
 ![Yıkama banyosu genel görünüm](../../assets/FOTO-3-1-4-yikama-banyosu.png)
@@ -96,7 +96,7 @@ Durulama sirkülasyon devresi:
 | Marka | GOULDS |
 | Model | GCEA 370/3 |
 
-Durulama tankında da filtreler bulunur; haftalık derin temizlik prosedürü kapsamında tank filtreleri ve pompa çıkışındaki torba filtreler sökülüp temizlenmelidir. Temizlik maddesi olarak **asit bazlı** veya **paslanmaz çeliğe zarar verecek** maddeler kullanılmamalıdır.
+Durulama tankında da filtreler bulunur; haftalık derin temizlik prosedürü kapsamında tank filtreleri ve pompa çıkışındaki torba filtreler sökülüp temizlenmelidir (bkz. Bölüm 10.1.4). Temizlik maddesi olarak **asit bazlı** veya **paslanmaz çeliğe zarar verecek** maddeler kullanılmamalıdır (bkz. Bölüm 10 — Yasak temizlik maddeleri).
 
 <!-- FOTO: Durulama banyosu — tank ve pompa genel görünüm -->
 ![Durulama banyosu genel görünüm](../../assets/FOTO-3-1-6-durulama-banyosu.png)
@@ -113,6 +113,8 @@ Yıkama tankında biriken yüzen yağ tabakasının sürekli olarak uzaklaştır
 | Güç | 0,04 kW |
 | Marka | FINEX |
 | Model | E1610-40-150-17B-C |
+
+Yağ sıyırıcı redüktör yağ keçesi / teflon kontrol ve gerekirse değişim, 500 saat bakım kapsamındadır (bkz. Bölüm 9 — 500 saat bakım maddeleri). Yağ sıyırıcı teflon parçası tüketim kategorisinde yedek parça olarak bulundurulmalıdır (bkz. Bölüm 13.3 — Sipariş kodu X:07 03497).
 
 <!-- FOTO: Yağ sıyırıcı ünite — yıkama tankı üzerinde konum -->
 ![Yağ sıyırıcı ünite](../../assets/FOTO-3-1-7-yag-siyirici.png)
@@ -142,7 +144,7 @@ Toplam kurutma fan gücü **16 kW**'dır. Kurutma bölgesinde biriken nemli hava
 | Marka | ENA |
 | Model | ENA 2 |
 
-HMI arayüzündeki çalışma sayfasında yıkama, durulama, **kurutma 1**, **kurutma 2** ve **egzoz** seçenekleri bağımsız olarak açılıp kapatılabilir; operatör proses ihtiyacına göre bu fonksiyonları yapılandırabilir.
+HMI arayüzündeki çalışma sayfasında yıkama, durulama, **kurutma 1**, **kurutma 2** ve **egzoz** seçenekleri bağımsız olarak açılıp kapatılabilir; operatör proses ihtiyacına göre bu fonksiyonları yapılandırabilir (bkz. Bölüm 7.1 — Çalışma modları).
 
 <!-- FOTO: Kurutma bölgesi — fan üniteleri genel görünüm -->
 ![Kurutma fanları](../../assets/FOTO-3-1-8-kurutma-fanlari.png)
@@ -158,6 +160,8 @@ Makinenin elektrik ve otomasyon altyapısı, merkezi **elektrik panosu** üzerin
 
 ### Güç beslemesi
 
+Detaylı elektrik özellikleri **Bölüm 3.3** — Teknik özellikler / Elektrik alt bölümünde SSOT (tek kaynak) olarak verilmiştir. Özet:
+
 | Parametre | Değer |
 |-----------|-------|
 | Besleme gerilimi | 380 V |
@@ -167,10 +171,6 @@ Makinenin elektrik ve otomasyon altyapısı, merkezi **elektrik panosu** üzerin
 | Maksimum akım çekişi | 100 A |
 | Besleme konfigürasyonu | 3P+N+PE |
 | Ana şalter | 100 A, Schneider |
-| Toplam sigorta / devre kesici | 100 A |
-| Güç faktörü (cos φ) | 0,9 |
-| Kısa devre akımı (ICC) gereksinimi | 10 kA |
-| UPS / jeneratör gereksinimi | Hayır |
 
 ### Otomasyon bileşenleri
 
@@ -182,6 +182,8 @@ Makinenin elektrik ve otomasyon altyapısı, merkezi **elektrik panosu** üzerin
 | Ana şalter konumu | Elektrik panosu üzerinde | — |
 | Start / Stop | HMI arayüzü — dijital buton | — |
 
+Kontrol fonksiyonları ve ekran menü yapısı **Bölüm 3.4** — Makine kontrolleri alt bölümünde detaylı olarak açıklanmıştır.
+
 ### Sinyal lambaları (tepe lambası)
 
 | Renk | Anlam |
@@ -190,61 +192,67 @@ Makinenin elektrik ve otomasyon altyapısı, merkezi **elektrik panosu** üzerin
 | Sarı | Makine kullanıma hazır |
 | Yeşil | Makine çalışıyor |
 
-Alarm durumunda HMI alarm ekranı devreye girer; eş zamanlı olarak tepe lambası **kırmızı** yanar. Reçete / program kaydında herhangi bir sınır bulunmamaktadır. Uzaktan erişim **Secomea** modülü ile mümkündür.
+Alarm durumunda HMI alarm ekranı devreye girer; eş zamanlı olarak tepe lambası **kırmızı** yanar. Reçete / program kaydında herhangi bir sınır bulunmamaktadır.
 
-HMI dilleri: **Türkçe**, **İngilizce**, **Almanca**. HMI arayüzünde şifre koruması bulunmaktadır. Çalışma modları: **Otomatik** ve **Bakım**. Jog / inching düğmeleri bulunmamaktadır.
+<!-- FOTO: Elektrik panosu — HMI, ana şalter, acil stop -->
+![Elektrik panosu genel görünüm](../../assets/FOTO-3-1-10-elektrik-panosu.png)
 
-### Güvenlik entegrasyonu
-
-Makinede **RFID güvenlik sensörü** bulunmaktadır; kapaklar açıldığında sensör makineyi durdurur. Makine stop kategorisi **Cat.3**'tür. Acil stop butonları toplam **4 adet** olup konumları: (1) elektrik panosu üzerinde, (2) makine girişinde konveyörün sağında, (3) makine girişinde konveyörün solunda, (4) makine çıkışında konveyörün solunda. Acil stop'a basıldığında makinedeki **her fonksiyon durur**.
-
-<!-- FOTO: Elektrik panosu — HMI, ana şalter ve sinyal lambaları -->
-![Elektrik panosu](../../assets/FOTO-3-1-10-elektrik-panosu.png)
-
-<!-- FOTO: HMI ekran — ana çalışma sayfası -->
-![HMI arayüzü](../../assets/FOTO-3-1-11-hmi-ekran.png)
+<!-- FOTO: HMI ekran — KTP700 -->
+![HMI ekran](../../assets/FOTO-3-1-11-hmi-ekran.png)
 
 ---
 
-## 3.1.8 Yardımcı medya bağlantıları
+## 3.1.8 Acil durdurma ve güvenlik donanımı
 
-Makinenin proses ve pnömatik fonksiyonları için tesisat bağlantıları gereklidir:
+Makinede **4 adet acil stop butonu** bulunur:
 
-| Medya | Değer | Not |
-|-------|-------|-----|
-| Basınçlı hava girişi | 6 bar | 3/4" bağlantı (montaj adım 4) |
-| Su girişi basıncı | 1 bar | 1/2" bağlantı (montaj adım 5) |
-| Su sıcaklığı | +10°C – +70°C | Şebeke veya arıtılmış su |
-| Su kalitesi | Şebeke suyu veya arıtılmış su | — |
+1. Elektrik panosu üzerinde
+2. Makine girişinde konveyörün sağında
+3. Makine girişinde konveyörün solunda
+4. Makine çıkışında konveyörün solunda
 
-Pnömatik regülatör basınç ayarı **6 bar** olarak tanımlanmıştır. HMI manuel sayfasında hava ve su bağlantı durumu yeşil gösterge ile izlenir.
+Acil stop'a basıldığında makinedeki **her fonksiyon durur**. Reset prosedürü: acil stop butonu kaldırılıp fiziksel tehditin giderildiği kesinleştirildikten sonra pano etiketi üzerindeki reset butonuna operatör tarafından lambası yanana kadar basılmalıdır (bkz. Bölüm 2.5 — Acil durdurma sistemi).
 
-<!-- FOTO: Basınçlı hava ve su bağlantı noktaları -->
-![Medya bağlantı noktaları](../../assets/FOTO-3-1-12-medya-baglantilari.png)
+Emniyet kapısı / bariyer sayısı sıfırdır; ancak **RFID Güvenlik Sensörü** vardır. Kapak açıldığında RFID switch makineyi durdurur. Makinenin güvenlik kategorisi **CAT3**'tür (bkz. Bölüm 2.3 — Koruyucular ve emniyet kapıları).
+
+Işık perdesi bulunmamaktadır.
+
+<!-- FOTO: Acil stop butonu — elektrik panosu -->
+![Acil stop butonu](../../assets/FOTO-3-1-12-acil-stop.png)
 
 ---
 
-## 3.1.9 Ana bileşenler özeti
+## 3.1.9 Motor ve tahrik grubu listesi
 
-Aşağıdaki tablo, makinenin ana modüllerini ve işlevlerini özetler:
+Makinede kullanılan tüm motorlar ve tahrik grupları aşağıdaki tabloda özetlenmiştir. Detaylı elektrik özellikleri ve motor koruma ayarları için bkz. **Bölüm 3.3** — Teknik özellikler / Motor sürücü listesi (SSOT).
 
-| Bileşen | İşlev |
-|---------|-------|
-| Konveyör | Parça taşıma; proses bölgeleri arası sürekli akış |
-| Yıkama Pompası | Yıkama banyosu sirkülasyonu; basınçlı püskürtme |
-| Durulama Pompası | Durulama banyosu sirkülasyonu; kalıntı giderme |
-| Yağ Sıyırıcı | Yıkama tankındaki yüzen yağın uzaklaştırılması |
-| Kurutma Fanı (×4) | Parça yüzey kurutma; toplam 16 kW |
-| Egzost Fanı | Kurutma bölgesi nem tahliyesi |
-| Elektrik Panosu | Güç dağıtımı, koruma ve otomasyon merkezi |
-| HMI | Operatör arayüzü; start/stop, alarm, parametre |
-| PLC | Proses otomasyonu ve I/O yönetimi |
-| Ana Şalter | 100 A — Schneider |
-| Sigorta | 100 A toplam devre kesici |
+| Motor adı | Güç (kW) | Devir (rpm) | Marka | Model |
+|-----------|----------|-------------|-------|-------|
+| Konveyör Redüktörü motoru | 1,5 | 2000 | Siemens | SIMOTICS S-1FL6 |
+| Yıkama Pompası Motoru | 3 | 2900 | Lowara | ESHE 40-160/30 |
+| Durulama Pompası Motoru | 1,85 | 2900 | GOULDS | GCEA 370/3 |
+| Yağ Sıyırıcı Redüktörü Motoru | 0,04 | — | FINEX | E1610-40-150-17B-C |
+| Egzost Fanı Motoru | 0,37 | 2800 | ENA | ENA 2 |
+| 1. Kurutma Fanı Motoru | 4 | 2900 | — | — |
+| 2. Kurutma Fanı Motoru | 4 | 2900 | — | — |
+| 3. Kurutma Fanı Motoru | 4 | 2900 | — | — |
+| 4. Kurutma Fanı Motoru | 4 | 2900 | — | — |
 
-Makine **iç mekan** ortamında, **+10°C ile +30°C** sıcaklık ve **%30–50** göreceli nem aralığında çalışacak şekilde tasarlanmıştır. Koruma sınıfı **IP55**, gürültü seviyesi **65 dB(A)**'dır.
+**Toplam kurulu güç**: 50 kW (ısıtma dahil)
 
-Makine arkasındaki kapakların tamamı sökülebilir ve bakım erişimine açıktır. Minimum etraf boşluğu ön, arka ve yan yönlerde **1000 mm**, minimum tavan yüksekliği **2500 mm**'dir.
+<!-- FOTO: Motor plakası örneği -->
+![Motor plakası örneği](../../assets/FOTO-3-1-13-motor-plaka.png)
 
-<!-- FOTO: Makine arka taraf — bakım kapakları -->
-![Bakım erişim kapakları — makine arkası](../../assets/FOTO-3-1-13-bakim-kapaklari.png)
+---
+
+## 3.1.10 Sistem entegrasyonu ve iletişim
+
+Makine, **Profinet** protokolü ile üst sistem entegrasyonuna hazırdır. Üst sistem (MES / SCADA) bağlantısı bilinmemektedir; müşteri konfigürasyonuna bağlıdır.
+
+I/O listesi dosya referansı: **1726050-ALPER-KNV 30 I/O LİSTESİ.pdf** — ayrı evrak teslim edilmemiştir (KD).
+
+Uzaktan erişim **Evet** — modül (Secomea) ile sağlanır. HMI arayüzü **Türkçe, İngilizce, Almanca** dil desteğine sahiptir.
+
+---
+
+**Bölüm 3.1 sonu**. Sonraki alt bölümler (3.2, 3.3, 3.4, 3.5) için ilgili klasörlere bakınız.
