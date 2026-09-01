@@ -34,7 +34,7 @@ Makinenin ana modülleri şunlardır: konveyör, yıkama pompası, durulama pomp
 | Çalışma modu | Tam otomatik — 7/24 |
 | Koruma sınıfı | IP55 |
 
-Detaylı teknik tablolar, bileşen marka/model bilgileri ve yerleşim çizimi ilgili alt bölümlerde verilmiştir. Genel yerleşim planı için bkz. **1726050-ALPER-KNV 30 LAYOUT.pdf** (Bölüm 3.5).
+Detaylı teknik tablolar, bileşen marka/model bilgileri ve yerleşim çizimi ilgili alt bölümlerde verilmiştir. Genel yerleşim planı için bkz. **1726050-ALPER-KNV 30 3000 2B PRO IDE LAYOUT.PDF** (Bölüm 3.5).
 
 <!-- FOTO: KNV 30 3000 2B — bölüm genel görünüm -->
-![KNV 30 3000 2B genel görünüm](../assets/1726050-ALPER-KNV 30 3000.png)
+![KNV 30 3000 2B genel görünüm](../assets/3.0/1.png)

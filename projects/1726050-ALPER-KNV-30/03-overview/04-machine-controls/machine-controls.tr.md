@@ -40,7 +40,7 @@ HMI arayüzünde **bir şifre** bulunmaktadır; üretici sayfası ve mühendisli
 Sol üst köşede tarih/saat bilgisi sürekli gösterilir; ayar sayfası veya sistem parametreleri üzerinden güncellenmesi gerekebilir (bkz. Bölüm 6.3 — Elektrik ayarları).
 
 <!-- FOTO: HMI açılış ekranı — dil seçimi, model ve seri no -->
-![HMI açılış ekranı](../../assets/3.4/1.jpg)
+![HMI açılış ekranı](../../assets/3.4/1.png)
 
 ---
 
@@ -65,7 +65,7 @@ Sol üst köşede tarih/saat bilgisi sürekli gösterilir; ayar sayfası veya si
 **Proses fonksiyon seçicileri** (sağ alt): Yıkama, Durulama, Kurutma 1, Kurutma 2 ve Egzoz toggle anahtarları; istenen fonksiyonlar **yeşil** (aktif) konuma getirilerek proses yapılandırılır. Manuel mod bulunmamaktadır; fonksiyon seçimi bu sayfa üzerinden yapılır (bkz. Bölüm 7.1 — Çalışma modları).
 
 <!-- FOTO: HMI çalışma sayfası — sıcaklık, start/stop, proses seçicileri -->
-![HMI çalışma sayfası](../../assets/3.4/4.jpg)
+![HMI çalışma sayfası](../../assets/3.4/4.png)
 
 ---
 
@@ -85,7 +85,7 @@ Sıcaklık limitleri proses güvenliği ve parça malzemesi uyumluluğu açısı
 Encoder / feedback ve analog ölçeklendirme ayarları PLC programına gömülüdür; değişiklik yalnızca üretici yetkili servisi tarafından yapılmalıdır.
 
 <!-- FOTO: HMI ayarlar sayfası — sıcaklık ve yağ sıyırıcı set değerleri -->
-![HMI ayarlar sayfası](../../assets/3.4/3.jpg)
+![HMI ayarlar sayfası](../../assets/3.4/3.png)
 
 ---
 
@@ -111,7 +111,7 @@ Kurulum testlerinde su ve hava bağlantısı yapıldıktan sonra bu göstergeler
 **Manuel Kontrol** düğmeleri yalnızca yetkili bakım personeli tarafından, güvenlik prosedürlerine uyularak kullanılmalıdır. Enerji izolasyonu gerektiren müdahalelerde **LOTO** uygulanmalıdır (bkz. Bölüm 2.4). Manuel düğmeler: yıkama pompası, durulama pompası, kurutma fanları 1–4, egzost, yıkama/durulama dolum vanaları, cascade vanası.
 
 <!-- FOTO: HMI manuel sayfası — input gözlem ve manuel kontrol -->
-![HMI manuel sayfası](../../assets/3.4/6.jpg)
+![HMI manuel sayfası](../../assets/3.4/6.png)
 
 ---
 
@@ -124,7 +124,7 @@ Alarm oluştuğunda HMI bu sayfada kayıt görüntüler; eş zamanlı olarak tep
 Sayfanın alt köşesinde **Ürün Alındı Onay** düğmesi bulunur. Çıkış konveyöründe parça algılandığında (Error-461) makine durur; parça robot tarafından alındıktan sonra bu düğmeye basılarak operasyon devam ettirilir.
 
 <!-- FOTO: HMI alarm sayfası — alarm kayıt tablosu -->
-![HMI alarm sayfası](../../assets/3.4/2.jpg)
+![HMI alarm sayfası](../../assets/3.4/2.png)
 
 ---
 
@@ -138,7 +138,7 @@ Sayfanın alt köşesinde **Ürün Alındı Onay** düğmesi bulunur. Çıkış 
 Kalıcı alarm geçmişi, tekrarlayan arızaların analizi ve bakım planlaması için kullanılır. Toplam çalışma süresi periyodik bakım periyotlarının takibinde referans alınabilir (bkz. Bölüm 9).
 
 <!-- FOTO: HMI üretici sayfası — kalıcı alarm listesi ve çalışma süresi -->
-![HMI üretici sayfası](../../assets/3.4/5.jpg)
+![HMI üretici sayfası](../../assets/3.4/5.png)
 
 ---
 

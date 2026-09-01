@@ -1,5 +1,7 @@
 # 3.3 Teknik özellikler
 
+Bu bölüm, **KNV 30 3000 2B** (seri no **1726050**) makinesine ait boyut, ağırlık, kapasite, elektrik, motor, medya bağlantıları ve ortam koşullarını **tek kaynak (SSOT)** olarak toplar. Kurulum (Bölüm 5), ayar (Bölüm 6) ve operasyon (Bölüm 7) bölümlerinde aynı sayısal değerler tekrarlanmaz; ilgili bölümler buraya çapraz referans verir. DATA dosyasında bilinmeyen alanlar `[EKSİK]` veya **Bilinmiyor** olarak bırakılmıştır; tahmin edilmemiştir.
+
 ---
 
 ## 3.3.1 Fiziksel boyutlar ve ağırlık
@@ -13,10 +15,10 @@
 | Çalışma ağırlığı — dolu | kg | 1500 |
 | Şase tipi | — | Ayarlanabilir ayak |
 
-Makine, ayarlanabilir ayak sistemi üzerinde terazi ve seviye ayarı yapılabilir şekilde kurulur. Ağırlık merkezi konveyör hattının ortasındadır.
+Makine, ayarlanabilir ayak sistemi üzerinde terazi ve seviye ayarı yapılabilir şekilde kurulur. Ağırlık merkezi konveyör hattının ortasındadır; taşıma ve forklift planlaması için bkz. **Bölüm 3.5.4**. Minimum kurulum alanı boyutu **5 m × 3 m** olmalıdır (bkz. **Bölüm 3.5.2**).
 
-<!-- FOTO: Makine dış boyutları — ön/sağ genel görünüm -->
-![Dış boyutlar](../../assets/FOTO-3-3-0-dis-boyutlar.png)
+<!-- FOTO: Makine dış boyutları — operatör tarafından (sağ) genel görünüm -->
+![Dış boyutlar](../../assets/3.3/1.png)
 
 ---
 
@@ -38,10 +40,10 @@ Makine, ayarlanabilir ayak sistemi üzerinde terazi ve seviye ayarı yapılabili
 | Ürün ağırlığı min | Bilinmiyor |
 | Ürün ağırlığı max | Bilinmiyor |
 
-Nominal ve maksimum kapasite değerleri ile ürün boyut/ağırlık sınırları kullanıcı firma tarafından proses koşullarına göre belirlenir.
+Nominal kapasite ve ürün boyut/ağırlık sınırları kullanıcı firma tarafından proses koşullarına göre belirlenir; parça geometrisi konveyör taşıma kapasitesi ve nozul kapsama alanı ile uyumlu olmalıdır. Reçete ve kapasite yönetimi **Bölüm 8**'de açıklanmıştır.
 
 <!-- FOTO: Proses bölgeleri — yıkama, durulama, kurutma hat boyunca -->
-![Proses bölgeleri](../../assets/FOTO-3-3-1-proses-bolgeleri.png)
+![Proses bölgeleri](../../assets/3.3/2.png)
 
 ---
 
@@ -63,10 +65,10 @@ Nominal ve maksimum kapasite değerleri ile ürün boyut/ağırlık sınırları
 | Toplam sigorta / devre kesici | 100 A |
 | UPS / jeneratör gereksinimi | Hayır |
 
-Elektrik beslemesi montaj sırasında 380 V, 50 Hz, trifaze hat ile pano üzerinden sağlanır. Faz yönü faz sıra rölesi üzerinden kontrol edilmelidir.
+Elektrik beslemesi montaj sırasında 380 V, 50 Hz, trifaze hat ile pano üzerinden sağlanır. Faz yönü faz sıra rölesi üzerinden kontrol edilmelidir; ters faz tespitinde iki faz değiştirilerek düzeltilir (bkz. **Bölüm 5** — Montaj adımları). Enerji izolasyonu ve LOTO noktası ana şalterdir (bkz. **Bölüm 2.4**).
 
-<!-- FOTO: Elektrik panosu — ana şalter ve besleme etiketi -->
-![Elektrik beslemesi](../../assets/FOTO-3-3-2-elektrik-besleme.png)
+<!-- FOTO: Elektrik panosu — ana şalter, HMI ve besleme etiketi (EKLENECEK: FOTO-3-3-2-elektrik-besleme.jpg) -->
+![Elektrik beslemesi](../../assets/3.3/3.png)
 
 ---
 
@@ -84,10 +86,10 @@ Elektrik beslemesi montaj sırasında 380 V, 50 Hz, trifaze hat ile pano üzerin
 | 3. Kurutma fanı motoru | 4 kW | 2900 rpm | — | — |
 | 4. Kurutma fanı motoru | 4 kW | 2900 rpm | — | — |
 
-Toplam kurutma fan gücü: **16 kW**. Kurutma fanları marka/model bilgisi DATA dosyasında [EKSİK] olarak bırakılmıştır.
+Toplam kurutma fan gücü **16 kW**'dır. Kurutma fanları marka/model bilgisi DATA dosyasında `[EKSİK]` olarak bırakılmıştır. Motor koruma ve termik aşırı yük durumları HMI manuel sayfasından izlenebilir (bkz. **Bölüm 3.4.5**).
 
-<!-- FOTO: Motor grupları — pompa ve fan tahrik üniteleri -->
-![Motor listesi — tahrik üniteleri](../../assets/FOTO-3-3-3-motor-gruplari.png)
+<!-- FOTO: Pompa ve fan tahrik üniteleri — yıkama/durulama pompaları -->
+![Motor listesi — tahrik üniteleri](../../assets/3.3/4.png)
 
 ---
 
@@ -101,10 +103,10 @@ Toplam kurutma fan gücü: **16 kW**. Kurutma fanları marka/model bilgisi DATA 
 | Su kalitesi | Şebeke suyu veya arıtılmış su |
 | Drain / atık su hattı çap | [EKSİK] |
 
-Montaj bağlantıları: basınçlı hava **3/4"**, su **1/2"**. Pnömatik regülatör basınç ayarı **6 bar**'dır.
+Montaj bağlantıları: basınçlı hava **3/4"**, su **1/2"**. Pnömatik regülatör basınç ayarı **6 bar**'dır. Su ve hava bağlantısı kurulduktan sonra HMI manuel sayfasındaki **su bilgisi** ve **hava bilgisi** göstergelerinin yeşil yanması beklenir (bkz. **Bölüm 5.5** — Pnömatik dolum testi).
 
-<!-- FOTO: Basınçlı hava ve su bağlantı noktaları — etiketli -->
-![Medya bağlantıları](../../assets/FOTO-3-3-4-medya-baglantilari.png)
+<!-- FOTO: Basınçlı hava ve su bağlantı noktaları — etiketli (EKLENECEK: FOTO-3-3-4-medya-baglantilari.jpg) -->
+![Medya bağlantıları](../../assets/3.3/5.png)
 
 ---
 
@@ -121,4 +123,8 @@ Montaj bağlantıları: basınçlı hava **3/4"**, su **1/2"**. Pnömatik regül
 | Koruma sınıfı (IP) | IP55 |
 | Gürültü seviyesi | 65 dB(A) |
 
-Makine yalnızca **iç mekan** ortamında kullanılmak üzere tasarlanmıştır.
+Makine yalnızca **iç mekan** ortamında kullanılmak üzere tasarlanmıştır. Kurulum alanı minimum etraf boşlukları ve tavan yüksekliği **Bölüm 3.5.2**'de SSOT olarak verilmiştir; amaçlanan kullanım sınırları **Bölüm 3.2**'de özetlenmiştir.
+
+---
+
+**Bölüm 3.3 sonu.** Kontrol elemanları için bkz. **Bölüm 3.4**; yerleşim planı için bkz. **Bölüm 3.5**.

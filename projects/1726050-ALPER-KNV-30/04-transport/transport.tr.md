@@ -1,14 +1,16 @@
 # 4. TAŞİMA VE DEPOLAMA
 
-KNV 30 3000 2B makinesinin tesisten tesise nakliyesi, saha içi taşınması ve geçici depolanması bu bölümde tanımlanır. Makine montajlı halde **1300 kg** ağırlığındadır; taşıma sırasında parça sökülmez.
+**KNV 30 3000 2B** (seri no **1726050**) makinesinin fabrikadan sevkiyatı, saha içi taşınması, kurulum alanına indirilmesi ve geçici depolanması bu bölümde tanımlanır. Taşıma ve depolama sırasında oluşabilecek mekanik hasar, devrilme ve korozyon riskleri; doğru ekipman seçimi ve ortam koşullarına uyumla önlenir. Bu bölümde yalnızca taşıma ve depolama prosedürleri verilir; boyut, ağırlık ve ağırlık merkezi değerleri **Bölüm 3.3.1** ve **Bölüm 3.5.4**'te SSOT olarak tanımlıdır.
 
-Taşıma yalnızca **forklift** ile yapılır. **Vinç kesinlikle kullanılmamalıdır** (**Bkz. Bölüm 3.5.4**). Forklift çatal girişi makine altındaki profiller üzerinden sağlanır.
+Makine sevk halinde **montajlı** taşınır; taşıma sırasında herhangi bir parça sökülmez. Taşıma ağırlığı **1300 kg**'dır. Kaldırma yalnızca **forklift çatalı** ile yapılır; makine altındaki taşıma profilleri üzerinden çatal girişi sağlanır. **Vinç kesinlikle kullanılmamalıdır** (bkz. **Bölüm 3.5.4**).
 
 | Alt bölüm | Konu |
 | :--- | :--- |
-| **4.1** | Taşıma öncesi hazırlık ve forklift prosedürü |
-| **4.2** | Elleçleme ve depolama |
+| **4.1** | Taşıma öncesi hazırlık, forklift prosedürü, ambalaj |
+| **4.2** | Elleçleme, geçici depolama ve depodan çıkarma |
 
-Taşıma sıcaklığı **+10°C ile +30°C** aralığında olmalıdır; nem ve korozif maddeler bulunmamalıdır. Ağırlık ve boyut değerleri **Bkz. Bölüm 3.3.1**; ağırlık merkezi **Bkz. Bölüm 3.5.4**.
+Taşıma ve depolama ortam sıcaklığı **+10°C ile +30°C** aralığında olmalıdır; nem ve korozif maddeler bulunmamalıdır. Taşıma sırasında **Bölüm 2** güvenlik kurallarına uyun; makine üzerinde müdahale gerektiren işlerde enerji izolasyonu **Bölüm 2.4**'e göre yapılır.
 
-Taşıma ve kurulum sırasında **Bölüm 2** güvenlik kurallarına uyun.
+---
+
+**Bölüm 4 sonu.** Kurulum adımları için bkz. **Bölüm 5**; yerleşim ve forklift erişim noktaları için bkz. **Bölüm 3.5**.

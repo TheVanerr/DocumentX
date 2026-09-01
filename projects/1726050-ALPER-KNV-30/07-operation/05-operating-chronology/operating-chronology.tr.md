@@ -1,27 +1,47 @@
 # 7.5 Operasyon kronolojisi
 
-Makine **7/24 robot** ile çalışır. Operatör veya vardiya teslimi **bulunmaz**.
+Bu proje kapsamında makine **7/24 robot** ile entegre sürekli hat operasyonu için tasarlanmıştır. Geleneksel vardiyalı operatör modeli uygulanmaz; makine başında sürekli operatör bulunmaz.
 
 ---
 
 ## 7.5.1 Günlük operasyon zaman çizelgesi
 
-| Parametre | Değer / Açıklama |
-|-----------|------------------|
-| Günlük operasyon zaman çizelgesi | Makine **7/24** robot ile çalışır; vardiya bazlı günlük operasyon çizelgesi **uygulanmaz** |
+| Parametre | Değer |
+|-----------|-------|
+| Günlük operasyon | **7/24** robot ile sürekli çalışma |
+| Vardiya bazlı operasyon çizelgesi | **Uygulanmaz** |
+
+Makine, üst hat (robot + MES/SCADA — tanım müşteriye ait) ile senkronize çalışır. Planlı duruşlar (bakım, temizlik) tesis üretim planına göre yapılır; duruş öncesi **Bölüm 7.3** stop prosedürü uygulanır.
 
 ---
 
 ## 7.5.2 Vardiya devir teslim
 
-| Parametre | Değer / Açıklama |
-|-----------|------------------|
-| Vardiya devir teslim maddeleri | **Yoktur** — operatör/vardiya teslimi bulunmamaktadır |
+| Parametre | Değer |
+|-----------|-------|
+| Vardiya devir teslim maddeleri | **Yoktur** |
+
+Operatör/vardiya teslim formu kullanılmaz. Durum izleme uzaktan erişim (Secomea), üst sistem veya periyodik bakım turu ile yapılır.
 
 ---
 
 ## 7.5.3 Shift başlangıç kontrol listesi
 
-| Parametre | Değer / Açıklama |
-|-----------|------------------|
-| Shift başlangıç kontrol listesi | **Yoktur** — makine sürekli otomatik çalışır |
+| Parametre | Değer |
+|-----------|-------|
+| Shift başlangıç kontrol listesi | **Yoktur** |
+
+Makine sürekli otomatik çalıştığından vardiya başlangıç kontrol listesi tanımlanmamıştır. Bunun yerine aşağıdaki periyodik kontroller geçerlidir:
+
+| Periyot | Kontrol | Bölüm |
+|---------|---------|-------|
+| Günlük | Ön filtre temizliği | 10 |
+| Haftalık | Tank/torba filtre temizliği | 10 |
+| Aylık | Acil stop fonksiyon testi | 6.2.3, 5.4.1 |
+| Periyodik | Bakım takvimi maddeleri | 9 |
+
+Planlı bakım veya temizlik duruşunda makine stop edilmeli; enerji izolasyonu gerektiren işlerde **LOTO** uygulanmalıdır (bkz. **Bölüm 2.4**).
+
+---
+
+**Bölüm 7.5 sonu.** Bakım takvimi için bkz. **Bölüm 9**.

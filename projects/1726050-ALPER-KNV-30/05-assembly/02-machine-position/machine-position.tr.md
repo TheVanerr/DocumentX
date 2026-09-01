@@ -1,6 +1,8 @@
 # 5.2 Makine konumlandırma
 
-Konumlandırma işlemleri, Bölüm 5.1 montaj adımlarının **Adım 3** kapsamında gerçekleştirilir; bu bölümde detaylandırılmıştır.
+Konumlandırma, makinenin kurulum alanındaki nihai konumunu, yönünü ve seviyesini belirler. İşlemler **Bölüm 5.1 Adım 3** kapsamında uygulanır; bu bölümde detaylandırılır. Yanlış konumlandırma robot erişimini, bakım kapak açılımını ve konveyör hizasını olumsuz etkiler.
+
+Alan gereksinimleri (etraf boşlukları, tavan yüksekliği, yön tanımları) **Bölüm 3.5**'te SSOT olarak verilmiştir; burada kurulum prosedürü odaklı açıklanır.
 
 ---
 
@@ -8,26 +10,24 @@ Konumlandırma işlemleri, Bölüm 5.1 montaj adımlarının **Adım 3** kapsam�
 
 Makine yerleştirilmeden önce kurulum alanı aşağıdaki koşulları karşılamalıdır:
 
-| Parametre | Gereksinim |
-|-----------|------------|
-| Montaj alanı min. boyut | 5 m × 3 m |
-| Zemin düzgünlük toleransı | 0,5 mm/m |
-| Zemin mukavemeti | Zemin yüzeyi sert ve düz olmalıdır |
-| Minimum etraf boşluğu — ön | 1000 mm |
-| Minimum etraf boşluğu — arka | 1000 mm |
-| Minimum etraf boşluğu — yan | 1000 mm |
-| Minimum tavan yüksekliği | 2500 mm |
+| Parametre | Gereksinim | SSOT |
+|-----------|------------|------|
+| Montaj alanı min. boyut | 5 m × 3 m | DATA — MONTAJ_GENEL |
+| Zemin düzgünlük toleransı | 0,5 mm/m | DATA — MONTAJ_GENEL |
+| Zemin mukavemeti | Sert ve düz yüzey | Bölüm 3.5.2 |
+| Minimum etraf boşluğu | Ön, arka, yan: 1000 mm | Bölüm 3.5.2 |
+| Minimum tavan yüksekliği | 2500 mm | Bölüm 3.5.2 |
 
-Referans yerleşim planı: **1726050-ALPER-KNV 30 LAYOUT.pdf**
+Referans yerleşim planı: **1726050-ALPER-KNV 30 3000 2B PRO IDE LAYOUT.PDF** (assets klasörü).
 
-<!-- FOTO: Kurulum alanı planı — etraf boşlukları işaretli -->
-![Kurulum alanı — boşluk planı](../../assets/FOTO-5-2-0-kurulum-alani.png)
+<!-- FOTO: Kurulum alanı — etraf boşlukları (EKLENECEK: FOTO-5-2-0-kurulum-alani.jpg veya layout export) -->
+![Kurulum alanı](../../assets/5.2/1.png)
 
 ---
 
 ## 5.2.2 Yön tanımları ve yerleşim
 
-Makine aşağıdaki yönlere göre konumlandırılmalıdır:
+Makine aşağıdaki yönlere göre konumlandırılmalıdır (bkz. **Bölüm 3.5.1**):
 
 | Tanım | Yön |
 |-------|-----|
@@ -36,15 +36,12 @@ Makine aşağıdaki yönlere göre konumlandırılmalıdır:
 | Boşaltma tarafı (çıkış) | Sağ |
 | Konveyör akış yönü | Sol → Sağ |
 
-Parçalar sol taraftan yüklenir, sağ taraftan alınır. HMI paneli ve elektrik panosu operatör tarafında (sağ) erişilebilir konumdadır. Makine taşınmasında vinç **kesinlikle kullanılmamalıdır**; forklift ile taşıma için makine altındaki profiller kullanılmalıdır.
+Parçalar sol taraftan yüklenir, sağ taraftan alınır. HMI paneli ve elektrik panosu operatör tarafında (sağ) erişilebilir konumdadır. Bu projede giriş/çıkış **robot** ile yapılır; robot manevra alanı planlanırken besleme ve boşaltma taraflarında yeterli boşluk bırakılmalıdır.
 
-| Parametre | Değer |
-|-----------|-------|
-| Ağırlık merkezi | Makine konveyörünün ortası |
-| Taşıma ağırlığı (montajlı) | 1300 kg |
+Forklift ile yerleştirme **Bölüm 4.1.4** prosedürüne göre yapılır; ağırlık merkezi konveyör ortasındadır (bkz. **Bölüm 3.5.4**).
 
-<!-- FOTO: Makine yön tanımları — besleme sol, boşaltma sağ -->
-![Yön tanımları](../../assets/FOTO-5-2-1-yon-tanimlari.png)
+<!-- FOTO: Yön tanımları — besleme sol / boşaltma sağ -->
+![Yön tanımları](../../assets/5.2/2.png)
 
 ---
 
@@ -57,28 +54,33 @@ Parçalar sol taraftan yüklenir, sağ taraftan alınır. HMI paneli ve elektrik
 
 ### Konumlandırma prosedürü
 
-1. Makine forklift ile nihai konumuna getirilir ve zemine oturtulur.
+1. Makine forklift ile nihai konumuna getirilir ve zemine oturtulur (bkz. **Bölüm 4.1.4**).
 2. **Ayarlanabilir ayaklar** kullanılarak makine **terazide** olacak şekilde ayarlanır.
-3. Hizalama toleransı **0,5 mm**'yi aşmamalıdır.
-4. Su terazisi veya eşdeğer ölçüm aleti ile her iki eksende kontrol yapılır.
-5. Sapma tespit edilirse ayak yükseklikleri ayarlanır ve ölçüm tekrarlanır.
+3. Su terazisi veya eşdeğer ölçüm aleti ile her iki eksende kontrol yapılır.
+4. Hizalama toleransı **0,5 mm**'yi aşmamalıdır; sapma varsa ayak yükseklikleri ayarlanır ve ölçüm tekrarlanır.
+5. Tüm ayakların zemine eşit temas ettiğini doğrulayın.
 
-Mekanik kurulum test kontrol sorusu: *Makine terzide mi?*
+**Beklenen sonuç:** Makine terazide; konveyör hattı hedef hat hizası ile uyumlu.
 
-<!-- FOTO: Ayarlanabilir ayak — seviye ayarı detay -->
-![Ayarlanabilir ayak — seviye](../../assets/FOTO-5-2-2-seviye-ayari.png)
+**Anormal durum:** Zemin toleransı aşılıyorsa zemin düzeltmesi yapılmadan operasyona geçmeyin.
+
+Mekanik kurulum test sorusu: *Makine terzide mi?* (bkz. **Bölüm 5.5.1**)
+
+<!-- FOTO: Ayarlanabilir ayak — seviye detay (EKLENECEK: FOTO-5-2-2-seviye-ayari.jpg) -->
+![Seviye ayarı](../../assets/5.2/3.png)
 
 ---
 
 ## 5.2.4 Bakım erişimi
 
-Konumlandırma sırasında bakım erişim bölgelerinin engellenmemesine dikkat edilmelidir:
+Konumlandırma sırasında bakım erişim bölgelerinin engellenmemesine dikkat edilmelidir (bkz. **Bölüm 3.5.3**):
 
-| Bölge | Erişim |
-|-------|--------|
+| Bölge | Gereksinim |
+|-------|------------|
 | Makine arkası | Kapakların tamamı sökülebilir ve erişilebilir |
+| Arka minimum boşluk | 1000 mm |
 
-Makine arkasında minimum **1000 mm** boşluk bırakılmalıdır.
+Makine duvara veya ekipmana çok yakın konumlandırılırsa filtre bakımı ve tank müdahalesi güvenli yapılamaz.
 
-<!-- FOTO: Makine arka taraf — bakım kapakları ve erişim boşluğu -->
-![Bakım erişim alanı — arka](../../assets/FOTO-5-2-3-bakim-erisim.png)
+<!-- FOTO: Arka bakım kapakları ve erişim boşluğu (EKLENECEK: FOTO-5-2-3-bakim-erisim.jpg) -->
+![Bakım erişim alanı](../../assets/5.2/4.png)

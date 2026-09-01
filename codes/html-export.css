@@ -5,7 +5,8 @@
   --html-text: #1a1a2e;
   --html-muted: #4a5568;
   --html-page-h: 1123px;
-  --html-figure-max-h: calc(var(--html-page-h) / 2);
+  --html-figure-scale: 0.7;
+  --html-figure-max-h: calc(var(--html-page-h) / 2 * var(--html-figure-scale));
   --html-block-gap: 24px;
 }
 
@@ -32,7 +33,8 @@ body.html-export {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
   overflow: visible;
   --html-page-h: 1123px;
-  --html-figure-max-h: calc(var(--html-page-h) / 2);
+  --html-figure-scale: 0.7;
+  --html-figure-max-h: calc(var(--html-page-h) / 2 * var(--html-figure-scale));
   --html-block-gap: 24px;
 }
   position: relative;
@@ -154,6 +156,7 @@ body.html-export {
 .html-flow-content .md-img,
 .html-flow-content .md-p.md-figure .md-img {
   max-height: none;
+  max-width: calc(100% * var(--html-figure-scale));
 }
 
 /* ── Kapak ── */
@@ -433,7 +436,7 @@ body.html-export {
 
 .html-flow-content .md-figure-layout-single .md-figure-cell--contain .md-img {
   display: block;
-  width: 100%;
+  width: calc(100% * var(--html-figure-scale));
   height: auto;
   max-height: var(--html-figure-max-h);
   margin: 0;
@@ -554,7 +557,7 @@ body.html-export {
 
 .html-flow-content .md-list > li.li-figure .md-img {
   display: block;
-  max-width: 100%;
+  max-width: calc(100% * var(--html-figure-scale));
   max-height: var(--html-figure-max-h);
   width: auto;
   height: auto;
@@ -581,7 +584,7 @@ body.html-export {
 .html-flow-content a:hover { text-decoration: underline; }
 
 .md-img {
-  max-width: 100%;
+  max-width: calc(100% * var(--html-figure-scale));
   height: auto;
   display: block;
   margin: 8px auto;
@@ -592,7 +595,7 @@ body.html-export {
 .md-p.md-figure .md-img {
   display: block;
   margin: 8px auto;
-  max-width: 100%;
+  max-width: calc(100% * var(--html-figure-scale));
   width: auto;
   height: auto;
   object-fit: contain;

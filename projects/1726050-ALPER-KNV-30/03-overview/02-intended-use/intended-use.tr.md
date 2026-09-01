@@ -1,5 +1,7 @@
 # 3.2 Amaçlanan kullanım
 
+Bu bölüm, makinenin **tasarlanan kullanım kapsamını**, işlenebilir ve yasak ürün tiplerini, proses suyu sınırlarını, ortam koşullarını ve hedef personeli tanımlar. Makine, belirtilen sınırlar dışında kullanıldığında öngörülebilir hatalı kullanım kapsamına girer; güvenlik ve proses sonuçları garanti kapsamı dışında kalabilir (bkz. **Bölüm 2.1**). Teknik tablo değerleri **Bölüm 3.3**'te, alan gereksinimleri **Bölüm 3.5**'te SSOT olarak verilmiştir.
+
 ---
 
 ## 3.2.1 Tasarlanan kullanım kapsamı
@@ -10,8 +12,8 @@ Makinenin **amaçlanan kullanım alanı**, endüstriyel parçaların kirliliğin
 
 Bu makine yalnızca **iç mekan** endüstriyel tesis ortamlarında, bu kılavuzda belirtilen teknik ve çevresel sınırlar dahilinde kullanılmak üzere tasarlanmıştır.
 
-<!-- FOTO: Makine tipik kullanım — konveyör hattına parça yükleme (besleme tarafı) -->
-![Tipik kullanım — parça yükleme](../../assets/FOTO-3-2-0-parca-yukleme.png)
+<!-- FOTO: Besleme tarafı — konveyör giriş (robot entegrasyon alanı) -->
+![Tipik kullanım — parça yükleme](../../assets/3.2/1.png)
 
 ---
 
@@ -28,8 +30,8 @@ Parçalar, yıkama ve durulama proseslerinden geçirilerek yüzey kirliliği gid
 
 Nominal proses döngü süresi **900 saniye** (15 dakika) olarak tanımlanmıştır. Minimum kapasite referans değeri **730 adet/saat** olarak belirtilmiştir; nominal ve maksimum kapasite değerleri kullanıcı firma tarafından proses koşullarına göre belirlenir.
 
-<!-- FOTO: İşlenebilir endüstriyel parça örnekleri — konveyör üzerinde -->
-![İşlenebilir parça örnekleri](../../assets/FOTO-3-2-1-islenebilir-parcalar.png)
+<!-- FOTO: İşlenebilir endüstriyel parça örnekleri — konveyör üzerinde (EKLENECEK: FOTO-3-2-1-islenebilir-parcalar.jpg) -->
+![İşlenebilir parça örnekleri](../../assets/3.2/2.png)
 
 ---
 
@@ -45,8 +47,8 @@ Makinenin belirtilen amaç dışında kullanılması öngörülebilir hatalı ku
 
 Makine, RFID güvenlik sensörü ile donatılmıştır; kapaklar açıldığında makine durur. Emniyet kapısı bypass edilmemelidir. Bakım için makine elektriği kesildikten sonra kapaklar açılmalı; elektrik kesildiğinde **LOTO prosedürü** uygulanmalıdır.
 
-<!-- FOTO: Makine proses bölgesi — yalnızca endüstriyel parça için -->
-![Proses bölgesi — endüstriyel parça kullanımı](../../assets/FOTO-3-2-2-yasak-kullanim-uyari.png)
+<!-- FOTO: Proses bölgesi — yalnızca endüstriyel parça (EKLENECEK: FOTO-3-2-2-proses-bolgesi.jpg) -->
+![Proses bölgesi — endüstriyel parça kullanımı](../../assets/3.2/3.png)
 
 ---
 
@@ -68,14 +70,14 @@ Makine tanklarının dezenfeksiyonu için tank içerisi su boşaltıldıktan son
 
 Temizlik tipi: **kuru / ıslak**
 
-<!-- FOTO: Su bağlantı noktası ve proses tankları -->
-![Proses suyu bağlantısı](../../assets/FOTO-3-2-3-su-baglantisi.png)
+<!-- FOTO: Su bağlantı noktası — 1/2" giriş etiketli (EKLENECEK: FOTO-3-2-3-su-baglantisi.jpg) -->
+![Proses suyu bağlantısı](../../assets/3.2/4.png)
 
 ---
 
 ## 3.2.5 Ortam ve tesis koşulları
 
-Makine yalnızca **iç mekan** ortamında kullanılmak üzere tasarlanmıştır. Çalışma ve depolama ortam koşulları aşağıdaki sınırlar içinde olmalıdır:
+Makine yalnızca **iç mekan** endüstriyel tesis ortamlarında kullanılmak üzere tasarlanmıştır. Çalışma ve depolama ortam koşulları aşağıdaki sınırlar içinde olmalıdır; bu değerler **Bölüm 3.3.6** — Ortam koşulları tablosunda SSOT olarak verilmiştir:
 
 | Parametre | Min | Max |
 |-----------|-----|-----|
@@ -83,19 +85,17 @@ Makine yalnızca **iç mekan** ortamında kullanılmak üzere tasarlanmıştır.
 | Depolama sıcaklığı | +10°C | +30°C |
 | Göreceli nem | %30 | %50 |
 
-Ek ortam özellikleri:
-
 | Parametre | Değer |
 |-----------|-------|
 | Koruma sınıfı (IP) | IP55 |
 | Gürültü seviyesi | 65 dB(A) |
 
-Makinenin kurulacağı zemin **sert ve düz** olmalıdır. Minimum etraf boşluğu ön, arka ve yan yönlerde **1000 mm**, minimum tavan yüksekliği **2500 mm**'dir. Taşıma sırasında nem ve korozif maddeler bulunmamalıdır; depolama ortamında da nem ve korozif maddeler olmamalıdır.
+Minimum etraf boşlukları, tavan yüksekliği, zemin düzgünlük toleransı ve montaj alanı boyutu **Bölüm 3.5.2**'de SSOT olarak verilmiştir. Kurulum planlamasında bu bölüme bakın; burada tekrarlanmaz.
 
-Basınçlı hava beslemesi **6 bar** basınçta sağlanmalıdır (3/4" bağlantı).
+Basınçlı hava beslemesi **6 bar** basınçta sağlanmalıdır (3/4" bağlantı — bkz. **Bölüm 3.3.5**). Taşıma ve depolama sırasında nem ve korozif madde bulunmamalıdır (bkz. **Bölüm 4.2**).
 
-<!-- FOTO: Makine kurulum alanı — iç mekan, etraf boşlukları -->
-![Kurulum alanı — iç mekan](../../assets/FOTO-3-2-4-kurulum-alani.png)
+<!-- FOTO: Makine kurulum alanı — iç mekan genel görünüm (EKLENECEK: FOTO-3-2-4-kurulum-alani.jpg) -->
+![Kurulum alanı — iç mekan](../../assets/3.2/5.png)
 
 ---
 
@@ -115,5 +115,5 @@ Aynı anda makine başında bulunması gereken operatör sayısı **1–2** kiş
 
 Makine **24/7** sürekli çalışmaya uygun olarak tanımlanmıştır; buna rağmen operasyon, eğitimli personel gözetiminde ve bu bölümde belirtilen sınırlar dahilinde yürütülmelidir.
 
-<!-- FOTO: Operatör — HMI panelinden makine izleme -->
-![Operatör — HMI paneli](../../assets/FOTO-3-2-5-operator-hmi.png)
+<!-- FOTO: Operatör — HMI panelinden makine izleme (mevcut HMI ekranı referans) -->
+![Operatör — HMI paneli](../../assets/3.2/6.png)

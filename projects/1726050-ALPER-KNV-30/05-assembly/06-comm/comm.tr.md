@@ -1,5 +1,7 @@
 # 5.6 İletişim ve otomasyon arayüzü
 
+Makine otomasyon altyapısı kurulum sonrası doğrulanmalıdır. PLC, HMI ve Profinet özellikleri **Bölüm 3.4.8**'de özetlenmiştir; bu bölüm kurulum ve devreye alma kontrol listesini verir.
+
 ---
 
 ## 5.6.1 Fieldbus ve protokol
@@ -8,18 +10,18 @@
 |-----------|-------|
 | Fieldbus / protokol | **Profinet** |
 
-Makine otomasyon altyapısı Profinet protokolü üzerinden haberleşir. PLC ve HMI bu altyapı üzerinden entegre edilmiştir.
-
 | Bileşen | Marka / Model |
 |---------|---------------|
 | PLC | SIEMENS SIMATIC S7-1200 — CPU 1215C DC/DC/DC (6ES7215-1AG40-0XB0) |
 | HMI | SIMATIC HMI KTP700 Basic PN (6AV2123-2GB03-0AX0) |
 | I/O özeti | 36 giriş / 24 çıkış |
 
-Encoder / feedback ayarı PLC programı içerisinde gömülüdür; ayar **üretici firma** tarafından yapılmalıdır.
+Profinet ağı üzerinden PLC–HMI haberleşmesi kurulmalıdır. Encoder / feedback ayarları PLC programına gömülüdür; değişiklik yalnızca **üretici yetkili servisi** tarafından yapılmalıdır (bkz. **Bölüm 6.3**).
 
-<!-- FOTO: PLC ve HMI — Profinet bağlantı noktaları -->
-![Profinet altyapısı — PLC/HMI](../../assets/FOTO-5-6-0-profinet.png)
+**DİKKAT — Yetkisiz müdahale:** PLC programı ve gömülü parametrelerin yetkisiz değiştirilmesi güvenlik fonksiyonlarını devre dışı bırakabilir.
+
+<!-- FOTO: PLC/HMI Profinet bağlantı noktaları (EKLENECEK: FOTO-5-6-0-profinet.jpg) -->
+![Profinet altyapısı](../../assets/5.6/1.png)
 
 ---
 
@@ -40,34 +42,36 @@ MES veya SCADA entegrasyonu bu proje kapsamında tanımlanmamıştır. Üst sist
 | Uzaktan erişim | Evet |
 | Modül | Secomea |
 
-Uzaktan erişim, Secomea modülü üzerinden sağlanır. Modül kurulumu ve yapılandırması montaj sonrası devreye alınmalıdır.
+Uzaktan erişim Secomea modülü ile sağlanır. Modül kurulumu ve yapılandırması montaj sonrası devreye alınmalıdır; ağ güvenliği tesis IT politikasına uygun yapılandırılmalıdır.
 
-<!-- FOTO: Secomea uzaktan erişim modülü — pano içi -->
-![Secomea modülü](../../assets/FOTO-5-6-1-secomea.png)
+<!-- FOTO: Secomea modülü — pano içi (EKLENECEK: FOTO-5-6-1-secomea.jpg) -->
+![Secomea modülü](../../assets/5.6/2.png)
 
 ---
 
 ## 5.6.4 I/O listesi ve dokümantasyon
 
-| Doküman | Dosya adı |
-|---------|-------------|
-| I/O listesi | **1726050-ALPER-KNV 30 I/O LISTESI.pdf** |
+| Doküman | Dosya adı | Durum |
+|---------|-----------|-------|
+| I/O listesi | **1726050-ALPER-KNV 30 I/O LİSTESİ.pdf** | Ayrı evrak teslim edilmemiştir (KD) |
 
-I/O listesi; giriş/çıkış adresleri, sensör ve aktüatör tanımları için referans dokümandır. Kurulum ve devreye alma sırasında elektrik bağlantıları bu listeye göre doğrulanmalıdır.
-
-<!-- FOTO: I/O listesi örnek sayfa — PDF referans -->
-![I/O listesi referansı](../../assets/FOTO-5-6-2-io-listesi.png)
+I/O listesi; giriş/çıkış adresleri, sensör ve aktüatör tanımları için referans dokümandır. Kurulum sırasında elektrik bağlantıları bu listeye göre doğrulanmalıdır. Dosya teslim edildiğinde **Bölüm 13.1** doküman listesine eklenir.
 
 ---
 
 ## 5.6.5 İletişim kontrol listesi
 
 | # | Kontrol | Durum |
-|---|---------|-------|
+|---|---------|:-----:|
 | 1 | Profinet ağı yapılandırıldı | ☐ |
 | 2 | PLC — HMI haberleşmesi doğrulandı | ☐ |
-| 3 | I/O listesi referans alındı | ☐ |
-| 4 | Secomea modülü kuruldu (varsa) | ☐ |
-| 5 | Encoder/feedback ayarı üretici tarafından yapıldı | ☐ |
+| 3 | HMI açılış ekranı ve dil seçimi test edildi | ☐ |
+| 4 | I/O listesi referans alındı (veya KD notu kayda geçirildi) | ☐ |
+| 5 | Secomea modülü kuruldu ve yapılandırıldı | ☐ |
+| 6 | Encoder/feedback ayarı üretici tarafından doğrulandı | ☐ |
 
 **Tarih:** _______________ **Kontrol eden:** _______________
+
+---
+
+**Bölüm 5.6 sonu.** HMI ekran yapısı için bkz. **Bölüm 3.4**; parametre ayarları için bkz. **Bölüm 6**.

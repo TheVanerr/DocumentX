@@ -680,7 +680,8 @@ html, body {
   --content-pad-top: calc(var(--header-rule-y) + var(--line-h) / 2);
   --content-pad-bottom: calc(var(--footer-rule-inset) + var(--content-footer-gap));
   --content-max-h: calc(var(--a4-height) - var(--content-pad-top) - var(--content-pad-bottom));
-  --figure-max-h: calc(var(--a4-height) / 2);
+  --figure-scale: 0.7;
+  --figure-max-h: calc(var(--a4-height) / 2 * var(--figure-scale));
   --block-gap: 24px;
 
   width: 794px;
@@ -1010,7 +1011,7 @@ html, body {
 
 /* Markdown görselleri — içerik fotoğrafları yatayda ortalı; tablo ikonları ayrı */
 .md-img {
-  max-width: 100%;
+  max-width: calc(100% * var(--figure-scale));
   height: auto;
   display: block;
   margin: 8px auto;
@@ -1022,7 +1023,7 @@ html, body {
 .md-p.md-figure .md-img {
   display: block;
   margin: 8px auto;
-  max-width: 100%;
+  max-width: calc(100% * var(--figure-scale));
   max-height: var(--content-max-h);
   width: auto;
   height: auto;
@@ -1072,7 +1073,7 @@ html, body {
 
 .page-content .md-figure-layout-single .md-figure-cell--contain .md-img {
   display: block;
-  width: 100%;
+  width: calc(100% * var(--figure-scale));
   height: auto;
   max-height: var(--figure-max-h);
   margin: 0;
@@ -1192,7 +1193,7 @@ html, body {
 
 .page-content .md-list > li.li-figure .md-img {
   display: block;
-  max-width: 100%;
+  max-width: calc(100% * var(--figure-scale));
   max-height: var(--figure-max-h);
   width: auto;
   height: auto;

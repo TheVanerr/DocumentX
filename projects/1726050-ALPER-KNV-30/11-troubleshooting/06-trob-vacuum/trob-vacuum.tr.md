@@ -1,3 +1,7 @@
 # 11.6 Vakum arızaları
 
-**vakum sistemi bulunmamaktadır**. Bu bölüm uygulanmaz (bkz. Bölüm **6.6**).
+**KNV 30 3000 2B** makinesinde **vakum sistemi bulunmamaktadır**. Kurutma pnömatik fanlar ile yapılır. Bu alt bölüm uygulanmaz (bkz. **Bölüm 6.6**).
+
+---
+
+**Bölüm 11.6 sonu.**

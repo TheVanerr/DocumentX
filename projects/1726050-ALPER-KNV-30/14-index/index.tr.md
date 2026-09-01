@@ -1,7 +1,13 @@
 # 14. EKLER, SÖZLÜK VE İNDEKS
 
-| Bölüm | Başlık | Konu |
-|-------|--------|------|
-| **14.1** | Ekler | Alarm listesi, parametre, reçete, garanti referansları |
-| **14.2** | Sözlük | Terimler ve kısaltmalar |
-| **14.3** | Anahtar Kelime İndeksi | LOTO, HMI, acil stop vb. — bölüm referansları |
+Bu bölüm kılavuzun destek materyallerini toplar: harici ek referansları, teknik terimler sözlüğü ve anahtar kelime indeksi. Operasyonel prosedürler ilgili ana bölümlerde SSOT olarak kalır; bu bölüm yalnızca **referans ve arama** amacıyla kullanılır.
+
+| Alt bölüm | Konu |
+|-------|--------|
+| **14.1** | Ekler — alarm, parametre, reçete, garanti referansları |
+| **14.2** | Sözlük — kısaltmalar ve terimler |
+| **14.3** | Anahtar kelime indeksi |
+
+---
+
+**Bölüm 14 sonu.** Kılavuz gövdesi **Bölüm 1**–**13** arasındadır.

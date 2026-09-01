@@ -1,39 +1,39 @@
 # 7. OPERASYON
 
-Makine; girişten yüklemeli konveyörlü iki banyolu (yıkama + durulama) endüstriyel parça yıkama makinesidir. Proses akışı: **Yıkama → Durulama → Kurutma**. Makine **tam otomatik** çalışır ve **7/24 robot** ile beslenir; operatör/vardiya teslimi bulunmaz.
+**KNV 30 3000 2B** (seri no **1726050**) makinesinin günlük çalıştırılması, durdurulması ve otomatik proses sekansı bu bölümde tanımlanır. Makine **tam otomatik** tasarlanmıştır; parça giriş ve çıkış **robot** ile yapılır, hat **7/24** çalışacak şekilde entegre edilmiştir. Sürekli operatör bulunmaz; izleme üst sistem veya uzaktan erişim (Secomea) üzerinden yapılabilir, hata müdahalesi **bakım personeli** tarafından gerçekleştirilir.
+
+Proses akışı: **Yıkama → Durulama → Kurutma**. Nominal döngü süresi **900 saniye** (15 dakika). Start/stop ve proses seçimi **HMI Çalışma Sayfası** üzerinden yapılır (bkz. **Bölüm 3.4.3**). Kalıcı parametre ayarları **Bölüm 6**'da; kurulum ve ilk devreye alma **Bölüm 5**'te anlatılmıştır.
 
 | Parametre | Değer |
 |-----------|-------|
 | Operasyon modu | 7/24 otomatik — robot giriş/çıkış |
-| Operatör | Bulunmaz (hata durumunda bakım personeli müdahale eder) |
-| Hazırlık | HMI hazırlık butonu (tank dolumu + ısıtma) |
-| Start / Stop | HMI arayüzünde dijital buton |
-| Operatör paneli dilleri | Türkçe, İngilizce, Almanca |
+| Operatör | Bulunmaz (hata → bakım personeli) |
+| Hazırlık | HMI **Hazırlık Start** (tank dolumu + ısıtma) |
+| Start / Stop | HMI dijital düğmeler |
+| HMI dilleri | Türkçe, İngilizce, Almanca |
+
+| Alt bölüm | Konu |
+|-------|--------|
+| **7.1** | Çalışma modları ve HMI proses seçenekleri |
+| **7.2** | Makine başlatma — hazırlık, start, ön kontroller |
+| **7.3** | Makine durdurma — normal stop, acil stop, uzun süreli duruş |
+| **7.4** | Otomatik operasyon sekansı — cycle, robot, hata davranışı |
+| **7.5** | Operasyon kronolojisi — 7/24 hat |
+| **7.6** | Diğer operasyon konuları |
+
+## Tepe lambası — operatör yorumu
+
+| Lamba | Anlam | Eylem |
+|-------|-------|-------|
+| Sarı | Kullanıma hazır | Start verilebilir |
+| Yeşil | Çalışıyor | Normal operasyon |
+| Kırmızı | Alarm | HMI alarm sayfası — bkz. **Bölüm 11** |
+
+Detaylı lamba tanımları **Bölüm 3.4.11**'de SSOT olarak verilmiştir.
+
+<!-- FOTO: HMI Çalışma Sayfası -->
+![HMI çalışma sayfası](../assets/7.0/1.png)
 
 ---
 
-## Bölüm içeriği
-
-| Bölüm | Başlık | Konu |
-|-------|--------|------|
-| **7.1** | Çalışma Modları | HMI çalışma sayfası, proses seçenekleri, bakım erişimi |
-| **7.2** | Makine Başlatma | Hazırlık butonu, tank dolumu/ısıtma, start öncesi kontrol |
-| **7.3** | Makine Durdurma | Normal stop, acil stop sonrası yeniden başlatma, güç kapatma |
-| **7.4** | Operasyon Sekansı | Otomatik cycle adımları, robot giriş/çıkış, hata davranışı |
-| **7.5** | Operasyon Kronolojisi | 7/24 robot çalışması — vardiya teslimi yok |
-| **7.6** | Diğer Operasyon Konuları | Format değişimi yok; operatör yok — hata durumunda bakım müdahalesi |
-
----
-
-## Tepe lambası durumları
-
-| Lamba | Anlam |
-|-------|-------|
-| Sarı | Makine kullanıma hazır |
-| Yeşil | Makine çalışıyor |
-| Kırmızı | Alarm |
-
-Detaylı prosedürler ilgili alt bölümlerde açıklanmıştır.
-
-<!-- FOTO: HMI çalışma sayfası genel görünüm -->
-![HMI çalışma sayfası](../assets/FOTO-7-0-operation-genel.png)
+**Bölüm 7 sonu.** Arıza giderme için bkz. **Bölüm 11**; temizlik için bkz. **Bölüm 10**.

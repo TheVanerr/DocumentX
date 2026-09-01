@@ -1,68 +1,63 @@
 # 5.5 Kurulum doğrulama ve test
 
-Testler, Bölüm **5.4** güvenlik testleri tamamlandıktan sonra uygulanmalıdır. Tüm kontroller **OK** olmadan operasyona geçilmemelidir.
+Kurulum doğrulama testleri, **Bölüm 5.4** güvenlik testleri tamamlandıktan sonra uygulanır. Tüm kontroller **OK** olmadan operasyona geçilmemelidir. Testler DATA dosyasındaki **KURULUM_TEST** checklist'ine dayanır.
 
 ---
 
 ## 5.5.1 Mekanik kurulum testi
 
 | # | Kontrol | Beklenen sonuç | Durum |
-|---|---------|-----------------|-------|
-| 1 | Makine terzide mi? | Evet — ayarlanabilir ayaklar ile 0,5 mm tolerans içinde | ☐ |
+|---|---------|-----------------|:-----:|
+| 1 | Makine terzide mi? | Evet — ayarlanabilir ayaklar, 0,5 mm tolerans içinde | ☐ |
 
-Mekanik kurulum testi, Bölüm 5.2 konumlandırma ve seviye ayarı tamamlandıktan sonra yapılır. Su terazisi veya eşdeğer ölçüm aleti ile her iki eksende kontrol edilmelidir.
+Test, **Bölüm 5.2.3** seviye ayarı tamamlandıktan sonra yapılır. Su terazisi veya eşdeğer ölçüm aleti ile her iki eksende kontrol edin.
 
-<!-- FOTO: Su terazisi ile terazi kontrolü -->
-![Mekanik test — terazi kontrolü](../../assets/FOTO-5-5-0-terazi-test.png)
+<!-- FOTO: Su terazisi ile terazi kontrolü (EKLENECEK: FOTO-5-5-0-terazi-test.jpg) -->
+![Terazi kontrolü](../../assets/5.5/1.png)
 
 ---
 
 ## 5.5.2 Elektrik devreye alma testi
 
 | # | Kontrol | Beklenen sonuç | Durum |
-|---|---------|-----------------|-------|
+|---|---------|-----------------|:-----:|
 | 1 | Faz koruma rölesi çıkış veriyor mu? | Evet | ☐ |
 | 2 | Makinede elektrik var mı? | Evet | ☐ |
 | 3 | Acil stop'a basıldığında makine duruyor mu? | Evet | ☐ |
 
-Elektrik testleri pano üzerinden devreye alma sonrasında gerçekleştirilir. Faz yönü faz sıra rölesi ile doğrulanmış olmalıdır.
+Faz yönü **Bölüm 5.3.4**'te doğrulanmış olmalıdır.
 
-<!-- FOTO: Pano açık — devreye alma testi -->
-![Elektrik devreye alma testi](../../assets/FOTO-5-5-1-elektrik-test.png)
+<!-- FOTO: Pano — devreye alma testi (EKLENECEK: FOTO-5-5-1-elektrik-test.jpg) -->
+![Elektrik devreye alma testi](../../assets/5.5/2.png)
 
 ---
 
 ## 5.5.3 Pnömatik ve medya bağlantı testi
 
 | # | Kontrol | Beklenen sonuç | Durum |
-|---|---------|-----------------|-------|
-| 1 | Hava bağlantısı yapıldıktan sonra HMI manuel sayfasında hava bilgisi yeşil yanıyor mu? | Evet | ☐ |
-| 2 | Su bağlantısı yapıldıktan sonra HMI manuel sayfasında su bilgisi yeşil yanıyor mu? | Evet | ☐ |
+|---|---------|-----------------|:-----:|
+| 1 | HMI manuel sayfasında hava bilgisi yeşil mi? | Evet | ☐ |
+| 2 | HMI manuel sayfasında su bilgisi yeşil mi? | Evet | ☐ |
 
-Bağlantı parametreleri:
+Bağlantı değerleri: **6 bar / 3/4"** hava, **1 bar / 1/2"** su (bkz. **Bölüm 3.3.5**).
 
-| Medya | Değer |
-|-------|-------|
-| Basınçlı hava | 6 bar — 3/4" |
-| Su | 1 bar — 1/2" |
-
-<!-- FOTO: HMI manuel sayfa — hava ve su yeşil -->
-![Pnömatik/medya test — HMI manuel](../../assets/FOTO-5-5-2-medya-test.png)
+<!-- FOTO: HMI manuel — hava/su yeşil -->
+![Medya test — HMI manuel](../../assets/5.5/3.png)
 
 ---
 
 ## 5.5.4 Güvenlik fonksiyon testi
 
 | # | Kontrol | Beklenen sonuç | Durum |
-|---|---------|-----------------|-------|
-| 1 | Acil stop'a basıldığında makine duruyor mu? | Evet — her fonksiyon durur | ☐ |
+|---|---------|-----------------|:-----:|
+| 1 | Acil stop makineyi durduruyor mu? | Evet | ☐ |
 | 2 | Makine kullanıma hazır mı? | Evet — sarı tepe lambası | ☐ |
-| 3 | Kapaklar açıldığında RFID sensörü makineyi durduruyor mu? | Evet | ☐ |
+| 3 | RFID sensör kapak açılınca durduruyor mu? | Evet | ☐ |
 
-Detaylı acil stop test prosedürü için bkz. Bölüm **5.4**.
+Detaylı test adımları **Bölüm 5.4**'te verilmiştir.
 
-<!-- FOTO: Güvenlik test — RFID sensör tetikleme -->
-![Güvenlik fonksiyon testi](../../assets/FOTO-5-5-3-guvenlik-test.png)
+<!-- FOTO: RFID test — kapak açık durdurma (EKLENECEK: FOTO-5-5-3-guvenlik-test.jpg) -->
+![Güvenlik fonksiyon testi](../../assets/5.5/4.png)
 
 ---
 
@@ -72,20 +67,38 @@ Detaylı acil stop test prosedürü için bkz. Bölüm **5.4**.
 |-----------|-------|
 | Boş koşu test süresi | **15 dakika** |
 
+Boş koşu testi, makinenin parça olmadan sürekli çalışmasını doğrular; sızıntı, alarm, aşırı titreşim ve proses fonksiyonlarının birlikte çalışmasını kontrol eder.
+
+### Ön koşullar
+
+1. Bölüm **5.5.1–5.5.4** kontrolleri **OK** tamamlanmış olmalıdır.
+2. Konveyör hattında sıkıştıracak parça veya cisim olmamalıdır.
+3. Pompa önü vanalar **açık** olmalıdır.
+4. Hava (**6 bar**) ve su bağlantıları aktif; HMI manuel sayfasında hava/su **yeşil** olmalıdır.
+
 ### Test prosedürü
 
-1. Tüm Bölüm 5.5.1–5.5.4 kontrolleri **OK** olarak tamamlanmış olmalıdır.
-2. Makine **parça olmadan** (boş) **15 dakika** çalıştırılır.
-3. Test süresi tamamlandığında makine durdurulur.
+1. HMI **Çalışma Sayfası**'na geçin.
+2. Yıkama, durulama, kurutma 1, kurutma 2 ve egzoz fonksiyonlarını test kapsamına göre **aktif** konuma getirin.
+3. **Hazırlık Start** düğmesine basın; tank dolumu ve ısıtma tamamlanana kadar bekleyin (bkz. **Bölüm 7.2**).
+4. Tepe lambasının **sarı** (kullanıma hazır) yandığını doğrulayın.
+5. **Makine Start** ile otomatik çalışmayı başlatın; konveyör, pompalar ve fanların devreye girdiğini gözlemleyin.
+6. Makineyi **parça olmadan** **15 dakika** çalıştırın.
+7. Test süresince HMI alarm ekranını ve tepe lambasını izleyin; sızıntı, anormal ses veya koku olup olmadığını kontrol edin.
+8. **Makine Stop** ile durdurun.
 
-| # | Kontrol | Durum |
-|---|---------|-------|
-| 1 | 15 dk boş koşu testi tamamlandı | ☐ OK / ☐ NOK |
+| # | Kabul kriteri | Durum |
+|---|---------------|:-----:|
+| 1 | 15 dk kesintisiz boş koşu tamamlandı | ☐ OK / ☐ NOK |
+| 2 | Test süresince kritik alarm oluşmadı | ☐ OK / ☐ NOK |
+| 3 | Gözle görülür sızıntı veya anormal titreşim yok | ☐ OK / ☐ NOK |
 
-Boş koşu testi başarılı ise makine **kullanıma hazır** kabul edilir (Bölüm 5.1 Adım 9).
+**Anormal durum:** Alarm oluşursa makineyi durdurun; **Bölüm 11**'e bakın. Test tekrarlanmadan operasyona geçmeyin.
 
-<!-- FOTO: Boş koşu testi — makine çalışır durumda -->
-![Boş koşu testi — 15 dk](../../assets/FOTO-5-5-4-bos-kosu.png)
+Boş koşu testi başarılı ise makine **kullanıma hazır** kabul edilir (**Bölüm 5.1 Adım 9**).
+
+<!-- FOTO: Boş koşu — makine çalışır, tepe lambası yeşil (EKLENECEK: FOTO-5-5-4-bos-kosu.jpg) -->
+![Boş koşu testi](../../assets/5.5/5.png)
 
 ---
 
@@ -100,3 +113,7 @@ Boş koşu testi başarılı ise makine **kullanıma hazır** kabul edilir (Böl
 | 5.5.5 | Boş koşu — 15 dk | ☐ |
 
 **Tarih:** _______________ **Test eden:** _______________ **Onaylayan:** _______________
+
+---
+
+**Bölüm 5.5 sonu.** Operasyon prosedürleri için bkz. **Bölüm 7**.
