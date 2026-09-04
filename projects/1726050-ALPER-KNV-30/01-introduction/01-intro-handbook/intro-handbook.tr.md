@@ -4,7 +4,7 @@
 
 Bu kullanım kılavuzu, **KNV 30 3000 2B** makinesinin ayrılmaz ve yasal olarak bağlayıcı bir parçasıdır. Kılavuz; makinenin güvenli, verimli ve amacına uygun kullanımını sağlamak üzere EN ISO 12100 ve EN ISO 20607 ilkelerine uygun hazırlanmıştır. Bu standartlar, makine güvenliği ve kullanım kılavuzu içeriği konusunda uluslararası kabul görmüş minimum gereksinimleri tanımlar; bu nedenle kılavuzdaki talimatlar yalnızca öneri değil, işletme sorumluluğunun parçasıdır.
 
-**Kapsam:** KNV 30 3000 2B opsiyon seti ve bu projeye teslim edilen donanım. Makine ticari adı DATA dosyasında [EKSİK] olduğundan kapsam, model kodu **KNV-30** ve konfigürasyon tanımı **KNV 30 3000 2B** ile sınırlandırılmıştır.
+**Kapsam:** **KNV 30 3000 2B** (model kodu **KNV-30**, seri no **1726050**) ve bu projeye teslim edilen donanım.
 
 **Hedef okuyucu grupları:** Operatör, bakım personeli, kurulum personeli.
 
@@ -30,15 +30,14 @@ Bu kılavuzdaki metinler, teknik veriler, çizimler ve şemalar; makinenin imala
 
 | Alan | Değer |
 | :--- | :--- |
-| **Revizyon** | [EKSİK] |
-| **Son güncelleme** | [EKSİK] |
-| **Hazırlayan** | [EKSİK] |
-| **Onaylayan** | [EKSİK] |
+| **Revizyon** | 00 |
+| **Son güncelleme** | 2026-08-12 |
+| **Hazırlayan** | Fatih GÜRAL |
 | **Üretim yılı** | 2026 |
 
 Üretici, AR-GE ve ürün iyileştirme kapsamında makine tasarımında ve dokümantasyonda önceden haber vermeksizin değişiklik yapma hakkını saklı tutar. Daha önce teslim edilmiş makineler için geriye dönük revizyon yükümlülüğü doğmaz. Bu kural, seri üretimde sürekli iyileştirmeyi mümkün kılar; ancak mevcut makinenizde yapılan değişiklikler yalnızca o seri numarası için geçerlidir.
 
-Makineye özel opsiyon veya konfigürasyon farkları varsa **Bkz. Bölüm 13** (dokümanlar ve ekler). HMI operatör paneli dilleri **Bkz. Bölüm 3.4**'te tanımlanır.
+HMI operatör paneli dilleri **Bkz. Bölüm 3.4**'te tanımlanır.
 
 ---
 

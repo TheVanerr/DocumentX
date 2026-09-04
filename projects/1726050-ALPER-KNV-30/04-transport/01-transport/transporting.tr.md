@@ -23,9 +23,9 @@ Taşımaya başlamadan önce aşağıdaki koşullar sağlanmalıdır. Eksik koş
 | Forklift çatal girişi | Evet — alt profiller |
 | Taşıma sıcaklığı | +10°C – +30°C |
 | Ortam | Nem ve korozif madde olmamalı |
-| Maks. taşıma yüksekliği (deniz/kara) | [EKSİK] |
+| Maks. taşıma yüksekliği (deniz/kara) | Makine dış yüksekliği **2122 mm** (bkz. **Bölüm 3.3.1**). Sabit taşıma yüksekliği sınırı tanımlanmaz; açık üstü araç, konteyner ve giriş geçidi yüksekliğine göre rota planlanmalıdır |
 
-Forklift operatörü geçerli sertifikaya sahip olmalıdır. Forklift güvenli çalışma yükü (SWL), **1300 kg** taşıma ağırlığını karşılamalıdır. Taşıma yolu üzerinde kapı yüksekliği, ramp eğimi ve dönüş yarıçapı makine dış boyutlarına uygun olmalıdır (bkz. **Bölüm 3.3.1**).
+Forklift operatörü geçerli sertifikaya sahip olmalıdır. Forklift güvenli çalışma yükü (SWL), **1300 kg** taşıma ağırlığını karşılamalıdır. Taşıma yolu üzerinde kapı yüksekliği, ramp eğimi ve dönüş yarıçapı makine dış boyutlarına (**3770 × 1730 × 2122 mm**) uygun olmalıdır (bkz. **Bölüm 3.3.1**).
 
 **DİKKAT — Vinç yasağı:** Makinede vinç kaldırma noktası veya sapanlama donanımı bulunmamaktadır. Vinç kullanımı şasi deformasyonu, pano hasarı ve devrilme riski oluşturur.
 

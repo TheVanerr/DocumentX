@@ -99,14 +99,13 @@ The stack light visually communicates the instantaneous machine status to the op
 
 ---
 
-## 3.4.6 Alarm, recipe and remote access
+## 3.4.6 Alarm and recipe
 
 | Function | Behaviour |
 |----------|-----------|
 | Alarm screen | Alarm screen is available on the HMI interface; stack light illuminates red in alarm conditions |
 | Recipe / program storage | No recipe limit applies |
 | Trend / log recording duration | [MISSING] |
-| Remote access | Yes — Secomea module |
 
 <!-- PHOTO: HMI alarm screen -->
 ![HMI alarm screen](../../assets/FOTO-3-4-6-hmi-alarm.png)

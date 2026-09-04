@@ -22,7 +22,7 @@ Makine yönleri, konveyör akış yönü ve operatör erişim tarafı kurulum, o
 
 Parçalar sol taraftan konveyöre alınır, yıkama → durulama → kurutma proses bölgelerinden geçer ve sağ taraftan hattan çıkar. Bu projede giriş ve çıkış **robot** ile gerçekleştirilir; robot erişim alanı planlanırken besleme ve boşaltma taraflarında yeterli manevra payı bırakılmalıdır.
 
-Operatör, HMI paneli, ana şalter ve elektrik panosuna **sağ taraftan** erişir. Tepe lambası makine üzerinde operatör tarafından görülebilir konumdadır; renk anlamları **Bölüm 3.4.11**'de açıklanmıştır.
+Operatör, HMI paneli, ana şalter ve elektrik panosuna **sağ taraftan** erişir. Tepe lambası makine üzerinde operatör tarafından görülebilir konumdadır; renk anlamları **Bölüm 3.4.10**'da açıklanmıştır.
 
 <!-- FOTO: Besleme (sol) ve boşaltma (sağ) yönleri işaretli genel görünüm -->
 ![Yön tanımları](../../assets/3.5/2.png)

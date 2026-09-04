@@ -9,7 +9,7 @@ Aşağıdaki tablolar, kılavuz içinde sık aranan konuların bölüm referansl
 | Anahtar kelime | Bölüm(ler) |
 |----------------|------------|
 | Acil stop | **2.5**, **5.4**, **6.2**, **7.3.2**, **11.1.2** (Error-229) |
-| Alarm / arıza | **11**, **3.4.4**, **7.4.4** |
+| Alarm / arıza | **11**, **3.4.6**, **7.4.4** |
 | Ayarlar | **6** |
 | Bakım | **9**, **10** (filtre periyotları → **9.1.3**) |
 | Basınçlı hava (6 bar) | **3.3.5**, **5.3**, **6.5**, **7.2**, **11.5** (Error-235) |
@@ -57,7 +57,7 @@ Aşağıdaki tablolar, kılavuz içinde sık aranan konuların bölüm referansl
 | PLC / alarm listesi | **3.4**, **5.6**, **11.1.2**, **14.1** Ek A |
 | Pompa (yıkama/durulama) | **3.3.4**, **7.2.5**, **11.3.2** (Error-100/101) |
 | Pompa önü vana | **7.2.5** |
-| Profinet / Secomea | **5.6**, **11.2.2** |
+| Profinet | **5.6**, **3.4.7** |
 | Reçete | **6.3**, **8.2**, **14.1** Ek C |
 | Reset (acil stop) | **2.5**, **7.3.2** |
 | Robot entegrasyonu | **7.4**, **7.5**, **8**, **11.1.2** (Error-461) |
@@ -79,7 +79,6 @@ Aşağıdaki tablolar, kılavuz içinde sık aranan konuların bölüm referansl
 | Tepe lambası | **3.4.6**, **7.2**, **11.2.1** |
 | Temizlik | **10** |
 | Tüketim parçası | **9.1.6**, **13.3.1** (Kategori: Tüketim) |
-| Uzaktan erişim (Secomea) | **5.6**, **11.2.2** |
 | Uzun süreli durdurma | **7.3.4**, **12.2.2** |
 | Ürün Alındı Onay | **3.4.3**, **11.1.2** (Error-461) |
 | Vana (aktarma) | **11.5.2** (Error-304/305) |

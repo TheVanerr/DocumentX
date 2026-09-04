@@ -190,7 +190,7 @@ The electrical and automation infrastructure of the machine is consolidated in t
 | Yellow | Machine ready for operation |
 | Green | Machine running |
 
-In alarm conditions, the HMI alarm screen is activated; simultaneously, the stack light illuminates **red**. There is no limit on recipe / program storage. Remote access is available via **Secomea** module.
+In alarm conditions, the HMI alarm screen is activated; simultaneously, the stack light illuminates **red**. There is no limit on recipe / program storage.
 
 HMI languages: **Turkish**, **English**, **German**. Password protection is provided on the HMI interface. Operating modes: **Automatic** and **Maintenance**. Jog / inching buttons are not provided.
 

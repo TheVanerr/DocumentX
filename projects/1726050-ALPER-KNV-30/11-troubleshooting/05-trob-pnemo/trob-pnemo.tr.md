@@ -51,8 +51,10 @@ Otomatik dolum vanaları pnömatik bobin ile çalışır; **6 bar** hava olmadan
 
 | Parametre | Değer |
 |-----------|-------|
-| Silindir yavaş / takılma | [EKSİK] |
-| Valf bobini arıza | [EKSİK] |
+| Silindir yavaş / takılma | **Uygulanmaz** — pnömatik silindir yok |
+| Valf bobini arıza | **6 bar** hava + su vanası açık; HMI manuel vana testi; LOTO altında bobin beslemesi; mekanik sıkışma/kirlilik — aşağıdaki prosedür |
+
+Bobin arızasında vana hareket etmez veya Error-300–305 oluşur. Bobin yanmış, PLC çıkışı yok veya mekanik sıkışma olabilir.
 
 **Beklenen sonuç:** Vana açılıp kapanıyor; tank dolumu normal; ilgili Error kodu temiz.
 

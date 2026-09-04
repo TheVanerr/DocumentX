@@ -6,7 +6,7 @@ There is **no operator** on the machine; fault intervention is by **maintenance 
 |-----------|-------|
 | Alarm display | HMI alarm screen + stack light red |
 | HMI languages | Turkish, English, German |
-| Remote access | Yes — Secomea module |
+| Hydraulic / vacuum | Not applicable |
 
 ---
 

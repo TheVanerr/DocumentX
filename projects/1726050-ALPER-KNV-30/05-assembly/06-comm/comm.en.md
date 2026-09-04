@@ -33,21 +33,7 @@ MES or SCADA integration is not defined within the scope of this project. Upper 
 
 ---
 
-## 5.6.3 Remote access
-
-| Parameter | Value |
-|-----------|-------|
-| Remote access | Yes |
-| Module | Secomea |
-
-Remote access is provided via the Secomea module. Module installation and configuration shall be commissioned after assembly.
-
-<!-- PHOTO: Secomea remote access module — inside panel -->
-![Secomea module](../../assets/FOTO-5-6-1-secomea.png)
-
----
-
-## 5.6.4 I/O list and documentation
+## 5.6.3 I/O list and documentation
 
 | Document | File name |
 |----------|-----------|
@@ -60,14 +46,13 @@ The I/O list is the reference document for input/output addresses and sensor/act
 
 ---
 
-## 5.6.5 Communication checklist
+## 5.6.4 Communication checklist
 
 | # | Check | Status |
 |---|-------|--------|
 | 1 | Profinet network configured | ☐ |
 | 2 | PLC — HMI communication verified | ☐ |
 | 3 | I/O list referenced | ☐ |
-| 4 | Secomea module installed (if applicable) | ☐ |
-| 5 | Encoder/feedback adjusted by manufacturer | ☐ |
+| 4 | Encoder/feedback adjusted by manufacturer | ☐ |
 
 **Date:** _______________ **Checked by:** _______________

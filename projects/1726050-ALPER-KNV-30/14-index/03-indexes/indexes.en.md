@@ -59,7 +59,6 @@ The table below lists section references for frequently searched topics.
 
 | Keyword | Section(s) |
 |---------|------------|
-| Secomea (remote access) | **3.4**, **11.2** |
 | Servo motor | **11.3** (Error-460) |
 | Temperature setting | **6.3**, **7.2**, **8.2** |
 | Leak tray | **11.1.2** (Error-452) |

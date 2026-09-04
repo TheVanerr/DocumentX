@@ -42,4 +42,3 @@ Folgende Dokumente werden als **separate Unterlagen** geliefert. Dateiname/Rev i
 |-------|----------|
 | Alarmcodeliste | Abschnitt **11.1.2** (im Handbuch) |
 | Schmierplan | Keiner (siehe **9.1.1**) |
-| Fernzugriff | Secomea-Modul (siehe **3.4**) |

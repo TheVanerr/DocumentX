@@ -23,4 +23,4 @@ Folgende Inhalte sind im Handbuch enthalten; kein separates Anhangsdokument erfo
 | Signalleuchten-Zustände | **7** (Haupt), **11.2** |
 | Montage-Checklisten | **5.1**, **5.5** |
 | Reinigungsprotokoll | **10.1.9** |
-| Wartungsprotokoll | **9.1.6** |
+| Wartungsprotokoll | **9.1.7** |

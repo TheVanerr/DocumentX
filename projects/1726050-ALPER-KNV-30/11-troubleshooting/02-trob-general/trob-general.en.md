@@ -26,5 +26,3 @@ Authorized service support is recommended when:
 - Recurring heater earth leakage trip (Error-170/171/172)
 - Suspected PLC/HMI hardware fault
 - Problem persists despite steps in Section 11.1.2
-
-Remote access: **Secomea module** (see Section **3.4**).

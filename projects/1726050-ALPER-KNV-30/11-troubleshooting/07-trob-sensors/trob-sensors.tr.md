@@ -50,12 +50,18 @@ Makine 7/24 robot hattında çalışır; parça çıkışta algılandığında m
 
 ## 11.7.2 Sensör parametreleri
 
-| Parametre | Değer |
-|-----------|-------|
-| Kritik sensör listesi (tip / konum) | [EKSİK] |
-| Sensör LED / durum göstergesi | [EKSİK] |
+Kritik sensörler HMI **Manuel Sayfa** input gözlemde gerçek zamanlı izlenir (**Bölüm 3.4.5**). Durum **yeşil** = sinyal OK, **kırmızı** = alarm/tetik. Fiziksel sensör üzerinde LED varsa anlamı ilgili üretici datasheet'inde verilir.
 
-DATA dosyasında ayrıntılı sensör listesi tanımlanmamıştır. Elektrik şeması ve I/O listesi teslim paketinde referans alınabilir — I/O listesi ayrı evrak olarak **teslim edilmemiştir** (bkz. **Bölüm 13**).
+### Kritik sensör listesi
+
+| Fonksiyon | Tip / model | Konum | İlgili alarm |
+|-----------|-------------|-------|:------------:|
+| Kapak güvenlik (RFID) | Omron **F3STGRNLPU21M1J8** | Bakım kapağı (arka) | Error-422 |
+| Tank su seviyesi | **VEGASWING 51** + paslanmaz seviye bekçisi | Yıkama / durulama tankı (alt/üst) | Error-200–203 |
+| Sızıntı tavası | Su algılama sensörü | Makine altı sızıntı tavası | Error-452 |
+| Çıkış ürün algılama | Omron proximity (**E2BM12KN08M1B1** / **E3FA-DP23**) | Çıkış konveyörü | Error-461 |
+
+Yedek parça sipariş kodları **Bölüm 13.3** BOM tablosunda verilmiştir. Kablo renk kodu ve bağlantı detayları **elektrik şemasında** (teslim paketi — bkz. **Bölüm 13.2**).
 
 **RFID güvenlik sensörü:** Kapak açıldığında makine durur; periyodik fonksiyon testi **Bölüm 5.4.2** ve **6.2.2**'de tanımlanmıştır.
 

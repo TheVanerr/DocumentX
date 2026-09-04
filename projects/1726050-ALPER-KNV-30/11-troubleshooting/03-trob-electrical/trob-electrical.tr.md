@@ -23,7 +23,9 @@ Ters faz bağlantısı pompa ve fanların ters dönmesine, proses arızasına ve
 
 | Parametre | Değer |
 |-----------|-------|
-| Faz kaybı davranışı | [EKSİK] |
+| Faz kaybı davranışı | Faz sıra/koruma rölesi **trip**; makine durur veya devreye alınamaz. HMI Manuel Sayfa'da faz sıra rölesi **kırmızı**; **Error-410** (faz sırası hatalı) |
+
+Faz kaybı veya ters faz bağlantısında faz koruma devresi çıkış vermez; pompa/fan beslemesi kesilir. Teşhis: **Bölüm 5.3.4**, **5.4.3**.
 
 ### Error-229 — Acil stop
 
@@ -59,10 +61,12 @@ Motor listesi **Bölüm 3.3.4** tablosunda verilmiştir.
 
 | Parametre | Değer |
 |-----------|-------|
-| Motor koruma trip | [EKSİK] |
-| Inverter alarm kodları özeti | [EKSİK] |
+| Motor koruma trip | **Termik aşırı yük** koruma (pompa, fan, yağ sıyırıcı). Trip durumu HMI **Manuel Sayfa** input gözlemde izlenir (**Bölüm 3.4.5**) |
+| Inverter alarm kodları | **Pompa / fan / yağ sıyırıcı:** DOL tahrik — inverter yok, **uygulanmaz**. **Konveyör servo:** Siemens **6SL3210-5FE11-5UF0** — sürücü ekranındaki kod → **Siemens servo sürücü kılavuzu** (**Bölüm 3.3.4**, **13.3**) |
 
-**Error-460 Servo Motor Hata:** Servo sürücü üzerindeki alarm kodunu okuyun. Mekanik sıkışma, encoder veya kablo arızası olabilir. **Yetkili servis** önerilir (bkz. **Bölüm 11.2.2**).
+Trip sonrası: arıza nedenini giderin (sıkışma, kapalı vana, aşırı yük); termik şalteri **reset**leyin; HMI alarmını temizleyin.
+
+**Error-460 Servo Motor Hata:** Servo sürücü (**Siemens 6SL3210-5FE11-5UF0**) üzerindeki alarm kodunu okuyun; anlamı için **Siemens servo sürücü kılavuzuna** bakın. Mekanik sıkışma, encoder veya kablo arızası olabilir. **Yetkili servis** önerilir (bkz. **Bölüm 11.2.2**).
 
 **Beklenen sonuç:** Motor koruma normal; motor çalışıyor; HMI alarmı yok.
 
@@ -95,9 +99,7 @@ Sıcaklık set değerleri HMI reçete/ayar sayfasından yapılır (**Bölüm 6.3
 4. Islak/ıslak ortam kaynaklı geçici trip ise kurutma sonrası bir kez reset deneyin.
 5. Trip tekrarlıyorsa ısıtıcı eleman değişimi için **servis çağırın** (**Bölüm 1.3**).
 
-| Parametre | Değer |
-|-----------|-------|
-| Sensör kablo renk kodu | [EKSİK] |
+Termokupl ve sensör kablo bağlantı renk kodları **elektrik şemasında** verilmiştir (teslim paketi — bkz. **Bölüm 13.2**).
 
 **UYARI — Elektrik:** Isıtıcı ve kaçak akım koruma devresi müdahalesi yalnızca yetkili elektrik personeli tarafından yapılmalıdır.
 

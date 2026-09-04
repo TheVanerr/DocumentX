@@ -1,6 +1,6 @@
 # 10.1 Temizlik ve dezenfeksiyon
 
-Makine proses tankları **sıcak su** ile çalışır; temizlik sırasında sıcak yüzey ve buhar riski vardır. Temizlik maddesi olarak yalnızca bu bölümde onaylanan veya DATA'da belirtilen maddeler kullanılmalıdır; yasak maddeler tank ve paslanmaz yüzeylere kalıcı hasar verir.
+Makine proses tankları **sıcak su** ile çalışır; temizlik sırasında sıcak yüzey ve buhar riski vardır. Temizlik maddesi olarak **Bölüm 10.1.7**'de tanımlanan kriterlere uygun maddeler kullanılmalıdır; yasak maddeler tank ve paslanmaz yüzeylere kalıcı hasar verir.
 
 Filtre yedek parça sipariş kodları **Bölüm 9.1.6** ve **13.3.1** tablolarında verilmiştir.
 
@@ -47,7 +47,7 @@ Yedek parça: **07 10214** — ÖN FİLTRE NS KOMPLESİ (önerilen stok: 2 — b
 
 1. Makineyi durdurun; kapak/filtre erişimi için **LOTO** uygulayın.
 2. Yıkama tankı **ön filtrelerini** sökün.
-3. Filtreleri uygun yöntemle temizleyin — yüksek basınçlı su veya fırça ile; yasak kimyasal kullanmayın.
+3. Filtreleri **şebeke suyu** ve onaylı temizlik maddeleriyle (bkz. **Bölüm 10.1.7**) temizleyin; yüksek basınçlı su veya fırça kullanılabilir; yasak kimyasal kullanmayın.
 4. Filtre hasarı (deformasyon, yırtık) varsa yedek parça ile değiştirin.
 5. Filtreleri doğru yönde ve sıkı oturacak şekilde takın.
 6. LOTO kaldırma prosedürünü tamamlayın; makineyi devreye almadan önce sızıntı olmadığını kontrol edin.
@@ -100,7 +100,7 @@ Yedek parça: **10 05378** — TORBA FİLTRE 200 MİKRON (önerilen stok: 2).
 7. Makine dış yüzeyini **Bölüm 10.1.6**'ya göre silin.
 8. Atık suyu **Bölüm 10.1.8**'e uygun bertaraf edin.
 
-**DİKKAT — Yasak kimyasal:** Asit bazlı ve paslanmaz çeliğe zararlı temizlik/dezenfeksiyon maddeleri **kullanılmamalıdır**. Onaylı kimyasal listesi tanımlanana kadar **sabunlu su** yöntemi geçerlidir.
+**DİKKAT — Yasak kimyasal:** Asit bazlı ve paslanmaz çeliğe zararlı temizlik/dezenfeksiyon maddeleri **kullanılmamalıdır** (bkz. **Bölüm 10.1.7**). Tank içi dezenfeksiyonda **sabunlu su** yöntemi geçerlidir.
 
 **Beklenen sonuç:** Tank içi temiz, koku azalmış; proses suyu yeniden doldurulmaya hazır.
 
@@ -120,10 +120,24 @@ Makine dış yüzeyinde su birikintisi bırakmayın; elektrik panosu yakınında
 
 ## 10.1.7 Temizlik maddeleri
 
+Makine temizliğinde **şebeke suyu** kullanılabilir. Temizlik kimyasalı olarak **paslanmaz çelik uyumlu nötr veya hafif alkalî** deterjanlar kullanılmalıdır. Aşağıdaki tablo üretici önerisini verir; müşteri, asit bazlı olmayan ve makineye zarar vermeyen eşdeğer ürünler de kullanabilir.
+
 | Parametre | Değer |
 |-----------|-------|
-| Onaylı temizlik maddeleri | [EKSİK] |
-| Dezenfeksiyon (onaylı) | **Sabunlu su** (DATA) |
+| Temizlik suyu | **Şebeke suyu** |
+| Genel kriter | Paslanmaz çelik uyumlu **nötr** veya **hafif alkalî** deterjanlar |
+| Dezenfeksiyon (tank içi) | **Sabunlu su** |
+| Müşteri eşdeğer ürün | Asit bazlı olmayan, makineye zarar vermeyen ürünler kullanılabilir |
+
+### Üretici önerilen temizlik maddeleri
+
+| Ürün | Kullanım |
+|------|----------|
+| **VEIDEC 89 SUPER FOAM 750** | Genel temizlik |
+| **VEIDEC BIO CLEANING 3** | Çıkmayan inatçı lekeler — az miktarda ıslatılmış **sünger** ile ovun |
+| **VEIDEC 34 INOX** | Parlatma |
+
+Ürün talimatlarına (dozaj, bekleme süresi, durulama) uygun hareket edin. Kimyasalı doğrudan elektrik panosu, HMI ve RFID sensör bölgelerine uygulamayın.
 
 ### Yasak temizlik maddeleri
 
@@ -132,9 +146,7 @@ Makine dış yüzeyinde su birikintisi bırakmayın; elektrik panosu yakınında
 | **Asit bazlı** temizlik maddeleri | Tank/conta ve paslanmaz yüzey korozyonu |
 | **Paslanmaz çeliğe zarar verecek** maddeler | Makine gövdesi ve tank malzemesi hasarı |
 
-Onaylı kimyasal listesi tesis tarafından tanımlandığında bu bölüm güncellenmelidir. Tanımlanana kadar **sabunlu su** ve **temiz su** kullanın.
-
-Proses suyu kaynağı: şebeke veya arıtılmış su (bkz. **Bölüm 3.3.5**).
+Proses suyu kaynağı (üretim): şebeke veya arıtılmış su (bkz. **Bölüm 3.3.5**). Makine **temizliği** için şebeke suyu yeterlidir.
 
 ---
 
@@ -146,7 +158,7 @@ Proses suyu kaynağı: şebeke veya arıtılmış su (bkz. **Bölüm 3.3.5**).
 
 Tank boşaltma suyu, sabunlu yıkama suyu ve filtre temizlik atıkları yerel **atık su ve kimyasal bertaraf** kurallarına uygun şekilde toplanmalı ve arıtılmalıdır. Bertaraf prosedürü tesis çevre izinleri kapsamında tanımlanmalıdır.
 
-Drain / atık su hattı çapı: **[EKSİK]** (bkz. **Bölüm 3.3.5**).
+Basınçlı hava, su ve drain bağlantı verileri layout çiziminde verilmiştir (bkz. **Bölüm 3.3.5**, **1726050-ALPER-KNV 30 LAYOUT.pdf**).
 
 ---
 

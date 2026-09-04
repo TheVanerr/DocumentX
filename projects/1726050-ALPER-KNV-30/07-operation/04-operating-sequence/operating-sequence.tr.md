@@ -31,7 +31,7 @@ Parçalar konveyör hattı boyunca sürekli akış prensibiyle ilerler; hat **7/
 |-----------|-------|
 | Cycle süresi — nominal | **900 sn** (15 dk) |
 | Minimum kapasite referansı | 730 adet/saat (bkz. **Bölüm 3.3.2**) |
-| Nominal kapasite | [EKSİK] — kullanıcı firma tarafından belirlenir |
+| Nominal kapasite | Kullanıcı firma belirler |
 
 Nominal döngü süresi parça geometrisi, robot cycle time ve seçili proses adımlarına bağlı olarak değişebilir. Kapasite ve reçete detayları **Bölüm 8**'de açıklanmıştır.
 

@@ -1,6 +1,6 @@
 # 5.6 İletişim ve otomasyon arayüzü
 
-Makine otomasyon altyapısı kurulum sonrası doğrulanmalıdır. PLC, HMI ve Profinet özellikleri **Bölüm 3.4.8**'de özetlenmiştir; bu bölüm kurulum ve devreye alma kontrol listesini verir.
+Makine otomasyon altyapısı kurulum sonrası doğrulanmalıdır. PLC, HMI ve Profinet özellikleri **Bölüm 3.4.7**'de özetlenmiştir; bu bölüm kurulum ve devreye alma kontrol listesini verir.
 
 ---
 
@@ -29,27 +29,13 @@ Profinet ağı üzerinden PLC–HMI haberleşmesi kurulmalıdır. Encoder / feed
 
 | Parametre | Değer |
 |-----------|-------|
-| Üst sistem (MES / SCADA) bağlantısı | Bilinmiyor |
+| Üst sistem (MES / SCADA) bağlantısı | Müşteri tarafından yapılır |
 
-MES veya SCADA entegrasyonu bu proje kapsamında tanımlanmamıştır. Üst sistem bağlantısı gerekiyorsa kullanıcı firma ile birlikte değerlendirilmelidir.
-
----
-
-## 5.6.3 Uzaktan erişim
-
-| Parametre | Değer |
-|-----------|-------|
-| Uzaktan erişim | Evet |
-| Modül | Secomea |
-
-Uzaktan erişim Secomea modülü ile sağlanır. Modül kurulumu ve yapılandırması montaj sonrası devreye alınmalıdır; ağ güvenliği tesis IT politikasına uygun yapılandırılmalıdır.
-
-<!-- FOTO: Secomea modülü — pano içi (EKLENECEK: FOTO-5-6-1-secomea.jpg) -->
-![Secomea modülü](../../assets/5.6/2.png)
+MES veya SCADA entegrasyonu **müşteri** sorumluluğundadır. Makine **Profinet** altyapısı ile üst sisteme bağlanmaya hazırdır; protokol, adresleme ve sinyal eşlemesi müşteri otomasyon projesine göre yapılandırılır.
 
 ---
 
-## 5.6.4 I/O listesi ve dokümantasyon
+## 5.6.3 I/O listesi ve dokümantasyon
 
 | Doküman | Dosya adı | Durum |
 |---------|-----------|-------|
@@ -59,7 +45,7 @@ I/O listesi; giriş/çıkış adresleri, sensör ve aktüatör tanımları için
 
 ---
 
-## 5.6.5 İletişim kontrol listesi
+## 5.6.4 İletişim kontrol listesi
 
 | # | Kontrol | Durum |
 |---|---------|:-----:|
@@ -67,8 +53,7 @@ I/O listesi; giriş/çıkış adresleri, sensör ve aktüatör tanımları için
 | 2 | PLC — HMI haberleşmesi doğrulandı | ☐ |
 | 3 | HMI açılış ekranı ve dil seçimi test edildi | ☐ |
 | 4 | I/O listesi referans alındı (veya KD notu kayda geçirildi) | ☐ |
-| 5 | Secomea modülü kuruldu ve yapılandırıldı | ☐ |
-| 6 | Encoder/feedback ayarı üretici tarafından doğrulandı | ☐ |
+| 5 | Encoder/feedback ayarı üretici tarafından doğrulandı | ☐ |
 
 **Tarih:** _______________ **Kontrol eden:** _______________
 

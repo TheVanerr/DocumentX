@@ -89,7 +89,7 @@ Enerji kaynakları:
 
 Demontaj atıkları yerel mevzuata uygun ayrıştırılmalı ve lisanslı tesislere gönderilmelidir. Paslanmaz çelik gövde, plastik contalar, elektrik/elektronik (PLC, HMI, kablo) ve ambalaj malzemeleri ayrı toplanır — ayrıntı **Bölüm 12.3**.
 
-Drain / atık su hattı çapı: **[EKSİK]** (bkz. **Bölüm 3.3.5**).
+Basınçlı hava, su ve drain bağlantı verileri layout çiziminde verilmiştir (bkz. **Bölüm 3.3.5**, **1726050-ALPER-KNV 30 LAYOUT.pdf**).
 
 ---
 

@@ -25,7 +25,7 @@ Elektrik panosu; güç dağıtımı, motor koruma, PLC, HMI, acil stop reset dev
 
 HMI açıldığında açılış (splash) ekranı görüntülenir. Bu ekranda makine modeli (**KNV 30 3000**), seri numarası (**1726050**) ve kurulu güç (**50 kW**) bilgileri yer alır. Sağ üst köşedeki bayrak simgeleri ile arayüz dili seçilir: **Türkçe**, **İngilizce**, **Almanca**.
 
-Ana menü yapısı sol kenar çubuğunda beş sayfa düğmesi ile sunulur:
+Ana menü yapısı sol kenar çubuğunda dört sayfa düğmesi ile sunulur; tüm sayfalar **şifresiz** erişilebilir:
 
 | Menü düğmesi | İşlev |
 |--------------|-------|
@@ -33,9 +33,8 @@ Ana menü yapısı sol kenar çubuğunda beş sayfa düğmesi ile sunulur:
 | **Ayarlar Sayfası** | Sıcaklık set değerleri, yağ sıyırıcı zamanları |
 | **Alarm Sayfası** | Aktif ve geçmiş alarm kayıtları |
 | **Manuel Sayfası** | Giriş sinyali izleme, manuel fonksiyon tetikleme, hava/su durumu |
-| **Üretici Sayfası** | Kalıcı alarm listesi, toplam çalışma süresi (şifre korumalı) |
 
-HMI arayüzünde **bir şifre** bulunmaktadır; üretici sayfası ve mühendislik düzeyindeki parametrelere erişim bu şifre ile sınırlandırılmıştır. Şifre dağıtımı ve yetkilendirme tesis yönetimi sorumluluğundadır.
+HMI'de şifre seviyesi **bulunmamaktadır**. Kurulum/üretici iç sayfası operatör kılavuzu kapsamı dışındadır; bu kılavuzda tanımlanmaz.
 
 Sol üst köşede tarih/saat bilgisi sürekli gösterilir; ayar sayfası veya sistem parametreleri üzerinden güncellenmesi gerekebilir (bkz. Bölüm 6.3 — Elektrik ayarları).
 
@@ -128,21 +127,7 @@ Sayfanın alt köşesinde **Ürün Alındı Onay** düğmesi bulunur. Çıkış 
 
 ---
 
-## 3.4.7 Üretici sayfası
-
-**Üretici Sayfası** şifre korumalıdır; yalnızca yetkili servis veya mühendislik personeli tarafından erişilmelidir. Bu sayfada:
-
-- **Kalıcı alarm listesi** — silinmeyen arşiv alarm kayıtları (No., Zaman, Tarih, Metin sütunları)
-- **Toplam makine çalışma süresi** — saat/dakika formatında kümülatif çalışma süresi
-
-Kalıcı alarm geçmişi, tekrarlayan arızaların analizi ve bakım planlaması için kullanılır. Toplam çalışma süresi periyodik bakım periyotlarının takibinde referans alınabilir (bkz. Bölüm 9).
-
-<!-- FOTO: HMI üretici sayfası — kalıcı alarm listesi ve çalışma süresi -->
-![HMI üretici sayfası](../../assets/3.4/5.png)
-
----
-
-## 3.4.8 PLC ve iletişim altyapısı
+## 3.4.7 PLC ve iletişim altyapısı
 
 | Parametre | Değer |
 |-----------|-------|
@@ -150,7 +135,6 @@ Kalıcı alarm geçmişi, tekrarlayan arızaların analizi ve bakım planlaması
 | PLC CPU | S7-1200 CPU 1215C DC/DC/DC (6ES7215-1AG40-0XB0) |
 | I/O modül özeti | 36 giriş / 24 çıkış |
 | Fieldbus / protokol | Profinet |
-| Uzaktan erişim | Evet — Secomea modülü |
 
 PLC, proses mantığını, güvenlik interlock'larını (RFID, acil stop, seviye, termik) ve HMI veri alışverişini yönetir. I/O listesi dosya referansı: **1726050-ALPER-KNV 30 I/O LİSTESİ.pdf** — ayrı evrak teslim edilmemiştir (KD).
 
@@ -158,7 +142,7 @@ PLC, proses mantığını, güvenlik interlock'larını (RFID, acil stop, seviye
 
 ---
 
-## 3.4.9 Çalışma modları ve Start/Stop
+## 3.4.8 Çalışma modları ve Start/Stop
 
 | Parametre | Değer |
 |-----------|-------|
@@ -175,7 +159,7 @@ PLC, proses mantığını, güvenlik interlock'larını (RFID, acil stop, seviye
 
 ---
 
-## 3.4.10 Acil durdurma
+## 3.4.9 Acil durdurma
 
 Makinede **4 adet acil stop butonu** bulunur (pano, giriş sağ, giriş sol, çıkış sol). Acil stop'a basıldığında tüm fonksiyonlar durur.
 
@@ -183,7 +167,7 @@ Reset prosedürü, acil stop sonrası yeniden başlatma koşulları ve operatör
 
 ---
 
-## 3.4.11 Tepe lambası (sinyal lambaları)
+## 3.4.10 Tepe lambası (sinyal lambaları)
 
 | Renk | Anlam | Operatör yorumu |
 |------|-------|-----------------|
@@ -195,13 +179,11 @@ Tepe lambası, operatör tarafının makineye doğrudan bakmadan hat durumunu iz
 
 ---
 
-## 3.4.12 Reçete, trend ve uzaktan erişim
+## 3.4.11 Reçete
 
 | Fonksiyon | Davranış |
 |-----------|----------|
 | Reçete / program kaydı | Herhangi bir reçete sınırı bulunmamaktadır |
-| Trend / log kayıt süresi | [EKSİK] |
-| Uzaktan erişim | Evet — Secomea modülü |
 
 Reçete parametreleri (sıcaklık set değerleri, proses on/off adımları) HMI ayarlar ve çalışma sayfaları üzerinden tanımlanır. Kapasite ve ürün bazlı reçete detayları kullanıcı firma tarafından belirlenir (bkz. Bölüm 8.2).
 

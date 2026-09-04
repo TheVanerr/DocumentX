@@ -190,7 +190,7 @@ Die elektrische und automatisierungstechnische Infrastruktur der Maschine ist im
 | Gelb | Maschine betriebsbereit |
 | Grün | Maschine in Betrieb |
 
-Bei Alarmzustand wird der HMI-Alarmbildschirm aktiviert; gleichzeitig leuchtet das Signalelement **rot**. Für Rezept- / Programmspeicherung besteht keine Begrenzung. Fernzugriff ist über das **Secomea**-Modul möglich.
+Bei Alarmzustand wird der HMI-Alarmbildschirm aktiviert; gleichzeitig leuchtet das Signalelement **rot**. Für Rezept- / Programmspeicherung besteht keine Begrenzung.
 
 HMI-Sprachen: **Türkisch**, **Englisch**, **Deutsch**. Auf der HMI-Oberfläche ist Passwortschutz vorhanden. Betriebsarten: **Automatik** und **Wartung**. Jog- / Tipp-Tasten sind nicht vorhanden.
 

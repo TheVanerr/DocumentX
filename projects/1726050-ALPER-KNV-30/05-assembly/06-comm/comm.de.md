@@ -33,21 +33,7 @@ MES- oder SCADA-Integration ist im Projektumfang nicht definiert. Leitsystemanbi
 
 ---
 
-## 5.6.3 Fernzugriff
-
-| Parameter | Wert |
-|-----------|------|
-| Fernzugriff | Ja |
-| Modul | Secomea |
-
-Fernzugriff wird über das Secomea-Modul bereitgestellt. Modulinstallation und -konfiguration sind nach der Montage in Betrieb zu nehmen.
-
-<!-- FOTO: Secomea-Fernzugriffsmodul — im Schrank -->
-![Secomea-Modul](../../assets/FOTO-5-6-1-secomea.png)
-
----
-
-## 5.6.4 E/A-Liste und Dokumentation
+## 5.6.3 E/A-Liste und Dokumentation
 
 | Dokument | Dateiname |
 |----------|-----------|
@@ -60,14 +46,13 @@ Die E/A-Liste ist das Referenzdokument für Ein-/Ausgangsadressen und Sensor-/Ak
 
 ---
 
-## 5.6.5 Kommunikations-Checkliste
+## 5.6.4 Kommunikations-Checkliste
 
 | # | Prüfung | Status |
 |---|---------|--------|
 | 1 | Profinet-Netzwerk konfiguriert | ☐ |
 | 2 | SPS — HMI-Kommunikation verifiziert | ☐ |
 | 3 | E/A-Liste referenziert | ☐ |
-| 4 | Secomea-Modul installiert (falls zutreffend) | ☐ |
-| 5 | Encoder/Feedback durch Hersteller eingestellt | ☐ |
+| 4 | Encoder/Feedback durch Hersteller eingestellt | ☐ |
 
 **Datum:** _______________ **Geprüft von:** _______________

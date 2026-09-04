@@ -24,7 +24,7 @@ Aşağıdaki içerikler ayrı basılı ek gerektirmez; ilgili bölümde tablo ve
 | PLC alarm ve çözüm tablosu | **11.1.2** | Arıza teşhisi |
 | Genel arıza belirti tablosu | **11.1.3** | Alarm kodu olmayan durumlar |
 | Periyodik bakım takvimi | **9.1.3** | Bakım planlama |
-| Bakım kayıt formu | **9.1.6** | Periyodik bakım kaydı |
+| Bakım kayıt formu | **9.1.7** | Periyodik bakım kaydı |
 | Temizlik kayıt formu | **10.1.9** | Günlük/haftalık temizlik kaydı |
 | Yedek parça listesi (BOM) | **13.3.1** | Sipariş ve stok |
 | Montaj / devreye alma checklist | **5.5**, **5.6** | Kurulum doğrulama |

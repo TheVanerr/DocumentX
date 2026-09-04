@@ -40,7 +40,7 @@ Hata oluştuğunda:
 3. Müdahale **bakım personeli** tarafından yapılır — **Bölüm 11** teşhis akışını izleyin.
 4. Enerji izolasyonu gerektiren onarımda **LOTO** uygulayın (**Bkz. Bölüm 2.4**).
 
-Uzaktan erişim (Secomea) ile uzaktan izleme mümkündür; güvenlik fonksiyonlarını devre dışı bırakacak müdahale yalnızca yetkili servis tarafından yapılmalıdır (bkz. **Bölüm 5.6.3**).
+Güvenlik fonksiyonlarını devre dışı bırakacak müdahale yalnızca yetkili servis tarafından yapılmalıdır.
 
 ---
 

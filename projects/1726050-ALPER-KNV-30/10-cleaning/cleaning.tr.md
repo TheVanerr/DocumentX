@@ -10,7 +10,8 @@ Temizlik işlemleri **bakım personeli** tarafından yapılır. Tank, filtre ve 
 | Günlük | Yıkama tankı ön filtreleri |
 | Haftalık | Tank filtreleri + pompa çıkışı torba filtreler |
 | Dezenfeksiyon | Tank boşaltma + sabunlu su yıkama |
-| Onaylı kimyasal listesi | [EKSİK] |
+| Temizlik suyu | Şebeke suyu |
+| Onaylı kimyasal | Nötr / hafif alkalî (paslanmaz uyumlu); üretici önerisi VEIDEC serisi — bkz. **10.1.7** |
 
 | Alt bölüm | Konu |
 |-------|--------|

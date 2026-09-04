@@ -18,7 +18,7 @@ Demontaj sonrası parçalar malzeme grubuna göre sınıflandırılmalı ve kull
 4. Atık transfer kayıtlarını tesis çevre izinleri kapsamında saklayın.
 5. Orijinal ambalaj (konteyner) varsa ayrı geri dönüşüm akışına alın.
 
-**Beklenen sonu kar:** Tehlikeli/atık karışımı yok; malzeme grupları ayrılmış; bertaraf belgelenmiş.
+**Beklenen sonuç:** Tehlikeli/atık karışımı yok; malzeme grupları ayrılmış; bertaraf belgelenmiş.
 
 ---
 
@@ -32,7 +32,7 @@ Demontaj sonrası parçalar malzeme grubuna göre sınıflandırılmalı ve kull
 |---------------|---------------------------|-------------------------|
 | **Paslanmaz çelik / metal** | Tank gövdesi, şasi, konveyör, filtre çerçeveleri | Metal geri dönüşüm tesisine |
 | **Plastik / kauçuk** | Contalar, hortum kaplamaları, HMI panel çerçevesi | Plastik/atık geri dönüşümü (yerel sınıflandırma) |
-| **Elektrik / elektronik (WEEE)** | Siemens S7-1200 PLC, HMI, Secomea modül, sürücüler, kablolar | WEEE / elektronik atık mevzuatı — lisanslı işleyici |
+| **Elektrik / elektronik (WEEE)** | Siemens S7-1200 PLC, HMI, sürücüler, kablolar | WEEE / elektronik atık mevzuatı — lisanslı işleyici |
 | **Bakır / alüminyum** | Kablo, ısıtıcı eleman bağlantıları, fan gövdeleri | Metal geri dönüşümü |
 | **Su / temizlik atığı** | Tank boşaltma suyu, sabunlu yıkama suyu | **Bölüm 10.1.8** — atık su arıtma/bertaraf |
 | **Ambalaj** | Konteyner, tahta, streç, köpük | Ambalaj geri dönüşümü (yerel) |

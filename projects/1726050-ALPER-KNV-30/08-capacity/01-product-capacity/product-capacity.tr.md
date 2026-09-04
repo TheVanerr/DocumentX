@@ -10,8 +10,8 @@ Referans teknik değerler **Bölüm 3.3.2** — Kapasite ve proses parametreleri
 
 | Parametre | Değer | Not |
 |-----------|-------|-----|
-| Nominal kapasite (adet/saat) | Kullanıcı firma tarafından belirlenir | DATA — [EKSİK] SSOT tabloda |
-| Maksimum kapasite (adet/saat) | Bilinmiyor | Kullanıcı firma belirler |
+| Nominal kapasite (adet/saat) | Kullanıcı firma belirler | Bkz. Bölüm 3.3.2 |
+| Maksimum kapasite (adet/saat) | Kullanıcı firma belirler | |
 | Minimum kapasite (adet/saat) | **730** | Tasarım referans değeri |
 | Nominal döngü süresi | **900 sn** (15 dk) | Bkz. Bölüm 3.3.2 |
 | Proses adımları | Yıkama → Durulama → Kurutma (3) | Bkz. Bölüm 3.1 |
@@ -24,11 +24,11 @@ Minimum kapasite (**730 adet/saat**), makine tasarım referansıdır. Gerçek ü
 
 | Parametre | Değer |
 |-----------|-------|
-| Ürün formatı / ambalaj tipi | Bilinmiyor — kullanıcı firma belirler |
-| Ürün boyutu min (mm) | Bilinmiyor — kullanıcı firma belirler |
-| Ürün boyutu max (mm) | Bilinmiyor — kullanıcı firma belirler |
-| Ürün ağırlığı min (g) | Bilinmiyor — kullanıcı firma belirler |
-| Ürün ağırlığı max (g) | Bilinmiyor — kullanıcı firma belirler |
+| Ürün formatı / ambalaj tipi | Kullanıcı firma belirler |
+| Ürün boyutu min (mm) | Kullanıcı firma belirler |
+| Ürün boyutu max (mm) | Kullanıcı firma belirler |
+| Ürün ağırlığı min (g) | Kullanıcı firma belirler |
+| Ürün ağırlığı max (g) | Kullanıcı firma belirler |
 
 Parça boyutu ve ağırlığı; konveyör genişliği (**1730 mm** dış genişlik — bkz. **Bölüm 3.3.1**), robot tutuş noktası, nozul kapsama alanı ve banyo geometrisine uygun olmalıdır. Amaçlanan kullanım sınırları **Bölüm 3.2**'de tanımlıdır.
 

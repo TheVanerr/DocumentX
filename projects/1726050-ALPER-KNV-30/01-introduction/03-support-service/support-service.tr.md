@@ -36,7 +36,7 @@ Etikette aşağıdaki alanlar yer alır:
 | **Üretim yılı** | İmalat yılı | 2026 |
 | **İmalat / sevk tarihi** | Tesis sevkiyat tarihi (varsa) | 2026-08-12 |
 
-![Makine kimlik etiketi örneği](../../assets/1.3/kimlik-etiketi-ornek-placeholder.svg)
+![Makine kimlik etiketi örneği](../../assets/1.3/1.png)
 
 **Müşteri / işletme — servis öncesi zorunlu adımlar**
 
@@ -57,7 +57,7 @@ Servis talebinden önce aşağıdaki bilgileri hazırlayın. Eksik kimlik bilgis
 4. Arıza anındaki proses fazını (yıkama, durulama, kurutma) ve makinenin çalışma süresini belirtin.
 5. Mekanik hasar veya sızıntı varsa net fotoğraf veya video ekleyin.
 
-Talebi telefon veya e-posta ile iletin. Acil durumlarda makineyi güvenli şekilde durdurun (**Bkz. Bölüm 2.5**). Makinede uzaktan erişim modülü (Secomea) bulunmaktadır; uzaktan destek için üretici servisi ile koordinasyon sağlayın (**Bkz. Bölüm 5.6**).
+Talebi telefon veya e-posta ile iletin. Acil durumlarda makineyi güvenli şekilde durdurun (**Bkz. Bölüm 2.5**).
 
 ---
 

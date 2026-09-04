@@ -3,9 +3,9 @@
 # =============================================================================
 # Bu dosya kılavuz yazımının TEK kaynağıdır. Bölüm .md dosyaları buradan üretilir.
 # Doldurma: "Değer:" satırına yaz. Bilinmiyorsa [EKSİK] bırak. Uydurma yapma.
-# Son güncelleme:
-# Hazırlayan:
-# Onaylayan:
+# Revizyon: 00
+# Son güncelleme: 2026-08-12
+# Hazırlayan: Fatih GÜRAL
 # =============================================================================
 
 # =============================================================================
@@ -15,7 +15,7 @@
 [PROJE]
 Proje / sipariş no: 1726050
 Müşteri adı: ALPER ÖZLEM IDEA
-Makine ticari adı:
+Makine ticari adı: KNV 30 3000 2B
 Makine model kodu: KNV-30
 Seri numarası: 1726050
 Üretim yılı: 2026
@@ -57,8 +57,6 @@ Makinenin ana işlevi: Parça üzerindeki endüstriyel işlemlerden kalan yağı
 Makine tipi (ör. dolum / paketleme / yıkama / konveyör): Konveyör 
 Proses akışı özeti (adım adım): Yıkama,Durulama,Kurutma
 Makine bileşenleri listesi (ana modüller): Konveyör,Yıkama Pompası,Durulama Pompası,Yağ Sıyırıcı,Kurutma Fanı,Elektrik Panosu,HMI,PLC,Ana şalter,Sigorta
-Opsiyon / varyant listesi (bu projeye özel):
-
 # --- 03.2 Amaçlanan kullanım (intended-use) ---
 
 [AMACLANAN_KULLANIM]
@@ -82,14 +80,14 @@ Boş ağırlık — kuru (kg):1300
 Şase tipi (sabit ayak / ayarlanabilir ayak / ankraj):Ayarlanabilir ayak
 
 [KAPASITE_PROSES]
-Nominal kapasite (adet/saat veya kg/saat):
-Maksimum kapasite (adet/saat):Bilinmiyor
+Nominal kapasite (adet/saat veya kg/saat):Kullanıcı firma belirler
+Maksimum kapasite (adet/saat):Kullanıcı firma belirler
 Minimum kapasite (adet/saat):730
-Ürün formatı / ambalaj tipi:Bilinmiyor
-Ürün boyutu min (mm):Bilinmiyor
-Ürün boyutu max (mm):Bilinmiyor
-Ürün ağırlığı min (g):Bilinmiyor
-Ürün ağırlığı max (g):Bilinmiyor
+Ürün formatı / ambalaj tipi:Kullanıcı firma belirler
+Ürün boyutu min (mm):Kullanıcı firma belirler
+Ürün boyutu max (mm):Kullanıcı firma belirler
+Ürün ağırlığı min (g):Kullanıcı firma belirler
+Ürün ağırlığı max (g):Kullanıcı firma belirler
 Proses adım sayısı:3
 Proses adı 1:Yıkama
 Proses adı 2:Durulama       
@@ -116,19 +114,19 @@ UPS / jeneratör gereksinimi (varsa):Hayır
 Konveyör Redüktörü motoru :1,5kW/2000rpm/Siemens/SIMOTICS S-1FL6
 Yıkama Pompası Motoru:3kW/2900rpm/Lowara/ESHE 40-160/30
 Durulama Pompası Motoru:1,85kW/2900rpm/GOULDS/GCEA 370/3
-Yağ Sıyırıcı Redüktörü Motoru:0,04kW/  /FINEX/E1610-40-150-17B-C
+Yağ Sıyırıcı Redüktörü Motoru:0,04kW/1340rpm/FINEX/E1610-40-150-17B-C
 Egzost Fanı Motoru:0,37kW/2800rpm/ENA/ENA 2
-1. Kurutma Fanı Motoru:4kW/2900rpm/
-2. Kurutma Fanı Motoru:4kW/2900rpm/
-3. Kurutma Fanı Motoru:4kW/2900rpm/  
-4. Kurutma Fanı Motoru:4kW/2900rpm/
+1. Kurutma Fanı Motoru:4kW/2940rpm/Ölçükontrol/OK 710K37
+2. Kurutma Fanı Motoru:4kW/2940rpm/Ölçükontrol/OK 710K37
+3. Kurutma Fanı Motoru:4kW/2940rpm/Ölçükontrol/OK 710K37
+4. Kurutma Fanı Motoru:4kW/2940rpm/Ölçükontrol/OK 710K37
 
 [SIKIŞTIRILMIŞ_HAVA_SU]
 Basınçlı hava girişi (bar):6
 Su girişi basıncı (bar):1
 Su sıcaklığı min / max (°C):+10°C - +70°C
 Su kalitesi / filtre gereksinimi:Şebeke suyu ya da arıtılmış su kullanılmalıdır.
-Drain / atık su hattı çap (mm):
+Basınçlı hava ve su bağlantı verileri: Bkz. layout çizimi (1726050-ALPER-KNV 30 LAYOUT.pdf)
 
 [ORTAM_KOSULLARI]
 Çalışma sıcaklığı min / max (°C):+10°C - +30°C
@@ -155,14 +153,12 @@ Mod seçici (Manuel / Otomatik / Bakım):Otomatik / Bakım
 Jog / inching düğmeleri: Bulunmamaktadır
 Sinyal lambaları listesi: Kırmızı Lamba (Alarm) , Sarı Lamba (Makine Kullanıma Hazır) , Yeşil Lamba (Makine Çalışıyor)
 Operatör paneli dilleri:Türkçe,İngilizce, Almanca
-Şifre seviyeleri (operatör / bakım / admin):HMI Arayüzünde bir şifre bulunmaktadır.
+Şifre seviyeleri (operatör / bakım / admin):Yok — Çalışma, Ayarlar, Alarm ve Manuel sayfaları şifresiz erişilebilir. Kurulum/üretici iç sayfası operatör kılavuzu kapsamı dışındadır.
 
 [KONTROL_FONKSIYONLARI]
-Ana ekran menü yapısı:
 Alarm ekranı davranışı:HMI Arayüzünde alarm ekranı bulunmaktadır. Ayrıca makinede alarm olduğunda tepe lambası kırmızı yanmaktadır.
 Reçete / program kayıt sayısı:Herhangi bir reçete sınırı bulunmamaktadır.
-Trend / log kayıt süresi:
-Uzaktan erişim (Evet/Hayır — protokol):Evet/Modül(secomea)
+Uzaktan erişim (Evet/Hayır — protokol):Hayır — uzaktan erişim modülü bulunmamaktadır
 
 # --- 03.5 Makine yerleşimi (machine-layout) ---
 
@@ -192,8 +188,7 @@ Forklift çatal girişi var mı (Evet/Hayır):Evet
 Taşıma sırasında sabitleme / bağlama:Forklift çatalı ile taşıma yapılmalıdır.
 Nem koruma / korozyon koruma:Taşıma sırasında nem ve korozif maddeler olmamalıdır.
 Taşıma sıcaklığı aralığı (°C):+10°C - +30°C
-Taşıma yüksekliği max (m — deniz / kara):
-
+Taşıma yüksekliği max (m — deniz / kara):Makine dış yüksekliği 2122 mm (bkz. Bölüm 3.3.1). Taşıma yüksekliği sınırı sabit değildir; açık üstü araç, konteyner ve giriş geçidi yüksekliğine göre taşıma rotası planlanmalıdır.
 [DEPOLAMA]
 Depolama pozisyonu (dikey / yatay):Yatay
 Max depolama süresi (ay):12
@@ -236,7 +231,7 @@ Güvenlik fonksiyon test listesi:Acil Stop a basıldığında makine duruyor mu?
 
 [ILETISIM]
 Fieldbus / protokol (Profinet / EtherCAT / Modbus / vb.):Profinet
-Üst sistem (MES / SCADA) bağlantısı:Bilinmiyor
+Üst sistem (MES / SCADA) bağlantısı:Müşteri tarafından yapılır
 I/O listesi dosya referansı:1726050-ALPER-KNV 30 I/O LISTESI.pdf
 
 # =============================================================================
@@ -407,7 +402,10 @@ Yedek parça sipariş kodu referansı:Tablo «Sipariş kodu» sütunu
 Temizlik tipi (kuru / ıslak / CIP / COP):kuru/ıslak
 Günlük temizlik prosedürü:Yıkama tankı içerisindeki ön filtreler sökülüp temizlenmelidir. Bunun dışında günlük herhangi bir temizliğe gerek yoktur.
 Haftalık derin temizlik: Tanklarda bulunan filtreler çıkartılıp temizlenmelidir. Pompa çıkışındaki hassas filtrelerdeki torba filtreler sökülüp temizlenmelidir.
-Kullanılan temizlik maddeleri (onaylı liste):
+Temizlik suyu:Makine temizliği için şebeke suyu kullanılabilir.
+Kullanılan temizlik maddeleri (genel kriter):Paslanmaz çelik uyumlu nötr veya hafif alkalî deterjanlar.
+Üretici önerilen temizlik maddeleri:VEIDEC 89 SUPER FOAM 750 — genel temizlik; VEIDEC BIO CLEANING 3 — çıkmayan inatçı lekeler (az miktarda ıslatılmış sünger ile ovma); VEIDEC 34 INOX — parlatma.
+Müşteri eşdeğer ürün:Asit bazlı olmayan ve makineye (paslanmaz çelik, tank, conta) zarar vermeyen temizlik maddeleri kullanılabilir.
 Yasak temizlik maddeleri:Asit bazlı temizlik maddeleri kullanılmamalıdır. Paslanmaz çeliğe zarar verecek temizlik maddeleri kullanılmamalıdır.
 Dezenfeksiyon prosedürü:Makine tanklarındaki su boşaltılıp tank içerisi sabunlu su ile yıkanmalıdır.
 Temizlik sonrası kurutma:Makine dışı kuru bir bez ile silinmelidir.
@@ -450,40 +448,41 @@ Alarm kod listesi dosya referansı:
 - Error-235 Giriş Hava Basıncı Düşük
 - Error-460 Servo Motor Hata
 - Error-304 Aktarma Vanası Açılamadı
-HMI alarm metinleri dili:
-Servis çağrısı kriterleri:
+HMI alarm metinleri dili:Türkçe, İngilizce, Almanca
+Servis çağrısı kriterleri:Bkz. kılavuz Bölüm 11.2.2 — Error-460, tekrarlayan kaçak akım trip, tekrarlayan Error-410, PLC/HMI donanım şüphesi, 11.1.2 çözümüne rağmen devam eden arıza, ciddi mekanik hasar/sızıntı, güvenlik fonksiyon testi başarısız
 
 [ARIZA_TABLO]
 # Format: Belirti | Olası neden | Kontrol | Çözüm
-Arıza 1 belirti:
-Arıza 1 neden:
-Arıza 1 çözüm:
-Arıza 2 belirti:
-Arıza 2 neden:
-Arıza 2 çözüm:
-Arıza 3 belirti:
-Arıza 3 neden:
-Arıza 3 çözüm:
+# Genel arıza tablosu kılavuz Bölüm 11.1.3'te (alarm kodu olmayan belirtiler)
+Arıza 1 belirti:Bkz. Bölüm 11.1.3
+Arıza 1 neden:Bkz. Bölüm 11.1.3
+Arıza 1 çözüm:Bkz. Bölüm 11.1.3
+Arıza 2 belirti:Bkz. Bölüm 11.1.3
+Arıza 2 neden:Bkz. Bölüm 11.1.3
+Arıza 2 çözüm:Bkz. Bölüm 11.1.3
+Arıza 3 belirti:Bkz. Bölüm 11.1.3
+Arıza 3 neden:Bkz. Bölüm 11.1.3
+Arıza 3 çözüm:Bkz. Bölüm 11.1.3
 
 [ELEKTRIK_ARIZA]
-Faz kaybı davranışı:
-Motor koruma trip:
-Inverter alarm kodları özeti:
-Sensör kablo renk kodu:
+Faz kaybı davranışı:Faz sıra/koruma rölesi trip; makine durur veya devreye alınamaz. HMI Manuel Sayfa'da faz sıra rölesi kırmızı; Error-410 (faz sırası hatalı). Bkz. Bölüm 5.3.4, 5.4.3, 11.3.1
+Motor koruma trip:Termik aşırı yük koruma (pompa, fan, yağ sıyırıcı). Trip durumu HMI Manuel Sayfa'da izlenir (Bölüm 3.4.5). Neden giderildikten sonra termik reset; Error-100–114, 130
+Inverter alarm kodları özeti:Pompa/fan/yağ sıyırıcı DOL — inverter yok, uygulanmaz. Konveyör servo: Siemens 6SL3210-5FE11-5UF0 — sürücü ekranındaki alarm kodu → Siemens servo sürücü kılavuzu (Bölüm 3.3.4, 13.3)
+Sensör kablo renk kodu:Bkz. elektrik şeması — teslim paketi (Bölüm 13.2)
 
 [HIDROLIK_ARIZA]
-Basınç düşük alarm:
-Yağ kaçağı noktaları:
-Pompa sesi anormal:
+Basınç düşük alarm:Uygulanmaz — hidrolik sistem yok
+Yağ kaçağı noktaları:Uygulanmaz
+Pompa sesi anormal (hidrolik):Uygulanmaz — bkz. Bölüm 11.3.2 (elektrik pompaları)
 
 [PNEOMATIK_ARIZA]
-Basınç düşük:
-Silindir yavaş / takılma:
-Valf bobini arıza:
+Basınç düşük:Error-235 (6 bar hava), Error-236 (1 bar su) — Bölüm 11.5.1
+Silindir yavaş / takılma:Uygulanmaz — pnömatik silindir yok; yalnızca vana bobini
+Valf bobini arıza:6 bar hava + su vanası açık + HMI manuel vana testi; bobin beslemesi LOTO altında kontrol; mekanik sıkışma/kirlilik — Bölüm 11.5.2
 
 [SENSOR_ARIZA]
-Kritik sensör listesi (tip / konum):
-Sensör LED / durum göstergesi:
+Kritik sensör listesi (tip / konum):RFID kapak — Omron F3STGRNLPU21M1J8, bakım kapağı (Error-422). Tank seviye — VEGASWING 51 + paslanmaz seviye bekçisi, yıkama/durulama tank (Error-200–203). Sızıntı tavası — su algılama, makine altı (Error-452). Çıkış ürün — proximity sensör, çıkış konveyörü (Error-461). Bkz. Bölüm 3.4.5, 11.7.2, 13.3
+Sensör LED / durum göstergesi:Durum HMI Manuel Sayfa input gözlemde yeşil/kırmızı (Bölüm 3.4.5). Fiziksel sensör LED varsa üretici datasheet
 
 
 # =============================================================================

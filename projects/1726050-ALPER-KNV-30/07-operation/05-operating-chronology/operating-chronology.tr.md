@@ -21,7 +21,7 @@ Makine, üst hat (robot + MES/SCADA — tanım müşteriye ait) ile senkronize �
 |-----------|-------|
 | Vardiya devir teslim maddeleri | **Yoktur** |
 
-Operatör/vardiya teslim formu kullanılmaz. Durum izleme uzaktan erişim (Secomea), üst sistem veya periyodik bakım turu ile yapılır.
+Operatör/vardiya teslim formu kullanılmaz. Durum izleme üst sistem (müşteri MES/SCADA) veya periyodik bakım turu ile yapılır.
 
 ---
 

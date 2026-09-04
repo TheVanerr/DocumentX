@@ -228,7 +228,6 @@ Tablo hazır; fotoğrafları **sipariş kodu.png** adıyla yükleyin (ör. `10 0
 | E59 | `assets/FOTO-5-5-3-guvenlik-test.png` | Güvenlik fonksiyon testi | Bölüm 5 |
 | E60 | `assets/FOTO-5-5-4-bos-kosu.png` | Boş koşu testi — 15 dk | Bölüm 5 |
 | E61 | `assets/FOTO-5-6-0-profinet.png` | Profinet altyapısı — PLC/HMI | Bölüm 5 |
-| E62 | `assets/FOTO-5-6-1-secomea.png` | Secomea modülü | Bölüm 5 |
 | E63 | `assets/FOTO-5-6-2-io-listesi.png` | I/O listesi referansı | Bölüm 5 |
 | E64 | `assets/FOTO-6-1-0-referans-home.png` | Referans pozisyon — konveyör başı | Bölüm 6 |
 | E65 | `assets/FOTO-6-2-0-acil-stop-periyot.png` | Acil stop periyodik test | Bölüm 2 |
@@ -279,28 +278,13 @@ Aşağıdaki **3 PDF** müşteriye fiziksel/dijital paket olarak verilir; kılav
 
 ---
 
-## G — MEVCUT ASSETS
+## G — MEVCUT ASSETS (1.2.2 semboller — tamamlandı, PNG)
 
-- `assets/1.2.2/bilgi1.svg`
-- `assets/1.2.2/bilgi2.svg`
-- `assets/1.2.2/bilgi3.svg`
-- `assets/1.2.2/bilgi4.svg`
-- `assets/1.2.2/bilgi5.svg`
-- `assets/1.2.2/bilgi6.svg`
-- `assets/1.2.2/bilgi7.svg`
-- `assets/1.2.2/kkd1.webp`
-- `assets/1.2.2/kkd2.svg`
-- `assets/1.2.2/kkd3.svg`
-- `assets/1.2.2/kkd4.svg`
-- `assets/1.2.2/kkd5.svg`
-- `assets/1.2.2/kkd6.svg`
-- `assets/1.2.2/warning1.svg`
-- `assets/1.2.2/warning2.svg`
-- `assets/1.2.2/warning3.svg`
-- `assets/1.2.2/warning4.svg`
-- `assets/1.2.2/warning5.svg`
-- `assets/1.2.2/warning6.jpg`
-- `assets/1.2.2/warning7.svg`
+- `assets/1.2.2/bilgi1.png` … `bilgi7.png`
+- `assets/1.2.2/kkd1.png` … `kkd6.png`
+- `assets/1.2.2/warning1.png` … `warning7.png`
+
+(Eski `.svg` / `.webp` / `.jpg` dosyaları silinebilir.)
 - `assets/1.3/kimlik-etiketi-ornek-placeholder.svg`
 - `assets/1726050-ALPER-KNV 30 3000 (1).png`
 - `assets/1726050-ALPER-KNV 30 3000 2B PRO IDE LAYOUT.PDF`

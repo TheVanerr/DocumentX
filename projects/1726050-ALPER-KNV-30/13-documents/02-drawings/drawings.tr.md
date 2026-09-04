@@ -44,7 +44,7 @@ Makine fotoğrafları ve HMI ekran görüntüleri proje `assets/` klasöründedi
 |-------------|-------|----------------------|
 | Makine / modül fotoğrafları | `assets/{bölüm}.{alt}/N.png` | **3**–**8** ilgili alt bölümler |
 | HMI ekran görüntüleri | `assets/3.4/N.png` (SSOT **3.4**); çapraz referanslarda ilgili bölüm klasörü | **3.4**, **5**–**8** |
-| Sembol / uyarı ikonları | `assets/1.2.2/` | **1.2**, **2** |
+| Sembol / uyarı ikonları | `assets/1.2.2/*.png` | **1.2**, **2** |
 
 Her alt bölüm kendi `assets/X.Y/` klasöründe sıralı numaralandırılmış görselleri kullanır; aynı fotoğraf birden fazla bölümde geçse bile her bölüm kendi numaralı dosyasına referans verir.
 

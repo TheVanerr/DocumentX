@@ -50,7 +50,7 @@ Durulama tankı seviye kontrolü, otomatik dolum vanası ve ısıtma sistemi yı
 
 ## 3.1.5 Yağ sıyırıcı
 
-Yağ sıyırıcı, yıkama tankı yüzeyinde biriken yağ tabakasını toplayarak proses suyunun yağ yükünü azaltır. Redüktör motoru **0,04 kW** FINEX tahrikli ünitedir.
+Yağ sıyırıcı, yıkama tankı yüzeyinde biriken yağ tabakasını toplayarak proses suyunun yağ yükünü azaltır. Redüktör motoru **0,04 kW**, **1340 rpm** FINEX tahrikli ünitedir (bkz. **Bölüm 3.3.4**).
 
 Aşırı yağ birikimi filtre tıkanmasına ve proses performans düşüşüne yol açabilir. Periyodik bakım **Bölüm 9.1.3** takvimine göre yapılır.
 
@@ -60,9 +60,18 @@ Aşırı yağ birikimi filtre tıkanmasına ve proses performans düşüşüne y
 
 ## 3.1.6 Kurutma ve egzost
 
-Kurutma bölgesinde **4 adet kurutma fanı** (her biri **4 kW**) parça yüzeyindeki nemi alır. **Egzost fanı** (**0,37 kW**) buhar ve nem tahliyesini destekler (bkz. **Bölüm 3.3.4**).
+Kurutma bölgesinde **4 adet kurutma air knife** (kurutma fanı ünitesi, her biri **4 kW**) parça yüzeyindeki nemi alır. **Egzost fanı** (**0,37 kW**) buhar ve nem tahliyesini destekler (bkz. **Bölüm 3.3.4**).
 
-Kurutma fanları marka/model bilgisi DATA dosyasında `[EKSİK]` olarak bırakılmıştır. Kurutma fonksiyonu HMI'dan proses seçici ile aktif/pasif yapılabilir (bkz. **Bölüm 7.1.6**).
+Konveyör akış yönü **sol giriş → sağ çıkış** olduğundan kurutma donanımının yerleşimi şöyledir:
+
+| Bileşen | Konum (konveyör boyunca) |
+|---------|---------------------------|
+| **Egzost fanı** | **Konveyör giriş** tarafı (sol) |
+| **Kurutma air knifeları** (4 adet) | **Konveyör çıkış** tarafı (sağ) |
+
+Parça durulama sonrası önce giriş tarafındaki egzost bölgesinden geçer; kurutma air knifeları çıkış tarafında son kurutmayı uygular.
+
+Kurutma fanları **Ölçükontrol OK 710K37** (4 × **4 kW**, **2940 rpm**) modeldir. Kurutma fonksiyonu HMI'dan proses seçici ile aktif/pasif yapılabilir (bkz. **Bölüm 7.1.6**).
 
 Kurutma fanları ve egzost kanallarında toz birikimi hava performansını düşürür; periyodik bakım takviminde yer alır (bkz. **Bölüm 9.1.3**).
 
@@ -84,7 +93,7 @@ Otomasyon mimarisi **Siemens SIMATIC S7-1200** PLC (CPU 1215C) ve **SIMATIC HMI 
 
 Tepe lambası renk kodlaması operatörün makine durumunu uzaktan izlemesini sağlar: **kırmızı** alarm, **sarı** kullanıma hazır, **yeşil** çalışıyor. Alarm durumunda HMI alarm ekranı devreye girer; eş zamanlı olarak tepe lambası kırmızı yanar.
 
-Makine **Profinet** protokolü ile üst sistem entegrasyonuna hazırdır. Uzaktan erişim Secomea modülü ile sağlanır. HMI arayüzü **Türkçe, İngilizce ve Almanca** dil desteğine sahiptir.
+Makine **Profinet** protokolü ile üst sistem entegrasyonuna hazırdır. HMI arayüzü **Türkçe, İngilizce ve Almanca** dil desteğine sahiptir.
 
 ---
 
@@ -109,11 +118,11 @@ Bakım sırasında emniyet kapısı bypass edilmemelidir; kapak açılmadan önc
 
 Bu proje kapsamında parça **giriş** ve **çıkış** operasyonları robot ile gerçekleştirilir; giriş/çıkış prosedürleri müşteri hattına aittir. Makinede sürekli operatör bulunmaz; hata durumunda müdahale bakım personeli tarafından yapılır (bkz. **Bölüm 11**).
 
-Üst sistem (MES / SCADA) bağlantısı: **[EKSİK]** — müşteri konfigürasyonuna bağlıdır.
+Üst sistem (MES / SCADA) bağlantısı **müşteri tarafından** yapılır; makine **Profinet** altyapısı ile entegrasyona hazırdır (bkz. **Bölüm 5.6**).
 
 I/O listesi dosya referansı: **1726050-ALPER-KNV 30 I/O LİSTESİ.pdf** — ayrı evrak teslim edilmemiştir (KD).
 
-Fieldbus / protokol: **Profinet**. Uzaktan erişim: **Evet** — Secomea modülü.
+Fieldbus / protokol: **Profinet**.
 
 ---
 

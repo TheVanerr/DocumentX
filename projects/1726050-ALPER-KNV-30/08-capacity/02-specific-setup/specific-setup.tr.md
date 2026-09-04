@@ -2,7 +2,7 @@
 
 Makinede **mekanik format değişim prosedürü yoktur** (bkz. **Bölüm 6.1.5**). Ürün ve proses farklılıkları HMI üzerinden **reçete mantığıyla** yönetilir: sıcaklık set değerleri, yağ sıyırıcı zamanları ve proses fonksiyon on/off seçimleri.
 
-Reçete kayıt sayısında üst sınır **bulunmamaktadır** (bkz. **Bölüm 3.4.12**). Reçete numaralandırması ve ürün eşleştirmesi **kullanıcı firma** tarafından tanımlanır; üst sistem (robot PLC / MES) entegrasyonu müşteri otomasyon yapısına bağlıdır (**Bilinmiyor** — bkz. **Bölüm 5.6.2**).
+Reçete kayıt sayısında üst sınır **bulunmamaktadır** (bkz. **Bölüm 3.4.11**). Reçete numaralandırması ve ürün eşleştirmesi **kullanıcı firma** tarafından tanımlanır; üst sistem (robot PLC / MES) entegrasyonu **müşteri** otomasyon yapısına bağlıdır (bkz. **Bölüm 5.6.2**).
 
 ---
 

@@ -99,14 +99,13 @@ Das Signalelement zeigt dem Bediener den aktuellen Maschinenstatus visuell an. B
 
 ---
 
-## 3.4.6 Alarm, Rezept und Fernzugriff
+## 3.4.6 Alarm und Rezept
 
 | Funktion | Verhalten |
 |----------|-----------|
 | Alarmbildschirm | Alarmbildschirm ist auf der HMI-Oberfläche vorhanden; bei Alarm leuchtet das Signalelement rot |
 | Rezept- / Programmspeicher | Keine Rezeptbegrenzung |
 | Trend- / Log-Speicherdauer | [EKSİK] |
-| Fernzugriff | Ja — Secomea-Modul |
 
 <!-- FOTO: HMI-Alarmbildschirm -->
 ![HMI-Alarmbildschirm](../../assets/FOTO-3-4-6-hmi-alarm.png)

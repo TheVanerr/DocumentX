@@ -11,7 +11,7 @@ Montaj işlemleri tahmini **1 gün** sürer ve **1 kişilik** ekip ile gerçekle
 | **5.3** | Sistem bağlantıları — hava, su, elektrik, faz kontrolü |
 | **5.4** | Güvenlik sistemleri testi — acil stop, RFID, faz koruma |
 | **5.5** | Kurulum doğrulama — checklist ve 15 dk boş koşu |
-| **5.6** | İletişim — Profinet, I/O listesi, uzaktan erişim |
+| **5.6** | İletişim — Profinet, I/O listesi |
 
 ## Kurulum ön koşulları özeti
 

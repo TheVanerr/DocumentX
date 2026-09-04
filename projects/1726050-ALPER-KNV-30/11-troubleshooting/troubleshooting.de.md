@@ -6,7 +6,7 @@
 |-----------|------|
 | Alarmanzeige | HMI-Alarmbildschirm + Signalleuchte rot |
 | HMI-Sprachen | Türkisch, Englisch, Deutsch |
-| Fernzugriff | Ja — Secomea-Modul |
+| Hydraulik / Vakuum | Nicht anwendbar |
 
 ---
 

@@ -26,5 +26,3 @@ Autorisierter Service empfohlen bei:
 - Wiederholter Heizungs-Fehlerstrom-Trip (Error-170/171/172)
 - Verdacht auf PLC/HMI-Hardwarefehler
 - Problem trotz Schritte in Abschnitt 11.1.2
-
-Fernzugriff: **Secomea-Modul** (siehe Abschnitt **3.4**).

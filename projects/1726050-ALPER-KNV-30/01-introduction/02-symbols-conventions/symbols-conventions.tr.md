@@ -24,12 +24,13 @@ Sarı zeminli üçgen uyarı işaretleri makinedeki tehlike bölgelerini; kırm�
 
 | Sembol | Anlam | Gerekli eylem |
 | :---: | :--- | :--- |
-| ![Genel tehlike](../../assets/1.2.2/warning1.svg) | Genel tehlike / dikkat | İlgili güvenlik talimatlarına uyun (**Bkz. Bölüm 2**). |
-| ![Sıcak yüzey](../../assets/1.2.2/warning2.svg) | Sıcak yüzey / buhar | Sistem soğumadan çıplak elle temas etmeyin; koruyucu eldiven kullanın. |
-| ![Aşındırıcı madde](../../assets/1.2.2/warning3.svg) | Aşındırıcı / korozif kimyasal | Kimyasal sıçramasına karşı KKD kullanın; cilde temasında bol suyla yıkayın (**Bkz. Bölüm 2.6**). |
-| ![Ezilme tehlikesi](../../assets/1.2.2/warning4.svg) | Ezilme / el sıkışması (hareketli parçalar) | Makine çalışırken hareketli bölgelere el sokmayın; muhafazaları açmayın. |
-| ![Kaygan zemin](../../assets/1.2.2/warning5.svg) | Kaygan zemin | Sıvı sızıntısına karşı dikkatli yürüyün; sızıntıyı giderin (**Bkz. Bölüm 10**). |
-| ![Elektrik tehlikesi](../../assets/1.2.2/warning7.svg) | Elektrik tehlikesi | Yalnızca yetkili personel müdahale etsin; **Bkz. Bölüm 2.4** LOTO. |
+| ![Genel tehlike](../../assets/1.2.2/warning1.png) | Genel tehlike / dikkat | İlgili güvenlik talimatlarına uyun (**Bkz. Bölüm 2**). |
+| ![Sıcak yüzey](../../assets/1.2.2/warning2.png) | Sıcak yüzey / buhar | Sistem soğumadan çıplak elle temas etmeyin; koruyucu eldiven kullanın. |
+| ![Aşındırıcı madde](../../assets/1.2.2/warning3.png) | Aşındırıcı / korozif kimyasal | Kimyasal sıçramasına karşı KKD kullanın; cilde temasında bol suyla yıkayın (**Bkz. Bölüm 2.6**). |
+| ![Ezilme tehlikesi](../../assets/1.2.2/warning4.png) | Ezilme / el sıkışması (hareketli parçalar) | Makine çalışırken hareketli bölgelere el sokmayın; muhafazaları açmayın. |
+| ![Kaygan zemin](../../assets/1.2.2/warning5.png) | Kaygan zemin | Sıvı sızıntısına karşı dikkatli yürüyün; sızıntıyı giderin (**Bkz. Bölüm 10**). |
+| ![Yanıcı madde yasak](../../assets/1.2.2/warning6.png) | Yanıcı / patlayıcı madde yasak | Makine çevresinde yanıcı sıvı ve açık alevi kullanmayın; yalnızca onaylı temizlik maddeleri (**Bkz. Bölüm 10.1.7**). |
+| ![Elektrik tehlikesi](../../assets/1.2.2/warning7.png) | Elektrik tehlikesi | Yalnızca yetkili personel müdahale etsin; **Bkz. Bölüm 2.4** LOTO. |
 
 ---
 
@@ -39,11 +40,12 @@ Mavi zeminli zorunluluk işaretleri, belirtilen kişisel koruyucu donanımın ku
 
 | Sembol | Anlam | Gerekli eylem |
 | :---: | :--- | :--- |
-| ![Koruyucu giysi](../../assets/1.2.2/kkd2.svg) | Koruyucu giysi / yansıtıcı yelek | Uygun iş elbisesi veya yansıtıcı yelek giyin. |
-| ![Emniyet ayakkabısı](../../assets/1.2.2/kkd3.svg) | Emniyet ayakkabısı | Çelik burunlu koruyucu ayakkabı kullanın. |
-| ![Koruyucu eldiven](../../assets/1.2.2/kkd4.svg) | Koruyucu eldiven | İşe uygun eldiven takın. |
-| ![Koruyucu gözlük](../../assets/1.2.2/kkd5.svg) | Koruyucu gözlük (göz koruması) | Sıçramaya karşı koruyucu gözlük kullanın. |
-| ![Solunum maskesi](../../assets/1.2.2/kkd6.svg) | Toz / solunum maskesi | Kimyasal buhar veya tozda solunum maskesi takın. |
+| ![Kılavuzu oku](../../assets/1.2.2/kkd1.png) | Kılavuzu oku | Devreye alma, operasyon ve bakım öncesi bu kılavuzu okuyun ve uygulayın. |
+| ![Koruyucu giysi](../../assets/1.2.2/kkd2.png) | Koruyucu giysi / yansıtıcı yelek | Uygun iş elbisesi veya yansıtıcı yelek giyin. |
+| ![Emniyet ayakkabısı](../../assets/1.2.2/kkd3.png) | Emniyet ayakkabısı | Çelik burunlu koruyucu ayakkabı kullanın. |
+| ![Koruyucu eldiven](../../assets/1.2.2/kkd4.png) | Koruyucu eldiven | İşe uygun eldiven takın. |
+| ![Koruyucu gözlük](../../assets/1.2.2/kkd5.png) | Koruyucu gözlük (göz koruması) | Sıçramaya karşı koruyucu gözlük kullanın. |
+| ![Solunum maskesi](../../assets/1.2.2/kkd6.png) | Toz / solunum maskesi | Kimyasal buhar veya tozda solunum maskesi takın. |
 
 ---
 
@@ -53,13 +55,13 @@ Makine gövdesindeki bilgi işaretleri; tesis bağlantı noktalarını (toprakla
 
 | Sembol | Anlam | Tipik konum / kullanım |
 | :---: | :--- | :--- |
-| ![Koruyucu topraklama](../../assets/1.2.2/bilgi1.svg) | Koruyucu topraklama (PE) | Makine gövdesi topraklama terminali; tesis PE hattına bağlayın (**Bkz. Bölüm 5.3**). |
-| ![Kilitleme zorunlu](../../assets/1.2.2/bilgi2.svg) | Kilitleme / enerji izolasyonu | Bakım öncesi enerji izolasyonu ve kilit (**Bkz. Bölüm 2.4**). |
-| ![Su tahliyesi](../../assets/1.2.2/bilgi3.svg) | Su tahliyesi / drenaj | Tank veya makine boşaltma noktası; atık su hattına bağlayın. |
-| ![Basınçlı hava girişi](../../assets/1.2.2/bilgi4.svg) | Basınçlı hava girişi | 6 bar pnömatik besleme bağlantı noktası. |
-| ![Su girişi](../../assets/1.2.2/bilgi5.svg) | Su girişi (besleme) | Şebeke / manuel su dolum bağlantı noktası. |
-| ![Tank dolumu](../../assets/1.2.2/bilgi6.svg) | Tank su dolumu | Tankın otomatik olarak su ile doldurulduğu dolum noktası / göstergesi. |
-| ![Emniyet kilidi](../../assets/1.2.2/bilgi7.svg) | Emniyet kilidi (kilitli / açık) | Bakım kapağı veya koruyucu muhafaza kilidi durumu; kilit açıkken çalıştırmayın. |
+| ![Koruyucu topraklama](../../assets/1.2.2/bilgi1.png) | Koruyucu topraklama (PE) | Makine gövdesi topraklama terminali; tesis PE hattına bağlayın (**Bkz. Bölüm 5.3**). |
+| ![Kilitleme zorunlu](../../assets/1.2.2/bilgi2.png) | Kilitleme / enerji izolasyonu | Bakım öncesi enerji izolasyonu ve kilit (**Bkz. Bölüm 2.4**). |
+| ![Su tahliyesi](../../assets/1.2.2/bilgi3.png) | Su tahliyesi / drenaj | Tank veya makine boşaltma noktası; atık su hattına bağlayın. |
+| ![Basınçlı hava girişi](../../assets/1.2.2/bilgi4.png) | Basınçlı hava girişi | 6 bar pnömatik besleme bağlantı noktası. |
+| ![Su girişi](../../assets/1.2.2/bilgi5.png) | Su girişi (besleme) | Şebeke / manuel su dolum bağlantı noktası. |
+| ![Tank dolumu](../../assets/1.2.2/bilgi6.png) | Tank su dolumu | Tankın otomatik olarak su ile doldurulduğu dolum noktası / göstergesi. |
+| ![Emniyet kilidi](../../assets/1.2.2/bilgi7.png) | Emniyet kilidi (kilitli / açık) | Bakım kapağı veya koruyucu muhafaza kilidi durumu; kilit açıkken çalıştırmayın. |
 
 Hava ve su bağlantısı yapıldıktan sonra HMI manuel sayfasındaki ilgili durum göstergesinin yeşil yanması gerekir. Basınç düşük alarm kodları **Bkz. Bölüm 11.1** (Error-235 hava, Error-236 su).
 

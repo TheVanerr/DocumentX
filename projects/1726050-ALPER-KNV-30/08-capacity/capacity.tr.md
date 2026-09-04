@@ -17,7 +17,7 @@ Makine **7/24 robot** hattında kesintisiz çalışmaya uygundur. Nominal döng�
 | Minimum kapasite | 730 adet/saat | Bölüm 3.3.2 |
 | Nominal / maksimum kapasite | Kullanıcı firma belirler | DATA |
 | Maksimum sürekli çalışma | 24/7 | DATA |
-| Reçete kayıt sınırı | Sınır yok | Bölüm 3.4.12 |
+| Reçete kayıt sınırı | Sınır yok | Bölüm 3.4.11 |
 
 <!-- FOTO: Konveyör — kapasite / parça akışı -->
 ![Konveyör kapasite genel görünüm](../assets/8.0/1.png)

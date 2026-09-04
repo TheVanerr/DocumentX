@@ -59,7 +59,6 @@ Die Tabelle listet Abschnittsreferenzen für häufig gesuchte Themen.
 
 | Stichwort | Abschnitt(e) |
 |-----------|--------------|
-| Secomea (Fernzugriff) | **3.4**, **11.2** |
 | Servomotor | **11.3** (Error-460) |
 | Temperatureinstellung | **6.3**, **7.2**, **8.2** |
 | Leckwanne | **11.1.2** (Error-452) |

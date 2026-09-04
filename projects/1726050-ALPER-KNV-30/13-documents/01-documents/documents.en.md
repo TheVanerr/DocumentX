@@ -42,4 +42,3 @@ The following documents are supplied as **separate documents**. File name/rev is
 |-------|-----------|
 | Alarm code list | Section **11.1.2** (in manual) |
 | Lubrication chart | None (see **9.1.1**) |
-| Remote access | Secomea module (see **3.4**) |

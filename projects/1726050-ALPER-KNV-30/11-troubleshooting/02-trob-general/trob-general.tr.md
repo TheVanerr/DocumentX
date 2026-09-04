@@ -9,13 +9,12 @@ Bu alt bölüm HMI alarm davranışını ve yetkili servis çağrısı kriterler
 | Parametre | Değer |
 |-----------|-------|
 | Alarm ekranı | HMI **Alarm Sayfası** — aktif ve geçmiş kayıtlar |
-| Kalıcı arşiv | HMI **Üretici Sayfası** (şifre korumalı) |
 | Tepe lambası | Alarm → **kırmızı**; hazır → **sarı**; çalışıyor → **yeşil** |
 | HMI alarm dili | Türkçe, İngilizce, Almanca |
 
 Aktif alarm oluştuğunda HMI Alarm Sayfasında kayıt görünür; eş zamanlı tepe lambası **kırmızı** yanar. Operatör/hat sorumlusu alarm metnini okuyarak müdahale önceliğini belirler.
 
-**Alarm geçmişi:** Üretici sayfasındaki kalıcı alarm listesi tekrarlayan arızaların analizi için kullanılır (bkz. **Bölüm 3.4.4**). Toplam çalışma süresi periyodik bakım takibinde referans alınabilir (**Bölüm 9.1.3**).
+**Alarm geçmişi:** HMI Alarm Sayfasındaki geçmiş kayıtlar tekrarlayan arızaların analizi için kullanılır (bkz. **Bölüm 3.4.6**).
 
 **Reset:** Alarm giderildikten sonra HMI reset ve gerekirse pano reset uygulanır. Acil stop sonrası **Bölüm 2.5** prosedürü zorunludur.
 
@@ -41,8 +40,6 @@ DATA dosyasında servis kriterleri ayrıntılı tanımlanmamıştır. Aşağıda
 2. Aktif HMI alarm kodlarını ve metinlerini kaydedin.
 3. Arıza anındaki proses fazını (yıkama/durulama/kurutma) belirtin.
 4. Mümkünse HMI alarm ekranı fotoğrafı ekleyin.
-
-**Uzaktan destek:** Makinede **Secomea** uzaktan erişim modülü bulunur; üretici servisi ile koordinasyon sağlanabilir (bkz. **Bölüm 5.6**).
 
 **Operatör/hat sorumlusu durmalı:** Elektrik panosu içi müdahale, LOTO dışı enerjili çalışma, RFID bypass veya güvenlik devresi köprüleme **yasaktır** — yetkili personel çağırın.
 

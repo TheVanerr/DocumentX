@@ -23,4 +23,4 @@ The following content is in the manual body; no separate printed annex required:
 | Stack light states | **7** (main), **11.2** |
 | Assembly step checklists | **5.1**, **5.5** |
 | Cleaning record form | **10.1.9** |
-| Maintenance record form | **9.1.6** |
+| Maintenance record form | **9.1.7** |

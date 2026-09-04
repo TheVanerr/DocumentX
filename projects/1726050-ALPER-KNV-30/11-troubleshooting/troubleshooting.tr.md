@@ -7,8 +7,6 @@ Alarm bilgisi HMI **Alarm Sayfası** ve tepe lambası üzerinden okunur. Elektri
 | Parametre | Değer |
 |-----------|-------|
 | Alarm gösterimi | HMI Alarm Sayfası + tepe lambası kırmızı |
-| HMI dilleri | Türkçe, İngilizce, Almanca |
-| Uzaktan erişim | Evet — Secomea modül (bkz. **Bölüm 5.6**) |
 | Hidrolik / vakum | Uygulanmaz |
 
 | Alt bölüm | Konu |

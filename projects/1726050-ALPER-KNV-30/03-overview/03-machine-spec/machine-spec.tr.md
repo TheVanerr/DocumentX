@@ -1,6 +1,6 @@
 # 3.3 Teknik özellikler
 
-Bu bölüm, **KNV 30 3000 2B** (seri no **1726050**) makinesine ait boyut, ağırlık, kapasite, elektrik, motor, medya bağlantıları ve ortam koşullarını **tek kaynak (SSOT)** olarak toplar. Kurulum (Bölüm 5), ayar (Bölüm 6) ve operasyon (Bölüm 7) bölümlerinde aynı sayısal değerler tekrarlanmaz; ilgili bölümler buraya çapraz referans verir. DATA dosyasında bilinmeyen alanlar `[EKSİK]` veya **Bilinmiyor** olarak bırakılmıştır; tahmin edilmemiştir.
+Bu bölüm, **KNV 30 3000 2B** (seri no **1726050**) makinesine ait boyut, ağırlık, kapasite, elektrik, motor, medya bağlantıları ve ortam koşullarını **tek kaynak (SSOT)** olarak toplar. Kurulum (Bölüm 5), ayar (Bölüm 6) ve operasyon (Bölüm 7) bölümlerinde aynı sayısal değerler tekrarlanmaz; ilgili bölümler buraya çapraz referans verir.
 
 ---
 
@@ -31,14 +31,14 @@ Makine, ayarlanabilir ayak sistemi üzerinde terazi ve seviye ayarı yapılabili
 | Proses adı 2 | Durulama |
 | Proses adı 3 | Kurutma |
 | Döngü süresi — nominal | 900 sn (15 dk) |
-| Nominal kapasite | [EKSİK] |
-| Maksimum kapasite | Bilinmiyor |
+| Nominal kapasite | Kullanıcı firma belirler |
+| Maksimum kapasite | Kullanıcı firma belirler |
 | Minimum kapasite | 730 adet/saat |
-| Ürün formatı / ambalaj tipi | Bilinmiyor |
-| Ürün boyutu min | Bilinmiyor |
-| Ürün boyutu max | Bilinmiyor |
-| Ürün ağırlığı min | Bilinmiyor |
-| Ürün ağırlığı max | Bilinmiyor |
+| Ürün formatı / ambalaj tipi | Kullanıcı firma belirler |
+| Ürün boyutu min | Kullanıcı firma belirler |
+| Ürün boyutu max | Kullanıcı firma belirler |
+| Ürün ağırlığı min | Kullanıcı firma belirler |
+| Ürün ağırlığı max | Kullanıcı firma belirler |
 
 Nominal kapasite ve ürün boyut/ağırlık sınırları kullanıcı firma tarafından proses koşullarına göre belirlenir; parça geometrisi konveyör taşıma kapasitesi ve nozul kapsama alanı ile uyumlu olmalıdır. Reçete ve kapasite yönetimi **Bölüm 8**'de açıklanmıştır.
 
@@ -79,14 +79,14 @@ Elektrik beslemesi montaj sırasında 380 V, 50 Hz, trifaze hat ile pano üzerin
 | Konveyör redüktörü motoru | 1,5 kW | 2000 rpm | Siemens | SIMOTICS S-1FL6 |
 | Yıkama pompası motoru | 3 kW | 2900 rpm | Lowara | ESHE 40-160/30 |
 | Durulama pompası motoru | 1,85 kW | 2900 rpm | GOULDS | GCEA 370/3 |
-| Yağ sıyırıcı redüktörü motoru | 0,04 kW | — | FINEX | E1610-40-150-17B-C |
+| Yağ sıyırıcı redüktörü motoru | 0,04 kW | 1340 rpm | FINEX | E1610-40-150-17B-C |
 | Egzost fanı motoru | 0,37 kW | 2800 rpm | ENA | ENA 2 |
-| 1. Kurutma fanı motoru | 4 kW | 2900 rpm | — | — |
-| 2. Kurutma fanı motoru | 4 kW | 2900 rpm | — | — |
-| 3. Kurutma fanı motoru | 4 kW | 2900 rpm | — | — |
-| 4. Kurutma fanı motoru | 4 kW | 2900 rpm | — | — |
+| 1. Kurutma fanı motoru | 4 kW | 2940 rpm | Ölçükontrol | OK 710K37 |
+| 2. Kurutma fanı motoru | 4 kW | 2940 rpm | Ölçükontrol | OK 710K37 |
+| 3. Kurutma fanı motoru | 4 kW | 2940 rpm | Ölçükontrol | OK 710K37 |
+| 4. Kurutma fanı motoru | 4 kW | 2940 rpm | Ölçükontrol | OK 710K37 |
 
-Toplam kurutma fan gücü **16 kW**'dır. Kurutma fanları marka/model bilgisi DATA dosyasında `[EKSİK]` olarak bırakılmıştır. Motor koruma ve termik aşırı yük durumları HMI manuel sayfasından izlenebilir (bkz. **Bölüm 3.4.5**).
+Toplam kurutma fan gücü **16 kW**'dır. Motor koruma ve termik aşırı yük durumları HMI manuel sayfasından izlenebilir (bkz. **Bölüm 3.4.5**).
 
 <!-- FOTO: Pompa ve fan tahrik üniteleri — yıkama/durulama pompaları -->
 ![Motor listesi — tahrik üniteleri](../../assets/3.3/4.png)
@@ -101,9 +101,9 @@ Toplam kurutma fan gücü **16 kW**'dır. Kurutma fanları marka/model bilgisi D
 | Su girişi basıncı | 1 bar |
 | Su sıcaklığı min / max | +10°C – +70°C |
 | Su kalitesi | Şebeke suyu veya arıtılmış su |
-| Drain / atık su hattı çap | [EKSİK] |
+| Basınçlı hava ve su bağlantı verileri | Bkz. layout çizimi (**1726050-ALPER-KNV 30 LAYOUT.pdf**) |
 
-Montaj bağlantıları: basınçlı hava **3/4"**, su **1/2"**. Pnömatik regülatör basınç ayarı **6 bar**'dır. Su ve hava bağlantısı kurulduktan sonra HMI manuel sayfasındaki **su bilgisi** ve **hava bilgisi** göstergelerinin yeşil yanması beklenir (bkz. **Bölüm 5.5** — Pnömatik dolum testi).
+Montaj sırasında basınçlı hava **3/4"**, su **1/2"** bağlantıları uygulanır; bağlantı konumları ve çap detayları layout çiziminde verilmiştir (bkz. **Bölüm 3.5**, **Bölüm 13.2**). Pnömatik regülatör basınç ayarı **6 bar**'dır. Su ve hava bağlantısı kurulduktan sonra HMI manuel sayfasındaki **su bilgisi** ve **hava bilgisi** göstergelerinin yeşil yanması beklenir (bkz. **Bölüm 5.5** — Pnömatik dolum testi).
 
 <!-- FOTO: Basınçlı hava ve su bağlantı noktaları — etiketli (EKLENECEK: FOTO-3-3-4-medya-baglantilari.jpg) -->
 ![Medya bağlantıları](../../assets/3.3/5.png)

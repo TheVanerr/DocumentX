@@ -36,7 +36,7 @@ Bakım erişimi makine **arkasındaki sökülebilir kapaklar** üzerinden sağla
 
 Aşağıdaki tablo **tek kaynak (SSOT)** periyodik bakım takvimidir. Temizlik adımları için ilgili bölüme referans verilir; prosedür adımları tekrarlanmaz.
 
-Saat bazlı periyotlar makine **toplam çalışma saati** (HMI Üretici Sayfası — bkz. **Bölüm 3.4.7**) üzerinden takip edilir. Sayaç yoksa yaklaşık takvim karşılığı kullanılabilir (250 saat ≈ 3–4 hafta sürekli 7/24 çalışma).
+Saat bazlı periyotlar makine toplam çalışma saati üzerinden takip edilir; sayaç yoksa yaklaşık takvim karşılığı kullanılabilir (250 saat ≈ 3–4 hafta sürekli 7/24 çalışma).
 
 | Periyot | Bakım maddesi | Referans |
 |---------|---------------|----------|
