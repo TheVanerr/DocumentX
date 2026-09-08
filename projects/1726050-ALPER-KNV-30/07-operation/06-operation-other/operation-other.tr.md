@@ -1,4 +1,4 @@
-# 7.6 Diğer operasyon konuları
+﻿# 7.6 Diğer operasyon konuları
 
 Bu bölüm, standart start/stop ve cycle sekansı dışında kalan operasyonel konuları özetler. Makinede **sürekli operatör bulunmaz**; normal çalışmada insan müdahalesi gerekmez.
 
@@ -44,4 +44,4 @@ Güvenlik fonksiyonlarını devre dışı bırakacak müdahale yalnızca yetkili
 
 ---
 
-**Bölüm 7.6 sonu.** Arıza kodları için bkz. **Bölüm 11.2**; kapasite/reçete için bkz. **Bölüm 8**.
+Arıza kodları için bkz. **Bölüm 11.2**; kapasite/reçete için bkz. **Bölüm 8**.

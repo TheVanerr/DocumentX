@@ -1,4 +1,4 @@
-# 11.3 Elektrik arızaları
+﻿# 11.3 Elektrik arızaları
 
 Elektrik arızalarında pano içi müdahale öncesi **LOTO** uygulayın (**Bölüm 2.4**). Besleme değerleri **Bölüm 3.3.3** tablosunda SSOT olarak verilmiştir.
 
@@ -105,4 +105,3 @@ Termokupl ve sensör kablo bağlantı renk kodları **elektrik şemasında** ver
 
 ---
 
-**Bölüm 11.3 sonu.**

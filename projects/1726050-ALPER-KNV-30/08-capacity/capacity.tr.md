@@ -1,4 +1,4 @@
-# 8. KAPASİTE
+﻿# 8. KAPASİTE
 
 Bu bölüm, **KNV 30 3000 2B** makinesinin üretim kapasitesi, ürün sınırları ve reçete/proses yapılandırmasını tanımlar. Kapasite; parça geometrisi, robot besleme/çıkış hızı, HMI reçete parametreleri (sıcaklık, yağ sıyırıcı) ve aktif proses fonksiyonlarına (yıkama, durulama, kurutma 1/2, egzoz) bağlıdır.
 
@@ -24,4 +24,4 @@ Makine **7/24 robot** hattında kesintisiz çalışmaya uygundur. Nominal döng�
 
 ---
 
-**Bölüm 8 sonu.** Operasyon sekansı için bkz. **Bölüm 7.4**; teknik boyutlar için bkz. **Bölüm 3.3**.
+Operasyon sekansı için bkz. **Bölüm 7.4**; teknik boyutlar için bkz. **Bölüm 3.3**.

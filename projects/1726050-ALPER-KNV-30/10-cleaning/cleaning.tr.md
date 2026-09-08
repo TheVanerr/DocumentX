@@ -1,4 +1,4 @@
-# 10. TEMİZLİK
+﻿# 10. TEMİZLİK
 
 Bu bölüm, **KNV 30 3000 2B** makinesinin manuel temizlik ve dezenfeksiyon prosedürlerini tanımlar. Makine **kuru/ıslak** manuel temizliğe uygundur; otomatik **CIP** veya **COP** sistemi **bulunmamaktadır**.
 
@@ -19,4 +19,4 @@ Temizlik işlemleri **bakım personeli** tarafından yapılır. Tank, filtre ve 
 
 ---
 
-**Bölüm 10 sonu.** Bakım takvimi için bkz. **Bölüm 9.1.3**; yedek filtre için bkz. **Bölüm 9.1.6**, **13.3**.
+Bakım takvimi için bkz. **Bölüm 9.1.3**; yedek filtre için bkz. **Bölüm 9.1.6**, **13.3**.

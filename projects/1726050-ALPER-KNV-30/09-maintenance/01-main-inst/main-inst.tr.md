@@ -1,4 +1,4 @@
-# 9.1 Bakım talimatları
+﻿# 9.1 Bakım talimatları
 
 ---
 
@@ -170,4 +170,4 @@ Periyodik bakım ve test sonuçlarını kayıt altına alın. NOK maddeler gider
 
 ---
 
-**Bölüm 9.1 sonu.** Tam parça listesi ve görseller için bkz. **Bölüm 13.3**.
+Tam parça listesi ve görseller için bkz. **Bölüm 13.3**.

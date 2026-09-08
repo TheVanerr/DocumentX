@@ -1,4 +1,4 @@
-# 8.1 Ürün kapasitesi
+﻿# 8.1 Ürün kapasitesi
 
 Kapasite değerlendirmesi, konveyör üzerinde ilerleyen **endüstriyel parçalar** için yapılır. Makine tambur hacmi veya toplu yükleme kapasitesi ile tanımlanmaz; hat throughput'u konveyör akış hızı, robot cycle time ve proses süresi birlikte belirler.
 
@@ -96,4 +96,4 @@ Kapasite düşüşü tespit edilirse önce robot cycle, reçete sıcaklıkları 
 
 ---
 
-**Bölüm 8.1 sonu.** Reçete yapılandırması için bkz. **Bölüm 8.2**.
+Reçete yapılandırması için bkz. **Bölüm 8.2**.

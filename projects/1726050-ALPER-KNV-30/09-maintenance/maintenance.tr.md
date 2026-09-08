@@ -1,4 +1,4 @@
-# 9. BAKIM
+﻿# 9. BAKIM
 
 Bu bölüm, **KNV 30 3000 2B** makinesinin önleyici bakım programını, yağlama noktalarını ve sahadaki yedek parça stok önerilerini tanımlar. Makine **7/24 robot** hattında çalışır; sürekli operatör bulunmaz. Planlı bakım ve arıza müdahalesi **bakım personeli** tarafından yapılır.
 
@@ -17,4 +17,4 @@ Bu bölüm, **KNV 30 3000 2B** makinesinin önleyici bakım programını, yağla
 
 ---
 
-**Bölüm 9 sonu.** Temizlik için bkz. **Bölüm 10**; arıza giderme için bkz. **Bölüm 11**.
+Temizlik için bkz. **Bölüm 10**; arıza giderme için bkz. **Bölüm 11**.

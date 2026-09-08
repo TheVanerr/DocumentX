@@ -1,4 +1,4 @@
-# 14.2 Sözlük
+﻿# 14.2 Sözlük
 
 Bu sözlük kılavuz boyunca kullanılan kısaltmaları ve makineye özgü terimleri tanımlar. Güvenlik ve prosedür ayrıntıları ilgili ana bölümlerde SSOT olarak verilmiştir.
 
@@ -58,4 +58,3 @@ Bu sözlük kılavuz boyunca kullanılan kısaltmaları ve makineye özgü terim
 
 ---
 
-**Bölüm 14.2 sonu.**

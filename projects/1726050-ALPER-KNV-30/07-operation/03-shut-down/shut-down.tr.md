@@ -1,4 +1,4 @@
-# 7.3 Makine durdurma
+﻿# 7.3 Makine durdurma
 
 Makine durdurma komutları HMI **Çalışma Sayfası** üzerinden verilir. **Normal stop** günlük operasyonu sonlandırır; **acil stop** yalnızca acil tehlike anında kullanılır. Uzun süreli duruşlarda tank boşaltma ve temizlik **Bölüm 10**'a göre yapılır.
 
@@ -70,4 +70,4 @@ Tanklar dolu bırakılırsa koku, mikrobiyel büyüme ve korozyon riski artar; �
 
 ---
 
-**Bölüm 7.3 sonu.** Temizlik prosedürü için bkz. **Bölüm 10**.
+Temizlik prosedürü için bkz. **Bölüm 10**.

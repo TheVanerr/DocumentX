@@ -1,4 +1,4 @@
-# 7.2 Makine başlatma
+﻿# 7.2 Makine başlatma
 
 Makine start verilmeden önce **Hazırlık Start** prosedürü tamamlanmalıdır. Hazırlık; tank dolumu, ısıtma ve proses devrelerinin çalışmaya hazır hale gelmesini sağlar. Start komutu HMI **Çalışma Sayfası**'ndaki **Makine Start** düğmesi ile verilir.
 
@@ -96,4 +96,4 @@ Ayrı kurşun atma veya ilk parça atma prosedürü tanımlanmamıştır.
 
 ---
 
-**Bölüm 7.2 sonu.** Durdurma için bkz. **Bölüm 7.3**; otomatik sekans için bkz. **Bölüm 7.4**.
+Durdurma için bkz. **Bölüm 7.3**; otomatik sekans için bkz. **Bölüm 7.4**.

@@ -1,4 +1,4 @@
-# 5.5 Kurulum doğrulama ve test
+﻿# 5.5 Kurulum doğrulama ve test
 
 Kurulum doğrulama testleri, **Bölüm 5.4** güvenlik testleri tamamlandıktan sonra uygulanır. Tüm kontroller **OK** olmadan operasyona geçilmemelidir. Testler DATA dosyasındaki **KURULUM_TEST** checklist'ine dayanır.
 
@@ -116,4 +116,4 @@ Boş koşu testi başarılı ise makine **kullanıma hazır** kabul edilir (**B�
 
 ---
 
-**Bölüm 5.5 sonu.** Operasyon prosedürleri için bkz. **Bölüm 7**.
+Operasyon prosedürleri için bkz. **Bölüm 7**.

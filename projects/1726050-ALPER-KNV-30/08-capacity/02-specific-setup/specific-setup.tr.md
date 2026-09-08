@@ -1,4 +1,4 @@
-# 8.2 Spesifik kurulum ve reçete yönetimi
+﻿# 8.2 Spesifik kurulum ve reçete yönetimi
 
 Makinede **mekanik format değişim prosedürü yoktur** (bkz. **Bölüm 6.1.5**). Ürün ve proses farklılıkları HMI üzerinden **reçete mantığıyla** yönetilir: sıcaklık set değerleri, yağ sıyırıcı zamanları ve proses fonksiyon on/off seçimleri.
 
@@ -95,4 +95,4 @@ Reçete numaralandırması ve ürün–reçete eşlemesi kullanıcı firma taraf
 
 ---
 
-**Bölüm 8.2 sonu.** Operasyon için bkz. **Bölüm 7**; kapasite limitleri için bkz. **Bölüm 8.1**.
+Operasyon için bkz. **Bölüm 7**; kapasite limitleri için bkz. **Bölüm 8.1**.

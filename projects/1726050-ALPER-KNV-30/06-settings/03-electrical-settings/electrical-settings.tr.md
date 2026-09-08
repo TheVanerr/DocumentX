@@ -1,4 +1,4 @@
-# 6.3 Elektrik ve HMI ayarları
+﻿# 6.3 Elektrik ve HMI ayarları
 
 Elektrik ayarları iki katmandan oluşur: **operatör erişilebilir HMI parametreleri** (sıcaklık, yağ sıyırıcı zamanları, tarih/saat/dil) ve **üretici korumalı gömülü ayarlar** (encoder/feedback, PLC programı). Operatör yalnızca birinci gruba müdahale eder; ikinci grup yetkisiz değiştirilirse güvenlik interlock'ları ve motor kontrolü bozulabilir.
 
@@ -100,4 +100,4 @@ Doğru tarih/saat, alarm geçmişi ve bakım kayıtlarının izlenebilirliği i�
 
 ---
 
-**Bölüm 6.3 sonu.** HMI menü yapısı için bkz. **Bölüm 3.4**; reçete yönetimi için bkz. **Bölüm 8.2**.
+HMI menü yapısı için bkz. **Bölüm 3.4**; reçete yönetimi için bkz. **Bölüm 8.2**.

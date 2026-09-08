@@ -1,4 +1,4 @@
-# 12.2 Devre dışı bırakma
+﻿# 12.2 Devre dışı bırakma
 
 Makine geçici (planlı duruş, bakım arası) veya kalıcı (hurda, tesis kapatma) olarak devre dışı bırakılabilir. Her iki durumda da enerji izolasyonu ve — süreye bağlı olarak — tank boşaltma gereksinimleri farklıdır.
 
@@ -57,4 +57,3 @@ Geçici durdurma; hafta sonu, planlı bakım, hat revizyonu veya kısa süreli �
 
 ---
 
-**Bölüm 12.2 sonu.**

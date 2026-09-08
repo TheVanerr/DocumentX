@@ -30,9 +30,6 @@ Parçalar, yıkama ve durulama proseslerinden geçirilerek yüzey kirliliği gid
 
 Nominal proses döngü süresi **900 saniye** (15 dakika) olarak tanımlanmıştır. Minimum kapasite referans değeri **730 adet/saat** olarak belirtilmiştir; nominal ve maksimum kapasite değerleri kullanıcı firma tarafından proses koşullarına göre belirlenir.
 
-<!-- FOTO: İşlenebilir endüstriyel parça örnekleri — konveyör üzerinde (EKLENECEK: FOTO-3-2-1-islenebilir-parcalar.jpg) -->
-![İşlenebilir parça örnekleri](../../assets/3.2/2.png)
-
 ---
 
 ## 3.2.3 Yasak ve uygun olmayan kullanımlar
@@ -48,7 +45,7 @@ Makinenin belirtilen amaç dışında kullanılması öngörülebilir hatalı ku
 Makine, RFID güvenlik sensörü ile donatılmıştır; kapaklar açıldığında makine durur. Emniyet kapısı bypass edilmemelidir. Bakım için makine elektriği kesildikten sonra kapaklar açılmalı; elektrik kesildiğinde **LOTO prosedürü** uygulanmalıdır.
 
 <!-- FOTO: Proses bölgesi — yalnızca endüstriyel parça (EKLENECEK: FOTO-3-2-2-proses-bolgesi.jpg) -->
-![Proses bölgesi — endüstriyel parça kullanımı](../../assets/3.2/3.png)
+![Proses bölgesi — endüstriyel parça kullanımı](../../assets/3.2/2.png)
 
 ---
 
@@ -71,7 +68,7 @@ Makine tanklarının dezenfeksiyonu için tank içerisi su boşaltıldıktan son
 Temizlik tipi: **kuru / ıslak**
 
 <!-- FOTO: Su bağlantı noktası — 1/2" giriş etiketli (EKLENECEK: FOTO-3-2-3-su-baglantisi.jpg) -->
-![Proses suyu bağlantısı](../../assets/3.2/4.png)
+![Proses suyu bağlantısı](../../assets/3.2/3.png)
 
 ---
 
@@ -94,9 +91,6 @@ Minimum etraf boşlukları, tavan yüksekliği, zemin düzgünlük toleransı ve
 
 Basınçlı hava beslemesi **6 bar** basınçta sağlanmalıdır (3/4" bağlantı — bkz. **Bölüm 3.3.5**). Taşıma ve depolama sırasında nem ve korozif madde bulunmamalıdır (bkz. **Bölüm 4.2**).
 
-<!-- FOTO: Makine kurulum alanı — iç mekan genel görünüm (EKLENECEK: FOTO-3-2-4-kurulum-alani.jpg) -->
-![Kurulum alanı — iç mekan](../../assets/3.2/5.png)
-
 ---
 
 ## 3.2.6 Operatör, eğitim ve hedef kitle
@@ -116,4 +110,4 @@ Aynı anda makine başında bulunması gereken operatör sayısı **1–2** kiş
 Makine **24/7** sürekli çalışmaya uygun olarak tanımlanmıştır; buna rağmen operasyon, eğitimli personel gözetiminde ve bu bölümde belirtilen sınırlar dahilinde yürütülmelidir.
 
 <!-- FOTO: Operatör — HMI panelinden makine izleme (mevcut HMI ekranı referans) -->
-![Operatör — HMI paneli](../../assets/3.2/6.png)
+![Operatör — HMI paneli](../../assets/3.2/4.png)

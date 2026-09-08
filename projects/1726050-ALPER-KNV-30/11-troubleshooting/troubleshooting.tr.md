@@ -1,4 +1,4 @@
-# 11. ARIZA GİDERME
+﻿# 11. ARIZA GİDERME
 
 Bu bölüm, **KNV 30 3000 2B** makinesinde oluşabilecek arızaların teşhis ve giderme yöntemlerini tanımlar. Makine **7/24 robot hattında** çalışır; sürekli operatör bulunmaz. Arıza müdahalesi **bakım personeli** veya yetkili **elektrik personeli** tarafından yapılır.
 
@@ -21,4 +21,4 @@ Alarm bilgisi HMI **Alarm Sayfası** ve tepe lambası üzerinden okunur. Elektri
 
 ---
 
-**Bölüm 11 sonu.** Servis talebi için bkz. **Bölüm 1.3**; yedek parça için bkz. **Bölüm 13.3**.
+Servis talebi için bkz. **Bölüm 1.3**; yedek parça için bkz. **Bölüm 13.3**.

@@ -1,4 +1,4 @@
-# 12.1 Güvenli demontaj prosedürü
+﻿# 12.1 Güvenli demontaj prosedürü
 
 Makinenin tesisattan sökülmesi, parçalara ayrılması veya nakliyesi öncesinde enerji izolasyonu ve sıvı tahliyesi zorunludur. Demontaj sırasında makine **elektriği kesilmelidir**; tanklardaki **su boşaltılmalıdır** (DATA).
 
@@ -93,4 +93,4 @@ Basınçlı hava, su ve drain bağlantı verileri layout çiziminde verilmiştir
 
 ---
 
-**Bölüm 12.1 sonu.** Geçici/kalıcı devre dışı bırakma **12.2**; hurda **12.3**.
+Geçici/kalıcı devre dışı bırakma **12.2**; hurda **12.3**.

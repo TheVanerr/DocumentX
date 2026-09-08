@@ -1,4 +1,4 @@
-# 7.1 Çalışma modları
+﻿# 7.1 Çalışma modları
 
 KNV 30 3000 2B **tam otomatik** çalışır; ayrı bir manuel, step veya bakım modu bulunmaz. Operatör, HMI **Çalışma Sayfası** üzerinden proses fonksiyonlarını seçer, hazırlık ve start/stop komutlarını verir. Fonksiyon seçimi toggle (on/off) mantığıyla yapılır; makine start alındığında seçili fonksiyonlar PLC programına göre otomatik koordine edilir.
 
@@ -74,4 +74,4 @@ Proses ihtiyacına göre fonksiyonlar bağımsız açılıp kapatılabilir; en a
 
 ---
 
-**Bölüm 7.1 sonu.** Başlatma prosedürü için bkz. **Bölüm 7.2**.
+Başlatma prosedürü için bkz. **Bölüm 7.2**.

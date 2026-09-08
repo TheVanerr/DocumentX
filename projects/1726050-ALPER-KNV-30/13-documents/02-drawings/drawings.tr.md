@@ -1,4 +1,4 @@
-# 13.2 Çizimler
+﻿# 13.2 Çizimler
 
 Bu alt bölüm makine layout çiziminin teslim şeklini ve kılavuza gömülü görsel referansları tanımlar. Ayrı montaj, ankraj veya kaldırma noktası çizimleri **teslim edilmemektedir** (DATA).
 
@@ -50,4 +50,3 @@ Her alt bölüm kendi `assets/X.Y/` klasöründe sıralı numaralandırılmış 
 
 ---
 
-**Bölüm 13.2 sonu.**

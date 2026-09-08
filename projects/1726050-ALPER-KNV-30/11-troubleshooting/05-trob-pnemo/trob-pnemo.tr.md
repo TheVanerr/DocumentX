@@ -1,4 +1,4 @@
-# 11.5 Pnömatik arızalar
+﻿# 11.5 Pnömatik arızalar
 
 Makine pnömatik vanalar ve otomatik dolum sistemleri için **6 bar** basınçlı hava kullanır. Su giriş basıncı **1 bar** minimum olmalıdır. Medya değerleri **Bölüm 3.3.5** tablosunda SSOT olarak verilmiştir.
 
@@ -60,4 +60,4 @@ Bobin arızasında vana hareket etmez veya Error-300–305 oluşur. Bobin yanmı
 
 ---
 
-**Bölüm 11.5 sonu.** Pnömatik ayarlar için bkz. **Bölüm 6.5**.
+Pnömatik ayarlar için bkz. **Bölüm 6.5**.

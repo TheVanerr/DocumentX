@@ -1,4 +1,4 @@
-# 13.1 Teslim edilen doküman listesi
+﻿# 13.1 Teslim edilen doküman listesi
 
 Makine ile birlikte teslim edilen teknik dokümanlar iki grupta toplanır: **ayrı evrak** (PDF dosyaları) ve **kılavuza gömülü** referanslar. Dosya adı ve revizyon bilgisi teslim paketindeki kapak sayfası veya dosya etiketinden okunmalıdır.
 
@@ -70,4 +70,3 @@ Aşağıdaki dokümanlar DATA'ya göre **ayrı evrak olarak teslim edilmez** vey
 
 ---
 
-**Bölüm 13.1 sonu.**

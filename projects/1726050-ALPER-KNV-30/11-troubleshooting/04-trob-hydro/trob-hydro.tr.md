@@ -1,4 +1,4 @@
-# 11.4 Hidrolik arızaları
+﻿# 11.4 Hidrolik arızaları
 
 **KNV 30 3000 2B** makinesinde **hidrolik sistem bulunmamaktadır**. Proses basınçlı hava ve elektrik motorları ile yürütülür. Bu alt bölüm uygulanmaz.
 
@@ -12,4 +12,3 @@ Pompa arızaları için bkz. **Bölüm 11.3.2** (elektrik motorları).
 
 ---
 
-**Bölüm 11.4 sonu.**

@@ -1,8 +1,10 @@
 ﻿# 3.1 Makine tanımı
 
-KNV 30 3000 2B, endüstriyel parçaların otomatik yıkama, durulama ve kurutma proseslerinden geçirildiği konveyörlü bir parça yıkama makinesidir. Makine **sol besleme / sağ boşaltma** konveyör akışına sahiptir; operatör ve HMI erişimi **sağ taraftadır**. Bu projede giriş ve çıkış **robot hattı** ile entegre edilmiştir.
+**KNV 30 3000 2B**, endüstriyel parçaların konveyör üzerinde taşınarak yıkama, durulama ve kurutma proseslerinden geçirildiği otomatik bir parça yıkama makinesidir. Makine; yıkama ve durulama banyoları, kurutma bölgesi ile parça taşıma konveyöründen oluşan entegre bir hat yapısındadır.
 
-Makine gövdesi paslanmaz çelik malzemeden imal edilmiştir. Proses tankları sıcak su ile çalışır; kurutma bölgesinde **4 adet kurutma fanı** ve **egzost fanı** bulunur. Yağ sıyırıcı ünite yıkama tankı yüzeyindeki yağ tabakasını toplar.
+Konveyör akış yönü **sol besleme / sağ boşaltma** şeklindedir. Operatör paneli (HMI) ve günlük müdahale noktalarına erişim **makinenin sağ tarafındadır**. Bu projede parça giriş ve çıkışı **robot hattı** ile entegre edilmiştir; yükleme ve boşaltma prosedürleri müşteri hattına aittir (**Bkz. Bölüm 3.1.9**).
+
+Makine gövdesi paslanmaz çelikten imal edilmiştir. Proses tankları sıcak su ile çalışır; kurutma bölgesinde hava bıçağı üniteleri ve egzost donanımı, yıkama tankında yağ sıyırıcı ünite bulunur. Bileşen düzenleri ve proses akışı aşağıdaki alt bölümlerde ayrıntılandırılmıştır.
 
 ---
 
@@ -75,7 +77,7 @@ Kurutma fanları **Ölçükontrol OK 710K37** (4 × **4 kW**, **2940 rpm**) mode
 
 Kurutma fanları ve egzost kanallarında toz birikimi hava performansını düşürür; periyodik bakım takviminde yer alır (bkz. **Bölüm 9.1.3**).
 
-![Kurutma ve egzost bölgesi](../../assets/3.1/7.png)
+![Kurutma ve egzost bölgesi](../../assets/3.1/7.jpg)
 
 ---
 
@@ -118,12 +120,7 @@ Bakım sırasında emniyet kapısı bypass edilmemelidir; kapak açılmadan önc
 
 Bu proje kapsamında parça **giriş** ve **çıkış** operasyonları robot ile gerçekleştirilir; giriş/çıkış prosedürleri müşteri hattına aittir. Makinede sürekli operatör bulunmaz; hata durumunda müdahale bakım personeli tarafından yapılır (bkz. **Bölüm 11**).
 
-Üst sistem (MES / SCADA) bağlantısı **müşteri tarafından** yapılır; makine **Profinet** altyapısı ile entegrasyona hazırdır (bkz. **Bölüm 5.6**).
-
-I/O listesi dosya referansı: **1726050-ALPER-KNV 30 I/O LİSTESİ.pdf** — ayrı evrak teslim edilmemiştir (KD).
-
-Fieldbus / protokol: **Profinet**.
-
+Üst sistem (MES / SCADA) bağlantısı **müşteri tarafından** yapılır. Makine **Profinet** altyapısı ile entegrasyona hazırdır; protokol, I/O özeti ve dokümantasyon **Bölüm 5.6**'da tanımlanmıştır. Teslim edilen harici dokümanların listesi **Bölüm 13.1**'dedir.
 ---
 
-**Bölüm 3.1 sonu.** Amaçlanan kullanım sınırları için bkz. **Bölüm 3.2**; teknik tablolar için bkz. **Bölüm 3.3**; kontrol elemanları için bkz. **Bölüm 3.4**; yerleşim planı için bkz. **Bölüm 3.5**.
+Amaçlanan kullanım sınırları için bkz. **Bölüm 3.2**; teknik tablolar için bkz. **Bölüm 3.3**; kontrol elemanları için bkz. **Bölüm 3.4**; yerleşim planı için bkz. **Bölüm 3.5**.

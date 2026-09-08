@@ -1,4 +1,4 @@
-# 14. EKLER, SÖZLÜK VE İNDEKS
+﻿# 14. EKLER, SÖZLÜK VE İNDEKS
 
 Bu bölüm kılavuzun destek materyallerini toplar: harici ek referansları, teknik terimler sözlüğü ve anahtar kelime indeksi. Operasyonel prosedürler ilgili ana bölümlerde SSOT olarak kalır; bu bölüm yalnızca **referans ve arama** amacıyla kullanılır.
 
@@ -10,4 +10,4 @@ Bu bölüm kılavuzun destek materyallerini toplar: harici ek referansları, tek
 
 ---
 
-**Bölüm 14 sonu.** Kılavuz gövdesi **Bölüm 1**–**13** arasındadır.
+Kılavuz gövdesi **Bölüm 1**–**13** arasındadır.

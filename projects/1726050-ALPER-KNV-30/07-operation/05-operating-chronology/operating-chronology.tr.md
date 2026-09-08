@@ -1,4 +1,4 @@
-# 7.5 Operasyon kronolojisi
+﻿# 7.5 Operasyon kronolojisi
 
 Bu proje kapsamında makine **7/24 robot** ile entegre sürekli hat operasyonu için tasarlanmıştır. Geleneksel vardiyalı operatör modeli uygulanmaz; makine başında sürekli operatör bulunmaz.
 
@@ -44,4 +44,4 @@ Planlı bakım veya temizlik duruşunda makine stop edilmeli; enerji izolasyonu 
 
 ---
 
-**Bölüm 7.5 sonu.** Bakım takvimi için bkz. **Bölüm 9**.
+Bakım takvimi için bkz. **Bölüm 9**.

@@ -1,4 +1,4 @@
-# 11.1 Arıza bulma
+﻿# 11.1 Arıza bulma
 
 Arıza teşhisinde önce HMI'daki **aktif alarm kodu** okunur; ardından bu bölümdeki tabloya göre kontrol ve çözüm adımları uygulanır. Tabloda çözüm bulunmayan veya tekrarlayan arızalarda ilgili alt bölüme (**11.3**–**11.7**) ve **Bölüm 11.2.2** servis kriterlerine bakın.
 
@@ -77,4 +77,4 @@ DATA dosyasında ayrıntılı genel arıza kaydı tanımlanmamıştır. Aşağı
 
 ---
 
-**Bölüm 11.1 sonu.** Elektrik ayrıntıları **11.3**; pnömatik **11.5**; sensör **11.7**.
+Elektrik ayrıntıları **11.3**; pnömatik **11.5**; sensör **11.7**.

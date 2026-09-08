@@ -1,4 +1,4 @@
-# 3.5 Makine yerleşim planı
+﻿# 3.5 Makine yerleşim planı
 
 Bu bölüm, makinenin tesis içindeki konumlandırılması, yön tanımları, minimum etraf boşlukları, bakım erişimi ve taşıma kısıtları için **tek kaynak (SSOT)** olarak kullanılır. Kurulum (Bölüm 5) ve nakliye (Bölüm 4) bölümleri alan gereksinimlerini buradan referans alır; aynı değerler tekrarlanmaz.
 
@@ -103,4 +103,4 @@ Emniyet kapısı / sabit bariyer sayısı sıfırdır; makine güvenlik kategori
 
 ---
 
-**Bölüm 3.5 sonu.** Teknik boyut ve ağırlık değerleri için bkz. **Bölüm 3.3**; nakliye prosedürleri için bkz. **Bölüm 4**.
+Teknik boyut ve ağırlık değerleri için bkz. **Bölüm 3.3**; nakliye prosedürleri için bkz. **Bölüm 4**.

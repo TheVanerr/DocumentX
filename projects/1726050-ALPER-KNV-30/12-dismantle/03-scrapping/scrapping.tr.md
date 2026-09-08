@@ -1,4 +1,4 @@
-# 12.3 Hurda değerlendirme ve geri dönüşüm
+﻿# 12.3 Hurda değerlendirme ve geri dönüşüm
 
 Demontaj sonrası parçalar malzeme grubuna göre sınıflandırılmalı ve kullanıldığı ülkenin **çevresel bertaraf** ve **geri dönüşüm** mevzuatına uygun şekilde değerlendirilmelidir. Tehlikeli madde (yağ, akü, akü asidi, proses kimyasalı) **bulunmamaktadır** (DATA).
 
@@ -42,4 +42,3 @@ Demontaj sonrası parçalar malzeme grubuna göre sınıflandırılmalı ve kull
 
 ---
 
-**Bölüm 12.3 sonu.**

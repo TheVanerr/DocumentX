@@ -1,4 +1,4 @@
-# 11.2 Genel arıza giderme
+﻿# 11.2 Genel arıza giderme
 
 Bu alt bölüm HMI alarm davranışını ve yetkili servis çağrısı kriterlerini tanımlar. Alarm kodları **Bölüm 11.1.2** tablosunda SSOT olarak verilmiştir.
 
@@ -45,4 +45,3 @@ DATA dosyasında servis kriterleri ayrıntılı tanımlanmamıştır. Aşağıda
 
 ---
 
-**Bölüm 11.2 sonu.**

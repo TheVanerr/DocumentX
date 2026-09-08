@@ -1,4 +1,4 @@
-# 5.6 İletişim ve otomasyon arayüzü
+﻿# 5.6 İletişim ve otomasyon arayüzü
 
 Makine otomasyon altyapısı kurulum sonrası doğrulanmalıdır. PLC, HMI ve Profinet özellikleri **Bölüm 3.4.7**'de özetlenmiştir; bu bölüm kurulum ve devreye alma kontrol listesini verir.
 
@@ -59,4 +59,4 @@ I/O listesi; giriş/çıkış adresleri, sensör ve aktüatör tanımları için
 
 ---
 
-**Bölüm 5.6 sonu.** HMI ekran yapısı için bkz. **Bölüm 3.4**; parametre ayarları için bkz. **Bölüm 6**.
+HMI ekran yapısı için bkz. **Bölüm 3.4**; parametre ayarları için bkz. **Bölüm 6**.

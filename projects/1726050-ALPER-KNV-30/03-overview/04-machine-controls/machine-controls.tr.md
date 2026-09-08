@@ -1,4 +1,4 @@
-# 3.4 Makine kontrolleri
+﻿# 3.4 Makine kontrolleri
 
 Makinenin operasyonel kontrolü, elektrik panosu üzerindeki **HMI operatör paneli** ve **Siemens S7-1200 PLC** altyapısı üzerinden gerçekleştirilir. Operatör, proses fonksiyonlarını seçer, makineyi hazırlar, start/stop komutlarını verir ve alarm durumlarını HMI üzerinden izler. Tepe lambası makinenin anlık durumunu uzaktan görselleştirir; ayrıntılı güvenlik fonksiyonları **Bölüm 2**'de, arıza giderme **Bölüm 11**'de açıklanmıştır.
 
@@ -189,4 +189,4 @@ Reçete parametreleri (sıcaklık set değerleri, proses on/off adımları) HMI 
 
 ---
 
-**Bölüm 3.4 sonu.** Elektrik besleme değerleri için bkz. **Bölüm 3.3.3**; proses start/stop prosedürleri için bkz. **Bölüm 7**; alarm kodları için bkz. **Bölüm 11**.
+Elektrik besleme değerleri için bkz. **Bölüm 3.3.3**; proses start/stop prosedürleri için bkz. **Bölüm 7**; alarm kodları için bkz. **Bölüm 11**.

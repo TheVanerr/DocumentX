@@ -1,4 +1,4 @@
-# 6.2 Güvenlik ayarları
+﻿# 6.2 Güvenlik ayarları
 
 Güvenlik ayarları, makinenin emniyet fonksiyonlarının (RFID, acil stop) tasarım amacına uygun kalmasını sağlar. Bu makinede operatör tarafından değiştirilebilir güvenlik parametresi (ışık perdesi mesafesi, bypass süresi vb.) **bulunmamaktadır**. Güvenlik donanımı bypass edilemez; ayar kapsamı yalnızca periyodik **fonksiyon testi** ve bakım erişim kurallarını içerir.
 
@@ -61,4 +61,4 @@ Aylık acil stop fonksiyon testi, acil stop devresinin ve reset zincirinin çal�
 
 ---
 
-**Bölüm 6.2 sonu.** Kurulum güvenlik testi için bkz. **Bölüm 5.4**; acil stop SSOT için bkz. **Bölüm 2.5**.
+Kurulum güvenlik testi için bkz. **Bölüm 5.4**; acil stop SSOT için bkz. **Bölüm 2.5**.

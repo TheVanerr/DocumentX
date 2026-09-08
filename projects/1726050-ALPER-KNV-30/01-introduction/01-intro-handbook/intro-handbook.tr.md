@@ -75,7 +75,9 @@ PLC/HMI mühendislik menüleri, sürücü parametreleri, majör mekanik revizyon
 
 Bu kılavuz makinenin operasyonel bütünlüğünün ayrılmaz parçasıdır. Makineden ayrı tutulması veya erişilemez hale getirilmesi, personelin güncel talimatlara ulaşamamasına ve yanlış müdahalelere yol açabilir.
 
-Kılavuzun güncel dijital kopyasına makine üzerindeki bilgi etiketi (QR kod vb.) veya üretici dijital kanalları üzerinden erişin (**Bkz. Bölüm 1.3**). Operatör ve bakım personelinin çalışma alanında kılavuza kesintisiz erişimini işveren sağlasın. Basılı kopya kullanıyorsanız sayfa bütünlüğünü koruyun; yeni revizyonları fiziksel kopyaya işveren entegre etsin. Makine satıldığında, devredildiğinde veya kiralandığında kılavuz ve erişim bilgilerini yeni kullanıcıya birlikte teslim edin.
+Kılavuzun güncel dijital kopyasına makine üzerindeki bilgi etiketi (QR kod vb.) veya üretici dijital kanalları üzerinden erişin (**Bkz. Bölüm 1.3**).
+
+Operatör ve bakım personelinin çalışma alanında kılavuza kesintisiz erişim sağlamak, işverenin (makineyi işleten kurum) yükümlülüğüdür. Basılı kopya kullanılan tesislerde sayfa bütünlüğünün korunması ve yeni revizyonların fiziksel kopyaya entegre edilmesi işverenin sorumluluğundadır. Makinenin satılması, devredilmesi veya kiralanması hâlinde kılavuzun ve erişim bilgilerinin yeni kullanıcıya teslim edilmesi de işverenin yükümlülüğüdür.
 
 ---
 
@@ -85,11 +87,11 @@ Kılavuzun güncel dijital kopyasına makine üzerindeki bilgi etiketi (QR kod v
 
 Aşağıdaki durumlarda üretici sorumluluk kabul etmez; makine **garanti kapsamı dışında** kalır:
 
-1. Güvenlik cihazlarını (acil stop, RFID sensör, interlock vb.) sökün, baypas edin veya devre dışı bırakmayın (**Bkz. Bölüm 2**).
-2. Üretici yazılı onayı olmadan mekanik, elektrik veya yazılım değişikliği yapmayın.
-3. Onaylanmamış kimyasallar veya amaç dışı malzemelerle makineyi çalıştırmayın (**Bkz. Bölüm 3.2**). Canlı organizmalar (insan, hayvan, bitki vb.) işlenemez.
-4. Teknik plakada ve **Bölüm 3**'te tanımlanan limitlerin üzerinde makineyi zorlamayın.
-5. Orijinal olmayan yedek parça kullanmayın (**Bkz. Bölüm 1.3.4**).
+1. Güvenlik cihazlarının (acil stop, RFID sensör, interlock vb.) sökülmesi, baypas edilmesi veya devre dışı bırakılması (**Bkz. Bölüm 2**).
+2. Üretici yazılı onayı olmadan yapılan mekanik, elektrik veya yazılım değişiklikleri.
+3. Onaylanmamış kimyasallar veya amaç dışı malzemelerle makinenin çalıştırılması (**Bkz. Bölüm 3.2**); canlı organizmaların (insan, hayvan, bitki vb.) işlenmesi.
+4. Teknik plakada ve **Bölüm 3**'te tanımlanan limitlerin aşılması suretiyle makinenin zorlanması.
+5. Orijinal olmayan yedek parça kullanımı (**Bkz. Bölüm 1.3.4**).
 
 ---
 
@@ -97,4 +99,4 @@ Aşağıdaki durumlarda üretici sorumluluk kabul etmez; makine **garanti kapsam
 
 Bu kılavuz, makine şemaları, HMI/PLC arayüz dokümantasyonu ve teknik çizimler üreticinin fikri mülkiyetindedir. Bu materyaller, üreticinin tasarım bilgisini içerir; yetkisiz paylaşım rekabet avantajını zedeler ve yasal koruma altındadır.
 
-Üreticinin yazılı izni olmadan kılavuzu kopyalamayın veya çoğaltmayın, yetkisiz üçüncü taraflarla (özellikle rakip firmalarla) paylaşmayın, tersine mühendislik amacıyla kullanmayın. İhlal durumunda üretici yasal yollara başvurma hakkını saklı tutar.
+Üreticinin yazılı izni olmadan kılavuzun kopyalanması, çoğaltılması, yetkisiz üçüncü taraflarla (özellikle rakip firmalarla) paylaşılması veya tersine mühendislik amacıyla kullanılması fikri mülkiyet ihlali sayılır. İhlal durumunda üretici yasal yollara başvurma hakkını saklı tutar.

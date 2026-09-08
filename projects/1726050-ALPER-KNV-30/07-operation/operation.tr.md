@@ -1,4 +1,4 @@
-# 7. OPERASYON
+﻿# 7. OPERASYON
 
 **KNV 30 3000 2B** (seri no **1726050**) makinesinin günlük çalıştırılması, durdurulması ve otomatik proses sekansı bu bölümde tanımlanır. Makine **tam otomatik** tasarlanmıştır; parça giriş ve çıkış **robot** ile yapılır, hat **7/24** çalışacak şekilde entegre edilmiştir. Sürekli operatör bulunmaz; izleme üst sistem (MES/SCADA — müşteri) veya periyodik bakım turu ile yapılabilir, hata müdahalesi **bakım personeli** tarafından gerçekleştirilir.
 
@@ -36,4 +36,4 @@ Detaylı lamba tanımları **Bölüm 3.4.10**'da SSOT olarak verilmiştir.
 
 ---
 
-**Bölüm 7 sonu.** Arıza giderme için bkz. **Bölüm 11**; temizlik için bkz. **Bölüm 10**.
+Arıza giderme için bkz. **Bölüm 11**; temizlik için bkz. **Bölüm 10**.

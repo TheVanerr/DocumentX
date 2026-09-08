@@ -1,4 +1,4 @@
-# 11.7 Sensör arızaları
+﻿# 11.7 Sensör arızaları
 
 Makinede güvenlik (RFID), proses (seviye, sıcaklık) ve hat entegrasyonu (çıkış ürün algılama, sızıntı tavası) sensörleri bulunur. Sensör arızalarında önce HMI alarm kodunu **Bölüm 11.1.2** tablosundan eşleştirin.
 
@@ -67,4 +67,3 @@ Yedek parça sipariş kodları **Bölüm 13.3** BOM tablosunda verilmiştir. Kab
 
 ---
 
-**Bölüm 11.7 sonu.**

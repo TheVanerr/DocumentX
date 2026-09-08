@@ -1,4 +1,4 @@
-# 10.1 Temizlik ve dezenfeksiyon
+﻿# 10.1 Temizlik ve dezenfeksiyon
 
 Makine proses tankları **sıcak su** ile çalışır; temizlik sırasında sıcak yüzey ve buhar riski vardır. Temizlik maddesi olarak **Bölüm 10.1.7**'de tanımlanan kriterlere uygun maddeler kullanılmalıdır; yasak maddeler tank ve paslanmaz yüzeylere kalıcı hasar verir.
 
@@ -176,4 +176,4 @@ Basınçlı hava, su ve drain bağlantı verileri layout çiziminde verilmiştir
 
 ---
 
-**Bölüm 10.1 sonu.** Demontaj öncesi sıvı tahliye referansı **Bölüm 12.1** → Bölüm 10.1.5.
+Demontaj öncesi sıvı tahliye referansı **Bölüm 12.1** → Bölüm 10.1.5.

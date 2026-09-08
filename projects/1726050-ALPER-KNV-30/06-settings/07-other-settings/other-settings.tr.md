@@ -1,4 +1,4 @@
-# 6.7 Diğer ayarlar
+﻿# 6.7 Diğer ayarlar
 
 Bu makinede **6.1–6.6** kapsamı dışında tanımlanacak ek OEM ayar noktası **bulunmamaktadır**. Operatör tarafından yapılabilecek tüm parametre değişiklikleri şu bölümlerde toplanmıştır:
 
@@ -21,4 +21,4 @@ Yeni ayar ihtiyacı (yazılım güncellemesi, hat entegrasyonu, MES bağlantıs�
 
 ---
 
-**Bölüm 6.7 sonu.** Günlük operasyon ayarları için bkz. **Bölüm 7**; kapasite/reçete için bkz. **Bölüm 8**.
+Günlük operasyon ayarları için bkz. **Bölüm 7**; kapasite/reçete için bkz. **Bölüm 8**.

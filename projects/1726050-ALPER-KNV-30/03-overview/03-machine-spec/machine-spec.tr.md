@@ -1,4 +1,4 @@
-# 3.3 Teknik özellikler
+﻿# 3.3 Teknik özellikler
 
 Bu bölüm, **KNV 30 3000 2B** (seri no **1726050**) makinesine ait boyut, ağırlık, kapasite, elektrik, motor, medya bağlantıları ve ortam koşullarını **tek kaynak (SSOT)** olarak toplar. Kurulum (Bölüm 5), ayar (Bölüm 6) ve operasyon (Bölüm 7) bölümlerinde aynı sayısal değerler tekrarlanmaz; ilgili bölümler buraya çapraz referans verir.
 
@@ -19,6 +19,9 @@ Makine, ayarlanabilir ayak sistemi üzerinde terazi ve seviye ayarı yapılabili
 
 <!-- FOTO: Makine dış boyutları — operatör tarafından (sağ) genel görünüm -->
 ![Dış boyutlar](../../assets/3.3/1.png)
+![Dış boyutlar](../../assets/3.3/2.png)
+![Dış boyutlar](../../assets/3.3/3.png)
+![Dış boyutlar](../../assets/3.3/4.png)
 
 ---
 
@@ -43,7 +46,7 @@ Makine, ayarlanabilir ayak sistemi üzerinde terazi ve seviye ayarı yapılabili
 Nominal kapasite ve ürün boyut/ağırlık sınırları kullanıcı firma tarafından proses koşullarına göre belirlenir; parça geometrisi konveyör taşıma kapasitesi ve nozul kapsama alanı ile uyumlu olmalıdır. Reçete ve kapasite yönetimi **Bölüm 8**'de açıklanmıştır.
 
 <!-- FOTO: Proses bölgeleri — yıkama, durulama, kurutma hat boyunca -->
-![Proses bölgeleri](../../assets/3.3/2.png)
+![Proses bölgeleri](../../assets/3.3/5.png)
 
 ---
 
@@ -68,7 +71,7 @@ Nominal kapasite ve ürün boyut/ağırlık sınırları kullanıcı firma taraf
 Elektrik beslemesi montaj sırasında 380 V, 50 Hz, trifaze hat ile pano üzerinden sağlanır. Faz yönü faz sıra rölesi üzerinden kontrol edilmelidir; ters faz tespitinde iki faz değiştirilerek düzeltilir (bkz. **Bölüm 5** — Montaj adımları). Enerji izolasyonu ve LOTO noktası ana şalterdir (bkz. **Bölüm 2.4**).
 
 <!-- FOTO: Elektrik panosu — ana şalter, HMI ve besleme etiketi (EKLENECEK: FOTO-3-3-2-elektrik-besleme.jpg) -->
-![Elektrik beslemesi](../../assets/3.3/3.png)
+![Elektrik beslemesi](../../assets/3.3/6.png)
 
 ---
 
@@ -88,9 +91,6 @@ Elektrik beslemesi montaj sırasında 380 V, 50 Hz, trifaze hat ile pano üzerin
 
 Toplam kurutma fan gücü **16 kW**'dır. Motor koruma ve termik aşırı yük durumları HMI manuel sayfasından izlenebilir (bkz. **Bölüm 3.4.5**).
 
-<!-- FOTO: Pompa ve fan tahrik üniteleri — yıkama/durulama pompaları -->
-![Motor listesi — tahrik üniteleri](../../assets/3.3/4.png)
-
 ---
 
 ## 3.3.5 Basınçlı hava ve su
@@ -106,7 +106,8 @@ Toplam kurutma fan gücü **16 kW**'dır. Motor koruma ve termik aşırı yük d
 Montaj sırasında basınçlı hava **3/4"**, su **1/2"** bağlantıları uygulanır; bağlantı konumları ve çap detayları layout çiziminde verilmiştir (bkz. **Bölüm 3.5**, **Bölüm 13.2**). Pnömatik regülatör basınç ayarı **6 bar**'dır. Su ve hava bağlantısı kurulduktan sonra HMI manuel sayfasındaki **su bilgisi** ve **hava bilgisi** göstergelerinin yeşil yanması beklenir (bkz. **Bölüm 5.5** — Pnömatik dolum testi).
 
 <!-- FOTO: Basınçlı hava ve su bağlantı noktaları — etiketli (EKLENECEK: FOTO-3-3-4-medya-baglantilari.jpg) -->
-![Medya bağlantıları](../../assets/3.3/5.png)
+![Medya bağlantıları](../../assets/3.3/7.png)
+![Medya bağlantıları](../../assets/3.3/8.png)
 
 ---
 
@@ -127,4 +128,4 @@ Makine yalnızca **iç mekan** ortamında kullanılmak üzere tasarlanmıştır.
 
 ---
 
-**Bölüm 3.3 sonu.** Kontrol elemanları için bkz. **Bölüm 3.4**; yerleşim planı için bkz. **Bölüm 3.5**.
+Kontrol elemanları için bkz. **Bölüm 3.4**; yerleşim planı için bkz. **Bölüm 3.5**.

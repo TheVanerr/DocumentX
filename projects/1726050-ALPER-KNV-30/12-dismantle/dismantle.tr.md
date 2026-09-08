@@ -1,4 +1,4 @@
-# 12. DEMONTAJ
+﻿# 12. DEMONTAJ
 
 Bu bölüm, **KNV 30 3000 2B** makinesinin güvenli demontajı, geçici/kalıcı devre dışı bırakılması ve hurda/geri dönüşüm prosedürlerini tanımlar. Demontaj yalnızca yetkili bakım ve elektrik personeli tarafından yapılmalıdır.
 
@@ -18,4 +18,4 @@ Demontaj öncesi makine durdurulmalı, tanklar boşaltılmalı ve **LOTO prosed�
 
 ---
 
-**Bölüm 12 sonu.** Servis iletişimi için bkz. **Bölüm 1.3**; parça listesi için bkz. **Bölüm 13.3**.
+Servis iletişimi için bkz. **Bölüm 1.3**; parça listesi için bkz. **Bölüm 13.3**.

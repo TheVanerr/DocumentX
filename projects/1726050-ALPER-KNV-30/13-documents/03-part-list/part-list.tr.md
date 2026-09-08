@@ -1,4 +1,4 @@
-# 13.3 Parça listesi
+﻿# 13.3 Parça listesi
 
 Makine **yedek parça listesi (BOM)** bu kılavuza gömülüdür; ayrı evrak olarak **teslim edilmez**. Tam liste **13.3.1** tablosunda SSOT olarak verilmiştir — başka bölümlerde yalnızca özet veya çapraz referans bulunur.
 
@@ -67,4 +67,3 @@ Makine **yedek parça listesi (BOM)** bu kılavuza gömülüdür; ayrı evrak ol
 
 ---
 
-**Bölüm 13.3 sonu.**

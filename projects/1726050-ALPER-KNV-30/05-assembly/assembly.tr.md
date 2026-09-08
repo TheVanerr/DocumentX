@@ -1,4 +1,4 @@
-# 5. KURULUM VE DEVREYE ALMA
+﻿# 5. KURULUM VE DEVREYE ALMA
 
 **KNV 30 3000 2B** (seri no **1726050**) makinesinin kurulum alanına yerleştirilmesi, medya ve elektrik bağlantıları, güvenlik fonksiyon testleri ve devreye alma doğrulaması bu bölümde tanımlanır. Kurulum, taşıma tamamlandıktan sonra (**Bkz. Bölüm 4**) ve operasyona geçmeden önce (**Bkz. Bölüm 7**) uygulanır. Elektrik bağlantıları yalnızca yetkili elektrik personeli tarafından yapılmalıdır.
 
@@ -31,4 +31,4 @@ Kurulum sırasında **Bölüm 2** güvenlik kurallarına uyun. Bakım kapakları
 
 ---
 
-**Bölüm 5 sonu.** OEM parametre ayarları için bkz. **Bölüm 6**; günlük operasyon için bkz. **Bölüm 7**.
+OEM parametre ayarları için bkz. **Bölüm 6**; günlük operasyon için bkz. **Bölüm 7**.

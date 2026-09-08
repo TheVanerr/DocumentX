@@ -1,4 +1,4 @@
-# 13. DOKÜMANLAR
+﻿# 13. DOKÜMANLAR
 
 Bu bölüm, **KNV 30 3000 2B** (seri **1726050**) makinesine ait teslim edilen harici dokümanları, kılavuza gömülü teknik referansları ve yedek parça listesini (BOM) tanımlar.
 
@@ -17,4 +17,4 @@ Müşteriye **ayrı evrak** olarak üç PDF teslim edilir: **P&ID**, **elektrik 
 
 ---
 
-**Bölüm 13 sonu.** Sözlük ve indeks için bkz. **Bölüm 14**; servis/yedek parça siparişi için bkz. **Bölüm 1.3.4**.
+Sözlük ve indeks için bkz. **Bölüm 14**; servis/yedek parça siparişi için bkz. **Bölüm 1.3.4**.

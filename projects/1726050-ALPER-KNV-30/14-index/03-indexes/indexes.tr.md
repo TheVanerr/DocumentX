@@ -1,4 +1,4 @@
-# 14.3 Anahtar kelime indeksi
+﻿# 14.3 Anahtar kelime indeksi
 
 Aşağıdaki tablolar, kılavuz içinde sık aranan konuların bölüm referanslarını listeler. LOTO prosedürü **Bölüm 2.4**'te SSOT olarak tanımlanmıştır; diğer bölümlerde yalnızca referans verilir.
 
@@ -90,4 +90,4 @@ Aşağıdaki tablolar, kılavuz içinde sık aranan konuların bölüm referansl
 
 ---
 
-**Bölüm 14.3 sonu.** Kılavuz tamamlanmıştır.
+Kılavuz tamamlanmıştır.

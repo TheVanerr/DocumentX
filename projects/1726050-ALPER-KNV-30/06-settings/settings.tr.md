@@ -1,4 +1,4 @@
-# 6. AYARLAR
+﻿# 6. AYARLAR
 
 Bu bölüm, **KNV 30 3000 2B** makinesinin devreye alma sonrası (**Bkz. Bölüm 5**) operatör ve bakım personelinin yapabileceği **OEM (üretici) ayar parametrelerini** tanımlar. Ayarlar; proses kalitesi, güvenlik fonksiyonlarının sürekliliği ve HMI üzerinden makine davranışının yapılandırılması için gereklidir.
 
@@ -31,4 +31,4 @@ Parametre değişikliği öncesi makineyi durdurun; mümkünse hazırlık aşama
 
 ---
 
-**Bölüm 6 sonu.** Operasyon prosedürleri için bkz. **Bölüm 7**; periyodik bakım için bkz. **Bölüm 9**.
+Operasyon prosedürleri için bkz. **Bölüm 7**; periyodik bakım için bkz. **Bölüm 9**.

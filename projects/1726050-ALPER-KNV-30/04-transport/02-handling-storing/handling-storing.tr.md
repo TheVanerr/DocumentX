@@ -1,4 +1,4 @@
-# 4.2 Elleçleme ve depolama
+﻿# 4.2 Elleçleme ve depolama
 
 Makine kurulmadan önce saha içinde bekletilecekse, montaj tarihi ertelenecekse veya uzun süre devre dışı kalacaksa bu bölümdeki depolama kuralları uygulanır. Amaç; paslanma, nem hasarı, elektrik panosu korozyonu ve şasi deformasyonunu önlemektir. Depolama koşulları taşıma koşulları ile uyumludur; ortam sıcaklığı ve nem sınırları **Bölüm 3.3.6**'da SSOT olarak verilmiştir.
 
@@ -59,4 +59,4 @@ Makine **yatay** pozisyonda, sert ve düz zemin üzerinde depolanmalıdır. Doğ
 
 ---
 
-**Bölüm 4.2 sonu.** Taşıma prosedürü için bkz. **Bölüm 4.1**; montaj için bkz. **Bölüm 5**.
+Taşıma prosedürü için bkz. **Bölüm 4.1**; montaj için bkz. **Bölüm 5**.

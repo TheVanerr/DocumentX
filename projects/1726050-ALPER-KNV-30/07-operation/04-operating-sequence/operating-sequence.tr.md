@@ -1,4 +1,4 @@
-# 7.4 Operasyon sekansı
+﻿# 7.4 Operasyon sekansı
 
 Otomatik operasyon sekansı, parçaların konveyör üzerinde **yıkama → durulama → kurutma** proseslerinden geçmesini tanımlar. Makine **tam otomatik** çalışır; PLC, seçili HMI fonksiyonlarına göre pompaları, fanları ve konveyörü koordine eder.
 
@@ -76,4 +76,4 @@ Hata giderme **Bölüm 11**'de tanımlıdır. Alarm varken start vermeyin.
 
 ---
 
-**Bölüm 7.4 sonu.** Başlatma için bkz. **Bölüm 7.2**; arıza tablosu için bkz. **Bölüm 11.2**.
+Başlatma için bkz. **Bölüm 7.2**; arıza tablosu için bkz. **Bölüm 11.2**.

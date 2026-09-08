@@ -1,4 +1,4 @@
-# 14.1 Ekler
+﻿# 14.1 Ekler
 
 Ekler, kılavuz dışında veya kılavuz içinde belirli bölümlerde bulunan destek dokümanlarına referans verir. Prosedür metinleri tekrarlanmaz; ilgili bölüme yönlendirilir.
 
@@ -43,4 +43,3 @@ Teslim paketindeki PDF'ler **Ek** olarak numaralandırılmaz; **Bölüm 13.1.1**
 
 ---
 
-**Bölüm 14.1 sonu.**
