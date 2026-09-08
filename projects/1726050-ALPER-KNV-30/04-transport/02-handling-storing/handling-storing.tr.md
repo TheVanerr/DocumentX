@@ -19,9 +19,6 @@ Makine **yatay** pozisyonda, sert ve düz zemin üzerinde depolanmalıdır. Doğ
 
 12 aydan uzun depolama planlanıyorsa üretici servisi ile görüşün; koruyucu yağlama, contalar ve PLC/HMI pil durumu için ek önlem gerekebilir (bkz. **Bölüm 1.3**).
 
-<!-- FOTO: Depolama alanı — kapalı, kuru iç mekan (EKLENECEK: FOTO-4-2-0-depolama-alani.jpg) -->
-![Depolama alanı](../../assets/4.2/1.png)
-
 ---
 
 ## 4.2.2 Depolama öncesi hazırlık

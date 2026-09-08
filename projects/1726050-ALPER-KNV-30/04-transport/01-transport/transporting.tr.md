@@ -1,11 +1,8 @@
 # 4.1 Taşıma ve nakliye
 
-Makine **konteyner** ambalajında sevk edilir. Montajlı taşıma ağırlığı **1300 kg**'dır; demonte parça taşıması bu proje kapsamında öngörülmemiştir — taşıma sırasında herhangi bir modül ayrılmaz. Kaldırma aparatı **forklift çatalı**dır; makinede forklift çatal girişi **mevcuttur** (alt taşıma profilleri). Taşıma sabitleme ve bağlama, forklift ile kontrollü kaldırma/indirme prosedürü ile sağlanır; ayrı travers, sapan veya vinç kullanılmaz.
+Makine **plastik** ambalajında sevk edilir. Montajlı taşıma ağırlığı **1300 kg**'dır; demonte parça taşıması bu proje kapsamında öngörülmemiştir — taşıma sırasında herhangi bir modül ayrılmaz. Kaldırma aparatı **forklift çatalı**dır; makinede forklift çatal girişi **mevcuttur** (alt taşıma profilleri). Taşıma sabitleme ve bağlama, forklift ile kontrollü kaldırma/indirme prosedürü ile sağlanır; ayrı travers, sapan veya vinç kullanılmaz.
 
 Dış boyutlar kurulum alanı planlamasında dikkate alınmalıdır (bkz. **Bölüm 3.3.1**). Ağırlık merkezi konveyör hattının ortasındadır; çatal konumu buna göre ayarlanmalıdır (bkz. **Bölüm 3.5.4**).
-
-<!-- FOTO: Sevkiyat ambalajı — konteyner/kasa (EKLENECEK: FOTO-4-1-0-konteyner-ambalaj.jpg) -->
-![Sevkiyat ambalajı](../../assets/4.1/1.png)
 
 ---
 
@@ -67,7 +64,7 @@ Makine kurulum alanına ulaştığında ambalaj, taşıma hasarını önleyecek 
 7. Kurulum alanına yerleştirdikten sonra **Bölüm 5** — Montaj prosedürüne geçin.
 
 <!-- FOTO: Forklift çatal hizalama — alt taşıma profilleri (bkz. Bölüm 3.5.4; EKLENECEK: FOTO-3-5-4-forklift-noktalari.jpg) -->
-![Forklift çatal giriş noktaları](../../assets/4.1/2.png)
+![Forklift çatal giriş noktaları](../../assets/4.1/1.png)
 
 **Beklenen sonuç:** Makine hedef noktada dengeli ve hasarsız konumlanmış olmalı; ayaklar zemine tam temas etmelidir.
 

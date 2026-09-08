@@ -24,9 +24,6 @@ Parçalar sol taraftan konveyöre alınır, yıkama → durulama → kurutma pro
 
 Operatör, HMI paneli, ana şalter ve elektrik panosuna **sağ taraftan** erişir. Tepe lambası makine üzerinde operatör tarafından görülebilir konumdadır; renk anlamları **Bölüm 3.4.10**'da açıklanmıştır.
 
-<!-- FOTO: Besleme (sol) ve boşaltma (sağ) yönleri işaretli genel görünüm -->
-![Yön tanımları](../../assets/3.5/2.png)
-
 ---
 
 ## 3.5.2 Minimum etraf boşlukları ve tavan yüksekliği
@@ -48,9 +45,6 @@ Kurulum alanı planlamasında aşağıdaki minimum boşluklar sağlanmalıdır. 
 
 Zemin mukavemeti, makinenin çalışma ağırlığı (**1500 kg** — bkz. **Bölüm 3.3.1**) ve dinamik yükleri taşıyacak düzeyde olmalıdır. Seviye ayarı ayarlanabilir ayaklar ile yapılır; hizalama toleransı **0,5 mm**'dir (bkz. **Bölüm 5** — Konumlandırma).
 
-<!-- FOTO: Kurulum alanı şeması — etraf boşlukları ve tavan yüksekliği (EKLENECEK: FOTO-3-5-2-etraf-bosluklari.png) -->
-![Etraf boşlukları](../../assets/3.5/3.png)
-
 ---
 
 ## 3.5.3 Bakım erişim bölgeleri
@@ -64,7 +58,7 @@ Periyodik bakım, filtre temizliği, pompa kontrolü ve mekanik müdahaleler iç
 Günlük ön filtre temizliği ve haftalık tank/torba filtre bakımı bu erişim bölgeleri üzerinden yapılır (bkz. **Bölüm 9** ve **Bölüm 10**).
 
 <!-- FOTO: Makine arka taraf — sökülebilir bakım kapakları (EKLENECEK: FOTO-3-5-3-bakim-kapaklari.jpg) -->
-![Bakım erişim kapakları](../../assets/3.5/4.png)
+![Bakım erişim kapakları](../../assets/3.5/2.png)
 
 ---
 
@@ -80,9 +74,6 @@ Günlük ön filtre temizliği ve haftalık tank/torba filtre bakımı bu erişi
 Makine taşınmasında vinç **kesinlikle kullanılmamalıdır**; kaldırma noktası veya sapanlama donanımı bulunmamaktadır. Forklift ile taşımada makine altındaki **taşıma profilleri** kullanılmalı; çatal uçları profil kanallarına tam oturtulmalıdır. Taşıma sırasında ortamda nem ve korozif madde bulunmamalıdır (bkz. **Bölüm 4** — Depolama koşulları).
 
 Ağırlık merkezi konveyör hattının ortasındadır; forklift manevrasında makinenin dengesiz yüklenmesi devrilme riski oluşturur. Boş ağırlık **1300 kg**'dır (bkz. **Bölüm 3.3.1**).
-
-<!-- FOTO: Makine altı forklift çatal giriş profilleri (EKLENECEK: FOTO-3-5-4-forklift-noktalari.jpg) -->
-![Forklift taşıma noktaları](../../assets/3.5/5.png)
 
 ---
 
