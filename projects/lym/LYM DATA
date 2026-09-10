@@ -347,15 +347,15 @@ Hata durumunda makine davranışı:
 
 
 [KRONOLOJI]
-Günlük operasyon zaman çizelgesi: 
-Vardiya devir teslim maddeleri: 
-Shift başlangıç kontrol listesi: 
+Günlük operasyon zaman çizelgesi: MÜŞTERİYE BAĞLI
+Vardiya devir teslim maddeleri: MÜŞTERİYE BAĞLI
+Shift başlangıç kontrol listesi: MÜŞTERİYE BAĞLI
 
 
 [OPERASYON_DIGER]
-Format / ürün değişim süresi (dk): 
-Fire / hurda yönetimi: 
-Operatör müdahale noktaları: 
+Format / ürün değişim süresi (dk): MÜŞTERİYE BAĞLI
+Fire / hurda yönetimi: MÜŞTERİYE BAĞLI
+Operatör müdahale noktaları: MÜŞTERİYE BAĞLI
 
 # =============================================================================
 # 08 — KAPASİTE (capacity)
@@ -372,15 +372,15 @@ Maksimum sürekli çalışma süresi (saat/gün) | 7/24 | 7/24 | 7/24 | 7/24 |
 [OZEL_KURULUM]
 # Varyant bazli urun parametreleri
 # Varyant | Ürün A | Ürün B | Ürün C | Reçete no listesi
-LYM 950 | | | | 
-LYM 1150 | | | | 
-LYM 1350 | | | | 
-LYM 1550 | | | | 
+LYM 950 | YOK | YOK | YOK | YOK 
+LYM 1150 | YOK | YOK | YOK | YOK 
+LYM 1350 | YOK | YOK | YOK | YOK 
+LYM 1550 | YOK | YOK | YOK | YOK 
 
 [BAKIM_GENEL]
-Bakım felsefesi (önleyici / kestirimci): 
+Bakım felsefesi (önleyici / kestirimci): ÖNLEYİCİ
 Bakım personeli yeterlilik seviyesi: 
-Lubrication chart dosya referansı: 
+Lubrication chart dosya referansı: YOK
 
 
 [BAKIM_PERIYOT]
@@ -824,21 +824,78 @@ X:10 01008 | REDÜKTÖR EN:40 I:12 B:07 YILMAZ | 1 |
 
 
 [EKLER]
-Ek A — Alarm listesi: 
-Ek B — Parametre listesi: 
-Ek C — Reçete örnekleri: 
-Ek D — Garanti belgesi: 
+# Kılavuz Bölüm 14.1 SSOT — tüm LYM varyantları ortak
+
+Ek A — Arıza lambaları listesi: Kılavuza gömülü (ayrı ek dosyası yok). LYM serisinde dijital HMI alarm kodu bulunmamaktadır; geri bildirim yalnızca kontrol panosu üzerindeki 3 kırmızı arıza LED'i ile yapılır. Tam teşhis adımları Bölüm 11'de; lamba tanımları Bölüm 3.4.10'da.
+# Lamba | Anlam | Makine davranışı | Teşhis (Bölüm 11)
+# Düşük su seviyesi | Tank su seviyesi güvenli çalışma sınırının altında | Rezistans ve pompa koruma devresi devre dışı; Reset gerekir | Arıza 3
+# Redüktör arızası | Sepet redüktör termik rölesi atmış (aşırı akım) | Sepet dönmüyor / yıkama start almayabilir | Arıza 1
+# Pompa arızası | Yıkama pompası termik rölesi atmış (aşırı akım) | Pompa çalışmıyor | Arıza 2
+# Not: Kurutma fanı, drenaj pompası, yağ sıyırıcı, buhar tahliye fanı vb. opsiyon motorların arıza lambası yoktur — pano içi termik kontrol (Arıza 4).
+
+Ek B — Parametre listesi: Müşteri / tesis özelinde tanımlanır; standart kılavuza sabit parametre tablosu eklenmez. Tipik ayar noktaları: GEMO DT481 hedef sıcaklık (SV, maks. 70 °C), GEMO DZ482 yıkama süresi, proses kimyasal dozajı (müşteri MSDS ve uygulamasına göre). Müşteri kayıtlarında saklanmalıdır — [EKSİK: müşteri parametre formu referansı].
+
+Ek C — Reçete örnekleri: Yıkanacak parça tipi, kirlilik derecesi, sıcaklık, süre ve kimyasal konsantrasyonu müşteri firma tarafından belirlenir; üretici standart reçete örneği sunmaz. Müşteri reçete kayıtları tesis dokümantasyonunda tutulmalıdır — [EKSİK: müşteri reçete no / form referansı].
+
+Ek D — Garanti belgesi: Makine ile birlikte **ayrı doküman** olarak teslim edilir; kılavuza gömülmez. Garanti kapsamı, süresi ve koşulları yalnızca garanti belgesinde geçerlidir (Bkz. Bölüm 13.1). Kılavuzda yalnızca referans verilir. 
 
 
 [SOZLUK]
-Terim 1 / açıklama: 
-Terim 2 / açıklama: 
-Terim 3 / açıklama: 
-Kısaltmalar (PLC, HMI, LOTO, RFID, P&ID, BOM vb.): 
+# Format: Terim | Açıklama — kılavuz Bölüm 14.2 SSOT
 
+## Kısaltmalar
+LOTO | Lock Out / Tag Out — Tehlikeli enerji kontrolü; bakım, temizlik ve onarım öncesi enerjinin izole edilmesi ve yetkisiz yeniden devreye almayı engelleme. Tam prosedür yalnızca Bölüm 2.4'te.
+SSOT | Single Source of Truth (tek kaynak) — Aynı teknik veri veya prosedürün kılavuzda yalnızca bir bölümde tam tanımlanması; diğer bölümlerde «Bkz. Bölüm X.Y» ile referans verilmesi ilkesi.
+BOM | Bill of Materials — Parça listesi; makineye ait montaj ve yedek parça kalemleri (Bkz. Bölüm 13.3).
+P&ID | Piping and Instrumentation Diagram — Boru ve enstrümantasyon diyagramı; proses hatları ve ölçüm noktalarını gösteren teknik çizim.
+RCD | Residual Current Device — Kaçak akım koruma cihazı; kaçak akım rölesi.
+DOL | Direct On Line — Doğrudan devreye alma; invertör olmadan şebekeye doğrudan bağlı motor çalıştırma yöntemi (LYM pompa ve redüktör).
+IP | Ingress Protection — Koruma sınıfı; elektrik muhafazasının toz ve suya karşı koruma derecesi.
+KKD | Kişisel Koruyucu Donanım — Operatör ve bakım personelinin giydiği koruyucu ekipman (Bkz. Bölüm 2.6).
+CIP | Cleaning In Place — Yerinde temizlik; LYM serisinde uygulanmaz.
+COP | Clean Out of Place — Sökülerek temizlik; LYM serisinde standart CIP/COP sistemi yoktur.
+PE | Protective Earth — Koruma topraklaması; 3P+N+PE besleme konfigürasyonundaki toprak iletkeni.
+In | Nominal akım — Şalter, sigorta veya termik rölenin nominal akım değeri (amper).
+PV | Process Value — Termostat ekranında anlık ölçülen değer (ör. su sıcaklığı).
+SV | Set Value — Termostat ekranında hedeflenen ayar değeri (ör. hedef sıcaklık).
+As-Built | İmalat sonu — Makinenin fiili teslim konfigürasyonunu yansıtan güncel teknik doküman durumu.
+
+## Makine ve proses terimleri
+Yıkama hücresi | Paslanmaz çelik kabin; parça sepeti, nozul ve püskürtme sisteminin bulunduğu kapalı temizleme alanı.
+Döner yıkama sepeti | Parçaların yıkama sırasında kendi ekseni etrafında döndürüldüğü galvaniz veya paslanmaz yük taşıyıcı.
+Püskürtme kolu / nozul | Basınçlı proses suyunun parça yüzeyine yönlendirildiği dağıtım elemanları.
+Proses suyu | Yıkama tankında ısıtılan; su ve uygun alkali kimyasal karışımından oluşan temizleme sıvısı.
+Ön filtre | Pompa emiş hattında veya tank girişinde kaba kir partiküllerini tutan filtre.
+Emiş filtresi | Pompa emiş borusundaki filtre komplesi; pompayı partikülden korur.
+Hassas filtre | Pompa çıkış hattındaki torba filtre düzenegi (opsiyon); ince partikül tutma.
+Torba filtre | Hassas filtrede kullanılan değiştirilebilir filtre torbası (200 mikron).
+Yağ sıyırıcı | Tank yüzeyindeki yüzen yağı mekanik olarak uzaklaştıran opsiyon yardımcı ekipman; proses adımı değildir.
+Buhar tahliye | Yıkama sırasında oluşan buharın makineden uzaklaştırılması (opsiyon fan ünitesi).
+Buhar yoğuşturma / yağ buharı toplama | Yoğuşturmalı buhar tahliye opsiyonunda buharın filtrelenmesi (Filtermist vb.).
+Kurutma ünitesi | Yıkama sonrası parçaları kurutan opsiyon fan veya blower sistemi.
+Otomatik boşaltma | Tank suyunun drenaj pompası ile boşaltılması (opsiyon).
+Interlock kilit | Kapak emniyet devresine entegre mekanik kilit; kapak tam kapanmadan tehlikeli hareketin engellenmesi (opsiyon).
+Kapak switch | Kapak açık/kapalı durumunu emniyet devresine bildiren limit switch (EMAS).
+Pako şalter | Döner kumanda mandallı açma-kapama şalteri; ana enerji ve ısıtıcı devresinde kullanılır.
+Termik röle | Motor aşırı akımında devreyi kesen koruma elemanı; reset gerektirir.
+Termostat (GEMO DT481) | Yıkama suyu sıcaklığını ölçen ve ısıtıcı kontaktörünü yöneten dijital sıcaklık kontrol cihazı.
+Zamanlayıcı (GEMO DZ482) | Yıkama döngü süresini geri sayım ile kontrol eden dijital zaman rölesi.
+Seviye bekçisi | Tank su seviyesini izleyen float switch; düşük seviyede ısıtıcı ve pompayı korur.
+Termokupl | Tank su sıcaklığını termostata ileten sıcaklık sensörü (ETB30F06-2Ç).
+Jog / TEST | Sepeti yıkama prosesi dışında kısa süreli manuel döndürme (TEST butonu).
+Nominal kapasite | Makinenin tanımlı çalışma koşullarında işleyebileceği ürün miktarı; parçaya göre değişebilir (Bkz. Bölüm 3.3.2).
+Opsiyon donanım | Standart konfigürasyona fabrika veya müşteri talebiyle eklenen ekipman (yağ sıyırıcı, kurutma, interlock vb.).
+
+## Kılavuz ve doküman terimleri
+DATA dosyası | LYM DATA — Makineye özel tek kaynak veri dosyası; kılavuz bölümleri buradan türetilir.
+Montaj adedi | Parça listesinde makinede bulunan parça sayısı; yedek stok önerisi ile karıştırılmamalıdır.
+Alternatif parça | Konfigürasyona göre birbirinin yerine kullanılabilen parça seçeneği (ör. galvaniz / paslanmaz sepet).
+Teslim paketi | Makine ile birlikte verilen teknik doküman seti: elektrik şeması, layout, parça listesi (Bkz. Bölüm 13).
+
+Kısaltmalar özeti (hızlı referans): LOTO, SSOT, BOM, RCD, DOL, KKD, PE, PV, SV, CIP, COP, P&ID, IP, In, As-Built — açıklamalar yukarıda.
 
 [INDEKS]
-Anahtar kelime listesi (opsiyonel): 
+Anahtar kelime listesi (opsiyonel): LOTO, SSOT, acil stop, reset, termik röle, kaçak akım, kapak switch, interlock, düşük su seviyesi, redüktör arızası, pompa arızası, ısıtıcı, termostat, GEMO DT481, yağ sıyırıcı, hassas filtre, torba filtre, kurutma, buhar tahliye, temizlik, bakım, yedek parça, BOM, opsiyon, sepet, nozul, pako şalter, ana şalter 
 
 # =============================================================================
 # SON — DOSYA SONU
