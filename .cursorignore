@@ -2,8 +2,8 @@
 *.md
 !CURSOR USER MANUEL TEMPLATE.md
 
-#!projects/lym/
-#!projects/lym/**
+!projects/lym/
+!projects/lym/**
 
 #!projects/vdl/
 #!projects/vdl/**
@@ -26,8 +26,8 @@
 #!projects/knv/
 #!projects/knv/**
 
-!projects/1726050-ALPER-KNV-30/
-!projects/1726050-ALPER-KNV-30/**
+#!projects/1726050-ALPER-KNV-30/
+#!projects/1726050-ALPER-KNV-30/**
 
 *.yaml
 *.yml

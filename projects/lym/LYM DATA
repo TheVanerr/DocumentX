@@ -59,10 +59,10 @@ Acil stop sonrası makine durumu:
 
 
 [GUVENLIK_CIT]
-Emniyet kapısı / bariyer sayısı: 
-Kapı switch tipi / marka: 
-Makine stop kategorisi (Cat.): 
-Işık perdesi var mı (Evet/Hayır — tip / marka): 
+Emniyet kapısı / bariyer sayısı: 0
+Kapı switch tipi / marka: 1 / EMAS L5K13MUM331 1NO 1NC
+Makine stop kategorisi (Cat.): 1
+Işık perdesi var mı (Evet/Hayır — tip / marka): Yok
 
 # =============================================================================
 # 03 — GENEL BAKIŞ (overview)
@@ -72,24 +72,24 @@ Işık perdesi var mı (Evet/Hayır — tip / marka):
 
 
 [MAKINE_TANIMI]
-Makinenin ana işlevi: 
-Makine tipi (ör. dolum / paketleme / yıkama / konveyör): 
+Makinenin ana işlevi: Endüstriyel Parça Üzerindeki Kirliliklerin Giderilmesi
+Makine tipi (ör. dolum / paketleme / yıkama / konveyör): Endüstriyel Yıkama Makinesi
 Proses akışı özeti (adım adım): 
-Makine bileşenleri listesi (ana modüller): 
-Opsiyon / varyant listesi (bu projeye özel): 
+Makine bileşenleri listesi (ana modüller): Yıkama Hücresi , Döner Yıkama Sepeti , Yıkama Pompası , Sepet Redüktörü , Su Tankı Isıtıcısı , Kapak Kapalı Bilgisi Switchi 
+Opsiyon / varyant listesi (bu projeye özel): Yağ Sıyırıcı , Hassas Filtre , İnterlock Kilit , Buhar Tahliye Fanı , Buhar Tahliye Fanı (Yoğuşturmalı Tip) , Kurutma Fanı (Fan Tipi) , Kurutma Fanı (Blower Tipi) , Drenaj Pompası
 
 # --- 03.2 Amaçlanan kullanım (intended-use) ---
 
 
 [AMACLANAN_KULLANIM]
-Amaçlanan kullanım alanı: 
-İşlenebilir ürün tipleri: 
-İşlenemez / yasak ürün tipleri: 
-Ortam koşulları (iç mekan / dış mekan): 
-Ortam sıcaklığı min / max (°C): 
-Ortam nemi max (% RH)30% -50%
-Operatör sayısı (min / max): 
-Yetkinlik / eğitim gereksinimi: 
+Amaçlanan kullanım alanı: Endüstriyel Parça Üzerindeki Kirliliklerin Giderilmesi
+İşlenebilir ürün tipleri: Metal Parçalar , Plastik Parçalar
+İşlenemez / yasak ürün tipleri: Canlı Organizma (İnsan, Hayvan, Bitki) , Gıda Malzemeleri (Paketli / Paketsiz Gıda Ürünleri)
+Ortam koşulları (iç mekan / dış mekan): +10°C - +30°C
+Ortam sıcaklığı min / max (°C): +10°C - +30°C
+Ortam nemi max (% RH): 30% - 50%
+Operatör sayısı (min / max): 1 - 5
+Yetkinlik / eğitim gereksinimi: Makine operatörü
 
 # --- 03.3 Teknik özellikler (machine-spec) ---
 
@@ -101,39 +101,37 @@ Dış uzunluk L (mm) |  |  |  |
 Dış yükseklik H — normal (mm) |  |  |  | 
 Boş ağırlık — kuru (kg) |  |  |  | 
 Çalışma ağırlığı — dolu (kg) |  |  |  | 
-Şase tipi (sabit ayak / ayarlanabilir ayak / ankraj) |  |  |  | 
-
+Şase tipi (sabit ayak / ayarlanabilir ayak / ankraj) | Sabit Ayak / Sabit Ayak / Sabit Ayak / Sabit Ayak
 [KAPASITE_PROSES]
 # Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1550
-Nominal kapasite (adet/saat veya kg/saat) |  |  |  | 
-Maksimum kapasite (adet/saat) |  |  |  | 
-Minimum kapasite (adet/saat) |  |  |  | 
-Ürün formatı / ambalaj tipi |  |  |  | 
-Ürün boyutu min (mm) |  |  |  | 
-Ürün boyutu max (mm) |  |  |  | 
-Ürün ağırlığı min (g) |  |  |  | 
-Ürün ağırlığı max (g) |  |  |  | 
-Proses adım sayısı |  |  |  | 
-Proses adı 1 |  |  |  | 
-Proses adı 2 |  |  |  | 
-Proses adı 3 |  |  |  | 
-Döngü süresi nominal (sn) |  |  |  | 
+Nominal kapasite (adet/saat veya kg/saat) | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir    | 
+Maksimum kapasite (adet/saat) | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir    | 
+Minimum kapasite (adet/saat) | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir    | 
+Ürün formatı / ambalaj tipi | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir    | 
+Ürün boyutu min (mm) | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir    | 
+Ürün boyutu max (mm) | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir    | 
+Ürün ağırlığı min (g) | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir    | 
+Ürün ağırlığı max (g) | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir    | 
+Proses adım sayısı | 1 / 2 | 1 / 2 | 1 / 2 | 1 / 2 | 
+Proses adı 1 | Yıkama | Yıkama | Yıkama | Yıkama | 
+Proses adı 2 | Kurutma (Opsiyonel) | Kurutma (Opsiyonel) | Kurutma (Opsiyonel) | Kurutma (Opsiyonel) | 
+Döngü süresi nominal (sn) |0-100 dk | 0-100 dk | 0-100 dk | 0-100 dk | 
 
 [ELEKTRIK]
 # Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1550
-Besleme gerilimi (V) |  |  |  | 
-Besleme frekansı (Hz) |  |  |  | 
-Faz sayısı |  |  |  | 
-Toplam kurulu güç (kW) |  |  |  | 
-Toplam kurulu güç — ısıtma dahil (kW) |  |  |  | 
-Maksimum akım çekişi (A) |  |  |  | 
-Güç faktörü (cos φ) |  |  |  | 
-Kısa devre akımı / ICC gereksinimi (kA) |  |  |  | 
-Besleme konfigürasyonu (3P+N+PE / vb.) |  |  |  | 
-Ana şalter tipi / In (A) |  |  |  | 
-Ana şalter marka |  |  |  | 
-Toplam sigorta / devre kesici değeri (A) |  |  |  | 
-UPS / jeneratör gereksinimi (varsa) |  |  |  | 
+Besleme gerilimi (V) | 380 V | 380 V | 380 V | 380 V  
+Besleme frekansı (Hz) | 50 Hz | 50 Hz | 50 Hz | 50 Hz  
+Faz sayısı | 3 | 3 | 3 | 3 | 
+Toplam kurulu güç (kW) | 11 | 11 | 11 | 22 | 
+Toplam kurulu güç — ısıtma dahil (kW) | 11 | 11 | 11 | 22
+Maksimum akım çekişi (A) | 25 | 25 | 25 | 40 | 
+Güç faktörü (cos φ) | 0.8 | 0.8 | 0.8 | 0.8 | 
+Kısa devre akımı / ICC gereksinimi (kA) | 0.5 | 0.5 | 0.5 | 0.5 | 
+Besleme konfigürasyonu (3P+N+PE / vb.) | 3P+N+PE | 3P+N+PE | 3P+N+PE | 3P+N+PE | 
+Ana şalter tipi / In (A) |	3x25 A pako şalter (YKL301025)  | 3x25 A pako şalter (YKL301025)  | 3x25 A pako şalter (YKL301025)  | 3x40 A pako şalter (YKL301040)  | 
+Ana şalter marka | Opaş | Opaş | Opaş | Opaş | 
+Toplam sigorta / devre kesici değeri (A) | 25 | 25 | 25 | 40 | 
+UPS / jeneratör gereksinimi (varsa) | Yok | Yok | Yok | Yok | 
 
 [MOTOR_SURUCU_LISTESI]
 # Her varyant icin motor listesi — satir: Ad | Güç (kW) | Devir (rpm) | Marka | Model
@@ -159,47 +157,47 @@ Motor 3:
 
 [SIKIŞTIRILMIŞ_HAVA_SU]
 # Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1550
-Basınçlı hava girişi (bar) |  |  |  | 
-Su girişi basıncı (bar) |  |  |  | 
-Su sıcaklığı min / max (°C) |  |  |  | 
-Su kalitesi / filtre gereksinimi |  |  |  | 
-Drain / atık su hattı çap (mm) |  |  |  | 
+Basınçlı hava girişi (bar) | Yok | Yok | Yok | Yok | 
+Su girişi basıncı (bar) | Yok | Yok | 0.1-0.8 bar | 0.1-0.8 bar | 
+Su sıcaklığı min / max (°C) | 10°C - 70°C | 10°C - 70°C | 10°C - 70°C | 10°C - 70°C | 
+Su kalitesi / filtre gereksinimi | Yok | Yok | Yok | Yok | 
+Drain / atık su hattı çap (mm) | 1/2" | 1/2" | 1/2" | 1/2" | 
 
 [ORTAM_KOSULLARI]
 # Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1550
-Çalışma sıcaklığı min / max (°C) |  |  |  | 
-Depolama sıcaklığı min / max (°C) |  |  |  | 
-Göreceli nem min / max (%) |  |  |  | 
-Koruma sınıfı (IP) |  |  |  | 
-Gürültü seviyesi (dB(A)) |  |  |  | 
+Çalışma sıcaklığı min / max (°C) | +10°C - +30°C | +10°C - +30°C | +10°C - +30°C | +10°C - +30°C | 
+Depolama sıcaklığı min / max (°C) | +10°C - +30°C | +10°C - +30°C | +10°C - +30°C | +10°C - +30°C | 
+Göreceli nem min / max (%) | 30% - 50% | 30% - 50% | 30% - 50% | 30% - 50% | 
+Koruma sınıfı (IP) | IP54 | IP54 | IP54 | IP54 | 
+Gürültü seviyesi (dB(A)) | 50 dB(A) | 50 dB(A) | 50 dB(A) | 50 dB(A) | 
 
 # --- 03.4 Makine kontrolleri (machine-controls) ---
 
 [KONTROLLER]
-Ana kontrol panosu konumu: 
-Pano koruma sınıfı (IP): 
-Pano boyutları W×H×D (mm): 
-HMI ekran boyutu (inch): 
-HMI marka / model: 
-PLC marka / model: 
-PLC CPU model: 
-I/O modül özeti: 
-Ana şalter konumu: 
-Start / Stop düğme konumu: 
-Acil stop konumu: 
-Mod seçici (Manuel / Otomatik / Bakım): 
-Jog / inching düğmeleri: 
-Sinyal lambaları listesi: 
-Operatör paneli dilleri: 
-Şifre seviyeleri (operatör / bakım / admin): 
+Ana kontrol panosu konumu: Yıkama Hücresi Sağında
+Pano koruma sınıfı (IP): IP54
+Pano boyutları W×H×D (mm): 410x650x160 / 410x650x160 / 410x650x160 / 450x770x180
+HMI ekran boyutu (inch): YOK / YOK / YOK / YOK
+HMI marka / model: YOK / YOK / YOK / YOK
+PLC marka / model: YOK / YOK / YOK / YOK
+PLC CPU model: YOK / YOK / YOK / YOK
+I/O modül özeti: YOK / YOK / YOK / YOK
+Ana şalter konumu: Yıkama Hücresi Sağında
+Start / Stop düğme konumu: Elektrik Panosu İçerisinde
+Acil stop konumu: Elektrik Panosu İçerisinde
+Mod seçici (Manuel / Otomatik / Bakım): Otomatik / Otomatik / Otomatik / Otomatik
+Jog / inching düğmeleri: YOK / YOK / YOK / YOK
+Sinyal lambaları listesi: Kırmızı ( Redüktör Arıza, Pompa Arıza, Su Seviyesi Düşük)
+Operatör paneli dilleri: Türkçe ( Standart ) / İngiizce (Opsiyonel) / Almanca (Opsiyonel) / Fransızca (Opsiyonel) / İspanyolca (Opsiyonel)
+Şifre seviyeleri (operatör / bakım / admin): 1 / 2 / 3
 
 
 [KONTROL_FONKSIYONLARI]
-Ana ekran menü yapısı: 
-Alarm ekranı davranışı: 
-Reçete / program kayıt sayısı: 
-Trend / log kayıt süresi: 
-Uzaktan erişim (Evet/Hayır — protokol): 
+Ana ekran menü yapısı: YOK / YOK / YOK / YOK
+Alarm ekranı davranışı: YOK / YOK / YOK / YOK
+Reçete / program kayıt sayısı: YOK / YOK / YOK / YOK
+Trend / log kayıt süresi: YOK / YOK / YOK / YOK
+Uzaktan erişim (Evet/Hayır — protokol): Yok / Yok / Yok / Yok
 
 # --- 03.5 Makine yerleşimi (machine-layout) ---
 
@@ -207,15 +205,15 @@ Uzaktan erişim (Evet/Hayır — protokol):
 [LAYOUT]
 Genel yerleşim planı dosya adı: 
 Operatör tarafı (ön / sol / sağ): 
-Besleme tarafı (giriş yönü): 
-Boşaltma tarafı (çıkış yönü): 
+Besleme tarafı (giriş yönü): ÖN
+Boşaltma tarafı (çıkış yönü): ÖN
 Bakım erişim bölgeleri: 
 Minimum etraf boşluğu — ön (mm): 
 Minimum etraf boşluği — arka (mm): 
 Minimum etraf boşluğu — yan (mm): 
 Minimum tavan yüksekliği (mm): 
-Vinç / forklift erişim noktaları: 
-Ağırlık merkezi notu: 
+Vinç / forklift erişim noktaları: Vinç Kullanımı Kesinlikle Yasaktır! / Forklif Makine Altındaki Şaseden Kaldırabilir
+Ağırlık merkezi notu: Ağırlık Merkezi Makinenin Ortasındadır
 
 # =============================================================================
 # 04 — TAŞIMA (transport)
@@ -235,9 +233,9 @@ Taşıma yüksekliği max (m — deniz / kara):
 
 
 [DEPOLAMA]
-Depolama pozisyonu (dikey / yatay): 
-Max depolama süresi (ay): 
-Depolama ortam koşulları: 
+Depolama pozisyonu (dikey / yatay): Dikey
+Max depolama süresi (ay): 12
+Depolama ortam koşulları: +10°C - +30°C / 30% - 50%
 
 # =============================================================================
 # 05 — MONTAJ (assembly)
@@ -245,42 +243,35 @@ Depolama ortam koşulları:
 
 
 [MONTAJ_GENEL]
-Montaj süresi tahmini (saat / gün): 
-Montaj ekip sayısı: 
-Gerekli vinç / ekipman: 
+Montaj süresi tahmini (saat / gün): 3 / 0
+Montaj ekip sayısı: 1
+Gerekli vinç / ekipman: Vinç Kullanımı Kesinlikle Yasaktır! / Forklif Makine Altındaki Şaseden Kaldırabilir
 Montaj alanı min boyut (m × m): 
-Zemin düzgünlük toleransı (mm/m): 
-Zemin mukavemet gereksinimi: 
+Zemin düzgünlük toleransı (mm/m): 10
+Zemin mukavemet gereksinimi: 100 kg/m²
 
 
 [MONTAJ_ADIMLARI]
 # Her adım: Sıra | Açıklama | Tork / tolerans | Not
-Adım 1: 
-Adım 2: 
-Adım 3: 
-Adım 4: 
-Adım 5: 
-Adım 6: 
-Adım 7: 
-Adım 8: 
+Adım 1: Makine için herhangi bir montaj işlemine gerek yoktur. Tek parça tam konfigürasyon sevkedilir. Ancak makineyle beraber modele bağlı olarak taşıma arabası satın alındıysa bu araç demonte halde gönderilir. Araç Montajı Yapılmalıdır. 
 
 [KONUMLANDIRMA]
-Hizalama toleransı (mm): 
-Seviye ayar mekanizması (ayak tipi): 
+Hizalama toleransı (mm): 10
+Seviye ayar mekanizması (ayak tipi): Ayak Tipi: 4 Adet Sabit Yükseklik Ayak
 
 
 [KURULUM_TEST]
-Mekanik kurulum test checklist: 
-Elektrik devreye alma test checklist: 
-Pnömatik / hidrolik dolum test: 
-Boş koşu test süresi (dk): 
-Güvenlik fonksiyon test listesi: 
+Mekanik kurulum test checklist: Makine Terazide mi? / Makine Arabası Montajı Yapıldı mı? / Taşıma Arabası ile Makine Birbirine Tam Oturuyor mu?
+Elektrik devreye alma test checklist: Şebeke Bağlantısı Tamam mı? / Tüm Sigortalar Açık mı? / Faz Koruma Rölesi Çıkış Veriyor mu? / Reset Butonuna Basınca Reset Lambası Yandı mı?
+Pnömatik / hidrolik dolum test: YOK
+Boş koşu test süresi (dk): 60
+Güvenlik fonksiyon test listesi: Acil Stop Çalışıyor mu? / Acil Stop Sonrası Reset Prosedürü Gerekli mi? / İnterlock Kilit Çalışıyor mu? / Kapak Kapalı Bilgisi Switchi Çalışıyor mu?
 
 
 [ILETISIM]
-Fieldbus / protokol (Profinet / EtherCAT / Modbus / vb.): 
-Üst sistem (MES / SCADA) bağlantısı: 
-I/O listesi dosya referansı: 
+Fieldbus / protokol (Profinet / EtherCAT / Modbus / vb.): YOK
+Üst sistem (MES / SCADA) bağlantısı: YOK
+I/O listesi dosya referansı: YOK
 
 # =============================================================================
 # 06 — AYARLAR (settings)
@@ -288,31 +279,31 @@ I/O listesi dosya referansı:
 
 
 [MEKANIK_AYARLAR]
-Mekanik ayar noktaları listesi: 
-Referans / home pozisyon ayarı: 
-Zincir / kayış gerginlik değeri: 
-Mesafe / limit switch ayarları: 
-Nozzle / doldurma kafası ayar aralığı (mm): 
-Format değişim prosedürü özeti: 
+Mekanik ayar noktaları listesi: YOK
+Referans / home pozisyon ayarı: YOK
+Zincir / kayış gerginlik değeri: YOK
+Mesafe / limit switch ayarları: YOK 
+Nozzle / doldurma kafası ayar aralığı (mm): YOK
+Format değişim prosedürü özeti: YOK
 
 
 [GUVENLIK_AYARLARI]
-Emniyet kapısı bypass (varsa — sadece bakım): 
-Işık perdesi ayar mesafesi (mm): 
-Acil stop test periyodu: 
+Emniyet kapısı bypass (varsa — sadece bakım): YOK
+Işık perdesi ayar mesafesi (mm): YOK
+Acil stop test periyodu: 1 YIL
 
 
 [ELEKTRIK_AYARLARI]
-Motor yönü / faz kontrolü: 
-Encoder / feedback ayarı: 
-Analog ölçeklendirme (basınç / sıcaklık): 
-Tarih / saat / dil ayarı: 
+Motor yönü / faz kontrolü: FAZ SIRA RÖLESİ KONTROL EDİLECEK SADECE
+Encoder / feedback ayarı: YOK
+Analog ölçeklendirme (basınç / sıcaklık): YOK
+Tarih / saat / dil ayarı: YOK
 
 
 [PNEOMATIK_AYARLAR]
-Regülatör basınç ayarı (bar): 
-Silindir hız ayarı: 
-Sensör ON/OFF gecikmeleri (ms): 
+Regülatör basınç ayarı (bar): YOK
+Silindir hız ayarı: YOK
+Sensör ON/OFF gecikmeleri (ms): YOK 
 
 # =============================================================================
 # 07 — OPERASYON (operation)
@@ -320,27 +311,27 @@ Sensör ON/OFF gecikmeleri (ms):
 
 
 [CALISMA_MODLARI]
-Manuel mod açıklaması: 
-Otomatik mod açıklaması: 
-Bakım / setup modu: 
-Step / tek adım modu: 
-Mod geçiş koşulları: 
+Manuel mod açıklaması: YOK
+Otomatik mod açıklaması: YOK
+Bakım / setup modu: YOK
+Step / tek adım modu: YOK
+Mod geçiş koşulları: YOK
 
 
 [BASLATMA]
-Devreye alma ön koşulları (checklist): 
-Güç açma sırası: 
-Hava / su / vakum açma: 
-Isıtma ön ısınma süresi (dk): 
-Start öncesi kontrol listesi: 
-İlk ürün / kurşun atma prosedürü: 
+Devreye alma ön koşulları (checklist): ELEKTRİK BAĞLANTISI KONTROLÜ , FAZ SIRA RÖLESİ KONTROLÜ , SU SEVİYESİ KONTROLÜ 
+Güç açma sırası: ANA ŞALTER , KAÇAK AKIM , AŞIRI AKIM SİGORTASI , 
+Hava / su / vakum açma: YOK
+Isıtma ön ısınma süresi (dk): 1 SAAT
+Start öncesi kontrol listesi: TANKTA SU VAR MI / SU SICAKLIĞI 70°C'YE ULAŞANA KADAR BEKLENİR.
+İlk ürün / kurşun atma prosedürü: YOK
 
 
 [KAPATMA]
-Normal stop prosedürü: 
-Acil stop sonrası yeniden başlatma: 
-Güç kapatma sırası: 
-Uzun süreli durdurma (hafta sonu) prosedürü: 
+Normal stop prosedürü: STOP BUTONUNA BASILIR , REDÜKTÖR DURDUKTAN SONRA KAPAK AÇILIR
+Acil stop sonrası yeniden başlatma: ACİL STOP BUTONUNA BASILIR , TEHLİKE UZAKLAŞTIRILIR , ACİL STOP BUTONU KALDIRILIR , RESET BUTONU LAMBASI YANANA KADAR BASIILI TUTULUR
+Güç kapatma sırası: MAKİNE STOP BUTONUYLA DURDURULUR , ANA ŞALTER KAPATILIR
+Uzun süreli durdurma (hafta sonu) prosedürü: STOP BUTONUNA BASILIR , MAKİNE DURUNCA KAPAK AÇILIR , TANKTAKİ SU BOŞALTILIR , TANK VE MAKİNE İÇİ TEMİZLENİR VE KURUTULUR, MAKİNE PAKETLENİR VE DEPOYA KALDIRILIR
 
 
 [OPERASYON_SEKANS]
@@ -373,10 +364,10 @@ Operatör müdahale noktaları:
 
 [URUN_KAPASITE]
 # Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1550
-Nominal kapasite tablosu (ürün × adet/saat) |  |  |  | 
-Test edilen kapasite (adet/saat) |  |  |  | 
+Nominal kapasite tablosu (ürün × adet/saat) | YIKANACAK PARÇAYA BAĞLI | YIKANACAK PARÇAYA BAĞLI | YIKANACAK PARÇAYA BAĞLI | YIKANACAK PARÇAYA BAĞLI | 
+Test edilen kapasite (adet/saat) | YIKANACAK PARÇAYA BAĞLI | YIKANACAK PARÇAYA BAĞLI | YIKANACAK PARÇAYA BAĞLI | YIKANACAK PARÇAYA BAĞLI | 
 Kapasite test koşulları |  |  |  | 
-Maksimum sürekli çalışma süresi (saat/gün) |  |  |  | 
+Maksimum sürekli çalışma süresi (saat/gün) | 7/24 | 7/24 | 7/24 | 7/24 | 
 
 [OZEL_KURULUM]
 # Varyant bazli urun parametreleri
@@ -409,21 +400,28 @@ Redüktör yağ değişim:
 
 
 [BAKIM_YEDEK_PARCA]
-# Varyant | Kritik yedek parça | Önerilen stok | Sipariş kodu
-LYM 950 | | | 
-LYM 1150 | | | 
-LYM 1350 | | | 
-LYM 1550 | | | 
+Kritik yedek parça listesi: Bkz. [PARCA_LISTESI] — varyant bazlı tam BOM (Bölüm 13.3)
+Önerilen stok miktarları: [EKSİK] — montaj adetleri [PARCA_LISTESI]'nde; stok seviyeleri kullanıcı tarafından belirlenecek
+Yedek parça sipariş kodu referansı: [PARCA_LISTESI] «Sipariş kodu» sütunu
+
+[BAKIM_YEDEK_PARCA_NOT]
+# Tam liste SSOT: [PARCA_LISTESI] → Bölüm 13.3. Montaj adedi = makinedeki parça sayısı. «Alternatif» = konfigürasyona göre biri; «Opsiyon» = donanıma bağlı. 
 
 [TEMIZLIK]
-Temizlik tipi (kuru / ıslak / CIP / COP): 
-Günlük temizlik prosedürü: 
-Haftalık derin temizlik: 
-Kullanılan temizlik maddeleri (onaylı liste): 
-Yasak temizlik maddeleri: 
-Dezenfeksiyon prosedürü: 
-Temizlik sonrası kurutma: 
-Atık su / kimyasal bertaraf: 
+# Tüm LYM varyantları (950 / 1150 / 1350 / 1500) ortak. Kılavuz Bölüm 10 SSOT. LOTO → Bölüm 2.4 (adımları tekrarlama).
+Temizlik tipi (kuru / ıslak / CIP / COP): Kuru / ıslak — CIP / COP bulunmamaktadır. Temizlik manuel uygulanır; makine dış yüzeyleri kuru bez ile silinir, tank içi ıslak temizlik (su, sabunlu su) gerektirir. Elektrik panosu, dijital göstergeler (GEMO DT481, DZ482) ve kapak switch bölgelerine doğrudan su püskürtmeyin.
+Temizlik öncesi güvenlik: 1. Makineyi kırmızı Stop butonu ile durdurun. 2. Ana şalteri OFF (0) konumuna alın. 3. LOTO uygulayın (Bkz. Bölüm 2.4). 4. Kapak emniyet switchini / interlock kilidi bypass etmeyin. 5. Uzun süreli temizlik veya dezenfeksiyon öncesi tankı boşaltın (otomatik boşaltma donanımlıysa kullanın; değilse drenaj vanası ile). UYARI — Sıcak yüzey ve buhar: Kapak açılmadan proses suyunun güvenli sıcaklığa inmesini bekleyin; koruyucu eldiven kullanın. UYARI — Kimyasal: Yalnızca onaylı temizlik maddelerini kullanın (aşağıda).
+Günlük temizlik prosedürü: Periyot: günlük (Bkz. Bölüm 9.1.3). Kapsam: yıkama tankı ön filtreleri — bunun dışında günlük başka temizlik gerekmez. Yedek parça: LYM 950 → 07 01221 ÖN FİLTRE KOMPLESİ; LYM 1150 / 1350 / 1500 → 07 10214 ÖN FİLTRE NS KOMPLESİ (önerilen stok: [EKSİK] — Bkz. Bölüm 9.1.6). Adımlar: 1. Makineyi durdurun; LOTO uygulayın. 2. Yıkama tankı ön filtrelerini sökün. 3. Filtreleri şebeke suyu ve onaylı temizlik maddeleriyle temizleyin; yüksek basınçlı su veya fırça kullanılabilir. 4. Deformasyon veya yırtık varsa yedek parça ile değiştirin. 5. Filtreleri doğru yönde takın. 6. LOTO kaldırın; sızıntı olmadığını kontrol edin. Beklenen sonuç: ön filtreler temiz, pompa emişinde anormal gürültü/tıkanma yok.
+Haftalık derin temizlik: Periyot: haftalık (Bkz. Bölüm 9.1.3). Kapsam: emiş filtresi + hassas filtre (donanımlı makinelerde) torba filtresi + yağ sıyırıcı tank yüzeyi. Yedek parça: emiş → LYM 950: 07 00800 EMİŞ FİLTRESİ KOMPLESİ (PYM 1); LYM 1150 / 1350 / 1500: 07 00670 EMİŞ FİLTRESİ KOMPLESİ; torba filtre (hassas filtre opsiyonu): 10 05378 TORBA FİLTRE 200 MİKRON (önerilen stok: [EKSİK]). Adımlar: 1. Makineyi durdurun; LOTO uygulayın. 2. Emiş filtresini çıkartın; temizleyin veya hasarlıysa değiştirin. 3. Hassas filtre donanımlıysa pompa çıkışı torba filtresini sökün; temizleyin veya değiştirin. 4. Contaları ve sızdırmazlığı kontrol edin. 5. Günlük ön filtre temizliğini (yukarı) aynı turda uygulayın. 6. Yağ sıyırıcı donanımlıysa tank yüzeyinde aşırı yağ tabakasını temizleyin. Beklenen sonuç: filtreler temiz veya yeni; pompa debisi normal; sızıntı yok.
+Temizlik suyu: Makine temizliği için şebeke suyu kullanılabilir. Proses suyu kaynağı: şebeke suyu (Bkz. Bölüm 3.3.5 — su kalitesi / filtre gereksinimi).
+Kullanılan temizlik maddeleri (genel kriter): Paslanmaz çelik uyumlu nötr veya hafif alkalî deterjanlar.
+Üretici önerilen temizlik maddeleri: VEIDEC 89 SUPER FOAM 750 — genel temizlik; VEIDEC BIO CLEANING 3 — çıkmayan inatçı lekeler (az miktarda ıslatılmış sünger ile ovma); VEIDEC 34 INOX — parlatma. Ürün talimatlarına (dozaj, bekleme, durulama) uyun; kimyasalı doğrudan pano, dijital gösterge ve kapak switch bölgelerine uygulamayın.
+Müşteri eşdeğer ürün: Asit bazlı olmayan ve makineye (paslanmaz çelik, tank, conta) zarar vermeyen temizlik maddeleri kullanılabilir.
+Yasak temizlik maddeleri: Asit bazlı temizlik maddeleri kullanılmamalıdır. Paslanmaz çeliğe zarar verecek temizlik maddeleri kullanılmamalıdır.
+Dezenfeksiyon prosedürü: Uygulama: uzun süreli duruş, periyodik hijyen veya tank koku/kirlilik birikiminde. Yöntem: tank boşaltma + sabunlu su ile iç yıkama. Adımlar: 1. Makineyi durdurun; LOTO uygulayın. 2. Yıkama tankındaki proses suyunu tamamen boşaltın. 3. Tank iç yüzeylerini sabunlu su ile yıkayın; paslanmaz yüzeylere uygun yumuşak fırça veya bez kullanın. 4. Sabunlu suyu drenaj hattına boşaltın. 5. Tank içerisini temiz su ile durulayın. 6. Tank içini kurumaya bırakın veya uygun yöntemle kurutun. 7. Makine dış yüzeyini kuru bez ile silin. 8. Atık suyu yerel mevzuata uygun bertaraf edin. DİKKAT: Tank içi dezenfeksiyonda sabonlu su yöntemi geçerlidir; asit bazlı dezenfektan yasaktır.
+Temizlik sonrası kurutma: Makine dışı kuru bez ile silinmelidir. Tank içi boşaltma sonrası doğal kuruma veya uygun kurutma. Elektrik panosu / dijital göstergeler su ile yıkanmaz — yalnızca kuru veya hafif nemli bez. Kurutma tamamlandıktan sonra LOTO kaldırılır; devreye alma Bölüm 7.2 prosedürüne göre yapılır.
+Atık su / kimyasal bertaraf: Makinenin kullanıldığı ülkenin mevcut atık su / kimyasal bertaraf gereksinimleri uygulanmalıdır. Tank boşaltma suyu, sabunlu yıkama suyu ve filtre temizlik atıkları yerel çevre izinleri kapsamında toplanmalı ve arıtılmalıdır.
+Temizlik kayıt formu (özet): 1. Yıkama tankı ön filtre temizliği — günlük. 2. Emiş filtresi temizliği/değişimi — haftalık. 3. Torba filtre temizliği/değişimi (hassas filtre opsiyonu) — haftalık. 4. Dezenfeksiyon (sabunlu su) — gerektiğinde. 5. Dış yüzey kurutma — her temizlik sonrası. 
 
 # =============================================================================
 # 11 — ARIZA GİDERME (troubleshooting)
@@ -431,47 +429,72 @@ Atık su / kimyasal bertaraf:
 
 
 [ARIZA_GENEL]
-# Alarm kod listesi — her satir: - Error-XXX Açıklama
-- Error-: 
-- Error-: 
-- Error-: 
-HMI alarm metinleri dili: 
-Servis çağrısı kriterleri: 
+# LYM serisi dijital HMI alarm kodu kullanmaz; arıza bildirimi kontrol panosu üzerindeki kırmızı arıza lambaları ve emniyet devresi davranışı ile yapılır. Tüm varyantlar (LYM 950 / 1150 / 1350 / 1500) için aşağıdaki teşhis adımları ortaktır.
+Arıza lambaları (geri bildirimli — pano üzerinde):
+- Düşük su seviyesi: Tank su seviyesi güvenli çalışma sınırının altında
+- Redüktör arızası: Sepet redüktör termik rölesi atmış
+- Pompa arızası: Yıkama pompası termik rölesi atmış
+Geri bildirimsiz motor koruması (pano içi termik — arıza lambası yok):
+- Kurutma fanı (opsiyon), drenaj pompası (opsiyon), yağ sıyırıcı (opsiyon), buhar tahliye fanı (opsiyon) ve benzeri ek motorlar termik atmış olabilir; pano kapağını açarak ilgili termik röleyi kontrol edin
+Genel teşhis sırası:
+1. Acil Stop serbest mi, Reset verildi mi kontrol edin (Bkz. Bölüm 2.5)
+2. Pano üzerindeki arıza lambalarını okuyun
+3. Termik atmışsa nedeni giderin, termiği resetleyin, tekrar deneyin
+4. Lambası olmayan opsiyon motorlarda pano içindeki termiği kontrol edin
+5. Kaçak akım koruma cihazı atmışsa fonksiyonları tek tek ayırarak kaynağı bulun (aşağıdaki Arıza 5)
+HMI alarm metinleri dili: Uygulanmaz (dijital alarm ekranı yok)
+Servis çağrısı kriterleri: Termik reset sonrası aynı arıza tekrarlıyorsa; boşta çalıştırmada dahi redüktör/pompa aşırı akım çekiyorsa; kaçak akım hangi devrede olursa olsun tekrar atıyorsa; kapak switch değişimi/kablolama onarımı gerekiyorsa ve yetkili bakım personeli yoksa; motor iç hasar veya pompa mekanik hasar şüphesi varsa — Bkz. Bölüm 1.3 iletişim
 
 [ARIZA_TABLO]
-# Format: Belirti | Olası neden | Kontrol | Çözüm
-Arıza 1 belirti: 
-Arıza 1 neden: 
-Arıza 1 çözüm: 
-Arıza 2 belirti: 
-Arıza 2 neden: 
-Arıza 2 çözüm: 
-Arıza 3 belirti: 
-Arıza 3 neden: 
-Arıza 3 çözüm: 
+# Format: Belirti | Olası neden | Kontrol | Çözüm — tüm LYM varyantları ortak
+Arıza 1 belirti: Redüktör arıza lambası yanıyor; sepet dönmüyor veya yıkama start almıyor
+Arıza 1 neden: Sepet redüktör termik rölesi atmış (aşırı akım). Olası nedenler: sepet gereğinden fazla yüklenmiş; sepet veya tahrik mekanizması takılmış; redüktör motoru iç hasarlı
+Arıza 1 çözüm: 1. Makineyi durdurun. 2. Sepet yükünü azaltın; mekanik takılma varsa giderin. 3. Termik röleyi resetleyin. 4. Sepeti boşaltın; TEST (jog) veya yıkama ile boşta çalıştırmayı deneyin — motor takılıyor mu gözlemleyin. 5. Ampermetre ile motor akımını ölçün; normal aralıktaysa sorun giderilmiştir. Tekrarlıyorsa motor/redüktör servis kontrolü — Bkz. Bölüm 13.3 yedek parça
+
+Arıza 2 belirti: Pompa arıza lambası yanıyor; yıkama pompası çalışmıyor
+Arıza 2 neden: Yıkama pompası termik rölesi atmış (aşırı akım). Olası nedenler: pompa zorlanmış; filtre hattı tıkanmış; pompa salmastrası veya mekanik kısmı hasarlı; emiş hattında tıkanıklık
+Arıza 2 çözüm: 1. Makineyi durdurun. 2. Ön filtre ve emiş filtresini kontrol edin; tıkanıklığı giderin. 3. Pompa çıkış hattı ve hassas filtre (donanımlıysa) tıkanıklığını kontrol edin. 4. Pompa salmastrasında sızıntı veya anormal ses olup olmadığını kontrol edin. 5. Termik röleyi resetleyin; kısa süreli test çalıştırması yapın. 6. Akım normal ise sorun giderilmiştir; tekrarlıyorsa pompa servis kontrolü — Bkz. Bölüm 13.3
+
+Arıza 3 belirti: Düşük su seviyesi arıza lambası yanıyor; ısıtıcı ve/veya pompa devreye girmiyor
+Arıza 3 neden: Yıkama tankındaki su seviyesi güvenli çalışma sınırının altında; seviye bekçisi (float switch) düşük seviye sinyali veriyor
+Arıza 3 çözüm: 1. Tank su seviyesini kontrol edin. 2. Gerekli miktarda su ilave edin. 3. Seviye güvenli sınıra ulaştıktan sonra mavi Reset butonuna basarak emniyet devresini onaylayın. 4. Isıtıcı ve yıkama prosesini tekrar başlatın
+
+Arıza 4 belirti: Opsiyonel ekipman (kurutma fanı, drenaj pompası, yağ sıyırıcı, buhar tahliye fanı vb.) çalışmıyor; pano üzerinde ilgili arıza lambası yok
+Arıza 4 neden: İlgili motor termik rölesi atmış olabilir; arıza lambası bu devrelerde bulunmaz
+Arıza 4 çözüm: 1. Ana şalteri kapatın; LOTO uygulayın (Bkz. Bölüm 2.4). 2. Pano kapağını açın. 3. İlgili motor devresindeki termik röleyi bulun; atmışsa resetleyin. 4. Nedeni araştırın (tıkanıklık, aşırı yük, mekanik sıkışma — redüktör/pompa arızaları ile aynı mantık). 5. LOTO kaldırın; fonksiyonu tek başına test edin
+
+Arıza 5 belirti: Kaçak akım koruma cihazı (RCD / kaçak akım rölesi) atıyor; makine veya bir fonksiyon devreye girmiyor
+Arıza 5 neden: Bir devrede yalıtım hatası veya kaçak akım; hangi yük devreye girdiğinde attığı tespit edilmeli
+Arıza 5 çözüm: 1. Tüm fonksiyonları kapalı konuma getirin. 2. Kaçak akım rölesini resetleyin. 3. Tek tek fonksiyonları devreye alın (ör. yalnız redüktör jog, yalnız pompa, yalnız ısıtıcı). 4. Hangi fonksiyonda röle tekrar attıysa arızalı devreyi izole edin. 5. O devrede motor, rezistans, kablo ve bağlantıları kontrol edin. 6. Isolasyon ölçümü gerekiyorsa yetkili elektrik personeli devreye alın — tekrarlayan kaçak akımda servis çağırın
+
+Arıza 6 belirti: Kapak kapalı olmasına rağmen makine yıkama start almıyor
+Arıza 6 neden: Kapak emniyet switchi (EMAS L5K13MUM331) arızalı veya kapak kapalı sinyali emniyet devresine ulaşmıyor
+Arıza 6 çözüm: 1. Kapağın tam kapandığından ve kilit mekanizmasının oturduğundan emin olun. 2. Switch kapağını açın; multimetre direnç modunda kapak kapalı/kapalı konumda kontak geçişini ölçün — sinyal gelmiyorsa switch arızalıdır. 3. Switch ve kablo bağlantılarını kontrol edin. 4. Switch değişimi gerekiyorsa yetkili bakım personeli uygulasın — Bkz. Bölüm 13.3 (10 00261 / 10 03262 / 10 00260, modele göre). 5. Onarım sonrası emniyet fonksiyon testi yapın (Bkz. Bölüm 5.3)
+
+Arıza 7 belirti: Su ısınmıyor; GEMO DT481 termostat ekranında sıcaklık (PV) yükselmiyor veya hedef sıcaklığa (SV) ulaşılamıyor
+Arıza 7 neden: Isıtıcı devresi devreye girmiyor veya devreye girmesine rağmen rezistans ısıtmıyor. Olası nedenler: su zaten hedef/üst sınıra ulaşmış (normal — kontaktör çekmez); düşük su seviyesi (Bkz. Arıza 3); ısıtıcı pako şalteri kapalı; termostat (GEMO DT481) arızalı; rezistans komple arızalı (patlamış/kırık)
+Arıza 7 çözüm: 1. Düşük su seviyesi lambasını kontrol edin; yanıyorsa önce Arıza 3 adımlarını uygulayın. 2. GEMO DT481 ekranından anlık sıcaklık (PV) ile hedef sıcaklık (SV) değerlerini okuyun. 3. PV ≥ SV ise su hedef sıcaklığa ulaşmıştır; ısıtıcı kontaktörünün çekmemesi normaldir — arıza değildir. 4. PV üst sıcaklık limitine (maks. 70 °C) ulaştıysa kontaktör çekmez; bu da normaldir. 5. PV < SV ve limit altındaysa pano üzerindeki ISITICI pako şalterinin açık (1) konumda olduğunu kontrol edin; kapalıysa açın. 6. Şalter açık, PV < SV iken pano içinde ısıtıcı kontaktörünün çekip çekmediğini gözlemleyin. 7. Kontaktör çekiyor ancak su ısınmıyorsa rezistans arızalıdır (patlamış olabilir) — LOTO uygulayın (Bkz. Bölüm 2.4), rezistans komplesi değiştirilsin — Bkz. Bölüm 13.3 (07 00309). 8. Kontaktör çekmiyorsa GEMO DT481 termostat çıkış sinyalini ölçü aleti ile kontrol edin; cihaz çıkış vermiyorsa termostat arızalıdır — değiştirin veya servis. 9. Termostat çıkış veriyor, şalter açık, kontaktör yine çekmiyorsa kontaktör, termik ve kablolamayı kontrol edin — yetkili elektrik personeli
 
 [ELEKTRIK_ARIZA]
-Faz kaybı davranışı: 
-Motor koruma trip: 
-Inverter alarm kodları özeti: 
-Sensör kablo renk kodu: 
-
+Faz kaybı davranışı: [EKSİK] — faz monitörü donanımlı makinelerde faz kaybında motorlar devre dışı kalabilir; elektrik şemasına bakın (Bölüm 13.2)
+Motor koruma trip: Termik aşırı yük röleleri (redüktör LR2K0310/0312, pompa, opsiyon motorlar). Trip = aşırı akım veya ısınma. Reset sonrası neden giderilmeden tekrar çalıştırmayın. Geri bildirimli lambalar: redüktör, pompa — Bkz. Arıza 1–2
+Inverter alarm kodları özeti: Uygulanmaz — LYM serisi yıkama pompası ve sepet tahriki DOL motor; inverter yok
+Kaçak akım teşhisi: Fonksiyonları tek tek ayırarak arızalı devreyi bulun — Bkz. Arıza 5
+Sensör kablo renk kodu: Bkz. elektrik şeması — teslim paketi (Bölüm 13.2)
 
 [HIDROLIK_ARIZA]
-Basınç düşük alarm: 
-Yağ kaçağı noktaları: 
-Pompa sesi anormal: 
-
+Basınç düşük alarm: Uygulanmaz — basınç switchi yok; pompa çalışmıyorsa Bkz. Arıza 2
+Yağ kaçağı noktaları: Pompa salmastrası, tank bağlantıları, vana contaları — pompa zorlanması ve termik trip nedeni olabilir
+Pompa sesi anormal: Emiş tıkanıklığı, kuru çalışma (düşük su — Bkz. Arıza 3), yataksızlık veya yabancı cisim — servis
 
 [PNEOMATIK_ARIZA]
-Basınç düşük: 
-Silindir yavaş / takılma: 
-Valf bobini arıza: 
-
+Basınç düşük: Uygulanmaz — standart LYM konfigürasyonunda pnömatik devre yok
+Silindir yavaş / takılma: Uygulanmaz
+Valf bobini arıza: Uygulanmaz
 
 [SENSOR_ARIZA]
-Kritik sensör listesi (tip / konum): 
-Sensör LED / durum göstergesi: 
+Kritik sensör listesi (tip / konum): Kapak switch EMAS L5K13MUM331 (950/1150) veya L5K13MEP123 + L5K27MUM331 (1350/1500) — kapak emniyeti; Paslanmaz seviye bekçisi 10 00296 — tank düşük su (Bkz. Arıza 3); Termokupl ETB30F06-2Ç — tank sıcaklık
+Sensör LED / durum göstergesi: Kapak switch — multimetre direnç modunda kapak açık/kapalı kontak durumu ölçülür (Bkz. Arıza 6); Seviye bekçisi — tank su seviyesi fiziksel kontrol; termokupl ETB30F06-2Ç — GEMO DT481 ekranından PV/SV okunur; termostat çıkışı — ölçü aleti ile kontrol (Bkz. Arıza 7) 
 
 
 # =============================================================================
@@ -524,9 +547,275 @@ Teslim çizim paketi:
 
 
 [PARCA_LISTESI]
-Mekanik parça listesi referansı: 
-Elektrik parça listesi referansı: 
-Wear part / aşınan parça listesi: 
+Parça listesi (BOM) konumu: Bu dosya — aşağıdaki tablolar (varyant bazlı)
+Mekanik parça listesi referansı: Bu dosya — aşağıdaki tablolar
+Elektrik parça listesi referansı: Bu dosya — aşağıdaki tablolar
+Wear part / aşınan parça listesi: Nozzle, filtre kompleleri — aşağıdaki tablolar
+
+# Format: Sipariş kodu | Parça adı | Montaj adedi | Not
+# Not: Alternatif = konfigürasyona göre biri; Opsiyon = donanıma bağlı
+
+## LYM 950
+X:10 12433 | AMORTİSÖR 175N | 2 |
+X:07 00800 | EMİŞ FİLTRESİ KOMPLESİ (PYM 1) | 1 |
+X:07 01221 | ÖN FİLTRE KOMPLESİ | 1 |
+X:07 00309 | REZİSTANS KOMPLESİ 8250W M TİPİ | 1 |
+X:10 00296 | PASLANMAZ SEVİYE BEKÇİSİ | 1 |
+X:10 00307 | DÜZ FİŞ BEMİS 5*32A ENVERSÖR (BEM45-084) | 1 |
+X:10 00308 | DUVAR PRİZİ BEMİS 5*32A 90 DERECE (BEM45-103) | 1 |
+X:07 00630 | CİVATA SEPETİ 25*25 GÖVDE | 1 |
+X:10 01343 | TERMOKUPL ETB30F06-2Ç | 1 |
+X:10 00261 | SWITCH L5K13MUM331 1NO 1NC | 1 |
+X:10 00247 | TERMİK RÖLESİ LR2K0310 2,60-3,7A | 1 |
+X:10 00248 | TERMİK RÖLESİ LR2K0312 3,70-5,5A | 1 |
+X:10 02595 | LYM 950 SEPET KOMPLESİ GALVANİZLİ | 1 | Alternatif
+X:07 00487 | LYM 950 SEPET KOMPLESİ PASLANMAZ | 1 | Alternatif
+X:07 00253 | NOZZLE 1/4" 0 DERECE AÇILI PASLANMAZ (ÇNK) | 28 | Alternatif
+X:10 01079 | NOZZLE 650.724.1C.CC | 28 | Alternatif
+X:07 00619 | PYM 950 BORULAMA PASLANMAZ | 1 |
+X:10 03296 | ETİKET UYARI TOPRAKLAMA 40*40*0,5MM ALÜ | 1 |
+X:10 17118 | POMPA WATER SOUND 1019 BB300/150 2HP 380V 50HZ | 1 | Alternatif
+X:10 17117 | POMPA ATLANTİS KAF 150 T | 1 | Alternatif
+X:10 08525 | POMPA GOULDS GCEA 370/2 380V/50HZ | 1 | Alternatif
+X:10 02818 | POMPA ATLANTİS KAF 300T/304 3HP 380V/50HZ | 1 | Alternatif
+X:10 17119 | POMPA WATER SOUND 1020 BB500/220 3HP 380V 50HZ | 1 | Alternatif
+X:10 06316 | POMPA GOULDS GCEA 370/3 380V/50HZ | 1 | Alternatif
+X:07 16099 | SALYANGOZLU FAN ERF 1 HAVA SOĞ. SİLİKONLU | 1 | Opsiyon
+X:10 00243 | TERMİK RÖLESİ LR2K0305 0,54-0,8A | 1 | Opsiyon
+X:10 01331 | KONTAKTÖR LC1K0910M7 220V | 1 | Opsiyon
+X:10 00240 | YARDIMCI KONTAK LA1KN31 | 1 | Opsiyon
+X:10 00267 | KONTAK BLOK NO B1 | 1 | Opsiyon
+X:10 01394 | RÖLE SOKETİ RS1P08G1 8 PİNLİ | 1 | Opsiyon
+X:10 01387 | ZAMAN RÖLESİ ATP4S08-UV-60 | 1 | Opsiyon
+X:07 03497 | YAĞ SIYIRICI TEFLONU | 1 | Opsiyon
+X:07 01234 | YAĞ SIYIRICI REDÜKTÖR FLANŞI | 1 | Opsiyon
+X:07 00625 | YAĞ SIYIRICI REDÜKTÖR MİLİ | 1 | Opsiyon
+X:10 05865 | SIYIRICI REDÜKTÖR MİLİ BAĞLANTI PULU GALVANİZLİ | 1 | Opsiyon
+X:07 01228 | YAĞ SIYIRICI DİSK SABİTLEME BURCU | 1 | Opsiyon
+X:10 00586 | REDÜKTÖR MOTORU 0,09KW 1500D/D B14 SIYIRICI | 1 | Opsiyon
+X:10 01002 | REDÜKTÖR EN:30 I:80 B:05 | 1 | Opsiyon
+X:10 00243 | TERMİK RÖLESİ LR2K0305 0,54-0,8A | 1 | Opsiyon
+X:10 02314 | KONTAKTÖR LC1K0610M7 220V | 1 | Opsiyon
+X:10 00279 | SİNYAL LAMBASI S14B BEYAZ 220V | 1 | Opsiyon
+X:10 02526 | YAĞ KEÇESİ 20*42*7 | 1 | Opsiyon
+X:10 01017 | RULMAN 6004 2RS ORS | 1 | Opsiyon
+X:10 13821 | YAĞ BUHARI TOPLAMA ÜNİTESİ (FAN) FILTERMIST S200 | 1 | Opsiyon
+X:10 01032 | KELEPÇE 16-25 | 1 | Opsiyon
+X:10 03235 | HORTUM 22MM BOSPHORUS ÇELİK TELLİ ŞEFFAF | 1 | Opsiyon
+X:10 17118 | POMPA WATER SOUND 1019 BB300/150 2HP 380V 50HZ | 1 | Opsiyon
+X:10 01331 | KONTAKTÖR LC1K0910M7 220V | 1 | Opsiyon
+X:10 00273 | BUTON START B100DY | 1 | Opsiyon
+X:10 01791 | O-RING 4,00*245,00 | 1 | Opsiyon
+X:10 00543 | KÜRESEL VANA 1/2'' PİRİNÇ GÖVDELİ GALVANİZLİ | 1 | Opsiyon
+X:10 07512 | MAPA DİŞİ M10 PASLANMAZ 304 | 1 | Opsiyon
+X:07 15725 | KELEPÇE 1" MİL SAPLI ÖZEL İML. | 1 | Opsiyon
+X:10 05378 | TORBA FİLTRE 200 MİKRON (50CM PASL. TEL ÇERÇEVE) | 1 | Opsiyon
+X:07 00546 | LYM 950 NS FAN İLE KURUTMA KOMPLESİ | 1 | Opsiyon
+X:10 03672 | PYM 1 ELEKTRİK KUTUSU KOMPLESİ (PYM950-1150-1350) | 1 |
+X:10 03672 | LYM 1 DİJİTAL ELEKTRİK KUT.KOMP. (PYM950-1150-1350) | 1 |
+X:10 03336 | İNTERLOCK D4NL4AFAB OMRON D4A LIMIT SWITCH | 1 | Opsiyon
+X:07 05241 | İNTERLOCK KİLİT KARŞILIK SACI | 1 | Opsiyon
+X:10 02306 | RÖLE SOKETİ RSZE1S48M 8 PİNLİ | 1 | Opsiyon
+X:10 01337 | MİNYATÜR RÖLE RSB2A080P7 2 KUTUPLU 8 PİNLİ | 1 | Opsiyon
+X:07 09257 | LYM GÖVDE TEKERLEK UYGULAMASI KOMPLESİ | 1 | Opsiyon
+X:10 00588 | REDÜKTÖR MOTORU 0,18KW 1500D/D B34 | 1 |
+X:10 01004 | REDÜKTÖR EN:40 I:16 B:06 YILMAZ | 1 |
+
+## LYM 1150
+X:10 11779 | AMORTİSÖR 350N | 2 |
+X:07 00670 | EMİŞ FİLTRESİ KOMPLESİ (PYM2, KBN, VDL, ULT, KNV) | 1 |
+X:07 10214 | ÖN FİLTRE NS KOMPLESİ | 1 |
+X:07 00309 | REZİSTANS KOMPLESİ 8250W M TİPİ | 1 |
+X:10 00296 | PASLANMAZ SEVİYE BEKÇİSİ | 1 |
+X:10 00307 | DÜZ FİŞ BEMİS 5*32A ENVERSÖR (BEM45-084) | 1 |
+X:10 00308 | DUVAR PRİZİ BEMİS 5*32A 90 DERECE (BEM45-103) | 1 |
+X:10 00552 | KÜRESEL VANA 2" PİRİNÇ GÖVDELİ | 1 |
+X:10 06647 | DİRSEK TEK TARAFI DİŞLİ 3" PVC | 2 |
+X:10 00261 | SWITCH L5K13MUM331 1NO 1NC | 1 |
+X:10 01343 | TERMOKUPL ETB30F06-2Ç | 1 |
+X:10 02596 | LYM 1150 SEPET KOMPLESİ GALVANİZLİ | 1 | Alternatif
+X:07 00488 | LYM 1150 SEPET KOMPLESİ PASLANMAZ | 1 | Alternatif
+X:07 12476 | LYM 1150 ARABA+SEPET KOMPLESİ GALVANİZLİ | 1 | Alternatif
+X:07 00489 | LYM 1150 ARABA+SEPET KOMPLESİ PASLANMAZ | 1 | Alternatif
+X:07 00253 | NOZZLE 1/4" 0 DERECE AÇILI PASLANMAZ (ÇNK) | 45 | Alternatif
+X:10 01079 | NOZZLE 650.724.1C.CC | 45 | Alternatif
+X:07 03140 | LYM 1150 BORULAMA GALVANİZLİ | 1 | Alternatif
+X:07 03141 | LYM 1150 BORULAMA PASLANMAZ | 1 | Alternatif
+X:10 02818 | POMPA ATLANTİS KAF 300T/304 3HP 380V/50HZ | 1 | Alternatif
+X:10 17119 | POMPA WATER SOUND 1020 BB500/220 3HP 380V 50HZ | 1 | Alternatif
+X:10 06316 | POMPA GOULDS GCEA 370/3 380V/50HZ | 1 | Alternatif
+X:07 16099 | SALYANGOZLU FAN ERF 1 HAVA SOĞ. SİLİKONLU | 1 | Opsiyon
+X:10 00243 | TERMİK RÖLESİ LR2K0305 0,54-0,8A | 1 | Opsiyon
+X:10 01331 | KONTAKTÖR LC1K0910M7 220V | 1 | Opsiyon
+X:10 00240 | YARDIMCI KONTAK LA1KN31 | 1 | Opsiyon
+X:10 00267 | KONTAK BLOK NO B1 | 1 | Opsiyon
+X:10 01394 | RÖLE SOKETİ RS1P08G1 8 PİNLİ | 1 | Opsiyon
+X:10 01387 | ZAMAN RÖLESİ ATP4S08-UV-60 | 1 | Opsiyon
+X:07 03497 | YAĞ SIYIRICI TEFLONU | 1 | Opsiyon
+X:07 01234 | YAĞ SIYIRICI REDÜKTÖR FLANŞI | 1 | Opsiyon
+X:07 00625 | YAĞ SIYIRICI REDÜKTÖR MİLİ | 1 | Opsiyon
+X:10 05865 | SIYIRICI REDÜKTÖR MİLİ BAĞLANTI PULU GALVANİZLİ | 1 | Opsiyon
+X:07 01228 | YAĞ SIYIRICI DİSK SABİTLEME BURCU | 1 | Opsiyon
+X:10 00586 | REDÜKTÖR MOTORU 0,09KW 1500D/D B14 SIYIRICI | 1 | Opsiyon
+X:10 01002 | REDÜKTÖR EN:30 I:80 B:05 | 1 | Opsiyon
+X:10 00243 | TERMİK RÖLESİ LR2K0305 0,54-0,8A | 1 | Opsiyon
+X:10 02314 | KONTAKTÖR LC1K0610M7 220V | 1 | Opsiyon
+X:10 00279 | SİNYAL LAMBASI S14B BEYAZ 220V | 1 | Opsiyon
+X:10 02526 | YAĞ KEÇESİ 20*42*7 | 1 | Opsiyon
+X:10 01017 | RULMAN 6004 2RS ORS | 1 | Opsiyon
+X:10 17118 | POMPA WATER SOUND 1019 BB300/150 2HP 380V 50HZ | 1 | Opsiyon
+X:10 01331 | KONTAKTÖR LC1K0910M7 220V | 1 | Opsiyon
+X:10 00273 | BUTON START B100DY | 1 | Opsiyon
+X:10 01791 | O-RING 4,00*245,00 | 1 | Opsiyon
+X:10 00543 | KÜRESEL VANA 1/2'' PİRİNÇ GÖVDELİ GALVANİZLİ | 1 | Opsiyon
+X:10 07512 | MAPA DİŞİ M10 PASLANMAZ 304 | 1 | Opsiyon
+X:07 15725 | KELEPÇE 1" MİL SAPLI ÖZEL İML. | 1 | Opsiyon
+X:10 05378 | TORBA FİLTRE 200 MİKRON (50CM PASL. TEL ÇERÇEVE) | 1 | Opsiyon
+X:07 16939 | LYM 1150 NS FAN İLE KURUTMA KOMPLESİ | 1 | Opsiyon
+X:07 16504 | LYM 1150 NS BLOWER KURUTMA KOMPLESİ | 1 | Opsiyon
+X:10 03672 | PYM 1 ELEKTRİK KUTUSU KOMPLESİ (PYM950-1150-1350) | 1 |
+X:10 03672 | LYM 1 DİJİTAL ELEKTRİK KUT.KOMP. (PYM950-1150-1350) | 1 |
+X:10 03336 | İNTERLOCK D4NL4AFAB OMRON D4A LIMIT SWITCH | 1 | Opsiyon
+X:07 05241 | İNTERLOCK KİLİT KARŞILIK SACI | 1 | Opsiyon
+X:10 02306 | RÖLE SOKETİ RSZE1S48M 8 PİNLİ | 1 | Opsiyon
+X:10 01337 | MİNYATÜR RÖLE RSB2A080P7 2 KUTUPLU 8 PİNLİ | 1 | Opsiyon
+X:07 09257 | LYM GÖVDE TEKERLEK UYGULAMASI KOMPLESİ | 1 | Opsiyon
+X:10 00588 | REDÜKTÖR MOTORU 0,18KW 1500D/D B34 | 1 |
+X:10 01004 | REDÜKTÖR EN:40 I:16 B:06 YILMAZ | 1 |
+X:10 18816 | DİJİTAL ZAMANLAYICI THEBEN SELEKTA 174 TOP3 | 1 |
+
+## LYM 1350
+X:07 10141 | LYM 1350 NS S | 1 |
+X:10 00004 | AMORTİSÖR 1000N | 2 |
+X:10 03262 | SWITCH L5K13MEP123 1NO 1NC | 1 |
+X:10 00260 | SWITCH L5K27MUM331 2NO 1NC | 1 |
+X:07 00670 | EMİŞ FİLTRESİ KOMPLESİ (PYM2, KBN, VDL, ULT, KNV) | 1 |
+X:07 10214 | ÖN FİLTRE NS KOMPLESİ | 2 |
+X:07 00309 | REZİSTANS KOMPLESİ 8250W M TİPİ | 1 |
+X:10 00296 | PASLANMAZ SEVİYE BEKÇİSİ | 1 |
+X:10 00307 | DÜZ FİŞ BEMİS 5*32A ENVERSÖR (BEM45-084) | 1 |
+X:10 00308 | DUVAR PRİZİ BEMİS 5*32A 90 DERECE (BEM45-103) | 1 |
+X:10 05031 | CİVATA ANAHTAR BAŞLI FLANŞLI M6*16 GALV. | 4 |
+X:10 00552 | KÜRESEL VANA 2" PİRİNÇ GÖVDELİ | 1 |
+X:10 01343 | TERMOKUPL ETB30F06-2Ç | 1 |
+X:07 04467 | LYM 1350 SEPET KOMPLESİ GALV. MONTAJ | 1 | Alternatif
+X:07 00492 | LYM 1350 SEPET KOMPLESİ PASLANMAZ | 1 | Alternatif
+X:07 00027 | LYM 1350 ARABA KOMPLESİ GALVANİZLİ | 1 | Alternatif
+X:07 00525 | LYM 1350 ARABA KOMPLESİ PASLANMAZ | 1 | Alternatif
+X:07 00253 | NOZZLE 1/4" 0 DERECE AÇILI PASLANMAZ (ÇNK) | 51 | Alternatif
+X:10 01079 | NOZZLE 650.724.1C.CC | 51 | Alternatif
+X:07 03148 | LYM 1350 BORULAMA GALVANİZLİ | 1 | Alternatif
+X:07 03149 | LYM 1350 BORULAMA PASLANMAZ | 1 | Alternatif
+X:10 02818 | POMPA ATLANTİS KAF 300T/304 3HP 380V/50HZ | 1 | Alternatif
+X:10 17119 | POMPA WATER SOUND 1020 BB500/220 3HP 380V 50HZ | 1 | Alternatif
+X:10 06316 | POMPA GOULDS GCEA 370/3 380V/50HZ | 1 | Alternatif
+X:07 16099 | SALYANGOZLU FAN ERF 1 HAVA SOĞ. SİLİKONLU | 1 | Opsiyon
+X:10 00243 | TERMİK RÖLESİ LR2K0305 0,54-0,8A | 1 | Opsiyon
+X:10 01331 | KONTAKTÖR LC1K0910M7 220V | 1 | Opsiyon
+X:10 00240 | YARDIMCI KONTAK LA1KN31 | 1 | Opsiyon
+X:10 00267 | KONTAK BLOK NO B1 | 1 | Opsiyon
+X:10 01394 | RÖLE SOKETİ RS1P08G1 8 PİNLİ | 1 | Opsiyon
+X:10 01387 | ZAMAN RÖLESİ ATP4S08-UV-60 | 1 | Opsiyon
+X:07 03497 | YAĞ SIYIRICI TEFLONU | 1 | Opsiyon
+X:07 01234 | YAĞ SIYIRICI REDÜKTÖR FLANŞI | 1 | Opsiyon
+X:07 00625 | YAĞ SIYIRICI REDÜKTÖR MİLİ | 1 | Opsiyon
+X:10 05865 | SIYIRICI REDÜKTÖR MİLİ BAĞLANTI PULU GALVANİZLİ | 1 | Opsiyon
+X:07 01228 | YAĞ SIYIRICI DİSK SABİTLEME BURCU | 1 | Opsiyon
+X:10 00586 | REDÜKTÖR MOTORU 0,09KW 1500D/D B14 SIYIRICI | 1 | Opsiyon
+X:10 01002 | REDÜKTÖR EN:30 I:80 B:05 | 1 | Opsiyon
+X:10 00243 | TERMİK RÖLESİ LR2K0305 0,54-0,8A | 1 | Opsiyon
+X:10 02314 | KONTAKTÖR LC1K0610M7 220V | 1 | Opsiyon
+X:10 00279 | SİNYAL LAMBASI S14B BEYAZ 220V | 1 | Opsiyon
+X:10 02526 | YAĞ KEÇESİ 20*42*7 | 1 | Opsiyon
+X:10 01017 | RULMAN 6004 2RS ORS | 1 | Opsiyon
+X:10 13821 | YAĞ BUHARI TOPLAMA ÜNİTESİ (FAN) FILTERMIST S200 | 1 | Opsiyon
+X:10 01032 | KELEPÇE 16-25 | 1 | Opsiyon
+X:10 03235 | HORTUM 22MM BOSPHORUS ÇELİK TELLİ ŞEFFAF | 1 | Opsiyon
+X:10 17118 | POMPA WATER SOUND 1019 BB300/150 2HP 380V 50HZ | 1 | Opsiyon
+X:10 01331 | KONTAKTÖR LC1K0910M7 220V | 1 | Opsiyon
+X:10 00273 | BUTON START B100DY | 1 | Opsiyon
+X:10 01791 | O-RING 4,00*245,00 | 1 | Opsiyon
+X:10 00543 | KÜRESEL VANA 1/2'' PİRİNÇ GÖVDELİ GALVANİZLİ | 1 | Opsiyon
+X:10 07512 | MAPA DİŞİ M10 PASLANMAZ 304 | 1 | Opsiyon
+X:07 15725 | KELEPÇE 1" MİL SAPLI ÖZEL İML. | 1 | Opsiyon
+X:10 05378 | TORBA FİLTRE 200 MİKRON (50CM PASL. TEL ÇERÇEVE) | 1 | Opsiyon
+X:07 12272 | LYM 1350 BASINÇLI HAVA İLE KURUTMA KOMPLESİ | 1 | Opsiyon
+X:07 00546 | LYM 950 NS FAN İLE KURUTMA KOMPLESİ | 1 | Opsiyon
+X:07 10420 | BLOWER KURUTMA KOMPLESİ LYM 1350 NS | 1 | Opsiyon
+X:10 03672 | PYM 1 ELEKTRİK KUTUSU KOMPLESİ (PYM950-1150-1350) | 1 |
+X:10 03672 | LYM 1 DİJİTAL ELEKTRİK KUT.KOMP. (PYM950-1150-1350) | 1 |
+X:10 03336 | İNTERLOCK D4NL4AFAB OMRON D4A LIMIT SWITCH | 1 | Opsiyon
+X:07 05241 | İNTERLOCK KİLİT KARŞILIK SACI | 1 | Opsiyon
+X:10 02306 | RÖLE SOKETİ RSZE1S48M 8 PİNLİ | 1 | Opsiyon
+X:10 01337 | MİNYATÜR RÖLE RSB2A080P7 2 KUTUPLU 8 PİNLİ | 1 | Opsiyon
+X:07 09257 | LYM GÖVDE TEKERLEK UYGULAMASI KOMPLESİ | 1 | Opsiyon
+X:10 00588 | REDÜKTÖR MOTORU 0,18KW 1500D/D B34 | 1 |
+X:10 01007 | REDÜKTÖR EN:40 I:12 B:06 YILMAZ | 1 |
+
+## LYM 1500
+# Not: BOM kodu LYM 1500; DATA varyant etiketi LYM 1550 ile aynı makine
+X:10 01202 | AMORTİSÖR 1400N | 2 |
+X:10 03262 | SWITCH L5K13MEP123 1NO 1NC | 1 |
+X:10 00260 | SWITCH L5K27MUM331 2NO 1NC | 1 |
+X:07 00670 | EMİŞ FİLTRESİ KOMPLESİ (PYM2, KBN, VDL, ULT, KNV) | 2 |
+X:07 10214 | ÖN FİLTRE NS KOMPLESİ | 2 |
+X:07 00309 | REZİSTANS KOMPLESİ 8250W M TİPİ | 2 |
+X:10 00296 | PASLANMAZ SEVİYE BEKÇİSİ | 1 |
+X:10 00309 | DÜZ FİŞ CEE IP44-Y 5*63A | 1 |
+X:10 00310 | DUVAR PRİZİ CEE IP44-Y 5*63A | 1 |
+X:10 00552 | KÜRESEL VANA 2" PİRİNÇ GÖVDELİ | 1 |
+X:10 01343 | TERMOKUPL ETB30F06-2Ç | 1 |
+X:07 04985 | LYM 1500 SEPET KOMPLESİ GALV. MONTAJ | 1 | Alternatif
+X:07 04986 | LYM 1500 SEPET KOMPLESİ PASLANMAZ | 1 | Alternatif
+X:10 17800 | LYM 1500 ARABASIZ SEPET KOMPLESİ GALVANİZLİ | 1 | Alternatif
+X:07 05237 | LYM 1500 ARABA KOMPLESİ GALVANİZLİ | 1 | Alternatif
+X:07 05240 | LYM 1500 ARABA KOMPLESİ PASLANMAZ | 1 | Alternatif
+X:07 00253 | NOZZLE 1/4" 0 DERECE AÇILI PASLANMAZ (ÇNK) | 53 | Alternatif
+X:10 01079 | NOZZLE 650.724.1C.CC | 53 | Alternatif
+X:07 04989 | LYM 1500 BORULAMA GALVANİZLİ | 1 | Alternatif
+X:07 04990 | LYM 1500 BORULAMA PASLANMAZ | 1 | Alternatif
+X:07 03138 | PYM 1550 BAĞLANTI ELEMANLARI GALVANİZLİ | 1 | Alternatif
+X:07 03139 | PYM 1550 BAĞLANTI ELEMANLARI PASLANMAZ | 1 | Alternatif
+X:10 02818 | POMPA ATLANTİS KAF 300T/304 3HP 380V/50HZ | 2 | Alternatif
+X:10 17119 | POMPA WATER SOUND 1020 BB500/220 3HP 380V 50HZ | 2 | Alternatif
+X:10 06316 | POMPA GOULDS GCEA 370/3 380V/50HZ | 2 | Alternatif
+X:07 16099 | SALYANGOZLU FAN ERF 1 HAVA SOĞ. SİLİKONLU | 1 | Opsiyon
+X:10 00243 | TERMİK RÖLESİ LR2K0305 0,54-0,8A | 1 | Opsiyon
+X:10 01331 | KONTAKTÖR LC1K0910M7 220V | 1 | Opsiyon
+X:10 00240 | YARDIMCI KONTAK LA1KN31 | 1 | Opsiyon
+X:10 00267 | KONTAK BLOK NO B1 | 1 | Opsiyon
+X:10 01394 | RÖLE SOKETİ RS1P08G1 8 PİNLİ | 1 | Opsiyon
+X:10 01387 | ZAMAN RÖLESİ ATP4S08-UV-60 | 1 | Opsiyon
+X:07 03497 | YAĞ SIYIRICI TEFLONU | 1 | Opsiyon
+X:07 01234 | YAĞ SIYIRICI REDÜKTÖR FLANŞI | 1 | Opsiyon
+X:07 00625 | YAĞ SIYIRICI REDÜKTÖR MİLİ | 1 | Opsiyon
+X:10 05865 | SIYIRICI REDÜKTÖR MİLİ BAĞLANTI PULU GALVANİZLİ | 1 | Opsiyon
+X:07 01228 | YAĞ SIYIRICI DİSK SABİTLEME BURCU | 1 | Opsiyon
+X:10 00586 | REDÜKTÖR MOTORU 0,09KW 1500D/D B14 SIYIRICI | 1 | Opsiyon
+X:10 01002 | REDÜKTÖR EN:30 I:80 B:05 | 1 | Opsiyon
+X:10 00243 | TERMİK RÖLESİ LR2K0305 0,54-0,8A | 1 | Opsiyon
+X:10 02314 | KONTAKTÖR LC1K0610M7 220V | 1 | Opsiyon
+X:10 00279 | SİNYAL LAMBASI S14B BEYAZ 220V | 1 | Opsiyon
+X:10 02526 | YAĞ KEÇESİ 20*42*7 | 1 | Opsiyon
+X:10 01017 | RULMAN 6004 2RS ORS | 1 | Opsiyon
+X:10 17118 | POMPA WATER SOUND 1019 BB300/150 2HP 380V 50HZ | 1 | Opsiyon
+X:10 01331 | KONTAKTÖR LC1K0910M7 220V | 1 | Opsiyon
+X:10 00273 | BUTON START B100DY | 1 | Opsiyon
+X:10 01791 | O-RING 4,00*245,00 | 1 | Opsiyon
+X:10 00543 | KÜRESEL VANA 1/2'' PİRİNÇ GÖVDELİ GALVANİZLİ | 1 | Opsiyon
+X:10 07512 | MAPA DİŞİ M10 PASLANMAZ 304 | 1 | Opsiyon
+X:07 15725 | KELEPÇE 1" MİL SAPLI ÖZEL İML. | 1 | Opsiyon
+X:10 05378 | TORBA FİLTRE 200 MİKRON (50CM PASL. TEL ÇERÇEVE) | 1 | Opsiyon
+X:07 16713 | LYM 1500 NS FANLI KURUTMA KOMPLESİ | 1 | Opsiyon
+X:10 03672 | PYM 2 ELEKTRİK KUTUSU KOMPLESİ (PYM1400-1550) | 1 |
+X:10 03672 | LYM 2 DİJİTAL ELEKTRİK KUT.KOMP. (PYM1400-1550) | 1 |
+X:10 03336 | İNTERLOCK D4NL4AFAB OMRON D4A LIMIT SWITCH | 1 | Opsiyon
+X:07 05241 | İNTERLOCK KİLİT KARŞILIK SACI | 1 | Opsiyon
+X:10 02306 | RÖLE SOKETİ RSZE1S48M 8 PİNLİ | 1 | Opsiyon
+X:10 01337 | MİNYATÜR RÖLE RSB2A080P7 2 KUTUPLU 8 PİNLİ | 1 | Opsiyon
+X:07 09257 | LYM GÖVDE TEKERLEK UYGULAMASI KOMPLESİ | 1 | Opsiyon
+X:10 00590 | REDÜKTÖR MOTORU 0,37KW 1500D/D | 1 |
+X:10 01008 | REDÜKTÖR EN:40 I:12 B:07 YILMAZ | 1 | 
 
 
 # =============================================================================
