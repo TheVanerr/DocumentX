@@ -51,13 +51,11 @@ Makine tipi kısa tanım (1-2 cümle): Döner sepetli parça yıkama makinesi (E
 # 02 — GÜVENLİK (safety)
 # =============================================================================
 
-
 [ACIL_DURDURMA]
 Acil stop butonu adedi: 1 ADET
 Acil stop konumları (fiziksel yer): Elektrik Panosu Etiketinde
 Acil stop reset prosedürü: Tehlike Uzaklaştırıldıktan sonra pano üzerindeki acil stop butonu kaldırılır, sonra reset butonuna lambası yanana kadar basılır
 Acil stop sonrası makine durumu: Makine Durur
-
 
 [GUVENLIK_CIT]
 Emniyet kapısı / bariyer sayısı: 0
@@ -71,7 +69,6 @@ Işık perdesi var mı (Evet/Hayır — tip / marka): Yok
 
 # --- 03.1 Makine tanımı (machine-description) ---
 
-
 [MAKINE_TANIMI]
 Makinenin ana işlevi: Endüstriyel Parça Üzerindeki Kirliliklerin Giderilmesi
 Makine tipi (ör. dolum / paketleme / yıkama / konveyör): Döner sepetli parça yıkama makinesi (Endüstriyel Yıkama Makinesi)
@@ -80,7 +77,6 @@ Makine bileşenleri listesi (ana modüller): Yıkama Hücresi , Döner Yıkama S
 Opsiyon / varyant listesi (bu projeye özel): Yağ Sıyırıcı , Hassas Filtre , İnterlock Kilit , Buhar Tahliye Fanı , Buhar Tahliye Fanı (Yoğuşturmalı Tip) , Kurutma Fanı (Fan Tipi) , Kurutma Fanı (Blower Tipi) , Drenaj Pompası
 
 # --- 03.2 Amaçlanan kullanım (intended-use) ---
-
 
 [AMACLANAN_KULLANIM]
 Amaçlanan kullanım alanı: Endüstriyel Parça Üzerindeki Kirliliklerin Giderilmesi
@@ -93,7 +89,6 @@ Operatör sayısı (min / max): 1 - 5
 Yetkinlik / eğitim gereksinimi: Makine operatörü
 
 # --- 03.3 Teknik özellikler (machine-spec) ---
-
 
 [BOYUT_AGIRLIK]
 # Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1500
@@ -209,7 +204,6 @@ Sinyal lambaları listesi: Kırmızı ( Redüktör Arıza, Pompa Arıza, Su Sevi
 Operatör paneli dilleri: Türkçe ( Standart ) / İngiizce (Opsiyonel) / Almanca (Opsiyonel) / Fransızca (Opsiyonel) / İspanyolca (Opsiyonel)
 Şifre seviyeleri (operatör / bakım / admin): 1 / 2 / 3
 
-
 [KONTROL_FONKSIYONLARI]
 Ana ekran menü yapısı: YOK / YOK / YOK / YOK
 Alarm ekranı davranışı: YOK / YOK / YOK / YOK
@@ -218,7 +212,6 @@ Trend / log kayıt süresi: YOK / YOK / YOK / YOK
 Uzaktan erişim (Evet/Hayır — protokol): YOK / YOK / YOK / YOK
 
 # --- 03.5 Makine yerleşimi (machine-layout) ---
-
 
 [LAYOUT]
 Genel yerleşim planı dosya adı: 
@@ -237,7 +230,6 @@ Ağırlık merkezi notu: Ağırlık Merkezi Makinenin Ortasındadır
 # 04 — TAŞIMA (transport)
 # =============================================================================
 
-
 [TASIMA]
 Taşıma ağırlığı — demonte max parça (kg): 
 Taşıma ağırlığı — montajlı (kg): 
@@ -249,7 +241,6 @@ Nem koruma / korozyon koruma: AMBALAJ
 Taşıma sıcaklığı aralığı (°C): +10 - +50 
 Taşıma yüksekliği max (m — deniz / kara): 
 
-
 [DEPOLAMA]
 Depolama pozisyonu (dikey / yatay): Dikey
 Max depolama süresi (ay): 12
@@ -259,7 +250,6 @@ Depolama ortam koşulları: +10°C - +30°C / 30% - 50%
 # 05 — MONTAJ (assembly)
 # =============================================================================
 
-
 [MONTAJ_GENEL]
 Montaj süresi tahmini (saat / gün): 3 / 0
 Montaj ekip sayısı: 1
@@ -267,7 +257,6 @@ Gerekli vinç / ekipman: Vinç Kullanımı Kesinlikle Yasaktır! / Forklif Makin
 Montaj alanı min boyut (m × m): 
 Zemin düzgünlük toleransı (mm/m): 10
 Zemin mukavemet gereksinimi: 100 kg/m²
-
 
 [MONTAJ_ADIMLARI]
 # Her adım: Sıra | Açıklama | Tork / tolerans | Not
@@ -277,14 +266,12 @@ Adım 1: Makine için herhangi bir montaj işlemine gerek yoktur. Tek parça tam
 Hizalama toleransı (mm): 10
 Seviye ayar mekanizması (ayak tipi): Ayak Tipi: 4 Adet Sabit Yükseklik Ayak
 
-
 [KURULUM_TEST]
 Mekanik kurulum test checklist: Makine Terazide mi? / Makine Arabası Montajı Yapıldı mı? / Taşıma Arabası ile Makine Birbirine Tam Oturuyor mu?
 Elektrik devreye alma test checklist: Şebeke Bağlantısı Tamam mı? / Tüm Sigortalar Açık mı? / Faz Koruma Rölesi Çıkış Veriyor mu? / Reset Butonuna Basınca Reset Lambası Yandı mı?
 Pnömatik / hidrolik dolum test: YOK
 Boş koşu test süresi (dk): 60
 Güvenlik fonksiyon test listesi: Acil Stop Çalışıyor mu? / Acil Stop Sonrası Reset Prosedürü Gerekli mi? / İnterlock Kilit Çalışıyor mu? / Kapak Kapalı Bilgisi Switchi Çalışıyor mu?
-
 
 [ILETISIM]
 Fieldbus / protokol (Profinet / EtherCAT / Modbus / vb.): YOK
@@ -295,7 +282,6 @@ I/O listesi dosya referansı: YOK
 # 06 — AYARLAR (settings)
 # =============================================================================
 
-
 [MEKANIK_AYARLAR]
 Mekanik ayar noktaları listesi: YOK
 Referans / home pozisyon ayarı: YOK
@@ -304,19 +290,16 @@ Mesafe / limit switch ayarları: YOK
 Nozzle / doldurma kafası ayar aralığı (mm): YOK
 Format değişim prosedürü özeti: YOK
 
-
 [GUVENLIK_AYARLARI]
 Emniyet kapısı bypass (varsa — sadece bakım): YOK
 Işık perdesi ayar mesafesi (mm): YOK
 Acil stop test periyodu: 1 YIL
-
 
 [ELEKTRIK_AYARLARI]
 Motor yönü / faz kontrolü: FAZ SIRA RÖLESİ KONTROL EDİLECEK SADECE
 Encoder / feedback ayarı: YOK
 Analog ölçeklendirme (basınç / sıcaklık): YOK
 Tarih / saat / dil ayarı: YOK
-
 
 [PNEOMATIK_AYARLAR]
 Regülatör basınç ayarı (bar): YOK
@@ -327,14 +310,12 @@ Sensör ON/OFF gecikmeleri (ms): YOK
 # 07 — OPERASYON (operation)
 # =============================================================================
 
-
 [CALISMA_MODLARI]
 Manuel mod açıklaması: YOK
 Otomatik mod açıklaması: YOK
 Bakım / setup modu: YOK
 Step / tek adım modu: YOK
 Mod geçiş koşulları: YOK
-
 
 [BASLATMA]
 Devreye alma ön koşulları (checklist): ELEKTRİK BAĞLANTISI KONTROLÜ , FAZ SIRA RÖLESİ KONTROLÜ , SU SEVİYESİ KONTROLÜ 
@@ -344,13 +325,11 @@ Isıtma ön ısınma süresi (dk): 1 SAAT
 Start öncesi kontrol listesi: TANKTA SU VAR MI / SU SICAKLIĞI 70°C'YE ULAŞANA KADAR BEKLENİR.
 İlk ürün / kurşun atma prosedürü: YOK
 
-
 [KAPATMA]
 Normal stop prosedürü: STOP BUTONUNA BASILIR , REDÜKTÖR DURDUKTAN SONRA KAPAK AÇILIR
 Acil stop sonrası yeniden başlatma: ACİL STOP BUTONUNA BASILIR , TEHLİKE UZAKLAŞTIRILIR , ACİL STOP BUTONU KALDIRILIR , RESET BUTONU LAMBASI YANANA KADAR BASIILI TUTULUR
 Güç kapatma sırası: MAKİNE STOP BUTONUYLA DURDURULUR , ANA ŞALTER KAPATILIR
 Uzun süreli durdurma (hafta sonu) prosedürü: STOP BUTONUNA BASILIR , MAKİNE DURUNCA KAPAK AÇILIR , TANKTAKİ SU BOŞALTILIR , TANK VE MAKİNE İÇİ TEMİZLENİR VE KURUTULUR, MAKİNE PAKETLENİR VE DEPOYA KALDIRILIR
-
 
 [OPERASYON_SEKANS]
 Otomatik cycle adım 1: 
@@ -363,12 +342,10 @@ Cycle süresi nominal (sn):
 Ürün çıkış senaryosu: 
 Hata durumunda makine davranışı: 
 
-
 [KRONOLOJI]
 Günlük operasyon zaman çizelgesi: MÜŞTERİYE BAĞLI
 Vardiya devir teslim maddeleri: MÜŞTERİYE BAĞLI
 Shift başlangıç kontrol listesi: MÜŞTERİYE BAĞLI
-
 
 [OPERASYON_DIGER]
 Format / ürün değişim süresi (dk): MÜŞTERİYE BAĞLI
@@ -378,7 +355,6 @@ Operatör müdahale noktaları: MÜŞTERİYE BAĞLI
 # =============================================================================
 # 08 — KAPASİTE (capacity)
 # =============================================================================
-
 
 [URUN_KAPASITE]
 # Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1500
@@ -400,7 +376,6 @@ Bakım felsefesi (önleyici / kestirimci): ÖNLEYİCİ
 Bakım personeli yeterlilik seviyesi: 
 Lubrication chart dosya referansı: YOK
 
-
 [BAKIM_PERIYOT]
 Günlük bakım maddeleri: 
 Haftalık bakım maddeleri: 
@@ -410,12 +385,10 @@ Aylık bakım maddeleri:
 1000 saat bakım maddeleri: 
 Yıllık bakım maddeleri: 
 
-
 [BAKIM_YAGLAMA]
 Yağlama noktası listesi (konum / yağ tipi / periyot): 
 Gres tipi: 
 Redüktör yağ değişim: 
-
 
 [BAKIM_YEDEK_PARCA]
 Kritik yedek parça listesi: Bkz. [PARCA_LISTESI] — varyant bazlı tam BOM (Bölüm 13.3)
@@ -444,7 +417,6 @@ Temizlik kayıt formu (özet): 1. Yıkama tankı ön filtre temizliği — günl
 # =============================================================================
 # 11 — ARIZA GİDERME (troubleshooting)
 # =============================================================================
-
 
 [ARIZA_GENEL]
 # LYM serisi dijital HMI alarm kodu kullanmaz; arıza bildirimi kontrol panosu üzerindeki kırmızı arıza lambaları ve emniyet devresi davranışı ile yapılır. Tüm varyantlar (LYM 950 / 1150 / 1350 / 1500) için aşağıdaki teşhis adımları ortaktır.
@@ -514,11 +486,9 @@ Valf bobini arıza: Uygulanmaz
 Kritik sensör listesi (tip / konum): Kapak switch EMAS L5K13MUM331 (950/1150) veya L5K13MEP123 + L5K27MUM331 (1350/1500) — kapak emniyeti; Paslanmaz seviye bekçisi 10 00296 — tank düşük su (Bkz. Arıza 3); Termokupl ETB30F06-2Ç — tank sıcaklık
 Sensör LED / durum göstergesi: Kapak switch — multimetre direnç modunda kapak açık/kapalı kontak durumu ölçülür (Bkz. Arıza 6); Seviye bekçisi — tank su seviyesi fiziksel kontrol; termokupl ETB30F06-2Ç — GEMO DT481 ekranından PV/SV okunur; termostat çıkışı — ölçü aleti ile kontrol (Bkz. Arıza 7) 
 
-
 # =============================================================================
 # 12 — DEMONTAJ (dismantle)
 # =============================================================================
-
 
 [DEMONTAJ]
 Demontaj ön koşulları: 
@@ -528,11 +498,9 @@ Geri dönüşüm / bertaraf talimatı:
 Tehlikeli madde (yağ / akü / kimyasal): 
 Çevresel bertaraf gereksinimleri: 
 
-
 [DEVRE_DISI]
 Kalıcı devre dışı bırakma: 
 Geçici devre dışı bırakma: 
-
 
 [HURDA]
 Hurda değerlendirme: 
@@ -541,7 +509,6 @@ Parça geri dönüşüm malzemeleri:
 # =============================================================================
 # 13 — DÖKÜMANLAR (documents)
 # =============================================================================
-
 
 [DOKUMANLAR]
 Elektrik şeması dosya adı / rev: 
@@ -556,13 +523,11 @@ CE dosyası referansı:
 Kalibrasyon sertifikaları: 
 P&ID dosya adı / rev: 
 
-
 [CIZIMLER]
 Genel montaj çizimi: 
 Kaldırma noktaları çizimi: 
 Zemin ankraj çizimi: 
 Teslim çizim paketi: 
-
 
 [PARCA_LISTESI]
 Parça listesi (BOM) konumu: Bu dosya — aşağıdaki tablolar (varyant bazlı)
@@ -836,11 +801,9 @@ X:07 09257 | LYM GÖVDE TEKERLEK UYGULAMASI KOMPLESİ | 1 | Opsiyon
 X:10 00590 | REDÜKTÖR MOTORU 0,37KW 1500D/D | 1 |
 X:10 01008 | REDÜKTÖR EN:40 I:12 B:07 YILMAZ | 1 | 
 
-
 # =============================================================================
 # 14 — EKLER / SÖZLÜK / İNDEKS (index)
 # =============================================================================
-
 
 [EKLER]
 # Kılavuz Bölüm 14.1 SSOT — tüm LYM varyantları ortak
@@ -857,7 +820,6 @@ Ek B — Parametre listesi: Müşteri / tesis özelinde tanımlanır; standart k
 Ek C — Reçete örnekleri: Yıkanacak parça tipi, kirlilik derecesi, sıcaklık, süre ve kimyasal konsantrasyonu müşteri firma tarafından belirlenir; üretici standart reçete örneği sunmaz. Müşteri reçete kayıtları tesis dokümantasyonunda tutulmalıdır — [EKSİK: müşteri reçete no / form referansı].
 
 Ek D — Garanti belgesi: Makine ile birlikte **ayrı doküman** olarak teslim edilir; kılavuza gömülmez. Garanti kapsamı, süresi ve koşulları yalnızca garanti belgesinde geçerlidir (Bkz. Bölüm 13.1). Kılavuzda yalnızca referans verilir. 
-
 
 [SOZLUK]
 # Format: Terim | Açıklama — kılavuz Bölüm 14.2 SSOT
