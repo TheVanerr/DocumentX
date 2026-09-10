@@ -13,8 +13,8 @@
 # =============================================================================
 
 [PROJE]
-Makine ticari adı: 
-Makine model kodu: LYM
+Makine ticari adı: LYM
+Makine model kodu: LYM 950 , LYM 1150 , LYM 1350 , LYM 1500
 Üretim yılı: 
 İmalat / sevk tarihi: 
 
@@ -32,19 +32,20 @@ Yetkili servis / teknik destek: CNK ELEKTRONİK MAKİNE SANAYİ AŞ — yukarıd
 
 [MODEL_VARYANTLARI]
 # Bu model ailesindeki tüm varyantlar — kılavuzda kapasite/teknik tablolarda kullanılır
-Varyant 1 (LYM 950): 
-Varyant 2 (LYM 1150): 
-Varyant 3 (LYM 1350): 
-Varyant 4 (LYM 1550): 
+# Model ailesi: LYM 1 → 950, 1150 | LYM 2 → 1350, 1500
+Varyant 1 (LYM 950): Stok kodu 02 01 22 — LYM 1
+Varyant 2 (LYM 1150): Stok kodu 02 01 21 — LYM 1
+Varyant 3 (LYM 1350): Stok kodu 02 01 23 — LYM 2
+Varyant 4 (LYM 1500): Stok kodu 02 01 14 — LYM 2 
 
 # =============================================================================
 # 01 — GİRİŞ (introduction)
 # =============================================================================
 
 [GIRIS_GENEL]
-Kılavuz kapsamı (hangi makine, hangi opsiyonlar): 
-Kılavuz hedef kitlesi (operatör / bakım / kurulum): 
-Makine tipi kısa tanım (1-2 cümle): 
+Kılavuz kapsamı (hangi makine, hangi opsiyonlar): LYM 950 , LYM 1150 , LYM 1350 , LYM 1500 (TÜM OPSİYONLARI KAPSAR)
+Kılavuz hedef kitlesi (operatör / bakım / kurulum): Makine operatörü, elektrik teknisyeni, bakım personeli, kurulum ekibi
+Makine tipi kısa tanım (1-2 cümle): Döner sepetli parça yıkama makinesi (Endüstriyel Yıkama Makinesi)
 
 # =============================================================================
 # 02 — GÜVENLİK (safety)
@@ -52,10 +53,10 @@ Makine tipi kısa tanım (1-2 cümle):
 
 
 [ACIL_DURDURMA]
-Acil stop butonu adedi: 
-Acil stop konumları (fiziksel yer): 
-Acil stop reset prosedürü: 
-Acil stop sonrası makine durumu: 
+Acil stop butonu adedi: 1 ADET
+Acil stop konumları (fiziksel yer): Elektrik Panosu Etiketinde
+Acil stop reset prosedürü: Tehlike Uzaklaştırıldıktan sonra pano üzerindeki acil stop butonu kaldırılır, sonra reset butonuna lambası yanana kadar basılır
+Acil stop sonrası makine durumu: Makine Durur
 
 
 [GUVENLIK_CIT]
@@ -73,7 +74,7 @@ Işık perdesi var mı (Evet/Hayır — tip / marka): Yok
 
 [MAKINE_TANIMI]
 Makinenin ana işlevi: Endüstriyel Parça Üzerindeki Kirliliklerin Giderilmesi
-Makine tipi (ör. dolum / paketleme / yıkama / konveyör): Endüstriyel Yıkama Makinesi
+Makine tipi (ör. dolum / paketleme / yıkama / konveyör): Döner sepetli parça yıkama makinesi (Endüstriyel Yıkama Makinesi)
 Proses akışı özeti (adım adım): 
 Makine bileşenleri listesi (ana modüller): Yıkama Hücresi , Döner Yıkama Sepeti , Yıkama Pompası , Sepet Redüktörü , Su Tankı Isıtıcısı , Kapak Kapalı Bilgisi Switchi 
 Opsiyon / varyant listesi (bu projeye özel): Yağ Sıyırıcı , Hassas Filtre , İnterlock Kilit , Buhar Tahliye Fanı , Buhar Tahliye Fanı (Yoğuşturmalı Tip) , Kurutma Fanı (Fan Tipi) , Kurutma Fanı (Blower Tipi) , Drenaj Pompası
@@ -95,15 +96,31 @@ Yetkinlik / eğitim gereksinimi: Makine operatörü
 
 
 [BOYUT_AGIRLIK]
-# Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1550
-Dış genişlik W (mm) |  |  |  | 
-Dış uzunluk L (mm) |  |  |  | 
-Dış yükseklik H — normal (mm) |  |  |  | 
-Boş ağırlık — kuru (kg) |  |  |  | 
-Çalışma ağırlığı — dolu (kg) |  |  |  | 
-Şase tipi (sabit ayak / ayarlanabilir ayak / ankraj) | Sabit Ayak / Sabit Ayak / Sabit Ayak / Sabit Ayak
+# Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1500
+# Not: Makine ölçüleri elektrik kutusu hariç (W × L × H)
+Dış genişlik W (mm) | 950 | 1200 | 1300 | 1800
+Dış uzunluk L (mm) | 950 | 1200 | 1300 | 1800
+Dış yükseklik H — normal (mm) | 1250 | 1400 | 1500 | 1600
+Boş ağırlık — kuru (kg) | [EKSİK] | [EKSİK] | [EKSİK] | [EKSİK]
+Çalışma ağırlığı — dolu (kg) | [EKSİK] | [EKSİK] | [EKSİK] | [EKSİK]
+Şase tipi (sabit ayak / ayarlanabilir ayak / ankraj) | Sabit ayak | Sabit ayak | Sabit ayak | Sabit ayak
+
 [KAPASITE_PROSES]
-# Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1550
+# Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1500
+Yıkama pompası adedi | 1 | 1 | 1 | 2
+Yıkama pompası marka | WATER SOUND | ATLANTIS | ATLANTIS | ATLANTIS
+Yıkama pompası model | BB300/150 (1019) | KAF 300T/304 | KAF 300T/304 | KAF 300T/304
+Yıkama pompası sipariş kodu | 10 17118 | 10 02818 | 10 02818 | 10 02818 (×2)
+Yıkama pompası gücü — birim (kW / HP) | 1,5 / 2 HP | 2,2 / 3 HP | 2,2 / 3 HP | 2,2 / 3 HP
+Yıkama pompası gücü — toplam (kW) | 1,5 | 2,2 | 2,2 | 4,4
+Yıkama pompası gerilim / frekans | 380 V / 50 Hz | 380 V / 50 Hz | 380 V / 50 Hz | 380 V / 50 Hz
+Yıkama pompası nominal devir (rpm) | 2900 | 2900 | 2900 | 2900
+Yıkama pompası nominal akım — birim (A) | 3,0 | 4,2 | 4,2 | 4,2
+Yıkama pompası nominal akım — toplam (A) | 3,0 | 4,2 | 4,2 | 8,4
+Yıkama pompası debisi (lt/dk) | 100 | 350 | 350 | 350
+Yıkama pompası termik röle | LR2K0312 (3,70–5,5 A) | [EKSİK] | [EKSİK] | [EKSİK] (×2)
+# Not: LYM 1500 toplam pompa gücü 4,4 kW = 2 adet × 2,2 kW bağımsız pompa
+# Not: Nominal akım 380 V, 3 faz, cos φ 0,8 ile hesaplanmıştır; kesin değer motor etiketinden doğrulanmalıdır
 Nominal kapasite (adet/saat veya kg/saat) | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir    | 
 Maksimum kapasite (adet/saat) | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir    | 
 Minimum kapasite (adet/saat) | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir | Parçaya Göre Değişiklik Gösterebilir    | 
@@ -118,7 +135,7 @@ Proses adı 2 | Kurutma (Opsiyonel) | Kurutma (Opsiyonel) | Kurutma (Opsiyonel) 
 Döngü süresi nominal (sn) |0-100 dk | 0-100 dk | 0-100 dk | 0-100 dk | 
 
 [ELEKTRIK]
-# Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1550
+# Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1500
 Besleme gerilimi (V) | 380 V | 380 V | 380 V | 380 V  
 Besleme frekansı (Hz) | 50 Hz | 50 Hz | 50 Hz | 50 Hz  
 Faz sayısı | 3 | 3 | 3 | 3 | 
@@ -135,28 +152,29 @@ UPS / jeneratör gereksinimi (varsa) | Yok | Yok | Yok | Yok |
 
 [MOTOR_SURUCU_LISTESI]
 # Her varyant icin motor listesi — satir: Ad | Güç (kW) | Devir (rpm) | Marka | Model
+# Yıkama pompası teknik tablo SSOT: [KAPASITE_PROSES] — burada yalnızca motor özeti
 ## LYM 950
-Motor 1: 
-Motor 2: 
+Motor 1: Yıkama pompası | 1,5 kW | 2900 | WATER SOUND | BB300/150 — 10 17118
+Motor 2: Sepet redüktör | 0,18 kW | 1500 | YILMAZ | Bkz. PARCA_LISTESI (10 00588 + 10 01004)
 Motor 3: 
 
 ## LYM 1150
-Motor 1: 
-Motor 2: 
+Motor 1: Yıkama pompası | 2,2 kW | 2900 | ATLANTIS | KAF 300T/304 — 10 02818
+Motor 2: Sepet redüktör | 0,18 kW | 1500 | YILMAZ | Bkz. PARCA_LISTESI (10 00588 + 10 01004)
 Motor 3: 
 
 ## LYM 1350
-Motor 1: 
-Motor 2: 
-Motor 3: 
+Motor 1: Yıkama pompası | 2,2 kW | 2900 | ATLANTIS | KAF 300T/304 — 10 02818
+Motor 2: Sepet redüktör | 0,18 kW | 1500 | YILMAZ | Bkz. PARCA_LISTESI (10 00588 + 10 01007)
+Motor 3:  
 
-## LYM 1550
-Motor 1: 
-Motor 2: 
-Motor 3: 
+## LYM 1500
+Motor 1: Yıkama pompası 1 | 2,2 kW | 2900 | ATLANTIS | KAF 300T/304 — 10 02818
+Motor 2: Yıkama pompası 2 | 2,2 kW | 2900 | ATLANTIS | KAF 300T/304 — 10 02818
+Motor 3: Sepet redüktör | 0,37 kW | 1500 | YILMAZ | Bkz. PARCA_LISTESI (10 00590 + 10 01008) 
 
 [SIKIŞTIRILMIŞ_HAVA_SU]
-# Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1550
+# Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1500
 Basınçlı hava girişi (bar) | Yok | Yok | Yok | Yok | 
 Su girişi basıncı (bar) | Yok | Yok | 0.1-0.8 bar | 0.1-0.8 bar | 
 Su sıcaklığı min / max (°C) | 10°C - 70°C | 10°C - 70°C | 10°C - 70°C | 10°C - 70°C | 
@@ -164,7 +182,7 @@ Su kalitesi / filtre gereksinimi | Yok | Yok | Yok | Yok |
 Drain / atık su hattı çap (mm) | 1/2" | 1/2" | 1/2" | 1/2" | 
 
 [ORTAM_KOSULLARI]
-# Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1550
+# Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1500
 Çalışma sıcaklığı min / max (°C) | +10°C - +30°C | +10°C - +30°C | +10°C - +30°C | +10°C - +30°C | 
 Depolama sıcaklığı min / max (°C) | +10°C - +30°C | +10°C - +30°C | +10°C - +30°C | +10°C - +30°C | 
 Göreceli nem min / max (%) | 30% - 50% | 30% - 50% | 30% - 50% | 30% - 50% | 
@@ -197,21 +215,21 @@ Ana ekran menü yapısı: YOK / YOK / YOK / YOK
 Alarm ekranı davranışı: YOK / YOK / YOK / YOK
 Reçete / program kayıt sayısı: YOK / YOK / YOK / YOK
 Trend / log kayıt süresi: YOK / YOK / YOK / YOK
-Uzaktan erişim (Evet/Hayır — protokol): Yok / Yok / Yok / Yok
+Uzaktan erişim (Evet/Hayır — protokol): YOK / YOK / YOK / YOK
 
 # --- 03.5 Makine yerleşimi (machine-layout) ---
 
 
 [LAYOUT]
 Genel yerleşim planı dosya adı: 
-Operatör tarafı (ön / sol / sağ): 
+Operatör tarafı (ön / sol / sağ): ÖN
 Besleme tarafı (giriş yönü): ÖN
 Boşaltma tarafı (çıkış yönü): ÖN
-Bakım erişim bölgeleri: 
-Minimum etraf boşluğu — ön (mm): 
-Minimum etraf boşluği — arka (mm): 
-Minimum etraf boşluğu — yan (mm): 
-Minimum tavan yüksekliği (mm): 
+Bakım erişim bölgeleri: ÖN KAPAK
+Minimum etraf boşluğu — ön (mm): 1000
+Minimum etraf boşluği — arka (mm): 1000
+Minimum etraf boşluğu — yan (mm): 1000
+Minimum tavan yüksekliği (mm): 1000
 Vinç / forklift erişim noktaları: Vinç Kullanımı Kesinlikle Yasaktır! / Forklif Makine Altındaki Şaseden Kaldırabilir
 Ağırlık merkezi notu: Ağırlık Merkezi Makinenin Ortasındadır
 
@@ -223,12 +241,12 @@ Ağırlık merkezi notu: Ağırlık Merkezi Makinenin Ortasındadır
 [TASIMA]
 Taşıma ağırlığı — demonte max parça (kg): 
 Taşıma ağırlığı — montajlı (kg): 
-Ambalaj tipi (kasa / shrink / konteyner): 
-Kaldırma aparatı / travers referans çizimi: 
-Forklift çatal girişi var mı (Evet/Hayır): 
-Taşıma sırasında sabitleme / bağlama: 
-Nem koruma / korozyon koruma: 
-Taşıma sıcaklığı aralığı (°C): 
+Ambalaj tipi (kasa / shrink / konteyner): YURTİÇİ AMBALAJ , YURTDIŞI SANDIK
+Kaldırma aparatı / travers referans çizimi: FORKLİFT
+Forklift çatal girişi var mı (Evet/Hayır): HAYIR
+Taşıma sırasında sabitleme / bağlama: GEREK YOK
+Nem koruma / korozyon koruma: AMBALAJ
+Taşıma sıcaklığı aralığı (°C): +10 - +50 
 Taşıma yüksekliği max (m — deniz / kara): 
 
 
@@ -363,7 +381,7 @@ Operatör müdahale noktaları: MÜŞTERİYE BAĞLI
 
 
 [URUN_KAPASITE]
-# Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1550
+# Ozellik | LYM 950 | LYM 1150 | LYM 1350 | LYM 1500
 Nominal kapasite tablosu (ürün × adet/saat) | YIKANACAK PARÇAYA BAĞLI | YIKANACAK PARÇAYA BAĞLI | YIKANACAK PARÇAYA BAĞLI | YIKANACAK PARÇAYA BAĞLI | 
 Test edilen kapasite (adet/saat) | YIKANACAK PARÇAYA BAĞLI | YIKANACAK PARÇAYA BAĞLI | YIKANACAK PARÇAYA BAĞLI | YIKANACAK PARÇAYA BAĞLI | 
 Kapasite test koşulları |  |  |  | 
@@ -375,7 +393,7 @@ Maksimum sürekli çalışma süresi (saat/gün) | 7/24 | 7/24 | 7/24 | 7/24 |
 LYM 950 | YOK | YOK | YOK | YOK 
 LYM 1150 | YOK | YOK | YOK | YOK 
 LYM 1350 | YOK | YOK | YOK | YOK 
-LYM 1550 | YOK | YOK | YOK | YOK 
+LYM 1500 | YOK | YOK | YOK | YOK 
 
 [BAKIM_GENEL]
 Bakım felsefesi (önleyici / kestirimci): ÖNLEYİCİ
@@ -477,7 +495,7 @@ Arıza 7 çözüm: 1. Düşük su seviyesi lambasını kontrol edin; yanıyorsa 
 
 [ELEKTRIK_ARIZA]
 Faz kaybı davranışı: [EKSİK] — faz monitörü donanımlı makinelerde faz kaybında motorlar devre dışı kalabilir; elektrik şemasına bakın (Bölüm 13.2)
-Motor koruma trip: Termik aşırı yük röleleri (redüktör LR2K0310/0312, pompa, opsiyon motorlar). Trip = aşırı akım veya ısınma. Reset sonrası neden giderilmeden tekrar çalıştırmayın. Geri bildirimli lambalar: redüktör, pompa — Bkz. Arıza 1–2
+Motor koruma trip: Termik aşırı yük röleleri. LYM 950: sepet redüktör LR2K0310 (2,60–3,7 A); yıkama pompası LR2K0312 (3,70–5,5 A) — Bkz. [KAPASITE_PROSES] nominal akım. LYM 1150 / 1350 / 1500 pompa termik ayarı pano içi [EKSİK]. Opsiyon motorlar (kurutma, yağ sıyırıcı, buhar tahliye vb.) ayrı termik. Trip = aşırı akım veya ısınma. Reset sonrası neden giderilmeden tekrar çalıştırmayın. Geri bildirimli lambalar: redüktör, pompa — Bkz. Arıza 1–2
 Inverter alarm kodları özeti: Uygulanmaz — LYM serisi yıkama pompası ve sepet tahriki DOL motor; inverter yok
 Kaçak akım teşhisi: Fonksiyonları tek tek ayırarak arızalı devreyi bulun — Bkz. Arıza 5
 Sensör kablo renk kodu: Bkz. elektrik şeması — teslim paketi (Bölüm 13.2)
@@ -551,6 +569,7 @@ Parça listesi (BOM) konumu: Bu dosya — aşağıdaki tablolar (varyant bazlı)
 Mekanik parça listesi referansı: Bu dosya — aşağıdaki tablolar
 Elektrik parça listesi referansı: Bu dosya — aşağıdaki tablolar
 Wear part / aşınan parça listesi: Nozzle, filtre kompleleri — aşağıdaki tablolar
+# Standart yıkama pompası (Not sütunu boş): LYM 950 → 10 17118 | LYM 1150 / 1350 → 10 02818 | LYM 1500 → 10 02818 ×2. Teknik değerler SSOT: [KAPASITE_PROSES]
 
 # Format: Sipariş kodu | Parça adı | Montaj adedi | Not
 # Not: Alternatif = konfigürasyona göre biri; Opsiyon = donanıma bağlı
@@ -574,7 +593,7 @@ X:07 00253 | NOZZLE 1/4" 0 DERECE AÇILI PASLANMAZ (ÇNK) | 28 | Alternatif
 X:10 01079 | NOZZLE 650.724.1C.CC | 28 | Alternatif
 X:07 00619 | PYM 950 BORULAMA PASLANMAZ | 1 |
 X:10 03296 | ETİKET UYARI TOPRAKLAMA 40*40*0,5MM ALÜ | 1 |
-X:10 17118 | POMPA WATER SOUND 1019 BB300/150 2HP 380V 50HZ | 1 | Alternatif
+X:10 17118 | POMPA WATER SOUND 1019 BB300/150 2HP 380V 50HZ | 1 |
 X:10 17117 | POMPA ATLANTİS KAF 150 T | 1 | Alternatif
 X:10 08525 | POMPA GOULDS GCEA 370/2 380V/50HZ | 1 | Alternatif
 X:10 02818 | POMPA ATLANTİS KAF 300T/304 3HP 380V/50HZ | 1 | Alternatif
@@ -641,7 +660,7 @@ X:07 00253 | NOZZLE 1/4" 0 DERECE AÇILI PASLANMAZ (ÇNK) | 45 | Alternatif
 X:10 01079 | NOZZLE 650.724.1C.CC | 45 | Alternatif
 X:07 03140 | LYM 1150 BORULAMA GALVANİZLİ | 1 | Alternatif
 X:07 03141 | LYM 1150 BORULAMA PASLANMAZ | 1 | Alternatif
-X:10 02818 | POMPA ATLANTİS KAF 300T/304 3HP 380V/50HZ | 1 | Alternatif
+X:10 02818 | POMPA ATLANTİS KAF 300T/304 3HP 380V/50HZ | 1 |
 X:10 17119 | POMPA WATER SOUND 1020 BB500/220 3HP 380V 50HZ | 1 | Alternatif
 X:10 06316 | POMPA GOULDS GCEA 370/3 380V/50HZ | 1 | Alternatif
 X:07 16099 | SALYANGOZLU FAN ERF 1 HAVA SOĞ. SİLİKONLU | 1 | Opsiyon
@@ -706,7 +725,7 @@ X:07 00253 | NOZZLE 1/4" 0 DERECE AÇILI PASLANMAZ (ÇNK) | 51 | Alternatif
 X:10 01079 | NOZZLE 650.724.1C.CC | 51 | Alternatif
 X:07 03148 | LYM 1350 BORULAMA GALVANİZLİ | 1 | Alternatif
 X:07 03149 | LYM 1350 BORULAMA PASLANMAZ | 1 | Alternatif
-X:10 02818 | POMPA ATLANTİS KAF 300T/304 3HP 380V/50HZ | 1 | Alternatif
+X:10 02818 | POMPA ATLANTİS KAF 300T/304 3HP 380V/50HZ | 1 |
 X:10 17119 | POMPA WATER SOUND 1020 BB500/220 3HP 380V 50HZ | 1 | Alternatif
 X:10 06316 | POMPA GOULDS GCEA 370/3 380V/50HZ | 1 | Alternatif
 X:07 16099 | SALYANGOZLU FAN ERF 1 HAVA SOĞ. SİLİKONLU | 1 | Opsiyon
@@ -753,7 +772,7 @@ X:10 00588 | REDÜKTÖR MOTORU 0,18KW 1500D/D B34 | 1 |
 X:10 01007 | REDÜKTÖR EN:40 I:12 B:06 YILMAZ | 1 |
 
 ## LYM 1500
-# Not: BOM kodu LYM 1500; DATA varyant etiketi LYM 1550 ile aynı makine
+# Not: BOM kodu LYM 1500; DATA varyant etiketi LYM 1500 ile aynı makine
 X:10 01202 | AMORTİSÖR 1400N | 2 |
 X:10 03262 | SWITCH L5K13MEP123 1NO 1NC | 1 |
 X:10 00260 | SWITCH L5K27MUM331 2NO 1NC | 1 |
@@ -776,7 +795,7 @@ X:07 04989 | LYM 1500 BORULAMA GALVANİZLİ | 1 | Alternatif
 X:07 04990 | LYM 1500 BORULAMA PASLANMAZ | 1 | Alternatif
 X:07 03138 | PYM 1550 BAĞLANTI ELEMANLARI GALVANİZLİ | 1 | Alternatif
 X:07 03139 | PYM 1550 BAĞLANTI ELEMANLARI PASLANMAZ | 1 | Alternatif
-X:10 02818 | POMPA ATLANTİS KAF 300T/304 3HP 380V/50HZ | 2 | Alternatif
+X:10 02818 | POMPA ATLANTİS KAF 300T/304 3HP 380V/50HZ | 2 |
 X:10 17119 | POMPA WATER SOUND 1020 BB500/220 3HP 380V 50HZ | 2 | Alternatif
 X:10 06316 | POMPA GOULDS GCEA 370/3 380V/50HZ | 2 | Alternatif
 X:07 16099 | SALYANGOZLU FAN ERF 1 HAVA SOĞ. SİLİKONLU | 1 | Opsiyon
