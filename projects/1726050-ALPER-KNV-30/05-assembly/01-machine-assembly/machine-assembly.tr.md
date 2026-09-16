@@ -24,9 +24,6 @@ Kurulum alanı etraf boşlukları ve tavan yüksekliği **Bölüm 3.5.2**'de SSO
 
 **UYARI — Elektrik:** 380 V trifaze besleme bağlantısı yalnızca yetkili elektrik personeli tarafından yapılmalıdır.
 
-<!-- FOTO: Forklift ile makine taşıma — alt profil (bkz. FOTO-3-5-4) -->
-![Forklift taşıma](../../assets/5.1/1.png)
-
 ---
 
 ## 5.1.2 Montaj adımları — özet

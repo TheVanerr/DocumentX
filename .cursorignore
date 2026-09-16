@@ -2,14 +2,14 @@
 *.md
 !CURSOR USER MANUEL TEMPLATE.md
 
-!projects/lym/
-!projects/lym/**
+#projects/lym/
+#projects/lym/**
 
 #!projects/vdl/
 #!projects/vdl/**
 
-#!projects/kbn/
-#!projects/kbn/**
+!projects/kbn/
+!projects/kbn/**
 
 #!projects/ult/
 #!projects/ult/**

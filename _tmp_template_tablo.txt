@@ -1,0 +1,23 @@
+32: | **Referans / Veri** | Teknik tablolar, hata kodları, KKD matrisi | Tablo; net başlıklı sütunlar | §4.4 b) |
+43: 2. **Ana içerik:** Konuya göre açıklayıcı paragraf(lar), tablo veya numaralı prosedür.
+71: - **Elektrik / güç / teknik değerler:** Yalnızca **Bölüm 3.5** tablosunda. Diğer bölümlerde tablo tekrarlanmaz.
+72: - **Acil stop / reset:** Yalnızca **Bölüm 2.5**. Arıza tablosu (11) → referans.
+116: - İçindekiler tablosu, çapraz referans ve özet listelerde de aynı yazım kullanılır.
+134: - ❌ LOTO / teknik tablo / alan verisini birden çok bölümde tekrarlamak.
+158: #### 1.3 Hedef Kitle ve Personel Kalifikasyonu (Yetki Matrisi)
+163: - **Yazılacak içerik:** Dijital muhafaza (QR, tablet erişimi); satış/devir halinde kılavuzun da teslim zorunluluğu.
+183: - **Derinlik:** ISO 7010 piktogramları; görsel + anlam + konum tablosu. Yıpranan etiketin yenilenmesi talimatı.
+193: #### 2.6 Kişisel Koruyucu Donanım (KKD) Matrisi
+194: - **Derinlik:** Faaliyet (operasyon, kimyasal ikmali, temizlik, elektrik/mekanik bakım) × zorunlu KKD tablosu; EN standardı belirt.
+215: - **ÖNEMLİ (Tek Kaynak):** Fiziksel + elektriksel + akışkan verilerinin tümü tek ana tabloda.
+218: - **Derinlik:** Güç (kW), devir (rpm), marka, model tablosu.
+241: - **Derinlik:** Bağlantı prosedürleri; teknik değerler için Bölüm 3.5'e referans, tabloyu tekrarlama.
+299: #### 9.2 Periyodik Bakım Tablosu
+300: - **ÖNEMLİ (Tek Kaynak):** Günlük/haftalık/aylık/250 saat/yıllık doldurulabilir takvim tablosu. Filtre için Bölüm 10'a referans.
+325: #### 11.2 HMI Alarm ve Hata Kodları Tablosu
+326: - **Derinlik:** Kod | Anlam | Olası neden | Çözüm | Yetkinlik sütunlu tablo; her çözüm ilgili bölüme referanslı (örn. Error-229 → 2.5, Error-422 → 2.4).
+359: 2. **GÖREV 2:** *"Bölüm 3 ve 4'ü yaz. 3.4 (alan) ve 3.5 (teknik tablo) SSOT olacak; sayıları başka yerde tekrarlama. Makine tanımını (3.1) çalışma prensibini anlatan akıcı paragrafla yaz."*
+363: 6. **GÖREV 6:** *"Bölüm 11, 12 ve 13'ü yaz. Hata kodlarını 5 sütunlu tabloda birleştir; her çözümü ilgili reset/kurma bölümüne referansla. Dokümanı tamamla."*
+374: - [ ] **SSOT korundu mu?** LOTO, teknik tablo, alan verisi tek yerde; diğerleri referans (A.4)?
+408: | **Tablo/veri** | Başlıklı sütunlar; her satır eksiksiz doldurulur, `[EKSİK]` işaretlenir |
+448: Endüstriyel yıkama makineleri; yüksek voltaj, sıcak su, basınçlı sistemler, kimyasal solüsyonlar ve hareketli mekanik parçalar içerdiğinden, makineye müdahale edecek personelin yetkinliği kritik bir iş güvenliği unsurudur. İşveren (makineyi işleten kurum), personelin aşağıdaki yetki matrisine uygun olarak görevlendirilmesinden tek başına sorumludur:
