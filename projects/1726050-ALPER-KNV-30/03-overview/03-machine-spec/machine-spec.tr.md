@@ -1,6 +1,6 @@
 ﻿# 3.3 Teknik özellikler
 
-Bu bölüm, **KNV 30 3000 2B** (seri no **1726050**) makinesine ait boyut, ağırlık, kapasite, elektrik, motor, medya bağlantıları ve ortam koşullarını **tek kaynak (SSOT)** olarak toplar. Kurulum (Bölüm 5), ayar (Bölüm 6) ve operasyon (Bölüm 7) bölümlerinde aynı sayısal değerler tekrarlanmaz; ilgili bölümler buraya çapraz referans verir.
+Bu bölüm, **KNV 30 3000 2B** (seri no **1726050**) makinesine ait boyut, ağırlık, kapasite, elektrik, motor, medya bağlantıları ve ortam koşullarını toplar. Kurulum (Bölüm 5), ayar (Bölüm 6) ve operasyon (Bölüm 7) bölümlerinde aynı sayısal değerler tekrarlanmaz; ilgili bölümler buraya çapraz referans verir.
 
 ---
 
@@ -17,7 +17,6 @@ Bu bölüm, **KNV 30 3000 2B** (seri no **1726050**) makinesine ait boyut, ağı
 
 Makine, ayarlanabilir ayak sistemi üzerinde terazi ve seviye ayarı yapılabilir şekilde kurulur. Ağırlık merkezi konveyör hattının ortasındadır; taşıma ve forklift planlaması için bkz. **Bölüm 3.5.4**. Minimum kurulum alanı boyutu **5 m × 3 m** olmalıdır (bkz. **Bölüm 3.5.2**).
 
-<!-- FOTO: Makine dış boyutları — operatör tarafından (sağ) genel görünüm -->
 ![Dış boyutlar](../../assets/3.3/1.png)
 ![Dış boyutlar](../../assets/3.3/2.png)
 ![Dış boyutlar](../../assets/3.3/3.png)
@@ -43,9 +42,8 @@ Makine, ayarlanabilir ayak sistemi üzerinde terazi ve seviye ayarı yapılabili
 | Ürün ağırlığı min | Kullanıcı firma belirler |
 | Ürün ağırlığı max | Kullanıcı firma belirler |
 
-Nominal kapasite ve ürün boyut/ağırlık sınırları kullanıcı firma tarafından proses koşullarına göre belirlenir; parça geometrisi konveyör taşıma kapasitesi ve nozul kapsama alanı ile uyumlu olmalıdır. Reçete ve kapasite yönetimi **Bölüm 8**'de açıklanmıştır.
+**900 sn**, bir parçanın yıkama → durulama → kurutma hattını katetme süresidir. **730 adet/saat**, konveyör üzerinde aynı anda birden fazla parça varken hat throughput referansıdır; robot cycle süresi 900 sn değildir. Nominal kapasite ve ürün boyut/ağırlık sınırları kullanıcı firma tarafından proses koşullarına göre belirlenir; parça geometrisi konveyör taşıma kapasitesi ve nozul kapsama alanı ile uyumlu olmalıdır. Reçete ve kapasite yönetimi **Bölüm 8**'de açıklanmıştır.
 
-<!-- FOTO: Proses bölgeleri — yıkama, durulama, kurutma hat boyunca -->
 ![Proses bölgeleri](../../assets/3.3/5.png)
 
 ---
@@ -68,9 +66,8 @@ Nominal kapasite ve ürün boyut/ağırlık sınırları kullanıcı firma taraf
 | Toplam sigorta / devre kesici | 100 A |
 | UPS / jeneratör gereksinimi | Hayır |
 
-Elektrik beslemesi montaj sırasında 380 V, 50 Hz, trifaze hat ile pano üzerinden sağlanır. Faz yönü faz sıra rölesi üzerinden kontrol edilmelidir; ters faz tespitinde iki faz değiştirilerek düzeltilir (bkz. **Bölüm 5** — Montaj adımları). Enerji izolasyonu ve LOTO noktası ana şalterdir (bkz. **Bölüm 2.4**).
+Elektrik beslemesi montaj sırasında 380 V, 50 Hz, trifaze hat ile pano üzerinden sağlanır. Faz yönü faz sıra rölesi üzerinden kontrol edilmelidir; ters faz tespitinde ana şalter **OFF** alınır, yetkili elektrik personeli iki fazı değiştirir (bkz. **Bölüm 5.3.4**). Enerji izolasyonu ve LOTO noktası ana şalterdir (bkz. **Bölüm 2.4**).
 
-<!-- FOTO: Elektrik panosu — ana şalter, HMI ve besleme etiketi (EKLENECEK: FOTO-3-3-2-elektrik-besleme.jpg) -->
 ![Elektrik beslemesi](../../assets/3.3/6.png)
 
 ---
@@ -105,7 +102,6 @@ Toplam kurutma fan gücü **16 kW**'dır. Motor koruma ve termik aşırı yük d
 
 Montaj sırasında basınçlı hava **3/4"**, su **1/2"** bağlantıları uygulanır; bağlantı konumları ve çap detayları layout çiziminde verilmiştir (bkz. **Bölüm 3.5**, **Bölüm 13.2**). Pnömatik regülatör basınç ayarı **6 bar**'dır. Su ve hava bağlantısı kurulduktan sonra HMI manuel sayfasındaki **su bilgisi** ve **hava bilgisi** göstergelerinin yeşil yanması beklenir (bkz. **Bölüm 5.5** — Pnömatik dolum testi).
 
-<!-- FOTO: Basınçlı hava ve su bağlantı noktaları — etiketli (EKLENECEK: FOTO-3-3-4-medya-baglantilari.jpg) -->
 ![Medya bağlantıları](../../assets/3.3/7.png)
 ![Medya bağlantıları](../../assets/3.3/8.png)
 
@@ -124,7 +120,7 @@ Montaj sırasında basınçlı hava **3/4"**, su **1/2"** bağlantıları uygula
 | Koruma sınıfı (IP) | IP55 |
 | Gürültü seviyesi | 65 dB(A) |
 
-Makine yalnızca **iç mekan** ortamında kullanılmak üzere tasarlanmıştır. Kurulum alanı minimum etraf boşlukları ve tavan yüksekliği **Bölüm 3.5.2**'de SSOT olarak verilmiştir; amaçlanan kullanım sınırları **Bölüm 3.2**'de özetlenmiştir.
+Makine yalnızca **iç mekan** ortamında kullanılmak üzere tasarlanmıştır. Kurulum alanı minimum etraf boşlukları ve tavan yüksekliği **Bölüm 3.5.2**'de verilmiştir; amaçlanan kullanım sınırları **Bölüm 3.2**'de özetlenmiştir.
 
 ---
 

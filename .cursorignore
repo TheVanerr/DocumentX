@@ -8,8 +8,8 @@
 #!projects/vdl/
 #!projects/vdl/**
 
-!projects/kbn/
-!projects/kbn/**
+#!projects/kbn/
+#!projects/kbn/**
 
 #!projects/ult/
 #!projects/ult/**
@@ -26,8 +26,8 @@
 #!projects/knv/
 #!projects/knv/**
 
-#!projects/1726050-ALPER-KNV-30/
-#!projects/1726050-ALPER-KNV-30/**
+!projects/1726050-ALPER-KNV-30/
+!projects/1726050-ALPER-KNV-30/**
 
 *.yaml
 *.yml

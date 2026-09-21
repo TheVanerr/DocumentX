@@ -1,32 +1,59 @@
-<!-- ÇEVİRİ GEREKLİ → EN | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 4.2 Handling and storage
 
-## 4.2 Uzun ve kısa süreli depolama prosedürü
+If the machine will be held on site before installation, if the assembly date will be postponed or if it will remain out of service for a long time, the storage rules in this chapter are applied. The purpose is to prevent rust, moisture damage, electrical-cabinet corrosion and chassis deformation. Storage conditions are compatible with transport conditions; ambient-temperature and humidity limits are given in **Chapter 3.3.6**.
 
-Makinenin tesise ulaştıktan sonra hemen kurulmayacağı, taşıma işlemlerinin ardından bekletileceği veya operasyonel nedenlerle uzun bir süre devre dışı bırakılacağı durumlarda; mekanik, elektriksel ve hidrolik sistemlerin korozyondan ve çevresel faktörlerden korunması hayati önem taşır. Bu prosedür, makinenin donanım ömrünü ve yapısal bütünlüğünü korumak amacıyla eksiksiz olarak uygulanmalıdır.
+The machine shall be stored only in an **indoor**, enclosed and dry area. Outdoor storage is outside intended use (see **Chapter 3.2**).
 
-## 4.2.1 Depolama öncesi hazırlık ve temizlik
-Makine depolama alanına alınmadan önce mutlaka tam kapsamlı bir sıvı tahliyesi ve temizlik işleminden geçmelidir:
-*   **Sıvıların Tahliyesi:** Yıkama tankı, pompa gövdeleri ve tüm tesisat boruları içerisindeki su veya kimyasal sıvılar vanalar aracılığıyla tamamen boşaltılmalıdır. Tesisatta kalabilecek minimum sıvı dahi düşük sıcaklıklarda donma tehlikesi yaratabilir veya uzun vadede durgunluktan kaynaklı tortu ve kireçlenme oluşturabilir.
-*   **Nozul Bakımı:** Sistemde kullanılan açılı geniş ağızlı standart püskürtme nozullarının içinde kimyasal kalıntı kalmadığından emin olunmalı, gerekirse hatlar temiz su ile durulanarak nozul ağızlarında oluşabilecek kurumaların ve tıkanmaların önüne geçilmelidir.
-*   **Yüzey ve Kaynak Temizliği:** Makinenin iç ve dış paslanmaz çelik yüzeyleri ile özellikle elektropolisaj işlemi uygulanmış kaynak dikiş bölgeleri, uygun endüstriyel temizleyicilerle silinmeli ve tamamen kurulanmalıdır. Islak veya nemli bırakılan yüzeyler, uzun süreli havasızlık ortamında yüzeysel korozyon riski oluşturabilir.
+---
 
-## 4.2.2 Çevresel şartlar ve zemin gereksinimleri
-Depolama koşulları, makinenin fabrika çıkış standartlarını koruyabilmesi için belirli iklim ve zemin kriterlerini sağlamalıdır:
-*   **İklimlendirme:** Makine kesinlikle dış ortam koşullarına (yağmur, kar, doğrudan güneş ışığı, rüzgar) maruz bırakılmamalıdır. Depolama alanı iyi havalandırılmış, kuru ve kapalı bir tesis olmalıdır. Ortam bağıl neminin düşük seviyelerde tutulması ve sıcaklığın ani dalgalanmalar göstermediği (+5°C ile +40°C arası) stabil bir alan seçilmesi önerilir.
-*   **Zemin Dengesi:** Makinenin şasi bütünlüğünün korunması için, cihaz tıpkı kurulum ortamında olduğu gibi sert ve pürüzsüz bir beton zemin üzerine indirilmelidir. Makinenin temelini oluşturan çelik ayakların tamamının zemine eşit oranda basması sağlanmalıdır. Ayaklardan birinin boşlukta kalması, aylar süren bekleyişlerde şaside yapısal kasılmalara veya kaynak yorgunluklarına yol açabilir.
+## 4.2.1 Storage conditions
 
-## 4.2.3 Elektriksel ve mekanik donanımın korunması
-Hareketsiz kalacak olan otomasyon donanımları ve sensörler, çevresel partiküllere karşı izole edilmelidir:
-*   **Kontrol Panosu İzolasyonu:** PLC, kontaktör grupları, güvenlik röleleri ve motor sürücüleri gibi hassas otomasyon bileşenlerini barındıran ana elektrik panosunun kapakları sıkıca kilitlenmeli ve sızdırmazlık contalarının tam bastığından emin olunmalıdır. Pano içindeki yoğuşmayı önlemek için, depolama süresi boyunca pano içerisine endüstriyel nem alıcı paketler (silika jel) yerleştirilmesi zorunludur.
-*   **Fiziksel İzolasyon:** Makinenin tamamı; havadaki toz, inşaat partikülleri veya endüstriyel uçucu buharlardan korunmak üzere hava alabilen (terleme yapmayan) dayanıklı bir endüstriyel branda ile örtülmelidir. Naylon streç film gibi hiç hava almayan malzemelerle makinenin tamamen sarılması, içeride sera etkisi yaratarak terlemeye (yoğuşmaya) neden olacağından kesinlikle tavsiye edilmez.
+| Parameter | Value |
+| :--- | :--- |
+| Storage position | Horizontal |
+| Maximum storage duration | 12 months |
+| Storage environment | Moisture and corrosive substances shall not be present |
+| Temperature range | +10°C – +30°C |
 
-## 4.2.4 Uzun süreli depolama (6 aydan uzun beklemeler)
-Makinenin 6 aydan daha uzun süre devreye alınmayacağı senaryolarda ekstra bir koruma rutini uygulanmalıdır:
-*   **Mekanik Egzersiz:** Pompa motorları ve döner ekipmanların milleri, rulman yataklarında oluşabilecek kilitlenmeleri ve mekanik salmastra yapışmalarını önlemek adına ayda en az bir kez el ile birkaç tur çevrilmelidir.
-*   **Kapak Contalarının Korunması:** Kabin kapağı sızdırmazlık contalarının zamanla ezilerek formunu kaybetmemesi ve karşı yüzeye yapışmaması için, kapak tam kilitlenmeden, arasına ince bir takoz konularak hafif aralık (2-3 cm) bırakılmalıdır. Bu işlem aynı zamanda yıkama kabini içinin doğal yollarla havalanmasını sağlayarak koku oluşumunu engeller.
+The machine shall be stored in a **horizontal** position on a hard and flat floor. Direct exposure to rain, snow, sun, wind and heavy dust is prohibited. Acid, alkali, solvent vapour or salty moisture shall not be present in the storage area; otherwise stainless surfaces, seals and electrical connections are damaged.
 
-## 4.2.5 Depolamadan çıkarma ve devreye almaya geçiş
-Depolama süreci bitip makine kalıcı çalışma lokasyonuna yerleştirildiğinde, sisteme enerji verilmeden hemen önce şu adımlar izlenmelidir:
-*   Elektrik panosuna yerleştirilmiş olan nem alıcı paketler çıkarılmalıdır.
-*   Kablolarda, pnömatik hortumlarda ve rakorlarda fiziksel bir yıpranma, gevşeme veya kemirgen hasarı olup olmadığı gözle kontrol edilmelidir.
-*   Tüm sabit çelik ayakların kurulum zeminine tam oturduğu tekrar teyit edildikten sonra, kılavuzda yer alan "Devreye Alma (Commissioning)" prosedürlerine geçilmelidir.
+If storage longer than 12 months is planned, contact manufacturer service; additional measures may be required for protective lubrication, seals and PLC/HMI battery condition (see **Chapter 1.3**).
+
+---
+
+## 4.2.2 Preparation before storage
+
+1. Empty process fluid in the wash and rinse tanks; leave no fluid in the pipe lines (see **Chapter 10.1.5**).
+2. Dry the machine outer surface; prevent long-term moisture accumulation.
+3. Close the electrical-cabinet doors; prevent dust and moisture ingress.
+4. Close compressed-air and water lines on the plant side; check connections that have a leakage risk.
+5. For long-term storage cover the machine with a **breathable** protective cover; fully air-tight stretch/packaging can create sweating and condensation risk.
+6. Leave the transport path open in the storage area; plan forklift access for emergency intervention (see **Chapter 4.1.4**).
+
+---
+
+## 4.2.3 During storage
+
+1. Store the machine in a **horizontal** position on a hard and flat floor; a sloped floor disturbs chassis and conveyor alignment.
+2. Periodically check that all **adjustable feet** make equal contact with the floor; a gap at a single foot creates a chassis-deformation risk over a long period.
+3. Limit storage duration to **12 months**; if the duration is exceeded, contact manufacturer service.
+4. Perform a monthly check for corrosion, moisture stains, condensation inside the cabinet and mechanical damage.
+5. If the machine does not need to be run periodically during storage, the energy connection shall remain off; the main switch shall be in the **OFF** position.
+
+**CAUTION — Full tank:** If tanks are left full during storage, fluid leakage, weight increase (**1500 kg** operating weight — see **Chapter 3.3.1**) and microbiological odour risk arise. Tanks shall have been emptied.
+
+---
+
+## 4.2.4 Removal from store and preparation for installation
+
+1. Remove the protective cover; check panel, covers, pipes and connection points for physical damage.
+2. Verify that the feet, lower profiles and forklift entry channels are suitable for installation/transport.
+3. If corrosion or moisture damage has formed during storage, remove it or make a service notification before proceeding to installation.
+4. Transport the machine to the installation point with the **Chapter 4.1.4** forklift procedure.
+5. Proceed to the installation procedure (see **Chapter 5.1**).
+
+**Expected result:** The machine shall be positioned in the installation area undamaged, dry and mechanically stable.
+
+---
+
+For the transport procedure see **Chapter 4.1**; for assembly see **Chapter 5**.

@@ -1,17 +1,16 @@
-<!-- ÇEVİRİ GEREKLİ → EN | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 4. TRANSPORT
 
-# 4.0 Taşıma ve nakliye
+Factory shipment, in-plant transport, lowering into the installation area and temporary storage of the **KNV 30 3000 2B** (serial no. **1726050**) machine are defined in this chapter. Mechanical damage, tip-over and corrosion risks that can arise during transport and storage are prevented by correct equipment selection and compliance with environmental conditions. This chapter gives only transport and storage procedures; dimension, weight and centre-of-gravity values are defined in **Chapter 3.3.1** and **Chapter 3.5.4**.
 
-Bu bölüm, makinenin tesise ulaştıktan sonra güvenli bir şekilde indirilmesi, saha içinde taşınması ve nihai çalışma alanına konumlandırılması için izlenmesi gereken temel prosedürleri kapsar. 
+The machine is transported **assembled** in the shipped state; no part is removed during transport. Transport weight is **1300 kg**. Lifting is performed only with a **forklift fork**; fork entry is provided via the transport profiles under the machine. A **crane must not be used under any circumstances** (see **Chapter 3.5.4**).
 
-Makinenin standart şasisi, yükü dengeli bir şekilde zemine aktaran sabit çelik ayaklar üzerine inşa edilmiştir. Yüksek ağırlıklı endüstriyel bir ekipman olması sebebiyle, makinenin yapısal bütünlüğünü korumak ve iş kazalarını önlemek amacıyla taşıma işlemleri için **yalnızca forklift** kullanılmalıdır. Tavan vinci, mobil vinç, transpalet veya halatla çekme gibi diğer kaldırma ve taşıma yöntemlerinin kullanılması kesinlikle yasaktır.
+| Subsection | Topic |
+| :--- | :--- |
+| **4.1** | Preparation before transport, forklift procedure, packaging |
+| **4.2** | Handling, temporary storage and removal from store |
 
-Taşıma ve nakliye operasyonları sırasında aşağıdaki temel kurallara titizlikle uyulmalıdır:
+Transport and storage ambient temperature shall be in the range **+10°C to +30°C**; moisture and corrosive substances shall not be present. During transport follow **Chapter 2** safety rules; for work requiring intervention on the machine, energy isolation is performed according to **Chapter 2.4**.
 
-*   **Yetkili Personel ve Sertifikasyon:** Makinenin nakliyesi, indirilmesi ve yer değiştirmesi işlemleri; operasyonun gerçekleştirildiği ülkenin iş sağlığı ve güvenliği mevzuatlarına tam uyumlu, geçerli ve resmi forklift operatörlüğü sertifikasına sahip yetkin personeller tarafından yapılmak zorundadır. Yetkisiz kişilerin taşıma işlemine müdahale etmesi yasaktır.
-*   **Ekipman Kapasitesi:** Taşıma işleminde kullanılacak forkliftin güvenli çalışma yükü (SWL) kapasitesi, makinenin "Bölüm 3.3. Teknik Özellikler" tablosunda belirtilen net ağırlığını (kuru ağırlık) rahatlıkla karşılamalıdır.
-*   **Doğru Kaldırma Noktaları:** Forklift çatalları doğrudan alt ana şasi profillerine hizalanmalı ve makine sabit ayakların bağlı olduğu bu ana taşıyıcı şasiden kaldırılmalıdır. Kaldırma veya sabitleme amacıyla makinenin dış kaplama saclarına, tesisat borularına, su tankına veya kontrol panosuna kesinlikle fiziksel baskı uygulanmamalıdır. 
-*   **Ağırlık Merkezi ve Denge:** Makinenin içindeki paslanmaz çelik su tankı, pompa ve motor gruplarının asimetrik yerleşimi nedeniyle donanımın ağırlık merkezi tam geometrik ortada olmayabilir. Forklift ile ana kaldırma işlemine başlanmadan önce ekipman yerden sadece birkaç santimetre kesilerek denge kontrolü yapılmalı; taşıma işlemi ani hızlanma ve duruşlardan kaçınılarak yavaş ve sarsıntısız gerçekleştirilmelidir.
-*   **İş Sağlığı ve Güvenliği:** Makine forklift çatalında havada asılıyken veya nakliye rotasında ilerlerken çevresinde güvenli bir çalışma alanı (kırmızı alan) oluşturulmalıdır. Asılı yükün altında, kör noktalarda veya forkliftin hareket güzergahında kesinlikle hiçbir personel bulunmamalıdır.
+---
 
-Makine nihai konumuna indirilene kadar, özellikle kontrol panosu üzerindeki dijital ekranlar, şalterler ve dışarıda kalan diğer hassas mekanik bileşenlerin darbelere karşı korunmasına azami özen gösterilmelidir.
+For installation steps see **Chapter 5**; for layout and forklift access points see **Chapter 3.5**.

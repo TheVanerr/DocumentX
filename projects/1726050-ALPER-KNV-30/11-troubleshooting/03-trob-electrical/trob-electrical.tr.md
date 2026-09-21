@@ -1,6 +1,6 @@
 ﻿# 11.3 Elektrik arızaları
 
-Elektrik arızalarında pano içi müdahale öncesi **LOTO** uygulayın (**Bölüm 2.4**). Besleme değerleri **Bölüm 3.3.3** tablosunda SSOT olarak verilmiştir.
+Elektrik arızalarında pano içi müdahale öncesi **LOTO** uygulayın (**Bölüm 2.4**). Besleme değerleri **Bölüm 3.3.3** tablosunda verilmiştir.
 
 ---
 
@@ -17,7 +17,7 @@ Ters faz bağlantısı pompa ve fanların ters dönmesine, proses arızasına ve
 
 1. Makineyi durdurun; ana şalteri **OFF** konumuna alın.
 2. Faz sıra rölesi durumunu kontrol edin.
-3. Faz yönü ters ise besleme hattında **iki fazı değiştirin** (**Bölüm 5.3.4**).
+3. Faz yönü ters ise ana şalteri **OFF** alın; besleme hattında **iki fazı** değiştirin (**Bölüm 5.3.4**). Enerji açıkken faz değiştirmeyin.
 4. Faz koruma rölesi çıkış verdiğini doğrulayın (**Bölüm 5.4.3**).
 5. Ana şalteri açın; Error-410 temizlendiğini HMI'dan doğrulayın.
 
@@ -38,7 +38,7 @@ Faz kaybı veya ters faz bağlantısında faz koruma devresi çıkış vermez; p
 
 ## 11.3.2 Motor arızaları
 
-| Alarm | Motor | Güç (SSOT) |
+| Alarm | Motor | Güç |
 |-------|-------|:------------:|
 | Error-100 | Yıkama pompası | 3 kW |
 | Error-101 | Durulama pompası | 1,85 kW |
@@ -99,7 +99,7 @@ Sıcaklık set değerleri HMI reçete/ayar sayfasından yapılır (**Bölüm 6.3
 4. Islak/ıslak ortam kaynaklı geçici trip ise kurutma sonrası bir kez reset deneyin.
 5. Trip tekrarlıyorsa ısıtıcı eleman değişimi için **servis çağırın** (**Bölüm 1.3**).
 
-Termokupl ve sensör kablo bağlantı renk kodları **elektrik şemasında** verilmiştir (teslim paketi — bkz. **Bölüm 13.2**).
+Termokupl ve sensör kablo bağlantı renk kodları **elektrik şemasında** verilmiştir (teslim paketi — bkz. **Bölüm 13.1.1**).
 
 **UYARI — Elektrik:** Isıtıcı ve kaçak akım koruma devresi müdahalesi yalnızca yetkili elektrik personeli tarafından yapılmalıdır.
 

@@ -1,8 +1,6 @@
 ﻿# 13.3 Parça listesi
 
-Makine **yedek parça listesi (BOM)** bu kılavuza gömülüdür; ayrı evrak olarak **teslim edilmez**. Tam liste **13.3.1** tablosunda SSOT olarak verilmiştir — başka bölümlerde yalnızca özet veya çapraz referans bulunur.
-
-**Veri kaynağı:** `1726050-ALPER-KNV 30 DATA` — `[PARCA_LISTESI]`
+Makine **yedek parça listesi (BOM)** bu kılavuza gömülüdür; ayrı evrak olarak **teslim edilmez**. Tam liste **13.3.1** tablosunda verilmiştir — başka bölümlerde yalnızca özet veya çapraz referans bulunur.
 
 ---
 
@@ -45,7 +43,7 @@ Makine **yedek parça listesi (BOM)** bu kılavuza gömülüdür; ayrı evrak ol
 | 10 19321 | REDÜKTÖR WITTENSTEIN NP035S-MF2-30-1G1-1S | Kritik | 0 (siparişle) | Konveyör tahrik | Arızada konveyör durur |
 | 10 19317 | SERVO MOTOR SIEMENS SIMOTICS 1FL6064-1AC61-2AA1 | Kritik | 0 (siparişle) | Konveyör | Arızada parça akışı durur |
 | 10 19318 | SERVO SÜRÜCÜ SIEMENS 6SL3210-5FE11-5UF0 | Kritik | 0 (siparişle) | Konveyör | Arızada parça akışı durur |
-| 10 07147 | SWITCH F3STGRNLPU21M1J8 OMRON MANYETİK KAPI | Kritik | 1 | RFID / kapak güvenlik | Arızada güvenlik fonksiyonu etkilenir |
+| 10 07147 | SWITCH F3STGRNLPU21M1J8 OMRON MANYETİK KAPI | Kritik | 1 | RFID kapak güvenlik sensörü | Arızada güvenlik fonksiyonu etkilenir |
 | 07 17478 | KNV 30 3000 2B PRO IDE GOULDS POMPA KOMPLESİ | Kritik | 0 (siparişle) | Durulama pompası | Arızada durulama prosesi durur |
 | 10 06675 | POMPA LOWARA ESHE 40-160/30 380V/50HZ | Kritik | 0 (siparişle) | Yıkama pompası | Arızada yıkama prosesi durur |
 
@@ -57,13 +55,13 @@ Makine **yedek parça listesi (BOM)** bu kılavuza gömülüdür; ayrı evrak ol
 |------|----------|
 | Kritik parçalar (operasyonel özet) | **9.1.5** |
 | Tüketim / önerilen yedek parça | **9.1.6** |
-| Tam BOM (SSOT) | Bu bölüm — **13.3.1** |
+| Tam BOM | Bu bölüm — **13.3.1** |
 | Periyodik bakım / filtre periyotları | **9.1.3**, **10.1** |
 | Temizlikte kullanılan filtreler | **10.1.3**, **10.1.4** |
 | Arıza — motor/pompa parçaları | **11.1.2**, **11.3.2** |
 | Yedek parça siparişi | **1.3.4** |
 
-**Aşınan parça (wear part):** DATA tanımına göre kategori = **Tüketim** satırları aşınan/tüketilen parçaları kapsar.
+**Aşınan parça:** kategori = **Tüketim** satırları aşınan/tüketilen parçaları kapsar.
 
 ---
 

@@ -1,7 +1,13 @@
-# 14. ANHÄNGE, GLOSSAR UND INDEX
+# 14. INDEX
 
-| Abschnitt | Titel | Thema |
-|-----------|-------|-------|
-| **14.1** | Anhänge | Alarmliste, Parameter, Rezepte, Garantiereferenzen |
-| **14.2** | Glossar | Begriffe und Abkürzungen |
-| **14.3** | Stichwortindex | LOTO, HMI, Not-Aus usw. — Abschnittsreferenzen |
+Dieser Abschnitt sammelt die Hilfsunterlagen des Handbuchs: externe Anhangsreferenzen, das technische Glossar und den Stichwortindex. Betriebsverfahren bleiben in den jeweiligen Hauptabschnitten; dieser Abschnitt dient nur **Referenz und Suche**.
+
+| Unterabschnitt | Thema |
+|-------|--------|
+| **14.1** | Anhänge — Alarm-, Parameter-, Rezept-, Garantiereferenzen |
+| **14.2** | Glossar — Abkürzungen und Begriffe |
+| **14.3** | Stichwortindex |
+
+---
+
+Der Hauptteil des Handbuchs umfasst die **Abschnitte 1**–**13**.

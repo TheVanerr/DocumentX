@@ -43,7 +43,7 @@ Makine 7/24 robot hattında çalışır; parça çıkışta algılandığında m
 
 1. Çıkış konveyöründe kalan parçayı kontrol edin.
 2. Robot programının parçayı aldığını doğrulayın.
-3. Parça alındıktan sonra HMI **Ürün Alındı Onay** düğmesine basın (**Bölüm 3.4.3**).
+3. Parça alındıktan sonra HMI **Ürün Alındı Onay** düğmesine basın (**Bölüm 3.4.6**).
 4. Sensör sürekli algılıyorsa hizalama ve kir kontrolü yapın.
 
 ---
@@ -61,7 +61,7 @@ Kritik sensörler HMI **Manuel Sayfa** input gözlemde gerçek zamanlı izlenir 
 | Sızıntı tavası | Su algılama sensörü | Makine altı sızıntı tavası | Error-452 |
 | Çıkış ürün algılama | Omron proximity (**E2BM12KN08M1B1** / **E3FA-DP23**) | Çıkış konveyörü | Error-461 |
 
-Yedek parça sipariş kodları **Bölüm 13.3** BOM tablosunda verilmiştir. Kablo renk kodu ve bağlantı detayları **elektrik şemasında** (teslim paketi — bkz. **Bölüm 13.2**).
+Yedek parça sipariş kodları **Bölüm 13.3** BOM tablosunda verilmiştir. Kablo renk kodu ve bağlantı detayları **elektrik şemasında** (teslim paketi — bkz. **Bölüm 13.1.1**).
 
 **RFID güvenlik sensörü:** Kapak açıldığında makine durur; periyodik fonksiyon testi **Bölüm 5.4.2** ve **6.2.2**'de tanımlanmıştır.
 

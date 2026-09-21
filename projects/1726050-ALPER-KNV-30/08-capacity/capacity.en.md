@@ -1,27 +1,26 @@
 # 8. CAPACITY
 
-The machine is an infeed-loaded conveyor industrial parts washer with two baths (wash + rinse). Capacity depends on part geometry, robot feed rate, recipe parameters (temperature, process times) and process functions activated on HMI (wash, rinse, drying 1/2).
+This chapter defines the production capacity, product limits and recipe/process configuration of the **KNV 30 3000 2B** machine. Capacity depends on part geometry, robot infeed/outfeed speed, HMI recipe parameters (temperature, oil skimmer) and active process functions (wash, rinse, drying 1/2, exhaust).
 
-The machine is designed for **24/7 robot** line operation.
+The machine is suitable for uninterrupted running on a **24/7 robot** line. Nominal cycle time and minimum capacity reference values are given in **Chapter 3.3.2**; they are not repeated in this chapter. Operation procedures are in **Chapter 7**; HMI parameter settings are in **Chapter 6.3**.
 
-| Parameter | Value |
-|-----------|-------|
-| Minimum capacity | **730 pcs/hour** |
-| Nominal cycle time | **900 s** (15 min) |
-| Maximum continuous operation | **24/7** |
-| Nominal / maximum capacity | Defined by end user |
-| Product size / weight limits | Defined by end user |
+| Subsection | Topic |
+|-------|--------|
+| **8.1** | Product capacity, limits, test, continuous running |
+| **8.2** | Recipe / specific setup — HMI configuration |
 
-For technical dimensions and process summary, see Section **3.3.2**.
+## Summary reference values
+
+| Parameter | Value | Reference |
+|-----------|-------|------|
+| Nominal cycle time | 900 s (15 min) | Chapter 3.3.2 |
+| Minimum capacity | 730 pcs/h | Chapter 3.3.2 |
+| Nominal / maximum capacity | Defined by the user company | — |
+| Maximum continuous running | 24/7 | — |
+| Recipe record limit | No limit | Chapter 3.4.11 |
+
+![Conveyor capacity overview](../assets/8.0/1.png)
 
 ---
 
-## Section contents
-
-| Section | Title | Topic |
-|---------|-------|-------|
-| **8.1** | Product Capacity | Capacity table, test conditions, continuous operation limit |
-| **8.2** | Specific Setup | Recipe parameters, product-based setup |
-
-<!-- FOTO: Conveyor capacity overview -->
-![Conveyor capacity overview](../assets/FOTO-8-0-capacity-genel.png)
+For the operating sequence see **Chapter 7.4**; for technical dimensions see **Chapter 3.3**.

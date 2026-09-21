@@ -1,6 +1,6 @@
 ﻿# 4.2 Elleçleme ve depolama
 
-Makine kurulmadan önce saha içinde bekletilecekse, montaj tarihi ertelenecekse veya uzun süre devre dışı kalacaksa bu bölümdeki depolama kuralları uygulanır. Amaç; paslanma, nem hasarı, elektrik panosu korozyonu ve şasi deformasyonunu önlemektir. Depolama koşulları taşıma koşulları ile uyumludur; ortam sıcaklığı ve nem sınırları **Bölüm 3.3.6**'da SSOT olarak verilmiştir.
+Makine kurulmadan önce saha içinde bekletilecekse, montaj tarihi ertelenecekse veya uzun süre devre dışı kalacaksa bu bölümdeki depolama kuralları uygulanır. Amaç; paslanma, nem hasarı, elektrik panosu korozyonu ve şasi deformasyonunu önlemektir. Depolama koşulları taşıma koşulları ile uyumludur; ortam sıcaklığı ve nem sınırları **Bölüm 3.3.6**'da verilmiştir.
 
 Makine yalnızca **iç mekan**, kapalı ve kuru alanda depolanmalıdır. Dış mekanda depolama amaçlanan kullanım dışındadır (bkz. **Bölüm 3.2**).
 
@@ -23,7 +23,7 @@ Makine **yatay** pozisyonda, sert ve düz zemin üzerinde depolanmalıdır. Doğ
 
 ## 4.2.2 Depolama öncesi hazırlık
 
-1. Yıkama ve durulama tanklarındaki proses sıvısını boşaltın; boru hatlarında sıvı kalmasın (bkz. **Bölüm 10.4**).
+1. Yıkama ve durulama tanklarındaki proses sıvısını boşaltın; boru hatlarında sıvı kalmasın (bkz. **Bölüm 10.1.5**).
 2. Makine dış yüzeyini kurulayın; uzun süreli nem birikimini önleyin.
 3. Elektrik panosu kapaklarını kapatın; toz ve nem girişini engelleyin.
 4. Basınçlı hava ve su hatlarını tesis tarafında kapatın; sızıntı riski olan bağlantıları kontrol edin.

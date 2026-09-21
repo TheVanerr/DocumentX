@@ -20,7 +20,6 @@ Profinet ağı üzerinden PLC–HMI haberleşmesi kurulmalıdır. Encoder / feed
 
 **DİKKAT — Yetkisiz müdahale:** PLC programı ve gömülü parametrelerin yetkisiz değiştirilmesi güvenlik fonksiyonlarını devre dışı bırakabilir.
 
-<!-- FOTO: PLC/HMI Profinet bağlantı noktaları (EKLENECEK: FOTO-5-6-0-profinet.jpg) -->
 ![Profinet altyapısı](../../assets/5.6/1.png)
 
 ---
@@ -39,9 +38,9 @@ MES veya SCADA entegrasyonu **müşteri** sorumluluğundadır. Makine **Profinet
 
 | Doküman | Dosya adı | Durum |
 |---------|-----------|-------|
-| I/O listesi | **1726050-ALPER-KNV 30 I/O LİSTESİ.pdf** | Ayrı evrak teslim edilmemiştir (KD) |
+| I/O listesi | Ayrı evrak teslim edilmez | Talep halinde imalatçı (bkz. **13.1.3**) |
 
-I/O listesi; giriş/çıkış adresleri, sensör ve aktüatör tanımları için referans dokümandır. Kurulum sırasında elektrik bağlantıları bu listeye göre doğrulanmalıdır. Dosya teslim edildiğinde **Bölüm 13.1** doküman listesine eklenir.
+I/O listesi; giriş/çıkış adresleri, sensör ve aktüatör tanımları için referans dokümandır. Ayrı evrak olarak teslim edilmez; kurulum elektrik bağlantıları elektrik şeması (**Bölüm 13.1.1**) ve saha tesisatı ile doğrulanır. Liste talep halinde imalatçıdan istenir.
 
 ---
 
@@ -52,7 +51,7 @@ I/O listesi; giriş/çıkış adresleri, sensör ve aktüatör tanımları için
 | 1 | Profinet ağı yapılandırıldı | ☐ |
 | 2 | PLC — HMI haberleşmesi doğrulandı | ☐ |
 | 3 | HMI açılış ekranı ve dil seçimi test edildi | ☐ |
-| 4 | I/O listesi referans alındı (veya KD notu kayda geçirildi) | ☐ |
+| 4 | Elektrik şeması referans alındı | ☐ |
 | 5 | Encoder/feedback ayarı üretici tarafından doğrulandı | ☐ |
 
 **Tarih:** _______________ **Kontrol eden:** _______________

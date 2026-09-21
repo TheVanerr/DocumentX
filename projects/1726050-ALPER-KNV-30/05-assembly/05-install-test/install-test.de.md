@@ -1,102 +1,112 @@
 # 5.5 Installationsprüfung und Test
 
-Die Tests sind nach Abschluss der Sicherheitstests in Abschnitt **5.4** durchzuführen. Erst wenn alle Prüfungen **OK** sind, den Betrieb aufnehmen.
+Die Installationsprüfungen werden nach Abschluss der Sicherheitsprüfungen in **Kapitel 5.4** durchgeführt. Ohne alle Kontrollen **OK** nicht in den Betrieb übergehen. Die folgende Checkliste wird für die Installationsprüfung verwendet.
 
 ---
 
-## 5.5.1 Mechanischer Installationstest
+## 5.5.1 Mechanische Installationsprüfung
 
 | # | Prüfung | Erwartetes Ergebnis | Status |
-|---|---------|---------------------|--------|
-| 1 | Ist die Maschine waagerecht? | Ja — innerhalb 0,5 mm Toleranz mit verstellbaren Füßen | ☐ |
+|---|---------|-----------------|:-----:|
+| 1 | Steht die Maschine in Waage? | Ja — verstellbare Füße, innerhalb 0,5 mm Toleranz | ☐ |
 
-Der mechanische Installationstest wird nach Abschluss der Positionierung und Nivellierung in Abschnitt 5.2 durchgeführt. Beide Achsen mit Wasserwaage oder gleichwertigem Messgerät prüfen.
+Die Prüfung erfolgt nach Abschluss der Niveaueinstellung in **Kapitel 5.2.3**. Mit Wasserwaage oder gleichwertigem Messgerät beide Achsen prüfen.
 
-<!-- FOTO: Waagerechtprüfung mit Wasserwaage -->
-![Mechanischer Test — Waagerechtprüfung](../../assets/FOTO-5-5-0-terazi-test.png)
+![Waagenkontrolle](../../assets/5.5/1.png)
 
 ---
 
 ## 5.5.2 Elektrische Inbetriebnahmeprüfung
 
 | # | Prüfung | Erwartetes Ergebnis | Status |
-|---|---------|---------------------|--------|
-| 1 | Gibt das Phasenschutzrelais einen Ausgang? | Ja | ☐ |
-| 2 | Liegt Spannung an der Maschine an? | Ja | ☐ |
-| 3 | Stoppt die Maschine bei Not-Halt? | Ja | ☐ |
+|---|---------|-----------------|:-----:|
+| 1 | Gibt das Phasenschutzrelais Ausgang? | Ja | ☐ |
+| 2 | Ist Spannung an der Maschine vorhanden? | Ja | ☐ |
+| 3 | Stoppt die Maschine bei Betätigung des Not-Halt? | Ja | ☐ |
 
-Elektrische Tests werden nach dem Einschalten am Schrank durchgeführt. Die Phasenfolge muss über das Phasenfolgerelais verifiziert sein.
+Die Phasendrehrichtung muss in **Kapitel 5.3.4** bestätigt worden sein.
 
-<!-- FOTO: Schrank geöffnet — Inbetriebnahmetest -->
-![Elektrische Inbetriebnahmeprüfung](../../assets/FOTO-5-5-1-elektrik-test.png)
+![Elektrische Inbetriebnahmeprüfung](../../assets/5.5/2.png)
 
 ---
 
-## 5.5.3 Pneumatik- und Medienanschlusstest
+## 5.5.3 Pneumatik- und Medienanschlussprüfung
 
 | # | Prüfung | Erwartetes Ergebnis | Status |
-|---|---------|---------------------|--------|
-| 1 | Leuchtet die Luftanzeige auf der HMI-Handseite nach Luftanschluss grün? | Ja | ☐ |
-| 2 | Leuchtet die Wasseranzeige auf der HMI-Handseite nach Wasseranschluss grün? | Ja | ☐ |
+|---|---------|-----------------|:-----:|
+| 1 | Ist die Luftinformation auf der HMI-Handseite grün? | Ja | ☐ |
+| 2 | Ist die Wasserinformation auf der HMI-Handseite grün? | Ja | ☐ |
 
-Anschlussparameter:
+Anschlusswerte: **6 bar / 3/4"** Luft, **1 bar / 1/2"** Wasser (siehe **Kapitel 3.3.5**).
 
-| Medium | Wert |
-|--------|------|
-| Druckluft | 6 bar — 3/4" |
-| Wasser | 1 bar — 1/2" |
-
-<!-- FOTO: HMI-Handseite — Luft und Wasser grün -->
-![Pneumatik-/Medientest — HMI Hand](../../assets/FOTO-5-5-2-medya-test.png)
+![Medientest — HMI Handseite](../../assets/5.5/3.png)
 
 ---
 
 ## 5.5.4 Sicherheitsfunktionsprüfung
 
 | # | Prüfung | Erwartetes Ergebnis | Status |
-|---|---------|---------------------|--------|
-| 1 | Stoppt die Maschine bei Not-Halt? | Ja — jede Funktion stoppt | ☐ |
-| 2 | Ist die Maschine betriebsbereit? | Ja — gelbes Signalelement | ☐ |
-| 3 | Stoppt der RFID-Sensor die Maschine beim Öffnen der Abdeckungen? | Ja | ☐ |
+|---|---------|-----------------|:-----:|
+| 1 | Stoppt der Not-Halt die Maschine? | Ja | ☐ |
+| 2 | Ist die Maschine einsatzbereit? | Ja — gelbe Signalleuchte | ☐ |
+| 3 | Stoppt der RFID-Sensor beim Öffnen einer Abdeckung? | Ja | ☐ |
 
-Detailliertes Not-Halt-Testverfahren siehe Abschnitt **5.4**.
+Detaillierte Prüfschritte stehen in **Kapitel 5.4**.
 
-<!-- FOTO: Sicherheitstest — RFID-Sensor auslösen -->
-![Sicherheitsfunktionsprüfung](../../assets/FOTO-5-5-3-guvenlik-test.png)
+![Sicherheitsfunktionsprüfung](../../assets/5.5/4.png)
 
 ---
 
-## 5.5.5 Leerlauflauf-Test
+## 5.5.5 Leerlaufprüfung
 
 | Parameter | Wert |
-|-----------|------|
-| Leerlauflauf-Testdauer | **15 Minuten** |
+|-----------|-------|
+| Dauer der Leerlaufprüfung | **15 Minuten** |
 
-### Testverfahren
+Die Leerlaufprüfung bestätigt den Dauerbetrieb der Maschine ohne Teile; sie prüft Leckage, Alarm, übermäßige Vibration und das Zusammenwirken der Prozessfunktionen. Während der Prüfung bewegen sich Förderband, Pumpen und Lüfter; den Gefahrenbereich nicht betreten, geeignete PSA verwenden (siehe **Kapitel 2.6**).
 
-1. Alle Prüfungen in Abschnitt 5.5.1–5.5.4 müssen als **OK** abgeschlossen sein.
-2. Maschine **ohne Teile** (leer) **15 Minuten** laufen lassen.
-3. Maschine nach Ablauf der Testdauer anhalten.
+### Voraussetzungen
 
-| # | Prüfung | Status |
-|---|---------|--------|
-| 1 | 15 Min. Leerlauflauf-Test abgeschlossen | ☐ OK / ☐ NOK |
+1. Die Kontrollen **5.5.1–5.5.4** müssen **OK** abgeschlossen sein.
+2. Auf der Förderbandlinie darf kein Teil oder Gegenstand zum Quetschen vorhanden sein.
+3. Ventile vor den Pumpen müssen **offen** sein.
+4. Luft- (**6 bar**) und Wasseranschlüsse aktiv; auf der HMI-Handseite Luft/Wasser **grün**.
 
-Bei erfolgreichem Leerlauflauf gilt die Maschine als **betriebsbereit** (Abschnitt 5.1 Schritt 9).
+### Prüfverfahren
 
-<!-- FOTO: Leerlauflauf-Test — Maschine in Betrieb -->
-![Leerlauflauf-Test — 15 Min.](../../assets/FOTO-5-5-4-bos-kosu.png)
+1. Zur HMI-**Betriebsseite** wechseln.
+2. Waschen, Spülen, Trocknen 1, Trocknen 2 und Abluft je nach Prüfumfang auf **aktiv** stellen.
+3. Die Taste **Vorbereitung Start** drücken; warten, bis Tankfüllung und Beheizung abgeschlossen sind (siehe **Kapitel 7.2**).
+4. Prüfen, dass die Signalleuchte **gelb** (einsatzbereit) leuchtet.
+5. Mit **Machine Start** den Automatikbetrieb starten; beobachten, dass Förderband, Pumpen und Lüfter anlaufen.
+6. Die Maschine **ohne Teile** **15 Minuten** laufen lassen.
+7. Während der Prüfung HMI-Alarmbildschirm und Signalleuchte überwachen; auf Leckage, ungewöhnliche Geräusche oder Geruch prüfen.
+8. Mit **Machine Stop** stoppen.
+
+| # | Abnahmekriterium | Status |
+|---|---------------|:-----:|
+| 1 | 15 min ununterbrochener Leerlauf abgeschlossen | ☐ OK / ☐ NOK |
+| 2 | Kein kritischer Alarm während der Prüfung | ☐ OK / ☐ NOK |
+| 3 | Keine sichtbare Leckage oder ungewöhnliche Vibration | ☐ OK / ☐ NOK |
+
+**Abweichender Zustand:** Bei Alarm die Maschine stoppen; siehe **Kapitel 11**. Ohne Wiederholung der Prüfung nicht in den Betrieb übergehen.
+
+Ist die Leerlaufprüfung erfolgreich, gilt die Maschine als **einsatzbereit** (**Kapitel 5.1 Schritt 9**).
 
 ---
 
-## 5.5.6 Zusammenfassende Installationsprüfliste
+## 5.5.6 Zusammenfassende Checkliste Installationsprüfung
 
-| Abschnitt | Test | Abgeschlossen |
-|-----------|------|:-------------:|
-| 5.5.1 | Mechanisch — waagerecht | ☐ |
-| 5.5.2 | Elektrisch — Phasenschutz, Not-Halt | ☐ |
+| Abschnitt | Prüfung | Abgeschlossen |
+|-------|------|:----------:|
+| 5.5.1 | Mechanisch — Waage | ☐ |
+| 5.5.2 | Elektro — Phasenschutz, Not-Halt | ☐ |
 | 5.5.3 | Medien — HMI Luft/Wasser grün | ☐ |
-| 5.5.4 | Sicherheit — RFID, betriebsbereit | ☐ |
-| 5.5.5 | Leerlauflauf — 15 Min. | ☐ |
+| 5.5.4 | Sicherheit — RFID, einsatzbereit | ☐ |
+| 5.5.5 | Leerlauf — 15 min | ☐ |
 
-**Datum:** _______________ **Geprüft von:** _______________ **Freigegeben von:** _______________
+**Datum:** _______________ **Geprüft durch:** _______________ **Freigegeben durch:** _______________
+
+---
+
+Für Betriebsverfahren siehe **Kapitel 7**.

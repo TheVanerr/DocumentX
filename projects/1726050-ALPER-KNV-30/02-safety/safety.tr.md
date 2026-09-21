@@ -9,7 +9,7 @@ Güvenlik gereksinimlerinin ihlali; yaralanma, ekipman hasarı, çevresel etki v
 | **2.1** | Güvenliğe giriş, sorumluluklar, amacına uygun kullanım çerçevesi |
 | **2.2** | Kalıntı riskler, makine etiketleri |
 | **2.3** | Operasyonel güvenlik kuralları |
-| **2.4** | LOTO — enerji izolasyonu (**SSOT**) |
+| **2.4** | LOTO — enerji izolasyonu |
 | **2.5** | Acil durdurma ve reset |
 | **2.6** | Kişisel koruyucu donanım (KKD) |
 

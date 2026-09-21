@@ -1,6 +1,6 @@
 ﻿# 12.3 Hurda değerlendirme ve geri dönüşüm
 
-Demontaj sonrası parçalar malzeme grubuna göre sınıflandırılmalı ve kullanıldığı ülkenin **çevresel bertaraf** ve **geri dönüşüm** mevzuatına uygun şekilde değerlendirilmelidir. Tehlikeli madde (yağ, akü, akü asidi, proses kimyasalı) **bulunmamaktadır** (DATA).
+Demontaj sonrası parçalar malzeme grubuna göre sınıflandırılmalı ve kullanıldığı ülkenin **çevresel bertaraf** ve **geri dönüşüm** mevzuatına uygun şekilde değerlendirilmelidir. Akü bulunmamaktadır. Yağlı proses suyu, konveyör gresi, redüktör keçesi sızıntısı ve temizlik deterjanı atık olarak ayrılır.
 
 ---
 
@@ -18,7 +18,7 @@ Demontaj sonrası parçalar malzeme grubuna göre sınıflandırılmalı ve kull
 4. Atık transfer kayıtlarını tesis çevre izinleri kapsamında saklayın.
 5. Orijinal ambalaj (konteyner) varsa ayrı geri dönüşüm akışına alın.
 
-**Beklenen sonuç:** Tehlikeli/atık karışımı yok; malzeme grupları ayrılmış; bertaraf belgelenmiş.
+**Beklenen sonuç:** Malzeme grupları ayrılmış; yağlı su ve gres karışmamış; bertaraf belgelenmiş.
 
 ---
 
@@ -34,7 +34,8 @@ Demontaj sonrası parçalar malzeme grubuna göre sınıflandırılmalı ve kull
 | **Plastik / kauçuk** | Contalar, hortum kaplamaları, HMI panel çerçevesi | Plastik/atık geri dönüşümü (yerel sınıflandırma) |
 | **Elektrik / elektronik (WEEE)** | Siemens S7-1200 PLC, HMI, sürücüler, kablolar | WEEE / elektronik atık mevzuatı — lisanslı işleyici |
 | **Bakır / alüminyum** | Kablo, ısıtıcı eleman bağlantıları, fan gövdeleri | Metal geri dönüşümü |
-| **Su / temizlik atığı** | Tank boşaltma suyu, sabunlu yıkama suyu | **Bölüm 10.1.8** — atık su arıtma/bertaraf |
+| **Su / temizlik atığı** | Tank boşaltma suyu, sabunlu yıkama suyu, yağlı proses suyu | **Bölüm 10.1.8** — atık su arıtma/bertaraf; evsel kanalizasyona dökmeyin |
+| **Gres / yağ** | Castrol Tribol GR 100-1 PD, keçe sızıntısı | Lisanslı yağlı atık |
 | **Ambalaj** | Konteyner, tahta, streç, köpük | Ambalaj geri dönüşümü (yerel) |
 | **Filtre / tüketim** | Ön filtre, torba filtre (bkz. **9.1.6**) | Kir durumuna göre atık su veya katı atık sınıfı |
 

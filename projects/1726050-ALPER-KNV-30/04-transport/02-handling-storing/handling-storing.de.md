@@ -1,32 +1,59 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 4.2 Handhabung und Lagerung
 
-## 4.2 Uzun ve Kısa Süreli Depolama Prosedürü
+Wenn die Maschine vor der Installation vor Ort gehalten wird, wenn das Montagedatum verschoben wird oder wenn sie lange außer Betrieb bleibt, werden die Lagerregeln in diesem Kapitel angewendet. Ziel ist die Vermeidung von Rost, Feuchteschäden, Korrosion des Elektroschranks und Fahrgestellverformung. Die Lagerbedingungen sind mit den Transportbedingungen kompatibel; Umgebungs- und Feuchtegrenzen stehen in **Kapitel 3.3.6**.
 
-Makinenin tesise ulaştıktan sonra hemen kurulmayacağı, taşıma işlemlerinin ardından bekletileceği veya operasyonel nedenlerle uzun bir süre devre dışı bırakılacağı durumlarda; mekanik, elektriksel ve hidrolik sistemlerin korozyondan ve çevresel faktörlerden korunması hayati önem taşır. Bu prosedür, makinenin donanım ömrünü ve yapısal bütünlüğünü korumak amacıyla eksiksiz olarak uygulanmalıdır.
+Die Maschine darf nur in einem **Innenraum**, einem geschlossenen und trockenen Bereich gelagert werden. Lagerung im Außenbereich liegt außerhalb der bestimmungsgemäßen Verwendung (siehe **Kapitel 3.2**).
 
-## 4.2.1 Depolama Öncesi Hazırlık ve Temizlik
-Makine depolama alanına alınmadan önce mutlaka tam kapsamlı bir sıvı tahliyesi ve temizlik işleminden geçmelidir:
-*   **Sıvıların Tahliyesi:** Yıkama tankı, pompa gövdeleri ve tüm tesisat boruları içerisindeki su veya kimyasal sıvılar vanalar aracılığıyla tamamen boşaltılmalıdır. Tesisatta kalabilecek minimum sıvı dahi düşük sıcaklıklarda donma tehlikesi yaratabilir veya uzun vadede durgunluktan kaynaklı tortu ve kireçlenme oluşturabilir.
-*   **Nozul Bakımı:** Sistemde kullanılan açılı geniş ağızlı standart püskürtme nozullarının içinde kimyasal kalıntı kalmadığından emin olunmalı, gerekirse hatlar temiz su ile durulanarak nozul ağızlarında oluşabilecek kurumaların ve tıkanmaların önüne geçilmelidir.
-*   **Yüzey ve Kaynak Temizliği:** Makinenin iç ve dış paslanmaz çelik yüzeyleri ile özellikle elektropolisaj işlemi uygulanmış kaynak dikiş bölgeleri, uygun endüstriyel temizleyicilerle silinmeli ve tamamen kurulanmalıdır. Islak veya nemli bırakılan yüzeyler, uzun süreli havasızlık ortamında yüzeysel korozyon riski oluşturabilir.
+---
 
-## 4.2.2 Çevresel Şartlar ve Zemin Gereksinimleri
-Depolama koşulları, makinenin fabrika çıkış standartlarını koruyabilmesi için belirli iklim ve zemin kriterlerini sağlamalıdır:
-*   **İklimlendirme:** Makine kesinlikle dış ortam koşullarına (yağmur, kar, doğrudan güneş ışığı, rüzgar) maruz bırakılmamalıdır. Depolama alanı iyi havalandırılmış, kuru ve kapalı bir tesis olmalıdır. Ortam bağıl neminin düşük seviyelerde tutulması ve sıcaklığın ani dalgalanmalar göstermediği (+5°C ile +40°C arası) stabil bir alan seçilmesi önerilir.
-*   **Zemin Dengesi:** Makinenin şasi bütünlüğünün korunması için, cihaz tıpkı kurulum ortamında olduğu gibi sert ve pürüzsüz bir beton zemin üzerine indirilmelidir. Makinenin temelini oluşturan çelik ayakların tamamının zemine eşit oranda basması sağlanmalıdır. Ayaklardan birinin boşlukta kalması, aylar süren bekleyişlerde şaside yapısal kasılmalara veya kaynak yorgunluklarına yol açabilir.
+## 4.2.1 Lagerbedingungen
 
-## 4.2.3 Elektriksel ve Mekanik Donanımın Korunması
-Hareketsiz kalacak olan otomasyon donanımları ve sensörler, çevresel partiküllere karşı izole edilmelidir:
-*   **Kontrol Panosu İzolasyonu:** PLC, kontaktör grupları, güvenlik röleleri ve motor sürücüleri gibi hassas otomasyon bileşenlerini barındıran ana elektrik panosunun kapakları sıkıca kilitlenmeli ve sızdırmazlık contalarının tam bastığından emin olunmalıdır. Pano içindeki yoğuşmayı önlemek için, depolama süresi boyunca pano içerisine endüstriyel nem alıcı paketler (silika jel) yerleştirilmesi zorunludur.
-*   **Fiziksel İzolasyon:** Makinenin tamamı; havadaki toz, inşaat partikülleri veya endüstriyel uçucu buharlardan korunmak üzere hava alabilen (terleme yapmayan) dayanıklı bir endüstriyel branda ile örtülmelidir. Naylon streç film gibi hiç hava almayan malzemelerle makinenin tamamen sarılması, içeride sera etkisi yaratarak terlemeye (yoğuşmaya) neden olacağından kesinlikle tavsiye edilmez.
+| Parameter | Wert |
+| :--- | :--- |
+| Lagerposition | Horizontal |
+| Maximale Lagerdauer | 12 Monate |
+| Lagerumgebung | Feuchtigkeit und korrosive Stoffe dürfen nicht vorhanden sein |
+| Temperaturbereich | +10°C – +30°C |
 
-## 4.2.4 Uzun Süreli Depolama (6 Aydan Uzun Beklemeler)
-Makinenin 6 aydan daha uzun süre devreye alınmayacağı senaryolarda ekstra bir koruma rutini uygulanmalıdır:
-*   **Mekanik Egzersiz:** Pompa motorları ve döner ekipmanların milleri, rulman yataklarında oluşabilecek kilitlenmeleri ve mekanik salmastra yapışmalarını önlemek adına ayda en az bir kez el ile birkaç tur çevrilmelidir.
-*   **Kapak Contalarının Korunması:** Kabin kapağı sızdırmazlık contalarının zamanla ezilerek formunu kaybetmemesi ve karşı yüzeye yapışmaması için, kapak tam kilitlenmeden, arasına ince bir takoz konularak hafif aralık (2-3 cm) bırakılmalıdır. Bu işlem aynı zamanda yıkama kabini içinin doğal yollarla havalanmasını sağlayarak koku oluşumunu engeller.
+Die Maschine ist in **horizontaler** Position auf hartem und ebenem Boden zu lagern. Direkte Einwirkung von Regen, Schnee, Sonne, Wind und starkem Staub ist verboten. Im Lagerbereich dürfen keine Säure, Lauge, Lösemitteldämpfe oder salzige Feuchtigkeit vorhanden sein; andernfalls werden Edelstahloberflächen, Dichtungen und elektrische Verbindungen beschädigt.
 
-## 4.2.5 Depolamadan Çıkarma ve Devreye Almaya Geçiş
-Depolama süreci bitip makine kalıcı çalışma lokasyonuna yerleştirildiğinde, sisteme enerji verilmeden hemen önce şu adımlar izlenmelidir:
-*   Elektrik panosuna yerleştirilmiş olan nem alıcı paketler çıkarılmalıdır.
-*   Kablolarda, pnömatik hortumlarda ve rakorlarda fiziksel bir yıpranma, gevşeme veya kemirgen hasarı olup olmadığı gözle kontrol edilmelidir.
-*   Tüm sabit çelik ayakların kurulum zeminine tam oturduğu tekrar teyit edildikten sonra, kılavuzda yer alan "Devreye Alma (Commissioning)" prosedürlerine geçilmelidir.
+Wenn eine Lagerung länger als 12 Monate geplant ist, den Herstellerservice kontaktieren; für Schutzschmierung, Dichtungen und den Batteriezustand von SPS/HMI können zusätzliche Maßnahmen erforderlich sein (siehe **Kapitel 1.3**).
+
+---
+
+## 4.2.2 Vorbereitung vor der Lagerung
+
+1. Die Prozessflüssigkeit in Wasch- und Spültanks entleeren; in den Rohrleitungen keine Flüssigkeit belassen (siehe **Kapitel 10.1.5**).
+2. Die Maschinenaußenfläche trocknen; langfristige Feuchteansammlung verhindern.
+3. Die Elektroschranktüren schließen; Staub- und Feuchteeintritt verhindern.
+4. Druckluft- und Wasserleitungen anlagenseitig schließen; Anschlüsse mit Leckagerisiko prüfen.
+5. Bei langfristiger Lagerung die Maschine mit einer **atmungsaktiven** Schutzabdeckung abdecken; vollständig luftdichte Stretch-/Verpackung kann Schwitz- und Kondensationsrisiko erzeugen.
+6. Den Transportweg im Lagerbereich offen lassen; Gabelstaplerzugang für Noteingriff planen (siehe **Kapitel 4.1.4**).
+
+---
+
+## 4.2.3 Während der Lagerung
+
+1. Die Maschine in **horizontaler** Position auf hartem und ebenem Boden lagern; ein geneigter Boden stört Fahrgestell- und Förderausrichtung.
+2. Periodisch prüfen, dass alle **verstellbaren Füße** den Boden gleichmäßig berühren; ein Spalt an einem einzelnen Fuß erzeugt über lange Zeit das Risiko einer Fahrgestellverformung.
+3. Die Lagerdauer auf **12 Monate** begrenzen; bei Überschreitung der Dauer den Herstellerservice kontaktieren.
+4. Monatlich Prüfung auf Korrosion, Feuchteflecken, Kondensation im Schrankinneren und mechanische Schäden durchführen.
+5. Wenn die Maschine während der Lagerung nicht periodisch betrieben werden muss, bleibt der Energieanschluss aus; der Hauptschalter muss in Stellung **OFF** sein.
+
+**VORSICHT — Voller Tank:** Wenn Tanks während der Lagerung gefüllt gelassen werden, entstehen Flüssigkeitsleckage, Gewichtszunahme (**1500 kg** Betriebsgewicht — siehe **Kapitel 3.3.1**) und mikrobiologisches Geruchsrisiko. Die Tanks müssen entleert sein.
+
+---
+
+## 4.2.4 Entnahme aus dem Lager und Vorbereitung zur Installation
+
+1. Die Schutzabdeckung entfernen; Paneel, Klappen, Rohre und Anschlusspunkte auf physische Schäden prüfen.
+2. Bestätigen, dass Füße, untere Profile und Gabelstapler-Einfahrtkanäle für Installation/Transport geeignet sind.
+3. Wenn während der Lagerung Korrosion oder Feuchteschaden entstanden ist, vor dem Übergang zur Installation beheben oder eine Servicemeldung erstellen.
+4. Die Maschine mit dem Gabelstaplerverfahren in **Kapitel 4.1.4** zum Installationspunkt transportieren.
+5. Zum Installationsverfahren übergehen (siehe **Kapitel 5.1**).
+
+**Erwartetes Ergebnis:** Die Maschine muss im Installationsbereich unbeschädigt, trocken und mechanisch stabil positioniert sein.
+
+---
+
+Für das Transportverfahren siehe **Kapitel 4.1**; für die Montage siehe **Kapitel 5**.

@@ -1,250 +1,126 @@
-# 3.1 Maschinenbeschreibung und Systemaufbau
+# 3.1 Maschinenbeschreibung
 
-KNV-30 3000 2B (Seriennummer: **1726050**, Kunde: **ALPER ÖZLEM IDEA**, Baujahr: **2026**) ist eine industrielle Teilewaschanlage mit Einlauf-Beschickung, Förderband und zwei Prozessbädern (Waschen + Spülen). Die Teile durchlaufen auf dem Förderband nacheinander Waschen, Spülen und Trocknen; die Hauptfunktion der Maschine ist die **Entfernung von Öl und Verschmutzungen**, die von industriellen Bearbeitungsprozessen auf den Teileoberflächen verbleiben.
+**KNV 30 3000 2B** ist eine automatische Teilewaschanlage, in der industrielle Teile auf einem Förderband durch Wasch-, Spül- und Trocknungsprozesse gefördert werden. Die Maschine hat einen integrierten Linienaufbau aus Wasch- und Spülbädern, einer Trocknungszone und einem Teiletransport-Förderband.
 
-Die Maschine ist nach dem Prinzip der **kontinuierlichen Förderband**-Beschickung ausgelegt. Die Beschickungsseite befindet sich **links**, die Entnahmeseite **rechts**, die Bedienseite **rechts**. Der Prozessablauf umfasst drei Schritte: **Waschen → Spülen → Trocknen**. Die Nenn-Zykluszeit ist mit **900 Sekunden** (15 Minuten) festgelegt.
+Die Förderflussrichtung ist **linke Beschickung / rechte Entnahme**. Zugang zum Bedienfeld (HMI) und zu den täglichen Eingriffspunkten befindet sich auf der **rechten Seite der Maschine**. In diesem Projekt sind Teile-Einlauf und -Auslauf mit einer **Roboterlinie** integriert; Be- und Entladeverfahren gehören zur Kundenlinie (**Siehe Kapitel 3.1.9**).
 
-<!-- FOTO: Allgemeine Maschinenansicht — Bedienseite (rechts), Beschickung links / Entnahme rechts -->
-![KNV-30 3000 2B Gesamtansicht](../../assets/FOTO-3-1-0-genel-gorunum.png)
-
----
-
-## 3.1.1 Allgemeine Beschreibung und Prozesskonzept
-
-KNV 30 3000 2B ist ein Waschsystem zur Oberflächenreinigung bearbeiteter Teile in industriellen Fertigungslinien, bei dem die auf dem Förderband fortlaufenden Teile feste Prozesszonen durchfahren. Die Bezeichnung **2B** bedeutet, dass die Maschine über **zwei unabhängige Prozessbäder** — Waschen und Spülen — verfügt; jedes Bad arbeitet mit eigenem Umwälzkreis, und eine Flüssigkeitsvermischung zwischen den Bädern ist konstruktiv verhindert.
-
-Teile werden von links (Beschickung/Einlauf) auf das Förderband verladen. Entlang der Förderstrecke durchlaufen sie nacheinander die Waschzone, Spülzone und Trockenzone und werden rechts (Entnahme/Auslauf) gereinigt und getrocknet entnommen. Dieses kontinuierliche Flussprinzip ermöglicht unterbrechungsfreie Produktion und ist für die Linienintegration geeignet.
-
-Die Außenabmessungen der Maschine betragen **3770 × 1730 × 2122 mm** (L × B × H), das Leergewicht **1300 kg**, das Betriebsgewicht (gefüllt) **1500 kg**. Die Maschine ist auf einem System mit **verstellbaren Füßen** montiert; der Schwerpunkt liegt in der Mitte der Förderstrecke.
-
-| Prozessschritt | Reihenfolge | Beschreibung |
-|----------------|-------------|--------------|
-| Waschen | 1 | Entfernung industrieller Öl- und Schmutzschichten |
-| Spülen | 2 | Entfernung von Waschrückständen und Verschmutzung |
-| Trocknen | 3 | Entfernung der Oberflächenfeuchtigkeit der Teile |
-
-Nenn-Zykluszeit: **900 s**
-
-<!-- FOTO: Prozessflussdiagramm oder Zonenansicht entlang der Förderstrecke -->
-![Prozessablauf — Waschen, Spülen, Trocknen](../../assets/FOTO-3-1-1-proses-akisi.png)
+Das Maschinengehäuse ist aus Edelstahl gefertigt. Prozesstanks arbeiten mit heißem Wasser; die Trocknungszone hat Air-Knife-Einheiten und Abluftausrüstung, der Waschtank hat eine Ölskimmer-Einheit. Komponentenanordnungen und Prozessfluss sind in den folgenden Unterabschnitten detailliert.
 
 ---
 
-## 3.1.2 Förderband-Transportsystem
+## 3.1.1 Gesamtansicht und Prozessfluss
 
-Das Förderband bildet das Transportsystem und das Rückgrat der Maschine. Es gewährleistet die kontrollierte und kontinuierliche Fortbewegung der Teile zwischen den Prozesszonen. Ein- und Auslaufstellen sind für den Bediener zugänglich; Beschickung **links**, Entnahme **rechts**.
+Die Maschine besteht entlang der Linie aus drei Hauptprozesszonen: **Waschen**, **Spülen** und **Trocknen**. Teile werden von links auf das Förderband genommen, durchlaufen die Prozesszonen nacheinander und verlassen die Linie rechts.
 
-Der Förderantrieb erfolgt über einen Getriebemotor:
+![KNV-30 3000 2B Gesamtansicht](../../assets/3.1/1.png)
 
-| Parameter | Wert |
-|-----------|------|
-| Motorbezeichnung | Förderband-Getriebemotor |
-| Leistung | 1,5 kW |
-| Drehzahl | 2000 U/min |
-| Marke | Siemens |
-| Modell | SIMOTICS S-1FL6 |
+Die Nenn-Prozesszykluszeit ist mit **900 Sekunden** (15 Minuten) definiert (siehe **Kapitel 3.3.2**). Der Förderantrieb erfolgt durch **Servomotor**; der Teilefluss arbeitet synchron zur Roboterlinie.
 
-Die Förderstrecke ist entlang der Prozesszonen so angeordnet, dass die Teile unter den Wasch- und Spüldüsen hindurchgeführt werden. Als Referenz- / Home-Position ist der **Förderbandanfang** zu verwenden.
-
-Am Förderband befinden sich insgesamt **4 Schmierstellen**: 2 an der Einlaufseite und 2 an der Auslaufseite. Periodische Schmierung ist für lange Lebensdauer und zuverlässigen Förderbetrieb erforderlich (Einzelheiten im Wartungsabschnitt).
-
-<!-- FOTO: Förderband Ein- und Auslauf — Beschickung (links) / Entnahme (rechts) -->
-![Förderband Ein-Auslaufansicht](../../assets/FOTO-3-1-2-konveyor-giris-cikis.png)
-
-<!-- FOTO: Förderantrieb — Getriebe und Motor -->
-![Förderband-Getriebemotor](../../assets/FOTO-3-1-3-konveyor-motor.png)
+![Prozessfluss — Waschen, Spülen, Trocknen](../../assets/3.1/2.png)
 
 ---
 
-## 3.1.3 Waschbad und Umwälzkreislauf
+## 3.1.2 Förderband und Teiletransport
 
-Das Waschbad ist die erste Prozesszone, in der industrielle Öl- und Schmutzschichten auf den Teileoberflächen entfernt werden. Das Prozessmedium im Tank wird von der Waschpumpe angesaugt und dem Sprühsystem zugeführt; die Teile kommen beim Fortlauf auf dem Förderband mit dem Druckmedium aus den Düsen in Kontakt.
+Die Förderstrecke transportiert Teile zwischen den Prozesszonen. Beschickung ist **links**, Entnahme ist **rechts**. Der Getriebemotor des Förderbands ist ein **1,5 kW** Siemens-SIMOTICS-Servoantriebssystem (siehe **Kapitel 3.3.4**).
 
-Der Wasch-Umwälzkreis wird von einem unabhängigen Pumpenmotor angetrieben:
+Bei der Roboterintegration unterliegen Teile-Einlauf und -Auslauf dem Verfahren der Kundenlinie. Wenn am Auslaufförderband ein Teil erkannt wird, stoppt die Maschine; nachdem der Roboter das Teil entnommen hat, wird mit HMI **Produkt entnommen Bestätigung** fortgefahren (siehe **Kapitel 3.4.6**, **11.1.2** Error-461).
 
-| Parameter | Wert |
-|-----------|------|
-| Motorbezeichnung | Waschpumpenmotor |
-| Leistung | 3 kW |
-| Drehzahl | 2900 U/min |
-| Marke | Lowara |
-| Modell | ESHE 40-160/30 |
-
-Der Waschtank ist das Hauptbehältervolumen zur Speicherung und Erwärmung des Prozessmediums. Im Tank befinden sich **Vorfilter**; diese müssen bei der täglichen Wartung ausgebaut und gereinigt werden. An der Pumpenleitung sind **Feinbeutelfilter** installiert; diese müssen bei der wöchentlichen Tiefenreinigung ausgebaut und gereinigt werden.
-
-Als Prozesswasser ist **Leitungswasser** oder **aufbereitetes Wasser** zu verwenden. Der Wassereinlassdruck beträgt **1 bar**, die Wassertemperatur **+10°C bis +70°C**.
-
-<!-- FOTO: Waschbad — Gesamtansicht Tank, Pumpe und Filter -->
-![Waschbad Gesamtansicht](../../assets/FOTO-3-1-4-yikama-banyosu.png)
-
-<!-- FOTO: Waschpumpe — Lowara ESHE 40-160/30 -->
-![Waschpumpe](../../assets/FOTO-3-1-5-yikama-pompasi.png)
+![Förderband Einlauf-Auslauf-Ansicht](../../assets/3.1/3.png)
 
 ---
 
-## 3.1.4 Spülbad und Umwälzkreislauf
+## 3.1.3 Waschbad
 
-Das Spülbad ist die zweite Prozesszone, in der Reinigungsmittel-, Ölrückstände und Verschmutzungen von den nach dem Waschprozess verbleibenden Teilen entfernt werden. Es verfügt über einen vom Waschbad unabhängigen Tank- und Pumpenkreis; eine Flüssigkeitsvermischung zwischen beiden Bädern ist konstruktiv ausgeschlossen.
+Die Waschzone ist das Tanksystem, in dem Teile mit heißem Prozesswasser und Düsen gewaschen werden. Die Waschpumpe ist **Lowara ESHE 40-160/30**, **3 kW**, **380 V** (siehe **Kapitel 3.3.4**).
 
-Spül-Umwälzkreis:
+Im Tank befinden sich ein **Vorfilter**, ein **Innenfilter** und ein **Ölskimmer**. Die tägliche Vorfilterreinigung ist in **Kapitel 10.1.3** definiert. Das manuelle Ventil vor der Pumpe muss vor dem Start **offen** sein (siehe **Kapitel 7.2.5**).
 
-| Parameter | Wert |
-|-----------|------|
-| Motorbezeichnung | Spülpumpenmotor |
-| Leistung | 1,85 kW |
-| Drehzahl | 2900 U/min |
-| Marke | GOULDS |
-| Modell | GCEA 370/3 |
-
-Auch im Spültank sind Filter installiert; im Rahmen der wöchentlichen Tiefenreinigung müssen Tankfilter und Beutelfilter an der Pumpenausleitung ausgebaut und gereinigt werden. **Säurehaltige** Reinigungsmittel oder Mittel, die **Edelstahl angreifen**, dürfen nicht verwendet werden.
-
-<!-- FOTO: Spülbad — Gesamtansicht Tank und Pumpe -->
-![Spülbad Gesamtansicht](../../assets/FOTO-3-1-6-durulama-banyosu.png)
+![Waschbad Gesamtansicht](../../assets/3.1/4.png)
 
 ---
 
-## 3.1.5 Ölabscheider-Einheit
+## 3.1.4 Spülbad
 
-Zur kontinuierlichen Entfernung schwimmender Ölschichten im Waschtank ist eine Ölabscheider-Einheit integriert. Bei der industriellen Teilewäsche reduziert Ölanreicherung die Wirksamkeit des Prozessmediums und erhöht den Wartungsbedarf; der Ölabscheider verhindert diese Anreicherung und sichert die Prozessqualität im Tank.
+Die Spülzone ist das Tanksystem, in dem nach dem Waschen auf der Teileoberfläche verbliebenes Prozesswasser mit Spülwasser entfernt wird. Die Spülpumpe ist **Goulds GCEA 370/3**, **1,85 kW** (siehe **Kapitel 3.3.4**).
 
-| Parameter | Wert |
-|-----------|------|
-| Motorbezeichnung | Ölabscheider-Getriebemotor |
-| Leistung | 0,04 kW |
-| Marke | FINEX |
-| Modell | E1610-40-150-17B-C |
+Füllstandsregelung des Spültanks, automatisches Füllventil und Heizsystem arbeiten mit ähnlicher Logik wie der Waschtank. Die wöchentliche Filterreinigung unterliegt **Kapitel 10.1.4**.
 
-<!-- FOTO: Ölabscheider-Einheit — Position am Waschtank -->
-![Ölabscheider-Einheit](../../assets/FOTO-3-1-7-yag-siyirici.png)
+![Spülbad Gesamtansicht](../../assets/3.1/5.png)
 
 ---
 
-## 3.1.6 Trocknungs- und Abluftsystem
+## 3.1.5 Ölskimmer
 
-Die Trockenzone ist der dritte und letzte Prozessschritt, in dem die Oberflächenfeuchtigkeit der Teile nach dem Spülprozess durch kräftigen, gerichteten Luftstrom entfernt wird. Die Trocknung stellt sicher, dass Teile feuchtigkeitsfrei aus der Linie ausgetragen werden — für nachfolgende Prozessschritte mit kritischer Oberflächenqualität wie Lackieren, Beschichten und Montage.
+Der Ölskimmer sammelt die auf der Waschtankoberfläche angesammelte Ölschicht und reduziert die Ölbelastung des Prozesswassers. Der Getriebemotor ist eine **0,04 kW**, **1340 rpm** FINEX-angetriebene Einheit (siehe **Kapitel 3.3.4**).
 
-Die Maschine ist mit **4 Trocknungsventilatoren** ausgestattet:
+Übermäßige Ölansammlung kann zu Filterverstopfung und Leistungsabfall im Prozess führen. Periodische Wartung erfolgt gemäß dem Kalender in **Kapitel 9.1.3**.
 
-| Ventilator | Leistung | Drehzahl |
-|------------|----------|----------|
-| Trocknungsventilator 1 | 4 kW | 2900 U/min |
-| Trocknungsventilator 2 | 4 kW | 2900 U/min |
-| Trocknungsventilator 3 | 4 kW | 2900 U/min |
-| Trocknungsventilator 4 | 4 kW | 2900 U/min |
+![Ölskimmer-Einheit](../../assets/3.1/6.png)
 
-Die Gesamtleistung der Trocknungsventilatoren beträgt **16 kW**. Zur Ableitung feuchter Luft aus der Trockenzone dient ein **Abluftventilator**:
+---
 
-| Parameter | Wert |
-|-----------|------|
-| Motorbezeichnung | Abluftventilatormotor |
-| Leistung | 0,37 kW |
-| Drehzahl | 2800 U/min |
-| Marke | ENA |
-| Modell | ENA 2 |
+## 3.1.6 Trocknung und Abluft
 
-Auf der Betriebsseite der HMI-Oberfläche können Waschen, Spülen, **Trocknen 1**, **Trocknen 2** und **Abluft** unabhängig ein- und ausgeschaltet werden; der Bediener kann diese Funktionen entsprechend dem Prozessbedarf konfigurieren.
+In der Trocknungszone nehmen **4 Trocknungs-Air-Knives** (Trocknungsventilator-Einheiten, je **4 kW**) Feuchtigkeit von der Teileoberfläche. Der **Abluftventilator** (**0,37 kW**) unterstützt Dampf- und Feuchteabfuhr (siehe **Kapitel 3.3.4**).
 
-<!-- FOTO: Trockenzone — Gesamtansicht der Ventilatoreinheiten -->
-![Trocknungsventilatoren](../../assets/FOTO-3-1-8-kurutma-fanlari.png)
+Da die Förderflussrichtung **linker Einlauf → rechter Auslauf** ist, ist die Anordnung der Trocknungsausrüstung wie folgt:
 
-<!-- FOTO: Abluftventilator -->
-![Abluftventilator](../../assets/FOTO-3-1-9-egzost-fani.png)
+| Komponente | Lage (entlang des Förderbands) |
+|---------|---------------------------|
+| **Abluftventilator** | **Förderband-Einlauf**-Seite (links) |
+| **Trocknungs-Air-Knives** (4 Stück) | **Förderband-Auslauf**-Seite (rechts) |
+
+Nach dem Spülen durchläuft das Teil zuerst die Abluftzone auf der Einlaufseite; die Trocknungs-Air-Knives führen die Endtrocknung auf der Auslaufseite aus.
+
+Die Trocknungsventilatoren sind Modell **Ölçükontrol OK 710K37** (4 × **4 kW**, **2940 rpm**). Die Trocknungsfunktion kann am HMI mit dem Prozesswähler aktiv/passiv geschaltet werden (siehe **Kapitel 7.1.6**).
+
+Staubansammlung in Trocknungsventilatoren und Abluftkanälen senkt die Luftleistung; sie ist im periodischen Wartungskalender enthalten (siehe **Kapitel 9.1.3**).
+
+![Trocknungs- und Abluftzone](../../assets/3.1/7.jpg)
 
 ---
 
 ## 3.1.7 Elektrische, Steuerungs- und Automatisierungsinfrastruktur
 
-Die elektrische und automatisierungstechnische Infrastruktur der Maschine ist im zentralen **Elektroschrank** zusammengeführt. Schutzart des Schrankes: **IP55**; Abmessungen: **800 × 1200 × 300 mm** (B × H × T).
+Die elektrische und Automatisierungsinfrastruktur der Maschine ist auf dem zentralen **Elektroschrank** zusammengefasst. Die Schutzart des Schranks ist **IP55**, die Abmessungen **800 × 1200 × 300 mm** (B × H × T).
 
-### Stromversorgung
+Versorgungsspannung, installierte Leistung, Hauptschalterwerte und die Motorliste stehen in **Kapitel 3.3** — Technische Daten; Tabellen werden in diesem Kapitel nicht wiederholt. Kurzfassung:
 
-| Parameter | Wert |
-|-----------|------|
-| Versorgungsspannung | 380 V |
-| Frequenz | 50 Hz |
-| Phasen | 3 |
-| Installierte Gesamtleistung | 50 kW |
-| Maximaler Strombezug | 100 A |
-| Versorgungskonfiguration | 3P+N+PE |
-| Hauptschalter | 100 A, Schneider |
-| Gesamtsicherung / Leistungsschalter | 100 A |
-| Leistungsfaktor (cos φ) | 0,9 |
-| Kurzschlussstrom (ICC) — Anforderung | 10 kA |
-| USV / Generator — Anforderung | Nein |
+- Versorgung: **380 V**, **50 Hz**, **3 Phasen**, **3P+N+PE**
+- Gesamte installierte Leistung: **50 kW** (einschließlich Heizung)
+- Hauptschalter: **100 A**, Schneider
 
-### Automatisierungskomponenten
+Die Automatisierungsarchitektur basiert auf einer **Siemens SIMATIC S7-1200**-SPS (CPU 1215C) und einem **SIMATIC HMI KTP700 Basic PN** (7")-Bedienfeld. Start/Stop, Alarmverwaltung, Prozessfunktionsauswahl, Spracheinstellung und Parameterzugriff erfolgen über die HMI-Schnittstelle. Lagen der Steuerelemente, Signallampenbedeutungen und Bildschirmverhalten sind in **Kapitel 3.4** — Maschinensteuerungen detailliert.
 
-| Komponente | Marke / Modell | Merkmal |
-|------------|----------------|---------|
-| HMI | SIMATIC HMI KTP700 Basic PN (6AV2123-2GB03-0AX0) | 7" Display |
-| SPS | SIEMENS SIMATIC S7-1200 | CPU 1215C DC/DC/DC (6ES7215-1AG40-0XB0) |
-| E/A | — | 36 Eingänge / 24 Ausgänge |
-| Hauptschalter — Position | Am Elektroschrank | — |
-| Start / Stopp | HMI-Oberfläche — digitale Taste | — |
+Die Farbcodierung der Signalleuchte ermöglicht dem Bediener, den Maschinenzustand aus der Ferne zu überwachen: **rot** Alarm, **gelb** betriebsbereit, **grün** läuft. Im Alarmfall wird der HMI-Alarmbildschirm aktiviert; gleichzeitig leuchtet die Signalleuchte rot.
 
-### Signalleuchten (Signalelement)
-
-| Farbe | Bedeutung |
-|-------|-----------|
-| Rot | Alarm |
-| Gelb | Maschine betriebsbereit |
-| Grün | Maschine in Betrieb |
-
-Bei Alarmzustand wird der HMI-Alarmbildschirm aktiviert; gleichzeitig leuchtet das Signalelement **rot**. Für Rezept- / Programmspeicherung besteht keine Begrenzung.
-
-HMI-Sprachen: **Türkisch**, **Englisch**, **Deutsch**. Auf der HMI-Oberfläche ist Passwortschutz vorhanden. Betriebsarten: **Automatik** und **Wartung**. Jog- / Tipp-Tasten sind nicht vorhanden.
-
-### Sicherheitsintegration
-
-An der Maschine ist ein **RFID-Sicherheitssensor** installiert; beim Öffnen der Abdeckungen stoppt der Sensor die Maschine. Stop-Kategorie der Maschine: **Kat. 3**. Insgesamt **4 Not-Halt-Taster** sind an folgenden Stellen angeordnet: (1) am Elektroschrank, (2) rechts am Förderband am Maschineneinlauf, (3) links am Förderband am Maschineneinlauf, (4) links am Förderband am Maschinenauslauf. Bei Betätigung des Not-Halt stoppt **jede Funktion der Maschine**.
-
-<!-- FOTO: Elektroschrank — HMI, Hauptschalter und Signalleuchten -->
-![Elektroschrank](../../assets/FOTO-3-1-10-elektrik-panosu.png)
-
-<!-- FOTO: HMI-Bildschirm — Hauptbetriebsseite -->
-![HMI-Oberfläche](../../assets/FOTO-3-1-11-hmi-ekran.png)
+Die Maschine ist über das **Profinet**-Protokoll für die Integration in ein übergeordnetes System vorbereitet. Die HMI-Schnittstelle hat Sprachunterstützung in **Türkisch, Englisch und Deutsch**.
 
 ---
 
-## 3.1.8 Hilfsmedien-Anschlüsse
+## 3.1.8 Not-Halt und Sicherheitsausrüstung
 
-Für Prozess- und pneumatische Funktionen der Maschine sind Medienanschlüsse erforderlich:
+An der Maschine befinden sich **4 Not-Halt-Taster**:
 
-| Medium | Wert | Hinweis |
-|--------|------|---------|
-| Drucklufteinlass | 6 bar | 3/4"-Anschluss (Montageschritt 4) |
-| Wassereinlassdruck | 1 bar | 1/2"-Anschluss (Montageschritt 5) |
-| Wassertemperatur | +10°C – +70°C | Leitungs- oder aufbereitetes Wasser |
-| Wasserqualität | Leitungswasser oder aufbereitetes Wasser | — |
+1. Am Elektroschrank
+2. Am Maschineneinlauf rechts vom Förderband
+3. Am Maschineneinlauf links vom Förderband
+4. Am Maschinenauslauf links vom Förderband
 
-Der Druckluftregler ist auf **6 bar** eingestellt. Auf der HMI-Handseite werden Luft- und Wasseranschlussstatus durch eine grüne Anzeige dargestellt.
+Beim Drücken des Not-Halts stoppt **jede Funktion** an der Maschine. Das Wiederinbetriebnahme-Verfahren, Reset-Schritte und das Maschinenverhalten nach Not-Halt stehen in **Kapitel 2.5** — Not-Halt-System; die Schritte werden in diesem Kapitel nicht wiederholt.
 
-<!-- FOTO: Druckluft- und Wasseranschlussstellen -->
-![Medienanschlussstellen](../../assets/FOTO-3-1-12-medya-baglantilari.png)
+Die Anzahl der Sicherheitstüren / festen Barrieren ist null; Wartungsklappen werden durch einen **RFID-Sicherheitssensor** überwacht. Beim Öffnen einer Klappe stoppt der RFID-Switch die Maschine. Die Sicherheitskategorie der Maschine ist **Cat. 3** (EN ISO 13849-1; siehe **Kapitel 2.1.3**). Es ist kein Lichtvorhang vorhanden.
+
+Während der Wartung darf der RFID-Sicherheitssensor nicht umgangen werden; vor dem Öffnen einer Klappe müssen Energieisolation und das **LOTO**-Verfahren angewendet werden (siehe **Kapitel 2.4**).
 
 ---
 
-## 3.1.9 Übersicht der Hauptkomponenten
+## 3.1.9 Linienintegration und Kommunikation
 
-Die folgende Tabelle fasst die Hauptmodule der Maschine und ihre Funktionen zusammen:
+Im Rahmen dieses Projekts erfolgen die **Einlauf**- und **Auslauf**-Operationen der Teile durch Roboter; Einlauf-/Auslaufverfahren gehören zur Kundenlinie. An der Maschine ist kein ständiger Bediener vorhanden; bei einer Störung erfolgt der Eingriff durch Wartungspersonal (siehe **Kapitel 11**).
 
-| Komponente | Funktion |
-|------------|----------|
-| Förderband | Teiletransport; kontinuierlicher Fluss zwischen Prozesszonen |
-| Waschpumpe | Waschbad-Umwälzung; Drucksprühen |
-| Spülpumpe | Spülbad-Umwälzung; Rückstandsentfernung |
-| Ölabscheider | Entfernung schwimmenden Öls aus dem Waschtank |
-| Trocknungsventilator (×4) | Oberflächentrocknung der Teile; gesamt 16 kW |
-| Abluftventilator | Feuchtigkeitsabführung aus der Trockenzone |
-| Elektroschrank | Stromverteilung, Schutz und Automatisierungszentrale |
-| HMI | Bedienoberfläche; Start/Stopp, Alarme, Parameter |
-| SPS | Prozessautomatisierung und E/A-Verwaltung |
-| Hauptschalter | 100 A — Schneider |
-| Sicherung | 100 A Gesamtleistungsschalter |
+Der Anschluss an das übergeordnete System (MES / SCADA) erfolgt **durch den Kunden**. Die Maschine ist mit **Profinet**-Infrastruktur integrationsbereit; Protokoll, I/O-Kurzfassung und Dokumentation sind in **Kapitel 5.6** definiert. Die Liste der gelieferten externen Dokumente steht in **Kapitel 13.1**.
+---
 
-Die Maschine ist für den Betrieb in **Innenräumen** bei **+10°C bis +30°C** und **30%–50%** relativer Luftfeuchtigkeit ausgelegt. Schutzart: **IP55**; Geräuschpegel: **65 dB(A)**.
-
-Sämtliche Abdeckungen an der Maschinenrückseite sind abnehmbar und für Wartungszugang zugänglich. Mindestabstand vorne, hinten und seitlich: **1000 mm**; Mindestraumhöhe: **2500 mm**.
-
-<!-- FOTO: Maschinenrückseite — Wartungsabdeckungen -->
-![Wartungszugangsabdeckungen — Maschinenrückseite](../../assets/FOTO-3-1-13-bakim-kapaklari.png)
+Für Grenzen der bestimmungsgemäßen Verwendung siehe **Kapitel 3.2**; für technische Tabellen siehe **Kapitel 3.3**; für Steuerelemente siehe **Kapitel 3.4**; für das Layout siehe **Kapitel 3.5**.

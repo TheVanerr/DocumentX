@@ -377,14 +377,14 @@ Aylık bakım maddeleri:
 Yıllık bakım maddeleri:
 - Tüm emniyet fonksiyonları test raporu (RFID, acil stop, kaçak akım) — Bkz. Bölüm 2, 5.4
 - Isıtıcı rezistans ve termokupl fonksiyon kontrolü
-- Redüktör yağ değişimi — Bkz. Bölüm 9.1.4
+- Redüktör keçe / sızıntı kontrolü (WITTENSTEIN ömür boyu yağlı, değişim yok) — Bkz. Bölüm 9.1.4
 - Elektrik bağlantıları sıkılık kontrolü (LOTO, yetkili elektrikçi)
 - Uzun duruş planlanıyorsa tank boşaltma ve koruyucu temizlik — Bkz. Bölüm 7.3
 
 [BAKIM_YAGLAMA]
 Yağlama noktası listesi (konum / yağ tipi / periyot):Konveyör girişinde 2 adet, çıkışında 2 adet olmak üzere toplam 4 adet yağlama noktası vardır. Bunlar kullanım kılavuzunda belirtilmiştir.
-Gres tipi:
-Redüktör yağ değişim:
+Gres tipi:Castrol Tribol GR 100-1 PD (NLGI 1) — 4 konveyör nipel, aylık
+Redüktör yağ değişim:WITTENSTEIN NP035S-MF2-30 ömür boyu yağlı (Castrol Tribol GR 100-1 PD); periyodik değişim yok; yıllık sızıntı kontrolü
 
 [BAKIM_YEDEK_PARCA]
 Kritik yedek parça listesi:Bkz. [PARCA_LISTESI] — Kategori=Kritik ve Tüketim satırları (Bölüm 9.1.5 özeti)

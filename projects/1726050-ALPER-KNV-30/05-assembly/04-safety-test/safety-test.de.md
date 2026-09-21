@@ -1,111 +1,107 @@
-# 5.4 Sicherheitssystem-Tests
+# 5.4 Prüfung der Sicherheitssysteme
 
-Stop-Kategorie der Maschine: **Kat. 3**. Ein **RFID-Sicherheitssensor** ist an der Maschine installiert. **Keine Lichtschranke** vorhanden. Anzahl Schutz Türen / Barrieren: **0**.
+Nach der Installation müssen die Sicherheitsfunktionen vor dem Betrieb verifiziert werden. Die Maschinensicherheitskategorie ist **Cat. 3** (EN ISO 13849-1). An der Maschine ist ein **RFID-Sicherheitssensor** vorhanden; es gibt **keinen Lichtvorhang**. Die Anzahl Sicherheitstüren / fester Schutzzäune beträgt **0**.
+
+Not-Halt-Positionen, Reset-Verfahren und Verhalten nach Not-Halt stehen in **Kapitel 2.5**; in diesem Abschnitt werden nur die **Installationsprüfschritte** definiert. Bei Wartungseingriffen das LOTO-Verfahren gemäß **Kapitel 2.4** anwenden.
+
+Prüfintervall der Not-Halt-Funktion: Muss **einmal monatlich** wiederholt werden (siehe **Kapitel 6.2** — Sicherheitseinstellungen).
 
 ---
 
-## 5.4.1 Not-Halt-Test
+## 5.4.1 Not-Halt-Prüfung
 
-An der Maschine befinden sich insgesamt **4** Not-Halt-Taster:
+An der Maschine befinden sich **4** Not-Halt-Taster (siehe **Kapitel 2.5**):
 
 | # | Position |
-|---|----------|
+|---|-------|
 | 1 | Am Elektroschrank |
-| 2 | Rechts am Förderband am Maschineneinlauf |
-| 3 | Links am Förderband am Maschineneinlauf |
-| 4 | Links am Förderband am Maschinenauslauf |
+| 2 | Am Maschineneinlauf rechts vom Förderband |
+| 3 | Am Maschineneinlauf links vom Förderband |
+| 4 | Am Maschinenauslauf links vom Förderband |
 
-### Testverfahren
+### Prüfverfahren
 
 Für jeden Not-Halt-Taster einzeln:
 
-1. Bei laufender oder betriebsbereiter Maschine Not-Halt-Taster betätigen.
-2. Prüfen, dass **jede Funktion der Maschine stoppt**.
-3. Prüfen, dass das Signalelement **rot** leuchtet.
-4. Not-Halt-Taster freigeben; sicherstellen, dass die Gefahr behoben ist.
-5. **Reset-Taste** am Schranketikett drücken, bis die Leuchte aufleuchtet.
-6. Maschine in Normalzustand zurückführen.
+1. Prüfen, dass der Gefahrenbereich frei ist; niemand darf in Einlauf/Auslauf des Förderbands eintreten.
+2. Bei bereiter oder laufender Maschine den betreffenden Not-Halt-Taster betätigen.
+3. Prüfen, dass **jede Funktion** an der Maschine stillsteht.
+4. Prüfen, dass die Signalleuchte **rot** leuchtet.
+5. Das Reset-Verfahren anwenden (**Siehe Kapitel 2.5**).
+6. Die Maschine vor der Prüfung des nächsten Tasters in den normalen Bereitschaftszustand bringen.
 
 | Prüfung | Erwartetes Ergebnis |
-|---------|---------------------|
-| Stoppt die Maschine bei Not-Halt? | Ja — jede Funktion stoppt |
+|---------|----------------|
+| Stoppt die Maschine bei Betätigung des Not-Halt? | Ja — jede Funktion stoppt |
 
-Not-Halt-Testperiode: **monatlich** wiederholen.
+![Not-Halt-Taster](../../assets/5.4/1.png)
 
-<!-- FOTO: Not-Halt-Taster — 4 Stellen -->
-![Not-Halt-Stellen](../../assets/FOTO-5-4-0-acil-stop.png)
-
-<!-- FOTO: Reset-Taste — am Schranketikett -->
-![Reset-Taste — Schranketikett](../../assets/FOTO-5-4-1-reset-butonu.png)
+![Reset-Taste](../../assets/5.4/2.png)
 
 ---
 
-## 5.4.2 RFID-Sicherheitssensor-Test
+## 5.4.2 Prüfung des RFID-Sicherheitssensors
 
 | Parameter | Wert |
-|-----------|------|
+|-----------|-------|
 | Sensortyp | RFID-Sicherheitssensor |
-| Anzahl Schutz Türen | 0 |
+| Anzahl Sicherheitstüren | 0 |
 
-### Testverfahren
+Dieser Unterabschnitt ist ein **Funktionstest**; er ist kein Wartungszugang. Vor dem Öffnen von Abdeckungen für Wartung/Reinigung ist **Kapitel 2.4** LOTO verpflichtend.
 
-1. Bei laufender oder betriebsbereiter Maschine eine Abdeckung öffnen.
-2. Prüfen, dass der RFID-Sensor die Maschine **stoppt**.
-3. Abdeckung schließen und Reset-Verfahren anwenden.
+### Prüfverfahren
+
+1. Prüfen, dass der Gefahrenbereich frei ist; beim Öffnen der Abdeckung nicht zu beweglichen Teilen greifen.
+2. Bei bereiter oder laufender Maschine eine RFID-geschützte Wartungsabdeckung **nur zur Erkennung** teilweise öffnen.
+3. Prüfen, dass der RFID-Sensor die Maschine **stoppt**.
+4. Die Abdeckung schließen; das Reset-Verfahren anwenden (**Siehe Kapitel 2.5**).
 
 | Prüfung | Erwartetes Ergebnis |
-|---------|---------------------|
-| Stoppt der RFID-Sensor die Maschine beim Öffnen der Abdeckungen? | Ja |
+|---------|----------------|
+| Stoppt der RFID-Sensor die Maschine, wenn Abdeckungen geöffnet werden? | Ja |
 
-Bypass der Schutzvorrichtung ist **streng untersagt**. Für Wartung Abdeckungen erst nach Abschaltung öffnen; **LOTO-Verfahren** anwenden.
+Der RFID-Sicherheitssensor wird **nicht überbrückt**. Bei nicht bestandener Prüfung nicht in Betrieb gehen.
 
-<!-- FOTO: RFID-Sicherheitssensor — Abdeckungsbereich -->
-![RFID-Sicherheitssensor](../../assets/FOTO-5-4-2-rfid-sensor.png)
+![RFID-Sicherheitssensor](../../assets/5.4/3.png)
 
 ---
 
-## 5.4.3 Phasenschutz- und Elektrosicherheitstest
-
-Checkliste elektrische Inbetriebnahme:
+## 5.4.3 Phasenschutz- und elektrische Sicherheitsprüfung
 
 | # | Prüfung | Erwartetes Ergebnis |
-|---|---------|---------------------|
-| 1 | Gibt das Phasenschutzrelais einen Ausgang? | Ja |
-| 2 | Liegt Spannung an der Maschine an? | Ja |
-| 3 | Stoppt die Maschine bei Not-Halt? | Ja |
+|---|---------|----------------|
+| 1 | Gibt das Phasenschutzrelais Ausgang? | Ja |
+| 2 | Ist Spannung an der Maschine vorhanden? | Ja |
+| 3 | Stoppt die Maschine bei Betätigung des Not-Halt? | Ja |
 
-<!-- FOTO: Phasenschutzrelais — im Schrank -->
-![Phasenschutzrelais](../../assets/FOTO-5-4-3-faz-koruma.png)
+![Phasenschutzrelais](../../assets/5.4/4.png)
 
 ---
 
-## 5.4.4 Test Betriebsbereitschaft
+## 5.4.4 Prüfung des Einsatzbereitschaftszustands
 
 | Prüfung | Erwartetes Ergebnis |
-|---------|---------------------|
-| Ist die Maschine betriebsbereit? | Ja |
-| Signalelement gelb (betriebsbereit) | Ja |
+|---------|----------------|
+| Ist die Maschine einsatzbereit? | Ja |
+| Signalleuchte | Gelb — einsatzbereit |
 
-Auf der HMI-Oberfläche darf kein Alarm vorliegen. Ist die Maschine nicht betriebsbereit, werden Alarmbildschirm und rotes Signalelement aktiviert.
+Auf dem HMI-Alarmbildschirm darf kein aktiver Alarm vorhanden sein. Bei Alarm siehe **Kapitel 11**.
 
-<!-- FOTO: Signalelement — gelb (betriebsbereit) -->
-![Signalelement — betriebsbereit](../../assets/FOTO-5-4-4-tepe-lambasi-sari.png)
+![Signalleuchte — einsatzbereit](../../assets/5.4/5.png)
 
 ---
 
-## 5.4.5 Checkliste Sicherheitsfunktionsprüfung
+## 5.4.5 Checkliste Sicherheitsfunktionstest
 
-Nach Abschluss aller Sicherheitstests folgende Liste ausfüllen:
-
-| # | Test | Ergebnis | Datum | Geprüft von |
-|---|------|----------|-------|-------------|
+| # | Prüfung | Ergebnis | Datum | Geprüft durch |
+|---|------|:-----:|-------|-----------|
 | 1 | Not-Halt #1 — Schrank | ☐ OK / ☐ NOK | | |
 | 2 | Not-Halt #2 — Einlauf rechts | ☐ OK / ☐ NOK | | |
 | 3 | Not-Halt #3 — Einlauf links | ☐ OK / ☐ NOK | | |
 | 4 | Not-Halt #4 — Auslauf links | ☐ OK / ☐ NOK | | |
-| 5 | Reset-Verfahren | ☐ OK / ☐ NOK | | |
+| 5 | Reset-Verfahren (Kapitel 2.5) | ☐ OK / ☐ NOK | | |
 | 6 | RFID-Sensor — Abdeckung offen | ☐ OK / ☐ NOK | | |
 | 7 | Phasenschutzrelais | ☐ OK / ☐ NOK | | |
-| 8 | Maschine betriebsbereit | ☐ OK / ☐ NOK | | |
+| 8 | Maschine einsatzbereit | ☐ OK / ☐ NOK | | |
 
-Erst wenn alle Punkte **OK** sind, zu Abschnitt 5.5 Installationsprüfungen und Betrieb übergehen.
+Ohne alle Punkte **OK** nicht zu den Prüfungen in **Kapitel 5.5** und nicht in den Betrieb übergehen.

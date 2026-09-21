@@ -1,31 +1,47 @@
 # 7.6 Other operation topics
 
-There is **no operator** on the machine. No human intervention is required during normal operation.
+This section summarises operational topics outside the standard start/stop and cycle sequence. There is **no continuous shift operator** at the machine; loading/unloading does not require human intervention in normal running. HMI commands and Error-461 confirm are given by the line supervisor or maintenance.
 
 ---
 
 ## 7.6.1 Format / product change
 
-| Parameter | Value / Description |
-|-----------|---------------------|
-| Format / product change time (min) | **None** |
+| Parameter | Value |
+|-----------|-------|
+| Format / product change time | **Not provided** |
+| Format-change procedure | **Not provided** |
 
-No format change procedure (see Section **6.1.5**).
-
----
-
-## 7.6.2 Scrap management
-
-| Parameter | Value / Description |
-|-----------|---------------------|
-| Scrap management | **Not applicable** — no operator on machine; scrap management is customer line responsibility |
+Mechanical format change is not applied (see **Chapter 6.1.5**). Different part types are managed with HMI temperature setpoints and process-function on/off configuration (see **Chapter 8.2**).
 
 ---
 
-## 7.6.3 Intervention points
+## 7.6.2 Scrap / reject management
 
-| Parameter | Value / Description |
-|-----------|---------------------|
-| Operator intervention points | **None** — no operator on machine |
+| Parameter | Value |
+|-----------|-------|
+| Scrap / reject management | **Not applied** — the machine has no scrap bin; customer line |
 
-On fault, intervention is performed by **maintenance personnel**. For troubleshooting procedures, see Section **11**.
+Scrap collection and reject recording are the customer line’s responsibility. A separate scrap bin or reject procedure is not defined in the machine scope.
+
+---
+
+## 7.6.3 Intervention points and responsibility
+
+| Personnel | Role |
+|----------|-----|
+| Operator (at the machine) | **Not provided** |
+| Maintenance personnel | Fault/alarm intervention, periodic maintenance, cleaning |
+| Manufacturer service | PLC, encoder, major fault |
+
+When a fault occurs:
+
+1. The tower lamp is **red**; the HMI Alarm Page shows the active alarm.
+2. The higher-level line may receive a stop signal (customer configuration).
+3. Intervention is performed by **maintenance personnel** — follow the **Chapter 11** diagnosis flow.
+4. For repairs that require energy isolation, apply **LOTO** (**See Chapter 2.4**).
+
+Intervention that would disable safety functions must be performed only by authorised service.
+
+---
+
+For fault codes see **Chapter 11.2**; for capacity/recipe see **Chapter 8**.

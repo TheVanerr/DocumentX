@@ -1,6 +1,6 @@
 ﻿# 5.5 Kurulum doğrulama ve test
 
-Kurulum doğrulama testleri, **Bölüm 5.4** güvenlik testleri tamamlandıktan sonra uygulanır. Tüm kontroller **OK** olmadan operasyona geçilmemelidir. Testler DATA dosyasındaki **KURULUM_TEST** checklist'ine dayanır.
+Kurulum doğrulama testleri, **Bölüm 5.4** güvenlik testleri tamamlandıktan sonra uygulanır. Tüm kontroller **OK** olmadan operasyona geçilmemelidir. Aşağıdaki kontrol listesi kurulum doğrulaması için kullanılır.
 
 ---
 
@@ -8,11 +8,10 @@ Kurulum doğrulama testleri, **Bölüm 5.4** güvenlik testleri tamamlandıktan 
 
 | # | Kontrol | Beklenen sonuç | Durum |
 |---|---------|-----------------|:-----:|
-| 1 | Makine terzide mi? | Evet — ayarlanabilir ayaklar, 0,5 mm tolerans içinde | ☐ |
+| 1 | Makine terazide mi? | Evet — ayarlanabilir ayaklar, 0,5 mm tolerans içinde | ☐ |
 
 Test, **Bölüm 5.2.3** seviye ayarı tamamlandıktan sonra yapılır. Su terazisi veya eşdeğer ölçüm aleti ile her iki eksende kontrol edin.
 
-<!-- FOTO: Su terazisi ile terazi kontrolü (EKLENECEK: FOTO-5-5-0-terazi-test.jpg) -->
 ![Terazi kontrolü](../../assets/5.5/1.png)
 
 ---
@@ -27,7 +26,6 @@ Test, **Bölüm 5.2.3** seviye ayarı tamamlandıktan sonra yapılır. Su terazi
 
 Faz yönü **Bölüm 5.3.4**'te doğrulanmış olmalıdır.
 
-<!-- FOTO: Pano — devreye alma testi (EKLENECEK: FOTO-5-5-1-elektrik-test.jpg) -->
 ![Elektrik devreye alma testi](../../assets/5.5/2.png)
 
 ---
@@ -41,7 +39,6 @@ Faz yönü **Bölüm 5.3.4**'te doğrulanmış olmalıdır.
 
 Bağlantı değerleri: **6 bar / 3/4"** hava, **1 bar / 1/2"** su (bkz. **Bölüm 3.3.5**).
 
-<!-- FOTO: HMI manuel — hava/su yeşil -->
 ![Medya test — HMI manuel](../../assets/5.5/3.png)
 
 ---
@@ -56,7 +53,6 @@ Bağlantı değerleri: **6 bar / 3/4"** hava, **1 bar / 1/2"** su (bkz. **Bölü
 
 Detaylı test adımları **Bölüm 5.4**'te verilmiştir.
 
-<!-- FOTO: RFID test — kapak açık durdurma (EKLENECEK: FOTO-5-5-3-guvenlik-test.jpg) -->
 ![Güvenlik fonksiyon testi](../../assets/5.5/4.png)
 
 ---
@@ -67,7 +63,7 @@ Detaylı test adımları **Bölüm 5.4**'te verilmiştir.
 |-----------|-------|
 | Boş koşu test süresi | **15 dakika** |
 
-Boş koşu testi, makinenin parça olmadan sürekli çalışmasını doğrular; sızıntı, alarm, aşırı titreşim ve proses fonksiyonlarının birlikte çalışmasını kontrol eder.
+Boş koşu testi, makinenin parça olmadan sürekli çalışmasını doğrular; sızıntı, alarm, aşırı titreşim ve proses fonksiyonlarının birlikte çalışmasını kontrol eder. Test sırasında konveyör, pompalar ve fanlar hareket eder; tehlike bölgesine girmeyin, uygun KKD kullanın (bkz. **Bölüm 2.6**).
 
 ### Ön koşullar
 
@@ -96,9 +92,6 @@ Boş koşu testi, makinenin parça olmadan sürekli çalışmasını doğrular; 
 **Anormal durum:** Alarm oluşursa makineyi durdurun; **Bölüm 11**'e bakın. Test tekrarlanmadan operasyona geçmeyin.
 
 Boş koşu testi başarılı ise makine **kullanıma hazır** kabul edilir (**Bölüm 5.1 Adım 9**).
-
-<!-- FOTO: Boş koşu — makine çalışır, tepe lambası yeşil (EKLENECEK: FOTO-5-5-4-bos-kosu.jpg) -->
-![Boş koşu testi](../../assets/5.5/5.png)
 
 ---
 

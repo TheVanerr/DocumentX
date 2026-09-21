@@ -1,64 +1,98 @@
 # 7.2 Maschinenstart
 
-Am HMI-Bildschirm gibt es **eine Vorbereitungstaste**. Die Vorbereitung muss vor dem Start abgeschlossen sein.
+Vor Machine Start muss das Verfahren **Vorbereitung Start** abgeschlossen sein. Die Vorbereitung bringt Tankfüllung, Beheizung und Prozesskreise in den betriebsbereiten Zustand. Der Startbefehl wird mit der Taste **Machine Start** auf der HMI-**Betriebsseite** gegeben.
+
+**WARNUNG — Quetschen:** Vor dem Start prüfen, dass kein Teil oder Gegenstand auf der Förderbandlinie verblieben ist; andernfalls entsteht Quetschgefahr.
 
 ---
 
 ## 7.2.1 Inbetriebnahme-Voraussetzungen
 
-| Parameter | Wert / Beschreibung |
-|-----------|---------------------|
-| Inbetriebnahme-Voraussetzungen (Checkliste) | Über die HMI-**Vorbereitungstaste** erfolgen Tankfüllung und Erwärmung. Sind die Tanks leer, füllen sie bis Oberstand, danach Erwärmung auf Rezept-Sollwert. Ist Wasser vorhanden, erfolgt direkte Erwärmung. Keine weitere Vorbereitung erforderlich |
+Mit der Vorbereitungstaste werden folgende Vorgänge automatisch ausgeführt:
 
-**Füllproblem:** Ist kein Wasser im Tank und erfolgt nach Vorbereitung keine Füllung, ist das **automatische Füllwasser-Einlassventil geschlossen** — Ventil öffnen. **6 bar** Druckluft muss angeschlossen sein.
+- Ist **kein** Wasser im Tank → automatische Füllung bis zum oberen Füllstandssensor, anschließend Beheizung auf die Rezepttemperatur.
+- Ist Wasser im Tank **vorhanden** → direkt Beheizung.
 
-<!-- FOTO: HMI Vorbereitungstaste -->
-![HMI Vorbereitungstaste](../../assets/FOTO-7-2-1-hazirlik.png)
+Kein weiterer Vorbereitungsschritt ist erforderlich. Voraussetzungen:
 
----
+| # | Bedingung |
+|---|-------|
+| 1 | Hauptschalter **ON** — Spannung an der Maschine vorhanden |
+| 2 | Druckluft **6 bar** angeschlossen (siehe **Kapitel 3.3.5**) |
+| 3 | Wassereinlass und automatisches Füllventil **offen** |
+| 4 | Luft-/Wasserinformation auf der HMI-Handseite **grün** (siehe **Kapitel 5.5.3**) |
+| 5 | Kein aktiver Alarm (HMI-Alarmseite) |
 
-## 7.2.2 Einschaltreihenfolge
-
-| Parameter | Wert / Beschreibung |
-|-----------|---------------------|
-| Einschaltreihenfolge | **1.** Hauptschalter EIN → **2.** HMI-Vorbereitungstaste drücken → **3.** Nach abgeschlossener Vorbereitung Start drücken |
-
----
-
-## 7.2.3 Luft / Wasser / Vakuum
-
-| Parameter | Wert / Beschreibung |
-|-----------|---------------------|
-| Luft / Wasser / Vakuum | **6 bar** Druckluft für Vorbereitung/Füllung erforderlich. Wasser füllt Tanks über automatisches Füllventil. **Kein Vakuum** |
+**Füllproblem:** Ist kein Wasser im Tank und erfolgt während der Vorbereitung keine Füllung, ist das **automatische Füll-Wassereinlassventil geschlossen** — das Ventil öffnen. Den **6-bar**-Luftanschluss prüfen.
 
 ---
 
-## 7.2.4 Vorwärmen
+## 7.2.2 Einschalt- und Vorbereitungsreihenfolge
 
-| Parameter | Wert / Beschreibung |
-|-----------|---------------------|
-| Vorwärmzeit Erwärmung (min) | **Variabel** — abhängig von vorhandener Wassermenge und -temperatur (z. B. Restwasser aus vorheriger Schicht). Erwärmung bis Rezept-Sollwert; keine feste Dauer |
+1. Prüfen, dass der Hauptschalter auf **ON** steht.
+2. Zur HMI-**Betriebsseite** wechseln.
+3. Prozessfunktionen (Waschen, Spülen, Trocknen 1/2, Abluft) wie gewünscht auf **aktiv** stellen (siehe **Kapitel 7.1.6**).
+4. Die Taste **Vorbereitung Start** drücken.
+5. Warten, bis Tankfüllung und Beheizung abgeschlossen sind; Soll-/Ist-Temperaturwerte auf der Betriebsseite überwachen.
+6. Prüfen, dass die Signalleuchte **gelb** (einsatzbereit) leuchtet.
+
+**Beheizungszeit:** Variabel — abhängig von vorhandener Wassermenge und -temperatur im Tank; eine feste Zeit kann nicht angegeben werden.
+
+![HMI-Vorbereitungstaste](../../assets/7.2/1.png)
+
+---
+
+## 7.2.3 Luft, Wasser und Medien
+
+| Medium | Anforderung |
+|-------|------------|
+| Druckluft | **6 bar** — für Vorbereitung/Füllung verpflichtend |
+| Wasser | Füllt die Tanks über das automatische Füllventil |
+| Vakuum | **Nicht vorhanden** |
+
+Ein Vakuumanschluss oder Öffnungsverfahren wird nicht angewendet (siehe **Kapitel 6.6**).
+
+---
+
+## 7.2.4 Startverfahren
+
+Vor dem Start die Checkliste **Kapitel 7.2.5** abschließen.
+
+1. Prüfen, dass die Vorbereitung abgeschlossen ist und die Signalleuchte **gelb** leuchtet.
+2. Prüfen, dass auf der Förderbandlinie kein Teil/Gegenstand zum Quetschen vorhanden ist.
+3. Prüfen, dass die Ventile vor den Pumpen **offen** sind; falls geschlossen, öffnen.
+4. Die HMI-Taste **Machine Start** drücken.
+5. Prüfen, dass die Signalleuchte **grün** leuchtet und Förderband sowie gewählte Prozessfunktionen laufen.
+
+**Erwartetes Ergebnis:** Maschine im Automatikzyklus; grüne Signalleuchte; kein aktiver Alarm am HMI.
+
+**Abweichender Zustand:** Wird der Start nicht angenommen, die HMI-Alarmseite prüfen (siehe **Kapitel 11**). RFID-Abdeckung, Not-Halt oder Füllstandsalarm kann aktiv sein.
 
 ---
 
 ## 7.2.5 Checkliste vor Start
 
 | # | Prüfung | Status |
-|---|---------|--------|
-| 1 | Keine Teile/Objekte blockieren das Förderband | ☐ OK / ☐ NOK |
-| 2 | Ventile vor Pumpen offen (bei geschlossen unbedingt öffnen) | ☐ OK / ☐ NOK |
-| 3 | Vorbereitung abgeschlossen (Tankfüllung + Erwärmung) | ☐ OK / ☐ NOK |
-| 4 | Not-Aus zurückgesetzt, Maschine bereit (gelbe Lampe) | ☐ OK / ☐ NOK |
+|---|---------|:-----:|
+| 1 | Kein Teil/Gegenstand auf der Förderbandlinie, der quetschen könnte | ☐ |
+| 2 | Ventile vor den Pumpen offen | ☐ |
+| 3 | Vorbereitung abgeschlossen (Füllung + Beheizung) | ☐ |
+| 4 | Luft 6 bar; Luft/Wasser auf HMI-Handseite grün | ☐ |
+| 5 | Not-Halt rückgesetzt; Signalleuchte gelb (bereit) | ☐ |
+| 6 | Kein blockierender Alarm auf dem HMI-Alarmbildschirm | ☐ |
 
-**Datum:** _______________ **Geprüft von:** _______________
-
-<!-- FOTO: HMI Starttaste -->
-![HMI Starttaste](../../assets/FOTO-7-2-0-start.png)
+**Datum:** _______________ **Kontrolliert durch:** _______________
 
 ---
 
-## 7.2.6 Erstes Produkt / Einlauf
+## 7.2.6 Erste-Teil-Versuch
 
-| Parameter | Wert / Beschreibung |
-|-----------|---------------------|
-| Erstes Produkt / Einlaufprozedur | **Keine** |
+| Parameter | Wert |
+|-----------|-------|
+| Separates Erste-Teil- / Probewaschverfahren | **Nicht vorhanden** |
+
+Ein separates Erste-Teil-Verfahren ist nicht definiert. Die Probewäsche für einen neuen Produkttyp folgt den Rezeptschritten in **Kapitel 8.2.2**.
+
+---
+
+Für das Stoppen siehe **Kapitel 7.3**; für die automatische Sequenz siehe **Kapitel 7.4**.

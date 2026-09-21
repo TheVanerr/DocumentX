@@ -1,17 +1,16 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 4. TRANSPORT
 
-# 4.0 TAŞIMA VE NAKLİYE
+Werksversand, Transport innerhalb der Anlage, Absenken in den Installationsbereich und vorübergehende Lagerung der Maschine **KNV 30 3000 2B** (Seriennr. **1726050**) sind in diesem Kapitel definiert. Mechanische Schäden, Kipp- und Korrosionsrisiken, die während Transport und Lagerung entstehen können, werden durch korrekte Geräteauswahl und Einhaltung der Umgebungsbedingungen verhindert. Dieses Kapitel gibt nur Transport- und Lagerverfahren; Abmessungs-, Gewichts- und Schwerpunktwerte sind in **Kapitel 3.3.1** und **Kapitel 3.5.4** definiert.
 
-Bu bölüm, makinenin tesise ulaştıktan sonra güvenli bir şekilde indirilmesi, saha içinde taşınması ve nihai çalışma alanına konumlandırılması için izlenmesi gereken temel prosedürleri kapsar. 
+Die Maschine wird im Versandzustand **montiert** transportiert; während des Transports wird kein Teil entfernt. Das Transportgewicht beträgt **1300 kg**. Das Heben erfolgt nur mit einer **Gabelstaplergabel**; die Gabeleinfahrt erfolgt über die Transportprofile unter der Maschine. Ein **Kran darf unter keinen Umständen verwendet werden** (siehe **Kapitel 3.5.4**).
 
-Makinenin standart şasisi, yükü dengeli bir şekilde zemine aktaran sabit çelik ayaklar üzerine inşa edilmiştir. Yüksek ağırlıklı endüstriyel bir ekipman olması sebebiyle, makinenin yapısal bütünlüğünü korumak ve iş kazalarını önlemek amacıyla taşıma işlemleri için **yalnızca forklift** kullanılmalıdır. Tavan vinci, mobil vinç, transpalet veya halatla çekme gibi diğer kaldırma ve taşıma yöntemlerinin kullanılması kesinlikle yasaktır.
+| Unterabschnitt | Thema |
+| :--- | :--- |
+| **4.1** | Vorbereitung vor dem Transport, Gabelstaplerverfahren, Verpackung |
+| **4.2** | Handhabung, vorübergehende Lagerung und Entnahme aus dem Lager |
 
-Taşıma ve nakliye operasyonları sırasında aşağıdaki temel kurallara titizlikle uyulmalıdır:
+Die Umgebungs- und Lagertemperatur muss im Bereich **+10°C bis +30°C** liegen; Feuchtigkeit und korrosive Stoffe dürfen nicht vorhanden sein. Während des Transports die Sicherheitsregeln in **Kapitel 2** befolgen; bei Arbeiten, die Eingriff an der Maschine erfordern, erfolgt die Energieisolation gemäß **Kapitel 2.4**.
 
-*   **Yetkili Personel ve Sertifikasyon:** Makinenin nakliyesi, indirilmesi ve yer değiştirmesi işlemleri; operasyonun gerçekleştirildiği ülkenin iş sağlığı ve güvenliği mevzuatlarına tam uyumlu, geçerli ve resmi forklift operatörlüğü sertifikasına sahip yetkin personeller tarafından yapılmak zorundadır. Yetkisiz kişilerin taşıma işlemine müdahale etmesi yasaktır.
-*   **Ekipman Kapasitesi:** Taşıma işleminde kullanılacak forkliftin güvenli çalışma yükü (SWL) kapasitesi, makinenin "Bölüm 3.3. Teknik Özellikler" tablosunda belirtilen net ağırlığını (kuru ağırlık) rahatlıkla karşılamalıdır.
-*   **Doğru Kaldırma Noktaları:** Forklift çatalları doğrudan alt ana şasi profillerine hizalanmalı ve makine sabit ayakların bağlı olduğu bu ana taşıyıcı şasiden kaldırılmalıdır. Kaldırma veya sabitleme amacıyla makinenin dış kaplama saclarına, tesisat borularına, su tankına veya kontrol panosuna kesinlikle fiziksel baskı uygulanmamalıdır. 
-*   **Ağırlık Merkezi ve Denge:** Makinenin içindeki paslanmaz çelik su tankı, pompa ve motor gruplarının asimetrik yerleşimi nedeniyle donanımın ağırlık merkezi tam geometrik ortada olmayabilir. Forklift ile ana kaldırma işlemine başlanmadan önce ekipman yerden sadece birkaç santimetre kesilerek denge kontrolü yapılmalı; taşıma işlemi ani hızlanma ve duruşlardan kaçınılarak yavaş ve sarsıntısız gerçekleştirilmelidir.
-*   **İş Sağlığı ve Güvenliği:** Makine forklift çatalında havada asılıyken veya nakliye rotasında ilerlerken çevresinde güvenli bir çalışma alanı (kırmızı alan) oluşturulmalıdır. Asılı yükün altında, kör noktalarda veya forkliftin hareket güzergahında kesinlikle hiçbir personel bulunmamalıdır.
+---
 
-Makine nihai konumuna indirilene kadar, özellikle kontrol panosu üzerindeki dijital ekranlar, şalterler ve dışarıda kalan diğer hassas mekanik bileşenlerin darbelere karşı korunmasına azami özen gösterilmelidir.
+Für Installationsschritte siehe **Kapitel 5**; für Layout und Gabelstapler-Zugangspunkte siehe **Kapitel 3.5**.

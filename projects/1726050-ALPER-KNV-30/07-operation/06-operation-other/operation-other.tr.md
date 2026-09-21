@@ -1,6 +1,6 @@
 ﻿# 7.6 Diğer operasyon konuları
 
-Bu bölüm, standart start/stop ve cycle sekansı dışında kalan operasyonel konuları özetler. Makinede **sürekli operatör bulunmaz**; normal çalışmada insan müdahalesi gerekmez.
+Bu bölüm, standart start/stop ve cycle sekansı dışında kalan operasyonel konuları özetler. Makinede **sürekli vardiya operatörü bulunmaz**; normal çalışmada yükleme/boşaltma insan müdahalesi gerekmez. HMI komutları ve Error-461 onayı hat sorumlusu veya bakım tarafından verilir.
 
 ---
 
@@ -19,7 +19,7 @@ Mekanik format değişimi uygulanmaz (bkz. **Bölüm 6.1.5**). Farklı parça ti
 
 | Parametre | Değer |
 |-----------|-------|
-| Fire / hurda yönetimi | **Uygulanmaz** — makinede operatör bulunmaz |
+| Fire / hurda yönetimi | **Uygulanmaz** — makine hurda kutusu yok; müşteri hattı |
 
 Hurda toplama ve fire kaydı müşteri hattı sorumluluğundadır. Makine kapsamında ayrı hurda kutusu veya fire prosedürü tanımlanmamıştır.
 

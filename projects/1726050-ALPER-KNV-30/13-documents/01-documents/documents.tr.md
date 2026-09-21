@@ -8,7 +8,7 @@ Sipariş ve servis taleplerinde makine kimlik etiketi bilgileri (**seri no 17260
 
 ## 13.1.1 Müşteriye teslim çizim paketi (ayrı evrak)
 
-DATA tanımına göre müşteriye teslim çizim paketi **üç PDF**'ten oluşur:
+Müşteriye teslim çizim paketi **üç PDF**'ten oluşur:
 
 | # | Doküman | Dosya adı / rev | Kullanım alanı |
 |---|---------|-----------------|----------------|
@@ -24,9 +24,9 @@ P&ID ve elektrik şemasının tam dosya adı/revizyonu teslim anında paket üze
 
 ## 13.1.2 Kılavuza gömülü dokümanlar
 
-Aşağıdaki içerikler ayrı PDF olarak **teslim edilmez**; ilgili kılavuz bölümünde SSOT olarak yer alır.
+Aşağıdaki içerikler ayrı PDF olarak **teslim edilmez**; ilgili kılavuz bölümünde yer alır.
 
-| Doküman | SSOT bölüm | Açıklama |
+| Doküman | Bölüm | Açıklama |
 |---------|------------|----------|
 | Yedek parça listesi (BOM) | **13.3.1** | 22 kalem; sipariş kodu, kategori, stok önerisi |
 | Kritik parça özeti | **9.1.5** | Operasyonel kritik kalemler — tam liste **13.3** |
@@ -39,7 +39,7 @@ Aşağıdaki içerikler ayrı PDF olarak **teslim edilmez**; ilgili kılavuz bö
 
 ## 13.1.3 Teslim paketine dahil olmayan dokümanlar
 
-Aşağıdaki dokümanlar DATA'ya göre **ayrı evrak olarak teslim edilmez** veya **uygulanmaz**:
+Aşağıdaki dokümanlar **ayrı evrak olarak teslim edilmez** veya **uygulanmaz**:
 
 | Doküman | Durum | Not |
 |---------|-------|-----|

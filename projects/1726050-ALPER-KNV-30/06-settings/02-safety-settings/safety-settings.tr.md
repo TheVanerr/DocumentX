@@ -2,18 +2,20 @@
 
 Güvenlik ayarları, makinenin emniyet fonksiyonlarının (RFID, acil stop) tasarım amacına uygun kalmasını sağlar. Bu makinede operatör tarafından değiştirilebilir güvenlik parametresi (ışık perdesi mesafesi, bypass süresi vb.) **bulunmamaktadır**. Güvenlik donanımı bypass edilemez; ayar kapsamı yalnızca periyodik **fonksiyon testi** ve bakım erişim kurallarını içerir.
 
-Acil stop konumları ve reset prosedürü **Bölüm 2.5**'te SSOT olarak verilmiştir; LOTO **Bölüm 2.4**'te tanımlıdır.
+Acil stop konumları ve reset prosedürü **Bölüm 2.5**'te verilmiştir; LOTO **Bölüm 2.4**'te tanımlıdır.
 
 ---
 
-## 6.2.1 Emniyet kapısı ve RFID — bypass yasağı
+## 6.2.1 RFID bakım kapağı — bypass yasağı
 
 | Parametre | Değer / Açıklama |
 |-----------|------------------|
-| Emniyet kapısı bypass | **Kesinlikle bypass edilmemelidir** |
-| Bakım erişimi | Elektrik kesildikten sonra kapaklar açılmalı; **LOTO** uygulanmalıdır |
+| RFID / kapak güvenlik sensörü | **Bypass edilmez, köprülenmez** |
+| Bakım erişimi | Makine durdurulur; **LOTO** uygulanır; kapaklar ancak bundan sonra açılır |
 
-Makinede sabit emniyet kapısı sayısı sıfırdır; bakım kapakları **RFID güvenlik sensörü** ile izlenir. RFID devre dışı bırakılamaz veya köprülenemez; bypass güvenlik kategorisi **CAT3** uyumunu bozar ve sorumluluk/garanti kapsamı dışına çıkarır (bkz. **Bölüm 2.1**).
+Makinede sabit emniyet kapısı / sabit bariyer sayısı sıfırdır; bakım kapakları **RFID güvenlik sensörü** ile izlenir. RFID devre dışı bırakılamaz veya köprülenemez; bypass güvenlik kategorisi **Cat. 3** (EN ISO 13849-1) uyumunu bozar ve sorumluluk/garanti kapsamı dışına çıkarır (bkz. **Bölüm 2.1.3**).
+
+Kurulum ve aylık **fonksiyon testi** (kapak açılınca duruş doğrulama) **Bölüm 5.4.2**'de tanımlanır; bu test bakım erişimi değildir. Bakım/temizlik için **Bölüm 2.4** LOTO zorunludur.
 
 **UYARI — Güvenlik cihazı devre dışı bırakma:** RFID sensörünün bypass edilmesi, kapak açıkken makinenin çalışmaya devam etmesine ve ezilme yaralanmasına yol açabilir. Bypass yapmayın.
 
@@ -44,7 +46,6 @@ Aylık acil stop fonksiyon testi, acil stop devresinin ve reset zincirinin çal�
 3. Reset prosedürünü **Bölüm 2.5**'e göre doğrulayın.
 4. Sonucu kayıt altına alın; NOK durumunda operasyona geçmeyin.
 
-<!-- FOTO: Acil stop test kayıt formu veya pano reset (EKLENECEK: FOTO-6-2-0-acil-stop-periyot.jpg) -->
 ![Acil stop periyodik test](../../assets/6.2/1.png)
 
 ---
@@ -61,4 +62,4 @@ Aylık acil stop fonksiyon testi, acil stop devresinin ve reset zincirinin çal�
 
 ---
 
-Kurulum güvenlik testi için bkz. **Bölüm 5.4**; acil stop SSOT için bkz. **Bölüm 2.5**.
+Kurulum güvenlik testi için bkz. **Bölüm 5.4**; acil stop için bkz. **Bölüm 2.5**.

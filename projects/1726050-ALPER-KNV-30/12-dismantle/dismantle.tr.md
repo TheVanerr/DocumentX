@@ -6,7 +6,7 @@ Demontaj öncesi makine durdurulmalı, tanklar boşaltılmalı ve **LOTO prosed�
 
 | Parametre | Değer |
 |-----------|-------|
-| Tehlikeli madde (yağ / akü / kimyasal) | **Yok** |
+| Tehlikeli madde (yağ / akü / kimyasal) | Akü **yok**. Proses yağlı su, gres, deterjan ve WEEE atığı **Bölüm 10.1.8** / **12.3** |
 | Hidrolik sistem | Bulunmamaktadır |
 | Bertaraf | Kullanıldığı ülkenin çevresel mevzuatı |
 

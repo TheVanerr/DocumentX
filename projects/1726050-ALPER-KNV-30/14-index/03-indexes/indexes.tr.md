@@ -1,6 +1,6 @@
 ﻿# 14.3 Anahtar kelime indeksi
 
-Aşağıdaki tablolar, kılavuz içinde sık aranan konuların bölüm referanslarını listeler. LOTO prosedürü **Bölüm 2.4**'te SSOT olarak tanımlanmıştır; diğer bölümlerde yalnızca referans verilir.
+Aşağıdaki tablolar, kılavuz içinde sık aranan konuların bölüm referanslarını listeler. LOTO prosedürü **Bölüm 2.4**'te tanımlanmıştır; diğer bölümlerde yalnızca referans verilir.
 
 ---
 
@@ -9,7 +9,7 @@ Aşağıdaki tablolar, kılavuz içinde sık aranan konuların bölüm referansl
 | Anahtar kelime | Bölüm(ler) |
 |----------------|------------|
 | Acil stop | **2.5**, **5.4**, **6.2**, **7.3.2**, **11.1.2** (Error-229) |
-| Alarm / arıza | **11**, **3.4.6**, **7.4.4** |
+| Alarm / arıza | **11**, **3.4.6**, **7.4.5** |
 | Ayarlar | **6** |
 | Bakım | **9**, **10** (filtre periyotları → **9.1.3**) |
 | Basınçlı hava (6 bar) | **3.3.5**, **5.3**, **6.5**, **7.2**, **11.5** (Error-235) |
@@ -50,7 +50,7 @@ Aşağıdaki tablolar, kılavuz içinde sık aranan konuların bölüm referansl
 | Kurulum / montaj | **5** |
 | Kurutma fanları | **3.3.4**, **7.1**, **11.1.2** (Error-111–114) |
 | Layout çizimi | **3.5**, **13.2.1** |
-| LOTO | **2.4** (SSOT), **5.4**, **6.2**, **9**, **10.1.2**, **11**, **12.1.2** |
+| LOTO | **2.4**, **5.4**, **6.2**, **9**, **10.1.2**, **11**, **12.1.2** |
 | Operasyon / 7/24 | **7**, **8** |
 | Operatör tarafı (sağ) | **3.5** |
 | P&ID | **13.1.1** |
@@ -76,11 +76,11 @@ Aşağıdaki tablolar, kılavuz içinde sık aranan konuların bölüm referansl
 | Su basıncı (1 bar) | **3.3.5**, **5.3**, **11.5** (Error-236) |
 | Su seviyesi | **7.2**, **11.1.2** (Error-200–203), **11.7** |
 | Tank boşaltma | **7.3.4**, **10.1.5**, **12.1.3** |
-| Tepe lambası | **3.4.6**, **7.2**, **11.2.1** |
+| Tepe lambası | **3.4.10**, **7.2**, **11.2.1** |
 | Temizlik | **10** |
 | Tüketim parçası | **9.1.6**, **13.3.1** (Kategori: Tüketim) |
 | Uzun süreli durdurma | **7.3.4**, **12.2.2** |
-| Ürün Alındı Onay | **3.4.3**, **11.1.2** (Error-461) |
+| Ürün Alındı Onay | **3.4.6**, **11.1.2** (Error-461) |
 | Vana (aktarma) | **11.5.2** (Error-304/305) |
 | Vinç (yasak) | **4.1**, **5.1**, **13.2.2** |
 | Yağlama | **9.1.4** |

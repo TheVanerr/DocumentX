@@ -11,20 +11,19 @@ Normal üretim durdurması için HMI **Makine Stop** düğmesi kullanılır.
 1. HMI **Çalışma Sayfası**'na geçin.
 2. **Makine Stop** düğmesine basın.
 3. Konveyör, pompalar, fanlar ve tüm proses fonksiyonlarının durduğunu doğrulayın.
-4. Tepe lambasının durumunu kontrol edin (alarm yoksa sarı — hazır veya stop durumu).
+4. Tepe lambasının durumunu kontrol edin (alarm yoksa sarı — duruş sonrası hazır). Stop sonrası lamba yeşil kalmamalıdır.
 
 **Beklenen sonuç:** Tüm hareketli fonksiyonlar durmuş; proses sıvısı tanklarda kalabilir (kısa süreli stop).
 
 Kısa mola stop'larında tank boşaltma gerekmez. Hafta sonu veya uzun süreli duruş için bkz. **Bölüm 7.3.4**.
 
-<!-- FOTO: HMI — Makine Stop (Çalışma Sayfası) -->
 ![HMI stop](../../assets/7.3/1.png)
 
 ---
 
 ## 7.3.2 Acil stop sonrası yeniden başlatma
 
-Acil stop **Bölüm 2.5**'te SSOT olarak tanımlıdır; bu bölümde yalnızca operasyon akışı özetlenir.
+Acil stop **Bölüm 2.5**'te tanımlıdır; bu bölümde yalnızca operasyon akışı özetlenir.
 
 Acil stop'a basıldığında makinedeki **her fonksiyon durur**; tepe lambası **kırmızı** yanar.
 
@@ -36,7 +35,6 @@ Yeniden başlatma:
 
 Periyodik acil stop fonksiyon testi **her ay bir kez** yapılmalıdır (bkz. **Bölüm 6.2.3**, **5.4.1**).
 
-<!-- FOTO: Pano reset butonu (EKLENECEK: FOTO-7-3-0-reset.jpg) -->
 ![Reset butonu](../../assets/7.3/2.png)
 
 ---
@@ -63,7 +61,7 @@ Hafta sonu, planlı bakım veya uzun hat duruşlarında:
 | Uzun süreli durdurma | Tanklar **mutlaka boşaltılıp temizlenmelidir** |
 
 1. **Bölüm 7.3.1** veya **7.3.3** ile makineyi durdurun ve enerjiyi kesin.
-2. Tank boşaltma ve temizlik prosedürünü uygulayın (**Bkz. Bölüm 10.4** — adımlar orada SSOT).
+2. Tank boşaltma ve temizlik prosedürünü uygulayın (**Bkz. Bölüm 10.1.5** — adımlar orada).
 3. Gerekirse **Bölüm 4.2** depolama koşullarına göre makineyi koruyun.
 
 Tanklar dolu bırakılırsa koku, mikrobiyel büyüme ve korozyon riski artar; çalışma ağırlığı **1500 kg**'a çıkar (bkz. **Bölüm 3.3.1**).

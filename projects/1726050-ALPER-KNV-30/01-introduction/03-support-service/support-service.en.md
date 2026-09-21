@@ -2,57 +2,91 @@
 
 ## 1.3.1 Manufacturer and central service contact information
 
-The term "manufacturer" used in this user manual refers to **CNK MAKİNE SANAYİ AŞ**, which designs, manufactures, and assumes legal responsibility for the industrial washing machine. 
+In this manual, **manufacturer** means **CNK ELEKTRONİK MAKİNE SANAYİ AŞ**, the company that designed, manufactured and assumes legal responsibility for the **KNV 30 3000 2B** machine. Use the following channels for installation, commissioning, operation, maintenance, faults, spare parts and warranty requests.
 
-For any technical support requests, spare parts orders, and warranty procedures regarding the installation, commissioning, operation, periodic maintenance, or fault conditions of the machine, the manufacturer must be contacted via the official contact channels specified below.
+| Information | Detail |
+| :--- | :--- |
+| **Manufacturer** | CNK ELEKTRONİK MAKİNE SANAYİ AŞ |
+| **Factory address** | 1.Organize Sanayi Bölgesi Prof. Orhan Işık Caddesi No:8 |
+| **District** | Sincan |
+| **City** | Ankara |
+| **Country** | Türkiye |
+| **Telephone** | +90 312 267 30 15 |
+| **Fax** | +90 312 267 30 11 |
+| **Web** | https://dolfintr.com |
+| **E-mail** | dolfin@dolfintr.com |
 
-| Manufacturer Information | Details |
-| :---: | :---: |
-| **Manufacturer Name** | CNK MAKİNE SANAYİ AŞ |
-| **Factory / Head Office Address** | 1. Organize Sanayi Bölgesi Prof. Orhan Işık Caddesi No:8 |
-| **District / City / Country** | Sincan / Ankara / Turkey |
-| **Phone Number** | +90 312 267 30 15 |
-| **Fax Number** | +90 312 267 30 11 |
-| **Corporate Website** | https://dolfintr.com |
-| **E-Mail Address** | dolfin@dolfintr.com |
-
----
-
-## 1.3.2 Service and technical support request procedure
-
-In order for the manufacturer's technical service department to respond to the encountered problem in the fastest, most accurate, and most efficient manner, it is mandatory to fully prepare the following basic machine and fault information before initiating contact:
-
-1. **Machine Identification Information:** **Model Name**, **Serial Number**, and **Year of Manufacture** stated on the "Machine Identification Plate" (Type Plate) riveted or affixed to the main body of the machine (usually on the side surface of the electrical cabinet).
-2. **Fault or Condition Description:** A detailed description of the encountered problem. (For example: "Pump does not engage", "Water is not heating", "Pneumatic cover does not open").
-3. **Alarm and Error Codes:** Full text of active alarm codes, error numbers, and warning messages appearing on the machine's Human-Machine Interface (HMI) or PLC screen.
-4. **Operating Conditions:** Operating status at the time the fault occurred (Which washing or rinsing phase it was in, how long the machine had been running, etc.).
-5. **Visual Documents:** For possible mechanical damages, leaks, or abnormal conditions, sending clear photos or videos of the relevant area to the manufacturer via e-mail will significantly accelerate the diagnostic process.
+For service, spare-part or warranty requests, transmit the information on the machine identification plate in **Chapter 1.3.2** in full. If the plate cannot be read, renew the plate before operating the machine or contact manufacturer service.
 
 ---
 
-## 1.3.3 Spare parts supply and mandatory use of genuine parts
+## 1.3.2 Machine identification plate
 
-The safe and high-performance operation of the machine throughout its design life depends solely on the use of genuine spare parts approved by the manufacturer. 
+Each machine has a **machine identification plate** (type / rating plate) fixed to the body. The plate is a mandatory reference for correct identification of the machine in service records, spare-part orders, warranty transactions and fault diagnosis. Customer or operating personnel must read the values on the plate and add them to the request before contacting the manufacturer.
 
-* **Ordering Process:** Spare parts orders must be placed with reference to the "Spare Parts List" delivered with the machine or included in the user manual. During ordering, the **Stock Code/Reference Number**, **Part Name**, **Requested Quantity**, and **Machine Serial Number** of the required part must be submitted in writing (via e-mail or fax).
-* **Use of Non-Genuine Parts:** Integrating equivalent, aftermarket, or non-standard parts (special nozzles, seals, heating elements, sensors, motors, etc.) procured without the written consent of the manufacturer into the machine is strictly prohibited. The use of non-genuine parts not only degrades machine performance, but also directly creates occupational safety risks and **immediately voids the machine's warranty**.
+**Typical location:** Mounted on the electrical cabinet or the main machine module so that it is visible from outside and cannot be erased. If the plate is worn or unreadable, do not operate the machine in a way that creates a safety risk; request a spare plate via the contact channels in **Chapter 1.3**.
+
+The plate contains the following fields:
+
+| Plate field | Description | Example on this machine |
+| :--- | :--- | :--- |
+| **Serial number** | Unique number specific to the machine; service records are matched with this number | Value on the plate |
+| **Model / type code** | Machine model definition | KNV-30 |
+| **Commercial designation** | Full machine name / variant | KNV 30 3000 2B |
+| **Year of manufacture** | Year of manufacture | 2026 |
+| **Manufacture / shipping date** | Plant shipping date (if present) | 2026-08-12 |
+
+![Machine identification plate example](../../assets/1.3/1.png)
+
+**Customer / operating organisation — mandatory steps before service**
+
+1. Find the plate; read the serial number, model and year of manufacture clearly or take a legible photograph.
+2. When opening a request by telephone or e-mail, write these three items of information on the **first line**.
+3. If the plate is damaged or missing, do not guess the serial number; request plate renewal or record verification from the manufacturer.
+4. Always state the serial number on spare-part orders (**See Chapter 1.3.4**).
 
 ---
 
-## 1.3.4 Checklist prior to contact
+## 1.3.3 Service and technical-support request procedure
 
-Before submitting a service request, it is recommended that the operator or maintenance personnel carry out the following basic checks in order to prevent potential time losses and unnecessary service costs:
+Prepare the following information before a service request. Missing identity information can cause the service team to diagnose again on site and can extend intervention time.
 
-* Has it been verified that the main electrical power supply switches of the facility are ON and that the correct voltage/phase is supplied to the machine?
-* Has it been checked that the compressed air line (pneumatic supply) is open and that the system provides the required minimum operating pressure (bar)?
-* Has it been verified that the water inlet valves are open and that the plumbing filters are not clogged?
-* Has it been confirmed that all Emergency Stop buttons on the machine are released and that the door/cover safety switches (interlocks) are fully in the closed position?
-* Have the fault reset (Reset / Acknowledge) steps on the HMI screen been performed?
+1. **Identification-plate information:** Serial number, model code (KNV-30) and year of manufacture — attach a plate photograph (**See Chapter 1.3.2**).
+2. Define the problem briefly and clearly (e.g. pump does not start, water does not heat).
+3. Record the **active alarm codes** and message text on the HMI screen (**See Chapter 11.1**).
+4. State the process phase at the time of the fault (wash, rinse, drying) and the machine running time.
+5. If there is mechanical damage or leakage, attach a clear photograph or video.
+
+Transmit the request by telephone or e-mail. In emergencies, stop the machine safely (**See Chapter 2.5**).
 
 ---
 
-## 1.3.5 Limits of manufacturer's liability and prohibition of unauthorized intervention
+## 1.3.4 Spare-part supply and original-part obligation
 
-The legal and technical liability of the manufacturer is limited solely to operating the machine for its Intended Use in accordance with the technical specifications, safety equipment, and operating instructions specified in this manual. 
+Use of original parts is mandatory on spare-part orders. Equivalent parts carry the risk of tolerance differences, material incompatibility and safety functions becoming disabled. Use of non-original parts reduces performance, creates a safety risk and leaves the machine **out of warranty**.
 
-Any structural modifications, hardware additions, dismantling or bypassing (bridging) of safety devices, or unauthorized modification procedures performed on the machine mechanics, automation infrastructure (PLC/HMI software), pneumatic/hydraulic lines, or electrical cabinet without the knowledge and written (stamped) approval of CNK MAKİNE SANAYİ AŞ authorized service personnel are strictly prohibited. Since such unauthorized interventions directly compromise the safety standards of the machine, they immediately invalidate all legal, financial, and penal liability of the manufacturer (including warranty). The operating entity of the machine shall be solely responsible for any accidents that may occur if the machine is operated outside its safe operating limits.
+1. Place spare-part orders with the part-list reference numbers in **Chapter 13**.
+2. On the order, write **stock code**, **part name**, **quantity**, **model code (KNV-30)** and **serial number**.
+3. Do not fit equivalent or non-standard parts without manufacturer approval.
+
+---
+
+## 1.3.5 Checklist before contact
+
+Perform the following checks before calling authorised service. Many fault reports originate from utility or reset deficiencies; these checks prevent unnecessary service calls.
+
+1. Verify that the main electrical supply is on (**See Chapter 3.3.3**).
+2. Check that compressed-air and water supplies are suitable (**See Chapter 3.3.5**, **6.5**).
+3. Verify that the water-inlet valves are open.
+4. Check that all emergency-stop buttons are released and that the reset procedure has been applied (**See Chapter 2.5**).
+5. Apply alarm-reset steps on the HMI (**See Chapter 11.1**).
+
+If the problem continues, create a service request; add the identification-plate information in **Chapter 1.3.2** to the request.
+
+---
+
+## 1.3.6 Limits of manufacturer liability
+
+Manufacturer liability is limited to operation of the machine within the technical specifications and intended use defined in this manual (**See Chapter 3.2**). Use outside the manual, unauthorised modification or use of non-standard parts eliminates manufacturer liability.
+
+Changes to PLC/HMI software, the electrical cabinet, pneumatic lines or safety equipment without manufacturer authorised-service approval void warranty coverage. The manufacturer cannot be held responsible for damage, injury or production loss arising from such interventions.

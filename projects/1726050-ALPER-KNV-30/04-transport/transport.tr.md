@@ -1,6 +1,6 @@
 ﻿# 4. TAŞIMA VE DEPOLAMA
 
-**KNV 30 3000 2B** (seri no **1726050**) makinesinin fabrikadan sevkiyatı, saha içi taşınması, kurulum alanına indirilmesi ve geçici depolanması bu bölümde tanımlanır. Taşıma ve depolama sırasında oluşabilecek mekanik hasar, devrilme ve korozyon riskleri; doğru ekipman seçimi ve ortam koşullarına uyumla önlenir. Bu bölümde yalnızca taşıma ve depolama prosedürleri verilir; boyut, ağırlık ve ağırlık merkezi değerleri **Bölüm 3.3.1** ve **Bölüm 3.5.4**'te SSOT olarak tanımlıdır.
+**KNV 30 3000 2B** (seri no **1726050**) makinesinin fabrikadan sevkiyatı, saha içi taşınması, kurulum alanına indirilmesi ve geçici depolanması bu bölümde tanımlanır. Taşıma ve depolama sırasında oluşabilecek mekanik hasar, devrilme ve korozyon riskleri; doğru ekipman seçimi ve ortam koşullarına uyumla önlenir. Bu bölümde yalnızca taşıma ve depolama prosedürleri verilir; boyut, ağırlık ve ağırlık merkezi değerleri **Bölüm 3.3.1** ve **Bölüm 3.5.4**'te tanımlıdır.
 
 Makine sevk halinde **montajlı** taşınır; taşıma sırasında herhangi bir parça sökülmez. Taşıma ağırlığı **1300 kg**'dır. Kaldırma yalnızca **forklift çatalı** ile yapılır; makine altındaki taşıma profilleri üzerinden çatal girişi sağlanır. **Vinç kesinlikle kullanılmamalıdır** (bkz. **Bölüm 3.5.4**).
 

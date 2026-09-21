@@ -1,22 +1,84 @@
-# 1.2 Symbols and labeling rules
+# 1.2 Symbols and labelling rules
 
-The labels located in this user manual and on the machine body are placed in accordance with international standards in order to maintain operator safety at the highest level, indicate potential risks, and demonstrate the correct operating conditions of the machine. 
+This manual and the body of the **KNV 30 3000 2B** machine use symbols placed in accordance with international standards (ISO 7010, ISO 3864-2) to increase operator safety, indicate risks, show mandatory actions and identify utility connection points. Symbols provide language-independent warning communication; review the meanings below before commissioning the machine, performing maintenance or intervening on hot/chemical parts.
 
-Before commissioning the machine, performing maintenance, or intervening in heavy/hot parts such as galvanized baskets, be sure to review the meanings of the following symbols and the mandatory actions they require.
+Symbols are grouped in three categories: **warning** (hazard and prohibition), **PPE** (personal protective equipment obligation) and **machine information** (connection points: earthing, water, air, drain; safety lock). Label locations on the machine and residual-risk explanations: **See Chapter 2.2**. The technical definition of the tower light and HMI status indicators is given in **Chapter 3.4**.
 
-| Symbol (Label) | Category | Description | Required Action / Instruction |
-| :---: | :---: | :---: | :--- |
-| ![Genel Tehlike](../assets/1.2.2/warning1.png) | **Warning** | General Hazard / Caution | Indicates potential hazardous areas on the machine or equipment. Act with caution in the work area and comply with the relevant additional safety instructions. |
-| ![Sıcak Yüzey](../assets/1.2.2/warning2.png) | **Warning** | Hot Surface Contact Hazard | There are surfaces on or around the machine that reach high temperatures. To prevent burn risks, do not touch these points with bare hands before the system has cooled down completely. |
-| ![Korozif Madde](../assets/1.2.2/warning3.png) | **Warning** | Corrosive / Caustic Substance | Indicates areas where corrosive chemicals are present or used. Avoid direct contact with chemicals and take precautions against spill/splash risks. |
-| ![Ezilme Tehlikesi](../assets/1.2.2/warning4.png) | **Warning** | Crush / Entrapment Hazard | Indicates areas with moving mechanisms where there is a risk of limb entrapment/crushing. Do not open protective guards while the machine is operating and stay away from moving parts. |
-| ![Kaygan Zemin](../assets/1.2.2/warning5.png) | **Warning** | Slippery Surface Hazard | There is a risk of slippery surfaces in the work area due to liquid spills or leaks. Proceed carefully against the hazard of falling. |
-| ![Yanıcı Madde Kullanımı Yasaktır](../assets/1.2.2/warning6.png) | **Prohibition** | Flammable Substance / Combustible Material Prohibited | The use of flammable or explosive liquids and open flames in or around the machine is strictly prohibited. Use only substances approved by the manufacturer. |
-| ![Kılavuzu Oku](../assets/1.2.2/kkd1.png) | **Mandatory** | Refer to Instruction Manual | Read the user manual completely and follow the instructions before commissioning, putting into operation, or performing any maintenance on the machine. |
-| ![Koruyucu Tulum](../assets/1.2.2/kkd2.png) | **PPE** | Mandatory Use of Workwear | It is mandatory to wear appropriate workwear or protective overalls to protect the body against potential risks during operation and maintenance processes. |
-| ![İş Ayakkabısı](../assets/1.2.2/kkd3.png) | **PPE** | Steel-Toe Shoes Mandatory | It is mandatory to use steel-toe protective safety shoes in the work area against falling objects, impact, or crushing risks. |
-| ![Koruyucu Eldiven](../assets/1.2.2/kkd4.png) | **PPE** | Mandatory Use of Protective Gloves | It is mandatory to use protective gloves suitable for the nature of the job when handling sharp-edged, hot, or chemical-contaminated surfaces/parts. |
-| ![Koruyucu Gözlük](../assets/1.2.2/kkd5.png) | **PPE** | Mandatory Use of Safety Glasses | It is mandatory to wear appropriate safety glasses to protect the eyes against liquid splashes, flying particles, or chemical vapor risks. |
-| ![Solunum Maskesi](../assets/1.2.2/kkd6.png) | **PPE** | Mandatory Use of Respirator Mask | It is mandatory to use a filtered respirator mask suitable for the working environment against the risk of inhaling airborne harmful gases, vapors, or particles. |
+## 1.2.1 Signal words (manual text)
 
-> **Note:** Immediately replace worn, removed, or illegible warning labels on the machine with new ones. Operating a machine without labels is a violation of occupational safety.
+The signal words used in the manual text are compatible with ISO 3864-2. Each warning gives the following four items of information: signal word, type of hazard, possible consequence and method of prevention.
+
+| Signal | Meaning | Use |
+| :--- | :--- | :--- |
+| **DANGER** | Risk of fatal or severe injury | Vital safety violation |
+| **WARNING** | Risk of serious injury or machine damage | Significant operational risk |
+| **CAUTION** | Slight injury or equipment damage | Procedure-specific warning |
+
+General safety warnings are collected in **Chapter 2**.
+
+---
+
+## 1.2.2 Warning symbols
+
+Yellow triangular warning signs indicate hazard zones on the machine; red prohibition signs indicate actions that must not be performed. Do not operate the machine if a symbol is not visible or cannot be read.
+
+| Symbol | Meaning | Required action |
+| :---: | :--- | :--- |
+| ![General hazard](../../assets/1.2.2/warning1.png) | General hazard / caution | Follow the related safety instructions (**See Chapter 2**). |
+| ![Hot surface](../../assets/1.2.2/warning2.png) | Hot surface / steam | Do not touch with bare hands until the system has cooled; use protective gloves. |
+| ![Corrosive substance](../../assets/1.2.2/warning3.png) | Corrosive / caustic chemical | Use PPE against chemical splash; if contact with skin, rinse with plenty of water (**See Chapter 2.6**). |
+| ![Crushing hazard](../../assets/1.2.2/warning4.png) | Crushing / hand trapping (moving parts) | Do not put hands into moving areas while the machine is running; do not open guards. |
+| ![Slippery floor](../../assets/1.2.2/warning5.png) | Slippery floor | Walk carefully against liquid leakage; remove the leak (**See Chapter 10**). |
+| ![Flammable substance prohibited](../../assets/1.2.2/warning6.png) | Flammable / explosive substance prohibited | Do not use flammable liquids and open flame around the machine; only approved cleaning agents (**See Chapter 10.1.7**). |
+| ![Electrical hazard](../../assets/1.2.2/warning7.png) | Electrical hazard | Only authorised personnel shall intervene; **See Chapter 2.4** LOTO. |
+
+---
+
+## 1.2.3 PPE symbols
+
+Blue mandatory signs indicate that the specified personal protective equipment must be used. Which PPE is mandatory for which task is defined in the **Chapter 2.6** matrix.
+
+| Symbol | Meaning | Required action |
+| :---: | :--- | :--- |
+| ![Read the manual](../../assets/1.2.2/kkd1.png) | Read the manual | Read and apply this manual before commissioning, operation and maintenance. |
+| ![Protective clothing](../../assets/1.2.2/kkd2.png) | Protective clothing / high-visibility vest | Wear suitable work clothing or a high-visibility vest. |
+| ![Safety footwear](../../assets/1.2.2/kkd3.png) | Safety footwear | Use steel-toe protective footwear. |
+| ![Protective gloves](../../assets/1.2.2/kkd4.png) | Protective gloves | Wear gloves suitable for the work. |
+| ![Protective goggles](../../assets/1.2.2/kkd5.png) | Protective goggles (eye protection) | Use protective goggles against splash. |
+| ![Respiratory mask](../../assets/1.2.2/kkd6.png) | Dust / respiratory mask | Wear a respiratory mask in chemical vapour or dust. |
+
+---
+
+## 1.2.4 Machine information symbols
+
+Information signs on the machine body indicate utility connection points (earthing, water, air, drain) and the safety-lock status. Connection pressures and line diameters: **See Chapter 3.3.5**; installation steps: **See Chapter 5.3**.
+
+| Symbol | Meaning | Typical location / use |
+| :---: | :--- | :--- |
+| ![Protective earthing](../../assets/1.2.2/bilgi1.png) | Protective earthing (PE) | Machine-body earthing terminal; connect to the plant PE line (**See Chapter 5.3**). |
+| ![Lockout mandatory](../../assets/1.2.2/bilgi2.png) | Lockout / energy isolation | Energy isolation and lock before maintenance (**See Chapter 2.4**). |
+| ![Water drain](../../assets/1.2.2/bilgi3.png) | Water drain / drainage | Tank or machine emptying point; connect to the wastewater line. |
+| ![Compressed-air inlet](../../assets/1.2.2/bilgi4.png) | Compressed-air inlet | 6 bar pneumatic supply connection point. |
+| ![Water inlet](../../assets/1.2.2/bilgi5.png) | Water inlet (supply) | Mains / manual water-fill connection point. |
+| ![Tank filling](../../assets/1.2.2/bilgi6.png) | Tank water filling | Filling point / indicator where the tank is filled automatically with water. |
+| ![Safety lock](../../assets/1.2.2/bilgi7.png) | Safety lock (locked / open) | Status of the maintenance-cover or protective-guard lock; do not operate while the lock is open. |
+
+After air and water connections are made, the related status indicator on the HMI manual page must light green. Low-pressure alarm codes: **See Chapter 11.1** (Error-235 air, Error-236 water).
+
+---
+
+## 1.2.5 Reading status indicators
+
+The machine uses the tower light and the HMI alarm display together. The tower light shows machine status from a distance; the HMI presents the alarm code and description text. Evaluate both sources together; do not diagnose faults by looking at the lamp only.
+
+The full definition of tower-light colours and HMI alarm behaviour: **See Chapter 3.4**. Alarm-code list: **See Chapter 11.1**.
+
+---
+
+## 1.2.6 Label maintenance
+
+Warning labels on the machine allow personnel to perceive risk visually. When a label is worn, erased or becomes unreadable, the warning function is lost.
+
+1. Renew worn, erased or unreadable labels immediately.
+2. Do not operate a machine without labels.
+3. For spare-label supply: **See Chapter 1.3**.

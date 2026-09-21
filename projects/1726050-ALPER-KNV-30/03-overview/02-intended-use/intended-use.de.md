@@ -1,35 +1,31 @@
 # 3.2 Bestimmungsgemäße Verwendung
 
+Dieses Kapitel definiert den **konstruktiven Verwendungsbereich** der Maschine, verarbeitbare und verbotene Produkttypen, Prozesswassergrenzen, Umgebungsbedingungen und das Zielpersonal. Wird die Maschine außerhalb der angegebenen Grenzen verwendet, fällt sie in den Bereich vorhersehbarer Fehlanwendung; Sicherheits- und Prozessergebnisse können außerhalb des Garantieumfangs bleiben (siehe **Kapitel 2.1**). Technische Tabellenwerte stehen in **Kapitel 3.3**, Flächenanforderungen in **Kapitel 3.5**.
+
 ---
 
-## 3.2.1 Bestimmungsgemäßer Verwendungsbereich
+## 3.2.1 Konstruktiver Verwendungsbereich
 
-KNV 30 3000 2B ist eine industrielle Teilewaschanlage mit Einlauf-Beschickung, Förderband und zwei Prozessbädern (Waschen + Spülen). Die Teile durchlaufen auf dem Förderband Waschen, Spülen und Trocknen.
+KNV 30 3000 2B ist eine industrielle Teilewaschanlage mit Beschickung vom Einlauf, Förderband und zwei Bädern (Waschen + Spülen). Die Teile laufen auf dem Förderband und durchlaufen Waschen, Spülen und Trocknen.
 
-**Bestimmungsgemäße Verwendung** der Maschine ist die **Entfernung von Verschmutzungen an industriellen Teilen**. Die konstruktive Hauptfunktion ist die **Reinigung von Öl und Verschmutzungen**, die von industriellen Bearbeitungsprozessen auf den Teileoberflächen verbleiben. Die Maschine bearbeitet Teile nach dem Prinzip des kontinuierlichen Flusses entlang der Förderstrecke; die Beschickungsseite befindet sich **links**, die Entnahmeseite **rechts**.
+Der **bestimmungsgemäße Verwendungsbereich** der Maschine ist die Entfernung von Verschmutzung an industriellen Teilen. Die konstruktive Hauptfunktion ist die **Reinigung von Öl und Verschmutzung**, die von industriellen Prozessen auf Teileoberflächen verbleiben. Die Maschine bearbeitet Teile nach dem Prinzip des kontinuierlichen Flusses entlang der Förderstrecke; die Beschickungsseite ist **links**, die Entnahmeseite **rechts**.
 
-Die Maschine ist ausschließlich für den Einsatz in **Innenräumen** industrieller Betriebsstätten innerhalb der in dieser Anleitung angegebenen technischen und umgebungsbedingten Grenzen ausgelegt.
-
-<!-- FOTO: Typische Verwendung — Teile auf die Förderstrecke verladen (Beschickungsseite) -->
-![Typische Verwendung — Teileverladung](../../assets/FOTO-3-2-0-parca-yukleme.png)
+Diese Maschine ist ausschließlich für den Einsatz in **Innenräumen** industrieller Betriebsstätten innerhalb der in dieser Anleitung angegebenen technischen und umgebungsbedingten Grenzen ausgelegt.
 
 ---
 
 ## 3.2.2 Verarbeitbare Produkt- und Materialtypen
 
-Mit der Maschine können folgende Produkttypen bearbeitet werden:
+Mit der Maschine verarbeitbare Produkttypen sind wie folgt:
 
 | Kategorie | Beschreibung |
-|-----------|--------------|
+|----------|----------|
 | Allgemein | Industrielle Teile |
 | Materialbeispiele | Metall, Kunststoff, Gummi usw. |
 
-Teile durchlaufen Wasch- und Spülprozesse zur Entfernung von Oberflächenverschmutzung; anschließend wird die Oberflächenfeuchtigkeit in der Trockenzone entfernt. Die Eignung der Teile für Prozessmedium, Temperatur und Förderkapazität liegt in der Verantwortung des Anwenderunternehmens.
+Teile durchlaufen Wasch- und Spülprozesse zur Entfernung von Oberflächenverschmutzung; anschließend wird die Oberflächenfeuchtigkeit in der Trocknungszone entfernt. Die Eignung der Teile für Prozessflüssigkeit, Temperatur und Förderkapazität liegt in der Verantwortung des Anwenderunternehmens.
 
-Die Nenn-Prozesszykluszeit ist mit **900 Sekunden** (15 Minuten) festgelegt. Der Mindestkapazitäts-Referenzwert ist mit **730 Teile/Stunde** angegeben; Nenn- und Maximalkapazität werden vom Anwenderunternehmen entsprechend den Prozessbedingungen festgelegt.
-
-<!-- FOTO: Beispiele verarbeitbarer industrieller Teile — auf dem Förderband -->
-![Beispiele verarbeitbarer Teile](../../assets/FOTO-3-2-1-islenebilir-parcalar.png)
+Die Nenn-Prozesszykluszeit ist mit **900 Sekunden** (15 Minuten) definiert. Der Mindestkapazitäts-Referenzwert ist mit **730 Stück/Stunde** angegeben; Nenn- und Maximalkapazität werden vom Anwenderunternehmen entsprechend den Prozessbedingungen festgelegt.
 
 ---
 
@@ -38,82 +34,74 @@ Die Nenn-Prozesszykluszeit ist mit **900 Sekunden** (15 Minuten) festgelegt. Der
 Die folgenden Produkt- und Verwendungstypen sind für die Maschine **nicht geeignet** und **streng verboten**:
 
 | Verbotene Kategorie | Beschreibung |
-|---------------------|--------------|
+|----------------|----------|
 | Lebende Organismen | Mensch, Tier, Pflanze oder jeder lebende Organismus |
 
-Eine Verwendung der Maschine außerhalb des angegebenen Zwecks gilt als vorhersehbare Fehlanwendung. Das Waschen, Reinigen oder Eindringen lebender Organismen in Prozesszonen der Maschine ist verboten.
+Die Verwendung der Maschine außerhalb des angegebenen Zwecks wird im Rahmen vorhersehbarer Fehlanwendung bewertet. Das Waschen, Reinigen oder Eindringen lebender Organismen in Prozesszonen der Maschine ist verboten.
 
-Die Maschine ist mit einem RFID-Sicherheitssensor ausgestattet; beim Öffnen der Abdeckungen stoppt die Maschine. Ein Bypass der Schutzvorrichtung ist unzulässig. Für Wartungsarbeiten dürfen Abdeckungen erst nach Abschaltung der Maschine geöffnet werden; bei abgeschalteter Spannung ist das **LOTO-Verfahren** anzuwenden.
+Die Maschine ist mit einem RFID-Sicherheitssensor ausgestattet; beim Öffnen der Klappen stoppt die Maschine. Der RFID-Sicherheitssensor darf nicht umgangen werden. Für die Wartung wird die Maschine stillgesetzt, die Elektrizität isoliert und das **LOTO-Verfahren** angewendet; Klappen werden erst danach geöffnet.
 
-<!-- FOTO: Maschinenprozesszone — ausschließlich industrielle Teile -->
-![Prozesszone — nur industrielle Teile](../../assets/FOTO-3-2-2-yasak-kullanim-uyari.png)
+![Prozesszone — Verwendung industrieller Teile](../../assets/3.2/2.png)
 
 ---
 
 ## 3.2.4 Prozesswasser- und Reinigungsmittelgrenzen
 
-Für Wasch- und Spülprozesse der Maschine muss das verwendete Wasser folgenden Bedingungen entsprechen:
+Das in den Wasch- und Spülprozessen der Maschine zu verwendende Wasser muss den folgenden Bedingungen entsprechen:
 
 | Parameter | Wert / Anforderung |
 |-----------|-------------------|
 | Wasserquelle | Leitungswasser oder aufbereitetes Wasser |
-| Wassereinlassdruck | 1 bar |
+| Wassereintrittsdruck | 1 bar |
 | Wassertemperatur | +10°C – +70°C |
 
 **Verbotene Reinigungsmittel:**
-- Säurehaltige Reinigungsmittel dürfen nicht verwendet werden.
-- Reinigungsmittel, die Edelstahl angreifen, dürfen nicht verwendet werden.
+- Säurebasierte Reinigungsmittel dürfen nicht verwendet werden.
+- Reinigungsmittel, die Edelstahl schädigen würden, dürfen nicht verwendet werden.
 
-Zur Desinfektion der Maschinentanks ist der Tank zu entleeren und das Innere mit **Seifenwasser** zu waschen. Die Entsorgung von Abwasser und Chemikalien richtet sich nach den im Einsatzland geltenden Vorschriften.
+Zur Desinfektion der Maschinentanks ist das Tankinnere nach Entleerung des Wassers mit **Seifenwasser** zu waschen. Bei Abwasser- und Chemikalienentsorgung ist die geltende Gesetzgebung des Landes anzuwenden, in dem die Maschine eingesetzt wird.
 
-Reinigungsart: **trocken / nass**
+Reinigungstyp: **trocken / nass**
 
-<!-- FOTO: Wasseranschlussstelle und Prozesstanks -->
-![Prozesswasseranschluss](../../assets/FOTO-3-2-3-su-baglantisi.png)
+![Prozesswasseranschluss](../../assets/3.2/3.png)
 
 ---
 
 ## 3.2.5 Umgebungs- und Anlagenbedingungen
 
-Die Maschine ist ausschließlich für den Einsatz in **Innenräumen** ausgelegt. Betriebs- und Lagerumgebung müssen folgende Grenzen einhalten:
+Die Maschine ist ausschließlich für den Einsatz in **Innenräumen** industrieller Betriebsstätten ausgelegt. Betriebs- und Lagerumgebungsbedingungen müssen innerhalb der folgenden Grenzen liegen; diese Werte stehen in **Kapitel 3.3.6** — Tabelle Umgebungsbedingungen:
 
 | Parameter | Min | Max |
 |-----------|-----|-----|
 | Umgebungs- / Betriebstemperatur | +10°C | +30°C |
 | Lagertemperatur | +10°C | +30°C |
-| Relative Luftfeuchtigkeit | 30% | 50% |
-
-Weitere Umgebungsmerkmale:
+| Relative Feuchte | 30 % | 50 % |
 
 | Parameter | Wert |
 |-----------|-------|
 | Schutzart (IP) | IP55 |
-| Geräuschpegel | 65 dB(A) |
+| Lärmpegel | 65 dB(A) |
 
-Der Boden, auf dem die Maschine aufgestellt wird, muss **hart und eben** sein. Mindestabstand vorne, hinten und seitlich: **1000 mm**; Mindestraumhöhe: **2500 mm**. Während des Transports dürfen Feuchtigkeit und korrosive Stoffe nicht vorhanden sein; auch in Lagerumgebungen dürfen Feuchtigkeit und korrosive Stoffe nicht vorhanden sein.
+Minimale Umgebungsabstände, Deckenhöhe, Bodenebenheitstoleranz und Montageflächengröße stehen in **Kapitel 3.5.2**. In der Installationsplanung dieses Kapitel heranziehen; hier nicht wiederholt.
 
-Die Druckluftversorgung muss mit **6 bar** Druck bereitgestellt werden (3/4"-Anschluss).
-
-<!-- FOTO: Maschinenaufstellungsbereich — Innenraum, Freiräume -->
-![Aufstellungsbereich — Innenraum](../../assets/FOTO-3-2-4-kurulum-alani.png)
+Die Druckluftversorgung muss mit **6 bar** Druck bereitgestellt werden (3/4"-Anschluss — siehe **Kapitel 3.3.5**). Während Transport und Lagerung dürfen keine Feuchtigkeit und korrosiven Stoffe vorhanden sein (siehe **Kapitel 4.2**).
 
 ---
 
 ## 3.2.6 Bediener, Schulung und Zielgruppe
 
-Die Maschine ist für folgende Personalgruppen vorgesehen:
+Die Maschine ist für die Verwendung durch die folgenden Personalgruppen ausgelegt:
 
 | Personal | Rolle |
-|----------|-------|
-| Bediener | Täglicher Betrieb, Start/Stopp, Prozessüberwachung |
-| Wartung | Periodische Wartung, Filterreinigung, Schmierung |
+|----------|-----|
+| Linienverantwortliche(r) | HMI-Vorbereitung / Start / Stop, Alarmüberwachung, Error-461 **Produkt entnommen Bestätigung** |
+| Wartung | Periodische Wartung, Filterreinigung, Schmierung, Störungseingriff |
 | Installation | Montage, Medienanschlüsse, Inbetriebnahme |
 
-Die gleichzeitig an der Maschine erforderliche Anzahl Bediener beträgt **1–2** Personen.
+Be- und Entladen der Teile erfolgen durch **Roboter**; an der Linie ist **kein** ständiger Schichtbediener vorhanden. Eingriffspersonal, das sich gleichzeitig um die Maschine befinden kann, beträgt **1–2** Personen (Linienverantwortliche(r) und/oder Wartung); diese Zahl bedeutet keinen 24/7 an der Linie stehenden Bediener.
 
-**Qualifikations- / Schulungsanforderung:** Schulung des Betriebs- und Wartungspersonals; eine Schulung zu Maschinenbedienung und -wartung muss absolviert sein. Das Personal ist in HMI-Oberfläche (Türkisch, Englisch, Deutsch), Not-Halt-Verfahren und grundlegenden Sicherheitsregeln zu unterweisen.
+**Kompetenz- / Schulungsanforderung:** Schulung von Betriebs- und Wartungspersonal; eine Schulung zu Maschinenverwendung und -wartung muss erfolgt sein. Das Personal ist über die HMI-Schnittstelle (Türkisch, Englisch, Deutsch), das Not-Halt-Verfahren und grundlegende Sicherheitsregeln zu informieren.
 
-Die Maschine ist für **24/7** Dauerbetrieb ausgelegt; der Betrieb ist dennoch unter Aufsicht geschulten Personals und innerhalb der in diesem Abschnitt genannten Grenzen durchzuführen.
+Die Maschine ist für den Betrieb an einer **24/7**-Roboterlinie geeignet. HMI-Befehle und Fehlerbestätigung werden von einem geschulten Linienverantwortlichen oder Wartungspersonal gegeben; die Prozessüberwachung kann durch das übergeordnete System (MES/SCADA — Kunde) oder durch periodischen Rundgang erfolgen.
 
-<!-- FOTO: Bediener — Maschinenüberwachung am HMI-Panel -->
-![Bediener — HMI-Panel](../../assets/FOTO-3-2-5-operator-hmi.png)
+![Bediener — HMI-Bedienfeld](../../assets/3.2/4.png)

@@ -1,7 +1,3 @@
-# 2.3 - 2.6 operasyonel güvenlik, LOTO, acil durdurma ve KKD
-
----
-
 # 2.3 Genel operasyonel güvenlik kuralları
 
 Aşağıdaki kurallar makinenin tüm kullanım aşamalarında geçerlidir. İhlal durumunda makineyi durdurun; güvenlik koşulları sağlanmadan yeniden devreye almayın.
@@ -19,7 +15,7 @@ Aşağıdaki kurallar makinenin tüm kullanım aşamalarında geçerlidir. İhla
 
 **UYARI — Enerji kaynaklı yaralanma:** LOTO uygulanmadan yapılan bakım veya temizlikte makine kazara devreye girebilir; ezilme, elektrik çarpması, sıcak sıvı ve basınçlı hava yaralanması oluşabilir. Tüm enerji kaynaklarını izole edin, kilitleyin ve etiketleyin.
 
-Bu prosedür, makine üzerinde mekanik bakım, elektrik müdahalesi, filtre/tank temizliği, kapak sökme ve benzeri tüm işler öncesinde **tek yetkili kaynak (SSOT)** olarak uygulanır. Diğer bölümlerde yalnızca **Bkz. Bölüm 2.4** referansı verilir; adımlar tekrarlanmaz.
+Bu prosedür, makine üzerinde mekanik bakım, elektrik müdahalesi, filtre/tank temizliği, kapak sökme ve benzeri tüm işler öncesinde uygulanır. Diğer bölümlerde yalnızca **Bkz. Bölüm 2.4** referansı verilir; adımlar tekrarlanmaz.
 
 ## 2.4.1 Kapsam ve enerji kaynakları
 
@@ -51,13 +47,13 @@ Hidrolik sistem bulunmamaktadır.
 6. Ana şalter koluna kişisel **asma kilidinizi** takın.
 7. Kilide **LOTO etiketi** asın; etikette adınız, tarih ve "Çalıştırmayın — bakım" ifadesi bulunsun.
 8. **Basınçlı hava** giriş vanasını kapatın; mümkünse vanayı kilitleyin.
-9. Hat içi **kalıntı basıncı** varsa tahliye edin; HMI manuel sayfasında hava durumunu kontrol edin.
+9. Hat içi **kalıntı basıncı** varsa regülatör veya tahliye noktasından boşaltın. Ana şalter kapalıyken HMI çalışmaz; basıncı HMI üzerinden doğrulamayın, pano veya hattı yeniden enerjilendirmeyin.
 10. **Su giriş** vanalarını kapatın.
 11. Tank içi müdahale gerekiyorsa proses sıvısını uygun prosedürle boşaltın (**Bkz. Bölüm 10**); sıcak sıvı riskine karşı soğumayı bekleyin.
 
 **Doğrulama**
 
-12. Ana şalter kapalıyken HMI veya start komutu ile makinenin **tepki vermediğini** doğrulayın.
+12. Ana şalter kapalıyken HMI'nın kapandığını ve start komutunun **yanıtsız** kaldığını doğrulayın. HMI kararmadıysa beslemenin kesilmediğini varsayın; pano içine girmeyin, yetkili elektrik personeli çağırın.
 13. Konveyör, fan ve pompa bölgelerinde hareket olmadığını gözle kontrol edin.
 14. Doğrulama tamamlanmadan kapak sökmeyin veya muhafaza içine girmeden müdahaleye başlamayın.
 
@@ -70,7 +66,7 @@ Hidrolik sistem bulunmamaktadır.
 
 **TEHLİKE — Çoklu personel:** Birden fazla kişi aynı makinede çalışıyorsa her enerji kaynağına ayrı kilit takılır; son personel çıkmadan grup kilidi sökülmez.
 
-Emniyet kapısı bypass edilmemelidir. RFID sensörü devre dışı bırakılamaz.
+RFID güvenlik sensörü bypass edilmemelidir. Sensör köprülenemez veya devre dışı bırakılamaz.
 
 ---
 
@@ -90,7 +86,8 @@ Acil stop'a basıldığında makinedeki **her fonksiyon durur**. Acil stop, norm
 - Can güvenliğini tehdit eden sıkışma, düşme veya çarpma riski
 - Ani mekanik arıza sesi veya şiddetli sızıntı
 - Elektrik arkı, duman veya yanma kokusu
-- RFID / kapak ihlali sonrası prosesin güvenli biçimde durdurulması gereken acil durumlar
+
+Kapak açıldığında RFID zaten makineyi durdurur; bu bir acil stop nedeni değildir. RFID duruşundan sonra kapağı kapatın, **Bölüm 2.4** gereklerini uygulayın ve ardından resetleyin.
 
 **Reset prosedürü**
 
@@ -100,7 +97,7 @@ Acil stop'a basıldığında makinedeki **her fonksiyon durur**. Acil stop, norm
 4. HMI alarm ekranındaki acil stop / ilgili alarmı resetleyin (**Bkz. Bölüm 11.1**).
 5. Tehlike tamamen giderilmeden start vermeyin.
 
-Reset prosedürü güvenlik fonksyonunu geri kazandırır; arıza giderilmeden start vermek tekrar durma veya hasara yol açabilir.
+Reset prosedürü güvenlik fonksiyonunu geri kazandırır; arıza giderilmeden start vermek tekrar durma veya hasara yol açabilir.
 
 ---
 

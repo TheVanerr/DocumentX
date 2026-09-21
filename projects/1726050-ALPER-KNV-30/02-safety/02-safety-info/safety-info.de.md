@@ -1,55 +1,51 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 2.2 Restrisiken und Maschinenetiketten
 
-# 2.2 GENEL GÜVENLİK VERİLERİ VE BİLGİLERİ
+In der Konstruktionsphase wurde eine Risikobeurteilung nach EN ISO 12100 angewendet; Risiken, die durch Konstruktion reduziert werden konnten, wurden reduziert. Dennoch bleiben **Restrisiken**, die aufgrund der Natur der Maschine nicht vollständig beseitigt werden können. Das Personal muss diese Risiken kennen; muss die zugehörige PSA verwenden und muss der Matrix in **Kapitel 2.6** folgen.
 
-Bu bölüm, endüstriyel yıkama makinesinin tasarım ve imalat aşamalarında gerçekleştirilen EN ISO 12100 risk değerlendirmesi sonuçlarını içerir. Tasarımla alınan güvenlik önlemlerine rağmen ortadan kaldırılamayan "kalıntı riskler", makine üzerindeki uyarı etiketleri, çevresel emisyon değerleri ve zorunlu Kişisel Koruyucu Donanım (KKD) matrisi aşağıda detaylandırılmıştır.
-
----
-
-## 2.2.1 Kalıntı Riskler
-Makinenin çevresine entegre edilen fiziki muhafazalar, kapı kilitleri (interlock) ve elektronik emniyet sistemlerine rağmen makinenin doğası gereği barındırdığı, tamamen sıfırlanamayan kalıntı riskler şunlardır. Operatör ve bakım personeli bu risklerin bilincinde olmalı ve ilgili KKD'leri kullanmalıdır:
-
-* **Termal Riskler (Sıcak Yüzey ve Buhar):** Yıkama döngüsü tamamlandıktan hemen sonra yükleme kapağı açıldığında, kabin içerisinden dışarıya doğru ani bir sıcak buhar salınımı gerçekleşir. Ayrıca, yıkama işlemi biten galvanizli sepetler ve iş parçaları yüksek sıcaklıkta (genellikle 50°C - 80°C arası) çıkmaktadır. Çıplak elle temas halinde birinci veya ikinci derece yanık riski mevcuttur.
-* **Yüksek Basınçlı Su Jeti Teması:** Makinenin iç konstrüksiyonunda yer alan standart nozullar suyu ince ve düz bir hat şeklinde; opsiyonel yelpaze nozullar ise açılı bir formda, yüksek debi ve basınçla püskürtmektedir. Güvenlik siviçlerinin yetkisiz şekilde baypas edilip kapağın çalışırken açılması durumunda, bu basınçlı su jetleri ciltte kesiklere, gözde kalıcı hasarlara veya uzuv yaralanmalarına yol açabilir.
-* **Mekanik Sıkışma ve Ezilme:** Ağır endüstriyel parçaların makine sepetine vinçle veya manuel olarak yüklenmesi ve boşaltılması sırasında, kapağın veya sepet kılavuz raylarının arasına parmak veya el sıkışma riski bulunmaktadır.
-* **Kimyasal Maruziyet:** Yıkama işleminde kullanılan endüstriyel temizlik ajanlarının ikmali sırasında veya nozul/filtre temizlikleri esnasında kimyasal solüsyonun cilde veya göze sıçrama riski vardır. 
-* **Elektriksel Riskler:** Elektrik panosu içerisinde 400V AC (Trifaze) yüksek gerilim bulunmaktadır. Ana şalter kapatılsa dahi invertör (sürücü) kondansatörlerinde bir süre daha tehlikeli seviyede yük bulunabilir.
+Warnetiketten an der Maschine sind mit allgemeinen Symbolregeln in **Kapitel 1.2** erläutert; dieses Kapitel definiert maschinenspezifische Restrisiken und Etikettenpositionen.
 
 ---
 
-## 2.2.2 Makine Üzerindeki Uyarı Etiketleri ve Piktogramlar
-Makinenin gövdesinde ve elektrik panosu üzerinde yer alan güvenlik piktogramları, ISO 7010 standartlarına uygundur. Bu etiketlerin sökülmesi, üzerinin boyanması veya okunamaz hale gelmesi yasaktır. Yıpranan etiketler derhal yenisiyle değiştirilmelidir.
+## 2.2.1 Restrisiken
 
-| Uyarı Etiketi (Piktogram Anlamı) | Bulunduğu Konum | Alınması Gereken Önlem |
+**Thermisches Risiko — heiße Prozessflüssigkeit und Oberflächen**
+
+Die Prozessflüssigkeit in Wasch- und Spültanks wird erwärmt; die Wassereintrittstemperatur kann im Bereich **+10°C bis +70°C** liegen (**Siehe Kapitel 3.3.5**). Tank-, Rohr-, Heizer- und Teileoberflächen können auch nach dem Prozess heiß bleiben. Kontakt mit bloßer Hand erzeugt das Risiko von Verbrennungen ersten oder zweiten Grades. Vor Wartung oder Reinigung ausreichend Zeit für die Abkühlung des Systems einräumen.
+
+**Mechanisches Risiko — Förderband und bewegte Teile**
+
+Das Förderband bewegt sich kontinuierlich oder auf Startbefehl; im Teile-Einlauf-/Auslaufbereich besteht Einklemm- und Quetschgefahr. Bei laufender Maschine Hand, Fuß oder Werkzeug nicht in die Förderstrecke, Pumpen-/Lüftergehäuse oder den bewegten Mechanismus strecken. Auch an einer roboterintegrierten Linie bleiben Not-Halt- und RFID-Funktionen in Betrieb.
+
+**Chemische und Flüssigkeitsexposition**
+
+Wasch- und Spülprozesse enthalten Öl, Schmutz und Prozessflüssigkeit. Bei Filterreinigung, Tankwartung und Leckage besteht Spritzrisiko auf Haut oder Augen. Wassererkennung in der Auffangwanne (HMI-Alarm Error-452) erzeugt rutschigen Boden und Rutschrisiko.
+
+**Elektrisches Risiko**
+
+Im Elektroschrank liegt Versorgung **380 V**, **50 Hz**, **3 Phasen** vor (**Siehe Kapitel 3.3.3**). Nur befugtes Elektropersonal darf die Schranktür öffnen; vor dem Eingriff ist das LOTO-Verfahren in **Kapitel 2.4** verpflichtend. Auch bei ausgeschaltetem Hauptschalter kann in Antriebs-/Kondensatorkreisen kurzzeitig gefährliche Spannung verbleiben.
+
+**Pneumatisches Risiko**
+
+Die Druckluftversorgung beträgt **6 bar** (**Siehe Kapitel 3.3.5**). Verletzungsrisiko kann entstehen, wenn Leitungsdruck plötzlich entladen wird oder eine Verbindung reißt. Bei pneumatischen Eingriffen den Druck isolieren und Restdruck entlüften (**Siehe Kapitel 2.4**).
+
+**Lärm**
+
+Der Maschinenlärmpegel ist mit **65 dB(A)** definiert (**Siehe Kapitel 3.3.6**). Bei längerem Arbeiten in geringer Entfernung kann gemäß der Arbeitsplatz-Lärmgesetzgebung des Arbeitgebers eine zusätzliche Bewertung des Gehörschutzes erforderlich sein.
+
+---
+
+## 2.2.2 Warnetiketten an der Maschine
+
+Piktogramme am Maschinengehäuse und Elektroschrank sind mit ISO 7010 konform. Entfernen, Überlackieren oder Unleserlichmachen von Etiketten ist verboten.
+
+| Etikett / Symbol | Typische Lage | Erforderliche Handlung |
 | :--- | :--- | :--- |
-| **Elektrik Çarpması Tehlikesi** (Sarı üçgen içinde şimşek) | Ana elektrik panosu kapağı, motor bağlantı kutuları (klemens klemensleri) ve ısıtıcı rezistans kapakları. | Pano kapağını sadece yetkili elektrik personeli açabilir. Müdahale öncesi şalterden LOTO prosedürü uygulanmalıdır. |
-| **Sıcak Yüzey Uyarısı** (Sarı üçgen içinde dalgalı ısı dalgaları) | Yükleme/boşaltma kapakları, yıkama kabini dış yüzeyinin belirli noktaları, egzoz bacası ve buhar tahliye hatları. | Çıplak elle dokunmaktan kaçınılmalı, sıcak işlemler için mutlaka ısıya dayanıklı eldiven kullanılmalıdır. |
-| **Aşındırıcı (Korozif) Madde** (Sarı üçgen içinde test tüpü ve el) | Kimyasal dozajlama pompası çevresi, deterjan/solüsyon tankı dolum kapağı. | Kimyasal ilavesi yaparken uygun yüz siperliği ve nitril eldiven kullanılmalıdır. Asla çıplak elle kimyasala temas edilmemelidir. |
-| **Sıkışma Tehlikesi / Dönen Parça** (Sarı üçgen içinde dişli ve el) | Motor-pompa kaplin muhafazaları, pnomatik silindir hareket yolları, varsa döner sepet mekanizması çevresi. | Makine çalışırken muhafazalar sökülmemeli, bol kıyafet, kravat veya sallanan takılarla makineye yaklaşılmamalıdır. |
-| **Kullanım Kılavuzunu Okuyun** (Mavi daire içinde kitap okuyan insan) | HMI (Kullanıcı Arayüzü) ekranının hemen altı veya ana kontrol istasyonu. | Operatöre, makineyi çalıştırmadan önce bu dokümantasyonun okunmasının zorunlu olduğunu hatırlatır. |
+| Allgemeine Gefahr | Maschinengehäuse, Prozesszonen | **Siehe Kapitel 2** |
+| Heiße Oberfläche | Nähe Tank und Heizer | Nicht berühren, bis abgekühlt; hitzebeständige Handschuhe |
+| Ätzend / chemisch | Nähe Tank und Dosierung | PSA verwenden; keinen direkten Kontakt |
+| Quetschen / Einklemmen | Förderband-Einlauf/Auslauf | Den Bereich bei Betrieb nicht betreten |
+| Rutschiger Boden | Maschinenboden, Auffangwanne | Leckage beseitigen; vorsichtig gehen |
+| Elektrische Gefahr | Elektroschrank | Nur befugtes Personal; LOTO anwenden |
+| PSA-Symbole | Bediener- und Wartungszonen | **Siehe Kapitel 2.6** |
 
----
-
-## 2.2.3 Gürültü ve Çevresel Emisyon Değerleri
-
-**Ses Basınç Seviyesi (Gürültü):**
-* Makinenin standart yıkama döngüsü sırasında operatör istasyonunda (makineye 1 metre mesafede ve 1.6 metre yükseklikte) ölçülen A-ağırlıklı eşdeğer sürekli ses basınç seviyesi **72 dB(A) ile 78 dB(A)** aralığındadır. (Bu değer; opsiyonel düz hat/açılı nozul konfigürasyonuna ve yıkanan parçanın geometrisine bağlı olarak suyun çarpma şiddetiyle küçük değişiklikler gösterebilir).
-* Ölçülen bu değerler 80 dB(A) eylem sınırının altında olduğundan, sürekli kullanımda kulak koruyucu donanım (kulaklık/tıkaç) kullanımı **yasal olarak zorunlu değildir ancak tavsiye edilir**.
-
-**Buhar ve Egzoz Emisyonu:**
-* Makine, termal yıkama sonucu oluşan su buharını tahliye etmek için bir egzoz (havalandırma) çıkışına sahiptir. İç kabinde yoğuşan buharın tesis içerisine yayılmasını önlemek amacıyla, makinenin egzoz flanşı işletmenin merkezi havalandırma sistemine veya doğrudan dış ortama uygun kesitte bir boru ile bağlanmalıdır. 
-
----
-
-## 2.2.4 Kişisel Koruyucu Donanım (KKD) Matrisi
-Farklı operasyonel görevler sırasında operatörlerin ve bakım teknisyenlerinin kullanması zorunlu olan minimum Kişisel Koruyucu Donanımlar (EN standartlarına uygun) aşağıda tablolanmıştır. İşletme, tesisin kendi iç İSG kuralları gereği bu listeye ek donanımlar (baret, fosforlu yelek vb.) ilave edebilir.
-
-| Operasyon / Görev | Göz Koruması (EN 166) | El Koruması (EN 388 / EN 374 / EN 407) | Ayak Koruması (EN ISO 20345) | Vücut Koruması |
-| :--- | :--- | :--- | :--- | :--- |
-| **Standart Parça Yükleme / Boşaltma** | Zorunlu Değil (Ancak Tavsiye Edilir) | **Zorunlu:** Isıya dayanıklı (+100°C) ve kesilmez endüstriyel eldiven. | **Zorunlu:** Çelik burunlu ve kaymaz tabanlı (S2/S3) iş ayakkabısı. | Standart iş kıyafeti (kolları kapalı). |
-| **Kimyasal İkmali / Tank Dolumu** | **Zorunlu:** Tam kapalı iş gözlüğü veya tam yüz siperliği. | **Zorunlu:** Kimyasala (Aside/Kostiğe) dayanıklı uzun konçlu nitril eldiven. | **Zorunlu:** Çelik burunlu iş ayakkabısı (Sıvı geçirmez). | Kimyasal sıçramalarına karşı önlük. |
-| **Günlük Temizlik ve Filtre Değişimi** | **Zorunlu:** Tam yüz siperliği (kalan basınçlı su/kimyasal ihtimaline karşı). | **Zorunlu:** Sıvı geçirmez ve mekanik risklere dayanıklı eldiven. | **Zorunlu:** Kaymaz tabanlı (S2/S3) iş ayakkabısı. | Sıvı geçirmez önlük veya iş tulumu. |
-| **Elektrik Panosu Bakımı (LOTO İle)** | Zorunlu Değil | **Zorunlu:** İzoleli (1000V) elektrikçi eldiveni (sadece gerilim testi ve ölçüm sırasında). | **Zorunlu:** Çelik burunsuz, yalıtkan tabanlı elektrikçi iş ayakkabısı. | Pamuklu, alev almaz iş kıyafeti. |
-| **Mekanik Periyodik Bakım (LOTO İle)** | **Zorunlu:** Çapak fırlamalarına karşı standart iş gözlüğü. | **Zorunlu:** Kesilme ve delinmeye dirençli (Seviye 3 veya 5) mekanik iş eldiveni. | **Zorunlu:** Çelik burunlu iş ayakkabısı. | Standart iş kıyafeti (bedene oturan). |
-
-> **Hatırlatma:** Özellikle makinenin galvanizli parçalarıyla temas eden sıvıların (yıkama suyu, atık su) kimyasal yapısı, yüklenen deterjanın özelliklerine göre değişiklik gösterir. KKD seçimi yapılırken her zaman kimyasal tedarikçisinin sağladığı Malzeme Güvenlik Bilgi Formu (MSDS) referans alınmalıdır.
+Abgenutzte Etiketten sofort erneuern (**Siehe Kapitel 1.3**). Eine Maschine ohne Etiketten nicht betreiben.

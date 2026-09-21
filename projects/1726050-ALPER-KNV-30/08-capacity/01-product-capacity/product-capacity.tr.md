@@ -2,7 +2,7 @@
 
 Kapasite değerlendirmesi, konveyör üzerinde ilerleyen **endüstriyel parçalar** için yapılır. Makine tambur hacmi veya toplu yükleme kapasitesi ile tanımlanmaz; hat throughput'u konveyör akış hızı, robot cycle time ve proses süresi birlikte belirler.
 
-Referans teknik değerler **Bölüm 3.3.2** — Kapasite ve proses parametreleri tablosunda SSOT olarak verilmiştir.
+Referans teknik değerler **Bölüm 3.3.2** — Kapasite ve proses parametreleri tablosunda verilmiştir.
 
 ---
 
@@ -13,10 +13,10 @@ Referans teknik değerler **Bölüm 3.3.2** — Kapasite ve proses parametreleri
 | Nominal kapasite (adet/saat) | Kullanıcı firma belirler | Bkz. Bölüm 3.3.2 |
 | Maksimum kapasite (adet/saat) | Kullanıcı firma belirler | |
 | Minimum kapasite (adet/saat) | **730** | Tasarım referans değeri |
-| Nominal döngü süresi | **900 sn** (15 dk) | Bkz. Bölüm 3.3.2 |
+| Nominal döngü süresi | **900 sn** (15 dk) | Parça geçiş süresi — robot cycle değil |
 | Proses adımları | Yıkama → Durulama → Kurutma (3) | Bkz. Bölüm 3.1 |
 
-Minimum kapasite (**730 adet/saat**), makine tasarım referansıdır. Gerçek üretim kapasitesi robot hattı cycle süresi, parça boyutu ve proses parametrelerine göre değişir; kullanıcı sahasında doğrulanmalıdır.
+**730 adet/saat**, konveyörde aynı anda birden fazla parça varken hat throughput referansıdır. **900 sn**, tek parçanın proses tünelindeki kalışıdır. Robot giriş/çıkış cycle'ı müşteri hattına aittir ve 730 adet/saat ile uyumlu olacak kadar kısa olmalıdır. Gerçek üretim kapasitesi robot hattı, parça boyutu ve proses parametrelerine göre değişir; kullanıcı sahasında doğrulanmalıdır.
 
 ---
 
@@ -85,7 +85,7 @@ Makine kesintisiz (**7/24**) robot hattında çalışmaya uygundur. Sürekli ça
 | Faktör | Etki |
 |--------|------|
 | Robot besleme / çıkış hızı | Hat cycle süresini doğrudan belirler |
-| Nominal makine döngüsü (900 sn) | Konveyör proses süresi referansı |
+| Nominal makine döngüsü (900 sn) | Tek parçanın proses tüneli geçiş süresi; robot cycle değildir |
 | HMI sıcaklık set değerleri | Isıtma süresini etkiler (bkz. **Bölüm 6.3.3**) |
 | Aktif proses fonksiyonları | Yıkama, durulama, kurutma 1/2, egzoz on/off |
 | Parça geometrisi ve kirlilik derecesi | Etkin yıkama kalitesi ve gerekli temas süresi |

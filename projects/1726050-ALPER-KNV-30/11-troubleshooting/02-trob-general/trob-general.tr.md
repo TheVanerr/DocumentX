@@ -1,6 +1,6 @@
 ﻿# 11.2 Genel arıza giderme
 
-Bu alt bölüm HMI alarm davranışını ve yetkili servis çağrısı kriterlerini tanımlar. Alarm kodları **Bölüm 11.1.2** tablosunda SSOT olarak verilmiştir.
+Bu alt bölüm HMI alarm davranışını ve yetkili servis çağrısı kriterlerini tanımlar. Alarm kodları **Bölüm 11.1.2** tablosunda verilmiştir.
 
 ---
 
@@ -22,7 +22,7 @@ Aktif alarm oluştuğunda HMI Alarm Sayfasında kayıt görünür; eş zamanlı 
 
 ## 11.2.2 Servis çağrısı kriterleri
 
-DATA dosyasında servis kriterleri ayrıntılı tanımlanmamıştır. Aşağıdaki durumlarda **Bölüm 1.3** iletişim kanallarından yetkili servis desteği alınmalıdır:
+Aşağıdaki durumlarda **Bölüm 1.3** iletişim kanallarından yetkili servis desteği alınmalıdır:
 
 | # | Durum | Gerekçe |
 |---|-------|---------|
@@ -32,7 +32,7 @@ DATA dosyasında servis kriterleri ayrıntılı tanımlanmamıştır. Aşağıda
 | 4 | PLC/HMI donanım arızası şüphesi | Yazılım/donanım müdahalesi üretici yetkisi gerektirir |
 | 5 | **11.1.2** tablosundaki adımlara rağmen sorun devam ediyor | Saha teşhisi ve yedek parça değişimi gerekebilir |
 | 6 | Mekanik hasar, conta patlaması, ciddi sızıntı | Güvenlik ve proses bütünlüğü riski |
-| 7 | Güvenlik fonksiyonu (RFID, acil stop, CAT3) doğrulama başarısız | **Bölüm 5.4** testleri tekrar geçemiyor |
+| 7 | Güvenlik fonksiyonu (RFID, acil stop, Cat. 3) doğrulama başarısız | **Bölüm 5.4** testleri tekrar geçemiyor |
 
 **Servis öncesi hazırlık (Bölüm 1.3.3):**
 

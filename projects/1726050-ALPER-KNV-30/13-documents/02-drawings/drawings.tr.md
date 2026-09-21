@@ -1,6 +1,6 @@
 ﻿# 13.2 Çizimler
 
-Bu alt bölüm makine layout çiziminin teslim şeklini ve kılavuza gömülü görsel referansları tanımlar. Ayrı montaj, ankraj veya kaldırma noktası çizimleri **teslim edilmemektedir** (DATA).
+Bu alt bölüm, makine ile teslim edilen layout çizimini ve teslim edilmeyen çizimlerin yerine bakılacak kılavuz bölümlerini tanımlar.
 
 ---
 
@@ -33,20 +33,3 @@ Layout, kurulum (**5**), taşıma (**4**) ve tesis planlaması (**3.5**) için b
 | Zemin ankraj | Teslim edilmez | Kurulum **5.2** — ayarlanabilir ayak |
 | Pnömatik şema | Teslim edilmez | Elektrik şeması + **6.5** |
 | Hidrolik şema | Uygulanmaz | — |
-
----
-
-## 13.2.3 Kılavuza gömülü görseller
-
-Makine fotoğrafları ve HMI ekran görüntüleri proje `assets/` klasöründedir. Kılavuz metinlerinde referans verilen görseller ilgili bölümlerde yer alır; ayrı çizim paketi **oluşturulmaz**.
-
-| Görsel tipi | Konum | Kullanıldığı bölümler |
-|-------------|-------|----------------------|
-| Makine / modül fotoğrafları | `assets/{bölüm}.{alt}/N.png` | **3**–**8** ilgili alt bölümler |
-| HMI ekran görüntüleri | `assets/3.4/N.png` (SSOT **3.4**); çapraz referanslarda ilgili bölüm klasörü | **3.4**, **5**–**8** |
-| Sembol / uyarı ikonları | `assets/1.2.2/*.png` | **1.2**, **2** |
-
-Her alt bölüm kendi `assets/X.Y/` klasöründe sıralı numaralandırılmış görselleri kullanır; aynı fotoğraf birden fazla bölümde geçse bile her bölüm kendi numaralı dosyasına referans verir.
-
----
-

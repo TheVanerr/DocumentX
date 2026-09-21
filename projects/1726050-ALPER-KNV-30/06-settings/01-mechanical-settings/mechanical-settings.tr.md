@@ -24,7 +24,6 @@ Makinede nozzle mesafesi, limit switch, zincir gerginliği veya format değişim
 
 Konveyör başı, makine referans noktası olarak kabul edilir. Parça konumlandırma, sensör senkronizasyonu ve hat entegrasyonu bu referansa göre planlanır. Referans değişikliği PLC programını etkileyebilir; operatör tarafından yapılmamalıdır.
 
-<!-- FOTO: Konveyör başı — referans noktası (besleme tarafı, sol) -->
 ![Referans pozisyon — konveyör başı](../../assets/6.1/1.png)
 
 ---

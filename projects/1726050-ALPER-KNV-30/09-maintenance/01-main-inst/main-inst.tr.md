@@ -10,7 +10,7 @@ KNV 30 3000 2B için **önleyici bakım** felsefesi uygulanır. Amaç; filtre t�
 |-----------|-------|
 | Bakım felsefesi | Önleyici bakım |
 | Personel yeterliliği | Makinenin kullanıldığı ülkenin mevcut bakım personeli yeterlilik seviyesi |
-| Lubrication chart | Yoktur |
+| Yağlama tablosu | 4 konveyör nipel + WITTENSTEIN redüktör (Bölüm 9.1.4) |
 
 Bakım personeli; makine kullanımı, LOTO, acil stop ve temel güvenlik kuralları konusunda eğitim almış olmalıdır (bkz. **Bölüm 3.2.6**). Elektrik bağlantı sıkılık kontrolü yalnızca **yetkili elektrik personeli** tarafından yapılır.
 
@@ -34,7 +34,7 @@ Bakım erişimi makine **arkasındaki sökülebilir kapaklar** üzerinden sağla
 
 ## 9.1.3 Periyodik bakım takvimi
 
-Aşağıdaki tablo **tek kaynak (SSOT)** periyodik bakım takvimidir. Temizlik adımları için ilgili bölüme referans verilir; prosedür adımları tekrarlanmaz.
+Aşağıdaki tablo periyodik bakım takvimidir. Temizlik adımları için ilgili bölüme referans verilir; prosedür adımları tekrarlanmaz.
 
 Saat bazlı periyotlar makine toplam çalışma saati üzerinden takip edilir; sayaç yoksa yaklaşık takvim karşılığı kullanılabilir (250 saat ≈ 3–4 hafta sürekli 7/24 çalışma).
 
@@ -61,7 +61,7 @@ Saat bazlı periyotlar makine toplam çalışma saati üzerinden takip edilir; s
 | **250 saat** | Proximity sensör temizlik ve montaj sıkılık | — |
 | **250 saat** | Egzost ve kurutma fan toz birikimi temizliği | — |
 | **500 saat** | Yağ sıyırıcı redüktör yağ keçesi/teflon kontrol/değişim | Bölüm 13.3 |
-| **500 saat** | Konveyör redüktör yağ seviyesi/sızıntı kontrolü | Bölüm 9.1.4 |
+| **500 saat** | Konveyör redüktör keçe / sızıntı görsel kontrolü (ömür boyu yağlı) | Bölüm 9.1.4 |
 | **500 saat** | Tank ve kapak contaları kontrol | — |
 | **500 saat** | Pnömatik regülatör ve bağlantı kaçak kontrolü | Bölüm 6.5 |
 | **1000 saat** | Pompa emiş filtresi kontrol/değişim | Bölüm 13.3 |
@@ -70,13 +70,13 @@ Saat bazlı periyotlar makine toplam çalışma saati üzerinden takip edilir; s
 | **1000 saat** | Tank su kalitesi; gerekirse tam boşaltma/temizlik | Bölüm 10 |
 | **Yıllık** | Emniyet fonksiyon test raporu (RFID, acil stop, kaçak akım) | Bölüm 2, 5.4 |
 | **Yıllık** | Isıtıcı rezistans ve termokupl fonksiyon kontrolü | — |
-| **Yıllık** | Redüktör yağ değişimi | Bölüm 9.1.4 |
+| **Yıllık** | Redüktör sızıntı kontrolü (WITTENSTEIN — ömür boyu yağlı, değişim yok) | Bölüm 9.1.4 |
 | **Yıllık** | Elektrik bağlantı sıkılık kontrolü (LOTO, yetkili elektrikçi) | — |
 | **Yıllık** | Uzun duruş planlanıyorsa tank boşaltma/koruyucu temizlik | Bölüm 7.3.4 |
 
 ### Periyodik bakım uygulama notları
 
-**Günlük:** Hat duruş penceresinde veya planlı kontrol turunda uygulanır; LOTO gerekmez (kapak açılmıyorsa). Ön filtre temizliği için tank erişimi gerekiyorsa LOTO uygulayın.
+**Günlük:** Görsel kontrol, HMI alarm ve basınç göstergesi için kapak açılmıyorsa LOTO gerekmez. **Ön filtre temizliği kapak açmayı gerektirir** — **Bölüm 10.1.3** ve **LOTO (Bölüm 2.4)** uygulanır.
 
 **Haftalık / aylık:** Tank ve filtre işlemleri için makine durdurulmalı; kapak açma gerektiren işlerde **LOTO zorunludur**.
 
@@ -90,21 +90,26 @@ Saat bazlı periyotlar makine toplam çalışma saati üzerinden takip edilir; s
 
 | Parametre | Değer |
 |-----------|-------|
-| Yağlama noktası sayısı | **4 adet** |
+| Yağlama noktası sayısı | **4 adet** konveyör nipeli |
 | Konum | Konveyör **girişinde 2**, **çıkışında 2** |
 | Periyot | **Aylık** (bkz. Bölüm 9.1.3) |
-| Gres tipi | [EKSİK] |
-| Redüktör yağ değişimi | [EKSİK] — yıllık kontrol Bölüm 9.1.3 |
+| Gres tipi | **Castrol Tribol GR 100-1 PD** (NLGI 1, lityum sabunlu) |
+| Konveyör redüktörü | **WITTENSTEIN NP035S-MF2-30-1G1-1S** — üretici **ömür boyu yağlı**; dolum **Castrol Tribol GR 100-1 PD**. Periyodik yağ değişimi **yoktur**. |
+
+Konveyör redüktörü WITTENSTEIN alpha NP serisidir. Üretici kılavuzuna göre gövde fabrikada sentetik yüksek performanslı gres ile doldurulur ve **ömür boyu yağlıdır**; etiket örneği **Castrol Tribol GR 100-1 PD** gösterir. Gövde açılmaz, yağ doldurulmaz, yıllık yağ değişimi uygulanmaz. Sızıntı veya keçe hasarında üretici servisi çağırın.
+
+Dört nipel, redüktör gövdesi değil; konveyör giriş/çıkış rulman hatlarıdır. Aynı gres ailesi (Castrol Tribol GR 100-1 PD) kullanılır.
 
 ### Konveyör gresleme prosedürü
 
-1. Makineyi durdurun; gerekirse **LOTO** uygulayın.
-2. Konveyör giriş ve çıkış tarafındaki **4 yağlama noktasını** tespit edin.
-3. Üretici tarafından onaylanmış gres tipini kullanın ([EKSİK] — tesis bakım standardına uygun gres seçin).
-4. Her noktaya ölçülü miktarda gres uygulayın; fazla gres konveyör hattına damlamamalıdır.
-5. Kısa el ile çevirme veya düşük hızda test sonrası gürültü/azalmayı kontrol edin.
+1. Makineyi HMI **Makine Stop** ile durdurun.
+2. **LOTO** uygulayın (**Bölüm 2.4**).
+3. Konveyör giriş ve çıkış tarafındaki **4 yağlama noktasını** tespit edin.
+4. Her nipel için **Castrol Tribol GR 100-1 PD** uygulayın; fazla gres konveyör hattına ve proses suyuna damlamamalıdır.
+5. WITTENSTEIN redüktör gövdesini açmayın; el ile konveyör çevirmeyin.
+6. Kapakları kapatın; LOTO kaldırın; koruyucular yerindeyken kısa test çalıştırması yapın.
 
-**Yıllık:** Konveyör redüktör yağ seviyesi ve sızıntı kontrolü; gerekirse yağ değişimi — yağ tipi [EKSİK].
+**Yıllık:** WITTENSTEIN redüktör gövde, keçe ve sızıntı **görsel** kontrolü. Yağ değişimi yoktur. Sızıntı varsa makineyi durdurun ve üretici servisini çağırın.
 
 ---
 
@@ -124,7 +129,7 @@ Tam BOM için bkz. **Bölüm 13.3.1**.
 | 10 19321 | REDÜKTÖR WITTENSTEIN NP035S-MF2-30-1G1-1S | 0 (siparişle) | Konveyör tahrik | Arızada konveyör durur |
 | 10 19317 | SERVO MOTOR SIEMENS SIMOTICS 1FL6064-1AC61-2AA1 | 0 (siparişle) | Konveyör | Arızada parça akışı durur |
 | 10 19318 | SERVO SÜRÜCÜ SIEMENS 6SL3210-5FE11-5UF0 | 0 (siparişle) | Konveyör | Arızada parça akışı durur |
-| 10 07147 | SWITCH F3STGRNLPU21M1J8 OMRON MANYETİK KAPI | 1 | RFID / kapak güvenlik | Arızada güvenlik fonksiyonu etkilenir |
+| 10 07147 | SWITCH F3STGRNLPU21M1J8 OMRON MANYETİK KAPI | 1 | RFID kapak güvenlik sensörü | Arızada güvenlik fonksiyonu etkilenir |
 | 07 17478 | KNV 30 3000 2B PRO IDE GOULDS POMPA KOMPLESİ | 0 (siparişle) | Durulama pompası | Arızada durulama prosesi durur |
 | 10 06675 | POMPA LOWARA ESHE 40-160/30 380V/50HZ | 0 (siparişle) | Yıkama pompası | Arızada yıkama prosesi durur |
 
@@ -142,7 +147,7 @@ Tam BOM için bkz. **Bölüm 13.3.1**.
 | 07 03497 | YAĞ SIYIRICI TEFLONU | Tüketim | 1 | Yağ sıyırıcı | 500 saat bakım tüketimi |
 | 10 02526 | YAĞ KEÇESİ 20*42*7 | Tüketim | 1 | Yağ sıyırıcı redüktör | Bakım tüketimi |
 | 10 01017 | RULMAN 6004 2RS ORS | Tüketim | 1 | Yağ sıyırıcı / genel | Bakım tüketimi |
-| 10 05378 | TORBA FİLTRE 200 MİKRON (50CM PASL. TEL ÇERÇEVE) | Tüketim | 2 | Pompa çıkışı | Haftalık değişim |
+| 10 05378 | TORBA FİLTRE 200 MİKRON (50CM PASL. TEL ÇERÇEVE) | Tüketim | 2 | Pompa çıkışı | Haftalık temizlik; gerekirse değişim |
 | 10 19471 | SENSÖR E2BM12KN08M1B1 OMRON END.PROX.M12 8MM | Önerilen | 1 | Proximity sensör | Konum algılama |
 | 10 17815 | SENSÖR E3FA-DP23 OMRON END.PROX.M18 1000MM | Önerilen | 1 | Proximity sensör | Konum algılama |
 | 07 17295 | SALYANGOZLU FAN ENA 2 0,37 KW HAVA SO.SİLİKONLU | Önerilen | 0 (siparişle) | Egzost | Arızada egzoz/havalandırma etkilenir |

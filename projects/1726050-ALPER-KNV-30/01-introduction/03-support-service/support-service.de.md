@@ -1,58 +1,92 @@
-# 1.3 SUPPORT und SERVİCE
+# 1.3 Support und Service
 
-## 1.3.1 KontaktdatEN des Herstellers und des ZENtralservices
+## 1.3.1 Hersteller- und Zentralservice-Kontaktdaten
 
-Der Begriff „Hersteller“ in dieser Betriebsanleitung bezieht sich auf das Unternehmen **CNK MAKİNE SANAYİ AŞ**, das die industrielle Reinigungsmaschine entwickelt, herstellt und die rechtliche Verantwortung dafür übernimmt. 
+In dieser Anleitung bezeichnet **Hersteller** die Firma **CNK ELEKTRONİK MAKİNE SANAYİ AŞ**, die die Maschine **KNV 30 3000 2B** konstruiert, gefertigt und die rechtliche Verantwortung übernommen hat. Nutzen Sie die folgenden Kanäle für Installation, Inbetriebnahme, Betrieb, Wartung, Störungen, Ersatzteile und Garantieanfragen.
 
-Für alle Anfragen bezüglich technischer Unterstützung, Ersatzteilbestellungen und Garantieabwicklungen im Zusammenhang mit Aufstellung, Inbetriebnahme, Betrieb, regelmäßiger Wartung oder Störungsfällen der Maschine ist der Hersteller über die unten angegebenen offiziellen Kontaktkanäle zu kontaktieren.
+| Information | Detail |
+| :--- | :--- |
+| **Hersteller** | CNK ELEKTRONİK MAKİNE SANAYİ AŞ |
+| **Werksadresse** | 1.Organize Sanayi Bölgesi Prof. Orhan Işık Caddesi No:8 |
+| **Bezirk** | Sincan |
+| **Stadt** | Ankara |
+| **Land** | Türkiye |
+| **Telefon** | +90 312 267 30 15 |
+| **Fax** | +90 312 267 30 11 |
+| **Web** | https://dolfintr.com |
+| **E-Mail** | dolfin@dolfintr.com |
 
-| Herstellerinformationen | Detail |
-| :---: | :---: |
-| **Name des Herstellers** | CNK MAKİNE SANAYİ AŞ |
-| **Werks- / Hauptadresse** | 1. Organize Sanayi Bölgesi Prof. Orhan Işık Caddesi No:8 |
-| **Bezirk / Stadt / Land** | Sincan / Ankara / Türkei |
-| **Telefonnummer** | +90 312 267 30 15 |
-| **Faxnummer** | +90 312 267 30 11 |
-| **Unternehmens-Website** | https://dolfintr.com |
-| **E-Mail-Adresse** | dolfin@dolfintr.com |
-
----
-
-## 1.3.2 VerfahrEN zur Anforderung von Service und technischem Support
-
-Damit die technische Serviceabteilung des Herstellers auf das aufgetretene Problem so schnell, präzise und effizient wie möglich reagieren kann, müssen vor der Kontaktaufnahme folgende grundlegende Maschinen- und Störungsinformationen vollständig vorbereitet werden:
-
-1. **Maschinenidentifikationsdaten:** **Modellbezeichnung**, **Seriennummer** und **Baujahr** auf dem „Typenschild“, das am Hauptgehäuse der Maschine (in der Regel an der Seitenfläche des Schaltschranks) genietet oder geklebt ist.
-2. **Störungs- oder Zustandsbeschreibung:** Detaillierte Beschreibung des aufgetretenen Problems (z. B. „Pumpe schaltet nicht ein“, „Wasser erwärmt sich nicht“, „Pneumatischer Deckel öffnet sich nicht“).
-3. **Alarm- und Fehlercodes:** Der vollständige Text der aktiven Alarmcodes, Fehlernummern und Warnmeldungen, die auf der Benutzeroberfläche (HMI) oder dem PLC-Bildschirm der Maschine erscheinen.
-4. **Betriebsbedingungen:** Der Betriebszustand zum Zeitpunkt des Auftretens der Störung (in welcher Wasch- oder Spülphase sich die Maschine befand, wie lange die Maschine bereits in Betrieb war usw.).
-5. **Visuelle Dokumente:** Das Zusenden von klaren Fotos oder Videos des betreffenden Bereichs per E-Mail an den Hersteller bei möglichen mechanischen Schäden, Leckagen oder anormalen Zuständen beschleunigt den Diagnoseprozess erheblich.
+Bei Service-, Ersatzteil- oder Garantieanfragen übermitteln Sie die Angaben auf dem Maschinen-Identifikationsschild in **Kapitel 1.3.2** vollständig. Wenn das Schild nicht lesbar ist, erneuern Sie das Schild, bevor Sie die Maschine betreiben, oder sprechen Sie mit dem Herstellerservice.
 
 ---
 
-## 1.3.3 Ersatzteilbeschaffung und Verpflichtung zur VerwENdung von OriginalteilEN
+## 1.3.2 Maschinen-Identifikationsschild
 
-Der sichere und hochleistungsfähige Betrieb der Maschine während ihrer vorgesehenen Lebensdauer hängt ausschließlich von der Verwendung von Originalersatzteilen ab, die vom Hersteller zugelassen sind. 
+An jeder Maschine befindet sich ein am Gehäuse befestigtes **Maschinen-Identifikationsschild** (Typ- / Typenschild). Das Schild ist eine verpflichtende Referenz für die korrekte Identifikation der Maschine bei Serviceaufzeichnungen, Ersatzteilbestellungen, Garantievorgängen und Störungsdiagnose. Kunde oder Betriebspersonal muss die Werte auf dem Schild lesen und der Anfrage hinzufügen, bevor der Hersteller kontaktiert wird.
 
-* **Bestellvorgang:** Ersatzteilbestellungen müssen unter Bezugnahme auf die mit der Maschine gelieferte oder in der Betriebsanleitung enthaltene „Ersatzteilliste“ (Spare Parts List) erfolgen. Bei der Bestellung müssen **Lager- / Referenznummer**, **Teilebezeichnung**, **Anzahl** und **Seriennummer der Maschine** schriftlich (per E-Mail oder Fax) mitgeteilt werden.
-* **Verwendung von Nicht-Originalteilen:** Es ist strengstens untersagt, Nachbau-, Dritthersteller- oder Nicht-Standardteile (spezielle Düsen, Dichtungen, Heizwiderstände, Sensoren, Motoren usw.), die ohne schriftliche Genehmigung des Herstellers beschafft wurden, in die Maschine zu integrieren. Die Verwendung von Nicht-Originalteilen verringert nicht nur die Leistung der Maschine, sondern birgt auch unmittelbare Arbeitssicherheitsrisiken und **führt zum sofortigen Erlöschen der Garantie**.
+**Typische Lage:** Am Elektroschrank oder am Hauptmaschinenmodul so montiert, dass es von außen sichtbar und nicht verwischbar ist. Wenn das Schild abgenutzt oder unleserlich ist, betreiben Sie die Maschine nicht so, dass ein Sicherheitsrisiko entsteht; fordern Sie über die Kontaktkanäle in **Kapitel 1.3** ein Ersatzschild an.
+
+Auf dem Schild stehen die folgenden Felder:
+
+| Schildfeld | Beschreibung | Beispiel an dieser Maschine |
+| :--- | :--- | :--- |
+| **Seriennummer** | Maschinenindividuelle eindeutige Nummer; Serviceaufzeichnungen werden mit dieser Nummer zugeordnet | Wert auf dem Schild |
+| **Modell- / Typcode** | Maschinenmodellbezeichnung | KNV-30 |
+| **Handelsbezeichnung** | Vollständiger Maschinenname / Variante | KNV 30 3000 2B |
+| **Herstellungsjahr** | Fertigungsjahr | 2026 |
+| **Fertigungs- / Versanddatum** | Werksversanddatum (falls vorhanden) | 2026-08-12 |
+
+![Beispiel Maschinen-Identifikationsschild](../../assets/1.3/1.png)
+
+**Kunde / Betreiber — verpflichtende Schritte vor dem Service**
+
+1. Das Schild finden; Seriennummer, Modell und Herstellungsjahr klar ablesen oder ein lesbares Foto aufnehmen.
+2. Beim Öffnen einer Anfrage per Telefon oder E-Mail diese drei Angaben in der **ersten Zeile** schreiben.
+3. Wenn das Schild beschädigt oder fehlend ist, die Seriennummer nicht schätzen; beim Hersteller Schilderneuerung oder Datensatzprüfung anfordern.
+4. Bei Ersatzteilbestellungen die Seriennummer unbedingt angeben (**Siehe Kapitel 1.3.4**).
 
 ---
 
-## 1.3.4 Prüfpunkte vor der Kontaktaufnahme
+## 1.3.3 Verfahren zur Service- und technischen Support-Anfrage
 
-Um möglichen Zeitverlust und unnötige Servicekosten zu vermeiden, wird dem Bediener oder Wartungspersonal empfohlen, vor der Anforderung eines Kundendienstes die folgenden grundlegenden Prüfungen durchzuführen:
+Bereiten Sie vor einer Serviceanfrage die folgenden Informationen vor. Fehlende Identitätsangaben können dazu führen, dass das Serviceteam vor Ort erneut diagnostiziert und die Eingriffszeit sich verlängert.
 
-* Wurde überprüft, ob die Hauptstromversorgungsschalter der Anlage eingeschaltet sind und die richtige Spannung/Phase an der Maschine anliegt?
-* Wurde überprüft, ob die Druckluftleitung (pneumatische Versorgung) geöffnet ist und das System den erforderlichen Mindestarbeitsdruck (bar) bereitstellt?
-* Wurde bestätigt, dass die Wassereinlassventile geöffnet sind und die Installationsfilter nicht verstopft sind?
-* Wurde bestätigt, dass alle Not-Halt-Tasten (Emergency Stop) an der Maschine entriegelt sind und sich die Tür-/Deckelsicherheitsschalter (Interlock) in der vollständig geschlossenen Position befinden?
-* Wurden die Schritte zur Störungsrückstellung (Reset / Acknowledge) auf dem HMI-Bildschirm durchgeführt?
+1. **Identifikationsschild-Angaben:** Seriennummer, Modellcode (KNV-30) und Herstellungsjahr — Schildfoto beifügen (**Siehe Kapitel 1.3.2**).
+2. Das Problem kurz und klar beschreiben (z. B. Pumpe startet nicht, Wasser erwärmt sich nicht).
+3. Die **aktiven Alarmcodes** und den Meldetext auf dem HMI-Bildschirm aufzeichnen (**Siehe Kapitel 11.1**).
+4. Die Prozessphase zum Störungszeitpunkt (Waschen, Spülen, Trocknen) und die Laufzeit der Maschine angeben.
+5. Bei mechanischem Schaden oder Leckage ein klares Foto oder Video beifügen.
+
+Die Anfrage per Telefon oder E-Mail übermitteln. In Notfällen die Maschine sicher stillsetzen (**Siehe Kapitel 2.5**).
 
 ---
 
-## 1.3.5 GrENzEN der Herstellerhaftung und Verbot unbefugter Eingriffe
+## 1.3.4 Ersatzteilbeschaffung und Originalteil-Verpflichtung
 
-Die rechtliche und technische Haftung des Herstellers beschränkt sich ausschließlich auf den Betrieb der Maschine gemäß den in dieser Anleitung angegebenen technischen Daten, Sicherheitseinrichtungen und Bedienungsanweisungen für den vorgesehenen Verwendungszweck (Intended Use). 
+Bei Ersatzteilbestellungen ist die Verwendung von Originalteilen verpflichtend. Austauschteile bergen das Risiko von Toleranzunterschieden, Materialunverträglichkeit und des Ausfalls von Sicherheitsfunktionen. Die Verwendung nicht originaler Teile senkt die Leistung, erzeugt ein Sicherheitsrisiko und stellt die Maschine **außer Garantie**.
 
-Ohne das Wissen und die schriftliche (gestempelte) Genehmigung des autorisierten Servicepersonals von CNK MAKİNE SANAYİ AŞ ist jede strukturelle Änderung, Hardware-Ergänzung, Demontage oder Überbrückung von Sicherheitseinrichtungen sowie jede unbefugte Modifikation an der Maschinenmechanik, Automatisierungsinfrastruktur (PLC/HMI-Software), an Pneumatik-/Hydraulikleitungen oder am Schaltschrank strengstens untersagt. Da solche unbefugten Eingriffe die Sicherheitsstandards der Maschine direkt gefährden, entbinden sie den Hersteller unverzüglich von jeglicher rechtlichen, finanziellen und strafrechtlichen Haftung (einschließlich der Garantie). Für Unfälle jeglicher Art, die durch den Betrieb der Maschine außerhalb der sicheren Betriebsgrenzen entstehen, haftet ausschließlich der Betreiber der Maschine.
+1. Ersatzteilbestellungen mit den Referenznummern der Teileliste in **Kapitel 13** aufgeben.
+2. In der Bestellung **Lagercode**, **Teilename**, **Stückzahl**, **Modellcode (KNV-30)** und **Seriennummer** schreiben.
+3. Ohne Herstellerfreigabe keine Austausch- oder nicht standardmäßigen Teile einbauen.
+
+---
+
+## 1.3.5 Checkliste vor der Kontaktaufnahme
+
+Führen Sie die folgenden Prüfungen durch, bevor Sie den autorisierten Service anrufen. Viele Störungsmeldungen entstehen durch fehlende Medienversorgung oder fehlendes Reset; diese Prüfungen verhindern unnötige Serviceeinsätze.
+
+1. Bestätigen, dass die elektrische Hauptversorgung eingeschaltet ist (**Siehe Kapitel 3.3.3**).
+2. Prüfen, dass Druckluft- und Wasserversorgung geeignet sind (**Siehe Kapitel 3.3.5**, **6.5**).
+3. Bestätigen, dass die Wassereinlassventile offen sind.
+4. Prüfen, dass alle Not-Halt-Taster gelöst sind und das Reset-Verfahren angewendet wurde (**Siehe Kapitel 2.5**).
+5. Alarm-Reset-Schritte am HMI anwenden (**Siehe Kapitel 11.1**).
+
+Wenn das Problem fortbesteht, eine Serviceanfrage erstellen; der Anfrage die Identifikationsschild-Angaben in **Kapitel 1.3.2** beifügen.
+
+---
+
+## 1.3.6 Grenzen der Herstellerhaftung
+
+Die Herstellerhaftung ist auf den Betrieb der Maschine innerhalb der in dieser Anleitung definierten technischen Merkmale und der bestimmungsgemäßen Verwendung begrenzt (**Siehe Kapitel 3.2**). Verwendung außerhalb der Anleitung, unbefugte Modifikation oder Verwendung nicht standardmäßiger Teile hebt die Herstellerhaftung auf.
+
+Änderungen an SPS-/HMI-Software, Elektroschrank, Pneumatikleitungen oder Sicherheitsausrüstung ohne Freigabe des autorisierten Herstellerservices machen den Garantieumfang ungültig. Der Hersteller kann für Schäden, Verletzungen oder Produktionsausfälle aus solchen Eingriffen nicht verantwortlich gemacht werden.

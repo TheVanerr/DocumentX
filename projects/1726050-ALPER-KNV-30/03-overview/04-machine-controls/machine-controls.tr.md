@@ -17,7 +17,7 @@ Bu bölümde HMI ekranlarının yapısı, menü düzeni ve her sayfanın işlevi
 | HMI ekran boyutu | 7" |
 | HMI marka / model | SIMATIC HMI KTP700 Basic PN (6AV2123-2GB03-0AX0) |
 
-Elektrik panosu; güç dağıtımı, motor koruma, PLC, HMI, acil stop reset devresi ve tepe lambası sürücülerini barındırır. Besleme gerilimi, ana şalter değeri ve kurulu güç **Bölüm 3.3.3** — Elektrik özellikleri tablosunda SSOT olarak verilmiştir.
+Elektrik panosu; güç dağıtımı, motor koruma, PLC, HMI, acil stop reset devresi ve tepe lambası sürücülerini barındırır. Besleme gerilimi, ana şalter değeri ve kurulu güç **Bölüm 3.3.3** — Elektrik özellikleri tablosunda verilmiştir.
 
 ---
 
@@ -38,7 +38,6 @@ HMI'de şifre seviyesi **bulunmamaktadır**. Kurulum/üretici iç sayfası opera
 
 Sol üst köşede tarih/saat bilgisi sürekli gösterilir; ayar sayfası veya sistem parametreleri üzerinden güncellenmesi gerekebilir (bkz. Bölüm 6.3 — Elektrik ayarları).
 
-<!-- FOTO: HMI açılış ekranı — dil seçimi, model ve seri no -->
 ![HMI açılış ekranı](../../assets/3.4/tr1.jpg)
 
 ---
@@ -63,7 +62,6 @@ Sol üst köşede tarih/saat bilgisi sürekli gösterilir; ayar sayfası veya si
 
 **Proses fonksiyon seçicileri** (sağ alt): Yıkama, Durulama, Kurutma 1, Kurutma 2 ve Egzoz toggle anahtarları; istenen fonksiyonlar **yeşil** (aktif) konuma getirilerek proses yapılandırılır. Manuel mod bulunmamaktadır; fonksiyon seçimi bu sayfa üzerinden yapılır (bkz. Bölüm 7.1 — Çalışma modları).
 
-<!-- FOTO: HMI çalışma sayfası — sıcaklık, start/stop, proses seçicileri -->
 ![HMI çalışma sayfası](../../assets/3.4/tr2.jpg)
 
 ---
@@ -83,7 +81,6 @@ Sıcaklık limitleri proses güvenliği ve parça malzemesi uyumluluğu açısı
 
 Encoder / feedback ve analog ölçeklendirme ayarları PLC programına gömülüdür; değişiklik yalnızca üretici yetkili servisi tarafından yapılmalıdır.
 
-<!-- FOTO: HMI ayarlar sayfası — sıcaklık ve yağ sıyırıcı set değerleri -->
 ![HMI ayarlar sayfası](../../assets/3.4/tr3.jpg)
 
 ---
@@ -107,9 +104,8 @@ Encoder / feedback ve analog ölçeklendirme ayarları PLC programına gömülü
 
 Kurulum testlerinde su ve hava bağlantısı yapıldıktan sonra bu göstergelerin **yeşil** yanması beklenir (bkz. Bölüm 5.5 — Pnömatik dolum testi).
 
-**Manuel Kontrol** düğmeleri yalnızca yetkili bakım personeli tarafından, güvenlik prosedürlerine uyularak kullanılmalıdır. Enerji izolasyonu gerektiren müdahalelerde **LOTO** uygulanmalıdır (bkz. Bölüm 2.4). Manuel düğmeler: yıkama pompası, durulama pompası, kurutma fanları 1–4, egzost, yıkama/durulama dolum vanaları, cascade vanası.
+HMI'de şifre seviyesi **bulunmamaktadır**; Çalışma, Ayarlar, Alarm ve Manuel sayfalarına şifresiz erişilir. **Manuel Kontrol** düğmeleri pompaları, fanları ve vanaları tek tek çalıştırabilir. İşveren, HMI erişimini yetkili bakım personeli ile sınırlar; yetkisiz kullanım yasaktır. Enerji izolasyonu gerektiren müdahalelerde **LOTO** uygulanmalıdır (bkz. Bölüm 2.4). Manuel düğmeler: yıkama pompası, durulama pompası, kurutma fanları 1–4, egzost, yıkama/durulama dolum vanaları, cascade vanası.
 
-<!-- FOTO: HMI manuel sayfası — input gözlem ve manuel kontrol -->
 ![HMI manuel sayfası](../../assets/3.4/tr4.jpg)
 
 ---
@@ -118,11 +114,10 @@ Kurulum testlerinde su ve hava bağlantısı yapıldıktan sonra bu göstergeler
 
 **Alarm Sayfası**, aktif ve geçmiş alarm kayıtlarını tablo formatında listeler. Tablo sütunları: **No.**, **Zaman**, **Tarih**, **Metin**.
 
-Alarm oluştuğunda HMI bu sayfada kayıt görüntüler; eş zamanlı olarak tepe lambası **kırmızı** yanar. Operatör alarm metnini okuyarak müdahale önceliğini belirler; ayrıntılı hata kodu açıklamaları ve giderme adımları **Bölüm 11** — Arıza giderme tablosunda verilmiştir.
+Alarm oluştuğunda HMI bu sayfada kayıt görüntüler; eş zamanlı olarak tepe lambası **kırmızı** yanar. Hat sorumlusu veya bakım personeli alarm metnini okuyarak müdahale önceliğini belirler; ayrıntılı hata kodu açıklamaları ve giderme adımları **Bölüm 11** — Arıza giderme tablosunda verilmiştir.
 
-Sayfanın alt köşesinde **Ürün Alındı Onay** düğmesi bulunur. Çıkış konveyöründe parça algılandığında (Error-461) makine durur; parça robot tarafından alındıktan sonra bu düğmeye basılarak operasyon devam ettirilir.
+Sayfanın alt köşesinde **Ürün Alındı Onay** düğmesi bulunur. Çıkış konveyöründe parça algılandığında (Error-461) makine durur; parça robot tarafından alındıktan sonra hat sorumlusu veya bakım personeli bu düğmeye basarak operasyonu devam ettirir.
 
-<!-- FOTO: HMI alarm sayfası — alarm kayıt tablosu -->
 ![HMI alarm sayfası](../../assets/3.4/tr5.jpg)
 
 ---
@@ -136,7 +131,7 @@ Sayfanın alt köşesinde **Ürün Alındı Onay** düğmesi bulunur. Çıkış 
 | I/O modül özeti | 36 giriş / 24 çıkış |
 | Fieldbus / protokol | Profinet |
 
-PLC, proses mantığını, güvenlik interlock'larını (RFID, acil stop, seviye, termik) ve HMI veri alışverişini yönetir. I/O listesi dosya referansı: **1726050-ALPER-KNV 30 I/O LİSTESİ.pdf** — ayrı evrak teslim edilmemiştir (KD).
+PLC, proses mantığını, güvenlik interlock'larını (RFID, acil stop, seviye, termik) ve HMI veri alışverişini yönetir. I/O listesi ayrı evrak olarak teslim edilmez; talep halinde imalatçıdan istenebilir (bkz. **Bölüm 13.1.3**).
 
 **DİKKAT — Yetkisiz müdahale:** PLC programı, sürücü parametreleri ve gömülü encoder/feedback ayarları yalnızca üretici yetkili servisi tarafından değiştirilmelidir. Yetkisiz yazılım değişikliği güvenlik fonksiyonlarını devre dışı bırakabilir.
 
@@ -146,16 +141,16 @@ PLC, proses mantığını, güvenlik interlock'larını (RFID, acil stop, seviye
 
 | Parametre | Değer |
 |-----------|-------|
-| Mod seçici | Otomatik / Bakım |
-| Manuel mod | Bulunmamaktadır |
+| Mod seçici | Yok — tek otomatik çalışma |
+| Manuel sürüş modu | Yok (HMI **Manuel Sayfası** bakım/test içindir; şifresiz, yetkisiz kullanım yasak) |
 | Step / tek adım modu | Bulunmamaktadır |
-| Mod geçiş koşulları | Bulunmamaktadır |
+| Mod geçiş koşulları | Uygulanmaz |
 | Jog / inching düğmeleri | Bulunmamaktadır |
 | Start / Stop konumu | HMI çalışma sayfası — dijital düğmeler |
 
-**Otomatik mod:** HMI çalışma sayfasında proses fonksiyonları seçilir; hazırlık tamamlandıktan sonra **Makine Start** ile makine kendiliğinden çalışır (bkz. Bölüm 7.1).
+**Otomatik çalışma:** HMI çalışma sayfasında proses fonksiyonları seçilir; hazırlık tamamlandıktan sonra **Makine Start** ile makine kendiliğinden çalışır (bkz. Bölüm 7.1).
 
-**Bakım modu:** Bakım için özel bir HMI modu yoktur. Bakım öncesi makine durdurulmalı, ana şalter kapatılmalı ve **LOTO prosedürü** uygulanmalıdır (bkz. Bölüm 2.4). Kapaklar yalnızca enerji izolasyonu sonrası açılmalıdır.
+**Bakım:** Bakım için özel bir HMI modu yoktur. Bakım öncesi makine durdurulmalı, ana şalter kapatılmalı ve **LOTO prosedürü** uygulanmalıdır (bkz. Bölüm 2.4). Kapaklar yalnızca enerji izolasyonu sonrası açılmalıdır.
 
 ---
 
@@ -163,7 +158,7 @@ PLC, proses mantığını, güvenlik interlock'larını (RFID, acil stop, seviye
 
 Makinede **4 adet acil stop butonu** bulunur (pano, giriş sağ, giriş sol, çıkış sol). Acil stop'a basıldığında tüm fonksiyonlar durur.
 
-Reset prosedürü, acil stop sonrası yeniden başlatma koşulları ve operatör yükümlülükleri **Bölüm 2.5** — Acil durdurma sistemi alt bölümünde SSOT olarak verilmiştir; bu bölümde adımlar tekrarlanmaz.
+Reset prosedürü, acil stop sonrası yeniden başlatma koşulları ve operatör yükümlülükleri **Bölüm 2.5** — Acil durdurma sistemi alt bölümünde verilmiştir; bu bölümde adımlar tekrarlanmaz.
 
 ---
 

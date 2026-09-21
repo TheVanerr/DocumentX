@@ -38,14 +38,14 @@ Tespit halinde makineyi güvenli şekilde durdurun; müdahaleye ancak tehlike gi
 
 ## 2.1.3 Güvenlik donanımı özeti
 
-Makine güvenlik mimarisi DATA konfigürasyonuna göre aşağıdaki bileşenlerden oluşur:
+Makine güvenlik mimarisi aşağıdaki bileşenlerden oluşur:
 
 | Bileşen | Durum |
 | :--- | :--- |
 | Emniyet kapısı / sabit bariyer | 0 adet (ayrı kapı yok) |
 | RFID güvenlik sensörü | Var — kapak açıldığında makine durur |
 | Işık perdesi | Yok |
-| Makine stop kategorisi | Cat. 3 |
+| Güvenlik kategorisi (EN ISO 13849-1) | Cat. 3 |
 | Acil stop butonu | 4 adet (**Bkz. Bölüm 2.5**) |
 
 RFID sensörü, bakım kapaklarının açılması durumunda makineyi durdurur. Sensör devre dışı bırakılamaz; bakım için **Bölüm 2.4** LOTO prosedürü uygulanır.

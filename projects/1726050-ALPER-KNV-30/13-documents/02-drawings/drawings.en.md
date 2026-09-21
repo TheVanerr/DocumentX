@@ -1,21 +1,35 @@
 # 13.2 Drawings
 
-Drawings are supplied in a **separate document package**.
+This subsection defines the layout drawing delivered with the machine and the manual sections to use in place of drawings that are not delivered.
 
 ---
 
-## 13.2.1 Drawing list
+## 13.2.1 Separate document — machine layout
 
-| Drawing | File name / rev | Delivery |
-|---------|-----------------|----------|
-| General assembly drawing | Supplied as separate document | Delivery package |
-| Lifting point drawing | Supplied as separate document | Delivery package |
-| Floor anchor drawing | Supplied as separate document (if applicable) | Delivery package |
-| Customer delivery drawing package | Supplied as separate document | Delivery package |
-| General layout plan | `1726050-ALPER-KNV 30 LAYOUT.pdf` | See **3.5** |
+| Parameter | Value |
+|-----------|-------|
+| Document | Machine layout drawing |
+| File name | `1726050-ALPER-KNV 30 LAYOUT.pdf` |
+| Delivery | Separate document (PDF) — delivery package |
+| Manual reference | **Section 3.5** — Machine layout |
+
+The layout drawing contains the following information:
+
+- Machine overall dimensions and minimum installation area
+- Infeed direction (**left**), outfeed direction (**right**), operator side (**right**)
+- Approach directions to electrical, air and water connection points
+- Forklift under-profile location (transport — see **4.1**)
+
+The layout is the primary reference drawing for installation (**5**), transport (**4**) and site planning (**3.5**).
 
 ---
 
-## 13.2.2 Image references used in manual
+## 13.2.2 Drawings not delivered
 
-Machine images are in project `assets/` folder. Placeholders marked `<!-- FOTO: ... -->` in manual text link to relevant images.
+| Drawing | Status | Alternative reference |
+|-------|-------|---------------------|
+| General assembly drawing | Not delivered | Layout PDF + manual **3.1** |
+| Lifting points | In the layout; no separate document | Forklift under-profiles — **4.1** (crane prohibited) |
+| Floor anchor | Not delivered | Installation **5.2** — adjustable feet |
+| Pneumatic schematic | Not delivered | Electrical schematic + **6.5** |
+| Hydraulic schematic | Not applicable | — |

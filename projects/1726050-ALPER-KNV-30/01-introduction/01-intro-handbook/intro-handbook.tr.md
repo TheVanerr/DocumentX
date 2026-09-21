@@ -6,7 +6,7 @@ Bu kullanım kılavuzu, **KNV 30 3000 2B** makinesinin ayrılmaz ve yasal olarak
 
 **Kapsam:** **KNV 30 3000 2B** (model kodu **KNV-30**, seri no **1726050**) ve bu projeye teslim edilen donanım.
 
-**Hedef okuyucu grupları:** Operatör, bakım personeli, kurulum personeli.
+**Hedef okuyucu grupları:** Hat sorumlusu, bakım personeli, kurulum personeli.
 
 Makine; girişten yüklemeli konveyörlü, iki banyolu (yıkama + durulama) endüstriyel parça yıkama sistemidir. Parçalar konveyör üzerinde ilerleyerek yıkama, durulama ve kurutma proseslerini tamamlar. Bu projede parça giriş ve çıkışı robot tarafından gerçekleştirilir; yükleme/boşaltma prosedürleri müşteri hattına aittir (**Bkz. Bölüm 7.4**). Kılavuz bu nedenle robot entegrasyonu ayrıntılarını kapsamaz; yalnızca makinenin kendi proses fonksiyonlarını ve güvenli sınırlarını tanımlar.
 
@@ -45,13 +45,13 @@ HMI operatör paneli dilleri **Bkz. Bölüm 3.4**'te tanımlanır.
 
 Makine; elektrik, sıcak sıvı, basınçlı hava, kimyasal solüsyon ve hareketli mekanizmalar içerir. Bu enerji ve proses kaynakları, yanlış müdahalede ciddi yaralanma veya ekipman hasarına yol açabilir. Personel görevlendirmesinden, eğitimden ve yetki sınırlarından işveren (makineyi işleten kurum) sorumludur. Aşağıdaki roller, kılavuzda tanımlanan yetki ve yasakları netleştirir; rol dışı müdahale garanti kapsamını ve iş güvenliğini olumsuz etkiler.
 
-**Operatör**
+**Operatör / hat sorumlusu**
 
-Bu makinede hatta sürekli fiziksel operatör bulunmaz; parça yükleme ve boşaltma robot tarafından yapılır. Operatör rolü; HMI üzerinden makineyi izleme, hazırlık/start/stop komutları verme ve alarm durumunda bakım personelini bilgilendirme kapsamındadır. Operatör, makineye mekanik veya elektriksel müdahale etmez; bu sınır, güvenlik fonksiyonlarının (RFID sensör, acil stop vb.) devre dışı kalmasını önler.
+Bu makinede hatta sürekli fiziksel vardiya operatörü bulunmaz; parça yükleme ve boşaltma robot tarafından yapılır. Hat sorumlusu rolü; HMI üzerinden makineyi izleme, hazırlık/start/stop komutları verme, Error-461 sonrası **Ürün Alındı Onay** ve alarm durumunda bakım personelini bilgilendirme kapsamındadır. Bu rol, makineye mekanik veya elektriksel müdahale etmez; RFID güvenlik sensörünü baypas etmez.
 
-Operatör, HMI üzerinden hazırlık, start ve stop komutlarını verir; yıkama, durulama, kurutma ve egzoz fonksiyonlarını çalışma sayfasından açar veya kapatır (**Bkz. Bölüm 7.1**). Aktif alarmları HMI ve tepe lambası üzerinden izler; müdahale gerektiren durumlarda bakım personelini bilgilendirir. Elektrik panosunu açmaz, koruyucu kapakları sökmez, parametre veya güvenlik ayarlarına müdahale etmez, RFID güvenlik sensörünü baypas etmez.
+Hat sorumlusu, HMI üzerinden hazırlık, start ve stop komutlarını verir; yıkama, durulama, kurutma ve egzoz fonksiyonlarını çalışma sayfasından açar veya kapatır (**Bkz. Bölüm 7.1**). Aktif alarmları HMI ve tepe lambası üzerinden izler; müdahale gerektiren durumlarda bakım personelini bilgilendirir. Elektrik panosunu açmaz, koruyucu kapakları sökmez, parametre veya güvenlik ayarlarına müdahale etmez.
 
-Operatör, işveren tarafından makine işleyişi, HMI kullanımı ve acil durdurma prosedürleri konusunda eğitilmiş olmalıdır (**Bkz. Bölüm 2.5**). Eğitim almadan HMI üzerinden start vermek, hazırlıksız proses başlatma ve ekipman hasarı riski taşır.
+Hat sorumlusu, işveren tarafından makine işleyişi, HMI kullanımı ve acil durdurma prosedürleri konusunda eğitilmiş olmalıdır (**Bkz. Bölüm 2.5**). Eğitim almadan HMI üzerinden start vermek, hazırlıksız proses başlatma ve ekipman hasarı riski taşır.
 
 **Bakım Personeli (Mekanik / Elektrik / Pnömatik)**
 

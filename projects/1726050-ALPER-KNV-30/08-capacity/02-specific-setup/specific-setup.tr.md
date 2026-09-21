@@ -19,7 +19,6 @@ Bu makinede ayrı bir "reçete listesi" ekranı yerine parametreler iki HMI sayf
 
 Her ürün tipi için bu parametrelerin tutarlı bir seti "reçete" olarak kabul edilir. Üst sistemden reçete seçimi yapılıyorsa parametrelerin HMI'ya aktarılması müşteri yazılım sorumluluğundadır.
 
-<!-- FOTO: HMI Ayarlar Sayfası — reçete sıcaklıkları -->
 ![HMI reçete / ayar sayfası](../../assets/8.2/1.png)
 
 ---
@@ -35,9 +34,9 @@ Yeni parça tipi devreye alınırken:
 5. **Hazırlık Start** ile dolum/ısıtmayı tamamlayın (bkz. **Bölüm 7.2**).
 6. Örnek parça ile test yıkaması yapın; temizlik/kuruluk kriterini doğrulayın.
 7. Onaylanan parametre setini reçete numarası ile kayıt altına alın (kullanıcı firma dokümantasyonu).
-8. Robot hattı cycle süresinin makine döngüsü (**900 sn** nominal — bkz. **Bölüm 3.3.2**) ile uyumunu doğrulayın.
+8. Robot giriş/çıkış cycle süresinin hedef **adet/saat** (referans 730) ile uyumunu doğrulayın. **900 sn** parça geçiş süresidir; robot cycle bu değer olmak zorunda değildir (bkz. **Bölüm 3.3.2**, **7.4.2**).
 
-**Beklenen sonuç:** Parça hedef temizlik kriterini karşılar; hat cycle süresi içinde proses tamamlanır.
+**Beklenen sonuç:** Parça hedef temizlik kriterini karşılar; hat throughput'u hedef adet/saat aralığındadır.
 
 **Anormal durum:** Isıtma yetersizse set değerlerini ve ısıtıcı alarm durumunu kontrol edin (bkz. **Bölüm 11**).
 
@@ -76,7 +75,7 @@ Aşağıdaki alanlar **kullanıcı firma tarafından** doldurulur:
 
 Reçete numaralandırması ve ürün–reçete eşlemesi kullanıcı firma tarafından tanımlanmalıdır. Robot veya üst sistemden reçete seçimi yapılıyorsa HMI parametrelerinin otomatik veya operatör onaylı güncellenmesi müşteri otomasyon projesine aittir.
 
-Örnek reçete listesi **Ek C**'de yer alabilir (bkz. **Bölüm 14** — DATA: Ek C — Reçete örnekleri, kullanıcı firma).
+Örnek reçete listesi kullanıcı firma tarafından tanımlanır (bkz. **Bölüm 14**).
 
 ---
 
@@ -87,7 +86,7 @@ Reçete numaralandırması ve ürün–reçete eşlemesi kullanıcı firma taraf
 | 1 | Ürün tipine uygun reçete parametre seti tanımlandı | ☐ |
 | 2 | Tank sıcaklıkları hedef değerlere ayarlandı (Ayarlar Sayfası) | ☐ |
 | 3 | Proses fonksiyonları doğru on/off (Çalışma Sayfası) | ☐ |
-| 4 | Robot hattı cycle süresi ile makine döngüsü uyumu doğrulandı | ☐ |
+| 4 | Robot cycle süresi hedef adet/saat ile uyumlu | ☐ |
 | 5 | Örnek parça ile test yıkama yapıldı — kabul kriteri OK | ☐ |
 | 6 | Kapasite test sonucu tabloya işlendi (Bölüm 8.1.3) | ☐ |
 

@@ -1,6 +1,6 @@
 # 6.5 Pnömatik ayarlar
 
-Makine pnömatik tüketimi esas olarak dolum vanaları ve proses kontrolü için **6 bar** basınçlı hava ile beslenir. Bağlantı değerleri **Bölüm 3.3.5**'te SSOT olarak verilmiştir; bu bölüm regülatör ayar prosedürünü tanımlar.
+Makine pnömatik tüketimi esas olarak dolum vanaları ve proses kontrolü için **6 bar** basınçlı hava ile beslenir. Bağlantı değerleri **Bölüm 3.3.5**'te verilmiştir; bu bölüm regülatör ayar prosedürünü tanımlar.
 
 Hidrolik sistem yoktur. Silindir hız ve sensör gecikmesi ayarı operatöre açık değildir.
 
@@ -8,7 +8,7 @@ Hidrolik sistem yoktur. Silindir hız ve sensör gecikmesi ayarı operatöre aç
 
 ## 6.5.1 Regülatör basınç ayarı
 
-| Parametre | Değer (SSOT: Bölüm 3.3.5) |
+| Parametre | Değer (Bölüm 3.3.5) |
 |-----------|----------------------------|
 | Regülatör basınç ayarı | **6 bar** |
 | Bağlantı | 3/4" |
@@ -27,7 +27,6 @@ Hidrolik sistem yoktur. Silindir hız ve sensör gecikmesi ayarı operatöre aç
 
 Kurulum sırasında ilk ayar **Bölüm 5.3.1**'de yapılır; regülatör kayması veya hortum değişiminden sonra bu prosedür tekrarlanmalıdır.
 
-<!-- FOTO: Pnömatik regülatör — 6 bar (EKLENECEK: FOTO-6-5-0-regulator.jpg) -->
 ![Pnömatik regülatör 6 bar](../../assets/6.5/1.png)
 
 ---

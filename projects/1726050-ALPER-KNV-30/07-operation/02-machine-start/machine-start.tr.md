@@ -38,7 +38,6 @@ Başka hazırlık adımı gerekmez. Ön koşullar:
 
 **Isıtma süresi:** Değişkendir — tanktaki mevcut su miktarı ve sıcaklığına bağlıdır; sabit süre verilemez.
 
-<!-- FOTO: HMI — Hazırlık Start düğmesi (Çalışma Sayfası) -->
 ![HMI hazırlık butonu](../../assets/7.2/1.png)
 
 ---
@@ -86,13 +85,13 @@ Start öncesi **Bölüm 7.2.5** kontrol listesini tamamlayın.
 
 ---
 
-## 7.2.6 İlk ürün / kurşun atma
+## 7.2.6 İlk parça denemesi
 
 | Parametre | Değer |
 |-----------|-------|
-| İlk ürün / kurşun atma prosedürü | **Yoktur** |
+| Ayrı ilk parça / deneme yıkama prosedürü | **Yoktur** |
 
-Ayrı kurşun atma veya ilk parça atma prosedürü tanımlanmamıştır.
+Ayrı bir ilk parça atma prosedürü tanımlanmamıştır. Yeni ürün tipi için test yıkaması **Bölüm 8.2.2** reçete adımlarına göredir.
 
 ---
 

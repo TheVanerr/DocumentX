@@ -1,8 +1,8 @@
 ﻿# 7.1 Çalışma modları
 
-KNV 30 3000 2B **tam otomatik** çalışır; ayrı bir manuel, step veya bakım modu bulunmaz. Operatör, HMI **Çalışma Sayfası** üzerinden proses fonksiyonlarını seçer, hazırlık ve start/stop komutlarını verir. Fonksiyon seçimi toggle (on/off) mantığıyla yapılır; makine start alındığında seçili fonksiyonlar PLC programına göre otomatik koordine edilir.
+KNV 30 3000 2B **tam otomatik** çalışır; ayrı bir manuel sürüş, step veya bakım modu bulunmaz. Hat sorumlusu, HMI **Çalışma Sayfası** üzerinden proses fonksiyonlarını seçer, hazırlık ve start/stop komutlarını verir. Fonksiyon seçimi toggle (on/off) mantığıyla yapılır; makine start alındığında seçili fonksiyonlar PLC programına göre otomatik koordine edilir.
 
-Bakım müdahaleleri için özel HMI modu yoktur; kapak açma ve mekanik/elektrik işler **LOTO** ile yapılır (bkz. **Bölüm 2.4**). Tek fonksiyon testi için HMI **Manuel Sayfası** yalnızca yetkili bakım personeline açıktır (bkz. **Bölüm 3.4.5**).
+Bakım müdahaleleri için özel HMI modu yoktur; kapak açma ve mekanik/elektrik işler **LOTO** ile yapılır (bkz. **Bölüm 2.4**). HMI **Manuel Sayfası** şifresizdir; tek fonksiyon testi yalnızca yetkili bakım personeli tarafından, işveren kontrolünde kullanılır (bkz. **Bölüm 3.4.5**).
 
 ---
 
@@ -18,7 +18,7 @@ Sürekli manuel sürüş modu yoktur. HMI Çalışma Sayfasındaki yıkama, duru
 
 ## 7.1.2 Otomatik mod
 
-Makine varsayılan olarak otomatik modda çalışır. Operatör akışı:
+Makine varsayılan olarak otomatik çalışır. Hat sorumlusu akışı:
 
 1. HMI **Çalışma Sayfası**'nda istenen proses fonksiyonlarını **aktif** (yeşil) konuma getirin.
 2. **Hazırlık Start** ile tank dolumu ve ısıtmayı tamamlayın (bkz. **Bölüm 7.2**).
@@ -27,7 +27,6 @@ Makine varsayılan olarak otomatik modda çalışır. Operatör akışı:
 
 Robot giriş/çıkış üst hat tarafından senkronize edilir; makine PLC'si parça varlığını sensörlerle izler.
 
-<!-- FOTO: HMI Çalışma Sayfası — proses toggle ve start/stop -->
 ![HMI proses seçenekleri](../../assets/7.1/1.png)
 
 ---
@@ -38,7 +37,7 @@ Robot giriş/çıkış üst hat tarafından senkronize edilir; makine PLC'si par
 |-----------|-------|
 | Bakım / setup modu | **Bulunmamaktadır** |
 
-Bakım için makine durdurulmalı, ana şalter kapatılmalı ve **LOTO prosedürü** uygulanmalıdır (bkz. **Bölüm 2.4**). Kapaklar yalnızca enerji izolasyonu sonrası açılmalıdır. Emniyet kapısı bypass edilmemelidir.
+Bakım için makine durdurulmalı, ana şalter kapatılmalı ve **LOTO prosedürü** uygulanmalıdır (bkz. **Bölüm 2.4**). Kapaklar yalnızca enerji izolasyonu sonrası açılmalıdır. RFID güvenlik sensörü bypass edilmemelidir.
 
 ---
 

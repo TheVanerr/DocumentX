@@ -1,68 +1,51 @@
-<!-- ÇEVİRİ GEREKLİ → EN | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 2.1 Introduction to safety and operating responsibilities
 
-# 2.1 Güvenliğe giriş ve işletme sorumlulukları
+This chapter defines the safe operating limits of the KNV 30 3000 2B machine, the employer’s legal obligations and the safety framework applicable to personnel. The machine operates with continuous conveyor flow, two process baths (wash + rinse), drying fans and automation infrastructure. Compliance with the instructions in this chapter and its subsections is mandatory at every stage.
 
-Bu bölüm, endüstriyel yıkama makinesinin güvenli çalışma sınırlarını, tesis yöneticisinin (işverenin) yasal yükümlülüklerini ve kullanıcı personel için geçerli olan emniyet çerçevesini belirler. Bu kılavuzda yer alan güvenlik talimatları, uluslararası Makine Emniyeti Yönetmeliği (2006/42/AT) gereksinimlerine göre hazırlanmıştır. Kılavuzdaki güvenlik kurallarının ihlali, telafisi mümkün olmayan yaralanmalara, maddi hasarlara ve çevre felaketlerine yol açabilir; bu tür ihlallerden doğacak tüm hukuki ve cezai mesuliyet münhasıran makineyi işleten kuruma aittir.
-
----
-
-## 2.1.1 Amacına uygun kullanım
-Bu makine; metal, plastik veya kompozit alaşımlı spesifik endüstriyel parçaların yüzeylerindeki yağ, talaş, toz ve diğer üretim kalıntılarının, su bazlı ve üretici tarafından onaylanmış kimyasal solüsyonlar kullanılarak termal ve mekanik etkilerle (basınçlı su jeti) temizlenmesi amacıyla tasarlanmış ve üretilmiştir. 
-
-Makinenin "Amacına Uygun Kullanımı", yalnızca aşağıdaki koşulların tamamının eşzamanlı olarak sağlanması durumunda geçerlidir:
-* Makinenin, teknik tanıtım plakasında ve "Teknik Özellikler" bölümünde belirtilen maksimum yükleme kapasitesi, döngü süresi, basınç ve sıcaklık limitleri dahilinde çalıştırılması.
-* Tasarım aşamasında belirlenmiş ve onaylanmış parça geometrileri ve ağırlıkları dışındaki ürünlerin sisteme yüklenmemesi.
-* Makinenin tüm iş güvenliği kapakları, muhafazaları ve acil durum ekipmanları (interlock siviçler, emniyet röleleri) tam işlevsel ve aktif konumdayken işletilmesi.
-* Kılavuzda belirtilen periyodik bakım takvimine, günlük temizlik ve kontrol prosedürlerine harfiyen uyulması.
-
-Bu makine, sadece kapalı ve endüstriyel üretim alanlarında kullanılmak üzere tasarlanmıştır. Dış ortamlarda, patlayıcı (EX-Proof gerektiren) atmosferlerde veya evsel/ticari alanlarda kullanımı kesinlikle yasaktır.
+The organisation operating the machine is responsible for performing risk assessment, training personnel, providing PPE and keeping safety devices in working order. Legal and criminal liability arising from violation of the safety rules in the manual belongs to the operator.
 
 ---
 
-## 2.1.2 Öngörülebilir yanlış kullanım ve kimyasal güvenlik
-Makinenin, tasarlandığı temel mühendislik prensipleri ve güvenlik normları dışında kullanılması "Öngörülebilir Yanlış Kullanım" olarak kabul edilir. Aşağıda listelenen eylemler kesinlikle yasaktır ve tespit edilmesi durumunda makine **derhal garanti kapsamı dışında kalır**. Bu eylemlerden doğacak iş kazaları veya tesis hasarları tamamen işletmecinin sorumluluğundadır.
+## 2.1.1 Intended use
 
-**1. Malzeme ve Parça Hataları:**
-* Patlayıcı, yüksek derecede yanıcı, alev alıcı (parlama noktası düşük solventler) veya su/ısı ile reaksiyona girdiğinde toksik gaz salınımı yapan materyallerin yıkanması.
-* Kapasiteyi aşan, sepet dışına taşan veya nozul hatlarının hareketini/püskürtme açısını mekanik olarak engelleyecek büyüklükte/ağırlıkta parçaların yüklenmesi.
+Intended use of the machine is valid only within the limits defined in **Chapter 3.2**. The machine is designed for removal of oil and contamination on the surfaces of industrial parts (metal, plastic, rubber etc.) by wash, rinse and drying processes. Processing of living organisms is strictly prohibited.
 
-**2. Kimyasal Güvenlik ve Yüzey Koruması:**
-* **Galvanizasyon Hassasiyeti:** Makinenin iç konstrüksiyonu, taşıyıcı ürünleri ve yıkama sepetleri korozyon direncini sağlamak amacıyla özel bir **galvanizyon** işlemine tabi tutulmuştur. Bu parçalar hiçbir koşulda boyalı bir yüzey gibi değerlendirilemez. Galvaniz tabakası ile reaksiyona giren, bu tabakayı eriten veya korozyona uğratan **aşırı asidik (pH < 6) veya yüksek alkali/kostik (pH > 10) kimyasalların kullanımı kesinlikle yasaktır.**
-* Onaylanmamış, galvaniz yüzeye zarar veren, köpürme katsayısı yüksek veya tortu bırakan kimyasalların kullanılması sistemin sızdırmazlık elemanlarına (contalar, o-ringler), pompa çarklarına ve şasiye geri dönülemez zararlar verir.
+Intended use depends on the following conditions being met together:
 
-**3. Donanım ve Mekanik Müdahaleler:**
-* Suyu ince-düz bir hat şeklinde püskürten standart nozulların veya açılı yelpaze nozulların, üreticinin mühendislik onayı olmadan farklı debi ve atış karakteristiğine sahip nozullar ile değiştirilmesi. 
-* Makine çalışır durumdayken, yıkama döngüsü (cycle) tamamlanmadan veya iç kabin sıcaklığı güvenli seviyelere (örn. 40°C altı) düşmeden kapakların zorla açılmasına çalışılması.
-* Güvenlik bileşenlerinin (kapı kilitleri, acil stop butonları, seviye ve ısı sensörleri) baypas edilmesi, sökülmesi veya yazılım üzerinden köprülenmesi.
+- The machine is operated only in an **indoor** environment, in the temperature range **+10°C to +30°C** and relative humidity **30–50%** (**See Chapter 3.2.5, 3.3.6**).
+- Operation is performed with all safety functions (RFID sensor, emergency stop, interlock) in service; they are not bypassed.
+- Unapproved chemicals and cleaning agents that would damage stainless steel or that are acid-based are not used (**See Chapter 3.2.4**).
+- Part infeed/outfeed is performed by robot; machine process functions are within the scope of this manual, robot integration belongs to the customer line (**See Chapter 7.4**).
+
+Use other than intended use increases the risk of process error, equipment damage, warranty voidance and personal injury (**See Chapter 1.1.5**).
 
 ---
 
-## 2.1.3 İşletmecinin (işverenin) yükümlülükleri
-Makineyi mülkiyetinde bulunduran veya işleten kurum/işveren, makinenin güvenli bir şekilde kullanılabilmesi için aşağıdaki fiziksel ve idari yükümlülükleri yerine getirmekle mükelleftir:
+## 2.1.2 Foreseeable misuse
 
-**A. Çalışma Ortamı ve Fiziksel Şartlar:**
-* **Alan ve Boşluk:** Makinenin etrafında operatörün ergonomik şekilde çalışabilmesi, acil durumlarda hızlıca tahliye olabilmesi ve bakım teknisyenlerinin elektrik panosuna/pompa gruplarına rahatça erişebilmesi için EN normlarında belirtilen (genellikle minimum 1 metre) güvenli çalışma boşluğunun bırakılması.
-* **Aydınlatma:** Operatör yükleme/boşaltma istasyonlarında ve makine bakım noktalarında kör nokta kalmayacak şekilde, endüstriyel standartlara uygun minimum lüks (lux) değerinde aydınlatmanın sağlanması.
-* **Altyapı Güvenliği:** Makineye sağlanan ana enerji beslemesinde uygun kesitli kabloların kullanılması, topraklama hattının standartlara uygun çekilmesi ve pnömatik/su besleme hatlarında gerekli yalıtımların ve emniyet valflerinin bulunması.
-* **Atık Yönetimi:** Yıkama işlemi sonucu ortaya çıkan yağlı, kimyasal karışımlı atık suyun ve filtre atıklarının, yerel çevre mevzuatlarına uygun şekilde arıtılması ve bertaraf edilmesi.
+The following actions are assessed within foreseeable misuse and are **prohibited**:
 
-**B. İdari Sorumluluklar ve Personel Yönetimi:**
-* Makinede çalışacak tüm personelin görev tanımına (Operatör veya Bakım) uygun olarak eğitilmesi ve bu eğitimlerin kayıt altına alınarak belgelendirilmesi.
-* Bu kullanım kılavuzunun ilgili personel tarafından tamamen okunup anlaşıldığının denetlenmesi.
-* Kimyasal yükleme, bakım ve operasyon süreçleri için risk analizlerinin yapılması ve gerekli tüm Kişisel Koruyucu Donanımların (KKD) personele eksiksiz olarak zimmetlenip kullanımının zorunlu tutulması.
-* Bakım ve onarım çalışmaları sırasında Tehlikeli Enerji Kontrolü **(LOTO - Kilitleme ve Etiketleme)** prosedürünün harfiyen uygulanmasının sağlanması.
+1. Processing living organisms (humans, animals, plants) or taking them into the process zone.
+2. Bypassing or disabling the RFID safety sensor, emergency-stop circuit or interlock functions.
+3. Making mechanical, electrical or software changes without manufacturer approval.
+4. Opening maintenance covers or intervening on the conveyor line while the machine is running.
+5. Using acid-based cleaning agents or cleaning agents that would damage stainless steel.
+6. Transporting the machine by crane (**See Chapter 3.5.4**); applying lifting methods other than forklift.
+
+If detected, stop the machine safely; continue intervention only after the hazard has been removed and LOTO has been applied if required (**See Chapter 2.4**).
 
 ---
 
-## 2.1.4 Personel kalifikasyonu ve güvenlik sınırları
-Makine üzerinde yapılacak hatalı bir işlem doğrudan hayati tehlike yaratabilir. Bu nedenle makineye müdahale edecek personel, güvenlik perspektifinden kesin sınırlarla iki ana kategoriye ayrılmıştır:
+## 2.1.3 Safety-equipment summary
 
-**1. Operatör (Kullanıcı Personel):**
-* **Yetki Alanı:** Makineyi günlük üretime hazırlamak, doğru yıkama sepetlerini yüklemek ve boşaltmak, HMI (Kullanıcı Arayüzü) üzerinden önceden tanımlanmış yıkama programlarını seçip başlatmak. Olası bir tehlike anında Acil Durdurma (E-Stop) butonlarına basmak.
-* **Güvenlik Sınırları:** Operatör, mekanik uzmanlık gerektiren hiçbir donanım kapağını sökemez, elektrik panosunu anahtarla veya zorlayarak açamaz. Hata kodlarını gidermek için limit siviçlere müdahale edemez veya HMI üzerinden üretici şifresi gerektiren parametre ayarlarını değiştiremez.
+The machine safety architecture consists of the following components:
 
-**2. Bakım Personeli (Mekanik ve Elektrik Teknisyenleri/Mühendisleri):**
-* **Yetki Alanı:** Periyodik bakımları yapmak, arıza tespiti gerçekleştirmek, aşınmış parçaları orijinal yedek parçalar ile değiştirmek ve kimyasal dozaj pompalarını kalibre etmek. 
-* **Güvenlik Sınırları:** Bakım personeli, herhangi bir kapağı açmadan veya sisteme fiziksel müdahalede bulunmadan önce makineyi tamamen enerjisiz bırakmak ve pnomatik/hidrolik sistemlerdeki potansiyel (birikmiş) enerjiyi tahliye etmek zorundadır. Ana şalter üzerine kilit asma (LOTO) prosedürünü uygulamak yalnızca bakım personelinin yetkisi ve sorumluluğundadır. Üretici onayı olmadan makinenin güvenlik mimarisi veya PLC/Sürücü parametreleri bakım personeli tarafından dahi değiştirilemez.
+| Component | Status |
+| :--- | :--- |
+| Safety door / fixed barrier | 0 units (no separate door) |
+| RFID safety sensor | Present — machine stops when a cover is opened |
+| Light curtain | None |
+| Safety category (EN ISO 13849-1) | Cat. 3 |
+| Emergency-stop button | 4 units (**See Chapter 2.5**) |
 
-> **YASAL UYARI:** Yukarıda belirtilen kalifikasyonlara sahip olmayan stajyer, ziyaretçi veya eğitimsiz personelin makine kontrol paneline, yükleme alanına veya mekanik bileşenlerine yaklaşması, dokunması ve makineyi çalıştırması kesinlikle yasaktır.
+The RFID sensor stops the machine if maintenance covers are opened. The sensor cannot be disabled; for maintenance the **Chapter 2.4** LOTO procedure is applied.

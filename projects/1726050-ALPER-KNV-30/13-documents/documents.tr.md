@@ -2,7 +2,7 @@
 
 Bu bölüm, **KNV 30 3000 2B** (seri **1726050**) makinesine ait teslim edilen harici dokümanları, kılavuza gömülü teknik referansları ve yedek parça listesini (BOM) tanımlar.
 
-Müşteriye **ayrı evrak** olarak üç PDF teslim edilir: **P&ID**, **elektrik şeması** ve **makine layout**. Yedek parça listesi ayrı PDF **değildir**; **Bölüm 13.3.1** tablosu BOM için **tek kaynak (SSOT)** olarak kullanılır.
+Teslim paketinde **üç PDF** bulunur: **P&ID**, **elektrik şeması** ve **makine layout**. Yedek parça listesi ayrı PDF değildir; **Bölüm 13.3.1** tablosu kullanılır.
 
 | Teslim tipi | İçerik |
 |-------------|--------|
@@ -13,7 +13,7 @@ Müşteriye **ayrı evrak** olarak üç PDF teslim edilir: **P&ID**, **elektrik 
 |-------|--------|
 | **13.1** | Teslim edilen doküman listesi |
 | **13.2** | Çizimler ve layout referansı |
-| **13.3** | Parça listesi (BOM) — SSOT |
+| **13.3** | Parça listesi (BOM) |
 
 ---
 

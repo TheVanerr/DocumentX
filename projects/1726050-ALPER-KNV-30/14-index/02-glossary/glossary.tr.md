@@ -1,6 +1,6 @@
 ﻿# 14.2 Sözlük
 
-Bu sözlük kılavuz boyunca kullanılan kısaltmaları ve makineye özgü terimleri tanımlar. Güvenlik ve prosedür ayrıntıları ilgili ana bölümlerde SSOT olarak verilmiştir.
+Bu sözlük kılavuz boyunca kullanılan kısaltmaları ve makineye özgü terimleri tanımlar. Güvenlik ve prosedür ayrıntıları ilgili ana bölümlerde verilmiştir.
 
 ---
 
@@ -9,7 +9,7 @@ Bu sözlük kılavuz boyunca kullanılan kısaltmaları ve makineye özgü terim
 | Kısaltma | Açıklama |
 |----------|----------|
 | **BOM** | Bill of Materials — yedek parça / malzeme listesi (**13.3.1**) |
-| **Cat. 3** | Makine emniyet kategorisi — EN ISO 13849-1 (bkz. **2**) |
+| **Cat. 3** | EN ISO 13849-1 güvenlik kategorisi (bkz. **2.1.3**) |
 | **CIP** | Cleaning in Place — yerinde temizlik; bu makinede **bulunmaz** |
 | **COP** | Cleaning out of Place — sökerek temizlik; otomatik sistem **bulunmaz** |
 | **HMI** | Human Machine Interface — Siemens SIMATIC KTP700 Basic PN operatör paneli |
@@ -18,9 +18,8 @@ Bu sözlük kılavuz boyunca kullanılan kısaltmaları ve makineye özgü terim
 | **PE** | Protective Earth — koruma topraklaması (3P+N+**PE**) |
 | **PLC** | Programmable Logic Controller — Siemens SIMATIC S7-1200 |
 | **P&ID** | Piping and Instrumentation Diagram — proses/enstrümantasyon şeması |
-| **RFID** | Radio Frequency Identification — bakım kapağı güvenlik sensörü |
+| **RFID** | Radio Frequency Identification — bakım kapağı güvenlik sensörü (Omron F3STGRNLPU21M1J8; sipariş adı MANYETİK KAPI) |
 | **RPM** | Devir/dakika |
-| **SSOT** | Single Source of Truth — tek kaynak; tekrarlanmayan veri noktası |
 | **SWL** | Safe Working Load — forklift güvenli kaldırma kapasitesi |
 | **WEEE** | Waste Electrical and Electronic Equipment — elektronik atık mevzuatı |
 
@@ -35,7 +34,7 @@ Bu sözlük kılavuz boyunca kullanılan kısaltmaları ve makineye özgü terim
 | **Ana şalter** | Pano giriş elektrik kesme noktası; LOTO uygulama noktası (**2.4**) |
 | **Besleme yönü** | Parça girişi — bu makinede **sol** taraf |
 | **Boşaltma yönü** | Parça çıkışı — bu makinede **sağ** taraf |
-| **Döngü süresi** | Bir parçanın yıkama→durulama→kurutma tamamlama süresi; nominal **900 sn** (**3.3.2**) |
+| **Döngü süresi** | Bir parçanın yıkama→durulama→kurutma tünelini katetme süresi; nominal **900 sn**. Robot cycle ve **730 adet/saat** throughput ayrı kavramlardır (**3.3.2**, **7.4.2**) |
 | **Hazırlık Start** | HMI düğmesi; tank otomatik dolumu ve reçete sıcaklığına ısıtmayı başlatır (**7.2.2**) |
 | **Kalıcı devre dışı** | Makinenin bir daha devreye alınmayacağı hizmet dışı bırakma (**12.2.1**) |
 | **KNV 30 3000 2B** | Makine ticari tanımı / model varyantı |
@@ -50,7 +49,7 @@ Bu sözlük kılavuz boyunca kullanılan kısaltmaları ve makineye özgü terim
 | **Reçete** | HMI'da tanımlı proses parametre seti — sıcaklık, fonksiyon seçimi (**6.3**, **8**) |
 | **Reset** | Acil stop veya alarm sonrası emniyet devresini yeniden devreye alma (**2.5**, **7.3.2**) |
 | **Sızıntı tavası** | Tank altı su kaçağı algılama bölgesi (Error-452) |
-| **Tepe lambası** | **Sarı** hazır, **yeşil** çalışıyor, **kırmızı** alarm (**3.4.6**) |
+| **Tepe lambası** | **Sarı** hazır, **yeşil** çalışıyor, **kırmızı** alarm (**3.4.10**) |
 | **Torba filtre** | Pompa çıkışı 200 mikron filtre; **haftalık** temizlik/değişim (**10.1.4**) |
 | **Ürün Alındı Onay** | HMI düğmesi; çıkış konveyörü parça algılandığında onay (Error-461) |
 | **Yağ sıyırıcı** | Yıkama tankı yüzey yağını toplayan ünite (Error-130) |

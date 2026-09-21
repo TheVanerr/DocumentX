@@ -2,7 +2,7 @@
 
 Konumlandırma, makinenin kurulum alanındaki nihai konumunu, yönünü ve seviyesini belirler. İşlemler **Bölüm 5.1 Adım 3** kapsamında uygulanır; bu bölümde detaylandırılır. Yanlış konumlandırma robot erişimini, bakım kapak açılımını ve konveyör hizasını olumsuz etkiler.
 
-Alan gereksinimleri (etraf boşlukları, tavan yüksekliği, yön tanımları) **Bölüm 3.5**'te SSOT olarak verilmiştir; burada kurulum prosedürü odaklı açıklanır.
+Alan gereksinimleri (etraf boşlukları, tavan yüksekliği, yön tanımları) **Bölüm 3.5**'te verilmiştir; burada kurulum prosedürü odaklı açıklanır.
 
 ---
 
@@ -10,17 +10,16 @@ Alan gereksinimleri (etraf boşlukları, tavan yüksekliği, yön tanımları) *
 
 Makine yerleştirilmeden önce kurulum alanı aşağıdaki koşulları karşılamalıdır:
 
-| Parametre | Gereksinim | SSOT |
+| Parametre | Gereksinim | Referans |
 |-----------|------------|------|
-| Montaj alanı min. boyut | 5 m × 3 m | DATA — MONTAJ_GENEL |
-| Zemin düzgünlük toleransı | 0,5 mm/m | DATA — MONTAJ_GENEL |
+| Montaj alanı min. boyut | 5 m × 3 m | Bölüm 3.5 |
+| Zemin düzgünlük toleransı | 0,5 mm/m | Bölüm 3.5 |
 | Zemin mukavemeti | Sert ve düz yüzey | Bölüm 3.5.2 |
 | Minimum etraf boşluğu | Ön, arka, yan: 1000 mm | Bölüm 3.5.2 |
 | Minimum tavan yüksekliği | 2500 mm | Bölüm 3.5.2 |
 
-Referans yerleşim planı: **1726050-ALPER-KNV 30 3000 2B PRO IDE LAYOUT.PDF** (assets klasörü).
+Referans yerleşim planı teslim paketindeki makine layout PDF'dir (bkz. **Bölüm 3.5**).
 
-<!-- FOTO: Kurulum alanı — etraf boşlukları (EKLENECEK: FOTO-5-2-0-kurulum-alani.jpg veya layout export) -->
 ![Kurulum alanı](../../assets/5.2/1.png)
 
 ---
@@ -40,7 +39,6 @@ Parçalar sol taraftan yüklenir, sağ taraftan alınır. HMI paneli ve elektrik
 
 Forklift ile yerleştirme **Bölüm 4.1.4** prosedürüne göre yapılır; ağırlık merkezi konveyör ortasındadır (bkz. **Bölüm 3.5.4**).
 
-<!-- FOTO: Yön tanımları — besleme sol / boşaltma sağ -->
 ![Yön tanımları](../../assets/5.2/2.png)
 
 ---
@@ -64,9 +62,8 @@ Forklift ile yerleştirme **Bölüm 4.1.4** prosedürüne göre yapılır; ağı
 
 **Anormal durum:** Zemin toleransı aşılıyorsa zemin düzeltmesi yapılmadan operasyona geçmeyin.
 
-Mekanik kurulum test sorusu: *Makine terzide mi?* (bkz. **Bölüm 5.5.1**)
+Mekanik kurulum test sorusu: *Makine terazide mi?* (bkz. **Bölüm 5.5.1**)
 
-<!-- FOTO: Ayarlanabilir ayak — seviye detay (EKLENECEK: FOTO-5-2-2-seviye-ayari.jpg) -->
 ![Seviye ayarı](../../assets/5.2/3.png)
 
 ---
@@ -82,5 +79,4 @@ Konumlandırma sırasında bakım erişim bölgelerinin engellenmemesine dikkat 
 
 Makine duvara veya ekipmana çok yakın konumlandırılırsa filtre bakımı ve tank müdahalesi güvenli yapılamaz.
 
-<!-- FOTO: Arka bakım kapakları ve erişim boşluğu (EKLENECEK: FOTO-5-2-3-bakim-erisim.jpg) -->
 ![Bakım erişim alanı](../../assets/5.2/4.png)

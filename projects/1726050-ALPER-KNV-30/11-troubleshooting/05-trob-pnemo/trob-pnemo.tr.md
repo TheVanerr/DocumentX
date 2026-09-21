@@ -1,6 +1,6 @@
 ﻿# 11.5 Pnömatik arızalar
 
-Makine pnömatik vanalar ve otomatik dolum sistemleri için **6 bar** basınçlı hava kullanır. Su giriş basıncı **1 bar** minimum olmalıdır. Medya değerleri **Bölüm 3.3.5** tablosunda SSOT olarak verilmiştir.
+Makine pnömatik vanalar ve otomatik dolum sistemleri için **6 bar** basınçlı hava kullanır. Su giriş basıncı **1 bar** minimum olmalıdır. Medya değerleri **Bölüm 3.3.5** tablosunda verilmiştir.
 
 ---
 

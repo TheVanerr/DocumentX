@@ -19,12 +19,12 @@ Temizlik **manuel** uygulanır. Makine dış yüzeyleri kuru bez ile silinir; ta
 
 ## 10.1.2 Temizlik öncesi güvenlik
 
-Tank ve filtre erişimi kapak açma gerektirir; RFID sensör devredeyken kapak açılamaz. Temizlik öncesi:
+Tank ve filtre erişimi kapak açmayı gerektirir. RFID kapağı **kilitlemez**; açılınca makineyi durdurur. Temizlik öncesi:
 
 1. Makineyi HMI **Makine Stop** ile durdurun.
 2. Ana şalteri **OFF (0)** konumuna alın.
 3. **LOTO prosedürünü** uygulayın (**Bkz. Bölüm 2.4**).
-4. Emniyet kapısı / RFID **bypass etmeyin**.
+4. RFID güvenlik sensörünü **bypass etmeyin**.
 5. Uzun süreli temizlik veya dezenfeksiyon öncesi tankları **boşaltın** (bkz. **Bölüm 7.3.4**).
 
 **UYARI — Sıcak yüzey ve buhar:** Tank kapağı açılmadan önce proses sıvısının güvenli sıcaklığa inmesini bekleyin; sıcak su ve buhar ciltte yanığa yol açabilir. Koruyucu eldiven kullanın.
@@ -52,6 +52,8 @@ Yedek parça: **07 10214** — ÖN FİLTRE NS KOMPLESİ (önerilen stok: 2 — b
 5. Filtreleri doğru yönde ve sıkı oturacak şekilde takın.
 6. LOTO kaldırma prosedürünü tamamlayın; makineyi devreye almadan önce sızıntı olmadığını kontrol edin.
 
+![Yıkama tankı ön filtreleri](../../assets/FOTO-10-1-3-on-filtre.png)
+
 **Beklenen sonuç:** Ön filtreler temiz, doğru monte; pompa emişinde anormal gürültü/tıkanma yok.
 
 **Anormal durum:** Sık tıkanma varsa proses suyu kalitesi ve yağ yükünü değerlendirin (bkz. **Bölüm 3.3.5**, **11**).
@@ -66,6 +68,10 @@ Yedek parça: **07 10214** — ÖN FİLTRE NS KOMPLESİ (önerilen stok: 2 — b
 | Kapsam | Tank iç filtreleri + pompa çıkışı **torba filtreler** |
 
 Yedek parça: **10 05378** — TORBA FİLTRE 200 MİKRON (önerilen stok: 2).
+
+![Tank filtreleri](../../assets/FOTO-10-1-4-tank-filtre.png)
+
+![Pompa çıkışı torba filtre](../../assets/FOTO-10-1-4-torba-filtre.png)
 
 ### Haftalık temizlik prosedürü
 
@@ -156,7 +162,7 @@ Proses suyu kaynağı (üretim): şebeke veya arıtılmış su (bkz. **Bölüm 3
 |-----------|------------|
 | Atık su / kimyasal bertaraf | Makinenin kullanıldığı ülkenin mevcut mevzuatı |
 
-Tank boşaltma suyu, sabunlu yıkama suyu ve filtre temizlik atıkları yerel **atık su ve kimyasal bertaraf** kurallarına uygun şekilde toplanmalı ve arıtılmalıdır. Bertaraf prosedürü tesis çevre izinleri kapsamında tanımlanmalıdır.
+Tank boşaltma suyu **yağlı proses suyu**dır; evsel kanalizasyona dökmeyin. Tank boşaltma suyu, sabunlu yıkama suyu ve filtre temizlik atıkları yerel **atık su ve kimyasal bertaraf** kurallarına uygun şekilde toplanmalı ve arıtılmalıdır. Bertaraf prosedürü tesis çevre izinleri kapsamında tanımlanmalıdır.
 
 Basınçlı hava, su ve drain bağlantı verileri layout çiziminde verilmiştir (bkz. **Bölüm 3.3.5**, **1726050-ALPER-KNV 30 LAYOUT.pdf**).
 

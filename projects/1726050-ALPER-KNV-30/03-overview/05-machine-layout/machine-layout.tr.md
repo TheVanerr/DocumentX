@@ -1,10 +1,9 @@
 ﻿# 3.5 Makine yerleşim planı
 
-Bu bölüm, makinenin tesis içindeki konumlandırılması, yön tanımları, minimum etraf boşlukları, bakım erişimi ve taşıma kısıtları için **tek kaynak (SSOT)** olarak kullanılır. Kurulum (Bölüm 5) ve nakliye (Bölüm 4) bölümleri alan gereksinimlerini buradan referans alır; aynı değerler tekrarlanmaz.
+Bu bölüm, makinenin tesis içindeki konumlandırılması, yön tanımları, minimum etraf boşlukları, bakım erişimi ve taşıma kısıtlarını tanımlar. Kurulum (Bölüm 5) ve nakliye (Bölüm 4) bölümleri alan gereksinimlerini buradan referans alır; aynı değerler tekrarlanmaz.
 
-**Referans çizim:** `1726050-ALPER-KNV 30 3000 2B PRO IDE LAYOUT.PDF` — proje assets klasöründe (`assets/1726050-ALPER-KNV 30 3000 2B PRO IDE LAYOUT.PDF`).
+**Referans çizim:** teslim paketindeki makine layout PDF (`1726050-ALPER-KNV 30 LAYOUT.pdf`).
 
-<!-- FOTO: Layout çiziminden export veya makine üstten görünüm (EKLENECEK: FOTO-3-5-0-layout-genel.png) -->
 ![Genel yerleşim planı](../../assets/3.5/1.png)
 
 ---
@@ -53,11 +52,10 @@ Zemin mukavemeti, makinenin çalışma ağırlığı (**1500 kg** — bkz. **Bö
 |-------|--------|
 | Makine arkası | Kapakların tamamı sökülebilir ve erişilebilir |
 
-Periyodik bakım, filtre temizliği, pompa kontrolü ve mekanik müdahaleler için makine **arkasındaki kapaklar** sökülerek iç bileşenlere erişilir. Kapaklar **RFID güvenlik sensörü** ile izlenir; kapak açıldığında makine durur. Bakım öncesi makine durdurulmalı, ana şalter kapatılmalı ve **LOTO prosedürü** uygulanmalıdır (bkz. **Bölüm 2.4**). Emniyet kapısı bypass edilmemelidir.
+Periyodik bakım, filtre temizliği, pompa kontrolü ve mekanik müdahaleler için makine **arkasındaki kapaklar** sökülerek iç bileşenlere erişilir. Kapaklar **RFID güvenlik sensörü** ile izlenir; kapak açıldığında makine durur. Bakım öncesi makine durdurulmalı, ana şalter kapatılmalı ve **LOTO prosedürü** uygulanmalıdır (bkz. **Bölüm 2.4**). RFID güvenlik sensörü bypass edilmemelidir.
 
 Günlük ön filtre temizliği ve haftalık tank/torba filtre bakımı bu erişim bölgeleri üzerinden yapılır (bkz. **Bölüm 9** ve **Bölüm 10**).
 
-<!-- FOTO: Makine arka taraf — sökülebilir bakım kapakları (EKLENECEK: FOTO-3-5-3-bakim-kapaklari.jpg) -->
 ![Bakım erişim kapakları](../../assets/3.5/2.png)
 
 ---
@@ -88,9 +86,9 @@ Acil stop butonları, RFID sensörlü kapaklar ve tepe lambası yerleşimi layou
 | 3 | Makine girişinde konveyörün solunda |
 | 4 | Makine çıkışında konveyörün solunda |
 
-Acil stop'a basıldığında tüm fonksiyonlar durur. Reset prosedürü ve yeniden devreye alma koşulları **Bölüm 2.5**'te SSOT olarak verilmiştir; bu bölümde adımlar tekrarlanmaz.
+Acil stop'a basıldığında tüm fonksiyonlar durur. Reset prosedürü ve yeniden devreye alma koşulları **Bölüm 2.5**'te verilmiştir; bu bölümde adımlar tekrarlanmaz.
 
-Emniyet kapısı / sabit bariyer sayısı sıfırdır; makine güvenlik kategorisi **CAT3**'tür. Işık perdesi bulunmamaktadır (bkz. **Bölüm 2.3**).
+Emniyet kapısı / sabit bariyer sayısı sıfırdır; makine güvenlik kategorisi **Cat. 3**'tür (EN ISO 13849-1). Işık perdesi bulunmamaktadır (bkz. **Bölüm 2.1.3**).
 
 ---
 

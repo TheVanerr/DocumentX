@@ -20,7 +20,7 @@ Montaja başlamadan önce aşağıdaki koşullar sağlanmalıdır:
 | Ortam sıcaklığı | +10°C – +30°C |
 | Ortam | Nem ve korozif madde olmamalı |
 
-Kurulum alanı etraf boşlukları ve tavan yüksekliği **Bölüm 3.5.2**'de SSOT olarak verilmiştir. Tesisat hazırlığı: **6 bar** basınçlı hava (3/4"), **1 bar** su (1/2"), **380 V / 50 Hz / 3 faz** elektrik hattı (50 kW / 100 A — bkz. **Bölüm 3.3.3**, **3.3.5**).
+Kurulum alanı etraf boşlukları ve tavan yüksekliği **Bölüm 3.5.2**'de verilmiştir. Tesisat hazırlığı: **6 bar** basınçlı hava (3/4"), **1 bar** su (1/2"), **380 V / 50 Hz / 3 faz** elektrik hattı (50 kW / 100 A — bkz. **Bölüm 3.3.3**, **3.3.5**).
 
 **UYARI — Elektrik:** 380 V trifaze besleme bağlantısı yalnızca yetkili elektrik personeli tarafından yapılmalıdır.
 
@@ -42,8 +42,6 @@ Montaj aşağıdaki sırayla gerçekleştirilmelidir:
 | 8 | Faz yönü kontrol edildi ve düzeltildi | Bölüm 5.3.4 |
 | 9 | Kurulum testleri tamamlandı; makine kullanıma hazır | Bölüm 5.4, 5.5 |
 
-> **Not:** DATA dosyasında su ve elektrik bağlantıları aynı adım numarası altında listelenmiştir. Bu kılavuzda prosedür netliği için su (Adım 5) ve elektrik (Adım 6) ayrılmıştır.
-
 ---
 
 ## 5.1.3 Adım 3 — Teraziye alma
@@ -52,7 +50,6 @@ Makine **ayarlanabilir ayak** sistemi üzerine oturtulur. Ayaklar, makinenin **t
 
 **Beklenen sonuç:** Su terazisi ile her iki eksende makine dengeli; ayaklar zemine eşit temas eder.
 
-<!-- FOTO: Ayarlanabilir ayaklar — seviye ayarı (EKLENECEK: FOTO-5-1-1-ayarlanabilir-ayak.jpg) -->
 ![Ayarlanabilir ayaklar](../../assets/5.1/2.png)
 
 ---
@@ -61,7 +58,7 @@ Makine **ayarlanabilir ayak** sistemi üzerine oturtulur. Ayaklar, makinenin **t
 
 Bağlantı prosedürleri **Bölüm 5.3**'te adım adım verilmiştir. Özet:
 
-| Medya | Basınç / gerilim | Bağlantı | SSOT |
+| Medya | Basınç / gerilim | Bağlantı | Referans |
 |-------|------------------|----------|------|
 | Basınçlı hava | 6 bar | 3/4" | Bölüm 3.3.5 |
 | Su | 1 bar | 1/2" | Bölüm 3.3.5 |
@@ -75,11 +72,10 @@ Bağlantı sonrası HMI **Manuel Sayfası**'nda hava ve su bilgisi **yeşil** ya
 
 1. Trifaze besleme panoya bağlandıktan sonra makine elektriği **pano üzerinden** açılır.
 2. **Faz sıra rölesi** üzerinden faz yönü kontrol edilir.
-3. Faz yönü ters ise **iki faz değiştirilerek** düzeltilir.
+3. Faz yönü ters ise ana şalteri **OFF** alın; yetkili elektrik personeli **iki fazı** değiştirir; ardından şalteri açıp röleyi yeniden doğrular. Enerji açıkken faz değiştirmeyin.
 
 Motorlar tek yönde çalışacak şekilde tasarlanmıştır; yanlış faz sırası pompa yön hatasına yol açar (bkz. **Bölüm 6.3** — Motor yönü / faz kontrolü).
 
-<!-- FOTO: Faz sıra rölesi — pano içi (EKLENECEK: FOTO-5-1-5-faz-sira-role.jpg) -->
 ![Faz sıra rölesi](../../assets/5.1/3.png)
 
 ---
@@ -96,5 +92,4 @@ Adım 9'da makine **kullanıma hazır** kabul edilmeden önce aşağıdaki testl
 
 Operasyona geçmeden önce **Bölüm 6** OEM ayarlarının gözden geçirilmesi önerilir.
 
-<!-- FOTO: Montaj tamamlandı — tepe lambası sarı (EKLENECEK: FOTO-5-1-6-montaj-tamamlandi.jpg) -->
 ![Montaj tamamlandı](../../assets/5.1/4.png)

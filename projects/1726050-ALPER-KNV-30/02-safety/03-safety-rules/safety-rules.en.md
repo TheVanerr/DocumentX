@@ -1,62 +1,119 @@
-<!-- ÇEVİRİ GEREKLİ → EN | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 2.3 General operational safety rules
 
-# 2.3 Operasyonel güvenlik kuralları
+The following rules apply at all stages of machine use. In case of violation, stop the machine; do not recommission until safety conditions are established.
 
-Bu bölüm, makinenin çalıştırılması, temizlenmesi ve bakım işlemleri sırasında sahada uygulanması zorunlu olan somut ve yasal bağlayıcılığı en yüksek eylem kurallarını tanımlar. İş kazalarını, ciddi yaralanmaları ve tesis hasarlarını önlemek için tasarlanmış bu kuralların ihlali durumunda, makine derhal durdurulmalı ve operasyon güvenliği tekrar sağlanana kadar devreye alınmamalıdır. Bu kuralların etrafından dolaşılması (bypass edilmesi) durumunda üretici firma tüm hukuki sorumluluktan muaf tutulur.
-
----
-
-## 2.3.1 Tehlikeli enerji kontrolü (LOTO - kilitleme ve etiketleme) prosedürü
-Makine üzerinde yapılacak her türlü mekanik bakım, elektrik onarımı veya kabin içini ilgilendiren majör temizlik işlemi öncesinde "Tehlikeli Enerji Kontrolü" (Lockout/Tagout) prosedürünün uygulanması yasal bir zorunluluktur. Amaç, bakım sırasında makinenin başkası tarafından kazara çalıştırılmasını ve birikmiş enerjinin aniden boşalmasını engellemektir.
-
-**LOTO Uygulama Adımları:**
-1. **Elektriksel İzolasyon:** Makinenin ana besleme şalteri "0" (OFF) konumuna getirilmeli ve şalterin üzerindeki kilit yuvasına kişisel bir asma kilit takılmalıdır. Kilit üzerine, işlemi yapan teknisyenin adını ve "DİKKAT: BAKIM VAR, ÇALIŞTIRMAYIN" ibaresini içeren standart LOTO etiketi asılmalıdır.
-2. **Pnömatik İzolasyon:** Basınçlı hava hattını makineye bağlayan ana giriş vanası kapatılmalı ve kilitlenmelidir. Kapatma işleminden sonra, şartlandırıcı (FRL) üzerindeki veya sistemin içindeki tahliye valfi açılarak borularda kalmış olan artık (rezidüel) basınç tamamen atmosfere boşaltılmalıdır.
-3. **Hidrolik ve Su Hatları:** Şebeke suyu veya deiyonize su (DI) besleme vanaları kapatılmalı, sistemde kapalı devre basınçlı su kalmadığından emin olunmalıdır.
-4. **Doğrulama (Test):** Kilitler asıldıktan sonra, sistemde gerçekten enerji olmadığını doğrulamak için HMI ekranından veya kontrol panosundaki başlatma (Start) butonlarından makine çalıştırılmaya çalışılmalı, hiçbir tepki alınmadığı teyit edildikten sonra fiziksel müdahaleye başlanmalıdır.
+1. Do not operate the machine without reading the manual and receiving training (**See Chapter 1.1.3**).
+2. Do not disable or bypass safety devices (RFID, emergency stop).
+3. Do not open maintenance covers while the machine is running; apply LOTO before opening covers (**See Chapter 2.4**).
+4. Do not give start while there is an active fault on the HMI alarm screen (**See Chapter 11.1**).
+5. Verify that no objects that could jam remain on the conveyor line; pump-inlet valves must be open (**See Chapter 7.2**).
+6. In emergencies, press the nearest emergency-stop button (**See Chapter 2.5**).
 
 ---
 
-## 2.3.2 Acil durdurma (E-Stop) prosedürü ve güvenli resetleme
-Makine, standart olarak kontrol panosu üzerinde (ve konfigürasyona bağlı olarak yükleme/boşaltma istasyonlarında) kırmızı renkli, sarı zeminli Acil Durdurma butonları ile donatılmıştır. 
+# 2.4 Hazardous energy control — LOTO (lockout and tagout)
 
-**Acil Durdurma Butonunun Kullanılacağı Durumlar:**
-* Operatörün veya çevredekilerin can güvenliğini tehdit eden (sıkışma, elektrik çarpması vb.) herhangi bir tehlike anında.
-* Makine içerisinden anormal bir mekanik çarpma, sürtünme veya kırılma sesi geldiğinde.
-* Tesisat borularında, pompa bağlantılarında veya kabin kapaklarında ani ve büyük çaplı bir su/kimyasal sızıntısı yaşandığında.
-* Pano veya motorlardan yanık kokusu/duman geldiğinde.
+**WARNING — Energy-related injury:** During maintenance or cleaning performed without LOTO the machine can start accidentally; crushing, electric shock, hot-fluid and compressed-air injury can occur. Isolate, lock and tag all energy sources.
 
-**Tehlike Sonrası Güvenli Resetleme (Acknowledge) Prosedürü:**
-Acil durdurma butonuna basıldığında donanımsal güvenlik röleleri enerjiyi anında keser. Tehlike geçtiğinde sistemi yeniden başlatmak için sadece butonu serbest bırakmak yeterli değildir:
-1. Acil duruma sebep olan tehlike kaynağının tamamen ortadan kaldırıldığını fiziksel olarak denetleyin.
-2. Basılı olan kırmızı E-Stop butonunu üzerindeki ok yönünde (genellikle sağa doğru) hafifçe çevirerek serbest (kurulu) konuma getirin.
-3. HMI paneli üzerinden beliren "Emergency Stop / Acil Durdurma" alarmını **"Reset" (veya Acknowledge)** butonuna basarak silin. Güvenlik röleleri ve PLC (örn. S7-1214C) doğrulama sinyalini aldıktan sonra sistem yeniden çalışmaya hazır hale gelecektir.
+This procedure is applied before all work on the machine such as mechanical maintenance, electrical intervention, filter/tank cleaning, cover removal and similar. Other chapters give only the **Chapter 2.4** reference; steps are not repeated.
+
+## 2.4.1 Scope and energy sources
+
+| Energy type | Source | Isolation point |
+| :--- | :--- | :--- |
+| Electrical | 380 V, 3-phase | Main switch — on the electrical cabinet |
+| Pneumatic | 6 bar compressed air | Plant main air valve / machine inlet |
+| Water / process fluid | 1 bar water inlet, tanks | Water-inlet valves; tank emptying (if required) |
+| Thermal | Tank heaters | Cooling time after electrical isolation |
+| Mechanical | Conveyor, fan, pump | Electrical isolation; heed remaining motion risk |
+
+There is no hydraulic system.
+
+## 2.4.2 LOTO application procedure
+
+**Preparation**
+
+1. Determine the scope and duration of the maintenance or intervention.
+2. Inform affected personnel; announce that work is being performed on the machine.
+
+**Stopping the machine**
+
+3. Give the **Stop** command via HMI; wait for the machine to stop.
+4. If required, press the nearest **emergency stop** button (**See Chapter 2.5**).
+
+**Energy isolation**
+
+5. Set the **main switch** on the electrical cabinet to the OFF (0) position.
+6. Fit your personal **padlock** to the main-switch handle.
+7. Hang a **LOTO tag** on the lock; the tag shall include your name, the date and the statement "Do not operate — maintenance".
+8. Close the **compressed-air** inlet valve; lock the valve if possible.
+9. If there is **residual pressure** in the line, vent it at the regulator or a vent point. HMI does not operate while the main switch is off; do not verify pressure via HMI, do not re-energise the cabinet or the line.
+10. Close the **water-inlet** valves.
+11. If in-tank intervention is required, empty the process fluid by the appropriate procedure (**See Chapter 10**); wait for cooling against hot-fluid risk.
+
+**Verification**
+
+12. With the main switch off, verify that the HMI has shut down and that the start command remains **unresponsive**. If the HMI has not gone dark, assume supply has not been cut; do not enter the cabinet, call authorised electrical personnel.
+13. Visually check that there is no motion in conveyor, fan and pump zones.
+14. Do not remove covers or start intervention inside the enclosure until verification is complete.
+
+**After intervention**
+
+15. Refit all guards, covers and connections; remove tools and materials from the area.
+16. Only the **authorised person who fitted the lock** removes the LOTO lock and tag.
+17. Open the water and air valves; wait for utility pressures to return to normal (**See Chapter 3.3.5**).
+18. Open the main switch; apply the reset and preparation procedure (**See Chapter 2.5, 7.2**).
+
+**DANGER — Multiple personnel:** If more than one person is working on the same machine, a separate lock is fitted to each energy source; the group lock is not removed until the last person has left.
+
+The RFID safety sensor must not be bypassed. The sensor cannot be bridged or disabled.
 
 ---
 
-## 2.3.3 Mekanik ve termal güvenlik kuralları
-Makinenin iç kabinindeki yıkama mekaniği ve termal dinamikler, doğrudan insan temasına uygun değildir. Operasyonel aşamada aşağıdaki kurallara harfiyen uyulmalıdır:
+# 2.5 Emergency stop (E-Stop) and reset
 
-* **Basınçlı Su Jeti Tehlikesi:** Makinenin sepet ve nozul konfigürasyonu, suyu yüksek basınçla parça yüzeyine çarptırmak üzere tasarlanmıştır. Standart konfigürasyonda yer alan **ince ve düz atışlı (noktasal) nozullar** ile opsiyonel olarak sunulan **açılı yelpaze nozulların** her ikisi de, sistem çalışırken doğrudan cilt ile temas etmesi halinde ciddi kesiklere ve doku hasarlarına yol açabilecek kinetik enerjiye sahiptir. Bu nedenle yıkama pompaları devredeyken makine içine asla uzanılmamalıdır.
-* **Termal Şok ve Buhar Yanığı:** Yıkama döngüsü (cycle) aktifken ve iç kabin soğuma fazına (genellikle < 40°C) geçmeden, kapakların güvenlik kilitleri zorlanarak açılmaya çalışılmamalıdır. Erken açılan kapaklar, operatörün yüzüne ve solunum yollarına yoğun ve sıcak kimyasal buharın (buhar şoku) çarpmasına neden olur.
-* **Hareketli Mekanizmalar:** Otomatik pnömatik kapakların kapanma alanında veya döner tablanın/sepetin hareket yörüngesinde yabancı cisim veya el bulundurulmamalıdır.
+The machine has a total of **4** emergency-stop buttons:
+
+1. On the electrical cabinet
+2. On the right of the conveyor at machine infeed
+3. On the left of the conveyor at machine infeed
+4. On the left of the conveyor at machine outfeed
+
+When emergency stop is pressed, **every function** on the machine stops. Emergency stop shall be used only at the moment of emergency hazard, not in place of normal stop.
+
+**Situations in which emergency stop shall be used**
+
+- Trapping, falling or impact risk that threatens life safety
+- Sudden mechanical-fault noise or severe leakage
+- Electrical arcing, smoke or burning smell
+
+When a cover is opened, RFID already stops the machine; this is not a reason for emergency stop. After an RFID stop, close the cover, apply the **Chapter 2.4** requirements and then reset.
+
+**Reset procedure**
+
+1. Remove the physical threat; make the source of trapping, leakage or fault safe.
+2. **Release** (unlock) the pressed emergency-stop button.
+3. Press the **reset button** on the cabinet label **until** the reset lamp **lights**.
+4. Reset the emergency-stop / related alarm on the HMI alarm screen (**See Chapter 11.1**).
+5. Do not give start until the hazard has been completely removed.
+
+The reset procedure restores the safety function; giving start before the fault is cleared can cause a further stop or damage.
 
 ---
 
-## 2.3.4 Elektrik güvenliği ve izolasyon
-Endüstriyel yıkama makineleri su ve elektrik gibi birbiriyle temas etmemesi gereken iki ana unsuru yüksek kapasitelerde barındırır. 
+# 2.6 Personal protective equipment (PPE)
 
-* **Pano Güvenliği:** Makine çalışır durumdayken ana elektrik panosu ile motor/rezistans klemens kutularının kapakları daima kapalı ve mekanik olarak kilitli tutulmalıdır. 
-* **Su Temasından Kaçınma:** Temizlik işlemleri (hortumla yıkama vb.) sırasında elektrik panosuna, HMI ekranına, kablo giriş rakorlarına, invertör (sürücü) havalandırmalarına ve dışarıda bulunan valf bobinlerine doğrudan basınçlı su tutulması kesinlikle yasaktır.
-* **Topraklama:** Makinenin şasi topraklaması hayati önem taşır. İşletme, topraklama hattının (PE) direncini ilgili yasal mevzuatlara uygun olarak periyodik şekilde (en az yılda bir kez) ölçtürmeli ve raporlamalıdır. Topraklama bağlantısı zarar görmüş bir makine asla çalıştırılmamalıdır.
+The employer is obliged to provide task-based PPE and to supervise its use. The following matrix defines minimum requirements; if local legislation is stricter, it is followed.
 
----
+| Task | Work clothing | Steel-toe footwear | Gloves | Protective goggles | Respiratory protection |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| HMI monitoring / start-stop | ✓ | ✓ | — | — | — |
+| Patrol around conveyor / machine | ✓ | ✓ | — | ✓ (splash risk) | — |
+| Filter and tank cleaning | ✓ | ✓ | ✓ (chemical-suitable) | ✓ | Filtered mask if required |
+| Mechanical maintenance | ✓ | ✓ | ✓ | ✓ | — |
+| Electrical-cabinet intervention | — | ✓ | Insulating (when required) | ✓ | — |
+| Work near hot tank / heater | ✓ | ✓ | ✓ (heat-resistant) | ✓ | — |
 
-## 2.3.5 Güvenlik donanımlarının iptal edilmemesi (bypass yasağı)
-Makinenin üzerindeki donanımsal ve yazılımsal iş güvenliği mimarisi bir bütündür ve "sıfır tolerans" prensibiyle çalışır.
+**CAUTION — Slippery floor:** In case of leakage or process-water slip, non-slip footwear and careful movement are mandatory (**See Chapter 10**).
 
-* Manyetik veya mekanik kapı kilitlerinin (interlock),
-* Güvenlik rölelerinin ve siviçlerin,
-* Tank seviye sensörlerinin (rezistansın susuz çalışmasını önleyen) veya termostat limitörlerinin,
-
-Herhangi bir arıza veya üretimi hızlandırma bahanesiyle sökülmesi, bantlanarak "sürekli kapalı" konuma getirilmesi, elektrik panosu içinden köprülenmesi (kısa devre yapılması) veya PLC yazılımı üzerinden parametre değiştirilerek devre dışı bırakılması **kesinlikle yasaktır.** Bu güvenlik zincirindeki herhangi bir manipülasyon (bypass işlemi), operatörü doğrudan ölümcül risklerle baş başa bırakır. Tespit edildiği an makinenin kullanımı derhal durdurulur ve makine süresiz olarak üretici garantisi dışına çıkarılır.
+Short-duration visitors shall be informed by the employer before entering the active process zone and shall be equipped with minimum PPE (footwear, goggles).

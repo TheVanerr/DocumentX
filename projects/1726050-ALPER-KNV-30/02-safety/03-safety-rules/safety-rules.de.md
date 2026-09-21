@@ -1,62 +1,119 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 2.3 Allgemeine betriebliche Sicherheitsregeln
 
-# 2.3 OPERASYONEL GÜVENLİK KURALLARI
+Die folgenden Regeln gelten in allen Nutzungsphasen der Maschine. Bei Verletzung die Maschine stillsetzen; nicht wieder in Betrieb nehmen, bis die Sicherheitsbedingungen hergestellt sind.
 
-Bu bölüm, makinenin çalıştırılması, temizlenmesi ve bakım işlemleri sırasında sahada uygulanması zorunlu olan somut ve yasal bağlayıcılığı en yüksek eylem kurallarını tanımlar. İş kazalarını, ciddi yaralanmaları ve tesis hasarlarını önlemek için tasarlanmış bu kuralların ihlali durumunda, makine derhal durdurulmalı ve operasyon güvenliği tekrar sağlanana kadar devreye alınmamalıdır. Bu kuralların etrafından dolaşılması (bypass edilmesi) durumunda üretici firma tüm hukuki sorumluluktan muaf tutulur.
-
----
-
-## 2.3.1 Tehlikeli ENerji Kontrolü (LOTO - Kilitleme ve Etiketleme) Prosedürü
-Makine üzerinde yapılacak her türlü mekanik bakım, elektrik onarımı veya kabin içini ilgilendiren majör temizlik işlemi öncesinde "Tehlikeli Enerji Kontrolü" (Lockout/Tagout) prosedürünün uygulanması yasal bir zorunluluktur. Amaç, bakım sırasında makinenin başkası tarafından kazara çalıştırılmasını ve birikmiş enerjinin aniden boşalmasını engellemektir.
-
-**LOTO Uygulama Adımları:**
-1. **Elektriksel İzolasyon:** Makinenin ana besleme şalteri "0" (OFF) konumuna getirilmeli ve şalterin üzerindeki kilit yuvasına kişisel bir asma kilit takılmalıdır. Kilit üzerine, işlemi yapan teknisyenin adını ve "DİKKAT: BAKIM VAR, ÇALIŞTIRMAYIN" ibaresini içeren standart LOTO etiketi asılmalıdır.
-2. **Pnömatik İzolasyon:** Basınçlı hava hattını makineye bağlayan ana giriş vanası kapatılmalı ve kilitlenmelidir. Kapatma işleminden sonra, şartlandırıcı (FRL) üzerindeki veya sistemin içindeki tahliye valfi açılarak borularda kalmış olan artık (rezidüel) basınç tamamen atmosfere boşaltılmalıdır.
-3. **Hidrolik ve Su Hatları:** Şebeke suyu veya deiyonize su (DI) besleme vanaları kapatılmalı, sistemde kapalı devre basınçlı su kalmadığından emin olunmalıdır.
-4. **Doğrulama (Test):** Kilitler asıldıktan sonra, sistemde gerçekten enerji olmadığını doğrulamak için HMI ekranından veya kontrol panosundaki başlatma (Start) butonlarından makine çalıştırılmaya çalışılmalı, hiçbir tepki alınmadığı teyit edildikten sonra fiziksel müdahaleye başlanmalıdır.
+1. Die Maschine nicht ohne Lesen der Anleitung und ohne Schulung betreiben (**Siehe Kapitel 1.1.3**).
+2. Sicherheitseinrichtungen (RFID, Not-Halt) nicht außer Betrieb setzen oder umgehen.
+3. Wartungsklappen bei laufender Maschine nicht öffnen; vor dem Öffnen der Klappen LOTO anwenden (**Siehe Kapitel 2.4**).
+4. Bei aktivem Fehler auf dem HMI-Alarmbildschirm keinen Start geben (**Siehe Kapitel 11.1**).
+5. Bestätigen, dass auf der Förderstrecke keine klemmenden Gegenstände verblieben sind; die Ventile vor den Pumpen müssen offen sein (**Siehe Kapitel 7.2**).
+6. In Notfällen den nächstgelegenen Not-Halt-Taster drücken (**Siehe Kapitel 2.5**).
 
 ---
 
-## 2.3.2 Acil Durdurma (E-Stop) Prosedürü ve GüvENli Resetleme
-Makine, standart olarak kontrol panosu üzerinde (ve konfigürasyona bağlı olarak yükleme/boşaltma istasyonlarında) kırmızı renkli, sarı zeminli Acil Durdurma butonları ile donatılmıştır. 
+# 2.4 Kontrolle gefährlicher Energien — LOTO (Sperren und Kennzeichnen)
 
-**Acil Durdurma Butonunun Kullanılacağı Durumlar:**
-* Operatörün veya çevredekilerin can güvenliğini tehdit eden (sıkışma, elektrik çarpması vb.) herhangi bir tehlike anında.
-* Makine içerisinden anormal bir mekanik çarpma, sürtünme veya kırılma sesi geldiğinde.
-* Tesisat borularında, pompa bağlantılarında veya kabin kapaklarında ani ve büyük çaplı bir su/kimyasal sızıntısı yaşandığında.
-* Pano veya motorlardan yanık kokusu/duman geldiğinde.
+**WARNUNG — Energiebedingte Verletzung:** Bei Wartung oder Reinigung ohne LOTO kann die Maschine unbeabsichtigt anlaufen; Quetschen, Stromschlag, Verletzung durch heiße Flüssigkeit und Druckluft können entstehen. Alle Energiequellen isolieren, sperren und kennzeichnen.
 
-**Tehlike Sonrası Güvenli Resetleme (Acknowledge) Prosedürü:**
-Acil durdurma butonuna basıldığında donanımsal güvenlik röleleri enerjiyi anında keser. Tehlike geçtiğinde sistemi yeniden başlatmak için sadece butonu serbest bırakmak yeterli değildir:
-1. Acil duruma sebep olan tehlike kaynağının tamamen ortadan kaldırıldığını fiziksel olarak denetleyin.
-2. Basılı olan kırmızı E-Stop butonunu üzerindeki ok yönünde (genellikle sağa doğru) hafifçe çevirerek serbest (kurulu) konuma getirin.
-3. HMI paneli üzerinden beliren "Emergency Stop / Acil Durdurma" alarmını **"Reset" (veya Acknowledge)** butonuna basarak silin. Güvenlik röleleri ve PLC (örn. S7-1214C) doğrulama sinyalini aldıktan sonra sistem yeniden çalışmaya hazır hale gelecektir.
+Dieses Verfahren wird vor allen Arbeiten an der Maschine angewendet, wie mechanische Wartung, Elektroeingriff, Filter-/Tankreinigung, Klappenausbau und Ähnliches. Andere Kapitel geben nur den Verweis **Kapitel 2.4**; die Schritte werden nicht wiederholt.
+
+## 2.4.1 Umfang und Energiequellen
+
+| Energieart | Quelle | Isolationspunkt |
+| :--- | :--- | :--- |
+| Elektrisch | 380 V, 3 Phasen | Hauptschalter — am Elektroschrank |
+| Pneumatisch | 6 bar Druckluft | Hauptluftventil der Anlage / Maschineneingang |
+| Wasser / Prozessflüssigkeit | 1 bar Wassereingang, Tanks | Wassereinlassventile; Tankentleerung (falls erforderlich) |
+| Thermisch | Tankheizer | Abkühlzeit nach elektrischer Isolation |
+| Mechanisch | Förderband, Lüfter, Pumpe | Elektrische Isolation; Restrisiko der Bewegung beachten |
+
+Es ist kein Hydrauliksystem vorhanden.
+
+## 2.4.2 LOTO-Anwendungsverfahren
+
+**Vorbereitung**
+
+1. Umfang und Dauer der Wartung oder des Eingriffs festlegen.
+2. Betroffenes Personal informieren; bekanntgeben, dass an der Maschine gearbeitet wird.
+
+**Stillsetzen der Maschine**
+
+3. Über HMI den Befehl **Stop** geben; warten, bis die Maschine stillsteht.
+4. Falls erforderlich den nächstgelegenen **Not-Halt**-Taster drücken (**Siehe Kapitel 2.5**).
+
+**Energieisolation**
+
+5. Den **Hauptschalter** am Elektroschrank in die Stellung OFF (0) bringen.
+6. Das persönliche **Vorhängeschloss** am Hebel des Hauptschalters anbringen.
+7. Ein **LOTO-Etikett** am Schloss anhängen; auf dem Etikett sollen Name, Datum und der Wortlaut "Nicht betreiben — Wartung" stehen.
+8. Das **Druckluft**-Einlassventil schließen; das Ventil nach Möglichkeit sperren.
+9. Falls **Restdruck** in der Leitung vorhanden ist, am Regler oder an einem Entlüftungspunkt entleeren. Bei ausgeschaltetem Hauptschalter arbeitet das HMI nicht; den Druck nicht über HMI prüfen, Schrank oder Leitung nicht wieder unter Spannung setzen.
+10. Die **Wassereinlass**-Ventile schließen.
+11. Falls ein Eingriff im Tank erforderlich ist, die Prozessflüssigkeit nach dem geeigneten Verfahren entleeren (**Siehe Kapitel 10**); wegen heißer Flüssigkeit auf Abkühlung warten.
+
+**Verifizierung**
+
+12. Bei ausgeschaltetem Hauptschalter bestätigen, dass das HMI ausgeschaltet ist und der Startbefehl **ohne Reaktion** bleibt. Wenn das HMI nicht dunkel geworden ist, annehmen, dass die Versorgung nicht unterbrochen ist; nicht in den Schrank gehen, befugtes Elektropersonal rufen.
+13. Förderband-, Lüfter- und Pumpenbereiche visuell auf Bewegungsfreiheit prüfen.
+14. Klappen nicht ausbauen und nicht in die Verkleidung eintreten, bevor die Verifizierung abgeschlossen ist.
+
+**Nach dem Eingriff**
+
+15. Alle Schutzvorrichtungen, Klappen und Verbindungen wieder anbringen; Werkzeuge und Materialien aus dem Bereich entfernen.
+16. Nur die **befugte Person, die das Schloss angebracht hat**, entfernt Schloss und Etikett von LOTO.
+17. Wasser- und Luftventile öffnen; warten, bis die Mediendrücke wieder normal sind (**Siehe Kapitel 3.3.5**).
+18. Den Hauptschalter einschalten; Reset- und Vorbereitungsverfahren anwenden (**Siehe Kapitel 2.5, 7.2**).
+
+**GEFAHR — Mehrere Personen:** Wenn mehrere Personen an derselben Maschine arbeiten, wird an jeder Energiequelle ein eigenes Schloss angebracht; das Gruppenschloss wird nicht entfernt, bevor die letzte Person den Bereich verlassen hat.
+
+Der RFID-Sicherheitssensor darf nicht umgangen werden. Der Sensor kann nicht überbrückt oder außer Betrieb gesetzt werden.
 
 ---
 
-## 2.3.3 Mekanik ve Termal GüvENlik Kuralları
-Makinenin iç kabinindeki yıkama mekaniği ve termal dinamikler, doğrudan insan temasına uygun değildir. Operasyonel aşamada aşağıdaki kurallara harfiyen uyulmalıdır:
+# 2.5 Not-Halt (E-Stop) und Reset
 
-* **Basınçlı Su Jeti Tehlikesi:** Makinenin sepet ve nozul konfigürasyonu, suyu yüksek basınçla parça yüzeyine çarptırmak üzere tasarlanmıştır. Standart konfigürasyonda yer alan **ince ve düz atışlı (noktasal) nozullar** ile opsiyonel olarak sunulan **açılı yelpaze nozulların** her ikisi de, sistem çalışırken doğrudan cilt ile temas etmesi halinde ciddi kesiklere ve doku hasarlarına yol açabilecek kinetik enerjiye sahiptir. Bu nedenle yıkama pompaları devredeyken makine içine asla uzanılmamalıdır.
-* **Termal Şok ve Buhar Yanığı:** Yıkama döngüsü (cycle) aktifken ve iç kabin soğuma fazına (genellikle < 40°C) geçmeden, kapakların güvenlik kilitleri zorlanarak açılmaya çalışılmamalıdır. Erken açılan kapaklar, operatörün yüzüne ve solunum yollarına yoğun ve sıcak kimyasal buharın (buhar şoku) çarpmasına neden olur.
-* **Hareketli Mekanizmalar:** Otomatik pnömatik kapakların kapanma alanında veya döner tablanın/sepetin hareket yörüngesinde yabancı cisim veya el bulundurulmamalıdır.
+An der Maschine befinden sich insgesamt **4** Not-Halt-Taster:
+
+1. Am Elektroschrank
+2. Am Maschineneinlauf rechts vom Förderband
+3. Am Maschineneinlauf links vom Förderband
+4. Am Maschinenauslauf links vom Förderband
+
+Beim Drücken des Not-Halts stoppt **jede Funktion** an der Maschine. Not-Halt darf nur im Moment einer Notgefahr verwendet werden, nicht anstelle des normalen Stops.
+
+**Situationen, in denen Not-Halt verwendet werden soll**
+
+- Einklemmen, Sturz oder Aufprallrisiko, das die Lebenssicherheit bedroht
+- Plötzliches mechanisches Störgeräusch oder starke Leckage
+- Lichtbogen, Rauch oder Brandgeruch
+
+Beim Öffnen einer Klappe stoppt RFID die Maschine bereits; dies ist kein Grund für Not-Halt. Nach einem RFID-Halt die Klappe schließen, die Anforderungen in **Kapitel 2.4** anwenden und anschließend resetten.
+
+**Reset-Verfahren**
+
+1. Die physische Bedrohung beseitigen; die Quelle von Einklemmen, Leckage oder Störung sicher machen.
+2. Den gedrückten Not-Halt-Taster **lösen** (unlock).
+3. Den **Reset-Taster** auf dem Schranketikett **drücken, bis** die Reset-Lampe **leuchtet**.
+4. Den Not-Halt- / zugehörigen Alarm auf dem HMI-Alarmbildschirm resetten (**Siehe Kapitel 11.1**).
+5. Keinen Start geben, bevor die Gefahr vollständig beseitigt ist.
+
+Das Reset-Verfahren stellt die Sicherheitsfunktion wieder her; Start vor Behebung der Störung kann zu erneutem Halt oder Schaden führen.
 
 ---
 
-## 2.3.4 Elektrik GüvENliği ve İzolasyon
-Endüstriyel yıkama makineleri su ve elektrik gibi birbiriyle temas etmemesi gereken iki ana unsuru yüksek kapasitelerde barındırır. 
+# 2.6 Persönliche Schutzausrüstung (PSA)
 
-* **Pano Güvenliği:** Makine çalışır durumdayken ana elektrik panosu ile motor/rezistans klemens kutularının kapakları daima kapalı ve mekanik olarak kilitli tutulmalıdır. 
-* **Su Temasından Kaçınma:** Temizlik işlemleri (hortumla yıkama vb.) sırasında elektrik panosuna, HMI ekranına, kablo giriş rakorlarına, invertör (sürücü) havalandırmalarına ve dışarıda bulunan valf bobinlerine doğrudan basınçlı su tutulması kesinlikle yasaktır.
-* **Topraklama:** Makinenin şasi topraklaması hayati önem taşır. İşletme, topraklama hattının (PE) direncini ilgili yasal mevzuatlara uygun olarak periyodik şekilde (en az yılda bir kez) ölçtürmeli ve raporlamalıdır. Topraklama bağlantısı zarar görmüş bir makine asla çalıştırılmamalıdır.
+Der Arbeitgeber ist verpflichtet, aufgabenbezogene PSA bereitzustellen und deren Verwendung zu überwachen. Die folgende Matrix definiert Mindestanforderungen; wenn die lokale Gesetzgebung strenger ist, wird ihr gefolgt.
 
----
+| Aufgabe | Arbeitskleidung | Schuhe mit Stahlkappe | Handschuhe | Schutzbrille | Atemschutz |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| HMI-Überwachung / Start-Stop | ✓ | ✓ | — | — | — |
+| Rundgang um Förderband / Maschine | ✓ | ✓ | — | ✓ (Spritzrisiko) | — |
+| Filter- und Tankreinigung | ✓ | ✓ | ✓ (chemikaliengeeignet) | ✓ | Filtermaske falls erforderlich |
+| Mechanische Wartung | ✓ | ✓ | ✓ | ✓ | — |
+| Eingriff am Elektroschrank | — | ✓ | Isolierend (bei Bedarf) | ✓ | — |
+| Arbeit nahe heißem Tank / Heizer | ✓ | ✓ | ✓ (hitzebeständig) | ✓ | — |
 
-## 2.3.5 GüvENlik Donanımlarının IPtal Edilmemesi (Bypass Yasağı)
-Makinenin üzerindeki donanımsal ve yazılımsal iş güvenliği mimarisi bir bütündür ve "sıfır tolerans" prensibiyle çalışır.
+**VORSICHT — Rutschiger Boden:** Bei Leckage oder Rutschen durch Prozesswasser sind rutschfeste Schuhe und vorsichtige Bewegung verpflichtend (**Siehe Kapitel 10**).
 
-* Manyetik veya mekanik kapı kilitlerinin (interlock),
-* Güvenlik rölelerinin ve siviçlerin,
-* Tank seviye sensörlerinin (rezistansın susuz çalışmasını önleyen) veya termostat limitörlerinin,
-
-Herhangi bir arıza veya üretimi hızlandırma bahanesiyle sökülmesi, bantlanarak "sürekli kapalı" konuma getirilmesi, elektrik panosu içinden köprülenmesi (kısa devre yapılması) veya PLC yazılımı üzerinden parametre değiştirilerek devre dışı bırakılması **kesinlikle yasaktır.** Bu güvenlik zincirindeki herhangi bir manipülasyon (bypass işlemi), operatörü doğrudan ölümcül risklerle baş başa bırakır. Tespit edildiği an makinenin kullanımı derhal durdurulur ve makine süresiz olarak üretici garantisi dışına çıkarılır.
+Kurzzeitbesucher müssen vom Arbeitgeber informiert werden, bevor sie die aktive Prozesszone betreten, und mit Mindest-PSA (Schuhe, Brille) ausgestattet werden.

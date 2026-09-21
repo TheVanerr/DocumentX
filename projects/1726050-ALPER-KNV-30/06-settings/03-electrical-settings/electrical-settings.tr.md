@@ -58,7 +58,6 @@ Analog basınç ölçeklendirmesi operatör tarafından yapılmaz. Sıcaklık ay
 
 **Anormal durum:** Isıtıcı devreye girmiyorsa seviye sensörü, termik ve kaçak akım koruma durumunu HMI Manuel Sayfası'ndan kontrol edin (bkz. **Bölüm 3.4.5**, **Bölüm 11**).
 
-<!-- FOTO: HMI Ayarlar Sayfası — sıcaklık ve yağ sıyırıcı -->
 ![HMI sıcaklık ayarı](../../assets/6.3/1.png)
 
 ---
@@ -81,7 +80,6 @@ HMI açılış ekranında sağ üst köşedeki bayrak simgeleri ile dil seçilir
 
 Doğru tarih/saat, alarm geçmişi ve bakım kayıtlarının izlenebilirliği için gereklidir.
 
-<!-- FOTO: HMI açılış — dil seçimi -->
 ![HMI dil ayarı](../../assets/6.3/2.png)
 
 ---

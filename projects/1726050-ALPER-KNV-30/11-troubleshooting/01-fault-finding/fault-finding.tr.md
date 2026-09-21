@@ -6,7 +6,7 @@ Arıza teşhisinde önce HMI'daki **aktif alarm kodu** okunur; ardından bu böl
 
 ## 11.1.1 Genel teşhis adımları
 
-1. Makine durmuşsa tepe lambası rengini kontrol edin — **kırmızı** alarm, **sarı** hazır, **yeşil** çalışıyor (bkz. **Bölüm 3.4.6**).
+1. Makine durmuşsa tepe lambası rengini kontrol edin — **kırmızı** alarm, **sarı** hazır, **yeşil** çalışıyor (bkz. **Bölüm 3.4.10**).
 2. HMI **Alarm Sayfası**'nı açın; aktif alarm **No.**, **Metin** ve zaman bilgisini okuyun.
 3. Aşağıdaki **11.1.2** PLC alarm tablosunda kodu bulun.
 4. **Sorun açıklaması** ve **Olası neden** sütunlarını okuyun.
@@ -26,7 +26,7 @@ Aşağıdaki tablo, PLC/HMI'da tanımlı **31 alarm** kaydının tam listesidir.
 
 | # | Kod | PLC alarm metni | Sorun açıklaması | Olası neden | Olası çözüm | Yetkinlik |
 |:-:|-----|-----------------|------------------|-------------|-------------|:---------:|
-| 1 | Error-410 | Faz Sırası Hatalı | Trifaze besleme faz sırası yanlış; faz sıra rölesi trip verdi. Motor yönü hatalı olabilir. | Ters faz bağlantısı; faz kayması; röle arızası | Faz sıra rölesini kontrol edin; gerekirse **iki faz değiştirin** — bkz. **5.3.4**, **6.3** | Elektrik |
+| 1 | Error-410 | Faz Sırası Hatalı | Trifaze besleme faz sırası yanlış; faz sıra rölesi trip verdi. Motor yönü hatalı olabilir. | Ters faz bağlantısı; faz kayması; röle arızası | Ana şalter **OFF**; faz sıra rölesini kontrol edin; gerekirse **iki faz değiştirin** — bkz. **5.3.4**, **11.3.1**. Enerji açıkken faz değiştirmeyin. | Elektrik |
 | 2 | Error-422 | Kapak Kapalı Değil | Bakım/güvenlik kapağı kapalı algılanmıyor; RFID sensör devreyi onaylamıyor. Makine start vermez veya durur. | Kapak açık; RFID etiket hizası bozuk; sensör/kablo arızası | Kapağı tam kapatın; RFID hizasını kontrol edin; bypass **yapmayın** — bkz. **2.4**, **11.7** | Bakım |
 | 3 | Error-229 | Acil Stop Devrede | Acil stop emniyet devresi aktif; makine güvenlik nedeniyle kilitli. | Acil stop butonu basılı; emniyet rölesi açık | Tehlikeyi giderin; tüm acil stopları serbest bırakın; **2.5** reset → **7.3.2** | Bakım |
 | 4 | Error-100 | Yıkama Pompası Motoru Hata | Yıkama pompası motor koruma devresi trip veya sürücü hata verdi. Yıkama adımı çalışmaz. | Pompa önü vana kapalı; motor aşırı yük; sıkışma; termik trip | Pompa önü vanayı açın (**7.2.5**); LOTO ile motor/koruma kontrolü — bkz. **11.3.2** | Bakım / Elektrik |
@@ -51,7 +51,7 @@ Aşağıdaki tablo, PLC/HMI'da tanımlı **31 alarm** kaydının tam listesidir.
 | 23 | Error-301 | Yıkama Otomatik Dolum Vanası Kapanamadı | Yıkama dolum vanası kapanmadı; sürekli dolum veya seviye kontrolü bozulabilir. | Bobin arızası; mekanik sıkışma; kir/conta | LOTO; vana temizlik veya değişim — bkz. **11.5.2** | Bakım |
 | 24 | Error-302 | Durulama Otomatik Dolum Vanası Açılamadı | Durulama tankı otomatik dolum vanası açılmadı. | Hava basıncı yok; bobin/mekanik arıza | **6 bar** hava; vana kontrolü — bkz. **11.5.2** | Bakım |
 | 25 | Error-303 | Durulama Otomatik Dolum Vanası Kapanamadı | Durulama dolum vanası kapanmadı. | Bobin arızası; mekanik sıkışma | LOTO; vana kontrolü — bkz. **11.5.2** | Bakım |
-| 26 | Error-461 | Çıkış Konveyöründe Ürün Algılandı. Çalışmaya Devam Etmek İçin Ürünün Alındığını Onaylayınız! | Çıkış konveyöründe parça algılandı; robot almadan makine devam etmez. | Robot parçayı almadı; sensör algılama; parça konveyörde kaldı | Robot çıkış prosedürünü kontrol edin; parçayı aldırın; HMI **Ürün Alındı Onay** (**3.4.3**) | Hat operatörü / Bakım |
+| 26 | Error-461 | Çıkış Konveyöründe Ürün Algılandı. Çalışmaya Devam Etmek İçin Ürünün Alındığını Onaylayınız! | Çıkış konveyöründe parça algılandı; robot almadan makine devam etmez. | Robot parçayı almadı; sensör algılama; parça konveyörde kaldı | Robot çıkış prosedürünü kontrol edin; parçayı aldırın; HMI **Ürün Alındı Onay** (**3.4.6**) — hat sorumlusu / bakım | Hat sorumlusu / Bakım |
 | 27 | Error-305 | Aktarma Vanası Kapanamadı | Tanklar arası aktarma vanası kapanmadı. | Bobin arızası; mekanik sıkışma | LOTO; aktarma vanası kontrolü — bkz. **11.5.2** | Bakım |
 | 28 | Error-236 | Giriş Su Basıncı Düşük | Tesis su giriş basıncı minimum altında (**1 bar**). Dolum ve proses etkilenir. | Su vanası kapalı; tesis basıncı düşük | Su vanasını açın; **1 bar** üzeri basınç sağlayın; HMI manuel sayfa (**3.4.5**) | Bakım |
 | 29 | Error-235 | Giriş Hava Basıncı Düşük | Tesis hava basıncı minimum altında (**6 bar**). Pnömatik vanalar çalışmaz. | Hava hattı kapalı; regülatör düşük; kompresör yetersiz | **6 bar** hava bağlantısı; regülatör; HMI manuel sayfa (**6.5**) | Bakım |
@@ -64,7 +64,7 @@ Aşağıdaki tablo, PLC/HMI'da tanımlı **31 alarm** kaydının tam listesidir.
 
 ## 11.1.3 Genel arıza tablosu
 
-DATA dosyasında ayrıntılı genel arıza kaydı tanımlanmamıştır. Aşağıdaki tablo, alarm kodu olmayan veya belirsiz belirtiler için ilk teşhis rehberidir.
+Aşağıdaki tablo, alarm kodu olmayan veya belirsiz belirtiler için ilk teşhis rehberidir.
 
 | Belirti | Olası neden | Kontrol | Çözüm |
 |---------|-------------|---------|-------|
@@ -73,7 +73,7 @@ DATA dosyasında ayrıntılı genel arıza kaydı tanımlanmamıştır. Aşağı
 | Sıcaklık yükselmiyor | Isıtıcı trip; reçete sıcaklığı; faz hatası | Error-150/151/170–172; hazırlık durumu | Kaçak akım trip giderin; reçete kontrolü (**6.3**, **8**); faz kontrolü (**5.3.4**) |
 | Pompa çalışmıyor, alarm yok | Pompa önü vana kapalı; faz yönü ters | Vana konumu; pompa yönü | Vanayı açın; faz sırası — **5.3.4** |
 | Tekrarlayan filtre tıkanması | Yağ/kirlilik yüksek; filtre periyodu aşıldı | Filtre durumu; proses suyu | **10.1.3**, **10.1.4** temizlik; yağ sıyırıcı kontrolü |
-| Robot hattı duruyor, makine yeşil | Error-461; robot arayüzü | Çıkış konveyörü sensörü; robot programı | Parçayı aldırın; HMI onay — **3.4.3** |
+| Robot hattı duruyor, makine yeşil | Error-461; robot arayüzü | Çıkış konveyörü sensörü; robot programı | Parçayı aldırın; HMI onay — **3.4.6** |
 
 ---
 

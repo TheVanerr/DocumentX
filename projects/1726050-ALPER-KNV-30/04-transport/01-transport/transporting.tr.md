@@ -1,6 +1,6 @@
 # 4.1 Taşıma ve nakliye
 
-Makine **plastik** ambalajında sevk edilir. Montajlı taşıma ağırlığı **1300 kg**'dır; demonte parça taşıması bu proje kapsamında öngörülmemiştir — taşıma sırasında herhangi bir modül ayrılmaz. Kaldırma aparatı **forklift çatalı**dır; makinede forklift çatal girişi **mevcuttur** (alt taşıma profilleri). Taşıma sabitleme ve bağlama, forklift ile kontrollü kaldırma/indirme prosedürü ile sağlanır; ayrı travers, sapan veya vinç kullanılmaz.
+Makine **konteyner** ambalajında sevk edilir. Montajlı taşıma ağırlığı **1300 kg**'dır; demonte parça taşıması bu proje kapsamında öngörülmemiştir — taşıma sırasında herhangi bir modül ayrılmaz. Kaldırma aparatı **forklift çatalı**dır; makinede forklift çatal girişi **mevcuttur** (alt taşıma profilleri). Taşıma sabitleme ve bağlama, forklift ile kontrollü kaldırma/indirme prosedürü ile sağlanır; ayrı travers, sapan veya vinç kullanılmaz.
 
 Dış boyutlar kurulum alanı planlamasında dikkate alınmalıdır (bkz. **Bölüm 3.3.1**). Ağırlık merkezi konveyör hattının ortasındadır; çatal konumu buna göre ayarlanmalıdır (bkz. **Bölüm 3.5.4**).
 
@@ -33,7 +33,7 @@ Forklift operatörü geçerli sertifikaya sahip olmalıdır. Forklift güvenli �
 1. Taşıma rotasını ve hedef noktayı önceden belirleyin; engel, eğim ve zemin taşıma kapasitesini kontrol edin.
 2. Makinenin tesis **elektrik, su ve basınçlı hava** bağlantılarının söküldüğünü doğrulayın.
 3. Ana şalterin **OFF (0)** konumunda olduğunu kontrol edin.
-4. Uzun mesafe veya depolama öncesi yıkama ve durulama tanklarındaki proses sıvısını boşaltın; dolu tank taşıması ağırlık merkezini değiştirir ve devrilme riski oluşturur (bkz. **Bölüm 10.4**).
+4. Uzun mesafe veya depolama öncesi yıkama ve durulama tanklarındaki proses sıvısını boşaltın; dolu tank taşıması ağırlık merkezini değiştirir ve devrilme riski oluşturur (bkz. **Bölüm 10.1.5**).
 5. Sarkan kablo, hortum ve gevşek parça kalmadığını kontrol edin.
 6. Konteyner ambalajının taşımaya uygun, hasarsız ve sabitlemesinin yeterli olduğunu kontrol edin.
 7. Forklift operatörü ve yönlendirici personeli (gerekirse) görevlendirin.
@@ -63,7 +63,6 @@ Makine kurulum alanına ulaştığında ambalaj, taşıma hasarını önleyecek 
 6. Hedef noktada makineyi yavaşça indirin; tüm **ayarlanabilir ayakların** zemine eşit oturduğunu kontrol edin.
 7. Kurulum alanına yerleştirdikten sonra **Bölüm 5** — Montaj prosedürüne geçin.
 
-<!-- FOTO: Forklift çatal hizalama — alt taşıma profilleri (bkz. Bölüm 3.5.4; EKLENECEK: FOTO-3-5-4-forklift-noktalari.jpg) -->
 ![Forklift çatal giriş noktaları](../../assets/4.1/1.png)
 
 **Beklenen sonuç:** Makine hedef noktada dengeli ve hasarsız konumlanmış olmalı; ayaklar zemine tam temas etmelidir.
@@ -79,4 +78,4 @@ Makine kurulum alanına ulaştığında ambalaj, taşıma hasarını önleyecek 
 3. Elektrik panosu kapağının kapalı ve kuru olduğunu kontrol edin.
 4. Hasar yoksa kuruluma geçin (bkz. **Bölüm 5.1**); hasar varsa kayıt altına alın ve servis bildirimi yapın.
 
-Kurulum alanı zemin ve etraf boşluk gereksinimleri **Bölüm 3.5.2**'de SSOT olarak verilmiştir.
+Kurulum alanı zemin ve etraf boşluk gereksinimleri **Bölüm 3.5.2**'de verilmiştir.

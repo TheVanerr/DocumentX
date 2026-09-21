@@ -6,7 +6,7 @@ Semboller üç grupta toplanır: **uyarı** (tehlike ve yasak), **KKD** (kişise
 
 ## 1.2.1 Sinyal kelimeleri (kılavuz metni)
 
-Kılavuz metninde kullanılan sinyal kelimeleri ISO 3864-2 ile uyumludur. Her uyarı dört bileşeni içermelidir: sinyal kelimesi, tehlike türü, olası sonuç ve önleme yöntemi. Bu yapı, personelin riski hızlı değerlendirmesini ve doğru önlemi almasını sağlar; eksik veya belirsiz uyarılar yanlış müdahaleye yol açabilir.
+Kılavuz metninde kullanılan sinyal kelimeleri ISO 3864-2 ile uyumludur. Her uyarı şu dört bilgiyi verir: sinyal kelimesi, tehlike türü, olası sonuç ve önleme yöntemi.
 
 | Sinyal | Anlam | Kullanım |
 | :--- | :--- | :--- |
@@ -14,7 +14,7 @@ Kılavuz metninde kullanılan sinyal kelimeleri ISO 3864-2 ile uyumludur. Her uy
 | **UYARI** | Ciddi yaralanma veya makine hasarı riski | Önemli operasyonel risk |
 | **DİKKAT** | Hafif yaralanma veya ekipman hasarı | Prosedüre özel uyarı |
 
-Genel güvenlik uyarıları **Bölüm 2**'de toplanmıştır. Prosedür adımlarında yalnızca o adıma özel tehlike varsa uyarı ekleyin; sayfa başına genel uyarı kopyalamayın.
+Genel güvenlik uyarıları **Bölüm 2**'de toplanmıştır.
 
 ---
 
@@ -51,7 +51,7 @@ Mavi zeminli zorunluluk işaretleri, belirtilen kişisel koruyucu donanımın ku
 
 ## 1.2.4 Makine bilgi sembolleri
 
-Makine gövdesindeki bilgi işaretleri; tesis bağlantı noktalarını (topraklama, su, hava, tahliye) ve emniyet kilidi durumunu gösterir. Bağlantı basınçları ve hat çapları **Bkz. Bölüm 3.3.5** (SSOT); kurulum adımları **Bkz. Bölüm 5.3**.
+Makine gövdesindeki bilgi işaretleri; tesis bağlantı noktalarını (topraklama, su, hava, tahliye) ve emniyet kilidi durumunu gösterir. Bağlantı basınçları ve hat çapları **Bkz. Bölüm 3.3.5**; kurulum adımları **Bkz. Bölüm 5.3**.
 
 | Sembol | Anlam | Tipik konum / kullanım |
 | :---: | :--- | :--- |

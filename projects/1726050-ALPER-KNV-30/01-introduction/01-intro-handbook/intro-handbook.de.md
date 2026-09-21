@@ -1,84 +1,102 @@
-# 1.1 ÜBER DİESES HANDBUCH
+# 1.1 Über das Handbuch
 
-## 1.1.1 Zweck, Umfang und AnwENdungsbereich des Handbuchs
+## 1.1.1 Zweck, Umfang und Anwendungsbereich des Handbuchs
 
-Diese Betriebsanleitung ist ein integraler, grundlegender und rechtlich bindender Bestandteil der industriellen Waschmaschine. Sie wurde unter Berücksichtigung der geltenden Maschinenrichtlinie und der relevanten internationalen Normen (EN ISO 12100, EN ISO 20607) sorgfältig erstellt, um einen sicheren, effizienten, umweltgerechten und bestimmungsgemäßen Betrieb der Maschine zu gewährleisten. 
+Diese Bedienungsanleitung ist ein integraler und rechtlich verbindlicher Bestandteil der Maschine **KNV 30 3000 2B**. Die Anleitung wurde gemäß den Grundsätzen von EN ISO 12100 und EN ISO 20607 erstellt, um eine sichere, effiziente und bestimmungsgemäße Verwendung der Maschine zu gewährleisten. Diese Normen definieren international anerkannte Mindestanforderungen an die Maschinensicherheit und den Inhalt der Bedienungsanleitung; daher sind die Anweisungen in der Anleitung nicht nur Empfehlungen, sondern Teil der Verantwortung des Betreibers.
 
-Der Umfang dieses Dokuments ist so strukturiert, dass er den gesamten Lebenszyklus (Lifecycle) der Maschine abdeckt. Dieser Lebenszyklus umfasst die folgenden Phasen:
-* **Transport und Positionierung:** Versand der Maschine ab Werk, Transport vor Ort, Nutzung der Anschlag-/Hebebänder und Befestigung am Boden.
-* **Installation und Inbetriebnahme:** Herstellen der externen Infrastrukturanschlüsse wie Elektrik, Druckluft, Wasserein-/-auslass und Entlüftung (Abluft) sowie Durchführung der ersten Testläufe.
-* **Betrieb:** Tägliche Produktionsroutinen, Erstellung von Waschrezepten, Beladen, Betreiben und Entladen der Maschine.
-* **Wartung und Reinigung:** Tägliche, wöchentliche, monatliche und jährliche periodische Wartungsverfahren, Schmierstellen, Filterreinigungen und Kontrolle von Verschleißteilen.
-* **Fehlersuche und -behebung:** Erstmaßnahmen bei möglichen Alarmzuständen und Behebung von Fehlercodes auf dem HMI-Bildschirm.
-* **Außerbetriebnahme und Entsorgung:** Sicheres Freischalten (Spannungsfreischalten), Demontieren und ordnungsgemäße Entsorgung der Maschine gemäß den Recyclingverfahren nach Ablauf ihrer wirtschaftlichen Lebensdauer.
+**Umfang:** **KNV 30 3000 2B** (Modellcode **KNV-30**, Seriennr. **1726050**) und die mit diesem Projekt gelieferte Ausrüstung.
 
-Dieses Dokument dient nicht der Vermittlung von Grundlagen der Ingenieurwissenschaften, allgemeinen Mechanik oder Elektrotechnik. Es wird davon ausgegangen, dass alle an der Maschine arbeitenden Personen bereits über die ihrer Aufgabenstellung entsprechende fachliche und technische Ausbildung verfügen und eine grundlegende industrielle Sicherheitskultur verinnerlicht haben.
+**Ziel-Lesergruppen:** Linienverantwortliche(r), Wartungspersonal, Installationspersonal.
+
+Die Maschine ist eine industrielle Teilewaschanlage mit Beschickung vom Einlauf, Förderband und zwei Bädern (Waschen + Spülen). Die Teile laufen auf dem Förderband und durchlaufen Waschen, Spülen und Trocknen. In diesem Projekt erfolgen Teile-Einlauf und -Auslauf durch Roboter; Be- und Entladeverfahren gehören zur Kundenlinie (**Siehe Kapitel 7.4**). Die Anleitung umfasst daher keine Details der Roboterintegration; sie definiert nur die eigenen Prozessfunktionen der Maschine und die sicheren Grenzen.
+
+Die Anleitung umfasst die folgenden Lebenszyklusphasen. Detaillierte Anweisungen für jede Phase stehen im jeweiligen Kapitel; diese Liste ist nur eine Umfangskarte:
+
+1. Transport, Handhabung und Lagerung (**Siehe Kapitel 4**)
+2. Montage, Installation und Inbetriebnahme (**Siehe Kapitel 5–6**)
+3. Betrieb (**Siehe Kapitel 7–8**)
+4. Periodische Wartung (**Siehe Kapitel 9**)
+5. Reinigung und Desinfektion (**Siehe Kapitel 10**)
+6. Störungsdiagnose und -behebung (**Siehe Kapitel 11**)
+7. Demontage, Außerbetriebnahme und Entsorgung (**Siehe Kapitel 12**)
+
+Dieses Dokument vermittelt keine grundlegende Ingenieur-, Mechanik- oder Elektroausbildung. Es wird vorausgesetzt, dass das Personal im Rahmen der Schulung von Betriebs- und Wartungspersonal über eine berufsbezogene Ausbildung zu Maschinenverwendung und -wartung verfügt. Fehlende Schulung kann zu falscher Anwendung der Verfahren und zu Maschinenschäden führen.
 
 ---
 
-## 1.1.2 Gültigkeit, AktUAlität und DokumENtENsteuerung des Handbuchs
+## 1.1.2 Gültigkeit, Aktualität und Dokumentenlenkung des Handbuchs
 
-Die in diesem Handbuch enthaltenen Texte, technischen Daten, technischen Zeichnungen, hydraulischen/pneumatischen Schaltpläne und elektrischen Schaltpläne spiegeln die physische Hardware- und Softwarekonfiguration (den "As-Built"-Zustand) zum Zeitpunkt der Herstellung der Maschine und deren Versand ab Werk nach Bestehen der finalen Qualitätskontrolltests (QC) wider. 
+Die Texte, technischen Daten, Zeichnungen und Schemata in dieser Anleitung spiegeln die **As-Built**-Konfiguration (wie gefertigt) wider, die zum Fertigungs- / Versanddatum der Maschine (**2026-08-12**) geliefert wurde. Wenn Sie eine Unstimmigkeit zwischen Anleitung und Maschine feststellen, legen Sie den physischen Maschinenzustand zugrunde und prüfen Sie mit dem Herstellerservice (**Siehe Kapitel 1.3**).
 
-* **Versionskontrolle:** Jede Seite oder das Deckblatt des Handbuchs trägt eine eindeutige Dokumenten-Revisionsnummer und ein Veröffentlichungsdatum. Maschinenspezifische Konfigurationen (Sonderabmessungen, optionale Ausstattungen) sind im Anhang (Appendix) gesondert aufgeführt.
-* **Änderungsrecht:** Der Hersteller behält sich das Recht vor, im Rahmen von F&E-Aktivitäten und der Politik der kontinuierlichen Produktverbesserung ohne vorherige Ankündigung Änderungen am mechanischen/elektronischen Design der Maschine und am Inhalt dieser Dokumentation vorzunehmen, ohne verpflichtet zu sein, rückwirkende Revisionen an bereits gelieferten Maschinen durchzuführen. 
+| Feld | Wert |
+| :--- | :--- |
+| **Revision** | 00 |
+| **Letzte Aktualisierung** | 2026-08-12 |
+| **Erstellt von** | Fatih GÜRAL |
+| **Herstellungsjahr** | 2026 |
+
+Der Hersteller behält sich das Recht vor, im Rahmen von F&E und Produktverbesserung Änderungen an Maschinendesign und Dokumentation ohne vorherige Ankündigung vorzunehmen. Für zuvor gelieferte Maschinen entsteht keine Verpflichtung zur rückwirkenden Revision. Diese Regel ermöglicht kontinuierliche Verbesserung in der Serienfertigung; Änderungen an Ihrer vorhandenen Maschine gelten jedoch nur für diese Seriennummer.
+
+Die Sprachen des HMI-Bedienfelds sind in **Kapitel 3.4** definiert.
 
 ---
 
-## 1.1.3 Zielgruppe, PersonalqUAlifikation und AufgabENverteilung
+## 1.1.3 Zielgruppe, Personalqualifikation und Verantwortungsverteilung
 
-Da industrielle Waschmaschinen Hochspannung, Heißwasser, Drucksysteme, chemische Lösungen und bewegliche mechanische Teile enthalten, ist die Kompetenz des Personals, das an der Maschine arbeitet, ein kritischer Faktor für die Arbeitssicherheit. Der Arbeitgeber (das die Maschine betreibende Unternehmen) ist allein dafür verantwortlich, das Personal gemäß der folgenden Berechtigungsmatrix einzusetzen:
+Die Maschine enthält Elektrizität, heiße Flüssigkeit, Druckluft, chemische Lösung und bewegte Mechanismen. Diese Energie- und Prozessquellen können bei falschem Eingriff schwere Verletzungen oder Geräteschäden verursachen. Der Arbeitgeber (die die Maschine betreibende Organisation) ist für Personalzuweisung, Schulung und Befugnisgrenzen verantwortlich. Die folgenden Rollen klären die in der Anleitung definierten Befugnisse und Verbote; ein Eingriff außerhalb der Rolle beeinträchtigt den Garantieumfang und die Arbeitssicherheit.
 
-1. **Bediener:**
+**Bediener / Linienverantwortliche(r)**
 
-   * **Befugnis:** Täglicher Betrieb der Maschine, Be- und Entladen von Teilen, Auswahl vorhandener Waschrezepte über die Standard-HMI-Benutzeroberfläche sowie Starten/Stoppen.
-   * **Anforderung:** Muss vom Arbeitgeber über den Maschinenbetrieb und Not-Halt-Prozeduren geschult worden sein. Dem Bediener ist es strengstens untersagt, Maschinenabdeckungen (Schutzverkleidungen) mit Werkzeugen zu demontieren, den Schaltschrank zu öffnen oder Parametereinstellungen zu verändern.
+An dieser Maschinenlinie gibt es keinen ständig anwesenden physischen Schichtbediener; Be- und Entladen der Teile erfolgen durch Roboter. Die Rolle des/der Linienverantwortlichen umfasst die Überwachung der Maschine über HMI, das Geben von Vorbereitungs-/Start-/Stop-Befehlen, **Produkt entnommen Bestätigung** nach Error-461 und das Informieren des Wartungspersonals bei Alarm. Diese Rolle nimmt keine mechanischen oder elektrischen Eingriffe an der Maschine vor; sie umgeht den RFID-Sicherheitssensor nicht.
 
-2. **Wartungspersonal (Mechanik / Pneumatik / Elektrik):**
-   * **Befugnis:** Durchführung der im Handbuch angegebenen periodischen Wartungsschritte, Austausch von Verschleißteilen (Filter, Dichtungen usw.), Sensoreinstellungen und grundlegende Fehlersuche. 
-   * **Anforderung:** Muss über ein Diplom/Zertifikat in den entsprechenden ingenieurwissenschaftlichen oder technischen Berufsfeldern verfügen. Muss die Verfahren zur Kontrolle gefährlicher Energien (Lockout/Tagout - LOTO) vollständig beherrschen und während der Wartung geeignete persönliche Schutzausrüstung (PSA) tragen. Elektrofachkräfte müssen gemäß den geltenden nationalen Vorschriften für elektrische Anlagen autorisiert sein.
+Der/die Linienverantwortliche(r) gibt über HMI Vorbereitungs-, Start- und Stop-Befehle; schaltet Waschen, Spülen, Trocknen und Abluft von der Betriebsseite ein oder aus (**Siehe Kapitel 7.1**). Der/die Linienverantwortliche(r) überwacht aktive Alarme über HMI und Signalleuchte; informiert das Wartungspersonal, wenn ein Eingriff erforderlich ist. Der/die Linienverantwortliche(r) öffnet den Elektroschrank nicht, entfernt keine Schutzabdeckungen und greift nicht in Parameter oder Sicherheitseinstellungen ein.
 
-3. **Autorisierter Servicetechniker des Herstellers:**
-   * **Befugnis:** Zugriff auf PLC-Softwarearchitektur, Antriebsparameter, geheime (passwortgeschützte) HMI-Ingenieurmenüs, Austausch von Hauptmotoren/Pumpen und größere Konstruktionsrevisionen.
-   * **Anforderung:** Ausschließlich Personal, das speziell vom Hersteller geschult, zertifiziert und mit einem aktuellen Autorisierungsnachweis ausgestattet wurde.
+Der/die Linienverantwortliche(r) muss vom Arbeitgeber zu Maschinenablauf, HMI-Nutzung und Not-Halt-Verfahren geschult sein (**Siehe Kapitel 2.5**). Start über HMI ohne Schulung birgt das Risiko eines unvorbereiteten Prozessstarts und von Geräteschäden.
+
+**Wartungspersonal (Mechanik / Elektrik / Pneumatik)**
+
+Das Wartungspersonal führt periodische Wartungsschritte aus (**Siehe Kapitel 9**), tauscht Verschleißteile und führt eine grundlegende Störungsdiagnose durch (**Siehe Kapitel 11**). Dies ist die primäre Rolle, die bei einem Fehler an der Maschine eingreift. Die Einhaltung des LOTO-Verfahrens ist bei allen Arbeiten mit Energieisolation verpflichtend; die LOTO-Schritte sind in **Kapitel 2.4** definiert und werden in diesem Kapitel nicht wiederholt.
+
+Das Wartungspersonal muss über Kompetenz im jeweiligen technischen Bereich, Beherrschung des LOTO-Verfahrens und Verwendung geeigneter PSA verfügen (**Siehe Kapitel 2.4, 2.6**). Elektroarbeiten erfordern eine Bevollmächtigung gemäß nationaler Gesetzgebung. Unbefugter Elektroeingriff erzeugt das Risiko von Stromschlag und Brand.
+
+**Installationspersonal**
+
+Das Installationspersonal führt Montage, Positionierung und Medienanschlüsse der Maschine aus (**Siehe Kapitel 5**). Es führt Inbetriebnahmetests und Sicherheitsfunktionstests durch (**Siehe Kapitel 5.4–5.5**). Es führt Erst-Einstellungen und Parameterprüfungen durch (**Siehe Kapitel 6**). Flächenanforderungen und technische Medienwerte sind in **Kapitel 3** definiert; diese Werte werden bei der Installation nicht wiederholt — es wird der jeweilige Unterabschnitt herangezogen.
+
+Das Installationspersonal muss über Erfahrung in der Installation industrieller Maschinen, Kenntnisse zu Elektro-/Pneumatik-/Wasseranschlüssen und Beherrschung der Gabelstapler-Transportverfahren verfügen (**Siehe Kapitel 4**). Fehlerhafte Installation kann dazu führen, dass die Maschine nicht im Lot läuft, Undichtigkeiten entstehen und Sicherheitsfunktionen nicht greifen.
+
+**Autorisierter Servicespezialist des Herstellers**
+
+SPS-/HMI-Engineering-Menüs, Antriebsparameter, größere mechanische Revisionen und Software-Updates dürfen nur von vom Hersteller bevollmächtigtem Personal durchgeführt werden. Unbefugte Software- oder Parameteränderungen können Sicherheitsfunktionen außer Kraft setzen und den gesamten Garantieumfang beenden.
 
 ---
 
 ## 1.1.4 Aufbewahrung und Zugänglichkeit des Handbuchs
 
-Dieses digitale Dokument ist als integraler Bestandteil der operationalen Integrität der Maschine zu betrachten. Aufgrund von Grundsätzen der ökologischen Nachhaltigkeit und aktuellen Dokumentationsstandards wird diese Betriebsanleitung in digitaler Form (Softcopy) bereitgestellt.
+Diese Anleitung ist ein integraler Bestandteil der betrieblichen Integrität der Maschine. Eine Trennung von der Maschine oder Unzugänglichkeit kann verhindern, dass das Personal aktuelle Anweisungen erreicht, und zu falschen Eingriffen führen.
 
-* **Zugänglichkeit:** Die aktuelle digitale Kopie des Handbuchs ist jederzeit über die Anweisungen auf dem Informationsschild an der Maschine (z. B. QR-Code) oder über die vom Hersteller bereitgestellten digitalen Kanäle zugänglich.
-* **Verantwortung des Arbeitgebers:** Der Betreiber/das Anlagenmanagement ist verpflichtet, den unterbrechungsfreien Zugriff des Bedien- und Wartungspersonals auf dieses digitale Dokument im Arbeitsbereich der Maschine (über industrielle Tablets, Computerterminals oder den HMI-Bildschirm) sicherzustellen.
-* **Bevorzugung einer gedruckten Version:** Falls das Anlagenmanagement aufgrund eigener interner Verfahren das Handbuch in gedruckter Form (Hardcopy) vorhalten möchte, liegt die Wahrung der Vollständigkeit der Seiten, der Schutz vor industrieller Verschmutzung (Öl, Chemikalien, Feuchtigkeit) und die Integration neuer digitaler Revisionen in die physische Kopie vollständig in der Verantwortung des Betreibers.
-* **Übertragung der Maschine:** Bei Verkauf, Vermietung oder Verlegung der Ausrüstung an ein anderes Werk müssen die Zugangsdaten oder aktuellen digitalen Dateien der Maschinendokumentation zusammen mit der Maschine an den neuen Benutzer übergeben werden.
+Greifen Sie auf die aktuelle digitale Kopie der Anleitung über das Informationsetikett an der Maschine (QR-Code usw.) oder die digitalen Kanäle des Herstellers zu (**Siehe Kapitel 1.3**).
 
----
-
-## 1.1.5 Bestimmungsgemäße VerwENdung, Haftungsbeschränkung und ErlöschEN der Garantie
-
-Der Hersteller hat das Design und die Fertigung der Maschine nach den anerkannten Regeln der Technik (Good Engineering Practices) und strengen Sicherheitsnormen ausgeführt. Die Garantie der Maschine und die gesetzliche Haftung des Herstellers gelten ausschließlich unter der Bedingung, dass das System innerhalb der Grenzen der "bestimmungsgemäßen Verwendung" (Intended Use) betrieben wird.
-
-Bei allen direkten oder indirekten Personenschäden, Todesfällen, Sachschäden an der Anlage, Ausschluss/Ausschuss von Produkten, Umweltverschmutzung oder kommerziellen Gewinnausfällen, die durch die unten aufgeführten (jedoch nicht darauf beschränkten) Bedienungsfehler, unbefugten Eingriffe und Betriebsfehler entstehen, übernimmt der Hersteller keinerlei rechtliche, strafrechtliche oder finanzielle Haftung; in diesen Fällen erlischt die Garantie der Maschine **mit sofortiger Wirkung**:
-
-* **Nutzung außerhalb der Kapazität und des Verwendungszwecks:** Überlastung der Maschine über die auf dem Typenschild und im Handbuch angegebenen Grenzen für maximale Last, Druck, Temperatur und Zykluskapazität hinaus. Waschen von anderen als den spezifischen Industrieteilen, für die die Maschine ausgelegt ist (z. B. explosive, brennbare oder hochreaktive Materialien).
-* **Sicherheitsverletzungen:** Demontage, Überbrückung (Bypassing), softwareseitiges Deaktivieren oder Außerkraftsetzen lebenswichtiger Arbeitssicherheitskomponenten wie Not-Halt-Tastern, Türsicherheitsschaltern (Interlocks), Dichtungsschaltern, Sicherheitsrelais, Lichtschranken oder Druck-/Temperaturgrenzsensoren.
-* **Unbefugte Modifikationen:** Jegliche Änderungen an der Maschinenkonstruktion, dem Rohrsystem, dem Schaltschrank oder den PLC/HMI-Softwarecodes ohne schriftliche und gestempelte Genehmigung des Herstellers.
-* **Chemische und Material-Unverträglichkeit:** Verwendung von stark sauren, hochalkalischen (kaustischen) oder lösungsmittelbasierten Chemikalien, die vom Hersteller nicht getestet und freigegeben wurden und während des Waschvorgangs zu Korrosion an den Maschinenteilen oder Körben führen können. (Insbesondere die in der Maschine verwendeten Körbe und Trägerprodukte wurden verzinkt, und die Oberflächenbeständigkeit dieser Teile unterscheidet sich von lackierten Teilen; die Verwendung von Mitteln, die die Zinkschicht auflösen, führt zum Erlöschen der gesamten mechanischen Garantie).
-* **Komponentenaustausch:** Mechanische Ermüdungen, Pumpenausfälle und Verluste der Waschleistung, die durch den eigenmächtigen Austausch von Standarddüsen, die Wasser als feinen Flachstrahl sprühen, oder optional angebotenen Fächerdüsen durch Düsen mit unterschiedlichen Durchfluss- (Liter/Minute) und Spritzwinkelcharakteristiken ohne Genehmigung der Konstruktionsabteilung des Herstellers entstehen. Verwendung von nicht originalen Ersatz- und Verbrauchsmaterialien.
-* **Infrastruktur- und Versorgungsfehler:** Komponentenausfälle aufgrund unzureichender oder fehlerhafter anlagenseitiger Infrastrukturanschlüsse; nicht standardmäßige Erdungsleitung, Netzspannungsschwankungen außerhalb der tolerierbaren Grenzen (Phasenausfall/-verlust), übermäßige Feuchtigkeit/Ölpartikel in der zugeführten Druckluft oder unzureichender Durchfluss/Druck am Wassereinlass.
-* **Wartungsversäumnisse:** Nichtbeachtung des im Handbuch angegebenen täglichen, wöchentlichen und monatlichen periodischen Wartungsplans, Durchführung von Schmier- und Reinigungsverfahren durch unqualifiziertes Personal und mit falschen Werkzeugen/Geräten.
+Die unterbrechungsfreie Zugänglichkeit der Anleitung im Arbeitsbereich von Bediener und Wartungspersonal ist eine Verpflichtung des Arbeitgebers (der die Maschine betreibenden Organisation). An Standorten mit gedruckter Kopie liegt die Erhaltung der Seitenintegrität und die Integration neuer Revisionen in die physische Kopie in der Verantwortung des Arbeitgebers. Bei Verkauf, Übertragung oder Vermietung der Maschine ist die Übergabe der Anleitung und der Zugangsinformationen an den neuen Nutzer ebenfalls Verpflichtung des Arbeitgebers.
 
 ---
 
-## 1.1.6 Rechte an geistigem und gewerblichem EigENtum sowie Vertraulichkeit
-Diese Betriebsanleitung und alle darin enthaltenen redaktionellen Texte, 3D/2D-technischen Zeichnungen, hydraulischen/pneumatischen/elektrischen Schaltpläne, Systemalgorithmen, Flussdiagramme, Tabellen und HMI-Software-Schnittstellendesigns sind durch nationale und internationale Urheberrechtsgesetze (und entsprechende Gesetzgebungen zum gewerblichen Rechtsschutz) streng geschützt. 
+## 1.1.5 Bestimmungsgemäße Verwendung, Haftungsbegrenzung und Garantieverlust
 
-Das Eigentum an diesem Dokument steht ausschließlich dem Hersteller zu. Ohne die vorherige, handschriftlich unterzeichnete und offizielle schriftliche Genehmigung des Herstellers darf:
-* dieses Handbuch weder ganz noch teilweise durch Fotokopieren, Scannen oder ähnliche Verfahren kopiert oder vervielfältigt werden;
-* es nicht in digitale Formate umgewandelt und in öffentlichen Netzwerken oder Datenbanken außerhalb des Unternehmens-Intranets gespeichert werden;
-* es weder teilweise noch vollständig ohne Genehmigung in andere Sprachen übersetzt werden;
-* es insbesondere nicht mit konkurrierenden Maschinenherstellern, Lieferanten oder unbefugten Dritten geteilt werden;
-* dürfen die im Handbuch enthaltenen Schaltpläne und Funktionsprinzipien nicht als Referenz- oder Quelldokument für Reverse-Engineering-Aktivitäten verwendet werden.
+Der Hersteller hat die Maschine gemäß anerkannten Ingenieurpraktiken und Sicherheitsnormen gefertigt. Garantie und rechtliche Haftung hängen vom Betrieb der Maschine innerhalb der Grenzen der **bestimmungsgemäßen Verwendung** ab (**Siehe Kapitel 3.2**). Betrieb außerhalb der bestimmungsgemäßen Verwendung erhöht das Risiko von Prozessfehlern, Geräteschäden und Personenschäden.
 
-Im Falle einer Verletzung der oben genannten Rechte an geistigem Eigentum behält sich der Hersteller das Recht vor, im Voraus alle rechtlichen, zivil- und strafrechtlichen Schritte einzuleiten, um materiellen und immateriellen Schadensersatz zu fordern.
+In den folgenden Fällen übernimmt der Hersteller keine Haftung; die Maschine bleibt **außerhalb des Garantieumfangs**:
+
+1. Ausbau, Umgehung oder Außerbetriebnahme von Sicherheitseinrichtungen (Not-Halt, RFID-Sensor, Verriegelung usw.) (**Siehe Kapitel 2**).
+2. Mechanische, elektrische oder Softwareänderungen ohne schriftliche Freigabe des Herstellers.
+3. Betrieb der Maschine mit nicht freigegebenen Chemikalien oder Materialien außerhalb der bestimmungsgemäßen Verwendung (**Siehe Kapitel 3.2**); Verarbeitung lebender Organismen (Mensch, Tier, Pflanze usw.).
+4. Überlastung der Maschine durch Überschreiten der auf dem Typenschild und in **Kapitel 3** definierten Grenzwerte.
+5. Verwendung nicht originaler Ersatzteile (**Siehe Kapitel 1.3.4**).
+
+---
+
+## 1.1.6 Geistiges Eigentum und Vertraulichkeit
+
+Diese Anleitung, Maschinenschemata, HMI-/SPS-Schnittstellendokumentation und technische Zeichnungen sind geistiges Eigentum des Herstellers. Diese Materialien enthalten das Konstruktionswissen des Herstellers; unbefugte Weitergabe schadet dem Wettbewerbsvorteil und steht unter rechtlichem Schutz.
+
+Das Kopieren, Vervielfältigen, Teilen mit unbefugten Dritten (insbesondere Wettbewerbern) oder die Verwendung der Anleitung zum Reverse Engineering ohne schriftliche Genehmigung des Herstellers gilt als Verletzung des geistigen Eigentums. Im Verletzungsfall behält sich der Hersteller das Recht vor, rechtliche Schritte einzuleiten.

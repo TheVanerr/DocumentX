@@ -24,7 +24,7 @@ Nominal proses döngü süresi **900 saniye** (15 dakika) olarak tanımlanmışt
 
 Konveyör hattı parçaların proses bölgeleri arasında taşınmasını sağlar. Besleme **sol**, boşaltma **sağ** yöndedir. Konveyör redüktörü motoru **1,5 kW** Siemens SIMOTICS servo tahrikli sistemdir (bkz. **Bölüm 3.3.4**).
 
-Robot entegrasyonunda parça giriş ve çıkış müşteri hattı prosedürüne tabidir. Çıkış konveyöründe parça algılandığında makine durur; robot parçayı aldıktan sonra HMI onayı ile devam edilir (bkz. **Bölüm 3.4.3**, **11.1.2** Error-461).
+Robot entegrasyonunda parça giriş ve çıkış müşteri hattı prosedürüne tabidir. Çıkış konveyöründe parça algılandığında makine durur; robot parçayı aldıktan sonra HMI **Ürün Alındı Onay** ile devam edilir (bkz. **Bölüm 3.4.6**, **11.1.2** Error-461).
 
 ![Konveyör giriş-çıkış görünümü](../../assets/3.1/3.png)
 
@@ -85,7 +85,7 @@ Kurutma fanları ve egzost kanallarında toz birikimi hava performansını düş
 
 Makinenin elektrik ve otomasyon altyapısı merkezi **elektrik panosu** üzerinde toplanmıştır. Pano koruma sınıfı **IP55**, boyutları **800 × 1200 × 300 mm** (G × Y × D)'dir.
 
-Besleme gerilimi, kurulu güç, ana şalter değerleri ve motor listesi **Bölüm 3.3** — Teknik özellikler alt bölümlerinde SSOT olarak verilmiştir; bu bölümde tablo tekrarlanmaz. Özet:
+Besleme gerilimi, kurulu güç, ana şalter değerleri ve motor listesi **Bölüm 3.3** — Teknik özellikler alt bölümlerinde verilmiştir; bu bölümde tablo tekrarlanmaz. Özet:
 
 - Besleme: **380 V**, **50 Hz**, **3 faz**, **3P+N+PE**
 - Toplam kurulu güç: **50 kW** (ısıtma dahil)
@@ -108,11 +108,11 @@ Makinede **4 adet acil stop butonu** bulunur:
 3. Makine girişinde konveyörün solunda
 4. Makine çıkışında konveyörün solunda
 
-Acil stop'a basıldığında makinedeki **her fonksiyon durur**. Yeniden devreye alma prosedürü, reset adımları ve acil stop sonrası makine davranışı **Bölüm 2.5** — Acil durdurma sistemi alt bölümünde SSOT olarak verilmiştir; bu bölümde adımlar tekrarlanmaz.
+Acil stop'a basıldığında makinedeki **her fonksiyon durur**. Yeniden devreye alma prosedürü, reset adımları ve acil stop sonrası makine davranışı **Bölüm 2.5** — Acil durdurma sistemi alt bölümünde verilmiştir; bu bölümde adımlar tekrarlanmaz.
 
-Emniyet kapısı / sabit bariyer sayısı sıfırdır; bakım kapakları **RFID güvenlik sensörü** ile izlenir. Kapak açıldığında RFID switch makineyi durdurur. Makinenin güvenlik kategorisi **CAT3**'tür (bkz. **Bölüm 2.3**). Işık perdesi bulunmamaktadır.
+Emniyet kapısı / sabit bariyer sayısı sıfırdır; bakım kapakları **RFID güvenlik sensörü** ile izlenir. Kapak açıldığında RFID switch makineyi durdurur. Makinenin güvenlik kategorisi **Cat. 3**'tür (EN ISO 13849-1; bkz. **Bölüm 2.1.3**). Işık perdesi bulunmamaktadır.
 
-Bakım sırasında emniyet kapısı bypass edilmemelidir; kapak açılmadan önce enerji izolasyonu ve **LOTO** prosedürü uygulanmalıdır (bkz. **Bölüm 2.4**).
+Bakım sırasında RFID güvenlik sensörü bypass edilmemelidir; kapak açılmadan önce enerji izolasyonu ve **LOTO** prosedürü uygulanmalıdır (bkz. **Bölüm 2.4**).
 
 ---
 

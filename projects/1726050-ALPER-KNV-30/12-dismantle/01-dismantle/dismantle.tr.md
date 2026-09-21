@@ -1,8 +1,8 @@
 ﻿# 12.1 Güvenli demontaj prosedürü
 
-Makinenin tesisattan sökülmesi, parçalara ayrılması veya nakliyesi öncesinde enerji izolasyonu ve sıvı tahliyesi zorunludur. Demontaj sırasında makine **elektriği kesilmelidir**; tanklardaki **su boşaltılmalıdır** (DATA).
+Makinenin tesisattan sökülmesi, parçalara ayrılması veya nakliyesi öncesinde enerji izolasyonu ve sıvı tahliyesi zorunludur. Demontaj sırasında makine **elektriği kesilmelidir**; tanklardaki **su boşaltılmalıdır**.
 
-Bu makinede hidrolik devre yoktur; pnömatik (**6 bar** hava) ve elektrik (**380 V**) izolasyonu yeterlidir. Tehlikeli madde (yağ, akü, proses kimyasalı) **bulunmamaktadır**; atık su bertarafı **Bölüm 10.1.8**'e tabidir.
+Bu makinede hidrolik devre yoktur; pnömatik (**6 bar** hava) ve elektrik (**380 V**) izolasyonu yeterlidir. Akü bulunmamaktadır. Proses tanklarında yağlı su, konveyörde gres ve temizlik deterjanı kalıntısı olabilir; atık su bertarafı **Bölüm 10.1.8**'e tabidir.
 
 ---
 
@@ -84,7 +84,7 @@ Enerji kaynakları:
 | Parametre | Gereksinim |
 |-----------|------------|
 | Geri dönüşüm / bertaraf | Kullanıldığı ülkenin mevcut çevresel bertaraf gereksinimleri |
-| Tehlikeli madde | **Yok** |
+| Tehlikeli madde | Akü yok; yağlı proses suyu, gres, deterjan — **10.1.8**, **12.3** |
 | Atık su / temizlik | **Bölüm 10.1.8** |
 
 Demontaj atıkları yerel mevzuata uygun ayrıştırılmalı ve lisanslı tesislere gönderilmelidir. Paslanmaz çelik gövde, plastik contalar, elektrik/elektronik (PLC, HMI, kablo) ve ambalaj malzemeleri ayrı toplanır — ayrıntı **Bölüm 12.3**.

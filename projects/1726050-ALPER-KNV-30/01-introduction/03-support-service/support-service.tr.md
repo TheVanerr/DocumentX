@@ -75,8 +75,8 @@ Yedek parça siparişlerinde orijinal parça kullanımı zorunludur. Muadil par�
 
 Yetkili servisi aramadan önce aşağıdaki kontrolleri yapın. Birçok arıza bildirimi, tesisat veya reset eksikliğinden kaynaklanır; bu kontroller gereksiz servis çağrısını önler.
 
-1. Ana elektrik beslemesinin açık olduğunu doğrulayın (**Bkz. Bölüm 3.4** — elektrik besleme değerleri).
-2. Basınçlı hava ve su beslemesinin uygun olduğunu kontrol edin (**Bkz. Bölüm 3.4, 6.4**).
+1. Ana elektrik beslemesinin açık olduğunu doğrulayın (**Bkz. Bölüm 3.3.3**).
+2. Basınçlı hava ve su beslemesinin uygun olduğunu kontrol edin (**Bkz. Bölüm 3.3.5**, **6.5**).
 3. Su giriş vanalarının açık olduğunu doğrulayın.
 4. Tüm acil stop butonlarının serbest olduğunu ve reset prosedürünün uygulandığını kontrol edin (**Bkz. Bölüm 2.5**).
 5. HMI üzerinde alarm reset adımlarını uygulayın (**Bkz. Bölüm 11.1**).

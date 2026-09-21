@@ -1,23 +1,24 @@
 # 10. CLEANING
 
-The machine supports **dry/wet** cleaning methods. There is **no CIP or COP system**. Cleaning must be performed by maintenance personnel after machine stop and **LOTO** application.
+This section defines the manual cleaning and disinfection procedures for the **KNV 30 3000 2B** machine. The machine is suitable for **dry/wet** manual cleaning; there is **no** automatic **CIP** or **COP** system.
+
+Cleaning is performed by **maintenance personnel**. For all work that requires tank, filter and cover access, the machine must be stopped and the **LOTO procedure** applied (**See Section 2.4** — steps are not repeated). Periodic cleaning intervals are given in the **Section 9.1.3** maintenance schedule.
 
 | Parameter | Value |
 |-----------|-------|
 | Cleaning type | Dry / wet |
-| Daily cleaning | Wash tank pre-filters |
-| Weekly cleaning | Tank filters + pump outlet bag filters |
-| Approved cleaning agents | [MISSING] |
+| Daily | Wash tank pre-filters |
+| Weekly | Tank filters + pump outlet bag filters |
+| Disinfection | Tank drain + soapy-water wash |
+| Cleaning water | Mains water |
+| Approved chemical | Neutral / mildly alkaline (stainless-steel compatible); manufacturer recommendation VEIDEC series — see **10.1.7** |
 
-For periodic maintenance reference, see Section **9.1.3**.
+![Tank and filter cleaning general view](../assets/FOTO-10-0-cleaning-genel.png)
+
+| Subsection | Topic |
+|-------|--------|
+| **10.1** | Cleaning and disinfection procedures |
 
 ---
 
-## Section contents
-
-| Section | Title | Topic |
-|---------|-------|-------|
-| **10.1** | Cleaning and Sanitizing | Daily/weekly procedures, prohibited agents, disposal |
-
-<!-- FOTO: Tank and filter cleaning overview -->
-![Tank and filter cleaning overview](../assets/FOTO-10-0-cleaning-genel.png)
+For the maintenance schedule see **Section 9.1.3**; for spare filters see **Section 9.1.6**, **13.3**.

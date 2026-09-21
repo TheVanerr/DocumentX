@@ -1,6 +1,6 @@
 ﻿# 7.5 Operasyon kronolojisi
 
-Bu proje kapsamında makine **7/24 robot** ile entegre sürekli hat operasyonu için tasarlanmıştır. Geleneksel vardiyalı operatör modeli uygulanmaz; makine başında sürekli operatör bulunmaz.
+Bu proje kapsamında makine **7/24 robot** ile entegre sürekli hat operasyonu için tasarlanmıştır. Geleneksel vardiyalı operatör modeli uygulanmaz; makine başında sürekli vardiya operatörü bulunmaz. HMI start/stop ve Error-461 onayı gerektiğinde hat sorumlusu veya bakım personeli müdahale eder.
 
 ---
 

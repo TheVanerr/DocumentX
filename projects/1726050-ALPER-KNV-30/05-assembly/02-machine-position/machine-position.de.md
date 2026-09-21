@@ -1,84 +1,82 @@
 # 5.2 Maschinenpositionierung
 
-Positionierungsarbeiten werden im Rahmen von **Schritt 3** der Montageschritte in Abschnitt 5.1 durchgeführt und hier detailliert beschrieben.
+Die Positionierung legt den endgültigen Standort, die Ausrichtung und das Niveau der Maschine im Aufstellbereich fest. Die Arbeiten werden im Rahmen von **Kapitel 5.1 Schritt 3** ausgeführt; in diesem Abschnitt werden sie detailliert. Falsche Positionierung beeinträchtigt Roboterzugang, das Öffnen von Wartungsabdeckungen und die Förderbandausrichtung.
+
+Flächenanforderungen (Freiräume, Deckenhöhe, Ausrichtungsdefinitionen) sind in **Kapitel 3.5** angegeben; hier wird das Installationsverfahren beschrieben.
 
 ---
 
-## 5.2.1 Anforderungen an den Aufstellungsbereich
+## 5.2.1 Anforderungen an den Aufstellbereich
 
-Vor dem Aufstellen der Maschine muss der Aufstellungsbereich folgende Bedingungen erfüllen:
+Bevor die Maschine platziert wird, muss der Aufstellbereich folgende Bedingungen erfüllen:
 
-| Parameter | Anforderung |
-|-----------|-------------|
-| Mindestgröße Montagefläche | 5 m × 3 m |
-| Bodenebenheit-Toleranz | 0,5 mm/m |
-| Bodenfestigkeit | Bodenoberfläche muss hart und eben sein |
-| Mindestfreiraum — vorne | 1000 mm |
-| Mindestfreiraum — hinten | 1000 mm |
-| Mindestfreiraum — seitlich | 1000 mm |
-| Mindestraumhöhe | 2500 mm |
+| Parameter | Anforderung | Referenz |
+|-----------|------------|------|
+| Montagebereich min. Größe | 5 m × 3 m | Kapitel 3.5 |
+| Bodenebenheitstoleranz | 0,5 mm/m | Kapitel 3.5 |
+| Bodenfestigkeit | Harte und ebene Fläche | Kapitel 3.5.2 |
+| Mindestfreiraum | Vorne, hinten, seitlich: 1000 mm | Kapitel 3.5.2 |
+| Mindestdeckenhöhe | 2500 mm | Kapitel 3.5.2 |
 
-Referenz-Layout-Plan: **1726050-ALPER-KNV 30 LAYOUT.pdf**
+Der Referenz-Aufstellungsplan ist das Maschinen-Layout-PDF im Lieferpaket (siehe **Kapitel 3.5**).
 
-<!-- FOTO: Aufstellungsbereich — Freiräume markiert -->
-![Aufstellungsbereich — Freiraumplan](../../assets/FOTO-5-2-0-kurulum-alani.png)
+![Aufstellbereich](../../assets/5.2/1.png)
 
 ---
 
-## 5.2.2 Richtungsdefinitionen und Aufstellung
+## 5.2.2 Ausrichtungsdefinitionen und Aufstellung
 
-Die Maschine ist nach folgenden Richtungen auszurichten:
+Die Maschine muss gemäß folgender Ausrichtungen positioniert werden (siehe **Kapitel 3.5.1**):
 
-| Bezeichnung | Richtung |
-|-------------|----------|
-| Bedienseite | Rechts |
-| Beschickungsseite (Einlauf) | Links |
-| Entnahmeseite (Auslauf) | Rechts |
+| Definition | Richtung |
+|-------|-----|
+| Bedienerseite | Rechts |
+| Zuführseite (Einlauf) | Links |
+| Abführseite (Auslauf) | Rechts |
 | Förderband-Flussrichtung | Links → Rechts |
 
-Teile werden von links verladen und rechts entnommen. HMI-Panel und Elektroschrank sind von der Bedienseite (rechts) zugänglich. Beim Transport darf ein Kran **unter keinen Umständen** verwendet werden; für Gabelstapler-Transport sind die Profile unter der Maschine zu verwenden.
+Teile werden von links beladen und von rechts entnommen. HMI-Bedienfeld und Elektroschrank sind auf der Bedienerseite (rechts) zugänglich. In diesem Projekt erfolgen Einlauf/Auslauf durch **Roboter**; beim Planen des Robotermanövrierbereichs ausreichenden Freiraum auf Zuführ- und Abführseite lassen.
 
-| Parameter | Wert |
-|-----------|------|
-| Schwerpunkt | Mitte des Maschinenförderbandes |
-| Transportgewicht (montiert) | 1300 kg |
+Die Platzierung mit Gabelstapler erfolgt gemäß Verfahren **Kapitel 4.1.4**; der Schwerpunkt liegt in der Förderbandmitte (siehe **Kapitel 3.5.4**).
 
-<!-- FOTO: Maschinenorientierung — Beschickung links, Entnahme rechts -->
-![Richtungsdefinitionen](../../assets/FOTO-5-2-1-yon-tanimlari.png)
+![Ausrichtungsdefinitionen](../../assets/5.2/2.png)
 
 ---
 
-## 5.2.3 Nivellierung und Ausrichtung
+## 5.2.3 Niveaueinstellung und Ausrichtung
 
 | Parameter | Wert |
-|-----------|------|
-| Nivelliermechanismus | Verstellbare Füße |
+|-----------|-------|
+| Niveaueinstellmechanismus | Verstellbare Füße |
 | Ausrichtungstoleranz | 0,5 mm |
 
 ### Positionierungsverfahren
 
-1. Die Maschine wird mit Gabelstapler zur Endposition gebracht und auf den Boden gestellt.
-2. Mit **verstellbaren Füßen** wird die Maschine **waagerecht** ausgerichtet.
-3. Die Ausrichtungstoleranz darf **0,5 mm** nicht überschreiten.
-4. Beide Achsen mit Wasserwaage oder gleichwertigem Messgerät prüfen.
-5. Bei Abweichung Fußhöhen anpassen und Messung wiederholen.
+1. Die Maschine mit dem Gabelstapler in die endgültige Position bringen und auf den Boden setzen (siehe **Kapitel 4.1.4**).
+2. Mit den **verstellbaren Füßen** die Maschine so einstellen, dass sie **in Waage** steht.
+3. Mit Wasserwaage oder gleichwertigem Messgerät beide Achsen prüfen.
+4. Die Ausrichtungstoleranz darf **0,5 mm** nicht überschreiten; bei Abweichung Fußhöhen einstellen und die Messung wiederholen.
+5. Prüfen, dass alle Füße den Boden gleichmäßig berühren.
 
-Prüffrage mechanische Installation: *Ist die Maschine waagerecht?*
+**Erwartetes Ergebnis:** Maschine in Waage; Förderbandlinie mit der Ziellinie ausgerichtet.
 
-<!-- FOTO: Verstellbarer Fuß — Nivellierungsdetail -->
-![Verstellbarer Fuß — Nivellierung](../../assets/FOTO-5-2-2-seviye-ayari.png)
+**Abweichender Zustand:** Wird die Bodentoleranz überschritten, nicht in Betrieb gehen, bevor der Boden korrigiert ist.
+
+Frage der mechanischen Installationsprüfung: *Steht die Maschine in Waage?* (siehe **Kapitel 5.5.1**)
+
+![Niveaueinstellung](../../assets/5.2/3.png)
 
 ---
 
 ## 5.2.4 Wartungszugang
 
-Beim Positionieren darf der Wartungszugang nicht blockiert werden:
+Während der Positionierung dürfen die Wartungszugangsbereiche nicht versperrt werden (siehe **Kapitel 3.5.3**):
 
-| Bereich | Zugang |
-|---------|--------|
-| Maschinenrückseite | Sämtliche Abdeckungen sind abnehmbar und zugänglich |
+| Bereich | Anforderung |
+|-------|------------|
+| Maschinenrückseite | Alle Abdeckungen demontierbar und zugänglich |
+| Hinterer Mindestfreiraum | 1000 mm |
 
-An der Maschinenrückseite ist ein Mindestfreiraum von **1000 mm** einzuhalten.
+Wird die Maschine zu nah an einer Wand oder Anlage aufgestellt, können Filterwartung und Tankzugriff nicht sicher ausgeführt werden.
 
-<!-- FOTO: Maschinenrückseite — Wartungsabdeckungen und Zugangsfreiraum -->
-![Wartungszugang — hinten](../../assets/FOTO-5-2-3-bakim-erisim.png)
+![Wartungszugangsbereich](../../assets/5.2/4.png)
