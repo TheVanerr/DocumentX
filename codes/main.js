@@ -277,7 +277,7 @@ function listGuides() {
     const guide = { id: 'proje:' + dir, projectDir, model };
     return {
       id: guide.id,
-      label: doc.proje_adi || dir.toUpperCase(),
+      label: (doc.kapak && doc.kapak.baslik) || doc.proje_adi || dir.toUpperCase(),
       type: 'model',
       model: model.toUpperCase(),
       diller: detectLangs(guideRoots(guide))
@@ -291,7 +291,7 @@ function listGuides() {
     const guide = { id: 'proje:' + dir, projectDir, model };
     return {
       id: guide.id,
-      label: doc.proje_adi || dir,
+      label: (doc.kapak && doc.kapak.baslik) || doc.proje_adi || dir,
       type: 'project',
       model: model.toUpperCase(),
       diller: detectLangs(guideRoots(guide))
@@ -317,8 +317,9 @@ function resolveGuide(guideId) {
   const isTemplate = projectCore.isModelTemplate(projectDir);
   const guide = {
     type: isTemplate ? 'model' : 'project',
-    label: doc.proje_adi || dir,
+    label: (doc.kapak && doc.kapak.baslik) || doc.proje_adi || dir,
     model: String(doc.model || dir).toLowerCase(),
+    kapak: doc.kapak && typeof doc.kapak === 'object' ? doc.kapak : {},
     projectDir,
     bolumler: Array.isArray(doc.bolumler) ? doc.bolumler : (Array.isArray(base.bolumler) ? base.bolumler : []),
     diller: normLangs(doc.diller)
@@ -420,6 +421,7 @@ function registerIpcHandlers() {
       id: guideId,
       label: guide.label,
       model: (guide.model || '').toUpperCase(),
+      kapak: guide.kapak || {},
       type: guide.type,
       projectRel,
       diller: guide.diller,

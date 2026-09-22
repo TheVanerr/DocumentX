@@ -6,6 +6,8 @@ let currentDiller = ['tr'];
 let currentRev = '';
 let currentDate = '';
 let currentFirma = 'DOLFIN';
+let currentCoverName = '';
+let currentCoverSeries = false;
 let viewMode = 'pdf';
 let lastGuideCache = null;
 
@@ -18,6 +20,8 @@ async function onModelChange(value, opts = {}) {
 
   if (!value) {
     currentModel = '';
+    currentCoverName = '';
+    currentCoverSeries = false;
     currentProjectRel = '';
     emptyState.style.display = 'flex';
     return;
@@ -33,6 +37,9 @@ async function onModelChange(value, opts = {}) {
   }
 
   currentModel = res.label || res.model || value;
+  const kapak = res.kapak || {};
+  currentCoverName = String(kapak.baslik || '').trim() || currentModel;
+  currentCoverSeries = kapak.seri === true;
   currentProjectRel = (res.projectRel || '').replace(/\\/g, '/');
   syncLangButtons(res.diller || ['tr'], res.lang || currentLang);
 
@@ -160,9 +167,7 @@ async function renderPdfGuide(modelName, tree, container) {
   renderPages(contentPages, container, T + 1, modelName);
 
   // Kapak sayfası: 1. sayfa, numarasız
-  const cover = buildCoverPage({
-    model: modelName, rev: currentRev, date: currentDate, variant: currentFirma, lang: currentLang
-  });
+  const cover = buildCoverPage(coverPageOpts());
   container.insertBefore(cover, container.firstChild);
 
   // Bölüm başlıkları → İçindekiler dönüş linkleri
@@ -215,9 +220,7 @@ async function renderHtmlGuide(modelName, tree, container) {
 
   const coverSection = document.createElement('div');
   coverSection.className = 'html-cover-section';
-  const cover = buildCoverPage({
-    model: modelName, rev: currentRev, date: currentDate, variant: currentFirma, lang: currentLang
-  });
+  const cover = buildCoverPage(coverPageOpts());
   cover.classList.add('html-inline-cover');
   coverSection.appendChild(cover);
   doc.appendChild(coverSection);
@@ -506,13 +509,22 @@ function onFirmaChange(v) {
   if (currentGuideId) onModelChange(currentGuideId);
 }
 
+function coverPageOpts() {
+  return {
+    model: currentCoverName || currentModel,
+    rev: currentRev,
+    date: currentDate,
+    variant: currentFirma,
+    lang: currentLang,
+    series: currentCoverSeries
+  };
+}
+
 function updateCover() {
   const container = document.getElementById('pagesContainer');
   const existing = container.querySelector('.cover-page');
   if (existing && currentModel) {
-    const cover = buildCoverPage({
-      model: currentModel, rev: currentRev, date: currentDate, variant: currentFirma, lang: currentLang
-    });
+    const cover = buildCoverPage(coverPageOpts());
     if (viewMode === 'html') cover.classList.add('html-inline-cover');
     existing.replaceWith(cover);
   }
@@ -1524,7 +1536,7 @@ async function exportHtml() {
   }
 
   showToast('HTML oluşturuluyor…', 'success');
-  const title = coverDocumentTitle(currentModel, currentLang);
+  const title = coverDocumentTitle(currentCoverName || currentModel, currentLang, { series: currentCoverSeries });
   const result = await window.electronAPI.exportHtml({ model: currentModel, bodyHtml, title });
 
   if (prevMode === 'pdf') await setViewMode('pdf');

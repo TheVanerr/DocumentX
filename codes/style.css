@@ -1258,6 +1258,10 @@ html, body {
   font-family: 'Calibri', 'Segoe UI', sans-serif;
   font-size: 16pt;
   font-weight: 700;
+  line-height: 1.25;
+}
+
+.cover-info-line {
   white-space: nowrap;
 }
 

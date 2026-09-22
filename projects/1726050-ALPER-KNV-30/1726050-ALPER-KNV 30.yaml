@@ -14,7 +14,7 @@
 # Proje ozel (projects/1726050-ALPER-KNV-30/ altindaki .<dil>.md):
 #   03-overview, 05-assembly .. 14-index
 
-proje_adi: 1726050-ALPER-KNV 30
+proje_adi: KNV 30 3000 2B
 model: knv
 diller:
   - tr
@@ -23,6 +23,8 @@ diller:
 varsayilan_dil: tr
 extends: templates/base.yaml
 kapak:
+  baslik: KNV 30 3000 2B
+  seri: false
   rev: ''
   tarih: ''
   firma: DOLFIN

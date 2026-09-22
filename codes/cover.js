@@ -16,21 +16,25 @@ const COVER_BRANDS = {
 };
 
 const COVER_LOGO_BOX = { left: 4.8, top: 14.48, width: 9.04, height: 5.67 };
+const COVER_INFO_LINE_CM = 0.74;
 
 const DOC_I18N = {
   tr: {
     coverTitle: '{MODEL} SERİSİ KULLANIM KILAVUZU',
-    coverInfo: 'Rev.{REV} / Hazırlanma Tarihi : {DATE} / Hazırlayan : Fatih GÜRAL',
+    coverTitlePlain: '{MODEL} KULLANIM KILAVUZU',
+    coverInfo: ['Rev.{REV}', 'Hazırlanma Tarihi : {DATE}', 'Hazırlayan : Fatih GÜRAL'],
     toc: 'İÇİNDEKİLER'
   },
   en: {
     coverTitle: '{MODEL} SERIES USER MANUAL',
-    coverInfo: 'Rev.{REV} / Date of Preparation : {DATE} / Prepared by : Fatih GÜRAL',
+    coverTitlePlain: '{MODEL} USER MANUAL',
+    coverInfo: ['Rev.{REV}', 'Date of Preparation : {DATE}', 'Prepared by : Fatih GÜRAL'],
     toc: 'CONTENTS'
   },
   de: {
     coverTitle: '{MODEL} SERIE BEDIENUNGSANLEITUNG',
-    coverInfo: 'Rev.{REV} / Erstellungsdatum : {DATE} / Erstellt von : Fatih GÜRAL',
+    coverTitlePlain: '{MODEL} BEDIENUNGSANLEITUNG',
+    coverInfo: ['Rev.{REV}', 'Erstellungsdatum : {DATE}', 'Erstellt von : Fatih GÜRAL'],
     toc: 'INHALTSVERZEICHNIS'
   }
 };
@@ -39,8 +43,10 @@ function tDoc(lang) {
   return DOC_I18N[String(lang || '').toLowerCase()] || DOC_I18N.tr;
 }
 
-function coverDocumentTitle(model, lang) {
-  return tDoc(lang).coverTitle.replace('{MODEL}', (model || '').toUpperCase());
+function coverDocumentTitle(model, lang, opts) {
+  const i18n = tDoc(lang);
+  const tpl = (opts && opts.series === false) ? i18n.coverTitlePlain : i18n.coverTitle;
+  return tpl.replace('{MODEL}', (model || '').toUpperCase());
 }
 
 function formatCoverDate(iso) {
@@ -50,7 +56,7 @@ function formatCoverDate(iso) {
   return `${p[2]}.${p[1]}.${p[0]}`;
 }
 
-function buildCoverPage({ model, rev, date, variant, lang }) {
+function buildCoverPage({ model, rev, date, variant, lang, series }) {
   const brand = COVER_BRANDS[variant] || COVER_BRANDS.DOLFIN;
   const i18n = tDoc(lang);
 
@@ -73,20 +79,28 @@ function buildCoverPage({ model, rev, date, variant, lang }) {
   title.style.top = cm(9.63);
   title.style.width = cm(11.34);
   title.style.height = cm(0.93);
-  title.textContent = coverDocumentTitle(model, lang);
+  title.textContent = coverDocumentTitle(model, lang, { series });
   page.appendChild(title);
 
   const info = document.createElement('div');
   info.className = 'cover-info';
   info.style.left = cm(4.8);
   info.style.top = cm(12.19);
+  info.style.width = cm(14.1);
   const revText = (rev && rev.trim()) ? rev.trim() : 'xx';
-  info.textContent = i18n.coverInfo
-    .replace('{REV}', revText)
-    .replace('{DATE}', formatCoverDate(date));
+  const infoLines = (Array.isArray(i18n.coverInfo) ? i18n.coverInfo : [i18n.coverInfo]).map((line) =>
+    line.replace('{REV}', revText).replace('{DATE}', formatCoverDate(date))
+  );
+  infoLines.forEach((text) => {
+    const row = document.createElement('div');
+    row.className = 'cover-info-line';
+    row.textContent = text;
+    info.appendChild(row);
+  });
   page.appendChild(info);
 
-  const logoBox = brand.logoBox || COVER_LOGO_BOX;
+  const logoBox = { ...(brand.logoBox || COVER_LOGO_BOX) };
+  logoBox.top += Math.max(0, infoLines.length - 1) * COVER_INFO_LINE_CM;
 
   const img = document.createElement('img');
   img.className = 'cover-image';
