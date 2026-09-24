@@ -27,7 +27,7 @@ MODELS = {
     "pyt": ["PYT 40", "PYT 90", "PYT 750", "PYT 800"],
     "ult": ["ULT M40", "ULT M60", "ULT M100", "ULT M140", "ULT M200", "ULT M400"],
     "mst": ["MST PRO 02", "MST LVB 60", "MST LVB 100"],
-    "knv": ["KNV 40 5500 1B", "KNV 40 6500 2B"],
+    "knv": ["KNV 40 5500 1B", "KNV 40 6500 2B", "KNV 90 7500 2B"],
 }
 
 URETICI_BLOCK = """[URETICI]

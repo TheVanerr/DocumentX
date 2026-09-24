@@ -26,8 +26,11 @@
 #!projects/knv/
 #!projects/knv/**
 
-!projects/1726050-ALPER-KNV-30/
-!projects/1726050-ALPER-KNV-30/**
+#!projects/1726050-ALPER-KNV-30/
+#!projects/1726050-ALPER-KNV-30/**
+
+!projects/0726051-YETSAN-KNV-90/
+!projects/0726051-YETSAN-KNV-90/**
 
 *.yaml
 *.yml

@@ -1,0 +1,703 @@
+# =============================================================================
+# 0726051-YETSAN-KNV 90 — MAKİNE VERİ DOSYASI (SSOT)
+# =============================================================================
+# Bu dosya kılavuz yazımının TEK kaynağıdır. Bölüm .md dosyaları buradan üretilir.
+# Doldurma: ':' sonrasına yaz. Bilinmiyorsa [EKSİK] bırak. Uydurma yapma.
+# Son güncelleme:
+# Hazırlayan:
+# Onaylayan:
+# =============================================================================
+
+# =============================================================================
+# 0 — PROJE VE MAKİNE KİMLİĞİ
+# =============================================================================
+
+[PROJE]
+Proje / sipariş no: 0726051
+Müşteri adı: YETSAN
+Makine ticari adı: KNV 90 7500 2B
+Makine model kodu: KNV-90
+Seri numarası: 0726051
+Üretim yılı: 2026
+İmalat / sevk tarihi: 
+
+[URETICI]
+Üretici firma adı: CNK ELEKTRONİK MAKİNE SANAYİ AŞ
+Fabrika adresi: 1.Organize Sanayi Bölgesi Prof. Orhan Işık Caddesi No:8
+İlçe: Sincan
+Şehir: Ankara
+Ülke: Türkiye
+Telefon: +90 312 267 30 15
+Fax: +90 312 267 30 11
+Web sitesi: https://dolfintr.com
+E-posta: dolfin@dolfintr.com
+Yetkili servis / teknik destek: CNK ELEKTRONİK MAKİNE SANAYİ AŞ — yukarıdaki iletişim kanalları
+
+[MODEL_VARYANTLARI]
+# Bu proje tek makine — kılavuz yalnızca KNV 90 7500 2B (seri 0726051) için geçerlidir
+Makine (KNV 90 7500 2B): Konveyörlü (2B) endüstriyel parça yıkama hattı — iki banyo (yıkama + durulama), kurutma ünitesi; buton panosu ile kontrol (PLC/HMI yok); robot entegrasyonu yok
+
+# =============================================================================
+# 01 — GİRİŞ (introduction)
+# =============================================================================
+
+[GIRIS_GENEL]
+Kılavuz kapsamı (hangi makine, hangi opsiyonlar): KNV 90 7500 2B (seri no 0726051), müşteri YETSAN — teslim edilen makine ve standart donanım; proje dışı opsiyon yok ([EKSİK] — opsiyon eklenirse güncellenir)
+Kılavuz hedef kitlesi (operatör / bakım / kurulum): Operatör, bakım personeli, kurulum personeli
+Makine tipi kısa tanım (1-2 cümle): Redüktör ile tahrik edilen zincirli konveyör üzerinde endüstriyel parçaların yıkama ve durulama banyolarından geçirilip kurutma ünitesinde kurutulduğu konveyörlü endüstriyel parça yıkama makinesi
+
+# =============================================================================
+# 02 — GÜVENLİK (safety)
+# =============================================================================
+
+
+[ACIL_DURDURMA]
+Acil stop butonu adedi: 7 (1 operatör paneli + 6 saha)
+Acil stop konumları (fiziksel yer): Operatör paneli (EMERGENCY STOP); konveyör girişi sağ ve sol; konveyör çıkışı sağ ve sol; makine uzun ekseninde orta bölge sağ ve sol
+Acil stop reset prosedürü: 1) Acil stop mantarını serbest bırakın (çekme/kilidi kaldırma). 2) Tehlike giderildiğinden emin olun. 3) Paneldeki RESET (mavi) butonuna, hazır (reset) lambası yanana kadar basın. Yalnızca acil stopu kaldırmak yeterli değildir; reset ile makinenin güvenli duruma alındığı operatör tarafından onaylanır
+Acil stop sonrası makine durumu: Tüm hareket ve proses çıkışları güvenli şekilde durur; hazır/reset lambası söner; reset onayı olmadan tekrar çalıştırma yapılmaz
+
+
+[GUVENLIK_CIT]
+Emniyet kapısı / bariyer sayısı: 7 adet elle kaldırılıp açılan bakım kapağı (mekanik kilit yok)
+Kapı switch tipi / marka: Omron manyetik kapı switch F3STGRNLPU21M1J8 — bakım kapaklarında RFID/kapı güvenlik zinciri (seri)
+Makine stop kategorisi (Cat.): [EKSİK] — emniyet rölesi G9SX ile stop; tip etiketi/CE dosyasından doğrulanacak
+Işık perdesi var mı (Evet/Hayır — tip / marka): Hayır
+Emniyet rölesi (RFID / kapak zinciri): Omron G9SB2002AACDC241 (G9SX serisi) — seri bağlı kapak switch girişleri; bypass edilemez tasarım
+Emniyet rölesi (acil stop zinciri): Omron G9SB2002AACDC241 (G9SX serisi) — acil stop devresi [EKSİK] — tek/çift röle ayrımı şemadan
+Kapak açıkken davranış: Herhangi bir bakım kapağı açıldığında emniyet zinciri tüm makine hareketlerini ve prosesleri durdurur
+RFID / kapak switch uyarısı (kılavuz): Switch’ler mıknatıs/kapak ile hizalanmalıdır; bypass, köprüleme, mıknatıs kandırma veya switch üzerine yabancı cisim konulması kesinlikle yasaktır — güvenlik fonksiyonu devre dışı kalır
+Reset / hazır lambası: Acil stop veya emniyet zinciri devreye girdiğinde söner; RESET ile güvenli durum onaylanınca yanar (genel makine hazır göstergesi)
+
+[LOTO_ENERJI_KONTROLU]
+# SSOT — Bölüm 2.4; bakım/temizlik/demontaj yalnızca buraya referans verir
+LOTO kapsamı: Elektrik (tehlikeli enerji) ve basınçlı hava (pnömatik kalıntı enerjisi)
+İzolasyon noktası — elektrik: Ana şalter (TMŞ) OFF konumu; kilitleme ve etiketleme
+İzolasyon noktası — basınçlı hava: Tesisat hava vanası KAPALI; kilitleme ve etiketleme ([EKSİK] — vana fiziksel konumu layout/şemada)
+Su / hidrolik izolasyon: [EKSİK] — ayrı su kesme vanası varsa layout’tan eklenecek
+Doğrulama (enerji yok): Ana şalter açık değil; hava vanası kapalı — hat basıncı düştü ([EKSİK] — manometre/manuel test)
+Bakım kapağı kuralı: Emniyet kapısı/switch bypass edilmez; LOTO sonrası kapak açılır
+Tepe lambası: Yok — arıza/durum göstergesi pano lambaları ve RESET ile (HMI yok)
+
+# =============================================================================
+# 03 — GENEL BAKIŞ (overview)
+# =============================================================================
+
+# --- 03.1 Makine tanımı (machine-description) ---
+
+
+[MAKINE_TANIMI]
+Makinenin ana işlevi: Endüstriyel parça yüzeylerindeki proses kirlerinin ve yağ/atıkların yıkama ve durulama sıvıları ile giderilmesi; konveyör hattı boyunca taşıma ve kurutma ünitesinde kurutma
+Makine tipi (ör. dolum / paketleme / yıkama / konveyör): Konveyörlü endüstriyel parça yıkama makinesi (2 banyo + kurutma)
+Proses akışı özeti (adım adım): 1) Parçalar konveyör zincirine yerleştirilir / hat boyunca taşınır. 2) Yıkama banyosu: pompa banyo suyunu çekerek yıkama haznesine basar; nozzleden püskürtülen su parçalar hareket halindeyken yıkar. 3) Durulama banyosu: aynı mantıkla durulama suyu nozzleden püskürtülerek durulama. 4) Hat sonuna yakın kurutma ünitesi: blower ile su sıyırma; kurutma fanları hücre içine sıcak hava vererek parçayı kurur. 5) Kurutulmuş parça çıkış tarafından alınır
+Makine bileşenleri listesi (ana modüller): Zincirli konveyör ve redüktör tahriki; yıkama banyosu, yıkama pompası, yıkama haznesi ve nozzles; durulama banyosu, durulama pompası, durulama haznesi ve nozzles; kurutma ünitesi (blower, kurutma fanları, kurutma hücresi); elektrik panosu (buton kontrollü); güvenlik cihazları ([EKSİK] — adet/konum Bölüm 2)
+Opsiyon listesi (bu projeye özel): Robot besleme/boşaltma yok; PLC/HMI yok — röle/kontaktör ve buton panosu
+
+# --- 03.2 Amaçlanan kullanım (intended-use) ---
+
+
+[AMACLANAN_KULLANIM]
+Amaçlanan kullanım alanı: Endüstriyel parça yüzeylerinden proses kaynaklı kir, yağ ve atıkların giderilmesi; kapalı tesis içi endüstriyel üretim ortamı
+İşlenebilir ürün tipleri: Endüstriyel metal ve benzeri parçalar (müşteri prosesine uygun geometri ve ağırlıkta); konveyör üzerinde manuel yükleme/boşaltma ile taşınabilen parçalar ([EKSİK] — boyut/ağırlık limitleri)
+İşlenemez / yasak ürün tipleri: Gıda, bitki, insan, hayvan ve herhangi bir canlı varlık; medikal aletlerin temizlenmesi; canlı organizma ile temasa girecek materyaller; gıdalar, gıda ambalajları ve gıda ile temas eden yüzeylerin yıkanması — kesinlikle yasak
+Ortam koşulları (iç mekan / dış mekan): Yalnızca kapalı, korunaklı iç mekan
+Ortam sıcaklığı min / max (°C): +10 °C – +30 °C
+Göreceli nem min / max (% RH): 30 % – 50 %
+Operatör sayısı (min / max): 1–2
+Yetkinlik / eğitim gereksinimi: Operatör: makine start/stop ve güvenli parça yükleme eğitimi; bakım: mekanik/elektrik bakım ve LOTO; kurulum: montaj, bağlantı ve devreye alma — Bölüm 1.3 yetki matrisi
+
+# --- 03.3 Teknik özellikler (machine-spec) ---
+
+
+[BOYUT_AGIRLIK]
+Dış genişlik W (mm): 
+Dış uzunluk L (mm): 
+Dış yükseklik H — normal (mm): 
+Boş ağırlık — kuru (kg): 
+Çalışma ağırlığı — dolu (kg): 
+Şase tipi (sabit ayak / ayarlanabilir ayak / ankraj): Ayarlanabilir ayak
+
+[KAPASITE_PROSES]
+Nominal kapasite (adet/saat veya kg/saat): Müşteri firma belirler
+Maksimum kapasite (adet/saat): Müşteri firma belirler
+Minimum kapasite (adet/saat): Müşteri firma belirler
+Ürün formatı / ambalaj tipi: Müşteri firma belirler
+Ürün boyutu min (mm): Müşteri firma belirler
+Ürün boyutu max (mm): Müşteri firma belirler
+Ürün ağırlığı min (g): Müşteri firma belirler
+Ürün ağırlığı max (g): Müşteri firma belirler
+Proses adım sayısı: 4
+Proses adı 1: Yıkama (nozzle püskürtme, hareket halinde parça)
+Proses adı 2: Durulama (nozzle püskürtme)
+Proses adı 3: Su sıyırma (blower)
+Proses adı 4: Kurutma (kurutma fanları — sıcak hava)
+Döngü süresi nominal (sn): [EKSİK] — konveyör hızı ve hat uzunluğuna bağlı
+
+[ELEKTRIK]
+Besleme gerilimi (V): 380
+Besleme frekansı (Hz): 50
+Faz sayısı: 3
+Toplam kurulu güç (kW): 110
+Toplam kurulu güç — ısıtma dahil (kW): 110
+Maksimum akım çekişi (A): 220
+Güç faktörü (cos φ): [EKSİK]
+Kısa devre akımı / ICC gereksinimi (kA): [EKSİK]
+Besleme konfigürasyonu (3P+N+PE / vb.): 3P+N+PE
+Ana şalter tipi / In (A): EasyPact CVS250F — LV521091 (TMŞ, 250 A — pano malzeme listesi)
+Ana şalter marka: Schneider
+TMŞ kapı kolu: LV521101 (LV521303 — pano listesinde alternatif kod)
+Pano toplam akımı (A): 220
+Kumanda devresi gerilimi (V): 220 (kontaktör bobini — tablo)
+Toplam sigorta / devre kesici değeri (A): Bkz. motor/ısıtıcı satırları — pano TMŞ 250 A serisi
+UPS / jeneratör gereksinimi (varsa): Hayır
+
+[MOTOR_SURUCU_LISTESI]
+# Format: Ad (kod) | kW | A | MKŞ / kontaktör / sigorta / inverter — Schneider unless noted
+Konveyör (sepet) redüktör motoru (GE01): 0,25 kW | 0,50 A | Inverter Delta VFD004EL21W-1 (0,4 kW); sigorta A9F74106 1×6
+Yıkama pompası motoru (PE02): 5,50 kW | 11,10 A | MKŞ GV2ME16 (9–14 A); kontaktör LC1K1610M7 (16 A 220 V); yardımcı GVAE11
+Durulama pompası motoru (PE04): 3,00 kW | 6,10 A | MKŞ GV2ME14 (6–10 A); kontaktör LC1K1610M7 (16 A 220 V); yardımcı GVAE11
+Egzoz fanı motoru (FE01): 1,10 kW | 2,30 A | MKŞ GV2ME07 (1,6–2,5 A); kontaktör LC1K0610M7 (6 A 220 V); yardımcı GVAE11
+Yağ sıyırıcı redüktör motoru (GE06): 0,09 kW | 0,46 A | MKŞ GV2ME04 (0,4–0,63 A); kontaktör LC1K0610M7 (6 A 220 V); yardımcı GVAE11
+1. kurutma fanı motoru (FE02): 1,10 kW | 2,30 A | MKŞ GV2ME07; kontaktör LC1K0610M7; yardımcı GVAE11
+2. kurutma fanı motoru (FE03): 1,10 kW | 2,30 A | MKŞ GV2ME07; kontaktör LC1K0610M7; yardımcı GVAE11
+1. blower motoru (FE04): 4,00 kW | 8,00 A | MKŞ GV2ME14 (6–10 A); kontaktör LC1K1610M7 (16 A 220 V); yardımcı GVAE11
+2. blower motoru (FE05): 4,00 kW | 8,00 A | MKŞ GV2ME14; kontaktör LC1K1610M7; yardımcı GVAE11
+3. blower motoru (FE06): 4,00 kW | 8,00 A | MKŞ GV2ME14; kontaktör LC1K1610M7; yardımcı GVAE11
+4. blower motoru (FE07): 4,00 kW | 8,00 A | MKŞ GV2ME14; kontaktör LC1K1610M7; yardımcı GVAE11
+# Isıtıcılar (kW | A | kontaktör | sigorta)
+1. tank 1. ısıtıcı (R01): 8 kW | 16 A | LC1K1610M7 | A9F74316 (16 A)
+1. tank 2. ısıtıcı (R02): 8 kW | 16 A | LC1K1610M7 | A9F74316 (16 A)
+1. tank 3. ısıtıcı (R03): 8 kW | 16 A | LC1K1610M7 | A9F74316 (16 A)
+1. tank 4. ısıtıcı (R04): 8 kW | 16 A | LC1K1610M7 | A9F74316 (16 A)
+1. tank 5. ısıtıcı (R05): 8 kW | 16 A | LC1K1610M7 | A9F74316 (16 A)
+2. tank 1. ısıtıcı (R06): 8 kW | 16 A | LC1K1610M7 | A9F74316 (16 A)
+2. tank 2. ısıtıcı (R07): 8 kW | 16 A | LC1K1610M7 | A9F74316 (16 A)
+1. kurutma fanı ısıtıcısı (R21): 12 kW | 24 A | LC1D25M7 (25 A 220 V) | A9F74325 (25 A)
+2. kurutma fanı ısıtıcısı (R22): 12 kW | 24 A | LC1D25M7 (25 A 220 V) | A9F74325 (25 A)
+# Motor devir (rpm) / marka-model: [EKSİK] — motor nameplate / BOM
+
+[SIKIŞTIRILMIŞ_HAVA_SU]
+Basınçlı hava girişi (bar): 6
+Su girişi basıncı (bar): 1
+Su sıcaklığı min / max (°C): +10 °C – +70 °C
+Su kalitesi / filtre gereksinimi: Şebeke suyu veya arıtılmış su kullanılmalıdır
+Drain / atık su hattı çap (mm): Bkz. layout çizimi [EKSİK]
+Basınçlı hava ve su bağlantı verileri: Bkz. layout çizimi [EKSİK]
+
+[ORTAM_KOSULLARI]
+Çalışma sıcaklığı min / max (°C): +10 °C – +30 °C
+Depolama sıcaklığı min / max (°C): +10 °C – +30 °C
+Göreceli nem min / max (% RH): 30 % – 50 %
+Koruma sınıfı (IP): IP55
+Gürültü seviyesi (dB(A)): 65 dB(A)
+
+# --- 03.4 Makine kontrolleri (machine-controls) ---
+
+[KONTROLLER]
+Ana kontrol panosu konumu: Makineye karşıdan bakıldığında sağ taraf — operatör bu taraftan kumanda eder
+Pano koruma sınıfı (IP): [EKSİK]
+Pano boyutları W×H×D (mm): 1000 × 1600 × 300
+HMI ekran boyutu (inch): Yok — HMI yok
+HMI marka / model: Yok
+PLC marka / model: Yok — PLC yok
+PLC CPU model: Yok
+I/O modül özeti: Yok — röle/kontaktör kumandası; fonksiyonlar pano üzerinde aç/kapa anahtarları ile
+Ana şalter konumu: Elektrik panosu içi — TMŞ (Schneider LV521091)
+Start / Stop düğme konumu: Ayrı genel START/STOP yok; CONVEYOR ve her fonksiyon için aç/kapa anahtarı — operatör paneli
+Acil stop konumu: Operatör paneli + 6 saha (bkz. [ACIL_DURDURMA] konumları)
+Mod seçici (Manuel / Otomatik / Bakım): Yok — otomatik hat yok; operatör ilgili anahtarları aç/kapa ile yönetir
+Jog / inching düğmeleri: Yok
+Sinyal lambaları listesi: Her aç/kapa anahtarının yanında çalışma (run) lambası; TANK 1 WASHING LEVEL (kırmızı); TANK 2 WASHING LEVEL (kırmızı); RESET (mavi buton/lamba)
+Operatör paneli dilleri: İngilizce etiket (TANK, CONVEYOR, EMERGENCY STOP vb.)
+Şifre seviyeleri (operatör / bakım / admin): Yok — şifreli HMI/PLC seviyesi yok
+Operatör paneli fonksiyon anahtarları (aç/kapa + run lambası): TANK 1 HEATER (+ GEMO DTH2 termostat); TANK 1 PUMP; TANK 1 OIL SKIMMER; TANK 2 HEATER (+ GEMO DTH2); TANK 2 PUMP; BLOWER 1; DRYING 1 HEATER (+ GEMO DTH2); DRYING 1 FAN; BLOWER 2; DRYING 2 HEATER (+ GEMO DTH2); DRYING 2 FAN; CONVEYOR (+ hız potansiyometresi); etiketsiz anahtar — yağ ayırıcıyı açar (run lambası var)
+Konveyör hız ayarı: Pano potansiyometresi → Delta VFD004EL21W-1 çıkış frekansı; ayar aralığı 20–60 Hz. 20 Hz altına düşürülürse yükten dolayı konveyör durabilir — bu aralık dışında kullanmayın
+
+
+[KONTROL_FONKSIYONLARI]
+Ana ekran menü yapısı: Uygulanmaz — HMI yok; fonksiyon anahtarları ile
+Alarm ekranı davranışı: HMI yok; TANK 1/2 WASHING LEVEL kırmızı lambaları tank yıkama/durulama seviyesi uyarısı; emniyet/kapak/acil stop durumunda ilgili fonksiyonlar durur — RESET ile hazır onayı (bkz. [ACIL_DURDURMA])
+Reçete / program kayıt sayısı: Yok — banyo/kurutma sıcaklıkları GEMO DTH2 termostat ile ayarlanır ([EKSİK] — set değer aralığı)
+Proses kilitlemeleri (interlock): Tankta yeterli su yoksa ilgili tank ısıtıcıları ve pompalar çalıştırılamaz; emniyet kapağı açık veya acil stop devredeyken tüm hareket/proses durur
+Tank dolumu: Otomatik dolum yok — tanklar operatör tarafından manuel doldurulur
+Trend / log kayıt süresi: Yok
+Uzaktan erişim (Evet/Hayır — protokol): Hayır
+
+# --- 03.5 Makine yerleşimi (machine-layout) ---
+
+
+[LAYOUT]
+Genel yerleşim planı dosya adı: [EKSİK]
+Operatör tarafı (ön / sol / sağ): Sağ (elektrik panosu / operatör paneli sağda)
+Besleme tarafı (giriş yönü): Makineye karşıdan bakıldığında sol — parça girişi
+Boşaltma tarafı (çıkış yönü): Makineye karşıdan bakıldığında sağ — parça çıkışı
+Bakım erişim bölgeleri: 
+Minimum etraf boşluğu — ön (mm): 
+Minimum etraf boşluği — arka (mm): 
+Minimum etraf boşluğu — yan (mm): 
+Minimum tavan yüksekliği (mm): 
+Vinç / forklift erişim noktaları: 
+Ağırlık merkezi notu: 
+
+# =============================================================================
+# 04 — TAŞIMA (transport)
+# =============================================================================
+
+
+[TASIMA]
+Taşıma ağırlığı — demonte max parça (kg): 
+Taşıma ağırlığı — montajlı (kg): 
+Ambalaj tipi (kasa / shrink / konteyner): 
+Kaldırma aparatı / travers referans çizimi: 
+Forklift çatal girişi var mı (Evet/Hayır): 
+Taşıma sırasında sabitleme / bağlama: 
+Nem koruma / korozyon koruma: 
+Taşıma sıcaklığı aralığı (°C): 
+Taşıma yüksekliği max (m — deniz / kara): 
+
+
+[DEPOLAMA]
+Depolama pozisyonu (dikey / yatay): 
+Max depolama süresi (ay): 
+Depolama ortam koşulları: 
+
+# =============================================================================
+# 05 — MONTAJ (assembly)
+# =============================================================================
+
+
+[MONTAJ_GENEL]
+Montaj süresi tahmini (saat / gün): 
+Montaj ekip sayısı: 
+Gerekli vinç / ekipman: 
+Montaj alanı min boyut (m × m): 
+Zemin düzgünlük toleransı (mm/m): 
+Zemin mukavemet gereksinimi: 
+
+
+[MONTAJ_ADIMLARI]
+# Her adım: Sıra | Açıklama | Tork / tolerans | Not
+Adım 1: 
+Adım 2: 
+Adım 3: 
+Adım 4: 
+Adım 5: 
+Adım 6: 
+Adım 7: 
+Adım 8: 
+
+[KONUMLANDIRMA]
+Hizalama toleransı (mm): 
+Seviye ayar mekanizması (ayak tipi): 
+
+
+[KURULUM_TEST]
+Mekanik kurulum test checklist: 
+Elektrik devreye alma test checklist: 
+Pnömatik / hidrolik dolum test: 
+Boş koşu test süresi (dk): 
+Güvenlik fonksiyon test listesi: 
+
+
+[ILETISIM]
+Fieldbus / protokol (Profinet / EtherCAT / Modbus / vb.): 
+Üst sistem (MES / SCADA) bağlantısı: 
+I/O listesi dosya referansı: 
+
+# =============================================================================
+# 06 — AYARLAR (settings)
+# =============================================================================
+
+
+[MEKANIK_AYARLAR]
+Mekanik ayar noktaları listesi: 
+Referans / home pozisyon ayarı: 
+Zincir / kayış gerginlik değeri: 
+Mesafe / limit switch ayarları: 
+Nozzle / doldurma kafası ayar aralığı (mm): 
+Format değişim prosedürü özeti: 
+
+
+[GUVENLIK_AYARLARI]
+Emniyet kapısı bypass (varsa — sadece bakım): 
+Işık perdesi ayar mesafesi (mm): 
+Acil stop test periyodu: 
+
+
+[ELEKTRIK_AYARLARI]
+Motor yönü / faz kontrolü: Konveyör yönü inverter parametreleri — fabrika ayarı; operatör değiştirmez
+Encoder / feedback ayarı: Yok
+Analog ölçeklendirme (basınç / sıcaklık): Konveyör hız potansiyometresi → VFD 20–60 Hz; tank/kurutma sıcaklığı GEMO DTH2
+Tarih / saat / dil ayarı: Uygulanmaz
+
+
+[PNEOMATIK_AYARLAR]
+Regülatör basınç ayarı (bar): 
+Silindir hız ayarı: 
+Sensör ON/OFF gecikmeleri (ms): 
+
+# =============================================================================
+# 07 — OPERASYON (operation)
+# =============================================================================
+
+
+[CALISMA_MODLARI]
+Manuel mod açıklaması: Konveyörlü proses makinesi — merkezi otomatik sekans yok; operatör panelindeki her fonksiyon (ısıtıcı, pompa, blower, kurutma fanı/ısıtıcısı, konveyör, yağ sıyırıcı vb.) ayrı aç/kapa anahtarı ile yönetilir
+Otomatik mod açıklaması: Yok — tek «start» ile tüm hat otomatik koşmaz
+Bakım / setup modu: Özel mod yok; bakımda ana şalter kapatılır ve LOTO uygulanır (Bölüm 2.4); bakım kapakları yalnızca güvenli durumda açılır
+Step / tek adım modu: Yok
+Mod geçiş koşulları: Uygulanmaz — operatör istediği fonksiyonları (interlock’lara uyarak) bağımsız aç/kapa eder
+
+
+[BASLATMA]
+Devreye alma ön koşulları (checklist): Tanklar manuel doldurulmuş olmalı; 6 bar basınçlı hava ve su tesisatı bağlı olmalı; ana şalter açık; acil stop ve kapak emniyeti hazır (reset lambası); konveyör hattında sıkıştıracak parça/cisim olmamalı
+Güç açma sırası: Ana şalter ON → gerekli tank ısıtıcıları (GEMO set) → su seviyesi yeterli iken pompalar → proses ihtiyacına göre blower/kurutma → CONVEYOR anahtarı; sabit sıra zorunlu değil — interlock’lara uy
+Hava / su / vakum açma: 6 bar basınçlı hava tesisata bağlı olmalı; su manuel tank dolumu; vakum yok
+Isıtma ön ısınma süresi (dk): Değişken — tanktaki su miktarı ve başlangıç sıcaklığına bağlı; sabit süre verilemez
+Start öncesi kontrol listesi: Pompa emiş/çıkış vanaları açık; parça giriş/çıkış alanı güvenli; istenen proses anahtarları seçildi
+İlk ürün / kurşun atma prosedürü: Yok
+
+
+[KAPATMA]
+Normal stop prosedürü: İlgili fonksiyon anahtarlarını OFF konumuna alın (önce konveyör, ardından pompalar/fanlar — operatör pratiği); tüm anahtarlar kapalı olabilir
+Acil stop sonrası yeniden başlatma: Bkz. [ACIL_DURDURMA] — acil stop serbest + RESET ile hazır lambası
+Güç kapatma sırası: Fonksiyonlar durduktan sonra ana şalter OFF
+Uzun süreli durdurma (hafta sonu) prosedürü: Tanklar boşaltılıp temizlenmeli (Bölüm 10)
+
+
+[OPERASYON_SEKANS]
+Otomatik cycle adım 1: Uygulanmaz — sabit otomatik cycle yok
+Otomatik cycle adım 2: Operatör aktif ettiği prosesler konveyör ile birlikte eşzamanlı veya kısmi çalışabilir
+Otomatik cycle adım 3: Parça konveyörde ilerler; açık olan yıkama/durulama pompaları ve nozzles devrededir
+Otomatik cycle adım 4: Açık blower/kurutma üniteleri devrededir
+Otomatik cycle adım 5: Parça çıkış tarafından alınır — manuel yükleme/boşaltma
+Cycle süresi nominal (sn): [EKSİK] — konveyör frekansı (20–60 Hz) ve hangi proseslerin açık olduğuna bağlı
+Ürün giriş senaryosu: Operatör parçayı sol girişten konveyöre yerleştirir
+Ürün çıkış senaryosu: Operatör parçayı sağ çıkıştan alır
+Hata durumunda makine davranışı: Bakım kapağı açılırsa (RFID switch) veya acil stop devreye girerse tüm hareket/proses durur; tankta su yokken ısıtıcı/pompa interlock’u devreye girer; seviye uyarı lambaları yanar
+
+
+[KRONOLOJI]
+Günlük operasyon zaman çizelgesi: Müşteri vardiya planına göre — makine sürekli otomatik hat değildir
+Vardiya devir teslim maddeleri: Tank seviyesi, sıcaklık, filtre durumu, acil stop/reset durumu [EKSİK] — müşteri prosedürü
+Shift başlangıç kontrol listesi: Manuel tank seviyesi, 6 bar hava, emniyet reset, konveyör hattı boş — Bölüm 7.2 özet
+
+
+[OPERASYON_DIGER]
+Format / ürün değişim süresi (dk): Yok — format değişim prosedürü yok
+Fire / hurda yönetimi: Müşteri hattına ait
+Operatör müdahale noktaları: Panel anahtarları, manuel tank dolumu, parça yükleme/boşaltma, konveyör hız potansiyometresi, yağ ayırıcı anahtarı
+
+# =============================================================================
+# 08 — KAPASİTE (capacity)
+# =============================================================================
+
+
+[URUN_KAPASITE]
+Nominal kapasite tablosu (ürün × adet/saat): Müşteri firma tarafından belirlenir
+Test edilen kapasite (adet/saat): Müşteri firma tarafından belirlenir
+Kapasite test koşulları: Müşteri firma tarafından belirlenir
+Maksimum sürekli çalışma süresi (saat/gün): Müşteri firma tarafından belirlenir
+
+[OZEL_KURULUM]
+Ürün A parametreleri: Müşteri firma tarafından ayarlanır
+Ürün B parametreleri: Müşteri firma tarafından ayarlanır
+Ürün C parametreleri: Müşteri firma tarafından ayarlanır
+Reçete no listesi: Müşteri firma tarafından ayarlanır (HMI/reçete yok — proses anahtarları ve termostat set değerleri)
+
+[BAKIM_GENEL]
+Bakım felsefesi (önleyici / kestirimci): Önleyici bakım felsefesi uygulanır
+Bakım personeli yeterlilik seviyesi: Makinenin kullanıldığı ülkenin mevcut bakım personeli yeterlilik seviyesi uygulanmalıdır
+Lubrication chart dosya referansı: Ayrı lubrication chart dosyası yok — Bölüm 9.1.4
+
+[BAKIM_PERIYOT]
+Günlük bakım maddeleri:
+- Genel görsel kontrol — sızıntı, anormal ses, pano seviye/reset lambaları
+- Yıkama tankı ön filtre temizliği — Bkz. Bölüm 10.1.3
+- Tank su seviyesi ve 6 bar hava durumu (tesis + manuel dolum sonrası)
+- Konveyör hattında sıkışma veya parça birikintisi kontrolü
+
+Haftalık bakım maddeleri:
+- Tank iç filtreleri temizliği — Bkz. Bölüm 10.1.4
+- Pompa çıkışı torba filtre temizliği veya değişimi — Bkz. Bölüm 10.1.4
+- Yağ sıyırıcı ve tank yüzeyi kontrolü — aşırı yağ tabakası
+- Konveyör zincir gerginliği ve hizası gözle kontrol
+- RFID / kapak emniyet fonksiyonu kısa test — Bkz. Bölüm 2.3, 5.4.2
+- Acil stop butonları görsel kontrol (hasar, sıkışma yok) — Bkz. Bölüm 2.5
+
+Aylık bakım maddeleri:
+- Acil stop fonksiyon testi — bas, makine dursun, reset — Bkz. Bölüm 6.2.3
+- Konveyör 4 yağlama noktası gresleme — Bkz. Bölüm 9.1.4
+- Seviye sensörleri ve sızıntı tavası temizlik/kontrol
+- Pano filtre/ventilasyon delikleri toz kontrolü
+- Pompa ve fan birimlerinde anormal titreşim/ses kontrolü
+
+250 saat bakım maddeleri:
+- Isıtıcı termokupl ve rezistans bağlantı kontrolü (LOTO sonrası)
+- Egzoz fan ve kurutma fan kanat/gövde toz birikimi temizliği
+- Basınçlı hava hattı ve regülatör kaçak kontrolü
+
+500 saat bakım maddeleri:
+- Yağ sıyırıcı redüktör yağ keçesi / teflon kontrol ve gerekirse değişim — Bkz. Bölüm 13.3
+- Konveyör redüktör yağ seviyesi / sızıntı kontrolü — Bkz. Bölüm 9.1.4
+- Tank ve kapak contaları kontrol
+
+1000 saat bakım maddeleri:
+- Pompa emiş filtresi komple kontrol / değişim — Bkz. Bölüm 13.3
+- Nozzle tıkanma/aşınma kontrolü — Bkz. Bölüm 13.3
+- Konveyör tahrik grubu (redüktör + inverter) mekanik ve elektrik kontrolü
+- Tank su kalitesi değerlendirmesi; gerekirse tam boşaltma ve iç temizlik — Bkz. Bölüm 10
+
+Yıllık bakım maddeleri:
+- Tüm emniyet fonksiyonları test raporu (RFID, acil stop, kaçak akım) — Bkz. Bölüm 2, 5.4
+- Isıtıcı rezistans ve termokupl fonksiyon kontrolü
+- Redüktör keçe / sızıntı kontrolü — periyodik yağ değişimi [EKSİK] — üretici/redüktör etiketi
+- Elektrik bağlantıları sıkılık kontrolü (LOTO, yetkili elektrikçi)
+- Uzun duruş planlanıyorsa tank boşaltma ve koruyucu temizlik — Bkz. Bölüm 7.3
+
+[BAKIM_YAGLAMA]
+Yağlama noktası listesi (konum / yağ tipi / periyot): Konveyör girişinde sağ ve sol; konveyör çıkışında sağ ve sol — toplam 4 adet gres nipeli (aylık)
+Gres tipi: Castrol Tribol GR 100-1 PD (NLGI 1) — 4 konveyör nipel, aylık
+Redüktör yağ değişim: Konveyör redüktörü [EKSİK] — yağ tipi/ömür etiket veya BOM; yıllık sızıntı/seviye kontrolü
+
+
+[BAKIM_YEDEK_PARCA]
+Kritik yedek parça listesi: Bkz. [PARCA_LISTESI] — Kategori=Kritik satırları (Bölüm 9 / 13.3)
+Önerilen stok miktarları: Bkz. [PARCA_LISTESI] — «Önerilen stok» sütunu ([EKSİK] kalemler kullanıcı tarafından doldurulacak)
+Yedek parça sipariş kodu referansı: Bkz. [PARCA_LISTESI] — «Sipariş kodu» sütunu
+
+[BAKIM_YEDEK_PARCA_NOT]
+# Tam liste SSOT: [PARCA_LISTESI] + proje kökü «0726051-YETSAN-KNV 90 PARCA LISTESI»
+# Kaynak: KNV 90 7500 ÜRÜN AĞACI.xlsm + pano malzeme listesi (DATA [PANO_MALZEME_OZET])
+
+[TEMIZLIK]
+Temizlik tipi (kuru / ıslak / CIP / COP): kuru/ıslak
+Günlük temizlik prosedürü: Yıkama tankı içerisindeki ön filtreler sökülüp temizlenmelidir. Bunun dışında günlük herhangi bir temizliğe gerek yoktur.
+Haftalık derin temizlik: Tanklarda bulunan filtreler çıkartılıp temizlenmelidir. Pompa çıkışındaki hassas filtrelerdeki torba filtreler sökülüp temizlenmelidir.
+Temizlik suyu: Makine temizliği için şebeke suyu kullanılabilir.
+Kullanılan temizlik maddeleri (genel kriter): Paslanmaz çelik uyumlu nötr veya hafif alkalî deterjanlar.
+Üretici önerilen temizlik maddeleri: VEIDEC 89 SUPER FOAM 750 — genel temizlik; VEIDEC BIO CLEANING 3 — çıkmayan inatçı lekeler (az miktarda ıslatılmış sünger ile ovma); VEIDEC 34 INOX — parlatma.
+Müşteri eşdeğer ürün: Asit bazlı olmayan ve makineye (paslanmaz çelik, tank, conta) zarar vermeyen temizlik maddeleri kullanılabilir.
+Yasak temizlik maddeleri: Asit bazlı temizlik maddeleri kullanılmamalıdır. Paslanmaz çeliğe zarar verecek temizlik maddeleri kullanılmamalıdır.
+Dezenfeksiyon prosedürü: Makine tanklarındaki su boşaltılıp tank içerisi sabunlu su ile yıkanmalıdır.
+Temizlik sonrası kurutma: Makine dışı kuru bir bez ile silinmelidir.
+Atık su / kimyasal bertaraf: Makinenin kullanıldığı ülkenin mevcut atık su / kimyasal bertaraf gereksinimleri uygulanmalıdır.
+Temizlik öncesi LOTO: Bkz. [LOTO_ENERJI_KONTROLU] — ana şalter + hava vanası
+
+# =============================================================================
+# 11 — ARIZA GİDERME (troubleshooting)
+# =============================================================================
+
+
+[ARIZA_GENEL]
+# HMI yok — belirtiler pano lambaları, MKŞ/kontaktör, kaçak akım, fonksiyon anahtarları ile teşhis edilir
+Belirti özeti (SSOT — Bölüm 11.1 tablo): MKŞ trip; kaçak akım trip; pompa/ısıtıcı çalışmıyor; reset alınmıyor; termostat set’te kalmasına rağmen ısınma devam; panoda enerji yok
+HMI alarm metinleri dili: Uygulanmaz — HMI yok
+Servis çağrısı kriterleri: Tekrarlayan kaçak akım trip; tekrarlayan faz sırası hatası; emniyet fonksiyon testi başarısız; MKŞ/kontaktör değişimine rağmen tekrarlayan motor arızası; ciddi mekanik hasar/sızıntı; yetkili personel çözemediği elektrik arızası
+
+[ARIZA_TABLO]
+# Format: Belirti | Olası neden | Kontrol | Çözüm
+Arıza 1 belirti: Motor/pompa/fan çalışmıyor; ilgili MKŞ trip (GV2ME kolu aşağıda / «0»)
+Arıza 1 neden: Aşırı akım, mekanik sıkışma, faz kaybı, kısa devre
+Arıza 1 çözüm: LOTO; hangi MKŞ’nin attığını pano etiket/devre şemasından tespit et (PE02 yıkama, PE04 durulama, FE01 egzoz, FE02–03 kurutma fanı, FE04–07 blower, GE06 yağ sıyırıcı); mekanik neden gider; MKŞ reset; test
+Arıza 2 belirti: Kaçak akım sigortası/RCCB trip (A9N19642 / A9N19643 grubu)
+Arıza 2 neden: Isıtıcı rezistansında izolasyon hatası (patlak/ıslak rezistans), nem, kablo hasarı
+Arıza 2 çözüm: LOTO; trip olan rezistans grubunu ayır; rezistans ve bağlantıları ölç; arızalı rezistans değiştir — Bkz. [PARCA_LISTESI]
+Arıza 3 belirti: Pompa veya tank ısıtıcı anahtarı açık ama çalışmıyor
+Arıza 3 neden: Tankta su yok (seviye interlock); MKŞ trip; kontaktör çekmiyor
+Arıza 3 çözüm: Tank seviyesini manuel doldur; TANK 1/2 WASHING LEVEL lambalarını kontrol et; MKŞ/kontaktör — Arıza 1 prosedürü
+Arıza 4 belirti: Tankta su varken RESET ile hazır lambası yanmıyor / makine hazır olmuyor
+Arıza 4 neden: RFID’li bakım kapağı açık veya kapak switch hizasız; en az bir acil stop basılı; emniyet rölesi G9SX reset bekliyor
+Arıza 4 çözüm: Tüm acil stopları serbest bırak; tüm bakım kapaklarını kapat (switch-mıknatıs hizası); RESET’e kadar bas; devam ederse kapak switch ve emniyet rölesi girişlerini kontrol et (LOTO)
+Arıza 5 belirti: GEMO DTH2 set sıcaklığa ulaşıldı gösterirken su ısınmaya devam ediyor
+Arıza 5 neden: Termostat arızalı (conta açık kalmıyor); veya ısıtıcı kontaktörü yapışık (LC1K/LC1D bobini sürekli enerjili)
+Arıza 5 çözüm: LOTO; kontaktörde ses/ısınma; termostat çıkışını ve kontaktörü test et; arızalı termostat veya kontaktör değiştir
+Arıza 6 belirti: Pano içinde enerji yok (fonksiyonlar hiç çalışmıyor) ancak güç kablosu bağlı
+Arıza 6 neden: Ana şalter (TMŞ) OFF veya açık devre; sigorta atmış; faz sıra rölesi MKR-01 fazları ters/eksik olduğu için çıkış vermiyor
+Arıza 6 çözüm: TMŞ ve sigorta konumunu kontrol et; faz sırasını yetkili elektrikçi doğrulasın; MKR-01 reset; şema Bölüm 13.2
+
+[ARIZA_MKŞ_TESPIT]
+# Pano üzerinde her motor hattı için ayrı MKŞ (Schneider GV2ME) — trip kolu ve yardımcı kontak
+Yıkama pompası (PE02): GV2ME16 — trip → yıkama pompası çalışmaz, TANK 1 PUMP run lambası sönük
+Durulama pompası (PE04): GV2ME14 — trip → durulama pompası çalışmaz
+Egzoz fanı (FE01): GV2ME07
+Kurutma fanları (FE02, FE03): GV2ME07
+Blower 1–4 (FE04–FE07): GV2ME14
+Yağ sıyırıcı (GE06): GV2ME04
+Konveyör: Inverter koruması — VFD004EL21W-1 alarm/display; MKŞ yok (sigorta A9F74106)
+Isıtıcılar: MKŞ yok — kaçak akım RCCB + sigorta A9F74316 / A9F74325
+MKŞ reset: Neden giderildikten sonra trip kolu reset; emniyet/reset hazır değilse önce Bkz. Arıza 4
+
+[ELEKTRIK_ARIZA]
+Faz kaybı davranışı: Faz koruma / faz sıra rölesi MKR-01 trip — pano çıkışı yok veya fonksiyonlar devreye girmez; faz sırası ve eksik faz kontrolü (yetkili elektrikçi)
+Motor koruma trip: Schneider GV2ME MKŞ — Bkz. [ARIZA_MKŞ_TESPIT] ve [ARIZA_TABLO] Arıza 1
+Inverter alarm kodları özeti: Konveyör — Delta VFD004EL21W-1; sürücü panelindeki alarm koduna göre Delta kılavuzu (Bölüm 13.3)
+Sensör kablo renk kodu: Bkz. elektrik şeması — teslim paketi (Bölüm 13.2)
+Kaçak akım / ısıtıcı: Bkz. [ARIZA_TABLO] Arıza 2
+Termostat / kontaktör yapışması: Bkz. [ARIZA_TABLO] Arıza 5
+Pano enerji yok: Bkz. [ARIZA_TABLO] Arıza 6
+
+
+[HIDROLIK_ARIZA]
+Basınç düşük alarm: 
+Yağ kaçağı noktaları: 
+Pompa sesi anormal: 
+
+
+[PNEOMATIK_ARIZA]
+Basınç düşük: 
+Silindir yavaş / takılma: 
+Valf bobini arıza: 
+
+
+[SENSOR_ARIZA]
+Kritik sensör listesi (tip / konum): Kapak güvenlik — Omron F3STGRNLPU21M1J8 (7 bakım kapağı). Tank seviye — VEGASWING 51 çatı tip (2 ad). Termokouple — ETB30F06-5Ç / ETB30F06-4Ç (2+2). Sızıntı tavası — [EKSİK] sensör tipi (07 17687 montaj komplesi)
+Sensör LED / durum göstergesi: HMI yok; seviye uyarı lambaları TANK 1/2 WASHING LEVEL (kırmızı) — pano
+
+
+# =============================================================================
+# 12 — DEMONTAJ (dismantle)
+# =============================================================================
+
+
+[DEMONTAJ]
+Demontaj ön koşulları: 
+Enerji izolasyon prosedürü (LOTO): Bkz. [LOTO_ENERJI_KONTROLU] (Bölüm 2.4)
+Demontaj sırası: 
+Geri dönüşüm / bertaraf talimatı: 
+Tehlikeli madde (yağ / akü / kimyasal): 
+Çevresel bertaraf gereksinimleri: 
+
+
+[DEVRE_DISI]
+Kalıcı devre dışı bırakma: 
+Geçici devre dışı bırakma: 
+
+
+[HURDA]
+Hurda değerlendirme: 
+Parça geri dönüşüm malzemeleri: 
+
+# =============================================================================
+# 13 — DÖKÜMANLAR (documents)
+# =============================================================================
+
+
+[DOKUMANLAR]
+Elektrik şeması dosya adı / rev: 
+Pnömatik şema dosya adı / rev: 
+Hidrolik şema dosya adı / rev: 
+Layout çizimi dosya adı / rev: 
+Parça listesi (BOM) dosya adı / rev: KNV 90 7500 ÜRÜN AĞACI.xlsm (proje kökü) + [PARCA_LISTESI] / 0726051-YETSAN-KNV 90 PARCA LISTESI
+I/O listesi dosya adı / rev: 
+PLC program yedek dosya adı: 
+HMI proje yedek dosya adı: 
+CE dosyası referansı: 
+Kalibrasyon sertifikaları: 
+P&ID dosya adı / rev: 
+
+
+[CIZIMLER]
+Genel montaj çizimi: 
+Kaldırma noktaları çizimi: 
+Zemin ankraj çizimi: 
+Teslim çizim paketi: 
+
+
+[PANO_MALZEME_OZET]
+# Pano malzeme listesi — ürün ağacında yok; yedek parça için SSOT tamamlayıcı
+Pano toplam akım (A): 220
+TMŞ: Schneider LV521091 (CVS250F 250 A); kapı kolu LV521101
+Kaçak akım (örnek gruplar): A9N19642 (4P motor grubu); A9N19643 (4P 1./2. tank rezistans); A9N19642 (kurutma 1/2)
+Faz koruma rölesi: MKR-01 (10 00258)
+Tepe lambası: Yok — bu makinede tepe lambası yok (pano listesindeki kalem uygulanmaz)
+Kontrol besleme: LRS-350-24 (24 VDC 14,6 A) — sigorta A9F74160 / A9F74110
+Emniyet rölesi (x2): G9SB2002AACDC241 Omron G9SX — acil stop + RFID zinciri
+Termostat (x3): GEMO DTH2 — yıkama / durulama / kurutma ısıtma
+Acil stop buton seti: P1EC400E40K + kontak blokları (pano); saha: 10 02896 BUTON ACİL P1EC400E40K (ürün ağacı)
+Reset butonu: BL901M + mavi sinyal lambası
+Faz/MKŞ/kontaktör özeti: Bkz. [MOTOR_SURUCU_LISTESI]
+
+[PARCA_LISTESI]
+Parça listesi (BOM) konumu: Kılavuz Bölüm 13.3 + 0726051-YETSAN-KNV 90 PARCA LISTESI
+Mekanik parça listesi referansı: Ürün ağacı (KNV 90 7500 2B) — aşağıdaki tablo
+Elektrik parça listesi referansı: Ürün ağacı + [PANO_MALZEME_OZET]
+Wear part / aşınan parça listesi: Kategori=Tüketim satırları
+
+# Format: Sipariş kodu | Parça adı | Kategori | Önerilen stok | Konum / fonksiyon | Gerekçe
+# Kategori: Kritik | Önerilen | Tüketim
+
+# --- Mekanik / proses (ürün ağacı) ---
+10 13529 | REDÜKTÖR MOTORLU XXC40/75 P63/B14 I LD TORK LİMİT (konveyör) | Kritik | 0 | Konveyör tahrik | Arızada parça akışı durur
+07 17686 | KNV 90 7500 2B POMPA KOMPLESİ | Kritik | 0 | Yıkama/durulama pompası | Arızada proses durur
+07 17683 | SALYANGOZLU FAN ENA 4 1,1 kW HAVA SOĞ. SİLİKONLU | Kritik | 0 | Egzoz / havalandırma | Arızada egzoz etkilenir
+07 04649 | YAĞ SIYIRICI KOMPLESİ TİP 3 MONTAJ | Kritik | 0 | 1. tank yağ sıyırıcı | Arızada yağ skimmer çalışmaz
+07 03635 | YAĞ AYIRICI ÜNİTESİ | Önerilen | 0 | Yağ ayırıcı | Proses kalitesi
+07 17682 | KNV 90 7500 2B HASSAS FİLTRE KOMPLESİ | Tüketim | 1 | Pompa çıkışı hassas filtre | Periyodik değişim
+07 10214 | ÖN FİLTRE NS KOMPLESİ | Tüketim | 2 | Tank ön filtre (6 ad montaj) | Günlük/temizlik tüketimi
+07 00670 | EMİŞ FİLTRESİ KOMPLESİ (PYM2,KBN,VDL,ULT,KNV) | Tüketim | 1 | Pompa emiş | Periyodik değişim
+07 08732 | EMİŞ FİLTRESİ KOMPLESİ 2" 1/2 | Tüketim | 1 | Emiş hattı | Periyodik değişim
+07 15142 | REZİSTANS KOMPLESİ 8000 W 50 cm DÜZ DİKİŞSİZ | Kritik | 2 | Tank ısıtma (6 ad) | Arızada sıcaklık sağlanamaz
+07 16791 | SEVİYE SENSÖRÜ ÇAT.TİP VEGASWING 51 DİŞ ÇEKİLMİŞ | Kritik | 1 | Tank seviye (2 ad) | Arızada seviye güvenliği bozulur
+10 00296 | PASLANMAZ SEVİYE BEKÇİSİ | Kritik | 0 | Tank seviye güvenlik | [EKSİK] — ürün ağacında ayrı satır yok; saha montajına göre
+10 02976 | TERMOKUPL ETB30F06-5Ç | Kritik | 1 | Isıtma kontrol | Arızada ısıtma devre dışı
+10 02634 | TERMOKUPL ETB30F06-4Ç | Kritik | 1 | Isıtma kontrol | Arızada ısıtma devre dışı
+07 00669 | TERMOSTAT ADAPTÖRÜ KOMPLESİ | Önerilen | 1 | Tank termostat montajı | Bakım
+10 01079 | NOZZLE 650.724.1C.CC | Tüketim | 20 | Yıkama/durulama nozul (160 ad) | Aşınan parça
+10 17538 | TEL BANT 850 mm (konveyör zinciri) | Tüketim | 0 | Konveyör | Aşınma — stok [EKSİK]
+# 10 18815 DOZAJ POMPASI DOSATRON — bu projede kullanılmıyor (ürün ağacı kalıntısı)
+07 17689 | KNV 90 7500 2B KURUTMA KOMPLESİ | Kritik | 0 | Kurutma hücresi | Arızada kurutma yok
+07 17687 | KNV 90 7500 2B SIZINTI TAVASI MONTAJ KOMPLESİ | Önerilen | 0 | Alt sızıntı tavası | Sızıntı algılama
+
+# --- Elektrik / güvenlik (ürün ağacı + pano) ---
+10 07147 | SWITCH F3STGRNLPU21M1J8 OMRON MANYETİK KAPI | Kritik | 2 | 7 bakım kapağı (ağaçta 5 ad) | Güvenlik zinciri; arızada stop
+10 02896 | BUTON ACİL P1EC400E40K SARI-SİYAH PL.KUTU | Kritik | 2 | Saha acil stop | Güvenlik
+10 00220 | EMNİYET RÖLESİ G9SB2002AACDC241 OMRON G9SX | Kritik | 1 | Acil stop zinciri | Bypass edilemez
+10 11531 | EMNİYET RÖLESİ G9SB2002AACDC241 OMRON G9SX (RFID) | Kritik | 1 | Kapak switch zinciri | Bypass edilemez
+10 16319 | İNVERTÖR Delta VFD004EL21W-1 0,4 kW (konveyör) | Kritik | 0 | Konveyör | Arızada konveyör durur
+10 00305 | SIGORTA KAÇAK AKIMLI A9N19642 4P | Önerilen | 0 | Motor grubu RCCB | Koruma
+10 00304 | SIGORTA KAÇAK AKIMLI A9N19643 4P | Önerilen | 0 | Tank rezistans RCCB | Koruma
+10 00258 | FAZ KORUMA RÖLESİ MKR-01 | Kritik | 1 | Pano giriş | Faz hatası koruması
+10 11089 | TERMOSTAT GEMO DTH2 (ısıtma) | Önerilen | 1 | Yıkama/durulama/kurutma | Sıcaklık ayarı
+10 00272 | RESET BUTONU BL901M + mavi lamba | Önerilen | 1 | Operatör paneli | Reset fonksiyonu
+# 10 04305 TEPE LAMBASI — bu makinede yok
+
+# --- Pano koruma elemanları (MKŞ / kontaktör / sigorta — yedek set önerisi) ---
+10 01421 | Sigorta A9F74106 1×6 (konveyör/inverter besleme) | Önerilen | 2 | Pano | Koruma
+— | MKŞ Schneider GV2ME16 (9–14 A) — yıkama pompası | Önerilen | 1 | PE02 | Motor koruma
+— | MKŞ Schneider GV2ME14 (6–10 A) — durulama/blower | Önerilen | 2 | PE04 / FE04–07 | Motor koruma
+— | MKŞ Schneider GV2ME07 (1,6–2,5 A) — fan | Önerilen | 2 | FE01–FE03 | Motor koruma
+— | MKŞ Schneider GV2ME04 (0,4–0,63 A) — yağ sıyırıcı | Önerilen | 1 | GE06 | Motor koruma
+— | Kontaktör LC1K1610M7 (16 A 220 V) | Önerilen | 2 | Pompalar/blower | Yedek
+— | Kontaktör LC1K0610M7 (6 A 220 V) | Önerilen | 2 | Fan/yağ sıyırıcı | Yedek
+— | Kontaktör LC1D25M7 (25 A 220 V) | Önerilen | 1 | Kurutma ısıtıcı | Yedek
+— | Sigorta A9F74316 (16 A) — tank ısıtıcı | Önerilen | 3 | R01–R07 | Koruma
+— | Sigorta A9F74325 (25 A) — kurutma ısıtıcı | Önerilen | 2 | R21–R22 | Koruma
+— | TMŞ LV521091 + kapı kolu LV521101 | Kritik | 0 | Ana güç | Arızada tüm pano
+
+
+# =============================================================================
+# 14 — EKLER / SÖZLÜK / İNDEKS (index)
+# =============================================================================
+
+
+[EKLER]
+Ek A — Alarm listesi: 
+Ek B — Parametre listesi: 
+Ek C — Reçete örnekleri: 
+Ek D — Garanti belgesi: 
+
+
+[SOZLUK]
+Terim 1 / açıklama: 
+Terim 2 / açıklama: 
+Terim 3 / açıklama: 
+Kısaltmalar (PLC, HMI, LOTO, RFID, P&ID, BOM vb.): 
+
+
+[INDEKS]
+Anahtar kelime listesi (opsiyonel): 
+
+# =============================================================================
+# SON — DOSYA SONU
+# =============================================================================

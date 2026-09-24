@@ -1,0 +1,19 @@
+﻿# 0726051-YETSAN-KNV 90 — proje reçetesi
+# Dil derleme: TR / DE seçimine göre aynı bölümün
+#   <dosya>.tr.md  |  <dosya>.de.md
+# dosyası kullanılır.
+
+proje_adi: KNV 90 7500 2B
+model: knv
+tip: proje
+diller:
+  - tr
+  - de
+varsayilan_dil: tr
+extends: templates/base.yaml
+kapak:
+  baslik: KNV 90 7500 2B
+  seri: false
+  rev: ''
+  tarih: ''
+  firma: DOLFIN

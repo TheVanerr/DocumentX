@@ -1,0 +1,47 @@
+# =============================================================================
+# 0726051-YETSAN-KNV 90 — KRİTİK / YEDEK PARÇA LİSTESİ (SSOT kopyası)
+# =============================================================================
+# Ana kaynak: 0726051-YETSAN-KNV 90 DATA → [PARCA_LISTESI] ve [PANO_MALZEME_OZET]
+# Ürün ağacı: KNV 90 7500 ÜRÜN AĞACI.xlsm (proje kökü)
+# Önerilen stok [EKSİK] = sipariş öncesi kullanıcı/onay doldurur
+# =============================================================================
+
+# Sipariş kodu | Parça adı | Kategori | Önerilen stok | Konum / fonksiyon | Gerekçe
+
+# --- Kritik — arızada proses veya güvenlik durur ---
+10 13529 | REDÜKTÖR MOTORLU XXC40/75 P63/B14 I LD TORK LİMİT | Kritik | 0 | Konveyör tahrik | Parça akışı
+07 17686 | KNV 90 7500 2B POMPA KOMPLESİ | Kritik | 0 | Yıkama/durulama pompası | Proses
+10 16319 | İNVERTÖR Delta VFD004EL21W-1 0,4 kW | Kritik | 0 | Konveyör | Tahrik
+07 15142 | REZİSTANS KOMPLESİ 8000 W 50 cm | Kritik | 2 | Tank ısıtma (×6) | Sıcaklık
+07 16791 | SEVİYE SENSÖRÜ VEGASWING 51 | Kritik | 1 | Tank seviye (×2) | Seviye güvenliği
+10 07147 | OMRON F3STGRNLPU21M1J8 MANYETİK KAPI | Kritik | 2 | Bakım kapakları | Emniyet zinciri
+10 00220 | EMNİYET RÖLESİ G9SB2002AACDC241 (E-stop) | Kritik | 1 | Pano | Acil stop
+10 11531 | EMNİYET RÖLESİ G9SB2002AACDC241 (RFID) | Kritik | 1 | Pano | Kapak zinciri
+10 00258 | FAZ KORUMA RÖLESİ MKR-01 | Kritik | 1 | Pano giriş | Faz koruması
+07 17689 | KNV 90 7500 2B KURUTMA KOMPLESİ | Kritik | 0 | Kurutma | Kurutma prosesi
+07 17683 | SALYANGOZLU FAN ENA 4 1,1 kW | Kritik | 0 | Egzoz | Havalandırma
+07 04649 | YAĞ SIYIRICI KOMPLESİ TİP 3 | Kritik | 0 | 1. tank | Yağ skimmer
+10 02976 | TERMOKUPL ETB30F06-5Ç | Kritik | 1 | Isıtma | Kontrol
+10 02634 | TERMOKUPL ETB30F06-4Ç | Kritik | 1 | Isıtma | Kontrol
+— | TMŞ LV521091 + kol LV521101 | Kritik | 0 | Ana güç | Pano besleme
+
+# --- Tüketim — bakım / aşınma ---
+07 10214 | ÖN FİLTRE NS KOMPLESİ | Tüketim | 2 | Tank ön filtre | Temizlik
+07 00670 | EMİŞ FİLTRESİ KOMPLESİ | Tüketim | 1 | Pompa emiş | Periyodik
+07 08732 | EMİŞ FİLTRESİ 2" 1/2 | Tüketim | 1 | Emiş hattı | Periyodik
+07 17682 | HASSAS FİLTRE KOMPLESİ | Tüketim | 1 | Pompa çıkışı | Periyodik
+10 01079 | NOZZLE 650.724.1C.CC | Tüketim | 20 | Nozul (×160) | Aşınma
+
+# --- Önerilen — pano / yedek elektrik ---
+10 02896 | BUTON ACİL P1EC400E40K | Önerilen | 2 | Saha E-stop | Güvenlik
+10 00272 | RESET BUTONU BL901M | Önerilen | 1 | Panel | Reset
+10 11089 | TERMOSTAT GEMO DTH2 | Önerilen | 1 | Isıtma (×3) | Sıcaklık
+# 10 04305 TEPE LAMBASI — bu makinede yok
+10 00305 | KAÇAK AKIM A9N19642 | Önerilen | 0 | Motor RCCB | Koruma
+10 00304 | KAÇAK AKIM A9N19643 | Önerilen | 0 | Rezistans RCCB | Koruma
+— | MKŞ GV2ME16 / GV2ME14 / GV2ME07 / GV2ME04 | Önerilen | 1–2 | Motor koruma | Yedek set
+— | Kontaktör LC1K1610M7 / LC1K0610M7 / LC1D25M7 | Önerilen | 1–2 | Pano | Yedek
+— | Sigorta A9F74316 / A9F74325 / A9F74106 | Önerilen | 2–3 | Pano | Yedek
+
+# --- Tam tablo ve pano detayı ---
+# Bkz. 0726051-YETSAN-KNV 90 DATA → [PARCA_LISTESI], [PANO_MALZEME_OZET], [MOTOR_SURUCU_LISTESI]
