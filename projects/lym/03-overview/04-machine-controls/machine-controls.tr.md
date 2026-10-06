@@ -1,44 +1,105 @@
-# 3.4. Makine Kontrolleri
+# 3.4 Makine kontrolleri
 
-Bu bölüm, LYM serisi makinenin kontrol panosu üzerinde yer alan tüm şalter, buton, dijital gösterge ve sinyal lambalarının işlevlerini tanımlar. Operatörün makineyi güvenli ve verimli bir şekilde kullanabilmesi için aşağıdaki donanımların görevlerini eksiksiz bilmesi şarttır.
+LYM serisi makineler, PLC veya operatör paneli (HMI) içermeyen, röle tabanlı bir kumanda sistemi ile çalışır. Makinenin tüm kumanda, ayar ve sinyal elemanları, yıkama hücresinin sağ tarafında bulunan elektrik panosunun ön yüzünde yer alır. Yıkama süresi dijital zamanlayıcı ile, proses suyu sıcaklığı ise dijital termostat ile ayarlanır; arıza durumları panodaki kırmızı sinyal lambaları ile bildirilir.
 
-![Kontrol Panosu Butonları](../assets/lym/3/3-4-controls.svg)
+Makine tek çalışma moduna sahiptir. Manuel, bakım veya adım modu bulunmaz; sepetin yıkama çevrimi dışında döndürülmesi yalnızca TEST butonu ile mümkündür (**Bkz. Bölüm 3.4.5**).
 
-**1. ANA ŞALTER (Main Isolator - Sarı/Kırmızı)**
-Makineye gelen tesis ana enerjisini fiziksel olarak açıp kapatır. Şalter "0" (Kapalı) konumundayken pano içerisindeki tüm güç kesilir. Şalterin üzerinde, bakım ve onarım çalışmaları sırasında yetkisiz açılışları engellemek amacıyla asma kilit takılabilecek emniyet yuvaları bulunur.
+| Parametre | LYM 950 | LYM 1150 | LYM 1350 | LYM 1500 |
+| :--- | :---: | :---: | :---: | :---: |
+| **Pano konumu** | Yıkama hücresinin sağı | Yıkama hücresinin sağı | Yıkama hücresinin sağı | Yıkama hücresinin sağı |
+| **Pano ölçüleri (G × Y × D)** | 410 × 650 × 160 mm | 410 × 650 × 160 mm | 410 × 650 × 160 mm | 450 × 770 × 180 mm |
+| **Pano koruma sınıfı** | IP54 | IP54 | IP54 | IP54 |
 
-**2. ACİL STOP (Emergency Stop - Sarı Zemin/Kırmızı Buton)**
-Acil durumlarda veya tehlike anında makinenin tüm hareketli parçalarını ve güç tüketen sistemlerini (pompalar, ısıtıcılar, motorlar) anında durdurur. Butona basıldığında kilitlenir. Sistemi tekrar devreye alabilmek için kilitli butonun ok yönünde çevrilerek serbest bırakılması ve ardından emniyet devresinin "RESET" butonu ile donanımsal olarak onaylanması gerekir.
+Pano üzerindeki etiketler standart olarak Türkçedir; sipariş aşamasında İngilizce, Almanca, Fransızca veya İspanyolca etiket seçeneği talep edilebilir.
 
-> **ÖNEMLİ UYARI:** Acil Stop butonu, standart bir makine durdurma mekanizması değildir ve rutin operasyonlar sırasında makineyi kapatmak için kullanılmamalıdır. Bu donanım yalnızca can güvenliğini veya sistem bütünlüğünü tehdit eden acil durumlarda enerjiyi anında kesmek için tasarlanmıştır. Devam eden normal bir yıkama döngüsünü veya makine çalışmasını sonlandırmak için her zaman kontrol panosundaki kırmızı "Stop" butonu kullanılmalıdır.
+Kumanda elemanlarının konumları aşağıdaki şekilde numaralandırılmıştır. Alt bölüm numaraları şekildeki numaralarla aynıdır.
 
-**3. YIKAMA (Start / Stop - Çiftli Yeşil/Kırmızı Buton)**
-Standart yıkama döngüsünü başlatmak ve manuel olarak durdurmak için kullanılır. 
-*   **Yeşil (Start):** Kabin kapağı kapalı ve su sıcaklığı istenen değere ulaşmışsa, ayarlanan süre boyunca yıkama prosesini başlatır.
-*   **Kırmızı (Stop):** Devam eden yıkama döngüsünü süre bitimini beklemeden manuel olarak iptal eder ve pompayı durdurur.
+> **[GÖRSEL EKSİK: Elektrik panosu ön görünüşü — 1–10 numaralı kumanda elemanları — `assets/3.4/`]**
 
-**4. ZAMANLAYICI (GEMO DZ482 - Dijital Ekran)**
-Yıkama döngüsünün ne kadar süreceğini belirleyen dijital zaman rölesidir. Operatör, yıkanacak parçanın kirlilik durumuna göre proses süresini (dakika cinsinden) bu ekran üzerinden ayarlar. "Yıkama Start" butonuna basıldığında ekrandaki süre geriye doğru saymaya başlar ve sıfıra ulaştığında sistem otomatik olarak durur.
+| No | Eleman | Tip | İşlev özeti |
+| :---: | :--- | :--- | :--- |
+| 1 | Ana şalter | Kilitlenebilir döner şalter | Makinenin tüm elektrik beslemesini açar / keser |
+| 2 | Acil stop | Kilitlemeli mantar buton | Tehlike anında makineyi durdurur |
+| 3 | Yıkama start / stop | Yeşil / kırmızı çift buton | Yıkama çevrimini başlatır / sonlandırır |
+| 4 | Zamanlayıcı | GEMO DZ482 dijital zaman rölesi | Yıkama süresini belirler |
+| 5 | Test | Beyaz buton | Sepeti çevrim dışında döndürür |
+| 6 | Reset | Mavi ışıklı buton | Emniyet devresini onaylar |
+| 7 | Isıtıcı | Yeşil pako şalter | Tank ısıtmasını devreye alır |
+| 8 | Termostat | GEMO DT481 dijital termostat | Proses suyu sıcaklığını ayarlar ve gösterir |
+| 9 | Yağ sıyırıcı (opsiyon) | Siyah pako şalter | Yağ sıyırıcıyı çalıştırır |
+| 10 | Arıza lambaları | Kırmızı sinyal lambaları | Arıza durumlarını bildirir |
 
-**5. TEST (Sepet Döndürme - Beyaz Buton)**
-Yıkama prosesi devrede değilken, içerideki parça sepetini manuel olarak döndürmek (jog işlevi) için kullanılır. Ağır parçaların vinçle yüklenmesi veya indirilmesi sırasında sepeti doğru açıya getirmek ve yıkama öncesi mekanik dönüş kontrolünü sağlamak amacıyla tasarlanmıştır.
+## 3.4.1 Ana şalter
 
-**6. RESET (Donanımsal Onay - Mavi Buton)**
-Makinenin iş güvenliği standartları gereği yeniden başlama (restart) koruması sağlayan fiziksel onay butonudur. Herhangi bir tehlike anında "Acil Stop" butonuna basılarak makine durdurulduğunda sistem gücü kesilir ve kilitlenir. Tehlike durumu ortadan kalktıktan sonra Acil Stop butonu serbest bırakılsa (kaldırılsa) dahi, makinenin aniden ve kontrolsüz bir şekilde yeniden çalışmasını engellemek için bu güvenlik mekanizması tasarlanmıştır. Sistemin tekrar güç alabilmesi ve normal operasyonlarına dönebilmesi için operatörün, Acil Stop kilit mekanizmasını açtıktan sonra bilinçli olarak bu "Reset" butonuna basması zorunludur.
+Ana şalter, makinenin tesis şebekesinden gelen tüm elektrik beslemesini açar ve keser. Şalter **0 (OFF)** konumundayken pano içindeki kumanda ve güç devrelerinin tamamı enerjisizdir; şalter **1 (ON)** konumuna getirildiğinde makine çalışmaya hazır hâle gelir.
 
-**7. ISITICI (Heater - Yeşil Pako Şalter)**
-Yıkama tankı içerisindeki suyun ısıtılma sürecini başlatır. Şalter açık (1) konumuna getirildiğinde, rezistanslar dijital termostatta ayarlanan hedef sıcaklığa ulaşana kadar devreye girer. Şalter kapalı (0) konumundayken makine suyu ısıtmaz.
+Ana şalter, bakım ve temizlik çalışmalarında asma kilit ile **0** konumunda kilitlenebilecek şekilde tasarlanmıştır. Enerji izolasyonu her zaman ana şalter üzerinden yapılır (**Bkz. Bölüm 2.4**).
 
-**8. TERMOSTAT (GEMO DT481 - Dijital Ekran)**
-Yıkama suyunun sıcaklığını kontrol eden ve izleyen dijital ünitedir. Ekran üzerinde anlık su sıcaklığı (PV) ve hedeflenen sıcaklık değeri (SV) görülür. Etkili bir endüstriyel temizlik için su sıcaklığı bu ekran üzerinden belirlenir. Hedeflenen sıcaklığa ulaşıldığında sistem rezistansları otomatik olarak kapatır ve sıcaklık düştüğünde tekrar devreye alır.
+## 3.4.2 Acil stop
 
-> **ÖNEMLİ UYARI VE LİMİTASYON BİLDİRİMİ:** İş sağlığı ve güvenliği (İSG) gereksinimlerini sağlamak ve makinenin operasyonel ömrünü korumak amacıyla, yıkama tankı su sıcaklık ayarı maksimum **70 °C** ile sınırlandırılmıştır. Bu emniyet limitinin kullanıcı tarafından değiştirilmesi veya manipüle edilmesi kesinlikle yasaktır. Parametrelere müdahale edilerek çalışma sıcaklığının belirlenen sınırın üzerine çıkarılması makineyi derhal garanti kapsamı dışına çıkaracak olup; bu ihlalden kaynaklanabilecek mekanik deformasyonlardan, donanım arızalarından ve olası iş kazalarından üretici firma hiçbir yasal/teknik sorumluluk kabul etmeyecektir. Herhangi bir sistemsel arıza neticesinde söz konusu limitasyonun devre dışı kaldığı veya sınır değerinin değiştiği tespit edilirse, makine operasyonu derhal durdurulmalı ve kalibrasyon/parametre ayarı için doğrudan yetkili teknik servisimiz ile iletişime geçilmelidir.
+Makinede elektrik panosu üzerinde 1 adet acil stop butonu bulunur. Butona basıldığında makinenin tüm hareketli ve enerji tüketen fonksiyonları (sepet redüktörü, yıkama pompası, ısıtıcı ve varsa opsiyonel motorlar) durdurulur ve buton basılı konumda kilitlenir. Durdurma, kategori 1 durdurma olarak gerçekleşir.
 
-**9. YAĞ SIYIRICI (Oil Separator - Siyah Pako Şalter)**
-Yıkama sonrası tankın yüzeyinde biriken endüstriyel yağları mekanik olarak sistemden uzaklaştıran opsiyonel donanımı kontrol eder. Makine yıkama yapmıyorken (dinlenme durumundayken) çalıştırılması önerilir.
+Acil stop butonunun kilidi açıldığında makine kendiliğinden yeniden çalışmaz. Makinenin tekrar çalışmaya hazır hâle gelmesi için RESET butonu ile emniyet devresinin onaylanması gerekir (**Bkz. Bölüm 3.4.6**). Acil durdurma ve yeniden başlatma prosedürü **Bölüm 2.5**'te tanımlanmıştır.
 
-**10. UYARI VE ARIZA LAMBALARI (Sinyalizasyon)**
-Makinede oluşabilecek donanımsal veya operasyonel hataları operatöre bildiren kırmızı LED göstergelerdir.
-*   **Düşük Su Seviyesi (Low Water Level):** Yıkama tankındaki suyun güvenli çalışma seviyesinin altına düştüğünü gösterir. Bu durum meydana geldiğinde sistem, rezistansları (susuz çalışıp hasar görmemesi için) ve pompayı otomatik olarak korumaya alır ve makinenin donanımsal emniyet onayı (reset durumu) düşer. Tanka gerekli miktarda su ilave edilip sıvı seviyesi güvenli sınırlara döndükten sonra, operasyonlara devam edilebilmesi için mavi "Reset" butonuna basılarak sistemin yeniden yetkilendirilmesi zorunludur. 
-*   **Redüktör Arızası (Gearbox Failure):** Sepeti döndüren motor-redüktör grubunda aşırı akım veya termik atması durumunda yanar. Sepet dönüş yolunda mekanik bir sıkışma veya aşırı yükleme olduğunu belirtir.
-*   **Pompa Arızası (Pump Failure):** Yıkama pompasının termik rölesinin attığını gösterir. Pompaya yabancı cisim sıkışması veya elektriksel bir faz kaybı/aşırı akım durumunda devreye girer.
+**DİKKAT — Yanlış kullanım:** Acil stop butonu, makineyi normal işletmede durdurmak için kullanılmamalıdır. Sık kullanım, emniyet devresi elemanlarının erken yıpranmasına neden olur. Devam eden bir yıkama çevrimini sonlandırmak için kırmızı STOP butonunu kullanın (**Bkz. Bölüm 3.4.3**).
+
+## 3.4.3 Yıkama start / stop
+
+Yıkama çevrimini başlatmak ve durdurmak için kullanılan çift butondur.
+
+- **START (yeşil):** Zamanlayıcıda ayarlanan süre boyunca yıkama çevrimini başlatır. Çevrimin başlayabilmesi için üst kapağın kapalı, emniyet devresinin onaylanmış ve tanktaki su seviyesinin yeterli olması gerekir.
+- **STOP (kırmızı):** Devam eden yıkama çevrimini, ayarlanan süre dolmadan sonlandırır; yıkama pompasını ve sepet redüktörünü durdurur.
+
+Çevrim sonunda veya STOP komutundan sonra kapak, sepet tamamen durduktan sonra açılmalıdır.
+
+## 3.4.4 Zamanlayıcı (GEMO DZ482)
+
+Zamanlayıcı, yıkama çevriminin süresini belirleyen dijital zaman rölesidir. Yıkama süresi, parçanın kirlilik derecesine ve yapısına göre 0–100 dakika aralığında ayarlanır. START butonuna basıldığında ekrandaki süre geriye doğru saymaya başlar; süre sıfıra ulaştığında yıkama pompası ve sepet redüktörü otomatik olarak durur.
+
+Uygun yıkama süresi işletme tarafından parça tipine göre belirlenir. Süre ayarı **Bölüm 6**'da, parça tipine göre süre seçimi **Bölüm 8**'de açıklanmıştır.
+
+## 3.4.5 Test butonu
+
+TEST butonu, yıkama çevrimi çalışmıyorken sepetin redüktör ile döndürülmesini sağlar. Sepet yalnızca buton basılı tutulduğu sürece döner; buton bırakıldığında durur. Bu fonksiyon, parça yükleme ve boşaltma sırasında sepetin uygun konuma getirilmesi ile yıkama öncesinde sepet dönüşünün kontrol edilmesi amacıyla kullanılır.
+
+**UYARI — Dönen sepet:** Sepet dönerken el, kol veya giysi sepet ile hücre duvarı arasına sıkışabilir. TEST butonunu kullanırken ellerinizi sepetten uzak tutun; sepete yalnızca sepet tamamen durduktan sonra müdahale edin.
+
+## 3.4.6 Reset butonu
+
+RESET butonu, emniyet devresinin operatör tarafından bilinçli olarak onaylanmasını sağlayan mavi ışıklı butondur. Acil stop butonuna basıldığında veya tanktaki su seviyesi güvenli sınırın altına düştüğünde emniyet devresi açılır ve makine durur. Arıza nedeni giderilip acil stop butonunun kilidi açılsa bile makine kendiliğinden yeniden çalışmaz.
+
+Emniyet devresini onaylamak için RESET butonuna, buton lambası yanana kadar basılı tutun. Buton lambasının yanması, emniyet devresinin kapandığını ve makinenin çalışmaya hazır olduğunu gösterir. Bu düzenleme, enerji veya emniyet koşulu yeniden sağlandığında makinenin beklenmedik şekilde çalışmasını önler.
+
+## 3.4.7 Isıtıcı şalteri
+
+Isıtıcı şalteri, yıkama tankındaki proses suyunun ısıtılmasını devreye alan pako şalterdir. Şalter **1** konumundayken ısıtıcı, termostatta ayarlanan hedef sıcaklığa ulaşılana kadar çalışır; hedef sıcaklığa ulaşıldığında termostat ısıtıcıyı devre dışı bırakır ve sıcaklık düştüğünde yeniden devreye alır. Şalter **0** konumundayken ısıtma yapılmaz.
+
+Isıtıcı, tanktaki su seviyesi yeterli olmadığında seviye bekçisi tarafından otomatik olarak devre dışı bırakılır. Bu koruma, ısıtıcının susuz çalışarak hasar görmesini önler.
+
+## 3.4.8 Termostat (GEMO DT481)
+
+Termostat, proses suyunun sıcaklığını ölçen, gösteren ve ısıtıcıyı kumanda eden dijital ünitedir. Ekranda anlık su sıcaklığı (**PV**, ölçülen değer) ve hedef sıcaklık (**SV**, ayar değeri) görüntülenir. Sıcaklık ölçümü tank içindeki termokupl ile yapılır.
+
+Hedef sıcaklık en fazla **70 °C** olarak ayarlanabilir. Bu sınır, operatörü haşlanma ve buhar yanığı riskine karşı korumak ve pompa, conta ve tank bileşenlerini tasarım sınırları içinde tutmak amacıyla üretici tarafından belirlenmiştir.
+
+**UYARI — Sıcak su ve buhar:** 70 °C sınırının üzerindeki proses suyu ciddi haşlanma ve buhar yanıklarına neden olabilir, ayrıca pompa ve contalarda kalıcı hasar oluşturur. Termostat sıcaklık sınırını değiştirmeyin veya devre dışı bırakmayın. Ekranda 70 °C'nin üzerinde bir değer görülürse makineyi STOP butonu ile durdurun, ısıtıcı şalterini **0** konumuna getirin ve yetkili servise başvurun (**Bkz. Bölüm 1.3**).
+
+Sıcaklık sınırının kullanıcı tarafından değiştirilmesi, makineyi garanti kapsamı dışında bırakır (**Bkz. Bölüm 3.2.5**).
+
+## 3.4.9 Yağ sıyırıcı şalteri (opsiyon)
+
+Yağ sıyırıcı opsiyonu bulunan makinelerde, pano üzerindeki pako şalter yağ sıyırıcıyı çalıştırır. Yağ sıyırıcı, tank yüzeyinde biriken yüzer yağı mekanik olarak tanktan uzaklaştırır.
+
+Yağ, yıkama sırasında proses suyu karıştığı için yüzeyde toplanamaz. Bu nedenle yağ sıyırıcının, yıkama çevrimi çalışmıyorken ve proses suyu durgunken çalıştırılması önerilir.
+
+## 3.4.10 Arıza lambaları
+
+Elektrik panosu üzerindeki kırmızı sinyal lambaları, aşağıdaki arıza durumlarını operatöre bildirir. Makinede alarm kodu gösteren bir ekran bulunmaz; arıza bildirimi yalnızca bu lambalar ile yapılır.
+
+| Lamba | Anlamı | Makine davranışı | Teşhis |
+| :--- | :--- | :--- | :---: |
+| **Düşük su seviyesi** | Tanktaki su seviyesi güvenli çalışma sınırının altına düşmüştür. | Isıtıcı ve yıkama pompası devre dışı kalır; emniyet devresi açılır. Su ilave edildikten sonra RESET gerekir. | **Bölüm 11**, Arıza 3 |
+| **Redüktör arızası** | Sepet redüktörü termik rölesi aşırı akım nedeniyle atmıştır. | Sepet dönmez; yıkama çevrimi başlamayabilir. | **Bölüm 11**, Arıza 1 |
+| **Pompa arızası** | Yıkama pompası termik rölesi aşırı akım nedeniyle atmıştır. | Yıkama pompası çalışmaz. | **Bölüm 11**, Arıza 2 |
+
+Kurutma fanı, drenaj pompası, yağ sıyırıcı ve buhar tahliye fanı gibi opsiyonel donanımlar için ayrı arıza lambası bulunmaz. Bu donanımların termik koruması pano içinde kontrol edilir (**Bkz. Bölüm 11**).

@@ -1,7 +1,17 @@
 # 3. GENEL BAKIŞ
 
-Bu endüstriyel yıkama makinesi; talaşlı imalat, döküm, presleme veya bakım-onarım süreçleri sonucunda parça yüzeylerinde biriken yağ, talaş, karbon kalıntıları ve endüstriyel kirleri arındırmak amacıyla tasarlanmış bir yüzey temizleme sistemidir. İşletmelerin üretim hatlarında veya revizyon atölyelerinde, parçaların bir sonraki işleme (kaplama, boyama, kaynak veya montaj) uygun kalite standartlarında hazır hale getirilmesini sağlar.
+Bu bölüm, LYM serisi döner sepetli endüstriyel parça yıkama makinelerinin yapısını, çalışma prensibini, kullanım sınırlarını, teknik özelliklerini, kumanda elemanlarını ve yerleşim gereksinimlerini tanımlar. Bölümde verilen bilgiler LYM 950, LYM 1150, LYM 1350 ve LYM 1500 modellerinin tamamını kapsar; modele göre farklılık gösteren değerler tablolarda ayrı sütunlar hâlinde belirtilmiştir.
 
-Sistemin temel çalışma prensibi; su ve uygun alkali kimyasal karışımının sıcaklık ve basınç ile birleştirilerek parça yüzeyine uygulanmasına dayanır. Yıkama solüsyonu, sistemdeki ısıtıcılar yardımıyla proses için belirlenen sıcaklık değerlerine ulaştırılır. Ardından pompalar aracılığıyla basınçlandırılan bu sıvı, yıkama hattı boyunca parça yüzeylerine temas ettirilir. Bu süreçte ısının çözücü etkisi, kimyasalın bağ kırıcı özelliği ve suyun mekanik çarpma gücü eşzamanlı olarak çalışarak inatçı kirleri yüzeyden uzaklaştırır.
+Makinenin nakliyesi, kurulumu, işletilmesi ve bakımı ile görevlendirilen tüm personelin, ilgili çalışmalara başlamadan önce bu bölümü okuması gerekir. Makinenin nasıl çalıştığının ve hangi sınırlar içinde kullanılabileceğinin bilinmesi, sonraki bölümlerde verilen talimatların doğru anlaşılmasının ön koşuludur.
 
-Ağır sanayi koşullarındaki zorlu mesailere dayanacak şekilde tasarlanan ana konstrüksiyon, korozyon direncine sahip paslanmaz çelik malzemeden üretilmiştir. Makinenin genel tasarımı, farklı yapıdaki parçalara zarar vermeden tutarlı ve standart bir temizlik performansı sunmayı hedefler. Aynı zamanda, makinenin çalışması sırasındaki tüm süreçler, operatör emniyetini temel alan elektriksel ve donanımsal güvenlik standartlarıyla desteklenmiştir.
+| Alt bölüm | Konu |
+| :--- | :--- |
+| **3.1** | Makine tanımı, ana bileşenler, çalışma prensibi ve opsiyonel donanımlar |
+| **3.2** | Amaçlanan kullanım, kullanım sınırları ve öngörülebilir hatalı kullanım |
+| **3.3** | Teknik özellikler ve tesisat bağlantı değerleri |
+| **3.4** | Kumanda panosu ve kontrol elemanları |
+| **3.5** | Makine yerleşimi ve alan gereksinimleri |
+
+Bölüm 3.3'te verilen teknik değerler ve Bölüm 3.5'te verilen alan gereksinimleri bu kılavuzun tek referans kaynağıdır. Kurulum, ayar ve bakım bölümlerinde söz konusu değerler tekrarlanmaz; ilgili alt bölüme atıf yapılır.
+
+Genel güvenlik kuralları, kalıntı riskler, enerji izolasyonu (LOTO) ve acil durdurma prosedürü **Bölüm 2**'de tanımlanmıştır.

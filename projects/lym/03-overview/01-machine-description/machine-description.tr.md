@@ -1,29 +1,68 @@
-# 3.1. Makine Tanımı ve Sistematik Yapı
+# 3.1 Makine tanımı ve çalışma prensibi
 
-LYM serisi; endüstriyel parça yıkama, yağ alma ve yüzey hazırlama operasyonları için yüksek mühendislik standartlarında tasarlanmış, üstten yüklemeli kabin tipi bir endüstriyel yıkama makinesidir. Ağır sanayi koşullarında kesintisiz çalışabilmesi amacıyla makinenin ana konstrüksiyonu, ayarlanabilir mafsallı ayaklar yerine doğrudan zemine basan, titreşim sönümleme kapasitesi yüksek sabit çelik ayaklar üzerine inşa edilmiştir. Paslanmaz çelik kabin içerisindeki tüm kaynak dikişleri, korozyon direncini ve akışkan dinamiğini maksimize etmek amacıyla taşlama gibi manuel mekanik aşındırıcılar yerine homojen elektropolisaj işlemi ile temizlenmiştir. Bu yapı, partikül tutulumunu en aza indirerek kabin içi hijyeni ve uzun ömürlü kullanımı garanti eder.
+LYM serisi, endüstriyel parça yüzeylerinde bulunan yağ, gres, talaş, karbon kalıntısı ve benzeri işletme kirlerinin giderilmesi amacıyla tasarlanmış, üstten yüklemeli ve döner sepetli bir parça yıkama makinesidir. Makine; talaşlı imalat, döküm, presleme ve bakım-onarım süreçlerinden gelen parçaların kaplama, boyama, kaynak veya montaj gibi bir sonraki işleme hazırlanmasında kullanılır.
 
-## 3.1.1. Hidrolik Sistem ve Püskürtme Dinamikleri
-Makinenin temel temizleme gücü, kendi ekseni etrafında dönen bir parça sepeti ile yüksek debili basınçlı sıcak su püskürtme sisteminin eşzamanlı çalışmasına dayanır. Sistemdeki hidrolik sirkülasyon, ağır hizmet tipi endüstriyel santrifüj pompalar ve bu pompalara entegre edilmiş nozul dizilimli püskürtme kolları aracılığıyla sağlanır. 
+Temizleme işlemi; ısıtılmış proses suyunun, kendi ekseni etrafında dönen sepet içindeki parçalara püskürtme kolları üzerindeki nozullar aracılığıyla basınçlı olarak uygulanmasıyla gerçekleştirilir. Isının çözücü etkisi, proses kimyasalının kir bağlarını zayıflatıcı etkisi ve püskürtülen suyun mekanik çarpma etkisi birlikte çalışarak kirlerin parça yüzeyinden ayrılmasını sağlar. Sepetin dönmesi, parçanın tüm yüzeylerinin püskürtme alanından sırayla geçmesini ve yıkama sonucunun parça konumundan bağımsız olarak tutarlı olmasını sağlar.
 
-Kapasite ihtiyaçları ve hücre hacimlerine göre hidrolik güç ve püskürtme kolu konfigürasyonları şu şekilde tasarlanmıştır:
+> **[GÖRSEL EKSİK: LYM makinesi genel görünüş — ana bileşenler numaralı — `assets/3.1/`]**
 
-* **LYM 950:** 1,5 kW gücündeki tek pompa, basınçlı suyu hücre içerisindeki tek bir püskürtme koluna ileterek yıkama yapar.
+## 3.1.1 Ana bileşenler
 
-![Nozul Seçeneği](../assets/lym/3/3-1-1-1-nozzle.png)
+Tüm LYM modelleri aşağıdaki ana bileşenlerden oluşur. Bileşenlerin teknik değerleri **Bölüm 3.3**'te, kumanda elemanları **Bölüm 3.4**'te verilmiştir.
 
-* **LYM 1150 ve LYM 1350:** Daha geniş yıkama alanını desteklemek için 2,2 kW gücünde tek pompa kullanılır. Bu tek pompa, suyu hücre içindeki 2 ayrı püskürtme koluna aynı anda dağıtır. Her iki kolda da tam kapsamlı yüzey taraması yapan nozul dizilimleri mevcuttur.
-* **LYM 1500:** Serinin en büyük hacimli modelinde hidrolik kayıpları önlemek ve debiyi maksimize etmek için 2 adet 2,2 kW gücünde bağımsız pompa görev yapar. Hücre içerisinde 2 adet püskürtme kolu bulunur ve her bir kol, doğrudan kendi bağımsız pompasından beslenerek parçalara maksimum basınçla su ulaştırır.
+| Bileşen | İşlev |
+| :--- | :--- |
+| **Yıkama hücresi** | Döner sepetin, püskürtme kollarının ve nozulların bulunduğu, üst kapakla kapatılan paslanmaz çelik kabin. Yıkama işlemi bu kapalı hacim içinde gerçekleştirilir. |
+| **Üst kapak** | Yıkama hücresine parça yüklenmesini ve boşaltılmasını sağlar. Kapak, iki adet gazlı amortisör ile desteklenir; amortisörler kapağın açılması için gereken kuvveti azaltır ve kapağı açık konumda tutar. |
+| **Döner yıkama sepeti** | Yıkanacak parçaları taşıyan ve yıkama süresince sepet redüktörü tarafından döndürülen yük taşıyıcı. Modele göre galvaniz veya paslanmaz çelik olarak tedarik edilir. |
+| **Sepet redüktörü** | Sepeti sabit devirde döndüren elektrik motorlu dişli kutusu. Aşırı yük durumunda termik röle ile korunur. |
+| **Yıkama pompası** | Tanktaki proses suyunu emerek püskürtme kollarına basınçlı olarak ileten santrifüj pompa. LYM 1500 modelinde iki adet bağımsız pompa bulunur. |
+| **Püskürtme kolları ve nozullar** | Basınçlı proses suyunu parça yüzeyine yönlendiren dağıtım elemanları. |
+| **Yıkama tankı ve ısıtıcı** | Proses suyunun depolandığı ve elektrikli ısıtıcı (rezistans) ile ayarlanan sıcaklığa getirildiği tank. |
+| **Filtreler** | Tank ön filtresi ve pompa emiş filtresi, kaba partiküllerin pompaya ve nozullara ulaşmasını önler. |
+| **Seviye bekçisi** | Tanktaki su seviyesini izler; seviye güvenli sınırın altına düştüğünde ısıtıcıyı ve pompayı devre dışı bırakır. |
+| **Kapak kapalı switchi** | Üst kapağın kapalı olduğunu algılar; kapak kapalı değilse yıkama çevrimi başlatılamaz. |
+| **Elektrik ve kumanda panosu** | Ana şalteri, koruma elemanlarını, zamanlayıcıyı, termostatı, kumanda butonlarını ve arıza lambalarını barındırır. Makine, PLC veya HMI içermeyen röle tabanlı bir kumanda sistemiyle çalışır. |
 
-![Nozul Seçeneği](../assets/lym/3/3-1-1-2-nozzle.jpeg)
+## 3.1.2 Çalışma prensibi ve proses akışı
 
-Püskürtme kollarındaki nozul mimarisi, standart konfigürasyonda ağır yağları, talaşları ve inatçı kirleri yüksek mekanik darbe etkisiyle (impact force) yüzeyden kazıyarak sökmek üzere tasarlanmış, doğrudan yüzeye nüfuz eden **dik atan delik** yapısına sahiptir. İşlenecek parçaların geometrik hassasiyetine, kör delik yoğunluğuna ve yüzey genişliğine bağlı olarak; sistem opsiyonel donanım olarak **açılı geniş ağız** yapısına sahip yassı püskürtme (flat spray) nozulları ile de konfigüre edilebilmektedir. Bu opsiyon, suyun kinetik enerjisini daha geniş bir alana homojen bir perde şeklinde dağıtarak karmaşık yüzeylerde hassas ve bütüncül bir tarama sağlar.
+Makine tek bir çalışma moduna sahiptir: zamanlayıcı kontrollü yıkama çevrimi. Standart konfigürasyonda proses yalnızca yıkama adımından oluşur; kurutma fanı opsiyonu bulunan makinelerde yıkamanın ardından kurutma adımı uygulanabilir. Çevrim süresi, zamanlayıcı üzerinden 0–100 dakika aralığında ayarlanır.
 
-## 3.1.2. Termal Yönetim ve Tahrik Sistemi
-Yıkama prosesinin bel kemiği olan su sıcaklığı, makine gövdesine entegre edilmiş ve model bazında hacmi optimize edilmiş dahili su tankı üzerinden yönetilir. Tank içerisindeki su, endüstriyel tip 8,25 kW (380V) gücündeki elektrikli ısıtıcılar (rezistanslar) ile hedeflenen proses sıcaklığına hızla ulaştırılır. Termal kapasitenin yüksek tutulması ve ısı kayıplarının tolere edilmesi gereken 1500 modelinde ise toplam 16,5 kW ısıtma gücü sağlayan çift rezistans sistemi standart olarak mevcuttur. 
+Bir yıkama çevrimi genel olarak aşağıdaki sırayla gerçekleşir. İşletme talimatları ve ayrıntılı adımlar **Bölüm 7**'de verilmiştir.
 
-Yıkanacak parçaların yerleştirildiği sepetin dönüş hareketi, yüksek torklu, redüktörlü tahrik mekanizması (dişli motor) vasıtasıyla sağlanır. 950 modelinde 0,18 kW redüktör ile tahrik sağlanan sepet, daha geniş çapa ve statik yük kapasitesine sahip 1150, 1350 ve 1500 modellerinde 0,37 kW gücündeki redüktörlerle sürekli, sarsıntısız ve stabil bir devirde döndürülerek püskürtme konilerinin her parçaya eşit temas etmesi sağlanır.
+1. Tanktaki proses suyu, termostatta ayarlanan sıcaklığa kadar ısıtılır. Isıtma süresi, başlangıç su sıcaklığına bağlı olarak yaklaşık 1 saattir. Su sıcaklığı en fazla 70 °C'ye ayarlanabilir.
+2. Yıkanacak parçalar sepete yerleştirilir ve üst kapak kapatılır.
+3. Zamanlayıcıda yıkama süresi ayarlanır ve yıkama çevrimi başlatılır.
+4. Çevrim süresince sepet döner; yıkama pompası proses suyunu nozullar üzerinden parçalara püskürtür. Püskürtülen su yıkama hücresinden tanka geri döner ve filtrelerden geçerek yeniden pompaya emilir.
+5. Ayarlanan süre dolduğunda pompa ve sepet redüktörü otomatik olarak durur.
+6. Sepet tamamen durduktan sonra kapak açılır ve parçalar boşaltılır.
 
-## 3.1.3. İş Sağlığı, Güvenliği (İSG) ve Kontrol Otomasyonu
-Ergonomik kullanım göz önünde bulundurularak, ağır endüstriyel üst kapak yüksek basınçlı gazlı amortisörler ile desteklenmiş olup minimum operatör gücü ile açılıp kapanabilmektedir. Kapak ebatlarına ve statik ağırlığına göre kalibre edilen amortisör kapasiteleri; **LYM 950** modelinde 2 adet 175 N, **LYM 1150** modelinde 2 adet 350 N, **LYM 1350** modelinde 2 adet 1000 N ve serinin en büyük kapağına sahip olan **LYM 1500** modelinde ise 2 adet 1400 N olarak ölçeklendirilmiştir. 
+Proses suyu kapalı devrede dolaştığından, parçalardan ayrılan kir ve yağ tankta birikir. Proses suyunun temizliği ve filtrelerin düzenli bakımı yıkama kalitesini doğrudan etkiler (**Bkz. Bölüm 10**).
 
-Operasyon yönetimi, standart olarak Schneider marka şalt malzemeleri ve otomasyon bileşenleri gibi endüstri standartlarını belirleyen donanımların kullanıldığı bir kontrol panosu üzerinden gerçekleştirilir.
+## 3.1.3 Model varyantları
+
+LYM serisi iki ana gövde ailesinde dört modelden oluşur. Modeller temel olarak yıkama hücresi boyutu, pompa sayısı, ısıtma gücü ve sepet tahrik gücü bakımından farklılık gösterir.
+
+| Model | Stok kodu | Gövde ailesi | Yıkama pompası | Isıtıcı | Nozul adedi |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **LYM 950** | 02 01 22 | LYM 1 | 1 × 1,5 kW | 1 × 8,25 kW | 28 |
+| **LYM 1150** | 02 01 21 | LYM 1 | 1 × 2,2 kW | 1 × 8,25 kW | 45 |
+| **LYM 1350** | 02 01 23 | LYM 2 | 1 × 2,2 kW | 1 × 8,25 kW | 51 |
+| **LYM 1500** | 02 01 14 | LYM 2 | 2 × 2,2 kW | 2 × 8,25 kW | 53 |
+
+Nozullar, standart konfigürasyonda püskürtmeyi doğrudan parça yüzeyine dik olarak yönlendiren 0° paslanmaz nozullardır. Bu yapı, yağ, talaş ve yapışkan kirlerin yüksek çarpma etkisiyle sökülmesine uygundur. Geniş yüzeyli veya karmaşık geometrili parçalar için alternatif olarak yassı püskürtme nozulları tedarik edilebilir; bu nozullar suyu daha geniş bir alana dağıtarak yüzeyin homojen biçimde taranmasını sağlar.
+
+## 3.1.4 Opsiyonel donanımlar
+
+Aşağıdaki donanımlar sipariş aşamasında talep edilmesi hâlinde makineye eklenir. Makinenizde bulunan opsiyonlar sipariş ve teslim dokümanlarında belirtilmiştir (**Bkz. Bölüm 13.1**). Opsiyonların kurulu güce etkisi **Bölüm 3.3.4**'te verilmiştir.
+
+| Opsiyon | İşlev |
+| :--- | :--- |
+| **Yağ sıyırıcı** | Tank yüzeyinde biriken yüzer yağı döner disk ile mekanik olarak tanktan uzaklaştırır; proses suyunun kullanım ömrünü uzatır. |
+| **Hassas filtre** | Pompa çıkış hattına yerleştirilen 200 mikron torba filtre ile ince partikülleri tutar. |
+| **İnterlock kilit** | Üst kapağı yıkama çevrimi süresince kilitleyerek çalışma sırasında açılmasını engeller. |
+| **Buhar tahliye fanı** | Yıkama hücresinde oluşan buharı ve sıcak havayı hücre dışına tahliye eder; kapak açıldığında operatöre yönelen buhar miktarını azaltır. |
+| **Buhar tahliye fanı (yoğuşturmalı tip)** | Tahliye edilen buharı yoğuşturarak ortam havasına nem ve yağ buharı yayılmasını azaltır. |
+| **Kurutma fanı (fan tipi)** | Yıkama sonrasında parçalar üzerindeki suyun hava akışı ile uzaklaştırılmasını sağlar. |
+| **Kurutma fanı (blower tipi)** | Yüksek basınçlı hava akışı ile kör delik ve girintilerde kalan suyun daha etkin biçimde uzaklaştırılmasını sağlar. |
+| **Drenaj pompası** | Tankın boşaltılmasında proses suyunu tahliye hattına pompalar. |
