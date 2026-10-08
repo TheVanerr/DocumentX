@@ -1,3 +1,3 @@
-# vacuum settings
+# 6.6 Vakum ayarları
 
-<!-- LYM sablon | icerik DATA dosyasindan uretilecek -->
+LYM serisi makinelerde vakum sistemi bulunmaz. Bu alt bölüm makine için uygulanmaz.

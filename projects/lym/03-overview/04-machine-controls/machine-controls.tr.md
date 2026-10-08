@@ -12,9 +12,13 @@ Makine tek çalışma moduna sahiptir. Manuel, bakım veya adım modu bulunmaz; 
 
 Pano üzerindeki etiketler standart olarak Türkçedir; sipariş aşamasında İngilizce, Almanca, Fransızca veya İspanyolca etiket seçeneği talep edilebilir.
 
-Kumanda elemanlarının konumları aşağıdaki şekilde numaralandırılmıştır. Alt bölüm numaraları şekildeki numaralarla aynıdır.
+Pano ön yüzünde kumanda elemanları yukarıdan aşağıya şu sırayla yer alır: acil stop; yıkama start / stop butonu ve zamanlayıcı; test ve reset butonları; ısıtıcı şalteri ve termostat; yağ sıyırıcı şalteri (opsiyon); arıza lambaları; en altta ana şalter. Her elemanın adı, pano üzerinde Türkçe ve İngilizce olarak etiketlenmiştir.
 
-> **[GÖRSEL EKSİK: Elektrik panosu ön görünüşü — 1–10 numaralı kumanda elemanları — `assets/3.4/`]**
+![Kumanda panosu ön yüzü](../../assets/3.4/kumanda-panosu.jpg)
+
+*Şekil 3.6 — Kumanda panosu ön yüzü*
+
+Aşağıdaki tabloda kumanda elemanları, bu alt bölümdeki açıklama numaralarına göre listelenmiştir.
 
 | No | Eleman | Tip | İşlev özeti |
 | :---: | :--- | :--- | :--- |

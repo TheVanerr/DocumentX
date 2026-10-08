@@ -1,3 +1,3 @@
-# trob vacuum
+# 11.6 Vakum arızaları
 
-<!-- LYM sablon | icerik DATA dosyasindan uretilecek -->
+LYM serisi makinelerde vakum sistemi bulunmaz. Bu alt bölüm makine için uygulanmaz.

@@ -1,15 +1,14 @@
-# 4.0. TAŞIMA VE NAKLİYE
+# 4. NAKLİYE, TAŞIMA VE DEPOLAMA
 
-Bu bölüm, makinenin tesise ulaştıktan sonra güvenli bir şekilde indirilmesi, saha içinde taşınması ve nihai çalışma alanına konumlandırılması için izlenmesi gereken temel prosedürleri kapsar. 
+Bu bölüm, makinenin üretici tesisinden teslim alınmasından kurulum yerine yerleştirilmesine kadar geçen süreçte uygulanacak nakliye, kaldırma, saha içi taşıma ve depolama kurallarını tanımlar. LYM serisi makineler tek parça hâlinde, montajı tamamlanmış olarak sevk edilir; nakliye sonrasında makine üzerinde ayrıca montaj yapılması gerekmez.
 
-Makinenin standart şasisi, yükü dengeli bir şekilde zemine aktaran sabit çelik ayaklar üzerine inşa edilmiştir. Yüksek ağırlıklı endüstriyel bir ekipman olması sebebiyle, makinenin yapısal bütünlüğünü korumak ve iş kazalarını önlemek amacıyla taşıma işlemleri için **yalnızca forklift** kullanılmalıdır. Tavan vinci, mobil vinç, transpalet veya halatla çekme gibi diğer kaldırma ve taşıma yöntemlerinin kullanılması kesinlikle yasaktır.
+Makine, yalnızca **forklift** ile ve yalnızca **makinenin altındaki şaseden** kaldırılabilir. Makinede vinç kaldırma noktası bulunmaz; vinç, sapan, halat veya zincir ile kaldırma yasaktır. Makinenin ağırlık merkezi gövdenin ortasındadır (**Bkz. Bölüm 3.5.4**).
 
-Taşıma ve nakliye operasyonları sırasında aşağıdaki temel kurallara titizlikle uyulmalıdır:
+| Alt bölüm | Konu |
+| :--- | :--- |
+| **4.1** | Ambalaj, teslim alma, kaldırma ve saha içi taşıma |
+| **4.2** | Depolama koşulları ve depolamadan çıkarma |
 
-*   **Yetkili Personel ve Sertifikasyon:** Makinenin nakliyesi, indirilmesi ve yer değiştirmesi işlemleri; operasyonun gerçekleştirildiği ülkenin iş sağlığı ve güvenliği mevzuatlarına tam uyumlu, geçerli ve resmi forklift operatörlüğü sertifikasına sahip yetkin personeller tarafından yapılmak zorundadır. Yetkisiz kişilerin taşıma işlemine müdahale etmesi yasaktır.
-*   **Ekipman Kapasitesi:** Taşıma işleminde kullanılacak forkliftin güvenli çalışma yükü (SWL) kapasitesi, makinenin "Bölüm 3.3. Teknik Özellikler" tablosunda belirtilen net ağırlığını (kuru ağırlık) rahatlıkla karşılamalıdır.
-*   **Doğru Kaldırma Noktaları:** Forklift çatalları doğrudan alt ana şasi profillerine hizalanmalı ve makine sabit ayakların bağlı olduğu bu ana taşıyıcı şasiden kaldırılmalıdır. Kaldırma veya sabitleme amacıyla makinenin dış kaplama saclarına, tesisat borularına, su tankına veya kontrol panosuna kesinlikle fiziksel baskı uygulanmamalıdır. 
-*   **Ağırlık Merkezi ve Denge:** Makinenin içindeki paslanmaz çelik su tankı, pompa ve motor gruplarının asimetrik yerleşimi nedeniyle donanımın ağırlık merkezi tam geometrik ortada olmayabilir. Forklift ile ana kaldırma işlemine başlanmadan önce ekipman yerden sadece birkaç santimetre kesilerek denge kontrolü yapılmalı; taşıma işlemi ani hızlanma ve duruşlardan kaçınılarak yavaş ve sarsıntısız gerçekleştirilmelidir.
-*   **İş Sağlığı ve Güvenliği:** Makine forklift çatalında havada asılıyken veya nakliye rotasında ilerlerken çevresinde güvenli bir çalışma alanı (kırmızı alan) oluşturulmalıdır. Asılı yükün altında, kör noktalarda veya forkliftin hareket güzergahında kesinlikle hiçbir personel bulunmamalıdır.
+Nakliye, kaldırma ve taşıma işlemleri; geçerli forklift operatörlüğü belgesine sahip ve işletmenin iş sağlığı ve güvenliği kurallarına göre görevlendirilmiş personel tarafından yürütülmelidir. Kullanılacak forkliftin kaldırma kapasitesi, makinenin boş ağırlığından büyük olmalıdır (**Bkz. Bölüm 3.3.1**).
 
-Makine nihai konumuna indirilene kadar, özellikle kontrol panosu üzerindeki dijital ekranlar, şalterler ve dışarıda kalan diğer hassas mekanik bileşenlerin darbelere karşı korunmasına azami özen gösterilmelidir.
+**UYARI — Devrilen veya düşen yük:** Yanlış noktadan kaldırılan, dengesiz yüklenen veya tankında su bulunan makine devrilebilir ya da çatallardan kayabilir; ezilme sonucu ağır yaralanma veya ölüm meydana gelebilir. Makineyi yalnızca boş tankla, şaseden ve ağırlık merkezine göre dengelenmiş olarak kaldırın. Kaldırılmış yükün altında ve forkliftin hareket alanında kimsenin bulunmasına izin vermeyin.

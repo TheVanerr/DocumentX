@@ -4,7 +4,11 @@ LYM serisi, endüstriyel parça yüzeylerinde bulunan yağ, gres, talaş, karbon
 
 Temizleme işlemi; ısıtılmış proses suyunun, kendi ekseni etrafında dönen sepet içindeki parçalara püskürtme kolları üzerindeki nozullar aracılığıyla basınçlı olarak uygulanmasıyla gerçekleştirilir. Isının çözücü etkisi, proses kimyasalının kir bağlarını zayıflatıcı etkisi ve püskürtülen suyun mekanik çarpma etkisi birlikte çalışarak kirlerin parça yüzeyinden ayrılmasını sağlar. Sepetin dönmesi, parçanın tüm yüzeylerinin püskürtme alanından sırayla geçmesini ve yıkama sonucunun parça konumundan bağımsız olarak tutarlı olmasını sağlar.
 
-> **[GÖRSEL EKSİK: LYM makinesi genel görünüş — ana bileşenler numaralı — `assets/3.1/`]**
+![LYM ön görünüş, kapak kapalı](../../assets/3.1/lym-on-gorunus.jpg)
+
+![LYM ön görünüş, kapak açık](../../assets/3.1/lym-kapak-acik.jpg)
+
+*Şekil 3.1 — LYM serisi genel görünüş: kapak kapalı (solda) ve kapak açık (sağda)*
 
 ## 3.1.1 Ana bileşenler
 
@@ -23,6 +27,28 @@ Tüm LYM modelleri aşağıdaki ana bileşenlerden oluşur. Bileşenlerin teknik
 | **Seviye bekçisi** | Tanktaki su seviyesini izler; seviye güvenli sınırın altına düştüğünde ısıtıcıyı ve pompayı devre dışı bırakır. |
 | **Kapak kapalı switchi** | Üst kapağın kapalı olduğunu algılar; kapak kapalı değilse yıkama çevrimi başlatılamaz. |
 | **Elektrik ve kumanda panosu** | Ana şalteri, koruma elemanlarını, zamanlayıcıyı, termostatı, kumanda butonlarını ve arıza lambalarını barındırır. Makine, PLC veya HMI içermeyen röle tabanlı bir kumanda sistemiyle çalışır. |
+
+![Yıkama hücresi ve döner sepet](../../assets/3.1/yikama-hucresi-sepet.jpg)
+
+![Kapak içindeki püskürtme kolları](../../assets/3.1/puskurtme-kollari.jpg)
+
+![Yıkama tankı ve ısıtıcılar](../../assets/3.1/yikama-tanki-isitici.jpg)
+
+![Yıkama pompası](../../assets/3.1/yikama-pompasi.jpg)
+
+*Şekil 3.2 — Ana bileşenler: yıkama hücresi ve döner sepet (sol üst), püskürtme kolları ve nozullar (sağ üst), yıkama tankı, ısıtıcılar ve emiş filtresi (sol alt), yıkama pompası (sağ alt)*
+
+Yıkama pompası ve pompa bağlantı boruları, yıkama tankının altındaki makine şasesi içinde yer alır. LYM 1500 modelinde iki yıkama pompası yan yana konumlandırılmıştır.
+
+![LYM 1500 — iki yıkama pompası](../../assets/3.1/lym1500-pompalar.jpg)
+
+*Şekil 3.3 — LYM 1500 modelinde şase içindeki iki bağımsız yıkama pompası*
+
+Kapak kapalı switchi ve interlock kilit (opsiyon), yıkama hücresinin yan yüzeyinde bulunur. Makinenin tip etiketi de aynı yüzeydedir (**Bkz. Bölüm 3.3**).
+
+![Kapak kapalı switchi, interlock kilit ve tip etiketi](../../assets/3.1/kapak-switch-interlock.jpg)
+
+*Şekil 3.4 — Yan yüzey: kapak kapalı switchi (solda), interlock kilit kutusu (ortada), gazlı kapak amortisörü ve tip etiketi (sağ altta)*
 
 ## 3.1.2 Çalışma prensibi ve proses akışı
 

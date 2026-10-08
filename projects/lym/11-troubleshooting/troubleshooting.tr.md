@@ -1,8 +1,17 @@
-# 11. ARIZA TESPİTİ VE SORUN GİDERME (TROUBLESHOOTING)
+# 11. ARIZA TEŞHİSİ VE GİDERME
 
-Bu bölüm, endüstriyel yıkama makinelerimizin çalışması esnasında karşılaşılabilecek olası arıza, sorun ve operasyonel anormalliklerin tespit edilmesi ve giderilmesi amacıyla hazırlanmıştır. Makinelerin mekanik, elektriksel, pnömatik ve yazılımsal (PLC/HMI) tüm alt sistemlerinde meydana gelebilecek yaygın hatalar, bu bölümde "Belirti (Semptom) -> Olası Neden -> Çözüm Yöntemi" mantığıyla listelenmiştir. Sorun giderme sürecine başlamadan önce, operatörün ve bakım personelinin makinenin çalışma prensiplerini ve bu kılavuzun ilgili işletim bölümlerini tam anlamıyla bilmesi gerekmektedir.
+Bu bölüm, makinede oluşabilecek arızaların teşhisini ve giderilmesini tanımlar. LYM serisi makinelerde alarm kodu gösteren bir ekran bulunmaz; arızalar kumanda panosu üzerindeki üç kırmızı arıza lambası ve makinenin davranışı ile tespit edilir (**Bkz. Bölüm 3.4.10**).
 
-Herhangi bir arıza müdahalesine başlamadan önce makinenin tamamen durdurulması, ana elektrik şalterinin "0" konumuna alınması ve enerji izolasyonunun (LOTO - Lockout/Tagout) sağlanması zorunludur. Bu kılavuzda yer alan müdahale yöntemleri, yetkili ve eğitimli operatörlerin uygulayabileceği rutin kontrolleri kapsamaktadır. Belirtilen çözüm önerilerine rağmen sorun devam ediyorsa, arızanın PLC yazılımı, inverter parametreleri veya major mekanik bileşenler gibi ileri düzey teknik bilgi gerektiren bir alanda olduğu anlaşılmalı ve derhal CNK ELEKTRONİK / DOLFIN MAKİNE yetkili servis departasına başvurulmalıdır. Yetkisiz ve bilinçsiz müdahaleler makineye kalıcı hasar verebilir ve cihazın garanti koşullarını tamamen geçersiz kılabilir.
+| Alt bölüm | Konu |
+| :--- | :--- |
+| **11.1** | Genel teşhis sırası ve servis çağırma kriterleri |
+| **11.2** | Arıza tablosu |
+| **11.3** | Elektrik arızaları |
+| **11.4** | Su devresi ve pompa arızaları |
+| **11.5** | Pnömatik arızalar |
+| **11.6** | Vakum arızaları |
+| **11.7** | Sensör arızaları |
 
+Bu bölümdeki teşhis adımları tüm LYM modelleri (950, 1150, 1350, 1500) için ortaktır. Her adımın başında kimin uygulayabileceği belirtilmiştir; operatör, yalnızca kendisi için tanımlanan adımları uygular.
 
-
+**UYARI — Elektrik çarpması ve beklenmedik çalışma:** Elektrik panosunun içinde, pompa veya redüktör bölgesinde yapılacak her müdahaleden önce makineyi durdurun ve LOTO uygulayın (**Bkz. Bölüm 2.4**). Enerji altındaki pano içinde ölçüm yalnızca yetkili elektrik personeli tarafından, uygun ölçü aleti ve kişisel koruyucu donanımla yapılabilir.

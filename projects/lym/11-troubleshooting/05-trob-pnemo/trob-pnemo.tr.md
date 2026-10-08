@@ -1,3 +1,3 @@
-# trob pnemo
+# 11.5 Pnömatik arızalar
 
-<!-- LYM sablon | icerik DATA dosyasindan uretilecek -->
+Standart LYM konfigürasyonunda pnömatik devre bulunmaz. Basınç düşüklüğü, silindir yavaşlığı veya valf bobini arızası gibi pnömatik arızalar bu makine için uygulanmaz.

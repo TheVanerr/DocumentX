@@ -1,3 +1,7 @@
-# 10. TEMİZLİK (CLEANING)
+# 10. TEMİZLİK
 
-Bu bölüm, endüstriyel yıkama makinelerimizin kendi iç ve dış temizlik prosedürlerini kapsamaktadır. Makinenin uzun ömürlü, hijyenik ve kesintisiz bir şekilde çalışabilmesi için; yıkanan parçaların kalitesini tehdit edebilecek kimyasal kalıntı birikimlerinin, tıkanıklıkların ve korozyon risklerinin önlenmesi amacıyla düzenli temizlik şarttır. Makinenin temizliği yalnızca görsel bir düzen sağlamak için değil; sensörlerin, filtrelerin, tahliye hatlarının ve kapak contalarının doğru çalışmasını güvence altına almak için kritik bir bakım operasyonudur. Temizlik prosedürlerine başlamadan önce makinenin tamamen durdurulması, enerji izolasyonunun (LOTO) sağlanması ve makine içi basınçlı sistemlerin tamamen tahliye edilmesi zorunludur. Ayrıca, temizlik esnasında kullanılacak kimyasalların ve su sistemlerinin operatöre veya makine yüzeylerine zarar vermemesi için ilgili kişisel koruyucu ekipmanların (KKE) kullanılması ve bu bölümde belirtilen kurallara strictly uyulması gerekmektedir.
+Bu bölüm, makinenin filtrelerinin, yıkama tankının, yıkama hücresinin ve dış yüzeylerinin temizlenmesini, proses suyunun değiştirilmesini ve temizlik atıklarının bertarafını tanımlar. LYM serisi makinelerde yerinde temizlik (CIP) veya sökülerek temizlik (COP) sistemi bulunmaz; tüm temizlik işlemleri elle yapılır.
+
+Filtrelerin düzenli temizlenmesi, makinenin yıkama performansını doğrudan belirler. Tıkalı filtreler pompaya giden su miktarını azaltır, püskürtme basıncını düşürür ve pompanın aşırı yüklenerek termik korumanın devreye girmesine neden olur. Kirli bir tank ise parçalarda kalıntı bırakır ve koku oluşturur.
+
+Temizlik periyotları **Bölüm 9.1.3**'teki periyodik bakım tablosunda yer alır. Temizlik işlemleri, eğitilmiş operatörler tarafından yapılabilir.

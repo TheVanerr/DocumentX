@@ -4,6 +4,12 @@ Bu alt bölümde LYM 950, LYM 1150, LYM 1350 ve LYM 1500 modellerinin standart k
 
 Müşteri talebi doğrultusunda değişiklik yapılmış makinelerde geçerli değerler, makineyle birlikte teslim edilen imalat sonu (as-built) dokümanlarında belirtilir. Tablolardaki değerler ile makine üzerindeki tip etiketi arasında fark bulunması durumunda **tip etiketindeki değerler** esas alınır.
 
+Tip etiketi, yıkama hücresinin yan yüzeyinde bulunur. Etiket üzerinde marka, model, besleme gerilimi ve frekansı, toplam güç, çalışma sıcaklığı, üretim yılı ve seri numarası yer alır. Üreticiyle yapılacak tüm yazışmalarda ve yedek parça siparişlerinde model ve seri numarasını belirtin.
+
+![Tip etiketi](../../assets/3.3/tip-etiketi.jpg)
+
+*Şekil 3.5 — Tip etiketi örneği (LYM 1350 NS)*
+
 ## 3.3.1 Boyutlar ve ağırlık
 
 | Parametre | Birim | LYM 950 | LYM 1150 | LYM 1350 | LYM 1500 |

@@ -1,30 +1,39 @@
-## 4.2. Uzun ve Kısa Süreli Depolama Prosedürü
+# 4.2 Depolama
 
-Makinenin tesise ulaştıktan sonra hemen kurulmayacağı, taşıma işlemlerinin ardından bekletileceği veya operasyonel nedenlerle uzun bir süre devre dışı bırakılacağı durumlarda; mekanik, elektriksel ve hidrolik sistemlerin korozyondan ve çevresel faktörlerden korunması hayati önem taşır. Bu prosedür, makinenin donanım ömrünü ve yapısal bütünlüğünü korumak amacıyla eksiksiz olarak uygulanmalıdır.
+Makinenin teslim alındıktan sonra hemen kurulmayacağı veya uzun süre kullanılmayacağı durumlarda, aşağıdaki depolama koşulları uygulanmalıdır. Bu koşullar; paslanmaz çelik yüzeylerin, contaların, pompanın ve elektrik bileşenlerinin nem, donma ve kirlenme nedeniyle zarar görmesini önlemek amacıyla belirlenmiştir.
 
-### 4.2.1. Depolama Öncesi Hazırlık ve Temizlik
-Makine depolama alanına alınmadan önce mutlaka tam kapsamlı bir sıvı tahliyesi ve temizlik işleminden geçmelidir:
-*   **Sıvıların Tahliyesi:** Yıkama tankı, pompa gövdeleri ve tüm tesisat boruları içerisindeki su veya kimyasal sıvılar vanalar aracılığıyla tamamen boşaltılmalıdır. Tesisatta kalabilecek minimum sıvı dahi düşük sıcaklıklarda donma tehlikesi yaratabilir veya uzun vadede durgunluktan kaynaklı tortu ve kireçlenme oluşturabilir.
-*   **Nozul Bakımı:** Sistemde kullanılan açılı geniş ağızlı standart püskürtme nozullarının içinde kimyasal kalıntı kalmadığından emin olunmalı, gerekirse hatlar temiz su ile durulanarak nozul ağızlarında oluşabilecek kurumaların ve tıkanmaların önüne geçilmelidir.
-*   **Yüzey ve Kaynak Temizliği:** Makinenin iç ve dış paslanmaz çelik yüzeyleri ile özellikle elektropolisaj işlemi uygulanmış kaynak dikiş bölgeleri, uygun endüstriyel temizleyicilerle silinmeli ve tamamen kurulanmalıdır. Islak veya nemli bırakılan yüzeyler, uzun süreli havasızlık ortamında yüzeysel korozyon riski oluşturabilir.
+## 4.2.1 Depolama koşulları
 
-### 4.2.2. Çevresel Şartlar ve Zemin Gereksinimleri
-Depolama koşulları, makinenin fabrika çıkış standartlarını koruyabilmesi için belirli iklim ve zemin kriterlerini sağlamalıdır:
-*   **İklimlendirme:** Makine kesinlikle dış ortam koşullarına (yağmur, kar, doğrudan güneş ışığı, rüzgar) maruz bırakılmamalıdır. Depolama alanı iyi havalandırılmış, kuru ve kapalı bir tesis olmalıdır. Ortam bağıl neminin düşük seviyelerde tutulması ve sıcaklığın ani dalgalanmalar göstermediği (+5°C ile +40°C arası) stabil bir alan seçilmesi önerilir.
-*   **Zemin Dengesi:** Makinenin şasi bütünlüğünün korunması için, cihaz tıpkı kurulum ortamında olduğu gibi sert ve pürüzsüz bir beton zemin üzerine indirilmelidir. Makinenin temelini oluşturan çelik ayakların tamamının zemine eşit oranda basması sağlanmalıdır. Ayaklardan birinin boşlukta kalması, aylar süren bekleyişlerde şaside yapısal kasılmalara veya kaynak yorgunluklarına yol açabilir.
+| Parametre | Değer |
+| :--- | :--- |
+| **Depolama ortamı** | Kapalı, kuru, tozdan korunmuş alan |
+| **Ortam sıcaklığı** | +10 °C / +30 °C |
+| **Bağıl nem** | %30–50 |
+| **Depolama pozisyonu** | Dik, dört ayak üzerinde |
+| **Azami depolama süresi** | 12 ay |
 
-### 4.2.3. Elektriksel ve Mekanik Donanımın Korunması
-Hareketsiz kalacak olan otomasyon donanımları ve sensörler, çevresel partiküllere karşı izole edilmelidir:
-*   **Kontrol Panosu İzolasyonu:** PLC, kontaktör grupları, güvenlik röleleri ve motor sürücüleri gibi hassas otomasyon bileşenlerini barındıran ana elektrik panosunun kapakları sıkıca kilitlenmeli ve sızdırmazlık contalarının tam bastığından emin olunmalıdır. Pano içindeki yoğuşmayı önlemek için, depolama süresi boyunca pano içerisine endüstriyel nem alıcı paketler (silika jel) yerleştirilmesi zorunludur.
-*   **Fiziksel İzolasyon:** Makinenin tamamı; havadaki toz, inşaat partikülleri veya endüstriyel uçucu buharlardan korunmak üzere hava alabilen (terleme yapmayan) dayanıklı bir endüstriyel branda ile örtülmelidir. Naylon streç film gibi hiç hava almayan malzemelerle makinenin tamamen sarılması, içeride sera etkisi yaratarak terlemeye (yoğuşmaya) neden olacağından kesinlikle tavsiye edilmez.
+Makineyi yağmur, kar ve doğrudan güneş ışığına maruz kalacağı açık alanlarda depolamayın. Ortam sıcaklığının +10 °C'nin altına düştüğü alanlarda pompada, tankta ve borularda kalan su donarak bu bileşenleri çatlatabilir. Makineyi, zemin üzerinde dört ayağı da eşit şekilde basacak biçimde dik konumda bırakın; makinenin üzerine yük istiflemeyin.
 
-### 4.2.4. Uzun Süreli Depolama (6 Aydan Uzun Beklemeler)
-Makinenin 6 aydan daha uzun süre devreye alınmayacağı senaryolarda ekstra bir koruma rutini uygulanmalıdır:
-*   **Mekanik Egzersiz:** Pompa motorları ve döner ekipmanların milleri, rulman yataklarında oluşabilecek kilitlenmeleri ve mekanik salmastra yapışmalarını önlemek adına ayda en az bir kez el ile birkaç tur çevrilmelidir.
-*   **Kapak Contalarının Korunması:** Kabin kapağı sızdırmazlık contalarının zamanla ezilerek formunu kaybetmemesi ve karşı yüzeye yapışmaması için, kapak tam kilitlenmeden, arasına ince bir takoz konularak hafif aralık (2-3 cm) bırakılmalıdır. Bu işlem aynı zamanda yıkama kabini içinin doğal yollarla havalanmasını sağlayarak koku oluşumunu engeller.
+12 aydan uzun depolanan makineler, devreye alınmadan önce üretici veya yetkili servis tarafından kontrol edilmelidir.
 
-### 4.2.5. Depolamadan Çıkarma ve Devreye Almaya Geçiş
-Depolama süreci bitip makine kalıcı çalışma lokasyonuna yerleştirildiğinde, sisteme enerji verilmeden hemen önce şu adımlar izlenmelidir:
-*   Elektrik panosuna yerleştirilmiş olan nem alıcı paketler çıkarılmalıdır.
-*   Kablolarda, pnömatik hortumlarda ve rakorlarda fiziksel bir yıpranma, gevşeme veya kemirgen hasarı olup olmadığı gözle kontrol edilmelidir.
-*   Tüm sabit çelik ayakların kurulum zeminine tam oturduğu tekrar teyit edildikten sonra, kılavuzda yer alan "Devreye Alma (Commissioning)" prosedürlerine geçilmelidir.
+## 4.2.2 Depolamaya hazırlık
+
+Makine kullanıldıktan sonra depolanacaksa aşağıdaki adımları uygulayın:
+
+1. Makineyi durdurun ve LOTO uygulayın (**Bkz. Bölüm 2.4**).
+2. Yıkama tankındaki proses suyunu tahliye vanasından tamamen boşaltın.
+3. Tankı, filtreleri ve yıkama hücresini **Bölüm 10**'a göre temizleyin.
+4. Tankın, hücrenin ve filtrelerin iç yüzeylerini tamamen kurumaya bırakın. Islak bırakılan yüzeylerde koku, tortu ve yüzey lekesi oluşur.
+5. Makinenin dış yüzeyini kuru bezle silin.
+6. Elektrik panosu kapağını kapatın ve kilitleyin.
+7. Makinenin üzerini, hava geçirgen ve toz tutmayan bir örtüyle kapatın. Makineyi hava geçirmeyen naylonla sıkıca sarmayın; örtü altında oluşan yoğuşma yüzeylerde korozyona neden olur.
+
+## 4.2.3 Depolamadan çıkarma
+
+Depolanmış makineyi devreye almadan önce aşağıdaki kontrolleri yapın:
+
+1. Örtüyü kaldırın; gövdede, kapakta ve panoda depolama sırasında oluşmuş hasar olup olmadığını gözle kontrol edin.
+2. Besleme kablosunda, fişte ve pano kablo girişlerinde ezilme, kesilme veya kemirgen hasarı olup olmadığını kontrol edin.
+3. Tank, filtre yuvaları ve yıkama hücresi içinde toz, yabancı cisim veya birikinti olmadığını kontrol edin.
+4. Kapak amortisörlerinin kapağı açık konumda taşıdığını kontrol edin.
+5. Makineyi **Bölüm 5**'e göre konumlandırın, bağlayın ve devreye alın.

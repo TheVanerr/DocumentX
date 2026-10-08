@@ -1,6 +1,9 @@
-# 9. BAKIM (MAINTENANCE)
+# 9. BAKIM
 
-Bu bölüm, endüstriyel yıkama makinelerimizin periyodik bakım, rutin kontrol ve onarım prosedürlerini kapsamaktadır. Makinelerin tasarlandığı uzun ömre ulaşması, kesintisiz ve yüksek verimle çalışması, beklenmedik arızaların ve üretim duruşlarının minimize edilmesi ile iş sağlığı ve güvenliği şartlarının korunması amacıyla düzenli bakım şarttır. Bu kılavuzda belirtilen periyodik bakım aralıkları ve talimatları, makinenizin mekanik, elektriksel, pnömatik ve hidrolik sistemlerinin güvenilirliğini doğrudan etkilemektedir. Bu nedenle, tüm bakım ve onarım faaliyetlerinin yalnızca makineyi tanıyan, gerekli eğitimleri almış yetkili personeller tarafından, ilgili güvenlik kuralları (LOTO vb.) gözetilerek uygulanması zorunludur.
+Bu bölüm, makinenin güvenli ve verimli çalışmasını sürdürmek için uygulanacak periyodik bakım işlemlerini, yağlama gereksinimlerini, bakım kayıtlarını ve yedek parça yönetimini tanımlar. LYM serisi makineler için **önleyici bakım** yaklaşımı uygulanır: bakım işlemleri arıza oluşmasını beklemeden, belirlenen periyotlarda yapılır.
 
+Düzenli bakım; filtrelerin tıkanmasından kaynaklanan pompa arızalarını, aşınmış nozullar nedeniyle yıkama kalitesinin düşmesini ve güvenlik elemanlarının fark edilmeden işlevini yitirmesini önler. Bakım periyotlarına uyulmaması, makine arızalarına, yıkama kalitesinin düşmesine ve garantinin sona ermesine neden olabilir.
 
+Temizlik işlemleri (filtre temizliği, tank temizliği, proses suyu değişimi) **Bölüm 10**'da ayrıca tanımlanmıştır. Bu bölümdeki periyodik bakım tablosu, temizlik işlemlerinin periyotlarını da içerir.
 
+**UYARI — Beklenmedik çalışma:** Enerji izolasyonu yapılmadan bakım çalışmasına başlanması; sepetin dönmesi, pompanın çalışması veya elektrik çarpması sonucu ağır yaralanmaya neden olabilir. Tüm bakım çalışmalarından önce LOTO uygulayın (**Bkz. Bölüm 2.4**).

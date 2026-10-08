@@ -1,3 +1,3 @@
-# pnomatic settings
+# 6.5 Pnömatik ayarlar
 
-<!-- LYM sablon | icerik DATA dosyasindan uretilecek -->
+LYM serisi makinelerde pnömatik devre bulunmaz. Makine basınçlı hava beslemesi gerektirmez; regülatör, silindir veya pnömatik valf ayarı yoktur.
