@@ -1,37 +1,104 @@
-# 3.2. Kullanım Amacı
+# 3.2 Amaçlanan kullanım
 
-Bu bölüm, makinenin tasarım amacını, kullanım sınırlarını ve yasal yükümlülükleri belirler. Makinenin güvenli ve verimli çalışabilmesi için aşağıda belirtilen şartlara harfiyen uyulması zorunludur.
+Bu bölüm, makinenin **tasarlanan kullanım kapsamını**, işlenebilir ve yasak ürün tiplerini, proses suyu sınırlarını, ortam koşullarını ve hedef personeli tanımlar. Makine, belirtilen sınırlar dışında kullanıldığında öngörülebilir hatalı kullanım kapsamına girer; güvenlik ve proses sonuçları garanti kapsamı dışında kalır (**Bkz. Bölüm 2.1**). Teknik tablo değerleri **Bölüm 3.3**'te, alan gereksinimleri **Bölüm 3.5**'te verilmiştir.
 
-## 3.2.1. Tasarlanan Kullanım Kapsamı
+---
 
-Bu endüstriyel yıkama makinesi; imalat, döküm, presleme, talaşlı imalat ve bakım-onarım atölyelerinde işlem gören endüstriyel parçaların yüzey temizliği için tasarlanmış ve üretilmiştir. Makinenin temel kullanım amacı; metal, uygun plastik veya kompozit parçaların yüzeylerindeki endüstriyel yağ, gres, karbon kalıntıları, talaş ve benzeri kirlerin arındırılmasıdır. 
+## 3.2.1 Tasarlanan kullanım kapsamı
 
-Sistem, parçaları kaplama, boyama, kaynak veya montaj gibi bir sonraki üretim aşamasına uygun kalitede hazırlar. Makine, yalnızca endüstriyel tesis ortamlarında, bu kılavuzda belirtilen teknik sınırlar dahilinde ve gerekli iş güvenliği eğitimlerini almış yetkili personel tarafından kullanılmalıdır.
+KNV 90 7500 2B, konveyörlü ve iki banyolu (yıkama + durulama) endüstriyel parça yıkama makinesidir. Parçalar konveyör üzerinde ilerleyerek yıkama, durulama, blower ile su sıyırma ve sıcak hava ile kurutma proseslerini tamamlar.
 
-## 3.2.2. İzin Verilen Akışkan ve Kimyasal Sınırları
+Makinenin **amaçlanan kullanım alanı**, endüstriyel parça yüzeylerinden proses kaynaklı kir, yağ ve atıkların giderilmesidir; kullanım ortamı kapalı tesis içi endüstriyel üretim ortamıdır. Makine, parçaları konveyör hattı boyunca sürekli akış prensibiyle işler; besleme tarafı **sol**, boşaltma tarafı **sağ** yöndedir. Yükleme ve boşaltma operatör tarafından elle yapılır.
 
-Makinenin tüm mekanik, hidrolik ve sızdırmazlık sistemleri, yalnızca **su ve su bazlı alkali yıkama kimyasalları** ile çalışacak şekilde tasarlanmıştır. Kullanılacak kimyasalların özellikleri, makinenin paslanmaz çelik yapısına zarar vermeyecek endüstriyel standartlarda olmalıdır. Yıkama tankına temiz su ve uygun alkali kimyasal dışında herhangi bir sıvı eklenemez.
+Bu makine yalnızca **kapalı, korunaklı iç mekân** endüstriyel tesis ortamlarında, bu kılavuzda belirtilen teknik ve çevresel sınırlar dahilinde kullanılmak üzere tasarlanmıştır.
 
-## 3.2.3. Öngörülebilir Hatalı Kullanım ve Yasaklar
+---
 
-Makinenin belirtilen kullanım amacı dışında çalıştırılması hatalı kullanım olarak kabul edilir. İş güvenliği ve yasal mevzuatlar gereği, aşağıda belirtilen kullanımlar **kesinlikle yasaktır**:
+## 3.2.2 İşlenebilir ürün ve malzeme türleri
 
-*   **Canlılar:** İnsanların, hayvanların veya herhangi bir canlının makine ile yıkanması, temizlenmesi veya makine kabini içerisine girmesi.
-*   **Gıda ve Sağlık:** Gıda ürünlerinin, gıda ile doğrudan temas eden ambalajların veya tıbbi/cerrahi cihazların yıkanması, dezenfeksiyonu veya sterilize edilmesi. Makine hijyenik medikal standartları karşılayacak bir sterilizatör değildir.
-*   **Yanıcı ve Patlayıcı Maddeler:** Solvent, tiner, aseton, benzin, motorin, alkol gibi yanıcı, parlayıcı veya patlayıcı maddelerin makine tankına eklenmesi veya makine çevresinde kullanılması. Makine, patlayıcı ortamlarda (ATEX) çalışmaya uygun donanıma sahip değildir.
-*   **Asidik ve Aşındırıcı Kimyasallar:** Hidroklorik asit, nitrik asit, sülfürik asit gibi aşındırıcı (korozif) kimyasalların veya yüksek konsantrasyonlu tuzlu sıvıların kullanılması.
-*   **Uyumsuz Materyaller:** Yüksek basınç ve sıcaklık altında dağılarak makine filtrelerini veya pompalarını tıkayabilecek ahşap, tekstil, sünger veya kağıt gibi ürünlerin yıkanması.
+Makine ile işlenebilir ürün tipleri aşağıdaki gibidir:
 
-## 3.2.4. Sorumluluk Reddi ve Yasal Uyarı
+| Kategori | Açıklama |
+| :--- | :--- |
+| Genel | Endüstriyel metal ve benzeri parçalar |
+| Taşıma koşulu | Konveyör tel bandı üzerinde elle yüklenip boşaltılabilen, hücre girişinden geçebilen parçalar |
+| Geometri / ağırlık | Müşteri prosesine uygun geometri ve ağırlıkta — boyut ve ağırlık limitleri [EKSİK] |
 
-Makinenin yalnızca bu kılavuzda belirtilen amaca ve sınırlara uygun olarak kullanılmasından tamamen kullanıcı işletme sorumludur. 
+Parçalar, yıkama ve durulama proseslerinden geçirilerek yüzey kirliliği giderilir; ardından blower ile su sıyrılır ve kurutma bölgesinde yüzey nemi alınır. İşlenecek parçaların proses sıvısına, +70 °C'ye kadar çıkabilen tank sıcaklığına, kurutma havası sıcaklığına ve konveyör taşıma kapasitesine uygun olması kullanıcı firmanın sorumluluğundadır. Parça, tel bant üzerinde devrilmeyecek ve hücre giriş kesitini aşmayacak şekilde yerleştirilmelidir.
 
-Makinede asit, solvent, yanıcı veya patlayıcı maddelerin kullanılması; makinenin canlılar, gıda veya tıbbi amaçlarla çalıştırılması ya da yetkisiz modifikasyonlar yapılması durumunda makine anında **garanti kapsamı dışında kalır.**
+Nominal, maksimum ve minimum kapasite, ürün formatı, boyut ve ağırlık sınırları **müşteri firma tarafından** belirlenir (**Bkz. Bölüm 3.3.2, 8**).
 
-Bu güvenlik uyarılarına ve sınırlamalara uyulmaması neticesinde meydana gelebilecek:
-1. İş kazaları, yaralanmalar veya can kayıpları,
-2. Tesis yangınları, kimyasal tepkimeler veya patlamalar,
-3. Çevresel kirlilik veya tehlikeli madde sızıntıları,
-4. Makinede, tesiste veya yıkanan parçalarda oluşabilecek tüm maddi hasarlar,
+---
 
-durumlarında üretici firma hiçbir hukuki, cezai veya maddi tazminat sorumluluğu kabul etmez. Meydana gelebilecek olaylardaki tüm yasal sorumluluk, hatalı kullanım talimatını veren veya uygulayan işletmeye aittir.
+## 3.2.3 Yasak ve uygun olmayan kullanımlar
+
+Aşağıdaki ürün ve kullanım tipleri makine için **uygun değildir** ve **kesinlikle yasaktır**:
+
+| Yasak kategori | Açıklama |
+| :--- | :--- |
+| Canlı organizmalar | Gıda, bitki, insan, hayvan ve herhangi bir canlı varlık |
+| Medikal | Medikal aletlerin temizlenmesi; canlı organizma ile temasa girecek materyaller |
+| Gıda | Gıdalar, gıda ambalajları ve gıda ile temas eden yüzeylerin yıkanması |
+| Yanıcı / patlayıcı | Solvent, tiner, benzin, alkol gibi yanıcı veya parlayıcı sıvıların tanklara eklenmesi veya makine çevresinde kullanılması; makine ATEX ortamı için tasarlanmamıştır |
+| Asidik / korozif | Asit bazlı veya paslanmaz çeliğe zarar verecek kimyasalların kullanılması |
+
+Makinenin belirtilen amaç dışında kullanılması öngörülebilir hatalı kullanım kapsamında değerlendirilir. Canlı organizmaların yıkanması, temizlenmesi veya makine proses bölgelerine girmesi yasaktır; makine hijyenik veya medikal sterilizasyon standartlarını karşılamaz.
+
+Makine, bakım kapaklarında manyetik emniyet switch'leri ile donatılmıştır; kapaklar açıldığında makine durur. Switch'ler baypas edilmemelidir. Bakım için makine durdurulur, elektrik kesilir ve **LOTO prosedürü** uygulanır; kapaklar ancak bundan sonra açılır (**Bkz. Bölüm 2.4**).
+
+---
+
+## 3.2.4 Proses suyu ve temizlik maddesi sınırları
+
+Makinenin yıkama ve durulama proseslerinde kullanılacak su aşağıdaki koşullara uygun olmalıdır:
+
+| Parametre | Değer / Gereksinim |
+| :--- | :--- |
+| Su kaynağı | Şebeke suyu veya arıtılmış su |
+| Su giriş basıncı | 1 bar |
+| Su sıcaklığı | +10 °C – +70 °C |
+| Tank dolumu | Elle — otomatik dolum yoktur |
+
+**Yasak temizlik maddeleri:**
+- Asit bazlı temizlik maddeleri kullanılmamalıdır.
+- Paslanmaz çeliğe zarar verecek temizlik maddeleri kullanılmamalıdır.
+- Solvent ve yanıcı sıvılar tanklara eklenmemelidir (makine üzerindeki "solvent kullanmayın" etiketi).
+
+Makine temizliğinde paslanmaz çelik uyumlu nötr veya hafif alkali deterjanlar kullanılır; üretici önerileri ve dezenfeksiyon yöntemi **Bölüm 10.1.7**'de verilmiştir. Atık su ve kimyasal bertarafında makinenin kullanıldığı ülkenin mevcut mevzuatı uygulanır (**Bkz. Bölüm 10.1.8**).
+
+Temizlik tipi: **kuru / ıslak** (manuel).
+
+---
+
+## 3.2.5 Ortam ve tesis koşulları
+
+Makine yalnızca **kapalı, korunaklı iç mekân** endüstriyel tesis ortamlarında kullanılmak üzere tasarlanmıştır. Çalışma ve depolama ortam koşulları aşağıdaki sınırlar içinde olmalıdır; bu değerler **Bölüm 3.3.6** tablosunda da verilmiştir:
+
+| Parametre | Min | Max |
+| :--- | :---: | :---: |
+| Ortam / çalışma sıcaklığı | +10 °C | +30 °C |
+| Depolama sıcaklığı | +10 °C | +30 °C |
+| Göreceli nem | %30 | %50 |
+
+| Parametre | Değer |
+| :--- | :--- |
+| Koruma sınıfı (IP) | IP55 |
+| Gürültü seviyesi | 65 dB(A) |
+
+Minimum etraf boşlukları, tavan yüksekliği ve montaj alanı boyutu **Bölüm 3.5.2**'de verilmiştir. Basınçlı hava beslemesi **6 bar** basınçta sağlanmalıdır (**Bkz. Bölüm 3.3.5**). Egzoz bacası tesis havalandırmasına veya dış ortama bağlanmalıdır; aksi hâlde buhar iç ortama yayılır. Taşıma ve depolama sırasında nem ve korozif madde bulunmamalıdır (**Bkz. Bölüm 4.2**).
+
+---
+
+## 3.2.6 Operatör, eğitim ve hedef kitle
+
+Makine aşağıdaki personel grupları tarafından kullanılmak üzere tasarlanmıştır:
+
+| Personel | Rol |
+| :--- | :--- |
+| Operatör | Tank dolumu, fonksiyon anahtarları, konveyör hızı, parça yükleme/boşaltma, RESET |
+| Bakım | Periyodik bakım, filtre temizliği, yağlama, arıza müdahalesi, LOTO |
+| Kurulum | Montaj, teraziye alma, medya ve elektrik bağlantıları, devreye alma |
+
+Aynı anda makine çevresinde bulunacak operatör sayısı **1–2** kişidir. Parça yükleme ve boşaltma elle yapıldığından makine çalışırken en az bir operatör hat başında bulunmalıdır.
+
+**Yetkinlik / eğitim gereksinimi:** Operatör, makine start/stop mantığı (anahtar sırası ve interlock'lar), güvenli parça yükleme ve acil durdurma/reset konusunda eğitilmiş olmalıdır. Bakım personeli mekanik/elektrik bakım ve LOTO eğitimine; kurulum personeli montaj, bağlantı ve devreye alma yetkinliğine sahip olmalıdır (**Bkz. Bölüm 1.1.3** yetki matrisi). Operatör paneli etiketleri İngilizcedir; etiket anlamları **Bölüm 3.4**'te verilmiştir ve eğitimde aktarılmalıdır.

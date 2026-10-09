@@ -1,7 +1,18 @@
 # 2. GÜVENLİK
 
-Endüstriyel yıkama makineleri; yüksek sıcaklıkta çalışan proses sıvıları, dönen mekanik elemanlar, basınçlı hidrolik sistemler ve yüksek gerilimli elektrik bileşenlerini bir arada barındıran kompleks sistemlerdir. Bu özellikleri itibarıyla makinenin kurulum, devreye alma, operasyon, bakım ve servis aşamalarının tamamında güvenlik kurallarına eksiksiz uyulması zorunludur.
+**KNV 90 7500 2B** (seri no **0726051**) konveyörlü endüstriyel parça yıkama makinesi; +70 °C'ye kadar ısıtılan proses sıvısı, 8 kW ve 12 kW elektrikli rezistanslar, hareketli zincirli konveyör, döner pompa ve fan mekanizmaları, 6 bar basınçlı hava, 380 V / 110 kW elektrik ve kimyasal maruziyet riskleri içerir. Bu bölüm, makinenin kurulum, devreye alma, işletim, bakım ve servis aşamalarında uyulması gereken güvenlik kurallarını tanımlar. Talimatlar EN ISO 12100 ve EN ISO 20607 ilkelerine uygun hazırlanmıştır.
 
-Bu bölümde yer alan güvenlik talimatları; kişisel yaralanma ve ölüm risklerini, ekipman hasarını ve çevresel zararı önlemeye yönelik asgari gereksinimleri tanımlamaktadır. Söz konusu talimatlar, ilgili AB direktifleri ve uluslararası güvenlik standartları çerçevesinde hazırlanmış olup makinenin kullanım ömrü boyunca geçerliliğini korur. Makinenin herhangi bir aşamasında bu kılavuzda belirtilen güvenlik gereksinimlerinin dışına çıkılması; öngörülemeyen tehlikelerin ortaya çıkmasına, güvenlik sistemlerinin işlevsiz kalmasına ve garanti yükümlülüklerinin sona ermesine yol açar.
+Güvenlik gereksinimlerinin ihlali; yaralanma, ekipman hasarı, çevresel etki ve garanti kapsamının sona ermesi riski doğurur. Makineyi işleten kurum (işveren), personel görevlendirmesinden, eğitimden ve kılavuzun erişilebilirliğinden sorumludur (**Bkz. Bölüm 1.1.3**).
 
-Bu kılavuz; makineyi satın alan, kuran, çalıştıran ve bakımını gerçekleştiren tüm tarafların ulaşabileceği bir konumda muhafaza edilmeli, ilgili personele okunması ve anlaşılması sağlanmalıdır. Kılavuzun kaybolması veya okunamaz hale gelmesi durumunda üretici firmadan yeni bir kopya talep edilmelidir.
+Bu makinede PLC/HMI bulunmadığından güvenlik fonksiyonları tamamen **donanımsaldır**: 7 acil stop butonu, 7 bakım kapağında seri bağlı manyetik emniyet switch'leri ve iki Omron G9SB emniyet rölesi. Güvenli duruma dönüş yalnızca operatör panelindeki **RESET** butonu ile onaylanır. Bu mimari, yazılımsal baypas imkânı bırakmaz; ancak switch köprüleme veya mıknatıs ile kandırma gibi fiziksel müdahaleler güvenlik fonksiyonunu tamamen devre dışı bırakır ve **kesinlikle yasaktır**.
+
+| Alt bölüm | Konu |
+| :--- | :--- |
+| **2.1** | Güvenliğe giriş, sorumluluklar, amacına uygun kullanım çerçevesi, güvenlik donanımı özeti |
+| **2.2** | Kalıntı riskler, makine etiketleri |
+| **2.3** | Operasyonel güvenlik kuralları |
+| **2.4** | LOTO — enerji izolasyonu (tek kaynak) |
+| **2.5** | Acil durdurma ve reset (tek kaynak) |
+| **2.6** | Kişisel koruyucu donanım (KKD) matrisi |
+
+Amaçlanan kullanım sınırları **Bölüm 3.2**'de tanımlanır. Teknik tesisat değerleri **Bölüm 3.3**'te, kontrol elemanları **Bölüm 3.4**'te verilir; bu bölümde tekrarlanmaz.

@@ -1,5 +1,25 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 10. REINIGUNG
 
-# 10. TEMİZLİK (CLEANING)
+Dieses Kapitel beschreibt die manuellen Reinigungs- und Desinfektionsverfahren für die Maschine **KNV 90 7500 2B**. Die Maschine ist für die manuelle **Trocken-/Nassreinigung** geeignet; ein automatisches **CIP**- oder **COP**-System ist **nicht vorhanden**. Aufgrund der Wasserzirkulation im geschlossenen Kreislauf ist die Reinigung von Vorfilter, Saugfilter und Beutelfilter am Pumpenausgang die Grundvoraussetzung für die Prozessqualität und die Lebensdauer der Pumpen.
 
-Bu bölüm, endüstriyel yıkama makinelerimizin kendi iç ve dış temizlik prosedürlerini kapsamaktadır. Makinenin uzun ömürlü, hijyenik ve kesintisiz bir şekilde çalışabilmesi için; yıkanan parçaların kalitesini tehdit edebilecek kimyasal kalıntı birikimlerinin, tıkanıklıkların ve korozyon risklerinin önlenmesi amacıyla düzenli temizlik şarttır. Makinenin temizliği yalnızca görsel bir düzen sağlamak için değil; sensörlerin, filtrelerin, tahliye hatlarının ve kapak contalarının doğru çalışmasını güvence altına almak için kritik bir bakım operasyonudur. Temizlik prosedürlerine başlamadan önce makinenin tamamen durdurulması, enerji izolasyonunun (LOTO) sağlanması ve makine içi basınçlı sistemlerin tamamen tahliye edilmesi zorunludur. Ayrıca, temizlik esnasında kullanılacak kimyasalların ve su sistemlerinin operatöre veya makine yüzeylerine zarar vermemesi için ilgili kişisel koruyucu ekipmanların (KKE) kullanılması ve bu bölümde belirtilen kurallara strictly uyulması gerekmektedir.
+Die Reinigungsarbeiten werden vom **Wartungspersonal** oder von einem geschulten Bediener durchgeführt. Bei allen Arbeiten, die den Zugang zu Tanks, Filtern und Klappen erfordern, muss die Maschine stillgesetzt und das **LOTO-Verfahren** angewendet werden (**Siehe Kapitel 2.4** — die Schritte werden nicht wiederholt). Die Intervalle der periodischen Reinigung sind im Wartungsplan in **Kapitel 9.1.3** angegeben.
+
+| Parameter | Wert |
+| :--- | :--- |
+| Reinigungsart | Trocken / nass — manuell |
+| Täglich | Vorfilter des Waschtanks |
+| Wöchentlich | Saugfilter der Tanks + Beutelfilter am Pumpenausgang |
+| Desinfektion | Tankentleerung (Ablassventil TAHLİYE) + Reinigung mit Seifenwasser |
+| Reinigungswasser | Leitungswasser |
+| Freigegebene Chemikalien | Neutral / leicht alkalisch (edelstahlverträglich); Herstellerempfehlung VEIDEC-Serie — siehe **10.1.7** |
+| Verboten | Säurehaltige Mittel; Mittel, die Edelstahl schädigen; Lösungsmittel |
+
+![Vorfilterkörbe — Rücklaufleitung zum Tank](../assets/10.1/on-filtre-sepetleri.jpg)
+
+| Unterkapitel | Thema |
+| :--- | :--- |
+| **10.1** | Reinigungs- und Desinfektionsverfahren |
+
+---
+
+Zum Wartungsplan siehe **Kapitel 9.1.3**; zu Ersatzfiltern siehe **Kapitel 9.1.6**, **13.3**.

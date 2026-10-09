@@ -1,6 +1,23 @@
-# 9. BAKIM (MAINTENANCE)
+# 9. BAKIM
 
-Bu bölüm, endüstriyel yıkama makinelerimizin periyodik bakım, rutin kontrol ve onarım prosedürlerini kapsamaktadır. Makinelerin tasarlandığı uzun ömre ulaşması, kesintisiz ve yüksek verimle çalışması, beklenmedik arızaların ve üretim duruşlarının minimize edilmesi ile iş sağlığı ve güvenliği şartlarının korunması amacıyla düzenli bakım şarttır. Bu kılavuzda belirtilen periyodik bakım aralıkları ve talimatları, makinenizin mekanik, elektriksel, pnömatik ve hidrolik sistemlerinin güvenilirliğini doğrudan etkilemektedir. Bu nedenle, tüm bakım ve onarım faaliyetlerinin yalnızca makineyi tanıyan, gerekli eğitimleri almış yetkili personeller tarafından, ilgili güvenlik kuralları (LOTO vb.) gözetilerek uygulanması zorunludur.
+Bu bölüm, **KNV 90 7500 2B** makinesinin önleyici bakım programını, yağlama noktalarını ve sahadaki yedek parça stok önerilerini tanımlar. Makine, müşteri vardiya planına göre operatör gözetiminde çalışır; planlı bakım ve arıza müdahalesi **bakım personeli** tarafından, pano içi işler **yetkili elektrikçi** tarafından yapılır.
 
+**Periyodik bakım takvimi bu bölümde verilmiştir.** Filtre temizliği adımları **Bölüm 10**'da; LOTO prosedürü **Bölüm 2.4**'te tanımlıdır — adımlar burada tekrarlanmaz. Tam parça listesi (BOM) **Bölüm 13.3**'te verilmiştir; bu bölümde operasyonel özet tablolar bulunur.
 
+Bu makinede bakım ihtiyacını gösteren HMI alarmı yoktur; bakım periyotları takvim ve çalışma saati ile takip edilir, belirtiler run lambaları, seviye lambaları ve pano içi koruma elemanlarından okunur.
 
+| Parametre | Değer |
+| :--- | :--- |
+| Bakım felsefesi | Önleyici bakım |
+| Personel yeterliliği | Makinenin kullanıldığı ülkenin mevcut bakım personeli yeterlilik seviyesi |
+| Yağlama tablosu | Ayrı dosya yok — konveyör 4 nipel (Bölüm 9.1.4) |
+| Yağlama noktası | 4 adet (konveyör giriş sağ/sol + çıkış sağ/sol) — aylık |
+| Bakım modu | Yok — LOTO ile enerji izolasyonu |
+
+| Alt bölüm | Konu |
+| :--- | :--- |
+| **9.1** | Bakım talimatları — periyot, yağlama, kritik ve tüketim parçaları, kayıt formu |
+
+---
+
+Temizlik için bkz. **Bölüm 10**; arıza giderme için bkz. **Bölüm 11**.

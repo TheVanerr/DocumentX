@@ -1,10 +1,25 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 11. STÖRUNGSBESEITIGUNG
 
-# 11. ARIZA TESPİTİ VE SORUN GİDERME (TROUBLESHOOTING)
+Dieses Kapitel beschreibt die Methoden zur Diagnose und Beseitigung von Störungen, die an der Maschine **KNV 90 7500 2B** auftreten können. Die Maschine verfügt über **kein HMI und keine Alarmliste**; die Symptome werden über die Leuchten des Bedienfelds (Betriebsleuchten, TANK 1/2 WASHING LEVEL, RESET), die Stellung der Schutzelemente im Schaltschrank (Motorschutzschalter, Fehlerstrom-Schutzschalter, Sicherungen, Phasenfolgerelais) und das Display des Förderer-Frequenzumrichters diagnostiziert.
 
-Bu bölüm, endüstriyel yıkama makinelerimizin çalışması esnasında karşılaşılabilecek olası arıza, sorun ve operasyonel anormalliklerin tespit edilmesi ve giderilmesi amacıyla hazırlanmıştır. Makinelerin mekanik, elektriksel, pnömatik ve yazılımsal (PLC/HMI) tüm alt sistemlerinde meydana gelebilecek yaygın hatalar, bu bölümde "Belirti (Semptom) -> Olası Neden -> Çözüm Yöntemi" mantığıyla listelenmiştir. Sorun giderme sürecine başlamadan önce, operatörün ve bakım personelinin makinenin çalışma prensiplerini ve bu kılavuzun ilgili işletim bölümlerini tam anlamıyla bilmesi gerekmektedir.
+Die Störungsbehebung erfolgt in zwei Ebenen: Der Bediener führt anhand der Bedienfeldleuchten die **Erstdiagnose** durch und wendet äußere Maßnahmen wie Tankbefüllung, Prüfung von Not-Halt/Klappen und RESET an; Eingriffe im Schaltschrank (MKŞ-Reset, Fehlerstrom-Schutzschalter, Schütz, Heizstabmessung) werden ausschließlich von einer **Elektrofachkraft** **unter LOTO** durchgeführt (**Siehe Kapitel 2.4**). Der Not-Halt-Reset erfolgt gemäß **Kapitel 2.5**.
 
-Herhangi bir arıza müdahalesine başlamadan önce makinenin tamamen durdurulması, ana elektrik şalterinin "0" konumuna alınması ve enerji izolasyonunun (LOTO - Lockout/Tagout) sağlanması zorunludur. Bu kılavuzda yer alan müdahale yöntemleri, yetkili ve eğitimli operatörlerin uygulayabileceği rutin kontrolleri kapsamaktadır. Belirtilen çözüm önerilerine rağmen sorun devam ediyorsa, arızanın PLC yazılımı, inverter parametreleri veya major mekanik bileşenler gibi ileri düzey teknik bilgi gerektiren bir alanda olduğu anlaşılmalı ve derhal CNK ELEKTRONİK / DOLFIN MAKİNE yetkili servis departasına başvurulmalıdır. Yetkisiz ve bilinçsiz müdahaleler makineye kalıcı hasar verebilir ve cihazın garanti koşullarını tamamen geçersiz kılabilir.
+| Parameter | Wert |
+| :--- | :--- |
+| Alarmanzeige | Kein HMI — Betriebsleuchten, WASHING LEVEL (rot), RESET (blau), Stellung MKŞ/RCCB, Display des Frequenzumrichters |
+| Hydraulik / Vakuum | Nicht zutreffend |
+| Pneumatik | Nur Membranpumpe des Ölabscheiders — 6 bar |
 
+| Unterkapitel | Thema |
+| :--- | :--- |
+| **11.1** | Fehlersuche — Diagnoseablauf, Störungstabelle, MKŞ-Zuordnungstabelle |
+| **11.2** | Allgemein — Leuchtenverhalten, Kriterien für die Serviceanforderung |
+| **11.3** | Elektrik — Phase, Motor/MKŞ, Heizung/Fehlerstrom, Frequenzumrichter |
+| **11.4** | Hydraulik — nicht zutreffend |
+| **11.5** | Pneumatik — Luftdruck, Ölabscheiderpumpe |
+| **11.6** | Vakuum — nicht zutreffend |
+| **11.7** | Sensoren — Klappenschalter, Füllstandsensoren, Thermoelement, Leckagewanne |
 
+---
 
+Für die Serviceanforderung siehe **Kapitel 1.3**; für Ersatzteile siehe **Kapitel 13.3**.

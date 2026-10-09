@@ -1,23 +1,85 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 4.1 Transport und Versand
 
-## 4.1. Forklift İle Taşıma Prosedürü
+Die Maschine besteht aus einem **langen Hauptkörper**, der die Fördererlinie, die Tanks, die Trocknungseinheit und den Schaltschrank trägt, sowie der separat stehenden **Ölabscheidereinheit**. Da der Hauptkörper lang ist und die Gewichtsverteilung asymmetrisch ist (Tanks, Pumpen und Schaltschrank befinden sich auf einer Seite der Linie), dürfen Anheben und Transport nur durch einen zertifizierten Gabelstaplerfahrer und nur an den vom Hersteller festgelegten Anschlagpunkten erfolgen. Auf den Versandfotos ist die Maschine auf einem offenen Pritschenfahrzeug unter einer Schutzplane zu sehen, mit dem Gabelstapler verladen.
 
-Bölüm 4.0'da belirtilen güvenlik kuralları ve sertifikasyon şartları sağlandıktan sonra, makinenin fiziksel olarak taşınması için aşağıdaki adımlar sırasıyla ve eksiksiz olarak izlenmelidir:
+Außenabmessungen und Gewicht sind bei der Planung des Aufstellorts und des Fahrzeugs zu berücksichtigen (**Siehe Kapitel 3.3.1**); diese Werte sind in den DATA nicht definiert und müssen dem Aufstellungsplan (Layout) bzw. der Hebezeichnung entnommen werden (**Siehe Kapitel 3.5.4**).
 
-**1. Taşıma Öncesi Hazırlıklar:**
-*   Makinenin tesis ana şebekesi ile olan tüm elektrik bağlantılarının kesildiğinden (ana şalter kapalı konumda) emin olun.
-*   Yıkama tankı ve tesisat boruları içerisindeki suyun veya kimyasal sıvının tamamen boşaltıldığını teyit edin. İçi dolu veya yarı dolu bir makinenin taşınması, sıvı çalkalanması nedeniyle ağırlık merkezini aniden değiştirerek ciddi bir devrilme riski yaratır.
-*   Kabin kapağının tamamen kapalı ve kilitli olduğundan emin olun. 
-*   Sarkan, zemine temas eden veya takılma riski oluşturan herhangi bir harici kablo, hortum veya bağlantı elemanı kalmadığından emin olun.
+---
 
-**2. Çatalların Konumlandırılması:**
-*   Forklift çatallarını, makinenin ağırlık merkezini ortalayacak biçimde alt şasi hizasından dikkatlice sürün. Çatal uzunluklarının, makinenin alt şasi derinliğini tam olarak kavrayacak ve karşı taraftan bir miktar çıkacak boyutta olması zorunludur.
-*   Çatalların yalnızca makinenin alt ana taşıyıcı profillerine temas ettiğinden emin olun. Yan sac kaplamalara, vanalara veya kontrol panosu tesisatına kesinlikle yük bindirmeyin.
+## 4.1.1 Anforderungen vor dem Transport
 
-**3. Kaldırma ve İlerleme:**
-*   Taşıma işlemine başlamadan önce makineyi yerden sadece 10-15 cm yüksekliğe kaldırarak bir ön denge testi gerçekleştirin. Eğer şaside bir tarafa yatma veya dengesizlik gözlemlenirse, makineyi yavaşça yere indirin ve çatal pozisyonlarını ağırlık merkezine göre yeniden hizalayın.
-*   Nakliye rotası boyunca yükü yere mümkün olduğunca yakın tutun (maksimum 15-20 cm yükseklikte). Ani direksiyon manevralarından, sert frenlerden ve yüksek hızlı ilerleyişten kesinlikle kaçının. Operatörün görüş açısının kısıtlandığı dar alanlarda mutlaka eğitimli bir yönlendirici (gözcü) personelden destek alın.
+Vor Beginn des Transports müssen die folgenden Bedingungen erfüllt sein. Fehlt eine Bedingung, den Transport stoppen; nicht fortfahren, bevor sie erfüllt ist.
 
-**4. İndirme ve Zemin Gereksinimleri:**
-*   Makinenin operasyonel stabilitesini koruması, içerisindeki sıvı seviyesinin her noktada eşit dağılması ve mekanik aksamların (kabin kapağı, sepet, motor vb.) eksenel kayma veya kasılma yaşamadan çalışabilmesi için, kurulum yapılacak nihai alanın önceden **endüstriyel standartlarda terazilenmiş, düz ve pürüzsüz bir beton zemin** olması kritik bir öneme sahiptir.
-*   Makineyi hazırlanan bu düz zemin üzerine yavaşça, sarsıntı yaratmadan indirin. İşlem tamamlandığında, makinenin tüm taşıyıcı ayaklarının zemine tam, eşit ve eksiksiz şekilde temas ettiğinden emin olun. Zemin terazisinde sapmalar varsa, makinenin uzun ömürlü mekanik dengesini sağlamak adına makine devreye alınmadan önce gerekli tesviye işlemleri mutlaka tamamlanmalıdır.
+| Parameter | Wert / Anforderung |
+| :--- | :--- |
+| Transportmittel | Gabelstapler — Anschlagpunkte gemäß Herstellerzeichnung |
+| Transportgewicht — montiert | [EKSİK] kg |
+| Transportgewicht — größtes demontiertes Teil | [EKSİK] kg |
+| Verpackungsart | [EKSİK] — beim Versand wurde eine Schutzplane (Folie/Plane) verwendet |
+| Hebevorrichtung / Traversenzeichnung | [EKSİK] |
+| Gabelstapler-Gabeleinfahrt | [EKSİK] |
+| Sicherung / Verzurrung während des Transports | [EKSİK] — Verzurrung mit Gurten und Plane auf dem Fahrzeug |
+| Feuchtigkeits-/Korrosionsschutz | [EKSİK] — Schutzplane; in der Umgebung dürfen keine Feuchtigkeit und keine korrosiven Stoffe vorhanden sein |
+| Transporttemperatur | +10 °C – +30 °C |
+| Max. Transporthöhe (See / Land) | [EKSİK] — Route unter Berücksichtigung der Außenhöhe der Maschine und des Abluftkamins planen |
+
+Der Gabelstaplerfahrer muss über ein gültiges Zertifikat verfügen. Die sichere Tragfähigkeit (SWL) des Gabelstaplers muss das montierte Transportgewicht abdecken. Auf dem Transportweg müssen Torhöhe, Rampenneigung und Wenderadius den Außenabmessungen der Maschine entsprechen.
+
+**VORSICHT — Unbestimmter Anschlagpunkt:** Heben Sie die Maschine nicht an, wenn Ihnen die Hebezeichnung nicht vorliegt; wenden Sie sich an den Herstellerservice (**Siehe Kapitel 1.3**). Anheben an einem falschen Punkt führt zu Rahmenverformung, Verlust der Tankdichtheit und Schäden am Schaltschrank.
+
+---
+
+## 4.1.2 Vorbereitung vor dem Transport
+
+1. Transportroute und Zielpunkt vorab festlegen; Hindernisse, Neigung und Tragfähigkeit des Bodens prüfen.
+2. Sicherstellen, dass die bauseitigen **Elektro-, Wasser- und Druckluftanschlüsse** der Maschine getrennt sind (bei installierter Maschine wird LOTO gemäß **Kapitel 2.4** angewendet).
+3. Prüfen, dass der Hauptschalter in Stellung **OFF (O)** steht.
+4. Die Prozessflüssigkeit im Wasch- und Spültank über die Ablassventile (**TAHLİYE**) entleeren; der Transport mit gefüllten Tanks verändert den Schwerpunkt und erzeugt Kippgefahr (**Siehe Kapitel 10.1.5**).
+5. Schlauch- und Druckluftanschlüsse der Ölabscheidereinheit vom Hauptkörper trennen; die Einheit separat transportieren.
+6. Prüfen, dass Tankdeckel und Kammerklappen geschlossen sind und keine herabhängenden Kabel, Schläuche oder losen Teile verbleiben.
+7. Prüfen, dass die Schutzplane transporttauglich, unbeschädigt und ausreichend befestigt ist.
+8. Gabelstaplerfahrer und Einweiser benennen.
+
+---
+
+## 4.1.3 Entfernen der Verpackung
+
+Wenn die Maschine am Aufstellort angekommen ist, wird die Schutzplane kontrolliert entfernt, um Transportschäden zu vermeiden:
+
+1. Vor dem Öffnen der Plane eine äußere Schadenskontrolle durchführen (Quetschungen, Feuchtigkeit, Kippspuren); bei Abweichungen fotografieren und der Betriebsleitung melden.
+2. Zurrgurte und Plane entfernen, ohne den Maschinenkörper, den Abluftkamin und die Schaltschranktür zu beschädigen.
+3. Vor dem Anheben der Maschine mit dem Gabelstapler sicherstellen, dass die Füße und Anschlagpunkte frei von Verpackungselementen sind.
+4. Verpackungsabfälle gemäß den betrieblichen Recyclingregeln trennen (**Siehe Kapitel 12.3**).
+
+![Versand — Maschine unter Schutzplane](../../assets/4.1/sevkiyat-ortulu.jpg)
+
+---
+
+## 4.1.4 Transportverfahren mit dem Gabelstapler
+
+**WARNUNG — Kippen und Quetschen:** Falsche Gabelposition, überhöhte Geschwindigkeit oder unausgewogene Beladung können beim Transport zum Umkippen der Maschine oder zum Quetschen von Personen führen. Setzen Sie die Gabeln ausschließlich an den vom Hersteller festgelegten Anschlagpunkten an; richten Sie den Schwerpunkt gemäß Zeichnung aus (**Siehe Kapitel 3.5.4**).
+
+1. Die Gabeln des Gabelstaplers an den Punkten der Hebezeichnung ausrichten; keine Last auf Außenverkleidung, Schaltschrank, Tankkörper, Rohrleitungen oder Abluftkamin bringen.
+2. Gabelbreite und -position entsprechend dem Schwerpunkt einstellen; bei dem langen Körper ggf. den Einsatz von zwei Gabelstaplern oder Gabelverlängerungen mit dem Hersteller abstimmen.
+3. Die Maschine **10–15 cm** vom Boden anheben und einen Gleichgewichtstest durchführen; bei Neigung, Ungleichgewicht vorn/hinten oder Gabelrutschen langsam absenken und die Position korrigieren.
+4. Die Last während des gesamten Transports niedrig halten; keine abrupten Wendemanöver, Rückwärtsfahrten oder scharfen Bremsungen.
+5. Bei eingeschränktem Sichtfeld des Gabelstaplers einen Einweiser einsetzen; keine Personen unter der angehobenen Last oder in der Bewegungsbahn der Last.
+6. Die Maschine am Zielpunkt langsam absenken; prüfen, dass alle **Stellfüße** auf dem Boden aufsitzen.
+7. Die Ölabscheidereinheit neben der Maschine an der vorgesehenen Stelle platzieren.
+8. Nach dem Platzieren am Aufstellort mit dem Montageverfahren in **Kapitel 5** fortfahren.
+
+**Erwartetes Ergebnis:** Die Maschine steht am Zielpunkt stabil und unbeschädigt; die Füße haben vollständigen Bodenkontakt.
+
+**Abweichung:** Werden Kippen, Risse, Tankverformung oder Schäden am Schaltschrank festgestellt, die Maschine nicht in Betrieb nehmen; wenden Sie sich an den Herstellerservice (**Siehe Kapitel 1.3**).
+
+---
+
+## 4.1.5 Kontrolle nach dem Transport
+
+1. Rahmen, Schaltschrank, Tanks, Kammerklappen, Abluftkamin und Rohrleitungen auf sichtbare mechanische Schäden prüfen.
+2. Sicherstellen, dass die Füße keine Verformung aufweisen.
+3. Prüfen, dass die Schaltschranktür geschlossen, verriegelt und trocken ist.
+4. Prüfen, dass der Drahtgurt des Förderers und die Schutzgitter an ihrem Platz sind.
+5. Liegt kein Schaden vor, mit der Installation fortfahren (**Siehe Kapitel 5.1**); bei Schäden dokumentieren und den Service benachrichtigen.
+
+Die Anforderungen an Boden und Freiraum am Aufstellort sind in **Kapitel 3.5.2** angegeben.

@@ -1,21 +1,85 @@
-## 4.1. Forklift İle Taşıma Prosedürü
+# 4.1 Taşıma ve nakliye
 
-Bölüm 4.0'da belirtilen güvenlik kuralları ve sertifikasyon şartları sağlandıktan sonra, makinenin fiziksel olarak taşınması için aşağıdaki adımlar sırasıyla ve eksiksiz olarak izlenmelidir:
+Makine, konveyör hattı, tanklar, kurutma ünitesi ve elektrik panosunu taşıyan **uzun bir ana gövde** ile ayrı duran **yağ ayırıcı ünitesinden** oluşur. Ana gövde uzun ve ağırlık dağılımı asimetrik (tanklar, pompalar ve pano hattın bir tarafında) olduğundan kaldırma ve taşıma, yalnızca sertifikalı forklift operatörü tarafından ve üreticinin belirlediği kaldırma noktalarından yapılmalıdır. Sevkiyat fotoğraflarında makine, açık kasa araç üzerinde koruyucu örtü altında, forklift ile yüklenmiş olarak görülmektedir.
 
-**1. Taşıma Öncesi Hazırlıklar:**
-*   Makinenin tesis ana şebekesi ile olan tüm elektrik bağlantılarının kesildiğinden (ana şalter kapalı konumda) emin olun.
-*   Yıkama tankı ve tesisat boruları içerisindeki suyun veya kimyasal sıvının tamamen boşaltıldığını teyit edin. İçi dolu veya yarı dolu bir makinenin taşınması, sıvı çalkalanması nedeniyle ağırlık merkezini aniden değiştirerek ciddi bir devrilme riski yaratır.
-*   Kabin kapağının tamamen kapalı ve kilitli olduğundan emin olun. 
-*   Sarkan, zemine temas eden veya takılma riski oluşturan herhangi bir harici kablo, hortum veya bağlantı elemanı kalmadığından emin olun.
+Dış boyutlar ve ağırlık kurulum alanı ve araç planlamasında dikkate alınmalıdır (**Bkz. Bölüm 3.3.1**); bu değerler DATA'da tanımlı değildir ve layout/kaldırma çiziminden alınmalıdır (**Bkz. Bölüm 3.5.4**).
 
-**2. Çatalların Konumlandırılması:**
-*   Forklift çatallarını, makinenin ağırlık merkezini ortalayacak biçimde alt şasi hizasından dikkatlice sürün. Çatal uzunluklarının, makinenin alt şasi derinliğini tam olarak kavrayacak ve karşı taraftan bir miktar çıkacak boyutta olması zorunludur.
-*   Çatalların yalnızca makinenin alt ana taşıyıcı profillerine temas ettiğinden emin olun. Yan sac kaplamalara, vanalara veya kontrol panosu tesisatına kesinlikle yük bindirmeyin.
+---
 
-**3. Kaldırma ve İlerleme:**
-*   Taşıma işlemine başlamadan önce makineyi yerden sadece 10-15 cm yüksekliğe kaldırarak bir ön denge testi gerçekleştirin. Eğer şaside bir tarafa yatma veya dengesizlik gözlemlenirse, makineyi yavaşça yere indirin ve çatal pozisyonlarını ağırlık merkezine göre yeniden hizalayın.
-*   Nakliye rotası boyunca yükü yere mümkün olduğunca yakın tutun (maksimum 15-20 cm yükseklikte). Ani direksiyon manevralarından, sert frenlerden ve yüksek hızlı ilerleyişten kesinlikle kaçının. Operatörün görüş açısının kısıtlandığı dar alanlarda mutlaka eğitimli bir yönlendirici (gözcü) personelden destek alın.
+## 4.1.1 Taşıma öncesi gereksinimler
 
-**4. İndirme ve Zemin Gereksinimleri:**
-*   Makinenin operasyonel stabilitesini koruması, içerisindeki sıvı seviyesinin her noktada eşit dağılması ve mekanik aksamların (kabin kapağı, sepet, motor vb.) eksenel kayma veya kasılma yaşamadan çalışabilmesi için, kurulum yapılacak nihai alanın önceden **endüstriyel standartlarda terazilenmiş, düz ve pürüzsüz bir beton zemin** olması kritik bir öneme sahiptir.
-*   Makineyi hazırlanan bu düz zemin üzerine yavaşça, sarsıntı yaratmadan indirin. İşlem tamamlandığında, makinenin tüm taşıyıcı ayaklarının zemine tam, eşit ve eksiksiz şekilde temas ettiğinden emin olun. Zemin terazisinde sapmalar varsa, makinenin uzun ömürlü mekanik dengesini sağlamak adına makine devreye alınmadan önce gerekli tesviye işlemleri mutlaka tamamlanmalıdır.
+Taşımaya başlamadan önce aşağıdaki koşullar sağlanmalıdır. Eksik koşul varsa taşımayı durdurun; tamamlanmadan devam etmeyin.
+
+| Parametre | Değer / Gereksinim |
+| :--- | :--- |
+| Taşıma aracı | Forklift — kaldırma noktaları üretici çizimine göre |
+| Taşıma ağırlığı — montajlı | [EKSİK] kg |
+| Taşıma ağırlığı — demonte max parça | [EKSİK] kg |
+| Ambalaj tipi | [EKSİK] — sevkiyatta koruyucu örtü (naylon/branda) uygulanmıştır |
+| Kaldırma aparatı / travers çizimi | [EKSİK] |
+| Forklift çatal girişi | [EKSİK] |
+| Taşıma sırasında sabitleme / bağlama | [EKSİK] — araç üzerinde kayış ile bağlama ve örtü |
+| Nem / korozyon koruması | [EKSİK] — koruyucu örtü; ortamda nem ve korozif madde olmamalı |
+| Taşıma sıcaklığı | +10 °C – +30 °C |
+| Maks. taşıma yüksekliği (deniz / kara) | [EKSİK] — makine dış yüksekliği ve egzoz bacası dikkate alınarak rota planlanmalı |
+
+Forklift operatörü geçerli sertifikaya sahip olmalıdır. Forklift güvenli çalışma yükü (SWL), montajlı taşıma ağırlığını karşılamalıdır. Taşıma yolu üzerinde kapı yüksekliği, rampa eğimi ve dönüş yarıçapı makinenin dış boyutlarına uygun olmalıdır.
+
+**DİKKAT — Belirsiz kaldırma noktası:** Kaldırma çizimi elinizde yoksa makineyi kaldırmayın; üretici servisi ile görüşün (**Bkz. Bölüm 1.3**). Yanlış noktadan kaldırma; şasi deformasyonu, tank sızdırmazlık kaybı ve pano hasarına yol açar.
+
+---
+
+## 4.1.2 Taşıma öncesi hazırlık
+
+1. Taşıma rotasını ve hedef noktayı önceden belirleyin; engel, eğim ve zemin taşıma kapasitesini kontrol edin.
+2. Makinenin tesis **elektrik, su ve basınçlı hava** bağlantılarının söküldüğünü doğrulayın (kurulu makinede **Bölüm 2.4** LOTO uygulanır).
+3. Ana şalterin **OFF (O)** konumunda olduğunu kontrol edin.
+4. Yıkama ve durulama tanklarındaki proses sıvısını **TAHLİYE** vanalarından boşaltın; dolu tank taşıması ağırlık merkezini değiştirir ve devrilme riski oluşturur (**Bkz. Bölüm 10.1.5**).
+5. Yağ ayırıcı ünitesinin hortum ve hava hattı bağlantılarını ana gövdeden ayırın; üniteyi ayrı taşıyın.
+6. Tank ve hücre kapaklarının kapalı olduğunu, sarkan kablo, hortum ve gevşek parça kalmadığını kontrol edin.
+7. Koruyucu örtünün taşımaya uygun, hasarsız ve sabitlemesinin yeterli olduğunu kontrol edin.
+8. Forklift operatörü ve yönlendirici personeli görevlendirin.
+
+---
+
+## 4.1.3 Ambalajın açılması
+
+Makine kurulum alanına ulaştığında koruyucu örtü, taşıma hasarını önleyecek şekilde kontrollü açılır:
+
+1. Örtüyü açmadan önce dış hasar (ezilme, nem, devrilme izi) kontrolü yapın; anormal durumda fotoğraflayın ve tesis yönetimine bildirin.
+2. Bağlama kayışlarını ve örtüyü makine gövdesine, egzoz bacasına ve pano kapağına zarar vermeden sökün.
+3. Makineyi forklift ile kaldırmadan önce ayakların ve kaldırma noktalarının ambalaj elemanlarından arındığını doğrulayın.
+4. Ambalaj atıklarını tesis geri dönüşüm kurallarına uygun ayırın (**Bkz. Bölüm 12.3**).
+
+![Sevkiyat — koruyucu örtü altında makine](../../assets/4.1/sevkiyat-ortulu.jpg)
+
+---
+
+## 4.1.4 Forklift ile taşıma prosedürü
+
+**UYARI — Devrilme ve ezilme:** Yanlış çatal konumu, aşırı hız veya dengesiz yükleme taşımada makine devrilmesine veya personelin ezilmesine yol açabilir. Çatalları yalnızca üreticinin tanımladığı kaldırma noktalarına oturtun; ağırlık merkezini çizime göre hizalayın (**Bkz. Bölüm 3.5.4**).
+
+1. Forklift çatallarını kaldırma çizimindeki noktalara hizalayın; dış kaplama, elektrik panosu, tank gövdesi, boru hatları veya egzoz bacasına yük bindirmeyin.
+2. Çatal genişliğini ve konumunu ağırlık merkezine göre ayarlayın; uzun gövdede gerekirse iki forklift veya uzatma çatal kullanımını üretici ile doğrulayın.
+3. Makineyi yerden **10–15 cm** kaldırarak denge testi yapın; yatma, ön/arka dengesizlik veya çatal kayması varsa yavaşça indirin ve konumu düzeltin.
+4. Taşıma boyunca yükü alçak tutun; ani dönüş, geri manevra ve sert fren yapmayın.
+5. Forklift görüş alanı kısıtlıysa yönlendirici personel kullanın; asılı yük altında ve yük hareket hattında personel bulundurmayın.
+6. Hedef noktada makineyi yavaşça indirin; tüm **ayarlanabilir ayakların** zemine oturduğunu kontrol edin.
+7. Yağ ayırıcı ünitesini makinenin planlanan yanına yerleştirin.
+8. Kurulum alanına yerleştirdikten sonra **Bölüm 5** montaj prosedürüne geçin.
+
+**Beklenen sonuç:** Makine hedef noktada dengeli ve hasarsız konumlanmış olmalı; ayaklar zemine tam temas etmelidir.
+
+**Anormal durum:** Devrilme, çatlama, tank deformasyonu veya pano hasarı tespit edilirse makineyi çalıştırmayın; üretici servisi ile görüşün (**Bkz. Bölüm 1.3**).
+
+---
+
+## 4.1.5 Taşıma sonrası kontrol
+
+1. Şasi, pano, tank, hücre kapakları, egzoz bacası ve boru hatlarında görünür mekanik hasar olup olmadığını kontrol edin.
+2. Ayakların deformasyon göstermediğini doğrulayın.
+3. Elektrik panosu kapağının kapalı, kilitli ve kuru olduğunu kontrol edin.
+4. Konveyör tel bandının ve koruma kafeslerinin yerinde olduğunu kontrol edin.
+5. Hasar yoksa kuruluma geçin (**Bkz. Bölüm 5.1**); hasar varsa kayıt altına alın ve servis bildirimi yapın.
+
+Kurulum alanı zemin ve etraf boşluk gereksinimleri **Bölüm 3.5.2**'de verilmiştir.

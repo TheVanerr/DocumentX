@@ -1,9 +1,19 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 1. EINLEITUNG
 
-# 1. GİRİŞ
+**Modell:** KNV-90 | **Maschine:** KNV 90 7500 2B | **Seriennummer:** 0726051 | **Kunde:** YETSAN
 
-Bu kullanım kılavuzu, endüstriyel yıkama makinesinin güvenli, verimli ve kesintisiz şekilde işletilmesini sağlamak amacıyla gerekli tüm teknik prosedürleri, operasyonel yönergeleri ve emniyet tedbirlerini tanımlamak üzere hazırlanmıştır. Cihaz; ağır endüstriyel şartlar altında uzun çevrim ömrü, yüksek enerji verimliliği ve standartlara uygun parça temizlik kalitesi sağlamak üzere ileri mühendislik prensipleri ve otomasyon teknolojileri ile tasarlanmıştır.
+Dieses Kapitel definiert den rechtlichen Rahmen, die Geltungsbedingungen, die Zielgruppe und die Regeln für den Umgang mit der Betriebsanleitung der industriellen Durchlauf-Teilewaschmaschine **KNV 90 7500 2B** mit Förderer. Die Anleitung legt fest, auf welche Informationen das Personal beim sicheren Betrieb, bei der Wartung und bei der Außerbetriebnahme der Maschine in welcher Reihenfolge und mit welcher Verantwortung zurückgreift.
 
-Makinenin tasarım özelliklerine uygun olarak tam kapasitede çalıştırılması, mekanik ile elektronik bileşenlerin operasyonel ömrünün korunması ve arıza duruş zamanlarının (downtime) en aza indirilmesi, bu dokümanda yer alan spesifikasyonlara ve periyodik bakım takvimine kesinlikle uyulmasına bağlıdır. Herhangi bir mekanik, elektriksel veya yazılımsal operasyona başlanmadan önce, kılavuzun ilgili tüm bölümlerinin tesis yönetimi, saha operatörleri ve bakım teknisyenleri tarafından incelenmiş ve özümsenmiş olması zorunludur.
+Die Maschine ist eine Waschlinie mit zwei Bädern (2B), in der industrielle Werkstücke auf einem von einem Getriebemotor angetriebenen Kettenförderer durch die **Wasch-** und **Spülbäder** geführt, mit **Blowern** abgeblasen und in der **Trocknungseinheit** mit Heißluft getrocknet werden. Die Steuerung erfolgt über ein **ohne PLC oder HMI** ausgeführtes, relais-/schützbasiertes **Tastenbedienfeld**; jede Prozessfunktion wird über einen eigenen EIN/AUS-Schalter geführt. In diesem Projekt ist keine Roboterintegration vorhanden; das Beladen und Entnehmen der Werkstücke erfolgt manuell durch den Bediener. Diese Beschreibung grenzt ein, für welche Maschinenkonfiguration die Anleitung gilt; Modifikationen außerhalb des Lieferumfangs oder abweichende Optionspakete liegen außerhalb dieses Textes.
 
-Sistem üzerinde gerçekleştirilecek her türlü işlemde insan sağlığı, çevre emniyeti ve tesis güvenliğinin korunması birincil önceliktir. Bu nedenle bu doküman, makinenin ayrılmaz bir teknik donanımı olarak kabul edilmeli, cihazın ekonomik ömrü boyunca operasyon sahasında, ilgili personelin her an erişebileceği şekilde muhafaza edilmeli ve tüm talimatlar eksiksiz olarak uygulanmalıdır.
+| Unterkapitel | Thema |
+| :--- | :--- |
+| **1.1** | Über diese Anleitung — Zweck, Umfang, Gültigkeit, Zielgruppe, Aufbewahrung, geistiges Eigentum |
+| **1.2** | Symbole, Warnzeichen und Kennzeichnungsregeln |
+| **1.3** | Herstellerkontakt, Typenschild, Service und Ersatzteile |
+
+Diese Betriebsanleitung ist ein untrennbarer und rechtlich verbindlicher Bestandteil der Maschine **KNV 90 7500 2B**; sie wurde gemäß den Anforderungen von EN ISO 12100 und EN ISO 20607 erstellt. Die Anweisungen in dieser Anleitung haben keinen empfehlenden Charakter; der Betreiber ist verpflichtet, sie bei Betrieb, Installation und Wartung einzuhalten. Die nationalen Arbeitsschutzvorschriften behalten ihre Gültigkeit; im Widerspruchsfall gilt die strengere Bestimmung. Zweck, Umfang, Gültigkeit, Zielgruppe, Aufbewahrung und Verantwortungsverteilung werden in **Kapitel 1.1** ausgeführt.
+
+Die Anleitung deckt den gesamten Lebenszyklus der Maschine vom Transport bis zur Entsorgung ab; die Verfahren für jede Phase sind in den jeweiligen Kapiteln beschrieben (**Siehe Kapitel 4–12**). Modifikationen außerhalb des Lieferumfangs, nicht bestimmungsgemäße Verwendung oder nicht genehmigte Eingriffe liegen außerhalb der Grenzen der bestimmungsgemäßen Verwendung; die Folgen liegen in der Verantwortung des Betreibers (**Siehe Kapitel 1.1.5, 3.2**).
+
+Sicherheitsregeln, Energietrennung (LOTO), Not-Halt, PSA und Restrisiken werden in **Kapitel 2** definiert und in den übrigen Kapiteln nicht wiederholt. Für die Auswahl, Schulung und Befugniserteilung des Personals ist der Betreiber verantwortlich; die Verantwortung des Herstellers beschränkt sich auf den Betrieb im Rahmen der bestimmungsgemäßen Verwendung und gemäß den Anweisungen dieser Anleitung (**Siehe Kapitel 1.1.3, 1.1.5, 2**). Diese Anleitung vermittelt keine ingenieurtechnische oder elektrotechnische Grundausbildung; es wird vorausgesetzt, dass das an der Maschine tätige Personal über die seiner Aufgabenbeschreibung entsprechende fachliche Qualifikation verfügt.

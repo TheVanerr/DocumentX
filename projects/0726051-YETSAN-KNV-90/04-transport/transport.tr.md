@@ -1,15 +1,18 @@
-# 4.0. TAŞIMA VE NAKLİYE
+# 4. TAŞIMA VE DEPOLAMA
 
-Bu bölüm, makinenin tesise ulaştıktan sonra güvenli bir şekilde indirilmesi, saha içinde taşınması ve nihai çalışma alanına konumlandırılması için izlenmesi gereken temel prosedürleri kapsar. 
+**KNV 90 7500 2B** (seri no **0726051**) makinesinin fabrikadan sevkiyatı, saha içi taşınması, kurulum alanına indirilmesi ve geçici depolanması bu bölümde tanımlanır. Taşıma ve depolama sırasında oluşabilecek mekanik hasar, devrilme ve korozyon riskleri; doğru ekipman seçimi ve ortam koşullarına uyumla önlenir. Bu bölümde yalnızca taşıma ve depolama prosedürleri verilir; boyut, ağırlık ve ağırlık merkezi değerleri **Bölüm 3.3.1** ve **Bölüm 3.5.4**'te tanımlıdır.
 
-Makinenin standart şasisi, yükü dengeli bir şekilde zemine aktaran sabit çelik ayaklar üzerine inşa edilmiştir. Yüksek ağırlıklı endüstriyel bir ekipman olması sebebiyle, makinenin yapısal bütünlüğünü korumak ve iş kazalarını önlemek amacıyla taşıma işlemleri için **yalnızca forklift** kullanılmalıdır. Tavan vinci, mobil vinç, transpalet veya halatla çekme gibi diğer kaldırma ve taşıma yöntemlerinin kullanılması kesinlikle yasaktır.
+Makine, ana gövde (konveyör, tanklar, hücreler, kurutma ünitesi, egzoz bacası ve elektrik panosu) ve ayrı duran **yağ ayırıcı ünitesi** olmak üzere iki ana parça hâlinde sevk edilir. Sevkiyatta makine açık kasa araç üzerinde koruyucu örtü ile taşınmıştır. Taşıma ağırlığı, ambalaj tipi ve kaldırma noktaları için DATA kaydı bulunmamaktadır; bu değerler teslim paketindeki layout/kaldırma çiziminden veya üretici servisinden alınmalıdır (**Bkz. Bölüm 1.3**). Kaldırma yalnızca üreticinin tanımladığı noktalardan yapılır; makine, pano ve tank sacları üzerinden kaldırılmaz.
 
-Taşıma ve nakliye operasyonları sırasında aşağıdaki temel kurallara titizlikle uyulmalıdır:
+| Alt bölüm | Konu |
+| :--- | :--- |
+| **4.1** | Taşıma öncesi hazırlık, forklift prosedürü, ambalaj |
+| **4.2** | Elleçleme, geçici depolama ve depodan çıkarma |
 
-*   **Yetkili Personel ve Sertifikasyon:** Makinenin nakliyesi, indirilmesi ve yer değiştirmesi işlemleri; operasyonun gerçekleştirildiği ülkenin iş sağlığı ve güvenliği mevzuatlarına tam uyumlu, geçerli ve resmi forklift operatörlüğü sertifikasına sahip yetkin personeller tarafından yapılmak zorundadır. Yetkisiz kişilerin taşıma işlemine müdahale etmesi yasaktır.
-*   **Ekipman Kapasitesi:** Taşıma işleminde kullanılacak forkliftin güvenli çalışma yükü (SWL) kapasitesi, makinenin "Bölüm 3.3. Teknik Özellikler" tablosunda belirtilen net ağırlığını (kuru ağırlık) rahatlıkla karşılamalıdır.
-*   **Doğru Kaldırma Noktaları:** Forklift çatalları doğrudan alt ana şasi profillerine hizalanmalı ve makine sabit ayakların bağlı olduğu bu ana taşıyıcı şasiden kaldırılmalıdır. Kaldırma veya sabitleme amacıyla makinenin dış kaplama saclarına, tesisat borularına, su tankına veya kontrol panosuna kesinlikle fiziksel baskı uygulanmamalıdır. 
-*   **Ağırlık Merkezi ve Denge:** Makinenin içindeki paslanmaz çelik su tankı, pompa ve motor gruplarının asimetrik yerleşimi nedeniyle donanımın ağırlık merkezi tam geometrik ortada olmayabilir. Forklift ile ana kaldırma işlemine başlanmadan önce ekipman yerden sadece birkaç santimetre kesilerek denge kontrolü yapılmalı; taşıma işlemi ani hızlanma ve duruşlardan kaçınılarak yavaş ve sarsıntısız gerçekleştirilmelidir.
-*   **İş Sağlığı ve Güvenliği:** Makine forklift çatalında havada asılıyken veya nakliye rotasında ilerlerken çevresinde güvenli bir çalışma alanı (kırmızı alan) oluşturulmalıdır. Asılı yükün altında, kör noktalarda veya forkliftin hareket güzergahında kesinlikle hiçbir personel bulunmamalıdır.
+Taşıma ve depolama ortam sıcaklığı **+10 °C ile +30 °C** aralığında olmalıdır; nem ve korozif maddeler bulunmamalıdır. Taşıma sırasında **Bölüm 2** güvenlik kurallarına uyun; makine üzerinde müdahale gerektiren işlerde enerji izolasyonu **Bölüm 2.4**'e göre yapılır.
 
-Makine nihai konumuna indirilene kadar, özellikle kontrol panosu üzerindeki dijital ekranlar, şalterler ve dışarıda kalan diğer hassas mekanik bileşenlerin darbelere karşı korunmasına azami özen gösterilmelidir.
+![Sevkiyat — makine açık kasa araç üzerinde, forklift ile yükleme](../assets/4.1/sevkiyat-kamyon.jpg)
+
+---
+
+Kurulum adımları için bkz. **Bölüm 5**; yerleşim ve erişim noktaları için bkz. **Bölüm 3.5**.

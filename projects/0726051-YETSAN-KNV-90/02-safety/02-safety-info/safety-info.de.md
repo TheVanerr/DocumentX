@@ -1,55 +1,61 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 2.2 Restrisiken und Maschinenetiketten
 
-# 2.2 Genel Güvenlik Verileri ve Bilgileri
+In der Konstruktionsphase wurde eine Risikobeurteilung nach EN ISO 12100 durchgeführt; die vermeidbaren Risiken wurden konstruktiv (geschlossene Kammern, Klappen-Sicherheitskreis, Not-Halt, Füllstandverriegelung, Schutzgitter) verringert. Dennoch verbleiben aufgrund der Natur der Maschine **Restrisiken**, die nicht vollständig beseitigt werden können. Das Personal muss sich dieser Risiken bewusst sein, die zugehörige PSA tragen und die Matrix in **Kapitel 2.6** einhalten.
 
-Bu bölüm, endüstriyel yıkama makinesinin tasarım ve imalat aşamalarında gerçekleştirilen EN ISO 12100 risk değerlendirmesi sonuçlarını içerir. Tasarımla alınan güvenlik önlemlerine rağmen ortadan kaldırılamayan "kalıntı riskler", makine üzerindeki uyarı etiketleri, çevresel emisyon değerleri ve zorunlu Kişisel Koruyucu Donanım (KKD) matrisi aşağıda detaylandırılmıştır.
-
----
-
-### 2.2.1 Kalıntı Riskler
-Makinenin çevresine entegre edilen fiziki muhafazalar, kapı kilitleri (interlock) ve elektronik emniyet sistemlerine rağmen makinenin doğası gereği barındırdığı, tamamen sıfırlanamayan kalıntı riskler şunlardır. Operatör ve bakım personeli bu risklerin bilincinde olmalı ve ilgili KKD'leri kullanmalıdır:
-
-* **Termal Riskler (Sıcak Yüzey ve Buhar):** Yıkama döngüsü tamamlandıktan hemen sonra yükleme kapağı açıldığında, kabin içerisinden dışarıya doğru ani bir sıcak buhar salınımı gerçekleşir. Ayrıca, yıkama işlemi biten galvanizli sepetler ve iş parçaları yüksek sıcaklıkta (genellikle 50°C - 80°C arası) çıkmaktadır. Çıplak elle temas halinde birinci veya ikinci derece yanık riski mevcuttur.
-* **Yüksek Basınçlı Su Jeti Teması:** Makinenin iç konstrüksiyonunda yer alan standart nozullar suyu ince ve düz bir hat şeklinde; opsiyonel yelpaze nozullar ise açılı bir formda, yüksek debi ve basınçla püskürtmektedir. Güvenlik siviçlerinin yetkisiz şekilde baypas edilip kapağın çalışırken açılması durumunda, bu basınçlı su jetleri ciltte kesiklere, gözde kalıcı hasarlara veya uzuv yaralanmalarına yol açabilir.
-* **Mekanik Sıkışma ve Ezilme:** Ağır endüstriyel parçaların makine sepetine vinçle veya manuel olarak yüklenmesi ve boşaltılması sırasında, kapağın veya sepet kılavuz raylarının arasına parmak veya el sıkışma riski bulunmaktadır.
-* **Kimyasal Maruziyet:** Yıkama işleminde kullanılan endüstriyel temizlik ajanlarının ikmali sırasında veya nozul/filtre temizlikleri esnasında kimyasal solüsyonun cilde veya göze sıçrama riski vardır. 
-* **Elektriksel Riskler:** Elektrik panosu içerisinde 400V AC (Trifaze) yüksek gerilim bulunmaktadır. Ana şalter kapatılsa dahi invertör (sürücü) kondansatörlerinde bir süre daha tehlikeli seviyede yük bulunabilir.
+Die Warnetiketten an der Maschine sind in **Kapitel 1.2** zusammen mit den allgemeinen Symbolregeln erläutert; dieses Kapitel definiert die maschinenspezifischen Restrisiken und die Positionen der Etiketten.
 
 ---
 
-### 2.2.2 Makine Üzerindeki Uyarı Etiketleri ve Piktogramlar
-Makinenin gövdesinde ve elektrik panosu üzerinde yer alan güvenlik piktogramları, ISO 7010 standartlarına uygundur. Bu etiketlerin sökülmesi, üzerinin boyanması veya okunamaz hale gelmesi yasaktır. Yıpranan etiketler derhal yenisiyle değiştirilmelidir.
+## 2.2.1 Restrisiken
 
-| Uyarı Etiketi (Piktogram Anlamı) | Bulunduğu Konum | Alınması Gereken Önlem |
+**Thermisches Risiko — heiße Prozessflüssigkeit, Heizstäbe und Heißluft**
+
+Der Waschtank (TANK 1) und der Spültank (TANK 2) werden mit insgesamt sieben Heizstäben à 8 kW beheizt; die Wassertemperatur kann bis **+70 °C** erreichen (**Siehe Kapitel 3.3.5**). In den Trocknungskammern erzeugen zwei Heizungen à 12 kW Heißluft. Tankdeckel, Kammerklappen, Rohrleitungen, das Gehäuse der Trocknungskammer und die austretenden Werkstücke bleiben auch nach dem Prozess heiß. Der Kontakt mit bloßen Händen birgt die Gefahr von Verbrennungen ersten oder zweiten Grades. Beim Öffnen des Tankdeckels steigt heißer Dampf zum Gesicht auf. Vor Wartung oder Reinigung die Heizungen ausschalten und dem System Zeit zum Abkühlen geben; hitzebeständige Handschuhe tragen.
+
+**Mechanisches Risiko — Kettenförderer, Drahtgurt und rotierende Mechanismen**
+
+Der Förderer bewegt sich bei eingeschaltetem Schalter CONVEYOR kontinuierlich; im Werkstück-Einlauf (links) und -Auslauf (rechts) besteht die Gefahr des Einklemmens von Fingern und Händen zwischen Drahtgurt und feststehender Struktur. Der Getriebemotor des Förderers besitzt zwar einen Drehmomentbegrenzer, dieser ist jedoch nicht zum Schutz menschlicher Gliedmaßen ausgelegt. Ein- und Auslaufbereich sind mit Schutzgittern umgeben; nicht in das Gitter hineingreifen. Pumpen-, Ventilator- und Blowermotoren sind rotierende Elemente; ihre Abdeckungen bei laufender Maschine nicht abnehmen. Werkstücke ausschließlich von außerhalb des Kammereinlaufs auf den Förderer auflegen und am Auslauf vom Drahtgurt abnehmen.
+
+**Chemikalien- und Flüssigkeitsexposition**
+
+In den Wasch- und Spülprozessen sind Öl, Schmutz und erhitzte Prozessflüssigkeit vorhanden. Bei der Reinigung des Vorfilters, der Tankwartung, dem Wechsel des Feinfilters (Beutelfilter) und bei Leckagen besteht Spritzgefahr für Haut und Augen. Überlaufendes oder tropfendes Wasser im Tankumfeld erzeugt einen rutschigen Boden. Das Verbot „Keine Lösungsmittel verwenden" an der Maschine richtet sich gegen die Gefahr brennbarer Dämpfe und der Beschädigung der Edelstahloberflächen.
+
+**Elektrisches Risiko**
+
+Im Schaltschrank liegt eine Versorgung mit **380 V**, **50 Hz**, **3-phasig**, insgesamt **110 kW / 220 A** an (**Siehe Kapitel 3.3.3**). Die Heizstäbe sind am Tankgehäuse montiert und stehen in Kontakt mit dem Wasser; bei einem Isolationsfehler trennen die Fehlerstrom-Schutzschalter (RCCB) den Stromkreis, ein Eingriff am Schaltschrank oder an den Anschlusskästen der Heizstäbe auf nassem Boden kann jedoch tödlich sein. Die Schaltschranktür darf nur von Elektrofachpersonal geöffnet werden; vor dem Eingriff ist das LOTO-Verfahren nach **Kapitel 2.4** zwingend. Auch bei ausgeschaltetem Hauptschalter kann an den Zwischenkreiskondensatoren des Förderer-Frequenzumrichters kurzzeitig eine gefährliche Spannung anstehen; vor dem Eingriff am Frequenzumrichter mindestens 5 Minuten warten.
+
+**Pneumatisches Risiko**
+
+Die Druckluftversorgung beträgt **6 bar** (**Siehe Kapitel 3.3.5**). Beim Bruch der Luftleitung oder Lösen einer Verschraubung bergen peitschende Schläuche und Druckluft Verletzungsgefahr. Bei Arbeiten an der Pneumatik das Luftventil der Anlage schließen und den Restdruck ablassen (**Siehe Kapitel 2.4**).
+
+**Lärm**
+
+Der Geräuschpegel der Maschine ist mit **65 dB(A)** angegeben (**Siehe Kapitel 3.3.6**). Laufen vier Blower und zwei Trocknungsventilatoren gleichzeitig, steigt der Schallpegel in der Nähe des Trocknungsbereichs; bei längerer Arbeit in geringem Abstand kann eine Bewertung des Gehörschutzes durch den Betreiber gemäß den Lärmschutzvorschriften am Arbeitsplatz erforderlich sein.
+
+**Abluft und Dampf**
+
+Der Abluftventilator (1,1 kW) führt Dampf und feuchte Luft aus dem Wasch- und Trocknungsbereich in den Abluftkamin ab. Wird der Abluftkamin nicht an die Gebäudelüftung oder nach außen angeschlossen, breitet sich der Dampf im Betrieb aus; die Sicht wird beeinträchtigt, der Boden wird rutschig und im Schaltschrank bildet sich Kondensat.
+
+---
+
+## 2.2.2 Warnetiketten an der Maschine
+
+Die Piktogramme am Maschinenkörper und am Schaltschrank entsprechen ISO 7010. Das Entfernen, Überstreichen oder Unleserlichmachen der Etiketten ist verboten.
+
+| Etikett / Symbol | Position | Erforderliche Maßnahme |
 | :--- | :--- | :--- |
-| **Elektrik Çarpması Tehlikesi** (Sarı üçgen içinde şimşek) | Ana elektrik panosu kapağı, motor bağlantı kutuları (klemens klemensleri) ve ısıtıcı rezistans kapakları. | Pano kapağını sadece yetkili elektrik personeli açabilir. Müdahale öncesi şalterden LOTO prosedürü uygulanmalıdır. |
-| **Sıcak Yüzey Uyarısı** (Sarı üçgen içinde dalgalı ısı dalgaları) | Yükleme/boşaltma kapakları, yıkama kabini dış yüzeyinin belirli noktaları, egzoz bacası ve buhar tahliye hatları. | Çıplak elle dokunmaktan kaçınılmalı, sıcak işlemler için mutlaka ısıya dayanıklı eldiven kullanılmalıdır. |
-| **Aşındırıcı (Korozif) Madde** (Sarı üçgen içinde test tüpü ve el) | Kimyasal dozajlama pompası çevresi, deterjan/solüsyon tankı dolum kapağı. | Kimyasal ilavesi yaparken uygun yüz siperliği ve nitril eldiven kullanılmalıdır. Asla çıplak elle kimyasala temas edilmemelidir. |
-| **Sıkışma Tehlikesi / Dönen Parça** (Sarı üçgen içinde dişli ve el) | Motor-pompa kaplin muhafazaları, pnomatik silindir hareket yolları, varsa döner sepet mekanizması çevresi. | Makine çalışırken muhafazalar sökülmemeli, bol kıyafet, kravat veya sallanan takılarla makineye yaklaşılmamalıdır. |
-| **Kullanım Kılavuzunu Okuyun** (Mavi daire içinde kitap okuyan insan) | HMI (Kullanıcı Arayüzü) ekranının hemen altı veya ana kontrol istasyonu. | Operatöre, makineyi çalıştırmadan önce bu dokümantasyonun okunmasının zorunlu olduğunu hatırlatır. |
+| Hände nicht einklemmen + Heiße Oberfläche + Keine Lösungsmittel verwenden (Dreifach-Etikett) | Deckel von Tank 1 und Tank 2, Klappen der Wasch-/Spül-/Trocknungskammern | Klappe nur bei stehender und abgekühlter Maschine an den Griffen öffnen; keine Lösungsmittel verwenden |
+| Allgemeine Gefahr (gelbes Dreieck) | Wartungsklappen, Seitenklappen | **Siehe Kapitel 2** |
+| KKD KULLAN (PSA tragen — blaues Sammeletikett) | Maschinenkörper, Tankvorderseite | **Siehe Kapitel 2.6** |
+| YÜKSEK VOLTAJ / HIGH VOLTAGE (Hochspannung) | Schaltschranktür | Nur Elektrofachkraft; LOTO anwenden (**Siehe Kapitel 2.4**) |
+| PANOLARIN KAPAKLARINI KİLİTLİ TUTUNUZ (Schaltschranktüren verschlossen halten) | Schaltschranktür | Schaltschranktür während des Betriebs geschlossen und verriegelt halten |
+| AIR INLET / HAVA GİRİŞİ (Drucklufteingang) | Maschinenkörper — Druckluftregler | 6-bar-Luftanschlussstelle (**Siehe Kapitel 3.3.5**) |
+| TAHLİYE (Ablass) | Ablassventil unter dem Tank | Tankentleerung (**Siehe Kapitel 10.1.5**) |
+| Tanknummer **1** / **2** | Tankdeckel | Tank 1 = Waschen, Tank 2 = Spülen |
+| EMERGENCY STOP | Bedienfeld und 6 Not-Halt-Taster im Feld | **Siehe Kapitel 2.5** |
 
----
+![Tankdeckel — Tanknummer und Dreifach-Warnetikett](../../assets/3.1/tank-kapaklari.jpg)
 
-### 2.2.3 Gürültü ve Çevresel Emisyon Değerleri
+![Schaltschranktür — Verriegelungs- und Hochspannungsetiketten, Hauptschalterhebel](../../assets/3.4/pano-kapagi-ana-salter.jpg)
 
-**Ses Basınç Seviyesi (Gürültü):**
-* Makinenin standart yıkama döngüsü sırasında operatör istasyonunda (makineye 1 metre mesafede ve 1.6 metre yükseklikte) ölçülen A-ağırlıklı eşdeğer sürekli ses basınç seviyesi **72 dB(A) ile 78 dB(A)** aralığındadır. (Bu değer; opsiyonel düz hat/açılı nozul konfigürasyonuna ve yıkanan parçanın geometrisine bağlı olarak suyun çarpma şiddetiyle küçük değişiklikler gösterebilir).
-* Ölçülen bu değerler 80 dB(A) eylem sınırının altında olduğundan, sürekli kullanımda kulak koruyucu donanım (kulaklık/tıkaç) kullanımı **yasal olarak zorunlu değildir ancak tavsiye edilir**.
-
-**Buhar ve Egzoz Emisyonu:**
-* Makine, termal yıkama sonucu oluşan su buharını tahliye etmek için bir egzoz (havalandırma) çıkışına sahiptir. İç kabinde yoğuşan buharın tesis içerisine yayılmasını önlemek amacıyla, makinenin egzoz flanşı işletmenin merkezi havalandırma sistemine veya doğrudan dış ortama uygun kesitte bir boru ile bağlanmalıdır. 
-
----
-
-### 2.2.4 Kişisel Koruyucu Donanım (KKD) Matrisi
-Farklı operasyonel görevler sırasında operatörlerin ve bakım teknisyenlerinin kullanması zorunlu olan minimum Kişisel Koruyucu Donanımlar (EN standartlarına uygun) aşağıda tablolanmıştır. İşletme, tesisin kendi iç İSG kuralları gereği bu listeye ek donanımlar (baret, fosforlu yelek vb.) ilave edebilir.
-
-| Operasyon / Görev | Göz Koruması (EN 166) | El Koruması (EN 388 / EN 374 / EN 407) | Ayak Koruması (EN ISO 20345) | Vücut Koruması |
-| :--- | :--- | :--- | :--- | :--- |
-| **Standart Parça Yükleme / Boşaltma** | Zorunlu Değil (Ancak Tavsiye Edilir) | **Zorunlu:** Isıya dayanıklı (+100°C) ve kesilmez endüstriyel eldiven. | **Zorunlu:** Çelik burunlu ve kaymaz tabanlı (S2/S3) iş ayakkabısı. | Standart iş kıyafeti (kolları kapalı). |
-| **Kimyasal İkmali / Tank Dolumu** | **Zorunlu:** Tam kapalı iş gözlüğü veya tam yüz siperliği. | **Zorunlu:** Kimyasala (Aside/Kostiğe) dayanıklı uzun konçlu nitril eldiven. | **Zorunlu:** Çelik burunlu iş ayakkabısı (Sıvı geçirmez). | Kimyasal sıçramalarına karşı önlük. |
-| **Günlük Temizlik ve Filtre Değişimi** | **Zorunlu:** Tam yüz siperliği (kalan basınçlı su/kimyasal ihtimaline karşı). | **Zorunlu:** Sıvı geçirmez ve mekanik risklere dayanıklı eldiven. | **Zorunlu:** Kaymaz tabanlı (S2/S3) iş ayakkabısı. | Sıvı geçirmez önlük veya iş tulumu. |
-| **Elektrik Panosu Bakımı (LOTO İle)** | Zorunlu Değil | **Zorunlu:** İzoleli (1000V) elektrikçi eldiveni (sadece gerilim testi ve ölçüm sırasında). | **Zorunlu:** Çelik burunsuz, yalıtkan tabanlı elektrikçi iş ayakkabısı. | Pamuklu, alev almaz iş kıyafeti. |
-| **Mekanik Periyodik Bakım (LOTO İle)** | **Zorunlu:** Çapak fırlamalarına karşı standart iş gözlüğü. | **Zorunlu:** Kesilme ve delinmeye dirençli (Seviye 3 veya 5) mekanik iş eldiveni. | **Zorunlu:** Çelik burunlu iş ayakkabısı. | Standart iş kıyafeti (bedene oturan). |
-
-> **Hatırlatma:** Özellikle makinenin galvanizli parçalarıyla temas eden sıvıların (yıkama suyu, atık su) kimyasal yapısı, yüklenen deterjanın özelliklerine göre değişiklik gösterir. KKD seçimi yapılırken her zaman kimyasal tedarikçisinin sağladığı Malzeme Güvenlik Bilgi Formu (MSDS) referans alınmalıdır.
+Abgenutzte Etiketten unverzüglich erneuern (**Siehe Kapitel 1.3**). Die Maschine nicht ohne Etiketten betreiben.

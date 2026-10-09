@@ -1,29 +1,38 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 5. MONTAGE UND INBETRIEBNAHME
 
-# 5. KURULUM VE DEVREYE ALMA
+Dieses Kapitel beschreibt das Platzieren der Maschine **KNV 90 7500 2B** (Seriennummer **0726051**) am Aufstellort, das Nivellieren, die Medien- und Elektroanschlüsse, den Anschluss des Abluftkamins, den Anschluss der Ölabscheidereinheit, die Sicherheitsfunktionsprüfungen und die Inbetriebnahmeabnahme. Die Installation erfolgt nach Abschluss des Transports (**Siehe Kapitel 4**) und vor dem Übergang in den Betrieb (**Siehe Kapitel 7**). Elektroanschlüsse dürfen nur von einer Elektrofachkraft ausgeführt werden.
 
-Bu bölüm; makinenin kurulum lokasyonuna taşınmasından itibaren devreye alınmasına kadar gerçekleştirilmesi gereken tüm mekanik, elektriksel ve tesisata ilişkin işlemleri kapsamaktadır. Bölüm içeriği sırasıyla makine montajı, konumlandırma, sistem bağlantıları, güvenlik sistemlerinin testi, kurulum doğrulama kontrolü ve devreye alma prosedürlerinden oluşmaktadır.
+Da diese Maschine über kein HMI verfügt, erfolgt die Inbetriebnahmeabnahme über die Leuchten am Schaltschrank und durch physische Beobachtung (Motordrehrichtung, Druck, Leckagen). Für Montagedauer und Teamgröße liegt kein DATA-Eintrag vor ([EKSİK]). Für das Platzieren wird ein **Gabelstapler** verwendet; die Anschlagpunkte richten sich nach der Herstellerzeichnung (**Siehe Kapitel 3.5.4**). Abmessungen, Gewicht, Elektro- und Medienwerte sind in **Kapitel 3.3** angegeben; Aufstellort und Freiräume sind in **Kapitel 3.5.2** definiert.
 
--Kurulum ve devreye alma işlemleri; bu kılavuzu eksiksiz okumuş ve içeriğini kavramış olmanın ötesinde, mekanik, elektrik ve hidrolik sistemler konusunda mesleki yetkinliğe sahip, ilgili iş sağlığı ve güvenliği mevzuatı hakkında bilgi sahibi olan yetkili personel tarafından gerçekleştirilmelidir. 
--Elektrik bağlantıları yalnızca yerel elektrik yönetmeliklerinin öngördüğü niteliklere sahip elektrik teknisyeni veya mühendisi tarafından yapılmalıdır. 
--Kaldırma ve taşıma operasyonları ise yalnızca ilgili ekipmanı güvenli biçimde kullanma yetkinliğine sahip operatörler tarafından yürütülmelidir. 
+| Unterkapitel | Thema |
+| :--- | :--- |
+| **5.1** | Montageschritte — Platzieren, Verpackung, Nivellieren, Anschlüsse |
+| **5.2** | Positionierung und Nivellierung der Maschine |
+| **5.3** | Systemanschlüsse — Druckluft, Wasser, Elektrik, Abluft, Ölabscheider, Phasenprüfung |
+| **5.4** | Prüfung der Sicherheitssysteme — Not-Halt (7), Klappenschalter (7), Phasenüberwachung, Bereitschaftszustand |
+| **5.5** | Installationsabnahme — Checklisten und Leerlauf |
+| **5.6** | Kommunikation — bei dieser Maschine kein Feldbus / übergeordnetes System |
 
-> ⚠️ **UYARI — YETKİSİZ KURULUM**
->
-> Belirtilen mesleki yeterliliklere sahip olmayan kişilerin bu bölümdeki prosedürleri uygulamaya çalışması; kişisel yaralanmaya, kalıcı iş göremezliğe, ekipman hasarına ve üçüncü şahıslara zarar verilmesine yol açabilir. Kurulumun yetersiz teknik bilgiye sahip kişilerce gerçekleştirilmesi aynı zamanda makinenin güvenli çalışma koşullarını kalıcı olarak bozabilir. Bu tür durumlardan doğacak her türlü hukuki, mali ve cezai sorumluluk tamamen kurulumu gerçekleştiren tarafa aittir; üretici firma hiçbir koşulda sorumlu tutulamaz ve garanti yükümlülükleri sona erer.
+## Übersicht der Installationsvoraussetzungen
 
-> ⚠️ **UYARI — ELEKTRİK BAĞLANTILARI**
->
-> Kurulum veya devreye alma sürecinde herhangi bir elektrik bağlantısına müdahale edilmeden önce tesisin ilgili devresini besleyen ana şalter kapalı konuma alınmalı ve yetkisiz kişilerce yeniden devreye sokulmasını engellemek amacıyla kilit altına alınmalı ya da uyarı etiketi ile işaretlenmelidir. Enerji altındaki iletkenlerle temas; elektrik çarpması, yanık veya ölüm ile sonuçlanabilir. Bu prosedür, bağlantı işlemi ne kadar kısa sürecek olursa olsun hiçbir koşulda atlanmamalıdır.
+| Parameter | Anforderung | Referenz |
+| :--- | :--- | :--- |
+| Min. Abmessungen des Montagebereichs | [EKSİK] | Kapitel 3.5.2 |
+| Bodenebenheitstoleranz | [EKSİK] | Kapitel 3.5.2 |
+| Bodentragfähigkeit | [EKSİK] — muss das gefüllte Betriebsgewicht tragen | Kapitel 3.3.1 / 3.5.2 |
+| Erforderliche Ausrüstung | Gabelstapler; Wasserwaage; Handwerkzeug | Kapitel 4.1 |
+| Elektrische Zuleitung | 380 V / 50 Hz / 3P+N+PE — 110 kW / 220 A | Kapitel 3.3.3 |
+| Druckluft | 6 bar | Kapitel 3.3.5 |
+| Wasser | 1 bar Leitungswasser / aufbereitetes Wasser — Tankbefüllung von Hand | Kapitel 3.3.5 |
+| Abluft | Kaminanschluss an die bauseitige Lüftung / nach außen | Kapitel 5.3.4 |
+| Freiraum / Decke | [EKSİK] | Kapitel 3.5.2 |
 
-> ⚠️ **UYARI — KALDIRMA VE TAŞIMA**
->
-> Makinenin kaldırılması ve nihai konumuna taşınması işlemleri yalnızca makinenin toplam ağırlığını taşıyacak kapasitede forklift veya transpalet kaldırma ekipmanıyla gerçekleştirilmelidir. Kaldırma öncesinde ekipmanın yük kapasitesi model bazlı ağırlık değerleriyle karşılaştırılarak doğrulanmalıdır. Yetersiz kapasiteli ekipman kullanılması, dengesiz yükleme yapılması veya kaldırma sırasında personelin makine altında ya da yük yolunda bulunması; makinenin devrilmesine veya düşmesine bağlı olarak ağır yaralanmalara ve ölüme yol açabilir.
+**WARNUNG — Unbefugte Installation:** Werden die Verfahren dieses Kapitels von Personen ohne die genannten beruflichen Qualifikationen ausgeführt, kann dies zu Verletzungen, Geräteschäden und zum Ausfall von Sicherheitsfunktionen führen. Die daraus entstehende Verantwortung trägt die installierende Partei; die Garantie erlischt.
 
-> ⚠️ **UYARI — PROSEDÜR SIRASI**
->
-> Bu bölümde tanımlanan kurulum prosedürleri, belirtilen sıra takip edilerek eksiksiz biçimde uygulanmalıdır. Herhangi bir adımın atlanması, eksik tamamlanması veya yanlış sırayla uygulanması; güvenlik sistemlerinin kısmen ya da tamamen işlevsiz kalmasına, ekipman hasarına veya kişisel yaralanmaya neden olabilir. Bölüm 5.5'teki kurulum kontrol listesi eksiksiz tamamlanmadan makineye kesinlikle start verilmemelidir.
+**WARNUNG — Elektrik:** Vor dem 380-V-Drehstromanschluss muss der bauseitige Einspeiseschalter ausgeschaltet und verriegelt sein; der Hauptschalter der Maschine muss in Stellung OFF stehen. Der Kontakt mit spannungsführenden Leitern kann zu Stromschlag und Tod führen.
 
-> 📝 **NOT — TANIMLANMAMIŞ DURUMLAR VE ÜRETİCİ İLE İLETİŞİM**
->
-> Kurulum veya devreye alma sürecinde bu kılavuzda öngörülmeyen ya da açıkça tanımlanmamış bir durumla karşılaşılması halinde prosedüre devam edilmemeli, mevcut adım güvenli biçimde sonlandırılmalı ve üretici firma teknik desteği ile iletişime geçilmelidir. Kılavuz kapsamı dışında gerçekleştirilen her türlü müdahale yetkisiz işlem olarak değerlendirilir; bu müdahalelerden kaynaklanan ekipman hasarı, kişisel yaralanma veya üçüncü şahıslara verilen zararlar garanti kapsamı dışında olup tüm sorumluluk müdahaleyi gerçekleştiren tarafa aittir.
+Beachten Sie während der Installation die Sicherheitsregeln aus **Kapitel 2**. Bei Arbeiten an Wartungsklappen und bei Arbeiten, die eine Energietrennung erfordern, wird das **LOTO**-Verfahren gemäß **Kapitel 2.4** angewendet. Tritt bei der Installation eine in dieser Anleitung nicht vorgesehene Situation auf, das Verfahren nicht fortsetzen; nehmen Sie Kontakt mit dem technischen Support des Herstellers auf (**Siehe Kapitel 1.3**).
+
+---
+
+Erste Einstellungen siehe **Kapitel 6**; täglicher Betrieb siehe **Kapitel 7**.

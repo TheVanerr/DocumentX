@@ -1,5 +1,5 @@
-<!-- CEVIRI GEREKLI -> DE | kaynak: TR | bu satiri ceviri bitince silin. -->
+# 11.6 Vakuumstörungen
 
-# trob vacuum
+Die Maschine **KNV 90 7500 2B** verfügt über **kein Vakuumsystem**. Das Abblasen des Wassers und die Trocknung erfolgen mit Blowern und Trocknungsventilatoren (Druckluftstrom). Dieses Unterkapitel ist nicht zutreffend (**Siehe Kapitel 6.6**).
 
-<!-- KNV sablon | icerik DATA dosyasindan uretilecek -->
+Für Störungen an Blowern und Trocknungsventilatoren siehe **Kapitel 11.3.2**; kommt das Werkstück nass heraus, **Kapitel 11.1.2 — Störung 10**.

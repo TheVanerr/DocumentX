@@ -1,7 +1,37 @@
 # 3. GENEL BAKIŞ
 
-Bu endüstriyel yıkama makinesi; talaşlı imalat, döküm, presleme veya bakım-onarım süreçleri sonucunda parça yüzeylerinde biriken yağ, talaş, karbon kalıntıları ve endüstriyel kirleri arındırmak amacıyla tasarlanmış bir yüzey temizleme sistemidir. İşletmelerin üretim hatlarında veya revizyon atölyelerinde, parçaların bir sonraki işleme (kaplama, boyama, kaynak veya montaj) uygun kalite standartlarında hazır hale getirilmesini sağlar.
+**KNV 90 7500 2B** (model kodu **KNV-90**, seri no **0726051**, müşteri **YETSAN**), endüstriyel parça yüzeylerinde biriken yağ, proses kiri ve atıkların giderilmesi amacıyla tasarlanmış, konveyörlü ve **iki banyolu** (yıkama + durulama) bir parça yıkama hattıdır. Bu bölüm, operatör, bakım ve kurulum personelinin makineyi bütünsel olarak tanıması, proses sınırlarını ve teknik çerçeveyi kavraması için düzenlenmiştir; ayrıntılı teknik değerler ilgili alt bölümlerde verilmiştir ve diğer bölümlerde tekrarlanmaz.
 
-Sistemin temel çalışma prensibi; su ve uygun alkali kimyasal karışımının sıcaklık ve basınç ile birleştirilerek parça yüzeyine uygulanmasına dayanır. Yıkama solüsyonu, sistemdeki ısıtıcılar yardımıyla proses için belirlenen sıcaklık değerlerine ulaştırılır. Ardından pompalar aracılığıyla basınçlandırılan bu sıvı, yıkama hattı boyunca parça yüzeylerine temas ettirilir. Bu süreçte ısının çözücü etkisi, kimyasalın bağ kırıcı özelliği ve suyun mekanik çarpma gücü eşzamanlı olarak çalışarak inatçı kirleri yüzeyden uzaklaştırır.
+Makine, parçaların redüktör tahrikli **zincirli konveyör** üzerinde ilerleyerek **yıkama → durulama → blower ile su sıyırma → sıcak hava ile kurutma** proseslerinden sırasıyla geçmesini sağlar. Besleme **sol**, boşaltma **sağ**, operatör ve elektrik panosu tarafı **sağ** yöndedir. Bu projede parça giriş ve çıkışı **operatör tarafından elle** yapılır; robot entegrasyonu yoktur. Kontrol, PLC/HMI içermeyen **röle–kontaktör esaslı buton panosu** ile sağlanır; her fonksiyon ayrı aç/kapa anahtarı ile yönetilir ve tank sıcaklıkları GEMO DTH2 termostatlarla ayarlanır.
 
-Ağır sanayi koşullarındaki zorlu mesailere dayanacak şekilde tasarlanan ana konstrüksiyon, korozyon direncine sahip paslanmaz çelik malzemeden üretilmiştir. Makinenin genel tasarımı, farklı yapıdaki parçalara zarar vermeden tutarlı ve standart bir temizlik performansı sunmayı hedefler. Aynı zamanda, makinenin çalışması sırasındaki tüm süreçler, operatör emniyetini temel alan elektriksel ve donanımsal güvenlik standartlarıyla desteklenmiştir.
+Makinenin ana modülleri şunlardır: zincirli konveyör ve redüktör tahriki; yıkama tankı (TANK 1) ile pompası, hücresi ve nozulları; durulama tankı (TANK 2) ile pompası, hücresi ve nozulları; yağ sıyırıcı ve yağ ayırıcı ünitesi; dört blower, iki kurutma fanı ve iki kurutma ısıtıcısından oluşan kurutma ünitesi; egzoz fanı; elektrik panosu ve güvenlik cihazları. Modüllerin işlevleri **Bölüm 3.1**'de; amaçlanan kullanım sınırları **Bölüm 3.2**'de; elektrik, motor ve tesisat verileri **Bölüm 3.3**'te; operatör paneli ve pano yapısı **Bölüm 3.4**'te; yerleşim ve alan gereksinimleri **Bölüm 3.5**'te açıklanmıştır.
+
+---
+
+## Bölüm içeriği
+
+| Bölüm | Başlık | Konu |
+| :--- | :--- | :--- |
+| **3.1** | Makine tanımı ve sistematik yapı | Proses akışı, konveyör, tanklar, pompalar, yağ sıyırıcı/ayırıcı, kurutma, egzoz, pano |
+| **3.2** | Amaçlanan kullanım | İşlenebilir parça tipleri, yasak kullanımlar, proses suyu, ortam ve personel gereksinimleri |
+| **3.3** | Teknik özellikler | Boyut/ağırlık, kapasite, elektrik, motor ve ısıtıcı listesi, hava/su, ortam |
+| **3.4** | Makine kontrolleri | Elektrik panosu, operatör paneli anahtarları, termostatlar, lambalar, interlock, konveyör hızı |
+| **3.5** | Makine yerleşim planı | Yön tanımları, etraf boşlukları, bakım erişimi, taşıma kısıtları, güvenlik elemanları |
+
+---
+
+## Makine özeti
+
+| Parametre | Değer |
+| :--- | :--- |
+| Sipariş / seri no | 0726051 |
+| Model | KNV-90 — KNV 90 7500 2B |
+| Makine tipi | Konveyörlü — iki banyolu endüstriyel parça yıkama (2 banyo + kurutma) |
+| Proses akışı | Yıkama → Durulama → Su sıyırma (blower) → Kurutma (sıcak hava) |
+| Kontrol | Buton panosu — röle/kontaktör; PLC/HMI yok |
+| Besleme / boşaltma | Sol / Sağ — elle yükleme ve boşaltma |
+| Operatör tarafı | Sağ (elektrik panosu ve operatör paneli) |
+| Toplam kurulu güç | 110 kW — 380 V / 50 Hz / 3 faz (**Bkz. Bölüm 3.3.3**) |
+| Koruma sınıfı | IP55 |
+
+![KNV 90 7500 2B — konveyör giriş tarafından genel görünüm](../assets/3.0/genel-gorunum.jpg)

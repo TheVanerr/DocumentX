@@ -1,58 +1,96 @@
 # 1.3 Support und Service
 
-## 1.3.1 Kontaktdaten des Herstellers und des Zentralservices
+## 1.3.1 Kontaktdaten des Herstellers und der Servicezentrale
 
-Der Begriff „Hersteller“ in dieser Betriebsanleitung bezieht sich auf das Unternehmen **CNK MAKİNE SANAYİ AŞ**, das die industrielle Reinigungsmaschine entwickelt, herstellt und die rechtliche Verantwortung dafür übernimmt. 
+Der Begriff **Hersteller** in dieser Anleitung bezeichnet das Unternehmen **CNK ELEKTRONİK MAKİNE SANAYİ AŞ** (Marke: **Dolfin — Industrial Washing Systems**), das die Maschine **KNV 90 7500 2B** konstruiert und gefertigt hat und die rechtliche Verantwortung für sie trägt. Nutzen Sie für Anfragen zu Installation, Inbetriebnahme, Betrieb, Wartung, Störungen, Ersatzteilen und Gewährleistung die folgenden Kanäle.
 
-Für alle Anfragen bezüglich technischer Unterstützung, Ersatzteilbestellungen und Garantieabwicklungen im Zusammenhang mit Aufstellung, Inbetriebnahme, Betrieb, regelmäßiger Wartung oder Störungsfällen der Maschine ist der Hersteller über die unten angegebenen offiziellen Kontaktkanäle zu kontaktieren.
+| Information | Angabe |
+| :--- | :--- |
+| **Hersteller** | CNK ELEKTRONİK MAKİNE SANAYİ AŞ |
+| **Werksadresse** | 1.Organize Sanayi Bölgesi Prof. Orhan Işık Caddesi No:8 |
+| **Bezirk** | Sincan |
+| **Stadt** | Ankara |
+| **Land** | Türkei |
+| **Telefon** | +90 312 267 30 15 |
+| **Fax** | +90 312 267 30 11 |
+| **Web** | https://dolfintr.com |
+| **E-Mail** | dolfin@dolfintr.com |
+| **Autorisierter Service / technischer Support** | CNK ELEKTRONİK MAKİNE SANAYİ AŞ — oben genannte Kontaktkanäle |
 
-| Herstellerinformationen | Detail |
-| :---: | :---: |
-| **Name des Herstellers** | CNK MAKİNE SANAYİ AŞ |
-| **Werks- / Hauptadresse** | 1. Organize Sanayi Bölgesi Prof. Orhan Işık Caddesi No:8 |
-| **Bezirk / Stadt / Land** | Sincan / Ankara / Türkei |
-| **Telefonnummer** | +90 312 267 30 15 |
-| **Faxnummer** | +90 312 267 30 11 |
-| **Unternehmens-Website** | https://dolfintr.com |
-| **E-Mail-Adresse** | dolfin@dolfintr.com |
-
----
-
-## 1.3.2 Verfahren zur Anforderung von Service und technischem Support
-
-Damit die technische Serviceabteilung des Herstellers auf das aufgetretene Problem so schnell, präzise und effizient wie möglich reagieren kann, müssen vor der Kontaktaufnahme folgende grundlegende Maschinen- und Störungsinformationen vollständig vorbereitet werden:
-
-1. **Maschinenidentifikationsdaten:** **Modellbezeichnung**, **Seriennummer** und **Baujahr** auf dem „Typenschild“, das am Hauptgehäuse der Maschine (in der Regel an der Seitenfläche des Schaltschranks) genietet oder geklebt ist.
-2. **Störungs- oder Zustandsbeschreibung:** Detaillierte Beschreibung des aufgetretenen Problems (z. B. „Pumpe schaltet nicht ein“, „Wasser erwärmt sich nicht“, „Pneumatischer Deckel öffnet sich nicht“).
-3. **Alarm- und Fehlercodes:** Der vollständige Text der aktiven Alarmcodes, Fehlernummern und Warnmeldungen, die auf der Benutzeroberfläche (HMI) oder dem PLC-Bildschirm der Maschine erscheinen.
-4. **Betriebsbedingungen:** Der Betriebszustand zum Zeitpunkt des Auftretens der Störung (in welcher Wasch- oder Spülphase sich die Maschine befand, wie lange die Maschine bereits in Betrieb war usw.).
-5. **Visuelle Dokumente:** Das Zusenden von klaren Fotos oder Videos des betreffenden Bereichs per E-Mail an den Hersteller bei möglichen mechanischen Schäden, Leckagen oder anormalen Zuständen beschleunigt den Diagnoseprozess erheblich.
+Übermitteln Sie bei Service-, Ersatzteil- oder Gewährleistungsanfragen die Angaben des Typenschilds gemäß **Siehe Kapitel 1.3.2** vollständig. Ist das Typenschild unleserlich, erneuern Sie es vor dem Betrieb der Maschine oder wenden Sie sich an den Herstellerservice.
 
 ---
 
-## 1.3.3 Ersatzteilbeschaffung und Verpflichtung zur Verwendung von Originalteilen
+## 1.3.2 Typenschild der Maschine
 
-Der sichere und hochleistungsfähige Betrieb der Maschine während ihrer vorgesehenen Lebensdauer hängt ausschließlich von der Verwendung von Originalersatzteilen ab, die vom Hersteller zugelassen sind. 
+An jeder Maschine befindet sich ein am Gehäuse befestigtes **Typenschild** (Typ-/Kennzeichnungsschild). Das Schild ist die verbindliche Referenz für die korrekte Identifizierung der Maschine bei Serviceaufzeichnungen, Ersatzteilbestellungen, Gewährleistungsvorgängen und Fehlerdiagnose. Der Kunde bzw. das Betriebspersonal muss vor der Kontaktaufnahme mit dem Hersteller die Angaben auf dem Schild ablesen und der Anfrage beifügen.
 
-* **Bestellvorgang:** Ersatzteilbestellungen müssen unter Bezugnahme auf die mit der Maschine gelieferte oder in der Betriebsanleitung enthaltene „Ersatzteilliste“ (Spare Parts List) erfolgen. Bei der Bestellung müssen **Lager- / Referenznummer**, **Teilebezeichnung**, **Anzahl** und **Seriennummer der Maschine** schriftlich (per E-Mail oder Fax) mitgeteilt werden.
-* **Verwendung von Nicht-Originalteilen:** Es ist strengstens untersagt, Nachbau-, Dritthersteller- oder Nicht-Standardteile (spezielle Düsen, Dichtungen, Heizwiderstände, Sensoren, Motoren usw.), die ohne schriftliche Genehmigung des Herstellers beschafft wurden, in die Maschine zu integrieren. Die Verwendung von Nicht-Originalteilen verringert nicht nur die Leistung der Maschine, sondern birgt auch unmittelbare Arbeitssicherheitsrisiken und **führt zum sofortigen Erlöschen der Garantie**.
+**Typische Position:** Am Schaltschrank oder am Hauptmaschinenkörper, von außen sichtbar und dauerhaft angebracht ([EKSİK] — genaue Position wird bei Lieferung bestätigt). Ist das Schild abgenutzt oder unleserlich, betreiben Sie die Maschine nicht, ohne ein Sicherheitsrisiko einzugehen; fordern Sie über die Kontaktkanäle in **Siehe Kapitel 1.3** ein Ersatzschild an.
+
+Das Schild enthält die folgenden Felder:
+
+| Schildfeld | Beschreibung | Diese Maschine |
+| :--- | :--- | :--- |
+| **Seriennummer** | Maschinenspezifische eindeutige Nummer; Serviceaufzeichnungen werden dieser Nummer zugeordnet | 0726051 |
+| **Modell-/Typcode** | Modellbezeichnung der Maschine | KNV-90 |
+| **Handelsbezeichnung** | Vollständiger Maschinenname / Variante | KNV 90 7500 2B |
+| **Baujahr** | Herstellungsjahr | 2026 |
+| **Installierte Leistung / Versorgung** | Elektrische Daten (**Siehe Kapitel 3.3.3**) | 110 kW — 380 V / 50 Hz / 3-phasig |
+| **Herstellungs-/Versanddatum** | Datum des Werksversands | [EKSİK] |
+
+**Kunde / Betreiber — Pflichtschritte vor dem Service**
+
+1. Das Typenschild lokalisieren; Seriennummer, Modell und Baujahr deutlich ablesen oder ein lesbares Foto anfertigen.
+2. Bei der Anfrage per Telefon oder E-Mail diese drei Angaben **in der ersten Zeile** nennen.
+3. Ist das Schild beschädigt oder unvollständig, die Seriennummer nicht schätzen; beim Hersteller die Erneuerung des Schilds oder die Prüfung der Aufzeichnungen anfordern.
+4. Bei Ersatzteilbestellungen die Seriennummer stets angeben (**Siehe Kapitel 1.3.4**).
 
 ---
 
-## 1.3.4 Prüfpunkte vor der Kontaktaufnahme
+## 1.3.3 Verfahren zur Anforderung von Service und technischem Support
 
-Um möglichen Zeitverlust und unnötige Servicekosten zu vermeiden, wird dem Bediener oder Wartungspersonal empfohlen, vor der Anforderung eines Kundendienstes die folgenden grundlegenden Prüfungen durchzuführen:
+Bereiten Sie vor der Serviceanfrage die folgenden Informationen vor. Fehlende Identifikationsdaten können dazu führen, dass das Serviceteam vor Ort erneut diagnostizieren muss und sich die Eingriffsdauer verlängert. Da diese Maschine keine HMI-Alarmliste besitzt, werden die Symptome anhand der Leuchten am Bedienfeld und der Schutzelemente beschrieben.
 
-* Wurde überprüft, ob die Hauptstromversorgungsschalter der Anlage eingeschaltet sind und die richtige Spannung/Phase an der Maschine anliegt?
-* Wurde überprüft, ob die Druckluftleitung (pneumatische Versorgung) geöffnet ist und das System den erforderlichen Mindestarbeitsdruck (bar) bereitstellt?
-* Wurde bestätigt, dass die Wassereinlassventile geöffnet sind und die Installationsfilter nicht verstopft sind?
-* Wurde bestätigt, dass alle Not-Halt-Tasten (Emergency Stop) an der Maschine entriegelt sind und sich die Tür-/Deckelsicherheitsschalter (Interlock) in der vollständig geschlossenen Position befinden?
-* Wurden die Schritte zur Störungsrückstellung (Reset / Acknowledge) auf dem HMI-Bildschirm durchgeführt?
+1. **Angaben des Typenschilds:** Seriennummer (0726051), Modellcode (KNV-90) und Baujahr — Foto des Schilds beifügen (**Siehe Kapitel 1.3.2**).
+2. Das Problem kurz und klar beschreiben (z. B. „Schalter TANK 1 PUMP ein, Betriebsleuchte aus, Pumpe läuft nicht").
+3. Die **Leuchtenzustände** am Bedienfeld festhalten: welche Betriebsleuchten leuchten, ob die rote Leuchte TANK 1/2 WASHING LEVEL leuchtet, ob die RESET-Leuchte leuchtet (**Siehe Kapitel 3.4**).
+4. Ist im Schaltschrank ein **MKŞ** (GV2ME — Hebel in Stellung „0") oder ein **Fehlerstrom-Schutzschalter** ausgelöst, dessen Beschriftung notieren (z. B. „Q1 YIKAMA POM." — nur Elektrofachkraft, unter LOTO; **Siehe Kapitel 11.1.3**).
+5. Zeigt das Display des Förderer-Frequenzumrichters (Delta VFD004EL21W-1) einen Alarmcode, diesen notieren (**Siehe Kapitel 11.3**).
+6. Den Prozesszustand zum Zeitpunkt der Störung angeben (welcher Tank wurde geheizt, welche Funktionen waren eingeschaltet, wie lange lief die Maschine bereits).
+7. Bei mechanischen Schäden oder Leckagen deutliche Fotos oder Videos beifügen.
+
+Übermitteln Sie die Anfrage per Telefon oder E-Mail. Halten Sie die Maschine in Notfällen sicher an (**Siehe Kapitel 2.5**).
 
 ---
 
-## 1.3.5 Grenzen der Herstellerhaftung und Verbot unbefugter Eingriffe
+## 1.3.4 Ersatzteilbeschaffung und Pflicht zur Verwendung von Originalteilen
 
-Die rechtliche und technische Haftung des Herstellers beschränkt sich ausschließlich auf den Betrieb der Maschine gemäß den in dieser Anleitung angegebenen technischen Daten, Sicherheitseinrichtungen und Bedienungsanweisungen für den vorgesehenen Verwendungszweck (Intended Use). 
+Bei Ersatzteilbestellungen ist die Verwendung von Originalteilen verpflichtend. Nachbauteile bergen das Risiko von Toleranzabweichungen, Materialunverträglichkeit und Ausfall der Sicherheitsfunktionen. Insbesondere Nachbauten des Sicherheitsschalters (Omron F3STGRNLPU21M1J8), des Sicherheitsrelais (Omron G9SB2002AACDC241), des Füllstandsensors (VEGASWING 51), der Heizstäbe und der Düsen beeinträchtigen die Prozess- und Sicherheitsleistung. Die Verwendung nicht originaler Teile mindert die Leistung, erzeugt ein Sicherheitsrisiko und führt zum **Gewährleistungsausschluss** der Maschine.
 
-Ohne das Wissen und die schriftliche (gestempelte) Genehmigung des autorisierten Servicepersonals von CNK MAKİNE SANAYİ AŞ ist jede strukturelle Änderung, Hardware-Ergänzung, Demontage oder Überbrückung von Sicherheitseinrichtungen sowie jede unbefugte Modifikation an der Maschinenmechanik, Automatisierungsinfrastruktur (PLC/HMI-Software), an Pneumatik-/Hydraulikleitungen oder am Schaltschrank strengstens untersagt. Da solche unbefugten Eingriffe die Sicherheitsstandards der Maschine direkt gefährden, entbinden sie den Hersteller unverzüglich von jeglicher rechtlichen, finanziellen und strafrechtlichen Haftung (einschließlich der Garantie). Für Unfälle jeglicher Art, die durch den Betrieb der Maschine außerhalb der sicheren Betriebsgrenzen entstehen, haftet ausschließlich der Betreiber der Maschine.
+1. Ersatzteile mit den Bestellnummern der Teileliste in **Kapitel 13.3** bestellen.
+2. In der Bestellung **Bestellnummer**, **Teilebezeichnung**, **Stückzahl**, **Modellcode (KNV-90)** und **Seriennummer (0726051)** angeben.
+3. Ohne Freigabe des Herstellers keine Nachbau- oder Nichtstandardteile einbauen.
+4. Zu kritischen Teilen und empfohlenen Lagerbeständen **Siehe Kapitel 9.1.5, 9.1.6**.
+
+---
+
+## 1.3.5 Checkliste vor der Kontaktaufnahme
+
+Führen Sie vor dem Anruf beim autorisierten Service die folgenden Prüfungen durch. Viele Störungsmeldungen beruhen auf der Anlagenversorgung, dem Tankfüllstand oder einem fehlenden Reset; diese Prüfungen vermeiden unnötige Serviceeinsätze.
+
+1. Prüfen, dass der Hauptschalter (TMŞ) in Stellung **ON** steht und die Anlagenversorgung eingeschaltet ist (**Siehe Kapitel 3.3.3**).
+2. Prüfen, dass die Druckluftversorgung **6 bar** liefert und das Luftventil der Anlage geöffnet ist (**Siehe Kapitel 3.3.5, 6.5**).
+3. Prüfen, dass die Tanks manuell befüllt wurden; leuchten die roten Leuchten **TANK 1 / TANK 2 WASHING LEVEL**, den betreffenden Tank befüllen (**Siehe Kapitel 7.2**).
+4. Prüfen, dass alle (7) Not-Halt-Taster entriegelt und alle Wartungsklappen geschlossen sind; den **RESET**-Taster drücken, bis die blaue Leuchte aufleuchtet (**Siehe Kapitel 2.5**).
+5. Prüfen, dass die Saug-/Druckventile der Pumpen **geöffnet** sind (**Siehe Kapitel 7.2.5**).
+6. Prüfen, dass das Potentiometer der Fördergeschwindigkeit nicht unter 20 Hz gestellt wurde (**Siehe Kapitel 3.4.7**).
+
+Besteht das Problem weiterhin, eine Serviceanfrage stellen; der Anfrage die Typenschilddaten gemäß **Siehe Kapitel 1.3.2** beifügen.
+
+---
+
+## 1.3.6 Grenzen der Herstellerverantwortung
+
+Die Verantwortung des Herstellers beschränkt sich auf den Betrieb der Maschine im Rahmen der in dieser Anleitung definierten technischen Spezifikationen und der bestimmungsgemäßen Verwendung (**Siehe Kapitel 3.2**). Eine Verwendung außerhalb der Anleitung, unbefugte Modifikationen oder die Verwendung von Nichtstandardteilen heben die Herstellerverantwortung auf.
+
+Änderungen am Schaltschrank, an den Frequenzumrichterparametern, am Sicherheitsrelais-Kreis, an den Pneumatikleitungen oder an der Sicherheitsausrüstung ohne Freigabe des autorisierten Herstellerservices führen zum Erlöschen der Gewährleistung. Für Schäden, Verletzungen oder Produktionsausfälle, die aus solchen Eingriffen entstehen, kann der Hersteller nicht haftbar gemacht werden.

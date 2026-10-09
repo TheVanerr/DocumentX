@@ -1,17 +1,18 @@
-<!-- ÇEVİRİ GEREKLİ → DE | kaynak: TR | bu satırı çeviri bitince silin. Başlık/görsel/tablo yapısını koruyun, yalnızca metni çevirin. -->
+# 4. TRANSPORT UND LAGERUNG
 
-# 4.0. TAŞIMA VE NAKLİYE
+Dieses Kapitel beschreibt den Versand der Maschine **KNV 90 7500 2B** (Seriennummer **0726051**) ab Werk, den innerbetrieblichen Transport, das Absetzen am Aufstellort und die vorübergehende Lagerung. Mechanische Schäden, Kippen und Korrosion, die beim Transport und bei der Lagerung auftreten können, werden durch die richtige Auswahl der Ausrüstung und die Einhaltung der Umgebungsbedingungen vermieden. In diesem Kapitel werden nur die Transport- und Lagerungsverfahren angegeben; Abmessungen, Gewicht und Schwerpunkt sind in **Kapitel 3.3.1** und **Kapitel 3.5.4** definiert.
 
-Bu bölüm, makinenin tesise ulaştıktan sonra güvenli bir şekilde indirilmesi, saha içinde taşınması ve nihai çalışma alanına konumlandırılması için izlenmesi gereken temel prosedürleri kapsar. 
+Die Maschine wird in zwei Hauptteilen versandt: dem Hauptkörper (Förderer, Tanks, Kammern, Trocknungseinheit, Abluftkamin und Schaltschrank) und der separat stehenden **Ölabscheidereinheit**. Beim Versand wurde die Maschine auf einem offenen Pritschenfahrzeug unter einer Schutzplane transportiert. Für Transportgewicht, Verpackungsart und Anschlagpunkte liegt kein DATA-Eintrag vor; diese Werte sind dem Aufstellungsplan (Layout) bzw. der Hebezeichnung im Lieferpaket oder dem Herstellerservice zu entnehmen (**Siehe Kapitel 1.3**). Das Anheben erfolgt ausschließlich an den vom Hersteller festgelegten Punkten; die Maschine darf nicht am Schaltschrank oder an den Tankblechen angehoben werden.
 
-Makinenin standart şasisi, yükü dengeli bir şekilde zemine aktaran sabit çelik ayaklar üzerine inşa edilmiştir. Yüksek ağırlıklı endüstriyel bir ekipman olması sebebiyle, makinenin yapısal bütünlüğünü korumak ve iş kazalarını önlemek amacıyla taşıma işlemleri için **yalnızca forklift** kullanılmalıdır. Tavan vinci, mobil vinç, transpalet veya halatla çekme gibi diğer kaldırma ve taşıma yöntemlerinin kullanılması kesinlikle yasaktır.
+| Unterkapitel | Thema |
+| :--- | :--- |
+| **4.1** | Vorbereitung vor dem Transport, Gabelstaplerverfahren, Verpackung |
+| **4.2** | Handhabung, vorübergehende Lagerung und Auslagerung |
 
-Taşıma ve nakliye operasyonları sırasında aşağıdaki temel kurallara titizlikle uyulmalıdır:
+Die Umgebungstemperatur bei Transport und Lagerung muss im Bereich von **+10 °C bis +30 °C** liegen; Feuchtigkeit und korrosive Stoffe dürfen nicht vorhanden sein. Beachten Sie während des Transports die Sicherheitsregeln aus **Kapitel 2**; bei Arbeiten, die einen Eingriff an der Maschine erfordern, erfolgt die Energietrennung gemäß **Kapitel 2.4**.
 
-*   **Yetkili Personel ve Sertifikasyon:** Makinenin nakliyesi, indirilmesi ve yer değiştirmesi işlemleri; operasyonun gerçekleştirildiği ülkenin iş sağlığı ve güvenliği mevzuatlarına tam uyumlu, geçerli ve resmi forklift operatörlüğü sertifikasına sahip yetkin personeller tarafından yapılmak zorundadır. Yetkisiz kişilerin taşıma işlemine müdahale etmesi yasaktır.
-*   **Ekipman Kapasitesi:** Taşıma işleminde kullanılacak forkliftin güvenli çalışma yükü (SWL) kapasitesi, makinenin "Bölüm 3.3. Teknik Özellikler" tablosunda belirtilen net ağırlığını (kuru ağırlık) rahatlıkla karşılamalıdır.
-*   **Doğru Kaldırma Noktaları:** Forklift çatalları doğrudan alt ana şasi profillerine hizalanmalı ve makine sabit ayakların bağlı olduğu bu ana taşıyıcı şasiden kaldırılmalıdır. Kaldırma veya sabitleme amacıyla makinenin dış kaplama saclarına, tesisat borularına, su tankına veya kontrol panosuna kesinlikle fiziksel baskı uygulanmamalıdır. 
-*   **Ağırlık Merkezi ve Denge:** Makinenin içindeki paslanmaz çelik su tankı, pompa ve motor gruplarının asimetrik yerleşimi nedeniyle donanımın ağırlık merkezi tam geometrik ortada olmayabilir. Forklift ile ana kaldırma işlemine başlanmadan önce ekipman yerden sadece birkaç santimetre kesilerek denge kontrolü yapılmalı; taşıma işlemi ani hızlanma ve duruşlardan kaçınılarak yavaş ve sarsıntısız gerçekleştirilmelidir.
-*   **İş Sağlığı ve Güvenliği:** Makine forklift çatalında havada asılıyken veya nakliye rotasında ilerlerken çevresinde güvenli bir çalışma alanı (kırmızı alan) oluşturulmalıdır. Asılı yükün altında, kör noktalarda veya forkliftin hareket güzergahında kesinlikle hiçbir personel bulunmamalıdır.
+![Versand — Maschine auf offenem Pritschenfahrzeug, Beladung mit Gabelstapler](../assets/4.1/sevkiyat-kamyon.jpg)
 
-Makine nihai konumuna indirilene kadar, özellikle kontrol panosu üzerindeki dijital ekranlar, şalterler ve dışarıda kalan diğer hassas mekanik bileşenlerin darbelere karşı korunmasına azami özen gösterilmelidir.
+---
+
+Installationsschritte siehe **Kapitel 5**; Aufstellung und Zugangspunkte siehe **Kapitel 3.5**.

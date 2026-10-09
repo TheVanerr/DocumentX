@@ -1,27 +1,38 @@
 # 5. KURULUM VE DEVREYE ALMA
 
-Bu bölüm; makinenin kurulum lokasyonuna taşınmasından itibaren devreye alınmasına kadar gerçekleştirilmesi gereken tüm mekanik, elektriksel ve tesisata ilişkin işlemleri kapsamaktadır. Bölüm içeriği sırasıyla makine montajı, konumlandırma, sistem bağlantıları, güvenlik sistemlerinin testi, kurulum doğrulama kontrolü ve devreye alma prosedürlerinden oluşmaktadır.
+**KNV 90 7500 2B** (seri no **0726051**) makinesinin kurulum alanına yerleştirilmesi, teraziye alınması, medya ve elektrik bağlantıları, egzoz bacası bağlantısı, yağ ayırıcı ünitesinin bağlanması, güvenlik fonksiyon testleri ve devreye alma doğrulaması bu bölümde tanımlanır. Kurulum, taşıma tamamlandıktan sonra (**Bkz. Bölüm 4**) ve operasyona geçmeden önce (**Bkz. Bölüm 7**) uygulanır. Elektrik bağlantıları yalnızca yetkili elektrik personeli tarafından yapılmalıdır.
 
--Kurulum ve devreye alma işlemleri; bu kılavuzu eksiksiz okumuş ve içeriğini kavramış olmanın ötesinde, mekanik, elektrik ve hidrolik sistemler konusunda mesleki yetkinliğe sahip, ilgili iş sağlığı ve güvenliği mevzuatı hakkında bilgi sahibi olan yetkili personel tarafından gerçekleştirilmelidir. 
--Elektrik bağlantıları yalnızca yerel elektrik yönetmeliklerinin öngördüğü niteliklere sahip elektrik teknisyeni veya mühendisi tarafından yapılmalıdır. 
--Kaldırma ve taşıma operasyonları ise yalnızca ilgili ekipmanı güvenli biçimde kullanma yetkinliğine sahip operatörler tarafından yürütülmelidir. 
+Bu makinede HMI bulunmadığından devreye alma doğrulaması, pano lambaları ve fiziksel gözlem (motor dönüş yönü, basınç, sızıntı) ile yapılır. Montaj süresi ve ekip sayısı için DATA kaydı bulunmamaktadır ([EKSİK]). Yerleştirme için **forklift** kullanılır; kaldırma noktaları üretici çizimine göredir (**Bkz. Bölüm 3.5.4**). Boyut, ağırlık, elektrik ve medya değerleri **Bölüm 3.3**'te verilmiştir; kurulum alanı ve etraf boşlukları **Bölüm 3.5.2**'de tanımlıdır.
 
-> ⚠️ **UYARI — YETKİSİZ KURULUM**
->
-> Belirtilen mesleki yeterliliklere sahip olmayan kişilerin bu bölümdeki prosedürleri uygulamaya çalışması; kişisel yaralanmaya, kalıcı iş göremezliğe, ekipman hasarına ve üçüncü şahıslara zarar verilmesine yol açabilir. Kurulumun yetersiz teknik bilgiye sahip kişilerce gerçekleştirilmesi aynı zamanda makinenin güvenli çalışma koşullarını kalıcı olarak bozabilir. Bu tür durumlardan doğacak her türlü hukuki, mali ve cezai sorumluluk tamamen kurulumu gerçekleştiren tarafa aittir; üretici firma hiçbir koşulda sorumlu tutulamaz ve garanti yükümlülükleri sona erer.
+| Alt bölüm | Konu |
+| :--- | :--- |
+| **5.1** | Montaj adımları — yerleştirme, ambalaj, seviye, bağlantılar |
+| **5.2** | Makine konumlandırma ve seviye ayarı |
+| **5.3** | Sistem bağlantıları — hava, su, elektrik, egzoz, yağ ayırıcı, faz kontrolü |
+| **5.4** | Güvenlik sistemleri testi — acil stop (7), kapak switch'leri (7), faz koruma, hazır durumu |
+| **5.5** | Kurulum doğrulama — kontrol listeleri ve boş koşu |
+| **5.6** | İletişim — bu makinede fieldbus / üst sistem yok |
 
-> ⚠️ **UYARI — ELEKTRİK BAĞLANTILARI**
->
-> Kurulum veya devreye alma sürecinde herhangi bir elektrik bağlantısına müdahale edilmeden önce tesisin ilgili devresini besleyen ana şalter kapalı konuma alınmalı ve yetkisiz kişilerce yeniden devreye sokulmasını engellemek amacıyla kilit altına alınmalı ya da uyarı etiketi ile işaretlenmelidir. Enerji altındaki iletkenlerle temas; elektrik çarpması, yanık veya ölüm ile sonuçlanabilir. Bu prosedür, bağlantı işlemi ne kadar kısa sürecek olursa olsun hiçbir koşulda atlanmamalıdır.
+## Kurulum ön koşulları özeti
 
-> ⚠️ **UYARI — KALDIRMA VE TAŞIMA**
->
-> Makinenin kaldırılması ve nihai konumuna taşınması işlemleri yalnızca makinenin toplam ağırlığını taşıyacak kapasitede forklift veya transpalet kaldırma ekipmanıyla gerçekleştirilmelidir. Kaldırma öncesinde ekipmanın yük kapasitesi model bazlı ağırlık değerleriyle karşılaştırılarak doğrulanmalıdır. Yetersiz kapasiteli ekipman kullanılması, dengesiz yükleme yapılması veya kaldırma sırasında personelin makine altında ya da yük yolunda bulunması; makinenin devrilmesine veya düşmesine bağlı olarak ağır yaralanmalara ve ölüme yol açabilir.
+| Parametre | Gereksinim | Referans |
+| :--- | :--- | :--- |
+| Montaj alanı min. boyut | [EKSİK] | Bölüm 3.5.2 |
+| Zemin düzgünlük toleransı | [EKSİK] | Bölüm 3.5.2 |
+| Zemin mukavemeti | [EKSİK] — dolu çalışma ağırlığını taşımalı | Bölüm 3.3.1 / 3.5.2 |
+| Gerekli ekipman | Forklift; su terazisi; el aletleri | Bölüm 4.1 |
+| Elektrik hattı | 380 V / 50 Hz / 3P+N+PE — 110 kW / 220 A | Bölüm 3.3.3 |
+| Basınçlı hava | 6 bar | Bölüm 3.3.5 |
+| Su | 1 bar şebeke / arıtılmış su — tank elle dolum | Bölüm 3.3.5 |
+| Egzoz | Baca bağlantısı tesis havalandırmasına / dış ortama | Bölüm 5.3.4 |
+| Etraf boşluğu / tavan | [EKSİK] | Bölüm 3.5.2 |
 
-> ⚠️ **UYARI — PROSEDÜR SIRASI**
->
-> Bu bölümde tanımlanan kurulum prosedürleri, belirtilen sıra takip edilerek eksiksiz biçimde uygulanmalıdır. Herhangi bir adımın atlanması, eksik tamamlanması veya yanlış sırayla uygulanması; güvenlik sistemlerinin kısmen ya da tamamen işlevsiz kalmasına, ekipman hasarına veya kişisel yaralanmaya neden olabilir. Bölüm 5.5'teki kurulum kontrol listesi eksiksiz tamamlanmadan makineye kesinlikle start verilmemelidir.
+**UYARI — Yetkisiz kurulum:** Belirtilen mesleki yeterliliklere sahip olmayan kişilerin bu bölümdeki prosedürleri uygulaması; yaralanmaya, ekipman hasarına ve güvenlik fonksiyonlarının devre dışı kalmasına yol açabilir. Bu durumdan doğan sorumluluk kurulumu yapan tarafa aittir; garanti sona erer.
 
-> 📝 **NOT — TANIMLANMAMIŞ DURUMLAR VE ÜRETİCİ İLE İLETİŞİM**
->
-> Kurulum veya devreye alma sürecinde bu kılavuzda öngörülmeyen ya da açıkça tanımlanmamış bir durumla karşılaşılması halinde prosedüre devam edilmemeli, mevcut adım güvenli biçimde sonlandırılmalı ve üretici firma teknik desteği ile iletişime geçilmelidir. Kılavuz kapsamı dışında gerçekleştirilen her türlü müdahale yetkisiz işlem olarak değerlendirilir; bu müdahalelerden kaynaklanan ekipman hasarı, kişisel yaralanma veya üçüncü şahıslara verilen zararlar garanti kapsamı dışında olup tüm sorumluluk müdahaleyi gerçekleştiren tarafa aittir.
+**UYARI — Elektrik:** 380 V trifaze bağlantı öncesi tesis besleme şalteri kapatılmalı ve kilitlenmelidir; makine ana şalteri OFF konumunda olmalıdır. Enerji altındaki iletkenlerle temas elektrik çarpması ve ölümle sonuçlanabilir.
+
+Kurulum sırasında **Bölüm 2** güvenlik kurallarına uyun. Bakım kapakları ve enerji izolasyonu gerektiren işlerde **LOTO** prosedürü **Bölüm 2.4**'e göre uygulanır. Kurulumda bu kılavuzda öngörülmeyen bir durumla karşılaşılırsa prosedüre devam etmeyin; üretici teknik desteği ile iletişime geçin (**Bkz. Bölüm 1.3**).
+
+---
+
+İlk ayarlar için bkz. **Bölüm 6**; günlük operasyon için bkz. **Bölüm 7**.

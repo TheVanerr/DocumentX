@@ -1,7 +1,19 @@
 # 1. GİRİŞ
 
-Bu kullanım kılavuzu, endüstriyel yıkama makinesinin güvenli, verimli ve kesintisiz şekilde işletilmesini sağlamak amacıyla gerekli tüm teknik prosedürleri, operasyonel yönergeleri ve emniyet tedbirlerini tanımlamak üzere hazırlanmıştır. Cihaz; ağır endüstriyel şartlar altında uzun çevrim ömrü, yüksek enerji verimliliği ve standartlara uygun parça temizlik kalitesi sağlamak üzere ileri mühendislik prensipleri ve otomasyon teknolojileri ile tasarlanmıştır.
+**Model:** KNV-90 | **Makine:** KNV 90 7500 2B | **Seri no:** 0726051 | **Müşteri:** YETSAN
 
-Makinenin tasarım özelliklerine uygun olarak tam kapasitede çalıştırılması, mekanik ile elektronik bileşenlerin operasyonel ömrünün korunması ve arıza duruş zamanlarının (downtime) en aza indirilmesi, bu dokümanda yer alan spesifikasyonlara ve periyodik bakım takvimine kesinlikle uyulmasına bağlıdır. Herhangi bir mekanik, elektriksel veya yazılımsal operasyona başlanmadan önce, kılavuzun ilgili tüm bölümlerinin tesis yönetimi, saha operatörleri ve bakım teknisyenleri tarafından incelenmiş ve özümsenmiş olması zorunludur.
+Bu bölüm, **KNV 90 7500 2B** konveyörlü endüstriyel parça yıkama makinesi için hazırlanan kullanım kılavuzunun yasal çerçevesini, geçerlilik koşullarını, hedef kitlesini ve doküman kullanım kurallarını tanımlar. Kılavuz; makinenin güvenli işletilmesi, bakımı ve hizmet dışı bırakılması sırasında personelin hangi bilgilere, hangi sırayla ve hangi sorumlulukla başvuracağını netleştirir.
 
-Sistem üzerinde gerçekleştirilecek her türlü işlemde insan sağlığı, çevre emniyeti ve tesis güvenliğinin korunması birincil önceliktir. Bu nedenle bu doküman, makinenin ayrılmaz bir teknik donanımı olarak kabul edilmeli, cihazın ekonomik ömrü boyunca operasyon sahasında, ilgili personelin her an erişebileceği şekilde muhafaza edilmeli ve tüm talimatlar eksiksiz olarak uygulanmalıdır.
+Makine; redüktör ile tahrik edilen zincirli konveyör üzerinde endüstriyel parçaların **yıkama** ve **durulama** banyolarından geçirilip **blower** ile su sıyırma ve **kurutma ünitesinde** sıcak hava ile kurutulduğu, iki banyolu (2B) bir yıkama hattıdır. Kontrol, **PLC veya HMI bulunmayan** röle/kontaktör esaslı bir **buton panosu** ile yapılır; her proses fonksiyonu ayrı aç/kapa anahtarı ile yönetilir. Bu projede robot entegrasyonu yoktur; parça yükleme ve boşaltma operatör tarafından elle yapılır. Bu tanım, kılavuzun hangi makine konfigürasyonu için geçerli olduğunu sınırlandırır; kapsam dışı modifikasyonlar veya farklı opsiyon setleri bu metnin dışında kalır.
+
+| Alt bölüm | Konu |
+| :--- | :--- |
+| **1.1** | Kılavuz hakkında — amaç, kapsam, geçerlilik, hedef kitle, muhafaza, fikri mülkiyet |
+| **1.2** | Semboller, uyarı işaretleri ve etiketleme kuralları |
+| **1.3** | Üretici iletişim, kimlik etiketi, servis ve yedek parça |
+
+Bu kullanım kılavuzu, **KNV 90 7500 2B** makinesinin ayrılmaz ve yasal olarak bağlayıcı bir parçasıdır; EN ISO 12100 ve EN ISO 20607 gereksinimlerine uygun hazırlanmıştır. Kılavuzdaki talimatlar tavsiye niteliğinde değildir; işletme, kurulum ve bakım sırasında bunlara uymakla yükümlüdür. Ulusal iş sağlığı ve güvenliği mevzuatı geçerliliğini korur; çelişki hâlinde daha sıkı hüküm uygulanır. Amaç, kapsam, geçerlilik, hedef kitle, muhafaza ve sorumluluk dağılımı **Bölüm 1.1**'de ayrıntılandırılır.
+
+Kılavuz, taşımadan bertarafa kadar makinenin tüm yaşam döngüsünü kapsar; her aşamaya ilişkin prosedürler ilgili bölümlerde verilir (**Bkz. Bölüm 4–12**). Kapsam dışı modifikasyon, amaç dışı kullanım veya onaysız müdahaleler amaçlanan kullanım sınırlarının dışındadır; bunların sonuçları işletme sorumluluğundadır (**Bkz. Bölüm 1.1.5, 3.2**).
+
+Güvenlik kuralları, enerji izolasyonu (LOTO), acil durdurma, KKD ve kalıntı riskler **Bölüm 2**'de tanımlanır; diğer bölümlerde tekrarlanmaz. Personel seçimi, eğitimi ve yetkilendirilmesinden işveren sorumludur; üretici sorumluluğu amaçlanan kullanım ve kılavuz talimatlarına uygun işletimle sınırlıdır (**Bkz. Bölüm 1.1.3, 1.1.5, 2**). Bu kılavuz temel mühendislik veya elektrik eğitimi vermez; makineye müdahale edecek personelin görev tanımına uygun teknik yeterliliğe sahip olduğu varsayılır.
