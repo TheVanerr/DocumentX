@@ -11,7 +11,7 @@ Makine, ana gövde (konveyör, tanklar, hücreler, kurutma ünitesi, egzoz bacas
 
 Taşıma ve depolama ortam sıcaklığı **+10 °C ile +30 °C** aralığında olmalıdır; nem ve korozif maddeler bulunmamalıdır. Taşıma sırasında **Bölüm 2** güvenlik kurallarına uyun; makine üzerinde müdahale gerektiren işlerde enerji izolasyonu **Bölüm 2.4**'e göre yapılır.
 
-![Sevkiyat — makine açık kasa araç üzerinde, forklift ile yükleme](../assets/4.1/sevkiyat-kamyon.jpg)
+![Sevkiyat — makine açık kasa araç üzerinde, streç film ile ambalajlı](../assets/4.1/sevkiyat-kamyon.jpg)
 
 ---
 

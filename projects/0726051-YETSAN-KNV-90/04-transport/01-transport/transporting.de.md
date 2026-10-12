@@ -1,6 +1,6 @@
 # 4.1 Transport und Versand
 
-Die Maschine besteht aus einem **langen Hauptkörper**, der die Fördererlinie, die Tanks, die Trocknungseinheit und den Schaltschrank trägt, sowie der separat stehenden **Ölabscheidereinheit**. Da der Hauptkörper lang ist und die Gewichtsverteilung asymmetrisch ist (Tanks, Pumpen und Schaltschrank befinden sich auf einer Seite der Linie), dürfen Anheben und Transport nur durch einen zertifizierten Gabelstaplerfahrer und nur an den vom Hersteller festgelegten Anschlagpunkten erfolgen. Auf den Versandfotos ist die Maschine auf einem offenen Pritschenfahrzeug unter einer Schutzplane zu sehen, mit dem Gabelstapler verladen.
+Die Maschine besteht aus einem **langen Hauptkörper**, der die Fördererlinie, die Tanks, die Trocknungseinheit und den Schaltschrank trägt, sowie der separat stehenden **Ölabscheidereinheit**. Da der Hauptkörper lang ist und die Gewichtsverteilung asymmetrisch ist (Tanks, Pumpen und Schaltschrank befinden sich auf einer Seite der Linie), dürfen Anheben und Transport nur durch einen zertifizierten Gabelstaplerfahrer und nur an den vom Hersteller festgelegten Anschlagpunkten erfolgen. Auf den Versandfotos ist die Maschine auf einem offenen Pritschenfahrzeug unter Stretchfolie und Schutzplane zu sehen.
 
 Außenabmessungen und Gewicht sind bei der Planung des Aufstellorts und des Fahrzeugs zu berücksichtigen (**Siehe Kapitel 3.3.1**); diese Werte sind in den DATA nicht definiert und müssen dem Aufstellungsplan (Layout) bzw. der Hebezeichnung entnommen werden (**Siehe Kapitel 3.5.4**).
 

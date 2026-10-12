@@ -11,7 +11,7 @@ Die Maschine wird in zwei Hauptteilen versandt: dem Hauptkörper (Förderer, Tan
 
 Die Umgebungstemperatur bei Transport und Lagerung muss im Bereich von **+10 °C bis +30 °C** liegen; Feuchtigkeit und korrosive Stoffe dürfen nicht vorhanden sein. Beachten Sie während des Transports die Sicherheitsregeln aus **Kapitel 2**; bei Arbeiten, die einen Eingriff an der Maschine erfordern, erfolgt die Energietrennung gemäß **Kapitel 2.4**.
 
-![Versand — Maschine auf offenem Pritschenfahrzeug, Beladung mit Gabelstapler](../assets/4.1/sevkiyat-kamyon.jpg)
+![Versand — Maschine auf offenem Pritschenfahrzeug, mit Stretchfolie verpackt](../assets/4.1/sevkiyat-kamyon.jpg)
 
 ---
 

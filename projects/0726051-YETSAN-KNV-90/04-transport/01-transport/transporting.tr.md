@@ -1,6 +1,6 @@
 # 4.1 Taşıma ve nakliye
 
-Makine, konveyör hattı, tanklar, kurutma ünitesi ve elektrik panosunu taşıyan **uzun bir ana gövde** ile ayrı duran **yağ ayırıcı ünitesinden** oluşur. Ana gövde uzun ve ağırlık dağılımı asimetrik (tanklar, pompalar ve pano hattın bir tarafında) olduğundan kaldırma ve taşıma, yalnızca sertifikalı forklift operatörü tarafından ve üreticinin belirlediği kaldırma noktalarından yapılmalıdır. Sevkiyat fotoğraflarında makine, açık kasa araç üzerinde koruyucu örtü altında, forklift ile yüklenmiş olarak görülmektedir.
+Makine, konveyör hattı, tanklar, kurutma ünitesi ve elektrik panosunu taşıyan **uzun bir ana gövde** ile ayrı duran **yağ ayırıcı ünitesinden** oluşur. Ana gövde uzun ve ağırlık dağılımı asimetrik (tanklar, pompalar ve pano hattın bir tarafında) olduğundan kaldırma ve taşıma, yalnızca sertifikalı forklift operatörü tarafından ve üreticinin belirlediği kaldırma noktalarından yapılmalıdır. Sevkiyat fotoğraflarında makine, açık kasa araç üzerinde streç film ve koruyucu örtü altında görülmektedir.
 
 Dış boyutlar ve ağırlık kurulum alanı ve araç planlamasında dikkate alınmalıdır (**Bkz. Bölüm 3.3.1**); bu değerler DATA'da tanımlı değildir ve layout/kaldırma çiziminden alınmalıdır (**Bkz. Bölüm 3.5.4**).
 
