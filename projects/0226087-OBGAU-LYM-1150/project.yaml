@@ -1,0 +1,18 @@
+# 0226087-OBGAU-LYM 1150 — proje reçetesi
+# Dil derleme: şimdilik yalnızca TR → <dosya>.tr.md kullanılır.
+# EN/DE eklendiğinde `diller` listesine yazılır (scripts/scaffold-lang.js).
+
+proje_adi: LYM 1150
+model: lym
+tip: proje
+diller:
+  - tr
+  - en
+varsayilan_dil: tr
+extends: templates/base.yaml
+kapak:
+  baslik: LYM 1150
+  seri: false
+  rev: ''
+  tarih: ''
+  firma: OBG

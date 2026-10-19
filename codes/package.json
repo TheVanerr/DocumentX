@@ -4,18 +4,71 @@
   "description": "DocumentX - Kullanım Kılavuzu Görüntüleyici",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "export": "electron . --export",
+    "test": "node --test test/unit/*.test.js && electron test/render/runner.js",
+    "test:shots": "electron test/render/runner.js --shots",
+    "pack": "electron-builder --win dir --publish never",
+    "dist": "electron-builder --win nsis --publish never",
+    "release": "electron-builder --win nsis --publish always",
+    "test:ui": "electron test/ui/runner.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Fatih GÜRAL",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "electron": "^36.9.5"
+    "electron": "^36.9.5",
+    "electron-builder": "^25.1.8"
   },
   "dependencies": {
     "electron-reload": "^2.0.0-alpha.1",
+    "electron-updater": "^6.8.9",
     "html-to-docx": "^1.8.0",
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "pdf-lib": "^1.17.1"
+  },
+  "productName": "DocumentX",
+  "build": {
+    "appId": "com.documentx.viewer",
+    "productName": "DocumentX",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!test/**",
+      "!dist/**",
+      "!*-klavuz.html",
+      "!**/*.md",
+      {
+        "from": "../scripts",
+        "to": "scripts",
+        "filter": [
+          "project-core.js"
+        ]
+      }
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "DocumentX"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "TheVanerr",
+        "repo": "DocumentX"
+      }
+    ]
   }
 }

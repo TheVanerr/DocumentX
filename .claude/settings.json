@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./node_modules/**)",
+      "Read(./codes/node_modules/**)",
+      "Read(./codes/dist/**)",
+      "Read(./codes/package-lock.json)",
+      "Read(./codes/*-klavuz.html)",
+      "Read(./exports/**)",
+      "Read(./BACKUP/**)",
+      "Read(./_drive_photos/**)",
+      "Read(./fotoğraflar/**)",
+      "Read(./**/*.xlsm)",
+      "Read(./**/*.xlsx)",
+      "Read(./.env)",
+      "Read(./scripts/.translation-state.json)"
+    ]
+  }
+}

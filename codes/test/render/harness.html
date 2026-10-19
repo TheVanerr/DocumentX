@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Göreli yollar codes/ köküne göre çözülsün (index.html ile aynı taban) -->
+  <base href="../../" />
+  <title>DocumentX render testleri</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="html-view.css" />
+  <link rel="stylesheet" href="doc-content.css" />
+  <link rel="stylesheet" href="ui.css" />
+</head>
+<body class="view-pdf">
+  <main class="content-area" id="contentArea">
+    <div class="pages-container" id="pagesContainer"></div>
+  </main>
+  <div id="scratch" style="position:absolute;left:-10000px;top:0;width:794px"></div>
+
+  <script src="state.js"></script>
+  <script src="brands.js"></script>
+  <script src="cover.js"></script>
+  <script src="header.js"></script>
+  <script src="data-resolve.js"></script>
+  <script src="iso7010.js"></script>
+  <script src="md-parser.js"></script>
+  <script src="glossary.js"></script>
+  <script src="figures.js"></script>
+  <script src="paginator.js"></script>
+  <script src="changes.js"></script>
+  <script src="document.js"></script>
+  <script src="iso20607.js"></script>
+  <script src="qc.js"></script>
+  <script src="images.js"></script>
+  <script src="export.js"></script>
+  <script src="test/render/tests.js"></script>
+</body>
+</html>

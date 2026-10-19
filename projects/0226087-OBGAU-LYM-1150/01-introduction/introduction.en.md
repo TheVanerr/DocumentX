@@ -1,0 +1,7 @@
+# 1. INTRODUCTION
+
+This user manual has been prepared to define all the technical procedures, operating instructions and safety measures required to ensure that the industrial washing machine is operated safely, efficiently and without interruption. The machine has been designed using advanced engineering principles and automation technologies to provide a long cycle life under heavy industrial conditions, high energy efficiency and a parts cleaning quality that complies with the applicable standards.
+
+Operating the machine at full capacity in accordance with its design characteristics, preserving the operational life of the mechanical and electronic components and minimising fault-related downtime depend on strict compliance with the specifications and the periodic maintenance schedule contained in this document. Before any mechanical, electrical or software-related operation is started, all relevant chapters of this manual must have been studied and understood by plant management, shop-floor operators and maintenance technicians.
+
+In every operation carried out on the system, the protection of human health, environmental safety and plant safety is the first priority. This document must therefore be regarded as an integral part of the machine's technical equipment; it must be kept in the operating area throughout the economic life of the machine, where the relevant personnel can access it at any time, and all of its instructions must be applied in full.

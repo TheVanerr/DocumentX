@@ -37,6 +37,8 @@ body.html-export {
   --html-figure-max-h: calc(var(--html-page-h) / 2 * var(--html-figure-scale));
   --html-block-gap: 24px;
 }
+
+.html-cover-section {
   position: relative;
   width: 100%;
   height: 1123px;
@@ -102,7 +104,8 @@ body.html-export {
   .md-code,
   .md-hr,
   .md-figure-frame,
-  .md-figure-group
+  .md-figure-group,
+  .md-callout
 ) {
   margin-top: 0;
   margin-bottom: 0;
@@ -118,7 +121,8 @@ body.html-export {
   .md-code,
   .md-hr,
   .md-figure-frame,
-  .md-figure-group
+  .md-figure-group,
+  .md-callout
 ) + :is(
   .sec-h,
   .md-h,
@@ -129,7 +133,8 @@ body.html-export {
   .md-code,
   .md-hr,
   .md-figure-frame,
-  .md-figure-group
+  .md-figure-group,
+  .md-callout
 ) {
   margin-top: var(--html-block-gap);
 }

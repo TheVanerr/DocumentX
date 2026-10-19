@@ -1,0 +1,23 @@
+# Test kilavuzu — yalnizca otomatik arayuz testinde kullanilir (DOCUMENTX_PROJECTS).
+proje_adi: DEMO KNV 40
+model: knv
+tip: proje
+diller:
+  - tr
+  - en
+kapak:
+  baslik: DEMO KNV 40
+  rev: '01'
+  tarih: '2026-10-19'
+  firma: ENVA
+bolumler:
+  - id: 01-introduction
+    dosya: introduction
+    alt_bolumler:
+      - id: 01-scope
+        dosya: scope
+  - id: 02-safety
+    dosya: safety
+    alt_bolumler:
+      - id: 01-loto
+        dosya: loto

@@ -1,0 +1,6 @@
+terimler:
+  - tr: Ana şalter
+    en: Main switch
+    de: Hauptschalter
+    yasak:
+      tr: [şebeke şalteri]

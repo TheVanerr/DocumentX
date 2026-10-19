@@ -1,17 +1,13 @@
-let currentGuideId = '';
-let currentProjectRel = '';
-let currentModel = '';
-let currentLang = 'tr';
-let currentDiller = ['tr'];
-let currentRev = '';
-let currentDate = '';
-let currentFirma = 'DOLFIN';
-let currentCoverName = '';
-let currentCoverSeries = false;
-let viewMode = 'pdf';
-let lastGuideCache = null;
+/* ── Uygulama akışı ──
+   Kılavuz seçimi, dil, görünüm modu, kapak meta (yaml'a kalıcı), zoom,
+   oturum hafızası, klavye kısayolları ve belge içi bağlantılar.
+   Belge kurulumu: document.js · sayfalama: paginator.js · md: md-parser.js */
+
+let metaAppliedFor = '';   // yaml kapak alanlarının uygulandığı kılavuz
+let metaSaveTimer = null;
 
 async function onModelChange(value, opts = {}) {
+  const switching = value !== currentGuideId;
   currentGuideId = value;
   const emptyState = document.getElementById('emptyState');
   const pagesContainer = document.getElementById('pagesContainer');
@@ -23,11 +19,17 @@ async function onModelChange(value, opts = {}) {
     currentCoverName = '';
     currentCoverSeries = false;
     currentProjectRel = '';
+    pagesContainer.innerHTML = '';
     emptyState.style.display = 'flex';
     return;
   }
 
   emptyState.style.display = 'none';
+  prefSet('lastGuide', value);
+  if (switching) {
+    const savedLang = prefGet('lang.' + value, '');
+    if (savedLang) currentLang = savedLang;
+  }
 
   const res = await window.electronAPI.getGuide(value, currentLang);
 
@@ -37,10 +39,8 @@ async function onModelChange(value, opts = {}) {
   }
 
   currentModel = res.label || res.model || value;
-  const kapak = res.kapak || {};
-  currentCoverName = String(kapak.baslik || '').trim() || currentModel;
-  currentCoverSeries = kapak.seri === true;
   currentProjectRel = (res.projectRel || '').replace(/\\/g, '/');
+  applyGuideMeta(res);
   syncLangButtons(res.diller || ['tr'], res.lang || currentLang);
 
   if (!res.tree || !res.tree.length) {
@@ -53,10 +53,62 @@ async function onModelChange(value, opts = {}) {
   await renderGuide(currentModel, res.tree, pagesContainer);
 
   if (scrollTop != null && contentArea) {
-    requestAnimationFrame(() => {
-      contentArea.scrollTop = scrollTop;
-    });
+    contentArea.scrollTop = scrollTop;
   }
+}
+
+/* project.yaml → kapak (rev, tarih, firma, hazırlayan), revizyonlar, çıktı seçenekleri.
+   Kullanıcı arayüzden değiştirdiğinde değerler yaml'a yazılır (scheduleMetaSave);
+   kaydı bekleyen bir değişiklik varken yaml'daki eski değer kutuyu ezmez. */
+function applyGuideMeta(res) {
+  const kapak = res.kapak || {};
+  currentCoverName = String(kapak.baslik || '').trim() || currentModel;
+  currentCoverSeries = kapak.seri === true;
+  currentPreparedBy = String(kapak.hazirlayan || '');
+  currentRevisions = Array.isArray(res.revizyonlar) ? res.revizyonlar : [];
+  currentOutput = res.cikti && typeof res.cikti === 'object' ? res.cikti : {};
+  currentData = res.data || null;
+  applyPaperSize();
+  currentGlossary = Array.isArray(res.glossary) ? res.glossary : [];
+  currentSymbols = res.symbols || {};
+  currentMarks = res.marks || {};
+
+  const fresh = metaAppliedFor !== res.id;
+  if (!fresh && metaSaveTimer) return;
+  metaAppliedFor = res.id;
+
+  currentRev = String(kapak.rev || '');
+  currentDate = String(kapak.tarih || '');
+  const firma = String(kapak.firma || '').trim().toUpperCase();
+  if (firma && BRANDS[firma]) currentFirma = firma;
+  else if (fresh) currentFirma = DEFAULT_BRAND;
+  syncCoverInputs();
+}
+
+function syncCoverInputs() {
+  const revInput = document.getElementById('revInput');
+  const dateInput = document.getElementById('dateInput');
+  const dateLabel = document.getElementById('dateLabel');
+  const firmaSelect = document.getElementById('firmaSelect');
+  if (revInput && document.activeElement !== revInput) revInput.value = currentRev;
+  if (dateInput) dateInput.value = currentDate;
+  if (dateLabel) dateLabel.textContent = currentDate ? formatCoverDate(currentDate) : 'Tarih';
+  if (firmaSelect) firmaSelect.value = currentFirma;
+}
+
+function scheduleMetaSave(patch, delay = 600) {
+  const guideId = currentGuideId;
+  if (!guideId) return;
+  clearTimeout(metaSaveTimer);
+  metaSaveTimer = setTimeout(async () => {
+    metaSaveTimer = null;
+    const r = await window.electronAPI.saveGuideMeta(guideId, patch);
+    if (!r || !r.ok) showToast('project.yaml kaydedilemedi: ' + ((r && r.error) || ''), 'error');
+  }, delay);
+}
+
+function kapakPatch() {
+  return { kapak: { rev: currentRev, tarih: currentDate, firma: currentFirma } };
 }
 
 function contentChangeAffectsGuide(paths) {
@@ -84,200 +136,46 @@ async function reloadGuideFromDisk(opts = {}) {
 
 function infoCard(html) {
   return `
-    <div style="color:#4a5568; text-align:center; padding:60px; font-size:14px;">
-      <p style="margin-bottom:8px; font-size:32px;">📄</p>
+    <div class="info-card">
+      <p class="info-card-icon">📄</p>
       <p>${html}</p>
     </div>`;
-}
-
-function collectImageSrcs(blocks) {
-  const srcs = new Set();
-  for (const el of blocks) {
-    el.querySelectorAll?.('img.md-img').forEach(img => {
-      const s = img.getAttribute('src');
-      if (s && !/^data:/i.test(s)) srcs.add(s);
-    });
-  }
-  return [...srcs];
-}
-
-function preloadImages(srcs) {
-  if (!srcs.length) return Promise.resolve();
-  return Promise.all(srcs.map(src => new Promise(resolve => {
-    const img = new Image();
-    img.onload = img.onerror = () => resolve();
-    img.src = src;
-  })));
-}
-
-function measureImages(srcs) {
-  if (!srcs.length) return Promise.resolve(new Map());
-  return Promise.all(srcs.map(src => new Promise(resolve => {
-    const img = new Image();
-    img.onload = () => resolve({
-      src,
-      w: img.naturalWidth || 1,
-      h: img.naturalHeight || 1
-    });
-    img.onerror = () => resolve({ src, w: 4, h: 3 });
-    img.src = src;
-  }))).then(list => {
-    const map = new Map();
-    list.forEach(({ src, w, h }) => map.set(src, { w, h }));
-    return map;
-  });
 }
 
 /* ── Kılavuzu oluştur ── */
 async function renderGuide(modelName, tree, container) {
   lastGuideCache = { modelName, tree };
+  if (viewMode !== 'compare') await loadChanges();
   const staging = document.createElement('div');
+  // Ölçüm gerçek DOM'da yapılır; staging yalnızca sonuç sayfalarını toplar.
   if (viewMode === 'html') {
     await renderHtmlGuide(modelName, tree, staging);
+  } else if (viewMode === 'compare') {
+    await renderCompareGuide(modelName, tree, staging);
   } else {
     await renderPdfGuide(modelName, tree, staging);
   }
   container.replaceChildren(...Array.from(staging.childNodes));
   container.className = staging.className;
-}
-
-async function renderPdfGuide(modelName, tree, container) {
-  const { blocks, entries } = buildBlocks(tree);
-  const imageSrcs = collectImageSrcs(blocks);
-  await preloadImages(imageSrcs);
-  const layoutBlocks = prepareFigureBlocks(blocks);
-  const contentPages = computePages(layoutBlocks);
-
-  for (const e of entries) {
-    const idx = pageIndexOfAnchor(contentPages, e.anchorId);
-    e.contentIdx = idx < 0 ? 0 : idx;
-  }
-
-  const { blocks: tocBlocks, rows } = buildTocBlocks(entries);
-  const tocPages = computePages(tocBlocks);
-  const T = tocPages.length;
-
-  for (const r of rows) {
-    r.pageSpan.textContent = String(T + r.entry.contentIdx + 1);
-  }
-
-  container.innerHTML = '';
-  container.className = 'pages-container';
-  renderPages(tocPages, container, 1, modelName);
-  renderPages(contentPages, container, T + 1, modelName);
-
-  // Kapak sayfası: 1. sayfa, numarasız
-  const cover = buildCoverPage(coverPageOpts());
-  container.insertBefore(cover, container.firstChild);
-
-  // Bölüm başlıkları → İçindekiler dönüş linkleri
-  container.querySelectorAll('[data-toc-anchor]').forEach(el => {
-    const anchorId = el.dataset.tocAnchor;
-    const a = document.createElement('a');
-    a.href = '#toc-row-' + anchorId;
-    a.style.cssText = 'color:inherit;text-decoration:none;display:block;';
-    a.addEventListener('click', (evt) => {
-      evt.preventDefault();
-      const target = document.getElementById('toc-row-' + anchorId);
-      if (target) scrollToPage(target);
-    });
-    while (el.firstChild) a.appendChild(el.firstChild);
-    el.appendChild(a);
-  });
-
-  // PDF hrefs → A4 sayfa başlarına güncelle (tam sayfa görünümü)
-  container.querySelectorAll('a.toc-row[id]').forEach(row => {
-    const anchorId = row.id.replace('toc-row-', '');
-    const target = document.getElementById('toc-anchor-' + anchorId);
-    if (target) {
-      const pg = target.closest('.a4-page');
-      if (pg) row.href = '#' + pg.id;
-    }
-  });
-
-  container.querySelectorAll('[data-toc-anchor] a[href]').forEach(a => {
-    const rowId = a.getAttribute('href').replace('#', '');
-    const tocRow = document.getElementById(rowId);
-    if (tocRow) {
-      const pg = tocRow.closest('.a4-page');
-      if (pg) a.href = '#' + pg.id;
-    }
-  });
-}
-
-async function renderHtmlGuide(modelName, tree, container) {
-  const { blocks, entries } = buildBlocks(tree);
-  const imageSrcs = collectImageSrcs(blocks);
-  const imageDims = await measureImages(imageSrcs);
-
-  const tocBlocks = buildHtmlTocBlocks(entries);
-
-  container.innerHTML = '';
-  container.className = 'pages-container';
-
-  const doc = document.createElement('div');
-  doc.className = 'html-document html-unified';
-
-  const coverSection = document.createElement('div');
-  coverSection.className = 'html-cover-section';
-  const cover = buildCoverPage(coverPageOpts());
-  cover.classList.add('html-inline-cover');
-  coverSection.appendChild(cover);
-  doc.appendChild(coverSection);
-
-  const tocSection = document.createElement('div');
-  tocSection.className = 'html-toc-section';
-  tocSection.id = 'html-toc';
-  for (const b of tocBlocks) tocSection.appendChild(b);
-  doc.appendChild(tocSection);
-
-  const contentSection = document.createElement('div');
-  contentSection.className = 'html-content-section';
-
-  if (currentFirma && typeof buildHeader === 'function') {
-    const header = buildHeader(currentFirma, modelName);
-    header.classList.add('html-doc-header');
-    const _brand = (typeof HEADER_BRANDS !== 'undefined' && HEADER_BRANDS[currentFirma])
-      ? HEADER_BRANDS[currentFirma] : { color: '#ff0000' };
-    contentSection.style.setProperty('--brand-color', _brand.color);
-    contentSection.appendChild(header);
-  }
-
-  const mainContent = document.createElement('div');
-  mainContent.className = 'html-flow-content';
-  const htmlBlocks = applyHtmlFigureLayout(blocks);
-  for (const b of htmlBlocks) mainContent.appendChild(b);
-  contentSection.appendChild(mainContent);
-  doc.appendChild(contentSection);
-
-  container.appendChild(doc);
-  applyHtmlFigureSmartFit(mainContent);
-
-  container.querySelectorAll('[data-toc-anchor]').forEach(el => {
-    const anchorId = el.dataset.tocAnchor;
-    const a = document.createElement('a');
-    a.href = '#toc-row-' + anchorId;
-    a.style.cssText = 'color:inherit;text-decoration:none;display:block;';
-    a.addEventListener('click', (evt) => {
-      evt.preventDefault();
-      const target = document.getElementById('toc-row-' + anchorId);
-      if (target) scrollToPage(target);
-    });
-    while (el.firstChild) a.appendChild(el.firstChild);
-    el.appendChild(a);
-  });
+  // İşaretler gerçek ölçülere göre konumlanır (sayfalar DOM'a girdikten sonra)
+  if (typeof placeImageMarks === 'function') placeImageMarks(container);
+  document.title = coverDocumentTitle(currentCoverName || currentModel, currentLang, { series: currentCoverSeries });
+  document.dispatchEvent(new CustomEvent('guide-rendered'));
 }
 
 async function setViewMode(mode) {
-  if (mode !== 'html' && mode !== 'pdf') return;
+  if (!['html', 'pdf', 'compare'].includes(mode)) return;
   if (viewMode === mode) return;
 
   viewMode = mode;
+  prefSet('view', mode);
   document.body.classList.toggle('view-html', mode === 'html');
   document.body.classList.toggle('view-pdf', mode === 'pdf');
+  document.body.classList.toggle('view-compare', mode === 'compare');
   document.querySelectorAll('.view-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.view === mode);
   });
+  syncCompareLangSelect();
 
   if (lastGuideCache) {
     const container = document.getElementById('pagesContainer');
@@ -286,247 +184,54 @@ async function setViewMode(mode) {
   }
 }
 
-/* Bölüm başlığı seçili dilde dosyada bulunamazsa kullanılan yedek adlar.
-   Klasör id'leri İngilizce olduğundan (01-introduction …) prettifyId "Introduction"
-   üretir; bu, Türkçe/Almanca kılavuzda dil sızıntısına yol açar. Yedek başlık,
-   seçili dile göre verilir; asla klasör id'sinden İngilizce isim türetilmez. */
-const SECTION_TITLES = {
-  '01-introduction':    { tr: 'Giriş',              en: 'Introduction',    de: 'Einleitung' },
-  '02-safety':          { tr: 'Güvenlik',           en: 'Safety',          de: 'Sicherheit' },
-  '03-overview':        { tr: 'Genel Bakış',        en: 'Overview',        de: 'Übersicht' },
-  '04-transport':       { tr: 'Nakliye',            en: 'Transport',       de: 'Transport' },
-  '05-assembly':        { tr: 'Montaj',             en: 'Assembly',        de: 'Montage' },
-  '06-settings':        { tr: 'Ayarlar',            en: 'Settings',        de: 'Einstellungen' },
-  '07-operation':       { tr: 'İşletim',            en: 'Operation',       de: 'Betrieb' },
-  '08-capacity':        { tr: 'Kapasite',           en: 'Capacity',        de: 'Kapazität' },
-  '09-maintenance':     { tr: 'Bakım',              en: 'Maintenance',     de: 'Wartung' },
-  '10-cleaning':        { tr: 'Temizlik',           en: 'Cleaning',        de: 'Reinigung' },
-  '11-troubleshooting': { tr: 'Arıza Giderme',      en: 'Troubleshooting', de: 'Fehlerbehebung' },
-  '12-dismantle':       { tr: 'Sökme ve Bertaraf',  en: 'Dismantling',     de: 'Demontage' },
-  '13-documents':       { tr: 'Dokümanlar',         en: 'Documents',       de: 'Dokumente' },
-  '14-index':           { tr: 'Ekler ve Dizin',     en: 'Index',           de: 'Anhang und Index' }
-};
-
-function sectionFallbackTitle(id, lang) {
-  const entry = SECTION_TITLES[String(id)];
-  if (entry) return entry[String(lang || 'tr').toLowerCase()] || entry.tr;
-  return prettifyId(id);
-}
-
-function mdLevel(el) { return parseInt(el.tagName.slice(1), 10); }
-
-/* Üst seviye tek numaraya nokta ekler: "1" -> "1.", "1.1" -> "1.1" */
-function fmtNum(n) { return /^\d+$/.test(n) ? n + '.' : n; }
-
-/* Başlık metninde önceden yazılmış numarayı ("1.", "1.3.5." vb.) temizler. */
-function stripNum(t) { return String(t).replace(/^\s*\d+(?:\.\d+)*\.?(?=\s)\s*/, ''); }
-
-/* Bölüm ağacını numaralandırarak bloklara çevirir.
-   - Klasör hiyerarşisi: 1 (ana bölüm), 1.1 (alt bölüm) ...
-   - md dosyasındaki # / ## / ### hiyerarşisi korunur; yalnızca numara öneki güncellenir.
-   - Dosyada başlık yoksa yedek başlık (SECTION_TITLES) eklenir.
-   İçindekiler için her başlık işaretlenir. */
-function buildBlocks(tree) {
-  const blocks = [];
-  const entries = [];
-  let anchorIdx = 0;
-
-  function addEntry(number, title, level, el) {
-    const id = 'toc-anchor-' + anchorIdx;
-    el.id = id;
-    el.dataset.tocAnchor = String(anchorIdx);
-    entries.push({ number, title, level, anchorId: String(anchorIdx), contentIdx: 0 });
-    anchorIdx++;
-  }
-
-  function walk(nodes, prefix, level) {
-    nodes.forEach((node, i) => {
-      const N = prefix ? `${prefix}.${i + 1}` : `${i + 1}`;
-      const secBlocks = mdToBlocks(node.content || '');
-
-      const headings = secBlocks.filter(b => /^H[1-6]$/.test(b.tagName));
-      const anchorLevel = headings.length ? mdLevel(headings[0]) : null;
-
-      let titleEl = headings.length ? headings[0] : null;
-      const fallbackTitle = sectionFallbackTitle(node.id, currentLang);
-      let nodeTitle = titleEl ? (stripNum(titleEl.textContent.trim()) || fallbackTitle) : fallbackTitle;
-
-      if (titleEl) {
-        titleEl.textContent = `${fmtNum(N)} ${nodeTitle}`;
-        titleEl.className = `md-h sec-h sec-h${Math.min(level, 6)}`;
-      } else {
-        titleEl = document.createElement('h' + Math.min(level + 1, 6));
-        titleEl.className = `md-h sec-h sec-h${Math.min(level, 6)}`;
-        titleEl.textContent = `${fmtNum(N)} ${nodeTitle}`;
-        secBlocks.unshift(titleEl);
-      }
-      addEntry(N, nodeTitle, level, titleEl);
-      if (level === 1) titleEl.dataset.pageBreakBefore = 'true';
-
-      let counters = [];
-      for (const b of secBlocks) {
-        if (!/^H[1-6]$/.test(b.tagName) || b === titleEl) continue;
-
-        const rel = (anchorLevel == null) ? 1 : mdLevel(b) - anchorLevel;
-        let depth = rel < 1 ? 1 : rel;
-        depth = Math.min(depth, counters.length + 1);
-
-        counters = counters.slice(0, depth);
-        counters[depth - 1] = (counters[depth - 1] || 0) + 1;
-
-        const subNum = `${N}.${counters.slice(0, depth).join('.')}`;
-        const subTitle = stripNum(b.textContent.trim());
-        const subLevel = level + depth;
-
-        b.textContent = `${fmtNum(subNum)} ${subTitle}`;
-        b.className = `md-h sec-h sec-h${Math.min(subLevel, 6)}`;
-        addEntry(subNum, subTitle, subLevel, b);
-      }
-
-      for (const b of secBlocks) blocks.push(b);
-
-      if (node.children && node.children.length) walk(node.children, N, level + 1);
-    });
-  }
-
-  walk(tree, '', 1);
-  return { blocks, entries };
-}
-
-function prettifyId(id) {
-  return String(id)
-    .replace(/^\d+[-_]?/, '')
-    .replace(/[-_]+/g, ' ')
-    .replace(/\b\w/g, c => c.toUpperCase())
-    .trim();
-}
-
-function pageIndexOfAnchor(pages, anchorId) {
-  return pages.findIndex(p =>
-    p.some(el => el.dataset && el.dataset.tocAnchor === anchorId)
-  );
-}
-
-/* ── İçindekiler blokları ── */
-function buildTocBlocks(entries) {
-  const blocks = [];
-  const rows = [];
-
-  const h = document.createElement('h1');
-  h.className = 'toc-title';
-  h.textContent = tDoc(currentLang).toc;
-  blocks.push(h);
-
-  for (const e of entries) {
-    const row = document.createElement('a');
-    row.className = `toc-row toc-l${Math.min(e.level, 4)}`;
-    row.id = 'toc-row-' + e.anchorId;
-    row.href = '#toc-anchor-' + e.anchorId;
-    row.style.paddingLeft = ((e.level - 1) * 22) + 'px';
-    row.addEventListener('click', (evt) => {
-      evt.preventDefault();
-      const target = document.getElementById('toc-anchor-' + e.anchorId);
-      if (target) scrollToPage(target);
-    });
-
-    const num = document.createElement('span');
-    num.className = 'toc-num';
-    num.textContent = fmtNum(e.number);
-
-    const label = document.createElement('span');
-    label.className = 'toc-label';
-    label.textContent = e.title;
-
-    const leader = document.createElement('span');
-    leader.className = 'toc-leader';
-
-    const pageSpan = document.createElement('span');
-    pageSpan.className = 'toc-page';
-
-    row.appendChild(num);
-    row.appendChild(label);
-    row.appendChild(leader);
-    row.appendChild(pageSpan);
-    blocks.push(row);
-    rows.push({ entry: e, pageSpan });
-  }
-
-  return { blocks, rows };
-}
-
-/* HTML görünümü — sayfa numarası ve leader olmadan içindekiler */
-function buildHtmlTocBlocks(entries) {
-  const blocks = [];
-
-  const h = document.createElement('h1');
-  h.className = 'toc-title';
-  h.textContent = tDoc(currentLang).toc;
-  blocks.push(h);
-
-  for (const e of entries) {
-    const row = document.createElement('a');
-    row.className = `toc-row toc-html toc-l${Math.min(e.level, 4)}`;
-    row.id = 'toc-row-' + e.anchorId;
-    row.href = '#toc-anchor-' + e.anchorId;
-    row.style.paddingLeft = ((e.level - 1) * 22) + 'px';
-    row.addEventListener('click', (evt) => {
-      evt.preventDefault();
-      const target = document.getElementById('toc-anchor-' + e.anchorId);
-      if (target) scrollToPage(target);
-    });
-
-    const num = document.createElement('span');
-    num.className = 'toc-num';
-    num.textContent = fmtNum(e.number);
-
-    const label = document.createElement('span');
-    label.className = 'toc-label';
-    label.textContent = e.title;
-
-    row.appendChild(num);
-    row.appendChild(label);
-    blocks.push(row);
-  }
-
-  return blocks;
-}
-
-/* ── Kapak meta (Rev / Tarih) ── */
+/* ── Kapak meta (Rev / Tarih / Firma) ── */
 function onCoverMetaChange() {
   const revInput = document.getElementById('revInput');
   const dateInput = document.getElementById('dateInput');
   const dateLabel = document.getElementById('dateLabel');
 
-  currentRev = revInput.value;
+  currentRev = revInput.value.trim();
   currentDate = dateInput.value;
   dateLabel.textContent = currentDate ? formatCoverDate(currentDate) : 'Tarih';
 
   updateCover();
+  scheduleMetaSave(kapakPatch());
 }
 
 function onFirmaChange(v) {
   currentFirma = v;
-  if (currentGuideId) onModelChange(currentGuideId);
+  scheduleMetaSave(kapakPatch(), 0);
+  if (currentGuideId && lastGuideCache) {
+    renderGuide(lastGuideCache.modelName, lastGuideCache.tree, document.getElementById('pagesContainer'));
+  }
 }
 
-function coverPageOpts() {
-  return {
-    model: currentCoverName || currentModel,
-    rev: currentRev,
-    date: currentDate,
-    variant: currentFirma,
-    lang: currentLang,
-    series: currentCoverSeries
-  };
+function populateFirmaSelect() {
+  const sel = document.getElementById('firmaSelect');
+  if (!sel) return;
+  sel.innerHTML = '';
+  Object.keys(BRANDS).forEach(key => {
+    const o = document.createElement('option');
+    o.value = key;
+    o.textContent = key;
+    sel.appendChild(o);
+  });
+  sel.value = currentFirma;
 }
 
 function updateCover() {
   const container = document.getElementById('pagesContainer');
-  const existing = container.querySelector('.cover-page');
+  const existing = container.querySelector('.cover-page:not(.back-cover-page)');
   if (existing && currentModel) {
     const cover = buildCoverPage(coverPageOpts());
     if (viewMode === 'html') cover.classList.add('html-inline-cover');
     existing.replaceWith(cover);
+  }
+  const back = container.querySelector('.back-cover-page');
+  if (back && currentModel) {
+    const cover = buildBackCoverPage(coverPageOpts());
+    if (viewMode === 'html') cover.classList.add('html-inline-cover');
+    back.replaceWith(cover);
   }
 }
 
@@ -539,929 +244,94 @@ function openDatePicker() {
   dateInput.click();
 }
 
-function isHeadingEl(el) {
-  return el && el.nodeType === 1 && /^H[1-6]$/.test(el.tagName);
-}
-
-/* ── A4 Sayfalama: blokları ölçüp sayfa dizilerine böler ── */
-function getContentMetrics() {
-  const probe = document.createElement('div');
-  probe.className = 'a4-page';
-  probe.style.cssText = 'position:absolute;visibility:hidden;left:-9999px;top:0';
-  document.body.appendChild(probe);
-  const cs = getComputedStyle(probe);
-  const lineH = parseFloat(cs.getPropertyValue('--line-h')) || 22;
-  const pageH = parseFloat(cs.height) || parseFloat(cs.minHeight) || 1123;
-  const pt = parseFloat(cs.paddingTop);
-  const pb = parseFloat(cs.paddingBottom);
-  const contentMax = parseFloat(cs.getPropertyValue('--content-max-h'));
-  const maxH = Number.isFinite(contentMax) && contentMax > 0 ? contentMax : pageH - pt - pb;
-  document.body.removeChild(probe);
-  const MAX = maxH > 0 ? maxH : 909;
-  const FIT = Math.max(0, MAX - lineH);
-  return { MAX, FIT, LINE_H: lineH };
-}
-
-function computePages(blocks) {
-  const { FIT, LINE_H } = getContentMetrics();
-  const ORPHAN_MIN = LINE_H * 3;
-
-  const pages = [[]];
-  let cur = pages[0];
-
-  const measure = document.createElement('div');
-  measure.className = 'a4-page measure';
-  const mContent = document.createElement('div');
-  mContent.className = 'page-content';
-  measure.appendChild(mContent);
-  document.body.appendChild(measure);
-
-  const h = () => mContent.scrollHeight;
-
-  function newPage() {
-    pages.push([]);
-    cur = pages[pages.length - 1];
-    mContent.innerHTML = '';
-  }
-
-  function splitAndPush(el) {
-    const source = el.cloneNode(true);
-    const kids = Array.from(source.childNodes);
-    let part = el.cloneNode(false);
-    mContent.innerHTML = '';
-    mContent.appendChild(part);
-
-    const commit = () => {
-      cur.push(part);
-      newPage();
-      part = el.cloneNode(false);
-      mContent.appendChild(part);
-    };
-
-    for (const kid of kids) {
-      part.appendChild(kid);
-      if (h() <= FIT) continue;
-
-      if (kid.nodeType === Node.TEXT_NODE) {
-        part.removeChild(kid);
-        const words = kid.textContent.split(/(\s+)/);
-        let tn = document.createTextNode('');
-        part.appendChild(tn);
-        for (const w of words) {
-          const prev = tn.textContent;
-          tn.textContent = prev + w;
-          if (h() > FIT && prev.trim()) {
-            tn.textContent = prev;
-            commit();
-            tn = document.createTextNode(w.replace(/^\s+/, ''));
-            part.appendChild(tn);
-          }
-        }
-      } else {
-        part.removeChild(kid);
-        if (part.childNodes.length === 0) {
-          part.appendChild(kid);
-        } else {
-          commit();
-          part.appendChild(kid);
-        }
-      }
-    }
-    cur.push(part);
-  }
-
-  function placeTable(tableEl) {
-    const thead = tableEl.querySelector('thead');
-    const tbody = tableEl.querySelector('tbody');
-    const TABLE_RESERVE = 0;
-    const TABLE_MAX = FIT;
-
-    if (!thead || !tbody || tbody.rows.length === 0) {
-      mContent.appendChild(tableEl);
-      if (h() <= TABLE_MAX) { cur.push(tableEl); return; }
-      if (cur.length === 0) {
-        cur.push(tableEl);
-        return;
-      }
-      mContent.removeChild(tableEl);
-      startNewPageWithOrphanFix();
-      placeTable(tableEl);
-      return;
-    }
-
-    const bodyRows = Array.from(tbody.rows);
-
-    const makeSubTable = (rows) => {
-      const t = tableEl.cloneNode(false);
-      t.appendChild(thead.cloneNode(true));
-      const tb = document.createElement('tbody');
-      rows.forEach(r => tb.appendChild(r.cloneNode(true)));
-      t.appendChild(tb);
-      return t;
-    };
-
-    let start = 0;
-
-    while (start < bodyRows.length) {
-      let end = start;
-      let sub = makeSubTable([]);
-      mContent.appendChild(sub);
-
-      while (end < bodyRows.length) {
-        const next = makeSubTable(bodyRows.slice(start, end + 1));
-        mContent.removeChild(sub);
-        mContent.appendChild(next);
-        if (h() <= TABLE_MAX) {
-          sub = next;
-          end++;
-        } else {
-          mContent.removeChild(next);
-          mContent.appendChild(sub);
-          break;
-        }
-      }
-
-      // Mevcut sayfaya başlık + tek satır + 1 satır rezerv bile sığmıyorsa
-      // tabloyu sonraki sayfadan devam ettir.
-      if (end === start && cur.length > 0) {
-        mContent.removeChild(sub);
-        startNewPageWithOrphanFix();
-        continue;
-      }
-
-      // Tek bir tablo satırı boş A4 sayfaya dahi sığmıyorsa satırı bölmeden
-      // yerleştir; aksi halde sonsuz sayfalama döngüsü oluşur.
-      if (end === start) {
-        mContent.removeChild(sub);
-        sub = makeSubTable([bodyRows[start]]);
-        mContent.appendChild(sub);
-        end++;
-      }
-
-      cur.push(sub);
-      start = end;
-      if (start < bodyRows.length) newPage();
-    }
-  }
-
-  function splitListItemAcrossPages(listEl, li, olStart) {
-    const tag = listEl.tagName;
-    let continuation = false;
-
-    function startPart() {
-      const list = document.createElement(tag.toLowerCase());
-      list.className = listEl.className;
-      if (tag === 'OL' && olStart > 1 && !continuation) list.start = olStart;
-      const newLi = document.createElement('li');
-      if (continuation) newLi.classList.add('li-continued');
-      list.appendChild(newLi);
-      mContent.appendChild(list);
-      return { list, newLi };
-    }
-
-    function appendWords(target, text) {
-      const words = text.split(/(\s+)/);
-      let tn = document.createTextNode('');
-      target.appendChild(tn);
-      for (const w of words) {
-        const prev = tn.textContent;
-        tn.textContent = prev + w;
-        if (h() <= FIT) continue;
-
-        if (!prev.trim()) {
-          commitPart();
-          tn = document.createTextNode(w.replace(/^\s+/, ''));
-          partLi.appendChild(tn);
-          continue;
-        }
-
-        tn.textContent = prev;
-        if (partList.offsetHeight < ORPHAN_MIN) {
-          mContent.removeChild(partList);
-          newPage();
-          continuation = true;
-          ({ list: partList, newLi: partLi } = startPart());
-          tn = document.createTextNode('');
-          partLi.appendChild(tn);
-          tn.textContent = prev + w;
-          if (h() <= FIT) continue;
-        }
-
-        commitPart();
-        tn = document.createTextNode(w.replace(/^\s+/, ''));
-        partLi.appendChild(tn);
-      }
-    }
-
-    function splitElementWords(el) {
-      const shell = el.cloneNode(false);
-      partLi.appendChild(shell);
-      if (el.childNodes.length === 1 && el.firstChild.nodeType === Node.TEXT_NODE) {
-        const words = el.firstChild.textContent.split(/(\s+)/);
-        let tn = document.createTextNode('');
-        shell.appendChild(tn);
-        for (const w of words) {
-          const prev = tn.textContent;
-          tn.textContent = prev + w;
-          if (h() <= FIT) continue;
-
-          if (!prev.trim()) {
-            commitPart();
-            const nextShell = el.cloneNode(false);
-            partLi.appendChild(nextShell);
-            tn = document.createTextNode(w.replace(/^\s+/, ''));
-            nextShell.appendChild(tn);
-            continue;
-          }
-
-          tn.textContent = prev;
-          if (partList.offsetHeight < ORPHAN_MIN) {
-            mContent.removeChild(partList);
-            newPage();
-            continuation = true;
-            ({ list: partList, newLi: partLi } = startPart());
-            const nextShell = el.cloneNode(false);
-            partLi.appendChild(nextShell);
-            tn = document.createTextNode('');
-            nextShell.appendChild(tn);
-            tn.textContent = prev + w;
-            if (h() <= FIT) continue;
-          }
-
-          commitPart();
-          const nextShell = el.cloneNode(false);
-          partLi.appendChild(nextShell);
-          tn = document.createTextNode(w.replace(/^\s+/, ''));
-          nextShell.appendChild(tn);
-        }
-        return;
-      }
-      shell.appendChild(el.cloneNode(true));
-    }
-
-    let partList;
-    let partLi;
-
-    function commitPart() {
-      cur.push(partList);
-      newPage();
-      continuation = true;
-      ({ list: partList, newLi: partLi } = startPart());
-    }
-
-    ({ list: partList, newLi: partLi } = startPart());
-    const kids = Array.from(li.cloneNode(true).childNodes);
-
-    for (const kid of kids) {
-      partLi.appendChild(kid.cloneNode(true));
-      if (h() <= FIT) continue;
-
-      partLi.removeChild(partLi.lastChild);
-
-      if (kid.nodeType === Node.TEXT_NODE) {
-        appendWords(partLi, kid.textContent);
-      } else if (partLi.childNodes.length === 0) {
-        splitElementWords(kid);
-        if (h() > FIT) {
-          partLi.lastChild.remove();
-          commitPart();
-          partLi.appendChild(kid.cloneNode(true));
-        }
-      } else {
-        commitPart();
-        partLi.appendChild(kid.cloneNode(true));
-        if (h() > FIT) {
-          partLi.removeChild(partLi.lastChild);
-          splitElementWords(kid);
-        }
-      }
-    }
-
-    cur.push(partList);
-  }
-
-  function placeList(listEl) {
-    const tag = listEl.tagName;
-    const items = Array.from(listEl.children).filter(c => c.tagName === 'LI');
-    if (!items.length) return;
-
-    const makeSubList = (lis, olStart) => {
-      const list = document.createElement(tag.toLowerCase());
-      list.className = listEl.className;
-      if (tag === 'OL' && olStart > 1) list.start = olStart;
-      lis.forEach(li => list.appendChild(li.cloneNode(true)));
-      return list;
-    };
-
-    let start = 0;
-
-    while (start < items.length) {
-      let end = start;
-      let sub = makeSubList([], tag === 'OL' ? start + 1 : 1);
-      mContent.appendChild(sub);
-
-      while (end < items.length) {
-        const next = makeSubList(items.slice(start, end + 1), tag === 'OL' ? start + 1 : 1);
-        mContent.removeChild(sub);
-        mContent.appendChild(next);
-        if (h() <= FIT) {
-          sub = next;
-          end++;
-        } else {
-          mContent.removeChild(next);
-          mContent.appendChild(sub);
-          break;
-        }
-      }
-
-      if (end === start) {
-        mContent.removeChild(sub);
-        const olStart = tag === 'OL' ? start + 1 : 1;
-        if (cur.length > 0) {
-          newPage();
-          const single = makeSubList([items[start]], olStart);
-          mContent.appendChild(single);
-          if (h() <= FIT) {
-            cur.push(single);
-            start++;
-            while (start < items.length) {
-              single.appendChild(items[start].cloneNode(true));
-              if (h() <= FIT) {
-                start++;
-              } else {
-                single.removeChild(single.lastChild);
-                break;
-              }
-            }
-            if (start < items.length) newPage();
-            continue;
-          }
-          mContent.removeChild(single);
-        }
-        splitListItemAcrossPages(listEl, items[start], olStart);
-        start++;
-        continue;
-      }
-
-      cur.push(sub);
-      start = end;
-      if (start < items.length) newPage();
-    }
-  }
-
-  function isFigureBlock(el) {
-    if (!el || el.nodeType !== 1) return false;
-    if (el.classList.contains('md-figure-frame') || el.classList.contains('md-figure-group')) return true;
-    if (el.tagName === 'P' && el.classList.contains('md-figure')) return true;
-    if (el.tagName === 'UL' || el.tagName === 'OL') {
-      const items = el.querySelectorAll(':scope > li');
-      return items.length === 1 && items[0].classList.contains('li-figure');
-    }
-    return false;
-  }
-
-  function isLargeBlock(el) {
-    return isFigureBlock(el) || (el && el.tagName === 'TABLE');
-  }
-
-  function wouldFitIfAppended(...elements) {
-    const clones = elements.map(el => el.cloneNode(true));
-    clones.forEach(c => mContent.appendChild(c));
-    const fits = h() <= FIT;
-    clones.forEach(c => mContent.removeChild(c));
-    return fits;
-  }
-
-  function startNewPageWithOrphanFix() {
-    if (cur.length > 1 && isHeadingEl(cur[cur.length - 1])) {
-      const orphanHeading = cur.pop();
-      delete orphanHeading.dataset.pageBreakBefore;
-      orphanHeading.dataset.orphanMoved = 'true';
-      if (mContent.contains(orphanHeading)) mContent.removeChild(orphanHeading);
-      newPage();
-      cur.push(orphanHeading);
-      mContent.appendChild(orphanHeading);
-      return;
-    }
-    newPage();
-  }
-
-  function placeFigureIfNeeded(el) {
-    if (!isFigureBlock(el)) return false;
-    mContent.appendChild(el);
-    const fits = h() <= FIT;
-    mContent.removeChild(el);
-    return !fits;
-  }
-
-  function place(el, nextEl, depth = 0) {
-    if (depth > blocks.length + 200) {
-      console.error('computePages: yerleştirme sınırı aşıldı', el);
-      cur.push(el);
-      return;
-    }
-    if (el.tagName === 'TABLE') { placeTable(el); return; }
-    if (el.tagName === 'UL' || el.tagName === 'OL') { placeList(el); return; }
-    if (el.dataset && el.dataset.pageBreakBefore === 'true' && cur.length > 0) {
-      newPage();
-    }
-
-    // Başlık + sonraki blok birlikte sığmıyorsa ikisini sonraki sayfada tut
-    if (isHeadingEl(el) && nextEl && cur.length > 0 && !wouldFitIfAppended(el, nextEl)) {
-      newPage();
-    }
-
-    if (placeFigureIfNeeded(el) && cur.length > 0) {
-      startNewPageWithOrphanFix();
-    }
-
-    mContent.appendChild(el);
-    if (h() <= FIT) {
-      if (isHeadingEl(el) && cur.length > 0) {
-        const remaining = FIT - h();
-        if (nextEl && isLargeBlock(nextEl) && !wouldFitIfAppended(nextEl)) {
-          mContent.removeChild(el);
-          newPage();
-          place(el, nextEl, depth + 1);
-          return;
-        }
-        if (remaining < ORPHAN_MIN) {
-          mContent.removeChild(el);
-          newPage();
-          place(el, nextEl, depth + 1);
-          return;
-        }
-      }
-      cur.push(el);
-      return;
-    }
-    if (cur.length === 0) {
-      mContent.removeChild(el);
-      mContent.innerHTML = '';
-      splitAndPush(el);
-      return;
-    }
-    mContent.removeChild(el);
-    newPage();
-    place(el, nextEl, depth + 1);
-  }
-
-  for (let i = 0; i < blocks.length; i++) {
-    place(blocks[i], blocks[i + 1]);
-  }
-
-  document.body.removeChild(measure);
-
-  return normalizePageStarts(fixOrphanHeadingPages(pages.filter(p => p.length)));
-}
-
-function fixOrphanHeadingPages(pages) {
-  for (let i = 0; i < pages.length - 1; i++) {
-    const page = pages[i];
-    while (page.length > 0 && isHeadingEl(page[page.length - 1])) {
-      const heading = page.pop();
-      delete heading.dataset.pageBreakBefore;
-      heading.dataset.orphanMoved = 'true';
-      pages[i + 1].unshift(heading);
-    }
-  }
-  return pages.filter(p => p.length);
-}
-
-function normalizePageStarts(pages) {
-  for (const page of pages) {
-    while (page.length && page[0].classList && page[0].classList.contains('md-hr')) {
-      page.shift();
-    }
-    if (page.length && page[0].dataset) {
-      delete page[0].dataset.pageBreakBefore;
-    }
-  }
-  return pages;
-}
-
-/* ── Sayfa dizilerini gerçek A4 sayfalarına dönüştürür (antet + numara) ── */
-function renderPages(pages, container, startNumber, modelName) {
-  let n = startNumber;
-  for (const pageBlocks of pages) {
-    if (!pageBlocks.length) continue;
-
-    const page = document.createElement('div');
-    page.className = 'a4-page';
-    page.id = 'a4-page-' + n;
-
-    const _brand = (typeof HEADER_BRANDS !== 'undefined' && HEADER_BRANDS[currentFirma])
-      ? HEADER_BRANDS[currentFirma] : { color: '#ff0000' };
-    page.style.setProperty('--brand-color', _brand.color);
-
-    if (currentFirma && typeof buildHeader === 'function') {
-      page.appendChild(buildHeader(currentFirma, modelName));
-    }
-
-    const footerLine = document.createElement('div');
-    footerLine.className = 'ph-footer-line';
-    page.appendChild(footerLine);
-
-    const content = document.createElement('div');
-    content.className = 'page-content';
-    for (const el of pageBlocks) content.appendChild(el);
-    page.appendChild(content);
-
-    const num = document.createElement('div');
-    num.className = 'page-number';
-    num.textContent = n++;
-    page.appendChild(num);
-
-    const cnkFooter = document.createElement('div');
-    cnkFooter.className = 'ph-footer';
-    cnkFooter.textContent = getFirmaFooter(currentFirma);
-    page.appendChild(cnkFooter);
-
-    container.appendChild(page);
-  }
-}
-
-/* Hedef elementi görünür alana kaydırır */
-function scrollToPage(el) {
+/* Hedef elementi görünür alana kaydırır (PDF'te tüm A4 sayfası ortalanır). */
+function scrollToPage(el, opts = {}) {
   const area = document.querySelector('.content-area');
   if (!el || !area) return;
 
-  if (viewMode === 'html') {
-    const areaRect = area.getBoundingClientRect();
+  const areaRect = area.getBoundingClientRect();
+  const page = viewMode === 'pdf' && !opts.exact ? el.closest('.a4-page') : null;
+
+  let targetScroll;
+  if (!page) {
     const elRect = el.getBoundingClientRect();
-    const top = elRect.top - areaRect.top + area.scrollTop - 24;
-    area.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+    targetScroll = elRect.top - areaRect.top + area.scrollTop - (opts.center ? area.clientHeight / 3 : 24);
+  } else {
+    const pageRect = page.getBoundingClientRect();
+    const pageTopInArea = pageRect.top - areaRect.top + area.scrollTop;
+    targetScroll = pageRect.height <= area.clientHeight
+      ? pageTopInArea - (area.clientHeight - pageRect.height) / 2
+      : pageTopInArea;
+  }
+  area.scrollTo({ top: Math.max(0, targetScroll), behavior: opts.instant ? 'auto' : 'smooth' });
+  if (opts.flash) flashElement(el);
+}
+
+function flashElement(el) {
+  el.classList.remove('dx-flash');
+  void el.offsetWidth;
+  el.classList.add('dx-flash');
+  setTimeout(() => el.classList.remove('dx-flash'), 1600);
+}
+
+/* ── Belge içi bağlantılar + Alt+tık ile kaynağa atlama ── */
+function onDocumentClick(evt) {
+  const container = document.getElementById('pagesContainer');
+  if (!container || !container.contains(evt.target)) return;
+
+  if (evt.altKey && evt.shiftKey) {
+    // Alt+Shift+tık görselde → işaret düzenleyici; metinde → uygulama içi düzenleyici
+    const img = evt.target.closest('.md-figure-cell img.md-img');
+    if (img) {
+      evt.preventDefault();
+      openMarkEditor(img.getAttribute('src'));
+      return;
+    }
+    const srcEl = evt.target.closest('[data-src]');
+    if (!srcEl) return;
+    evt.preventDefault();
+    const lineEl = evt.target.closest('[data-line]') || srcEl;
+    openEditor(srcEl.dataset.src, lineEl.dataset.line);
     return;
   }
 
-  const page = el.closest('.a4-page');
-  if (!page) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
-
-  const areaRect = area.getBoundingClientRect();
-  const pageRect = page.getBoundingClientRect();
-  const pageTopInArea = pageRect.top - areaRect.top + area.scrollTop;
-
-  let targetScroll;
-  if (page.offsetHeight <= area.clientHeight) {
-    targetScroll = pageTopInArea - (area.clientHeight - page.offsetHeight) / 2;
-  } else {
-    targetScroll = pageTopInArea;
-  }
-  area.scrollTo({ top: Math.max(0, targetScroll), behavior: 'smooth' });
-}
-
-/* ── Markdown → blok elemanları ── */
-function mdToBlocks(md) {
-  const lines = String(md || '')
-    .replace(/^\uFEFF/, '')
-    .replace(/<!--[\s\S]*?-->/g, '')
-    .replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
-  const blocks = [];
-  let i = 0;
-
-  const flushList = (items, ordered) => {
-    const list = document.createElement(ordered ? 'ol' : 'ul');
-    list.className = 'md-list';
-    for (const it of items) {
-      const li = document.createElement('li');
-      li.innerHTML = inline(it);
-      list.appendChild(li);
+  if (evt.altKey) {
+    // DATA'dan gelen değer / tablo satırı → DATA dosyasında ilgili satır
+    const dataEl = evt.target.closest('[data-dline]');
+    if (dataEl && currentData && currentData.file) {
+      evt.preventDefault();
+      openSourceFile(currentData.file, dataEl.dataset.dline);
+      return;
     }
-    blocks.push(list);
-    markFigureListItems(list);
-  };
-
-  while (i < lines.length) {
-    let line = lines[i];
-
-    if (!line.trim()) { i++; continue; }
-
-    // Fenced code block
-    if (/^```/.test(line.trim())) {
-      const buf = [];
-      i++;
-      while (i < lines.length && !/^```/.test(lines[i].trim())) {
-        buf.push(lines[i]);
-        i++;
-      }
-      i++;
-      const pre = document.createElement('pre');
-      pre.className = 'md-code';
-      const code = document.createElement('code');
-      code.textContent = buf.join('\n');
-      pre.appendChild(code);
-      blocks.push(pre);
-      continue;
-    }
-
-    // Heading
-    const hm = line.match(/^(#{1,6})\s+(.*)$/);
-    if (hm) {
-      const lvl = hm[1].length;
-      const el = document.createElement('h' + lvl);
-      el.className = 'md-h md-h' + lvl;
-      el.innerHTML = inline(hm[2].trim());
-      blocks.push(el);
-      i++;
-      continue;
-    }
-
-    // Horizontal rule
-    if (/^(\*\s*){3,}$|^(-\s*){3,}$|^(_\s*){3,}$/.test(line.trim())) {
-      const hr = document.createElement('hr');
-      hr.className = 'md-hr';
-      blocks.push(hr);
-      i++;
-      continue;
-    }
-
-    // Blockquote
-    if (/^>\s?/.test(line)) {
-      const buf = [];
-      while (i < lines.length && /^>\s?/.test(lines[i])) {
-        buf.push(lines[i].replace(/^>\s?/, ''));
-        i++;
-      }
-      const bq = document.createElement('blockquote');
-      bq.className = 'md-quote';
-      bq.innerHTML = inline(buf.join(' '));
-      blocks.push(bq);
-      continue;
-    }
-
-    // Table
-    if (line.includes('|') && i + 1 < lines.length && /^\s*\|?[\s:|-]+\|?\s*$/.test(lines[i + 1]) && lines[i + 1].includes('-')) {
-      const header = splitRow(line);
-      i += 2;
-      const rows = [];
-      while (i < lines.length && lines[i].includes('|') && lines[i].trim()) {
-        rows.push(splitRow(lines[i]));
-        i++;
-      }
-      const table = document.createElement('table');
-      table.className = 'md-table';
-      const thead = document.createElement('thead');
-      const htr = document.createElement('tr');
-      for (let ci = 0; ci < header.length; ci++) {
-        const th = document.createElement('th');
-        th.innerHTML = inline(header[ci]);
-        htr.appendChild(th);
-      }
-      thead.appendChild(htr);
-      table.appendChild(thead);
-      const tbody = document.createElement('tbody');
-      for (const r of rows) {
-        const tr = document.createElement('tr');
-        for (let ci = 0; ci < r.length; ci++) {
-          const td = document.createElement('td');
-          td.innerHTML = inline(r[ci]);
-          tr.appendChild(td);
-        }
-        tbody.appendChild(tr);
-      }
-      table.appendChild(tbody);
-      blocks.push(table);
-      continue;
-    }
-
-    // Unordered list
-    if (/^\s*[-*+]\s+/.test(line)) {
-      const items = [];
-      while (i < lines.length && /^\s*[-*+]\s+/.test(lines[i])) {
-        items.push(lines[i].replace(/^\s*[-*+]\s+/, ''));
-        i++;
-      }
-      flushList(items, false);
-      continue;
-    }
-
-    // Ordered list
-    if (/^\s*\d+[.)]\s+/.test(line)) {
-      const items = [];
-      while (i < lines.length && /^\s*\d+[.)]\s+/.test(lines[i])) {
-        items.push(lines[i].replace(/^\s*\d+[.)]\s+/, ''));
-        i++;
-      }
-      flushList(items, true);
-      continue;
-    }
-
-    // Paragraph (accumulate until blank line or block start)
-    const buf = [line];
-    i++;
-    while (
-      i < lines.length &&
-      lines[i].trim() &&
-      !/^(#{1,6})\s+/.test(lines[i]) &&
-      !/^\s*[-*+]\s+/.test(lines[i]) &&
-      !/^\s*\d+[.)]\s+/.test(lines[i]) &&
-      !/^>\s?/.test(lines[i]) &&
-      !/^```/.test(lines[i].trim())
-    ) {
-      buf.push(lines[i]);
-      i++;
-    }
-    const p = document.createElement('p');
-    p.className = 'md-p';
-    const html = inline(buf.join(' '));
-    p.innerHTML = html;
-    markFigureParagraph(p);
-    blocks.push(p);
+    const srcEl = evt.target.closest('[data-src]');
+    if (!srcEl) return;
+    evt.preventDefault();
+    const lineEl = evt.target.closest('[data-line]') || srcEl;
+    openSourceFile(srcEl.dataset.src, lineEl.dataset.line);
+    return;
   }
 
-  return blocks;
-}
+  const a = evt.target.closest('a');
+  if (!a || !container.contains(a)) return;
+  evt.preventDefault();
 
-function markFigureParagraph(p) {
-  if (!p.querySelector(':scope > img.md-img')) return;
-  const clone = p.cloneNode(true);
-  clone.querySelectorAll('img.md-img, br').forEach(el => el.remove());
-  if (!clone.textContent.trim()) p.classList.add('md-figure');
-}
-
-function markFigureListItems(list) {
-  list.querySelectorAll(':scope > li').forEach(li => {
-    if (!li.querySelector(':scope > img.md-img')) return;
-    const clone = li.cloneNode(true);
-    clone.querySelectorAll('img.md-img, br').forEach(el => el.remove());
-    if (!clone.textContent.trim()) li.classList.add('li-figure');
-  });
-}
-
-function isStandaloneFigure(el) {
-  if (el.tagName === 'P' && el.classList.contains('md-figure')) return true;
-  if (el.tagName === 'UL' || el.tagName === 'OL') {
-    const items = el.querySelectorAll(':scope > li');
-    return items.length === 1 && items[0].classList.contains('li-figure');
+  if (a.dataset.goto) {
+    let target = null;
+    try { target = container.querySelector(a.dataset.goto); } catch (e) { target = null; }
+    if (target) scrollToPage(target);
+    return;
   }
-  return false;
+  const href = a.getAttribute('href') || '';
+  if (/^(https?:|mailto:)/i.test(href)) window.open(href);
 }
 
-function extractFigureImage(el) {
-  if (el.tagName === 'P') return el.querySelector(':scope > img.md-img');
-  if (el.tagName === 'UL' || el.tagName === 'OL') {
-    return el.querySelector(':scope > li.li-figure img.md-img');
-  }
-  return null;
+async function openSourceFile(rel, line) {
+  if (!rel) return;
+  const r = await window.electronAPI.openSource(rel, line);
+  if (!r || !r.ok) showToast('Kaynak açılamadı: ' + ((r && r.error) || rel), 'error');
 }
 
-function normalizeHtmlFigureBlocks(blocks) {
-  const out = [];
-  for (const b of blocks) {
-    if (b.tagName === 'P' && b.classList.contains('md-figure')) {
-      const imgs = b.querySelectorAll(':scope > img.md-img');
-      if (imgs.length > 1) {
-        imgs.forEach(img => {
-          const p = document.createElement('p');
-          p.className = 'md-p md-figure';
-          p.appendChild(img.cloneNode(true));
-          out.push(p);
-        });
-        continue;
-      }
-    }
-    out.push(b);
-  }
-  return out;
-}
-
-function tagFigureImage(img) {
-  const src = img.getAttribute('src') || '';
-  if (/\.svg(\?|#|$)/i.test(src)) img.classList.add('md-img-vector');
-}
-
-function figureBlockToCell(el, fitMode) {
-  const cell = document.createElement('div');
-  cell.className = 'md-figure-cell' + (fitMode ? ' md-figure-cell--' + fitMode : '');
-  const img = extractFigureImage(el);
-  if (img) {
-    const clone = img.cloneNode(true);
-    tagFigureImage(clone);
-    cell.appendChild(clone);
-  }
-  return cell;
-}
-
-function groupHtmlFigureBlocks(blocks) {
-  const out = [];
-  let i = 0;
-
-  while (i < blocks.length) {
-    if (!isStandaloneFigure(blocks[i])) {
-      out.push(blocks[i]);
-      i++;
-      continue;
-    }
-
-    const run = [blocks[i]];
-    i++;
-    while (i < blocks.length && isStandaloneFigure(blocks[i])) {
-      run.push(blocks[i]);
-      i++;
-    }
-
-    if (run.length === 1) {
-      const frame = document.createElement('div');
-      frame.className = 'md-figure-frame md-figure-layout-single';
-      frame.appendChild(figureBlockToCell(run[0]));
-      out.push(frame);
-      continue;
-    }
-
-    const group = document.createElement('div');
-    group.className = run.length <= 4
-      ? 'md-figure-group md-figure-group--' + run.length
-      : 'md-figure-group md-figure-group--multi';
-    group.dataset.figureCount = String(run.length);
-    run.forEach(el => group.appendChild(figureBlockToCell(el, 'cover')));
-    out.push(group);
-  }
-
-  return out;
-}
-
-function applyHtmlFigureLayout(blocks) {
-  return groupHtmlFigureBlocks(normalizeHtmlFigureBlocks(blocks));
-}
-
-function prepareFigureBlocks(blocks) {
-  const layoutBlocks = applyHtmlFigureLayout(blocks);
-  const prep = document.createElement('div');
-  prep.className = 'a4-page measure';
-  const content = document.createElement('div');
-  content.className = 'page-content';
-  prep.appendChild(content);
-  document.body.appendChild(prep);
-  for (const b of layoutBlocks) content.appendChild(b);
-  applyHtmlFigureSmartFit(content);
-  const out = Array.from(content.childNodes);
-  document.body.removeChild(prep);
-  return out;
-}
-
-function applyHtmlFigureSmartFit(root) {
-  if (!root) return;
-
-  root.querySelectorAll('.md-figure-layout-single .md-figure-cell').forEach(cell => {
-    cell.classList.remove('md-figure-cell--contain', 'md-figure-cell--cover');
-    if (!cell.querySelector('img.md-img')) return;
-    cell.classList.add('md-figure-cell--contain');
-  });
-}
-
-function splitRow(line) {
-  let s = line.trim();
-  if (s.startsWith('|')) s = s.slice(1);
-  if (s.endsWith('|')) s = s.slice(0, -1);
-  return s.split('|').map(c => c.trim());
-}
-
-/* ── Görsel yolu çözümleme ──────────────────────────────────────────
-   Kural (tek ve öngörülebilir):
-   - Paylaşılan görseller (assets/labels/…, assets/logos/…) → kök assets/
-   - Diğer her şey → o kılavuzun KENDİ klasörü (projects/<id>/assets/…)
-   md dosyaları kaç ../ yazarsa yazsın (../assets, ../../assets) fark etmez;
-   yol içindeki "assets/…" parçası baz alınır. Tarayıcı tabanı codes/. */
-const SHARED_ASSET_RE = /^(labels|logos)\//i;
-
-function resolveImageSrc(src) {
-  if (!src || /^data:/i.test(src) || /^https?:/i.test(src)) return src;
-
-  let s = String(src).replace(/\\/g, '/');
-  if (s.startsWith('/')) return s;
-
-  const m = s.match(/(?:^|\/)assets\/(.+)$/);
-  if (!m) return s;
-
-  const sub = m[1];
-  if (SHARED_ASSET_RE.test(sub) || !currentProjectRel) {
-    return '../assets/' + sub;
-  }
-  return '../' + currentProjectRel + '/assets/' + sub;
-}
-
-/* ── Satır içi markdown ── */
-function inline(text) {
-  let s = escapeHtml(text);
-  s = s.replace(/`([^`]+)`/g, '<code class="md-inline-code">$1</code>');
-  s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-  s = s.replace(/__([^_]+)__/g, '<strong>$1</strong>');
-  s = s.replace(/(^|[^*])\*([^*]+)\*/g, '$1<em>$2</em>');
-  s = s.replace(/(^|[^_])_([^_]+)_/g, '$1<em>$2</em>');
-  s = s.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_, alt, src) =>
-    `<img class="md-img" src="${resolveImageSrc(src)}" alt="${alt}" />`);
-  s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
-  return s;
-}
-
-function escapeHtml(str) {
-  return String(str)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
-}
-
-/* ── Dil / PDF / Toast ── */
+/* ── Dil ── */
 /* Guide'ın mevcut dillerine göre butonları etkinleştirir/pasifleştirir. */
 function syncLangButtons(diller, activeLang) {
   currentDiller = Array.isArray(diller) && diller.length ? diller.map(s => s.toLowerCase()) : ['tr'];
@@ -1476,6 +346,7 @@ function syncLangButtons(diller, activeLang) {
     btn.disabled = !available;
     btn.title = available ? btn.title.replace(/ \(dil yok\)$/, '') : `${l.toUpperCase()} (dil yok)`;
   });
+  syncCompareLangSelect();
 }
 
 async function setLanguage(lang) {
@@ -1486,68 +357,11 @@ async function setLanguage(lang) {
   }
   if (lang === currentLang) return;
   currentLang = lang;
+  if (currentGuideId) prefSet('lang.' + currentGuideId, lang);
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
   if (currentGuideId) await onModelChange(currentGuideId);
-}
-
-async function exportPDF() {
-  if (!currentModel) {
-    showToast('Önce bir model seçin', 'error');
-    return;
-  }
-  const prevMode = viewMode;
-  if (prevMode === 'html') {
-    await setViewMode('pdf');
-    await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
-  }
-  const result = await window.electronAPI.printPdf();
-  if (prevMode === 'html') await setViewMode('html');
-  if (result.success) {
-    showToast('PDF kaydedildi', 'success');
-  } else {
-    showToast('PDF kaydedilemedi', 'error');
-  }
-}
-
-function buildExportHtmlBody() {
-  const doc = document.querySelector('.html-document.html-unified');
-  return doc ? doc.outerHTML : null;
-}
-
-async function exportHtml() {
-  if (!currentModel) {
-    showToast('Önce bir model seçin', 'error');
-    return;
-  }
-
-  const prevMode = viewMode;
-  if (prevMode === 'pdf') {
-    await setViewMode('html');
-    await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
-  }
-
-  const bodyHtml = buildExportHtmlBody();
-  if (!bodyHtml) {
-    showToast('HTML içeriği bulunamadı', 'error');
-    if (prevMode === 'pdf') await setViewMode('pdf');
-    return;
-  }
-
-  showToast('HTML oluşturuluyor…', 'success');
-  const title = coverDocumentTitle(currentCoverName || currentModel, currentLang, { series: currentCoverSeries });
-  const result = await window.electronAPI.exportHtml({ model: currentModel, bodyHtml, title });
-
-  if (prevMode === 'pdf') await setViewMode('pdf');
-
-  if (result.success) {
-    showToast('HTML kaydedildi', 'success');
-  } else if (result.error) {
-    showToast('HTML kaydedilemedi: ' + result.error, 'error');
-  } else {
-    showToast('HTML kaydedilemedi', 'error');
-  }
 }
 
 function showToast(msg, type = 'success') {
@@ -1562,6 +376,7 @@ function showToast(msg, type = 'success') {
   setTimeout(() => toast.remove(), 3000);
 }
 
+/* ── Zoom ── */
 const ZOOM_MIN = 50;
 const ZOOM_MAX = 200;
 const ZOOM_STEP = 10;
@@ -1572,10 +387,12 @@ function applyZoom() {
   if (container) container.style.zoom = zoomLevel / 100;
   const label = document.getElementById('zoomLabel');
   if (label) label.textContent = `${zoomLevel}%`;
+  document.dispatchEvent(new CustomEvent('zoom-changed'));
 }
 
 function setZoom(level) {
   zoomLevel = Math.min(ZOOM_MAX, Math.max(ZOOM_MIN, level));
+  prefSet('zoom', zoomLevel);
   applyZoom();
 }
 
@@ -1608,7 +425,8 @@ function handleWheelZoom(e) {
   });
 }
 
-async function populateGuides(guides) {
+/* ── Kılavuz listesi ── */
+async function populateGuides(guides, opts = {}) {
   const sel = document.getElementById('modelSelect');
   if (!sel || !Array.isArray(guides)) return;
 
@@ -1617,40 +435,31 @@ async function populateGuides(guides) {
   const models = guides.filter(g => g.type === 'model');
   const projects = guides.filter(g => g.type === 'project');
 
-  if (models.length) {
+  const addGroup = (label, list) => {
+    if (!list.length) return;
     const grp = document.createElement('optgroup');
-    grp.label = 'Modeller';
-    for (const g of models) {
+    grp.label = label;
+    for (const g of list) {
       const opt = document.createElement('option');
       opt.value = g.id;
       opt.textContent = g.label;
       grp.appendChild(opt);
     }
     sel.appendChild(grp);
-  }
+  };
+  addGroup('Modeller', models);
+  addGroup('Projeler', projects);
 
-  let firstProject = '';
-  if (projects.length) {
-    const grp = document.createElement('optgroup');
-    grp.label = 'Projeler';
-    for (const g of projects) {
-      const opt = document.createElement('option');
-      opt.value = g.id;
-      opt.textContent = g.label;
-      grp.appendChild(opt);
-      if (!firstProject) firstProject = g.id;
-    }
-    sel.appendChild(grp);
-  }
-
-  const preferred = firstProject || (models[0] && models[0].id) || '';
-  if (preferred && sel.value !== preferred) {
+  if (opts.select === false) return;
+  const remembered = prefGet('lastGuide', '');
+  const exists = (id) => guides.some(g => g.id === id);
+  const preferred = (remembered && exists(remembered) && remembered) ||
+    (projects[0] && projects[0].id) || (models[0] && models[0].id) || '';
+  if (preferred) {
     sel.value = preferred;
     await onModelChange(preferred);
   }
 }
-
-window.__populateGuides = populateGuides;
 
 async function loadModelSelect() {
   try {
@@ -1663,14 +472,60 @@ async function loadModelSelect() {
   }
 }
 
-function initApp() {
-  loadModelSelect();
+/* ── Başlatma ── */
+async function initApp() {
+  populateFirmaSelect();
+
+  zoomLevel = Number(prefGet('zoom', 100)) || 100;
   applyZoom();
+  const savedView = prefGet('view', 'pdf');
+  if (savedView !== 'pdf') {
+    viewMode = savedView === 'html' ? 'html' : 'pdf';
+    document.body.classList.toggle('view-html', viewMode === 'html');
+    document.body.classList.toggle('view-pdf', viewMode === 'pdf');
+    document.querySelectorAll('.view-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.view === viewMode));
+  }
+
   document.addEventListener('wheel', handleWheelZoom, { capture: true, passive: false });
+  document.addEventListener('click', onDocumentClick);
+  window.addEventListener('keydown', (e) => document.body.classList.toggle('alt-down', e.altKey));
+  window.addEventListener('keyup', (e) => document.body.classList.toggle('alt-down', e.altKey));
+  window.addEventListener('blur', () => document.body.classList.remove('alt-down'));
+
+  try {
+    const info = await window.electronAPI.appInfo();
+    if (info && info.assetBase) assetBase = info.assetBase;
+    if (info) {
+      document.querySelector('.app-title').textContent = `DocumentX ${info.version}`;
+      document.body.classList.toggle('app-packaged', !!info.packaged);
+    }
+  } catch (e) { /* geliştirme varsayılanı */ }
+  if (window.electronAPI.onUpdateStatus) window.electronAPI.onUpdateStatus(onUpdateStatus);
+
+  try {
+    const settings = await window.electronAPI.getSettings();
+    defaultPreparedBy = (settings && settings.hazirlayan) || '';
+  } catch (e) { /* varsayılan boş */ }
+
+  if (typeof initSidebar === 'function') initSidebar();
+  if (typeof initSearch === 'function') initSearch();
+  if (typeof initQc === 'function') initQc();
+  if (typeof initEditor === 'function') initEditor();
+  if (typeof initMarkEditor === 'function') initMarkEditor();
+
+  const cliJob = window.electronAPI?.getCliJob ? await window.electronAPI.getCliJob() : null;
+  if (cliJob) {
+    await runCliJob(cliJob);
+    return;
+  }
+
+  await loadModelSelect();
 
   if (window.electronAPI?.onContentChanged) {
     window.electronAPI.onContentChanged(({ paths }) => {
       if (!Array.isArray(paths) || !paths.length) return;
+      // Görsel değiştiyse önbellekteki sayfa ölçüleri geçersizdir.
+      if (paths.some(p => !/\.(md|ya?ml)$/i.test(p))) clearPaginationCache();
       if (contentChangeAffectsGuide(paths)) {
         reloadGuideFromDisk({ preserveScroll: true });
       }
@@ -1686,12 +541,27 @@ if (document.readyState === 'loading') {
   initApp();
 }
 
+/* ── Klavye kısayolları ── */
+function anyModalOpen() {
+  return [...document.querySelectorAll('.np-overlay')].some(o => o.style.display === 'flex');
+}
+
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && document.getElementById('npOverlay')?.style.display === 'flex') {
-    closeNewProject();
+  if (e.key === 'Escape') {
+    const open = [...document.querySelectorAll('.np-overlay')].find(o => o.style.display === 'flex');
+    if (open) { open.style.display = 'none'; return; }
+    if (typeof isEditorOpen === 'function' && isEditorOpen()) { closeEditor(); return; }
+    if (typeof closeSearch === 'function' && isSearchOpen()) { closeSearch(); return; }
+    closeExportMenu();
     return;
   }
-  if (!e.ctrlKey) return;
+  if (e.key === 'F3') {
+    e.preventDefault();
+    if (typeof searchStep === 'function') searchStep(e.shiftKey ? -1 : 1);
+    return;
+  }
+  if (!e.ctrlKey || anyModalOpen()) return;
+  const k = e.key.toLowerCase();
   if (e.key === '=' || e.key === '+') {
     e.preventDefault();
     zoomIn();
@@ -1701,8 +571,57 @@ document.addEventListener('keydown', (e) => {
   } else if (e.key === '0') {
     e.preventDefault();
     resetZoom();
+  } else if (k === 'f') {
+    e.preventDefault();
+    openSearch();
+  } else if (k === 'b') {
+    e.preventDefault();
+    toggleSidebar();
+  } else if (k === 'q' && e.shiftKey) {
+    e.preventDefault();
+    toggleQcPanel();
+  } else if (k === 'p') {
+    e.preventDefault();
+    exportPDF();
+  } else if (k === 'e') {
+    e.preventDefault();
+    openEditorForView();
   }
 });
+
+/* ══════════════ GÜNCELLEME / ÇALIŞMA KLASÖRÜ ══════════════ */
+function onUpdateStatus(s) {
+  const bar = document.getElementById('updateBar');
+  if (s.state === 'downloaded') {
+    bar.innerHTML = `DocumentX ${escapeHtml(s.version || '')} indirildi. <button onclick="window.electronAPI.installUpdate()">Yeniden başlat ve kur</button>`;
+    bar.classList.add('open');
+  } else if (s.state === 'progress') {
+    bar.textContent = `Güncelleme indiriliyor… %${s.percent}`;
+    bar.classList.add('open');
+  } else if (s.state === 'none' && checkingUpdates) {
+    showToast('DocumentX güncel', 'success');
+  } else if (s.state === 'error' && checkingUpdates) {
+    showToast('Güncelleme denetlenemedi: ' + (s.message || ''), 'error');
+  }
+  if (s.state !== 'available' && s.state !== 'progress') checkingUpdates = false;
+}
+
+let checkingUpdates = false;
+async function checkForUpdates() {
+  closeToolsMenu();
+  checkingUpdates = true;
+  const r = await window.electronAPI.checkUpdates();
+  if (!r || !r.ok) {
+    checkingUpdates = false;
+    showToast((r && r.error) || 'Güncelleme denetlenemedi', 'error');
+  }
+}
+
+async function chooseWorkspace() {
+  closeToolsMenu();
+  const r = await window.electronAPI.chooseWorkspace();
+  if (r && r.error) showToast(r.error, 'error');
+}
 
 /* ══════════════ YENİ PROJE ══════════════ */
 async function openNewProject() {
@@ -1760,7 +679,7 @@ async function submitNewProject() {
       return;
     }
     const guides = await window.electronAPI.listGuides();
-    await populateGuides(guides);
+    await populateGuides(guides, { select: false });
     const sel = document.getElementById('modelSelect');
     sel.value = r.id;
     await onModelChange(r.id);
@@ -1771,4 +690,163 @@ async function submitNewProject() {
     status.className = 'np-status err';
     go.disabled = false;
   }
+}
+
+/* ══════════════ BELGE AYARLARI ══════════════
+   Bu kılavuz: hazırlayan, çıktı seçenekleri, revizyon geçmişi → project.yaml
+   Tüm kılavuzlar: varsayılan hazırlayan → uygulama ayarları */
+let dsRevisions = [];
+let dsGitHead = '';
+
+async function fillChangeBaseSelect() {
+  const sel = document.getElementById('dsChangeBase');
+  const note = document.getElementById('dsChangeNote');
+  sel.innerHTML = '';
+  dsGitHead = '';
+  const r = window.electronAPI.gitLog ? await window.electronAPI.gitLog(currentGuideId) : null;
+  if (!r || !r.ok) {
+    sel.disabled = true;
+    document.getElementById('dsChanges').disabled = true;
+    note.textContent = 'git bulunamadı — değişiklik çubukları kullanılamaz.';
+    return;
+  }
+  dsGitHead = r.head || '';
+  sel.disabled = false;
+  document.getElementById('dsChanges').disabled = false;
+  const last = lastRevisionCommit();
+  const auto = document.createElement('option');
+  auto.value = '';
+  auto.textContent = last ? `Son revizyon kaydı (${last.slice(0, 7)})` : 'Taban seçilmedi';
+  sel.appendChild(auto);
+  r.commits.forEach(c => {
+    const o = document.createElement('option');
+    o.value = c.hash;
+    o.textContent = `${c.short} · ${fmtStamp(c.ts).slice(0, 10)} · ${c.subject}`.slice(0, 90);
+    sel.appendChild(o);
+  });
+  const chosen = currentOutput && currentOutput.degisiklik_tabani;
+  sel.value = chosen && r.commits.some(c => c.hash === chosen) ? chosen : '';
+  note.textContent = r.commits.length ? `${r.commits.length} commit bu projeye dokunuyor.` : 'Bu projede commit yok — yalnızca çalışma ağacı.';
+}
+
+async function suggestDsRevision() {
+  const ref = document.getElementById('dsChangeBase').value || lastRevisionCommit();
+  if (!ref) { document.getElementById('dsStatus').textContent = 'Önce bir taban sürüm seçin'; return; }
+  const changes = await fetchChangedLines(ref);
+  const text = changes ? suggestRevisionText(changes, currentLang) : '';
+  document.getElementById('dsStatus').textContent = text ? '' : 'Tabandan bu yana değişen bölüm yok';
+  if (text) document.getElementById('dsRevDesc').value = text;
+}
+
+function openDocSettings() {
+  if (!currentGuideId) { showToast('Önce bir kılavuz seçin', 'error'); return; }
+  document.getElementById('dsPreparedBy').value = currentPreparedBy;
+  document.getElementById('dsPreparedBy').placeholder = defaultPreparedBy || 'boş — kapakta satır gösterilmez';
+  document.getElementById('dsDefaultBy').value = defaultPreparedBy;
+  document.getElementById('dsFigNum').checked = outputOption('sekil_numara');
+  document.getElementById('dsRunning').checked = outputOption('bolum_basligi');
+  document.getElementById('dsBackCover').checked = outputOption('arka_kapak');
+  document.getElementById('dsIndex').checked = outputOption('dizin');
+  document.getElementById('dsChanges').checked = outputOption('degisiklik_cubugu');
+  document.getElementById('dsOptimize').checked = outputOption('gorsel_optimize');
+  document.getElementById('dsPdfa').checked = outputOption('pdfa');
+  document.getElementById('dsPaper').value = paperSize();
+  fillChangeBaseSelect();
+  document.getElementById('dsRevRev').value = currentRev;
+  document.getElementById('dsRevDate').value = currentDate || new Date().toISOString().slice(0, 10);
+  document.getElementById('dsRevDesc').value = '';
+  document.getElementById('dsStatus').textContent = '';
+  dsRevisions = currentRevisions.map(r => ({ ...r }));
+  renderDsRevisions();
+  document.getElementById('dsOverlay').style.display = 'flex';
+}
+
+function closeDocSettings() {
+  document.getElementById('dsOverlay').style.display = 'none';
+}
+
+function renderDsRevisions() {
+  const list = document.getElementById('dsRevList');
+  list.innerHTML = '';
+  if (!dsRevisions.length) {
+    list.innerHTML = '<div class="ds-empty">Revizyon kaydı yok — revizyon geçmişi sayfası basılmaz.</div>';
+    return;
+  }
+  dsRevisions.forEach((r, i) => {
+    const row = document.createElement('div');
+    row.className = 'ds-rev-row';
+    row.innerHTML = `<span class="ds-rev-no">Rev.${escapeHtml(r.rev || '—')}</span>` +
+      `<span class="ds-rev-date">${escapeHtml(formatCoverDate(r.tarih))}</span>` +
+      `<span class="ds-rev-desc">${escapeHtml(revisionText(r.aciklama, currentLang))}</span>`;
+    const del = document.createElement('button');
+    del.className = 'ds-rev-del';
+    del.title = 'Kaydı sil';
+    del.textContent = '✕';
+    del.onclick = () => { dsRevisions.splice(i, 1); renderDsRevisions(); };
+    row.appendChild(del);
+    list.appendChild(row);
+  });
+}
+
+function addDsRevision() {
+  const rev = document.getElementById('dsRevRev').value.trim();
+  const tarih = document.getElementById('dsRevDate').value;
+  const desc = document.getElementById('dsRevDesc').value.trim();
+  if (!rev || !desc) {
+    document.getElementById('dsStatus').textContent = 'Rev. ve açıklama gerekli';
+    return;
+  }
+  // O anki commit kaydedilir: sonraki revizyonda değişiklik çubuklarının tabanı olur.
+  dsRevisions.push({ rev, tarih, aciklama: { [currentLang]: desc }, ...(dsGitHead ? { commit: dsGitHead } : {}) });
+  document.getElementById('dsRevDesc').value = '';
+  document.getElementById('dsStatus').textContent = '';
+  renderDsRevisions();
+}
+
+async function saveDocSettings() {
+  const by = document.getElementById('dsPreparedBy').value.trim();
+  const defBy = document.getElementById('dsDefaultBy').value.trim();
+  const cikti = {
+    sekil_numara: document.getElementById('dsFigNum').checked,
+    bolum_basligi: document.getElementById('dsRunning').checked,
+    arka_kapak: document.getElementById('dsBackCover').checked,
+    dizin: document.getElementById('dsIndex').checked,
+    degisiklik_cubugu: document.getElementById('dsChanges').checked,
+    gorsel_optimize: document.getElementById('dsOptimize').checked,
+    pdfa: document.getElementById('dsPdfa').checked,
+    sayfa: document.getElementById('dsPaper').value,
+    degisiklik_tabani: document.getElementById('dsChangeBase').value || null
+  };
+  const revizyonlar = dsRevisions.map(r => {
+    const o = { rev: r.rev, tarih: r.tarih, aciklama: r.aciklama };
+    if (r.hazirlayan) o.hazirlayan = r.hazirlayan;
+    if (r.commit) o.commit = r.commit;
+    return o;
+  });
+
+  const status = document.getElementById('dsStatus');
+  status.textContent = 'Kaydediliyor…';
+
+  if (defBy !== defaultPreparedBy) {
+    const s = await window.electronAPI.setSettings({ hazirlayan: defBy });
+    if (s && s.ok) defaultPreparedBy = defBy;
+  }
+  const r = await window.electronAPI.saveGuideMeta(currentGuideId, {
+    kapak: { hazirlayan: by || null },
+    cikti,
+    revizyonlar: revizyonlar.length ? revizyonlar : null
+  });
+  if (!r || !r.ok) {
+    status.textContent = 'Kaydedilemedi: ' + ((r && r.error) || '');
+    return;
+  }
+  currentPreparedBy = by;
+  currentOutput = cikti;
+  applyPaperSize();
+  currentRevisions = revizyonlar;
+  closeDocSettings();
+  if (lastGuideCache) {
+    await renderGuide(lastGuideCache.modelName, lastGuideCache.tree, document.getElementById('pagesContainer'));
+  }
+  showToast('Belge ayarları kaydedildi', 'success');
 }

@@ -10,3 +10,6 @@ Thumbs.db
 .env
 scripts/.translation-state.json
 BACKUP/
+
+# Uygulama ciktilari (PDF / HTML / DOCX)
+exports/

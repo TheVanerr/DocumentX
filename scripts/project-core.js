@@ -7,7 +7,11 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const yaml = require(path.join(ROOT, 'codes', 'node_modules', 'js-yaml'));
+// Kurulu uygulamada (app.asar) js-yaml paketin node_modules'undan, geliştirmede codes/node_modules'tan
+const yaml = (() => {
+  try { return require('js-yaml'); }
+  catch (e) { return require(path.join(ROOT, 'codes', 'node_modules', 'js-yaml')); }
+})();
 
 const MODEL_IDS = ['kbn', 'knv', 'lym', 'mst', 'pyt', 'rts', 'ult', 'vdl'];
 

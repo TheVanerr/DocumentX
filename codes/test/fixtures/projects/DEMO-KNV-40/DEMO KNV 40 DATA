@@ -1,0 +1,9 @@
+# Test DATA dosyası (SSOT)
+
+[ELEKTRIK]
+Besleme gerilimi (V): 400
+Besleme frekansı (Hz): 50
+Ana şalter marka:
+
+[BASINCLI_HAVA]
+Çalışma basıncı (bar): 6

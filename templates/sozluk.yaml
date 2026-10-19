@@ -1,0 +1,46 @@
+# Terim sözlüğü — tüm kılavuzlarda ortak (DocumentX).
+# Projeye özel terimler: projects/<proje>/sozluk.yaml (aynı biçim; aynı TR terimi projede tanımlanırsa o geçerlidir).
+#
+#   tr / en / de : her dilde TEK tercih edilen terim
+#   yasak        : o dilde kullanılmaması gereken eş anlamlılar → kalite kontrol uyarır
+#   dizin: false : terimi dizine alma (varsayılan: alınır)
+#
+# Örnek:
+#   - tr: Ana şalter
+#     en: Main switch
+#     de: Hauptschalter
+#     yasak:
+#       tr: [ana anahtar, şebeke şalteri]
+#       en: [mains switch]
+
+terimler:
+  - tr: Ana şalter
+    en: Main switch
+    de: Hauptschalter
+  - tr: Acil durdurma butonu
+    en: Emergency stop button
+    de: Not-Halt-Taster
+  - tr: Kişisel koruyucu donanım
+    en: Personal protective equipment
+    de: Persönliche Schutzausrüstung
+  - tr: LOTO
+    en: LOTO
+    de: LOTO
+  - tr: Emniyet kapısı
+    en: Safety door
+    de: Schutztür
+  - tr: Kumanda paneli
+    en: Control panel
+    de: Bedienfeld
+  - tr: Konveyör
+    en: Conveyor
+    de: Förderband
+  - tr: Redüktör
+    en: Gearbox
+    de: Getriebe
+  - tr: Yağlama
+    en: Lubrication
+    de: Schmierung
+  - tr: Basınçlı hava
+    en: Compressed air
+    de: Druckluft
