@@ -1,0 +1,207 @@
+# =============================================================================
+# KBN 2B — MAKİNE VERİ DOSYASI (SSOT)
+# =============================================================================
+# Çift banyolu (yıkama + durulama) kabin tipi parça yıkama makinesi serisi — tüm varyantlar.
+# Kılavuz .md dosyaları değerleri {{BLOK:Anahtar}} ve {{TABLO:BLOK}} yer tutucularıyla buradan okur.
+# Doldurma: ':' sonrasına yaz. Bilinmiyorsa boş bırak (kılavuzda [EKSİK] görünür). Uydurma yapma.
+# Tablo bloklarında sütunlar '|' ile ayrılır; "# Her satır:" yorumu sütun başlıklarıdır.
+# Kaynak: Makinelerin Katalog Özellikleri — KBN2 Series sayfası ve KBN kodlama sistemi.
+# Son güncelleme: 2026-10-19
+# =============================================================================
+
+# =============================================================================
+# 0 — MAKİNE VE ÜRETİCİ BİLGİLERİ
+# =============================================================================
+
+[PROJE]
+Makine ticari adı: Kabin tipi endüstriyel parça yıkama makinesi
+Seri: KBN 2B
+Makine tipi: Çift banyolu (iki tanklı) kabin tipi parça yıkama ve kurutma makinesi
+Marka: DOLFIN
+Üretim yılı:
+Seri numarası:
+Tip etiketi konumu:
+
+[URETICI]
+Üretici firma adı: CNK ELEKTRONİK MAKİNE SANAYİ AŞ
+Fabrika adresi: 1.Organize Sanayi Bölgesi Prof. Orhan Işık Caddesi No:8
+İlçe: Sincan
+Şehir: Ankara
+Ülke: Türkiye
+Telefon: +90 312 267 30 15
+Fax: +90 312 267 30 11
+Web sitesi: https://dolfintr.com
+E-posta: dolfin@dolfintr.com
+Yetkili servis / teknik destek: CNK ELEKTRONİK MAKİNE SANAYİ AŞ — yukarıdaki iletişim kanalları
+
+[MODEL_VARYANTLARI]
+# Üretilen model kombinasyonları (✓ üretilir, – üretilmez). Gövde kodu sütun başlığıdır.
+# Her satır: Model grubu | 1350 | 1500 | 1650 | 1850 | 2050 | 2350
+KBN 2B OTO P DS: ✓ | ✓ | ✓ | ✓ | ✓ | ✓
+
+# =============================================================================
+# 03.3 — TEKNİK ÖZELLİKLER
+# =============================================================================
+
+[GENEL_TEKNIK]
+# Tüm KBN 2B modellerinde ortak değerler
+Fonksiyon tipi: OTO (otomatik yıkama, durulama ve kurutma)
+Kapak tipi: P (pnömatik kapak)
+Püskürtme tipi: DS (döner sepet)
+Yıkama ve durulama sıvısı sıcaklığı — maks. (°C): 85
+Yıkama süresi ayar aralığı (dk): 0 – 60
+Isıtma yöntemi: Elektrikli ısıtıcı (rezistans)
+Kurutma ünitesi ısıtıcı gücü (kW): 6
+Kurutma fanı motor gücü (kW): 0,75
+Buhar tahliye fanı motor gücü (kW): 0,37
+Besleme gerilimi ve frekansı: 380 V, 50 Hz, 3 faz
+Kumanda tipi: PLC
+Gösterge tipi: HMI (dokunmatik ekran)
+Taşıma arabası: Standart donanım
+
+[TEKNIK_OTO_P_DS]
+# Her satır: Özellik | 1350 | 1500 | 1650 | 1850 | 2050 | 2350
+Stok kodu: 02 02 02 02 | 02 02 02 01 | 02 02 02 03 | 02 02 02 05 | 02 02 02 06 01 | 02 02 02 04
+Dış ölçüler — elektrik panosu hariç (mm): 2600 × 1450 × 2520 | 2750 × 1600 × 2520 | 2950 × 1750 × 2520 | 3200 × 1950 × 2520 | 3500 × 2150 × 2520 | 3800 × 2450 × 2520
+Yıkama sepeti çapı (mm): 1200 | 1350 | 1500 | 1700 | 1900 | 2200
+Maks. parça yüksekliği (mm): 700 | 700 | 850 | 850 | 850 | 850
+Maks. yükleme ağırlığı (kg): 400 | 500 | 1000 | 1250 | 1250 | 1250
+1. tank (yıkama) kapasitesi (L): 150 | 200 | 350 | 350 | 350 | 450
+2. tank (durulama) kapasitesi (L): 150 | 200 | 350 | 350 | 350 | 450
+Yıkama pompası motor gücü (kW): 2,2 | 3 | 3 | 4 | 4 | 4
+Durulama pompası motor gücü (kW): 2,2 | 3 | 3 | 4 | 4 | 4
+Tankların toplam ısıtıcı gücü (kW): 16,5 | 16,5 | 33 | 33 | 33 | 48
+Döndürme motoru gücü (kW): 0,18 | 0,18 | 0,37 | 0,37 | 0,55 | 0,55
+Nominal güç (kW): 23,8 | 41 | 41 | 43 | 58 | 58
+
+[AGIRLIK]
+# Her satır: Özellik | 1350 | 1500 | 1650 | 1850 | 2050 | 2350
+Boş ağırlık — yaklaşık (kg):  |  |  |  |  |
+Ağırlık merkezi konumu:  |  |  |  |  |
+# 1650 sütunu: KBN 2B 1650 STEP modelinden (kapak tam açık)
+Kapak açıkken toplam yükseklik (mm):  |  | 3180 |  |  | 
+
+[ELEKTRIK]
+Besleme gerilimi (V): 380
+Besleme frekansı (Hz): 50
+Faz sayısı: 3
+Besleme bağlantı şekli (3P+PE / 3P+N+PE):
+Kumanda devresi gerilimi:
+Ana şalter tipi ve anma akımı:
+Önerilen besleme sigortası / devre kesici:
+Besleme kablosu kesiti:
+Elektrik panosu koruma sınıfı (IP):
+
+[TESISAT]
+Basınçlı hava basıncı (bar):
+Basınçlı hava bağlantısı:
+Basınçlı hava kalitesi: Filtrelenmiş, nemi alınmış
+Su dolum bağlantısı:
+Tank tahliye bağlantıları:
+Buhar tahliye (egzoz) bağlantı çapı (mm):
+
+[ORTAM_KOSULLARI]
+Kurulum yeri: Kapalı endüstriyel alan (iç mekân)
+Ortam sıcaklığı — çalışma (°C): +5 … +40
+Bağıl nem (%): 30 – 50
+Ses basınç seviyesi — operatör konumu (dB(A)): 72 – 78
+Ses ölçüm konumu: Makineden 1 m uzaklık, 1,6 m yükseklik
+
+# =============================================================================
+# 03.4 — KUMANDA (PLC / HMI)
+# =============================================================================
+
+[KONTROLLER]
+# Kaynak: KBN 2B 1650 STEP modeli (kumanda paneli)
+Kumanda paneli konumu: Makinenin sağ yanındaki elektrik panosunun öne (kapak tarafına) bakan yüzü
+Ana şalter konumu:
+Acil durdurma butonu sayısı: 1
+Acil durdurma butonu konumu: Kumanda paneli
+PLC marka / model:
+HMI marka / model:
+HMI ekran boyutu (inç):
+Kumanda paneli butonları ve lambaları (7 adet) işlevleri:
+Kapak açma / kapama kumandası:
+Programı başlatma kumandası:
+Programı durdurma kumandası:
+Alarm onaylama (reset) kumandası:
+Kayıtlı program (reçete) sayısı:
+HMI dil seçenekleri:
+Şifre seviyeleri:
+
+[TANK_UNITESI]
+# Kaynak: KBN 2B 1650 STEP modeli
+Tank ünitesinin konumu: Makinenin sol yanı
+1. tank (yıkama) konumu:
+2. tank (durulama) konumu:
+Tank başına süzgeç sepeti sayısı: 4
+Filtre gövdesi sayısı: 2
+Tank ünitesi altındaki pompanın işlevi:
+
+[PROGRAM]
+Durulama süresi ayar aralığı (dk):
+Kurutma süresi ayar aralığı (dk):
+Kurutma sıcaklığı ayar aralığı (°C):
+
+[GUVENLIK_DONANIMLARI]
+Kapak emniyet şalteri tipi / konumu:
+Tank seviye şalterleri tipi / konumu:
+Emniyet termostatı ayar değeri (°C):
+Motor koruma (termik) rölesi:
+
+# =============================================================================
+# 03.5 / 05 — YERLEŞİM VE KURULUM
+# =============================================================================
+
+[KURULUM]
+Makine çevresinde minimum boşluk (mm): 1000
+Zemin: Terazili, düz beton zemin
+Zemin taşıma kapasitesi (kg/m²):
+Seviye ayarı (ayak tipi):
+Minimum tavan yüksekliği (mm):
+
+# =============================================================================
+# 04 — TAŞIMA VE DEPOLAMA
+# =============================================================================
+
+[TASIMA]
+Taşıma yöntemi: Forklift
+Forklift çatal giriş yönü:
+Denge kontrolü kaldırma yüksekliği (cm): 10 – 15
+Taşıma sırasında maks. yükseklik (cm): 20
+Ambalaj tipi:
+
+[DEPOLAMA]
+Depolama sıcaklığı (°C): +5 … +40
+Uzun süreli depolama sınırı (ay): 6
+Uzun depolamada kapak aralığı (cm): 2 – 3
+
+# =============================================================================
+# 09 — BAKIM
+# =============================================================================
+
+[BAKIM]
+Redüktör yağı tipi ve miktarı:
+Redüktör yağ değişim periyodu:
+Yıkama sıvısı değişim periyodu — en geç: 1 ay
+Durulama sıvısı değişim periyodu — en geç: 1 ay
+Filtre elemanı tipi:
+Filtre elemanı değişim periyodu:
+
+# =============================================================================
+# 13 — DOKÜMANLAR
+# =============================================================================
+
+[DOKUMANLAR]
+AB Uygunluk Beyanı:
+Elektrik devre şeması:
+Pnömatik şema:
+PLC programı yedeği:
+HMI proje yedeği:
+Yerleşim (layout) resmi:
+Yedek parça listesi:
+Bileşen kullanım kılavuzları (pompa, motor, PLC, HMI):
+
+# =============================================================================
+# SON — DOSYA SONU
+# =============================================================================

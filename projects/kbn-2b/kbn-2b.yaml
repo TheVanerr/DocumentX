@@ -1,0 +1,14 @@
+# KBN 2B (cift banyolu) model sablonu — icerik yalnizca bu klasorden okunur.
+
+proje_adi: KBN 2B
+model: kbn-2b
+sablon: true
+tip: sablon
+diller:
+  - tr
+varsayilan_dil: tr
+extends: templates/base.yaml
+kapak:
+  rev: ''
+  tarih: ''
+  firma: DOLFIN

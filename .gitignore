@@ -13,3 +13,9 @@ BACKUP/
 
 # Uygulama ciktilari (PDF / HTML / DOCX)
 exports/
+
+# CAD modelleri (STEP) — GitHub 100 MB dosya sinirini asar
+*.step
+*.STEP
+*.stp
+*.STP
