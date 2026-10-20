@@ -23,7 +23,12 @@ Tablo: Temizlik planı
 | Günlük (vardiya sonu) | Kapak alt kenarını ve kapak kılavuzlarını temizleyin | Operatör | **Bkz. Bölüm 10.1.3** |
 | Haftalık | Nozulları tıkanmaya karşı kontrol edin ve temizleyin | Bakım personeli | **Bkz. Bölüm 9.1.3** |
 | Haftalık | Makinenin dış yüzeyini temizleyin | Operatör | **Bkz. Bölüm 10.1.5** |
+| Haftalık | Işık perdesinin ön camlarını temizleyin (ışık perdesi opsiyonu) | Operatör | **Bkz. Bölüm 9.1.13** |
+| Haftalık | El koruma sensörünün ön yüzünü temizleyin (ışık perdesi opsiyonu bulunmayan P modeller) | Operatör | **Bkz. Bölüm 9.1.13** |
 | Kirlilik durumuna göre (en geç {{BAKIM:Yıkama sıvısı değişim periyodu — en geç}}) | Yıkama sıvısını değiştirin, tankı ve pompa emiş süzgecini temizleyin | Bakım personeli | **Bkz. Bölüm 10.1.4** |
+| {{OPSIYONLAR:Hassas filtre — filtre torbası basit temizlik periyodu}} | Filtre torbasını temizleyin (hassas filtre opsiyonu, basit temizlik) | Bakım personeli | **Bkz. Bölüm 9.1.13** |
+| {{OPSIYONLAR:Hassas filtre — filtre torbası detaylı temizlik periyodu}} | Filtre torbasını ve filtre gövdesini detaylı temizleyin (hassas filtre opsiyonu) | Bakım personeli | **Bkz. Bölüm 9.1.13** |
+| {{OPSIYONLAR:Hassas filtre — filtre torbası değişim ölçütü}} | Filtre torbasını değiştirin (hassas filtre opsiyonu) | Bakım personeli | **Bkz. Bölüm 9.1.13** |
 
 ---
 
@@ -46,7 +51,9 @@ Kabin tabanının ön kısmında, kabinden tanka dönen sıvının geçtiği dö
 8. Süzgeç teli yırtık veya deforme olmuşsa sepeti değiştirin.
 9. Süzgeç sepetini yuvasına tam oturacak şekilde geri takın.
 
-![Süzgeç sepetlerinin konumu (kırmızı)](../../assets/10.1/suzgec-sepetleri.png)
+![Süzgeç sepetlerinin konumu (kırmızı)](../../assets/10.1/suzgec-sepetleri.jpg)
+
+![Kabin tabanındaki süzgeç sepetleri](../../assets/10.1/suzgec-sepetleri-foto.jpg)
 
 **NOT:** Makineyi süzgeç sepetleri takılı olmadan çalıştırmayın. Süzgeçsiz çalışmada talaş ve kir tanka ve pompaya ulaşarak pompa çarkını aşındırır ve nozulları tıkar.
 
@@ -80,11 +87,16 @@ Yıkama sıvısı; yağ ve kir yükü arttıkça temizleme etkisini kaybeder, k�
 11. Süzgeç sepetlerini yerine takın.
 12. Tankı **Bölüm 7.2.2**'ye göre suyla doldurun ve kimyasalı ekleyin.
 
+**Otomatik drenaj opsiyonu bulunan makinelerde** drenaj pompası enerjiyle çalıştığı için 1.–4. adımlar yerine tankı **Bölüm 7.6.5**'e göre drenaj pompasıyla boşaltın, ardından makineyi **Bölüm 2.3.3**'e göre kilitleyin ve 5. adımdan devam edin. Durulama suyunu (9. adım) tahliye etmek için LOTO'yu kaldırın ve drenaj pompasını yeniden çalıştırın; 10. adımı atlayın.
+
+**Hassas filtre opsiyonu bulunan makinelerde** sıvı değişiminde filtre torbasını kontrol edin; kirliyse değiştirin (**Bkz. Bölüm 9.1.13**).
+
 ---
 
 ## 10.1.5 Dış yüzey temizliği
 
-1. Makinenin dış yüzeyini nemli bir bez ve nötr bir temizlik maddesiyle silin.
-2. Kumanda panelini yalnızca hafif nemli bir bezle silin; panele sıvı püskürtmeyin.
-3. Makine çevresindeki zemini temizleyin ve kurulayın.
-4. Uyarı etiketlerinin temiz ve okunur olduğunu kontrol edin.
+1. Makinenin soğumasını bekleyin. Dış yüzeyler çalışma sırasında {{GENEL_TEKNIK:Dış yüzey sıcaklığı — çalışma sırasında maks. (°C)}} °C'ye kadar ısınır; soğumamış yüzeyleri ısıya dayanıklı eldiven olmadan tutmayın.
+2. Makinenin dış yüzeyini nemli bir bez ve nötr bir temizlik maddesiyle silin.
+3. Kumanda panelini yalnızca hafif nemli bir bezle silin; panele sıvı püskürtmeyin.
+4. Makine çevresindeki zemini temizleyin ve kurulayın.
+5. Uyarı etiketlerinin temiz ve okunur olduğunu kontrol edin.

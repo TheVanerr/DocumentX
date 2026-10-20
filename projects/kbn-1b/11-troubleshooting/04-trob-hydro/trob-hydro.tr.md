@@ -8,21 +8,30 @@ Tablo: Yıkama devresi arızaları
 | | Pompa emiş süzgeci tıkalı | Emiş süzgecini temizleyin (**Bkz. Bölüm 10.1.4**). | Bakım personeli |
 | | Tanktaki sıvı seviyesi düşük, pompa hava emiyor | Tankı doldurun (**Bkz. Bölüm 7.2**). | Operatör |
 | | Nozullar tıkalı | Nozulları temizleyin (**Bkz. Bölüm 9.1.3**). | Bakım personeli |
+| | Filtre torbası tıkalı (hassas filtre opsiyonu) | Filtre torbasını temizleyin; temizlikten sonra da tıkalıysa değiştirin (**Bkz. Bölüm 9.1.13**). | Bakım personeli |
 | | Aşırı köpük nedeniyle pompa hava emiyor | Köpük nedenini giderin (**Bkz. Bölüm 11.2**). | Bakım personeli |
 | | Pompa çarkı aşınmış | Pompayı kontrol ettirin; çarkı veya pompayı değiştirin. | Bakım personeli |
 | | Pompa ters dönüyor | Faz sırasını kontrol ettirin (**Bkz. Bölüm 11.3**). | Elektrik personeli |
 | Pompadan anormal ses geliyor | Pompa emiş süzgeci tıkalı veya pompa hava emiyor (kavitasyon) | Süzgeçleri temizleyin, sıvı seviyesini kontrol edin. | Bakım personeli |
 | | Pompa veya motor rulmanı hasarlı | Rulmanları kontrol ettirin ve değiştirin. | Bakım personeli |
 | Pompa milinden sıvı damlıyor | Mekanik salmastra aşınmış veya kuru çalışma nedeniyle hasar görmüş | Mekanik salmastrayı değiştirin (**Bkz. Bölüm 9.1.5**). | Bakım personeli |
-| Sepet (DS) dönmüyor veya takılarak dönüyor, **REDUCTOR FAILURE** yanıyor | Yük dengesiz veya sepet kapasitesinin üzerinde | Yükü azaltın ve dengeli dağıtın (**Bkz. Bölüm 8.1**). | Operatör |
+| Sepet (DS) dönmüyor veya takılarak dönüyor, **REDÜKTÖR ARIZA** yanıyor | Yük dengesiz veya sepet kapasitesinin üzerinde | Yükü azaltın ve dengeli dağıtın (**Bkz. Bölüm 8.1**). | Operatör |
 | | Sepet kabine sonuna kadar itilmemiş, dişli çember pinyona tam kavramıyor | Sepeti kabine sonuna kadar itin (**Bkz. Bölüm 7.4.2**). | Operatör |
+| | P modellerde sepet pimi alt sepetteki yuvasına oturmamış | Makineyi durdurun; pimi yuvasına oturtun (**Bkz. Bölüm 7.4.2** ve **7.4.3**). Sepette, alt sepette ve döndürme tahrikinde hasar olup olmadığını kontrol ettirin. | Operatör / bakım personeli |
 | | Pinyon ile dişli çember arasına talaş sıkışmış | Talaşı temizleyin; dişleri kontrol edin (**Bkz. Bölüm 9.1.6**). | Bakım personeli |
 | | Sepetin altına veya çevresine parça ya da talaş sıkışmış | Sıkışan parçayı çıkarın. | Bakım personeli |
 | | Döndürme motoru çalışmıyor | **Bölüm 11.3**'teki ilgili satıra bakın. | Elektrik personeli |
 | Nozul sistemi (DN) dönmüyor | Nozul sistemine parça çarpıyor veya dönüşü engelleniyor | Parçaların nozul sisteminin dönüş alanına taşmadığını kontrol edin (**Bkz. Bölüm 8.2**). | Operatör |
 | | Döner bağlantıda kir veya talaş birikmiş | Döner bağlantıyı temizleyin. | Bakım personeli |
-| | Döndürme motoru çalışmıyor (motorlu modeller) | **Bölüm 11.3**'teki ilgili satıra bakın. | Elektrik personeli |
+| | E DN modellerde nozullar tıkalı veya püskürtme basıncı düşük (nozul kolları pompa basıncıyla döner) | Nozulları temizleyin (**Bkz. Bölüm 9.1.3**); püskürtme basıncı düşükse yıkama pompasını kontrol edin (**Bkz. Bölüm 9.1.5**). | Bakım personeli |
+| | P DN modellerde tahrik zinciri gevşemiş, kopmuş veya zincir dişlisinden çıkmış | Makineyi kilitleyin; zinciri ve zincir dişlilerini kontrol edin, gerekirse orijinal parçayla değiştirin (**Bkz. Bölüm 9.1.6**). | Bakım personeli |
+| | P DN modellerde zincire veya zincir dişlilerine talaş sıkışmış | Makineyi kilitleyin; zinciri ve dişlileri temizleyin (**Bkz. Bölüm 9.1.6**). | Bakım personeli |
+| | P DN modellerde nozul döndürme redüktörlü motoru çalışmıyor, **REDÜKTÖR ARIZA** yanıyor | **Bölüm 11.3**'teki ilgili satıra bakın. | Elektrik personeli |
 | Tank tahliye vanası sızdırıyor | Vana tam kapanmamış veya contası aşınmış | Vanayı tam kapatın; sızıntı sürerse vanayı veya contasını değiştirin. | Bakım personeli |
+| Tank boşalmıyor (otomatik drenaj opsiyonu) | Drenaj pompası çalışmıyor | Drenaj butonunu, pompanın beslemesini ve motor koruma şalterini kontrol edin (**Bkz. Bölüm 3.4.6**). | Elektrik personeli |
+| | Drenaj pompasının emişi veya tahliye hattı tıkalı | Makineyi kilitleyin; pompanın emişini ve tahliye hattını temizleyin. | Bakım personeli |
+| Boşaltmadan sonra tankta sıvı kalıyor (otomatik drenaj opsiyonu) | Zaman rölesindeki ek çalışma süresi kısa | Zaman rölesinin ayarını elektrik personeline kontrol ettirin. | Elektrik personeli |
+| Tank seviyesi kendiliğinden düşüyor (otomatik drenaj opsiyonu) | Drenaj pompasında veya tahliye hattı bağlantılarında sızıntı | Bağlantıları sıkın; sızıntı sürerse contaları veya pompayı değiştirin (**Bkz. Bölüm 9.1.13**). | Bakım personeli |
 | Manuel yıkama tabancasında basınç yok (MULTI) | Manuel yıkama pompası çalışmıyor | Manuel yıkama kumandasını kontrol edin (**Bkz. Bölüm 3.4.5**); pompa koruma şalterini kontrol ettirin. | Operatör / elektrik personeli |
 | | Tabanca nozulu tıkalı | Tabanca nozulunu temizleyin (**Bkz. Bölüm 9.1.9**). | Bakım personeli |
 | | Süzgeç sepetleri veya pompa emiş süzgeci tıkalı | Süzgeçleri temizleyin (**Bkz. Bölüm 10.1.3** ve **10.1.4**). | Operatör / bakım personeli |

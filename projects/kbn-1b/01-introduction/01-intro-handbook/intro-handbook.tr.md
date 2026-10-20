@@ -73,12 +73,14 @@ Bu kılavuz dijital olarak teslim edilir. İşletme, kılavuzun güncel sürüm�
 Aşağıdaki durumlardan kaynaklanan kişisel yaralanma, maddi hasar, üretim kaybı ve çevresel zararlardan üretici sorumlu tutulamaz; bu durumlarda makine garanti kapsamı dışında kalır:
 
 - **Sınır dışı kullanım:** Makinenin **Bölüm 3.3**'teki yükleme ağırlığı, parça boyutu, sıcaklık ve basınç değerlerinin üzerinde çalıştırılması.
-- **Güvenlik donanımlarına müdahale:** Acil durdurma butonu, kapak emniyet şalteri, seviye şalteri, emniyet termostatı gibi güvenlik donanımlarının sökülmesi, köprülenmesi veya devre dışı bırakılması.
+- **{{GENEL_TEKNIK:Yıkama sıvısı sıcaklığı — maks. (°C)}} °C'nin üzerinde çalıştırma:** Müşterinin özel isteğiyle sıcaklık üst sınırı {{GENEL_TEKNIK:Yıkama sıvısı sıcaklığı — maks. (°C)}} °C'nin üzerine (en fazla {{GENEL_TEKNIK:Yıkama sıvısı sıcaklığı — özel istekle maks. (°C)}} °C'ye) çıkarılan makinelerde, yüksek sıcaklığın neden olduğu ömür kısalması. Müşteri, üst sınırın yükseltilmesini isterken bu ömür kısalmasını kabul eder (**Bkz. Bölüm 3.3.1**).
+- **Güvenlik donanımlarına müdahale:** Acil durdurma butonu, kapak emniyet şalteri, seviye şalteri gibi güvenlik donanımlarının sökülmesi, köprülenmesi veya devre dışı bırakılması.
 - **Yetkisiz değişiklik:** Üreticinin yazılı onayı olmadan makinenin konstrüksiyonunda, borulamasında veya elektrik panosunda değişiklik yapılması.
 - **Onaysız kimyasal kullanımı:** **Bölüm 3.2.3**'teki koşulları sağlamayan kimyasalların ya da yanıcı solventlerin kullanılması.
 - **Orijinal olmayan parça:** Nozul, conta, ısıtıcı, sensör ve motor gibi parçaların üretici onayı olmayan muadilleriyle değiştirilmesi.
 - **Tesisat hataları:** Topraklaması yapılmamış veya hatalı yapılmış besleme, gerilim ve faz hataları, P modellerde nemli veya kirli basınçlı hava.
 - **Bakım ihmali:** **Bölüm 9**'daki bakım planına uyulmaması.
+- **Sepet piminin kontrol edilmemesi:** P modellerde sepet pimi yuvasına oturmadan çevrimin başlatılması sonucu sepette ve makinede oluşan hasarlar. Bu kontrol kullanıcının sorumluluğundadır (**Bkz. Bölüm 7.4.3**).
 
 ---
 

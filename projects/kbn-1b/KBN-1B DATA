@@ -20,7 +20,8 @@ Makine tipi: Tek banyolu (tek tanklı) kabin tipi parça yıkama makinesi
 Marka: DOLFIN
 Üretim yılı:
 Seri numarası:
-Tip etiketi konumu:
+# Kaynak: üretim makinesi fotoğrafı (KBN 1B P DN, 2026-10-20)
+Tip etiketi konumu: Makinenin sağ yanında, alt bölümdeki dikey panelde (P modellerde hava girişinin ve pnömatik valf bölmesinin yanında)
 
 [URETICI]
 Üretici firma adı: CNK ELEKTRONİK MAKİNE SANAYİ AŞ
@@ -52,7 +53,12 @@ KBN 1B MULTI E DN: ✓ | ✓ | – | – | – | –
 
 [GENEL_TEKNIK]
 # Tüm KBN 1B modellerinde ortak değerler
-Yıkama sıvısı sıcaklığı — maks. (°C): 85
+# Standart üst sınır 70 °C (katalog 85 °C). Müşterinin özel isteği ve yapacağı iş gerektiriyorsa üretici 85 °C'ye izin verir;
+# bu durumda müşteri makine ömrünün kısalmasını kabul eder (üretici bilgisi, 2026-10-20).
+Yıkama sıvısı sıcaklığı — maks. (°C): 70
+Yıkama sıvısı sıcaklığı — özel istekle maks. (°C): 85
+# Kaynak: üretici bilgisi (2026-10-20)
+Dış yüzey sıcaklığı — çalışma sırasında maks. (°C): 70
 Yıkama süresi ayar aralığı (dk): 0 – 60
 Otomatik yıkama püskürtme basıncı (bar): 2 – 3
 Isıtma yöntemi: Elektrikli ısıtıcı (rezistans)
@@ -60,7 +66,11 @@ Buhar tahliye fanı motor gücü (kW): 0,37
 Besleme gerilimi ve frekansı: 380 V, 50 Hz, 3 faz
 Kumanda tipi: Analog
 Gösterge tipi: Dijital
-Taşıma arabası: Standart donanım
+# Katalogda tüm varyantlarda ✓; üretici bilgisine göre E (elle açılan kapaklı) modellerde taşıma arabası yoktur (2026-10-20)
+Taşıma arabası: P modellerde standart donanım; E modellerde yoktur (sepet, kapağın üzerindeki yükleme yoluna çekilir)
+# Üretici bilgisi (2026-10-20): P DN modellerde üst ve alt nozul kolunu birer adet 0,18 kW redüktörlü motor döndürür; P DN döndürme motoru ve toplam güç değerleri buna göre düzeltildi. E DN modellerde nozul döndürme motoru yoktur; nozul kolları pompa basıncıyla döner.
+Nozul döndürme redüktörlü motorları — P DN modeller: 2 adet (üst ve alt nozul kolu); her biri 0,18 kW, 2900 d/dk
+Nozul kollarının dönüşü — E DN modeller: nozul döndürme motoru yoktur; nozul kolları pompanın bastığı yıkama sıvısının basıncıyla döner
 
 [TEKNIK_OTO_P_DS]
 # Her satır: Özellik | 1350 | 1500 | 1650 | 1850 | 2050 | 2350
@@ -87,8 +97,9 @@ Tank kapasitesi (L): 150 | 200 | 350 | 350 | 350 | 450
 Yıkama pompası sayısı (adet): 1 | 1 | 2 | 2 | 2 | 2
 Yıkama pompası motor gücü — her biri (kW): 2,2 | 3 | 2,2 | 3 | 4 | 4
 Isıtıcı gücü (kW): 8,25 | 8,25 | 16,5 | 16,5 | 16,5 | 16,5
-Döndürme motoru gücü (kW): – | – | 0,37 | 0,37 | 0,5 | 0,5
-Toplam güç (kW): 10,82 | 11,62 | 21,64 | 23,24 | 25,37 | 25,37
+# Toplam güç: aynı gövdeli P DS katalog toplam gücünden DS döndürme motoru çıkarılıp 2 × 0,18 kW eklenerek hesaplandı (2026-10-20)
+Döndürme motoru gücü (kW): 2 × 0,18 | 2 × 0,18 | 2 × 0,18 | 2 × 0,18 | 2 × 0,18 | 2 × 0,18
+Toplam güç (kW): 11,18 | 11,98 | 21,63 | 23,23 | 25,23 | 25,23
 
 [TEKNIK_OTO_E_DS]
 # Her satır: Özellik | 1350 | 1500
@@ -115,7 +126,8 @@ Tank kapasitesi (L): 150 | 200
 Yıkama pompası sayısı (adet): 1 | 1
 Yıkama pompası motor gücü — her biri (kW): 2,2 | 3
 Isıtıcı gücü (kW): 8,25 | 8,25
-Döndürme motoru gücü (kW):  |
+# E DN modellerde nozul döndürme motoru yoktur; nozul kolları pompa basıncıyla döner (üretici bilgisi, 2026-10-20). Katalog değerleri geçerlidir.
+Döndürme motoru gücü (kW): – | –
 Toplam güç (kW): 10,82 | 11,62
 
 [TEKNIK_MULTI_P_DS]
@@ -193,20 +205,22 @@ Kapak açıkken toplam yükseklik — P modeller (mm):  | 2920 |  |  |  |
 Besleme gerilimi (V): 380
 Besleme frekansı (Hz): 50
 Faz sayısı: 3
-Besleme bağlantı şekli (3P+PE / 3P+N+PE):
-Kumanda devresi gerilimi:
-Ana şalter tipi ve anma akımı:
-Önerilen besleme sigortası / devre kesici:
-Besleme kablosu kesiti:
+# Bağlantı ve koruma değerleri makineyle birlikte ek doküman olarak verilen elektrik devre şemasındadır (Bölüm 13.1).
+Besleme bağlantı şekli (3P+PE / 3P+N+PE): Elektrik devre şemasına bakın
+Kumanda devresi gerilimi: Elektrik devre şemasına bakın
+Ana şalter tipi ve anma akımı: Elektrik devre şemasına bakın
+Önerilen besleme sigortası / devre kesici: Elektrik devre şemasına bakın
+Besleme kablosu kesiti: Elektrik devre şemasına bakın
 Elektrik panosu koruma sınıfı (IP):
 
 [TESISAT]
-Basınçlı hava basıncı — P modeller (bar):
-Basınçlı hava bağlantısı — P modeller:
+# Basınçlı hava değerleri makineyle birlikte ek doküman olarak verilen pnömatik şemadadır (Bölüm 13.1).
+Basınçlı hava basıncı — P modeller (bar): Pnömatik şemaya bakın
+Basınçlı hava bağlantısı — P modeller: Pnömatik şemaya bakın
 Basınçlı hava kalitesi — P modeller: Filtrelenmiş, nemi alınmış
-Su dolum bağlantısı:
-Tank tahliye bağlantısı:
-Buhar tahliye (egzoz) bağlantı çapı (mm):
+Su dolum bağlantısı: 1 inç
+Tank tahliye bağlantısı: 2 inç (tüm modeller)
+Buhar tahliye (egzoz) bağlantı çapı (mm): 125
 
 [ORTAM_KOSULLARI]
 Kurulum yeri: Kapalı endüstriyel alan (iç mekân)
@@ -220,24 +234,79 @@ Ses ölçüm konumu: Makineden 1 m uzaklık, 1,6 m yükseklik
 # =============================================================================
 
 [KONTROLLER]
-# Kaynak: KBN 1B P DS OTO 1500 STEP modeli (kumanda paneli etiketleri)
+# Kaynak: KBN 1B P DS OTO 1500 STEP modeli; panel etiketleri ve kontrol cihazı: üretim makinesi panel fotoğrafı (photos/, 2026-10-20)
 Kumanda paneli konumu: Makinenin sağ yanındaki elektrik panosunun öne (kapak tarafına) bakan yüzü
-Ana şalter konumu:
+# Kaynak: üretim makinesi fotoğrafları ve STEP modeli (P modeller, standart kumanda paneli); E: KBN 1B E DN OTO 1500 panel fotoğrafı (2026-10-20)
+Ana şalter konumu: P modellerde makinenin sağ yanındaki elektrik panosunun arka (makinenin arka tarafına bakan) yüzü; E modellerde kumanda panelinin alt kısmı (ENERJİ etiketli)
 Acil durdurma butonu sayısı: 1
 Acil durdurma butonu konumu: Kumanda paneli
-Dijital kontrol cihazı (HEAT / TIME) marka / model:
-TEST butonu işlevi:
+Dijital kontrol cihazı (HEAT / TIME) marka / model: ORDEL OC990
+# E modeller: dijital termostatlı ve dijital zaman röleli kumanda paneli (panel fotoğrafı, 2026-10-20)
+Dijital termostat (TERMOSTAT) marka / model — E modeller: GEMO DT481
+Dijital zaman rölesi (ZAMAN) marka / model — E modeller: GEMO DZ482
+# GEMO cihazlarında ayar ok tuşlarıyla yapılır; DZ482'de süre dakika cinsinden ondalıklı girilir: 1.00 = 1 dk, 1.10 = 1 dk 6 s (üretici bilgisi, 2026-10-20)
+Dijital zaman rölesi — süre birimi (E modeller): dakika, ondalıklı (0,1 dakika = 6 saniye)
+# RESET: makineye enerji verildiğinde, acil durdurma butonu serbest bırakıldıktan sonra ve seviye şalteri kumanda devresini kestikten sonra basılır (üretici bilgisi, 2026-10-20)
+# ORDEL OC990 sıcaklık ayar sınırları fabrikada min 1 / maks 70 °C yapılır (üretici bilgisi, 2026-10-20)
+Sıcaklık ayar aralığı — ORDEL OC990 (°C): 1 – 70
+Dijital kontrol cihazı — ayar ekranından ana ekrana dönüş: Ayar ekranında 1–2 saniye hiçbir tuşa basılmazsa cihaz kendiliğinden ana ekrana döner
+# Üretici bilgisi (2026-10-20): TEST yalnız P modellerin standart kumanda panelinde bulunur; basılı tutmalıdır ve kapak açıkken kullanılır
+TEST butonu işlevi: Basılı tutulduğu sürece, kapak açıkken sepeti (DS modeller) veya nozul kollarını (DN modeller) döndürür; buton bırakılınca döndürme durur. Operatör böylece yüklediği parçaların dönerken bir yere çarpıp çarpmadığını kontrollü olarak görür.
 Kumanda paneli sinyal lambaları (3 adet) işlevleri:
-Kapak açma / kapama kumandası — P modeller:
-Yıkama çevrimini başlatma kumandası:
-Yıkama çevrimini durdurma kumandası:
+Kapak açma / kapama kumandası — P modeller: Kumanda panelindeki KAPAK AÇ (OPEN COVER, yeşil) ve KAPAK KAPA (CLOSE COVER, kırmızı) butonları
+Yıkama çevrimini başlatma kumandası: P modellerde dijital kontrol cihazındaki START (yukarı ok) tuşu; E modellerde kumanda panelindeki YIKAMA butonunun yeşil (üst) tuşu
+Yıkama çevrimini durdurma kumandası: P modellerde dijital kontrol cihazındaki STOP (aşağı ok) tuşu; E modellerde kumanda panelindeki YIKAMA butonunun kırmızı (alt) tuşu
+# Buhar tahliye fanı çevrim bittikten sonra bu süre kadar çalışır (üretici bilgisi, 2026-10-20).
+# Süre P modellerde dijital kontrol cihazının ALrt parametresinden, E modellerde pano içindeki zaman rölesinden ayarlanır (saniye).
+Buhar tahliye fanı zaman rölesi — E modeller: ENDA analog zaman rölesi (elektrik panosunun içinde)
+Buhar tahliye fanı çalışma süresi — fabrika ayarı (s): 60
 Manuel yıkama kumandası — MULTI modeller:
 
 [GUVENLIK_DONANIMLARI]
-Kapak emniyet şalteri tipi / konumu:
-Tank seviye şalteri tipi / konumu:
-Emniyet termostatı ayar değeri (°C):
-Motor koruma (termik) rölesi:
+# Kapak açıkken E modellerde yıkama pompası (E DS'de ayrıca sepet döndürme motoru), P modellerde yıkama pompası ve redüktörlü motorlar durur; P'de redüktörlü motorlar kapak açıkken yalnız TEST butonu basılı tutulurken çalışır (üretici bilgisi, 2026-10-20)
+Kapak emniyet şalteri — E modeller: L5K27MUM331 (2 NO + 1 NC kontaklı)
+Kapak emniyet şalteri — P modeller: L5K13MEP123 (1 NO + 1 NC kontaklı)
+# Işık perdesi opsiyonu bulunmayan P modellerde kapı açıklığında standart olarak bulunur (üretici bilgisi, 2026-10-20)
+El koruma sensörü — P modeller (ışık perdesi opsiyonu yoksa): XUK1ARCNL2 fotoelektrik sensör
+# Seviye düşerse kumanda devresi (reset) düşer, SU SEVİYESİ YETERSİZ lambası yanar ve makinenin hiçbir işlevi çalışmaz (üretici bilgisi, 2026-10-20)
+Tank seviye şalteri tipi / konumu: şamandıralı, tankın içinde
+# Emniyet termostatı yoktur: makine kapalı kapakla çalıştığından risk düşük değerlendirilmiştir (üretici bilgisi, 2026-10-20)
+Motor koruma (termik) rölesi: Elektrik devre şemasına bakın
+# P DN modeller: kabinin sağ yan duvarında, sepetin kenarını algılayan yaklaşım sensörü (üretici bilgisi ve fotoğraf, 2026-10-20)
+Sepet yerinde sensörü — P DN modeller: Kabinin sağ yan duvarında (elektrik panosu tarafında), sepetin kenarını algılayan yaklaşım sensörü
+# P modeller: kapak silindirlerinin yanındaki kısma valfleri fabrikada ayarlanıp kilitlenir; kullanıcı değiştirmez
+Kapak kısma (hız ayar) valfleri — P modeller: Fabrikada ayarlanmış ve kilitlenmiştir
+
+# =============================================================================
+# 03.1.6 — OPSİYONEL DONANIMLAR
+# =============================================================================
+
+[OPSIYONLAR]
+# Siparişe bağlı opsiyonlar: hassas filtre (filtre torbalı), yağ sıyırıcı, zamanlayıcılı yağ sıyırıcı,
+# otomatik dolum, otomatik drenaj, zamanlayıcılı ısıtıcı, ışık perdesi (P modeller).
+# Değerler kılavuzda "Etiket: değer." kalıbıyla kullanılır; kısa ifade yazın.
+# Müşteri projesinde makinede bulunmayan opsiyonların metinlerini kılavuzdan çıkarın.
+# Üretici bilgisi (2026-10-20)
+Hassas filtre — filtre gövdesi konumu: Yıkama pompasının çıkışında, makinenin yanında; her yıkama pompası için bir filtre (iki pompalı gövdelerde 2 adet)
+Hassas filtre — filtre torbası gözenek boyutu (µm): 200
+Hassas filtre — filtre torbası basit temizlik periyodu: Haftada bir
+Hassas filtre — filtre torbası detaylı temizlik periyodu: Ayda bir
+Hassas filtre — filtre torbası değişim ölçütü: Yılda bir; tıkanma varsa daha erken
+Yağ sıyırıcı — tipi: Disk tipi; 0,09 kW redüktörlü motorla tahrik edilir
+Otomatik dolum — seviye algılama: Tanka eklenen üst seviye algılayıcısı
+Otomatik dolum — kumanda: Otomatik; makineye enerji verildiğinde tank üst seviyeye kadar dolar, üst seviyede dolum kesilir
+Otomatik dolum — dolum vanası: Valf kumandalı aktüatörlü vana
+Otomatik dolum — su besleme basıncı (bar):
+Otomatik drenaj — tahliye düzeni: Drenaj pompası; tank alt seviyeye kadar boşaltılır, pompa ardından elektrik panosundaki ENDA zaman rölesinde ayarlanan süre kadar daha çalışır
+Otomatik drenaj — tahliye kumandası: Drenaj butonu
+Zamanlayıcı — marka / model: Theben SELEKTA 174 top3 astronomik zaman saati
+Zamanlayıcı — konum:
+# Işık perdesi opsiyonunda tedarik ve stok durumuna göre iki bariyerden biri takılır; çözünürlükler model kodlarından (OMRON ...P14 = 14 mm, PANASONIC SF4D-H = 25 mm), cihaz etiketinden doğrulanmalı
+Işık perdesi — marka / model: PANASONIC SF4D-H48 (USF4DH48, 95 cm) veya OMRON F3SG-4RE0880P14 (88 cm); tedarik ve stok durumuna göre biri takılır
+Işık perdesi — güvenlik kontrolörü: OMRON G9SP-N20S güvenlik PLC'si
+Işık perdesi — çözünürlük (mm): OMRON F3SG-4RE0880P14 için 14 mm, PANASONIC SF4D-H48 için 25 mm
+Işık perdesi — perde kesildiğinde kapağın davranışı:
+Işık perdesi — yeniden başlatma (reset):
 
 # =============================================================================
 # 03.5 / 05 — YERLEŞİM VE KURULUM
@@ -246,8 +315,10 @@ Motor koruma (termik) rölesi:
 [KURULUM]
 Makine çevresinde minimum boşluk (mm): 1000
 Zemin: Terazili, düz beton zemin
-Zemin taşıma kapasitesi (kg/m²):
-Seviye ayarı (ayak tipi):
+Zemin taşıma kapasitesi (kg/m²): 2500
+Seviye ayarı (ayak tipi): Ayarlanabilir ayak
+# Terazilemeden sonra arka ayaklar bu kadar yükseltilir; sıvının kabin tabanından tanka akışını kolaylaştırır (üretici bilgisi, 2026-10-20)
+Arka ayakların terazileme sonrası yükseltilmesi (mm): 10
 Minimum tavan yüksekliği (mm):
 
 # =============================================================================
@@ -256,10 +327,10 @@ Minimum tavan yüksekliği (mm):
 
 [TASIMA]
 Taşıma yöntemi: Forklift
-Forklift çatal giriş yönü:
+Forklift çatal giriş yönü: Ambalaj üzerindeki FORKLIFT LIFTING POINT etiketlerinin gösterdiği noktalardan; çatallar makinenin altındaki şase profillerine denk gelecek şekilde
 Denge kontrolü kaldırma yüksekliği (cm): 10 – 15
 Taşıma sırasında maks. yükseklik (cm): 20
-Ambalaj tipi:
+Ambalaj tipi: Makine üretici tarafından sarılarak paketlenir; forklift kaldırma noktaları ambalaj üzerinde etiketle işaretlenir
 
 [DEPOLAMA]
 Depolama sıcaklığı (°C): +5 … +40
@@ -280,12 +351,12 @@ Yıkama sıvısı değişim periyodu — en geç: 1 ay
 # =============================================================================
 
 [DOKUMANLAR]
-AB Uygunluk Beyanı:
-Elektrik devre şeması:
-Pnömatik şema — P modeller:
-Yerleşim (layout) resmi:
-Yedek parça listesi:
-Bileşen kullanım kılavuzları (pompa, motor, kontrol cihazı):
+AB Uygunluk Beyanı: Makineyle birlikte ek belge olarak verilir
+Elektrik devre şeması: Makineyle birlikte ek doküman olarak verilir
+Pnömatik şema — P modeller: Makineyle birlikte ek doküman olarak verilir
+Yerleşim (layout) resmi: Makineyle birlikte ek belge olarak verilir
+Yedek parça listesi: Bu kılavuzun 13.3 bölümünde verilir
+Bileşen kullanım kılavuzları (pompa, motor, kontrol cihazı): ORDEL, GEMO, ENDA ve OMRON cihazlarının kullanım kılavuzları bu kılavuza ek olarak verilir
 
 # =============================================================================
 # SON — DOSYA SONU

@@ -1,12 +1,12 @@
 # 6.5 Pnömatik ayarlar (P modeller)
 
-Bu alt bölüm yalnızca pnömatik kapaklı (P) modeller için geçerlidir. Pnömatik ayarları bakım personeli yapar.
+Bu alt bölüm yalnızca pnömatik kapaklı (P) modeller için geçerlidir. Çalışma basıncını bakım personeli ayarlar; kapak kısma valflerinin ayarı değiştirilmez (**Bkz. Bölüm 6.5.2**).
 
 ---
 
 ## 6.5.1 Çalışma basıncı
 
-Kapak silindirlerini besleyen basınçlı hava, makinenin hava girişindeki şartlandırıcıdan (filtre ve regülatör) geçer. Çalışma basıncı {{TESISAT:Basınçlı hava basıncı — P modeller (bar)}} bar'dır.
+Kapak silindirlerini besleyen basınçlı hava, makinenin sağ yanındaki **AIR INLET / HAVA GİRİŞİ** etiketli hava girişinde bulunan şartlandırıcıdan (filtre ve regülatör) geçer. Çalışma basıncı, makineyle birlikte verilen pnömatik şemada belirtilmiştir (**Bkz. Bölüm 13.1**).
 
 1. Basınçlı hava giriş vanasının açık olduğunu kontrol edin.
 2. Regülatörün ayar düğmesini yukarı çekerek kilidini açın.
@@ -20,16 +20,12 @@ Kapak silindirlerini besleyen basınçlı hava, makinenin hava girişindeki şar
 
 ## 6.5.2 Kapak hareket hızı
 
-Kapağın açılma ve kapanma hızları silindirlerin hava çıkışlarındaki hız ayar (kısma) valfleriyle ayarlanır. Hızlar fabrikada ayarlanmıştır; yalnızca kapak sert çarpıyor veya çok yavaş hareket ediyorsa ayarlayın.
+Kapağın kapanma hızı, kapak silindirlerinin yanındaki kısma (hız ayar) valfleriyle belirlenir. Valfler fabrikada ayarlanmış ve ayar vidaları kilit somunlarıyla sıkıca sabitlenerek gönderilmiştir. Bu ayar, kapağın güvenli hızda kapanmasını ve iki silindirin kapağı eşit hızda hareket ettirmesini sağlar.
 
-**UYARI — Kapağın hareketi:** Ayar sırasında kapak hareket ederken el ve kol sıkışabilir. Ayarı kapak dururken yapın; kapağı hareket ettirmeden önce hareket alanında kimsenin bulunmadığını kontrol edin.
+**UYARI — Kapağın hareketi:** Kısma valflerinin ayarı değiştirilirse kapak hızlı ve sert kapanarak el, kol veya başı sıkıştırabilir ya da kapak kılavuzlarında yamuk hareket ederek sıkışabilir. Kısma valflerinin ayar vidalarını ve kilit somunlarını **kesinlikle çevirmeyin**.
 
-1. Kapağı tam kapalı konuma getirin.
-2. Hız ayar valfinin kilit somununu gevşetin.
-3. Hızı azaltmak için ayar vidasını saat yönünde, artırmak için saat yönünün tersine çeyrek tur çevirin.
-4. Kapağı açıp kapatarak hareketi kontrol edin. Kapak, hareket sonunda çarpmadan yavaşça durmalıdır.
-5. İstenen hıza ulaşana kadar 2. – 4. adımları tekrarlayın.
-6. Kilit somununu sıkın.
-7. İki silindirin hız ayar valflerini eşit ayarlayın; aksi halde kapak kılavuzlarında yamuk hareket eder ve sıkışır.
+- Kısma valflerinin ayarını kullanıcı, operatör ve bakım personeli değiştirmez.
+- Kapak sert çarparak kapanıyor, çok yavaş hareket ediyor veya yamuk hareket ediyorsa makineyi kullanmayın ve üretici servisine başvurun.
+- Kısma valfi veya silindir değiştirildiğinde ayarı yalnızca üretici servisi yapar.
 
-![Şartlandırıcı ve hız ayar valfleri](../../assets/6.5/sartlandirici.png)
+![Şartlandırıcı (solda) ve kapak silindirinin yanındaki kısma valfi (sağda)](../../assets/6.5/sartlandirici.jpg)

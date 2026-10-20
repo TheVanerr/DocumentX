@@ -18,9 +18,9 @@ Tablo: Taşıma bilgileri
 | Makine ağırlığı | **Bkz. Bölüm 3.3.3** |
 | Makine dış ölçüleri | **Bkz. Bölüm 3.3.2** |
 
-Forklift çatallarının giriş noktaları aşağıdaki şekilde gösterilmiştir.
+Forklift çatallarının giriş noktaları, ambalaj üzerinde aşağıdaki **FORKLIFT LIFTING POINT** (forklift kaldırma noktası) etiketleriyle işaretlenir. Çatalları etiketlerin gösterdiği noktalardan, makinenin altındaki şase profillerine denk gelecek şekilde sokun.
 
-![Forklift çatal giriş noktaları](../../assets/4.1/forklift-giris-noktalari.png)
+![Forklift kaldırma noktası etiketi (ambalaj üzerinde)](../../assets/4.1/forklift-etiketi.jpg)
 
 ---
 
@@ -32,7 +32,7 @@ Forklift çatallarının giriş noktaları aşağıdaki şekilde gösterilmişti
 4. Tankı ve boruları tamamen boşaltın (**Bkz. Bölüm 10.1**). İçinde sıvı bulunan makineyi taşımayın; çalkalanan sıvı ağırlık merkezini aniden kaydırarak makinenin devrilmesine yol açabilir.
 5. Yıkama sepetindeki ve kabindeki tüm parçaları çıkarın.
 6. Kapağı kapatın ve taşıma sırasında açılmaması için kayışla gövdeye sabitleyin.
-7. Taşıma arabasını makineden ayrı taşıyın veya makineye kayışla sabitleyin.
+7. P modellerde taşıma arabasını makineden ayrı taşıyın veya makineye kayışla sabitleyin.
 8. MULTI modellerde manuel yıkama hortumunu ve tabancasını sökün veya makineye sabitleyin.
 9. Sarkan kablo, hortum ve bağlantı elemanı kalmadığını kontrol edin.
 10. Taşıma güzergâhında zeminin düz olduğunu, kapı ve geçiş genişliklerinin makinenin ölçülerinden büyük olduğunu kontrol edin.

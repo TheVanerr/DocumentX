@@ -23,9 +23,10 @@ Makine, yüksekliği ayarlanabilen dört ayak üzerinde durur. Makinenin terazid
 4. Ayakların kontra somunlarını gevşetin.
 5. Ayakları çevirerek makineyi her iki yönde terazilemeye getirin.
 6. Tüm ayakların zemine yük taşıyacak şekilde bastığını kontrol edin; boşta kalan ayak bırakmayın.
-7. Kontra somunları sıkın.
-8. Taşıma arabasını ön tarafa yanaştırın ve arabanın raylarının kabin içindeki raylarla aynı hizada olduğunu kontrol edin.
+7. Terazileme tamamlandıktan sonra arka ayakları yaklaşık {{KURULUM:Arka ayakların terazileme sonrası yükseltilmesi (mm)}} mm yükseltin. Makinenin öne doğru bu hafif eğimi, yıkama sonrası kabin tabanındaki sıvının tanka geri akmasını kolaylaştırır.
+8. Kontra somunları sıkın.
+9. P modellerde taşıma arabasını ön tarafa yanaştırın ve sepetin arabaya takılmadan çekilip kabine itilebildiğini kontrol edin (**Bkz. Bölüm 6.1.1**).
 
-![Ayarlanabilir ayak](../../assets/5.2/ayak.png)
+![Ayarlanabilir ayak](../../assets/5.2/ayak.jpg)
 
 Seviye ayar elemanı: {{KURULUM:Seviye ayarı (ayak tipi)}}.

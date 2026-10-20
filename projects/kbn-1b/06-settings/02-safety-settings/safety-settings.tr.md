@@ -6,10 +6,14 @@ Tablo: Güvenlik donanımlarının ayarları
 
 | Donanım | Ayar | Ayarı yapabilecek personel |
 |---|---|---|
-| Emniyet termostatı | {{GUVENLIK_DONANIMLARI:Emniyet termostatı ayar değeri (°C)}} °C | Yalnızca üretici servisi |
 | Kapak emniyet şalteri | Kapak tam kapalıyken algılayacak konumda sabitlenmiştir | Bakım personeli (yalnızca kayan veya değiştirilen şalterin yeniden konumlandırılması) |
 | Motor koruma şalterleri | Motor etiketindeki anma akımına ayarlanmıştır | Elektrik personeli |
 | Seviye şalteri | Isıtıcıların sıvı içinde kalacağı seviyede sabitlenmiştir | Yalnızca üretici servisi |
+| Işık perdesi (opsiyon, P modeller) | Verici ve alıcı fabrikada karşılıklı hizalanmış ve sabitlenmiştir | Yalnızca elektrik personeli |
+| El koruma sensörü (P modeller, ışık perdesi opsiyonu yoksa) | Fabrikada kapı açıklığını algılayacak konumda sabitlenmiştir | Yalnızca elektrik personeli |
+| Güvenlik kontrolörü (ışık perdesi opsiyonu) | Fabrikada programlanmıştır; programı değiştirilmez | Yalnızca üretici servisi |
+| Kapak kısma (hız ayar) valfleri (P modeller) | {{GUVENLIK_DONANIMLARI:Kapak kısma (hız ayar) valfleri — P modeller}}; ayarı değiştirilmez (**Bkz. Bölüm 6.5.2**) | Yalnızca üretici servisi |
+| Sepet yerinde sensörü (P DN modeller) | Sepet kabin içinde yuvasına tam oturduğunda algılayacak konumda sabitlenmiştir | Yalnızca üretici servisi |
 
 **Kapak emniyet şalterinin yeniden konumlandırılması**
 

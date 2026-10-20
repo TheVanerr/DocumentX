@@ -1,6 +1,6 @@
 # 2. GÜVENLİK
 
-KBN 1B serisi yıkama makineleri; 85 °C'ye kadar ısıtılan yıkama sıvısı, dönen sepet veya nozul sistemi, kapak mekanizması, 380 V besleme gerilimi ve kimyasal yıkama maddeleri içerir. MULTI modellerde bunlara ek olarak 100 bar'a kadar basınç üreten manuel yıkama donanımı bulunur. Bu tehlike kaynakları nedeniyle makinenin kurulum, işletim, bakım ve temizlik aşamalarının tamamında bu bölümdeki kurallara uyulması zorunludur.
+KBN 1B serisi yıkama makineleri; {{GENEL_TEKNIK:Yıkama sıvısı sıcaklığı — maks. (°C)}} °C'ye (özel istekle {{GENEL_TEKNIK:Yıkama sıvısı sıcaklığı — özel istekle maks. (°C)}} °C'ye) kadar ısıtılan yıkama sıvısı, dönen sepet veya nozul sistemi, kapak mekanizması, 380 V besleme gerilimi ve kimyasal yıkama maddeleri içerir. MULTI modellerde bunlara ek olarak 100 bar'a kadar basınç üreten manuel yıkama donanımı bulunur. Bu tehlike kaynakları nedeniyle makinenin kurulum, işletim, bakım ve temizlik aşamalarının tamamında bu bölümdeki kurallara uyulması zorunludur.
 
 Bu bölüm; amaçlanan kullanımı ve yanlış kullanımı, işletmecinin ve personelin sorumluluklarını, kalıntı riskleri, güvenlik donanımlarını, kişisel koruyucu donanımları ve uygulanması zorunlu güvenlik prosedürlerini tanımlar. Diğer bölümlerde yer alan güvenlik uyarıları bu bölümü tamamlar; onun yerine geçmez.
 

@@ -10,6 +10,8 @@ Aşağıdaki değerler tüm KBN 1B modellerinde aynıdır.
 
 {{TABLO:GENEL_TEKNIK}}
 
+**Yıkama sıvısının en yüksek sıcaklığı:** Makine, yıkama sıvısı en fazla {{GENEL_TEKNIK:Yıkama sıvısı sıcaklığı — maks. (°C)}} °C olacak şekilde teslim edilir; dijital kontrol cihazının sıcaklık üst sınırı fabrikada bu değere ayarlanır. Müşterinin özel isteği ve yapacağı iş gerektiriyorsa üretici, üst sınırı en fazla {{GENEL_TEKNIK:Yıkama sıvısı sıcaklığı — özel istekle maks. (°C)}} °C'ye çıkarır. {{GENEL_TEKNIK:Yıkama sıvısı sıcaklığı — maks. (°C)}} °C'nin üzerindeki sıcaklıklar makinenin ömrünü kısaltır; üst sınır yalnızca müşterinin bu ömür kısalmasını kabul etmesi koşuluyla yükseltilir (**Bkz. Bölüm 1.1.5**). Üst sınırı kullanıcı değiştirmez.
+
 ---
 
 ## 3.3.2 Model bazlı teknik değerler
@@ -17,6 +19,8 @@ Aşağıdaki değerler tüm KBN 1B modellerinde aynıdır.
 Tablolardaki sütun başlıkları gövde kodudur. Dış ölçüler en × boy × yükseklik biçiminde, elektrik panosu hariç ve kapak kapalı konumda verilmiştir. "–" işareti, ilgili donanımın o modelde bulunmadığını gösterir.
 
 **NOT:** Teknik değerler, sipariş edilen opsiyonel donanıma göre değişebilir. Makinenize ait kesin değerler tip etiketinde yer alır.
+
+**NOT:** P DN modellerde nozul kollarını döndüren redüktörlü motorlar: {{GENEL_TEKNIK:Nozul döndürme redüktörlü motorları — P DN modeller}}. E DN modellerde {{GENEL_TEKNIK:Nozul kollarının dönüşü — E DN modeller}}; bu nedenle E DN tablolarında döndürme motoru gücü yoktur.
 
 **KBN 1B OTO P DS** — otomatik yıkama, pnömatik kapak, döner sepet
 
@@ -64,7 +68,7 @@ Makinenin taşınması ve kurulumu için gereken ağırlık değerleri aşağıd
 
 {{TABLO:ELEKTRIK}}
 
-Toplam güç değeri model bazlı tablolarda verilmiştir (**Bkz. Bölüm 3.3.2**). Besleme hattını ve sigortayı bu toplam güce göre boyutlandırın.
+Toplam güç değeri model bazlı tablolarda verilmiştir (**Bkz. Bölüm 3.3.2**). Bağlantı şekli, sigorta, besleme kablosu kesiti ve kumanda devresi değerleri, makineyle birlikte verilen elektrik devre şemasındadır (**Bkz. Bölüm 13.1**). Besleme hattını ve sigortayı bu şemadaki değerlere göre seçin.
 
 ---
 

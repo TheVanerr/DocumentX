@@ -24,6 +24,6 @@ Motor koruma şalterlerinin ayar değeri, korunan motorun etiketindeki anma akı
 
 ## 6.3.3 Dijital kontrol cihazı parametreleri
 
-Dijital kontrol cihazının (HEAT / TIME) sensör tipi, ölçüm aralığı ve kontrol parametreleri fabrikada ayarlanmıştır. Operatör yalnızca sıcaklık ayar değerini ve yıkama süresini değiştirir (**Bkz. Bölüm 6.6**). Cihazın diğer parametreleri yalnızca cihazın kendi kılavuzuna göre elektrik personeli tarafından değiştirilebilir (**Bkz. Bölüm 13.1**).
+Dijital kontrol cihazının (E modellerde dijital termostatın ve dijital zaman rölesinin) sensör tipi, ölçüm aralığı ve kontrol parametreleri fabrikada ayarlanmıştır. Operatör yalnızca sıcaklık ayar değerini ve yıkama süresini değiştirir (**Bkz. Bölüm 6.6**). Cihazın diğer parametreleri yalnızca cihazın kendi kılavuzuna göre elektrik personeli tarafından değiştirilebilir (**Bkz. Bölüm 13.1**).
 
-Dijital kontrol cihazı: {{KONTROLLER:Dijital kontrol cihazı (HEAT / TIME) marka / model}}.
+Dijital kontrol cihazı (P modeller): {{KONTROLLER:Dijital kontrol cihazı (HEAT / TIME) marka / model}}. Dijital termostat ve dijital zaman rölesi (E modeller): {{KONTROLLER:Dijital termostat (TERMOSTAT) marka / model — E modeller}}, {{KONTROLLER:Dijital zaman rölesi (ZAMAN) marka / model — E modeller}}.

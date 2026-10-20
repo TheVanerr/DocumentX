@@ -47,8 +47,8 @@ Arızaların bir kısmı basit kontrollerle giderilebilir. Servis talebinde bulu
 - Tesisin makineyi besleyen sigortası açık ve **Ana şalter** "I" konumunda mı?
 - Tüm **Acil durdurma** butonları serbest (kurulu) konumda mı?
 - Kapak tam olarak kapalı mı? Kapak emniyet şalteri kapak kapanmadan yıkama çevriminin başlamasını engeller.
-- Kumanda panelinde bir ikaz lambası (**INADEQUATE WATER LEVEL**, **REDUCTOR FAILURE**, **PUMP FAILURE**) yanıyor mu? Yanıyorsa **Bölüm 3.4.3**'e bakın.
-- Tanktaki yıkama sıvısı seviye şalterinin algılama seviyesinin üzerinde mi? Seviye şalteri, sıvı seviyesi düşükken ısıtıcıyı çalıştırmaz.
+- Kumanda panelinde bir ikaz lambası (**SU SEVİYESİ YETERSİZ**, **REDÜKTÖR ARIZA**, **POMPA ARIZA**) yanıyor mu? Yanıyorsa **Bölüm 3.4.3**'e bakın.
+- Tanktaki yıkama sıvısı seviye şalterinin algılama seviyesinin üzerinde mi? Sıvı seviyesi düşükse seviye şalteri kumanda devresini keser ve makinenin hiçbir işlevi çalışmaz.
 - P modellerde basınçlı hava hattı açık ve basınç **Bölüm 3.3.5**'teki değerde mi?
 - Sorun **Bölüm 11**'deki arıza tablolarında yer alıyor mu?
 

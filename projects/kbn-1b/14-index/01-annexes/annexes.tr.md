@@ -51,8 +51,8 @@ Testleri yetkili elektrik personeli EN 60204-1 standardına göre yapar (**Bkz. 
 | Yalıtım direnci (500 V DC) | ≥ 1 MΩ | | ☐ Geçti ☐ Kaldı |
 | Kaçak akım rölesi (tesis tarafı) açma testi | Anma açma akımında (IΔn) açma süresi ≤ 300 ms | | ☐ Geçti ☐ Kaldı |
 | Acil durdurma fonksiyonu | Tüm motorlar ve ısıtıcılar durur | | ☐ Geçti ☐ Kaldı |
-| Kapak emniyet şalteri fonksiyonu | Kapak açılınca pompa ve döndürme durur | | ☐ Geçti ☐ Kaldı |
-| Emniyet termostatı fonksiyonu | Ayar değerinde ısıtıcı devresi açılır | | ☐ Geçti ☐ Kaldı |
+| Kapak emniyet şalteri fonksiyonu | Kapak açılınca pompa durur (E DS modellerde sepet motoru, P modellerde redüktörlü motorlar da durur) | | ☐ Geçti ☐ Kaldı |
+| TEST butonu fonksiyonu (P modeller) | Buton bırakılınca döndürme hemen durur | | ☐ Geçti ☐ Kaldı |
 | Kablo, rakor ve bağlantıların gözle kontrolü | Hasar, gevşeklik, ısınma izi yok | | ☐ Geçti ☐ Kaldı |
 
 | Test tarihi | Testi yapan (ad, imza) | Sonraki test tarihi |

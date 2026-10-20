@@ -16,7 +16,7 @@ Makine başka bir yere taşınacak veya hurdaya ayrılacaksa aşağıdaki sıray
 
 6. Su dolum, tahliye ve buhar tahliye bağlantılarını ayırın.
 7. MULTI modellerde manuel yıkama hortumunu ve tabancasını sökün.
-8. Taşıma arabasını ve yıkama sepetini makineden çıkarın.
+8. Yıkama sepetini makineden çıkarın; P modellerde taşıma arabasını makineden ayırın.
 9. Makine yeniden kullanılacaksa sökülen bağlantı uçlarını tıpa veya bantla kapatın ve sökülen parçaları etiketleyin.
 10. Makineyi **Bölüm 4.1**'e göre forkliftle taşıyın.
 

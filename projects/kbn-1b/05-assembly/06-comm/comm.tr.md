@@ -7,8 +7,8 @@
 1. Tank tahliye vanasının kapalı olduğunu kontrol edin.
 2. Tankı temiz suyla doldurun (**Bkz. Bölüm 7.2.2**).
 3. **Ana şalteri** "I" konumuna getirin.
-4. **INADEQUATE WATER LEVEL** ikaz lambasının söndüğünü kontrol edin.
-5. Dijital kontrol cihazında sıcaklığı düşük bir değere (ör. 40 °C) ayarlayın ve ısıtmanın başladığını kontrol edin.
+4. **RESET** butonuna basın ve **SU SEVİYESİ YETERSİZ** ikaz lambasının söndüğünü kontrol edin.
+5. Sıcaklığı düşük bir değere (ör. 40 °C) ayarlayın (P modellerde dijital kontrol cihazında, E modellerde dijital termostatta; E modellerde **ISITICI** anahtarını da açın) ve ısıtmanın başladığını kontrol edin.
 6. Sıvının ayar sıcaklığına ulaştığını ve ısıtmanın bu sıcaklıkta kesildiğini gözleyin.
 
 **Deneme çevrimi**

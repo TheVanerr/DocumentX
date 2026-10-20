@@ -17,7 +17,7 @@ Yıkama sıvısının parçanın tüm yüzeylerine ulaşabilmesi ve parçadan ta
 Yıkama sıcaklığı, yıkama süresi ve kimyasal konsantrasyonu, parçanın malzemesine ve kirlilik türüne göre belirlenir. Yeni bir parça türü için ayarı aşağıdaki sırayla belirleyin:
 
 1. Kimyasal tedarikçisinden, parçanın malzemesi ve kirlilik türü için önerilen kimyasalı, konsantrasyonu ve çalışma sıcaklığını öğrenin.
-2. Sıcaklık ayar değerini tedarikçinin önerdiği değere ayarlayın. Ayar değeri {{GENEL_TEKNIK:Yıkama sıvısı sıcaklığı — maks. (°C)}} °C'yi aşamaz.
+2. Sıcaklık ayar değerini tedarikçinin önerdiği değere ayarlayın. Ayar değeri {{GENEL_TEKNIK:Yıkama sıvısı sıcaklığı — maks. (°C)}} °C'yi aşamaz; özel istekle üst sınırı yükseltilmiş makinelerde sınır {{GENEL_TEKNIK:Yıkama sıvısı sıcaklığı — özel istekle maks. (°C)}} °C'dir (**Bkz. Bölüm 3.3.1**).
 3. İlk denemeyi kısa bir yıkama süresiyle yapın.
 4. Çevrimden sonra parçayı kontrol edin. Kir veya yağ kalıyorsa süreyi kademeli olarak artırın.
 5. Parça istenen temizliğe ulaştığında sıcaklığı, süreyi ve konsantrasyonu aşağıdaki tabloya kaydedin.

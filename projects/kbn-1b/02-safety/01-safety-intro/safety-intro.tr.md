@@ -35,7 +35,7 @@ Aşağıdaki kullanımlar öngörülebilir yanlış kullanımdır ve yasaktır. 
 - Kapak emniyet şalterinin köprülenmesi veya kapak açıkken otomatik yıkamanın çalıştırılmaya çalışılması.
 - Yıkama çevrimi sürerken kapağın açılması veya kabin içine uzanılması.
 - Makinenin, taşıma arabasının veya kapağın üzerine çıkılması, basılması ya da oturulması.
-- Tank boşken veya sıvı seviyesi düşükken ısıtıcının çalıştırılması için seviye şalterinin devre dışı bırakılması.
+- Tank boşken veya sıvı seviyesi düşükken makinenin çalıştırılması için seviye şalterinin devre dışı bırakılması.
 - Buhar tahliye bağlantısı yapılmadan makinenin çalıştırılması.
 - MULTI modellerde manuel yıkama tabancasının kişilere, hayvanlara, elektrik donanımına veya makinenin kendi elektrik panosuna yöneltilmesi.
 

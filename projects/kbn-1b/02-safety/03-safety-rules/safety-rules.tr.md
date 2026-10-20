@@ -8,16 +8,30 @@ Bu alt bölüm, makinenin kullanımı, temizliği ve bakımı sırasında uygula
 
 - Makineyi yalnızca tüm koruyucu paneller takılı, kapak emniyet şalteri ve acil durdurma butonları çalışır durumdayken kullanın.
 - Her vardiya başında acil durdurma butonunu ve kapak emniyet şalterini test edin (**Bkz. Bölüm 7.2**).
-- Kapağı yalnızca yıkama çevrimi tamamlanıp pompa ve döndürme tamamen durduktan sonra açın.
+- Kapağı yalnızca yıkama çevrimi tamamlanıp pompa ve döndürme tamamen durduktan ve buhar tahliye fanı durduktan sonra açın. Fan, çevrim bittikten sonra {{KONTROLLER:Buhar tahliye fanı çalışma süresi — fabrika ayarı (s)}} saniye (fabrika ayarı) daha çalışır (**Bkz. Bölüm 7.4.4**).
 - Kapağı açarken yüzünüzü ve gövdenizi kapak hizasından uzak tutun; kabinden çıkan buharın dağılmasını bekleyin.
 - Kapağı kapatmadan önce kabinde ve kapak hareket alanında kimsenin elinin veya yabancı bir cismin bulunmadığını kontrol edin.
+- **Kapak kapanırken kapağın altına uzanmayın.** Bu kural pnömatik kapaklı (P) modellerde de geçerlidir; kapak, altındaki el, kol veya başı gövdeye sıkıştırır.
+- **Parçaları sepete yalnızca makinenin dışında yükleyin ve boşaltın:** P modellerde taşıma arabasının, E modellerde indirilen kapağın üzerindeki yükleme yolunun üzerinde. Sepeti dışarı çekin, yüklemeyi dışarıda yapın ve yüklü sepeti kabine itin. Kapağın altında yalnızca sepeti çekip itmek için gereken süre kadar kalın (**Bkz. Bölüm 7.4.2**).
+- **Sepeti yalnızca çerçevesinden tutun.** Sepet çekilip itilirken el veya parmaklar sepet tekerlekleri ile tekerleklerin kaydığı profil arasına sıkışabilir.
+- **P modellerde taşıma arabasını her kullanımda kilitleme koluyla makineye kilitleyin** ve sepeti çekmeden önce kilidin tuttuğunu kontrol edin.
+- **P modellerde parçaları yüklemeden önce sepet piminin arabadaki yuvasına oturduğunu kontrol edin** (**Bkz. Bölüm 7.4.2**).
+- **E modellerde kapağı indirdiğinizde kapak güvenlik piminin yuvasına oturduğunu kontrol edin; pim yuvasına oturmadan sepeti çekmeyin** (**Bkz. Bölüm 7.4.2**).
+- **P modellerde çevrimi başlatmadan önce sepet piminin yuvasına oturduğunu kontrol edin** (**Bkz. Bölüm 7.4.3**).
+- **P modellerde TEST butonuyla sepeti veya nozul kollarını döndürürken kabinin dışında durun ve kabine uzanmayın.** TEST butonu yalnızca basılı tutulduğu sürece döndürür; butonu bant, kama veya başka bir araçla basılı konumda sabitlemeyin. Bir parça çarparsa veya yerinden oynarsa butonu hemen bırakın (**Bkz. Bölüm 7.4.3**).
+- **P DN modellerde sepet yerinde değilken kapağı açmaya veya kapatmaya çalışmayın.** Sepet yerinde sensörü sepeti algılamazsa kapak hareket etmez; sensörü köprülemeyin (**Bkz. Bölüm 3.4.4**).
+- **P modellerde kapak silindirlerinin kısma valflerinin ayarını değiştirmeyin** (**Bkz. Bölüm 6.5.2**).
+- Makinenin dış yüzeyleri çalışma sırasında {{GENEL_TEKNIK:Dış yüzey sıcaklığı — çalışma sırasında maks. (°C)}} °C'ye kadar ısınır; dış yüzeylere ısıya dayanıklı eldiven olmadan dokunmayın.
 - Açık kapağın altına girmeyin. P modellerde basınçlı hava kesildiğinde açık kapak kendi ağırlığıyla inebilir.
+- **E modellerde kapağı açarken ve kapatırken baret takın** (**Bkz. Bölüm 2.2.6**). Kapak indirilirken kontrolsüz düşüyorsa veya kaldırılması zorlaşmışsa makineyi kullanmayın ve amortisörleri kontrol ettirin (**Bkz. Bölüm 9.1.7**).
 - Sepete, **Bölüm 3.3**'teki maksimum yükleme ağırlığından ve parça yüksekliğinden fazla yük koymayın.
 - Sıcak parçaları ısıya dayanıklı eldivenle tutun; ağır parçaları kaldırma ekipmanıyla taşıyın.
-- Makinenin, kapağın ve taşıma arabasının üzerine çıkmayın.
+- **Makine çalışırken kesinlikle makinenin üzerine çıkmayın.** Makinenin, kapağın ve taşıma arabasının üzerine hiçbir koşulda çıkmayın ve basmayın.
 - Makine çevresindeki zemini kuru ve temiz tutun; sızıntıları hemen bildirin.
 - Arıza fark ettiğinizde makineyi durdurun, arızayı amirinize bildirin ve **Bölüm 11**'e göre işlem yapın.
 - Makineyi çalışırken gözetimsiz bırakmayın.
+
+**UYARI — Makinenin üzerine çıkma:** Makinenin üzerine çıkan kişi düşebilir, sıcak yüzeylerde yanabilir, hareket eden kapak ile gövde arasında sıkışabilir. Makine çalışırken makinenin üzerine kesinlikle çıkmayın.
 
 ---
 
@@ -40,9 +54,10 @@ Acil durdurma butonuna basıldığında pompa, döndürme motoru ve ısıtıcı 
 2. Tehlikenin nedeni bir arızaysa arızayı **Bölüm 11**'e göre giderin veya giderilmesini sağlayın.
 3. Acil durdurma butonunu üzerindeki ok yönünde çevirerek serbest bırakın.
 4. Kabinde, kapak hareket alanında ve taşıma arabası çevresinde kimsenin bulunmadığını kontrol edin.
-5. Yıkama çevrimini **Bölüm 7.4**'teki adımlarla yeniden başlatın.
+5. **RESET** butonuna basarak kumanda devresini yeniden devreye alın.
+6. Yıkama çevrimini **Bölüm 7.4**'teki adımlarla yeniden başlatın.
 
-**NOT:** Acil durdurma butonu serbest bırakıldığında makine kendiliğinden çalışmaya başlamaz; çevrimin yeniden başlatılması gerekir.
+**NOT:** Acil durdurma butonu serbest bırakıldığında makine kendiliğinden çalışmaya başlamaz; önce **RESET** butonuna basılması, ardından çevrimin yeniden başlatılması gerekir.
 
 ---
 
@@ -53,7 +68,7 @@ Bakım, onarım, arıza giderme, nozul ve filtre temizliği gibi kabin içine, t
 Makinedeki tehlikeli enerji kaynakları şunlardır:
 
 - **Elektrik enerjisi:** 380 V besleme, motorlar, ısıtıcılar, kumanda devresi.
-- **Isıl enerji:** 85 °C'ye kadar sıcak yıkama sıvısı, ısıtıcılar, kabin ve tank yüzeyleri.
+- **Isıl enerji:** {{GENEL_TEKNIK:Yıkama sıvısı sıcaklığı — maks. (°C)}} °C'ye (özel istekle üst sınırı yükseltilmiş makinelerde {{GENEL_TEKNIK:Yıkama sıvısı sıcaklığı — özel istekle maks. (°C)}} °C'ye) kadar sıcak yıkama sıvısı, ısıtıcılar, kabin ve tank yüzeyleri.
 - **Pnömatik enerji (P modeller):** Basınçlı hava hattı, kapak silindirleri.
 - **Hidrolik enerji:** Pompa çıkış hatlarında kalan basınç; MULTI modellerde manuel yıkama hortumu ve tabancasında kalan yüksek basınç.
 - **Yerçekimi:** Açık konumdaki kapak, kaldırılmış parçalar.
@@ -140,4 +155,4 @@ Makinedeki güvenlik donanımları (**Bkz. Bölüm 2.2.3**) birlikte çalışan 
 
 kesinlikle yasaktır. Bir güvenlik donanımı arızalıysa makineyi çalıştırmayın; arızayı yetkili bakım personeline veya üretici servisine giderttirin.
 
-**TEHLİKE — Devre dışı bırakılmış güvenlik donanımı:** Kapak emniyet şalteri, seviye şalteri veya emniyet termostatı devre dışı bırakılırsa sıcak sıvı püskürmesi, dönen parçalara kapılma, aşırı ısınma ve yangın sonucunda ölüm veya ağır yaralanma meydana gelebilir. Güvenlik donanımlarını hiçbir koşulda devre dışı bırakmayın.
+**TEHLİKE — Devre dışı bırakılmış güvenlik donanımı:** Kapak emniyet şalteri, el koruma sensörü, ışık perdesi (opsiyon) veya seviye şalteri devre dışı bırakılırsa sıcak sıvı püskürmesi, kapanan kapağın el veya kolu sıkıştırması, dönen parçalara kapılma, aşırı ısınma ve yangın sonucunda ölüm veya ağır yaralanma meydana gelebilir. Güvenlik donanımlarını hiçbir koşulda devre dışı bırakmayın.

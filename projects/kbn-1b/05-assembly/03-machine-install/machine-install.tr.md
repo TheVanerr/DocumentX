@@ -10,8 +10,8 @@ Elektrik bağlantısını yalnızca yetkili elektrik personeli, makinenin elektr
 
 **Tesis tarafındaki gereksinimler**
 
-- Besleme: {{ELEKTRIK:Besleme gerilimi (V)}} V, {{ELEKTRIK:Besleme frekansı (Hz)}} Hz, {{ELEKTRIK:Faz sayısı}} faz; bağlantı şekli: {{ELEKTRIK:Besleme bağlantı şekli (3P+PE / 3P+N+PE)}}.
-- Besleme hattında, makinenin toplam gücüne göre boyutlandırılmış bir sigorta veya devre kesici ile kaçak akım koruma rölesi (RCD) bulunmalıdır. Önerilen sigorta: {{ELEKTRIK:Önerilen besleme sigortası / devre kesici}}; besleme kablosu kesiti: {{ELEKTRIK:Besleme kablosu kesiti}}.
+- Besleme: {{ELEKTRIK:Besleme gerilimi (V)}} V, {{ELEKTRIK:Besleme frekansı (Hz)}} Hz, {{ELEKTRIK:Faz sayısı}} faz. Bağlantı şekli (3P+PE veya 3P+N+PE), önerilen besleme sigortası ve besleme kablosu kesiti, makineyle birlikte verilen elektrik devre şemasında belirtilmiştir (**Bkz. Bölüm 13.1**).
+- Besleme hattında, elektrik devre şemasında belirtilen değerde bir sigorta veya devre kesici ile kaçak akım koruma rölesi (RCD) bulunmalıdır.
 - Topraklama hattı (PE) yürürlükteki mevzuata uygun olarak yapılmış olmalıdır.
 
 **Bağlantı**
@@ -28,17 +28,21 @@ Elektrik bağlantısını yalnızca yetkili elektrik personeli, makinenin elektr
 
 ## 5.3.2 Su dolum ve tank tahliye bağlantısı
 
-- **Su dolumu:** Tank, {{TESISAT:Su dolum bağlantısı}} üzerinden temiz şebeke suyu ile doldurulur. Dolum hattında, hat basıncını kesmek için bir kesme vanası bulunmalıdır.
-- **Tank tahliyesi:** Tank tahliye vanası makinenin sol tarafında, alt kısımdadır. Tahliye vanasının çıkışını, kullanılmış yıkama sıvısını atık su arıtma sistemine veya bir atık toplama kabına iletecek şekilde bağlayın. Tahliye bağlantısı: {{TESISAT:Tank tahliye bağlantısı}}.
+- **Su dolumu:** Tank temiz şebeke suyu ile doldurulur; su dolum bağlantısı: {{TESISAT:Su dolum bağlantısı}}. Dolum hattında, hat basıncını kesmek için bir kesme vanası bulunmalıdır.
+- **Tank tahliyesi:** **DRENAJ** etiketli tank tahliye vanası makinenin sol tarafında, alt kısımdadır. Tahliye vanasının çıkışını, kullanılmış yıkama sıvısını atık su arıtma sistemine veya bir atık toplama kabına iletecek şekilde bağlayın. Tahliye bağlantısı: {{TESISAT:Tank tahliye bağlantısı}}.
 
 **NOT:** Kullanılmış yıkama sıvısını doğrudan kanalizasyona vermeyin. Sıvı yağ ve kimyasal içerir; yerel çevre mevzuatına göre arıtılmalı veya lisanslı firmaya teslim edilmelidir.
+
+**Otomatik dolum opsiyonu:** Su dolum bağlantısını tesisin şebeke suyu hattına kalıcı olarak bağlayın ve hatta bir kesme vanası takın. Şebeke suyu basıncı {{OPSIYONLAR:Otomatik dolum — su besleme basıncı (bar)}} bar olmalıdır. Kesme vanası, makine çalıştığı sürece açık kalır.
+
+**Otomatik drenaj opsiyonu:** Drenaj pompasının çıkışını, atık su arıtma sistemine veya atık toplama tankına giden sabit bir hatta bağlayın. Tahliye hattını en az {{GENEL_TEKNIK:Yıkama sıvısı sıcaklığı — özel istekle maks. (°C)}} °C sıcaklığa, yıkama kimyasalına ve pompanın basıncına dayanıklı malzemeden yapın.
 
 ---
 
 ## 5.3.3 Basınçlı hava bağlantısı (P modeller)
 
-1. Tesis basınçlı hava hattını makinenin hava girişine bağlayın. Bağlantı: {{TESISAT:Basınçlı hava bağlantısı — P modeller}}.
-2. Hat basıncının en az {{TESISAT:Basınçlı hava basıncı — P modeller (bar)}} bar olduğunu kontrol edin.
+1. Tesis basınçlı hava hattını makinenin hava girişine bağlayın. Hava girişinin bağlantı ölçüsü, makineyle birlikte verilen pnömatik şemada belirtilmiştir (**Bkz. Bölüm 13.1**).
+2. Hat basıncının, pnömatik şemada belirtilen çalışma basıncını sağladığını kontrol edin.
 3. Basınçlı havanın filtrelenmiş ve nemi alınmış olmasını sağlayın. Nemli hava, silindirlerde ve valflerde korozyona yol açar.
 4. Regülatördeki çalışma basıncını **Bölüm 6.5.1**'e göre ayarlayın.
 
