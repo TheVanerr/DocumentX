@@ -2,7 +2,7 @@
 
 ## 1.3.1 Kontaktdaten des Herstellers und der Servicezentrale
 
-Der Begriff **Hersteller** in dieser Anleitung bezeichnet das Unternehmen **CNK ELEKTRONİK MAKİNE SANAYİ AŞ** (Marke: **Dolfin — Industrial Washing Systems**), das die Maschine **KNV 90 7500 2B** konstruiert und gefertigt hat und die rechtliche Verantwortung für sie trägt. Nutzen Sie für Anfragen zu Installation, Inbetriebnahme, Betrieb, Wartung, Störungen, Ersatzteilen und Gewährleistung die folgenden Kanäle.
+Der Begriff **Hersteller** in dieser Anleitung bezeichnet das Unternehmen **CNK ELEKTRONİK MAKİNE SANAYİ AŞ** (Marke: **Dolfin — Industrial Washing Systems**), das die Maschine **KNV 90 12000 2B** konstruiert und gefertigt hat und die rechtliche Verantwortung für sie trägt. Nutzen Sie für Anfragen zu Installation, Inbetriebnahme, Betrieb, Wartung, Störungen, Ersatzteilen und Gewährleistung die folgenden Kanäle.
 
 | Information | Angabe |
 | :--- | :--- |
@@ -33,7 +33,7 @@ Das Schild enthält die folgenden Felder:
 | :--- | :--- | :--- |
 | **Seriennummer** | Maschinenspezifische eindeutige Nummer; Serviceaufzeichnungen werden dieser Nummer zugeordnet | 0726051 |
 | **Modell-/Typcode** | Modellbezeichnung der Maschine | KNV-90 |
-| **Handelsbezeichnung** | Vollständiger Maschinenname / Variante | KNV 90 7500 2B |
+| **Handelsbezeichnung** | Vollständiger Maschinenname / Variante | KNV 90 12000 2B |
 | **Baujahr** | Herstellungsjahr | 2026 |
 | **Installierte Leistung / Versorgung** | Elektrische Daten (**Siehe Kapitel 3.3.3**) | 110 kW — 380 V / 50 Hz / 3-phasig |
 | **Herstellungs-/Versanddatum** | Datum des Werksversands | 2026 |

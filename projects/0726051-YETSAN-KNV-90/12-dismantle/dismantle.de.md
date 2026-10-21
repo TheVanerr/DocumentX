@@ -1,6 +1,6 @@
 # 12. DEMONTAGE
 
-Dieses Kapitel beschreibt die sichere Demontage, die vorübergehende/endgültige Außerbetriebnahme sowie die Verfahren zur Verschrottung und zum Recycling der Maschine **KNV 90 7500 2B**. Die Demontage darf ausschließlich von qualifiziertem Wartungs- und Elektropersonal durchgeführt werden.
+Dieses Kapitel beschreibt die sichere Demontage, die vorübergehende/endgültige Außerbetriebnahme sowie die Verfahren zur Verschrottung und zum Recycling der Maschine **KNV 90 12000 2B**. Die Demontage darf ausschließlich von qualifiziertem Wartungs- und Elektropersonal durchgeführt werden.
 
 Vor der Demontage muss die Maschine stillgesetzt werden, die Tanks müssen entleert sein und das **LOTO-Verfahren** muss angewendet werden (**Siehe Kapitel 2.4**). Das Ablassen der Flüssigkeiten und die Tankreinigung erfolgen gemäß **Kapitel 10.1.5**. Für den Transport gelten die Regeln in **Kapitel 4.1**; zu Transportgewicht und Anschlagpunkten **Siehe Kapitel 3.5.4**.
 

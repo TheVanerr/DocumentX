@@ -67,7 +67,7 @@ Dieses Glossar definiert die in der gesamten Anleitung verwendeten Abkürzungen,
 | **Heizstab** | Elektrische Heizung — Tank 7 × 8 kW, Trocknung 2 × 12 kW (**3.3.4**) |
 | **Interlock (Verriegelung)** | Hardwareseitige Verriegelung — Füllstand, Klappe, Not-Halt, Phase (**3.4.6**) |
 | **Kammer** | Geschlossener Bereich, in dem die Prozesse Waschen, Spülen und Trocknen stattfinden; mit PVC-Vorhang |
-| **KNV 90 7500 2B** | Handelsbezeichnung / Modellvariante der Maschine (KNV-90) |
+| **KNV 90 12000 2B** | Handelsbezeichnung / Modellvariante der Maschine (KNV-90) |
 | **Not-Halt** | Physischer Sicherheitstaster; an der Maschine **7 Stück**; öffnet den Sicherheitskreis (**2.5**) |
 | **Ölabscheidereinheit** | Separater Schrank; trennt ölhaltiges Wasser mit einer druckluftbetriebenen Membranpumpe (**3.1.5**) |
 | **Ölskimmer** | Scheibeneinheit, die das Oberflächenöl von TANK 1 aufnimmt (**3.1.5**) |

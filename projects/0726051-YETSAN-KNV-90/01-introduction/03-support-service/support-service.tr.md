@@ -2,7 +2,7 @@
 
 ## 1.3.1 Üretici ve merkez servis iletişim bilgileri
 
-Bu kılavuzdaki **üretici** ifadesi, **KNV 90 7500 2B** makinesini tasarlayan, üreten ve yasal sorumluluğunu üstlenen **CNK ELEKTRONİK MAKİNE SANAYİ AŞ** (marka: **Dolfin — Industrial Washing Systems**) firmasını ifade eder. Kurulum, devreye alma, işletim, bakım, arıza, yedek parça ve garanti talepleri için aşağıdaki kanalları kullanın.
+Bu kılavuzdaki **üretici** ifadesi, **KNV 90 12000 2B** makinesini tasarlayan, üreten ve yasal sorumluluğunu üstlenen **CNK ELEKTRONİK MAKİNE SANAYİ AŞ** (marka: **Dolfin — Industrial Washing Systems**) firmasını ifade eder. Kurulum, devreye alma, işletim, bakım, arıza, yedek parça ve garanti talepleri için aşağıdaki kanalları kullanın.
 
 | Bilgi | Detay |
 | :--- | :--- |
@@ -33,7 +33,7 @@ Etikette aşağıdaki alanlar yer alır:
 | :--- | :--- | :--- |
 | **Seri numarası** | Makineye özgü tekil numara; servis kayıtları bu numara ile eşleştirilir | 0726051 |
 | **Model / tip kodu** | Makine model tanımı | KNV-90 |
-| **Ticari tanım** | Tam makine adı / varyant | KNV 90 7500 2B |
+| **Ticari tanım** | Tam makine adı / varyant | KNV 90 12000 2B |
 | **Üretim yılı** | İmalat yılı | 2026 |
 | **Kurulu güç / besleme** | Elektrik verisi (**Bkz. Bölüm 3.3.3**) | 110 kW — 380 V / 50 Hz / 3 faz |
 | **İmalat / sevk tarihi** | Fabrikadan sevk tarihi | 2026 |

@@ -1,6 +1,6 @@
 # 1.2 Semboller ve etiketleme kuralları
 
-Bu kılavuzda ve **KNV 90 7500 2B** makine gövdesinde kullanılan semboller; operatör güvenliğini artırmak, riskleri belirtmek, zorunlu eylemleri göstermek ve tesis bağlantı noktalarını tanımlamak amacıyla uluslararası standartlara (ISO 7010, ISO 3864-2) uygun yerleştirilmiştir. Semboller dil bağımsız uyarı iletimi sağlar; makineyi devreye almadan, bakım yapmadan veya sıcak/kimyasal parçalara müdahale etmeden önce aşağıdaki anlamları inceleyin.
+Bu kılavuzda ve **KNV 90 12000 2B** makine gövdesinde kullanılan semboller; operatör güvenliğini artırmak, riskleri belirtmek, zorunlu eylemleri göstermek ve tesis bağlantı noktalarını tanımlamak amacıyla uluslararası standartlara (ISO 7010, ISO 3864-2) uygun yerleştirilmiştir. Semboller dil bağımsız uyarı iletimi sağlar; makineyi devreye almadan, bakım yapmadan veya sıcak/kimyasal parçalara müdahale etmeden önce aşağıdaki anlamları inceleyin.
 
 Semboller üç grupta toplanır: **uyarı** (tehlike ve yasak), **KKD** (kişisel koruyucu donanım zorunluluğu) ve **makine bilgi** (bağlantı noktaları: topraklama, su, hava, tahliye; emniyet kilidi). Makine üzerindeki etiket konumları ve kalıntı riskler için **Bkz. Bölüm 2.2**. Operatör paneli lambalarının teknik tanımı için **Bkz. Bölüm 3.4.5**.
 

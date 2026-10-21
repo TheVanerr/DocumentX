@@ -1,6 +1,6 @@
 # 2. GÜVENLİK
 
-**KNV 90 7500 2B** (seri no **0726051**) konveyörlü endüstriyel parça yıkama makinesi; +70 °C'ye kadar ısıtılan proses sıvısı, 8 kW ve 12 kW elektrikli rezistanslar, hareketli zincirli konveyör, döner pompa ve fan mekanizmaları, 6 bar basınçlı hava, 380 V / 110 kW elektrik ve kimyasal maruziyet riskleri içerir. Bu bölüm, makinenin kurulum, devreye alma, işletim, bakım ve servis aşamalarında uyulması gereken güvenlik kurallarını tanımlar. Talimatlar EN ISO 12100 ve EN ISO 20607 ilkelerine uygun hazırlanmıştır.
+**KNV 90 12000 2B** (seri no **0726051**) konveyörlü endüstriyel parça yıkama makinesi; +70 °C'ye kadar ısıtılan proses sıvısı, 8 kW ve 12 kW elektrikli rezistanslar, hareketli zincirli konveyör, döner pompa ve fan mekanizmaları, 6 bar basınçlı hava, 380 V / 110 kW elektrik ve kimyasal maruziyet riskleri içerir. Bu bölüm, makinenin kurulum, devreye alma, işletim, bakım ve servis aşamalarında uyulması gereken güvenlik kurallarını tanımlar. Talimatlar EN ISO 12100 ve EN ISO 20607 ilkelerine uygun hazırlanmıştır.
 
 Güvenlik gereksinimlerinin ihlali; yaralanma, ekipman hasarı, çevresel etki ve garanti kapsamının sona ermesi riski doğurur. Makineyi işleten kurum (işveren), personel görevlendirmesinden, eğitimden ve kılavuzun erişilebilirliğinden sorumludur (**Bkz. Bölüm 1.1.3**).
 

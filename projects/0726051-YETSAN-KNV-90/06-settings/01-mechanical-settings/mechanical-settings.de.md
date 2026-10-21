@@ -1,6 +1,6 @@
 # 6.1 Mechanische Einstellungen
 
-Die Maschine KNV 90 7500 2B wurde ab Werk so in Betrieb genommen, dass keine mechanischen Einstellungen erforderlich sind. Förderkette und Drahtgurt, die Verbindung Getriebemotor–Drehmomentbegrenzer, die Pumpenmontagen, die Düsenkollektoren und die Luftmesserrohre der Blower sind innerhalb der Herstellertoleranzen fixiert; eine periodische mechanische Feineinstellung durch den Bediener oder das Wartungspersonal ist nicht vorgesehen.
+Die Maschine KNV 90 12000 2B wurde ab Werk so in Betrieb genommen, dass keine mechanischen Einstellungen erforderlich sind. Förderkette und Drahtgurt, die Verbindung Getriebemotor–Drehmomentbegrenzer, die Pumpenmontagen, die Düsenkollektoren und die Luftmesserrohre der Blower sind innerhalb der Herstellertoleranzen fixiert; eine periodische mechanische Feineinstellung durch den Bediener oder das Wartungspersonal ist nicht vorgesehen.
 
 Dieses Kapitel erläutert, warum an der Maschine keine mechanischen Einstellungen erforderlich sind und welche mechanischen Kontrollen im Rahmen der Wartung als Sichtprüfung erfolgen. Die mechanische Wartung (Schmierung, Filter, Prüfung von Drahtgurt und Kette) ist in **Kapitel 9** definiert.
 

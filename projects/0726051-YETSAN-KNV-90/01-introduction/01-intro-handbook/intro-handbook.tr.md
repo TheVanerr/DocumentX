@@ -2,9 +2,9 @@
 
 ## 1.1.1 Kılavuzun amacı, kapsamı ve uygulama alanı
 
-Bu kullanım kılavuzu, **KNV 90 7500 2B** makinesinin ayrılmaz ve yasal olarak bağlayıcı bir parçasıdır. Kılavuz; makinenin güvenli, verimli ve amacına uygun kullanımını sağlamak üzere EN ISO 12100 (makine güvenliği — risk değerlendirmesi) ve EN ISO 20607 (kullanım kılavuzu — genel yazım ilkeleri) ilkelerine uygun hazırlanmıştır. Bu standartlar, makine güvenliği ve kılavuz içeriği konusunda uluslararası kabul görmüş asgari gereksinimleri tanımlar; bu nedenle kılavuzdaki talimatlar yalnızca öneri değil, işletme sorumluluğunun parçasıdır.
+Bu kullanım kılavuzu, **KNV 90 12000 2B** makinesinin ayrılmaz ve yasal olarak bağlayıcı bir parçasıdır. Kılavuz; makinenin güvenli, verimli ve amacına uygun kullanımını sağlamak üzere EN ISO 12100 (makine güvenliği — risk değerlendirmesi) ve EN ISO 20607 (kullanım kılavuzu — genel yazım ilkeleri) ilkelerine uygun hazırlanmıştır. Bu standartlar, makine güvenliği ve kılavuz içeriği konusunda uluslararası kabul görmüş asgari gereksinimleri tanımlar; bu nedenle kılavuzdaki talimatlar yalnızca öneri değil, işletme sorumluluğunun parçasıdır.
 
-**Kapsam:** **KNV 90 7500 2B** (model kodu **KNV-90**, seri no **0726051**, müşteri **YETSAN**) ve bu projeye teslim edilen standart donanım. Proje dışı opsiyon yoktur.
+**Kapsam:** **KNV 90 12000 2B** (model kodu **KNV-90**, seri no **0726051**, müşteri **YETSAN**) ve bu projeye teslim edilen standart donanım. Proje dışı opsiyon yoktur.
 
 **Hedef okuyucu grupları:** Operatör, bakım personeli, kurulum personeli.
 
@@ -30,7 +30,7 @@ Bu kılavuzdaki metinler, teknik veriler, fotoğraflar ve şemalar; makinenin fa
 
 | Alan | Değer |
 | :--- | :--- |
-| **Makine** | KNV 90 7500 2B |
+| **Makine** | KNV 90 12000 2B |
 | **Model kodu** | KNV-90 |
 | **Seri numarası** | 0726051 |
 | **Üretim yılı** | 2026 |

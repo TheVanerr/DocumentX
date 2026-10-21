@@ -1,6 +1,6 @@
 # 12. DEMONTAJ
 
-Bu bölüm, **KNV 90 7500 2B** makinesinin güvenli demontajı, geçici/kalıcı devre dışı bırakılması ve hurda/geri dönüşüm prosedürlerini tanımlar. Demontaj yalnızca yetkili bakım ve elektrik personeli tarafından yapılmalıdır.
+Bu bölüm, **KNV 90 12000 2B** makinesinin güvenli demontajı, geçici/kalıcı devre dışı bırakılması ve hurda/geri dönüşüm prosedürlerini tanımlar. Demontaj yalnızca yetkili bakım ve elektrik personeli tarafından yapılmalıdır.
 
 Demontajdan önce makine durdurulmalı, tanklar boşaltılmalı ve **LOTO prosedürü** uygulanmalıdır (**Bkz. Bölüm 2.4**). Sıvı tahliyesi ve tank temizliği **Bölüm 10.1.5**'e göre yapılır. Taşıma **Bölüm 4.1** kurallarına uyar; taşıma ağırlığı ve kaldırma noktaları için **Bkz. Bölüm 3.5.4**.
 

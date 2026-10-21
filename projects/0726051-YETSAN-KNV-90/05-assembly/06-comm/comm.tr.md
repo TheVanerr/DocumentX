@@ -1,6 +1,6 @@
 # 5.6 İletişim ve otomasyon arayüzü
 
-**KNV 90 7500 2B** makinesinde **PLC, HMI, fieldbus veya üst sistem bağlantısı bulunmamaktadır**. Kontrol tamamen röle–kontaktör mantığı ile operatör paneli anahtarları üzerinden yapılır (**Bkz. Bölüm 3.4**). Bu nedenle kurulumda ağ yapılandırması, adresleme veya haberleşme testi uygulanmaz.
+**KNV 90 12000 2B** makinesinde **PLC, HMI, fieldbus veya üst sistem bağlantısı bulunmamaktadır**. Kontrol tamamen röle–kontaktör mantığı ile operatör paneli anahtarları üzerinden yapılır (**Bkz. Bölüm 3.4**). Bu nedenle kurulumda ağ yapılandırması, adresleme veya haberleşme testi uygulanmaz.
 
 ---
 

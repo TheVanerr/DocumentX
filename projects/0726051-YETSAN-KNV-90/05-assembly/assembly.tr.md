@@ -1,6 +1,6 @@
 # 5. KURULUM VE DEVREYE ALMA
 
-**KNV 90 7500 2B** (seri no **0726051**) makinesinin kurulum alanına yerleştirilmesi, teraziye alınması, medya ve elektrik bağlantıları, egzoz bacası bağlantısı, yağ ayırıcı ünitesinin bağlanması, güvenlik fonksiyon testleri ve devreye alma doğrulaması bu bölümde tanımlanır. Kurulum, taşıma tamamlandıktan sonra (**Bkz. Bölüm 4**) ve operasyona geçmeden önce (**Bkz. Bölüm 7**) uygulanır. Elektrik bağlantıları yalnızca yetkili elektrik personeli tarafından yapılmalıdır.
+**KNV 90 12000 2B** (seri no **0726051**) makinesinin kurulum alanına yerleştirilmesi, teraziye alınması, medya ve elektrik bağlantıları, egzoz bacası bağlantısı, yağ ayırıcı ünitesinin bağlanması, güvenlik fonksiyon testleri ve devreye alma doğrulaması bu bölümde tanımlanır. Kurulum, taşıma tamamlandıktan sonra (**Bkz. Bölüm 4**) ve operasyona geçmeden önce (**Bkz. Bölüm 7**) uygulanır. Elektrik bağlantıları yalnızca yetkili elektrik personeli tarafından yapılmalıdır.
 
 Bu makinede HMI bulunmadığından devreye alma doğrulaması, pano lambaları ve fiziksel gözlem (motor dönüş yönü, basınç, sızıntı) ile yapılır. Montaj süresi, ekip ve ekipman gereksinimi **Bölüm 5.1.1**'de verilmiştir. Yerleştirme için **forklift** kullanılır; kaldırma noktaları ve forklift çatal konumu: **Bkz. Bölüm 3.5.4**. Boyut, ağırlık, elektrik ve medya değerleri **Bölüm 3.3**'te verilmiştir; kurulum alanı ve etraf boşlukları **Bölüm 3.5.2**'de tanımlıdır.
 

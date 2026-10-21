@@ -15,7 +15,7 @@
 [PROJE]
 Proje / sipariş no: 0726051
 Müşteri adı: YETSAN
-Makine ticari adı: KNV 90 7500 2B
+Makine ticari adı: KNV 90 12000 2B
 Makine model kodu: KNV-90
 Seri numarası: 0726051
 Üretim yılı: 2026
@@ -34,15 +34,15 @@ E-posta: dolfin@dolfintr.com
 Yetkili servis / teknik destek: CNK ELEKTRONİK MAKİNE SANAYİ AŞ — yukarıdaki iletişim kanalları
 
 [MODEL_VARYANTLARI]
-# Bu proje tek makine — kılavuz yalnızca KNV 90 7500 2B (seri 0726051) için geçerlidir
-Makine (KNV 90 7500 2B): Konveyörlü (2B) endüstriyel parça yıkama hattı — iki banyo (yıkama + durulama), kurutma ünitesi; buton panosu ile kontrol (PLC/HMI yok); robot entegrasyonu yok
+# Bu proje tek makine — kılavuz yalnızca KNV 90 12000 2B (seri 0726051) için geçerlidir
+Makine (KNV 90 12000 2B): Konveyörlü (2B) endüstriyel parça yıkama hattı — iki banyo (yıkama + durulama), kurutma ünitesi; buton panosu ile kontrol (PLC/HMI yok); robot entegrasyonu yok
 
 # =============================================================================
 # 01 — GİRİŞ (introduction)
 # =============================================================================
 
 [GIRIS_GENEL]
-Kılavuz kapsamı (hangi makine, hangi opsiyonlar): KNV 90 7500 2B (seri no 0726051), müşteri YETSAN — teslim edilen makine ve standart donanım; proje dışı opsiyon yok
+Kılavuz kapsamı (hangi makine, hangi opsiyonlar): KNV 90 12000 2B (seri no 0726051), müşteri YETSAN — teslim edilen makine ve standart donanım; proje dışı opsiyon yok
 Kılavuz hedef kitlesi (operatör / bakım / kurulum): Operatör, bakım personeli, kurulum personeli
 Makine tipi kısa tanım (1-2 cümle): Redüktör ile tahrik edilen zincirli konveyör üzerinde endüstriyel parçaların yıkama ve durulama banyolarından geçirilip kurutma ünitesinde kurutulduğu konveyörlü endüstriyel parça yıkama makinesi
 
@@ -618,7 +618,7 @@ Faz/MKŞ/kontaktör özeti: Bkz. [MOTOR_SURUCU_LISTESI]
 
 [PARCA_LISTESI]
 Parça listesi (BOM) konumu: Kılavuz Bölüm 13.3 + 0726051-YETSAN-KNV 90 PARCA LISTESI
-Mekanik parça listesi referansı: Ürün ağacı (KNV 90 7500 2B) — aşağıdaki tablo
+Mekanik parça listesi referansı: Ürün ağacı (KNV 90 7500 ÜRÜN AĞACI.xlsm) — aşağıdaki tablo. NOT: makine KNV 90 12000 2B; 7500 ürün ağacından gelen komple kalemler (07 17686, 07 17682, 07 17689) 12000 ürün ağacı ile doğrulanacak (EKSIK-SORULAR S17)
 Elektrik parça listesi referansı: Ürün ağacı + [PANO_MALZEME_OZET]
 Wear part / aşınan parça listesi: Kategori=Tüketim satırları
 

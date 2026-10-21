@@ -1,6 +1,6 @@
 # 2.1 Güvenliğe giriş ve işletme sorumlulukları
 
-Bu bölüm, KNV 90 7500 2B makinesinin güvenli çalışma sınırlarını, işverenin yasal yükümlülüklerini ve personel için geçerli emniyet çerçevesini tanımlar. Makine; konveyörlü sürekli akış, iki ısıtmalı proses tankı (yıkama + durulama), blower ve kurutma fanları, egzoz fanı ve buton kontrollü bir elektrik panosu ile çalışır. Her aşamada bu bölüm ve alt bölümlerdeki talimatlara uyulması zorunludur.
+Bu bölüm, KNV 90 12000 2B makinesinin güvenli çalışma sınırlarını, işverenin yasal yükümlülüklerini ve personel için geçerli emniyet çerçevesini tanımlar. Makine; konveyörlü sürekli akış, iki ısıtmalı proses tankı (yıkama + durulama), blower ve kurutma fanları, egzoz fanı ve buton kontrollü bir elektrik panosu ile çalışır. Her aşamada bu bölüm ve alt bölümlerdeki talimatlara uyulması zorunludur.
 
 Makineyi işleten kurum; risk değerlendirmesi yapmaktan, personeli eğitmekten, KKD sağlamaktan ve güvenlik cihazlarını çalışır durumda tutmaktan sorumludur. Kılavuzdaki güvenlik kurallarının ihlalinden doğan hukuki ve cezai sorumluluk işletmeciye aittir.
 

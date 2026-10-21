@@ -1,6 +1,6 @@
 # 6. AYARLAR
 
-Bu bölüm, **KNV 90 7500 2B** makinesinin devreye alma sonrası (**Bkz. Bölüm 5**) operatör ve bakım personelinin yapabileceği **ayar parametrelerini** tanımlar. Makinede PLC/HMI bulunmadığından ayar noktaları sınırlıdır ve tamamı fizikseldir: dört **GEMO DTH2 termostat** set değeri, **konveyör hız potansiyometresi** ve **basınçlı hava regülatörü**. Bu üç ayar; proses sıcaklığını, parçanın hücre içindeki temas süresini ve yağ ayırıcı pompasının çalışmasını belirler.
+Bu bölüm, **KNV 90 12000 2B** makinesinin devreye alma sonrası (**Bkz. Bölüm 5**) operatör ve bakım personelinin yapabileceği **ayar parametrelerini** tanımlar. Makinede PLC/HMI bulunmadığından ayar noktaları sınırlıdır ve tamamı fizikseldir: dört **GEMO DTH2 termostat** set değeri, **konveyör hız potansiyometresi** ve **basınçlı hava regülatörü**. Bu üç ayar; proses sıcaklığını, parçanın hücre içindeki temas süresini ve yağ ayırıcı pompasının çalışmasını belirler.
 
 **Hedef kitle:** Operatör (termostat set değerleri, konveyör hızı), bakım personeli (regülatör, periyodik güvenlik testi), üretici servisi (inverter parametreleri, emniyet röle devresi). Konveyör inverteri parametreleri ve emniyet röle devresi yalnızca **üretici yetkili servisi** tarafından değiştirilmelidir.
 

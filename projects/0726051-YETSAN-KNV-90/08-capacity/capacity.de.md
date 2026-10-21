@@ -1,6 +1,6 @@
 # 8. KAPAZITÄT
 
-Dieses Kapitel beschreibt die Produktionskapazität, die Produktgrenzen und die produktspezifische Prozesskonfiguration der Maschine **KNV 90 7500 2B**. Die Kapazität hängt von der Werkstückgeometrie, der Werkstückdichte auf dem Drahtgurt, dem Belade-/Entnahmetempo des Bedieners, der Fördergeschwindigkeit (20–60 Hz), den Thermostat-Sollwerten und den eingeschalteten Prozessfunktionen (Waschen, Spülen, Blower, Trocknen) ab.
+Dieses Kapitel beschreibt die Produktionskapazität, die Produktgrenzen und die produktspezifische Prozesskonfiguration der Maschine **KNV 90 12000 2B**. Die Kapazität hängt von der Werkstückgeometrie, der Werkstückdichte auf dem Drahtgurt, dem Belade-/Entnahmetempo des Bedieners, der Fördergeschwindigkeit (20–60 Hz), den Thermostat-Sollwerten und den eingeschalteten Prozessfunktionen (Waschen, Spülen, Blower, Trocknen) ab.
 
 Die Maschine besitzt weder einen Rezeptspeicher noch ein HMI; das produktspezifische „Rezept" ist die vom Bediener aufgezeichnete Kombination aus **Fördergeschwindigkeit + Thermostat-Sollwerten + eingeschalteten Funktionen**. Die Werte für Nenn-, Maximal- und Minimalkapazität werden **vom Kunden** festgelegt (**Siehe Kapitel 3.3.2**); sie werden in diesem Kapitel nicht wiederholt. Die Betriebsverfahren sind in **Kapitel 7**, die Einstellungen in **Kapitel 6.3** beschrieben.
 

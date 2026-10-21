@@ -1,6 +1,6 @@
 # 7.1 Betriebsarten
 
-Die KNV 90 7500 2B besitzt **eine einzige Betriebsweise**: Jede Prozesseinheit wird über die Funktionsschalter am Bedienfeld unabhängig ein- und ausgeschaltet. Ein separater Wahlschalter für Automatik-, Hand-, Schritt- oder Wartungsbetrieb ist **nicht vorhanden**; folglich gibt es auch keinen Betriebsartenwechsel. Die folgenden Unterkapitel erläutern, ob die jeweilige Betriebsart an dieser Maschine vorhanden ist.
+Die KNV 90 12000 2B besitzt **eine einzige Betriebsweise**: Jede Prozesseinheit wird über die Funktionsschalter am Bedienfeld unabhängig ein- und ausgeschaltet. Ein separater Wahlschalter für Automatik-, Hand-, Schritt- oder Wartungsbetrieb ist **nicht vorhanden**; folglich gibt es auch keinen Betriebsartenwechsel. Die folgenden Unterkapitel erläutern, ob die jeweilige Betriebsart an dieser Maschine vorhanden ist.
 
 Daraus folgt: Die Maschine bereitet sich nicht mit einem einzelnen Startbefehl selbsttätig vor und läuft nicht von selbst an. Der Bediener befüllt die Tanks, schaltet die Heizungen ein, schaltet nach dem Aufheizen des Wassers die Pumpen, die benötigten Blower-/Trocknungsfunktionen und zuletzt den Förderer ein (**Siehe Kapitel 7.2**). Die Verriegelungen (Tankfüllstand, Klappensicherheit, Not-Halt, Phasenüberwachung) sind hardwareseitig immer aktiv und unterbrechen den Ausgang unabhängig von der Schalterstellung (**Siehe Kapitel 3.4.6**).
 

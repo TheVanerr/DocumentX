@@ -1,6 +1,6 @@
 # 9. BAKIM
 
-Bu bölüm, **KNV 90 7500 2B** makinesinin önleyici bakım programını, yağlama noktalarını ve sahadaki yedek parça stok önerilerini tanımlar. Makine, müşteri vardiya planına göre operatör gözetiminde çalışır; planlı bakım ve arıza müdahalesi **bakım personeli** tarafından, pano içi işler **yetkili elektrikçi** tarafından yapılır.
+Bu bölüm, **KNV 90 12000 2B** makinesinin önleyici bakım programını, yağlama noktalarını ve sahadaki yedek parça stok önerilerini tanımlar. Makine, müşteri vardiya planına göre operatör gözetiminde çalışır; planlı bakım ve arıza müdahalesi **bakım personeli** tarafından, pano içi işler **yetkili elektrikçi** tarafından yapılır.
 
 **Periyodik bakım takvimi bu bölümde verilmiştir.** Filtre temizliği adımları **Bölüm 10**'da; LOTO prosedürü **Bölüm 2.4**'te tanımlıdır — adımlar burada tekrarlanmaz. Tam parça listesi (BOM) **Bölüm 13.3**'te verilmiştir; bu bölümde operasyonel özet tablolar bulunur.
 

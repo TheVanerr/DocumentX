@@ -1,6 +1,6 @@
 # 7. OPERASYON
 
-**KNV 90 7500 2B** (seri no **0726051**) makinesinin günlük çalıştırılması, durdurulması ve proses akışı bu bölümde tanımlanır. Makine **merkezi otomatik sekans içermez**: operatör panelindeki her fonksiyon (tank ısıtıcıları, pompalar, yağ sıyırıcı, yağ ayırıcı, blowerlar, kurutma fanları ve ısıtıcıları, konveyör) ayrı bir aç/kapa anahtarı ile yönetilir. Parça yükleme ve boşaltma **operatör tarafından elle** yapılır; makine çalışırken hat başında en az bir operatör bulunur.
+**KNV 90 12000 2B** (seri no **0726051**) makinesinin günlük çalıştırılması, durdurulması ve proses akışı bu bölümde tanımlanır. Makine **merkezi otomatik sekans içermez**: operatör panelindeki her fonksiyon (tank ısıtıcıları, pompalar, yağ sıyırıcı, yağ ayırıcı, blowerlar, kurutma fanları ve ısıtıcıları, konveyör) ayrı bir aç/kapa anahtarı ile yönetilir. Parça yükleme ve boşaltma **operatör tarafından elle** yapılır; makine çalışırken hat başında en az bir operatör bulunur.
 
 Bu yapı, operatöre proses adımlarını ihtiyaca göre seçme esnekliği verir (ör. yalnızca yıkama, ya da yıkama + kurutma). Buna karşılık doğru başlatma sırasına ve donanımsal interlock'lara (tank seviyesi, kapak emniyeti, acil stop) uymak operatör sorumluluğundadır; yanlış sıra proses verimini düşürür ve ekipmanı zorlar. Operatör paneli yapısı **Bölüm 3.4**'te, ayarlar **Bölüm 6**'da, kurulum ve ilk devreye alma **Bölüm 5**'te anlatılmıştır.
 

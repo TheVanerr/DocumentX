@@ -1,12 +1,12 @@
 # 3.1 Makine tanımı
 
-**KNV 90 7500 2B**, endüstriyel parçaların konveyör üzerinde taşınarak yıkama, durulama, su sıyırma ve kurutma proseslerinden geçirildiği konveyörlü bir parça yıkama makinesidir. Makine; yıkama ve durulama tankları ile bunların püskürtme hücreleri, blower ve sıcak havalı kurutma ünitesi, egzoz fanı ve parça taşıma konveyöründen oluşan entegre bir hat yapısındadır. Ana işlevi, parça yüzeylerindeki proses kirlerinin ve yağ/atıkların ısıtılmış yıkama ve durulama sıvıları ile giderilmesi, ardından parçanın kurutulmuş olarak hattan çıkarılmasıdır.
+**KNV 90 12000 2B**, endüstriyel parçaların konveyör üzerinde taşınarak yıkama, durulama, su sıyırma ve kurutma proseslerinden geçirildiği konveyörlü bir parça yıkama makinesidir. Makine; yıkama ve durulama tankları ile bunların püskürtme hücreleri, blower ve sıcak havalı kurutma ünitesi, egzoz fanı ve parça taşıma konveyöründen oluşan entegre bir hat yapısındadır. Ana işlevi, parça yüzeylerindeki proses kirlerinin ve yağ/atıkların ısıtılmış yıkama ve durulama sıvıları ile giderilmesi, ardından parçanın kurutulmuş olarak hattan çıkarılmasıdır.
 
 Makineye karşıdan (ön uzun kenardan) bakıldığında konveyör akış yönü **sol besleme / sağ boşaltma** şeklindedir. Tanklar, pompalar, elektrik panosu ve operatör paneli **ön uzun kenar** boyunca yerleşiktir; pano ve panel bu kenarın **sağ (çıkış) ucuna yakındır** ve günlük müdahale noktalarına bu kenardan erişilir (**Bkz. Bölüm 3.5.1**). Bu projede parça giriş ve çıkışı **operatör tarafından elle** yapılır; robot entegrasyonu ve otomatik hat kontrolü yoktur. Makine gövdesi ve tanklar paslanmaz çelikten imal edilmiştir; proses tankları elektrikli rezistanslarla ısıtılır.
 
 Aşağıdaki alt bölümler proses akışını ve her ana modülün işlevini açıklar. Sayısal teknik değerler **Bölüm 3.3**'te, kontrol elemanları **Bölüm 3.4**'te verilir.
 
-![KNV 90 7500 2B — 3D genel görünüm (sol giriş, sağ çıkış)](../../assets/3.1/3d-izometrik.png)
+![KNV 90 12000 2B — 3D genel görünüm (sol giriş, sağ çıkış)](../../assets/3.1/3d-izometrik.png)
 
 ---
 

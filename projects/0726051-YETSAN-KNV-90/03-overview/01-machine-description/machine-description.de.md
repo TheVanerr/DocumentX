@@ -1,12 +1,12 @@
 # 3.1 Maschinenbeschreibung
 
-**KNV 90 7500 2B** ist eine Teilewaschmaschine mit Förderer, in der industrielle Werkstücke auf einem Förderer transportiert und durch die Prozesse Waschen, Spülen, Wasserabblasen und Trocknen geführt werden. Die Maschine ist als integrierte Linie aufgebaut, bestehend aus Wasch- und Spültank mit den zugehörigen Sprühkammern, Blower- und Heißluft-Trocknungseinheit, Abluftventilator und Werkstückförderer. Ihre Hauptfunktion ist die Entfernung von Prozessschmutz sowie Öl und Rückständen von den Werkstückoberflächen mit erwärmten Wasch- und Spülflüssigkeiten und die anschließende Ausgabe des getrockneten Werkstücks aus der Linie.
+**KNV 90 12000 2B** ist eine Teilewaschmaschine mit Förderer, in der industrielle Werkstücke auf einem Förderer transportiert und durch die Prozesse Waschen, Spülen, Wasserabblasen und Trocknen geführt werden. Die Maschine ist als integrierte Linie aufgebaut, bestehend aus Wasch- und Spültank mit den zugehörigen Sprühkammern, Blower- und Heißluft-Trocknungseinheit, Abluftventilator und Werkstückförderer. Ihre Hauptfunktion ist die Entfernung von Prozessschmutz sowie Öl und Rückständen von den Werkstückoberflächen mit erwärmten Wasch- und Spülflüssigkeiten und die anschließende Ausgabe des getrockneten Werkstücks aus der Linie.
 
 Bei Blick von vorn (von der vorderen Längsseite) ist die Förderrichtung **Beschickung links / Entnahme rechts**. Tanks, Pumpen, Schaltschrank und Bedienfeld sind entlang der **vorderen Längsseite** angeordnet; Schaltschrank und Bedienfeld befinden sich **nahe dem rechten Ende (Ausgang)** dieser Seite, und die täglichen Eingriffsstellen sind von dieser Seite aus zugänglich (**Siehe Kapitel 3.5.1**). In diesem Projekt werden die Werkstücke **vom Bediener von Hand** aufgelegt und entnommen; eine Roboterintegration und eine automatische Liniensteuerung sind nicht vorhanden. Maschinengehäuse und Tanks sind aus Edelstahl gefertigt; die Prozesstanks werden mit elektrischen Heizstäben beheizt.
 
 Die folgenden Unterkapitel erläutern den Prozessablauf und die Funktion jedes Hauptmoduls. Die numerischen technischen Werte sind in **Kapitel 3.3**, die Bedienelemente in **Kapitel 3.4** angegeben.
 
-![KNV 90 7500 2B — 3D-Gesamtansicht (Eingang links, Ausgang rechts)](../../assets/3.1/3d-izometrik.png)
+![KNV 90 12000 2B — 3D-Gesamtansicht (Eingang links, Ausgang rechts)](../../assets/3.1/3d-izometrik.png)
 
 ---
 

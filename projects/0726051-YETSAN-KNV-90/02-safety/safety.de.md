@@ -1,6 +1,6 @@
 # 2. SICHERHEIT
 
-Die industrielle Teilewaschmaschine mit Förderer **KNV 90 7500 2B** (Seriennummer **0726051**) birgt Risiken durch bis +70 °C erhitzte Prozessflüssigkeit, elektrische Heizstäbe mit 8 kW und 12 kW, einen laufenden Kettenförderer, rotierende Pumpen- und Ventilatormechanismen, Druckluft mit 6 bar, Elektrik mit 380 V / 110 kW sowie Chemikalienexposition. Dieses Kapitel definiert die Sicherheitsregeln, die bei Installation, Inbetriebnahme, Betrieb, Wartung und Service der Maschine einzuhalten sind. Die Anweisungen wurden nach den Grundsätzen von EN ISO 12100 und EN ISO 20607 erstellt.
+Die industrielle Teilewaschmaschine mit Förderer **KNV 90 12000 2B** (Seriennummer **0726051**) birgt Risiken durch bis +70 °C erhitzte Prozessflüssigkeit, elektrische Heizstäbe mit 8 kW und 12 kW, einen laufenden Kettenförderer, rotierende Pumpen- und Ventilatormechanismen, Druckluft mit 6 bar, Elektrik mit 380 V / 110 kW sowie Chemikalienexposition. Dieses Kapitel definiert die Sicherheitsregeln, die bei Installation, Inbetriebnahme, Betrieb, Wartung und Service der Maschine einzuhalten sind. Die Anweisungen wurden nach den Grundsätzen von EN ISO 12100 und EN ISO 20607 erstellt.
 
 Die Verletzung der Sicherheitsanforderungen birgt die Gefahr von Personenschäden, Sachschäden, Umweltauswirkungen und des Erlöschens der Gewährleistung. Die die Maschine betreibende Organisation (Betreiber) ist für den Personaleinsatz, die Schulung und die Verfügbarkeit der Anleitung verantwortlich (**Siehe Kapitel 1.1.3**).
 

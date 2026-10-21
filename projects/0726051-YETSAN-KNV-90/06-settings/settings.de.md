@@ -1,6 +1,6 @@
 # 6. EINSTELLUNGEN
 
-Dieses Kapitel definiert die **Einstellparameter**, die Bediener und Wartungspersonal an der Maschine **KNV 90 7500 2B** nach der Inbetriebnahme (**Siehe Kapitel 5**) vornehmen können. Da die Maschine weder über eine SPS noch über ein HMI verfügt, sind die Einstellpunkte begrenzt und sämtlich physisch: die Sollwerte der vier **Thermostate GEMO DTH2**, das **Potentiometer für die Fördergeschwindigkeit** und der **Druckluft-Druckregler**. Diese drei Einstellungen bestimmen die Prozesstemperatur, die Verweilzeit des Werkstücks in der Kammer und den Betrieb der Ölabscheiderpumpe.
+Dieses Kapitel definiert die **Einstellparameter**, die Bediener und Wartungspersonal an der Maschine **KNV 90 12000 2B** nach der Inbetriebnahme (**Siehe Kapitel 5**) vornehmen können. Da die Maschine weder über eine SPS noch über ein HMI verfügt, sind die Einstellpunkte begrenzt und sämtlich physisch: die Sollwerte der vier **Thermostate GEMO DTH2**, das **Potentiometer für die Fördergeschwindigkeit** und der **Druckluft-Druckregler**. Diese drei Einstellungen bestimmen die Prozesstemperatur, die Verweilzeit des Werkstücks in der Kammer und den Betrieb der Ölabscheiderpumpe.
 
 **Zielgruppe:** Bediener (Thermostat-Sollwerte, Fördergeschwindigkeit), Wartungspersonal (Druckregler, periodische Sicherheitsprüfung), Herstellerservice (Frequenzumrichter-Parameter, Sicherheitsrelaiskreis). Die Parameter des Förderer-Frequenzumrichters und der Sicherheitsrelaiskreis dürfen nur vom **autorisierten Herstellerservice** geändert werden.
 

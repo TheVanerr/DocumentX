@@ -1,6 +1,6 @@
 # 3.3 Teknik özellikler
 
-Bu bölüm, **KNV 90 7500 2B** (seri no **0726051**) makinesine ait boyut, ağırlık, kapasite, elektrik, motor/ısıtıcı, medya bağlantıları ve ortam koşullarını toplar. Kurulum (Bölüm 5), ayar (Bölüm 6), operasyon (Bölüm 7) ve arıza (Bölüm 11) bölümlerinde aynı sayısal değerler tekrarlanmaz; ilgili bölümler buraya çapraz referans verir.
+Bu bölüm, **KNV 90 12000 2B** (seri no **0726051**) makinesine ait boyut, ağırlık, kapasite, elektrik, motor/ısıtıcı, medya bağlantıları ve ortam koşullarını toplar. Kurulum (Bölüm 5), ayar (Bölüm 6), operasyon (Bölüm 7) ve arıza (Bölüm 11) bölümlerinde aynı sayısal değerler tekrarlanmaz; ilgili bölümler buraya çapraz referans verir.
 
 ---
 

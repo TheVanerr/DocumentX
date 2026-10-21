@@ -4,7 +4,7 @@
 
 ## 9.1.1 Wartungsphilosophie und Personal
 
-Für die KNV 90 7500 2B gilt die Philosophie der **vorbeugenden Wartung**. Ziel ist es, Filterverstopfung, Düsenverstopfung, Ölansammlung, Heizstabausfall, Nachlassen der Sicherheitsfunktionen sowie Ausfälle von Pumpen/Ventilatoren/Blowern durch geplante Eingriffe zu verhindern und ungeplante Linienstillstände zu verringern. Aufgrund der Wasserzirkulation im geschlossenen Kreislauf ist die Filterwartung bei dieser Maschine der bestimmende Faktor für die Prozessqualität und die Lebensdauer der Pumpen.
+Für die KNV 90 12000 2B gilt die Philosophie der **vorbeugenden Wartung**. Ziel ist es, Filterverstopfung, Düsenverstopfung, Ölansammlung, Heizstabausfall, Nachlassen der Sicherheitsfunktionen sowie Ausfälle von Pumpen/Ventilatoren/Blowern durch geplante Eingriffe zu verhindern und ungeplante Linienstillstände zu verringern. Aufgrund der Wasserzirkulation im geschlossenen Kreislauf ist die Filterwartung bei dieser Maschine der bestimmende Faktor für die Prozessqualität und die Lebensdauer der Pumpen.
 
 | Parameter | Wert |
 | :--- | :--- |

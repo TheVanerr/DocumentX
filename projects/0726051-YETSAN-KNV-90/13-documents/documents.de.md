@@ -1,6 +1,6 @@
 # 13. DOKUMENTE
 
-Dieses Kapitel beschreibt die mit der Maschine **KNV 90 7500 2B** (Seriennummer **0726051**) gelieferten externen Dokumente, die in der Anleitung enthaltenen technischen Referenzen und die Ersatzteilliste (BOM).
+Dieses Kapitel beschreibt die mit der Maschine **KNV 90 12000 2B** (Seriennummer **0726051**) gelieferten externen Dokumente, die in der Anleitung enthaltenen technischen Referenzen und die Ersatzteilliste (BOM).
 
 Da diese Maschine über keine PLC/kein HMI verfügt, sind Dokumente wie PLC-Programm, HMI-Projekt und I/O-Liste **nicht zutreffend**. Der Schaltplan im Lieferpaket ist die primäre Referenz dafür, welchen Motor/welche Heizung die Schutzelemente im Schaltschrank (MKŞ, RCCB, Sicherung, Schütz) versorgen und welche Blowermotoren die Schalter BLOWER 1/2 ansteuern. Die Ersatzteilliste wird nicht als separates Dokument geliefert; sie ist in der Tabelle in **Kapitel 13.3.1** der Anleitung enthalten.
 

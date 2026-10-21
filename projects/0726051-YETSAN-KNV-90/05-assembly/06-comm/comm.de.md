@@ -1,6 +1,6 @@
 # 5.6 Kommunikations- und Automatisierungsschnittstelle
 
-Die Maschine **KNV 90 7500 2B** verfügt über **keine PLC, kein HMI, keinen Feldbus und keine Anbindung an ein übergeordnetes System**. Die Steuerung erfolgt vollständig über Relais-Schütz-Logik mittels der Schalter am Bedienfeld (**Siehe Kapitel 3.4**). Daher werden bei der Installation keine Netzwerkkonfiguration, Adressierung oder Kommunikationsprüfung durchgeführt.
+Die Maschine **KNV 90 12000 2B** verfügt über **keine PLC, kein HMI, keinen Feldbus und keine Anbindung an ein übergeordnetes System**. Die Steuerung erfolgt vollständig über Relais-Schütz-Logik mittels der Schalter am Bedienfeld (**Siehe Kapitel 3.4**). Daher werden bei der Installation keine Netzwerkkonfiguration, Adressierung oder Kommunikationsprüfung durchgeführt.
 
 ---
 

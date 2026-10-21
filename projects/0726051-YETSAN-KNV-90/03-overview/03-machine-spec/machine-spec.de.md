@@ -1,6 +1,6 @@
 # 3.3 Technische Daten
 
-Dieses Kapitel fasst Abmessungen, Gewicht, Kapazität, Elektrik, Motoren/Heizungen, Medienanschlüsse und Umgebungsbedingungen der Maschine **KNV 90 7500 2B** (Seriennummer **0726051**) zusammen. In den Kapiteln Installation (Kapitel 5), Einstellung (Kapitel 6), Betrieb (Kapitel 7) und Störungen (Kapitel 11) werden dieselben Zahlenwerte nicht wiederholt; die betreffenden Kapitel verweisen hierher.
+Dieses Kapitel fasst Abmessungen, Gewicht, Kapazität, Elektrik, Motoren/Heizungen, Medienanschlüsse und Umgebungsbedingungen der Maschine **KNV 90 12000 2B** (Seriennummer **0726051**) zusammen. In den Kapiteln Installation (Kapitel 5), Einstellung (Kapitel 6), Betrieb (Kapitel 7) und Störungen (Kapitel 11) werden dieselben Zahlenwerte nicht wiederholt; die betreffenden Kapitel verweisen hierher.
 
 ---
 

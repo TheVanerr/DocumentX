@@ -1,6 +1,6 @@
 # 1.2 Symbole und Kennzeichnungsregeln
 
-Die in dieser Anleitung und am Maschinenkörper der **KNV 90 7500 2B** verwendeten Symbole sind gemäß internationalen Normen (ISO 7010, ISO 3864-2) angebracht, um die Sicherheit des Bedieners zu erhöhen, Risiken zu kennzeichnen, Gebote anzuzeigen und die Anschlussstellen der Anlage zu bezeichnen. Symbole vermitteln Warnungen sprachunabhängig; machen Sie sich vor der Inbetriebnahme, vor Wartungsarbeiten oder vor dem Eingriff an heißen/chemisch belasteten Teilen mit den folgenden Bedeutungen vertraut.
+Die in dieser Anleitung und am Maschinenkörper der **KNV 90 12000 2B** verwendeten Symbole sind gemäß internationalen Normen (ISO 7010, ISO 3864-2) angebracht, um die Sicherheit des Bedieners zu erhöhen, Risiken zu kennzeichnen, Gebote anzuzeigen und die Anschlussstellen der Anlage zu bezeichnen. Symbole vermitteln Warnungen sprachunabhängig; machen Sie sich vor der Inbetriebnahme, vor Wartungsarbeiten oder vor dem Eingriff an heißen/chemisch belasteten Teilen mit den folgenden Bedeutungen vertraut.
 
 Die Symbole sind in drei Gruppen zusammengefasst: **Warnung** (Gefahr und Verbot), **PSA** (Pflicht zur persönlichen Schutzausrüstung) und **Maschineninformation** (Anschlussstellen: Erdung, Wasser, Luft, Ablass; Sicherheitsverriegelung). Zu den Positionen der Etiketten an der Maschine und zu den Restrisiken **Siehe Kapitel 2.2**. Zur technischen Beschreibung der Leuchten am Bedienfeld **Siehe Kapitel 3.4.5**.
 

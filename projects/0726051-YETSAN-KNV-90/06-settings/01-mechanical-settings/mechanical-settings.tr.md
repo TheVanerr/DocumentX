@@ -1,6 +1,6 @@
 # 6.1 Mekanik ayarlar
 
-KNV 90 7500 2B makinesi fabrika çıkışında mekanik ayar gerektirmeyecek şekilde devreye alınmıştır. Konveyör zinciri ve tel bant, redüktör–tork sınırlayıcı bağlantısı, pompa montajları, nozul kolektörleri ve blower hava bıçağı boruları üretici toleransları içinde sabitlenmiştir; operatör veya bakım personelinin periyodik mekanik ince ayar yapması öngörülmemiştir.
+KNV 90 12000 2B makinesi fabrika çıkışında mekanik ayar gerektirmeyecek şekilde devreye alınmıştır. Konveyör zinciri ve tel bant, redüktör–tork sınırlayıcı bağlantısı, pompa montajları, nozul kolektörleri ve blower hava bıçağı boruları üretici toleransları içinde sabitlenmiştir; operatör veya bakım personelinin periyodik mekanik ince ayar yapması öngörülmemiştir.
 
 Bu bölüm, makinede neden mekanik ayar gerekmediğini ve hangi mekanik kontrollerin bakım kapsamında gözle yapıldığını açıklar. Mekanik bakım (yağlama, filtre, tel bant ve zincir kontrolü) **Bölüm 9**'da tanımlıdır.
 

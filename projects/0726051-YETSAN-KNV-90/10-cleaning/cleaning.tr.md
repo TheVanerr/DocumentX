@@ -1,6 +1,6 @@
 # 10. TEMİZLİK
 
-Bu bölüm, **KNV 90 7500 2B** makinesinin manuel temizlik ve dezenfeksiyon prosedürlerini tanımlar. Makine **kuru/ıslak** manuel temizliğe uygundur; otomatik **CIP** veya **COP** sistemi **bulunmamaktadır**. Kapalı devre su sirkülasyonu nedeniyle ön filtre, tank iç (emiş) filtresi ve pompa çıkışı torba filtre temizliği, proses kalitesinin ve pompa ömrünün temel koşuludur.
+Bu bölüm, **KNV 90 12000 2B** makinesinin manuel temizlik ve dezenfeksiyon prosedürlerini tanımlar. Makine **kuru/ıslak** manuel temizliğe uygundur; otomatik **CIP** veya **COP** sistemi **bulunmamaktadır**. Kapalı devre su sirkülasyonu nedeniyle ön filtre, tank iç (emiş) filtresi ve pompa çıkışı torba filtre temizliği, proses kalitesinin ve pompa ömrünün temel koşuludur.
 
 Temizlik işlemleri **bakım personeli** veya eğitimli operatör tarafından yapılır. Tank, filtre ve kapak erişimi gerektiren tüm işlemlerde makine durdurulmalı ve **LOTO prosedürü** uygulanmalıdır (**Bkz. Bölüm 2.4** — adımlar tekrarlanmaz). Temizlik periyotları **Bölüm 9.1.3** bakım takviminde verilmiştir.
 

@@ -3,7 +3,7 @@
 #   <dosya>.tr.md  |  <dosya>.de.md
 # dosyası kullanılır.
 
-proje_adi: KNV 90 7500 2B
+proje_adi: KNV 90 12000 2B
 model: knv
 tip: proje
 diller:
@@ -12,7 +12,7 @@ diller:
 varsayilan_dil: tr
 extends: templates/base.yaml
 kapak:
-  baslik: KNV 90 7500 2B
+  baslik: KNV 90 12000 2B
   seri: false
   rev: '00'
   tarih: '21.10.2026'

@@ -1,6 +1,6 @@
 # 8. KAPASİTE
 
-Bu bölüm, **KNV 90 7500 2B** makinesinin üretim kapasitesi, ürün sınırları ve ürün bazlı proses yapılandırmasını tanımlar. Kapasite; parça geometrisi, tel bant üzerindeki parça yoğunluğu, operatörün yükleme/boşaltma hızı, konveyör hızı (20–60 Hz), termostat set değerleri ve açık olan proses fonksiyonlarına (yıkama, durulama, blower, kurutma) bağlıdır.
+Bu bölüm, **KNV 90 12000 2B** makinesinin üretim kapasitesi, ürün sınırları ve ürün bazlı proses yapılandırmasını tanımlar. Kapasite; parça geometrisi, tel bant üzerindeki parça yoğunluğu, operatörün yükleme/boşaltma hızı, konveyör hızı (20–60 Hz), termostat set değerleri ve açık olan proses fonksiyonlarına (yıkama, durulama, blower, kurutma) bağlıdır.
 
 Makinede reçete hafızası veya HMI yoktur; ürün bazlı "reçete", operatörün kaydettiği **konveyör hızı + termostat set değerleri + açık fonksiyonlar** kombinasyonudur. Nominal, maksimum ve minimum kapasite değerleri **müşteri firma tarafından** belirlenir (**Bkz. Bölüm 3.3.2**); bu bölümde tekrarlanmaz. Operasyon prosedürleri **Bölüm 7**'de; ayarlar **Bölüm 6.3**'te anlatılmıştır.
 

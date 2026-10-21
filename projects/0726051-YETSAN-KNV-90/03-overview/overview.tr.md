@@ -1,6 +1,6 @@
 # 3. GENEL BAKIŞ
 
-**KNV 90 7500 2B** (model kodu **KNV-90**, seri no **0726051**, müşteri **YETSAN**), endüstriyel parça yüzeylerinde biriken yağ, proses kiri ve atıkların giderilmesi amacıyla tasarlanmış, konveyörlü ve **iki banyolu** (yıkama + durulama) bir parça yıkama hattıdır. Bu bölüm, operatör, bakım ve kurulum personelinin makineyi bütünsel olarak tanıması, proses sınırlarını ve teknik çerçeveyi kavraması için düzenlenmiştir; ayrıntılı teknik değerler ilgili alt bölümlerde verilmiştir ve diğer bölümlerde tekrarlanmaz.
+**KNV 90 12000 2B** (model kodu **KNV-90**, seri no **0726051**, müşteri **YETSAN**), endüstriyel parça yüzeylerinde biriken yağ, proses kiri ve atıkların giderilmesi amacıyla tasarlanmış, konveyörlü ve **iki banyolu** (yıkama + durulama) bir parça yıkama hattıdır. Bu bölüm, operatör, bakım ve kurulum personelinin makineyi bütünsel olarak tanıması, proses sınırlarını ve teknik çerçeveyi kavraması için düzenlenmiştir; ayrıntılı teknik değerler ilgili alt bölümlerde verilmiştir ve diğer bölümlerde tekrarlanmaz.
 
 Makine, parçaların redüktör tahrikli **zincirli konveyör** üzerinde ilerleyerek **yıkama → durulama → blower ile su sıyırma → sıcak hava ile kurutma** proseslerinden sırasıyla geçmesini sağlar. Makineye karşıdan (ön uzun kenardan) bakıldığında besleme **solda**, boşaltma **sağdadır**; elektrik panosu ve operatör paneli ön kenarda, **sağ** (çıkış) uca yakındır (**Bkz. Bölüm 3.5.1**). Bu projede parça giriş ve çıkışı **operatör tarafından elle** yapılır; robot entegrasyonu yoktur. Kontrol, PLC/HMI içermeyen **röle–kontaktör esaslı buton panosu** ile sağlanır; her fonksiyon ayrı aç/kapa anahtarı ile yönetilir ve tank ve kurutma havası sıcaklıkları GEMO DTH2 termostatlarla ayarlanır.
 
@@ -25,7 +25,7 @@ Makinenin ana modülleri şunlardır: zincirli konveyör ve redüktör tahriki; 
 | Parametre | Değer |
 | :--- | :--- |
 | Sipariş / seri no | 0726051 |
-| Model | KNV-90 — KNV 90 7500 2B |
+| Model | KNV-90 — KNV 90 12000 2B |
 | Makine tipi | Konveyörlü — iki banyolu endüstriyel parça yıkama (2 banyo + kurutma) |
 | Proses akışı | Yıkama → Durulama → Su sıyırma (blower) → Kurutma (sıcak hava) |
 | Kontrol | Buton panosu — röle/kontaktör; PLC/HMI yok |
@@ -34,4 +34,4 @@ Makinenin ana modülleri şunlardır: zincirli konveyör ve redüktör tahriki; 
 | Toplam kurulu güç | 110 kW — 380 V / 50 Hz / 3 faz (**Bkz. Bölüm 3.3.3**) |
 | Koruma sınıfı (makine) | IP55 (**Bkz. Bölüm 3.3.6**) |
 
-![KNV 90 7500 2B — konveyör giriş tarafından genel görünüm](../assets/3.0/genel-gorunum.jpg)
+![KNV 90 12000 2B — konveyör giriş tarafından genel görünüm](../assets/3.0/genel-gorunum.jpg)

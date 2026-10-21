@@ -1,6 +1,6 @@
 # 2.1 Einführung in die Sicherheit und Betreiberpflichten
 
-Dieses Kapitel definiert die sicheren Betriebsgrenzen der Maschine KNV 90 7500 2B, die gesetzlichen Pflichten des Betreibers und den für das Personal geltenden Sicherheitsrahmen. Die Maschine arbeitet mit kontinuierlichem Durchlauf über den Förderer, zwei beheizten Prozesstanks (Waschen + Spülen), Blowern und Trocknungsventilatoren, einem Abluftventilator und einem tastengesteuerten Schaltschrank. In jeder Phase sind die Anweisungen dieses Kapitels und seiner Unterkapitel zwingend einzuhalten.
+Dieses Kapitel definiert die sicheren Betriebsgrenzen der Maschine KNV 90 12000 2B, die gesetzlichen Pflichten des Betreibers und den für das Personal geltenden Sicherheitsrahmen. Die Maschine arbeitet mit kontinuierlichem Durchlauf über den Förderer, zwei beheizten Prozesstanks (Waschen + Spülen), Blowern und Trocknungsventilatoren, einem Abluftventilator und einem tastengesteuerten Schaltschrank. In jeder Phase sind die Anweisungen dieses Kapitels und seiner Unterkapitel zwingend einzuhalten.
 
 Die die Maschine betreibende Organisation ist dafür verantwortlich, eine Risikobeurteilung durchzuführen, das Personal zu schulen, PSA bereitzustellen und die Sicherheitseinrichtungen in funktionsfähigem Zustand zu halten. Die zivil- und strafrechtliche Verantwortung für Verstöße gegen die Sicherheitsregeln dieser Anleitung liegt beim Betreiber.
 

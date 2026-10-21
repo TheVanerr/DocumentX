@@ -65,7 +65,7 @@ Bu sözlük kılavuz boyunca kullanılan kısaltmaları, operatör panelindeki �
 | **Hücre** | Yıkama, durulama ve kurutma proseslerinin yapıldığı kapalı bölge; PVC perdeli |
 | **Interlock** | Donanımsal kilitleme — seviye, kapak, acil stop, faz (**3.4.6**) |
 | **Kalıcı devre dışı** | Makinenin bir daha devreye alınmayacağı hizmet dışı bırakma (**12.2.1**) |
-| **KNV 90 7500 2B** | Makine ticari tanımı / model varyantı (KNV-90) |
+| **KNV 90 12000 2B** | Makine ticari tanımı / model varyantı (KNV-90) |
 | **Konveyör** | Redüktör tahrikli, inverter kontrollü zincirli tel bant konveyör (**3.1.2**) |
 | **Nozul** | Hücre içindeki püskürtme ucu; 160 adet (**13.3**) |
 | **Operatör tarafı** | Pano ve operatör paneli — bu makinede **sağ** taraf (**3.5**) |

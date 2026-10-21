@@ -1,6 +1,6 @@
 # 11.4 Hydraulische Störungen
 
-Die Maschine **KNV 90 7500 2B** verfügt über **kein Hydrauliksystem**. Der Prozess wird mit elektromotorisch angetriebenen Kreiselpumpen, dem über Frequenzumrichter angetriebenen Förderergetriebe und der druckluftbetriebenen Ölabscheiderpumpe ausgeführt. Dieses Unterkapitel ist nicht zutreffend.
+Die Maschine **KNV 90 12000 2B** verfügt über **kein Hydrauliksystem**. Der Prozess wird mit elektromotorisch angetriebenen Kreiselpumpen, dem über Frequenzumrichter angetriebenen Förderergetriebe und der druckluftbetriebenen Ölabscheiderpumpe ausgeführt. Dieses Unterkapitel ist nicht zutreffend.
 
 | Parameter | Status |
 | :--- | :--- |

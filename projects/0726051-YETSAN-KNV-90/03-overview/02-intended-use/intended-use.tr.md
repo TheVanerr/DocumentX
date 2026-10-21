@@ -6,7 +6,7 @@ Bu bölüm, makinenin **tasarlanan kullanım kapsamını**, işlenebilir ve yasa
 
 ## 3.2.1 Tasarlanan kullanım kapsamı
 
-KNV 90 7500 2B, konveyörlü ve iki banyolu (yıkama + durulama) endüstriyel parça yıkama makinesidir. Parçalar konveyör üzerinde ilerleyerek yıkama, durulama, blower ile su sıyırma ve sıcak hava ile kurutma proseslerini tamamlar.
+KNV 90 12000 2B, konveyörlü ve iki banyolu (yıkama + durulama) endüstriyel parça yıkama makinesidir. Parçalar konveyör üzerinde ilerleyerek yıkama, durulama, blower ile su sıyırma ve sıcak hava ile kurutma proseslerini tamamlar.
 
 Makinenin **amaçlanan kullanım alanı**, endüstriyel parça yüzeylerinden proses kaynaklı kir, yağ ve atıkların giderilmesidir; kullanım ortamı kapalı tesis içi endüstriyel üretim ortamıdır. Makine, parçaları konveyör hattı boyunca sürekli akış prensibiyle işler; besleme tarafı **sol**, boşaltma tarafı **sağ** yöndedir (**Bkz. Bölüm 3.5.1**). Yükleme ve boşaltma operatör tarafından elle yapılır.
 

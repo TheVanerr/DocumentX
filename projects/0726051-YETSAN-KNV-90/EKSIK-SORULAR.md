@@ -1,4 +1,4 @@
-# 0726051-YETSAN KNV 90 7500 2B — Kalan sorular (21.10.2026)
+# 0726051-YETSAN KNV 90 12000 2B — Kalan sorular (21.10.2026)
 
 Cevaplar uygulandı. Kılavuzda **5** `[EKSİK]` kaldı (TR 5 + DE 5); hepsi S3'te ve yalnız Bölüm 3.3.1 tablosunda.
 
@@ -10,6 +10,12 @@ Cevaplar uygulandı. Kılavuzda **5** `[EKSİK]` kaldı (TR 5 + DE 5); hepsi S3'
 Cevap:
 
 Not: Montaj alanı (3.5.2), tavan yüksekliği ve zemin mukavemeti bu değerlere bağlı formülle yazıldı; değerler gelince yalnız 3.3.1 güncellenir.
+
+**S17.** Makine adı **KNV 90 7500 2B → KNV 90 12000 2B** olarak düzeltildi (21.10.2026). Ancak parça verileri proje kökündeki **KNV 90 7500 ÜRÜN AĞACI.xlsm**'den alınmıştı. 12000 ürün ağacı farklıysa gönderin. Özellikle şu üç komple kalem 7500 adıyla bırakıldı (kod uydurmamak için): **07 17686** POMPA KOMPLESİ, **07 17682** HASSAS FİLTRE KOMPLESİ, **07 17689** KURUTMA KOMPLESİ — Bölüm 9.1 ve 13.3. 12000'in kodları nedir?
+Cevap:
+
+**S18.** Boyla değişebilecek şu değerler 12000 için doğru mu? Bakım kapağı / manyetik switch **7**, acil stop **7** (1 panel + 6 saha), nozul **160**, tank ısıtıcısı **7** (R01–R07), blower **4**, kurutma fanı **2**, ana gövde **3000 kg**, toplam güç **110 kW / 220 A**. Farklı olan varsa doğru değeri yazın.
+Cevap:
 
 ---
 

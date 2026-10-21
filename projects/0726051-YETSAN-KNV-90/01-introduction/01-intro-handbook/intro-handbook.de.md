@@ -2,9 +2,9 @@
 
 ## 1.1.1 Zweck, Umfang und Geltungsbereich der Anleitung
 
-Diese Betriebsanleitung ist ein untrennbarer und rechtlich verbindlicher Bestandteil der Maschine **KNV 90 7500 2B**. Sie wurde nach den Grundsätzen von EN ISO 12100 (Sicherheit von Maschinen — Risikobeurteilung) und EN ISO 20607 (Betriebsanleitung — allgemeine Gestaltungsgrundsätze) erstellt, um die sichere, effiziente und bestimmungsgemäße Verwendung der Maschine zu gewährleisten. Diese Normen definieren international anerkannte Mindestanforderungen an Maschinensicherheit und Anleitungsinhalt; die Anweisungen in dieser Anleitung sind daher nicht nur Empfehlungen, sondern Teil der Betreiberverantwortung.
+Diese Betriebsanleitung ist ein untrennbarer und rechtlich verbindlicher Bestandteil der Maschine **KNV 90 12000 2B**. Sie wurde nach den Grundsätzen von EN ISO 12100 (Sicherheit von Maschinen — Risikobeurteilung) und EN ISO 20607 (Betriebsanleitung — allgemeine Gestaltungsgrundsätze) erstellt, um die sichere, effiziente und bestimmungsgemäße Verwendung der Maschine zu gewährleisten. Diese Normen definieren international anerkannte Mindestanforderungen an Maschinensicherheit und Anleitungsinhalt; die Anweisungen in dieser Anleitung sind daher nicht nur Empfehlungen, sondern Teil der Betreiberverantwortung.
 
-**Umfang:** **KNV 90 7500 2B** (Modellcode **KNV-90**, Seriennummer **0726051**, Kunde **YETSAN**) und die mit diesem Projekt gelieferte Standardausstattung. Projektfremde Optionen sind nicht vorhanden.
+**Umfang:** **KNV 90 12000 2B** (Modellcode **KNV-90**, Seriennummer **0726051**, Kunde **YETSAN**) und die mit diesem Projekt gelieferte Standardausstattung. Projektfremde Optionen sind nicht vorhanden.
 
 **Zielgruppen:** Bediener, Wartungspersonal, Installationspersonal.
 
@@ -30,7 +30,7 @@ Die Texte, technischen Daten, Fotos und Schemata in dieser Anleitung geben die z
 
 | Feld | Wert |
 | :--- | :--- |
-| **Maschine** | KNV 90 7500 2B |
+| **Maschine** | KNV 90 12000 2B |
 | **Modellcode** | KNV-90 |
 | **Seriennummer** | 0726051 |
 | **Baujahr** | 2026 |

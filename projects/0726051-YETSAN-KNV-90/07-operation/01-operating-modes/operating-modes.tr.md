@@ -1,6 +1,6 @@
 # 7.1 Çalışma modları
 
-KNV 90 7500 2B, **tek çalışma biçimine** sahiptir: operatör panelindeki fonksiyon anahtarları ile her proses birimi bağımsız açılıp kapatılır. Ayrı bir otomatik, manuel, step veya bakım modu seçici **yoktur**; dolayısıyla mod geçişi de yoktur. Aşağıdaki alt bölümler, her çalışma modunun bu makinede bulunup bulunmadığını açıklar.
+KNV 90 12000 2B, **tek çalışma biçimine** sahiptir: operatör panelindeki fonksiyon anahtarları ile her proses birimi bağımsız açılıp kapatılır. Ayrı bir otomatik, manuel, step veya bakım modu seçici **yoktur**; dolayısıyla mod geçişi de yoktur. Aşağıdaki alt bölümler, her çalışma modunun bu makinede bulunup bulunmadığını açıklar.
 
 Bu yapının sonucu şudur: makine, tek bir start komutu ile kendiliğinden hazırlanıp çalışmaz. Operatör; tankları doldurur, ısıtıcıları açar, su ısınınca pompaları, ihtiyaç duyulan blower/kurutma fonksiyonlarını ve son olarak konveyörü açar (**Bkz. Bölüm 7.2**). Interlock'lar (tank seviyesi, kapak emniyeti, acil stop, faz koruma) donanımsal olarak her zaman devrededir ve anahtar konumundan bağımsız olarak çıkışı keser (**Bkz. Bölüm 3.4.6**).
 

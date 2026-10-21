@@ -6,7 +6,7 @@ Dieses Kapitel definiert den **vorgesehenen Verwendungsbereich** der Maschine, d
 
 ## 3.2.1 Vorgesehener Verwendungsbereich
 
-KNV 90 7500 2B ist eine industrielle Teilewaschmaschine mit Förderer und zwei Bädern (Waschen + Spülen). Die Werkstücke durchlaufen auf dem Förderer die Prozesse Waschen, Spülen, Wasserabblasen mit Blower und Trocknen mit Heißluft.
+KNV 90 12000 2B ist eine industrielle Teilewaschmaschine mit Förderer und zwei Bädern (Waschen + Spülen). Die Werkstücke durchlaufen auf dem Förderer die Prozesse Waschen, Spülen, Wasserabblasen mit Blower und Trocknen mit Heißluft.
 
 Der **bestimmungsgemäße Verwendungsbereich** der Maschine ist die Entfernung von prozessbedingtem Schmutz, Öl und Rückständen von den Oberflächen industrieller Werkstücke; die Einsatzumgebung ist eine geschlossene industrielle Produktionsumgebung im Gebäudeinneren. Die Maschine bearbeitet die Werkstücke entlang der Förderlinie nach dem Durchlaufprinzip; die Beschickungsseite liegt **links**, die Entnahmeseite **rechts** (**Siehe Kapitel 3.5.1**). Beladen und Entnehmen erfolgen vom Bediener von Hand.
 

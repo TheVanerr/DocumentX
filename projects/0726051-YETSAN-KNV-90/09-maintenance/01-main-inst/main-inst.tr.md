@@ -4,7 +4,7 @@
 
 ## 9.1.1 Bakım felsefesi ve personel
 
-KNV 90 7500 2B için **önleyici bakım** felsefesi uygulanır. Amaç; filtre tıkanması, nozul tıkanması, yağ birikimi, rezistans arızası, emniyet fonksiyonu zayıflaması ve pompa/fan/blower arızalarını planlı müdahale ile önlemek, plansız hat duruşunu azaltmaktır. Kapalı devre su sirkülasyonu nedeniyle filtre bakımı bu makinede proses kalitesinin ve pompa ömrünün belirleyicisidir.
+KNV 90 12000 2B için **önleyici bakım** felsefesi uygulanır. Amaç; filtre tıkanması, nozul tıkanması, yağ birikimi, rezistans arızası, emniyet fonksiyonu zayıflaması ve pompa/fan/blower arızalarını planlı müdahale ile önlemek, plansız hat duruşunu azaltmaktır. Kapalı devre su sirkülasyonu nedeniyle filtre bakımı bu makinede proses kalitesinin ve pompa ömrünün belirleyicisidir.
 
 | Parametre | Değer |
 | :--- | :--- |

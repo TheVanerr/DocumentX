@@ -1,6 +1,6 @@
 # 13. DOKÜMANLAR
 
-Bu bölüm, **KNV 90 7500 2B** (seri **0726051**) makinesine ait teslim edilen harici dokümanları, kılavuza gömülü teknik referansları ve yedek parça listesini (BOM) tanımlar.
+Bu bölüm, **KNV 90 12000 2B** (seri **0726051**) makinesine ait teslim edilen harici dokümanları, kılavuza gömülü teknik referansları ve yedek parça listesini (BOM) tanımlar.
 
 Bu makinede PLC/HMI bulunmadığından PLC programı, HMI projesi ve I/O listesi gibi dokümanlar **uygulanmaz**. Teslim paketindeki elektrik şeması, pano içi koruma elemanlarının (MKŞ, RCCB, sigorta, kontaktör) hangi motoru/ısıtıcıyı beslediğini ve BLOWER 1/2 anahtarlarının hangi blower motorlarını sürdüğünü gösteren birincil referanstır. Yedek parça listesi ayrı evrak olarak verilmez; kılavuzun **Bölüm 13.3.1** tablosunda yer alır.
 
