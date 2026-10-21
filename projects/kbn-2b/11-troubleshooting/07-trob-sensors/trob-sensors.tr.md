@@ -6,6 +6,9 @@ Tablo: Sensör ve kontrol cihazı arızaları
 |---|---|---|---|
 | Kapak kapalıyken program başlamıyor, HMI kapak uyarısı veriyor | Kapak emniyet şalteri kapağı algılamıyor (şalter kaymış, hedef parça eğilmiş) | Şalterin ve hedef parçanın konumunu kontrol edin; şalteri yerine sabitleyin. Şalteri köprülemeyin. | Bakım personeli |
 | | Kapak emniyet şalteri veya kablosu arızalı | Şalteri ve kablosunu kontrol edin; arızalı şalteri değiştirin. | Elektrik personeli |
+| Kapak kapanmıyor veya kapanırken duruyor | Işık perdesinin önünde engel var (parça, sepet, araba, kişi) | Kapı açıklığındaki engeli kaldırın ve kapağı yeniden kapatın. | Operatör |
+| | Işık perdesinin ön camları kirli veya buğulu | Camları yumuşak, kuru bir bezle silin (**Bkz. Bölüm 10.1.5**). | Operatör |
+| | Işık perdesinin verici ve alıcısı hizasız veya arızalı | Verici ve alıcının bağlantılarını ve hizasını kontrol ettirin; ayarını yalnızca üretici servisi yapar. | Elektrik personeli / üretici servisi |
 | Kapak açılınca program kesildi ve kapak kapatılınca devam etmiyor | Kapak emniyet şalteri doğru çalışıyor; program kapak açıldığında kesilmiştir | Alarmı onaylayın, kapağı kapatın ve programı yeniden başlatın (**Bkz. Bölüm 7.4**). | Operatör |
 | Tank doluyken HMI seviye alarmı veriyor, tankın ısıtıcısı çalışmıyor | Seviye şalteri kirli veya takılı kalmış | Seviye şalterini temizleyin ve serbest hareket ettiğini kontrol edin. | Bakım personeli |
 | | Seviye şalteri veya kablosu arızalı | Şalteri ve kablosunu kontrol edin; arızalıysa değiştirin. | Elektrik personeli |

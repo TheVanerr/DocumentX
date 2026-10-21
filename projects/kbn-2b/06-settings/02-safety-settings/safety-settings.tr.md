@@ -10,7 +10,8 @@ Tablo: Güvenlik donanımlarının ayarları
 | Kapak emniyet şalteri | Kapak tam kapalıyken algılayacak konumda sabitlenmiştir | Bakım personeli (yalnızca kayan veya değiştirilen şalterin yeniden konumlandırılması) |
 | Motor koruma şalterleri | Motor etiketindeki anma akımına ayarlanmıştır | Elektrik personeli |
 | Seviye şalterleri | Her tankta, ısıtıcıların sıvı içinde kalacağı seviyede sabitlenmiştir | Yalnızca üretici servisi |
-| PLC güvenlik fonksiyonları | PLC programında tanımlıdır | Yalnızca üretici servisi |
+| Işık perdesi | Verici ve alıcı, kapı açıklığının iki yanında karşılıklı hizalanarak sabitlenmiştir | Yalnızca üretici servisi |
+| Güvenlik kontrolörü ve PLC güvenlik fonksiyonları | Güvenlik kontrolörünün ({{GUVENLIK_DONANIMLARI:Güvenlik kontrolörü}}) ve PLC'nin programında tanımlıdır | Yalnızca üretici servisi |
 
 **Kapak emniyet şalterinin yeniden konumlandırılması**
 

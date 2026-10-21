@@ -10,7 +10,7 @@ KBN 2B serisi makineler; metal parçaların yüzeyindeki yağ, gres, talaş, toz
 
 - Makine, **Bölüm 3.3**'teki yükleme ağırlığı, parça yüksekliği, sepet çapı, sıcaklık ve basınç değerleri içinde çalıştırılır.
 - Yıkama sıvısı olarak yalnızca **Bölüm 3.2.3**'teki koşulları sağlayan su bazlı yıkama kimyasalları kullanılır.
-- Kapak, kapak emniyet şalteri, acil durdurma butonları ve tüm koruyucu paneller yerinde ve çalışır durumdadır.
+- Kapak, kapak emniyet şalteri, ışık perdesi, acil durdurma butonu ve tüm koruyucu paneller yerinde ve çalışır durumdadır.
 - Makine, eğitimli ve yetkilendirilmiş personel tarafından kullanılır (**Bkz. Bölüm 2.1.4**).
 - **Bölüm 9**'daki bakım planına ve **Bölüm 10**'daki temizlik talimatlarına uyulur.
 
@@ -34,6 +34,7 @@ Aşağıdaki kullanımlar öngörülebilir yanlış kullanımdır ve yasaktır. 
 **Kullanım hataları**
 
 - Kapak emniyet şalterinin köprülenmesi veya kapak açıkken otomatik yıkamanın çalıştırılmaya çalışılması.
+- Işık perdesinin önünün kapatılması, verici veya alıcının yerinden oynatılması ya da ışık perdesinin köprülenmesi.
 - Program sürerken kapağın açılması veya kabin içine uzanılması.
 - Makinenin, taşıma arabasının veya kapağın üzerine çıkılması, basılması ya da oturulması.
 - Tank boşken veya sıvı seviyesi düşükken ısıtıcının çalıştırılması için seviye şalterinin devre dışı bırakılması.

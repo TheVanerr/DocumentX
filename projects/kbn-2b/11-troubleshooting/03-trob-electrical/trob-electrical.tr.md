@@ -22,6 +22,8 @@ Tablo: Elektrik arızaları
 | Buhar tahliye fanı çalışmıyor | Fan motorunun koruma şalteri atmış | Fan çarkının serbest döndüğünü kontrol edin; şalteri kurun. |
 | | Fan motoru arızalı | Motoru kontrol edin; arızalıysa değiştirin. |
 | HMI ekranı donuyor veya açılmıyor | HMI beslemesi veya PLC ile iletişim arızalı | Besleme gerilimini ve iletişim kablosunu kontrol edin; sorun sürerse üretici servisine başvurun. |
-| Kaçak akım rölesi (tesis tarafı) atıyor | Isıtıcı elemanında yalıtım hatası | Isıtıcıların yalıtım direncini ölçün; hatalı elemanı değiştirin. |
+| Kaçak akım rölesi (tesis tarafı veya panodaki F1 – F4) atıyor | Isıtıcı elemanında yalıtım hatası | Isıtıcıların yalıtım direncini ölçün; hatalı elemanı değiştirin. |
 | | Motor veya bağlantı kutusuna su girmiş | Bağlantı kutusunu açın, kurutun, conta ve rakorları kontrol edin. |
-| Makine çalışırken kendiliğinden duruyor | Faz kaybı veya gerilim düşümü | Besleme gerilimini her fazda ölçün; besleme bağlantılarını kontrol edin. |
+| Makine çalışırken kendiliğinden duruyor | Faz kaybı veya gerilim düşümü | Besleme gerilimini her fazda ölçün; besleme bağlantılarını ve faz koruma rölesinin durumunu kontrol edin. |
+| Makine enerjilenmiyor, ana şalterin kolu "Trip" konumunda | Ana şalter aşırı akım veya kısa devre nedeniyle atmış | Atma nedenini bulun ve giderin; ardından kolu "Reset" yönüne çevirerek şalteri kurun ve "I" konumuna getirin. |
+| Yeni bağlantıdan sonra makine çalışmıyor | Faz sırası yanlış veya bir faz yok; faz koruma rölesi arıza algılamış | Besleme fazlarını kontrol edin; faz sırası yanlışsa **Bölüm 6.3.1**'e göre iki fazın yerini değiştirin. |

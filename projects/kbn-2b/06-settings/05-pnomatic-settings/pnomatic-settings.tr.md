@@ -6,9 +6,11 @@ Pnömatik ayarları bakım personeli yapar.
 
 ## 6.5.1 Çalışma basıncı
 
-Kapak silindirlerini besleyen basınçlı hava, makinenin hava girişindeki şartlandırıcıdan (filtre ve regülatör) geçer. Çalışma basıncı {{TESISAT:Basınçlı hava basıncı (bar)}} bar'dır.
+Kapak silindirlerini ve tank ünitesinin üstündeki pnömatik silindirleri besleyen basınçlı hava, makinenin hava girişindeki şartlandırıcıdan geçer. Şartlandırıcı: {{TESISAT:Basınçlı hava şartlandırıcısı}}. Çalışma basıncı {{TESISAT:Basınçlı hava basıncı (bar)}} bar'dır.
 
-1. Basınçlı hava giriş vanasının açık olduğunu kontrol edin.
+![Basınçlı hava girişi ve şartlandırıcı](../../assets/6.5/sartlandirici.jpg)
+
+1. Tesis hava hortumunun hava girişine takılı ve tesis hattında basınç olduğunu kontrol edin.
 2. Regülatörün ayar düğmesini yukarı çekerek kilidini açın.
 3. Düğmeyi saat yönünde çevirerek basıncı artırın, saat yönünün tersine çevirerek azaltın. Basıncı manometrede okuyarak çalışma basıncına ayarlayın.
 4. Düğmeyi aşağı bastırarak kilitleyin.
@@ -31,5 +33,3 @@ Kapağın açılma ve kapanma hızları silindirlerin hava çıkışlarındaki h
 5. İstenen hıza ulaşana kadar 2. – 4. adımları tekrarlayın.
 6. Kilit somununu sıkın.
 7. İki silindirin hız ayar valflerini eşit ayarlayın; aksi halde kapak kılavuzlarında yamuk hareket eder ve sıkışır.
-
-![Şartlandırıcı ve hız ayar valfleri](../../assets/6.5/sartlandirici.png)

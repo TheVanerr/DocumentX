@@ -12,7 +12,7 @@ Her vardiyanın başında, makineyi çalıştırmadan önce aşağıdaki kontrol
 6. Şartlandırıcı manometresinde hava basıncının **Bölüm 6.5.1**'deki değerde olduğunu kontrol edin.
 7. **Ana şalteri** "I" konumuna getirin ve HMI'nın açıldığını kontrol edin.
 8. HMI'da aktif alarm olup olmadığını kontrol edin; varsa nedenini giderin ve alarmı onaylayın (**Bkz. Bölüm 3.4.3**).
-9. Acil durdurma butonunu ve kapak emniyet şalterini test edin (**Bkz. Bölüm 5.4.1** ve **5.4.2**).
+9. Acil durdurma butonunu, kapak emniyet şalterini ve ışık perdesini test edin (**Bkz. Bölüm 5.4.1**, **5.4.2** ve **5.4.5**).
 
 ---
 

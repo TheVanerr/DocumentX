@@ -59,3 +59,11 @@ Bağlantı noktalarının makine üzerindeki konumları için **Bkz. Bölüm 3.5
 ## 3.3.7 Ortam koşulları ve emisyon
 
 {{TABLO:ORTAM_KOSULLARI}}
+
+---
+
+## 3.3.8 Motor ve pompa listesi
+
+Aşağıdaki değerler KBN 2B P DS OTO 1500 makinesinin motor ve pompa etiketlerinden alınmıştır. Diğer gövde kodlarında motor ve pompa güçleri farklıdır (**Bkz. Bölüm 3.3.2**); makinenizdeki bileşenin kesin değerleri için bileşenin üzerindeki etiketi okuyun. Motor değiştirirken etiket değerlerini **Bölüm 6.3.2**'ye göre kullanın.
+
+{{TABLO:MOTOR_LISTESI}}

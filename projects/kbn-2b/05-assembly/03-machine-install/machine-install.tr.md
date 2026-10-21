@@ -29,7 +29,8 @@ Elektrik bağlantısını yalnızca yetkili elektrik personeli, makinenin elektr
 ## 5.3.2 Su dolum ve tank tahliye bağlantısı
 
 - **Su dolumu:** Tanklar, {{TESISAT:Su dolum bağlantısı}} üzerinden temiz şebeke suyu ile doldurulur. Dolum hattında, hat basıncını kesmek için bir kesme vanası bulunmalıdır.
-- **Tank tahliyesi:** Tankların tahliye vanaları, tank ünitesinin ucundaki tahliye manifoldundadır. Manifoldun çıkışını, kullanılmış sıvıları atık su arıtma sistemine veya bir atık toplama kabına iletecek şekilde bağlayın. Tahliye bağlantıları: {{TESISAT:Tank tahliye bağlantıları}}.
+- **Tank tahliyesi:** {{TESISAT:Tank tahliye bağlantıları}}. Tahliye borusunun çıkışını, kullanılmış sıvıları atık su arıtma sistemine veya bir atık toplama kabına iletecek şekilde bağlayın.
+- **Taşma hattı:** {{TESISAT:Taşma hattı bağlantıları}}. Taşma çıkışlarının bağlantı şekli: {{TESISAT:Taşma hattı bağlantı şekli}}.
 
 **NOT:** Kullanılmış yıkama sıvısını doğrudan kanalizasyona vermeyin. Sıvı yağ ve kimyasal içerir; yerel çevre mevzuatına göre arıtılmalı veya lisanslı firmaya teslim edilmelidir.
 
@@ -37,10 +38,13 @@ Elektrik bağlantısını yalnızca yetkili elektrik personeli, makinenin elektr
 
 ## 5.3.3 Basınçlı hava bağlantısı
 
-1. Tesis basınçlı hava hattını makinenin hava girişine bağlayın. Bağlantı: {{TESISAT:Basınçlı hava bağlantısı}}.
-2. Hat basıncının en az {{TESISAT:Basınçlı hava basıncı (bar)}} bar olduğunu kontrol edin.
-3. Basınçlı havanın filtrelenmiş ve nemi alınmış olmasını sağlayın. Nemli hava, silindirlerde ve valflerde korozyona yol açar.
-4. Regülatördeki çalışma basıncını **Bölüm 6.5.1**'e göre ayarlayın.
+Makinenin hava girişi: {{TESISAT:Basınçlı hava bağlantısı}}. Girişte hızlı bağlantı rakoru ({{TESISAT:Basınçlı hava bağlantı tipi}}) ve şartlandırıcı ({{TESISAT:Basınçlı hava şartlandırıcısı}}) bulunur (**Bkz. Bölüm 6.5**).
+
+1. Tesis hava hortumunun ucuna, girişteki rakora uyan hızlı bağlantı kaplini takın.
+2. Hortumu makinenin hava girişindeki rakora takın.
+3. Hat basıncının en az {{TESISAT:Basınçlı hava basıncı (bar)}} bar olduğunu kontrol edin.
+4. Basınçlı havanın filtrelenmiş ve nemi alınmış olmasını sağlayın. Nemli hava, silindirlerde ve valflerde korozyona yol açar.
+5. Regülatördeki çalışma basıncını **Bölüm 6.5.1**'e göre ayarlayın.
 
 ---
 

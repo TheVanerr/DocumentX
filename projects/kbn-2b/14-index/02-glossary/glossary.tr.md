@@ -13,6 +13,8 @@ Tablo: Terimler
 | Emniyet termostatı | Tanktaki sıvının sıcaklığı ayar değerini aştığında o tankın ısıtıcısının enerjisini kesen güvenlik donanımı. |
 | Filtre gövdesi | Pompa çıkışındaki sıvının geçtiği, içinde değiştirilebilir filtre elemanı bulunan basınçlı gövde. |
 | Gövde kodu | Model kodunun son kısmı; makinenin gövde büyüklüğünü belirtir (1350 – 2350). |
+| Gözetleme camı | Kapaktaki yuvarlak cam; kabinin içi kapak açılmadan görülür. |
+| Işık perdesi | Kapı açıklığının iki yanına yerleştirilen verici ve alıcıdan oluşan, kapak hareket alanına giren cisimleri algılayan güvenlik donanımı. |
 | Kapak emniyet şalteri | Kapak açıkken pompaların, döndürmenin ve kurutmanın çalışmasını engelleyen güvenlik donanımı. |
 | Kurutma | Programın, sıcak havanın kabine basılarak parçaların kurutulduğu adımı. |
 | Kurutma ünitesi | Tavandaki kurutma fanı, hava ısıtıcısı ve hava borusundan oluşan donanım. |
@@ -20,6 +22,7 @@ Tablo: Terimler
 | Pinyon | Döndürme redüktörlü motorunun milindeki küçük dişli. |
 | Program | Yıkama, durulama ve kurutma adımlarının süre ve sıcaklıklarını tanımlayan, HMI'dan seçilen kayıtlı ayar grubu. |
 | Seviye şalteri | Tanktaki sıvı seviyesi düşük olduğunda o tankın ısıtıcısının çalışmasını engelleyen sensör. |
+| Sinyal kulesi | Elektrik panosunun üstündeki, makinenin durumunu renkli ışıklarla gösteren ışıklı kolon. |
 | Süzgeç sepeti | Kabinden tanka dönen sıvıdaki talaşı ve kaba kirleri tutan, sapından çekilerek çıkarılan sepet. |
 | Tank ünitesi | Makinenin sol yanında, yıkama tankını (1. tank) ve durulama tankını (2. tank) içeren ünite. |
 | Taşıma arabası | Makinenin önüne yanaştırılan, rayları kabin raylarıyla birleşen tekerlekli araba; sepet arabaya çekilerek makinenin dışında yüklenir ve boşaltılır. |

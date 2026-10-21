@@ -17,7 +17,7 @@ Tablo: Periyodik bakım planı
 
 | Periyot | Bakım işi | Yapan | Talimat |
 |---|---|---|---|
-| Her vardiya başında | Acil durdurma butonunu ve kapak emniyet şalterini test edin | Operatör | **Bkz. Bölüm 7.2.1** |
+| Her vardiya başında | Acil durdurma butonunu, kapak emniyet şalterini ve ışık perdesini test edin | Operatör | **Bkz. Bölüm 7.2.1** |
 | Her vardiya başında | Tank seviyelerini, sıvıların durumunu ve HMI alarmlarını kontrol edin | Operatör | **Bkz. Bölüm 7.2.1** |
 | Günlük | Süzgeç sepetlerini temizleyin, yağ sıyırıcıların toplama kaplarını boşaltın | Operatör | **Bkz. Bölüm 10.1.3** |
 | Günlük | Pompalar, filtre gövdeleri, borular ve tahliye manifoldunda sızıntı olup olmadığını gözle kontrol edin | Operatör | — |
@@ -72,16 +72,25 @@ Pompaların bastığı sıvı, nozullara gitmeden önce filtre gövdelerindeki f
 
 **UYARI — Basınç altındaki sıcak sıvı:** Pompa çalışırken veya basınç boşaltılmadan açılan filtre gövdesinden sıcak sıvı fışkırabilir. Filtre gövdesini yalnızca pompalar durduktan, makine kilitlendikten ve sıvı 40 °C'nin altına soğuduktan sonra açın.
 
+Filtre gövdesinin kapağı: {{TANK_UNITESI:Filtre gövdesi kapağı}}. Gövdenin boşaltması: {{TANK_UNITESI:Filtre gövdesi boşaltması}}.
+
 1. Makineyi durdurun ve **Bölüm 2.3.3**'e göre kilitleyin.
 2. Sıvının 40 °C'nin altına soğumasını bekleyin.
 3. Filtre gövdesinin altına bir toplama kabı koyun.
-4. Gövde kapağının bağlantı elemanlarını karşılıklı olarak, kapağı yavaşça gevşeterek açın; gövdede kalan basıncın kapak çevresinden boşalmasını bekleyin.
-5. Kapağı kaldırın ve filtre elemanını gövdeden çıkarın.
-6. Filtre elemanını kontrol edin. Yıkanabilir eleman kirliyse temiz suyla yıkayın; yırtık, deforme veya tıkanmış elemanı değiştirin.
-7. Gövdenin içini ve kapak contasını temizleyin; contayı hasara karşı kontrol edin.
-8. Filtre elemanını yerine oturtun.
-9. Kapağı yerleştirin ve bağlantı elemanlarını karşılıklı olarak sıkın.
-10. LOTO'yu kaldırın, kısa bir program çalıştırın ve kapak çevresinde sızıntı olup olmadığını kontrol edin.
+4. Filtre gövdesini besleyen pompanın emiş hattındaki küresel vanayı kapatın. Bu vana kapatılmadan boşaltma vanası açılırsa tanktaki sıvı da pompa ve filtre gövdesi üzerinden boşalır.
+5. Gövdenin altındaki boşaltma vanasını açın ve gövdedeki sıvıyı toplama kabına boşaltın.
+6. Kapağın ortasındaki hava alma tapasını yavaşça gevşetin; gövdede kalan basıncın boşalmasını bekleyin.
+7. Kapağın mafsallı cıvatalarını karşılıklı olarak gevşetin ve dışa doğru yatırın.
+8. Menteşeli kapağı açın ve filtre elemanını gövdeden çıkarın.
+9. Filtre elemanını kontrol edin. Yıkanabilir eleman kirliyse temiz suyla yıkayın; yırtık, deforme veya tıkanmış elemanı değiştirin.
+10. Gövdenin içini ve kapak contasını temizleyin; contayı hasara karşı kontrol edin.
+11. Filtre elemanını yerine oturtun.
+12. Kapağı kapatın, mafsallı cıvataları yuvalarına oturtun ve karşılıklı olarak sıkın.
+13. Hava alma tapasını ve boşaltma vanasını kapatın.
+14. Pompanın emiş hattındaki küresel vanayı açın.
+15. LOTO'yu kaldırın, kısa bir program çalıştırın ve kapak çevresinde sızıntı olup olmadığını kontrol edin.
+
+**NOT:** Pompayı emiş vanası kapalıyken çalıştırmayın. Pompa kuru çalışır ve mekanik salmastrası birkaç saniye içinde hasar görür.
 
 ---
 
@@ -179,9 +188,10 @@ Elektrik bakımını ve testleri yalnızca yetkili elektrik personeli yapar.
 
 4. Koruma iletkeni (PE) sürekliliğini ölçün. Ölçülen direnç 0,1 Ω'u aşmamalıdır.
 5. Güç devrelerinin yalıtım direncini 500 V DC ile ölçün. Yalıtım direnci 1 MΩ'dan küçük olmamalıdır. Ölçümden önce PLC, HMI ve elektronik cihazları ölçüm devresinden ayırın.
-6. Tesis tarafındaki kaçak akım rölesini test butonuyla ve ölçüm cihazıyla test edin.
+6. Tesis tarafındaki kaçak akım rölesini ve elektrik panosundaki kaçak akım rölelerini ({{ELEKTRIK:Pano içi kaçak akım koruması}}) test butonlarıyla ve ölçüm cihazıyla test edin.
 7. Acil durdurma butonunun tüm motorları, fanları ve ısıtıcıları durdurduğunu kontrol edin.
 8. Kapak emniyet şalterinin, kapak açıldığında pompaları, döndürmeyi ve kurutmayı durdurduğunu kontrol edin.
-9. Test sonuçlarını **Bölüm 14.1.4**'teki forma kaydedin.
+9. Işık perdesini **Bölüm 5.4.5**'e göre test edin.
+10. Test sonuçlarını **Bölüm 14.1.4**'teki forma kaydedin.
 
 Testlerden herhangi biri olumsuz sonuçlanırsa makineyi arıza giderilene kadar kullanmayın.

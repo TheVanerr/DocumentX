@@ -6,8 +6,8 @@ Bu alt bölüm, makinenin kullanımı, temizliği ve bakımı sırasında uygula
 
 ## 2.3.1 Genel çalışma kuralları
 
-- Makineyi yalnızca tüm koruyucu paneller takılı, kapak emniyet şalteri ve acil durdurma butonları çalışır durumdayken kullanın.
-- Her vardiya başında acil durdurma butonunu ve kapak emniyet şalterini test edin (**Bkz. Bölüm 7.2**).
+- Makineyi yalnızca tüm koruyucu paneller takılı, kapak emniyet şalteri, ışık perdesi ve acil durdurma butonu çalışır durumdayken kullanın.
+- Her vardiya başında acil durdurma butonunu, kapak emniyet şalterini ve ışık perdesini test edin (**Bkz. Bölüm 7.2**).
 - Kapağı yalnızca program tamamlanıp pompalar, döndürme ve kurutma tamamen durduktan sonra açın.
 - Kapağı açarken yüzünüzü ve gövdenizi kapak hizasından uzak tutun; kabinden çıkan buharın dağılmasını bekleyin.
 - Kapağı kapatmadan önce kabinde ve kapak hareket alanında kimsenin elinin veya yabancı bir cismin bulunmadığını kontrol edin.
@@ -41,7 +41,7 @@ Acil durdurma butonuna basıldığında pompaların, döndürme motorunun, fanla
 2. Tehlikenin nedeni bir arızaysa arızayı **Bölüm 11**'e göre giderin veya giderilmesini sağlayın.
 3. Acil durdurma butonunu üzerindeki ok yönünde çevirerek serbest bırakın.
 4. Kabinde, kapak hareket alanında ve taşıma arabası çevresinde kimsenin bulunmadığını kontrol edin.
-5. HMI ekranındaki acil durdurma alarmını onaylayın (**Bkz. Bölüm 3.4.3**).
+5. Acil durdurma alarmını onaylayın: {{KONTROLLER:Alarm onaylama (reset) kumandası}} (**Bkz. Bölüm 3.4.3**).
 6. Programı **Bölüm 7.4**'teki adımlarla yeniden başlatın.
 
 **NOT:** Acil durdurma butonu serbest bırakıldığında makine kendiliğinden çalışmaya başlamaz; alarm onaylanıp program yeniden başlatılmadıkça hiçbir hareket olmaz.
@@ -56,7 +56,7 @@ Makinedeki tehlikeli enerji kaynakları şunlardır:
 
 - **Elektrik enerjisi:** 380 V besleme, motorlar, ısıtıcılar, kumanda devresi.
 - **Isıl enerji:** 85 °C'ye kadar sıcak yıkama ve durulama sıvıları, tank ısıtıcıları, kurutma ısıtıcısı ve hava borusu, kabin ve tank yüzeyleri.
-- **Pnömatik enerji:** Basınçlı hava hattı, kapak silindirleri.
+- **Pnömatik enerji:** Basınçlı hava hattı, kapak silindirleri, tank ünitesinin üstündeki pnömatik silindirler ve valfler.
 - **Hidrolik enerji:** Pompa çıkış hatlarında ve filtre gövdelerinde kalan basınç.
 - **Yerçekimi:** Açık konumdaki kapak, açık tank kapakları, kaldırılmış parçalar.
 - **Kimyasal enerji:** Tanklardaki yıkama ve durulama sıvıları ve kimyasal kalıntıları.
@@ -68,9 +68,9 @@ Makinedeki tehlikeli enerji kaynakları şunlardır:
 1. Çalışılacak işi ve etkilenecek personeli belirleyin; makine operatörünü bilgilendirin.
 2. Çalışan programı durdurun ve döndürme hareketinin ve fanların tamamen durmasını bekleyin.
 3. Kapağı tam açık veya tam kapalı konuma getirin. Kapak açık kalacaksa düşmeye karşı mekanik olarak destekleyin.
-4. **Ana şalteri** "0" konumuna getirin.
-5. Ana şaltere kişisel asma kilidinizi takın ve üzerine adınızın ve "BAKIM VAR — ÇALIŞTIRMAYIN" ifadesinin yazılı olduğu etiketi asın. Birden fazla kişi çalışıyorsa her kişi kendi kilidini takar.
-6. Basınçlı hava giriş vanasını kapatın, kilitleyin ve şartlandırıcıdaki tahliye vanasından hattaki basıncı boşaltın.
+4. **Ana şalterin** döner kolunu "0" konumuna çevirin.
+5. Ana şalterin koluna kişisel asma kilidinizi takın ve üzerine adınızın ve "BAKIM VAR — ÇALIŞTIRMAYIN" ifadesinin yazılı olduğu etiketi asın. Birden fazla kişi çalışıyorsa her kişi kendi kilidini takar.
+6. Tesis hava hortumunu makinenin hava girişindeki hızlı bağlantı rakorundan ayırın ve hortumun ucuna "BAKIM VAR — BAĞLAMAYIN" etiketi asın. Pnömatik devrede çalışılacaksa silindirlerde ve hortumlarda kalan basıncın boşaldığını kontrol edin.
 7. Filtre gövdeleri üzerinde çalışılacaksa gövdedeki basıncı **Bölüm 9.1.4**'e göre boşaltın.
 8. Tank ünitesinde, ısıtıcıların veya kurutma ünitesinin bulunduğu bölgede çalışılacaksa sıvıların ve ısıtıcıların 40 °C'nin altına soğumasını bekleyin.
 
@@ -85,8 +85,8 @@ Makinedeki tehlikeli enerji kaynakları şunlardır:
 12. Sökülen tüm koruyucu panelleri ve kapakları yerine takın.
 13. Çalışma alanındaki tüm personeli bilgilendirin ve makineden uzaklaştırın.
 14. Kilitleri, kilidi takan kişiler kendi kilitlerini çıkaracak şekilde sökün; etiketleri kaldırın.
-15. Basınçlı hava giriş vanasını açın.
-16. **Ana şalteri** "I" konumuna getirin ve güvenlik donanımlarını **Bölüm 5.4**'e göre test edin.
+15. Tesis hava hortumunu makinenin hava girişine yeniden takın.
+16. **Ana şalterin** kolunu "I" konumuna çevirin ve güvenlik donanımlarını **Bölüm 5.4**'e göre test edin.
 
 ---
 
@@ -138,4 +138,4 @@ Makinedeki güvenlik donanımları (**Bkz. Bölüm 2.2.3**) birlikte çalışan 
 
 kesinlikle yasaktır. Bir güvenlik donanımı arızalıysa makineyi çalıştırmayın; arızayı yetkili bakım personeline veya üretici servisine giderttirin.
 
-**TEHLİKE — Devre dışı bırakılmış güvenlik donanımı:** Kapak emniyet şalteri, seviye şalterleri veya emniyet termostatları devre dışı bırakılırsa sıcak sıvı püskürmesi, dönen parçalara kapılma, aşırı ısınma ve yangın sonucunda ölüm veya ağır yaralanma meydana gelebilir. Güvenlik donanımlarını hiçbir koşulda devre dışı bırakmayın.
+**TEHLİKE — Devre dışı bırakılmış güvenlik donanımı:** Kapak emniyet şalteri, ışık perdesi, seviye şalterleri veya emniyet termostatları devre dışı bırakılırsa kapağın altında sıkışma, sıcak sıvı püskürmesi, dönen parçalara kapılma, aşırı ısınma ve yangın sonucunda ölüm veya ağır yaralanma meydana gelebilir. Güvenlik donanımlarını hiçbir koşulda devre dışı bırakmayın.

@@ -18,9 +18,9 @@ Tablo: Taşıma bilgileri
 | Makine ağırlığı | **Bkz. Bölüm 3.3.3** |
 | Makine dış ölçüleri | **Bkz. Bölüm 3.3.2** |
 
-Forklift çatallarının giriş noktaları aşağıdaki şekilde gösterilmiştir.
+Aşağıdaki şekilde ambalajlı makinenin forkliftle taşınması gösterilmiştir.
 
-![Forklift çatal giriş noktaları](../../assets/4.1/forklift-giris-noktalari.png)
+![Ambalajlı makinenin forkliftle taşınması](../../assets/4.1/forklift-tasima.jpg)
 
 ---
 

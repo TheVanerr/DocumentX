@@ -2,10 +2,10 @@
 
 ## 3.1.1 Genel tanım
 
-KBN 2B, önden yüklemeli kabin tipi bir parça yıkama, durulama ve kurutma makinesidir. Makine; yıkama kabini, kabinin önündeki dikey açılan pnömatik kapak, kabin içindeki döner sepet ve püskürtme boruları, makinenin sol yanındaki iki tanklı tank ünitesi, kabinin altındaki yıkama ve durulama pompaları, tavandaki buhar tahliye fanı ve kurutma ünitesi, sağ yandaki elektrik panosu ve HMI'lı kumanda panelinden oluşur.
+KBN 2B, önden yüklemeli kabin tipi bir parça yıkama, durulama ve kurutma makinesidir. Makine; yıkama kabini, kabinin önündeki gözetleme camlı ve dikey açılan pnömatik kapak, kapı açıklığının iki yanındaki ışık perdesi, kabin içindeki döner sepet ve püskürtme boruları, makinenin sol yanındaki iki tanklı tank ünitesi, yıkama ve durulama pompaları, tavandaki buhar tahliye fanı ve kurutma ünitesi, sağ yandaki elektrik panosu, panonun ön yüzündeki HMI'lı kumanda paneli ve panonun üstündeki sinyal kulesinden oluşur.
 
 - **Yükleme:** Kapak yukarı açıldığında kabinin ön yüzü tamamen açılır. Standart donanım olan taşıma arabası kapağın önüne yanaştırılır; sepet raylar üzerinde arabaya çekilir ve parçalar makinenin dışında yüklenir.
-- **Kapak:** Kapak, kapı açıklığının iki yanındaki pnömatik silindirlerle açılıp kapatılır.
+- **Kapak:** Kapak, kapı açıklığının iki yanındaki pnömatik silindirlerle açılıp kapatılır ve kumanda panelindeki KAPI AÇIK ve KAPI KAPALI butonlarıyla kumanda edilir. Kapı açıklığını ışık perdesi izler. Kapaktaki gözetleme camı ve kabin içindeki aydınlatma sayesinde program sırasında kabinin içi kapak açılmadan izlenebilir.
 - **Yıkama:** Yıkama pompası 1. tanktaki yıkama sıvısını püskürtme borularına basar. Sepet, döndürme redüktörlü motorunun pinyonu ile sepetin dişli çemberinden döndürülür.
 - **Durulama:** Durulama pompası 2. tanktaki durulama sıvısını aynı nozullardan püskürterek parçalardaki yıkama kimyasalı kalıntısını uzaklaştırır.
 - **Kurutma:** Kurutma fanı, hava ısıtıcısından geçirdiği sıcak havayı kabine basar; parçalardaki su buharlaşır ve buhar tahliye fanıyla dışarı atılır.
@@ -47,6 +47,10 @@ Aşağıdaki şekillerde KBN 2B OTO P DS 1650 modeli kapak açık konumda, taş�
 
 ![İç yapı — kabin kesiti](../../assets/3.1/ic-yapi-kesit.png)
 
+Aşağıdaki fotoğrafta KBN 2B P DS OTO 1500 makinesi kapak kapalı konumda gösterilmiştir.
+
+![Ana bileşenler — KBN 2B P DS OTO 1500, ön sağdan görünüş (fotoğraf)](../../assets/3.1/genel-gorunum-foto.jpg)
+
 Tablo: Ana bileşenler
 
 | No | Bileşen | İşlev |
@@ -67,15 +71,26 @@ Tablo: Ana bileşenler
 | 14 | Kurutma fanı | Kurutma havasını hava ısıtıcısından geçirerek kabine basar. |
 | 15 | Kurutma hava ısıtıcısı | Kurutma havasını ısıtır. |
 | 16 | Tank kapakları | Tankların üzerini kapatır; süzgeç sepetlerine erişim için açılır. |
-| 17 | Yıkama ve durulama pompaları | Kabinin altında; 1. ve 2. tanktaki sıvıyı püskürtme borularına basar. |
+| 17 | Yıkama ve durulama pompaları | 1. ve 2. tanktaki sıvıyı filtre gövdeleri üzerinden püskürtme borularına basar. Pompaların konumu gövde koduna göre değişir; KBN 2B P DS OTO 1500'de bir pompa kabinin altındaki ön bölmede, dikey çok kademeli pompa makinenin sol arka köşesindedir (**Bkz. Bölüm 3.3.8**). |
 | 18 | Püskürtme boruları | Sıvıyı parçalara püskürten nozulları taşır. |
+| 19 | Gözetleme camı | Kapaktaki yuvarlak cam; kabinin içi kapak açılmadan görülür. |
+| 20 | Işık perdesi | Kapı açıklığının iki yanında bulunan verici ve alıcıdan oluşur; kapak hareket alanını izler (**Bkz. Bölüm 2.2.3**). |
+| 21 | Sinyal kulesi | Elektrik panosunun üstünde; makinenin durumunu renkli ışıklarla gösterir (**Bkz. Bölüm 3.4.1**). |
+| 22 | Basınçlı hava girişi | "AIR INLET / HAVA GİRİŞİ" etiketli hızlı bağlantı rakoru ve şartlandırıcı (filtre-regülatör) (**Bkz. Bölüm 6.5**). |
+| 23 | Ana şalter | Elektrik panosunun kapağında; makinenin tüm elektrik beslemesini açar ve keser (**Bkz. Bölüm 3.4.1**). |
 
 Şekillerde gösterilmeyen diğer bileşenler:
 
 - **Süzgeç sepetleri:** Her tankın üstünde dört adet; kabinden dönen sıvıdaki talaşı ve kaba kirleri tutar (**Bkz. Bölüm 10.1.3**).
 - **Sepet rayları ve makaraları:** Sepet, kabin içindeki raylar üzerinde arabaya çekilir ve kabine itilir.
-- **Döndürme tahriki:** Redüktörlü motor ve pinyon; sepetin dişli çemberini çevirir.
+- **Döndürme tahriki:** Redüktörlü motor ve pinyon; sepetin dişli çemberini çevirir. Redüktörlü motor makinenin sağ yanında, elektrik panosunun altındadır.
 - **Isıtıcılar, seviye şalterleri ve sıcaklık sensörleri:** Her iki tankta bulunur.
+- **Taşma hatları:** Tank ünitesinin dış yüzünde, her tank için "TAŞMA HATTI" etiketli taşma çıkışı bulunur (**Bkz. Bölüm 5.3.2**).
+- **Tahliye vanaları:** Her tankın altında "DRENAJ" etiketli küresel vana bulunur; vanalar zemindeki ortak tahliye borusuna bağlıdır.
+- **Tank ünitesinin üstündeki pnömatik silindirler:** Tank kapaklarının arkasındaki kutunun üzerinde, konum sensörlü iki dikey silindir bulunur. İşlevleri: {{TANK_UNITESI:Tank ünitesi üstündeki pnömatik silindirlerin işlevi}}.
+- **Pnömatik valf kutusu:** Kabinin sol yan duvarında, tank ünitesinin üstünde bulunan "KİLİTLİ TUT" etiketli kutudur; pnömatik valfleri içerir. Kabinin altındaki bölmede de pnömatik valfler bulunur.
+- **Kabin aydınlatması:** Kabinin tavanındaki ve yan duvarındaki LED lambalar kabinin içini aydınlatır; program sırasında kabinin içi gözetleme camından izlenebilir.
+- **Elektrik panosu:** PLC, güvenlik kontrolörü, frekans invertörü, motor koruma şalterleri, kaçak akım röleleri, faz koruma rölesi ve kontaktörleri içerir (**Bkz. Bölüm 3.3.5**).
 
 ---
 
@@ -102,11 +117,16 @@ Tip etiketi makinenin kimlik bilgilerini taşır. Etiketi sökmeyin ve üzerini 
 
 Tip etiketinde aşağıdaki bilgiler bulunur:
 
-- Üretici adı ve adresi
-- Makine adı ve model kodu
-- Seri numarası
+- Üretici adı ve web adresi
+- Marka
+- Model kodu (model tipi)
+- Çalışma gerilimi ve frekansı
+- Toplam güç
+- En yüksek çalışma sıcaklığı
 - Üretim yılı
-- Besleme gerilimi, frekansı ve toplam güç
-- CE işareti
+- Seri numarası ve karekod
+- CE ve EAC işaretleri
 
-![Tip etiketi](../../assets/3.1/tip-etiketi.png)
+Tip etiketinin hemen üstünde ayrı bir CE etiketi bulunur.
+
+![Tip etiketi (örnek)](../../assets/3.1/tip-etiketi.jpg)

@@ -5,8 +5,9 @@
 # Kılavuz .md dosyaları değerleri {{BLOK:Anahtar}} ve {{TABLO:BLOK}} yer tutucularıyla buradan okur.
 # Doldurma: ':' sonrasına yaz. Bilinmiyorsa boş bırak (kılavuzda [EKSİK] görünür). Uydurma yapma.
 # Tablo bloklarında sütunlar '|' ile ayrılır; "# Her satır:" yorumu sütun başlıklarıdır.
-# Kaynak: Makinelerin Katalog Özellikleri — KBN2 Series sayfası ve KBN kodlama sistemi.
-# Son güncelleme: 2026-10-19
+# Kaynak: Makinelerin Katalog Özellikleri — KBN2 Series sayfası ve KBN kodlama sistemi;
+#         KBN 2B P DS OTO 1500 (seri no 0326067, 2026) üretim fotoğrafları (photos/, 2026-10-21).
+# Son güncelleme: 2026-10-21
 # =============================================================================
 
 # =============================================================================
@@ -79,25 +80,42 @@ Nominal güç (kW): 23,8 | 41 | 41 | 43 | 58 | 58
 Boş ağırlık — yaklaşık (kg):  |  |  |  |  |
 Ağırlık merkezi konumu:  |  |  |  |  |
 # 1650 sütunu: KBN 2B 1650 STEP modelinden (kapak tam açık)
-Kapak açıkken toplam yükseklik (mm):  |  | 3180 |  |  | 
+Kapak açıkken toplam yükseklik (mm):  |  | 3180 |  |  |
+
+[MOTOR_LISTESI]
+# Kaynak: KBN 2B P DS OTO 1500 (seri no 0326067) motor ve pompa etiketleri. Diğer gövde kodlarındaki güçler için [TEKNIK_OTO_P_DS].
+# Her satır: Bileşen | Marka / model | Güç | Elektrik değerleri | Devir (d/dk) | Konum
+Kabin altındaki yatay santrifüj pompa: Atlantis KAF 300T/304 | 3 HP | 3~ 380 – 400 V, 50 Hz, 5,2 A | 2900 | Kabinin altındaki ön bölme
+Dikey çok kademeli pompa: LEO LVS 20 |  |  |  | Makinenin sol arka köşesi
+Tank ünitesi pompası (mavi):  |  |  |  | Tank ünitesinin önü, tahliye borusunun ucu
+Redüktörlü motor (sepet döndürme): ELK 2EL071M4C motor, sonsuz vida redüktör | 0,37 kW | Δ230 / Y400 V, 1,73 / 1,00 A, 50 Hz, IP55 | 1425 (motor) | Sağ yan, elektrik panosunun altı
+Kurutma fanı motoru: ELK |  |  |  | Tavan, kurutma ünitesi
+Buhar tahliye fanı motoru:  |  |  |  | Tavan
 
 [ELEKTRIK]
 Besleme gerilimi (V): 380
 Besleme frekansı (Hz): 50
 Faz sayısı: 3
 Besleme bağlantı şekli (3P+PE / 3P+N+PE):
-Kumanda devresi gerilimi:
-Ana şalter tipi ve anma akımı:
+Kumanda devresi gerilimi: 24 V DC (PLC, HMI, valf bobinleri, ara röleler); 230 V AC (kontaktör bobinleri)
+Ana şalter tipi ve anma akımı: Schneider Electric EasyPact CVS160 kompakt devre kesici, TM160D termik-manyetik koruma (160 A); pano kapağında döner kol
 Önerilen besleme sigortası / devre kesici:
 Besleme kablosu kesiti:
 Elektrik panosu koruma sınıfı (IP):
+Faz koruma rölesi: MKS-03 (faz kaybı ve faz sırası izleme)
+Pano içi kaçak akım koruması: 4 kutuplu, 30 mA kaçak akım röleleri (F1 – F4)
 
 [TESISAT]
 Basınçlı hava basıncı (bar):
-Basınçlı hava bağlantısı:
+Basınçlı hava bağlantısı: Sağ yan, ön köşeye yakın alt panel ("AIR INLET / HAVA GİRİŞİ" etiketli giriş)
+Basınçlı hava bağlantı tipi: Pirinç hızlı bağlantı rakoru (erkek uç)
+Basınçlı hava şartlandırıcısı: AirTAC filtre-regülatör (manometreli, filtre haznesinde yoğuşma suyu tahliyeli)
 Basınçlı hava kalitesi: Filtrelenmiş, nemi alınmış
 Su dolum bağlantısı:
-Tank tahliye bağlantıları:
+Tank tahliye bağlantıları: Her tankın altında "DRENAJ" etiketli küresel vana; vanalar zemindeki ortak tahliye borusuna bağlıdır
+Taşma hattı bağlantıları: Tank ünitesinin dış yüzünde, her tank için "TAŞMA HATTI" etiketli çıkış
+# Taşma çıkışları atık su hattına mı, toplama kabına mı bağlanır; bağlantı ölçüsü
+Taşma hattı bağlantı şekli:
 Buhar tahliye (egzoz) bağlantı çapı (mm):
 
 [ORTAM_KOSULLARI]
@@ -112,19 +130,32 @@ Ses ölçüm konumu: Makineden 1 m uzaklık, 1,6 m yükseklik
 # =============================================================================
 
 [KONTROLLER]
-# Kaynak: KBN 2B 1650 STEP modeli (kumanda paneli)
+# Kaynak: KBN 2B 1650 STEP modeli (kumanda paneli); KBN 2B P DS OTO 1500 fotoğrafları
 Kumanda paneli konumu: Makinenin sağ yanındaki elektrik panosunun öne (kapak tarafına) bakan yüzü
-Ana şalter konumu:
+Ana şalter konumu: Elektrik panosunun sağa bakan kapağı üzerinde (döner kollu)
 Acil durdurma butonu sayısı: 1
-Acil durdurma butonu konumu: Kumanda paneli
-PLC marka / model:
-HMI marka / model:
-HMI ekran boyutu (inç):
-Kumanda paneli butonları ve lambaları (7 adet) işlevleri:
-Kapak açma / kapama kumandası:
-Programı başlatma kumandası:
-Programı durdurma kumandası:
-Alarm onaylama (reset) kumandası:
+Acil durdurma butonu konumu: Kumanda paneli (ACİL STOP)
+PLC marka / model: Omron CP2E (Ethernet portlu, 24 V DC) ve genişleme modülü
+HMI marka / model: Omron NB7W-TW01B-V1
+HMI ekran boyutu (inç): 7
+Frekans invertörü marka / model: Delta VFD-EL-W
+Frekans invertörünün sürdüğü motor:
+# Kumanda paneli: üstte HMI; 1. sıra START, RESET, STOP; 2. sıra KAPI AÇIK, KAPI KAPALI; ortada ACİL STOP; alt sıra KAPI AÇIK, KAPI KAPALI
+START butonu (yeşil): Seçilen programı başlatır
+RESET butonu (mavi): Nedeni giderilen alarmı onaylar (sıfırlar)
+STOP butonu (kırmızı): Çalışan programı durdurur
+KAPI AÇIK butonu (yeşil, 2. sıra): Kapağı açar
+KAPI KAPALI butonu (kırmızı, 2. sıra): Kapağı kapatır
+# Alt sıradaki KAPI AÇIK / KAPI KAPALI elemanlarının işlevi (buton mu, gösterge lambası mı?) bilinmiyor
+KAPI AÇIK (yeşil, alt sıra):
+KAPI KAPALI (kırmızı, alt sıra):
+Kapak açma / kapama kumandası: Kumanda panelindeki KAPI AÇIK (yeşil) ve KAPI KAPALI (kırmızı) butonları
+Programı başlatma kumandası: Kumanda panelindeki START butonu (yeşil)
+Programı durdurma kumandası: Kumanda panelindeki STOP butonu (kırmızı)
+Alarm onaylama (reset) kumandası: Kumanda panelindeki RESET butonu (mavi)
+Sinyal kulesi konumu: Elektrik panosunun üstü
+Sinyal kulesi renkleri (yukarıdan aşağıya): Kırmızı, turuncu, yeşil
+Sinyal kulesi renklerinin anlamı:
 Kayıtlı program (reçete) sayısı:
 HMI dil seçenekleri:
 Şifre seviyeleri:
@@ -132,11 +163,16 @@ HMI dil seçenekleri:
 [TANK_UNITESI]
 # Kaynak: KBN 2B 1650 STEP modeli
 Tank ünitesinin konumu: Makinenin sol yanı
-1. tank (yıkama) konumu:
-2. tank (durulama) konumu:
+1. tank (yıkama) konumu: Tank ünitesinde, kapağında "1" etiketi bulunan tank
+2. tank (durulama) konumu: Tank ünitesinde, kapağında "2" etiketi bulunan tank
 Tank başına süzgeç sepeti sayısı: 4
 Filtre gövdesi sayısı: 2
+Filtre gövdesi kapağı: Menteşeli, 6 mafsallı (göz) cıvatalı; kapağın ortasında hava alma tapası
+Filtre gövdesi boşaltması: Gövdenin altında küresel vana ve tapa
+# Mavi pompa: emişi DRENAJ vanalarının bağlı olduğu ortak tahliye borusundan; basma hattı yukarı çıkar (işlevi bilinmiyor)
 Tank ünitesi altındaki pompanın işlevi:
+# Tank kapaklarının arkasındaki kutu üzerinde, her biri 2 konum sensörlü iki dikey pnömatik silindir
+Tank ünitesi üstündeki pnömatik silindirlerin işlevi:
 
 [PROGRAM]
 Durulama süresi ayar aralığı (dk):
@@ -145,9 +181,14 @@ Kurutma sıcaklığı ayar aralığı (°C):
 
 [GUVENLIK_DONANIMLARI]
 Kapak emniyet şalteri tipi / konumu:
+Işık perdesi marka / model: Omron
+Işık perdesi konumu: Kapı açıklığının iki yanı (verici ve alıcı)
+Güvenlik kontrolörü: Omron G9SP (elektrik panosunda)
+# Işık perdesi kesildiğinde makinenin tepkisi (ör. kapanan kapak durur / geri açılır; program durur)
+Işık perdesi işlevi:
 Tank seviye şalterleri tipi / konumu:
 Emniyet termostatı ayar değeri (°C):
-Motor koruma (termik) rölesi:
+Motor koruma (termik) rölesi: Schneider Electric TeSys GV2ME motor koruma şalterleri (Q1 – Q6)
 
 # =============================================================================
 # 03.5 / 05 — YERLEŞİM VE KURULUM
@@ -157,7 +198,7 @@ Motor koruma (termik) rölesi:
 Makine çevresinde minimum boşluk (mm): 1000
 Zemin: Terazili, düz beton zemin
 Zemin taşıma kapasitesi (kg/m²):
-Seviye ayarı (ayak tipi):
+Seviye ayarı (ayak tipi): Dişli milli, kontra somunlu, yuvarlak tabanlı ayarlanabilir ayak (kabin ve tank ünitesi)
 Minimum tavan yüksekliği (mm):
 
 # =============================================================================
@@ -169,7 +210,7 @@ Taşıma yöntemi: Forklift
 Forklift çatal giriş yönü:
 Denge kontrolü kaldırma yüksekliği (cm): 10 – 15
 Taşıma sırasında maks. yükseklik (cm): 20
-Ambalaj tipi:
+Ambalaj tipi: Streç film ile sarılı
 
 [DEPOLAMA]
 Depolama sıcaklığı (°C): +5 … +40

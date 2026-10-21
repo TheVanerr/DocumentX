@@ -64,7 +64,7 @@ Bu kılavuz dijital olarak teslim edilir. İşletme, kılavuzun güncel sürüm�
 Aşağıdaki durumlardan kaynaklanan kişisel yaralanma, maddi hasar, üretim kaybı ve çevresel zararlardan üretici sorumlu tutulamaz; bu durumlarda makine garanti kapsamı dışında kalır:
 
 - **Sınır dışı kullanım:** Makinenin **Bölüm 3.3**'teki yükleme ağırlığı, parça boyutu, sıcaklık ve basınç değerlerinin üzerinde çalıştırılması.
-- **Güvenlik donanımlarına müdahale:** Acil durdurma butonu, kapak emniyet şalteri, seviye şalterleri, emniyet termostatları gibi güvenlik donanımlarının sökülmesi, köprülenmesi veya PLC programı üzerinden devre dışı bırakılması.
+- **Güvenlik donanımlarına müdahale:** Acil durdurma butonu, kapak emniyet şalteri, ışık perdesi, seviye şalterleri, emniyet termostatları gibi güvenlik donanımlarının sökülmesi, köprülenmesi veya PLC programı üzerinden devre dışı bırakılması.
 - **Yetkisiz değişiklik:** Üreticinin yazılı onayı olmadan makinenin konstrüksiyonunda, borulamasında, elektrik panosunda, PLC programında veya HMI projesinde değişiklik yapılması.
 - **Onaysız kimyasal kullanımı:** **Bölüm 3.2.3**'teki koşulları sağlamayan kimyasalların ya da yanıcı solventlerin kullanılması.
 - **Orijinal olmayan parça:** Nozul, conta, ısıtıcı, sensör ve motor gibi parçaların üretici onayı olmayan muadilleriyle değiştirilmesi.

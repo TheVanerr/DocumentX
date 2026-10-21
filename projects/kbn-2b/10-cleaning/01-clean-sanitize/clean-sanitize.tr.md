@@ -51,6 +51,8 @@ Her tankın üst kısmında, kabinden dönen sıvının geçtiği dört süzgeç
 
 ![Tank ünitesi — süzgeç sepetlerinin konumu (kırmızı, tank kapakları gösterilmemiştir)](../../assets/10.1/tank-unitesi.png)
 
+![Yuvasından çıkarılan süzgeç sepeti](../../assets/10.1/suzgec-sepeti.jpg)
+
 **NOT:** Makineyi süzgeç sepetleri takılı olmadan çalıştırmayın. Süzgeçsiz çalışmada talaş ve kir tanka, pompalara ve filtrelere ulaşarak pompa çarklarını aşındırır, filtre elemanlarını ve nozulları tıkar.
 
 **Kapak**
@@ -84,5 +86,6 @@ Yıkama sıvısı; yağ ve kir yükü arttıkça temizleme etkisini kaybeder, k�
 
 1. Makinenin dış yüzeyini nemli bir bez ve nötr bir temizlik maddesiyle silin.
 2. HMI ekranını yalnızca hafif nemli, yumuşak bir bezle silin; ekrana sıvı püskürtmeyin.
-3. Makine çevresindeki zemini temizleyin ve kurulayın.
-4. Uyarı etiketlerinin temiz ve okunur olduğunu kontrol edin.
+3. Işık perdesinin verici ve alıcısının ön camlarını yumuşak, kuru bir bezle silin. Kirli veya buğulu cam ışık perdesinin hatalı algılamasına yol açar.
+4. Makine çevresindeki zemini temizleyin ve kurulayın.
+5. Uyarı etiketlerinin temiz ve okunur olduğunu kontrol edin.

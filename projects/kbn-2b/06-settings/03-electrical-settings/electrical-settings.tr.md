@@ -8,6 +8,8 @@ Elektrik ayarlarını yalnızca yetkili elektrik personeli, elektrik devre şema
 
 Pompa ve fan motorları yalnızca doğru yönde dönerken nominal basınç ve debiyi sağlar. Ters dönen pompa çok düşük basınç üretir; ters dönen buhar tahliye fanı buharı tahliye etmez, ters dönen kurutma fanı kabine hava basmaz. Faz sırasını ilk devreye almada ve besleme bağlantısı her değiştirildiğinde kontrol edin.
 
+Elektrik panosundaki faz koruma rölesi ({{ELEKTRIK:Faz koruma rölesi}}) besleme fazlarını izler. Faz kaybı veya yanlış faz sırası olduğunda rölenin durumunu elektrik devre şemasına göre kontrol edin.
+
 1. **Ana şalteri** "I" konumuna getirin, kapağı kapatın ve kısa süreli bir deneme programı başlatın.
 2. Pompa motorunun fan kapağı üzerindeki ok ile motor milinin dönüş yönünü karşılaştırın.
 3. Dönüş yönü ok ile aynı değilse makineyi durdurun ve **Bölüm 2.3.3**'e göre kilitleyin.

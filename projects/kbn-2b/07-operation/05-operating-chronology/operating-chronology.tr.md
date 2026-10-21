@@ -6,7 +6,7 @@ Tablo: Günlük çalışma akışı
 
 | Sıra | Zaman | İş | Ayrıntı |
 |:---:|---|---|---|
-| 1 | Vardiya başı | Vardiya başı kontrolleri, alarm kontrolü, acil durdurma ve kapak emniyet şalteri testi | **Bkz. Bölüm 7.2.1** |
+| 1 | Vardiya başı | Vardiya başı kontrolleri, alarm kontrolü, acil durdurma, kapak emniyet şalteri ve ışık perdesi testi | **Bkz. Bölüm 7.2.1** |
 | 2 | Vardiya başı | Tank seviyelerinin ve sıvıların kontrolü, seviye düşükse dolum ve kimyasal takviyesi | **Bkz. Bölüm 7.2.2** |
 | 3 | Vardiya başı | Program seçimi, ısıtma ve sıvıların ayar sıcaklığına ulaşmasının beklenmesi | **Bkz. Bölüm 7.2.3** |
 | 4 | Üretim boyunca | Yükleme, program, boşaltma | **Bkz. Bölüm 7.4** |

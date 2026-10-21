@@ -7,7 +7,7 @@
 3. Kapağı kapatın ve kapalı konumda bırakın; açık bırakılan kapak, basınçlı hava kesildiğinde kendi ağırlığıyla aşağı inebilir.
 4. Tank kapaklarını kapatın.
 5. **Ana şalteri** "0" konumuna getirin.
-6. Basınçlı hava giriş vanasını kapatın.
+6. Tesis tarafındaki basınçlı hava vanasını kapatın.
 7. Taşıma arabasını makinenin önünden uzaklaştırarak geçiş yolunu açık bırakın.
 
 ---

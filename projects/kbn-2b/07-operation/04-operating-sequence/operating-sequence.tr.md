@@ -33,7 +33,7 @@ Parçalar sepete, sepet taşıma arabasına çekilerek makinenin dışında yük
 
 **DİKKAT — Sıcak yüzeyler:** Kabin iç yüzeyleri, sepet ve önceki partinin parçaları sıcak olabilir. Yükleme ve boşaltmada ısıya dayanıklı eldiven kullanın.
 
-![Taşıma arabası ile sepetin yüklenmesi](../../assets/7.4/tasima-arabasi.png)
+![Taşıma arabası ve yıkama sepeti](../../assets/7.4/tasima-arabasi.jpg)
 
 ---
 

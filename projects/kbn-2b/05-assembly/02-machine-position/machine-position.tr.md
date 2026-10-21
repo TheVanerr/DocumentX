@@ -26,6 +26,6 @@ Makine, yüksekliği ayarlanabilen dört ayak üzerinde durur. Makinenin terazid
 7. Kontra somunları sıkın.
 8. Taşıma arabasını ön tarafa yanaştırın ve arabanın raylarının kabin içindeki raylarla aynı hizada olduğunu kontrol edin.
 
-![Ayarlanabilir ayak](../../assets/5.2/ayak.png)
+![Ayarlanabilir ayak](../../assets/5.2/ayak.jpg)
 
 Seviye ayar elemanı: {{KURULUM:Seviye ayarı (ayak tipi)}}.

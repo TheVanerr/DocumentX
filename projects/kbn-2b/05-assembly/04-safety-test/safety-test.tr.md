@@ -44,4 +44,19 @@ Testi her iki tank için ayrı ayrı yapın.
 
 ---
 
+## 5.4.5 Işık perdesi
+
+Testi, kapak hareket alanında kimse yokken ve ışık perdesini kesmek için kişinin elini veya kolunu değil, bir test çubuğunu ya da uzun bir cismi kullanarak yapın.
+
+1. Kapağı tam açın.
+2. Işık perdesinin verici ve alıcısının ön camlarının temiz ve hasarsız olduğunu kontrol edin.
+3. **KAPI KAPALI** butonuna basarak kapağı kapatmaya başlayın.
+4. Kapak inerken test çubuğunu kapı açıklığına, ışık perdesinin önüne tutun.
+5. Makinenin tepkisinin **Bölüm 2.2.3**'te tanımlanan işlevle aynı olduğunu kontrol edin: {{GUVENLIK_DONANIMLARI:Işık perdesi işlevi}}.
+6. Test çubuğunu çekin ve kapağı yeniden kapatın.
+
+Makine tanımlanan tepkiyi vermiyorsa makineyi kullanmayın ve ışık perdesini elektrik personeline veya üretici servisine kontrol ettirin.
+
+---
+
 Test sonuçlarını devreye alma tutanağına (**Bkz. Bölüm 14.1.1**) veya bakım kayıt formuna (**Bkz. Bölüm 14.1.3**) kaydedin.

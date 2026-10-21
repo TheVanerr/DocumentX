@@ -17,7 +17,7 @@ Tablo: Makinenin tarafları
 | 5 | Buhar tahliye fanı (tavan) | Buhar tahliye kanalı bu fanın çıkışına bağlanır. |
 | 6 | Kurutma ünitesi (tavan) | Kurutma fanı, hava ısıtıcısı ve hava borusu. |
 | 7 | Taşıma arabası (ön taraf) | Yükleme ve boşaltmada kapağın önüne yanaştırılır. |
-| 8 | Tahliye manifoldu (sol taraf, tank ünitesinin ucu) | Tankların boşaltıldığı vanalar ve atık su bağlantısı. |
+| 8 | Tahliye manifoldu (sol taraf, tank ünitesinin altı) | Tankların "DRENAJ" etiketli tahliye vanaları, ortak tahliye borusu ve atık su bağlantısı. |
 
 ---
 
@@ -41,6 +41,7 @@ Tablo: Bağlantı noktaları
 | Elektrik beslemesi | Sağ taraf, elektrik panosu | **Bkz. Bölüm 5.3.1** |
 | Buhar tahliye (egzoz) | Tavan, buhar tahliye fanının çıkışı | **Bkz. Bölüm 5.3.4** |
 | Tank tahliyesi | Sol taraf, tahliye manifoldu | **Bkz. Bölüm 5.3.2** |
+| Taşma hattı | Sol taraf, tank ünitesinin dış yüzü ("TAŞMA HATTI") | **Bkz. Bölüm 5.3.2** |
 | Su dolumu | {{TESISAT:Su dolum bağlantısı}} | **Bkz. Bölüm 5.3.2** |
 | Basınçlı hava | {{TESISAT:Basınçlı hava bağlantısı}} | **Bkz. Bölüm 5.3.3** |
 

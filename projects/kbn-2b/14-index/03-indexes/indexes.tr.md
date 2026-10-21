@@ -17,6 +17,7 @@ Tablo: Konu dizini
 | Filtre elemanı değişimi | **Bkz. Bölüm 9.1.4** |
 | Güvenlik donanımları | **Bkz. Bölüm 2.2.3** |
 | HMI (operatör paneli) | **Bkz. Bölüm 3.4.2** |
+| Işık perdesi | **Bkz. Bölüm 2.2.3** |
 | Kalıntı riskler | **Bkz. Bölüm 2.2.2** |
 | Kişisel koruyucu donanım (KKD) | **Bkz. Bölüm 2.2.6** |
 | Kumanda elemanları | **Bkz. Bölüm 3.4** |
@@ -25,11 +26,14 @@ Tablo: Konu dizini
 | Model kodu | **Bkz. Bölüm 3.1.2** |
 | Program ayarları | **Bkz. Bölüm 6.6** |
 | Program akışı | **Bkz. Bölüm 3.1.4** |
+| Sinyal kulesi | **Bkz. Bölüm 3.4.1** |
 | Süzgeç sepetleri | **Bkz. Bölüm 10.1.3** |
 | Tank ünitesi | **Bkz. Bölüm 3.1.3** |
 | Taşıma | **Bkz. Bölüm 4.1** |
 | Taşıma arabası ile yükleme | **Bkz. Bölüm 7.4.2** |
 | Teknik özellikler | **Bkz. Bölüm 3.3** |
+| Tip etiketi | **Bkz. Bölüm 3.1.5** |
+| Uyarı etiketleri | **Bkz. Bölüm 2.2.4** |
 | Temizlik | **Bkz. Bölüm 10** |
 | Yağ sıyırıcı | **Bkz. Bölüm 7.6.2** |
 | Yedek parça | **Bkz. Bölüm 13.3** |

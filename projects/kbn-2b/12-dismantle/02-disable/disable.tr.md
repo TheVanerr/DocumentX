@@ -8,7 +8,7 @@ Makine birkaç günden uzun süre kullanılmayacaksa (ör. tatil dönemleri, ür
 2. Makineyi **Bölüm 7.3**'e göre durdurun.
 3. Sıvılar kirliyse tankları boşaltın ve temizleyin; sıvılar temizse tank kapaklarını kapalı tutun.
 4. **Ana şalteri** "0" konumuna getirin ve kilitleyin.
-5. Basınçlı hava giriş vanasını kapatın.
+5. Tesis tarafındaki basınçlı hava vanasını kapatın ve hava hortumunu makinenin hava girişinden ayırın.
 6. Su dolum vanasını kapatın.
 7. Ortam sıcaklığı 0 °C'nin altına düşebilecekse tankları, pompaları, filtre gövdelerini ve boruları tamamen boşaltın.
 

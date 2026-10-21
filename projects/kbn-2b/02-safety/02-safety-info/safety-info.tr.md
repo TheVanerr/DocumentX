@@ -39,7 +39,7 @@ Tasarım ve koruyucu önlemlere rağmen aşağıdaki riskler tamamen ortadan kal
 
 ## 2.2.3 Güvenlik donanımları
 
-Makine aşağıdaki güvenlik donanımlarıyla donatılmıştır. Bu donanımların işlevini her vardiya başında veya **Bölüm 9**'daki periyotlarda kontrol edin.
+Makine aşağıdaki güvenlik donanımlarıyla donatılmıştır. Bu donanımların işlevini her vardiya başında veya **Bölüm 9**'daki periyotlarda kontrol edin. Güvenlik devreleri elektrik panosundaki güvenlik kontrolörü ({{GUVENLIK_DONANIMLARI:Güvenlik kontrolörü}}) tarafından izlenir; güvenlik kontrolörünün programı ve bağlantıları yalnızca üretici servisi tarafından değiştirilir.
 
 Tablo: Güvenlik donanımları
 
@@ -48,12 +48,13 @@ Tablo: Güvenlik donanımları
 | **Ana şalter** | Makinenin tüm elektrik beslemesini keser. "0" konumunda asma kilitle kilitlenerek LOTO için kullanılır. | Bakım öncesi enerjisizliği doğrulayın (**Bkz. Bölüm 2.3.3**). |
 | **Acil durdurma butonu** | Basıldığında pompaların, döndürme motorunun, fanların ve ısıtıcı devrelerinin enerjisini keser; buton elle serbest bırakılana kadar kilitli kalır. | Her vardiya başında çalıştırarak test edin (**Bkz. Bölüm 2.3.2**). |
 | **Kapak emniyet şalteri** | Kapak açıkken yıkama ve durulama pompalarının, döndürme motorunun ve kurutmanın çalışmasını engeller; program sırasında kapak açılırsa bunları durdurur. | Her vardiya başında test edin (**Bkz. Bölüm 5.4**). |
+| **Işık perdesi** | Kapı açıklığının iki yanındaki verici ve alıcıdan oluşur; kapak hareket alanını izler. {{GUVENLIK_DONANIMLARI:Işık perdesi işlevi}} | Her vardiya başında test edin (**Bkz. Bölüm 5.4.5**). |
 | **Seviye şalterleri** | Her iki tankta; sıvı seviyesi düşük olduğunda o tankın ısıtıcısının çalışmasını engeller. | **Bölüm 9**'daki periyotta kontrol edin. |
 | **Emniyet termostatları** | Sıvı sıcaklığı ayar değerini aşarsa ilgili tankın ısıtıcısının enerjisini keser. | **Bölüm 9**'daki periyotta kontrol edin. |
 | **Motor koruma şalterleri** | Pompa, döndürme, buhar tahliye ve kurutma fanı motorlarını aşırı akıma karşı korur. | Yalnızca elektrik personeli kontrol eder. |
 | **Sabit koruyucular** | Gövde panelleri, tahrik ve pano kapakları hareketli ve elektrikli parçalara erişimi engeller. | Panellerin yerinde ve vidalarının sıkılı olduğunu kontrol edin. |
 
-Güvenlik donanımlarının tip ve konum bilgileri: kapak emniyet şalteri {{GUVENLIK_DONANIMLARI:Kapak emniyet şalteri tipi / konumu}}; seviye şalterleri {{GUVENLIK_DONANIMLARI:Tank seviye şalterleri tipi / konumu}}; emniyet termostatı ayar değeri {{GUVENLIK_DONANIMLARI:Emniyet termostatı ayar değeri (°C)}} °C.
+Güvenlik donanımlarının tip ve konum bilgileri: kapak emniyet şalteri {{GUVENLIK_DONANIMLARI:Kapak emniyet şalteri tipi / konumu}}; ışık perdesi {{GUVENLIK_DONANIMLARI:Işık perdesi marka / model}}; seviye şalterleri {{GUVENLIK_DONANIMLARI:Tank seviye şalterleri tipi / konumu}}; emniyet termostatı ayar değeri {{GUVENLIK_DONANIMLARI:Emniyet termostatı ayar değeri (°C)}} °C.
 
 ---
 
@@ -61,19 +62,23 @@ Güvenlik donanımlarının tip ve konum bilgileri: kapak emniyet şalteri {{GUV
 
 Makine üzerindeki etiketler EN ISO 7010 işaretlerini taşır (**Bkz. Bölüm 1.2.2**). Etiketleri sökmeyin, boyamayın, üzerini kapatmayın; okunmaz hale gelenleri hemen yenileyin.
 
-Tablo: Uyarı etiketlerinin konumları
+Makine üzerindeki uyarı ve bilgi etiketleri aşağıdaki şekilde, konumları ve uyulacak önlemler tabloda verilmiştir. Tablodaki numaralar şekildeki numaralara karşılık gelir.
 
-| Etiket | Konum | Önlem |
-|---|---|---|
-| Elektrik tehlikesi | Elektrik panosu kapağı, motor ve ısıtıcı bağlantı kutuları | Kapakları yalnızca yetkili elektrik personeli, LOTO uygulandıktan sonra açar. |
-| Sıcak yüzey | Kapak, kabin yan yüzeyleri, tank ünitesi, filtre gövdeleri, buhar tahliye kanalı, kurutma ünitesi | Çıplak elle dokunmayın; ısıya dayanıklı eldiven kullanın. |
-| El ezilmesi | Kapak kenarı, pnömatik silindirler, döndürme tahriki, tank kapakları | Hareket sırasında elinizi hareket alanına sokmayın. |
-| Aşındırıcı madde | Tank kapakları ve tahliye manifoldu | Kimyasalla çalışırken göz koruyucu ve kimyasala dayanıklı eldiven kullanın. |
-| Kullanım kılavuzunu okuyun | Kumanda paneli | Makineyi kullanmadan önce kılavuzu okuyun. |
+![Makine üzerindeki uyarı ve bilgi etiketleri](../../assets/2.2/etiket-konumlari.jpg)
 
-Etiketlerin makine üzerindeki konumları aşağıdaki şekilde gösterilmiştir.
+Tablo: Uyarı ve bilgi etiketleri
 
-![Uyarı etiketlerinin makine üzerindeki konumları](../../assets/2.2/etiket-konumlari.png)
+| No | Etiket | Konum | Önlem |
+|:---:|---|---|---|
+| 1 | El sıkışma tehlikesi (WARNING MIND YOUR HANDS) | 1. ve 2. tank kapakları | Tank kapağını açıp kapatırken elinizi kapak ile tank gövdesi arasına sokmayın. |
+| 1 | Sıcak yüzey (HOT SURFACE) | 1. ve 2. tank kapakları | Tank kapaklarına ve tank yüzeylerine makine soğumadan çıplak elle dokunmayın; ısıya dayanıklı eldiven kullanın. |
+| 1 | Solvent kullanmayınız (DO NOT USE SOLVENT) | 1. ve 2. tank kapakları | Tanklara yanıcı solvent koymayın; yalnızca **Bölüm 3.2.3**'teki koşulları sağlayan kimyasalları kullanın. |
+| 2 | Yüksek voltaj (HIGH VOLTAGE) | Elektrik panosu kapağı | Kapağı yalnızca yetkili elektrik personeli, LOTO uygulandıktan sonra açar. |
+| 2 | Panoların kapaklarını kilitli tutunuz | Elektrik panosu kapağı | Pano kapağını kapalı ve kilitli tutun. |
+| 3 | Kilitli tut (KEEP LOCKED) | Pnömatik valf kutusunun kapağı | Kutuyu yalnızca bakım ve elektrik personeli açar; kapağı kilitli tutun. |
+| 4 | Topraklama (GROUND) | Elektrik panosu kapağının topraklama bağlantısı | Topraklama iletkenini sökmeyin; bakımda sökülen iletkeni yeniden bağlayın. |
+
+Tank kapaklarındaki **1** ve **2** etiketleri tankları tanımlar: 1. tank yıkama tankı, 2. tank durulama tankıdır.
 
 ---
 

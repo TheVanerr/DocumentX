@@ -6,7 +6,8 @@ Tablo: Pnömatik arızalar
 
 | Belirti | Olası neden | Giderme yöntemi | Yapan |
 |---|---|---|---|
-| Kapak açılmıyor veya kapanmıyor | Basınçlı hava giriş vanası kapalı | Vanayı açın. | Operatör |
+| Kapak açılmıyor veya kapanmıyor | Tesis hava hortumu hava girişine takılı değil veya tesis hava vanası kapalı | Hortumu hava girişindeki rakora takın; tesis vanasını açın. | Operatör |
+| | Kapı açıklığında ışık perdesini kesen bir engel var | Engeli kaldırın (**Bkz. Bölüm 11.6**). | Operatör |
 | | Hava basıncı düşük | Regülatördeki basıncı kontrol edin ve **Bölüm 6.5**'teki değere ayarlayın; tesis hattının basıncını kontrol ettirin. | Bakım personeli |
 | | Valf bobinine enerji gelmiyor | Bobin beslemesini, PLC çıkışını ve kumanda devresini kontrol edin. | Elektrik personeli |
 | | Valf bobini veya valf arızalı | Valfi elle kumanda ederek kontrol edin; arızalı bobini veya valfi değiştirin. | Bakım personeli |
