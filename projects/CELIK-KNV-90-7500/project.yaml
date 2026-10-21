@@ -1,0 +1,20 @@
+﻿# CELIK-KNV 90 7500 — proje reçetesi
+# Dil derleme: TR / DE seçimine göre aynı bölümün
+#   <dosya>.tr.md  |  <dosya>.de.md
+# dosyası kullanılır.
+
+proje_adi: KNV 90 7500 2B
+model: knv
+tip: proje
+diller:
+  - tr
+  - de
+varsayilan_dil: tr
+extends: templates/base.yaml
+kapak:
+  baslik: KNV 90 7500 2B
+  seri: false
+  rev: '00'
+  tarih: '21.10.2026'
+  firma: DOLFIN
+  hazirlayan: Fatih GÜRAL

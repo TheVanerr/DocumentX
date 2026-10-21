@@ -1,0 +1,171 @@
+# 11.3 Elektrische Störungen
+
+Bei elektrischen Störungen vor jedem Eingriff in den Schaltschrank LOTO anwenden (**Siehe Kapitel 2.4**). Die Versorgungswerte sind in **Kapitel 3.3.3**, die Liste der Motoren/Heizungen und Schutzelemente in der Tabelle in **Kapitel 3.3.4** angegeben. Alle Arbeiten in diesem Kapitel sind qualifiziertem Elektropersonal vorbehalten.
+
+**GEFAHR — Stromschlag:** Im Schaltschrank liegen 380 V an. Auch bei ausgeschaltetem Hauptschalter stehen die Eingangsklemmen des Hauptschalters unter Spannung; der Zwischenkreis des Frequenzumrichters führt nach dem Abschalten noch einige Zeit gefährliche Spannung. Berührung führt zum Tod oder zu schweren Verletzungen. Vor Arbeiten im Schaltschrank LOTO anwenden; die Eingangsklemmen des Hauptschalters nicht berühren; vor Eingriffen am Frequenzumrichter die Wartezeit gemäß Umrichterhandbuch einhalten und die Spannungsfreiheit messen.
+
+---
+
+## 11.3.1 Phasenausfall und Phasenfolge
+
+| Parameter | Wert |
+| :--- | :--- |
+| Verhalten bei Phasenausfall / vertauschter Phase | Phasenfolgerelais **MKR-01** gibt keinen Ausgang frei; die Schaltschrankfunktionen schalten nicht ein (RESET-Leuchte leuchtet möglicherweise nicht) |
+| Motordrehrichtung | Pumpen-, Ventilator- und Blowermotoren laufen im Direktanlauf — die Drehrichtung hängt von der Phasenfolge ab; der Förderer wird über Frequenzumrichter angetrieben — die Richtung ist per Parameter fest eingestellt |
+
+**Diagnoseverfahren bei Phasenfehler**
+
+1. Alle Funktionsschalter auf OFF stellen.
+2. Am Versorgungsschalter der Anlage das Vorhandensein aller drei Phasen und die Spannungssymmetrie messen.
+3. Die Anzeige des Relais MKR-01 ablesen (LED für Phasenfolge / Phasenausfall — gemäß Relaisetikett). Die Anzeige wird unter Spannung abgelesen; nur Elektrofachkraft.
+4. Bei vertauschter Phasenfolge LOTO anwenden und die Anlagenversorgung ausschalten und verriegeln (**Siehe Kapitel 2.4**).
+5. **Zwei Phasen** in der Versorgungsleitung tauschen (**Siehe Kapitel 5.3.6**). Phasen niemals unter Spannung tauschen.
+6. Schaltschranktür schließen; LOTO aufheben.
+7. Hauptschalter auf ON stellen; prüfen, dass MKR-01 den Ausgang freigibt.
+8. RESET drücken; prüfen, dass die RESET-Leuchte leuchtet.
+9. Eine Pumpe oder einen Ventilator kurz laufen lassen und die Drehrichtung mit dem Pfeil am Motor vergleichen.
+
+**Wiederholter Phasenfehler:** Qualität der Anlagenversorgung (lose Verbindung, Phasenunsymmetrie) oder Relaisstörung — Servicekriterium (**Siehe Kapitel 11.2.2**).
+
+---
+
+## 11.3.2 Motorstörungen — MKŞ und Frequenzumrichter
+
+| Motor | Schutz | Auslösesymptom |
+| :--- | :--- | :--- |
+| Waschpumpe PE02 (5,5 kW) | Q1 GV2ME16 | Betriebsleuchte TANK 1 PUMP aus |
+| Spülpumpe PE04 (3 kW) | Q2 GV2ME14 | Betriebsleuchte TANK 2 PUMP aus |
+| Ölskimmer GE06 (0,09 kW) | Q3 GV2ME04 | Betriebsleuchte OIL SKIMMER aus |
+| Abluftventilator FE01 (1,1 kW) | Q4 GV2ME07 | Keine Dampfableitung |
+| Trocknungsventilatoren FE02, FE03 (1,1 kW) | Q5, Q6 GV2ME07 | Betriebsleuchte DRYING FAN aus |
+| Blower FE04–FE07 (4 kW) | Q7–Q10 GV2ME14 | Blowerluft verringert |
+| Förderer GE01 (0,25 kW) | Frequenzumrichter Delta VFD004EL21W-1; Sicherung A9F74106 | Betriebsleuchte CONVEYOR aus; Code auf dem Display des Frequenzumrichters |
+
+**Diagnoseverfahren bei Motorstörung (MKŞ-Auslösung)**
+
+1. Den betreffenden Funktionsschalter auf **OFF** stellen.
+2. Bei Pumpenmotoren prüfen, dass Saug-/Druckventile geöffnet sind (**Siehe Kapitel 7.2.5**); die Pumpe nicht gegen ein geschlossenes Ventil betreiben.
+3. LOTO anwenden (**Siehe Kapitel 2.4**).
+4. Schaltschranktür öffnen; ausgelösten MKŞ ermitteln (Hebel in Stellung "0" — **Siehe Kapitel 11.1.3**).
+5. Motor- und Kabelanschlüsse per Sichtprüfung kontrollieren.
+6. Wicklungswiderstand und Isolation des Motors messen.
+7. Bei Verdacht auf mechanisches Blockieren die Freigängigkeit von Welle/Kupplung von Hand prüfen (Ventilatorflügel, Pumpenlaufrad, Skimmerscheibe).
+8. Ursache beseitigen; MKŞ-Hebel in Stellung ON bringen.
+9. Schaltschranktür schließen; LOTO aufheben.
+10. RESET drücken; Funktionsschalter auf ON stellen und die Einheit kurz laufen lassen.
+11. Den Motorstrom mit dem Zangenamperemeter messen; der Strom darf den Nennstrom des Motors nicht überschreiten (**Siehe Kapitel 3.3.4**). Die Messung erfolgt unter Spannung; nur Elektrofachkraft.
+
+**Alarm des Förderer-Frequenzumrichters**
+
+| Parameter | Wert |
+| :--- | :--- |
+| Frequenzumrichter | Delta **VFD004EL21W-1** (0,4 kW) — im Schaltschrank |
+| Alarmcodes | Gemäß dem Code auf dem Display des Antriebs **Betriebsanleitung Delta VFD-EL** (**Siehe Kapitel 13.1.3**) |
+| Reset | Schalter CONVEYOR OFF → ON oder Taste STOP/RESET am Frequenzumrichter |
+
+**VORSICHT — Parameteränderung:** Falsche Umrichterparameter können dazu führen, dass der Förderer in falscher Richtung oder außerhalb des zulässigen Geschwindigkeitsbereichs läuft und die Antriebsgruppe beschädigt wird. Die Parameter des Frequenzumrichters nicht ändern; Drehrichtung, Min.-/Max.-Frequenz und Rampe sind Werkseinstellungen. Bei Störungen, die eine Parameteränderung erfordern, den Herstellerservice anfordern (**Siehe Kapitel 11.2.2**).
+
+1. Schalter CONVEYOR auf OFF stellen; Alarmcode auf dem Display des Frequenzumrichters notieren.
+2. Liegt eine Blockierung oder ein Werkstückstau auf der Linie vor, diesen unter LOTO beseitigen (**Siehe Kapitel 2.4**).
+3. Prüfen, dass das Potentiometer nicht unter 20 Hz steht (Überlastalarm).
+4. Bedeutung des Alarmcodes im Delta-Handbuch nachlesen; bei Überstrom/Überlast die mechanische Last, bei Versorgungsfehler die Sicherung A9F74106 und die Anschlüsse prüfen.
+5. Den Frequenzumrichter zurücksetzen.
+6. Schalter CONVEYOR auf ON stellen; prüfen, dass sich der Drahtgurt vorwärts bewegt.
+
+![Schütze im Schaltschrank — Waschpumpe, Spülpumpe, Skimmer, Abluft](../../assets/11.3/kontaktorler.jpg)
+
+**Erwartetes Ergebnis:** MKŞ normal; Motor läuft; Betriebsleuchte an; Motorstrom überschreitet den Nennstrom nicht.
+
+---
+
+## 11.3.3 Heizungsstörungen — Fehlerstrom, Sicherung, Thermostat, Schütz
+
+| Heizungsgruppe | Schutz | Prüfung |
+| :--- | :--- | :--- |
+| Heizstäbe TANK 1 R01–R05 (5 × 8 kW) | RCCB A9N19643; Sicherung A9F74316 (16 A) ×5; Schütz LC1K1610M7 ×5 | Thermostat + Schalter TANK 1 HEATER |
+| Heizstäbe TANK 2 R06–R07 (2 × 8 kW) | RCCB A9N19643; Sicherung A9F74316 ×2; Schütz LC1K1610M7 ×2 | Thermostat + Schalter TANK 2 HEATER |
+| Trocknungsheizungen R21, R22 (2 × 12 kW) | RCCB A9N19642; Sicherung A9F74325 (25 A) ×2; Schütz LC1D25M7 ×2 | Thermostat + Schalter DRYING 1/2 HEATER |
+
+Die Fehlerstrom-Schutzschalter im Schaltschrank sind mit den Etiketten **K.AKIM F1…F5** (Fehlerstrom F1…F5), die Heizungssicherungen mit den Etiketten **YIKAMA ISI 1…5** (Waschheizung 1…5), **DURULAMA ISI 1–2** (Spülheizung 1–2) und **KURUTMA ISI 1–2** (Trocknungsheizung 1–2) gekennzeichnet.
+
+![Fehlerstrom-Schutzschalter — K.AKIM F3, F4, F5](../../assets/11.3/kacak-akim-roleleri.jpg)
+
+![Heizungssicherungen — Heizstäbe Waschen, Spülen, Trocknung](../../assets/11.3/isitici-sigortalari.jpg)
+
+**WARNUNG — Stromschlag:** Ein überbrückter oder außer Kraft gesetzter Fehlerstrom-Schutzschalter führt bei einem Isolationsfehler am Heizstab zu einem tödlichen Stromschlag. Den Fehlerstrom-Schutzschalter nicht überbrücken und nicht außer Kraft setzen; Eingriffe an Heizstäben und am Fehlerstrom-Schutzkreis nur durch qualifiziertes Elektropersonal.
+
+**Temperatur steigt nicht (Heizungsschalter ON)**
+
+1. Prüfen, dass die zugehörige **WASHING-LEVEL**-Leuchte aus ist; leuchtet sie rot, sperrt die Füllstandverriegelung die Heizung — Tank befüllen (**Siehe Kapitel 7.2.1**).
+2. Prüfen, dass der Sollwert des Thermostats über der aktuellen Temperatur liegt (**Siehe Kapitel 6.3.3**).
+3. Die Temperaturanzeige auf dem Thermostatdisplay prüfen; bei unplausibler Anzeige Störung des Thermoelements — **Siehe Kapitel 11.7.3**.
+4. LOTO anwenden (**Siehe Kapitel 2.4**).
+5. Stellung des zugehörigen RCCB-Hebels (K.AKIM) und der Heizungssicherungen prüfen; bei Auslösung zum nachstehenden Fehlerstromverfahren übergehen.
+6. Anschluss des Thermoelements (ETB30F06) prüfen.
+7. Sind RCCB und Sicherungen in Ordnung, LOTO aufheben; die Elektrofachkraft misst unter Spannung den Thermostatausgang und die Spulenspannung des Heizungsschützes (220 V AC) und prüft, ob das Schütz anzieht.
+
+**Fehlerstrom-Auslösung (RCCB)**
+
+1. Heizungsschalter auf OFF stellen.
+2. LOTO anwenden (**Siehe Kapitel 2.4**).
+3. Die vom ausgelösten RCCB versorgte Gruppe anhand des Schaltplans bestimmen (Tank 1, Tank 2 oder Trocknung).
+4. Jeden Heizstab der Gruppe nacheinander abklemmen; Isolationswiderstand Gehäuse–Anschluss des Heizstabs mit dem Isolationsmessgerät messen; den Heizstab mit niedriger Isolation (geplatzt/nass) ermitteln.
+5. Muss ein Tankheizstab gewechselt werden, den Tank entleeren (**Siehe Kapitel 10.1.5**).
+6. Den defekten Heizstab durch **REZİSTANS KOMPLESİ 8000 W 50 cm** (07 15142) bzw. die Trocknungsheizung ersetzen (**Siehe Kapitel 13.3**).
+7. Die Heizstab-Anschlusskästen unter dem Tank auf Feuchtigkeit und Leckagespuren prüfen; Feuchtigkeitsquelle beseitigen.
+8. RCCB einschalten; LOTO aufheben.
+9. Wurde der Tank entleert, den Tank befüllen (**Siehe Kapitel 7.2.1**); anschließend die Heizung einschalten und testen.
+10. Wiederholt sich die Auslösung, **Service** anfordern (**Siehe Kapitel 11.2.2**).
+
+![Unter dem Tank — Heizstab-Anschlussleitung](../../assets/11.3/tank-alti-rezistans-baglanti.jpg)
+
+**Thermostat hat den Sollwert erreicht, Heizen geht weiter (Störung 5)**
+
+1. Heizungsschalter auf OFF stellen. Steigt die Temperatur weiter, ist das Schütz verschweißt: Hauptschalter sofort auf **OFF**.
+2. LOTO anwenden (**Siehe Kapitel 2.4**); verschweißtes Schütz (LC1K1610M7 oder LC1D25M7) ersetzen.
+3. Stoppt das Heizen bei Schalter OFF, überschreitet aber bei ON den Sollwert, ist der Thermostatausgang oder das Thermoelement defekt; unter LOTO den Thermostat (GEMO DTH2) oder das Thermoelement ersetzen.
+
+---
+
+## 11.3.4 Allgemeine Prüfungen im Schaltschrank
+
+| Prüfung | Intervall / Anlass | Kapitel |
+| :--- | :--- | :--- |
+| Festigkeit der Anschlüsse (TMŞ, Schütz, Klemme) | Jährlich — LOTO | 9.1.3 |
+| Schaltschranklüftung und Staub | Monatlich | 9.1.3 |
+| Ausgang des 24-V-DC-Netzteils LRS-350-24 | Diagnose Störung 6 | 11.1.2 |
+| Steuersicherungen A9F74160 / A9F74110 | Diagnose Störung 6 | 11.1.2 |
+| Sicherheitsrelais G9SB — LED-Status | Wenn RESET nicht möglich | 11.7.1 |
+| PLC-CPU und Ein-/Ausgangsmodule — LED-Status | Wenn eine Einheit bei Schalter ON nicht arbeitet | 11.3.5 |
+
+Kabelfarbcode, Klemmennummern und Schaltungsdetails sind im **Schaltplan** angegeben (**Siehe Kapitel 13.1**).
+
+---
+
+## 11.3.5 PLC-Störungen
+
+Die Steuerungslogik der Maschine läuft in der PLC im Schaltschrank (**Siehe Kapitel 3.4.8**). Stoppt die PLC oder geht sie in den Fehlerzustand, können die Schalter des Bedienfelds die Einheiten nicht einschalten. Da die Not-Halt- und Wartungsklappenkreise mit von der PLC unabhängigen Sicherheitsrelais arbeiten, beeinträchtigt eine PLC-Störung diese Sicherheitsfunktionen nicht (**Siehe Kapitel 2.1.3**).
+
+| Symptom | Mögliche Ursache | Prüfung |
+| :--- | :--- | :--- |
+| Schalter ON; keine Einheit arbeitet, alle Betriebsleuchten aus | PLC im Zustand STOP oder Fehler; keine PLC-Versorgung | Status- und Fehler-LEDs der CPU; PLC-Versorgungsspannung |
+| Einzelner Schalter ON; zugehörige Einheit arbeitet nicht, MKŞ und Sicherung in Ordnung, WASHING-LEVEL-Leuchte aus | Störung von Schalterkontakt oder Kabel (kein Eingangssignal an der PLC); Störung des PLC-Ausgangs oder der Schützspule | LEDs des zugehörigen PLC-Ein- und Ausgangs — Adressen im Schaltplan (**Siehe Kapitel 13.1**) |
+
+**WARNUNG — Unkontrollierter Wiederanlauf:** Das Anschließen eines Computers an die PLC, eine Programmänderung oder das Forcen von Ausgängen führt zu unerwartetem Anlaufen der Einheiten und zum Außerkraftsetzen der Tank-Füllstandverriegelung; Quetschungen, Verbrühungen durch heiße Flüssigkeit und Brand durch trocken laufende Heizungen können die Folge sein. In das PLC-Programm greift ausschließlich der Service des Herstellers ein.
+
+**PLC-Zustandsprüfung**
+
+1. Prüfen, dass alle Not-Halt-Taster entriegelt und alle Wartungsklappen geschlossen sind und RESET ausgeführt wurde (**Siehe Kapitel 11.1.2** — Störung 4).
+2. Alle Funktionsschalter auf OFF stellen.
+3. Die Status- (RUN) und Fehler-LEDs an der PLC-CPU ablesen. Die LEDs werden unter Spannung abgelesen; nur Elektrofachkraft, ohne spannungsführende Teile zu berühren.
+4. Sind alle CPU-LEDs aus, LOTO anwenden (**Siehe Kapitel 2.4**) und die Sicherung des PLC-Versorgungskreises gemäß Schaltplan prüfen (**Siehe Kapitel 13.1**).
+5. Zeigt die CPU einen Fehler, den Hauptschalter auf OFF stellen; nachdem die PLC-LEDs vollständig erloschen sind, den Hauptschalter wieder auf ON stellen.
+6. RESET drücken; prüfen, dass die CPU in den Zustand RUN wechselt.
+7. Wechselt die CPU nicht in RUN oder wiederholt sich der Fehler, den Service rufen (**Siehe Kapitel 11.2.2**).
+
+**Wenn eine einzelne Funktion nicht arbeitet**
+
+1. Prüfen, dass die WASHING-LEVEL-Leuchte des betreffenden Tanks aus ist; leuchtet sie, arbeitet die Einheit wegen der Füllstandverriegelung nicht (**Siehe Kapitel 3.4.6**).
+2. Schalter auf ON stellen; prüfen, dass die LED des zugehörigen PLC-Eingangs leuchtet. Ist die Eingangs-LED aus, ist der Schalterkontakt oder das Kabel gestört.
+3. Prüfen, dass die LED des zugehörigen PLC-Ausgangs leuchtet. Leuchtet die Ausgangs-LED, das Schütz zieht aber nicht an, ist die Schützspule oder das Kabel gestört (**Siehe Kapitel 11.1.2** — Störung 1, Störung 3).
+4. Leuchtet die Eingangs-LED, ist die Ausgangs-LED aus und sind alle Verriegelungsbedingungen erfüllt, den Service rufen.

@@ -1,0 +1,11 @@
+# 11.4 Hidrolik arızaları
+
+**KNV 90 7500 2B** makinesinde **hidrolik sistem bulunmamaktadır**. Proses, elektrik motorlu santrifüj pompalar, inverter sürümlü konveyör redüktörü ve basınçlı hava tahrikli yağ ayırıcı pompası ile yürütülür. Bu alt bölüm uygulanmaz.
+
+| Parametre | Durum |
+| :--- | :--- |
+| Basınç düşük alarm (hidrolik) | Uygulanmaz |
+| Yağ kaçağı noktaları (hidrolik) | Uygulanmaz — konveyör redüktörü ve yağ sıyırıcı redüktörü keçe sızıntısı için **Bkz. Bölüm 9.1.3** (500 saat / yıllık) |
+| Pompa sesi anormal (hidrolik) | Uygulanmaz — proses pompaları için **Bkz. Bölüm 11.3.2** |
+
+Su pompası arızaları: **Bkz. Bölüm 11.3.2** (elektrik motorları) ve **Bkz. Bölüm 11.1.2** — Arıza 9 (püskürtme zayıf).
