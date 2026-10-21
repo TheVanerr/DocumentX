@@ -12,7 +12,7 @@ Makine; redüktör ile tahrik edilen zincirli konveyör üzerinde endüstriyel p
 | **1.2** | Semboller, uyarı işaretleri ve etiketleme kuralları |
 | **1.3** | Üretici iletişim, kimlik etiketi, servis ve yedek parça |
 
-Bu kullanım kılavuzu, **KNV 90 7500 2B** makinesinin ayrılmaz ve yasal olarak bağlayıcı bir parçasıdır; EN ISO 12100 ve EN ISO 20607 gereksinimlerine uygun hazırlanmıştır. Kılavuzdaki talimatlar tavsiye niteliğinde değildir; işletme, kurulum ve bakım sırasında bunlara uymakla yükümlüdür. Ulusal iş sağlığı ve güvenliği mevzuatı geçerliliğini korur; çelişki hâlinde daha sıkı hüküm uygulanır. Amaç, kapsam, geçerlilik, hedef kitle, muhafaza ve sorumluluk dağılımı **Bölüm 1.1**'de ayrıntılandırılır.
+Bu kullanım kılavuzu, **KNV 90 7500 2B** makinesinin ayrılmaz ve yasal olarak bağlayıcı bir parçasıdır; EN ISO 12100 ve EN ISO 20607 gereksinimlerine uygun hazırlanmıştır. Kılavuzdaki talimatlar tavsiye niteliğinde değildir; makineyi işleten kurum ve personeli, işletim, kurulum ve bakım sırasında bunlara uymakla yükümlüdür. Ulusal iş sağlığı ve güvenliği mevzuatı geçerliliğini korur; çelişki hâlinde daha sıkı hüküm uygulanır. Amaç, kapsam, geçerlilik, hedef kitle, muhafaza ve sorumluluk dağılımı **Bölüm 1.1**'de ayrıntılandırılır.
 
 Kılavuz, taşımadan bertarafa kadar makinenin tüm yaşam döngüsünü kapsar; her aşamaya ilişkin prosedürler ilgili bölümlerde verilir (**Bkz. Bölüm 4–12**). Kapsam dışı modifikasyon, amaç dışı kullanım veya onaysız müdahaleler amaçlanan kullanım sınırlarının dışındadır; bunların sonuçları işletme sorumluluğundadır (**Bkz. Bölüm 1.1.5, 3.2**).
 

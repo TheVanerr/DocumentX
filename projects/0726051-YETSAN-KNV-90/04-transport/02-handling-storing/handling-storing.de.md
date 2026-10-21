@@ -10,15 +10,16 @@ Die Maschine darf ausschließlich in **Innenräumen**, in einem geschlossenen un
 
 | Parameter | Wert |
 | :--- | :--- |
-| Lagerposition | [EKSİK] — Maschine in Betriebsposition (auf den Füßen, waagerecht) |
-| Maximale Lagerdauer | [EKSİK] Monate |
-| Lagerumgebung | [EKSİK] — keine Feuchtigkeit und keine korrosiven Stoffe |
+| Lagerposition | In Betriebsposition, auf den Füßen, waagerecht; keine Lasten auflegen, nicht stapeln |
+| Maximale Lagerdauer | **12 Monate** (geschlossener Raum, verpackt); bei längerer Lagerung Prüfung durch den Herstellerservice vor der Inbetriebnahme |
+| Lagerumgebung | Geschlossen, trocken, staubfrei; keine korrosiven Dämpfe |
 | Temperaturbereich | +10 °C – +30 °C |
 | Relative Luftfeuchtigkeit | 30 % – 50 % |
+| Tanks, Pumpen, Filter | Leer und trocken |
 
 Die Maschine ist in Betriebsposition auf einem festen und ebenen Boden zu lagern. Direkte Einwirkung von Regen, Schnee, Sonne, Wind und starkem Staub ist verboten. Im Lagerbereich dürfen keine Säuren, Laugen, Lösungsmitteldämpfe oder salzhaltige Feuchtigkeit vorhanden sein; andernfalls werden Edelstahloberflächen, Dichtungen, Heizstabanschlüsse und Klemmen im Schaltschrank beschädigt.
 
-Ist die Lagerdauer unbestimmt oder lang geplant, wenden Sie sich an den Herstellerservice; für den Isolationswiderstand der Heizstäbe, den Getriebemotor des Förderers und das Trockenmittel im Schaltschrank können zusätzliche Maßnahmen erforderlich sein (**Siehe Kapitel 1.3**).
+Überschreitet die Lagerdauer 12 Monate, lassen Sie die Maschine vor der Inbetriebnahme vom Herstellerservice prüfen; für den Isolationswiderstand der Heizstäbe, den Getriebemotor des Förderers und das Trockenmittel im Schaltschrank können zusätzliche Maßnahmen erforderlich sein (**Siehe Kapitel 1.3**).
 
 ---
 
@@ -30,7 +31,7 @@ Ist die Lagerdauer unbestimmt oder lang geplant, wenden Sie sich an den Herstell
 4. Die Schaltschranktür schließen und verriegeln; ein Trockenmittelpaket in den Schaltschrank legen (bei der Inbetriebnahme zu entfernen).
 5. Druckluft- und Wasserleitungen bauseitig absperren; den Eingang des Druckreglers an der Maschine verschließen.
 6. Membranpumpe und Schläuche der Ölabscheidereinheit entleeren; die Einheit neben der Maschine lagern.
-7. Bei Langzeitlagerung die Maschine mit einer **atmungsaktiven** Schutzplane abdecken; eine vollständig luftdichte Stretchverpackung erzeugt Schwitz- und Kondensationsgefahr.
+7. Die Maschine verpackt lagern; bei Langzeitlagerung eine **atmungsaktive** Schutzabdeckung verwenden — eine vollständig luftdichte Stretchverpackung erzeugt Schwitz- und Kondensationsgefahr.
 8. Im Lagerbereich den Transportweg frei halten; den Zugang für den Gabelstapler planen (**Siehe Kapitel 4.1.4**).
 
 ---
@@ -52,10 +53,11 @@ Ist die Lagerdauer unbestimmt oder lang geplant, wenden Sie sich an den Herstell
 1. Die Schutzplane entfernen; Schaltschrank, Klappen, Rohre, Schläuche und Anschlussstellen auf physische Schäden prüfen.
 2. Die Trockenmittelpakete aus dem Schaltschrank entnehmen; sicherstellen, dass an Klemmen und Schützen keine Kondensationsspuren vorhanden sind.
 3. Kabel, Druckluftschläuche, Verschraubungen und PVC-Vorhänge auf Verschleiß, Lockerung oder Nagetierschäden prüfen.
-4. Sicherstellen, dass Füße und Anschlagpunkte für Installation/Transport geeignet sind.
+4. Sicherstellen, dass Füße und Anschlagpunkte (**Siehe Kapitel 3.5.4**) keine Verformung, Korrosion oder Beschädigung aufweisen.
 5. Während der Lagerung entstandene Korrosions- oder Feuchtigkeitsschäden vor der Installation beseitigen oder den Service benachrichtigen.
-6. Die Maschine gemäß dem Gabelstaplerverfahren in **Kapitel 4.1.4** zum Aufstellort transportieren.
-7. Mit dem Installationsverfahren fortfahren (**Siehe Kapitel 5.1**).
+6. Hat die Lagerdauer 12 Monate überschritten, die Maschine vor der Inbetriebnahme vom Herstellerservice prüfen lassen (**Siehe Kapitel 1.3**).
+7. Die Maschine gemäß dem Gabelstaplerverfahren in **Kapitel 4.1.4** zum Aufstellort transportieren.
+8. Mit dem Installationsverfahren fortfahren (**Siehe Kapitel 5.1**).
 
 **Erwartetes Ergebnis:** Die Maschine steht am Aufstellort unbeschädigt, trocken und mechanisch stabil.
 

@@ -11,11 +11,11 @@ Die Prüfungen der Installationsabnahme werden nach Abschluss der Sicherheitspr�
 | 1 | Ist die Maschine nivelliert? | Ja — Stellfüße; in beiden Achsen | ☐ |
 | 2 | Haben alle Füße Bodenkontakt? | Ja | ☐ |
 | 3 | Schließen Tankdeckel und Kammerklappen ohne Kraftaufwand? | Ja — Schalter fluchtend | ☐ |
-| 4 | Läuft der Drahtgurt des Förderers beim Drehen von Hand frei? | Ja — kein seitliches Schleifen | ☐ |
+| 4 | Sitzt der Drahtgurt des Förderers vollständig auf den Kettenrädern? | Ja — Kanten schleifen nicht am Rahmen | ☐ |
 | 5 | Sind Schutzgitter und PVC-Vorhänge an ihrem Platz? | Ja | ☐ |
 | 6 | Ist die Ölabscheidereinheit nivelliert und sind ihre Schläuche angeschlossen? | Ja | ☐ |
 
-Die Prüfung erfolgt nach Abschluss der Nivellierung in **Kapitel 5.2.3**. Eine Checkliste für die mechanische Installationsprüfung ist in den DATA nicht definiert ([EKSİK]); die obige Liste enthält die Standardprüfungen des Maschinentyps.
+Die Prüfung erfolgt nach Abschluss der Nivellierung in **Kapitel 5.2.3**.
 
 ---
 
@@ -30,7 +30,7 @@ Die Prüfung erfolgt nach Abschluss der Nivellierung in **Kapitel 5.2.3**. Eine 
 | 5 | Leuchtet die Betriebsleuchte, wenn jeder Funktionsschalter auf ON gestellt wird? | Ja | ☐ |
 | 6 | Ändert sich die Geschwindigkeit mit dem Potentiometer des Förderers? (20–60 Hz) | Ja | ☐ |
 
-Die Phasenfolge muss in **Kapitel 5.3.6** geprüft worden sein.
+Die Phasenfolge muss in **Kapitel 5.3.6** geprüft worden sein. Die Drehrichtung der Pumpen wird nach dem Befüllen der Tanks (**Kapitel 5.4.4**) in dieser Prüfung kontrolliert.
 
 ---
 
@@ -44,7 +44,7 @@ Die Phasenfolge muss in **Kapitel 5.3.6** geprüft worden sein.
 | 4 | Tanks gefüllt; sind die WASHING-LEVEL-Leuchten aus? | Ja | ☐ |
 | 5 | Gibt es Leckagen an Tankunterseite, Pumpe und Rohranschlüssen? | Nein | ☐ |
 
-Anschlusswerte: **6 bar** Druckluft, **1 bar** Wasser (**Siehe Kapitel 3.3.5**). Eine Definition der pneumatischen Befüllprüfung ist in den DATA nicht vorhanden ([EKSİK]); es werden die obigen Prüfungen angewendet.
+Anschlusswerte: **6 bar** Druckluft, **1 bar** Wasser (**Siehe Kapitel 3.3.5**).
 
 ---
 
@@ -65,7 +65,8 @@ Die detaillierten Prüfschritte sind in **Kapitel 5.4** angegeben.
 
 | Parameter | Wert |
 | :--- | :--- |
-| Dauer des Leerlauftests | [EKSİK] min — in den DATA nicht definiert |
+| Dauer des Leerlauftests | Mindestens **30 min** |
+| Prüfbedingung | Ohne Werkstücke; alle Funktionen (Pumpen, Blower, Trocknungsventilatoren, Förderer; einschließlich Heizungen) eingeschaltet |
 
 Der Leerlauftest bestätigt den Dauerbetrieb der Maschine ohne Werkstücke; er prüft Leckagen, das Auslösen von Schutzorganen, übermäßige Vibrationen, die Wirksamkeit der Abluft und das Zusammenwirken der Prozessfunktionen. Während des Tests bewegen sich Förderer, Pumpen, Blower und Ventilatoren; den Gefahrenbereich nicht betreten, geeignete PSA tragen (**Siehe Kapitel 2.6**).
 
@@ -84,22 +85,22 @@ Der Leerlauftest bestätigt den Dauerbetrieb der Maschine ohne Werkstücke; er p
 3. Den Schalter **TANK 1 OIL SKIMMER** auf ON stellen; beobachten, dass sich die Scheibe des Ölskimmers dreht.
 4. Die Schalter **BLOWER 1**, **BLOWER 2**, **DRYING 1 FAN**, **DRYING 2 FAN** auf ON stellen; anschließend die Schalter **DRYING 1 HEATER** und **DRYING 2 HEATER** auf ON stellen.
 5. Den Schalter **CONVEYOR** auf ON stellen; die Geschwindigkeit mit dem Potentiometer im Bereich 20–60 Hz verändern und prüfen, dass der Drahtgurt gleichmäßig läuft.
-6. Prüfen, dass der Abluftventilator läuft, der Dampf über den Kamin abgeführt wird und an den Kammerklappen kein Dampf austritt.
-7. Die Maschine **ohne Werkstücke** für die festgelegte Dauer ([EKSİK]) betreiben.
+6. Prüfen, dass der Abluftventilator läuft, der Dampf über den Kamin abgeführt wird und an den Kammerklappen kein Dampf austritt (der Abluftventilator läuft zusammen mit dem Schalter CONVEYOR — **Siehe Kapitel 3.4.3**).
+7. Die Maschine **ohne Werkstücke** mindestens **30 min** betreiben.
 8. Während des Tests die Betriebsleuchten, die WASHING-LEVEL- und die RESET-Leuchte beobachten; auf Leckagen, ungewöhnliche Geräusche, Vibrationen oder Gerüche prüfen.
 9. Die Funktionen in der Reihenfolge gemäß **Kapitel 7.3.1** ausschalten.
 
 | # | Abnahmekriterium | Status |
 | :---: | :--- | :---: |
-| 1 | Unterbrechungsfreier Leerlauf über die festgelegte Dauer abgeschlossen | ☐ OK / ☐ NOK |
+| 1 | Unterbrechungsfreier Leerlauf von mindestens 30 min abgeschlossen | ☐ OK / ☐ NOK |
 | 2 | Kein Motorschutzschalter (MKŞ) und kein Fehlerstrom-Schutzschalter hat ausgelöst; RESET-Leuchte ist nicht erloschen | ☐ OK / ☐ NOK |
-| 3 | Tanktemperaturen sind in Richtung Sollwert angestiegen; Thermostate haben beim Sollwert abgeschaltet | ☐ OK / ☐ NOK |
+| 3 | Tanktemperaturen sind an der Thermostatanzeige angestiegen; bei Erreichen des Sollwerts hat der Thermostat die betreffende Heizung abgeschaltet | ☐ OK / ☐ NOK |
 | 4 | Keine sichtbare Leckage und keine ungewöhnlichen Vibrationen | ☐ OK / ☐ NOK |
 | 5 | Abluftabführung wirksam; kein Dampfaustritt aus den Kammern | ☐ OK / ☐ NOK |
 
 **Abweichung:** Stoppt eine Funktion oder erlischt die RESET-Leuchte, die Maschine stoppen; siehe **Kapitel 11**. Nicht in Betrieb gehen, bevor der Test wiederholt wurde.
 
-Ist der Leerlauftest erfolgreich, gilt die Maschine als **betriebsbereit** (**Kapitel 5.1 Schritt 10**).
+Ist der Leerlauftest erfolgreich, gilt die Maschine als **betriebsbereit** (**Siehe Kapitel 5.1.6**).
 
 ---
 

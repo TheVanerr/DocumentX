@@ -1,6 +1,6 @@
 # 7.1 Çalışma modları
 
-KNV 90 7500 2B, **tek çalışma biçimine** sahiptir: operatör panelindeki fonksiyon anahtarları ile her proses birimi bağımsız açılıp kapatılır. Ayrı bir otomatik, manuel, step veya bakım modu seçici **yoktur**; mod geçiş koşulu tanımlı değildir. Bu bölümde kılavuz şablonundaki mod başlıkları makineye göre açıklanır.
+KNV 90 7500 2B, **tek çalışma biçimine** sahiptir: operatör panelindeki fonksiyon anahtarları ile her proses birimi bağımsız açılıp kapatılır. Ayrı bir otomatik, manuel, step veya bakım modu seçici **yoktur**; dolayısıyla mod geçişi de yoktur. Aşağıdaki alt bölümler, her çalışma modunun bu makinede bulunup bulunmadığını açıklar.
 
 Bu yapının sonucu şudur: makine, tek bir start komutu ile kendiliğinden hazırlanıp çalışmaz. Operatör; tankları doldurur, ısıtıcıları açar, su ısınınca pompaları, ihtiyaç duyulan blower/kurutma fonksiyonlarını ve son olarak konveyörü açar (**Bkz. Bölüm 7.2**). Interlock'lar (tank seviyesi, kapak emniyeti, acil stop, faz koruma) donanımsal olarak her zaman devrededir ve anahtar konumundan bağımsız olarak çıkışı keser (**Bkz. Bölüm 3.4.6**).
 
@@ -12,7 +12,7 @@ Bu yapının sonucu şudur: makine, tek bir start komutu ile kendiliğinden haz�
 | :--- | :--- |
 | Manuel mod | **Makinenin tek çalışma biçimi** — merkezi otomatik sekans yok |
 
-Operatör panelindeki her fonksiyon ayrı aç/kapa anahtarı ile yönetilir. Anahtar ON konumuna alındığında ilgili kontaktör çeker ve run lambası yanar; OFF konumunda çıkış kesilir. Fonksiyonlar birbirinden bağımsızdır; ancak proses mantığı ve ekipman koruması için **Bölüm 7.2.2** açılış sırası önerilir.
+Operatör panelindeki her fonksiyon ayrı aç/kapa anahtarı ile yönetilir. Anahtar ON konumuna alındığında ilgili kontaktör çeker ve run lambası yanar; OFF konumunda çıkış kesilir. Fonksiyonlar birbirinden bağımsızdır; ancak proses mantığı ve ekipman koruması için önerilen açılış sırasına uyun (**Bkz. Bölüm 7.2.2**).
 
 ---
 
@@ -32,7 +32,7 @@ Makinede PLC bulunmadığından otomatik hazırlık (dolum + ısıtma) veya otom
 | :--- | :--- |
 | Bakım / setup modu | **Yok** — bakımda ana şalter kapatılır ve LOTO uygulanır (**Bkz. Bölüm 2.4**) |
 
-Bakım kapakları yalnızca güvenli durumda (ana şalter OFF, LOTO uygulanmış) açılır. Kapak switch'leri bakım için baypas edilmez. Tek fonksiyon test çalıştırması (ör. yalnızca pompa) için ayrı mod gerekmez; ilgili anahtar RESET lambası yanıkken açılır.
+Bakım kapakları yalnızca güvenli durumda (ana şalter OFF, LOTO uygulanmış) açılır. Kapak switch'leri bakım için bypass edilmez. Tek fonksiyon test çalıştırması (ör. yalnızca pompa) için ayrı mod gerekmez; ilgili anahtar RESET lambası yanıkken açılır.
 
 ---
 
@@ -67,8 +67,8 @@ Bakım kapakları yalnızca güvenli durumda (ana şalter OFF, LOTO uygulanmış
 | Etiketsiz anahtar | Yağ ayırıcı ünitesi (diyaframlı pompa) | 6 bar hava bağlı olmalı |
 | CONVEYOR | Konveyör — hız potansiyometre ile (20–60 Hz) | En son açın; hat boş ve RESET lambası yanık |
 
-Fonksiyonlar proses ihtiyacına göre bağımsız açılıp kapatılabilir; hangi kombinasyonun kullanılacağı kullanıcı proses tasarımına bağlıdır (**Bkz. Bölüm 8.2**). Termostat set değerleri **Bölüm 6.3.3**'te tanımlıdır.
+Fonksiyonlar proses ihtiyacına göre bağımsız açılıp kapatılabilir; hangi kombinasyonun kullanılacağı kullanıcı proses tasarımına bağlıdır (**Bkz. Bölüm 8.2**). Termostat set değerlerinin belirlenmesi için **Bkz. Bölüm 6.3.3**.
 
 ---
 
-Başlatma prosedürü için bkz. **Bölüm 7.2**.
+Başlatma prosedürü için **Bkz. Bölüm 7.2**.

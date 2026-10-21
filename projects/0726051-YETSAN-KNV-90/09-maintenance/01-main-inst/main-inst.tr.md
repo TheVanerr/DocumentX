@@ -10,7 +10,7 @@ KNV 90 7500 2B için **önleyici bakım** felsefesi uygulanır. Amaç; filtre t�
 | :--- | :--- |
 | Bakım felsefesi | Önleyici bakım |
 | Personel yeterliliği | Makinenin kullanıldığı ülkenin mevcut bakım personeli yeterlilik seviyesi |
-| Yağlama tablosu | Ayrı lubrication chart yok — **Bölüm 9.1.4** |
+| Yağlama tablosu | Ayrı yağlama tablosu yok — **Bkz. Bölüm 9.1.4** |
 
 Bakım personeli; makine kullanımı, LOTO, acil stop ve temel güvenlik kuralları konusunda eğitim almış olmalıdır (**Bkz. Bölüm 3.2.6**). Rezistans, termokupl, kaçak akım rölesi, MKŞ ve elektrik bağlantı sıkılık kontrolleri yalnızca **yetkili elektrik personeli** tarafından yapılır.
 
@@ -18,20 +18,19 @@ Bakım personeli; makine kullanımı, LOTO, acil stop ve temel güvenlik kuralla
 
 ## 9.1.2 Bakım öncesi güvenlik
 
-Bakım için özel bir mod **bulunmamaktadır**. Aşağıdaki kurallara uyun:
+Bakım için özel bir mod **bulunmamaktadır**. Bakım erişimi tank üst kapakları, 7 hücre bakım kapağı, pompa/filtre bölgesi, konveyör uçları ve elektrik panosu üzerinden sağlanır (**Bkz. Bölüm 3.5.3**).
 
-1. Makineyi **Bölüm 7.3.1** sırasına göre durdurun; tüm fonksiyon anahtarları OFF.
-2. Kurutma rezistanslarının ve tank suyunun soğumasını bekleyin.
-3. Ana şalteri **OFF (O)** konumuna alın.
-4. **LOTO prosedürünü** uygulayın (**Bkz. Bölüm 2.4** — adımlar tekrarlanmaz).
-5. Kapak switch'lerini ve seviye sensörünü **baypas etmeyin**.
-6. Bakım kapaklarını ve tank kapaklarını yalnızca enerji izolasyonu ve LOTO sonrası açın.
+**UYARI — Enerji kaynaklı yaralanma:** LOTO uygulanmadan yapılan bakımda makine kazara devreye girebilir; ezilme, elektrik çarpması ve +70 °C sıcak sıvı yaralanması oluşabilir. Her bakım işinden önce LOTO uygulayın.
 
-Bakım erişimi tank üst kapakları, 7 hücre bakım kapağı, pompa/filtre bölgesi, konveyör uçları ve elektrik panosu üzerinden sağlanır (**Bkz. Bölüm 3.5.3**).
+**UYARI — Sıcak yüzey:** Rezistanslar, kurutma hücresi ve tank suyu enerji kesildikten sonra da sıcaktır; temas yanığa yol açar. Soğumalarını bekleyin ve ısıya dayanıklı eldiven kullanın.
 
-**UYARI — Enerji kaynaklı yaralanma:** LOTO uygulanmadan yapılan bakımda makine kazara devreye girebilir; ezilme, elektrik çarpması ve +70 °C sıcak sıvı yaralanması oluşabilir.
+Her bakım işinden önce aşağıdaki adımları uygulayın:
 
-**UYARI — Sıcak yüzey:** Rezistanslar, kurutma hücresi ve tank suyu enerji kesildikten sonra da sıcaktır; ısıya dayanıklı eldiven kullanın.
+1. Makineyi durdurun; tüm fonksiyon anahtarlarını OFF konumuna alın (**Bkz. Bölüm 7.3.1**).
+2. LOTO prosedürünü uygulayın (**Bkz. Bölüm 2.4**).
+3. Kurutma rezistanslarının ve tank suyunun soğumasını bekleyin.
+4. Bakım kapaklarını ve tank kapaklarını ancak LOTO tamamlandıktan sonra açın.
+5. Kapak switch'lerini ve seviye sensörünü **bypass etmeyin**.
 
 ---
 
@@ -39,7 +38,7 @@ Bakım erişimi tank üst kapakları, 7 hücre bakım kapağı, pompa/filtre bö
 
 Aşağıdaki tablo periyodik bakım takvimidir. Temizlik adımları için ilgili bölüme referans verilir; prosedür adımları tekrarlanmaz.
 
-Saat bazlı periyotlar makine toplam çalışma saati üzerinden takip edilir; sayaç yoksa vardiya planına göre yaklaşık takvim karşılığı kullanılabilir (ör. tek vardiya 8 saat/gün çalışmada 250 saat ≈ 6 hafta).
+Saat bazlı periyotlar makinenin toplam çalışma süresi üzerinden takip edilir. Makinede çalışma saati sayacı yoktur; çalışma süresini vardiya planından hesaplayın ve bakım kayıt formuna işleyin (**Bkz. Bölüm 9.1.7**); örneğin tek vardiya, 8 saat/gün ve haftada 5 gün çalışmada 250 saat yaklaşık 6 haftaya karşılık gelir.
 
 | Periyot | Bakım maddesi | Referans |
 | :--- | :--- | :--- |
@@ -55,11 +54,11 @@ Saat bazlı periyotlar makine toplam çalışma saati üzerinden takip edilir; s
 | **Haftalık** | Acil stop butonları görsel kontrol (hasar, sıkışma yok) | Bölüm 2.5 |
 | **Aylık** | Acil stop fonksiyon testi — bas, makine dursun, reset (7 buton) | Bölüm 6.2.3, 5.4.1 |
 | **Aylık** | Konveyör 4 yağlama noktası gresleme | Bölüm 9.1.4 |
-| **Aylık** | Seviye sensörleri ve sızıntı tavası temizlik/kontrol | Bölüm 11.7 |
+| **Aylık** | Seviye sensörleri temizlik/kontrol | Bölüm 11.7 |
 | **Aylık** | Pano filtre/ventilasyon delikleri toz kontrolü | — |
 | **Aylık** | Pompa, fan ve blower birimlerinde anormal titreşim/ses kontrolü | — |
 | **250 saat** | Isıtıcı termokupl ve rezistans bağlantı kontrolü (LOTO sonrası, yetkili elektrikçi) | Bölüm 11.3.3 |
-| **250 saat** | Egzoz fanı, kurutma fanı ve blower kanat/gövde toz birikimi temizliği | — |
+| **250 saat** | Egzoz fanı ve kurutma fanı kanat/gövde toz birikimi temizliği | — |
 | **250 saat** | Basınçlı hava hattı ve regülatör kaçak kontrolü | Bölüm 6.5 |
 | **500 saat** | Yağ sıyırıcı redüktör yağ keçesi / teflon kontrol, gerekirse değişim | Bölüm 13.3 |
 | **500 saat** | Konveyör redüktör yağ seviyesi / sızıntı kontrolü | Bölüm 9.1.4 |
@@ -67,22 +66,22 @@ Saat bazlı periyotlar makine toplam çalışma saati üzerinden takip edilir; s
 | **1000 saat** | Pompa emiş filtresi komple kontrol / değişim | Bölüm 13.3 |
 | **1000 saat** | Nozul tıkanma/aşınma kontrolü (160 adet) | Bölüm 13.3 |
 | **1000 saat** | Konveyör tahrik grubu (redüktör + inverter) mekanik ve elektrik kontrolü | — |
-| **1000 saat** | Tank su kalitesi değerlendirmesi; gerekirse tam boşaltma ve iç temizlik | Bölüm 10 |
+| **1000 saat** | Tank su kalitesi değerlendirmesi; gerekirse tam boşaltma ve iç temizlik | Bölüm 10.1.5 |
 | **Yıllık** | Tüm emniyet fonksiyonları test raporu (kapak switch'leri, acil stop, kaçak akım) | Bölüm 2, 5.4 |
 | **Yıllık** | Isıtıcı rezistans ve termokupl fonksiyon kontrolü | — |
-| **Yıllık** | Konveyör redüktör keçe / sızıntı kontrolü — periyodik yağ değişimi [EKSİK] (redüktör etiketi) | Bölüm 9.1.4 |
+| **Yıllık** | Konveyör redüktör keçe / sızıntı kontrolü; yağ değişimi redüktör etiketine göre | Bölüm 9.1.4 |
 | **Yıllık** | Elektrik bağlantıları sıkılık kontrolü (LOTO, yetkili elektrikçi) | — |
 | **Yıllık** | Uzun duruş planlanıyorsa tank boşaltma ve koruyucu temizlik | Bölüm 7.3.4 |
 
 **Periyodik bakım uygulama notları**
 
-**Günlük:** Görsel kontrol, lamba ve manometre okuması için kapak açılmıyorsa LOTO gerekmez. **Ön filtre temizliği tank kapağı açmayı gerektirir** — **Bölüm 10.1.3** ve **LOTO (Bölüm 2.4)** uygulanır.
+**Günlük:** Kapak açılmayan görsel kontrollerde, lamba ve manometre okumasında LOTO gerekmez. **Ön filtre temizliği tank kapağının açılmasını gerektirir**; LOTO uygulayın (**Bkz. Bölüm 2.4**) ve **Bölüm 10.1.3**'teki prosedürü izleyin.
 
-**Haftalık / aylık:** Tank ve filtre işlemleri için makine durdurulmalı; kapak açma gerektiren işlerde **LOTO zorunludur**. Kapak switch kısa testi ve acil stop testi makine hazır durumdayken yapılır (**Bölüm 5.4**).
+**Haftalık / aylık:** Tank ve filtre işlemlerinden önce makineyi durdurun; kapak açma gerektiren işlerde **LOTO zorunludur**. Kapak switch kısa testini ve acil stop testini makine hazır durumdayken yapın (**Bkz. Bölüm 5.4**).
 
 **250–1000 saat:** Mekanik/elektrik müdahale gerektiren maddelerde **LOTO** uygulayın. Termokupl, rezistans, kaçak akım ve elektrik sıkılık kontrollerinde yetkili elektrikçi kullanın. Fan ve blower temizliğinde kanat dengesini bozmayın.
 
-**Yıllık:** Emniyet test raporunu kayıt altına alın; NOK maddelerde operasyona geçmeyin.
+**Yıllık:** Emniyet test raporunu kayıt altına alın; NOK maddeleri gidermeden makineyi çalıştırmayın.
 
 ---
 
@@ -92,21 +91,24 @@ Saat bazlı periyotlar makine toplam çalışma saati üzerinden takip edilir; s
 | :--- | :--- |
 | Yağlama noktası sayısı | **4 adet** gres nipeli |
 | Konum | Konveyör **girişinde sağ ve sol**, konveyör **çıkışında sağ ve sol** |
-| Periyot | **Aylık** (bkz. Bölüm 9.1.3) |
+| Periyot | **Aylık** (**Bkz. Bölüm 9.1.3**) |
 | Gres tipi | **Castrol Tribol GR 100-1 PD** (NLGI 1) |
-| Konveyör redüktörü (XXC40/75, tork sınırlayıcılı) | Yağ tipi ve değişim periyodu [EKSİK] — redüktör etiketi / BOM; **500 saat** seviye/sızıntı, **yıllık** keçe/sızıntı kontrolü |
+| Konveyör redüktörü (XXC40/75, tork sınırlayıcılı) | Yağ tipi, miktarı ve değişim periyodu redüktör etiketinde belirtilir. Ömür boyu yağlı (sızdırmaz) redüktörde yağ değişimi yapılmaz; yalnız **500 saatte** seviye/sızıntı ve **yıllık** keçe/sızıntı kontrolü yapılır. |
 
-Dört nipel, konveyör giriş ve çıkış rulman hatlarına aittir; redüktör gövdesine değil. Konveyör redüktörünün yağ bilgisi redüktör etiketinden okunmalı ve bu tabloya işlenmelidir; etiket bilgisi olmadan redüktör gövdesi açılmaz.
+Dört nipel, konveyör giriş ve çıkış rulman hatlarına aittir; redüktör gövdesine değil. Redüktörün yağ bilgisini redüktör etiketinden okuyun; etiket bilgisi olmadan redüktör gövdesini açmayın.
 
 **Konveyör gresleme prosedürü**
 
-1. Makineyi **Bölüm 7.3.1** ile durdurun.
-2. **LOTO** uygulayın (**Bölüm 2.4**).
-3. Konveyör giriş ve çıkış tarafındaki koruma kafesi içine girin; sağ ve sol **4 gres nipelini** tespit edin.
-4. Nipelleri temizleyin; gres tabancası ile her nipele **Castrol Tribol GR 100-1 PD** basın; eski gresin dışarı çıkmaya başladığı anda durun.
-5. Taşan gresi silin; gres konveyör tel bandına ve proses suyuna bulaşmamalıdır.
-6. Redüktör gövdesini açmayın; redüktör ve tork sınırlayıcı çevresinde yağ sızıntısı olup olmadığını gözle kontrol edin.
-7. Kafes ve kapakları kapatın; LOTO kaldırın; RESET sonrası konveyörü kısa süre boşta çalıştırarak ses kontrolü yapın.
+1. Makineyi durdurun (**Bkz. Bölüm 7.3.1**).
+2. LOTO uygulayın (**Bkz. Bölüm 2.4**).
+3. Konveyör giriş ve çıkış tarafındaki koruma kafesini alet ile açın; sağ ve sol **4 gres nipelini** bulun.
+4. Nipelleri temizleyin.
+5. Gres tabancası ile her nipele **Castrol Tribol GR 100-1 PD** basın; eski gres dışarı çıkmaya başlayınca durun.
+6. Taşan gresi silin; gres konveyör tel bandına ve proses suyuna bulaşmamalıdır.
+7. Redüktör ve tork sınırlayıcı çevresinde yağ sızıntısı olup olmadığını gözle kontrol edin; redüktör gövdesini açmayın.
+8. Koruma kafesini ve kapakları kapatın; kafesi alet ile sabitleyin.
+9. LOTO'yu kaldırın (**Bkz. Bölüm 2.4**) ve RESET'e basın.
+10. Konveyörü parçasız çalıştırın; rulmanlarda anormal ses olup olmadığını dinleyin.
 
 **Beklenen sonuç:** Rulmanlarda anormal ses yok; tel bant düzgün ilerliyor; redüktörde sızıntı yok.
 
@@ -116,9 +118,9 @@ Dört nipel, konveyör giriş ve çıkış rulman hatlarına aittir; redüktör 
 
 ## 9.1.5 Kritik parça listesi
 
-**Kritik** parçalar; arızada makinenin prosesini, parça akışını veya **güvenlik fonksiyonunu** doğrudan etkiler. Stok **0** olan kalemler siparişle temin edilir; lead time planlaması kullanıcı firma sorumluluğundadır.
+**Kritik** parçalar; arızada makinenin prosesini, parça akışını veya **güvenlik fonksiyonunu** doğrudan etkiler. Stok **0** olan kalemler siparişle temin edilir; tedarik süresi planlaması kullanıcı firmanın sorumluluğundadır.
 
-Tam BOM için bkz. **Bölüm 13.3.1**.
+Tam BOM: **Bkz. Bölüm 13.3.1**.
 
 | Sipariş kodu | Parça adı | Önerilen stok | Konum / fonksiyon | Gerekçe |
 | :--- | :--- | :---: | :--- | :--- |
@@ -127,7 +129,7 @@ Tam BOM için bkz. **Bölüm 13.3.1**.
 | 10 16319 | İNVERTÖR Delta VFD004EL21W-1 0,4 kW | 0 | Konveyör | Arızada konveyör durur |
 | 07 15142 | REZİSTANS KOMPLESİ 8000 W 50 cm DÜZ DİKİŞSİZ | 2 | Tank ısıtma (7 ad) | Arızada sıcaklık sağlanamaz |
 | 07 16791 | SEVİYE SENSÖRÜ ÇAT.TİP VEGASWING 51 | 1 | Tank seviye (2 ad) | Arızada seviye güvenliği bozulur |
-| 10 00296 | PASLANMAZ SEVİYE BEKÇİSİ | 0 | Tank seviye güvenlik | [EKSİK] — saha montajına göre |
+| 10 00296 | PASLANMAZ SEVİYE BEKÇİSİ | 1 | Tank seviye güvenlik | Tank seviye güvenliği |
 | 10 02976 | TERMOKUPL ETB30F06-5Ç | 1 | Isıtma kontrol | Arızada ısıtma devre dışı |
 | 10 02634 | TERMOKUPL ETB30F06-4Ç | 1 | Isıtma kontrol | Arızada ısıtma devre dışı |
 | 10 07147 | SWITCH F3STGRNLPU21M1J8 OMRON MANYETİK KAPI | 2 | 7 bakım kapağı | Güvenlik zinciri; arızada stop |
@@ -144,7 +146,7 @@ Tam BOM için bkz. **Bölüm 13.3.1**.
 
 ## 9.1.6 Yedek parça listesi (tüketim ve önerilen)
 
-**Tüketim** parçaları planlı bakımda düzenli değiştirilir veya temizlenir. **Önerilen** parçaların stoklanması duruş süresini kısaltır. Önerilen stok miktarları tesis stok politikasına göre güncellenebilir; zorunlu sipariş taahhüdü değildir. Tam BOM için bkz. **Bölüm 13.3.1**.
+**Tüketim** parçaları planlı bakımda düzenli değiştirilir veya temizlenir. **Önerilen** parçaların stoklanması duruş süresini kısaltır. Önerilen stok miktarları tesis stok politikasına göre güncellenebilir; zorunlu sipariş taahhüdü değildir. Tam BOM: **Bkz. Bölüm 13.3.1**.
 
 | Sipariş kodu | Parça adı | Kategori | Önerilen stok | Konum / fonksiyon | Gerekçe |
 | :--- | :--- | :--- | :---: | :--- | :--- |
@@ -153,26 +155,25 @@ Tam BOM için bkz. **Bölüm 13.3.1**.
 | 07 00670 | EMİŞ FİLTRESİ KOMPLESİ (PYM2,KBN,VDL,ULT,KNV) | Tüketim | 1 | Pompa emiş | 1000 saat kontrol/değişim |
 | 07 08732 | EMİŞ FİLTRESİ KOMPLESİ 2" 1/2 | Tüketim | 1 | Emiş hattı | Periyodik değişim |
 | 10 01079 | NOZZLE 650.724.1C.CC | Tüketim | 20 | Yıkama/durulama nozul (160 ad) | Aşınan parça |
-| 10 17538 | TEL BANT 850 mm (konveyör) | Tüketim | 0 | Konveyör | Aşınma — stok [EKSİK] |
+| 10 17538 | TEL BANT 850 mm (konveyör) | Tüketim | 2 m | Konveyör | Bant onarımı / aşınma |
 | 07 03635 | YAĞ AYIRICI ÜNİTESİ | Önerilen | 0 | Yağ ayırıcı | Proses kalitesi |
-| 07 17687 | SIZINTI TAVASI MONTAJ KOMPLESİ | Önerilen | 0 | Alt sızıntı tavası | Sızıntı algılama |
 | 07 00669 | TERMOSTAT ADAPTÖRÜ KOMPLESİ | Önerilen | 1 | Tank termostat montajı | Bakım |
 | 10 11089 | TERMOSTAT GEMO DTH2 | Önerilen | 1 | Yıkama/durulama/kurutma | Sıcaklık ayarı |
 | 10 00272 | RESET BUTONU BL901M + mavi lamba | Önerilen | 1 | Operatör paneli | Reset fonksiyonu |
-| 10 00305 | KAÇAK AKIM RÖLESİ A9N19642 4P | Önerilen | 0 | Motor grubu RCCB | Koruma |
+| 10 00305 | KAÇAK AKIM RÖLESİ A9N19642 4P | Önerilen | 0 | Motor grubu / kurutma RCCB | Koruma |
 | 10 00304 | KAÇAK AKIM RÖLESİ A9N19643 4P | Önerilen | 0 | Tank rezistans RCCB | Koruma |
 | 10 01421 | Sigorta A9F74106 1×6 | Önerilen | 2 | Konveyör/inverter besleme | Koruma |
 | — | MKŞ GV2ME16 / GV2ME14 / GV2ME07 / GV2ME04 | Önerilen | 1 / 2 / 2 / 1 | Q1 / Q2,Q7–Q10 / Q4–Q6 / Q3 | Motor koruma |
-| — | Kontaktör LC1K1610M7 / LC1K0610M7 / LC1D25M7 | Önerilen | 2 / 2 / 1 | Pompa-blower / fan-sıyırıcı / kurutma ısıtıcı | Yedek |
+| — | Kontaktör LC1K1610M7 / LC1K0610M7 / LC1D25M7 | Önerilen | 2 / 2 / 1 | Pompa-blower-tank ısıtıcı / fan-sıyırıcı / kurutma ısıtıcı | Yedek |
 | — | Sigorta A9F74316 (16 A) / A9F74325 (25 A) | Önerilen | 3 / 2 | Tank ısıtıcı / kurutma ısıtıcı | Koruma |
 
-**Sipariş:** Sipariş kodu ile üretici/servis kanalından temin edin (**Bkz. Bölüm 1.3.4**). Kritik parçalar için bkz. **Bölüm 9.1.5**. Tüm kalemler **Bölüm 13.3.1**.
+**Sipariş:** Sipariş kodu ile üretici/servis kanalından temin edin (**Bkz. Bölüm 1.3.4**). Kritik parçalar: **Bkz. Bölüm 9.1.5**. Tüm kalemler: **Bkz. Bölüm 13.3.1**.
 
 ---
 
 ## 9.1.7 Bakım kayıt formu
 
-Periyodik bakım ve test sonuçlarını kayıt altına alın. NOK maddeler giderilmeden operasyona dönülmemelidir.
+Periyodik bakım ve test sonuçlarını kayıt altına alın. NOK maddeleri gidermeden makineyi yeniden çalıştırmayın.
 
 | # | İşlem | Periyot | Tarih | Yapan | OK/NOK |
 | :---: | :--- | :--- | :--- | :--- | :---: |
@@ -189,4 +190,4 @@ Periyodik bakım ve test sonuçlarını kayıt altına alın. NOK maddeler gider
 
 ---
 
-Tam parça listesi için bkz. **Bölüm 13.3**.
+Tam parça listesi: **Bkz. Bölüm 13.3**.

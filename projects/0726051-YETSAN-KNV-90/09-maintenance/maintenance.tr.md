@@ -20,4 +20,4 @@ Bu makinede bakım ihtiyacını gösteren HMI alarmı yoktur; bakım periyotlar�
 
 ---
 
-Temizlik için bkz. **Bölüm 10**; arıza giderme için bkz. **Bölüm 11**.
+Temizlik prosedürleri: **Bkz. Bölüm 10**. Arıza giderme: **Bkz. Bölüm 11**.

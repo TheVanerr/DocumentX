@@ -30,7 +30,7 @@ Makineden üst sisteme sinyal alınması isteniyorsa (ör. çalışma durumu, ar
 | Doküman | Durum |
 | :--- | :--- |
 | I/O listesi | Uygulanmaz — PLC yok; sinyal bağlantıları elektrik şemasında (**Bkz. Bölüm 13.1**) |
-| Elektrik şeması | Teslim paketi — pano, motor, ısıtıcı, emniyet devresi referansı |
+| Elektrik şeması | Teslim paketi — pano, motor, ısıtıcı, emniyet devresi referansı (**Bkz. Bölüm 13.1**) |
 
 ---
 

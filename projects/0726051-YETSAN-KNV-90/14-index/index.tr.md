@@ -4,7 +4,7 @@ Bu bölüm kılavuzun destek materyallerini toplar: ek referansları, teknik ter
 
 | Alt bölüm | Konu |
 | :--- | :--- |
-| **14.1** | Ekler — arıza tablosu, parametre, ürün kaydı, garanti referansları |
+| **14.1** | Ekler — arıza tablosu, parametre ve reçete formları, garanti belgesi referansları |
 | **14.2** | Sözlük — kısaltmalar, operatör paneli etiketleri ve terimler |
 | **14.3** | Anahtar kelime indeksi |
 

@@ -1,6 +1,6 @@
 # 12.2 Devre dışı bırakma
 
-Makine geçici (planlı duruş, hafta sonu, bakım arası) veya kalıcı (hurda, tesis kapatma) olarak devre dışı bırakılabilir. Her iki durumda da enerji izolasyonu ve — süreye bağlı olarak — tank boşaltma gereksinimleri farklıdır. DATA'da proje için ayrı prosedür tanımlanmamıştır; aşağıdaki akış makine tipinin standart uygulamasıdır.
+Makine geçici (planlı duruş, hafta sonu, bakım arası) veya kalıcı (hurda, tesis kapatma) olarak devre dışı bırakılabilir. İki durumda enerji izolasyonu ve tank boşaltma gereksinimleri farklıdır; geçici duruşta tank boşaltma gereksinimi duruş süresine bağlıdır.
 
 ---
 
@@ -14,15 +14,14 @@ Kalıcı hizmet dışı bırakma, makinenin bir daha devreye alınmayacağı dur
 
 **Kalıcı devre dışı bırakma prosedürü**
 
-1. **Bölüm 12.1** demontaj prosedürünü tam uygulayın.
-2. Ana şalteri kapatın ve **LOTO** kilidi bırakın veya tesis besleme hattını fiziksel olarak ayırın; pano giriş kablosunu sökün ve uçlarını izole edin.
-3. Elektrik, hava ve su tesisat bağlantılarını güvenli şekilde sökün; açık boru uçlarını körlayın; egzoz kanalını kapatın.
-4. Emniyet rölelerini, kontaktörleri ve inverteri devre dışı bırakın; gerekirse üretici servisi ile koordinasyon (**Bölüm 1.3**).
-5. Tanklarda, hortumlarda ve yağ ayırıcı ünitesinde sıvı kalmadığını doğrulayın.
-6. Makineyi veya parçaları **Bölüm 12.3** hurda/geri dönüşüm prosedürüne göre bertaraf edin.
-7. Tesis kayıtlarında makine seri numarasını (**0726051**) hizmet dışı olarak işaretleyin; kılavuzu ve elektrik şemasını arşivleyin.
+1. **Bölüm 12.1** demontaj prosedürünü eksiksiz uygulayın.
+2. Tesis tarafındaki elektrik besleme hattını kalıcı olarak ayırın; kablo uçlarını izole edin ve tesis besleme şalterini kilitli bırakın.
+3. Tesis tarafındaki açık hava ve su boru uçlarını kör tapa ile kapatın; egzoz kanalı açıklığını kapatın.
+4. Tanklarda, hortumlarda ve yağ ayırıcı ünitesinde sıvı kalmadığını doğrulayın.
+5. Makineyi veya parçaları **Bölüm 12.3** hurda/geri dönüşüm prosedürüne göre bertaraf edin.
+6. Tesis kayıtlarında makine seri numarasını (**0726051**) hizmet dışı olarak işaretleyin; kılavuzu ve elektrik şemasını arşivleyin.
 
-**Beklenen sonuç:** Enerji hatları körlenmiş; makine yeniden enerjilendirilemez durumda; bertaraf süreci başlatılmış.
+**Beklenen sonuç:** Tesis tarafındaki enerji hatları ayrılmış ve körlenmiş; makine yeniden enerjilendirilemez durumda; bertaraf süreci başlatılmış.
 
 ---
 
@@ -34,25 +33,28 @@ Kalıcı hizmet dışı bırakma, makinenin bir daha devreye alınmayacağı dur
 
 Geçici durdurma; hafta sonu, planlı bakım, hat revizyonu veya kısa süreli üretim duruşu için uygulanır.
 
-**Kısa süreli geçici duruş (birkaç saat — bir vardiya)**
+**Kısa süreli geçici duruş (24 saate kadar)**
 
 1. **Bölüm 7.3.1** normal stop prosedürünü uygulayın.
 2. Tank boşaltma **gerekmez**; ısıtıcı anahtarları kapatılabilir veya termostat kontrolünde açık bırakılabilir.
-3. Yeniden devreye alma: **Bölüm 7.2** başlatma prosedürü.
+3. Yeniden devreye almak için **Bölüm 7.2** başlatma prosedürünü uygulayın.
 
-**Uzun süreli geçici duruş (hafta sonu / planlı bakım / > 24 saat)**
+**Uzun süreli geçici duruş (24 saatten uzun; hafta sonu, planlı bakım)**
+
+**DİKKAT — Korozyon ve koku:** Tanklar dolu bırakılırsa koku, mikrobiyel büyüme, yağ tabakasının sertleşmesi ve rezistanslarda tortu birikimi riski artar; tank ve rezistanslar zarar görür. Uzun süreli duruştan önce tankları boşaltın ve temizleyin.
 
 1. **Bölüm 7.3.1** ile makineyi durdurun.
-2. **Tankları boşaltın ve temizleyin** — bkz. **Bölüm 7.3.4**, **10.1.5**.
-3. Ana şalteri **OFF** konumuna alın (**Bölüm 7.3.3**).
-4. Bakım personeli müdahalesi varsa **LOTO** uygulayın (**Bölüm 2.4**).
-5. Tesis hava ve su vanalarını kapatın.
-6. Depolama koşullarına uygun koruma sağlayın — bkz. **Bölüm 4.2**.
-7. Yeniden devreye alma:
-   - Tesis hava/su vanaları açık; regülatör 6 bar
-   - Tankları **Bölüm 7.2.1**'e göre doldurun
-   - Ana şalter ON; RESET
-   - **Bölüm 7.2.2** fonksiyon açılış sırası
-   - Duruş süresi uzunsa güvenlik fonksiyon testi (**Bölüm 5.4**) ve periyodik bakım maddeleri (**Bölüm 9.1.3**)
+2. Ana şalteri **OFF** konumuna alın (**Bkz. Bölüm 7.3.3**).
+3. Tank sıvısının soğumasını bekleyin.
+4. **Tankları boşaltın ve temizleyin** (**Bkz. Bölüm 7.3.4, 10.1.5**).
+5. Bakım personeli müdahale edecekse **LOTO** uygulayın (**Bkz. Bölüm 2.4**).
+6. Tesisat hava vanasını ve tesis su vanasını kapatın.
+7. Makineyi depolama koşullarına göre koruyun (**Bkz. Bölüm 4.2**).
 
-**DİKKAT — Korozyon/koku:** Tanklar dolu bırakılırsa koku, mikrobiyel büyüme, yağ tabakasının sertleşmesi ve rezistans üzerinde tortu birikimi riski artar.
+**Uzun süreli duruş sonrası yeniden devreye alma**
+
+8. Tesisat hava vanasını ve tesis su vanasını açın; regülatör manometresinde işletme basıncını kontrol edin (**Bkz. Bölüm 3.3.5**).
+9. Tankları **Bölüm 7.2.1**'e göre doldurun.
+10. Ana şalteri ON konumuna alın; **RESET** butonuna mavi lamba yanana kadar basın.
+11. Fonksiyonları **Bölüm 7.2.2** açılış sırasına göre açın.
+12. Duruş uzun sürdüyse güvenlik fonksiyon testini (**Bkz. Bölüm 5.4**) ve vadesi gelen periyodik bakım maddelerini (**Bkz. Bölüm 9.1.3**) uygulayın.

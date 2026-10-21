@@ -1,8 +1,8 @@
 # 11.3 Elektrik arızaları
 
-Elektrik arızalarında pano içi müdahale öncesi **LOTO** uygulayın (**Bölüm 2.4**). Besleme değerleri **Bölüm 3.3.3**, motor/ısıtıcı ve koruma elemanı listesi **Bölüm 3.3.4** tablosunda verilmiştir. Bu bölümdeki tüm işlemler yetkili elektrik personeli içindir.
+Elektrik arızalarında pano içi müdahale öncesi LOTO uygulayın (**Bkz. Bölüm 2.4**). Besleme değerleri **Bölüm 3.3.3**, motor/ısıtıcı ve koruma elemanı listesi **Bölüm 3.3.4** tablosunda verilmiştir. Bu bölümdeki tüm işlemler yetkili elektrik personeli içindir.
 
-**TEHLİKE — Elektrik çarpması:** Pano içinde 380 V bulunur; ana şalter kapalı iken giriş terminalleri enerjili kalır. İnverter DC barası şalter kapatıldıktan sonra en az 5 dakika tehlikeli gerilim taşır.
+**TEHLİKE — Elektrik çarpması:** Pano içinde 380 V bulunur. Ana şalter kapalıyken de ana şalter giriş klemensleri enerjilidir; inverter ara devresi enerji kesildikten sonra bir süre tehlikeli gerilim taşır. Temas ölüme veya ağır yaralanmaya yol açar. Pano içinde çalışmadan önce LOTO uygulayın; ana şalter giriş klemenslerine dokunmayın; invertere müdahaleden önce inverter kılavuzundaki bekleme süresine uyun ve gerilimsizliği ölçün.
 
 ---
 
@@ -11,18 +11,21 @@ Elektrik arızalarında pano içi müdahale öncesi **LOTO** uygulayın (**Böl�
 | Parametre | Değer |
 | :--- | :--- |
 | Faz kaybı / ters faz davranışı | Faz sıra rölesi **MKR-01** çıkış vermez; pano fonksiyonları devreye girmez (RESET lambası yanmayabilir) |
-| Motor dönüş yönü | Pompa, fan, blower doğrudan yol vermeli — faz sırasına bağlı; konveyör inverter — parametre ile sabit |
+| Motor dönüş yönü | Pompa, fan ve blower motorlarına doğrudan yol verilir — dönüş yönü faz sırasına bağlıdır; konveyör inverter ile sürülür — yön parametre ile sabittir |
 
 **Faz hatası teşhis prosedürü**
 
-1. Makineyi durdurun; ana şalteri **OFF** alın; LOTO uygulayın.
+1. Tüm fonksiyon anahtarlarını OFF konumuna alın.
 2. Tesis besleme şalterinde üç fazın mevcut olduğunu ve gerilim dengesini ölçün.
-3. Pano kapağını açın; MKR-01 röle göstergesini okuyun (faz sırası / faz kaybı LED'i — röle etiketine göre).
-4. Faz sırası ters ise tesis beslemesi kapalı ve kilitli iken besleme hattında **iki fazı** yer değiştirin (**Bölüm 5.3.6**). Enerji açıkken faz değiştirmeyin.
-5. Pano kapağını kapatın; LOTO kaldırın; ana şalteri ON alın; MKR-01 çıkış verdiğini ve RESET lambasının yandığını doğrulayın.
-6. Bir pompa veya fanı kısa süre çalıştırarak dönüş yönünü motor üzerindeki ok ile karşılaştırın.
+3. MKR-01 röle göstergesini okuyun (faz sırası / faz kaybı LED'i — röle etiketine göre). Gösterge enerji altında okunur; yalnız yetkili elektrikçi.
+4. Faz sırası ters ise LOTO uygulayın ve tesis beslemesini kapatıp kilitleyin (**Bkz. Bölüm 2.4**).
+5. Besleme hattında **iki fazı** yer değiştirin (**Bkz. Bölüm 5.3.6**). Enerji açıkken faz değiştirmeyin.
+6. Pano kapağını kapatın; LOTO'yu kaldırın.
+7. Ana şalteri ON konumuna alın; MKR-01'in çıkış verdiğini doğrulayın.
+8. RESET'e basın; RESET lambasının yandığını doğrulayın.
+9. Bir pompa veya fanı kısa süre çalıştırarak dönüş yönünü motor üzerindeki ok ile karşılaştırın.
 
-**Tekrarlayan faz hatası:** Tesis besleme kalitesi (gevşek bağlantı, faz dengesizliği) veya röle arızası — **Bölüm 11.2.2** servis kriteri.
+**Tekrarlayan faz hatası:** Tesis besleme kalitesi (gevşek bağlantı, faz dengesizliği) veya röle arızası — servis kriteri (**Bkz. Bölüm 11.2.2**).
 
 ---
 
@@ -41,33 +44,37 @@ Elektrik arızalarında pano içi müdahale öncesi **LOTO** uygulayın (**Böl�
 **Motor arıza teşhis prosedürü (MKŞ trip)**
 
 1. İlgili fonksiyon anahtarını **OFF** alın.
-2. Pompa için emiş/çıkış vanalarının açık olduğunu kontrol edin (**Bölüm 7.2.5**); kapalı vana pompayı zorlar.
-3. Ana şalteri kapatın; **LOTO** uygulayın.
-4. Pano kapağını açın; **Bölüm 11.1.3** tablosundan trip olan MKŞ'yi bulun (kol "0" konumunda).
-5. Motor ve kablo bağlantılarını görsel kontrol edin; motor sargı direncini ve izolasyonunu ölçün.
-6. Mekanik sıkışma şüphesinde mil/kaplin serbestliğini elle kontrol edin (fan kanadı, pompa çarkı, sıyırıcı diski).
-7. Nedeni giderin; MKŞ kolunu ON konumuna alın.
-8. Pano kapağını kapatın; LOTO kaldırın; RESET; fonksiyonu kısa test edin ve motor akımını pens ampermetre ile MKŞ ayar aralığına göre kontrol edin.
+2. Pompa motorunda emiş/çıkış vanalarının açık olduğunu kontrol edin (**Bkz. Bölüm 7.2.5**); pompayı kapalı vanayla çalıştırmayın.
+3. LOTO uygulayın (**Bkz. Bölüm 2.4**).
+4. Pano kapağını açın; trip olan MKŞ'yi bulun (kol "0" konumunda — **Bkz. Bölüm 11.1.3**).
+5. Motor ve kablo bağlantılarını gözle kontrol edin.
+6. Motor sargı direncini ve izolasyonunu ölçün.
+7. Mekanik sıkışma şüphesinde mil/kaplin serbestliğini elle kontrol edin (fan kanadı, pompa çarkı, sıyırıcı diski).
+8. Nedeni giderin; MKŞ kolunu ON konumuna alın.
+9. Pano kapağını kapatın; LOTO'yu kaldırın.
+10. RESET'e basın; fonksiyon anahtarını ON alın ve birimi kısa süre çalıştırın.
+11. Motor akımını pens ampermetre ile ölçün; akım motorun nominal akımını aşmamalıdır (**Bkz. Bölüm 3.3.4**). Ölçüm enerji altında yapılır; yalnız yetkili elektrikçi.
 
 **Konveyör inverter alarmı**
 
 | Parametre | Değer |
 | :--- | :--- |
 | İnverter | Delta **VFD004EL21W-1** (0,4 kW) — pano içi |
-| Alarm kodları | Sürücü ekranındaki koda göre **Delta VFD-EL kullanım kılavuzu** (**Bkz. Bölüm 13.1**) |
+| Alarm kodları | Sürücü ekranındaki koda göre **Delta VFD-EL kullanım kılavuzu** (**Bkz. Bölüm 13.1.3**) |
 | Reset | CONVEYOR anahtarı OFF → ON veya inverter STOP/RESET tuşu |
 
+**DİKKAT — Parametre değişikliği:** Yanlış inverter parametresi konveyörün ters yönde veya izin verilen hız aralığı dışında çalışmasına ve tahrik grubunun hasar görmesine yol açabilir. İnverter parametrelerini değiştirmeyin; yön, min/maks frekans ve rampa fabrika ayarıdır. Parametre gerektiren arızalarda üretici servisini çağırın (**Bkz. Bölüm 11.2.2**).
+
 1. CONVEYOR anahtarını OFF alın; inverter ekranındaki alarm kodunu kaydedin.
-2. Hat üzerinde sıkışma veya parça yığılması varsa LOTO altında giderin.
+2. Hat üzerinde sıkışma veya parça yığılması varsa LOTO altında giderin (**Bkz. Bölüm 2.4**).
 3. Potansiyometrenin 20 Hz altında olmadığını kontrol edin (aşırı yük alarmı).
 4. Alarm kodunun anlamını Delta kılavuzundan okuyun; aşırı akım/aşırı yük ise mekanik yükü, besleme hatası ise sigorta A9F74106 ve bağlantıları kontrol edin.
-5. İnverteri resetleyin; CONVEYOR ON; tel bandın ilerlediğini doğrulayın.
-
-**DİKKAT — Parametre:** İnverter parametrelerini değiştirmeyin; yön, min/maks frekans ve rampa fabrika ayarıdır. Parametre gerektiren arızalarda üretici servisi çağırın (**Bölüm 11.2.2**).
+5. İnverteri resetleyin.
+6. CONVEYOR anahtarını ON alın; tel bandın ilerlediğini doğrulayın.
 
 ![Pano içi kontaktörler — yıkama pompası, durulama pompası, sıyırıcı, egzoz](../../assets/11.3/kontaktorler.jpg)
 
-**Beklenen sonuç:** MKŞ normal; motor çalışıyor; run lambası yanık; motor akımı MKŞ aralığında.
+**Beklenen sonuç:** MKŞ normal; motor çalışıyor; run lambası yanık; motor akımı nominal akımı aşmıyor.
 
 ---
 
@@ -85,34 +92,38 @@ Pano içindeki kaçak akım röleleri **K.AKIM F1…F5** etiketleriyle, ısıtı
 
 ![Isıtıcı sigortaları — yıkama, durulama, kurutma rezistansları](../../assets/11.3/isitici-sigortalari.jpg)
 
+**UYARI — Elektrik çarpması:** Köprülenmiş veya devre dışı bırakılmış kaçak akım rölesi, rezistans izolasyon hatasında ölümcül elektrik çarpmasına yol açar. Kaçak akım rölesini köprülemeyin ve devre dışı bırakmayın; rezistans ve kaçak akım koruma devresine yalnızca yetkili elektrik personeli müdahale eder.
+
 **Sıcaklık yükselmiyor (ısıtıcı anahtarı ON)**
 
-1. İlgili **WASHING LEVEL** lambasının sönük olduğunu doğrulayın; kırmızı yanıyorsa seviye interlock'u ısıtıcıyı kilitler — tankı doldurun (**Bölüm 7.2.1**).
-2. Termostat set değerinin anlık sıcaklığın üzerinde olduğunu kontrol edin (**Bölüm 6.3.3**).
-3. Ana şalteri kapatın; LOTO uygulayın.
-4. İlgili RCCB (K.AKIM) kolunun ve ısıtıcı sigortalarının konumunu kontrol edin; trip varsa aşağıdaki kaçak akım prosedürüne geçin.
-5. Isıtıcı kontaktörünün çekip çekmediğini (bobin 220 V AC) ve termostat çıkışını kontrol edin.
-6. Termokupl bağlantısını (ETB30F06) ve termostat ekranındaki okumayı doğrulayın; okuma anlamsızsa termokupl arızası — **Bölüm 11.7.3**.
+1. İlgili **WASHING LEVEL** lambasının sönük olduğunu doğrulayın; kırmızı yanıyorsa seviye interlock'u ısıtıcıyı kilitler — tankı doldurun (**Bkz. Bölüm 7.2.1**).
+2. Termostat set değerinin anlık sıcaklığın üzerinde olduğunu kontrol edin (**Bkz. Bölüm 6.3.3**).
+3. Termostat ekranındaki sıcaklık okumasını kontrol edin; okuma anlamsızsa termokupl arızası — **Bkz. Bölüm 11.7.3**.
+4. LOTO uygulayın (**Bkz. Bölüm 2.4**).
+5. İlgili RCCB (K.AKIM) kolunun ve ısıtıcı sigortalarının konumunu kontrol edin; trip varsa aşağıdaki kaçak akım prosedürüne geçin.
+6. Termokupl (ETB30F06) bağlantısını kontrol edin.
+7. RCCB ve sigortalar normalse LOTO'yu kaldırın; yetkili elektrikçi, enerji altında termostat çıkışını ve ısıtıcı kontaktörünün bobin gerilimini (220 V AC) ölçsün ve kontaktörün çekip çekmediğini kontrol etsin.
 
 **Kaçak akım trip (RCCB)**
 
-1. Isıtıcı anahtarını OFF alın; ana şalteri kapatın; **LOTO** uygulayın.
-2. Trip olan RCCB'nin beslediği grubu şemadan belirleyin (tank 1, tank 2 veya kurutma).
-3. Grubun her rezistansını sırayla ayırın; rezistans gövde–uç izolasyon direncini megger ile ölçün; düşük izolasyonlu (patlak/ıslak) rezistansı belirleyin.
-4. Arızalı rezistansı **REZİSTANS KOMPLESİ 8000 W 50 cm** (07 15142) veya kurutma ısıtıcısı ile değiştirin (**Bölüm 13.3**); tank rezistansı değişiminde tank boşaltılır (**Bölüm 10.1.5**).
-5. Tank altı rezistans bağlantı kutularında nem ve sızıntı izi kontrolü yapın; nem kaynağını giderin.
-6. RCCB'yi kurun; LOTO kaldırın; ısıtıcıyı test edin.
-7. Trip tekrarlıyorsa **servis** çağırın (**Bölüm 11.2.2**).
+1. Isıtıcı anahtarını OFF alın.
+2. LOTO uygulayın (**Bkz. Bölüm 2.4**).
+3. Trip olan RCCB'nin beslediği grubu şemadan belirleyin (tank 1, tank 2 veya kurutma).
+4. Grubun her rezistansını sırayla ayırın; rezistans gövde–uç izolasyon direncini megger ile ölçün; düşük izolasyonlu (patlak/ıslak) rezistansı belirleyin.
+5. Tank rezistansı değişecekse tankı boşaltın (**Bkz. Bölüm 10.1.5**).
+6. Arızalı rezistansı **REZİSTANS KOMPLESİ 8000 W 50 cm** (07 15142) veya kurutma ısıtıcısı ile değiştirin (**Bkz. Bölüm 13.3**).
+7. Tank altı rezistans bağlantı kutularında nem ve sızıntı izi kontrolü yapın; nem kaynağını giderin.
+8. RCCB'yi kurun; LOTO'yu kaldırın.
+9. Tank boşaltıldıysa tankı doldurun (**Bkz. Bölüm 7.2.1**); ardından ısıtıcıyı çalıştırarak test edin.
+10. Trip tekrarlıyorsa **servis** çağırın (**Bkz. Bölüm 11.2.2**).
 
 ![Tank altı — rezistans bağlantı hattı](../../assets/11.3/tank-alti-rezistans-baglanti.jpg)
 
 **Termostat set değere ulaştı, ısınma devam ediyor (Arıza 5)**
 
-1. Isıtıcı anahtarını OFF alın. Sıcaklık yükselmeye devam ediyorsa kontaktör yapışıktır: ana şalteri **OFF** alın.
-2. LOTO; yapışık kontaktörü (LC1K1610M7 veya LC1D25M7) değiştirin.
-3. Anahtar OFF iken ısınma duruyor, ON iken set değeri aşıyorsa termostat çıkışı veya termokupl arızalıdır; termostatı (GEMO DTH2) veya termokuplu değiştirin.
-
-**UYARI — Elektrik:** Rezistans ve kaçak akım koruma devresi müdahalesi yalnızca yetkili elektrik personeli tarafından yapılır. Kaçak akım rölesini köprülemek veya devre dışı bırakmak ölümcül elektrik çarpması riski oluşturur ve yasaktır.
+1. Isıtıcı anahtarını OFF alın. Sıcaklık yükselmeye devam ediyorsa kontaktör yapışıktır: ana şalteri hemen **OFF** alın.
+2. LOTO uygulayın (**Bkz. Bölüm 2.4**); yapışık kontaktörü (LC1K1610M7 veya LC1D25M7) değiştirin.
+3. Anahtar OFF iken ısınma duruyor, ON iken set değeri aşıyorsa termostat çıkışı veya termokupl arızalıdır; LOTO altında termostatı (GEMO DTH2) veya termokuplu değiştirin.
 
 ---
 
@@ -126,4 +137,4 @@ Pano içindeki kaçak akım röleleri **K.AKIM F1…F5** etiketleriyle, ısıtı
 | Kontrol sigortaları A9F74160 / A9F74110 | Arıza 6 teşhisi | 11.1.2 |
 | Emniyet röleleri G9SB — LED durumu | RESET alınamıyorsa | 11.7.1 |
 
-Kablo renk kodu, klemens numaraları ve devre detayları **elektrik şemasında** verilmiştir (teslim paketi — **Bkz. Bölüm 13.1**).
+Kablo renk kodu, klemens numaraları ve devre detayları **elektrik şemasında** verilmiştir (**Bkz. Bölüm 13.1**).

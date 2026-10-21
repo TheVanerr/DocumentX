@@ -1,6 +1,6 @@
 # 7.1 Betriebsarten
 
-Die KNV 90 7500 2B besitzt **eine einzige Betriebsweise**: Jede Prozesseinheit wird über die Funktionsschalter am Bedienfeld unabhängig ein- und ausgeschaltet. Ein separater Wahlschalter für Automatik-, Hand-, Schritt- oder Wartungsbetrieb ist **nicht vorhanden**; Bedingungen für einen Betriebsartenwechsel sind nicht definiert. In diesem Kapitel werden die Betriebsarten-Überschriften der Handbuchvorlage auf die Maschine bezogen erläutert.
+Die KNV 90 7500 2B besitzt **eine einzige Betriebsweise**: Jede Prozesseinheit wird über die Funktionsschalter am Bedienfeld unabhängig ein- und ausgeschaltet. Ein separater Wahlschalter für Automatik-, Hand-, Schritt- oder Wartungsbetrieb ist **nicht vorhanden**; folglich gibt es auch keinen Betriebsartenwechsel. Die folgenden Unterkapitel erläutern, ob die jeweilige Betriebsart an dieser Maschine vorhanden ist.
 
 Daraus folgt: Die Maschine bereitet sich nicht mit einem einzelnen Startbefehl selbsttätig vor und läuft nicht von selbst an. Der Bediener befüllt die Tanks, schaltet die Heizungen ein, schaltet nach dem Aufheizen des Wassers die Pumpen, die benötigten Blower-/Trocknungsfunktionen und zuletzt den Förderer ein (**Siehe Kapitel 7.2**). Die Verriegelungen (Tankfüllstand, Klappensicherheit, Not-Halt, Phasenüberwachung) sind hardwareseitig immer aktiv und unterbrechen den Ausgang unabhängig von der Schalterstellung (**Siehe Kapitel 3.4.6**).
 
@@ -12,7 +12,7 @@ Daraus folgt: Die Maschine bereitet sich nicht mit einem einzelnen Startbefehl s
 | :--- | :--- |
 | Handbetrieb | **Einzige Betriebsweise der Maschine** — keine zentrale Automatiksequenz |
 
-Jede Funktion am Bedienfeld wird über einen eigenen Ein-/Aus-Schalter geführt. Wird der Schalter in Stellung ON gebracht, zieht das zugehörige Schütz an und die Betriebsleuchte leuchtet; in Stellung OFF wird der Ausgang unterbrochen. Die Funktionen sind voneinander unabhängig; aus Gründen der Prozesslogik und des Anlagenschutzes wird jedoch die Einschaltreihenfolge nach **Kapitel 7.2.2** empfohlen.
+Jede Funktion am Bedienfeld wird über einen eigenen Ein-/Aus-Schalter geführt. Wird der Schalter in Stellung ON gebracht, zieht das zugehörige Schütz an und die Betriebsleuchte leuchtet; in Stellung OFF wird der Ausgang unterbrochen. Die Funktionen sind voneinander unabhängig; aus Gründen der Prozesslogik und des Anlagenschutzes die empfohlene Einschaltreihenfolge jedoch einhalten (**Siehe Kapitel 7.2.2**).
 
 ---
 
@@ -48,7 +48,7 @@ Die Wartungsklappen werden nur im sicheren Zustand (Hauptschalter OFF, LOTO ange
 
 | Parameter | Wert |
 | :--- | :--- |
-| Bedingungen für den Betriebsartenwechsel | **Nicht anwendbar** — der Bediener schaltet die gewünschten Funktionen unter Beachtung der Verriegelungen unabhängig ein/aus |
+| Bedingungen für den Betriebsartenwechsel | **Nicht zutreffend** — der Bediener schaltet die gewünschten Funktionen unter Beachtung der Verriegelungen unabhängig ein/aus |
 
 ---
 
@@ -67,8 +67,8 @@ Die Wartungsklappen werden nur im sicheren Zustand (Hauptschalter OFF, LOTO ange
 | Schalter ohne Beschriftung | Ölabscheidereinheit (Membranpumpe) | Druckluft 6 bar muss angeschlossen sein |
 | CONVEYOR | Förderer — Geschwindigkeit über Potentiometer (20–60 Hz) | Zuletzt einschalten; Linie leer und RESET-Leuchte leuchtet |
 
-Die Funktionen können je nach Prozessbedarf unabhängig ein- und ausgeschaltet werden; welche Kombination verwendet wird, hängt von der Prozessauslegung des Anwenders ab (**Siehe Kapitel 8.2**). Die Thermostat-Sollwerte sind in **Kapitel 6.3.3** festgelegt.
+Die Funktionen können je nach Prozessbedarf unabhängig ein- und ausgeschaltet werden; welche Kombination verwendet wird, hängt von der Prozessauslegung des Anwenders ab (**Siehe Kapitel 8.2**). Festlegung der Thermostat-Sollwerte: **Siehe Kapitel 6.3.3**.
 
 ---
 
-Zum Einschaltverfahren siehe **Kapitel 7.2**.
+Einschaltverfahren: **Siehe Kapitel 7.2**.

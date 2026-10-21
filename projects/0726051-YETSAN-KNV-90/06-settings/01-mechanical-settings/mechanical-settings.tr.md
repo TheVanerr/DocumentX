@@ -1,8 +1,8 @@
 # 6.1 Mekanik ayarlar
 
-KNV 90 7500 2B makinesi fabrika çıkışında mekanik ayar gerektirmeyecek şekilde devreye alınmıştır. Konveyör zinciri ve tel bant, redüktör–tork sınırlayıcı bağlantısı, pompa montajları, nozul kolektörleri ve blower hava bıçağı boruları üretici toleransları içinde sabitlenmiştir; operatör veya bakım personelinin periyodik mekanik ince ayar yapması öngörülmemiştir. DATA'da bu proje için mekanik ayar noktası tanımlanmamıştır.
+KNV 90 7500 2B makinesi fabrika çıkışında mekanik ayar gerektirmeyecek şekilde devreye alınmıştır. Konveyör zinciri ve tel bant, redüktör–tork sınırlayıcı bağlantısı, pompa montajları, nozul kolektörleri ve blower hava bıçağı boruları üretici toleransları içinde sabitlenmiştir; operatör veya bakım personelinin periyodik mekanik ince ayar yapması öngörülmemiştir.
 
-Bu bölüm, mekanik ayar kapsamının neden boş olduğunu ve hangi mekanik kontrollerin bakım kapsamında gözlemle yapıldığını açıklar. Mekanik bakım (yağlama, filtre, zincir gözlemi) **Bölüm 9**'da tanımlıdır.
+Bu bölüm, makinede neden mekanik ayar gerekmediğini ve hangi mekanik kontrollerin bakım kapsamında gözle yapıldığını açıklar. Mekanik bakım (yağlama, filtre, tel bant ve zincir kontrolü) **Bölüm 9**'da tanımlıdır.
 
 ---
 
@@ -10,9 +10,9 @@ Bu bölüm, mekanik ayar kapsamının neden boş olduğunu ve hangi mekanik kont
 
 | Parametre | Değer / Açıklama |
 | :--- | :--- |
-| Mekanik ayar noktaları listesi | [EKSİK] — DATA'da tanımlı değil; operatör ayar noktası yok |
+| Mekanik ayar noktaları listesi | Yok — operatörün yapacağı mekanik ayar noktası bulunmaz; mekanik birimler fabrikada ayarlanmıştır |
 
-Makinede nozul mesafesi, limit switch, blower borusu konumu veya format değişimi için operatör ayar noktası bulunmaz. Mekanik müdahale gerektiren arızalarda (zincir atlaması, tel bant deformasyonu, nozul kolektörü hizası) üretici servisi devreye alınmalıdır (**Bkz. Bölüm 1.3**).
+Makinede nozul mesafesi, limit switch, blower borusu konumu veya format değişimi için operatör ayar noktası bulunmaz. Mekanik müdahale gerektiren arızalarda (zincir atlaması, tel bant deformasyonu, nozul kolektörü hizası) üretici servisini çağırın (**Bkz. Bölüm 1.3**).
 
 ---
 
@@ -20,7 +20,7 @@ Makinede nozul mesafesi, limit switch, blower borusu konumu veya format değişi
 
 | Parametre | Değer / Açıklama |
 | :--- | :--- |
-| Referans / home pozisyon ayarı | [EKSİK] — uygulanmaz; konveyör sürekli hareketli, pozisyon kontrolü yok |
+| Referans / home pozisyon ayarı | Uygulanmaz — konveyör sürekli hareketlidir, pozisyon kontrolü yoktur |
 
 Makinede servo veya encoder bulunmadığından referans pozisyon kavramı yoktur. Konveyör, CONVEYOR anahtarı açıkken potansiyometre hızında sürekli döner.
 
@@ -30,10 +30,13 @@ Makinede servo veya encoder bulunmadığından referans pozisyon kavramı yoktur
 
 | Parametre | Değer / Açıklama |
 | :--- | :--- |
-| Zincir / tel bant gerginlik değeri | [EKSİK] — fabrika ayarı; sayısal değer tanımlı değil |
+| Zincir / tel bant gerginlik değeri | Fabrika ayarı — operatör ayarı yoktur |
+| Gerginlik kontrolü | **Haftalık**, gözle (**Bkz. Bölüm 9.1.3**) |
 | Mesafe / limit switch ayarları | Uygulanmaz — limit switch yok |
 
-Konveyör zincir ve tel bant gerginliği üretici montajında ayarlanmıştır. Gerginlik ve hiza, **haftalık** gözle kontrol maddesidir (**Bkz. Bölüm 9.1.3**): tel bant her iki kenarda eşit ilerlemeli, sarkma veya kenara sürtme olmamalıdır. Redüktör üzerindeki tork sınırlayıcı, sıkışmada kayarak zinciri korur; tork sınırlayıcının sık kayması (konveyör dururken motor çalışıyor) gerginlik veya sıkışma arızası belirtisidir ve üretici servisine bildirilir.
+Konveyör zincir ve tel bant gerginliği üretici montajında ayarlanmıştır; operatörün veya bakım personelinin yapacağı gerginlik ayarı yoktur. Haftalık gözle kontrolde şu koşullar sağlanmalıdır: tel bant tamburdan kaçmamalı ve her iki kenarda eşit ilerlemeli, zincir dişlilere tam oturmalı, alt dönüş tarafında belirgin sarkma olmamalıdır. Bu koşullardan biri sağlanmıyorsa ayar için üretici servisini çağırın (**Bkz. Bölüm 1.3**).
+
+Redüktör üzerindeki tork sınırlayıcı, sıkışmada kayarak zinciri korur; tork sınırlayıcının sık kayması (konveyör dururken motor çalışıyor) gerginlik veya sıkışma arızası belirtisidir ve üretici servisine bildirilir.
 
 ---
 
@@ -52,9 +55,9 @@ Yıkama ve durulama nozulları (160 adet, 650.724.1C.CC) kolektör borular üzer
 
 | Parametre | Değer / Açıklama |
 | :--- | :--- |
-| Format değişim prosedürü özeti | Yok — format değişim prosedürü tanımlı değil |
+| Format değişim prosedürü özeti | Yok — format değişimi için mekanik değişiklik gerekmez |
 
-Farklı parça geometrileri mekanik değişiklik gerektirmez; proses sonucu konveyör hızı (**Bölüm 6.3.4**) ve termostat set değerleri (**Bölüm 6.3.3**) ile yönetilir (**Bkz. Bölüm 8.2**).
+Farklı parça geometrileri mekanik değişiklik gerektirmez; proses sonucu konveyör hızı (**Bkz. Bölüm 6.3.4**) ve termostat set değerleri (**Bkz. Bölüm 6.3.3**) ile yönetilir (**Bkz. Bölüm 8.2**).
 
 ---
 
@@ -62,8 +65,9 @@ Farklı parça geometrileri mekanik değişiklik gerektirmez; proses sonucu konv
 
 | # | Kontrol | Durum |
 | :---: | :--- | :---: |
-| 1 | Konveyör tel bandı her iki kenarda eşit ilerliyor; sürtme yok | ☐ |
-| 2 | Tork sınırlayıcı kayma belirtisi yok | ☐ |
-| 3 | Mekanik ayar gereksinimi yok — kayıt altına alındı | ☐ |
+| 1 | Tel bant tamburdan kaçmıyor; her iki kenarda eşit ilerliyor, sürtme yok | ☐ |
+| 2 | Zincir dişlilere tam oturuyor | ☐ |
+| 3 | Alt dönüş tarafında belirgin sarkma yok | ☐ |
+| 4 | Tork sınırlayıcı kayma belirtisi yok | ☐ |
 
 **Tarih:** _______________ **Kontrol eden:** _______________

@@ -12,15 +12,15 @@ Vor dem Platzieren der Maschine muss der Aufstellort die folgenden Bedingungen e
 
 | Parameter | Anforderung | Referenz |
 | :--- | :--- | :--- |
-| Min. Abmessungen des Montagebereichs | [EKSİK] | Kapitel 3.5.2 |
-| Bodenebenheitstoleranz | [EKSİK] | Kapitel 3.5.2 |
-| Bodentragfähigkeit | [EKSİK] — fest, eben, wasserbeständig | Kapitel 3.5.2 |
-| Minimaler Freiraum | [EKSİK] | Kapitel 3.5.2 |
-| Minimale Deckenhöhe | [EKSİK] — einschließlich Abluftkamin | Kapitel 3.5.2 |
+| Min. Abmessungen des Montagebereichs | Maschinenabmessungen zuzüglich Fläche für Wartung, Beschickung/Entnahme und Ölabscheidereinheit | Kapitel 3.5.2 |
+| Bodenebenheitstoleranz | Gesamthöhenunterschied muss innerhalb des Einstellbereichs der Stellfüße liegen | Kapitel 3.5.2 |
+| Bodentragfähigkeit | Industrieller Betonboden, der das gefüllte Betriebsgewicht mit Sicherheitsreserve trägt; fest, eben, wasserbeständig | Kapitel 3.5.2 |
+| Minimaler Freiraum | Getrennte Werte für Vorderseite, Rückseite, Eingangs- und Ausgangsseite | Kapitel 3.5.2 |
+| Minimale Deckenhöhe | Freiraum über Abluftventilator / Kamin; Kanalführung des Kamins wird gesondert geplant | Kapitel 3.5.2 |
 | Platz für die Ölabscheidereinheit | Neben der Maschine, innerhalb der Schlauchlänge | Kapitel 3.5.1 |
 | Abwasser / Entwässerung | Zugang zu den Ablassventilen (TAHLİYE) der Tanks und Bodenablauf empfohlen | Kapitel 10.1.8 |
 
-Der Referenz-Aufstellungsplan ist das Layout im Lieferpaket (**Siehe Kapitel 3.5, 13.2**). Da es rund um die Tanks zu Wasserüberlauf und bei der Filterreinigung zu Tropfwasser kommt, wird ein rutschhemmender Boden mit Ablauf empfohlen.
+Der Referenz-Aufstellungsplan ist das Layout im Lieferpaket (**Siehe Kapitel 13.1**). Da es rund um die Tanks zu Wasserüberlauf und bei der Filterreinigung zu Tropfwasser kommt, wird ein rutschhemmender Boden mit Ablauf empfohlen.
 
 ---
 
@@ -37,7 +37,7 @@ Die Maschine ist nach den folgenden Seiten auszurichten (**Siehe Kapitel 3.5.1**
 
 Die Werkstücke werden von der linken Seite von Hand aufgelegt und auf der rechten Seite von Hand entnommen. Bedienfeld und Schaltschrank befinden sich auf der rechten Seite in zugänglicher Position; der Bediener muss zwischen Eingang, Ausgang und Bedienfeld einen sicheren Gehweg haben. Die Schutzgitter und Not-Halt-Taster am Eingang und Ausgang des Förderers dürfen nicht verstellt werden.
 
-Das Platzieren mit dem Gabelstapler erfolgt gemäß dem Verfahren in **Kapitel 4.1.4**; Anschlagpunkte und Schwerpunkt richten sich nach der Herstellerzeichnung (**Siehe Kapitel 3.5.4**).
+Das Platzieren mit dem Gabelstapler erfolgt gemäß dem Verfahren in **Kapitel 4.1.4**; Anschlagpunkte und Schwerpunkt: **Siehe Kapitel 3.5.4**.
 
 ---
 
@@ -46,21 +46,21 @@ Das Platzieren mit dem Gabelstapler erfolgt gemäß dem Verfahren in **Kapitel 4
 | Parameter | Wert |
 | :--- | :--- |
 | Nivelliermechanismus | Stellfüße |
-| Ausrichttoleranz | [EKSİK] mm |
+| Ausrichttoleranz | **≤ 1 mm/m** — längs und quer, mit der Wasserwaage |
 
 **Positionierungsverfahren**
 
 1. Die Maschine mit dem Gabelstapler in ihre Endposition bringen und auf den Boden setzen (**Siehe Kapitel 4.1.4**).
 2. Die Wasserwaage entlang der Fördererlinie (Längsachse) und quer zur Linie (Querachse) anlegen.
 3. Die **Stellfüße** drehen und die Maschine in beiden Achsen nivellieren; bei der langen Linie die Kontrolle mit der Wasserwaage im Eingangs-, Mittel- und Ausgangsbereich wiederholen.
-4. Sicherstellen, dass alle Füße gleichmäßig auf dem Boden aufsitzen; frei stehende Füße herausdrehen.
+4. Sicherstellen, dass alle Füße gleichmäßig auf dem Boden aufsitzen; frei stehende Füße nach unten herausdrehen, bis sie aufsitzen.
 5. Die Kontermuttern der Füße anziehen.
 6. Prüfen, dass Tankdeckel und Wartungsklappen der Kammern ohne Kraftaufwand schließen und die magnetischen Schalter fluchten.
-7. Prüfen, dass der Drahtgurt des Förderers beim Drehen von Hand an beiden Kanten gleichmäßig läuft (ohne angeschlossene Energie).
+7. Durch Sichtprüfung sicherstellen, dass der Drahtgurt des Förderers vollständig auf den Kettenrädern sitzt und seine Kanten nicht am Rahmen schleifen; der Lauf des Gurts wird beim Leerlauftest in **Kapitel 5.5.5** geprüft.
 
-**Erwartetes Ergebnis:** Maschine nivelliert; Drahtgurt des Förderers ohne seitliches Schleifen; Klappen fluchten mit den Schaltern.
+**Erwartetes Ergebnis:** Maschine in beiden Achsen innerhalb der Toleranz nivelliert; Drahtgurt des Förderers ohne seitliches Schleifen; Klappen fluchten mit den Schaltern.
 
-**Abweichung:** Wird die Bodentoleranz überschritten oder erreichen die Füße die Grenze ihres Einstellbereichs, nicht in Betrieb gehen, bevor der Boden ausgebessert wurde.
+**Abweichung:** Wird die Bodenebenheitstoleranz (**Siehe Kapitel 3.5.2**) überschritten oder erreichen die Füße die Grenze ihres Einstellbereichs, nicht in Betrieb gehen, bevor der Boden ausgebessert wurde.
 
 Prüffrage zur mechanischen Installation: *Ist die Maschine nivelliert?* (**Siehe Kapitel 5.5.1**)
 

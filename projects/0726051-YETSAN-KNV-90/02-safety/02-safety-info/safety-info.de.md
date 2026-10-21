@@ -10,27 +10,27 @@ Die Warnetiketten an der Maschine sind in **Kapitel 1.2** zusammen mit den allge
 
 **Thermisches Risiko — heiße Prozessflüssigkeit, Heizstäbe und Heißluft**
 
-Der Waschtank (TANK 1) und der Spültank (TANK 2) werden mit insgesamt sieben Heizstäben à 8 kW beheizt; die Wassertemperatur kann bis **+70 °C** erreichen (**Siehe Kapitel 3.3.5**). In den Trocknungskammern erzeugen zwei Heizungen à 12 kW Heißluft. Tankdeckel, Kammerklappen, Rohrleitungen, das Gehäuse der Trocknungskammer und die austretenden Werkstücke bleiben auch nach dem Prozess heiß. Der Kontakt mit bloßen Händen birgt die Gefahr von Verbrennungen ersten oder zweiten Grades. Beim Öffnen des Tankdeckels steigt heißer Dampf zum Gesicht auf. Vor Wartung oder Reinigung die Heizungen ausschalten und dem System Zeit zum Abkühlen geben; hitzebeständige Handschuhe tragen.
+Der Waschtank (TANK 1) und der Spültank (TANK 2) werden mit insgesamt sieben Heizstäben à 8 kW beheizt; die Wassertemperatur kann bis **+70 °C** erreichen (**Siehe Kapitel 3.3.5**). In den Trocknungskammern erzeugen zwei Heizungen à 12 kW Heißluft. Tankdeckel, Kammerklappen, Rohrleitungen, das Gehäuse der Trocknungskammer und die austretenden Werkstücke bleiben auch nach dem Prozess heiß. Der Kontakt mit bloßen Händen birgt die Gefahr von Verbrennungen ersten oder zweiten Grades. Beim Öffnen des Tankdeckels steigt heißer Dampf zum Gesicht auf. Vor Wartung oder Reinigung die Heizungen ausschalten, die Wassertemperatur an der Anzeige des Thermostats GEMO DTH2 prüfen und warten, bis die Oberflächen abgekühlt sind; hitzebeständige Handschuhe tragen.
 
 **Mechanisches Risiko — Kettenförderer, Drahtgurt und rotierende Mechanismen**
 
-Der Förderer bewegt sich bei eingeschaltetem Schalter CONVEYOR kontinuierlich; im Werkstück-Einlauf (links) und -Auslauf (rechts) besteht die Gefahr des Einklemmens von Fingern und Händen zwischen Drahtgurt und feststehender Struktur. Der Getriebemotor des Förderers besitzt zwar einen Drehmomentbegrenzer, dieser ist jedoch nicht zum Schutz menschlicher Gliedmaßen ausgelegt. Ein- und Auslaufbereich sind mit Schutzgittern umgeben; nicht in das Gitter hineingreifen. Pumpen-, Ventilator- und Blowermotoren sind rotierende Elemente; ihre Abdeckungen bei laufender Maschine nicht abnehmen. Werkstücke ausschließlich von außerhalb des Kammereinlaufs auf den Förderer auflegen und am Auslauf vom Drahtgurt abnehmen.
+Der Förderer bewegt sich bei eingeschaltetem Schalter CONVEYOR kontinuierlich; im Werkstück-Einlauf (links) und -Auslauf (rechts) besteht die Gefahr des Einklemmens von Fingern und Händen zwischen Drahtgurt und feststehender Struktur. Der Getriebemotor des Förderers besitzt zwar einen Drehmomentbegrenzer, dieser ist jedoch nicht zum Schutz menschlicher Gliedmaßen ausgelegt. Ein- und Auslaufbereich sind mit Schutzgittern umgeben; nicht in das Gitter hineingreifen. Pumpen-, Ventilator- und Blowermotoren sind rotierende Elemente; ihre Abdeckungen erst nach Anwendung von LOTO abnehmen (**Siehe Kapitel 2.4**). Werkstücke ausschließlich von außerhalb des Kammereinlaufs auf den Förderer auflegen und am Auslauf vom Drahtgurt abnehmen.
 
 **Chemikalien- und Flüssigkeitsexposition**
 
-In den Wasch- und Spülprozessen sind Öl, Schmutz und erhitzte Prozessflüssigkeit vorhanden. Bei der Reinigung des Vorfilters, der Tankwartung, dem Wechsel des Feinfilters (Beutelfilter) und bei Leckagen besteht Spritzgefahr für Haut und Augen. Überlaufendes oder tropfendes Wasser im Tankumfeld erzeugt einen rutschigen Boden. Das Verbot „Keine Lösungsmittel verwenden" an der Maschine richtet sich gegen die Gefahr brennbarer Dämpfe und der Beschädigung der Edelstahloberflächen.
+In den Wasch- und Spülprozessen sind Öl, Schmutz und erhitzte Prozessflüssigkeit vorhanden. Bei der Reinigung des Vorfilters, der Tankwartung, dem Wechsel des Feinfilters (Beutelfilter) und bei Leckagen besteht Spritzgefahr für Haut und Augen. Überlaufendes oder tropfendes Wasser im Tankumfeld erzeugt einen rutschigen Boden. Das Verbot „Keine Lösungsmittel verwenden" an der Maschine richtet sich gegen die Gefahr brennbarer Dämpfe und der Beschädigung der Edelstahloberflächen. Bei diesen Arbeiten die PSA-Matrix einhalten (**Siehe Kapitel 2.6**).
 
 **Elektrisches Risiko**
 
-Im Schaltschrank liegt eine Versorgung mit **380 V**, **50 Hz**, **3-phasig**, insgesamt **110 kW / 220 A** an (**Siehe Kapitel 3.3.3**). Die Heizstäbe sind am Tankgehäuse montiert und stehen in Kontakt mit dem Wasser; bei einem Isolationsfehler trennen die Fehlerstrom-Schutzschalter (RCCB) den Stromkreis, ein Eingriff am Schaltschrank oder an den Anschlusskästen der Heizstäbe auf nassem Boden kann jedoch tödlich sein. Die Schaltschranktür darf nur von Elektrofachpersonal geöffnet werden; vor dem Eingriff ist das LOTO-Verfahren nach **Kapitel 2.4** zwingend. Auch bei ausgeschaltetem Hauptschalter kann an den Zwischenkreiskondensatoren des Förderer-Frequenzumrichters kurzzeitig eine gefährliche Spannung anstehen; vor dem Eingriff am Frequenzumrichter mindestens 5 Minuten warten.
+Im Schaltschrank liegt eine Versorgung mit **380 V**, **50 Hz**, **3-phasig**, insgesamt **110 kW / 220 A** an (**Siehe Kapitel 3.3.3**). Die Heizstäbe sind am Tankgehäuse montiert und stehen in Kontakt mit dem Wasser; bei einem Isolationsfehler trennen die Fehlerstrom-Schutzschalter (RCCB) den Stromkreis, ein Eingriff am Schaltschrank oder an den Anschlusskästen der Heizstäbe auf nassem Boden kann jedoch tödlich sein. Die Schaltschranktür darf nur von Elektrofachpersonal geöffnet werden; vor dem Eingriff ist das LOTO-Verfahren nach **Kapitel 2.4** zwingend. Auch in Stellung OFF des Hauptschalters stehen die Eingangsklemmen des Hauptschalters und das Versorgungskabel der Anlage unter Spannung. Auch bei ausgeschaltetem Hauptschalter kann an den Zwischenkreiskondensatoren des Förderer-Frequenzumrichters kurzzeitig eine gefährliche Spannung anstehen; vor dem Eingriff am Frequenzumrichter warten, bis die Anzeige des Frequenzumrichters vollständig erloschen und die in der Delta-Betriebsanleitung angegebene Entladezeit abgelaufen ist.
 
 **Pneumatisches Risiko**
 
-Die Druckluftversorgung beträgt **6 bar** (**Siehe Kapitel 3.3.5**). Beim Bruch der Luftleitung oder Lösen einer Verschraubung bergen peitschende Schläuche und Druckluft Verletzungsgefahr. Bei Arbeiten an der Pneumatik das Luftventil der Anlage schließen und den Restdruck ablassen (**Siehe Kapitel 2.4**).
+Die Druckluftversorgung beträgt **6 bar** (**Siehe Kapitel 3.3.5**); die Druckluft versorgt die Membranpumpe des Ölabscheiders. Beim Bruch der Luftleitung oder Lösen einer Verschraubung bergen peitschende Schläuche und Druckluft Verletzungsgefahr. Bei Arbeiten an der Pneumatik das abschließbare Luftventil in der Anlagenleitung schließen und den Restdruck ablassen (**Siehe Kapitel 2.4**).
 
 **Lärm**
 
-Der Geräuschpegel der Maschine ist mit **65 dB(A)** angegeben (**Siehe Kapitel 3.3.6**). Laufen vier Blower und zwei Trocknungsventilatoren gleichzeitig, steigt der Schallpegel in der Nähe des Trocknungsbereichs; bei längerer Arbeit in geringem Abstand kann eine Bewertung des Gehörschutzes durch den Betreiber gemäß den Lärmschutzvorschriften am Arbeitsplatz erforderlich sein.
+Der Geräuschpegel der Maschine ist mit **65 dB(A)** angegeben (**Siehe Kapitel 3.3.6**). Laufen vier Blower und zwei Trocknungsventilatoren gleichzeitig, steigt der Schallpegel in der Nähe des Trocknungsbereichs. Der Betreiber ermittelt für Personal, das längere Zeit in der Nähe des Trocknungsbereichs arbeitet, durch Messung gemäß den Lärmschutzvorschriften am Arbeitsplatz den Bedarf an Gehörschutz.
 
 **Abluft und Dampf**
 
@@ -49,8 +49,8 @@ Die Piktogramme am Maschinenkörper und am Schaltschrank entsprechen ISO 7010. D
 | KKD KULLAN (PSA tragen — blaues Sammeletikett) | Maschinenkörper, Tankvorderseite | **Siehe Kapitel 2.6** |
 | YÜKSEK VOLTAJ / HIGH VOLTAGE (Hochspannung) | Schaltschranktür | Nur Elektrofachkraft; LOTO anwenden (**Siehe Kapitel 2.4**) |
 | PANOLARIN KAPAKLARINI KİLİTLİ TUTUNUZ (Schaltschranktüren verschlossen halten) | Schaltschranktür | Schaltschranktür während des Betriebs geschlossen und verriegelt halten |
-| AIR INLET / HAVA GİRİŞİ (Drucklufteingang) | Maschinenkörper — Druckluftregler | 6-bar-Luftanschlussstelle (**Siehe Kapitel 3.3.5**) |
-| TAHLİYE (Ablass) | Ablassventil unter dem Tank | Tankentleerung (**Siehe Kapitel 10.1.5**) |
+| AIR INLET / HAVA GİRİŞİ (Drucklufteingang) | Maschinenkörper — Druckluftregler | Druckluftschlauch an diesen Regler anschließen (**Siehe Kapitel 3.3.5, 5.3.1**) |
+| TAHLİYE (Ablass) | Ablassventil unter dem Tank | Tank gemäß **Kapitel 10.1.5** entleeren |
 | Tanknummer **1** / **2** | Tankdeckel | Tank 1 = Waschen, Tank 2 = Spülen |
 | EMERGENCY STOP | Bedienfeld und 6 Not-Halt-Taster im Feld | **Siehe Kapitel 2.5** |
 
@@ -58,4 +58,4 @@ Die Piktogramme am Maschinenkörper und am Schaltschrank entsprechen ISO 7010. D
 
 ![Schaltschranktür — Verriegelungs- und Hochspannungsetiketten, Hauptschalterhebel](../../assets/3.4/pano-kapagi-ana-salter.jpg)
 
-Abgenutzte Etiketten unverzüglich erneuern (**Siehe Kapitel 1.3**). Die Maschine nicht ohne Etiketten betreiben.
+Abgenutzte Etiketten unverzüglich erneuern (**Siehe Kapitel 1.2.6**). Die Maschine nicht ohne Etiketten betreiben.

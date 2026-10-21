@@ -1,8 +1,8 @@
 # 6.1 Mechanische Einstellungen
 
-Die Maschine KNV 90 7500 2B wurde ab Werk so in Betrieb genommen, dass keine mechanischen Einstellungen erforderlich sind. Förderkette und Drahtgurt, die Verbindung Getriebemotor–Drehmomentbegrenzer, die Pumpenmontagen, die Düsenkollektoren und die Luftmesserrohre der Blower sind innerhalb der Herstellertoleranzen fixiert; eine periodische mechanische Feineinstellung durch den Bediener oder das Wartungspersonal ist nicht vorgesehen. In den DATA ist für dieses Projekt kein mechanischer Einstellpunkt definiert.
+Die Maschine KNV 90 7500 2B wurde ab Werk so in Betrieb genommen, dass keine mechanischen Einstellungen erforderlich sind. Förderkette und Drahtgurt, die Verbindung Getriebemotor–Drehmomentbegrenzer, die Pumpenmontagen, die Düsenkollektoren und die Luftmesserrohre der Blower sind innerhalb der Herstellertoleranzen fixiert; eine periodische mechanische Feineinstellung durch den Bediener oder das Wartungspersonal ist nicht vorgesehen.
 
-Dieses Kapitel erläutert, warum der Umfang der mechanischen Einstellungen leer ist und welche mechanischen Kontrollen im Rahmen der Wartung durch Beobachtung erfolgen. Die mechanische Wartung (Schmierung, Filter, Kettenbeobachtung) ist in **Kapitel 9** definiert.
+Dieses Kapitel erläutert, warum an der Maschine keine mechanischen Einstellungen erforderlich sind und welche mechanischen Kontrollen im Rahmen der Wartung als Sichtprüfung erfolgen. Die mechanische Wartung (Schmierung, Filter, Prüfung von Drahtgurt und Kette) ist in **Kapitel 9** definiert.
 
 ---
 
@@ -10,9 +10,9 @@ Dieses Kapitel erläutert, warum der Umfang der mechanischen Einstellungen leer 
 
 | Parameter | Wert / Beschreibung |
 | :--- | :--- |
-| Liste der mechanischen Einstellpunkte | [EKSİK] — in den DATA nicht definiert; kein Bediener-Einstellpunkt |
+| Liste der mechanischen Einstellpunkte | Keine — es gibt keinen vom Bediener einzustellenden mechanischen Einstellpunkt; die mechanischen Baugruppen sind werkseitig eingestellt |
 
-An der Maschine gibt es keinen Bediener-Einstellpunkt für Düsenabstand, Endschalter, Position der Blower-Rohre oder Formatwechsel. Bei Störungen, die einen mechanischen Eingriff erfordern (Kettenüberspringen, Verformung des Drahtgurts, Ausrichtung des Düsenkollektors), ist der Herstellerservice hinzuzuziehen (**Siehe Kapitel 1.3**).
+An der Maschine gibt es keinen Bediener-Einstellpunkt für Düsenabstand, Endschalter, Position der Blower-Rohre oder Formatwechsel. Bei Störungen, die einen mechanischen Eingriff erfordern (Überspringen der Kette, Verformung des Drahtgurts, Ausrichtung des Düsenkollektors), den Herstellerservice hinzuziehen (**Siehe Kapitel 1.3**).
 
 ---
 
@@ -20,7 +20,7 @@ An der Maschine gibt es keinen Bediener-Einstellpunkt für Düsenabstand, Endsch
 
 | Parameter | Wert / Beschreibung |
 | :--- | :--- |
-| Einstellung der Referenz-/Home-Position | [EKSİK] — nicht zutreffend; Förderer läuft kontinuierlich, keine Positionsregelung |
+| Einstellung der Referenz-/Home-Position | Nicht zutreffend — der Förderer läuft kontinuierlich, es gibt keine Positionsregelung |
 
 Da die Maschine über keinen Servoantrieb und keinen Encoder verfügt, gibt es keinen Begriff der Referenzposition. Der Förderer läuft bei eingeschaltetem Schalter CONVEYOR kontinuierlich mit der am Potentiometer eingestellten Geschwindigkeit.
 
@@ -30,10 +30,13 @@ Da die Maschine über keinen Servoantrieb und keinen Encoder verfügt, gibt es k
 
 | Parameter | Wert / Beschreibung |
 | :--- | :--- |
-| Spannungswert Kette / Drahtgurt | [EKSİK] — Werkseinstellung; kein Zahlenwert definiert |
+| Spannungswert Kette / Drahtgurt | Werkseinstellung — keine Einstellung durch den Bediener |
+| Spannungsprüfung | **Wöchentlich**, Sichtprüfung (**Siehe Kapitel 9.1.3**) |
 | Abstands-/Endschaltereinstellungen | Nicht zutreffend — keine Endschalter |
 
-Die Spannung von Förderkette und Drahtgurt wurde bei der Montage durch den Hersteller eingestellt. Spannung und Ausrichtung sind ein **wöchentlicher** Sichtprüfpunkt (**Siehe Kapitel 9.1.3**): Der Drahtgurt muss an beiden Kanten gleichmäßig laufen; Durchhang oder Schleifen an der Kante darf nicht auftreten. Der Drehmomentbegrenzer am Getriebemotor schützt die Kette, indem er bei Blockierung durchrutscht; häufiges Durchrutschen des Drehmomentbegrenzers (Motor läuft, während der Förderer steht) ist ein Anzeichen für eine Spannungs- oder Blockierstörung und ist dem Herstellerservice zu melden.
+Die Spannung von Förderkette und Drahtgurt wurde bei der Montage durch den Hersteller eingestellt; eine Spannungseinstellung durch den Bediener oder das Wartungspersonal ist nicht vorgesehen. Bei der wöchentlichen Sichtprüfung müssen folgende Bedingungen erfüllt sein: Der Drahtgurt darf nicht von der Trommel ablaufen und muss an beiden Kanten gleichmäßig laufen, die Kette muss vollständig in die Kettenräder eingreifen, und am unteren Rücklauf darf kein deutlicher Durchhang auftreten. Ist eine dieser Bedingungen nicht erfüllt, den Herstellerservice für die Einstellung hinzuziehen (**Siehe Kapitel 1.3**).
+
+Der Drehmomentbegrenzer am Getriebemotor schützt die Kette, indem er bei Blockierung durchrutscht; häufiges Durchrutschen des Drehmomentbegrenzers (Motor läuft, während der Förderer steht) ist ein Anzeichen für eine Spannungs- oder Blockierstörung und ist dem Herstellerservice zu melden.
 
 ---
 
@@ -52,9 +55,9 @@ Die Wasch- und Spüldüsen (160 Stück, 650.724.1C.CC) sind fest auf den Kollekt
 
 | Parameter | Wert / Beschreibung |
 | :--- | :--- |
-| Übersicht Formatwechselverfahren | Keines — kein Formatwechselverfahren definiert |
+| Übersicht Formatwechselverfahren | Keines — für einen Formatwechsel ist keine mechanische Änderung erforderlich |
 
-Unterschiedliche Werkstückgeometrien erfordern keine mechanische Änderung; das Prozessergebnis wird über die Fördergeschwindigkeit (**Kapitel 6.3.4**) und die Thermostat-Sollwerte (**Kapitel 6.3.3**) gesteuert (**Siehe Kapitel 8.2**).
+Unterschiedliche Werkstückgeometrien erfordern keine mechanische Änderung; das Prozessergebnis wird über die Fördergeschwindigkeit (**Siehe Kapitel 6.3.4**) und die Thermostat-Sollwerte (**Siehe Kapitel 6.3.3**) gesteuert (**Siehe Kapitel 8.2**).
 
 ---
 
@@ -62,8 +65,9 @@ Unterschiedliche Werkstückgeometrien erfordern keine mechanische Änderung; das
 
 | # | Prüfung | Status |
 | :---: | :--- | :---: |
-| 1 | Drahtgurt des Förderers läuft an beiden Kanten gleichmäßig; kein Schleifen | ☐ |
-| 2 | Keine Anzeichen für Durchrutschen des Drehmomentbegrenzers | ☐ |
-| 3 | Kein mechanischer Einstellbedarf — dokumentiert | ☐ |
+| 1 | Drahtgurt läuft nicht von der Trommel ab; läuft an beiden Kanten gleichmäßig, kein Schleifen | ☐ |
+| 2 | Kette greift vollständig in die Kettenräder ein | ☐ |
+| 3 | Kein deutlicher Durchhang am unteren Rücklauf | ☐ |
+| 4 | Keine Anzeichen für Durchrutschen des Drehmomentbegrenzers | ☐ |
 
 **Datum:** _______________ **Geprüft von:** _______________

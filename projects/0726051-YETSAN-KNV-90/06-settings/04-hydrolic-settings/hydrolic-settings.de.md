@@ -13,4 +13,4 @@ Dieses Unterkapitel stellt klar, dass keine Hydraulikeinstellungen gesucht werde
 | Hydrauliksystem | Nicht vorhanden |
 | Hydraulikeinstellungen | Keine Einstellung erforderlich |
 
-Medienanschlüsse: **Druckluft** (6 bar) und **Wasser** (1 bar) — **Siehe Kapitel 3.3.5**, **6.5**.
+Medienanschlüsse (Druckluft und Wasser): **Siehe Kapitel 3.3.5**; Einstellung des Druckluft-Druckreglers: **Siehe Kapitel 6.5**.

@@ -19,18 +19,19 @@ Die Reinigung erfolgt **manuell**. Die Außenflächen der Maschine werden mit ei
 
 ## 10.1.2 Sicherheit vor der Reinigung
 
-Der Zugang zu Tanks und Filtern erfordert das Öffnen von Klappen und Deckeln. Die Wartungsklappen der Kammern werden mit magnetischen Schaltern überwacht und setzen die Maschine beim Öffnen still; die oberen Tankdeckel besitzen keinen Schalter. In beiden Fällen gilt vor der Reinigung:
+Der Zugang zu Tanks und Filtern erfordert das Öffnen von Klappen und Deckeln. Die Wartungsklappen der Kammern werden mit magnetischen Schaltern überwacht und setzen die Maschine beim Öffnen still; die oberen Tankdeckel besitzen keinen Schalter. Deshalb ist vor jeder Reinigungsarbeit LOTO zwingend.
 
-1. Die Maschine in der Reihenfolge nach **Kapitel 7.3.1** stillsetzen.
-2. Das Abkühlen des Tankwassers und der Heizstäbe abwarten.
-3. Den Hauptschalter in Stellung **OFF (O)** bringen.
-4. Das **LOTO-Verfahren** anwenden (**Siehe Kapitel 2.4**).
+**WARNUNG — Heiße Oberfläche und Dampf:** Heißes Tankwasser, Dampf und Heizstäbe verursachen Hautverbrennungen. Den Tankdeckel erst öffnen, wenn Tankwasser und Heizstäbe abgekühlt sind; hitzebeständige Handschuhe und Schutzbrille verwenden (**Siehe Kapitel 2.6**).
+
+**WARNUNG — Chemikalien:** Reinigungschemikalien können bei Haut- und Augenkontakt Reizungen verursachen. Ausschließlich die freigegebenen Reinigungsmittel aus **Kapitel 10.1.7** gemäß Produktanweisung verwenden; Schutzhandschuhe und Schutzbrille tragen. Säurehaltige und für Edelstahl schädliche Mittel sind **verboten**.
+
+Vor jeder Reinigungsarbeit die folgenden Schritte durchführen:
+
+1. Die Maschine stillsetzen (**Siehe Kapitel 7.3.1**).
+2. Das LOTO-Verfahren anwenden (**Siehe Kapitel 2.4**).
+3. Das Abkühlen des Tankwassers und der Heizstäbe abwarten.
+4. Vor einer längeren Reinigung oder Desinfektion die Tanks über das Ablassventil **TAHLİYE** entleeren (**Siehe Kapitel 10.1.5**).
 5. Die Klappenschalter und den Füllstandsensor **nicht überbrücken**.
-6. Vor einer längeren Reinigung oder Desinfektion die Tanks über das Ablassventil **TAHLİYE** entleeren (**Siehe Kapitel 10.1.5**).
-
-**WARNUNG — Heiße Oberfläche und Dampf:** Vor dem Öffnen des Tankdeckels warten, bis die Prozessflüssigkeit eine sichere Temperatur erreicht hat; heißes Wasser und Dampf können Hautverbrennungen verursachen. Hitzebeständige Handschuhe und Schutzbrille verwenden.
-
-**WARNUNG — Chemikalien:** Ausschließlich freigegebene Reinigungsmittel verwenden. Säurehaltige und für Edelstahl schädliche Mittel sind **verboten** (**Siehe Kapitel 10.1.7**).
 
 ---
 
@@ -38,25 +39,27 @@ Der Zugang zu Tanks und Filtern erfordert das Öffnen von Klappen und Deckeln. D
 
 | Parameter | Wert |
 | :--- | :--- |
-| Intervall | **Täglich** (siehe **Kapitel 9.1.3**) |
+| Intervall | **Täglich** (**Siehe Kapitel 9.1.3**) |
 | Umfang | **Vorfilter** des Waschtanks (Vorfilterkörbe — 6 Stück montiert) |
 | Sonstiges | Täglich ist keine weitere Reinigung erforderlich |
 
 Die Vorfilterkörbe sitzen in den Fächern unter der Lochplatte, durch die das vom Kammerboden in den Tank zurücklaufende Wasser fließt; sie halten Späne und groben Schmutz zurück. Ein verstopfter Vorfilter verlangsamt den Rücklauf in den Tank, führt zu Wasseransammlungen am Kammerboden und lässt Schmutz in den Tank gelangen.
 
-Ersatzteil: **07 10214** — ÖN FİLTRE NS KOMPLESİ (empfohlener Lagerbestand: 2 — siehe **Kapitel 9.1.6**).
+Ersatzteil: **07 10214** — ÖN FİLTRE NS KOMPLESİ (empfohlener Lagerbestand 2 — **Siehe Kapitel 9.1.6**).
 
 **Tägliches Reinigungsverfahren**
 
-1. Die Maschine stillsetzen; **LOTO** anwenden (**Kapitel 10.1.2**).
+1. Die Maschine stillsetzen und LOTO anwenden (**Siehe Kapitel 10.1.2**).
 2. Den oberen Deckel des Waschtanks (TANK 1) öffnen; die Gasdruckfedern halten den Deckel offen.
 3. Die **Lochplatte** über der Vorfilteraufnahme abheben.
 4. Die Vorfilterkörbe an den Griffen nach oben herausziehen; das Abtropfen des Wassers in den Tank abwarten.
 5. Die Späne und den Schmutz aus den Körben in den Abfallbehälter entleeren (**Siehe Kapitel 10.1.8**).
-6. Die Körbe mit **Leitungswasser** und bei Bedarf mit einem freigegebenen Reinigungsmittel (**Siehe Kapitel 10.1.7**) reinigen; eine Bürste kann verwendet werden; keine verbotenen Chemikalien verwenden.
-7. Bei Beschädigung der Körbe (Verformung, Löcher, gerissenes Sieb) durch Ersatzteile austauschen.
+6. Die Körbe mit **Leitungswasser** reinigen; bei hartnäckigem Schmutz Bürste und freigegebenes Reinigungsmittel verwenden (**Siehe Kapitel 10.1.7**).
+7. Verformte, gelochte Körbe oder Körbe mit gerissenem Sieb durch Ersatzteile austauschen.
 8. Die Körbe so einsetzen, dass sie vollständig in ihren Aufnahmen sitzen; die Lochplatte schließen.
-9. Den Tankdeckel schließen; das Verfahren zum Aufheben von LOTO abschließen; vor der Inbetriebnahme prüfen, dass keine Leckage vorliegt.
+9. Den Tankdeckel schließen.
+10. LOTO aufheben (**Siehe Kapitel 2.4**).
+11. Vor der Inbetriebnahme prüfen, dass keine Leckage vorliegt.
 
 ![Vorfilteraufnahme — Tankoberseite](../../assets/10.1/on-filtre-yuvasi.jpg)
 
@@ -64,7 +67,7 @@ Ersatzteil: **07 10214** — ÖN FİLTRE NS KOMPLESİ (empfohlener Lagerbestand:
 
 **Erwartetes Ergebnis:** Vorfilter sauber und korrekt montiert; keine Wasseransammlung am Kammerboden; keine ungewöhnlichen Geräusche an der Pumpenansaugung.
 
-**Abweichung:** Bei häufiger Verstopfung die Qualität des Prozesswassers und die Ölfracht bewerten; den Einsatz von Ölskimmer und Ölabscheider erhöhen (**Siehe Kapitel 3.1.5, 11**).
+**Abweichung:** Bei häufiger Verstopfung die Qualität des Prozesswassers und die Ölfracht bewerten; den Einsatz von Ölskimmer und Ölabscheider erhöhen (**Siehe Kapitel 3.1.5**).
 
 ---
 
@@ -72,12 +75,12 @@ Ersatzteil: **07 10214** — ÖN FİLTRE NS KOMPLESİ (empfohlener Lagerbestand:
 
 | Parameter | Wert |
 | :--- | :--- |
-| Intervall | **Wöchentlich** (siehe **Kapitel 9.1.3**) |
+| Intervall | **Wöchentlich** (**Siehe Kapitel 9.1.3**) |
 | Umfang | **Saugfilter** der Tanks (Ansaugfilter) + **Feinfilter (Beutelfilter)** am Pumpenausgang |
 
 Der Saugfilter ist der gelochte Zylinder am Ende der Pumpensaugleitung im Tank; er verhindert das Eindringen grober Partikel in die Pumpe. Der Feinfilter ist der Beutelfilter im Edelstahlgehäuse am Pumpenausgang; er hält feine Partikel zurück, die die Düsen verstopfen würden. Ein verstopfter Beutelfilter verringert den Sprühdruck und belastet die Pumpe.
 
-Ersatzteil: **07 17682** — HASSAS FİLTRE KOMPLESİ (Lagerbestand 1); **07 00670 / 07 08732** — EMİŞ FİLTRESİ KOMPLESİ (Lagerbestand 1).
+Ersatzteil: **07 17682** — HASSAS FİLTRE KOMPLESİ (Lagerbestand 1); **07 00670 / 07 08732** — EMİŞ FİLTRESİ KOMPLESİ (Lagerbestand 1) — **Siehe Kapitel 9.1.6**.
 
 ![Saugfilter — im Tank](../../assets/10.1/emis-filtresi.jpg)
 
@@ -85,18 +88,23 @@ Ersatzteil: **07 17682** — HASSAS FİLTRE KOMPLESİ (Lagerbestand 1); **07 006
 
 **Wöchentliches Reinigungsverfahren**
 
-1. Die Maschine stillsetzen; **LOTO** anwenden.
-2. Die oberen Deckel von Tank 1 und Tank 2 öffnen; die Saugfilter aus ihren Aufnahmen entnehmen.
-3. Die Saugfilter mit Leitungswasser und Bürste reinigen; Filter mit verstopften Löchern oder verformtem Gehäuse austauschen.
-4. Die Saug-/Druckventile der Pumpen schließen.
-5. Den Deckel des Feinfiltergehäuses öffnen; das darin enthaltene Wasser in eine Wanne ablassen; den **Beutelfilter** entnehmen.
-6. Den Beutelfilter umstülpen und den Schmutz entleeren; mit Leitungswasser reinigen. Ist eine Reinigung nicht möglich oder das Sieb gerissen, den Filter **austauschen**.
-7. Den Beutelfilter in das Gehäuse einsetzen; Dichtung und Deckel dicht schließen.
-8. Die Saugfilter wieder einsetzen; die Tankdeckel schließen.
-9. Die Pumpenventile öffnen.
-10. Die **tägliche** Reinigung der Vorfilter (**Kapitel 10.1.3**) im selben Wartungsdurchgang durchführen.
-11. Die Scheibe des Ölskimmers und die Tankoberfläche kontrollieren; bei übermäßiger Ölschicht den Ölskimmer betreiben oder das Oberflächenöl abnehmen.
-12. LOTO aufheben; die Pumpen einschalten und Filtergehäuse sowie Anschlüsse auf Leckagen prüfen.
+1. Die Maschine stillsetzen und LOTO anwenden (**Siehe Kapitel 10.1.2**).
+2. Die oberen Deckel von TANK 1 und TANK 2 öffnen.
+3. Die Saugfilter aus ihren Aufnahmen entnehmen.
+4. Die Saugfilter mit Leitungswasser und Bürste reinigen; Filter mit verstopften Löchern oder verformtem Gehäuse austauschen.
+5. Die Saug-/Druckventile der Pumpen schließen.
+6. Den Deckel des Feinfiltergehäuses öffnen; das darin enthaltene Wasser in eine Wanne ablassen.
+7. Den **Beutelfilter** entnehmen.
+8. Den Beutelfilter umstülpen und den Schmutz entleeren; mit Leitungswasser reinigen. Nicht mehr zu reinigende Beutelfilter oder Beutelfilter mit gerissenem Sieb **austauschen**.
+9. Den Beutelfilter in das Gehäuse einsetzen; Dichtung und Deckel dicht schließen.
+10. Die Saugfilter wieder einsetzen.
+11. Die **tägliche** Reinigung der Vorfilter im selben Wartungsdurchgang durchführen (**Siehe Kapitel 10.1.3**, Schritte 3–8).
+12. Die Scheibe des Ölskimmers und die Tankoberfläche kontrollieren; übermäßige Ölschicht an der Oberfläche abnehmen.
+13. Die Tankdeckel schließen.
+14. Die Pumpenventile öffnen.
+15. LOTO aufheben (**Siehe Kapitel 2.4**) und RESET drücken.
+16. Die Pumpen einschalten; Filtergehäuse und Anschlüsse auf Leckagen prüfen.
+17. Bildet sich erneut eine Ölschicht, den Schalter TANK 1 OIL SKIMMER auf ON stellen und den Ölskimmer betreiben.
 
 **Erwartetes Ergebnis:** Filter sauber oder neu; Sprühdruck normal; keine Leckage.
 
@@ -111,26 +119,28 @@ Ersatzteil: **07 17682** — HASSAS FİLTRE KOMPLESİ (Lagerbestand 1); **07 006
 
 ![Tank 2 — Ablassventil TAHLİYE (unter dem Tank, roter Hebel)](../../assets/10.1/tahliye-vanasi.jpg)
 
+**VORSICHT — Verbotene Chemikalien:** Säurehaltige und für Edelstahl schädliche Reinigungs-/Desinfektionsmittel verursachen dauerhafte Korrosionsschäden an Tanks, Dichtungen und Heizstäben. Diese Mittel nicht verwenden (**Siehe Kapitel 10.1.7**); für die Desinfektion des Tankinneren **Seifenwasser** verwenden.
+
+**VORSICHT — Schaden an Heizstäben:** Ein im leeren Tank eingeschalteter Heizstab überhitzt und wird beschädigt. Die Schalter TANK 1 / TANK 2 HEATER erst nach dem Befüllen des Tanks auf ON stellen; den Füllstandsensor nicht überbrücken.
+
 **Verfahren für Tankentleerung und Desinfektion**
 
-1. Die Maschine stillsetzen; das Abkühlen des Tankwassers abwarten; **LOTO** anwenden.
-2. Prüfen, dass das Ablassventil **TAHLİYE** unter dem Tank an die Abwasserleitung angeschlossen ist (**Siehe Kapitel 10.1.8**).
-3. Das Ablassventil TAHLİYE öffnen; die vollständige Entleerung des Tanks abwarten.
-4. Den oberen Tankdeckel öffnen; Vorfilterkörbe, Lochplatte und Saugfilter entnehmen (**Siehe Kapitel 10.1.3, 10.1.4**).
-5. Schlamm und Ablagerungen am Tankboden mit Schaufel/Spachtel aufnehmen; in den Abfallbehälter entleeren.
-6. Die Innenflächen des Tanks, die Heizstäbe und den Füllstandsensor mit **Seifenwasser** reinigen; eine für Edelstahloberflächen geeignete weiche Bürste oder ein Tuch verwenden; die Heizstabrohre und das Thermoelement nicht mit Kraft beanspruchen.
-7. Das Seifenwasser über das Ablassventil TAHLİYE ablassen.
-8. Das Tankinnere mit **sauberem Wasser** nachspülen; das Spülwasser ablassen.
-9. Das Ablassventil TAHLİYE schließen.
-10. Filter und Lochplatte wieder einsetzen; den Tankdeckel schließen.
-11. Denselben Vorgang für den anderen Tank wiederholen.
-12. Die Außenfläche der Maschine nach **Kapitel 10.1.6** abwischen.
-13. Das Abwasser gemäß **Kapitel 10.1.8** entsorgen.
-14. Vor der Wiederinbetriebnahme die Tanks nach **Kapitel 7.2.1** befüllen.
-
-**VORSICHT — Verbotene Chemikalien:** Säurehaltige und für Edelstahl schädliche Reinigungs-/Desinfektionsmittel **dürfen nicht verwendet werden** (**Siehe Kapitel 10.1.7**). Für die Desinfektion des Tankinneren gilt die Methode mit **Seifenwasser**.
-
-**VORSICHT — Heizstäbe:** Die Heizstäbe dürfen im leeren Tank niemals unter Spannung gesetzt werden; die Füllstandverriegelung verhindert dies, dennoch ist das Arbeiten unter LOTO zwingend.
+1. Die Maschine stillsetzen.
+2. LOTO anwenden (**Siehe Kapitel 2.4**).
+3. Das Abkühlen des Tankwassers abwarten.
+4. Prüfen, dass das Ablassventil **TAHLİYE** unter dem Tank an die Abwasserleitung angeschlossen ist (**Siehe Kapitel 10.1.8**).
+5. Das Ablassventil TAHLİYE öffnen; die vollständige Entleerung des Tanks abwarten.
+6. Den oberen Tankdeckel öffnen; Vorfilterkörbe, Lochplatte und Saugfilter entnehmen (**Siehe Kapitel 10.1.3**, **10.1.4**).
+7. Schlamm und Ablagerungen am Tankboden mit Schaufel/Spachtel aufnehmen; in den Abfallbehälter entleeren.
+8. Die Innenflächen des Tanks, die Heizstäbe und den Füllstandsensor mit **Seifenwasser** reinigen; eine für Edelstahloberflächen geeignete weiche Bürste oder ein Tuch verwenden; die Heizstabrohre und das Thermoelement nicht mit Kraft beanspruchen.
+9. Das Seifenwasser über das Ablassventil TAHLİYE ablassen.
+10. Das Tankinnere mit **sauberem Wasser** nachspülen; das Spülwasser ablassen.
+11. Das Ablassventil TAHLİYE schließen.
+12. Filter und Lochplatte wieder einsetzen; den Tankdeckel schließen.
+13. Die Schritte 4–12 für den anderen Tank wiederholen.
+14. Die Außenfläche der Maschine abwischen (**Siehe Kapitel 10.1.6**).
+15. Das Abwasser entsorgen (**Siehe Kapitel 10.1.8**).
+16. Vor der Wiederinbetriebnahme die Tanks befüllen (**Siehe Kapitel 7.2.1**).
 
 ![Tankinneres — entleerter Tank, Heizstäbe und Füllstandsensor](../../assets/10.1/tank-ici-genel.jpg)
 
@@ -147,7 +157,7 @@ Ersatzteil: **07 17682** — HASSAS FİLTRE KOMPLESİ (Lagerbestand 1); **07 006
 | Schaltschrank / Bedienfeld / Frequenzumrichter | **Nicht mit Wasser reinigen** — ausschließlich trockenes oder leicht feuchtes Tuch |
 | Klappenschalter und Magnete | Trockenes Tuch; kein Wasser und keine Chemikalien anwenden |
 
-Auf der Außenfläche der Maschine keine Wasseransammlungen zurücklassen; in der Nähe des Schaltschranks keine Nassreinigung durchführen. Nach Abschluss der Trocknung wird LOTO aufgehoben und die Inbetriebnahme nach dem Verfahren in **Kapitel 7.2** durchgeführt.
+Auf der Außenfläche der Maschine keine Wasseransammlungen zurücklassen; in der Nähe des Schaltschranks keine Nassreinigung durchführen. Nach Abschluss der Trocknung LOTO aufheben (**Siehe Kapitel 2.4**) und die Maschine gemäß **Kapitel 7.2** in Betrieb nehmen.
 
 ---
 
@@ -180,7 +190,7 @@ Die Produktanweisungen (Dosierung, Einwirkzeit, Nachspülen) beachten. Die Chemi
 | Mittel, die **Edelstahl schädigen** | Schäden am Maschinengehäuse und am Tankmaterial |
 | **Lösungsmittel / brennbare Flüssigkeiten** | Brandgefahr; Verbotsschild an der Maschine |
 
-Quelle des Prozesswassers (Produktion): Leitungswasser oder aufbereitetes Wasser (**Siehe Kapitel 3.3.5**). Für die **Reinigung** der Maschine ist Leitungswasser ausreichend.
+Quelle des Prozesswassers (Produktion): Leitungswasser oder aufbereitetes Wasser (**Siehe Kapitel 3.3.5**). Für die **Reinigung** der Maschine wird Leitungswasser verwendet.
 
 ---
 
@@ -192,7 +202,7 @@ Quelle des Prozesswassers (Produktion): Leitungswasser oder aufbereitetes Wasser
 
 Das Wasser aus der Tankentleerung ist **ölhaltiges Prozesswasser**; nicht in die kommunale Kanalisation einleiten. Das Wasser aus der Tankentleerung, das Seifenwasser der Reinigung, das in der Ölabscheidereinheit gesammelte Öl, die Abfälle der Filterreinigung und die Späne aus den Vorfilterkörben sind gemäß den örtlichen Vorschriften für die **Entsorgung von Abwasser und Chemikalien** zu sammeln, zu klassifizieren und zu behandeln oder einer zugelassenen Entsorgungsanlage zu übergeben. Das Entsorgungsverfahren ist im Rahmen der Umweltgenehmigungen des Werks festzulegen.
 
-Durchmesser und Anschlussdaten der Abfluss-/Abwasserleitung sind in der Layoutzeichnung angegeben ([EKSİK] — **Siehe Kapitel 3.3.5, 13.2**).
+Anschlussdurchmesser und Anschlussdaten der Abfluss-/Abwasserleitung: **Siehe Kapitel 3.3.5**.
 
 ---
 
@@ -211,4 +221,4 @@ Durchmesser und Anschlussdaten der Abfluss-/Abwasserleitung sind in der Layoutze
 
 ---
 
-Referenz zum Ablassen der Flüssigkeit vor der Demontage **Kapitel 12.1** → Kapitel 10.1.5.
+Vor der Demontage werden die Tanks nach dem Verfahren in **Kapitel 10.1.5** entleert; zur Demontage **Siehe Kapitel 12.1**.

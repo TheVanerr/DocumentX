@@ -6,20 +6,21 @@ Die Maschine wird stillgesetzt, indem die Funktionsschalter in Stellung **OFF** 
 
 ## 7.3.1 Verfahren für das normale Stillsetzen
 
-Zuerst wird der Förderer, danach die Pumpen und Ventilatoren und zuletzt die Heizungen ausgeschaltet. Die Trocknungsheizungen müssen **vor** den Ventilatoren ausgeschaltet werden; die Ventilatoren müssen zum Abkühlen der Heizstäbe noch einige Minuten weiterlaufen.
+Zuerst wird der Förderer, danach werden die Heizungen, die Pumpen und Ölskimmer/Ölabscheider und zuletzt die Blower und Trocknungsventilatoren ausgeschaltet. Die Trocknungsheizungen werden **vor** den Ventilatoren ausgeschaltet; die Ventilatoren laufen weiter, bis die Trocknungsheizungen abgekühlt sind. Werden die Ventilatoren zusammen mit den Heizungen gestoppt, entsteht ein Wärmestau in der Trocknungskammer.
 
 1. Prüfen, dass das letzte Werkstück auf der Linie am Ausgang entnommen wurde; der Förderer muss leer sein.
 2. Den Schalter **CONVEYOR** auf OFF stellen.
 3. Die Schalter **DRYING 1 HEATER** und **DRYING 2 HEATER** auf OFF stellen.
-4. Die Schalter **TANK 1 HEATER** und **TANK 2 HEATER** auf OFF stellen (bei kurzen Pausen können sie eingeschaltet bleiben — der Thermostat hält den Sollwert).
+4. Die Schalter **TANK 1 HEATER** und **TANK 2 HEATER** auf OFF stellen (bei kurzen Pausen können sie eingeschaltet bleiben — der Thermostat hält die Temperatur auf dem Sollwert).
 5. Die Schalter **TANK 1 PUMP** und **TANK 2 PUMP** auf OFF stellen.
 6. Den Schalter **TANK 1 OIL SKIMMER** und den Schalter des Ölabscheiders auf OFF stellen.
-7. Nach dem Abkühlen der Trocknungsheizstäbe (einige Minuten) die Schalter **DRYING 1 FAN**, **DRYING 2 FAN**, **BLOWER 1**, **BLOWER 2** auf OFF stellen.
-8. Prüfen, dass alle Betriebsleuchten erloschen sind; die RESET-Leuchte bleibt an (Maschine bereit).
+7. Warten, bis sich die Trocknungslufttemperatur an den Anzeigen der Thermostate DRYING 1 und DRYING 2 der Umgebungstemperatur annähert.
+8. Die Schalter **DRYING 1 FAN**, **DRYING 2 FAN**, **BLOWER 1** und **BLOWER 2** auf OFF stellen.
+9. Prüfen, dass alle Betriebsleuchten erloschen sind; die RESET-Leuchte bleibt an (Maschine bereit).
 
 **Erwartetes Ergebnis:** Alle bewegten Funktionen sind gestoppt; die Prozessflüssigkeit kann in den Tanks verbleiben (kurzzeitiges Stillsetzen).
 
-Bei Stillsetzungen für kurze Pausen ist keine Tankentleerung erforderlich. Für das Wochenende oder eine längere Stillsetzung siehe **Kapitel 7.3.4**.
+Bei Stillsetzungen für kurze Pausen ist keine Tankentleerung erforderlich. Wochenende oder längere Stillsetzung: **Siehe Kapitel 7.3.4**.
 
 ---
 
@@ -31,7 +32,7 @@ Beim Betätigen des Not-Halts **stoppen alle Bewegungen und Prozessausgänge** d
 
 Wiederanlauf:
 
-1. Die physische Gefährdung beseitigen.
+1. Die Gefahr beseitigen, die zum Betätigen des Not-Halts geführt hat.
 2. Alle Funktionsschalter in Stellung **OFF** bringen; so laufen die Funktionen nach dem Reset nicht unkontrolliert an.
 3. Das Reset-Verfahren nach **Kapitel 2.5** durchführen (Not-Halt entriegeln → Klappen geschlossen → RESET drücken, bis die Leuchte leuchtet).
 4. Die Funktionen in der Reihenfolge nach **Kapitel 7.2.2** wieder einschalten.
@@ -45,7 +46,7 @@ Die periodische Funktionsprüfung des Not-Halts ist **einmal monatlich** durchzu
 Vor einer geplanten Energietrennung oder vor Wartungsarbeiten:
 
 1. Das Verfahren für das normale Stillsetzen nach **Kapitel 7.3.1** durchführen; alle Betriebsleuchten müssen aus sein.
-2. Prüfen, dass die Trocknungsheizstäbe abgekühlt sind (die Ventilatoren müssen einige Minuten gelaufen sein).
+2. Prüfen, dass sich die Trocknungslufttemperatur an den Anzeigen der Thermostate DRYING 1 und DRYING 2 der Umgebungstemperatur angenähert hat.
 3. Den Hauptschaltergriff an der Schaltschranktür in Stellung **OFF (O)** bringen.
 4. Sind Wartung oder Eingriffe erforderlich, **LOTO** anwenden (**Siehe Kapitel 2.4**).
 
@@ -61,13 +62,14 @@ Am Wochenende, bei geplanter Wartung oder bei längeren Linienstillständen:
 | :--- | :--- |
 | Längere Stillsetzung (Wochenende) | Die Tanks **müssen entleert und gereinigt werden** (**Siehe Kapitel 10**) |
 
-1. Die Maschine nach **Kapitel 7.3.1** stillsetzen und nach **7.3.3** die Energieversorgung abschalten.
-2. Das Abkühlen der Tanks abwarten.
-3. Das Verfahren für Tankentleerung und Reinigung durchführen (**Siehe Kapitel 10.1.5** — Schritte dort).
-4. Bei Bedarf die Maschine gemäß den Lagerbedingungen nach **Kapitel 4.2** schützen.
+1. Die Maschine nach **Kapitel 7.3.1** stillsetzen.
+2. Die Energieversorgung nach **Kapitel 7.3.3** abschalten.
+3. Das Abkühlen der Tanks abwarten.
+4. Das Verfahren für Tankentleerung und Reinigung durchführen (**Siehe Kapitel 10.1.5**).
+5. Kommt die Stillsetzung einer Lagerung gleich, die Maschine gemäß den Lagerbedingungen schützen (**Siehe Kapitel 4.2**).
 
 Bleiben die Tanks gefüllt, steigt das Risiko von Geruchsbildung, mikrobiellem Wachstum, Verhärtung der Ölschicht und Ablagerungen auf den Heizstäben.
 
 ---
 
-Zum Reinigungsverfahren siehe **Kapitel 10**.
+Reinigungsverfahren: **Siehe Kapitel 10**.

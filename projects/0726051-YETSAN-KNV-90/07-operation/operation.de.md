@@ -4,7 +4,7 @@ In diesem Kapitel werden das tägliche Einschalten, das Stillsetzen und der Proz
 
 Dieser Aufbau gibt dem Bediener die Flexibilität, die Prozessschritte nach Bedarf auszuwählen (z. B. nur Waschen oder Waschen + Trocknen). Im Gegenzug liegt die Einhaltung der richtigen Einschaltreihenfolge und der hardwareseitigen Verriegelungen (Tankfüllstand, Klappensicherheit, Not-Halt) in der Verantwortung des Bedieners; eine falsche Reihenfolge verringert die Prozessleistung und belastet die Ausrüstung. Der Aufbau des Bedienfelds ist in **Kapitel 3.4**, die Einstellungen in **Kapitel 6** und die Aufstellung sowie die Erstinbetriebnahme in **Kapitel 5** beschrieben.
 
-Prozessablauf: **Waschen → Spülen → Wasserabblasen (Blower) → Trocknen (Heißluft)**. Die Zykluszeit hängt von der Förderergeschwindigkeit (20–60 Hz) und den eingeschalteten Prozessen ab.
+Prozessablauf: **Waschen → Spülen → Wasserabblasen (Blower) → Trocknen (Heißluft)**. Für die Zykluszeit gibt es keinen festen Wert; sie hängt von der Frequenz des Förderers (20–60 Hz) und der Linienlänge ab und wird im Betrieb gemessen (**Siehe Kapitel 3.3.2**, **8.1.1**).
 
 | Parameter | Wert |
 | :--- | :--- |
@@ -32,6 +32,7 @@ Prozessablauf: **Waschen → Spülen → Wasserabblasen (Blower) → Trocknen (H
 | RESET (blau) aus | Not-Halt betätigt, Klappe offen oder Reset ausstehend | Ursache beseitigen; RESET drücken — **Siehe Kapitel 2.5** |
 | Betriebsleuchte (weiß) leuchtet | Die betreffende Funktion läuft | Normal |
 | Betriebsleuchte aus, Schalter ON | Verriegelung oder Schutzelement hat ausgelöst | **Siehe Kapitel 11.1** |
+| Ausgangsanzeige des Thermostats aus, Heizungsschalter ON | Solltemperatur erreicht; Thermostat hat die Heizung abgeschaltet | Normal — bei sinkender Temperatur schaltet die Heizung wieder zu |
 | TANK 1 / TANK 2 WASHING LEVEL (rot) | Wasserstand im Tank unzureichend | Tank manuell befüllen — **Siehe Kapitel 7.2.1** |
 
 Ausführliche Leuchtenbeschreibungen sind in **Kapitel 3.4.5** enthalten.
@@ -40,4 +41,4 @@ Ausführliche Leuchtenbeschreibungen sind in **Kapitel 3.4.5** enthalten.
 
 ---
 
-Zur Fehlerbehebung siehe **Kapitel 11**; zur Reinigung siehe **Kapitel 10**.
+Fehlerbehebung: **Siehe Kapitel 11**; Reinigung: **Siehe Kapitel 10**.

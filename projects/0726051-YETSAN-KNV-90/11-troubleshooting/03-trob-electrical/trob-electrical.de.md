@@ -1,8 +1,8 @@
 # 11.3 Elektrische Störungen
 
-Bei elektrischen Störungen vor jedem Eingriff in den Schaltschrank **LOTO** anwenden (**Kapitel 2.4**). Die Versorgungswerte sind in **Kapitel 3.3.3**, die Liste der Motoren/Heizungen und Schutzelemente in der Tabelle in **Kapitel 3.3.4** angegeben. Alle Arbeiten in diesem Kapitel sind qualifiziertem Elektropersonal vorbehalten.
+Bei elektrischen Störungen vor jedem Eingriff in den Schaltschrank LOTO anwenden (**Siehe Kapitel 2.4**). Die Versorgungswerte sind in **Kapitel 3.3.3**, die Liste der Motoren/Heizungen und Schutzelemente in der Tabelle in **Kapitel 3.3.4** angegeben. Alle Arbeiten in diesem Kapitel sind qualifiziertem Elektropersonal vorbehalten.
 
-**GEFAHR — Stromschlag:** Im Schaltschrank liegen 380 V an; bei ausgeschaltetem Hauptschalter bleiben die Eingangsklemmen unter Spannung. Der Zwischenkreis des Frequenzumrichters führt nach dem Ausschalten des Schalters noch mindestens 5 Minuten gefährliche Spannung.
+**GEFAHR — Stromschlag:** Im Schaltschrank liegen 380 V an. Auch bei ausgeschaltetem Hauptschalter stehen die Eingangsklemmen des Hauptschalters unter Spannung; der Zwischenkreis des Frequenzumrichters führt nach dem Abschalten noch einige Zeit gefährliche Spannung. Berührung führt zum Tod oder zu schweren Verletzungen. Vor Arbeiten im Schaltschrank LOTO anwenden; die Eingangsklemmen des Hauptschalters nicht berühren; vor Eingriffen am Frequenzumrichter die Wartezeit gemäß Umrichterhandbuch einhalten und die Spannungsfreiheit messen.
 
 ---
 
@@ -11,18 +11,21 @@ Bei elektrischen Störungen vor jedem Eingriff in den Schaltschrank **LOTO** anw
 | Parameter | Wert |
 | :--- | :--- |
 | Verhalten bei Phasenausfall / vertauschter Phase | Phasenfolgerelais **MKR-01** gibt keinen Ausgang frei; die Schaltschrankfunktionen schalten nicht ein (RESET-Leuchte leuchtet möglicherweise nicht) |
-| Motordrehrichtung | Pumpe, Ventilator, Blower mit Direktanlauf — abhängig von der Phasenfolge; Förderer über Frequenzumrichter — per Parameter fest eingestellt |
+| Motordrehrichtung | Pumpen-, Ventilator- und Blowermotoren laufen im Direktanlauf — die Drehrichtung hängt von der Phasenfolge ab; der Förderer wird über Frequenzumrichter angetrieben — die Richtung ist per Parameter fest eingestellt |
 
 **Diagnoseverfahren bei Phasenfehler**
 
-1. Maschine stillsetzen; Hauptschalter auf **OFF**; LOTO anwenden.
+1. Alle Funktionsschalter auf OFF stellen.
 2. Am Versorgungsschalter der Anlage das Vorhandensein aller drei Phasen und die Spannungssymmetrie messen.
-3. Schaltschranktür öffnen; Anzeige des Relais MKR-01 ablesen (LED für Phasenfolge / Phasenausfall — gemäß Relaisetikett).
-4. Bei vertauschter Phasenfolge bei ausgeschalteter und verriegelter Anlagenversorgung **zwei Phasen** in der Versorgungsleitung tauschen (**Kapitel 5.3.6**). Phasen niemals unter Spannung tauschen.
-5. Schaltschranktür schließen; LOTO aufheben; Hauptschalter auf ON; prüfen, dass MKR-01 den Ausgang freigibt und die RESET-Leuchte leuchtet.
-6. Eine Pumpe oder einen Ventilator kurz laufen lassen und die Drehrichtung mit dem Pfeil am Motor vergleichen.
+3. Die Anzeige des Relais MKR-01 ablesen (LED für Phasenfolge / Phasenausfall — gemäß Relaisetikett). Die Anzeige wird unter Spannung abgelesen; nur Elektrofachkraft.
+4. Bei vertauschter Phasenfolge LOTO anwenden und die Anlagenversorgung ausschalten und verriegeln (**Siehe Kapitel 2.4**).
+5. **Zwei Phasen** in der Versorgungsleitung tauschen (**Siehe Kapitel 5.3.6**). Phasen niemals unter Spannung tauschen.
+6. Schaltschranktür schließen; LOTO aufheben.
+7. Hauptschalter auf ON stellen; prüfen, dass MKR-01 den Ausgang freigibt.
+8. RESET drücken; prüfen, dass die RESET-Leuchte leuchtet.
+9. Eine Pumpe oder einen Ventilator kurz laufen lassen und die Drehrichtung mit dem Pfeil am Motor vergleichen.
 
-**Wiederholter Phasenfehler:** Qualität der Anlagenversorgung (lose Verbindung, Phasenunsymmetrie) oder Relaisstörung — Servicekriterium **Kapitel 11.2.2**.
+**Wiederholter Phasenfehler:** Qualität der Anlagenversorgung (lose Verbindung, Phasenunsymmetrie) oder Relaisstörung — Servicekriterium (**Siehe Kapitel 11.2.2**).
 
 ---
 
@@ -41,33 +44,37 @@ Bei elektrischen Störungen vor jedem Eingriff in den Schaltschrank **LOTO** anw
 **Diagnoseverfahren bei Motorstörung (MKŞ-Auslösung)**
 
 1. Den betreffenden Funktionsschalter auf **OFF** stellen.
-2. Bei Pumpen prüfen, dass Saug-/Druckventile geöffnet sind (**Kapitel 7.2.5**); ein geschlossenes Ventil überlastet die Pumpe.
-3. Hauptschalter ausschalten; **LOTO** anwenden.
-4. Schaltschranktür öffnen; ausgelösten MKŞ anhand der Tabelle in **Kapitel 11.1.3** ermitteln (Hebel in Stellung "0").
-5. Motor- und Kabelanschlüsse per Sichtprüfung kontrollieren; Wicklungswiderstand und Isolation des Motors messen.
-6. Bei Verdacht auf mechanisches Blockieren die Freigängigkeit von Welle/Kupplung von Hand prüfen (Ventilatorflügel, Pumpenlaufrad, Skimmerscheibe).
-7. Ursache beseitigen; MKŞ-Hebel in Stellung ON bringen.
-8. Schaltschranktür schließen; LOTO aufheben; RESET; Funktion kurz testen und den Motorstrom mit dem Zangenamperemeter gegen den Einstellbereich des MKŞ prüfen.
+2. Bei Pumpenmotoren prüfen, dass Saug-/Druckventile geöffnet sind (**Siehe Kapitel 7.2.5**); die Pumpe nicht gegen ein geschlossenes Ventil betreiben.
+3. LOTO anwenden (**Siehe Kapitel 2.4**).
+4. Schaltschranktür öffnen; ausgelösten MKŞ ermitteln (Hebel in Stellung "0" — **Siehe Kapitel 11.1.3**).
+5. Motor- und Kabelanschlüsse per Sichtprüfung kontrollieren.
+6. Wicklungswiderstand und Isolation des Motors messen.
+7. Bei Verdacht auf mechanisches Blockieren die Freigängigkeit von Welle/Kupplung von Hand prüfen (Ventilatorflügel, Pumpenlaufrad, Skimmerscheibe).
+8. Ursache beseitigen; MKŞ-Hebel in Stellung ON bringen.
+9. Schaltschranktür schließen; LOTO aufheben.
+10. RESET drücken; Funktionsschalter auf ON stellen und die Einheit kurz laufen lassen.
+11. Den Motorstrom mit dem Zangenamperemeter messen; der Strom darf den Nennstrom des Motors nicht überschreiten (**Siehe Kapitel 3.3.4**). Die Messung erfolgt unter Spannung; nur Elektrofachkraft.
 
 **Alarm des Förderer-Frequenzumrichters**
 
 | Parameter | Wert |
 | :--- | :--- |
 | Frequenzumrichter | Delta **VFD004EL21W-1** (0,4 kW) — im Schaltschrank |
-| Alarmcodes | Gemäß dem Code auf dem Display des Antriebs **Betriebsanleitung Delta VFD-EL** (**Siehe Kapitel 13.1**) |
+| Alarmcodes | Gemäß dem Code auf dem Display des Antriebs **Betriebsanleitung Delta VFD-EL** (**Siehe Kapitel 13.1.3**) |
 | Reset | Schalter CONVEYOR OFF → ON oder Taste STOP/RESET am Frequenzumrichter |
 
+**VORSICHT — Parameteränderung:** Falsche Umrichterparameter können dazu führen, dass der Förderer in falscher Richtung oder außerhalb des zulässigen Geschwindigkeitsbereichs läuft und die Antriebsgruppe beschädigt wird. Die Parameter des Frequenzumrichters nicht ändern; Drehrichtung, Min.-/Max.-Frequenz und Rampe sind Werkseinstellungen. Bei Störungen, die eine Parameteränderung erfordern, den Herstellerservice anfordern (**Siehe Kapitel 11.2.2**).
+
 1. Schalter CONVEYOR auf OFF stellen; Alarmcode auf dem Display des Frequenzumrichters notieren.
-2. Liegt eine Blockierung oder ein Werkstückstau auf der Linie vor, diesen unter LOTO beseitigen.
+2. Liegt eine Blockierung oder ein Werkstückstau auf der Linie vor, diesen unter LOTO beseitigen (**Siehe Kapitel 2.4**).
 3. Prüfen, dass das Potentiometer nicht unter 20 Hz steht (Überlastalarm).
 4. Bedeutung des Alarmcodes im Delta-Handbuch nachlesen; bei Überstrom/Überlast die mechanische Last, bei Versorgungsfehler die Sicherung A9F74106 und die Anschlüsse prüfen.
-5. Frequenzumrichter zurücksetzen; CONVEYOR ON; prüfen, dass der Drahtgurt sich vorwärts bewegt.
-
-**VORSICHT — Parameter:** Die Parameter des Frequenzumrichters nicht ändern; Drehrichtung, Min.-/Max.-Frequenz und Rampe sind Werkseinstellungen. Bei Störungen, die eine Parameteränderung erfordern, den Herstellerservice anfordern (**Kapitel 11.2.2**).
+5. Den Frequenzumrichter zurücksetzen.
+6. Schalter CONVEYOR auf ON stellen; prüfen, dass sich der Drahtgurt vorwärts bewegt.
 
 ![Schütze im Schaltschrank — Waschpumpe, Spülpumpe, Skimmer, Abluft](../../assets/11.3/kontaktorler.jpg)
 
-**Erwartetes Ergebnis:** MKŞ normal; Motor läuft; Betriebsleuchte an; Motorstrom im MKŞ-Bereich.
+**Erwartetes Ergebnis:** MKŞ normal; Motor läuft; Betriebsleuchte an; Motorstrom überschreitet den Nennstrom nicht.
 
 ---
 
@@ -85,34 +92,38 @@ Die Fehlerstrom-Schutzschalter im Schaltschrank sind mit den Etiketten **K.AKIM 
 
 ![Heizungssicherungen — Heizstäbe Waschen, Spülen, Trocknung](../../assets/11.3/isitici-sigortalari.jpg)
 
+**WARNUNG — Stromschlag:** Ein überbrückter oder außer Kraft gesetzter Fehlerstrom-Schutzschalter führt bei einem Isolationsfehler am Heizstab zu einem tödlichen Stromschlag. Den Fehlerstrom-Schutzschalter nicht überbrücken und nicht außer Kraft setzen; Eingriffe an Heizstäben und am Fehlerstrom-Schutzkreis nur durch qualifiziertes Elektropersonal.
+
 **Temperatur steigt nicht (Heizungsschalter ON)**
 
-1. Prüfen, dass die zugehörige **WASHING-LEVEL**-Leuchte aus ist; leuchtet sie rot, sperrt die Füllstandverriegelung die Heizung — Tank befüllen (**Kapitel 7.2.1**).
-2. Prüfen, dass der Sollwert des Thermostats über der aktuellen Temperatur liegt (**Kapitel 6.3.3**).
-3. Hauptschalter ausschalten; LOTO anwenden.
-4. Stellung des zugehörigen RCCB-Hebels (K.AKIM) und der Heizungssicherungen prüfen; bei Auslösung zum nachstehenden Fehlerstromverfahren übergehen.
-5. Prüfen, ob das Heizungsschütz anzieht (Spule 220 V AC), und den Thermostatausgang prüfen.
-6. Anschluss des Thermoelements (ETB30F06) und die Anzeige auf dem Thermostatdisplay prüfen; bei unplausibler Anzeige Störung des Thermoelements — **Kapitel 11.7.3**.
+1. Prüfen, dass die zugehörige **WASHING-LEVEL**-Leuchte aus ist; leuchtet sie rot, sperrt die Füllstandverriegelung die Heizung — Tank befüllen (**Siehe Kapitel 7.2.1**).
+2. Prüfen, dass der Sollwert des Thermostats über der aktuellen Temperatur liegt (**Siehe Kapitel 6.3.3**).
+3. Die Temperaturanzeige auf dem Thermostatdisplay prüfen; bei unplausibler Anzeige Störung des Thermoelements — **Siehe Kapitel 11.7.3**.
+4. LOTO anwenden (**Siehe Kapitel 2.4**).
+5. Stellung des zugehörigen RCCB-Hebels (K.AKIM) und der Heizungssicherungen prüfen; bei Auslösung zum nachstehenden Fehlerstromverfahren übergehen.
+6. Anschluss des Thermoelements (ETB30F06) prüfen.
+7. Sind RCCB und Sicherungen in Ordnung, LOTO aufheben; die Elektrofachkraft misst unter Spannung den Thermostatausgang und die Spulenspannung des Heizungsschützes (220 V AC) und prüft, ob das Schütz anzieht.
 
 **Fehlerstrom-Auslösung (RCCB)**
 
-1. Heizungsschalter auf OFF; Hauptschalter ausschalten; **LOTO** anwenden.
-2. Die vom ausgelösten RCCB versorgte Gruppe anhand des Schaltplans bestimmen (Tank 1, Tank 2 oder Trocknung).
-3. Jeden Heizstab der Gruppe nacheinander abklemmen; Isolationswiderstand Gehäuse–Anschluss des Heizstabs mit dem Isolationsmessgerät messen; den Heizstab mit niedriger Isolation (geplatzt/nass) ermitteln.
-4. Den defekten Heizstab durch **REZİSTANS KOMPLESİ 8000 W 50 cm** (07 15142) bzw. die Trocknungsheizung ersetzen (**Kapitel 13.3**); beim Wechsel eines Tankheizstabs wird der Tank entleert (**Kapitel 10.1.5**).
-5. Die Heizstab-Anschlusskästen unter dem Tank auf Feuchtigkeit und Leckagespuren prüfen; Feuchtigkeitsquelle beseitigen.
-6. RCCB einschalten; LOTO aufheben; Heizung testen.
-7. Wiederholt sich die Auslösung, **Service** anfordern (**Kapitel 11.2.2**).
+1. Heizungsschalter auf OFF stellen.
+2. LOTO anwenden (**Siehe Kapitel 2.4**).
+3. Die vom ausgelösten RCCB versorgte Gruppe anhand des Schaltplans bestimmen (Tank 1, Tank 2 oder Trocknung).
+4. Jeden Heizstab der Gruppe nacheinander abklemmen; Isolationswiderstand Gehäuse–Anschluss des Heizstabs mit dem Isolationsmessgerät messen; den Heizstab mit niedriger Isolation (geplatzt/nass) ermitteln.
+5. Muss ein Tankheizstab gewechselt werden, den Tank entleeren (**Siehe Kapitel 10.1.5**).
+6. Den defekten Heizstab durch **REZİSTANS KOMPLESİ 8000 W 50 cm** (07 15142) bzw. die Trocknungsheizung ersetzen (**Siehe Kapitel 13.3**).
+7. Die Heizstab-Anschlusskästen unter dem Tank auf Feuchtigkeit und Leckagespuren prüfen; Feuchtigkeitsquelle beseitigen.
+8. RCCB einschalten; LOTO aufheben.
+9. Wurde der Tank entleert, den Tank befüllen (**Siehe Kapitel 7.2.1**); anschließend die Heizung einschalten und testen.
+10. Wiederholt sich die Auslösung, **Service** anfordern (**Siehe Kapitel 11.2.2**).
 
 ![Unter dem Tank — Heizstab-Anschlussleitung](../../assets/11.3/tank-alti-rezistans-baglanti.jpg)
 
 **Thermostat hat den Sollwert erreicht, Heizen geht weiter (Störung 5)**
 
-1. Heizungsschalter auf OFF stellen. Steigt die Temperatur weiter, ist das Schütz verschweißt: Hauptschalter auf **OFF**.
-2. LOTO; verschweißtes Schütz (LC1K1610M7 oder LC1D25M7) ersetzen.
-3. Stoppt das Heizen bei Schalter OFF, überschreitet aber bei ON den Sollwert, ist der Thermostatausgang oder das Thermoelement defekt; Thermostat (GEMO DTH2) oder Thermoelement ersetzen.
-
-**WARNUNG — Elektrik:** Eingriffe an Heizstäben und am Fehlerstrom-Schutzkreis dürfen nur von qualifiziertem Elektropersonal vorgenommen werden. Das Überbrücken oder Außerkraftsetzen des Fehlerstrom-Schutzschalters birgt die Gefahr eines tödlichen Stromschlags und ist verboten.
+1. Heizungsschalter auf OFF stellen. Steigt die Temperatur weiter, ist das Schütz verschweißt: Hauptschalter sofort auf **OFF**.
+2. LOTO anwenden (**Siehe Kapitel 2.4**); verschweißtes Schütz (LC1K1610M7 oder LC1D25M7) ersetzen.
+3. Stoppt das Heizen bei Schalter OFF, überschreitet aber bei ON den Sollwert, ist der Thermostatausgang oder das Thermoelement defekt; unter LOTO den Thermostat (GEMO DTH2) oder das Thermoelement ersetzen.
 
 ---
 
@@ -126,4 +137,4 @@ Die Fehlerstrom-Schutzschalter im Schaltschrank sind mit den Etiketten **K.AKIM 
 | Steuersicherungen A9F74160 / A9F74110 | Diagnose Störung 6 | 11.1.2 |
 | Sicherheitsrelais G9SB — LED-Status | Wenn RESET nicht möglich | 11.7.1 |
 
-Kabelfarbcode, Klemmennummern und Schaltungsdetails sind im **Schaltplan** angegeben (Lieferpaket — **Siehe Kapitel 13.1**).
+Kabelfarbcode, Klemmennummern und Schaltungsdetails sind im **Schaltplan** angegeben (**Siehe Kapitel 13.1**).

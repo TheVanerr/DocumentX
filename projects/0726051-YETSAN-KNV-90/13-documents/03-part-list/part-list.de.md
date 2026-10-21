@@ -1,12 +1,12 @@
 # 13.3 Ersatzteilliste
 
-Die **Ersatzteilliste (BOM)** der Maschine ist in dieser Anleitung enthalten; sie wird **nicht** als separates Dokument geliefert. Die vollständige Liste ist in der Tabelle **13.3.1** angegeben — in anderen Kapiteln finden sich nur Zusammenfassungen oder Querverweise. Quelle: **KNV 90 7500 ÜRÜN AĞACI.xlsm** (Projektstammverzeichnis) und Schaltschrank-Materialliste; die SSOT-Kopie ist die Datei **0726051-YETSAN-KNV 90 PARCA LISTESI**.
+Die **Ersatzteilliste (BOM)** der Maschine ist in dieser Anleitung enthalten; sie wird **nicht** als separates Dokument geliefert. Die vollständige Liste ist in der Tabelle in **Kapitel 13.3.1** angegeben; in anderen Kapiteln finden sich nur Zusammenfassungen oder Querverweise. Die Liste wurde aus der Stückliste (Produktbaum) der Maschine und der Materialliste des Schaltschranks zusammengestellt.
 
-Die in der Stückliste (Produktbaum) enthaltenen Positionen **10 18815 DOZAJ POMPASI DOSATRON** und **10 04305 TEPE LAMBASI** werden an dieser Maschine **nicht verwendet** und wurden nicht in die Liste aufgenommen.
+Die Maschine besitzt **keine** Dosierpumpe und keine Signalsäule; diese Positionen sind nicht in der Liste enthalten.
 
 ---
 
-## 13.3.1 Ersatzteiltabelle (40 Positionen)
+## 13.3.1 Ersatzteiltabelle (39 Positionen)
 
 **Kategoriedefinitionen**
 
@@ -18,10 +18,9 @@ Die in der Stückliste (Produktbaum) enthaltenen Positionen **10 18815 DOZAJ POM
 
 **Bestellverfahren**
 
-1. **Bestellnummer** und **Teilebezeichnung** aus der Tabelle **13.3.1** entnehmen. Bei mit "—" gekennzeichneten Schaltschrankelementen den Schneider-Typencode verwenden.
-2. In der Bestellung Modell (**KNV-90**), Seriennummer (**0726051**) und Stückzahl angeben — siehe **1.3.4**.
+1. **Bestellnummer** und **Teilebezeichnung** aus den nachstehenden Tabellen entnehmen. Bei mit "—" gekennzeichneten Schaltschrankelementen den Schneider-Typencode verwenden.
+2. In der Bestellung Modell (**KNV-90**), Seriennummer (**0726051**) und Stückzahl angeben (**Siehe Kapitel 1.3.4**).
 3. Originalteile verwenden; Fremdteile stellen ein Garantie- und Sicherheitsrisiko dar.
-4. Mit [EKSİK] gekennzeichnete Lagermengen werden vor der Bestellung vom Anwender/der Freigabestelle ausgefüllt.
 
 ---
 
@@ -40,14 +39,13 @@ Die in der Stückliste (Produktbaum) enthaltenen Positionen **10 18815 DOZAJ POM
 | 07 08732 | EMİŞ FİLTRESİ KOMPLESİ 2" 1/2 | Verschleiß | 1 | Saugleitung | Periodischer Wechsel |
 | 07 15142 | REZİSTANS KOMPLESİ 8000 W 50 cm DÜZ DİKİŞSİZ | Kritisch | 2 | Tankheizung (7 Stk.) | Bei Ausfall wird die Temperatur nicht erreicht |
 | 07 16791 | SEVİYE SENSÖRÜ ÇAT.TİP VEGASWING 51 DİŞ ÇEKİLMİŞ | Kritisch | 1 | Tankfüllstand (2 Stk.) | Bei Ausfall ist die Füllstandsicherheit beeinträchtigt |
-| 10 00296 | PASLANMAZ SEVİYE BEKÇİSİ | Kritisch | 0 | Tankfüllstand-Sicherheit | [EKSİK] — keine separate Zeile in der Stückliste; gemäß Montage vor Ort |
+| 10 00296 | PASLANMAZ SEVİYE BEKÇİSİ | Kritisch | 1 | Tankfüllstand-Sicherheit | Sicherheit des Tankfüllstands |
 | 10 02976 | TERMOKUPL ETB30F06-5Ç | Kritisch | 1 | Heizungsregelung | Bei Ausfall ist die Heizung außer Betrieb |
 | 10 02634 | TERMOKUPL ETB30F06-4Ç | Kritisch | 1 | Heizungsregelung | Bei Ausfall ist die Heizung außer Betrieb |
 | 07 00669 | TERMOSTAT ADAPTÖRÜ KOMPLESİ | Empfohlen | 1 | Thermostatmontage am Tank | Wartung |
 | 10 01079 | NOZZLE 650.724.1C.CC | Verschleiß | 20 | Wasch-/Spüldüse (160 Stk.) | Verschleißteil |
-| 10 17538 | TEL BANT 850 mm (konveyör zinciri) | Verschleiß | 0 | Förderer | Verschleiß — Lagerbestand [EKSİK] |
+| 10 17538 | TEL BANT 850 mm (konveyör zinciri) | Verschleiß | 2 m | Förderer | Gurtreparatur / Verschleiß |
 | 07 17689 | KNV 90 7500 2B KURUTMA KOMPLESİ | Kritisch | 0 | Trocknungskammer | Bei Ausfall keine Trocknung |
-| 07 17687 | KNV 90 7500 2B SIZINTI TAVASI MONTAJ KOMPLESİ | Empfohlen | 0 | Untere Leckagewanne | Leckageerkennung |
 
 ![Waschkammer — Düsenrohre (Düse 10 01079)](../../assets/13.3/nozul-borulari.jpg)
 
@@ -57,8 +55,8 @@ Die in der Stückliste (Produktbaum) enthaltenen Positionen **10 18815 DOZAJ POM
 | :--- | :--- | :--- | :---: | :--- | :--- |
 | 10 07147 | SWITCH F3STGRNLPU21M1J8 OMRON MANYETİK KAPI | Kritisch | 2 | 7 Wartungsklappen (5 Stk. in der Stückliste) | Sicherheitskreis; bei Ausfall Stopp |
 | 10 02896 | BUTON ACİL P1EC400E40K SARI-SİYAH PL.KUTU | Kritisch | 2 | Not-Halt vor Ort | Sicherheit |
-| 10 00220 | EMNİYET RÖLESİ G9SB2002AACDC241 OMRON G9SX | Kritisch | 1 | Not-Halt-Kreis | Nicht überbrückbar |
-| 10 11531 | EMNİYET RÖLESİ G9SB2002AACDC241 OMRON G9SX (kapak) | Kritisch | 1 | Klappenschalterkreis | Nicht überbrückbar |
+| 10 00220 | EMNİYET RÖLESİ OMRON G9SB2002AACDC241 | Kritisch | 1 | Not-Halt-Kreis | Nicht überbrückbar |
+| 10 11531 | EMNİYET RÖLESİ OMRON G9SB2002AACDC241 (kapak) | Kritisch | 1 | Klappenschalterkreis | Nicht überbrückbar |
 | 10 16319 | İNVERTÖR Delta VFD004EL21W-1 0,4 kW (konveyör) | Kritisch | 0 | Förderer | Bei Ausfall stoppt der Förderer |
 | 10 00305 | SIGORTA KAÇAK AKIMLI A9N19642 4P | Empfohlen | 0 | RCCB Motorgruppe / Trocknung | Schutz |
 | 10 00304 | SIGORTA KAÇAK AKIMLI A9N19643 4P | Empfohlen | 0 | RCCB Tankheizstäbe | Schutz |
@@ -98,4 +96,4 @@ Die in der Stückliste (Produktbaum) enthaltenen Positionen **10 18815 DOZAJ POM
 | Störung — Klappenschalter / Füllstandsensor | **11.7.1**, **11.7.2** |
 | Ersatzteilbestellung | **1.3.4** |
 
-**Verschleißteile:** Die Zeilen der Kategorie **Verschleiß** (Filter, Düsen, Drahtgurt) umfassen die Verschleiß-/Verbrauchsteile.
+**HINWEIS:** Die Zeilen der Kategorie **Verschleiß** (Filter, Düsen, Drahtgurt) sind die Verschleiß- und Verbrauchsteile.

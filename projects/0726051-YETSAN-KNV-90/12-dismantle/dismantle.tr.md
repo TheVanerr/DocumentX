@@ -2,11 +2,11 @@
 
 Bu bölüm, **KNV 90 7500 2B** makinesinin güvenli demontajı, geçici/kalıcı devre dışı bırakılması ve hurda/geri dönüşüm prosedürlerini tanımlar. Demontaj yalnızca yetkili bakım ve elektrik personeli tarafından yapılmalıdır.
 
-Demontaj öncesi makine durdurulmalı, tanklar boşaltılmalı ve **LOTO prosedürü** uygulanmalıdır (**Bkz. Bölüm 2.4** — adımlar tekrarlanmaz). Sıvı tahliye ve tank temizliği **Bölüm 10.1.5**'e göre yapılır. Mekanik taşıma **Bölüm 4.1** kurallarına uyar (forklift; kaldırma noktaları üretici çizimine göre).
+Demontajdan önce makine durdurulmalı, tanklar boşaltılmalı ve **LOTO prosedürü** uygulanmalıdır (**Bkz. Bölüm 2.4**). Sıvı tahliyesi ve tank temizliği **Bölüm 10.1.5**'e göre yapılır. Taşıma **Bölüm 4.1** kurallarına uyar; taşıma ağırlığı ve kaldırma noktaları için **Bkz. Bölüm 3.5.4**.
 
 | Parametre | Değer |
 | :--- | :--- |
-| Tehlikeli madde (yağ / akü / kimyasal) | Akü **yok**. Yağlı proses suyu, yağ ayırıcıda toplanan yağ, konveyör gresi, redüktör yağı, temizlik deterjanı ve elektrik/elektronik atık — **Bölüm 10.1.8** / **12.3** |
+| Tehlikeli madde (yağ / akü / kimyasal) | Akü **yok**. Yağlı proses suyu, yağ ayırıcıda toplanan yağ, konveyör gresi, redüktör yağı, temizlik deterjanı ve elektrik/elektronik atık — **Bkz. Bölüm 10.1.8, 12.3** |
 | Hidrolik sistem | Bulunmamaktadır |
 | Bertaraf | Kullanıldığı ülkenin çevresel mevzuatı |
 
@@ -18,4 +18,4 @@ Demontaj öncesi makine durdurulmalı, tanklar boşaltılmalı ve **LOTO prosed�
 
 ---
 
-Servis iletişimi için bkz. **Bölüm 1.3**; parça listesi için bkz. **Bölüm 13.3**.
+Servis iletişimi için **Bkz. Bölüm 1.3**; parça listesi için **Bkz. Bölüm 13.3**.

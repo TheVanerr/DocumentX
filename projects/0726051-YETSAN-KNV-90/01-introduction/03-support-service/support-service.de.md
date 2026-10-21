@@ -17,7 +17,7 @@ Der Begriff **Hersteller** in dieser Anleitung bezeichnet das Unternehmen **CNK 
 | **E-Mail** | dolfin@dolfintr.com |
 | **Autorisierter Service / technischer Support** | CNK ELEKTRONİK MAKİNE SANAYİ AŞ — oben genannte Kontaktkanäle |
 
-Übermitteln Sie bei Service-, Ersatzteil- oder Gewährleistungsanfragen die Angaben des Typenschilds gemäß **Siehe Kapitel 1.3.2** vollständig. Ist das Typenschild unleserlich, erneuern Sie es vor dem Betrieb der Maschine oder wenden Sie sich an den Herstellerservice.
+Übermitteln Sie bei Service-, Ersatzteil- oder Gewährleistungsanfragen die Angaben des Typenschilds vollständig (**Siehe Kapitel 1.3.2**). Ist das Typenschild unleserlich, wenden Sie sich wegen eines Ersatzschilds an den Herstellerservice.
 
 ---
 
@@ -25,7 +25,7 @@ Der Begriff **Hersteller** in dieser Anleitung bezeichnet das Unternehmen **CNK 
 
 An jeder Maschine befindet sich ein am Gehäuse befestigtes **Typenschild** (Typ-/Kennzeichnungsschild). Das Schild ist die verbindliche Referenz für die korrekte Identifizierung der Maschine bei Serviceaufzeichnungen, Ersatzteilbestellungen, Gewährleistungsvorgängen und Fehlerdiagnose. Der Kunde bzw. das Betriebspersonal muss vor der Kontaktaufnahme mit dem Hersteller die Angaben auf dem Schild ablesen und der Anfrage beifügen.
 
-**Typische Position:** Am Schaltschrank oder am Hauptmaschinenkörper, von außen sichtbar und dauerhaft angebracht ([EKSİK] — genaue Position wird bei Lieferung bestätigt). Ist das Schild abgenutzt oder unleserlich, betreiben Sie die Maschine nicht, ohne ein Sicherheitsrisiko einzugehen; fordern Sie über die Kontaktkanäle in **Siehe Kapitel 1.3** ein Ersatzschild an.
+**Position:** Das Typenschild ist am Maschinengehäuse / am Schaltschrank von außen sichtbar angebracht. Ist das Schild abgenutzt oder unleserlich, fordern Sie über die Kontaktkanäle in **Kapitel 1.3.1** ein Ersatzschild an.
 
 Das Schild enthält die folgenden Felder:
 
@@ -36,14 +36,15 @@ Das Schild enthält die folgenden Felder:
 | **Handelsbezeichnung** | Vollständiger Maschinenname / Variante | KNV 90 7500 2B |
 | **Baujahr** | Herstellungsjahr | 2026 |
 | **Installierte Leistung / Versorgung** | Elektrische Daten (**Siehe Kapitel 3.3.3**) | 110 kW — 380 V / 50 Hz / 3-phasig |
-| **Herstellungs-/Versanddatum** | Datum des Werksversands | [EKSİK] |
+| **Herstellungs-/Versanddatum** | Datum des Werksversands | 2026 |
 
 **Kunde / Betreiber — Pflichtschritte vor dem Service**
 
-1. Das Typenschild lokalisieren; Seriennummer, Modell und Baujahr deutlich ablesen oder ein lesbares Foto anfertigen.
-2. Bei der Anfrage per Telefon oder E-Mail diese drei Angaben **in der ersten Zeile** nennen.
-3. Ist das Schild beschädigt oder unvollständig, die Seriennummer nicht schätzen; beim Hersteller die Erneuerung des Schilds oder die Prüfung der Aufzeichnungen anfordern.
-4. Bei Ersatzteilbestellungen die Seriennummer stets angeben (**Siehe Kapitel 1.3.4**).
+1. Das Typenschild der Maschine lokalisieren.
+2. Seriennummer, Modellcode und Baujahr ablesen oder ein lesbares Foto des Schilds anfertigen.
+3. Bei der Anfrage per Telefon oder E-Mail diese drei Angaben **in die erste Zeile** schreiben.
+4. Ist das Schild beschädigt oder unvollständig, die Seriennummer nicht schätzen; beim Hersteller die Erneuerung des Schilds oder die Prüfung der Aufzeichnungen anfordern.
+5. Bei Ersatzteilbestellungen die Seriennummer stets angeben (**Siehe Kapitel 1.3.4**).
 
 ---
 
@@ -53,13 +54,13 @@ Bereiten Sie vor der Serviceanfrage die folgenden Informationen vor. Fehlende Id
 
 1. **Angaben des Typenschilds:** Seriennummer (0726051), Modellcode (KNV-90) und Baujahr — Foto des Schilds beifügen (**Siehe Kapitel 1.3.2**).
 2. Das Problem kurz und klar beschreiben (z. B. „Schalter TANK 1 PUMP ein, Betriebsleuchte aus, Pumpe läuft nicht").
-3. Die **Leuchtenzustände** am Bedienfeld festhalten: welche Betriebsleuchten leuchten, ob die rote Leuchte TANK 1/2 WASHING LEVEL leuchtet, ob die RESET-Leuchte leuchtet (**Siehe Kapitel 3.4**).
-4. Ist im Schaltschrank ein **MKŞ** (GV2ME — Hebel in Stellung „0") oder ein **Fehlerstrom-Schutzschalter** ausgelöst, dessen Beschriftung notieren (z. B. „Q1 YIKAMA POM." — nur Elektrofachkraft, unter LOTO; **Siehe Kapitel 11.1.3**).
-5. Zeigt das Display des Förderer-Frequenzumrichters (Delta VFD004EL21W-1) einen Alarmcode, diesen notieren (**Siehe Kapitel 11.3**).
+3. Die **Leuchtenzustände** am Bedienfeld festhalten: welche Betriebsleuchten leuchten, ob die rote Leuchte TANK 1/2 WASHING LEVEL leuchtet, ob die RESET-Leuchte leuchtet (**Siehe Kapitel 3.4.5**).
+4. Ist im Schaltschrank ein **Motorschutzschalter (MKŞ)** (GV2ME — Hebel in Stellung „0") oder ein **Fehlerstrom-Schutzschalter** ausgelöst, dessen Beschriftung notieren (z. B. „Q1 YIKAMA POM."; **Siehe Kapitel 11.1.3**). Den Schaltschrank prüft ausschließlich eine Elektrofachkraft unter LOTO.
+5. Zeigt das Display des Förderer-Frequenzumrichters (Delta VFD004EL21W-1) einen Alarmcode, diesen notieren (**Siehe Kapitel 11.3.2**).
 6. Den Prozesszustand zum Zeitpunkt der Störung angeben (welcher Tank wurde geheizt, welche Funktionen waren eingeschaltet, wie lange lief die Maschine bereits).
 7. Bei mechanischen Schäden oder Leckagen deutliche Fotos oder Videos beifügen.
 
-Übermitteln Sie die Anfrage per Telefon oder E-Mail. Halten Sie die Maschine in Notfällen sicher an (**Siehe Kapitel 2.5**).
+Übermitteln Sie die Anfrage per Telefon oder E-Mail (**Siehe Kapitel 1.3.1**). Besteht eine akute Gefahr, betätigen Sie vor dem Erstellen der Anfrage den nächstgelegenen Not-Halt-Taster (**Siehe Kapitel 2.5**).
 
 ---
 
@@ -70,7 +71,7 @@ Bei Ersatzteilbestellungen ist die Verwendung von Originalteilen verpflichtend. 
 1. Ersatzteile mit den Bestellnummern der Teileliste in **Kapitel 13.3** bestellen.
 2. In der Bestellung **Bestellnummer**, **Teilebezeichnung**, **Stückzahl**, **Modellcode (KNV-90)** und **Seriennummer (0726051)** angeben.
 3. Ohne Freigabe des Herstellers keine Nachbau- oder Nichtstandardteile einbauen.
-4. Zu kritischen Teilen und empfohlenen Lagerbeständen **Siehe Kapitel 9.1.5, 9.1.6**.
+4. Zu kritischen Teilen und empfohlenen Lagerbeständen **Siehe Kapitel 9.1.5, 9.1.6, 13.3**.
 
 ---
 
@@ -78,14 +79,18 @@ Bei Ersatzteilbestellungen ist die Verwendung von Originalteilen verpflichtend. 
 
 Führen Sie vor dem Anruf beim autorisierten Service die folgenden Prüfungen durch. Viele Störungsmeldungen beruhen auf der Anlagenversorgung, dem Tankfüllstand oder einem fehlenden Reset; diese Prüfungen vermeiden unnötige Serviceeinsätze.
 
-1. Prüfen, dass der Hauptschalter (TMŞ) in Stellung **ON** steht und die Anlagenversorgung eingeschaltet ist (**Siehe Kapitel 3.3.3**).
-2. Prüfen, dass die Druckluftversorgung **6 bar** liefert und das Luftventil der Anlage geöffnet ist (**Siehe Kapitel 3.3.5, 6.5**).
-3. Prüfen, dass die Tanks manuell befüllt wurden; leuchten die roten Leuchten **TANK 1 / TANK 2 WASHING LEVEL**, den betreffenden Tank befüllen (**Siehe Kapitel 7.2**).
-4. Prüfen, dass alle (7) Not-Halt-Taster entriegelt und alle Wartungsklappen geschlossen sind; den **RESET**-Taster drücken, bis die blaue Leuchte aufleuchtet (**Siehe Kapitel 2.5**).
-5. Prüfen, dass die Saug-/Druckventile der Pumpen **geöffnet** sind (**Siehe Kapitel 7.2.5**).
-6. Prüfen, dass das Potentiometer der Fördergeschwindigkeit nicht unter 20 Hz gestellt wurde (**Siehe Kapitel 3.4.7**).
+1. Prüfen, dass die elektrische Versorgung der Anlage eingeschaltet ist (**Siehe Kapitel 3.3.3**).
+2. Prüfen, dass der Hauptschalter (TMŞ) in Stellung **ON** steht.
+3. Prüfen, dass das Druckluftventil der Anlage geöffnet ist.
+4. Prüfen, dass das Manometer des Luftreglers **6 bar** anzeigt (**Siehe Kapitel 3.3.5, 6.5**).
+5. Leuchten die roten Leuchten **TANK 1 / TANK 2 WASHING LEVEL**, den betreffenden Tank manuell befüllen (**Siehe Kapitel 7.2.1**).
+6. Prüfen, dass alle (7) Not-Halt-Taster entriegelt sind.
+7. Prüfen, dass alle Wartungsklappen geschlossen und mit dem Schalter ausgerichtet sind.
+8. Den **RESET**-Taster drücken, bis die blaue Leuchte aufleuchtet (**Siehe Kapitel 2.5**).
+9. Prüfen, dass die Saug-/Druckventile der Pumpen **geöffnet** sind (**Siehe Kapitel 7.2.5**).
+10. Prüfen, dass das Potentiometer der Fördergeschwindigkeit nicht unter 20 Hz eingestellt ist (**Siehe Kapitel 3.4.7**).
 
-Besteht das Problem weiterhin, eine Serviceanfrage stellen; der Anfrage die Typenschilddaten gemäß **Siehe Kapitel 1.3.2** beifügen.
+Besteht das Problem weiterhin, eine Serviceanfrage stellen und ihr die Typenschilddaten beifügen (**Siehe Kapitel 1.3.2, 1.3.3**).
 
 ---
 

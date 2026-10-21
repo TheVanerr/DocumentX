@@ -4,7 +4,7 @@
 
 Bu kullanım kılavuzu, **KNV 90 7500 2B** makinesinin ayrılmaz ve yasal olarak bağlayıcı bir parçasıdır. Kılavuz; makinenin güvenli, verimli ve amacına uygun kullanımını sağlamak üzere EN ISO 12100 (makine güvenliği — risk değerlendirmesi) ve EN ISO 20607 (kullanım kılavuzu — genel yazım ilkeleri) ilkelerine uygun hazırlanmıştır. Bu standartlar, makine güvenliği ve kılavuz içeriği konusunda uluslararası kabul görmüş asgari gereksinimleri tanımlar; bu nedenle kılavuzdaki talimatlar yalnızca öneri değil, işletme sorumluluğunun parçasıdır.
 
-**Kapsam:** **KNV 90 7500 2B** (model kodu **KNV-90**, seri no **0726051**, müşteri **YETSAN**) ve bu projeye teslim edilen standart donanım. Proje dışı opsiyon bulunmamaktadır; ileride opsiyon eklenirse kılavuz güncellenir.
+**Kapsam:** **KNV 90 7500 2B** (model kodu **KNV-90**, seri no **0726051**, müşteri **YETSAN**) ve bu projeye teslim edilen standart donanım. Proje dışı opsiyon yoktur.
 
 **Hedef okuyucu grupları:** Operatör, bakım personeli, kurulum personeli.
 
@@ -34,34 +34,34 @@ Bu kılavuzdaki metinler, teknik veriler, fotoğraflar ve şemalar; makinenin fa
 | **Model kodu** | KNV-90 |
 | **Seri numarası** | 0726051 |
 | **Üretim yılı** | 2026 |
-| **İmalat / sevk tarihi** | [EKSİK] |
+| **İmalat / sevk tarihi** | 2026 |
 | **Kılavuz revizyonu** | 00 |
 
-Üretici, AR-GE ve ürün iyileştirme kapsamında makine tasarımında ve dokümantasyonda önceden haber vermeksizin değişiklik yapma hakkını saklı tutar. Daha önce teslim edilmiş makineler için geriye dönük revizyon yükümlülüğü doğmaz. Bu kural, seri üretimde sürekli iyileştirmeyi mümkün kılar; ancak mevcut makinenizde yapılan değişiklikler yalnızca bu seri numarası için geçerlidir. Revizyon kontrolü, bir arıza veya kaza incelemesinde hangi talimatın geçerli olduğunun izlenebilmesi için zorunludur; bu nedenle eski revizyon kopyaları kullanımdan kaldırılmalıdır.
+Üretici, AR-GE ve ürün iyileştirme kapsamında makine tasarımında ve dokümantasyonda önceden haber vermeksizin değişiklik yapma hakkını saklı tutar. Daha önce teslim edilmiş makineler için geriye dönük revizyon yükümlülüğü doğmaz. Bu kural, seri üretimde sürekli iyileştirmeyi mümkün kılar; ancak mevcut makinenizde yapılan değişiklikler yalnızca bu seri numarası için geçerlidir. Revizyon kontrolü, bir arıza veya kaza incelemesinde hangi talimatın geçerli olduğunun izlenebilmesi için zorunludur; bu nedenle yeni revizyon geldiğinde eski revizyon kopyalarını kullanımdan kaldırın.
 
-Operatör paneli etiketleri **İngilizcedir** (TANK 1 HEATER, CONVEYOR, EMERGENCY STOP vb.); etiket anlamları **Bölüm 3.4**'te Türkçe karşılıklarıyla tanımlanır.
+Operatör paneli etiketleri **İngilizcedir** (TANK 1 HEATER, CONVEYOR, EMERGENCY STOP vb.); etiket anlamları Türkçe karşılıklarıyla tanımlanır (**Bkz. Bölüm 3.4, 14.2.2**).
 
 ---
 
 ## 1.1.3 Hedef kitle, personel kalifikasyonu ve sorumluluk dağılımı
 
-Makine; 380 V elektrik, +70 °C'ye kadar ısıtılan proses sıvısı, 6 bar basınçlı hava, hareketli konveyör ve döner fan/pompa mekanizmaları içerir. Bu enerji ve proses kaynakları, yanlış müdahalede ciddi yaralanma veya ekipman hasarına yol açabilir. Personel görevlendirmesinden, eğitimden ve yetki sınırlarından işveren (makineyi işleten kurum) sorumludur. Aşağıdaki roller, kılavuzda tanımlanan yetki ve yasakları netleştirir; rol dışı müdahale garanti kapsamını ve iş güvenliğini olumsuz etkiler.
+Makine; 380 V elektrik, +70 °C'ye kadar ısıtılan proses sıvısı, sıcak kurutma havası, 6 bar basınçlı hava, hareketli konveyör ve döner fan/pompa mekanizmaları içerir (**Bkz. Bölüm 3.3**). Bu enerji ve proses kaynakları, yanlış müdahalede ciddi yaralanma veya ekipman hasarına yol açabilir. Personel görevlendirmesinden, eğitimden ve yetki sınırlarından işveren (makineyi işleten kurum) sorumludur. Aşağıdaki roller, kılavuzda tanımlanan yetki ve yasakları netleştirir; rol dışı müdahale garanti kapsamını ve iş güvenliğini olumsuz etkiler.
 
 **Operatör**
 
 Operatör, makinenin günlük çalıştırılmasından sorumludur: tankların elle doldurulması, operatör panelindeki fonksiyon anahtarlarının (ısıtıcı, pompa, blower, kurutma, konveyör) açılıp kapatılması, konveyör hızının potansiyometre ile ayarlanması, parçaların sol girişten konveyöre yerleştirilmesi ve sağ çıkıştan alınması (**Bkz. Bölüm 7**). Operatör, acil durumda en yakın acil stop butonuna basar ve tehlike giderildikten sonra **RESET** ile makineyi hazır duruma alır (**Bkz. Bölüm 2.5**).
 
-Operatör; elektrik panosunu açmaz, bakım kapaklarını makine çalışırken kaldırmaz, kapak emniyet switch'lerini veya acil stop devresini baypas etmez, termostat dışındaki parametreleri (inverter, emniyet rölesi) değiştirmez. Operatör, işveren tarafından makine işleyişi, güvenli parça yükleme, anahtar mantığı ve acil durdurma prosedürleri konusunda eğitilmiş olmalıdır. Eğitim almadan anahtar açmak; tankta su yokken ısıtıcı çalıştırma girişimi, konveyörde sıkışma ve yanık riski doğurur.
+Operatör; elektrik panosunu açmaz, bakım kapaklarını makine çalışırken kaldırmaz, kapak emniyet switch'lerini veya acil stop devresini bypass etmez, termostat set değerleri dışındaki parametreleri (inverter, emniyet rölesi) değiştirmez. Operatör, işveren tarafından makine işleyişi, güvenli parça yükleme, anahtar mantığı ve acil durdurma prosedürleri konusunda eğitilmiş olmalıdır. Eğitimsiz operatörün anahtar açması; tankta su yokken ısıtıcı çalıştırma girişimi, konveyörde sıkışma ve yanık riski doğurur.
 
 **Bakım personeli (mekanik / elektrik / pnömatik)**
 
 Bakım personeli, periyodik bakım adımlarını uygular (**Bkz. Bölüm 9**), filtreleri temizler ve değiştirir (**Bkz. Bölüm 10**), aşınan parçaları orijinal yedek parça ile yeniler ve temel arıza teşhisi yapar (**Bkz. Bölüm 11**). Arıza oluştuğunda makineye müdahale eden birincil roldür. Enerji izolasyonu gerektiren tüm işlerde LOTO prosedürüne uymak zorunludur; LOTO adımları **Bölüm 2.4**'te tanımlanır ve bu bölümde tekrarlanmaz.
 
-Bakım personeli, ilgili teknik alanda yeterliliğe, LOTO prosedürüne hakimiyete ve uygun KKD kullanımına sahip olmalıdır (**Bkz. Bölüm 2.4, 2.6**). Elektrik panosu içi işler (MKŞ reset, kaçak akım rölesi, kontaktör, rezistans ölçümü) için ulusal mevzuata uygun yetkili elektrikçi gereklidir. Yetkisiz elektrik müdahalesi, elektrik çarpması ve yangın riski doğurur.
+Bakım personeli, ilgili teknik alanda mesleki yeterliliğe, LOTO prosedürüne hakimiyete ve **Bölüm 2.6**'da tanımlanan KKD'yi kullanma bilgisine sahip olmalıdır (**Bkz. Bölüm 2.4, 2.6**). Elektrik panosu içi işleri (MKŞ reset, kaçak akım rölesi, kontaktör, rezistans ölçümü) yalnızca ulusal mevzuata göre yetkilendirilmiş elektrikçi yapar. Yetkisiz elektrik müdahalesi, elektrik çarpması ve yangın riski doğurur.
 
 **Kurulum personeli**
 
-Kurulum personeli, makinenin forklift ile yerleştirilmesini, teraziye alınmasını ve elektrik, basınçlı hava ve su tesisat bağlantılarını gerçekleştirir (**Bkz. Bölüm 5**). Devreye alma testlerini ve güvenlik fonksiyon testlerini uygular (**Bkz. Bölüm 5.4–5.5**). İlk ayar ve kontrolleri yapar (**Bkz. Bölüm 6**). Alan gereksinimleri ve teknik tesisat değerleri **Bölüm 3**'te tanımlanır; kurulum sırasında bu değerler tekrarlanmaz, ilgili alt bölüme başvurulur.
+Kurulum personeli, makinenin forklift ile yerleştirilmesini, teraziye alınmasını ve elektrik, basınçlı hava ve su tesisat bağlantılarını gerçekleştirir (**Bkz. Bölüm 5**). Devreye alma testlerini ve güvenlik fonksiyon testlerini uygular (**Bkz. Bölüm 5.4–5.5**). İlk ayar ve kontrolleri yapar (**Bkz. Bölüm 6**). Alan gereksinimleri ve teknik tesisat değerleri **Bölüm 3.3** ve **3.5**'te tanımlanır; kurulum sırasında bu değerler tekrarlanmaz, ilgili alt bölüme başvurulur.
 
 Kurulum personeli, endüstriyel makine kurulum deneyimine, elektrik/pnömatik/su tesisatı bağlantı bilgisine ve forklift ile taşıma prosedürlerine hakimiyete sahip olmalıdır (**Bkz. Bölüm 4**). Hatalı kurulum; makinenin terazisiz çalışmasına, tank sızıntılarına, ters faz nedeniyle pompa ve fanların ters dönmesine ve güvenlik fonksiyonlarının devreye girmemesine neden olabilir.
 
@@ -75,7 +75,7 @@ Konveyör inverteri (Delta VFD004EL21W-1) parametreleri, emniyet rölesi (Omron 
 
 Bu kılavuz makinenin operasyonel bütünlüğünün ayrılmaz parçasıdır. Makineden ayrı tutulması veya erişilemez hâle getirilmesi, personelin güncel talimatlara ulaşamamasına ve yanlış müdahalelere yol açabilir.
 
-Kılavuzun güncel dijital kopyasına makine üzerindeki bilgi etiketi (QR kod vb.) veya üretici dijital kanalları üzerinden erişin (**Bkz. Bölüm 1.3**).
+Kılavuzun güncel revizyonunu veya ek kopyasını üretici servisinden talep edin (**Bkz. Bölüm 1.3.1**).
 
 Operatör ve bakım personelinin çalışma alanında kılavuza kesintisiz erişim sağlamak, işverenin yükümlülüğüdür. Basılı kopya kullanılan tesislerde sayfa bütünlüğünün korunması, kopyanın yağ, kimyasal ve nemden korunması ve yeni revizyonların fiziksel kopyaya entegre edilmesi işverenin sorumluluğundadır. Makinenin satılması, devredilmesi veya kiralanması hâlinde kılavuzun ve erişim bilgilerinin yeni kullanıcıya teslim edilmesi de işverenin yükümlülüğüdür.
 
@@ -90,7 +90,7 @@ Aşağıdaki durumlarda üretici sorumluluk kabul etmez; makine **garanti kapsam
 1. **Güvenlik cihazlarının devre dışı bırakılması:** Acil stop butonlarının, bakım kapağı manyetik switch'lerinin, emniyet rölelerinin veya tank seviye interlock'unun sökülmesi, köprülenmesi, mıknatıs ile kandırılması veya devre dışı bırakılması (**Bkz. Bölüm 2**). Bu müdahale, kapak açıkken pompa ve konveyörün çalışmaya devam etmesine ve ezilme/sıcak sıvı yaralanmasına yol açar.
 2. **Onaysız değişiklik:** Üretici yazılı onayı olmadan yapılan mekanik, elektrik (pano, inverter parametresi, röle devresi) veya tesisat değişiklikleri. Bu değişiklikler koruma elemanlarının (MKŞ, kaçak akım, sigorta) seçim değerlerini geçersiz kılabilir.
 3. **Amaç dışı malzeme ve kimyasal:** Onaylanmamış, asit bazlı veya paslanmaz çeliğe zarar veren temizlik maddeleri ile makinenin çalıştırılması (**Bkz. Bölüm 3.2.4, 10.1.7**); canlı organizmaların, gıda ve gıda ile temas eden yüzeylerin, medikal aletlerin işlenmesi (**Bkz. Bölüm 3.2.3**).
-4. **Limit aşımı:** Teknik plakada ve **Bölüm 3.3**'te tanımlanan elektrik, basınç, sıcaklık ve ortam limitlerinin aşılması; konveyör hızının 20–60 Hz aralığı dışına çıkarılması; tankta su yokken ısıtıcıların zorlanması.
+4. **Limit aşımı:** Makine kimlik etiketinde ve **Bölüm 3.3**'te tanımlanan elektrik, basınç, sıcaklık ve ortam limitlerinin aşılması; konveyör hızının 20–60 Hz aralığı dışına çıkarılması (**Bkz. Bölüm 3.4.7**); tankta su yokken ısıtıcıların zorlanması.
 5. **Orijinal olmayan yedek parça kullanımı** (**Bkz. Bölüm 1.3.4**); özellikle nozul, rezistans, seviye sensörü, emniyet switch'i ve emniyet rölesi muadilleri.
 6. **Bakım ihmali:** **Bölüm 9** takvimine ve **Bölüm 10** temizlik periyotlarına uyulmaması sonucu oluşan filtre tıkanması, pompa kuru çalışması, rezistans arızası ve korozyon.
 

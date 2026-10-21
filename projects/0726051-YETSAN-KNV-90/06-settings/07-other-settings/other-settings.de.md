@@ -7,7 +7,7 @@ An dieser Maschine gibt es **keine** weiteren Einstellpunkte außerhalb des Umfa
 | Thermostat-Sollwerte (TANK 1/2, DRYING 1/2) | 6.3.3 |
 | Fördergeschwindigkeit (20–60 Hz) | 6.3.4 |
 | Pneumatik-Druckregler (6 bar) | 6.5.1 |
-| Funktionen ein-/ausschalten (Heizung, Pumpe, Blower, Trocknung, Ölskimmer, Ölabscheider, Förderer) | 7.1 — Bedienfeld |
+| Funktionen ein-/ausschalten (Heizung, Pumpe, Blower, Trocknung, Ölskimmer, Ölabscheider, Förderer) | 7.1.6 — Bedienfeld |
 | Prozessaufzeichnung (produktbezogene Geschwindigkeit und Temperatur) | 8.2 |
 
 ---
@@ -23,4 +23,4 @@ Entsteht ein neuer Einstellbedarf (Signal an ein übergeordnetes System, Zusatzf
 
 ---
 
-Täglicher Betrieb siehe **Kapitel 7**; Kapazität siehe **Kapitel 8**.
+Täglicher Betrieb: **Siehe Kapitel 7**; Kapazität: **Siehe Kapitel 8**.

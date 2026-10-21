@@ -1,22 +1,21 @@
 # 13.1 Teslim edilen doküman listesi
 
-Makine ile birlikte teslim edilen teknik dokümanlar üç grupta toplanır: **ayrı evrak** (PDF dosyaları), **kılavuza gömülü** referanslar ve **üçüncü taraf bileşen kılavuzları**. Dosya adı ve revizyon bilgisi teslim paketindeki kapak sayfası veya dosya etiketinden okunmalıdır; DATA'da bu proje için dosya adı/revizyon kaydı bulunmamaktadır ([EKSİK]).
+Makine ile ilgili teknik dokümanlar üç grupta toplanır: makine ile birlikte verilen **ayrı evrak**, **kılavuza gömülü** referanslar ve talep halinde temin edilen **üçüncü taraf bileşen kılavuzları**. Ayrı evrakın dosya adı ve revizyonu **Bölüm 13.1.1** tablosunda verilmiştir.
 
-Sipariş ve servis taleplerinde makine kimlik etiketi bilgileri (**seri no 0726051**, model **KNV-90**) zorunludur — bkz. **Bölüm 1.3.2**.
+Sipariş ve servis taleplerinde makine kimlik etiketi bilgileri (**seri no 0726051**, model **KNV-90**) zorunludur (**Bkz. Bölüm 1.3.2**).
 
 ---
 
-## 13.1.1 Müşteriye teslim çizim paketi (ayrı evrak)
+## 13.1.1 Ayrı evrak olarak teslim edilen dokümanlar
 
 | # | Doküman | Dosya adı / rev | Kullanım alanı |
 | :---: | :--- | :--- | :--- |
-| 1 | **Elektrik şeması** | [EKSİK] — teslim paketi (PDF) | Pano, motor, ısıtıcı, emniyet devresi, MKŞ/RCCB/kontaktör–yük eşlemesi, BLOWER anahtar grupları — bkz. **3.4**, **5.3**, **11.3** |
-| 2 | **Makine layout çizimi** | [EKSİK] — teslim paketi (PDF) | Boyutlar, kurulum alanı, bağlantı noktaları (hava, su, drain, egzoz), kaldırma noktaları — bkz. **3.5**, **13.2** |
-| 3 | **P&ID şeması** | [EKSİK] — teslim edilip edilmediği doğrulanacak | Tank, pompa, filtre, nozul ve yağ ayırıcı hatları |
+| 1 | **AB Uygunluk Beyanı** (2006/42/AT Ek II-A) | — | Makine ile birlikte verilir; makinenin 2006/42/AT Makine Direktifi'ne uygunluk beyanı |
+| 2 | **Elektrik şeması** | Ek doküman olarak verilir | Pano, motor, ısıtıcı, emniyet devresi, MKŞ/RCCB/kontaktör–yük eşlemesi, BLOWER anahtar grupları — **Bkz. Bölüm 3.4, 5.3, 11.3** |
+| 3 | **Makine layout çizimi** | Ek doküman olarak verilir | Boyutlar, kurulum alanı, bağlantı noktaları (hava, su, drain, egzoz) — **Bkz. Bölüm 3.5, 13.2** |
+| 4 | **Garanti belgesi** | — | Makine ile birlikte verilir; garanti süresi ve koşulları — **Bkz. Bölüm 14.1** |
 
-**UYARI — Elektrik:** Elektrik şeması üzerinde çalışmadan önce makine enerjisini kesin ve **LOTO** uygulayın (**Bölüm 2.4**).
-
-Elektrik şemasının tam dosya adı/revizyonu teslim anında paket üzerinde belirtilir; kılavuzda sabit dosya adı tanımlanmamıştır.
+**NOT:** Elektrik şemasına göre pano içinde yapılacak her çalışmadan önce makine enerjisini kesin ve **LOTO** uygulayın (**Bkz. Bölüm 2.4**).
 
 ---
 
@@ -26,7 +25,7 @@ Aşağıdaki içerikler ayrı PDF olarak **teslim edilmez**; ilgili kılavuz bö
 
 | Doküman | Bölüm | Açıklama |
 | :--- | :--- | :--- |
-| Yedek parça listesi (BOM) | **13.3.1** | 40 kalem; sipariş kodu, kategori, stok önerisi — ayrıca proje kökü **0726051-YETSAN-KNV 90 PARCA LISTESI** |
+| Yedek parça listesi (BOM) | **13.3.1** | 39 kalem; sipariş kodu, kategori, stok önerisi |
 | Kritik parça özeti | **9.1.5** | Operasyonel kritik kalemler — tam liste **13.3** |
 | Tüketim/önerilen yedek parça | **9.1.6** | Bakım/temizlik tüketim kalemleri |
 | Arıza tablosu (belirti–neden–çözüm) | **11.1.2** | 13 arıza senaryosu |
@@ -47,10 +46,11 @@ Aşağıdaki içerikler ayrı PDF olarak **teslim edilmez**; ilgili kılavuz bö
 | Omron G9SB2002AACDC241 emniyet rölesi | Omron G9SB datasheet | LED durumları, reset mantığı (**11.7.1**) |
 | Omron F3STGRNLPU21M1J8 kapak switch'i | Omron datasheet | Montaj mesafesi, hizalama (**11.7.1**) |
 | VEGASWING 51 seviye sensörü | VEGA kullanım kılavuzu | Temizlik, montaj (**11.7.2**) |
+| Konveyör redüktörü XXC40/75 | Redüktör üreticisinin kullanım ve bakım dokümanı | Yağ tipi, miktarı, yağ kontrolü (**9.1.4**) |
 | Castrol Tribol GR 100-1 PD | Ürün güvenlik bilgi formu (SDS) | Gresleme, KKD (**9.1.4**) |
 | VEIDEC temizlik ürünleri | Ürün SDS ve kullanım talimatı | Temizlik (**10.1.7**) |
 
-Bu dokümanlar bileşen üreticilerinden temin edilir; teslim paketinde bulunup bulunmadığı [EKSİK].
+Bileşen kılavuzları (Delta VFD, GEMO DTH2, Omron G9SB ve F3S, VEGASWING 51, redüktör) talep halinde imalatçıdan temin edilir. Gres ve temizlik ürünlerinin güvenlik bilgi formları (SDS) ürün tedarikçisinden temin edilir.
 
 ---
 
@@ -58,17 +58,18 @@ Bu dokümanlar bileşen üreticilerinden temin edilir; teslim paketinde bulunup 
 
 | Doküman | Durum | Not |
 | :--- | :--- | :--- |
-| Pnömatik şema | [EKSİK] | Tek tüketici (yağ ayırıcı pompası); hat elektrik şeması ve saha tesisatı ile yönetilir |
+| Teknik dosya (2006/42/AT Ek VII) | **Teslim edilmez** | İmalatçıda saklanır; yalnız yetkili makamın gerekçeli talebinde sunulur. Güvenlik kategorisi / PL — **Bkz. Bölüm 2.1.3** |
+| Pnömatik şema | **Uygulanmaz** | Tek pnömatik tüketici (yağ ayırıcı diyafram pompası); hat **Bölüm 6.5**'te tarif edilmiştir |
 | Hidrolik şema | **Uygulanmaz** | Hidrolik sistem bulunmamaktadır |
-| Parça listesi (BOM) — ayrı PDF | **Uygulanmaz** | Gömülü — **13.3**; kaynak ürün ağacı **KNV 90 7500 ÜRÜN AĞACI.xlsm** |
+| P&ID | **Teslim edilmez** | Ayrı P&ID verilmez; proses akışı **Bölüm 3.1**'de |
+| Parça listesi (BOM) — ayrı evrak | **Uygulanmaz** | Kılavuza gömülü — **Bölüm 13.3** |
 | I/O listesi | **Uygulanmaz** | PLC yok |
 | PLC program yedek dosyası | **Uygulanmaz** | PLC yok |
 | HMI proje yedek dosyası | **Uygulanmaz** | HMI yok |
-| CE dosyası | [EKSİK] | Güvenlik kategorisi doğrulaması için gerekli — talep halinde imalatçı |
-| Kalibrasyon sertifikaları | [EKSİK] | Talep halinde imalatçı |
-| Genel montaj çizimi | [EKSİK] | Layout ayrı evrak olarak verilir |
-| Kaldırma noktaları çizimi | [EKSİK] | Taşıma için zorunlu — **4.1**; yoksa üretici servisi ile görüşün |
-| Zemin ankraj çizimi | [EKSİK] | Ayarlanabilir ayak — **5.2** |
+| Kalibrasyon sertifikaları | **Teslim edilmez** | Teslim kapsamında değildir; talep halinde imalatçıdan |
+| Genel montaj çizimi | **Teslim edilmez** | Ayrı evrak olarak verilmez; 3D görünüşler **Bölüm 3.1**'de |
+| Kaldırma noktaları çizimi | **Teslim edilmez** | Kaldırma yöntemi ve forklift çatal konumu — **Bkz. Bölüm 3.5.4** |
+| Zemin ankraj çizimi | **Uygulanmaz** | Makine ayarlanabilir ayaklar üzerinde, ankrajsız kurulur |
 
 ---
 
@@ -76,13 +77,13 @@ Bu dokümanlar bileşen üreticilerinden temin edilir; teslim paketinde bulunup 
 
 | İhtiyaç | Bakılacak doküman / bölüm |
 | :--- | :--- |
-| Kurulum alanı ve yerleşim | Layout PDF + **3.5** |
+| Kurulum alanı ve yerleşim | Layout çizimi + **3.5** |
 | Elektrik bağlantısı | Elektrik şeması + **3.3.3**, **5.3.3** |
 | Hangi MKŞ / RCCB hangi yükü besliyor | Elektrik şeması + **11.1.3**, **11.3.3** |
 | BLOWER 1/2 anahtar–motor eşlemesi | Elektrik şeması |
-| Egzoz fanı çalışma koşulu | Elektrik şeması |
+| Egzoz fanı çalışma koşulu | **3.4.3** + elektrik şeması |
 | Arıza teşhisi | **11.1.2** + elektrik şeması |
 | İnverter alarm kodu | Delta kılavuzu + **11.3.2** |
 | Termostat set değeri | GEMO kılavuzu + **6.3.3** |
 | Yedek parça siparişi | **13.3.1** + **1.3.4** |
-| Enerji izolasyonu | **2.4** (LOTO — tek kaynak) |
+| Enerji izolasyonu | **2.4** (LOTO prosedürü) |

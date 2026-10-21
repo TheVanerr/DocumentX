@@ -28,16 +28,19 @@ Tipik günlük akış:
 
 | Parametre | Değer |
 | :--- | :--- |
-| Vardiya devir teslim maddeleri | Tank seviyesi, sıcaklık, filtre durumu, acil stop/reset durumu — [EKSİK] müşteri prosedürü |
+| Vardiya devir teslim maddeleri | Aşağıdaki standart liste — müşteri vardiya formunu bu maddelere göre hazırlar |
 
-Devir teslimde en az aşağıdaki bilgiler aktarılmalıdır; müşteri kendi formunu bu maddelerle oluşturur:
+Devir teslimde en az aşağıdaki bilgiler aktarılır:
 
-1. Tank 1 ve Tank 2 su seviyesi ve WASHING LEVEL lamba durumu.
-2. Termostat anlık ve set sıcaklıkları.
-3. Ön filtre ve torba filtre son temizlik zamanı; tıkanma belirtisi.
-4. Vardiya içinde oluşan duruşlar (acil stop, kapak, MKŞ trip) ve alınan aksiyon.
-5. Konveyör hızı (potansiyometre konumu / Hz) ve işlenen parça tipi.
-6. Sızıntı, anormal ses veya koku gözlemi.
+1. TANK 1 / TANK 2 WASHING LEVEL lamba durumu ve tank seviyesi.
+2. Tank ve kurutma termostatlarının set ve gerçek sıcaklıkları (TANK 1, TANK 2, DRYING 1, DRYING 2).
+3. Günlük ön filtre temizliğinin yapılıp yapılmadığı.
+4. Vardiyada oluşan MKŞ / kaçak akım trip'leri ve acil stop kullanımları.
+5. RESET / hazır durumu.
+6. Yağ sıyırıcı ve yağ ayırıcı durumu.
+7. Sızıntı veya anormal ses gözlemi.
+8. Konveyör hızı (potansiyometre konumu).
+9. Bekleyen bakım işleri.
 
 ---
 
@@ -53,8 +56,8 @@ Devir teslimde en az aşağıdaki bilgiler aktarılmalıdır; müşteri kendi fo
 | 6 | Ön filtreler önceki vardiyada temizlenmiş | ☐ |
 | 7 | Görünür sızıntı yok | ☐ |
 
-Bu liste **Bölüm 7.2** başlatma ön koşullarının özetidir. Planlı bakım veya temizlik duruşunda makine durdurulmalı; enerji izolasyonu gerektiren işlerde **LOTO** uygulanmalıdır (**Bkz. Bölüm 2.4**). Periyodik bakım maddeleri **Bölüm 9.1.3**'te verilmiştir.
+Bu liste, başlatma ön koşullarının özetidir (**Bkz. Bölüm 7.2.1**). Planlı bakım veya temizlik duruşunda makineyi durdurun; enerji izolasyonu gerektiren işlerde **LOTO** uygulayın (**Bkz. Bölüm 2.4**). Periyodik bakım maddeleri için **Bkz. Bölüm 9.1.3**.
 
 ---
 
-Bakım takvimi için bkz. **Bölüm 9**.
+Bakım takvimi için **Bkz. Bölüm 9**.

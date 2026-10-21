@@ -1,12 +1,12 @@
 # 13.3 Parça listesi
 
-Makine **yedek parça listesi (BOM)** bu kılavuza gömülüdür; ayrı evrak olarak **teslim edilmez**. Tam liste **13.3.1** tablosunda verilmiştir — başka bölümlerde yalnızca özet veya çapraz referans bulunur. Kaynak: **KNV 90 7500 ÜRÜN AĞACI.xlsm** (proje kökü) ve pano malzeme listesi; SSOT kopyası **0726051-YETSAN-KNV 90 PARCA LISTESI** dosyasıdır.
+Makine **yedek parça listesi (BOM)** bu kılavuza gömülüdür; ayrı evrak olarak **teslim edilmez**. Tam liste **Bölüm 13.3.1** tablosunda verilmiştir; diğer bölümlerde yalnız özet veya çapraz referans bulunur. Liste, makinenin ürün ağacından ve elektrik panosu malzeme listesinden derlenmiştir.
 
-Ürün ağacında yer alan **10 18815 DOZAJ POMPASI DOSATRON** ve **10 04305 TEPE LAMBASI** kalemleri bu makinede **kullanılmamaktadır** ve listeye alınmamıştır.
+Makinede dozaj pompası ve tepe lambası **bulunmaz**; bu kalemler listede yer almaz.
 
 ---
 
-## 13.3.1 Yedek parça tablosu (40 kalem)
+## 13.3.1 Yedek parça tablosu (39 kalem)
 
 **Kategori tanımları**
 
@@ -18,10 +18,9 @@ Makine **yedek parça listesi (BOM)** bu kılavuza gömülüdür; ayrı evrak ol
 
 **Sipariş prosedürü**
 
-1. **13.3.1** tablosundan **sipariş kodu** ve **parça adını** alın. "—" ile işaretli pano elemanlarında Schneider tip kodunu kullanın.
-2. Siparişte model (**KNV-90**), seri no (**0726051**) ve adet belirtin — bkz. **1.3.4**.
+1. Aşağıdaki tablolardan **sipariş kodu** ve **parça adını** alın. "—" ile işaretli pano elemanlarında Schneider tip kodunu kullanın.
+2. Siparişte model (**KNV-90**), seri no (**0726051**) ve adet belirtin (**Bkz. Bölüm 1.3.4**).
 3. Orijinal parça kullanın; muadil parça garanti ve güvenlik riski oluşturur.
-4. [EKSİK] işaretli stok miktarları sipariş öncesi kullanıcı/onay tarafından doldurulur.
 
 ---
 
@@ -40,14 +39,13 @@ Makine **yedek parça listesi (BOM)** bu kılavuza gömülüdür; ayrı evrak ol
 | 07 08732 | EMİŞ FİLTRESİ KOMPLESİ 2" 1/2 | Tüketim | 1 | Emiş hattı | Periyodik değişim |
 | 07 15142 | REZİSTANS KOMPLESİ 8000 W 50 cm DÜZ DİKİŞSİZ | Kritik | 2 | Tank ısıtma (7 ad) | Arızada sıcaklık sağlanamaz |
 | 07 16791 | SEVİYE SENSÖRÜ ÇAT.TİP VEGASWING 51 DİŞ ÇEKİLMİŞ | Kritik | 1 | Tank seviye (2 ad) | Arızada seviye güvenliği bozulur |
-| 10 00296 | PASLANMAZ SEVİYE BEKÇİSİ | Kritik | 0 | Tank seviye güvenlik | [EKSİK] — ürün ağacında ayrı satır yok; saha montajına göre |
+| 10 00296 | PASLANMAZ SEVİYE BEKÇİSİ | Kritik | 1 | Tank seviye güvenlik | Tank seviye güvenliği |
 | 10 02976 | TERMOKUPL ETB30F06-5Ç | Kritik | 1 | Isıtma kontrol | Arızada ısıtma devre dışı |
 | 10 02634 | TERMOKUPL ETB30F06-4Ç | Kritik | 1 | Isıtma kontrol | Arızada ısıtma devre dışı |
 | 07 00669 | TERMOSTAT ADAPTÖRÜ KOMPLESİ | Önerilen | 1 | Tank termostat montajı | Bakım |
 | 10 01079 | NOZZLE 650.724.1C.CC | Tüketim | 20 | Yıkama/durulama nozul (160 ad) | Aşınan parça |
-| 10 17538 | TEL BANT 850 mm (konveyör zinciri) | Tüketim | 0 | Konveyör | Aşınma — stok [EKSİK] |
+| 10 17538 | TEL BANT 850 mm (konveyör zinciri) | Tüketim | 2 m | Konveyör | Bant onarımı / aşınma |
 | 07 17689 | KNV 90 7500 2B KURUTMA KOMPLESİ | Kritik | 0 | Kurutma hücresi | Arızada kurutma yok |
-| 07 17687 | KNV 90 7500 2B SIZINTI TAVASI MONTAJ KOMPLESİ | Önerilen | 0 | Alt sızıntı tavası | Sızıntı algılama |
 
 ![Yıkama hücresi — nozul kolektörleri (10 01079 nozul)](../../assets/13.3/nozul-borulari.jpg)
 
@@ -57,8 +55,8 @@ Makine **yedek parça listesi (BOM)** bu kılavuza gömülüdür; ayrı evrak ol
 | :--- | :--- | :--- | :---: | :--- | :--- |
 | 10 07147 | SWITCH F3STGRNLPU21M1J8 OMRON MANYETİK KAPI | Kritik | 2 | 7 bakım kapağı (ağaçta 5 ad) | Güvenlik zinciri; arızada stop |
 | 10 02896 | BUTON ACİL P1EC400E40K SARI-SİYAH PL.KUTU | Kritik | 2 | Saha acil stop | Güvenlik |
-| 10 00220 | EMNİYET RÖLESİ G9SB2002AACDC241 OMRON G9SX | Kritik | 1 | Acil stop zinciri | Bypass edilemez |
-| 10 11531 | EMNİYET RÖLESİ G9SB2002AACDC241 OMRON G9SX (kapak) | Kritik | 1 | Kapak switch zinciri | Bypass edilemez |
+| 10 00220 | EMNİYET RÖLESİ OMRON G9SB2002AACDC241 | Kritik | 1 | Acil stop zinciri | Bypass edilemez |
+| 10 11531 | EMNİYET RÖLESİ OMRON G9SB2002AACDC241 (kapak) | Kritik | 1 | Kapak switch zinciri | Bypass edilemez |
 | 10 16319 | İNVERTÖR Delta VFD004EL21W-1 0,4 kW (konveyör) | Kritik | 0 | Konveyör | Arızada konveyör durur |
 | 10 00305 | SIGORTA KAÇAK AKIMLI A9N19642 4P | Önerilen | 0 | Motor grubu / kurutma RCCB | Koruma |
 | 10 00304 | SIGORTA KAÇAK AKIMLI A9N19643 4P | Önerilen | 0 | Tank rezistans RCCB | Koruma |
@@ -98,4 +96,4 @@ Makine **yedek parça listesi (BOM)** bu kılavuza gömülüdür; ayrı evrak ol
 | Arıza — kapak switch'i / seviye sensörü | **11.7.1**, **11.7.2** |
 | Yedek parça siparişi | **1.3.4** |
 
-**Aşınan parça:** kategori = **Tüketim** satırları (filtreler, nozul, tel bant) aşınan/tüketilen parçaları kapsar.
+**NOT:** **Tüketim** kategorisindeki satırlar (filtreler, nozul, tel bant) aşınan ve tüketilen parçalardır.

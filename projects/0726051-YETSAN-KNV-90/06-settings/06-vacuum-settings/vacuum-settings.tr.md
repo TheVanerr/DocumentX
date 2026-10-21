@@ -1,6 +1,6 @@
 # 6.6 Vakum ayarları
 
-**KNV 90 7500 2B** makinesinde **vakum sistemi bulunmamaktadır**. Parça tutma, taşıma veya proses basamakları vakum ile yapılmaz; parça akışı zincirli konveyör ile, su sıyırma ve kurutma ise blower ve fanlarla (basınçlı hava akımı) sağlanır.
+**KNV 90 7500 2B** makinesinde **vakum sistemi bulunmamaktadır**. Parça tutma, taşıma veya proses basamakları vakum ile yapılmaz; parça akışı zincirli konveyör ile, su sıyırma ve kurutma ise blower ve fanların ürettiği hava akımı ile sağlanır.
 
 Operatör veya bakım personelinin yapacağı vakum basıncı, vakum pompası veya vakum valfi ayarı **yoktur**. Devreye alma ön koşullarında vakum bağlantısı aranmaz (**Bkz. Bölüm 7.2.3**).
 

@@ -1,6 +1,6 @@
 # 8.2 Spezifische Einrichtung und produktspezifische Konfiguration
 
-Die Maschine besitzt **kein mechanisches Formatwechselverfahren** (**Siehe Kapitel 6.1.5**) und **keinen Rezeptspeicher** (kein HMI/keine SPS). Produkt- und Prozessunterschiede werden über drei Einstellungen geführt: **Förderergeschwindigkeit** (Potentiometer), **Thermostat-Sollwerte** (vier GEMO DTH2) und **Kombination der eingeschalteten Funktionen** (Schalter am Bedienfeld). Für jeden Produkttyp wird der konsistente Satz dieser drei Einstellungen vom Anwender schriftlich aufgezeichnet und als „Rezept" verwendet.
+Die Maschine besitzt **kein mechanisches Formatwechselverfahren** (**Siehe Kapitel 6.1.5**) und **keinen Rezeptspeicher** (kein HMI/keine SPS). Produkt- und Prozessunterschiede werden über drei Einstellungen geführt: **Fördergeschwindigkeit** (Potentiometer), **Thermostat-Sollwerte** (vier GEMO DTH2) und **Kombination der eingeschalteten Funktionen** (Schalter am Bedienfeld). Für jeden Produkttyp wird der konsistente Satz dieser drei Einstellungen vom Anwender schriftlich aufgezeichnet und als „Rezept" verwendet.
 
 Die Rezeptnummerierung und die Zuordnung zu den Produkten werden **vom Anwender** festgelegt.
 
@@ -12,7 +12,7 @@ Die Rezeptnummerierung und die Zuordnung zu den Produkten werden **vom Anwender*
 | :--- | :--- | :--- |
 | Wasch-/Spülwassertemperatur | Thermostate TANK 1 / TANK 2 HEATER | 6.3.3, 3.4.4 |
 | Trocknungslufttemperatur | Thermostate DRYING 1 / DRYING 2 HEATER | 6.3.3 |
-| Förderergeschwindigkeit (Kontaktzeit) | Potentiometer — 20–60 Hz | 6.3.4 |
+| Fördergeschwindigkeit (Kontaktzeit) | Potentiometer — 20–60 Hz | 6.3.4 |
 | Waschen, Spülen, Blower, Trocknen on/off | Schalter am Bedienfeld | 7.1.6 |
 | Einsatz von Ölskimmer / Ölabscheider | Schalter am Bedienfeld | 3.1.5 |
 
@@ -24,15 +24,21 @@ Da die Einstellungen nicht in der Maschine gespeichert werden, werden die Werte 
 
 Bei der Inbetriebnahme eines neuen Werkstücktyps:
 
-1. Die Linie leerfahren; den Schalter **CONVEYOR** auf OFF stellen (**Siehe Kapitel 7.3.1**).
-2. An den Thermostaten die Ziel-Sollwerte eingeben (TANK 1, TANK 2, DRYING 1, DRYING 2 — **Siehe Kapitel 6.3.3**); die Wassertemperatur darf +70 °C nicht überschreiten.
-3. Die für das Werkstück erforderlichen Prozessfunktionen festlegen (Waschen, Spülen, Blower, Trocknen); nicht benötigte Funktionen ausgeschaltet lassen.
-4. Die Förderergeschwindigkeit als Startwert im mittleren Bereich (z. B. 40 Hz) einstellen.
-5. Warten, bis die Tanks die Solltemperatur erreicht haben; die Funktionen in der Reihenfolge nach **Kapitel 7.2.2** einschalten.
-6. Mit einem Musterwerkstück eine Testwäsche durchführen; am Ausgang das Kriterium für Reinigung und Trocknung beurteilen.
-7. Ist das Ergebnis unzureichend, die Geschwindigkeit verringern oder die Temperatur erhöhen; tritt das Werkstück nass aus, prüfen, ob Blower/Trocknung eingeschaltet sind und die Trocknungstemperatur ausreicht. Den Test wiederholen.
-8. Die freigegebene Geschwindigkeit (Hz), die Sollwerte und die Funktionskombination mit Produktname/-nummer in das Formular nach **Kapitel 8.2.3** eintragen.
-9. Den Beladeabstand und die Zielstückzahl pro Stunde in die Tabelle nach **Kapitel 8.1.3** eintragen.
+1. Die Linie leerfahren.
+2. Den Schalter **CONVEYOR** auf OFF stellen (**Siehe Kapitel 7.3.1**).
+3. An den Thermostaten die Ziel-Sollwerte eingeben (TANK 1, TANK 2, DRYING 1, DRYING 2 — **Siehe Kapitel 6.3.3**); das Badwasser darf +70 °C und die Trocknungsluft die Temperaturbeständigkeit des Werkstückmaterials nicht überschreiten.
+4. Die für das Werkstück erforderlichen Prozessfunktionen (Waschen, Spülen, Blower, Trocknen) festlegen; nicht benötigte Funktionen bleiben ausgeschaltet.
+5. Die Fördergeschwindigkeit als Startwert im mittleren Bereich (z. B. 40 Hz) einstellen.
+6. Warten, bis die Tanks die Solltemperatur erreicht haben.
+7. Die Funktionen in der Einschaltreihenfolge einschalten (**Siehe Kapitel 7.2.2**).
+8. Mit einem Musterwerkstück eine Testwäsche durchführen.
+9. Am Ausgang das Kriterium für Reinigung und Trocknung beurteilen.
+10. Ist das Reinigungsergebnis unzureichend, die Fördergeschwindigkeit verringern oder die Tank-Solltemperatur innerhalb der Grenze von +70 °C erhöhen.
+11. Tritt das Werkstück nass aus, prüfen, ob Blower- und Trocknungsfunktionen eingeschaltet sind, und die Trocknungs-Sollwerte prüfen.
+12. Die Schritte 8–11 wiederholen, bis das Kriterium erfüllt ist.
+13. Die Zykluszeit bei der freigegebenen Geschwindigkeit messen (**Siehe Kapitel 8.1.1**).
+14. Die freigegebene Geschwindigkeit (Hz / Potentiometerstellung), die Sollwerte und die Funktionskombination mit Produktname/-nummer in das Formular nach **Kapitel 8.2.3** eintragen.
+15. Den Beladeabstand, die gemessene Zykluszeit und die Zielstückzahl pro Stunde in die Tabelle nach **Kapitel 8.1.3** eintragen.
 
 **Erwartetes Ergebnis:** Das Werkstück erfüllt das Zielkriterium für Reinigung und Trocknung; die Zielstückzahl pro Stunde wird erreicht.
 
@@ -59,7 +65,8 @@ Vorlage für einen Beispiel-Parametersatz (vom Anwender auszufüllen):
 | TANK 2 Solltemperatur (°C) | | | |
 | DRYING 1 Solltemperatur (°C) | | | |
 | DRYING 2 Solltemperatur (°C) | | | |
-| Förderergeschwindigkeit (Hz) | | | |
+| Fördergeschwindigkeit (Hz / Potentiometerstellung) | | | |
+| Gemessene Zykluszeit (s) | | | |
 | Waschen / Spülen / Blower 1-2 / Trocknen 1-2 | on/off | on/off | on/off |
 | Ölskimmer / Ölabscheider | on/off | on/off | on/off |
 | Beladeabstand (Werkstücke/min) | | | |
@@ -83,7 +90,7 @@ Die Rezeptnummerierung und die Zuordnung Produkt–Parameter sind vom Anwender f
 | :---: | :--- | :---: |
 | 1 | Zum Produkttyp passender Parametersatz definiert und aufgezeichnet | ☐ |
 | 2 | Thermostat-Sollwerte auf die Zielwerte eingegeben | ☐ |
-| 3 | Förderergeschwindigkeit im Bereich 20–60 Hz auf den aufgezeichneten Wert eingestellt | ☐ |
+| 3 | Fördergeschwindigkeit im Bereich 20–60 Hz auf den aufgezeichneten Wert eingestellt | ☐ |
 | 4 | Prozessfunktionen korrekt on/off | ☐ |
 | 5 | Testwäsche mit Musterwerkstück durchgeführt — Abnahmekriterium OK | ☐ |
 | 6 | Ergebnis des Kapazitätstests in die Tabelle eingetragen (Kapitel 8.1.3) | ☐ |
@@ -92,4 +99,4 @@ Die Rezeptnummerierung und die Zuordnung Produkt–Parameter sind vom Anwender f
 
 ---
 
-Zum Betrieb siehe **Kapitel 7**; zu den Kapazitätsgrenzen siehe **Kapitel 8.1**.
+Betrieb: **Siehe Kapitel 7**; Kapazitätsgrenzen: **Siehe Kapitel 8.1**.

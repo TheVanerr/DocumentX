@@ -11,7 +11,7 @@ Dieses Kapitel fasst die betrieblichen Themen zusammen, die außerhalb des stand
 | Dauer des Format-/Produktwechsels | **Nicht vorhanden** — kein Formatwechselverfahren |
 | Formatwechselverfahren | **Nicht vorhanden** |
 
-Ein mechanischer Formatwechsel findet nicht statt (**Siehe Kapitel 6.1.5**). Unterschiedliche Werkstücktypen werden über die Förderergeschwindigkeit (Potentiometer) und die Thermostat-Sollwerte geführt; die produktspezifischen Werte werden vom Anwender aufgezeichnet (**Siehe Kapitel 8.2**). Beim Werkstückwechsel wird lediglich die Linie leergefahren und bei Bedarf Geschwindigkeit und Temperatur geändert.
+Ein mechanischer Formatwechsel findet nicht statt (**Siehe Kapitel 6.1.5**). Unterschiedliche Werkstücktypen werden über die Fördergeschwindigkeit (Potentiometer) und die Thermostat-Sollwerte geführt; die produktspezifischen Werte werden vom Anwender aufgezeichnet (**Siehe Kapitel 8.2**). Beim Werkstückwechsel wird lediglich die Linie leergefahren und bei Bedarf Geschwindigkeit und Temperatur geändert.
 
 ---
 
@@ -30,7 +30,7 @@ Das erneute Waschen oder Aussortieren von Werkstücken mit unzureichendem Wasche
 | Eingriffsstelle | Maßnahme | Kapitel |
 | :--- | :--- | :--- |
 | Schalter am Bedienfeld | Funktion ein/aus, RESET | 3.4, 7.2 |
-| Potentiometer für die Förderergeschwindigkeit | Geschwindigkeitseinstellung 20–60 Hz | 6.3.4 |
+| Potentiometer für die Fördergeschwindigkeit | Geschwindigkeitseinstellung 20–60 Hz | 6.3.4 |
 | Thermostate | Sollwert | 6.3.3 |
 | Tankbefüllung | Manuelles Einfüllen von Wasser | 7.2.1 |
 | Werkstück Beladen / Entnehmen | Linker Eingang / rechter Ausgang — manuell | 7.4 |
@@ -44,13 +44,13 @@ Das erneute Waschen oder Aussortieren von Werkstücken mit unzureichendem Wasche
 | Elektrofachkraft | Arbeiten im Schaltschrank (Motorschutzschalter, Fehlerstrom-Schutzschalter, Schütze, Heizstäbe) — unter LOTO |
 | Herstellerservice | Parameter des Frequenzumrichters, Sicherheitsrelais-Schaltung, größere mechanische Störungen |
 
-Bei Auftreten eines Fehlers:
+**Bei Auftreten eines Fehlers (Bediener)**
 
-1. Die Betriebsleuchte der Funktion oder die RESET-Leuchte erlischt; der Bediener stellt den betreffenden Schalter auf OFF.
-2. Der Bediener bewertet das Symptom nach dem Diagnoseablauf in **Kapitel 11.1** (Leuchtenstatus, Füllstand, Klappe, Not-Halt).
-3. Ist ein Eingriff im Schaltschrank erforderlich, wird das **Wartungspersonal / die Elektrofachkraft** gerufen; **LOTO** wird angewendet (**Siehe Kapitel 2.4**).
-4. Bei Störungen, die Sicherheitsfunktionen betreffen (Reset nicht möglich, Klappenschalter), wird der Herstellerservice informiert (**Siehe Kapitel 11.2.2**).
+1. Erlischt die Betriebsleuchte einer Funktion oder die RESET-Leuchte, den betreffenden Funktionsschalter auf OFF stellen.
+2. Das Symptom nach dem Diagnoseablauf in **Kapitel 11.1** bewerten (Leuchtenstatus, Füllstand, Klappe, Not-Halt).
+3. Ist ein Eingriff im Schaltschrank erforderlich, das **Wartungspersonal** oder die **Elektrofachkraft** rufen; der Eingriff erfolgt nur unter **LOTO** (**Siehe Kapitel 2.4**).
+4. Bei Störungen, die Sicherheitsfunktionen betreffen (Reset nicht möglich, Klappenschalter), den Herstellerservice informieren (**Siehe Kapitel 11.2.2**).
 
 ---
 
-Zur Fehlerdiagnose siehe **Kapitel 11**; zur Kapazität siehe **Kapitel 8**.
+Fehlerdiagnose: **Siehe Kapitel 11**; Kapazität: **Siehe Kapitel 8**.

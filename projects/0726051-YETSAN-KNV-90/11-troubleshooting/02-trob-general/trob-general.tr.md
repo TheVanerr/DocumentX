@@ -1,6 +1,6 @@
 # 11.2 Genel arıza giderme
 
-Bu alt bölüm, lamba davranışını ve yetkili servis çağrısı kriterlerini tanımlar. Arıza senaryoları **Bölüm 11.1.2** tablosunda verilmiştir.
+Bu alt bölüm, lamba davranışını ve yetkili servis çağrısı kriterlerini tanımlar. Arıza senaryoları: **Bkz. Bölüm 11.1.2**.
 
 ---
 
@@ -10,22 +10,22 @@ Bu alt bölüm, lamba davranışını ve yetkili servis çağrısı kriterlerini
 | :--- | :--- |
 | Alarm ekranı | HMI yok — uygulanmaz |
 | Hazır göstergesi | Mavi **RESET** lambası — yanık: emniyet zinciri kapalı; sönük: acil stop / kapak / reset bekleniyor |
-| Seviye uyarısı | Kırmızı **TANK 1 / TANK 2 WASHING LEVEL** — tankta su yetersiz; ilgili ısıtıcı ve pompa kilitli |
+| Seviye uyarısı | Kırmızı **TANK 1 / TANK 2 WASHING LEVEL** — tank su seviyesi düşük; ilgili ısıtıcı ve pompa kilitli |
 | Fonksiyon durumu | Beyaz **run lambası** — çıkış devrede; anahtar ON iken sönükse interlock veya koruma trip |
 | Konveyör | Delta inverter ekranı — alarm kodu |
 | Pano içi | MKŞ kol konumu, RCCB kol konumu, sigorta konumu, MKR-01 göstergesi — yalnızca yetkili elektrikçi, LOTO altında |
 | Alarm metni dili | Uygulanmaz |
-| Alarm geçmişi / log | Yok — arızalar bakım kayıt formuna elle işlenir (**Bölüm 9.1.7**) |
+| Alarm geçmişi / log | Yok — arızalar bakım kayıt formuna elle işlenir (**Bkz. Bölüm 9.1.7**) |
 
 Emniyet zinciri açıldığında (RESET sönük) fonksiyon anahtarları ON konumunda olsa bile hiçbir çıkış çalışmaz; reset sonrası fonksiyonların kontrolsüz başlamaması için anahtarlar reset öncesi OFF alınmalıdır (**Bkz. Bölüm 7.3.2**).
 
-**Reset:** Emniyet zinciri için RESET butonu (**Bölüm 2.5**); MKŞ ve RCCB için pano içi kol reset (LOTO altında, **Bölüm 11.1.3**); inverter için CONVEYOR anahtarı OFF/ON veya inverter reset tuşu.
+**Reset:** Emniyet zinciri için RESET butonu (**Bkz. Bölüm 2.5**); MKŞ ve RCCB için pano içi kol reset (LOTO altında — **Bkz. Bölüm 11.1.3**); inverter için CONVEYOR anahtarı OFF/ON veya inverter reset tuşu.
 
 ---
 
 ## 11.2.2 Servis çağrısı kriterleri
 
-Aşağıdaki durumlarda **Bölüm 1.3** iletişim kanallarından yetkili servis desteği alınmalıdır:
+Aşağıdaki durumlarda yetkili servisi çağırın (iletişim kanalları: **Bkz. Bölüm 1.3.1**):
 
 | # | Durum | Gerekçe |
 | :---: | :--- | :--- |
@@ -38,7 +38,7 @@ Aşağıdaki durumlarda **Bölüm 1.3** iletişim kanallarından yetkili servis 
 | 7 | **Yetkili personelin çözemediği elektrik arızası** | Saha teşhisi ve şema üzerinde çalışma gerekir |
 | 8 | **Bölüm 11.1.2** adımlarına rağmen sorun devam ediyor | Yedek parça değişimi veya saha teşhisi |
 
-**Servis öncesi hazırlık (Bölüm 1.3.3):**
+**Servis öncesi hazırlık** (**Bkz. Bölüm 1.3.5**)
 
 1. Makine kimlik etiketi bilgilerini (seri no 0726051, model KNV-90) hazırlayın.
 2. Lamba durumlarını (hangi run lambaları yanıyor, WASHING LEVEL, RESET) ve trip olan pano elemanının etiketini (ör. Q1, K.AKIM F2) kaydedin.
@@ -46,4 +46,4 @@ Aşağıdaki durumlarda **Bölüm 1.3** iletişim kanallarından yetkili servis 
 4. Arıza anındaki proses durumunu (açık fonksiyonlar, sıcaklıklar, hız) belirtin.
 5. Mümkünse pano içi ve arıza bölgesi fotoğrafı ekleyin.
 
-**Operatör durmalı:** Elektrik panosu içi müdahale, LOTO dışı enerjili çalışma, kapak switch bypass'ı veya emniyet devresi köprüleme **yasaktır** — yetkili personel çağırın.
+**UYARI — Elektrik çarpması ve devre dışı güvenlik fonksiyonu:** Operatörün pano içine müdahalesi, kapak switch'lerinin bypass edilmesi veya emniyet devresinin köprülenmesi ölümcül elektrik çarpmasına ve kontrolsüz makine hareketine yol açabilir. Operatör pano içine müdahale etmez, kapak switch'lerini bypass etmez ve emniyet devresini köprülemez; bu durumlarda yetkili personeli çağırın.

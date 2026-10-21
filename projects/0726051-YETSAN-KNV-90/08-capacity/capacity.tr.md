@@ -13,7 +13,7 @@ Makinede reçete hafızası veya HMI yoktur; ürün bazlı "reçete", operatör�
 
 | Parametre | Değer | Referans |
 | :--- | :--- | :--- |
-| Döngü süresi (nominal) | [EKSİK] — konveyör hızına bağlı | Bölüm 3.3.2 |
+| Döngü süresi | Sabit değer yok — konveyör frekansına ve hat uzunluğuna bağlı; işletmede ölçülür | Bölüm 3.3.2, 8.1.1 |
 | Nominal / maksimum / minimum kapasite | Müşteri firma belirler | Bölüm 3.3.2 |
 | Konveyör hız aralığı | 20–60 Hz | Bölüm 6.3.4 |
 | Maksimum sürekli çalışma | Müşteri firma belirler | Bölüm 8.1.5 |
@@ -21,4 +21,4 @@ Makinede reçete hafızası veya HMI yoktur; ürün bazlı "reçete", operatör�
 
 ---
 
-Operasyon sekansı için bkz. **Bölüm 7.4**; teknik boyutlar için bkz. **Bölüm 3.3**.
+Operasyon sekansı için **Bkz. Bölüm 7.4**; teknik özellikler için **Bkz. Bölüm 3.3**.

@@ -1,6 +1,6 @@
 # 12.3 Hurda değerlendirme ve geri dönüşüm
 
-Demontaj sonrası parçalar malzeme grubuna göre sınıflandırılmalı ve kullanıldığı ülkenin **çevresel bertaraf** ve **geri dönüşüm** mevzuatına uygun şekilde değerlendirilmelidir. Akü bulunmamaktadır. Yağlı proses suyu, yağ ayırıcıda toplanan yağ, konveyör gresi, redüktör yağı ve temizlik deterjanı atık olarak ayrılır. DATA'da proje için ayrı hurda prosedürü tanımlanmamıştır; aşağıdaki akış makine tipinin standart uygulamasıdır.
+Demontaj sonrası parçalar malzeme grubuna göre sınıflandırılmalı ve kullanıldığı ülkenin **çevresel bertaraf** ve **geri dönüşüm** mevzuatına uygun şekilde değerlendirilmelidir. Akü bulunmamaktadır. Yağlı proses suyu, yağ ayırıcıda toplanan yağ, konveyör gresi, redüktör yağı ve temizlik deterjanı atık olarak ayrılır.
 
 ---
 
@@ -13,7 +13,7 @@ Demontaj sonrası parçalar malzeme grubuna göre sınıflandırılmalı ve kull
 **Hurda değerlendirme prosedürü**
 
 1. Demontaj parçalarını fiziksel olarak ayırın.
-2. Aşağıdaki **12.3.2** tablosuna göre malzeme grubunu belirleyin.
+2. Malzeme grubunu **Bölüm 12.3.2** tablosuna göre belirleyin.
 3. Sıvı atıkları (yağlı su, yağ, deterjan) sızdırmaz kaplarda toplayın; kuru atıkla karıştırmayın.
 4. Yerel bertaraf/geri dönüşüm lisanslı tesislerine sevk edin.
 5. Atık transfer kayıtlarını tesis çevre izinleri kapsamında saklayın.
@@ -38,7 +38,7 @@ Demontaj sonrası parçalar malzeme grubuna göre sınıflandırılmalı ve kull
 | **Plastik / kauçuk** | Contalar, PVC şerit perdeler, hortumlar, diyaframlı pompa gövdesi, filtre gövdesi plastik parçaları | Plastik/atık geri dönüşümü (yerel sınıflandırma) |
 | **Su / temizlik atığı** | Tank boşaltma suyu, sabunlu yıkama suyu, yağlı proses suyu | **Bölüm 10.1.8** — atık su arıtma/bertaraf; evsel kanalizasyona dökmeyin |
 | **Yağ / gres** | Yağ ayırıcıda toplanan yağ, Castrol Tribol GR 100-1 PD gresi, redüktör yağı, yağ sıyırıcı keçe/teflon | Lisanslı yağlı atık |
-| **Filtre / tüketim** | Ön filtre sepetleri içeriği (talaş), torba filtreler, emiş filtreleri (bkz. **9.1.6**) | Kir durumuna göre tehlikeli atık veya katı atık sınıfı |
-| **Ambalaj** | Koruyucu örtü, bağlama kayışları, köpük | Ambalaj geri dönüşümü (yerel) |
+| **Filtre / tüketim** | Ön filtre sepetleri içeriği (talaş), torba filtreler, emiş filtreleri (**Bkz. Bölüm 9.1.6**) | Kir durumuna göre tehlikeli atık veya katı atık sınıfı |
+| **Ambalaj** | Streç film, koruyucu örtüler, bağlama kayışları | Ambalaj geri dönüşümü (yerel) |
 
-**Not:** Hurda değerlendirmede **Bölüm 13.3.1** parça listesi referans alınabilir; elektronik parçalarda seri numarası (**0726051**) bertaraf kaydında tutulmalıdır.
+**NOT:** Hurda değerlendirmede **Bölüm 13.3.1** parça listesi referans alınabilir; elektronik parçaların bertaraf kaydına makine seri numarasını (**0726051**) yazın.

@@ -1,6 +1,6 @@
 # 3.3 Technische Daten
 
-Dieses Kapitel fasst Abmessungen, Gewicht, Kapazität, Elektrik, Motoren/Heizungen, Medienanschlüsse und Umgebungsbedingungen der Maschine **KNV 90 7500 2B** (Seriennummer **0726051**) zusammen. In den Kapiteln Installation (Kapitel 5), Einstellung (Kapitel 6), Betrieb (Kapitel 7) und Störungen (Kapitel 11) werden dieselben Zahlenwerte nicht wiederholt; die betreffenden Kapitel verweisen hierher. Mit `[EKSİK]` gekennzeichnete Werte sind anhand des Aufstellungsplans (Layout) im Lieferpaket oder des Typenschilds zu ergänzen.
+Dieses Kapitel fasst Abmessungen, Gewicht, Kapazität, Elektrik, Motoren/Heizungen, Medienanschlüsse und Umgebungsbedingungen der Maschine **KNV 90 7500 2B** (Seriennummer **0726051**) zusammen. In den Kapiteln Installation (Kapitel 5), Einstellung (Kapitel 6), Betrieb (Kapitel 7) und Störungen (Kapitel 11) werden dieselben Zahlenwerte nicht wiederholt; die betreffenden Kapitel verweisen hierher.
 
 ---
 
@@ -13,9 +13,9 @@ Dieses Kapitel fasst Abmessungen, Gewicht, Kapazität, Elektrik, Motoren/Heizung
 | Außenhöhe (H) — normal | mm | [EKSİK] |
 | Leergewicht — trocken | kg | [EKSİK] |
 | Betriebsgewicht — gefüllt | kg | [EKSİK] |
-| Gestelltyp | — | Stellfuß |
+| Gestelltyp | — | Stellfüße |
 
-Die Maschine wird auf **Stellfüßen** aufgestellt, die ein Ausrichten und Nivellieren ermöglichen (**Siehe Kapitel 5.2**). Bei gefüllten Tanks steigt das Betriebsgewicht erheblich; vor Transport und Lagerung müssen die Tanks entleert werden (**Siehe Kapitel 4.1**). Für die Außenabmessungen und die Aufstellfläche siehe den Aufstellungsplan (Layout) (**Siehe Kapitel 3.5, 13.2**).
+Die Maschine wird auf **Stellfüßen** aufgestellt, die ein Ausrichten und Nivellieren ermöglichen (**Siehe Kapitel 5.2.3**). Bei gefüllten Tanks steigt das Betriebsgewicht erheblich; vor Transport und Lagerung müssen die Tanks entleert werden (**Siehe Kapitel 4.1, 4.2**). Aufstellfläche und Freiräume sind in **Kapitel 3.5.2** angegeben; der Aufstellungsplan (Layout) der Maschine wird als separates Dokument geliefert (**Siehe Kapitel 13.1**).
 
 ![3D-Seitenansicht — Förderlinie, Kammern und Abluftkamin](../../assets/3.3/3d-yan-gorunus.png)
 
@@ -30,7 +30,7 @@ Die Maschine wird auf **Stellfüßen** aufgestellt, die ein Ausrichten und Nivel
 | Prozessname 2 | Spülen (Düsensprühung) |
 | Prozessname 3 | Wasserabblasen (Blower) |
 | Prozessname 4 | Trocknen (Trocknungsventilatoren — Heißluft) |
-| Zykluszeit — nominal | [EKSİK] — abhängig von Fördergeschwindigkeit (20–60 Hz) und Linienlänge |
+| Zykluszeit — nominal | Kein fester Wert — abhängig von der Förderfrequenz (20–60 Hz) und der Linienlänge; wird im Betrieb gemessen (**Siehe Kapitel 8.1**) |
 | Nominale Kapazität | Wird vom Kunden festgelegt |
 | Maximale Kapazität | Wird vom Kunden festgelegt |
 | Minimale Kapazität | Wird vom Kunden festgelegt |
@@ -38,7 +38,7 @@ Die Maschine wird auf **Stellfüßen** aufgestellt, die ein Ausrichten und Nivel
 | Produktabmessung min / max | Wird vom Kunden festgelegt |
 | Produktgewicht min / max | Wird vom Kunden festgelegt |
 
-Die Zykluszeit ist die Zeit, die ein Werkstück auf dem Förderer für den Durchlauf der Linie Waschen → Spülen → Wasserabblasen → Trocknen benötigt, und hängt von der Fördergeschwindigkeit ab, die der Bediener mit dem Potentiometer wählt. Mit sinkender Geschwindigkeit nehmen Kontaktzeit und Reinigungswirkung zu, die Stückzahl pro Stunde nimmt ab. Die Kapazitätsplanung ist in **Kapitel 8** erläutert.
+Die Zykluszeit ist die Zeit, die ein Werkstück auf dem Förderer für den Durchlauf der Linie Waschen → Spülen → Wasserabblasen → Trocknen benötigt, und hängt von der Fördergeschwindigkeit ab, die der Bediener mit dem Potentiometer wählt. Mit sinkender Geschwindigkeit nehmen Kontaktzeit und Reinigungswirkung zu, die Stückzahl pro Stunde nimmt ab. Das Messverfahren für die Zykluszeit und die Kapazitätsplanung sind in **Kapitel 8.1** erläutert.
 
 ---
 
@@ -50,12 +50,10 @@ Die Zykluszeit ist die Zeit, die ein Werkstück auf dem Förderer für den Durch
 | Versorgungsfrequenz | 50 Hz |
 | Phasenzahl | 3 |
 | Versorgungskonfiguration | 3P+N+PE |
-| Gesamte installierte Leistung | 110 kW |
-| Gesamte installierte Leistung — einschließlich Heizung | 110 kW |
+| Gesamte installierte Leistung (einschließlich Heizung) | 110 kW |
 | Maximale Stromaufnahme | 220 A |
 | Gesamtstrom Schaltschrank | 220 A |
-| Leistungsfaktor (cos φ) | [EKSİK] |
-| Kurzschlussstrom / ICC-Anforderung | [EKSİK] |
+| Kurzschlussstrom / ICC-Anforderung | Am Anschlusspunkt ≤ 36 kA (Bemessungsgrenzschaltvermögen des Hauptschalters Icu = 36 kA, 380/415 V AC) |
 | Hauptschalter | Schneider **EasyPact CVS250F — LV521091** (Leistungsschalter (TMŞ), 250 A); Türgriff LV521101 |
 | Steuerkreisspannung | 220 V AC (Schützspulen) |
 | Steuerversorgung | 24 V DC — LRS-350-24 (14,6 A) |
@@ -63,7 +61,7 @@ Die Zykluszeit ist die Zeit, die ein Werkstück auf dem Förderer für den Durch
 | Gesamtsicherung / Leistungsschalter | Gemäß Motor- und Heizungszeilen (**Siehe Kapitel 3.3.4**); Schaltschrank-Leistungsschalter (TMŞ) 250 A |
 | USV-/Generatoranforderung | Nein |
 
-Die elektrische Versorgung wird bei der Installation mit einer 380-V-, 50-Hz-Dreiphasenleitung an die Eingangsklemmen des Schaltschranks angeschlossen. Die Phasenfolge wird vom **Phasenfolgerelais MKR-01** überwacht; bei falscher Phasenfolge oder fehlender Phase gibt das Relais kein Ausgangssignal und die Funktionen werden nicht freigegeben (**Siehe Kapitel 5.3.4, 11.3.1**). Energietrennung und LOTO-Punkt ist der Hauptschaltergriff an der Schaltschranktür (**Siehe Kapitel 2.4**). Die Heizungsgruppen sind mit Fehlerstrom-Schutzschaltern (RCCB A9N19642 / A9N19643) geschützt.
+Die elektrische Versorgung wird bei der Installation mit einer 380-V-/50-Hz-Leitung 3P+N+PE an die Eingangsklemmen des Schaltschranks angeschlossen (**Siehe Kapitel 5.3.3**). Das Bemessungsgrenzschaltvermögen des Hauptschalters Schneider EasyPact CVS250F beträgt Icu = 36 kA (380/415 V AC); der zu erwartende Kurzschlussstrom am Anschlusspunkt darf 36 kA nicht überschreiten. Die Phasenfolge wird vom **Phasenfolgerelais MKR-01** überwacht; bei falscher Phasenfolge oder fehlender Phase gibt das Relais kein Ausgangssignal und die Funktionen werden nicht freigegeben (**Siehe Kapitel 5.3.6, 11.3.1**). Energietrennung und LOTO-Punkt ist der Hauptschaltergriff an der Schaltschranktür (**Siehe Kapitel 2.4**). Motor- und Heizungsgruppen sind mit Fehlerstrom-Schutzschaltern geschützt: A9N19642 (Motorgruppe, Trocknung 1/2) und A9N19643 (Heizstäbe TANK 1 und TANK 2) (**Siehe Kapitel 3.4.8**).
 
 ---
 
@@ -85,7 +83,7 @@ Die elektrische Versorgung wird bei der Installation mit einer 380-V-, 50-Hz-Dre
 | FE06 | Blower-Motor 3 | 4,00 kW | 8,00 A | MKŞ GV2ME14 + GVAE11 | LC1K1610M7 |
 | FE07 | Blower-Motor 4 | 4,00 kW | 8,00 A | MKŞ GV2ME14 + GVAE11 | LC1K1610M7 |
 
-Motordrehzahlen und Marke/Modell: [EKSİK] — Motortypenschild / Stückliste. Beschriftungen der Motorschutzschalter im Schaltschrank: Q1 YIKAMA POM. (Waschpumpe), Q2 DURULAMA POM. (Spülpumpe), Q3 SIYIRICI (Skimmer), Q4 EGZOZ (Abluft), Q5 KURUTMA FAN 1, Q6 KURUTMA FAN 2 (Trocknungsventilator 1/2), Q7–Q10 BLOWER 1–4 (**Siehe Kapitel 11.1.3**).
+Motordrehzahl sowie Marke/Modell sind auf dem Typenschild am Gehäuse jedes Motors angegeben. Beschriftungen der Motorschutzschalter im Schaltschrank: Q1 YIKAMA POM. (Waschpumpe), Q2 DURULAMA POM. (Spülpumpe), Q3 SIYIRICI (Skimmer), Q4 EGZOZ (Abluft), Q5 KURUTMA FAN 1, Q6 KURUTMA FAN 2 (Trocknungsventilator 1/2), Q7–Q10 BLOWER 1–4 (**Siehe Kapitel 11.1.3**).
 
 **Heizungen (Heizstäbe)**
 
@@ -105,16 +103,18 @@ Die Tankheizstäbe sind vom Typ **REZİSTANS KOMPLESİ 8000 W 50 cm düz dikişs
 | Parameter | Wert |
 | :--- | :--- |
 | Drucklufteingang | 6 bar |
-| Luftanschlussstelle | Regler **AIR INLET / HAVA GİRİŞİ** (mit Manometer) am Maschinengehäuse |
-| Druckluftverbraucher | Membranpumpe der Ölabscheidereinheit (über Magnetventil gesteuert) |
+| Luftanschlussstelle | Regler **AIR INLET / HAVA GİRİŞİ** (mit Manometer) am Maschinengehäuse — Anschluss per Schlauch |
+| Druckluftverbraucher | Membranpumpe der Ölabscheidereinheit (über Magnetventil gesteuert) — einziger Verbraucher |
 | Wassereingangsdruck | 1 bar |
 | Wassertemperatur min / max | +10 °C – +70 °C |
 | Wasserqualität | Leitungswasser oder aufbereitetes Wasser |
 | Tankbefüllung | Von Hand — kein automatisches Füllventil |
-| Durchmesser Ablass-/Abwasserleitung | Siehe Aufstellungsplan (Layout) [EKSİK] |
-| Anschlussdaten Druckluft und Wasser (Durchmesser, Position) | Siehe Aufstellungsplan (Layout) [EKSİK] |
+| Druckluftanschluss | Schnellkupplung — per Schlauch zum Druckregler **AIR INLET / HAVA GİRİŞİ** |
+| Anschlussdurchmesser Wasser | 1" |
+| Durchmesser Ablass-/Abwasserleitung | 2" |
+| Austrittsdurchmesser Abluftkamin | Ø 125 mm |
 
-Die Druckluft versorgt über den Regler am Maschinengehäuse die Membranpumpe der Ölabscheidereinheit; ein Hydraulik- oder Vakuumsystem ist nicht vorhanden. Die Schritte zum Luftanschluss sind in **Kapitel 5.3.1**, die Reglereinstellung in **Kapitel 6.5** angegeben. Das Wasser wird von Hand in die Tanks gefüllt; die Tankentleerung erfolgt über die Ablassventile (**TAHLİYE**) unter den Tanks, und das Abwasser wird gemäß den örtlichen Vorschriften entsorgt (**Siehe Kapitel 10.1.8**).
+Die Druckluft versorgt über den Regler am Maschinengehäuse die Membranpumpe der Ölabscheidereinheit; ein Hydraulik- oder Vakuumsystem ist nicht vorhanden. An der Maschine ist kein Druckluft-Absperrventil vorhanden; zum abschließbaren Ventil, das in der bauseitigen Leitung zu installieren ist, **Siehe Kapitel 2.4**. Die Schritte zum Luftanschluss sind in **Kapitel 5.3.1**, die Reglereinstellung in **Kapitel 6.5.1** und der Anschluss des Abluftkamins in **Kapitel 5.3.4** angegeben. Das Wasser wird von Hand in die Tanks gefüllt; die Tanks werden über die Ablassventile (**TAHLİYE**) unter den Tanks entleert (**Siehe Kapitel 10.1.5**), und das Abwasser wird gemäß den örtlichen Vorschriften entsorgt (**Siehe Kapitel 10.1.8**).
 
 ![Drucklufteingang (AIR INLET / HAVA GİRİŞİ) — Regler und Manometer](../../assets/3.3/hava-girisi-regulator.jpg)
 
@@ -130,12 +130,12 @@ Die Druckluft versorgt über den Regler am Maschinengehäuse die Membranpumpe de
 
 | Parameter | Wert |
 | :--- | :--- |
-| Schutzart (IP) | IP55 |
+| Schutzart (IP) — Maschine | IP55 |
 | Schallpegel | 65 dB(A) |
-| Schutzart Schaltschrank | [EKSİK] |
+| Schutzart Schaltschrank | **Siehe Kapitel 3.4.1** |
 
 Die Maschine ist ausschließlich für den Einsatz in **geschlossenen, geschützten Innenräumen** ausgelegt. Die minimalen Freiräume und die Deckenhöhe der Aufstellfläche sind in **Kapitel 3.5.2** angegeben; die Grenzen der bestimmungsgemäßen Verwendung sind in **Kapitel 3.2** zusammengefasst.
 
 ---
 
-Bedienelemente siehe **Kapitel 3.4**; Aufstellungsplan siehe **Kapitel 3.5**.
+Bedienelemente: **Siehe Kapitel 3.4**; Aufstellungsplan: **Siehe Kapitel 3.5**.

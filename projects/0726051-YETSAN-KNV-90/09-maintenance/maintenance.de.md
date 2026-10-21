@@ -20,4 +20,4 @@ Diese Maschine besitzt keinen HMI-Alarm, der den Wartungsbedarf anzeigt; die War
 
 ---
 
-Zur Reinigung siehe **Kapitel 10**; zur Fehlerbehebung siehe **Kapitel 11**.
+Reinigungsverfahren: **Siehe Kapitel 10**. Störungsbeseitigung: **Siehe Kapitel 11**.

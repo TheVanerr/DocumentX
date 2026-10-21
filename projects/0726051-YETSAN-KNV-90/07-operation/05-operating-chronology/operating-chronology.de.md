@@ -9,7 +9,7 @@ Die Maschine wird nach dem Schichtplan des Kunden betrieben; sie ist **keine kon
 | Parameter | Wert |
 | :--- | :--- |
 | Täglicher Betrieb | Nach dem Schichtplan des Kunden |
-| Kontinuierlicher (7/24) Automatikbetrieb | Nicht anwendbar |
+| Kontinuierlicher (7/24) Automatikbetrieb | Nicht zutreffend |
 
 Typischer Tagesablauf:
 
@@ -28,16 +28,19 @@ Die Aufheizzeit hängt von der Wassermenge und der Ausgangstemperatur ab; ein fr
 
 | Parameter | Wert |
 | :--- | :--- |
-| Punkte der Schichtübergabe | Tankfüllstand, Temperatur, Filterzustand, Not-Halt-/Reset-Status — [EKSİK] Kundenverfahren |
+| Punkte der Schichtübergabe | Nachstehende Standardliste — der Kunde erstellt sein Schichtformular anhand dieser Punkte |
 
-Bei der Schichtübergabe sind mindestens die folgenden Informationen weiterzugeben; der Kunde erstellt sein eigenes Formular mit diesen Punkten:
+Bei der Schichtübergabe werden mindestens die folgenden Informationen weitergegeben:
 
-1. Wasserstand von Tank 1 und Tank 2 sowie Status der WASHING-LEVEL-Leuchten.
-2. Ist- und Solltemperaturen der Thermostate.
-3. Zeitpunkt der letzten Reinigung von Vorfilter und Beutelfilter; Anzeichen von Verstopfung.
-4. Während der Schicht aufgetretene Stillstände (Not-Halt, Klappe, Auslösen des Motorschutzschalters) und ergriffene Maßnahmen.
-5. Förderergeschwindigkeit (Potentiometerstellung / Hz) und bearbeiteter Werkstücktyp.
-6. Beobachtete Leckagen, ungewöhnliche Geräusche oder Gerüche.
+1. Status der Leuchten TANK 1 / TANK 2 WASHING LEVEL und Tankfüllstand.
+2. Soll- und Isttemperaturen der Tank- und Trocknungsthermostate (TANK 1, TANK 2, DRYING 1, DRYING 2).
+3. Ob die tägliche Reinigung der Vorfilter durchgeführt wurde.
+4. Während der Schicht ausgelöste Motorschutzschalter / Fehlerstrom-Schutzschalter und Betätigungen des Not-Halts.
+5. RESET-/Bereitschaftsstatus.
+6. Zustand von Ölskimmer und Ölabscheider.
+7. Beobachtete Leckagen oder ungewöhnliche Geräusche.
+8. Fördergeschwindigkeit (Potentiometerstellung).
+9. Ausstehende Wartungsarbeiten.
 
 ---
 
@@ -48,13 +51,13 @@ Bei der Schichtübergabe sind mindestens die folgenden Informationen weiterzugeb
 | 1 | Wasserstand in Tank 1 und Tank 2 ausreichend; WASHING-LEVEL-Leuchten aus (nach manueller Befüllung) | ☐ |
 | 2 | Druckluft 6 bar — Manometer | ☐ |
 | 3 | RESET-Leuchte leuchtet — Not-Halt-Taster entriegelt, Klappen geschlossen | ☐ |
-| 4 | Fördererlinie leer; Beschickungs-/Entnahmebereich sauber | ☐ |
+| 4 | Förderlinie leer; Beschickungs-/Entnahmebereich sauber | ☐ |
 | 5 | Pumpenventile offen | ☐ |
 | 6 | Vorfilter in der vorherigen Schicht gereinigt | ☐ |
 | 7 | Keine sichtbare Leckage | ☐ |
 
-Diese Liste ist eine Zusammenfassung der Voraussetzungen für das Einschalten nach **Kapitel 7.2**. Bei geplanten Wartungs- oder Reinigungsstillständen muss die Maschine stillgesetzt werden; bei Arbeiten, die eine Energietrennung erfordern, ist **LOTO** anzuwenden (**Siehe Kapitel 2.4**). Die Punkte der periodischen Wartung sind in **Kapitel 9.1.3** enthalten.
+Diese Liste ist eine Zusammenfassung der Voraussetzungen für das Einschalten (**Siehe Kapitel 7.2.1**). Bei geplanten Wartungs- oder Reinigungsstillständen die Maschine stillsetzen; bei Arbeiten, die eine Energietrennung erfordern, **LOTO** anwenden (**Siehe Kapitel 2.4**). Punkte der periodischen Wartung: **Siehe Kapitel 9.1.3**.
 
 ---
 
-Zum Wartungsplan siehe **Kapitel 9**.
+Wartungsplan: **Siehe Kapitel 9**.

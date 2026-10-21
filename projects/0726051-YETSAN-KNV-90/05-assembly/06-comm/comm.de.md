@@ -30,7 +30,7 @@ Soll ein Signal von der Maschine an ein übergeordnetes System übertragen werde
 | Dokument | Status |
 | :--- | :--- |
 | I/O-Liste | Nicht zutreffend — keine PLC; Signalanschlüsse im Schaltplan (**Siehe Kapitel 13.1**) |
-| Schaltplan | Lieferpaket — Referenz für Schaltschrank, Motoren, Heizungen, Sicherheitskreis |
+| Schaltplan | Lieferpaket — Referenz für Schaltschrank, Motoren, Heizungen, Sicherheitskreis (**Siehe Kapitel 13.1**) |
 
 ---
 

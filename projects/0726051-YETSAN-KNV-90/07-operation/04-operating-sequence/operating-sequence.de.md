@@ -8,7 +8,7 @@ Die Maschine besitzt **keinen** festen Automatikzyklus. Der Betriebsablauf beste
 
 | Schritt | Beschreibung |
 | :---: | :--- |
-| 1 | Der Bediener schaltet die benötigten Funktionen in der Reihenfolge nach **Kapitel 7.2.2** ein; der Förderer läuft |
+| 1 | Der Bediener schaltet die benötigten Funktionen in der Einschaltreihenfolge ein (**Siehe Kapitel 7.2.2**); der Förderer läuft |
 | 2 | Der Bediener legt das Werkstück vom **linken Eingang** aus auf den Drahtgurt |
 | 3 | Das Werkstück passiert den PVC-Vorhang und tritt in die **Waschkammer** ein; bei eingeschalteter TANK 1 PUMP sprühen die Düsen das erwärmte Waschwasser |
 | 4 | Das Werkstück gelangt in die **Spülkammer**; bei eingeschalteter TANK 2 PUMP wird Spülwasser gesprüht |
@@ -16,7 +16,7 @@ Die Maschine besitzt **keinen** festen Automatikzyklus. Der Betriebsablauf beste
 | 6 | Das Werkstück gelangt in die **Trocknungskammer**; bei eingeschaltetem DRYING 1/2 FAN und HEATER trocknet es mit Heißluft |
 | 7 | Das Werkstück erreicht den **rechten Ausgang**; der Bediener entnimmt es mit hitzebeständigen Handschuhen |
 
-Die Zone einer nicht eingeschalteten Funktion durchläuft das Werkstück ohne Bearbeitung. Im Dauerbetrieb legt der Bediener in Abständen, die zur Förderergeschwindigkeit passen, weiter Werkstücke auf; die Werkstücke müssen auf dem Drahtgurt so weit voneinander entfernt liegen, dass sie nicht aneinanderstoßen.
+Die Zone einer nicht eingeschalteten Funktion durchläuft das Werkstück ohne Bearbeitung. Im Dauerbetrieb legt der Bediener weiter Werkstücke so auf, dass sie sich auf dem Drahtgurt nicht berühren.
 
 ![Förderereingang — Beschickungszone und PVC-Vorhang](../../assets/7.4/konveyor-parca-giris.jpg)
 
@@ -28,10 +28,10 @@ Die Zone einer nicht eingeschalteten Funktion durchläuft das Werkstück ohne Be
 
 | Parameter | Wert | Bedeutung |
 | :--- | :--- | :--- |
-| Zykluszeit — nominal | [EKSİK] | Durchlaufzeit eines Werkstücks vom Eingang bis zum Ausgang entlang der Linie; abhängig von der Fördererfrequenz (20–60 Hz) und den eingeschalteten Prozessen |
+| Zykluszeit | Kein fester Wert — wird im Betrieb gemessen (**Siehe Kapitel 3.3.2**) | Durchlaufzeit eines Werkstücks vom Eingang bis zum Ausgang entlang der Linie; abhängig von der Frequenz des Förderers (20–60 Hz) und der Linienlänge |
 | Nennkapazität | Wird vom Kunden festgelegt | Abhängig von Werkstückgröße, Belegung des Drahtgurts und Geschwindigkeit |
 
-Je weiter die Förderergeschwindigkeit verringert wird, desto länger ist die Kontaktzeit des Werkstücks in den Kammern; Reinigung und Trocknung verbessern sich, die Stückzahl pro Stunde sinkt. Die produktspezifische Aufzeichnung der Kombination aus Geschwindigkeit und Temperatur ist in **Kapitel 8.2** beschrieben.
+Je weiter die Fördergeschwindigkeit verringert wird, desto länger ist die Kontaktzeit des Werkstücks in den Kammern; Reinigung und Trocknung verbessern sich, die Stückzahl pro Stunde sinkt. Messverfahren für die Zykluszeit: **Siehe Kapitel 8.1.1**; produktspezifische Aufzeichnung der Kombination aus Geschwindigkeit und Temperatur: **Siehe Kapitel 8.2**.
 
 ---
 
@@ -67,18 +67,18 @@ Steht eine Funktion auf OFF, wird der zugehörige Prozessschritt übersprungen; 
 
 | Zustand | Verhalten der Maschine | Maßnahme des Bedieners |
 | :--- | :--- | :--- |
-| Wartungsklappe geöffnet (magnetischer Schalter) | Alle Bewegungen und Prozessausgänge stoppen; RESET-Leuchte erlischt | Klappe ausgerichtet schließen; RESET; **Siehe Kapitel 2.5** |
-| Not-Halt betätigt | Alle Ausgänge stoppen; RESET-Leuchte erlischt | Gefahr beseitigen; **Siehe Kapitel 2.5** |
+| Wartungsklappe geöffnet (magnetischer Schalter) | Alle Bewegungen und Prozessausgänge stoppen; RESET-Leuchte erlischt | Klappe ausgerichtet schließen; RESET drücken (**Siehe Kapitel 2.5**) |
+| Not-Halt betätigt | Alle Ausgänge stoppen; RESET-Leuchte erlischt | Gefahr beseitigen (**Siehe Kapitel 7.3.2**) |
 | Kein Wasser im Tank / Füllstand niedrig | Heizung und Pumpe des betreffenden Tanks stoppen; rote WASHING-LEVEL-Leuchte leuchtet | Tank manuell befüllen (**Siehe Kapitel 7.2.1**) |
-| Motorschutzschalter (MKŞ) ausgelöst | Der betreffende Motor stoppt; Betriebsleuchte erlischt; die übrigen Funktionen laufen weiter | Funktion auf OFF stellen; Elektrofachkraft — **Siehe Kapitel 11.1.3** |
-| Fehlerstrom-Schutzschalter der Heizung ausgelöst | Die betreffende Heizungsgruppe stoppt | Heizung auf OFF stellen; Elektrofachkraft — **Siehe Kapitel 11.3.3** |
-| Phasenfehler (MKR-01) | Der Schaltschrank gibt keinen Ausgang frei; keine Funktion läuft | Elektrofachkraft — **Siehe Kapitel 11.3.1** |
-| Alarm des Förderer-Frequenzumrichters | Förderer stoppt; Code auf der Anzeige des Frequenzumrichters | CONVEYOR OFF; **Siehe Kapitel 11.3.2** |
+| Motorschutzschalter (MKŞ) ausgelöst | Der betreffende Motor stoppt; Betriebsleuchte erlischt; die übrigen Funktionen laufen weiter | Funktion auf OFF stellen; Elektrofachkraft informieren (**Siehe Kapitel 11.1.3**) |
+| Fehlerstrom-Schutzschalter der Heizung ausgelöst | Die betreffende Heizungsgruppe stoppt | Heizung auf OFF stellen; Elektrofachkraft informieren (**Siehe Kapitel 11.3.3**) |
+| Phasenfehler (MKR-01) | Der Schaltschrank gibt keinen Ausgang frei; keine Funktion läuft | Elektrofachkraft informieren (**Siehe Kapitel 11.3.1**) |
+| Alarm des Förderer-Frequenzumrichters | Förderer stoppt; Code auf der Anzeige des Frequenzumrichters | Schalter CONVEYOR auf OFF stellen (**Siehe Kapitel 11.3.2**) |
 
-Die Maschine besitzt keine HMI-Alarmliste; der Fehler wird anhand des Leuchtenstatus und der Stellung der Schutzelemente im Schaltschrank diagnostiziert (**Siehe Kapitel 11.1**). Bei Stillstand der Linie können in der Kammer verbliebene Werkstücke heißem Wasser und Dampf ausgesetzt bleiben; vor dem Öffnen einer Klappe wird **Kapitel 2.4** angewendet.
+Die Maschine besitzt keine HMI-Alarmliste; der Fehler wird anhand des Leuchtenstatus und der Stellung der Schutzelemente im Schaltschrank diagnostiziert (**Siehe Kapitel 11.1**). Bei Stillstand der Linie sind in der Kammer verbliebene Werkstücke und die Kammeroberflächen heiß und nass; vor dem Öffnen einer Klappe zur Entnahme von Werkstücken LOTO anwenden (**Siehe Kapitel 2.4**).
 
-**VORSICHT — Klappe offen:** Bei Auslösen des Klappenschalters stoppt die Maschine; keinen Funktionsschalter einschalten, bevor die Klappe geschlossen und RESET durchgeführt wurde.
+**WARNUNG — Unerwarteter Anlauf:** Wird RESET gedrückt, während Funktionsschalter in Stellung ON stehen, laufen die betreffenden Pumpen, Ventilatoren und der Förderer sofort an; Personen in der Nähe der Klappe können heißem Sprühwasser und Quetschgefahr ausgesetzt werden. Vor dem Drücken von RESET die Klappe schließen und alle Funktionsschalter in Stellung OFF bringen.
 
 ---
 
-Zum Einschalten siehe **Kapitel 7.2**; zur Fehlertabelle siehe **Kapitel 11.1.2**.
+Einschalten: **Siehe Kapitel 7.2**; Fehlertabelle: **Siehe Kapitel 11.1.2**.

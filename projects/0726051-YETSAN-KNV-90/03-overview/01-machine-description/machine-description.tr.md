@@ -2,7 +2,7 @@
 
 **KNV 90 7500 2B**, endüstriyel parçaların konveyör üzerinde taşınarak yıkama, durulama, su sıyırma ve kurutma proseslerinden geçirildiği konveyörlü bir parça yıkama makinesidir. Makine; yıkama ve durulama tankları ile bunların püskürtme hücreleri, blower ve sıcak havalı kurutma ünitesi, egzoz fanı ve parça taşıma konveyöründen oluşan entegre bir hat yapısındadır. Ana işlevi, parça yüzeylerindeki proses kirlerinin ve yağ/atıkların ısıtılmış yıkama ve durulama sıvıları ile giderilmesi, ardından parçanın kurutulmuş olarak hattan çıkarılmasıdır.
 
-Konveyör akış yönü **sol besleme / sağ boşaltma** şeklindedir. Elektrik panosu, operatör paneli ve günlük müdahale noktalarına erişim **makinenin sağ tarafındadır**. Bu projede parça giriş ve çıkışı **operatör tarafından elle** yapılır; robot entegrasyonu ve otomatik hat kontrolü yoktur. Makine gövdesi ve tanklar paslanmaz çelikten imal edilmiştir; proses tankları elektrikli rezistanslarla ısıtılır.
+Makineye karşıdan (ön uzun kenardan) bakıldığında konveyör akış yönü **sol besleme / sağ boşaltma** şeklindedir. Tanklar, pompalar, elektrik panosu ve operatör paneli **ön uzun kenar** boyunca yerleşiktir; pano ve panel bu kenarın **sağ (çıkış) ucuna yakındır** ve günlük müdahale noktalarına bu kenardan erişilir (**Bkz. Bölüm 3.5.1**). Bu projede parça giriş ve çıkışı **operatör tarafından elle** yapılır; robot entegrasyonu ve otomatik hat kontrolü yoktur. Makine gövdesi ve tanklar paslanmaz çelikten imal edilmiştir; proses tankları elektrikli rezistanslarla ısıtılır.
 
 Aşağıdaki alt bölümler proses akışını ve her ana modülün işlevini açıklar. Sayısal teknik değerler **Bölüm 3.3**'te, kontrol elemanları **Bölüm 3.4**'te verilir.
 
@@ -33,11 +33,11 @@ Yıkama ve durulama hücreleri, buhar ve su sıçramasını içeride tutmak içi
 
 Konveyör, parçaları proses bölgeleri arasında taşıyan **paslanmaz tel bantlı zincirli konveyördür**. Tahrik, konveyör çıkış tarafındaki **redüktör motoru (GE01, 0,25 kW)** ile sağlanır; redüktör üzerinde **tork sınırlayıcı** bulunur ve sıkışma durumunda tahrik kayarak zincir ve redüktörü korur. Motor, pano içindeki **Delta VFD004EL21W-1** inverter ile sürülür; hız operatör panelindeki **potansiyometre** ile 20–60 Hz aralığında ayarlanır (**Bkz. Bölüm 3.4.7**).
 
-Besleme **sol**, boşaltma **sağ** yöndedir. Konveyör giriş ve çıkış bölgeleri **tel koruma kafesi** ile çevrilidir; kafes, operatörün tel bant ile sabit yapı arasına uzanmasını engeller. Operatör parçaları kafes dışından, tel bant üzerine yerleştirir ve çıkışta aynı şekilde alır (**Bkz. Bölüm 7.4**). Konveyör giriş ve çıkışında, tel bantın her iki yanında birer **acil stop** butonu bulunur (**Bkz. Bölüm 2.5**).
+Besleme **sol**, boşaltma **sağ** yöndedir. Konveyör giriş ve çıkış bölgeleri **tel koruma kafesi** ile çevrilidir; kafes, operatörün tel bant ile sabit yapı arasına uzanmasını engeller ve yalnızca alet ile açılır. Operatör parçaları kafes dışından, tel bant üzerine yerleştirir ve çıkışta aynı şekilde alır (**Bkz. Bölüm 7.4.3**). Konveyör giriş ve çıkışında, tel bantın her iki yanında birer **acil stop** butonu bulunur (**Bkz. Bölüm 2.5**).
 
 Konveyör rulman hatları, giriş ve çıkışta sağ ve sol olmak üzere **4 gres nipeli** ile aylık yağlanır (**Bkz. Bölüm 9.1.4**). Tel bant aşınan parçadır (**Bkz. Bölüm 13.3**).
 
-![Konveyör girişi — tel bant, redüktör motoru ve koruma kafesi](../../assets/3.1/konveyor-giris.jpg)
+![Konveyör çıkış ucu — tel bant, redüktör motoru ve koruma kafesi](../../assets/3.1/konveyor-giris.jpg)
 
 ![Konveyör redüktör motoru (GE01)](../../assets/3.1/konveyor-redaktor.jpg)
 
@@ -71,7 +71,7 @@ TANK 2 de seviye sensörü, emiş filtresi, pompa çıkışı hassas filtre ve T
 
 **Yağ sıyırıcı** (TANK 1 OIL SKIMMER), yıkama tankı yüzeyinde biriken yağ tabakasını toplayan, **0,09 kW redüktör motoru (GE06)** ile döndürülen disk tipi bir ünitedir. Yüzeydeki yağ diske yapışır, sıyrılarak toplama kanalına alınır ve tanktan uzaklaştırılır. Yağ sıyırıcı, yıkama suyunun yağ yükünü azaltarak nozul ve filtre tıkanmasını geciktirir ve proses suyunun ömrünü uzatır.
 
-**Yağ ayırıcı ünitesi**, makinenin yanında duran ayrı bir paslanmaz kabindir. Tanktan alınan yağlı su, kabinin altındaki **basınçlı hava tahrikli diyaframlı pompa** ile ünitenin içine aktarılır; yağ ve su yoğunluk farkıyla ayrılır. Pompanın hava beslemesi bir solenoid valf ile açılır; panelde etiketsiz olan anahtar yağ ayırıcıyı çalıştırır ve çalışma lambası yanar (**Bkz. Bölüm 3.4.3**). Ünite, makinenin basınçlı hava tüketicisidir (**Bkz. Bölüm 3.3.5**).
+**Yağ ayırıcı ünitesi**, makinenin yanında duran ayrı bir paslanmaz kabindir. Tanktan alınan yağlı su, kabinin altındaki **basınçlı hava tahrikli diyaframlı pompa** ile ünitenin içine aktarılır; yağ ve su yoğunluk farkıyla ayrılır. Pompanın hava beslemesi bir solenoid valf ile açılır; panelde etiketsiz olan anahtar yağ ayırıcıyı çalıştırır ve çalışma lambası yanar (**Bkz. Bölüm 3.4.3**). Ünite, makinenin tek basınçlı hava tüketicisidir (**Bkz. Bölüm 3.3.5**).
 
 ![Yağ sıyırıcı — TANK 1](../../assets/3.1/yag-siyirici.jpg)
 
@@ -85,11 +85,11 @@ TANK 2 de seviye sensörü, emiş filtresi, pompa çıkışı hassas filtre ve T
 
 Kurutma ünitesi iki aşamalıdır. **Su sıyırma** aşamasında **dört blower motoru (FE04–FE07, her biri 4 kW)** hücre içindeki hava bıçağı borularından yüksek hızlı hava üfleyerek parça yüzeyindeki suyu mekanik olarak sıyırır; bu aşama kurutma için gereken ısı enerjisini azaltır. **Kurutma** aşamasında **iki kurutma fanı (FE02, FE03, her biri 1,1 kW)**, **12 kW'lık iki ısıtıcıdan (R21, R22)** geçen sıcak havayı kurutma hücresine verir; kalan nem buharlaşır.
 
-Kurutma hava sıcaklığı, operatör panelindeki **DRYING 1 HEATER** ve **DRYING 2 HEATER** GEMO DTH2 termostatları ile ayarlanır. Kurutma ısıtıcıları fan çalışmadan açılmamalıdır; aksi hâlde hücre içinde ısı birikir (**Bkz. Bölüm 7.2**). Blower ve kurutma fanı kanatlarında toz birikimi hava debisini düşürür; 250 saatlik bakım maddesidir (**Bkz. Bölüm 9.1.3**).
+Kurutma hava sıcaklığı, operatör panelindeki **DRYING 1 HEATER** ve **DRYING 2 HEATER** GEMO DTH2 termostatları ile ayarlanır. Kurutma ısıtıcıları fan çalışmadan açılmamalıdır; aksi hâlde hücre içinde ısı birikir (**Bkz. Bölüm 7.2.2**). Kurutma fanı ve egzoz fanı kanat/gövdelerindeki toz birikimi hava debisini düşürür; temizlikleri 250 saatlik bakım maddesidir (**Bkz. Bölüm 9.1.3**).
 
 | Bileşen | Adet | Güç | Panel anahtarı |
 | :--- | :---: | :---: | :--- |
-| Blower motoru (FE04–FE07) | 4 | 4 kW | BLOWER 1, BLOWER 2 (iki grup — anahtar/motor eşlemesi için elektrik şeması, **Bkz. Bölüm 13.1**) |
+| Blower motoru (FE04–FE07) | 4 | 4 kW | BLOWER 1, BLOWER 2 (iki grup; anahtar–motor eşlemesi elektrik şemasındadır, **Bkz. Bölüm 13.1**) |
 | Kurutma fanı motoru (FE02, FE03) | 2 | 1,1 kW | DRYING 1 FAN, DRYING 2 FAN |
 | Kurutma fanı ısıtıcısı (R21, R22) | 2 | 12 kW | DRYING 1 HEATER, DRYING 2 HEATER |
 
@@ -101,9 +101,9 @@ Kurutma hava sıcaklığı, operatör panelindeki **DRYING 1 HEATER** ve **DRYIN
 
 ## 3.1.7 Egzoz fanı
 
-**Egzoz fanı (FE01, 1,1 kW)**, makine üstündeki bacaya monte edilmiş salyangoz fandır. Yıkama, durulama ve kurutma hücrelerinde oluşan buharı ve nemli havayı toplayarak bacadan tahliye eder. Egzoz çalışmazsa buhar hücre kapaklarından ve PVC perdelerden işletmeye yayılır; pano içinde yoğuşma ve zemin kayganlığı oluşur. Egzoz bacası kurulumda tesis havalandırmasına veya dış ortama bağlanmalıdır (**Bkz. Bölüm 5.3**).
+**Egzoz fanı (FE01, 1,1 kW)**, makine üstündeki bacaya monte edilmiş salyangoz fandır. Yıkama, durulama ve kurutma hücrelerinde oluşan buharı ve nemli havayı toplayarak bacadan tahliye eder. Egzoz çalışmazsa buhar hücre kapaklarından ve PVC perdelerden işletmeye yayılır; pano içinde yoğuşma ve zemin kayganlığı oluşur. Egzoz bacası kurulumda tesis havalandırmasına veya dış ortama bağlanmalıdır (**Bkz. Bölüm 5.3.4**).
 
-Egzoz fanının operatör panelinde ayrı bir anahtarı yoktur; çalışma koşulu elektrik şemasında tanımlıdır ([EKSİK] — hangi fonksiyonla birlikte devreye girdiği şemadan doğrulanacak). Pano içinde ayrı motor koruma şalteri (Q4 EGZOZ) ve kontaktörü (K4) bulunur (**Bkz. Bölüm 11.1.3**).
+Egzoz fanının operatör panelinde ayrı bir anahtarı yoktur; fan, **CONVEYOR** anahtarı ile birlikte devreye girer (**Bkz. Bölüm 3.4.3**). Pano içinde egzoz fanına ait ayrı motor koruma şalteri (Q4 EGZOZ) ve kontaktör bulunur (**Bkz. Bölüm 3.3.4, 11.1.3**).
 
 ![Egzoz fanı ve baca — konveyör giriş tarafı](../../assets/3.1/egzoz-fani-baca.jpg)
 
@@ -111,7 +111,7 @@ Egzoz fanının operatör panelinde ayrı bir anahtarı yoktur; çalışma koşu
 
 ## 3.1.8 Elektrik panosu ve kontrol altyapısı
 
-Makinenin elektrik ve kontrol altyapısı, makinenin sağ tarafında duran **elektrik panosunda** (1000 × 1600 × 300 mm) toplanmıştır. Panoda PLC veya HMI **yoktur**; kumanda, röle ve kontaktörlerle, operatör paneli üzerindeki aç/kapa anahtarları aracılığıyla yapılır. Pano kapağının dış yüzünde **ana şalter kolu** (Schneider TMŞ CVS250F, 250 A) ve **operatör paneli** bulunur.
+Makinenin elektrik ve kontrol altyapısı, ön uzun kenarda, sağ (çıkış) uca yakın duran **elektrik panosunda** toplanmıştır (pano ölçüleri: **Bkz. Bölüm 3.4.1**). Panoda PLC veya HMI **yoktur**; kumanda, röle ve kontaktörlerle, operatör paneli üzerindeki aç/kapa anahtarları aracılığıyla yapılır. Pano kapağının dış yüzünde **ana şalter kolu** (Schneider TMŞ CVS250F, 250 A) ve **operatör paneli** bulunur.
 
 Besleme gerilimi, kurulu güç, ana şalter değerleri, motor ve ısıtıcı listesi **Bölüm 3.3**'te verilmiştir; bu bölümde tablo tekrarlanmaz. Özet:
 
@@ -122,16 +122,16 @@ Besleme gerilimi, kurulu güç, ana şalter değerleri, motor ve ısıtıcı lis
 
 Operatör paneli anahtarları, termostatlar, lambalar ve pano içi koruma elemanları **Bölüm 3.4**'te detaylandırılmıştır.
 
-![Elektrik panosu — makinenin sağ tarafı](../../assets/3.1/elektrik-panosu-dis.jpg)
+![Elektrik panosu — ön kenar, çıkış ucuna yakın](../../assets/3.1/elektrik-panosu-dis.jpg)
 
 ---
 
 ## 3.1.9 Acil durdurma ve güvenlik donanımı
 
-Makinede **7 adet acil stop butonu** (operatör paneli, konveyör giriş sağ/sol, konveyör çıkış sağ/sol, orta bölge sağ/sol) ve **7 adet bakım kapağı** bulunur. Her bakım kapağı Omron **F3STGRNLPU21M1J8** manyetik emniyet switch'i ile izlenir; switch'ler seri bağlıdır ve iki Omron **G9SB2002AACDC241** emniyet rölesi (acil stop zinciri ve kapak zinciri) tarafından değerlendirilir. Herhangi bir kapak açıldığında veya acil stop basıldığında tüm hareket ve proses çıkışları durur; makine yalnızca operatör panelindeki **RESET** ile yeniden hazır duruma alınır.
+Makinede **7 adet acil stop butonu** (operatör panelinde bir adet; konveyör girişinde, konveyör çıkışında ve makine orta bölgesinde ön ve arka kenarda birer adet) ve **7 adet bakım kapağı** bulunur. Her bakım kapağı Omron **F3STGRNLPU21M1J8** manyetik emniyet switch'i ile izlenir; switch'ler seri bağlıdır. Güvenlik devresinde **iki ayrı** Omron **G9SB2002AACDC241** emniyet rölesi bulunur: biri acil stop zincirini, diğeri bakım kapağı switch zincirini değerlendirir (**Bkz. Bölüm 3.4.8**). Herhangi bir kapak açıldığında veya acil stop basıldığında tüm hareket ve proses çıkışları durur; makine yalnızca operatör panelindeki **RESET** ile yeniden hazır duruma alınır.
 
-Reset prosedürü, acil stop konumları ve kapak açıldıktan sonraki davranış **Bölüm 2.5**'te; güvenlik donanımı özeti **Bölüm 2.1.3**'te verilmiştir; bu bölümde adımlar tekrarlanmaz. Bakım sırasında kapak switch'leri baypas edilmemelidir; kapak açılmadan önce **LOTO** uygulanır (**Bkz. Bölüm 2.4**).
+Reset prosedürü, acil stop konumları ve kapak açıldıktan sonraki davranış **Bölüm 2.5**'te; güvenlik donanımı özeti **Bölüm 2.1.3**'te verilmiştir; bu bölümde adımlar tekrarlanmaz. Bakım sırasında kapak switch'leri bypass edilmemelidir; kapak açılmadan önce **LOTO** uygulanır (**Bkz. Bölüm 2.4**).
 
 ---
 
-Amaçlanan kullanım sınırları için bkz. **Bölüm 3.2**; teknik tablolar için bkz. **Bölüm 3.3**; kontrol elemanları için bkz. **Bölüm 3.4**; yerleşim planı için bkz. **Bölüm 3.5**.
+Amaçlanan kullanım sınırları: **Bkz. Bölüm 3.2**; teknik tablolar: **Bkz. Bölüm 3.3**; kontrol elemanları: **Bkz. Bölüm 3.4**; yerleşim planı: **Bkz. Bölüm 3.5**.

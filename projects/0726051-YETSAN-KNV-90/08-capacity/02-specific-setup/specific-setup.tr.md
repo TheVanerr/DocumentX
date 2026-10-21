@@ -24,15 +24,21 @@ Ayarlar makinede saklanmadığından vardiya değişiminde veya ürün geçişin
 
 Yeni parça tipi devreye alınırken:
 
-1. Hattı boşaltın; **CONVEYOR** anahtarını OFF alın (**Bkz. Bölüm 7.3.1**).
-2. Termostatlarda hedef set değerlerini girin (TANK 1, TANK 2, DRYING 1, DRYING 2 — **Bkz. Bölüm 6.3.3**); su sıcaklığı +70 °C'yi aşmamalıdır.
-3. Parça için gerekli proses fonksiyonlarını belirleyin (yıkama, durulama, blower, kurutma); gereksiz fonksiyonları kapalı tutun.
-4. Konveyör hızını başlangıç değeri olarak orta aralıkta (ör. 40 Hz) ayarlayın.
-5. Tankların set sıcaklığa ulaşmasını bekleyin; fonksiyonları **Bölüm 7.2.2** sırasına göre açın.
-6. Örnek parça ile test yıkaması yapın; çıkışta temizlik ve kuruluk kriterini değerlendirin.
-7. Sonuç yetersizse hızı düşürün veya sıcaklığı artırın; parça ıslak çıkıyorsa blower/kurutma açık mı ve kurutma sıcaklığı yeterli mi kontrol edin. Testi tekrarlayın.
-8. Onaylanan hız (Hz), set değerleri ve fonksiyon kombinasyonunu **Bölüm 8.2.3** formuna ürün adı/numarası ile kaydedin.
-9. Yükleme aralığını ve hedef adet/saati **Bölüm 8.1.3** tablosuna işleyin.
+1. Hattı boşaltın.
+2. **CONVEYOR** anahtarını OFF konumuna alın (**Bkz. Bölüm 7.3.1**).
+3. Termostatlarda hedef set değerlerini girin (TANK 1, TANK 2, DRYING 1, DRYING 2 — **Bkz. Bölüm 6.3.3**); banyo suyu +70 °C'yi, kurutma havası parça malzemesinin dayanım sıcaklığını aşmamalıdır.
+4. Parça için gerekli proses fonksiyonlarını (yıkama, durulama, blower, kurutma) belirleyin; gerekmeyen fonksiyonlar kapalı kalır.
+5. Konveyör hızını başlangıç değeri olarak orta aralıkta (ör. 40 Hz) ayarlayın.
+6. Tankların set sıcaklığa ulaşmasını bekleyin.
+7. Fonksiyonları açılış sırasına göre açın (**Bkz. Bölüm 7.2.2**).
+8. Örnek parça ile test yıkaması yapın.
+9. Çıkışta temizlik ve kuruluk kriterini değerlendirin.
+10. Temizlik sonucu yetersizse konveyör hızını düşürün veya tank set sıcaklığını +70 °C sınırı içinde artırın.
+11. Parça ıslak çıkıyorsa blower ve kurutma fonksiyonlarının açık olduğunu ve kurutma set değerlerini kontrol edin.
+12. Kriter sağlanana kadar 8–11. adımları tekrarlayın.
+13. Onaylanan hızdaki döngü süresini ölçün (**Bkz. Bölüm 8.1.1**).
+14. Onaylanan hızı (Hz / potansiyometre konumu), set değerlerini ve fonksiyon kombinasyonunu ürün adı/numarası ile **Bölüm 8.2.3** formuna kaydedin.
+15. Yükleme aralığını, ölçülen döngü süresini ve hedef adet/saati **Bölüm 8.1.3** tablosuna işleyin.
 
 **Beklenen sonuç:** Parça hedef temizlik ve kuruluk kriterini karşılar; hedef adet/saat sağlanır.
 
@@ -59,7 +65,8 @@ Aşağıdaki alanlar **kullanıcı firma tarafından** doldurulur:
 | TANK 2 set sıcaklığı (°C) | | | |
 | DRYING 1 set sıcaklığı (°C) | | | |
 | DRYING 2 set sıcaklığı (°C) | | | |
-| Konveyör hızı (Hz) | | | |
+| Konveyör hızı (Hz / potansiyometre konumu) | | | |
+| Ölçülen döngü süresi (s) | | | |
 | Yıkama / Durulama / Blower 1-2 / Kurutma 1-2 | on/off | on/off | on/off |
 | Yağ sıyırıcı / yağ ayırıcı | on/off | on/off | on/off |
 | Yükleme aralığı (parça/dk) | | | |
@@ -92,4 +99,4 @@ Reçete numaralandırması ve ürün–parametre eşlemesi kullanıcı firma tar
 
 ---
 
-Operasyon için bkz. **Bölüm 7**; kapasite limitleri için bkz. **Bölüm 8.1**.
+Operasyon için **Bkz. Bölüm 7**; kapasite limitleri için **Bkz. Bölüm 8.1**.

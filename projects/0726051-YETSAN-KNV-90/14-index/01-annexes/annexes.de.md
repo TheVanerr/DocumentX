@@ -1,6 +1,6 @@
 # 14.1 Anhänge
 
-Die Anhänge verweisen auf unterstützende Dokumente außerhalb der Anleitung oder in bestimmten Kapiteln innerhalb der Anleitung. Verfahrenstexte werden nicht wiederholt; es wird auf das jeweilige Kapitel verwiesen. In den DATA ist für dieses Projekt kein Anhangsinhalt definiert; die nachstehende Zuordnung richtet sich nach der Struktur der Anleitung.
+Die Anhänge verweisen auf unterstützende Dokumente außerhalb der Anleitung oder in bestimmten Kapiteln innerhalb der Anleitung. Verfahrenstexte werden nicht wiederholt; es wird auf das jeweilige Kapitel verwiesen. Die nachstehende Tabelle zeigt, wo sich jeder Anhang in der Anleitung oder im Lieferpaket befindet.
 
 ---
 
@@ -11,7 +11,7 @@ Die Anhänge verweisen auf unterstützende Dokumente außerhalb der Anleitung od
 | **Anhang A** | Alarmliste | Nicht zutreffend — kein HMI; stattdessen Störungstabelle **11.1.2** und MKŞ-Zuordnungstabelle **11.1.3** | Symptome nach Leuchten und Stellung der Schaltschrankelemente |
 | **Anhang B** | Parameterliste | Kapitel **6.3.5** — Protokollformular für Thermostat-Sollwerte und Fördererfrequenz | Kein separates Dokument; wird vom Anwender ausgefüllt |
 | **Anhang C** | Rezeptbeispiele | Kapitel **8.2.3** — produktbezogene Vorlage für Geschwindigkeit/Temperatur/Funktion | Prozessparameter werden von der Anlage definiert |
-| **Anhang D** | Garantieurkunde | [EKSİK] — Lieferpaket | Anforderung und Bedingungen beim Hersteller — siehe **1.3** |
+| **Anhang D** | Garantieurkunde | Separates Dokument — wird mit der Maschine geliefert | Garantiedauer und -bedingungen sind im Kaufvertrag und in der Garantieurkunde festgelegt — **Siehe Kapitel 1.1.5** |
 
 ---
 
@@ -27,7 +27,7 @@ Die folgenden Inhalte erfordern keinen separaten gedruckten Anhang; sie sind im 
 | Plan der periodischen Wartung | **9.1.3** | Wartungsplanung |
 | Wartungsprotokollformular | **9.1.7** | Protokoll der periodischen Wartung |
 | Reinigungsprotokollformular | **10.1.9** | Protokoll der täglichen/wöchentlichen Reinigung |
-| Ersatzteilliste (BOM — 40 Positionen) | **13.3.1** | Bestellung und Lagerbestand |
+| Ersatzteilliste (BOM — 39 Positionen) | **13.3.1** | Bestellung und Lagerbestand |
 | Checkliste Sicherheitsfunktionstest | **5.4.6** | Installation und jährlicher Test |
 | Checklisten zur Installationsprüfung | **5.3.7**, **5.5.6** | Installationsprüfung |
 | Checkliste vor dem Start | **7.2.5** | Betrieb |
@@ -40,8 +40,11 @@ Die folgenden Inhalte erfordern keinen separaten gedruckten Anhang; sie sind im 
 
 ## 14.1.3 Externe Lieferdokumente
 
-Die PDFs im Lieferpaket werden nicht als **Anhang** nummeriert; sie sind in der Liste in **Kapitel 13.1.1** definiert:
+Die separaten Dokumente im Lieferpaket werden (außer Anhang D) nicht als **Anhang** nummeriert; zu Dateiname und Revisionsstand **Siehe Kapitel 13.1**:
 
-- Schaltplan ([EKSİK] Dateiname/Rev.)
-- Aufstellungsplan (Layout) der Maschine ([EKSİK] Dateiname/Rev.)
-- Fremddokumentation der Komponentenhersteller — Delta VFD-EL, GEMO DTH2, Omron G9SB / F3S (**Kapitel 13.1.3**)
+- EG-Konformitätserklärung
+- Schaltplan
+- Aufstellungsplan (Layout) der Maschine
+- Garantieurkunde (Anhang D)
+
+Die Fremddokumentation der Komponentenhersteller (Delta VFD, GEMO DTH2, Omron G9SB, VEGASWING 51, Getriebe) ist nicht im Lieferpaket enthalten; sie ist auf Anfrage beim Hersteller erhältlich (**Siehe Kapitel 13.1.3**).

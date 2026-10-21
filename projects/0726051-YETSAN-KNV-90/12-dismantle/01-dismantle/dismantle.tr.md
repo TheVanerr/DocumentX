@@ -1,8 +1,8 @@
 # 12.1 Güvenli demontaj prosedürü
 
-Makinenin tesisattan sökülmesi, parçalara ayrılması veya nakliyesi öncesinde enerji izolasyonu ve sıvı tahliyesi zorunludur. Demontaj sırasında makine **elektriği kesilmelidir**; tanklardaki **su boşaltılmalıdır**. DATA'da proje için demontaj ön koşulu ve sırası ayrıca tanımlanmamıştır; aşağıdaki prosedür makine tipinin standart demontaj akışıdır.
+Makinenin tesisattan sökülmesi, parçalara ayrılması veya nakliyesi öncesinde enerji izolasyonu ve sıvı tahliyesi zorunludur. Demontaj boyunca makinenin **elektriği kesik**, tanklardaki **su boşaltılmış** olmalıdır. Bu alt bölüm; demontaj ön koşullarını, enerji izolasyonunu, demontaj sırasını ve demontaj atıklarının ayrıştırılmasını tanımlar.
 
-Bu makinede hidrolik devre yoktur; pnömatik (**6 bar** hava — yağ ayırıcı) ve elektrik (**380 V / 110 kW**) izolasyonu yeterlidir. Akü bulunmamaktadır. Proses tanklarında yağlı su, yağ ayırıcı ünitesinde toplanmış yağ, konveyörde gres, redüktörlerde yağ ve temizlik deterjanı kalıntısı olabilir; atık bertarafı **Bölüm 10.1.8**'e tabidir.
+Bu makinede hidrolik devre ve akü yoktur. İzole edilecek enerjiler elektrik, basınçlı hava (yağ ayırıcı pompası), su ve termal enerjidir (**Bkz. Bölüm 12.1.2**). Proses tanklarında yağlı su, yağ ayırıcı ünitesinde toplanmış yağ, konveyörde gres, redüktörlerde yağ ve temizlik deterjanı kalıntısı bulunabilir; atık bertarafı **Bölüm 10.1.8**'e tabidir.
 
 ---
 
@@ -16,13 +16,13 @@ Demontaja başlamadan önce aşağıdaki koşullar sağlanmalıdır:
 | 2 | Tank suyu ve rezistanslar soğumuş |
 | 3 | Yıkama ve durulama tankları **boşaltılmış ve temizlenmiş** (**Bölüm 10.1.5**) |
 | 4 | Yağ ayırıcı ünitesi boşaltılmış; toplanan yağ bertaraf edilmiş |
-| 5 | **LOTO** uygulanmış (**Bölüm 2.4**) — ana şalter kilitli, hava vanası kapalı |
-| 6 | Taşıma ekipmanı (forklift, SWL ≥ taşıma ağırlığı [EKSİK]) ve kaldırma çizimi hazır |
-| 7 | Elektrik şeması ve layout çizimi elde (**Bölüm 13.1, 13.2**) |
+| 5 | **LOTO** uygulanmış (**Bölüm 2.4**) — ana şalter, tesisat hava vanası ve tesis su vanası kapalı ve kilitli |
+| 6 | Forklift hazır (SWL ≥ en ağır parçanın taşıma ağırlığı); taşıma ağırlığı ve kaldırma yöntemi — **Bkz. Bölüm 3.5.4** |
+| 7 | Elektrik şeması ve layout çizimi elde (**Bkz. Bölüm 13.1**) |
 
-Dolu tank ile demontaj/taşıma ağırlık merkezini değiştirir; çalışma ağırlığı belirgin şekilde artar (**Bkz. Bölüm 3.3.1**).
+Tanklar dolu iken makine sökülmez ve taşınmaz: tank sıvısı ağırlığı belirgin şekilde artırır (**Bkz. Bölüm 3.3.1**) ve çalkalanarak ağırlık merkezini kaydırır (**Bkz. Bölüm 3.5.4**).
 
-**UYARI — Ezilme:** Demontaj sırasında konveyör hattında parça veya cisim kalmadığını doğrulayın; tel bant ve zincir sökümünde gerilim altındaki elemanlara dikkat edin.
+**UYARI — Ezilme:** Konveyör hattında kalan parçalar ve gergin tel bant/zincir elemanları söküm sırasında el ve parmakların ezilmesine yol açabilir. Demontajdan önce hatta parça kalmadığını doğrulayın; tel bant ve zinciri, gerginliği kontrollü şekilde alındıktan sonra sökün.
 
 ---
 
@@ -36,22 +36,21 @@ Enerji kaynakları:
 
 | Enerji | İzolasyon noktası | Not |
 | :--- | :--- | :--- |
-| Elektrik | Ana şalter (TMŞ CVS250F) — pano kapağı kolu + tesis besleme şalteri | **380 V / 50 Hz / 3 faz / 110 kW** — bkz. **3.3.3** |
-| Basınçlı hava | Tesis hava vanası | **6 bar** — bkz. **3.3.5** |
-| Su | Tesis su vanası; tank TAHLİYE vanaları | Tanklar boşaltılır — **10.1.5** |
-| Termal | Rezistanslar, kurutma hücresi | Soğuma süresi |
-| Elektriksel depolanmış | İnverter DC barası | Ana şalter OFF sonrası ≥ 5 dk |
+| Elektrik | Ana şalter (TMŞ CVS250F) — pano kapağı kolu + tesis besleme şalteri | **Bkz. Bölüm 3.3.3** |
+| Basınçlı hava | Hava hortumundan önceki tesisat hattındaki kilitlenebilir, tahliyeli küresel vana (makine üzerinde kesme vanası yoktur) | Regülatör manometresinde **0 bar** — **Bkz. Bölüm 2.4** |
+| Su | Tesis su vanası; tank TAHLİYE vanaları | Tanklar boşaltılır — **Bkz. Bölüm 10.1.5** |
+| Termal | Rezistanslar, kurutma hücresi | Soğumayı bekleyin |
+| Elektriksel depolanmış | İnverter DC barası | Ana şalter OFF sonrası en az 5 dakika bekleyin — **Bkz. Bölüm 2.4.1** |
 
 **LOTO uygulama özeti**
 
-1. Makineyi durdurun; tüm anahtarlar OFF.
-2. Ana şalteri **OFF (O)** konumuna alın ve kilitleyin; tesis besleme şalterini de kapatıp kilitleyin.
-3. Tesis **hava** ve **su** vanalarını kapatın; hava hattı basıncını regülatörden tahliye edin.
-4. **Bölüm 2.4** LOTO prosedürünü tam uygulayın (kilit, etiket, doğrulama).
-5. Tankları boşaltın (**Bölüm 10.1.5**).
-6. Pano giriş terminallerinde gerilim olmadığını yetkili elektrikçi ölçerek doğrulamalıdır.
+1. Makineyi durdurun; tüm fonksiyon anahtarlarını OFF konumuna alın.
+2. **Bölüm 2.4** LOTO prosedürünü eksiksiz uygulayın: ana şalter, tesisat hava vanası ve tesis su vanası kapalı, kilitli ve etiketli; regülatör manometresi **0 bar**.
+3. Pano besleme kablosunun bağlı olduğu tesis besleme şalterini kapatın ve kilitleyin.
+4. Pano giriş terminallerinde gerilim olmadığını ölçerek doğrulayın (yalnız yetkili elektrikçi).
+5. Tankları boşaltın (**Bkz. Bölüm 10.1.5**).
 
-**TEHLİKE — Elektrik:** 380 V trifaze besleme; tesis şalteri kapatılmadan TMŞ giriş terminalleri enerjilidir. Pano içi söküm yalnızca yetkili elektrik personeli tarafından, tesis beslemesi kesilip ölçülerek doğrulandıktan sonra yapılır.
+**TEHLİKE — Elektrik çarpması:** Tesis besleme şalteri kapatılmadan TMŞ giriş terminalleri 380 V altında kalır; temas ölüme veya ağır yaralanmaya yol açar. Pano içi sökümü yalnız yetkili elektrik personeli, tesis beslemesini kesip gerilimsizliği ölçerek doğruladıktan sonra yapar.
 
 ---
 
@@ -64,20 +63,20 @@ Enerji kaynakları:
 **Demontaj prosedürü**
 
 1. **Operasyonu durdurun** — **Bölüm 7.3.1**; son parçaları hattan alın.
-2. **LOTO uygulayın** — bkz. **12.1.2**, **2.4**.
-3. **Tankları boşaltın ve temizleyin** — bkz. **10.1.5**; atık su **10.1.8**'e uygun bertaraf. Yağ ayırıcı ünitesindeki yağı ayrı toplayın.
+2. **LOTO uygulayın** — **Bkz. Bölüm 12.1.2**.
+3. **Tankları boşaltın ve temizleyin** — **Bkz. Bölüm 10.1.5**; atık suyu **Bölüm 10.1.8**'e uygun bertaraf edin. Yağ ayırıcı ünitesindeki yağı ayrı toplayın.
 4. **Tesisat bağlantılarını sökün:**
-   - Trifaze elektrik (**380 V, 3P+N+PE**) — tesis beslemesi kesilmiş ve ölçülerek doğrulanmış
-   - Basınçlı hava (**6 bar**) — regülatör girişi
+   - Elektrik besleme kablosu (3P+N+PE) — tesis beslemesi kesilmiş ve gerilimsizlik ölçülerek doğrulanmış olmalı
+   - Basınçlı hava hortumu — **AIR INLET / HAVA GİRİŞİ** regülatörü
    - Su dolum hattı ve tank TAHLİYE / atık su bağlantıları
    - Egzoz bacası kanalı
 5. **Yağ ayırıcı ünitesini ayırın** — hortumlar, hava hattı ve solenoid valf kablosu; üniteyi ayrı taşıyın.
-6. **Mekanik demontaj** — koruma kafesleri, PVC perdeler, hücre kapakları, egzoz fanı ve baca, tank kapakları; gerekiyorsa pompalar, blower/fan motorları ve konveyör redüktörü; parça listesi **Bölüm 13.3.1**. Redüktör ve pompa sökümünde yağ/su damlamasına karşı tava kullanın.
+6. **Mekanik demontaj** — koruma kafesleri, PVC perdeler, hücre kapakları, egzoz fanı ve baca, tank kapakları; gerekiyorsa pompalar, blower/fan motorları ve konveyör redüktörü (parça kodları: **Bkz. Bölüm 13.3.1**). Redüktör ve pompa sökümünde yağ/su damlamasına karşı tava kullanın.
 7. **Elektrik panosu ve kablo demontajı** — LOTO altında; inverter, emniyet röleleri, kontaktörler ve kabloları elektrik/elektronik atık (WEEE) sınıfına ayırın.
-8. **Taşıma** — forklift ile, kaldırma çizimine göre (**Bkz. Bölüm 4.1**).
-9. **Parçaları malzeme grubuna göre ayırın** — bkz. **12.3**.
+8. **Taşıma** — forklift ile; taşıma ağırlığı ve kaldırma noktaları için **Bkz. Bölüm 3.5.4**, taşıma prosedürü için **Bkz. Bölüm 4.1.4**.
+9. **Parçaları malzeme grubuna göre ayırın** — **Bkz. Bölüm 12.3**.
 
-**Not:** Rutin taşıma veya tesis içi yer değişikliğinde yalnızca adım 1–5 ve 8 uygulanır; makine ana gövdesi bütün hâlde taşınır. Tam demontaj yalnızca hurda veya büyük tesis değişikliğinde uygulanır.
+**NOT:** Tesis içi yer değişikliğinde yalnız adım 1–5 ve 8 uygulanır; makine ana gövdesi bütün hâlde taşınır. Tam demontaj yalnız hurdaya ayırma veya büyük tesis değişikliğinde uygulanır.
 
 **Beklenen sonuç:** Makine enerjiden izole; tanklar boş; tesisat sökülmüş; yağ ayırıcı ünitesi ayrı; parçalar taşınmaya veya bertarafa hazır.
 
@@ -91,8 +90,8 @@ Enerji kaynakları:
 | Tehlikeli madde | Akü yok; yağlı proses suyu, toplanan yağ, gres, redüktör yağı, deterjan — **10.1.8**, **12.3** |
 | Atık su / temizlik | **Bölüm 10.1.8** |
 
-Demontaj atıkları yerel mevzuata uygun ayrıştırılmalı ve lisanslı tesislere gönderilmelidir. Paslanmaz çelik gövde ve tanklar, bakır kablo ve rezistans bağlantıları, plastik contalar ve PVC perdeler, elektrik/elektronik (inverter, röleler, kontaktörler, termostatlar) ve ambalaj malzemeleri ayrı toplanır — ayrıntı **Bölüm 12.3**.
+Demontaj atıkları yerel mevzuata uygun ayrıştırılmalı ve lisanslı tesislere gönderilmelidir. Paslanmaz çelik gövde ve tanklar, bakır kablo ve rezistans bağlantıları, plastik contalar ve PVC perdeler, elektrik/elektronik (inverter, röleler, kontaktörler, termostatlar) ve ambalaj malzemeleri ayrı toplanır (**Bkz. Bölüm 12.3**).
 
 ---
 
-Geçici/kalıcı devre dışı bırakma **12.2**; hurda **12.3**.
+Geçici ve kalıcı devre dışı bırakma için **Bkz. Bölüm 12.2**; hurda değerlendirme için **Bkz. Bölüm 12.3**.

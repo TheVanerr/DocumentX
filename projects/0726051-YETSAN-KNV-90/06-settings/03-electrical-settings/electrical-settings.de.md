@@ -15,7 +15,7 @@ Der Aufbau des Bedienfelds ist in **Kapitel 3.4** beschrieben; dieses Kapitel gi
 
 Pumpen, Ventilatoren und Blower sind direkt anlaufende Motoren (Schütz), deren Drehrichtung von der Phasenfolge der Versorgung abhängt; die Phasenfolge wird bei der Installation mit dem Phasenfolgerelais geprüft (**Siehe Kapitel 5.3.6**). Der Förderer wird über einen Frequenzumrichter angetrieben und seine Richtung ist im Frequenzumrichter-Parameter fest hinterlegt. Eine Einstellung zur Änderung der Motordrehrichtung im Betrieb gibt es nicht; Rückwärtslauf ist ein Störungsanzeichen (**Siehe Kapitel 11.3.1**).
 
-**VORSICHT — Frequenzumrichter-Parameter:** Eine Änderung der Parameter des Delta VFD004EL21W-1 (Richtung, Min./Max.-Frequenz, Rampe) durch den Bediener kann zum Rückwärtslauf des Förderers oder zum Stillstand unter 20 Hz führen. Parameteränderungen werden ausschließlich vom autorisierten Herstellerservice vorgenommen.
+**VORSICHT — Unbefugte Parameteränderung:** Eine Änderung der Parameter des Delta VFD004EL21W-1 (Richtung, Min./Max.-Frequenz, Rampe) durch den Bediener kann zum Rückwärtslauf des Förderers oder zum Stillstand unter 20 Hz führen. Parameteränderungen ausschließlich vom autorisierten Herstellerservice vornehmen lassen.
 
 ---
 
@@ -31,31 +31,35 @@ An der Maschine sind kein Encoder, kein Servoantrieb und keine Positionsrückfü
 
 ## 6.3.3 Thermostat-Sollwerte (GEMO DTH2)
 
-| Parameter | Einstellort | Bereich |
+| Parameter | Einstellort | Sollwert |
 | :--- | :--- | :--- |
-| Temperatur TANK 1 (Waschen) | Thermostat TANK 1 HEATER | [EKSİK] — Wasser darf +70 °C nicht überschreiten (**Siehe Kapitel 3.3.5**) |
-| Temperatur TANK 2 (Spülen) | Thermostat TANK 2 HEATER | [EKSİK] — Wasser darf +70 °C nicht überschreiten |
-| Lufttemperatur Trocknung 1 | Thermostat DRYING 1 HEATER | [EKSİK] |
-| Lufttemperatur Trocknung 2 | Thermostat DRYING 2 HEATER | [EKSİK] |
+| Temperatur TANK 1 (Waschen) | Thermostat TANK 1 HEATER | Kein werkseitiger Sollwert — legt der Betreiber fest; Badwasser darf +70 °C nicht überschreiten (**Siehe Kapitel 3.3.5**) |
+| Temperatur TANK 2 (Spülen) | Thermostat TANK 2 HEATER | Kein werkseitiger Sollwert — legt der Betreiber fest; Badwasser darf +70 °C nicht überschreiten |
+| Lufttemperatur Trocknung 1 | Thermostat DRYING 1 HEATER | Kein werkseitiger Sollwert — legt der Betreiber so fest, dass die Temperaturbeständigkeit des Werkstückmaterials nicht überschritten wird |
+| Lufttemperatur Trocknung 2 | Thermostat DRYING 2 HEATER | Kein werkseitiger Sollwert — legt der Betreiber so fest, dass die Temperaturbeständigkeit des Werkstückmaterials nicht überschritten wird |
 | Skalierung Analogdruck | Keine | — |
 
-Das Thermostat zeigt die mit dem Thermoelement gemessene Ist-Temperatur auf dem Display an und schaltet bei Erreichen des Sollwerts das zugehörige Heizungsschütz ab; sinkt die Temperatur, schaltet es wieder ein. Der Sollwert wird vom Anwenderunternehmen entsprechend den Prozessanforderungen (Verschmutzungsart, Werkstückmaterial, Reinigungschemie) festgelegt.
+Der Thermostat zeigt die mit dem Thermoelement gemessene Ist-Temperatur auf dem Display an und schaltet bei Erreichen des Sollwerts das zugehörige Heizungsschütz ab; sinkt die Temperatur, schaltet es wieder ein. Die Thermostate haben keinen werkseitigen Sollwert; der Betreiber legt die Sollwerte entsprechend den Prozessanforderungen (Verschmutzungsart, Werkstückmaterial, Reinigungschemie) fest. Das Badwasser darf **+70 °C nicht überschreiten** (**Siehe Kapitel 3.3.5**). Die Trocknungslufttemperatur wird so gewählt, dass die Temperaturbeständigkeit des bearbeiteten Werkstückmaterials nicht überschritten wird. Die festgelegten Werte werden produktbezogen aufgezeichnet (**Siehe Kapitel 8.2.3**).
 
 **Einstellverfahren für den Thermostat-Sollwert**
 
 1. Den betreffenden Heizungsschalter (z. B. TANK 1 HEATER) in Stellung **OFF** bringen.
 2. Die Ist-Temperatur auf dem Thermostatdisplay ablesen.
-3. Die Set-Taste des Thermostats drücken; während der Sollwert auf dem Display blinkt, die Zieltemperatur mit den **Auf-/Ab-Pfeiltasten** eingeben.
-4. Mit der Set-Taste bestätigen; das Display kehrt zur Ist-Temperatur zurück.
-5. Sicherstellen, dass ausreichend Wasser im Tank ist (WASHING-LEVEL-Leuchte aus).
-6. Den Heizungsschalter auf **ON** stellen; beobachten, dass die Temperatur in Richtung Sollwert ansteigt und das Heizungsschütz beim Sollwert abschaltet (der Temperaturanstieg stoppt).
-7. Die Sollwerte in die Checkliste in **Kapitel 6.3.5** und in das Wartungsformular eintragen.
+3. Die Set-Taste des Thermostats drücken; der Sollwert blinkt auf dem Display.
+4. Die Zieltemperatur mit den **Auf-/Ab-Pfeiltasten** eingeben.
+5. Mit der Set-Taste bestätigen; das Display kehrt zur Ist-Temperatur zurück.
+6. Die Einschaltbedingung der Heizung prüfen:
+   a. TANK 1 / TANK 2 HEATER: Die rote WASHING-LEVEL-Leuchte des betreffenden Tanks muss aus sein.
+   b. DRYING 1 / DRYING 2 HEATER: Der zugehörige Trocknungsventilator (DRYING 1 / DRYING 2 FAN) muss laufen.
+7. Den Heizungsschalter auf **ON** stellen.
+8. Beobachten, dass die Temperatur in Richtung Sollwert ansteigt und das Heizungsschütz beim Sollwert abschaltet (der Temperaturanstieg stoppt).
+9. Die Sollwerte in die Checkliste in **Kapitel 6.3.5** und in das Wartungsformular eintragen.
 
 **Erwartetes Ergebnis:** Die Ist-Temperatur stabilisiert sich im Bereich des Sollwerts; auch bei Heizungsschalter ON überschreitet die Temperatur den Sollwert nicht.
 
 **Abweichung:** Erwärmt sich das Wasser trotz angezeigtem Sollwert weiter, kann der Thermostatausgang oder das Schütz verklebt sein (**Siehe Kapitel 11.1.2 — Störung 5**). Schaltet die Heizung überhaupt nicht ein, Füllstandverriegelung, Sicherung und Fehlerstrom-Schutzschalter prüfen (**Siehe Kapitel 11.3.3**).
 
-Zur Tastenanordnung und zu den erweiterten Parametern des Thermostats siehe die Bedienungsanleitung GEMO DTH2 (**Siehe Kapitel 13.1**).
+Tastenanordnung und erweiterte Parameter des Thermostats sind in der Bedienungsanleitung GEMO DTH2 beschrieben; diese Anleitung ist auf Anfrage beim Hersteller erhältlich (**Siehe Kapitel 13.1.3**).
 
 ![Bedienfeld — Thermostate GEMO DTH2](../../assets/3.4/operator-paneli.jpg)
 
@@ -77,7 +81,7 @@ Zur Tastenanordnung und zu den erweiterten Parametern des Thermostats siehe die 
 4. **Nicht unter 20 Hz absenken** — das Motordrehmoment reicht unter Last nicht aus und der Förderer kann stehen bleiben.
 5. Die gewählte Geschwindigkeit in die Prozessaufzeichnung eintragen (**Siehe Kapitel 8.2**).
 
-Die Geschwindigkeit bestimmt die Verweilzeit des Werkstücks in der Kammer: Niedrige Geschwindigkeit bedeutet längeres Waschen/Trocknen, hohe Geschwindigkeit mehr Werkstücke pro Stunde. Bleibt der Förderer unter Last stehen, die Geschwindigkeit erhöhen oder die Last verringern; gibt der Frequenzumrichter einen Alarm aus, siehe **Kapitel 11.3.2**.
+Die Geschwindigkeit bestimmt die Verweilzeit des Werkstücks in der Kammer: Niedrige Geschwindigkeit bedeutet längeres Waschen/Trocknen, hohe Geschwindigkeit mehr Werkstücke pro Stunde. Die Zykluszeit bei der gewählten Frequenz wird im Betrieb gemessen (**Siehe Kapitel 3.3.2**); Messverfahren: **Siehe Kapitel 8.1.1**. Bleibt der Förderer unter Last stehen, die Geschwindigkeit erhöhen oder die Last verringern; gibt der Frequenzumrichter einen Alarm aus: **Siehe Kapitel 11.3.2**.
 
 ---
 
@@ -97,4 +101,4 @@ Die Geschwindigkeit bestimmt die Verweilzeit des Werkstücks in der Kammer: Nied
 
 ---
 
-Aufbau des Bedienfelds siehe **Kapitel 3.4**; Kapazitätsmanagement siehe **Kapitel 8.2**.
+Aufbau des Bedienfelds: **Siehe Kapitel 3.4**; Kapazitätsmanagement: **Siehe Kapitel 8.2**.

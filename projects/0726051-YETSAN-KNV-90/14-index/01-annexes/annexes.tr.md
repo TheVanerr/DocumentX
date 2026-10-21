@@ -1,6 +1,6 @@
 # 14.1 Ekler
 
-Ekler, kılavuz dışında veya kılavuz içinde belirli bölümlerde bulunan destek dokümanlarına referans verir. Prosedür metinleri tekrarlanmaz; ilgili bölüme yönlendirilir. DATA'da bu proje için ek içeriği tanımlanmamıştır; aşağıdaki eşleme kılavuz yapısına göredir.
+Ekler, kılavuz dışında veya kılavuz içinde belirli bölümlerde bulunan destek dokümanlarına referans verir. Prosedür metinleri tekrarlanmaz; ilgili bölüme yönlendirilir. Aşağıdaki tablo her ekin kılavuzdaki veya teslim paketindeki yerini gösterir.
 
 ---
 
@@ -11,7 +11,7 @@ Ekler, kılavuz dışında veya kılavuz içinde belirli bölümlerde bulunan de
 | **Ek A** | Alarm listesi | Uygulanmaz — HMI yok; yerine arıza tablosu **11.1.2** ve MKŞ tespit tablosu **11.1.3** | Belirtiler lamba ve pano elemanı konumuna göre |
 | **Ek B** | Parametre listesi | Bölüm **6.3.5** — termostat set değerleri ve konveyör frekansı kayıt formu | Ayrı evrak teslim edilmez; kullanıcı doldurur |
 | **Ek C** | Reçete örnekleri | Bölüm **8.2.3** — ürün bazlı hız/sıcaklık/fonksiyon şablonu | Proses parametreleri tesis tarafından tanımlanır |
-| **Ek D** | Garanti belgesi | [EKSİK] — teslim paketi | Talep ve koşullar imalatçı ile — bkz. **1.3** |
+| **Ek D** | Garanti belgesi | Ayrı evrak — makine ile birlikte verilir | Garanti süresi ve koşulları satış sözleşmesinde ve garanti belgesinde belirtilir — **Bkz. Bölüm 1.1.5** |
 
 ---
 
@@ -27,7 +27,7 @@ Aşağıdaki içerikler ayrı basılı ek gerektirmez; ilgili bölümde tablo ve
 | Periyodik bakım takvimi | **9.1.3** | Bakım planlama |
 | Bakım kayıt formu | **9.1.7** | Periyodik bakım kaydı |
 | Temizlik kayıt formu | **10.1.9** | Günlük/haftalık temizlik kaydı |
-| Yedek parça listesi (BOM — 40 kalem) | **13.3.1** | Sipariş ve stok |
+| Yedek parça listesi (BOM — 39 kalem) | **13.3.1** | Sipariş ve stok |
 | Güvenlik fonksiyon test kontrol listesi | **5.4.6** | Kurulum ve yıllık test |
 | Kurulum doğrulama kontrol listeleri | **5.3.7**, **5.5.6** | Kurulum doğrulama |
 | Start öncesi kontrol listesi | **7.2.5** | Operasyon |
@@ -40,8 +40,11 @@ Aşağıdaki içerikler ayrı basılı ek gerektirmez; ilgili bölümde tablo ve
 
 ## 14.1.3 Harici teslim dokümanları
 
-Teslim paketindeki PDF'ler **Ek** olarak numaralandırılmaz; **Bölüm 13.1.1** listesinde tanımlanır:
+Teslim paketindeki ayrı evrak (Ek D dışında) **Ek** olarak numaralandırılmaz; dosya adı ve revizyonları için **Bkz. Bölüm 13.1**:
 
-- Elektrik şeması ([EKSİK] dosya adı/rev)
-- Makine layout çizimi ([EKSİK] dosya adı/rev)
-- Üçüncü taraf bileşen kılavuzları — Delta VFD-EL, GEMO DTH2, Omron G9SB / F3S (**Bölüm 13.1.3**)
+- AB Uygunluk Beyanı
+- Elektrik şeması
+- Makine layout çizimi
+- Garanti belgesi (Ek D)
+
+Üçüncü taraf bileşen kılavuzları (Delta VFD, GEMO DTH2, Omron G9SB, VEGASWING 51, redüktör) teslim paketinde yer almaz; talep halinde imalatçıdan temin edilir (**Bkz. Bölüm 13.1.3**).

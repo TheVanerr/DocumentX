@@ -6,20 +6,21 @@ Makine, fonksiyon anahtarlarının **OFF** konumuna alınmasıyla durdurulur. **
 
 ## 7.3.1 Normal stop prosedürü
 
-Önce konveyör, ardından pompalar ve fanlar, en son ısıtıcılar kapatılır. Kurutma ısıtıcıları fanlardan **önce** kapatılmalı; fanlar ısıtıcı rezistanslarının soğuması için birkaç dakika daha çalıştırılmalıdır.
+Önce konveyör, ardından ısıtıcılar, pompalar ve yağ sıyırıcı/yağ ayırıcı, en son blower ve kurutma fanları kapatılır. Kurutma ısıtıcıları fanlardan **önce** kapatılır; fanlar, kurutma ısıtıcıları soğuyana kadar çalışmaya devam eder. Fanlar ısıtıcılarla birlikte durdurulursa kurutma hücresinde ısı birikir.
 
 1. Hat üzerindeki son parçanın çıkıştan alındığını doğrulayın; konveyör boş olmalıdır.
-2. **CONVEYOR** anahtarını OFF alın.
-3. **DRYING 1 HEATER** ve **DRYING 2 HEATER** anahtarlarını OFF alın.
-4. **TANK 1 HEATER** ve **TANK 2 HEATER** anahtarlarını OFF alın (kısa molada açık bırakılabilir — termostat set değerde tutar).
-5. **TANK 1 PUMP** ve **TANK 2 PUMP** anahtarlarını OFF alın.
-6. **TANK 1 OIL SKIMMER** ve yağ ayırıcı anahtarını OFF alın.
-7. Kurutma rezistansları soğuduktan sonra (birkaç dakika) **DRYING 1 FAN**, **DRYING 2 FAN**, **BLOWER 1**, **BLOWER 2** anahtarlarını OFF alın.
-8. Tüm run lambalarının söndüğünü doğrulayın; RESET lambası yanık kalır (makine hazır).
+2. **CONVEYOR** anahtarını OFF konumuna alın.
+3. **DRYING 1 HEATER** ve **DRYING 2 HEATER** anahtarlarını OFF konumuna alın.
+4. **TANK 1 HEATER** ve **TANK 2 HEATER** anahtarlarını OFF konumuna alın (kısa molada açık bırakılabilir — termostat sıcaklığı set değerde tutar).
+5. **TANK 1 PUMP** ve **TANK 2 PUMP** anahtarlarını OFF konumuna alın.
+6. **TANK 1 OIL SKIMMER** ve yağ ayırıcı anahtarını OFF konumuna alın.
+7. DRYING 1 ve DRYING 2 termostat ekranlarında kurutma havası sıcaklığının ortam sıcaklığına yaklaşmasını bekleyin.
+8. **DRYING 1 FAN**, **DRYING 2 FAN**, **BLOWER 1** ve **BLOWER 2** anahtarlarını OFF konumuna alın.
+9. Tüm run lambalarının söndüğünü doğrulayın; RESET lambası yanık kalır (makine hazır).
 
 **Beklenen sonuç:** Tüm hareketli fonksiyonlar durmuş; proses sıvısı tanklarda kalabilir (kısa süreli stop).
 
-Kısa mola stop'larında tank boşaltma gerekmez. Hafta sonu veya uzun süreli duruş için bkz. **Bölüm 7.3.4**.
+Kısa mola stop'larında tank boşaltma gerekmez. Hafta sonu veya uzun süreli duruş için **Bkz. Bölüm 7.3.4**.
 
 ---
 
@@ -31,7 +32,7 @@ Acil stop'a basıldığında makinedeki **tüm hareket ve proses çıkışları 
 
 Yeniden başlatma:
 
-1. Fiziksel tehdidi giderin.
+1. Acil stop'a basılmasına neden olan tehlikeyi giderin.
 2. Tüm fonksiyon anahtarlarını **OFF** konumuna alın; böylece reset sonrası fonksiyonlar kontrolsüz başlamaz.
 3. **Bölüm 2.5** reset prosedürünü uygulayın (acil stop serbest → kapaklar kapalı → RESET'e lamba yanana kadar bas).
 4. Fonksiyonları **Bölüm 7.2.2** sırasına göre yeniden açın.
@@ -45,7 +46,7 @@ Periyodik acil stop fonksiyon testi **her ay bir kez** yapılmalıdır (**Bkz. B
 Planlı enerji kesme veya bakım öncesi:
 
 1. **Bölüm 7.3.1** normal stop prosedürünü uygulayın; tüm run lambaları sönük olmalıdır.
-2. Kurutma rezistanslarının soğuduğunu doğrulayın (fanlar birkaç dakika çalıştırılmış olmalı).
+2. DRYING 1 ve DRYING 2 termostat ekranlarında kurutma havası sıcaklığının ortam sıcaklığına yaklaştığını doğrulayın.
 3. Pano kapağındaki ana şalter kolunu **OFF (O)** konumuna alın.
 4. Bakım veya müdahale gerekiyorsa **LOTO** uygulayın (**Bkz. Bölüm 2.4**).
 
@@ -61,13 +62,14 @@ Hafta sonu, planlı bakım veya uzun hat duruşlarında:
 | :--- | :--- |
 | Uzun süreli durdurma (hafta sonu) | Tanklar **boşaltılıp temizlenmelidir** (**Bkz. Bölüm 10**) |
 
-1. **Bölüm 7.3.1** ile makineyi durdurun ve **7.3.3** ile enerjiyi kesin.
-2. Tankların soğumasını bekleyin.
-3. Tank boşaltma ve temizlik prosedürünü uygulayın (**Bkz. Bölüm 10.1.5** — adımlar orada).
-4. Gerekirse **Bölüm 4.2** depolama koşullarına göre makineyi koruyun.
+1. Makineyi **Bölüm 7.3.1**'e göre durdurun.
+2. Enerjiyi **Bölüm 7.3.3**'e göre kesin.
+3. Tankların soğumasını bekleyin.
+4. Tank boşaltma ve temizlik prosedürünü uygulayın (**Bkz. Bölüm 10.1.5**).
+5. Duruş depolama niteliğindeyse makineyi depolama koşullarına göre koruyun (**Bkz. Bölüm 4.2**).
 
 Tanklar dolu bırakılırsa koku, mikrobiyel büyüme, yağ tabakasının sertleşmesi ve rezistans üzerinde tortu birikimi riski artar.
 
 ---
 
-Temizlik prosedürü için bkz. **Bölüm 10**.
+Temizlik prosedürü için **Bkz. Bölüm 10**.

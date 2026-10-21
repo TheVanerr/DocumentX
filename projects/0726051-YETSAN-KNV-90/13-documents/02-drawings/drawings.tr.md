@@ -9,20 +9,20 @@ Bu alt bölüm, makine ile teslim edilen layout çizimini, kılavuzdaki 3D gör�
 | Parametre | Değer |
 | :--- | :--- |
 | Doküman | Makine layout çizimi |
-| Dosya adı / rev | [EKSİK] |
+| Dosya adı / rev | **Bkz. Bölüm 13.1** |
 | Teslim | Ayrı evrak (PDF) — teslim paketi |
-| Kılavuz referansı | **Bölüm 3.5** — Makine yerleşimi |
+| Kılavuz referansı | **Bölüm 3.5** — Makine yerleşim planı |
 
-Layout çiziminde aşağıdaki bilgiler yer alır veya alması beklenir:
+Layout çiziminde aşağıdaki bilgiler yer alır:
 
-- Makine dış boyutları (L × W × H) ve minimum kurulum alanı — **Bölüm 3.3.1, 3.5.2**'deki [EKSİK] değerlerin kaynağı
+- Makine dış ölçüleri (L × W × H) ve minimum kurulum alanı (**Bkz. Bölüm 3.3.1, 3.5.2**)
 - Besleme yönü (**sol**), boşaltma yönü (**sağ**), operatör/pano tarafı (**sağ**)
-- Elektrik, hava (AIR INLET), su, tank TAHLİYE ve egzoz bacası bağlantı noktaları ve çapları
+- Elektrik, hava (AIR INLET), su, tank TAHLİYE ve egzoz bacası bağlantı noktaları ve çapları (**Bkz. Bölüm 3.3.5**)
 - Yağ ayırıcı ünitesinin konumu ve hortum güzergâhı
-- Forklift kaldırma noktaları ve ağırlık merkezi (taşıma — bkz. **4.1**)
-- Acil stop ve bakım kapağı konumları
+- Forklift kaldırma noktaları ve ağırlık merkezi (**Bkz. Bölüm 3.5.4**)
+- Acil stop ve bakım kapağı konumları (**Bkz. Bölüm 3.5.5**)
 
-Layout, kurulum (**5**), taşıma (**4**) ve tesis planlaması (**3.5**) için birincil referans çizimidir.
+Layout; kurulum (**Bkz. Bölüm 5**), taşıma (**Bkz. Bölüm 4**) ve tesis planlaması (**Bkz. Bölüm 3.5**) için birincil referans çizimidir.
 
 ---
 
@@ -44,9 +44,9 @@ Kılavuzda makinenin 3D tasarım görünüşleri yer alır; bunlar ölçü çizi
 
 | Çizim | Durum | Alternatif referans |
 | :--- | :--- | :--- |
-| Genel montaj çizimi | [EKSİK] | Layout PDF + kılavuz **3.1** 3D görünüşler |
-| Kaldırma noktaları | [EKSİK] | Taşıma öncesi üretici servisinden temin edin — **4.1** |
-| Zemin ankraj | [EKSİK] | Kurulum **5.2** — ayarlanabilir ayak, ankraj öngörülmemiş |
-| Pnömatik şema | [EKSİK] | Elektrik şeması + **6.5** (tek tüketici) |
-| Hidrolik şema | Uygulanmaz | — |
-| P&ID | [EKSİK] | Kılavuz **3.1** proses akışı |
+| Genel montaj çizimi | Teslim edilmez | Ayrı evrak olarak verilmez; 3D görünüşler **Bölüm 3.1**'de |
+| Kaldırma noktaları | Teslim edilmez | Kaldırma yöntemi ve forklift çatal konumu — **Bkz. Bölüm 3.5.4** |
+| Zemin ankraj | Uygulanmaz | Makine ayarlanabilir ayaklar üzerinde, ankrajsız kurulur — seviye ayarı **Bölüm 5.2.3** |
+| Pnömatik şema | Uygulanmaz | Tek pnömatik tüketici (yağ ayırıcı diyafram pompası); hat **Bölüm 6.5**'te tarif edilmiştir |
+| Hidrolik şema | Uygulanmaz | Hidrolik sistem bulunmamaktadır |
+| P&ID | Teslim edilmez | Ayrı P&ID verilmez; proses akışı **Bölüm 3.1**'de |

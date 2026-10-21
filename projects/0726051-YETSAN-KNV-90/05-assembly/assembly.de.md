@@ -2,7 +2,7 @@
 
 Dieses Kapitel beschreibt das Platzieren der Maschine **KNV 90 7500 2B** (Seriennummer **0726051**) am Aufstellort, das Nivellieren, die Medien- und Elektroanschlüsse, den Anschluss des Abluftkamins, den Anschluss der Ölabscheidereinheit, die Sicherheitsfunktionsprüfungen und die Inbetriebnahmeabnahme. Die Installation erfolgt nach Abschluss des Transports (**Siehe Kapitel 4**) und vor dem Übergang in den Betrieb (**Siehe Kapitel 7**). Elektroanschlüsse dürfen nur von einer Elektrofachkraft ausgeführt werden.
 
-Da diese Maschine über kein HMI verfügt, erfolgt die Inbetriebnahmeabnahme über die Leuchten am Schaltschrank und durch physische Beobachtung (Motordrehrichtung, Druck, Leckagen). Für Montagedauer und Teamgröße liegt kein DATA-Eintrag vor ([EKSİK]). Für das Platzieren wird ein **Gabelstapler** verwendet; die Anschlagpunkte richten sich nach der Herstellerzeichnung (**Siehe Kapitel 3.5.4**). Abmessungen, Gewicht, Elektro- und Medienwerte sind in **Kapitel 3.3** angegeben; Aufstellort und Freiräume sind in **Kapitel 3.5.2** definiert.
+Da diese Maschine über kein HMI verfügt, erfolgt die Inbetriebnahmeabnahme über die Leuchten am Schaltschrank und durch physische Beobachtung (Motordrehrichtung, Druck, Leckagen). Montagedauer, Team und erforderliche Ausrüstung sind in **Kapitel 5.1.1** angegeben. Für das Platzieren wird ein **Gabelstapler** verwendet; Anschlagpunkte und Gabelposition: **Siehe Kapitel 3.5.4**. Abmessungen, Gewicht, Elektro- und Medienwerte sind in **Kapitel 3.3** angegeben; Aufstellort und Freiräume sind in **Kapitel 3.5.2** definiert.
 
 | Unterkapitel | Thema |
 | :--- | :--- |
@@ -17,15 +17,15 @@ Da diese Maschine über kein HMI verfügt, erfolgt die Inbetriebnahmeabnahme üb
 
 | Parameter | Anforderung | Referenz |
 | :--- | :--- | :--- |
-| Min. Abmessungen des Montagebereichs | [EKSİK] | Kapitel 3.5.2 |
-| Bodenebenheitstoleranz | [EKSİK] | Kapitel 3.5.2 |
-| Bodentragfähigkeit | [EKSİK] — muss das gefüllte Betriebsgewicht tragen | Kapitel 3.3.1 / 3.5.2 |
-| Erforderliche Ausrüstung | Gabelstapler; Wasserwaage; Handwerkzeug | Kapitel 4.1 |
+| Min. Abmessungen des Montagebereichs | Maschinenabmessungen zuzüglich Fläche für Wartung, Beschickung/Entnahme und Ölabscheidereinheit | Kapitel 3.5.2 |
+| Bodenebenheitstoleranz | Gesamthöhenunterschied muss innerhalb des Einstellbereichs der Stellfüße liegen | Kapitel 3.5.2 |
+| Bodentragfähigkeit | Industrieller Betonboden, der das gefüllte Betriebsgewicht mit Sicherheitsreserve trägt | Kapitel 3.3.1 / 3.5.2 |
+| Erforderliche Ausrüstung | Gabelstapler, Wasserwaage, Schlüsselsatz, Multimeter, Drehfeldmessgerät | Kapitel 5.1.1 |
 | Elektrische Zuleitung | 380 V / 50 Hz / 3P+N+PE — 110 kW / 220 A | Kapitel 3.3.3 |
 | Druckluft | 6 bar | Kapitel 3.3.5 |
 | Wasser | 1 bar Leitungswasser / aufbereitetes Wasser — Tankbefüllung von Hand | Kapitel 3.3.5 |
 | Abluft | Kaminanschluss an die bauseitige Lüftung / nach außen | Kapitel 5.3.4 |
-| Freiraum / Decke | [EKSİK] | Kapitel 3.5.2 |
+| Freiraum / Decke | Für das Öffnen von Schaltschrank- und Tankdeckeln, Wartungszugang, Beschickungs-/Entnahmebereich und Abluftkamin | Kapitel 3.5.2 |
 
 **WARNUNG — Unbefugte Installation:** Werden die Verfahren dieses Kapitels von Personen ohne die genannten beruflichen Qualifikationen ausgeführt, kann dies zu Verletzungen, Geräteschäden und zum Ausfall von Sicherheitsfunktionen führen. Die daraus entstehende Verantwortung trägt die installierende Partei; die Garantie erlischt.
 

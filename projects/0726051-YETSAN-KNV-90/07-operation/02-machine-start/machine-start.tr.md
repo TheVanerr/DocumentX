@@ -2,9 +2,9 @@
 
 Makine, tek bir start komutu yerine fonksiyon anahtarlarının belirli bir sırayla açılmasıyla devreye alınır. Hazırlık aşaması (tank dolumu ve ısıtma) operatör tarafından yürütülür; sabit bir sıra zorunlu değildir ancak aşağıdaki sıra proses verimini ve ekipman korumasını sağlar. Donanımsal interlock'lar yanlış sırayı kısmen engeller (ör. boş tankta ısıtıcı çalışmaz), ancak her hatayı engellemez (ör. fan kapalıyken kurutma ısıtıcısı açılabilir).
 
-**UYARI — Sıkıştırma:** Konveyörü açmadan önce tel bant üzerinde ve hücre girişlerinde parça veya cisim kalmadığını doğrulayın; aksi hâlde ezilme ve zincir hasarı riski oluşur.
+**UYARI — Ezilme:** Tel bant üzerinde veya hücre girişlerinde kalan parça ya da cisim, konveyör çalıştığında el ve parmak ezilmesine ve zincir hasarına yol açabilir. Konveyörü açmadan önce tel bandı ve hücre girişlerini boşaltın.
 
-**UYARI — Sıcak su ve buhar:** Tank kapaklarını ısıtma sırasında açmayın; su +70 °C'ye kadar ısınır ve açılan kapaktan buhar yükselir.
+**UYARI — Sıcak su ve buhar:** Isıtma sırasında açılan tank kapağından buhar yükselir ve +70 °C'ye kadar ısınan su haşlanmaya yol açabilir. Isıtma sırasında tank kapaklarını açmayın.
 
 ---
 
@@ -23,28 +23,36 @@ Makine, tek bir start komutu yerine fonksiyon anahtarlarının belirli bir sıra
 **Tank dolum prosedürü (elle)**
 
 1. İlgili tankın **TAHLİYE** vanasının kapalı olduğunu kontrol edin.
-2. Tank kapağını açın; tankı şebeke suyu veya arıtılmış su ile (**Bkz. Bölüm 3.3.5**) doldurun.
-3. Kırmızı **TANK 1 / TANK 2 WASHING LEVEL** lambası sönene kadar dolumu sürdürün; lamba söndükten sonra rezistansların ve emiş filtresinin tamamen su altında kaldığı seviyeye kadar doldurmaya devam edin.
-4. Tank kapağını kapatın.
-5. Proses kimyasalı kullanılıyorsa üretici onaylı, asit içermeyen maddeyi tedarikçi dozajında ekleyin (**Bkz. Bölüm 3.2.4**).
+2. Tank kapağını açın.
+3. Tesis su vanasını açarak tankı şebeke suyu veya arıtılmış su ile doldurun (**Bkz. Bölüm 3.3.5**).
+4. Kırmızı **TANK 1 / TANK 2 WASHING LEVEL** lambası söndükten sonra, rezistanslar ve emiş filtresi tamamen su altında kalana kadar doldurmaya devam edin.
+5. Tesis su vanasını kapatın.
+6. Proses kimyasalı kullanılıyorsa üretici onaylı, asit içermeyen maddeyi tedarikçi dozajında ekleyin (**Bkz. Bölüm 3.2.4**).
+7. Tank kapağını kapatın.
 
-**Dolum sorunu:** Tank dolu olmasına rağmen kırmızı lamba yanıyorsa seviye sensörünü kontrol edin (**Bkz. Bölüm 11.7**). Tankta su yokken ısıtıcı ve pompa interlock nedeniyle çalışmaz.
+**Dolum sorunu:** Tank dolu olmasına rağmen kırmızı lamba yanıyorsa seviye sensörünü kontrol edin (**Bkz. Bölüm 11.7.2**). Tankta su yokken ısıtıcı ve pompa interlock nedeniyle çalışmaz.
 
 ---
 
 ## 7.2.2 Güç açma ve fonksiyon açılış sırası
 
-Aşağıdaki sıra önerilir; her adımda ilgili run lambasının yandığını doğrulayın.
+Aşağıdaki sıra önerilir; her ON adımından sonra ilgili run lambasının yandığını doğrulayın.
 
 1. Ana şalterin **ON** konumunda olduğunu doğrulayın.
 2. **RESET** butonuna mavi lamba yanana kadar basın.
-3. **TANK 1 HEATER** ve **TANK 2 HEATER** anahtarlarını ON alın; termostat ekranlarında sıcaklığın yükseldiğini izleyin.
-4. Set sıcaklığa yaklaşıldığında **TANK 1 PUMP** ve **TANK 2 PUMP** anahtarlarını ON alın; hücrelerde püskürtmenin başladığını sesten ve PVC perde arkasındaki su hareketinden doğrulayın.
-5. Yıkama suyu yüzeyinde yağ varsa **TANK 1 OIL SKIMMER** anahtarını ON alın; gerekiyorsa yağ ayırıcı anahtarını (etiketsiz) ON alın.
-6. Parça kurutulacaksa **BLOWER 1**, **BLOWER 2**, **DRYING 1 FAN**, **DRYING 2 FAN** anahtarlarını ON alın.
-7. Fanlar çalıştıktan sonra **DRYING 1 HEATER** ve **DRYING 2 HEATER** anahtarlarını ON alın.
-8. Konveyör hız potansiyometresini hedef değere (20–60 Hz) ayarlayın.
-9. **CONVEYOR** anahtarını ON alın; tel bandın düzgün ilerlediğini gözleyin.
+3. **TANK 1 HEATER** ve **TANK 2 HEATER** anahtarlarını ON konumuna alın.
+4. Termostat ekranlarında sıcaklığın yükseldiğini izleyin.
+5. Set sıcaklığa yaklaşıldığında **TANK 1 PUMP** ve **TANK 2 PUMP** anahtarlarını ON konumuna alın.
+6. Hücrelerde püskürtmenin başladığını sesten ve PVC perde arkasındaki su hareketinden doğrulayın.
+7. Yıkama suyu yüzeyinde yağ varsa **TANK 1 OIL SKIMMER** anahtarını ON konumuna alın.
+8. Yağ ayırıcı kullanılacaksa yağ ayırıcı anahtarını (etiketsiz) ON konumuna alın.
+9. Parça kurutulacaksa **BLOWER 1**, **BLOWER 2**, **DRYING 1 FAN** ve **DRYING 2 FAN** anahtarlarını ON konumuna alın.
+10. Fanlar çalıştıktan sonra **DRYING 1 HEATER** ve **DRYING 2 HEATER** anahtarlarını ON konumuna alın.
+11. Konveyör hız potansiyometresini hedef değere (20–60 Hz) ayarlayın.
+12. **CONVEYOR** anahtarını ON konumuna alın.
+13. Tel bandın düzgün ilerlediğini gözleyin.
+
+**NOT:** Egzoz fanının operatör panelinde ayrı anahtarı yoktur; egzoz fanı **CONVEYOR** anahtarı ile birlikte devreye girer (**Bkz. Bölüm 3.4.3**).
 
 **Isıtma ön ısınma süresi:** Değişkendir — tanktaki su miktarı ve başlangıç sıcaklığına bağlıdır; sabit süre verilemez. Isıtma sırasında pompaların kapalı tutulması ısı kaybını azaltır.
 
@@ -57,22 +65,23 @@ Aşağıdaki sıra önerilir; her adımda ilgili run lambasının yandığını 
 | Medya | Gereksinim |
 | :--- | :--- |
 | Basınçlı hava | **6 bar** tesisata bağlı — yağ ayırıcı pompası için |
-| Su | Tanklara **elle** doldurulur; otomatik dolum yok |
+| Su | Tanklara **elle** doldurulur; otomatik dolum yok (**Bkz. Bölüm 3.3.5**) |
 | Vakum | **Yoktur** |
 | Hidrolik | **Yoktur** |
 
-Vakum veya hidrolik bağlantı/açma prosedürü uygulanmaz (**Bkz. Bölüm 6.4, 6.6**).
+Vakum veya hidrolik bağlantı/açma prosedürü uygulanmaz (**Bkz. Bölüm 6.4**, **6.6**).
 
 ---
 
 ## 7.2.4 Parça yükleme — ilk parça
 
-Ayrı bir ilk parça / deneme prosedürü **tanımlanmamıştır**. Yeni parça tipi için proses doğrulaması **Bölüm 8.2.2** adımlarına göre yapılır.
+İlk parça (deneme) için ayrı bir prosedür **yoktur**. Yeni parça tipi için proses doğrulaması **Bölüm 8.2.2** adımlarına göre yapılır.
 
-1. Konveyör çalışırken parçayı **sol girişten**, koruma kafesi dışından tel bant üzerine yerleştirin; parça devrilmeyecek ve hücre giriş kesitini aşmayacak konumda olmalıdır.
+1. Konveyör çalışırken parçayı **sol girişten**, koruma kafesi dışından tel bant üzerine yerleştirin; parça devrilmemeli ve hücre giriş açıklığından perdelere ve nozullara takılmadan geçebilmelidir (**Bkz. Bölüm 3.2.2**).
 2. Parçanın PVC perdeyi geçip yıkama hücresine girdiğini gözleyin.
 3. Parçayı **sağ çıkıştan**, kurutma hücresini terk ettikten sonra ısıya dayanıklı eldivenle alın.
-4. İlk parçada temizlik ve kuruluk sonucunu değerlendirin; gerekirse konveyör hızını veya termostat set değerlerini düzeltin (**Bkz. Bölüm 6.3**).
+4. İlk parçada temizlik ve kuruluk sonucunu değerlendirin.
+5. Sonuç hedef kriteri karşılamıyorsa konveyör hızını veya termostat set değerlerini düzeltin (**Bkz. Bölüm 6.3**).
 
 ---
 
@@ -93,4 +102,4 @@ Ayrı bir ilk parça / deneme prosedürü **tanımlanmamıştır**. Yeni parça 
 
 ---
 
-Durdurma için bkz. **Bölüm 7.3**; parça akışı için bkz. **Bölüm 7.4**.
+Durdurma için **Bkz. Bölüm 7.3**; parça akışı için **Bkz. Bölüm 7.4**.

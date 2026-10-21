@@ -12,20 +12,23 @@ Ein Hydrauliksystem ist nicht vorhanden. Es gibt keinen Vakuumanschluss. Da dies
 | :--- | :--- |
 | Druckluftversorgung | 6 bar |
 | Anschlusspunkt | Druckregler **AIR INLET / HAVA GİRİŞİ** (mit Manometer) am Maschinenkörper |
-| Anschlussdurchmesser | [EKSİK] — Aufstellungsplan (Layout) |
+| Anschlussdurchmesser | **Siehe Kapitel 3.3.5** |
 | Verbraucher | Membranpumpe der Ölabscheidereinheit |
+
+An der Maschine ist kein Druckluft-Absperrventil vorhanden; die Luft wird von der bauseitigen Leitung über einen Schlauch zum Druckregler geführt. Die Trennung der Druckluft erfolgt über das vom Betreiber in der bauseitigen Leitung montierte Ventil.
 
 **Anschlussverfahren**
 
-1. Sicherstellen, dass die bauseitige Druckluftleitung trockene und ölfreie Luft liefert; in der Leitung muss ein absperrbares Absperrventil vorhanden sein (LOTO-Punkt — **Siehe Kapitel 2.4**).
-2. Die bauseitige Druckluftleitung an den Eingang des Druckreglers **AIR INLET** am Maschinenkörper anschließen.
-3. Das bauseitige Druckluft-Absperrventil öffnen.
-4. Den Druckregler auf **6 bar** einstellen; das Manometer als Referenz verwenden (**Siehe Kapitel 6.5**).
-5. Verschraubungen und Schlauchanschlüsse auf Leckagen prüfen (Geräusch oder Seifenwasser).
+1. Sicherstellen, dass die bauseitige Druckluftleitung trockene und ölfreie Luft liefert.
+2. In der bauseitigen Leitung vor dem Druckluftschlauch einen **abschließbaren Kugelhahn mit Entlüftung** montieren; dieses Ventil ist der LOTO-Trennpunkt für die Druckluft (**Siehe Kapitel 2.4**).
+3. Bei geschlossenem Kugelhahn den Druckluftschlauch an den Eingang des Druckreglers **AIR INLET / HAVA GİRİŞİ** am Maschinenkörper anschließen.
+4. Den Kugelhahn öffnen.
+5. Den Druckregler auf **6 bar** einstellen; das Manometer als Referenz verwenden (**Siehe Kapitel 6.5**).
+6. Verschraubungen und Schlauchanschlüsse auf Leckagen prüfen (Geräusch oder Seifenwasser).
 
 **Erwartetes Ergebnis:** Manometer 6 bar; keine Leckage.
 
-**Abweichung:** Wird der Druck von 6 bar nicht erreicht, die Kapazität des bauseitigen Kompressors, das Leitungsventil und die Reglereinstellung prüfen.
+**Abweichung:** Wird der Druck von 6 bar nicht erreicht, die Kapazität des bauseitigen Kompressors, die vollständige Öffnung des Kugelhahns und die Reglereinstellung prüfen.
 
 ![Druckluftversorgung — Druckregler AIR INLET](../../assets/3.3/hava-girisi-regulator.jpg)
 
@@ -39,19 +42,18 @@ Ein Hydrauliksystem ist nicht vorhanden. Es gibt keinen Vakuumanschluss. Da dies
 | Wassertemperatur | +10 °C – +70 °C |
 | Wasserqualität | Leitungswasser oder aufbereitetes Wasser |
 | Tankbefüllung | Von Hand — kein automatisches Füllventil |
-| Entleerung | Ablassventile **TAHLİYE** unter den Tanks — Durchmesser [EKSİK] |
+| Entleerung | Ablassventile **TAHLİYE** unter den Tanks — Anschlussdurchmesser: **Siehe Kapitel 3.3.5** |
 
 **Anschlussverfahren**
 
 1. Die bauseitige Wasserleitung so vorbereiten, dass sie den Punkt erreicht, an dem die Tanks von Hand befüllt werden (Schlauch oder fester Füllstutzen); sicherstellen, dass der Wasserdruck **1 bar** beträgt.
-2. Prüfen, dass die Ablassventile **TAHLİYE** unter Tank 1 und Tank 2 geschlossen sind.
-3. Die Ablassventile (TAHLİYE) an die bauseitige Abwasserleitung anschließen; ölhaltiges Prozesswasser darf nicht in die Haushaltskanalisation eingeleitet werden (**Siehe Kapitel 10.1.8**).
-4. Die Tanks gemäß **Kapitel 7.2.1** von Hand befüllen; während des Befüllens Tankunterseite, Rohranschlüsse und Pumpengehäuse auf Leckagen prüfen.
-5. Nach Abschluss der Befüllung sicherstellen, dass die roten Leuchten **TANK 1 / TANK 2 WASHING LEVEL** erloschen sind (bei Hauptschalter ON).
+2. Das bauseitige Wasserventil der Füllleitung geschlossen halten; dieses Ventil ist der Trennpunkt für Wasser (**Siehe Kapitel 2.4**).
+3. Prüfen, dass die Ablassventile **TAHLİYE** unter Tank 1 und Tank 2 geschlossen sind.
+4. Die Ablassventile (TAHLİYE) an die bauseitige Abwasserleitung anschließen; ölhaltiges Prozesswasser darf nicht in die Haushaltskanalisation eingeleitet werden (**Siehe Kapitel 10.1.8**).
 
-**Erwartetes Ergebnis:** Tanks gefüllt; WASHING-LEVEL-Leuchten aus; keine Leckage.
+**HINWEIS:** Die Erstbefüllung der Tanks erfolgt in **Kapitel 5.4.4**, damit die Prüfung der Füllstandverriegelung mit leerem Tank durchgeführt werden kann.
 
-**Abweichung:** Leuchtet die Füllstandleuchte trotz gefülltem Tank, den Füllstandsensor prüfen (**Siehe Kapitel 11.7**).
+**Erwartetes Ergebnis:** Wasserleitung an der Befüllstelle bereit; Ablassventile (TAHLİYE) geschlossen und an die Abwasserleitung angeschlossen; keine Leckage an den Anschlüssen.
 
 ---
 
@@ -64,11 +66,12 @@ Die Werte der elektrischen Versorgung sind in der Tabelle in **Kapitel 3.3.3** a
 **Anschlussverfahren**
 
 1. Den Querschnitt des bauseitigen Zuleitungskabels anhand des Stroms von 220 A und der bauseitigen Kabellänge prüfen.
-2. Die Schaltschranktür öffnen; das Zuleitungskabel durch die Eingangsverschraubung des Schaltschranks führen und in der Reihenfolge **L1-L2-L3-N** an die Eingangsklemmen des Hauptschalters (Leistungsschalter, TMŞ) anschließen.
-3. Den **PE**-Leiter an die Erdungsschiene des Schaltschranks anschließen; prüfen, dass die gelb-grüne Erdungsbrücke zwischen Schaltschranktür und Gehäuse vorhanden ist.
-4. Die Festigkeit der Anschlüsse mit einem Drehmomentschlüssel prüfen; lose Anschlüsse verursachen Erwärmung und Brandgefahr.
-5. Die Schaltschranktür schließen und verriegeln.
-6. Den bauseitigen Einspeiseschalter einschalten; den Hauptschalter der Maschine noch nicht einschalten — mit der Phasenprüfung in **Kapitel 5.3.6** fortfahren.
+2. Sicherstellen, dass der zu erwartende Kurzschlussstrom am Anschlusspunkt das Schaltvermögen des Hauptschalters nicht überschreitet (**Siehe Kapitel 3.3.3**).
+3. Die Schaltschranktür öffnen; das Zuleitungskabel durch die Eingangsverschraubung des Schaltschranks führen und in der Reihenfolge **L1-L2-L3-N** an die Eingangsklemmen des Hauptschalters (Leistungsschalter, TMŞ) anschließen.
+4. Den **PE**-Leiter an die Erdungsschiene des Schaltschranks anschließen; prüfen, dass die gelb-grüne Erdungsbrücke zwischen Schaltschranktür und Gehäuse vorhanden ist.
+5. Die Klemmanschlüsse mit dem vom Hersteller des Hauptschalters angegebenen Anzugsdrehmoment mit einem Drehmomentschlüssel anziehen; lose Anschlüsse verursachen Erwärmung und Brandgefahr.
+6. Die Schaltschranktür schließen und verriegeln.
+7. Den bauseitigen Einspeiseschalter einschalten; den Hauptschalter der Maschine noch nicht einschalten — mit der Phasenprüfung in **Kapitel 5.3.6** fortfahren.
 
 ![Erdungsanschluss der Schaltschranktür](../../assets/5.3/pano-topraklama.jpg)
 
@@ -80,10 +83,11 @@ Die Werte der elektrischen Versorgung sind in der Tabelle in **Kapitel 3.3.3** a
 
 Der Abluftventilator (FE01) ist auf dem Kamin oben auf der Maschine montiert und führt den Dampf aus den Kammern ab. Der Kamin muss an den bauseitigen Lüftungskanal oder direkt nach außen angeschlossen werden; andernfalls breitet sich der Dampf in der Betriebsstätte aus, die Sicht wird beeinträchtigt und im Schaltschrank bildet sich Kondensat.
 
-1. Einen zum Kaminaustrittsdurchmesser passenden Kanal ([EKSİK] — Aufstellungsplan/Layout) bis zur bauseitigen Lüftung oder nach außen verlegen.
-2. Damit im Kanal kondensiertes Wasser nicht zur Maschine zurückfließt, den Kanal mit Gefälle verlegen und am tiefsten Punkt einen Kondensatablauf vorsehen.
-3. Am Außenaustritt eine Haube gegen Regen und Rückströmung verwenden.
-4. Die Kanalverbindungen dicht ausführen; bei laufendem Abluftventilator prüfen, dass an den Verbindungen kein Dampf austritt (**Siehe Kapitel 5.5.5**).
+1. Wurde die Kamin-/Ventilatorgruppe demontiert versandt, diese zuerst gemäß Anweisung des Herstellerservice an ihrem Platz oben auf der Maschine montieren (**Siehe Kapitel 5.1**).
+2. Einen Kanal mit dem Durchmesser des Kaminaustritts (**Siehe Kapitel 3.3.5**) bis zur bauseitigen Lüftung oder nach außen verlegen.
+3. Damit im Kanal kondensiertes Wasser nicht zur Maschine zurückfließt, den Kanal mit Gefälle verlegen und am tiefsten Punkt einen Kondensatablauf vorsehen.
+4. Am Außenaustritt eine Haube gegen Regen und Rückströmung verwenden.
+5. Die Kanalverbindungen dicht ausführen; bei laufendem Abluftventilator prüfen, dass an den Verbindungen kein Dampf austritt (**Siehe Kapitel 5.5.5**).
 
 ---
 
@@ -91,28 +95,35 @@ Der Abluftventilator (FE01) ist auf dem Kamin oben auf der Maschine montiert und
 
 Die Ölabscheidereinheit ist ein separater Edelstahlschrank; die darunter angeordnete Membranpumpe wird mit Druckluft betrieben.
 
-1. Die Einheit neben der Maschine an der im Layout angegebenen Position aufstellen und ihre Füße nivellieren.
+1. Die Einheit neben der Maschine an der im Aufstellungsplan (**Siehe Kapitel 13.1**) angegebenen Position aufstellen und ihre Füße nivellieren.
 2. Die Saug- und Rücklaufschläuche für das ölhaltige Wasser zwischen Tank und Einheit anschließen; die Schlauchführung darf den Gehweg nicht kreuzen und darf nicht gequetscht werden.
 3. Die Druckluftleitung der Einheit (Eingang des Magnetventils) an die Druckluftleitung der Maschine anschließen.
 4. Sicherstellen, dass der elektrische Anschluss der Einheit (Magnetventil) vom Schaltschrank aus hergestellt ist; der Anschluss erfolgt gemäß Schaltplan (**Siehe Kapitel 13.1**).
-5. Bei der Inbetriebnahme den unbeschrifteten Ölabscheiderschalter am Bedienfeld einschalten; prüfen, dass die Membranpumpe läuft und an den Schläuchen keine Leckage auftritt.
+
+Die Funktionsprüfung der Ölabscheidereinheit (mit dem unbeschrifteten Ölabscheiderschalter am Bedienfeld) erfolgt nach dem Einschalten des Hauptschalters und dem Befüllen der Tanks in **Kapitel 5.5.3**.
 
 ---
 
 ## 5.3.6 Inbetriebnahme und Phasenprüfung
 
-Die Phasenfolge ist für die Drehrichtung von Pumpen, Ventilatoren und Blowern entscheidend; eine vertauschte Phasenfolge führt zu Rückwärtslauf der Motoren, sinkendem Pumpendruck und verringertem Trocknungsvolumenstrom. Das Phasenfolgerelais **MKR-01** gibt bei vertauschter oder fehlender Phase kein Ausgangssignal.
+Die Phasenfolge ist für die Drehrichtung von Pumpen, Ventilatoren und Blowern entscheidend; eine vertauschte Phasenfolge führt zu Rückwärtslauf der Motoren, sinkendem Pumpendruck und verringertem Trocknungsvolumenstrom. Das Phasenfolgerelais **MKR-01** gibt bei vertauschter oder fehlender Phase kein Ausgangssignal; in diesem Fall werden die Funktionen nicht zugeschaltet (**Siehe Kapitel 11.3.1**).
+
+**GEFAHR — Stromschlag:** Auch wenn der Hauptschalter auf **OFF** steht, liegt an seinen Eingangsklemmen Spannung an; eine Berührung kann zum Tod führen. Vor dem Tauschen der Phasen den bauseitigen Einspeiseschalter ausschalten und abschließen.
 
 **Inbetriebnahmeverfahren**
 
-| Nr. | Vorgang |
-| :---: | :--- |
-| 1 | Drehstromzuleitung an den Schaltschrank angeschlossen (**Kapitel 5.3.3**) |
-| 2 | Hauptschalterhebel in Stellung **ON (I)** gebracht |
-| 3 | **RESET**-Taster betätigt; Aufleuchten der blauen Leuchte bestätigt |
-| 4 | Ausgangszustand des Phasenfolgerelais MKR-01 geprüft (Relaisanzeige) |
-| 5 | Bei vertauschter Phasenfolge Hauptschalter **OFF**; Elektrofachkraft hat **zwei Phasen** getauscht; Schalter wieder eingeschaltet |
-| 6 | Pumpe oder Ventilator kurz betrieben und Drehrichtung mit dem Pfeil am Motor verglichen |
+1. Sicherstellen, dass die Drehstromzuleitung an den Schaltschrank angeschlossen ist (**Siehe Kapitel 5.3.3**).
+2. Prüfen, dass alle Wartungsklappen geschlossen und alle Not-Halt-Taster entriegelt sind.
+3. Den Hauptschalterhebel in Stellung **ON (I)** bringen.
+4. Den Ausgangszustand des Phasenfolgerelais MKR-01 an der Relaisanzeige prüfen.
+5. Gibt das Relais kein Ausgangssignal, den Hauptschalter auf **OFF** stellen; den bauseitigen Einspeiseschalter ausschalten und abschließen.
+6. In der Zuleitung **zwei Phasen** tauschen (nur Elektrofachkraft).
+7. Bauseitigen Einspeiseschalter und Hauptschalter wieder einschalten; Schritt 4 wiederholen.
+8. Den **RESET**-Taster drücken; sicherstellen, dass die blaue Leuchte aufleuchtet.
+9. Einen Blower (z. B. **BLOWER 1**) kurz betreiben; die Drehrichtung mit dem Pfeil am Motor vergleichen.
+10. Den Schalter auf **OFF** stellen.
+
+**HINWEIS:** Aufgrund der Füllstandverriegelung laufen die Pumpen bei leerem Tank nicht. Die Drehrichtung der Pumpen wird nach dem Befüllen der Tanks in **Kapitel 5.5.2** geprüft.
 
 **Checkliste elektrische Inbetriebnahmeprüfung**
 
@@ -121,7 +132,7 @@ Die Phasenfolge ist für die Drehrichtung von Pumpen, Ventilatoren und Blowern e
 | Gibt das Phasenüberwachungsrelais ein Ausgangssignal? | Ja |
 | Liegt an der Maschine Spannung an? (RESET-Leuchte leuchtet) | Ja |
 | Erlischt bei Betätigung des Not-Halts die RESET-Leuchte und stoppt die Maschine? | Ja |
-| Sind die Motordrehrichtungen korrekt? | Ja |
+| Ist die Drehrichtung des Blowers korrekt? | Ja |
 
 Die Not-Halt-Prüfschritte sind in **Kapitel 5.4.1**, das Reset-Verfahren in **Kapitel 2.5** angegeben.
 
@@ -133,7 +144,7 @@ Die Not-Halt-Prüfschritte sind in **Kapitel 5.4.1**, das Reset-Verfahren in **K
 | :---: | :--- | :---: |
 | 1 | Druckluftanschluss hergestellt; Druckregler 6 bar | ☐ |
 | 2 | Keine Leckage in der Druckluftleitung | ☐ |
-| 3 | Wasser vorbereitet; Tanks von Hand befüllt; WASHING-LEVEL-Leuchten aus | ☐ |
+| 3 | Wasserleitung an der Tankbefüllstelle bereit (1 bar); bauseitiges Wasserventil geschlossen | ☐ |
 | 4 | Ablassventile (TAHLİYE) geschlossen und an die Abwasserleitung angeschlossen | ☐ |
 | 5 | Abluftkamin an die Lüftung / nach außen angeschlossen | ☐ |
 | 6 | Schlauch-, Druckluft- und Elektroanschlüsse der Ölabscheidereinheit hergestellt | ☐ |

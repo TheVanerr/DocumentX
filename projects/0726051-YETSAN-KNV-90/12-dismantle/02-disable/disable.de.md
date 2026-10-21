@@ -1,6 +1,6 @@
 # 12.2 Außerbetriebnahme
 
-Die Maschine kann vorübergehend (geplanter Stillstand, Wochenende, Wartungspause) oder endgültig (Verschrottung, Anlagenschließung) außer Betrieb genommen werden. In beiden Fällen unterscheiden sich die Anforderungen an die Energieisolierung und — abhängig von der Dauer — an die Tankentleerung. In den DATA ist für dieses Projekt kein gesondertes Verfahren definiert; der nachstehende Ablauf ist die Standardpraxis dieses Maschinentyps.
+Die Maschine kann vorübergehend (geplanter Stillstand, Wochenende, Wartungspause) oder endgültig (Verschrottung, Anlagenschließung) außer Betrieb genommen werden. In beiden Fällen unterscheiden sich die Anforderungen an die Energieisolierung und an die Tankentleerung; beim vorübergehenden Stillstand hängt die Tankentleerung von der Stillstandsdauer ab.
 
 ---
 
@@ -15,14 +15,13 @@ Die endgültige Außerbetriebnahme wird angewendet, wenn die Maschine nicht wied
 **Verfahren der endgültigen Außerbetriebnahme**
 
 1. Das Demontageverfahren gemäß **Kapitel 12.1** vollständig durchführen.
-2. Hauptschalter ausschalten und das **LOTO**-Schloss belassen oder die Versorgungsleitung der Anlage physisch trennen; das Eingangskabel des Schaltschranks abklemmen und die Enden isolieren.
-3. Die Elektro-, Luft- und Wasseranschlüsse sicher lösen; offene Rohrenden abblinden; den Abluftkanal verschließen.
-4. Sicherheitsrelais, Schütze und Frequenzumrichter außer Betrieb setzen; bei Bedarf Abstimmung mit dem Herstellerservice (**Kapitel 1.3**).
-5. Sicherstellen, dass in Tanks, Schläuchen und Ölabscheidereinheit keine Flüssigkeit verblieben ist.
-6. Die Maschine oder ihre Teile gemäß dem Verschrottungs-/Recyclingverfahren in **Kapitel 12.3** entsorgen.
-7. Die Seriennummer der Maschine (**0726051**) in den Anlagenunterlagen als außer Betrieb kennzeichnen; die Anleitung und den Schaltplan archivieren.
+2. Die anlagenseitige elektrische Versorgungsleitung dauerhaft trennen; die Kabelenden isolieren und den Versorgungsschalter der Anlage abgeschlossen lassen.
+3. Die offenen anlagenseitigen Luft- und Wasserrohrenden mit Blindstopfen verschließen; die Öffnung des Abluftkanals verschließen.
+4. Sicherstellen, dass in Tanks, Schläuchen und Ölabscheidereinheit keine Flüssigkeit verblieben ist.
+5. Die Maschine oder ihre Teile gemäß dem Verschrottungs-/Recyclingverfahren in **Kapitel 12.3** entsorgen.
+6. Die Seriennummer der Maschine (**0726051**) in den Anlagenunterlagen als außer Betrieb kennzeichnen; die Anleitung und den Schaltplan archivieren.
 
-**Erwartetes Ergebnis:** Energieleitungen abgeblindet; Maschine kann nicht wieder unter Spannung gesetzt werden; Entsorgungsprozess eingeleitet.
+**Erwartetes Ergebnis:** Anlagenseitige Energieleitungen getrennt und abgeblindet; Maschine kann nicht wieder unter Spannung gesetzt werden; Entsorgungsprozess eingeleitet.
 
 ---
 
@@ -34,25 +33,28 @@ Die endgültige Außerbetriebnahme wird angewendet, wenn die Maschine nicht wied
 
 Der vorübergehende Stillstand gilt für Wochenenden, geplante Wartung, Linienumbau oder kurzfristige Produktionsunterbrechungen.
 
-**Kurzzeitiger vorübergehender Stillstand (einige Stunden — eine Schicht)**
+**Kurzzeitiger vorübergehender Stillstand (bis 24 Stunden)**
 
 1. Das normale Stoppverfahren gemäß **Kapitel 7.3.1** anwenden.
 2. Eine Tankentleerung ist **nicht erforderlich**; die Heizungsschalter können ausgeschaltet oder unter Thermostatregelung eingeschaltet bleiben.
-3. Wiederinbetriebnahme: Startverfahren gemäß **Kapitel 7.2**.
+3. Zur Wiederinbetriebnahme das Startverfahren gemäß **Kapitel 7.2** anwenden.
 
-**Längerer vorübergehender Stillstand (Wochenende / geplante Wartung / > 24 Stunden)**
+**Längerer vorübergehender Stillstand (über 24 Stunden; Wochenende, geplante Wartung)**
+
+**VORSICHT — Korrosion und Geruch:** Bleiben die Tanks gefüllt, steigt das Risiko von Geruchsbildung, mikrobiellem Wachstum, Verhärtung der Ölschicht und Ablagerungen auf den Heizstäben; Tanks und Heizstäbe werden beschädigt. Vor einem längeren Stillstand die Tanks entleeren und reinigen.
 
 1. Maschine gemäß **Kapitel 7.3.1** stillsetzen.
-2. **Tanks entleeren und reinigen** — siehe **Kapitel 7.3.4**, **10.1.5**.
-3. Hauptschalter in Stellung **OFF** bringen (**Kapitel 7.3.3**).
-4. Bei Eingriffen des Wartungspersonals **LOTO** anwenden (**Kapitel 2.4**).
-5. Anlagen-Luft- und Wasserventile schließen.
-6. Schutz gemäß den Lagerbedingungen sicherstellen — siehe **Kapitel 4.2**.
-7. Wiederinbetriebnahme:
-   - Anlagen-Luft-/Wasserventile geöffnet; Druckregler 6 bar
-   - Tanks gemäß **Kapitel 7.2.1** befüllen
-   - Hauptschalter ON; RESET
-   - Einschaltreihenfolge der Funktionen gemäß **Kapitel 7.2.2**
-   - Bei langer Stillstandsdauer Sicherheitsfunktionstest (**Kapitel 5.4**) und Punkte der periodischen Wartung (**Kapitel 9.1.3**)
+2. Hauptschalter in Stellung **OFF** bringen (**Siehe Kapitel 7.3.3**).
+3. Abkühlen der Tankflüssigkeit abwarten.
+4. **Tanks entleeren und reinigen** (**Siehe Kapitel 7.3.4, 10.1.5**).
+5. Bei Eingriffen des Wartungspersonals **LOTO** anwenden (**Siehe Kapitel 2.4**).
+6. Luftventil der Anlage und Wasserventil der Anlage schließen.
+7. Die Maschine gemäß den Lagerbedingungen schützen (**Siehe Kapitel 4.2**).
 
-**VORSICHT — Korrosion/Geruch:** Bleiben die Tanks gefüllt, steigt das Risiko von Geruchsbildung, mikrobiellem Wachstum, Verhärtung der Ölschicht und Ablagerungen auf den Heizstäben.
+**Wiederinbetriebnahme nach längerem Stillstand**
+
+8. Luftventil der Anlage und Wasserventil der Anlage öffnen; den Betriebsdruck am Reglermanometer prüfen (**Siehe Kapitel 3.3.5**).
+9. Tanks gemäß **Kapitel 7.2.1** befüllen.
+10. Hauptschalter auf ON stellen; die Taste **RESET** drücken, bis die blaue Leuchte leuchtet.
+11. Die Funktionen in der Einschaltreihenfolge gemäß **Kapitel 7.2.2** einschalten.
+12. Nach längerer Stillstandsdauer den Sicherheitsfunktionstest (**Siehe Kapitel 5.4**) und die fälligen Punkte der periodischen Wartung (**Siehe Kapitel 9.1.3**) durchführen.

@@ -44,13 +44,13 @@ Yıkama sonucu yetersiz bulunan parçaların tekrar yıkanması veya ayrılması
 | Yetkili elektrikçi | Pano içi (MKŞ, kaçak akım, kontaktör, rezistans) — LOTO altında |
 | Üretici servisi | İnverter parametreleri, emniyet röle devresi, majör mekanik arıza |
 
-Hata oluştuğunda:
+**Hata oluştuğunda (operatör)**
 
-1. Fonksiyon run lambası söner veya RESET lambası söner; operatör ilgili anahtarı OFF alır.
-2. Operatör belirtiyi **Bölüm 11.1** teşhis akışına göre değerlendirir (lamba durumu, seviye, kapak, acil stop).
-3. Pano içi müdahale gerekiyorsa **bakım personeli / yetkili elektrikçi** çağrılır; **LOTO** uygulanır (**Bkz. Bölüm 2.4**).
-4. Güvenlik fonksiyonlarını etkileyen arızalarda (reset alınamıyor, kapak switch'i) üretici servisi bilgilendirilir (**Bkz. Bölüm 11.2.2**).
+1. Bir fonksiyonun run lambası veya RESET lambası söndüğünde ilgili fonksiyon anahtarını OFF konumuna alın.
+2. Belirtiyi **Bölüm 11.1** teşhis akışına göre değerlendirin (lamba durumu, seviye, kapak, acil stop).
+3. Pano içi müdahale gerekiyorsa **bakım personelini** veya **yetkili elektrikçiyi** çağırın; müdahale yalnızca **LOTO** altında yapılır (**Bkz. Bölüm 2.4**).
+4. Güvenlik fonksiyonlarını etkileyen arızalarda (reset alınamıyor, kapak switch'i) üretici servisini bilgilendirin (**Bkz. Bölüm 11.2.2**).
 
 ---
 
-Arıza teşhisi için bkz. **Bölüm 11**; kapasite için bkz. **Bölüm 8**.
+Arıza teşhisi için **Bkz. Bölüm 11**; kapasite için **Bkz. Bölüm 8**.

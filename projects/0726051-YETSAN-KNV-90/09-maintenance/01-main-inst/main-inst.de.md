@@ -10,7 +10,7 @@ Für die KNV 90 7500 2B gilt die Philosophie der **vorbeugenden Wartung**. Ziel 
 | :--- | :--- |
 | Wartungsphilosophie | Vorbeugende Wartung |
 | Qualifikation des Personals | Das im Einsatzland der Maschine geltende Qualifikationsniveau für Wartungspersonal |
-| Schmiertabelle | Keine separate Schmiertabelle — **Kapitel 9.1.4** |
+| Schmiertabelle | Keine separate Schmiertabelle — **Siehe Kapitel 9.1.4** |
 
 Das Wartungspersonal muss in der Bedienung der Maschine, in LOTO, im Not-Halt und in den grundlegenden Sicherheitsregeln geschult sein (**Siehe Kapitel 3.2.6**). Prüfungen an Heizstäben, Thermoelementen, Fehlerstrom-Schutzschaltern, Motorschutzschaltern und am festen Sitz der elektrischen Anschlüsse werden ausschließlich von **Elektrofachkräften** durchgeführt.
 
@@ -18,20 +18,19 @@ Das Wartungspersonal muss in der Bedienung der Maschine, in LOTO, im Not-Halt un
 
 ## 9.1.2 Sicherheit vor der Wartung
 
-Für die Wartung ist **kein** spezieller Betriebsmodus vorhanden. Die folgenden Regeln sind einzuhalten:
+Für die Wartung ist **kein** spezieller Betriebsmodus vorhanden. Der Zugang für die Wartung erfolgt über die oberen Tankdeckel, die 7 Wartungsklappen der Kammern, den Pumpen-/Filterbereich, die Fördererenden und den Schaltschrank (**Siehe Kapitel 3.5.3**).
 
-1. Die Maschine in der Reihenfolge nach **Kapitel 7.3.1** stillsetzen; alle Funktionsschalter OFF.
-2. Das Abkühlen der Trocknungsheizstäbe und des Tankwassers abwarten.
-3. Den Hauptschalter in Stellung **OFF (O)** bringen.
-4. Das **LOTO-Verfahren** anwenden (**Siehe Kapitel 2.4** — die Schritte werden nicht wiederholt).
+**WARNUNG — Verletzung durch Energie:** Bei Wartung ohne LOTO kann die Maschine unbeabsichtigt anlaufen; Quetschungen, Stromschlag und Verletzungen durch +70 °C heiße Flüssigkeit sind möglich. Vor jeder Wartungsarbeit LOTO anwenden.
+
+**WARNUNG — Heiße Oberfläche:** Heizstäbe, Trocknungskammer und Tankwasser sind auch nach dem Abschalten der Energieversorgung heiß; Berührung führt zu Verbrennungen. Abkühlen lassen und hitzebeständige Handschuhe verwenden.
+
+Vor jeder Wartungsarbeit die folgenden Schritte durchführen:
+
+1. Die Maschine stillsetzen; alle Funktionsschalter auf OFF stellen (**Siehe Kapitel 7.3.1**).
+2. Das LOTO-Verfahren anwenden (**Siehe Kapitel 2.4**).
+3. Das Abkühlen der Trocknungsheizstäbe und des Tankwassers abwarten.
+4. Die Wartungsklappen und Tankdeckel erst nach abgeschlossenem LOTO öffnen.
 5. Die Klappenschalter und den Füllstandsensor **nicht überbrücken**.
-6. Die Wartungsklappen und Tankdeckel erst nach Energietrennung und LOTO öffnen.
-
-Der Zugang für die Wartung erfolgt über die oberen Tankdeckel, die 7 Wartungsklappen der Kammern, den Pumpen-/Filterbereich, die Fördererenden und den Schaltschrank (**Siehe Kapitel 3.5.3**).
-
-**WARNUNG — Verletzung durch Energie:** Bei Wartung ohne LOTO kann die Maschine unbeabsichtigt anlaufen; Quetschungen, Stromschlag und Verletzungen durch +70 °C heiße Flüssigkeit sind möglich.
-
-**WARNUNG — Heiße Oberfläche:** Heizstäbe, Trocknungskammer und Tankwasser sind auch nach dem Abschalten der Energieversorgung heiß; hitzebeständige Handschuhe verwenden.
 
 ---
 
@@ -39,7 +38,7 @@ Der Zugang für die Wartung erfolgt über die oberen Tankdeckel, die 7 Wartungsk
 
 Die folgende Tabelle ist der Wartungsplan. Für die Reinigungsschritte wird auf das jeweilige Kapitel verwiesen; die Verfahrensschritte werden nicht wiederholt.
 
-Stundenbasierte Intervalle werden anhand der Gesamtbetriebsstunden der Maschine verfolgt; ist kein Zähler vorhanden, kann die ungefähre kalendarische Entsprechung nach dem Schichtplan verwendet werden (z. B. bei Einschichtbetrieb mit 8 h/Tag entsprechen 250 h ≈ 6 Wochen).
+Stundenbasierte Intervalle werden anhand der Gesamtbetriebszeit der Maschine verfolgt. Die Maschine hat keinen Betriebsstundenzähler; die Betriebszeit aus dem Schichtplan berechnen und in das Wartungsprotokoll eintragen (**Siehe Kapitel 9.1.7**); beispielsweise entsprechen 250 h bei Einschichtbetrieb mit 8 h/Tag und 5 Tagen pro Woche etwa 6 Wochen.
 
 | Intervall | Wartungspunkt | Referenz |
 | :--- | :--- | :--- |
@@ -55,11 +54,11 @@ Stundenbasierte Intervalle werden anhand der Gesamtbetriebsstunden der Maschine 
 | **Wöchentlich** | Sichtkontrolle der Not-Halt-Taster (keine Beschädigung, kein Klemmen) | Kapitel 2.5 |
 | **Monatlich** | Funktionsprüfung Not-Halt — drücken, Maschine muss stoppen, Reset (7 Taster) | Kapitel 6.2.3, 5.4.1 |
 | **Monatlich** | Abschmieren der 4 Schmierstellen des Förderers | Kapitel 9.1.4 |
-| **Monatlich** | Reinigung/Kontrolle der Füllstandsensoren und der Leckagewanne | Kapitel 11.7 |
+| **Monatlich** | Reinigung/Kontrolle der Füllstandsensoren | Kapitel 11.7 |
 | **Monatlich** | Staubkontrolle der Filter-/Lüftungsöffnungen des Schaltschranks | — |
 | **Monatlich** | Kontrolle von Pumpen, Ventilatoren und Blowern auf ungewöhnliche Vibrationen/Geräusche | — |
 | **250 h** | Kontrolle der Anschlüsse von Thermoelementen und Heizstäben (nach LOTO, Elektrofachkraft) | Kapitel 11.3.3 |
-| **250 h** | Reinigung von Staubablagerungen an Flügeln/Gehäusen von Abluftventilator, Trocknungsventilator und Blower | — |
+| **250 h** | Reinigung von Staubablagerungen an Flügeln/Gehäusen von Abluftventilator und Trocknungsventilator | — |
 | **250 h** | Leckagekontrolle der Druckluftleitung und des Reglers | Kapitel 6.5 |
 | **500 h** | Kontrolle Wellendichtring / Teflon des Ölskimmer-Getriebes, bei Bedarf Austausch | Kapitel 13.3 |
 | **500 h** | Kontrolle Ölstand / Leckage des Förderergetriebes | Kapitel 9.1.4 |
@@ -67,22 +66,22 @@ Stundenbasierte Intervalle werden anhand der Gesamtbetriebsstunden der Maschine 
 | **1000 h** | Komplette Kontrolle / Austausch des Pumpen-Saugfilters | Kapitel 13.3 |
 | **1000 h** | Kontrolle der Düsen auf Verstopfung/Verschleiß (160 Stück) | Kapitel 13.3 |
 | **1000 h** | Mechanische und elektrische Kontrolle der Fördererantriebsgruppe (Getriebe + Frequenzumrichter) | — |
-| **1000 h** | Bewertung der Tankwasserqualität; bei Bedarf vollständige Entleerung und Innenreinigung | Kapitel 10 |
+| **1000 h** | Bewertung der Tankwasserqualität; bei Bedarf vollständige Entleerung und Innenreinigung | Kapitel 10.1.5 |
 | **Jährlich** | Prüfbericht aller Sicherheitsfunktionen (Klappenschalter, Not-Halt, Fehlerstrom) | Kapitel 2, 5.4 |
 | **Jährlich** | Funktionskontrolle der Heizstäbe und Thermoelemente | — |
-| **Jährlich** | Kontrolle Wellendichtring / Leckage des Förderergetriebes — periodischer Ölwechsel [EKSİK] (Getriebeetikett) | Kapitel 9.1.4 |
+| **Jährlich** | Kontrolle Wellendichtring / Leckage des Förderergetriebes; Ölwechsel gemäß Getriebeetikett | Kapitel 9.1.4 |
 | **Jährlich** | Kontrolle des festen Sitzes der elektrischen Anschlüsse (LOTO, Elektrofachkraft) | — |
 | **Jährlich** | Bei geplantem längerem Stillstand Tankentleerung und Schutzreinigung | Kapitel 7.3.4 |
 
 **Hinweise zur Durchführung der periodischen Wartung**
 
-**Täglich:** Für Sichtkontrolle, Ablesen von Leuchten und Manometer ist kein LOTO erforderlich, sofern keine Klappe geöffnet wird. **Die Reinigung der Vorfilter erfordert das Öffnen des Tankdeckels** — **Kapitel 10.1.3** und **LOTO (Kapitel 2.4)** werden angewendet.
+**Täglich:** Für Sichtkontrollen ohne Öffnen von Klappen sowie für das Ablesen von Leuchten und Manometer ist kein LOTO erforderlich. **Die Reinigung der Vorfilter erfordert das Öffnen des Tankdeckels**; LOTO anwenden (**Siehe Kapitel 2.4**) und dem Verfahren in **Kapitel 10.1.3** folgen.
 
-**Wöchentlich / monatlich:** Für Arbeiten an Tanks und Filtern muss die Maschine stillgesetzt werden; bei Arbeiten, die das Öffnen von Klappen erfordern, ist **LOTO zwingend**. Der kurze Test der Klappenschalter und die Not-Halt-Prüfung werden bei betriebsbereiter Maschine durchgeführt (**Kapitel 5.4**).
+**Wöchentlich / monatlich:** Vor Arbeiten an Tanks und Filtern die Maschine stillsetzen; bei Arbeiten, die das Öffnen von Klappen erfordern, ist **LOTO zwingend**. Den kurzen Test der Klappenschalter und die Not-Halt-Prüfung bei betriebsbereiter Maschine durchführen (**Siehe Kapitel 5.4**).
 
 **250–1000 h:** Bei Punkten, die mechanische/elektrische Eingriffe erfordern, **LOTO** anwenden. Für Kontrollen an Thermoelementen, Heizstäben, Fehlerstrom-Schutzschaltern und am festen Sitz der elektrischen Anschlüsse eine Elektrofachkraft einsetzen. Bei der Reinigung von Ventilatoren und Blowern die Auswuchtung der Flügel nicht beeinträchtigen.
 
-**Jährlich:** Den Sicherheitsprüfbericht dokumentieren; bei NOK-Punkten nicht in den Betrieb übergehen.
+**Jährlich:** Den Sicherheitsprüfbericht dokumentieren; die Maschine erst nach Beseitigung der NOK-Punkte betreiben.
 
 ---
 
@@ -92,21 +91,24 @@ Stundenbasierte Intervalle werden anhand der Gesamtbetriebsstunden der Maschine 
 | :--- | :--- |
 | Anzahl der Schmierstellen | **4 Stück** Schmiernippel |
 | Einbauort | Am **Förderereingang rechts und links**, am **Fördererausgang rechts und links** |
-| Intervall | **Monatlich** (siehe Kapitel 9.1.3) |
+| Intervall | **Monatlich** (**Siehe Kapitel 9.1.3**) |
 | Fettsorte | **Castrol Tribol GR 100-1 PD** (NLGI 1) |
-| Förderergetriebe (XXC40/75, mit Drehmomentbegrenzer) | Ölsorte und Wechselintervall [EKSİK] — Getriebeetikett / BOM; **500 h** Kontrolle Füllstand/Leckage, **jährlich** Kontrolle Wellendichtring/Leckage |
+| Förderergetriebe (XXC40/75, mit Drehmomentbegrenzer) | Ölsorte, Ölmenge und Wechselintervall sind auf dem Getriebeetikett angegeben. Bei einem lebensdauergeschmierten (abgedichteten) Getriebe entfällt der Ölwechsel; es werden nur **alle 500 h** Füllstand/Leckage und **jährlich** Wellendichtring/Leckage kontrolliert. |
 
-Die vier Schmiernippel gehören zu den Lagerreihen am Förderereingang und -ausgang, nicht zum Getriebegehäuse. Die Ölangaben des Förderergetriebes sind vom Getriebeetikett abzulesen und in diese Tabelle einzutragen; ohne Etikettangaben wird das Getriebegehäuse nicht geöffnet.
+Die vier Schmiernippel gehören zu den Lagerreihen am Förderereingang und -ausgang, nicht zum Getriebegehäuse. Die Ölangaben des Getriebes vom Getriebeetikett ablesen; ohne Etikettangaben das Getriebegehäuse nicht öffnen.
 
 **Abschmierverfahren Förderer**
 
-1. Die Maschine nach **Kapitel 7.3.1** stillsetzen.
-2. **LOTO** anwenden (**Kapitel 2.4**).
-3. In das Schutzgitter auf der Eingangs- und Ausgangsseite des Förderers hineingreifen; die **4 Schmiernippel** rechts und links lokalisieren.
-4. Die Schmiernippel reinigen; mit der Fettpresse an jedem Schmiernippel **Castrol Tribol GR 100-1 PD** einpressen; stoppen, sobald altes Fett auszutreten beginnt.
-5. Überschüssiges Fett abwischen; das Fett darf nicht auf den Drahtgurt des Förderers und in das Prozesswasser gelangen.
-6. Das Getriebegehäuse nicht öffnen; die Umgebung von Getriebe und Drehmomentbegrenzer per Sichtkontrolle auf Ölleckagen prüfen.
-7. Schutzgitter und Klappen schließen; LOTO aufheben; nach RESET den Förderer kurz im Leerlauf laufen lassen und eine Geräuschkontrolle durchführen.
+1. Die Maschine stillsetzen (**Siehe Kapitel 7.3.1**).
+2. LOTO anwenden (**Siehe Kapitel 2.4**).
+3. Das Schutzgitter auf der Eingangs- und Ausgangsseite des Förderers mit Werkzeug öffnen; die **4 Schmiernippel** rechts und links lokalisieren.
+4. Die Schmiernippel reinigen.
+5. Mit der Fettpresse an jedem Schmiernippel **Castrol Tribol GR 100-1 PD** einpressen; stoppen, sobald altes Fett austritt.
+6. Überschüssiges Fett abwischen; das Fett darf nicht auf den Drahtgurt des Förderers und in das Prozesswasser gelangen.
+7. Die Umgebung von Getriebe und Drehmomentbegrenzer per Sichtkontrolle auf Ölleckagen prüfen; das Getriebegehäuse nicht öffnen.
+8. Schutzgitter und Klappen schließen; das Gitter mit Werkzeug sichern.
+9. LOTO aufheben (**Siehe Kapitel 2.4**) und RESET drücken.
+10. Den Förderer ohne Werkstücke laufen lassen; auf ungewöhnliche Lagergeräusche achten.
 
 **Erwartetes Ergebnis:** Keine ungewöhnlichen Geräusche an den Lagern; der Drahtgurt läuft gleichmäßig; keine Leckage am Getriebe.
 
@@ -116,9 +118,9 @@ Die vier Schmiernippel gehören zu den Lagerreihen am Förderereingang und -ausg
 
 ## 9.1.5 Liste der kritischen Teile
 
-**Kritische** Teile beeinträchtigen bei Ausfall unmittelbar den Prozess der Maschine, den Werkstückfluss oder die **Sicherheitsfunktion**. Positionen mit Lagerbestand **0** werden auf Bestellung beschafft; die Planung der Lieferzeit liegt in der Verantwortung des Anwenders.
+**Kritische** Teile beeinträchtigen bei Ausfall unmittelbar den Prozess der Maschine, den Werkstückfluss oder die **Sicherheitsfunktion**. Positionen mit Lagerbestand **0** werden auf Bestellung beschafft; die Planung der Lieferzeit liegt in der Verantwortung des Betreibers.
 
-Zur vollständigen BOM siehe **Kapitel 13.3.1**.
+Vollständige BOM: **Siehe Kapitel 13.3.1**.
 
 | Bestellnummer | Teilebezeichnung | Empfohlener Lagerbestand | Einbauort / Funktion | Begründung |
 | :--- | :--- | :---: | :--- | :--- |
@@ -127,7 +129,7 @@ Zur vollständigen BOM siehe **Kapitel 13.3.1**.
 | 10 16319 | İNVERTÖR Delta VFD004EL21W-1 0,4 kW | 0 | Förderer | Bei Ausfall stoppt der Förderer |
 | 07 15142 | REZİSTANS KOMPLESİ 8000 W 50 cm DÜZ DİKİŞSİZ | 2 | Tankheizung (7 St.) | Bei Ausfall wird die Temperatur nicht erreicht |
 | 07 16791 | SEVİYE SENSÖRÜ ÇAT.TİP VEGASWING 51 | 1 | Tankfüllstand (2 St.) | Bei Ausfall ist die Füllstandsicherheit beeinträchtigt |
-| 10 00296 | PASLANMAZ SEVİYE BEKÇİSİ | 0 | Tankfüllstand-Sicherheit | [EKSİK] — je nach Montage vor Ort |
+| 10 00296 | PASLANMAZ SEVİYE BEKÇİSİ | 1 | Tankfüllstand-Sicherheit | Füllstandsicherheit der Tanks |
 | 10 02976 | TERMOKUPL ETB30F06-5Ç | 1 | Heizungsregelung | Bei Ausfall ist die Heizung außer Betrieb |
 | 10 02634 | TERMOKUPL ETB30F06-4Ç | 1 | Heizungsregelung | Bei Ausfall ist die Heizung außer Betrieb |
 | 10 07147 | SWITCH F3STGRNLPU21M1J8 OMRON MANYETİK KAPI | 2 | 7 Wartungsklappen | Sicherheitskreis; bei Ausfall Stopp |
@@ -144,7 +146,7 @@ Zur vollständigen BOM siehe **Kapitel 13.3.1**.
 
 ## 9.1.6 Ersatzteilliste (Verschleiß und empfohlen)
 
-**Verschleißteile** werden bei der geplanten Wartung regelmäßig ausgetauscht oder gereinigt. Die Bevorratung der **empfohlenen** Teile verkürzt die Stillstandszeit. Die empfohlenen Lagerbestände können nach der Lagerpolitik des Werks angepasst werden; sie sind keine verbindliche Bestellverpflichtung. Zur vollständigen BOM siehe **Kapitel 13.3.1**.
+**Verschleißteile** werden bei der geplanten Wartung regelmäßig ausgetauscht oder gereinigt. Die Bevorratung der **empfohlenen** Teile verkürzt die Stillstandszeit. Die empfohlenen Lagerbestände können nach der Lagerpolitik des Werks angepasst werden; sie sind keine verbindliche Bestellverpflichtung. Vollständige BOM: **Siehe Kapitel 13.3.1**.
 
 | Bestellnummer | Teilebezeichnung | Kategorie | Empfohlener Lagerbestand | Einbauort / Funktion | Begründung |
 | :--- | :--- | :--- | :---: | :--- | :--- |
@@ -153,26 +155,25 @@ Zur vollständigen BOM siehe **Kapitel 13.3.1**.
 | 07 00670 | EMİŞ FİLTRESİ KOMPLESİ (PYM2,KBN,VDL,ULT,KNV) | Verschleiß | 1 | Pumpenansaugung | Kontrolle/Austausch alle 1000 h |
 | 07 08732 | EMİŞ FİLTRESİ KOMPLESİ 2" 1/2 | Verschleiß | 1 | Saugleitung | Periodischer Austausch |
 | 10 01079 | NOZZLE 650.724.1C.CC | Verschleiß | 20 | Wasch-/Spüldüsen (160 St.) | Verschleißteil |
-| 10 17538 | TEL BANT 850 mm (Förderer) | Verschleiß | 0 | Förderer | Verschleiß — Lagerbestand [EKSİK] |
+| 10 17538 | TEL BANT 850 mm (Förderer) | Verschleiß | 2 m | Förderer | Gurtreparatur / Verschleiß |
 | 07 03635 | YAĞ AYIRICI ÜNİTESİ | Empfohlen | 0 | Ölabscheider | Prozessqualität |
-| 07 17687 | SIZINTI TAVASI MONTAJ KOMPLESİ | Empfohlen | 0 | Untere Leckagewanne | Leckageerkennung |
 | 07 00669 | TERMOSTAT ADAPTÖRÜ KOMPLESİ | Empfohlen | 1 | Montage Tankthermostat | Wartung |
 | 10 11089 | TERMOSTAT GEMO DTH2 | Empfohlen | 1 | Waschen/Spülen/Trocknen | Temperatureinstellung |
 | 10 00272 | RESET BUTONU BL901M + blaue Leuchte | Empfohlen | 1 | Bedienfeld | Reset-Funktion |
-| 10 00305 | KAÇAK AKIM RÖLESİ A9N19642 4P | Empfohlen | 0 | RCCB Motorgruppe | Schutz |
+| 10 00305 | KAÇAK AKIM RÖLESİ A9N19642 4P | Empfohlen | 0 | RCCB Motorgruppe / Trocknung | Schutz |
 | 10 00304 | KAÇAK AKIM RÖLESİ A9N19643 4P | Empfohlen | 0 | RCCB Tankheizstäbe | Schutz |
 | 10 01421 | Sicherung A9F74106 1×6 | Empfohlen | 2 | Versorgung Förderer/Frequenzumrichter | Schutz |
 | — | Motorschutzschalter GV2ME16 / GV2ME14 / GV2ME07 / GV2ME04 | Empfohlen | 1 / 2 / 2 / 1 | Q1 / Q2,Q7–Q10 / Q4–Q6 / Q3 | Motorschutz |
-| — | Schütz LC1K1610M7 / LC1K0610M7 / LC1D25M7 | Empfohlen | 2 / 2 / 1 | Pumpe-Blower / Ventilator-Skimmer / Trocknungsheizung | Reserve |
+| — | Schütz LC1K1610M7 / LC1K0610M7 / LC1D25M7 | Empfohlen | 2 / 2 / 1 | Pumpe-Blower-Tankheizung / Ventilator-Skimmer / Trocknungsheizung | Reserve |
 | — | Sicherung A9F74316 (16 A) / A9F74325 (25 A) | Empfohlen | 3 / 2 | Tankheizung / Trocknungsheizung | Schutz |
 
-**Bestellung:** Mit der Bestellnummer über den Hersteller-/Servicekanal beschaffen (**Siehe Kapitel 1.3.4**). Zu den kritischen Teilen siehe **Kapitel 9.1.5**. Alle Positionen in **Kapitel 13.3.1**.
+**Bestellung:** Mit der Bestellnummer über den Hersteller-/Servicekanal beschaffen (**Siehe Kapitel 1.3.4**). Kritische Teile: **Siehe Kapitel 9.1.5**. Alle Positionen: **Siehe Kapitel 13.3.1**.
 
 ---
 
 ## 9.1.7 Wartungsprotokoll
 
-Die Ergebnisse der periodischen Wartung und der Prüfungen dokumentieren. Vor der Behebung von NOK-Punkten darf nicht in den Betrieb zurückgekehrt werden.
+Die Ergebnisse der periodischen Wartung und der Prüfungen dokumentieren. Die Maschine erst nach Beseitigung der NOK-Punkte wieder in Betrieb nehmen.
 
 | # | Tätigkeit | Intervall | Datum | Durchgeführt von | OK/NOK |
 | :---: | :--- | :--- | :--- | :--- | :---: |
@@ -189,4 +190,4 @@ Die Ergebnisse der periodischen Wartung und der Prüfungen dokumentieren. Vor de
 
 ---
 
-Zur vollständigen Stückliste siehe **Kapitel 13.3**.
+Vollständige Stückliste: **Siehe Kapitel 13.3**.

@@ -10,9 +10,9 @@ Diese Architektur gibt dem Bediener die Flexibilität, jede Funktion unabhängig
 
 | Parameter | Wert |
 | :--- | :--- |
-| Position des Hauptsteuerschranks | Bei Blick von vorn auf die Maschine **rechte Seite** — der Bediener bedient die Maschine von dieser Seite |
+| Position des Hauptsteuerschranks | Bei Blick von vorn auf die Maschine **rechts** — an der vorderen Längsseite, nahe dem Ausgangsende; der Bediener bedient die Maschine von dieser Position aus (**Siehe Kapitel 3.5.1**) |
 | Schaltschrankabmessungen (B × H × T) | 1000 × 1600 × 300 mm |
-| Schutzart Schaltschrank (IP) | [EKSİK] |
+| Schutzart Schaltschrank (IP) | IP55 |
 | Hauptschalter | Drehgriff außen an der Schaltschranktür — Leistungsschalter (TMŞ) Schneider CVS250F (LV521091), im Schaltschrank |
 | HMI / PLC | Nicht vorhanden |
 | Sprache des Bedienfelds | Englische Beschriftungen |
@@ -29,7 +29,7 @@ Der Schaltschrank enthält die Leistungsverteilung, Motorschutzschalter, Schütz
 
 ## 3.4.2 Anordnung des Bedienfelds
 
-Das Bedienfeld befindet sich im oberen Bereich der Schaltschranktür auf einer Platte mit Dolfin-Logo. Die Schalter sind in fünf Reihen angeordnet; jede Reihe entspricht einer Prozessgruppe. Die folgende Tabelle listet das Bedienfeld von oben nach unten und von links nach rechts auf.
+Das Bedienfeld befindet sich im oberen Bereich der Schaltschranktür auf einer Platte mit Dolfin-Logo. Das Bedienfeld besteht aus sechs Reihen: In den ersten vier Reihen befinden sich die Prozessschalter und die Heizungsthermostate, in der fünften Reihe der Förderer-Schalter, das Drehzahlpotentiometer und der Not-Halt-Taster, in der sechsten Reihe die Füllstandleuchten und der RESET-Taster. Die folgende Tabelle listet das Bedienfeld von oben nach unten und von links nach rechts auf.
 
 | Reihe | Links | Mitte | Rechts |
 | :---: | :--- | :--- | :--- |
@@ -48,6 +48,8 @@ Das Bedienfeld befindet sich im oberen Bereich der Schaltschranktür auf einer P
 
 Jeder Schalter hat zwei Stellungen: **OFF** (AUS) und **ON** (EIN). Wird der Schalter in Stellung ON gebracht, zieht das zugehörige Schütz an und die danebenliegende weiße **Betriebsleuchte** leuchtet. Die Leuchte zeigt den Zustand des **Ausgangs**, nicht des Schalters: Leuchtet die Leuchte bei Schalterstellung ON nicht, hat eine Verriegelung (Füllstand, Sicherheitskreis) oder ein Schutzelement (Motorschutzschalter, Fehlerstrom-Schutzschalter) ausgelöst (**Siehe Kapitel 11.1**).
 
+Neben den Heizungsschaltern (TANK 1/2 HEATER, DRYING 1/2 HEATER) befindet sich statt einer Betriebsleuchte der Thermostat **GEMO DTH2**; der Zustand des Heizungsausgangs wird an der Ausgangsanzeige im Thermostatdisplay abgelesen. Ist die Solltemperatur erreicht, schaltet der Thermostat die Heizung ab und die Ausgangsanzeige erlischt; dies ist normaler Betrieb. Sinkt die Temperatur unter den Sollwert, schaltet die Heizung selbsttätig wieder zu (**Siehe Kapitel 3.4.4**).
+
 | Schalter | Deutsche Entsprechung | Geschaltete Einheit | Bedingung / Hinweis |
 | :--- | :--- | :--- | :--- |
 | TANK 1 HEATER | Heizung Waschtank | Heizstäbe R01–R05 (thermostatgeregelt) | Ausreichend Wasser in TANK 1 erforderlich; bei Erreichen der Solltemperatur schaltet der Thermostat ab |
@@ -55,16 +57,18 @@ Jeder Schalter hat zwei Stellungen: **OFF** (AUS) und **ON** (EIN). Wird der Sch
 | TANK 1 OIL SKIMMER | Ölskimmer | Getriebemotor GE06 | Bei Öl auf der Oberfläche des Waschtanks |
 | TANK 2 HEATER | Heizung Spültank | Heizstäbe R06–R07 | Ausreichend Wasser in TANK 2 erforderlich |
 | TANK 2 PUMP | Spülpumpe | PE04 (3 kW) | Ausreichend Wasser in TANK 2 erforderlich |
-| BLOWER 1 | Blower-Gruppe 1 | Blower-Motoren (aus FE04–FE07 — Schaltplan) | Wasserabblasen |
-| BLOWER 2 | Blower-Gruppe 2 | Blower-Motoren (aus FE04–FE07 — Schaltplan) | Wasserabblasen |
+| BLOWER 1 | Blower-Gruppe 1 | Eine Gruppe der Blower-Motoren FE04–FE07 (Zuordnung im Schaltplan, **Siehe Kapitel 13.1**) | Wasserabblasen |
+| BLOWER 2 | Blower-Gruppe 2 | Die andere Gruppe der Blower-Motoren FE04–FE07 (Zuordnung im Schaltplan, **Siehe Kapitel 13.1**) | Wasserabblasen |
 | DRYING 1 HEATER | Heizung Trocknung 1 | R21 (12 kW, thermostatgeregelt) | Nur bei eingeschaltetem DRYING 1 FAN verwenden |
 | DRYING 1 FAN | Ventilator Trocknung 1 | FE02 (1,1 kW) | — |
 | DRYING 2 HEATER | Heizung Trocknung 2 | R22 (12 kW, thermostatgeregelt) | Nur bei eingeschaltetem DRYING 2 FAN verwenden |
 | DRYING 2 FAN | Ventilator Trocknung 2 | FE03 (1,1 kW) | — |
 | Unbeschrifteter Schalter | Ölabscheidereinheit | Magnetventil der Membranpumpe | Druckluft mit 6 bar muss angeschlossen sein |
-| CONVEYOR | Förderer | GE01 — über Frequenzumrichter | Geschwindigkeit über Potentiometer; Linie leer und RESET-Leuchte leuchtet |
+| CONVEYOR | Förderer | GE01 — über Frequenzumrichter; Abluftventilator FE01 wird mit zugeschaltet | Geschwindigkeit über Potentiometer; Linie leer und RESET-Leuchte leuchtet |
 
-Der Abluftventilator hat am Bedienfeld keinen eigenen Schalter ([EKSİK] — Einschaltbedingung gemäß Schaltplan). Die Einschaltreihenfolge der Schalter und die Verriegelungslogik sind in **Kapitel 7.2** angegeben.
+Der Abluftventilator (FE01) hat am Bedienfeld keinen eigenen Schalter; er wird zusammen mit dem Schalter **CONVEYOR** zugeschaltet und läuft, solange der Förderergetriebemotor läuft. Wird der Schalter CONVEYOR auf OFF gestellt, stoppt auch der Abluftventilator.
+
+Die Einschaltreihenfolge der Schalter ist in **Kapitel 7.2.2**, die Verriegelungen sind in **Kapitel 3.4.6** angegeben.
 
 ---
 
@@ -72,16 +76,18 @@ Der Abluftventilator hat am Bedienfeld keinen eigenen Schalter ([EKSİK] — Ein
 
 Neben den vier Heizungsschaltern befindet sich jeweils ein digitaler Thermostat **GEMO DTH2**. Der Thermostat misst die Temperatur des betreffenden Tanks oder der Trocknungsluft mit einem Thermoelement (ETB30F06-5Ç / -4Ç) und trennt bei Erreichen des Sollwerts das Heizungsschütz; sinkt die Temperatur, schaltet er es wieder ein. So wird die Temperatur auf dem Sollwert gehalten, auch wenn der Heizungsschalter in Stellung ON bleibt.
 
-| Thermostat | Geregelte Heizung | Sollwertbereich |
+| Thermostat | Geregelte Heizung | Sollwert |
 | :--- | :--- | :--- |
-| TANK 1 HEATER | R01–R05 (Waschtank) | [EKSİK] — gemäß Prozessanforderung; die Wassertemperatur darf +70 °C nicht überschreiten (**Siehe Kapitel 3.3.5**) |
-| TANK 2 HEATER | R06–R07 (Spültank) | [EKSİK] — darf +70 °C nicht überschreiten |
-| DRYING 1 HEATER | R21 (Trocknung 1) | [EKSİK] |
-| DRYING 2 HEATER | R22 (Trocknung 2) | [EKSİK] |
+| TANK 1 HEATER | R01–R05 (Waschtank) | Legt der Betreiber fest — höchstens +70 °C (**Siehe Kapitel 3.3.5**) |
+| TANK 2 HEATER | R06–R07 (Spültank) | Legt der Betreiber fest — höchstens +70 °C |
+| DRYING 1 HEATER | R21 (Trocknung 1) | Legt der Betreiber fest — unterhalb der zulässigen Temperatur des Werkstückmaterials |
+| DRYING 2 HEATER | R22 (Trocknung 2) | Legt der Betreiber fest — unterhalb der zulässigen Temperatur des Werkstückmaterials |
+
+Die Thermostate haben keinen werkseitigen Sollwert; die Sollwerte werden vom Betreiber gemäß den Prozessanforderungen festgelegt. Die Badwassertemperatur darf +70 °C nicht überschreiten. Die Temperatur der Trocknungsluft ist so zu wählen, dass die zulässige Temperatur des bearbeiteten Werkstückmaterials nicht überschritten wird.
 
 Der Sollwert wird mit den Pfeiltasten Auf/Ab am Thermostat eingegeben; die Anzeige zeigt die aktuelle Temperatur. Das Einstellverfahren ist in **Kapitel 6.3.3** angegeben. Zeigt der Thermostat das Erreichen des Sollwerts an, während sich das Wasser weiter erwärmt, liegt ein Thermostat- oder Schützfehler vor (**Siehe Kapitel 11.1.2 — Störung 5**).
 
-![Schaltschrankinneres — GEMO-DTH2-Thermostate und Relais](../../assets/3.4/termostat-gemo.jpg)
+![Innenseite der Schaltschranktür — Rückseite der GEMO-DTH2-Thermostate und der Schalter-Kontaktblöcke](../../assets/3.4/termostat-gemo.jpg)
 
 ---
 
@@ -112,7 +118,7 @@ Die Maschine wird ohne Automatisierungssoftware durch die folgenden hardwareseit
 | Motorschutz (MKŞ) | Überstrom / Kurzschluss | Versorgung des betreffenden Motors wird getrennt; Betriebsleuchte erlischt |
 | Fehlerstrom (RCCB) | Isolationsfehler einer Heizung | Versorgung der betreffenden Heizungsgruppe wird getrennt |
 
-Die Füllstandverriegelung verhindert den Betrieb der Heizstäbe ohne Wasser und den Trockenlauf der Pumpe; der Füllstandsensor darf deshalb niemals überbrückt werden. Für eine Funktion, die trotz erfüllter Verriegelungen nicht läuft, siehe die Störungstabelle in **Kapitel 11.1.2**.
+Die Füllstandverriegelung verhindert den Betrieb der Heizstäbe ohne Wasser und den Trockenlauf der Pumpe; der Füllstandsensor darf deshalb niemals überbrückt werden. Für eine Funktion, die trotz erfüllter Verriegelungsbedingungen nicht läuft, siehe die Störungstabelle in **Kapitel 11.1.2**.
 
 ---
 
@@ -125,7 +131,7 @@ Die Füllstandverriegelung verhindert den Betrieb der Heizstäbe ohne Wasser und
 | Einstellbereich | **20–60 Hz** Ausgangsfrequenz des Frequenzumrichters |
 | Drehrichtungseinstellung | Werkseinstellung — Parameter des Frequenzumrichters; wird vom Bediener nicht verändert |
 
-Wird das Potentiometer im Uhrzeigersinn gedreht, steigen die Ausgangsfrequenz des Frequenzumrichters und die Fördergeschwindigkeit. Wird **unter 20 Hz** abgesenkt, reicht das Motordrehmoment unter Last nicht aus und der Förderer kann stehen bleiben; verwenden Sie die Maschine deshalb nicht außerhalb dieses Bereichs. Die Geschwindigkeit bestimmt die Kontaktzeit des Werkstücks in der Kammer und damit das Reinigungs-/Trocknungsergebnis (**Siehe Kapitel 8**). Für die Alarmcodes des Frequenzumrichters siehe das Delta-Handbuch (**Siehe Kapitel 11.3.2**).
+Wird das Potentiometer im Uhrzeigersinn gedreht, steigen die Ausgangsfrequenz des Frequenzumrichters und die Fördergeschwindigkeit. Wird **unter 20 Hz** abgesenkt, reicht das Motordrehmoment unter Last nicht aus und der Förderer kann stehen bleiben; verwenden Sie die Maschine deshalb nicht außerhalb dieses Bereichs. Die Geschwindigkeit bestimmt die Kontaktzeit des Werkstücks in der Kammer und damit das Reinigungs-/Trocknungsergebnis (**Siehe Kapitel 8.1**). Das Einstellverfahren für die Geschwindigkeit ist in **Kapitel 6.3.4** angegeben. Für die Alarmcodes des Frequenzumrichters siehe das Delta-Handbuch (**Siehe Kapitel 11.3.2**).
 
 ![Frequenzumrichter des Förderers — Delta VFD004EL21W-1 und 24-V-DC-Netzteil](../../assets/3.4/inverter-delta.jpg)
 
@@ -143,7 +149,8 @@ Wird das Potentiometer im Uhrzeigersinn gedreht, steigen die Ausgangsfrequenz de
 | Heizungssicherungen | A9F74316 (16 A — Tankheizstäbe), A9F74325 (25 A — Trocknungsheizungen) | Überstromschutz |
 | Frequenzumrichter Förderer | Delta VFD004EL21W-1 (0,4 kW); Sicherung A9F74106 | Drehzahlregelung des Förderers |
 | Steuernetzteil | LRS-350-24 (24 V DC, 14,6 A); Sicherung A9F74160 / A9F74110 | Versorgung des Steuerkreises |
-| Sicherheitsrelais (2 Stück) | Omron G9SB2002AACDC241 (G9SX) | Not-Halt-Kreis und Klappenschalterkreis |
+| Sicherheitsrelais — Not-Halt-Kreis | Omron G9SB2002AACDC241 (Bestellnummer 10 00220) | Auswertung der 7 Not-Halt-Taster |
+| Sicherheitsrelais — Wartungsklappenkreis | Omron G9SB2002AACDC241 (Bestellnummer 10 11531) | Auswertung der magnetischen Schalter der Wartungsklappen |
 | Thermostate (4 Stück) | GEMO DTH2 | Temperaturregelung Tank 1, Tank 2, Trocknung 1, Trocknung 2 |
 | Not-Halt-Taster (Schaltschrank) | P1EC400E40K + Kontaktblöcke | Not-Halt am Bedienfeld |
 | Reset-Taster | BL901M + blaue Signalleuchte | Reset des Sicherheitskreises / Bereitschaftsanzeige |
@@ -171,10 +178,10 @@ Die Start- und Abschaltreihenfolge ist in **Kapitel 7.2** und **7.3** definiert.
 
 ## 3.4.10 Not-Halt
 
-Die Maschine verfügt über **7 Not-Halt-Taster** (Bedienfeld, Förderereingang rechts/links, Ausgang rechts/links, mittlerer Bereich rechts/links). Beim Betätigen eines Not-Halt-Tasters stoppen alle Bewegungs- und Prozessausgänge; die RESET-Leuchte erlischt.
+Die Maschine verfügt über **7 Not-Halt-Taster**: einer am Bedienfeld; je einer an der vorderen und hinteren Längsseite am Förderereingang, am Fördererausgang und im mittleren Maschinenbereich (**Siehe Kapitel 3.5.5**). Beim Betätigen eines Not-Halt-Tasters stoppen alle Bewegungs- und Prozessausgänge; die RESET-Leuchte erlischt.
 
 Das Reset-Verfahren, die Wiederanlaufbedingungen nach Not-Halt und die Pflichten des Bedieners sind in **Kapitel 2.5** angegeben; die Schritte werden in diesem Kapitel nicht wiederholt.
 
 ---
 
-Werte der elektrischen Versorgung siehe **Kapitel 3.3.3**; Start-/Stopp-Verfahren siehe **Kapitel 7**; Störungsdiagnose siehe **Kapitel 11**.
+Werte der elektrischen Versorgung: **Siehe Kapitel 3.3.3**; Start-/Stopp-Verfahren: **Siehe Kapitel 7**; Störungsdiagnose: **Siehe Kapitel 11**.

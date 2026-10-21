@@ -11,11 +11,11 @@ Kurulum doğrulama testleri, **Bölüm 5.4** güvenlik testleri tamamlandıktan 
 | 1 | Makine terazide mi? | Evet — ayarlanabilir ayaklar; her iki eksende | ☐ |
 | 2 | Tüm ayaklar zemine temas ediyor mu? | Evet | ☐ |
 | 3 | Tank ve hücre kapakları zorlanmadan kapanıyor mu? | Evet — switch hizalı | ☐ |
-| 4 | Konveyör tel bandı elle çevrildiğinde serbest mi? | Evet — yanal sürtünme yok | ☐ |
+| 4 | Konveyör tel bandı zincir dişlilere tam oturmuş mu? | Evet — kenarlar şaseye sürtmüyor | ☐ |
 | 5 | Koruma kafesleri ve PVC perdeler yerinde mi? | Evet | ☐ |
 | 6 | Yağ ayırıcı ünitesi terazide ve hortumları bağlı mı? | Evet | ☐ |
 
-Test, **Bölüm 5.2.3** seviye ayarı tamamlandıktan sonra yapılır. Mekanik kurulum test checklist DATA'da tanımlı değildir ([EKSİK]); yukarıdaki liste makine tipinin standart kontrollerini içerir.
+Test, **Bölüm 5.2.3** seviye ayarı tamamlandıktan sonra yapılır.
 
 ---
 
@@ -30,7 +30,7 @@ Test, **Bölüm 5.2.3** seviye ayarı tamamlandıktan sonra yapılır. Mekanik k
 | 5 | Her fonksiyon anahtarı ON alındığında run lambası yanıyor mu? | Evet | ☐ |
 | 6 | Konveyör potansiyometresi ile hız değişiyor mu? (20–60 Hz) | Evet | ☐ |
 
-Faz yönü **Bölüm 5.3.6**'da doğrulanmış olmalıdır.
+Faz yönü **Bölüm 5.3.6**'da doğrulanmış olmalıdır. Pompaların dönüş yönü, tanklar doldurulduktan (**Bölüm 5.4.4**) sonra bu testte kontrol edilir.
 
 ---
 
@@ -44,7 +44,7 @@ Faz yönü **Bölüm 5.3.6**'da doğrulanmış olmalıdır.
 | 4 | Tanklar dolu; WASHING LEVEL lambaları sönük mü? | Evet | ☐ |
 | 5 | Tank altı, pompa ve boru bağlantılarında sızıntı var mı? | Hayır | ☐ |
 
-Bağlantı değerleri: **6 bar** hava, **1 bar** su (**Bkz. Bölüm 3.3.5**). Pnömatik dolum test tanımı DATA'da bulunmamaktadır ([EKSİK]); yukarıdaki kontroller uygulanır.
+Bağlantı değerleri: **6 bar** hava, **1 bar** su (**Bkz. Bölüm 3.3.5**).
 
 ---
 
@@ -65,7 +65,8 @@ Detaylı test adımları **Bölüm 5.4**'te verilmiştir.
 
 | Parametre | Değer |
 | :--- | :--- |
-| Boş koşu test süresi | [EKSİK] dk — DATA'da tanımlı değil |
+| Boş koşu test süresi | En az **30 dk** |
+| Test koşulu | Parçasız; tüm fonksiyonlar (pompalar, blower'lar, kurutma fanları, konveyör; ısıtıcılar dahil) açık |
 
 Boş koşu testi, makinenin parça olmadan sürekli çalışmasını doğrular; sızıntı, koruma elemanı trip'i, aşırı titreşim, egzoz etkinliği ve proses fonksiyonlarının birlikte çalışmasını kontrol eder. Test sırasında konveyör, pompalar, blowerlar ve fanlar hareket eder; tehlike bölgesine girmeyin, uygun KKD kullanın (**Bkz. Bölüm 2.6**).
 
@@ -84,22 +85,22 @@ Boş koşu testi, makinenin parça olmadan sürekli çalışmasını doğrular; 
 3. **TANK 1 OIL SKIMMER** anahtarını ON alın; yağ sıyırıcı diskinin döndüğünü gözleyin.
 4. **BLOWER 1**, **BLOWER 2**, **DRYING 1 FAN**, **DRYING 2 FAN** anahtarlarını ON alın; ardından **DRYING 1 HEATER** ve **DRYING 2 HEATER** anahtarlarını ON alın.
 5. **CONVEYOR** anahtarını ON alın; potansiyometre ile hızı 20–60 Hz aralığında değiştirip tel bandın düzgün ilerlediğini kontrol edin.
-6. Egzoz fanının çalıştığını ve bacadan buhar tahliyesinin yapıldığını, hücre kapaklarından buhar kaçmadığını kontrol edin.
-7. Makineyi **parça olmadan** belirlenen süre boyunca ([EKSİK]) çalıştırın.
+6. Egzoz fanının çalıştığını, bacadan buhar tahliyesinin yapıldığını ve hücre kapaklarından buhar kaçmadığını kontrol edin (egzoz fanı CONVEYOR anahtarı ile birlikte çalışır — **Bkz. Bölüm 3.4.3**).
+7. Makineyi **parça olmadan** en az **30 dk** çalıştırın.
 8. Test süresince run lambalarını, WASHING LEVEL ve RESET lambalarını izleyin; sızıntı, anormal ses, titreşim veya koku olup olmadığını kontrol edin.
 9. Fonksiyonları **Bölüm 7.3.1** sırasına göre kapatın.
 
 | # | Kabul kriteri | Durum |
 | :---: | :--- | :---: |
-| 1 | Belirlenen süre boyunca kesintisiz boş koşu tamamlandı | ☐ OK / ☐ NOK |
+| 1 | En az 30 dk kesintisiz boş koşu tamamlandı | ☐ OK / ☐ NOK |
 | 2 | Hiçbir MKŞ veya kaçak akım rölesi trip etmedi; RESET lambası sönmedi | ☐ OK / ☐ NOK |
-| 3 | Tank sıcaklıkları set değere doğru yükseldi; termostatlar set değerde kesti | ☐ OK / ☐ NOK |
+| 3 | Tank sıcaklıkları termostat ekranında yükseldi; set değere ulaşıldığında termostat ilgili ısıtıcıyı devreden çıkardı | ☐ OK / ☐ NOK |
 | 4 | Gözle görülür sızıntı veya anormal titreşim yok | ☐ OK / ☐ NOK |
 | 5 | Egzoz tahliyesi etkin; hücrelerden buhar kaçağı yok | ☐ OK / ☐ NOK |
 
 **Anormal durum:** Bir fonksiyon durur veya RESET lambası sönerse makineyi durdurun; **Bölüm 11**'e bakın. Test tekrarlanmadan operasyona geçmeyin.
 
-Boş koşu testi başarılı ise makine **kullanıma hazır** kabul edilir (**Bölüm 5.1 Adım 10**).
+Boş koşu testi başarılı ise makine **kullanıma hazır** kabul edilir (**Bkz. Bölüm 5.1.6**).
 
 ---
 

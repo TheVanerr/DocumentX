@@ -2,7 +2,7 @@
 
 Dieses Kapitel beschreibt die Methoden zur Diagnose und Beseitigung von Störungen, die an der Maschine **KNV 90 7500 2B** auftreten können. Die Maschine verfügt über **kein HMI und keine Alarmliste**; die Symptome werden über die Leuchten des Bedienfelds (Betriebsleuchten, TANK 1/2 WASHING LEVEL, RESET), die Stellung der Schutzelemente im Schaltschrank (Motorschutzschalter, Fehlerstrom-Schutzschalter, Sicherungen, Phasenfolgerelais) und das Display des Förderer-Frequenzumrichters diagnostiziert.
 
-Die Störungsbehebung erfolgt in zwei Ebenen: Der Bediener führt anhand der Bedienfeldleuchten die **Erstdiagnose** durch und wendet äußere Maßnahmen wie Tankbefüllung, Prüfung von Not-Halt/Klappen und RESET an; Eingriffe im Schaltschrank (MKŞ-Reset, Fehlerstrom-Schutzschalter, Schütz, Heizstabmessung) werden ausschließlich von einer **Elektrofachkraft** **unter LOTO** durchgeführt (**Siehe Kapitel 2.4**). Der Not-Halt-Reset erfolgt gemäß **Kapitel 2.5**.
+Die Störungsbehebung erfolgt in zwei Ebenen: Der Bediener führt anhand der Bedienfeldleuchten die **Erstdiagnose** durch und wendet äußere Maßnahmen wie Tankbefüllung, Prüfung von Not-Halt/Klappen und RESET an; Eingriffe im Schaltschrank (MKŞ-Reset, Fehlerstrom-Schutzschalter, Schütz, Heizstabmessung) werden ausschließlich von einer **Elektrofachkraft** **unter LOTO** durchgeführt (**Siehe Kapitel 2.4**). Reset nach Not-Halt: **Siehe Kapitel 2.5**.
 
 | Parameter | Wert |
 | :--- | :--- |
@@ -18,8 +18,8 @@ Die Störungsbehebung erfolgt in zwei Ebenen: Der Bediener führt anhand der Bed
 | **11.4** | Hydraulik — nicht zutreffend |
 | **11.5** | Pneumatik — Luftdruck, Ölabscheiderpumpe |
 | **11.6** | Vakuum — nicht zutreffend |
-| **11.7** | Sensoren — Klappenschalter, Füllstandsensoren, Thermoelement, Leckagewanne |
+| **11.7** | Sensoren — Klappenschalter, Füllstandsensoren, Thermoelement |
 
 ---
 
-Für die Serviceanforderung siehe **Kapitel 1.3**; für Ersatzteile siehe **Kapitel 13.3**.
+Serviceanforderung: **Siehe Kapitel 1.3**. Ersatzteile: **Siehe Kapitel 13.3**.

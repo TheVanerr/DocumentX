@@ -4,7 +4,7 @@ Dieses Kapitel fasst die unterstützenden Materialien der Anleitung zusammen: An
 
 | Unterkapitel | Thema |
 | :--- | :--- |
-| **14.1** | Anhänge — Störungstabelle, Parameter, Produktregistrierung, Garantiereferenzen |
+| **14.1** | Anhänge — Störungstabelle, Parameter- und Rezeptformulare, Verweise auf die Garantieurkunde |
 | **14.2** | Glossar — Abkürzungen, Bedienfeld-Etiketten und Begriffe |
 | **14.3** | Stichwortverzeichnis |
 

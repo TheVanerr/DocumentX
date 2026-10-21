@@ -1,22 +1,21 @@
 # 13.1 Liste der gelieferten Dokumente
 
-Die mit der Maschine gelieferten technischen Dokumente gliedern sich in drei Gruppen: **separate Dokumente** (PDF-Dateien), **in der Anleitung enthaltene** Referenzen und **Fremddokumentation der Komponentenhersteller**. Dateiname und Revisionsstand sind dem Deckblatt oder dem Dateietikett im Lieferpaket zu entnehmen; in den DATA ist für dieses Projekt kein Dateiname/Revisionsstand hinterlegt ([EKSİK]).
+Die technischen Dokumente der Maschine gliedern sich in drei Gruppen: mit der Maschine gelieferte **separate Dokumente**, **in der Anleitung enthaltene** Referenzen und auf Anfrage erhältliche **Fremddokumentation der Komponentenhersteller**. Dateiname und Revisionsstand der separaten Dokumente sind in der Tabelle in **Kapitel 13.1.1** angegeben.
 
-Bei Bestell- und Serviceanfragen sind die Angaben des Typenschilds (**Seriennummer 0726051**, Modell **KNV-90**) zwingend — siehe **Kapitel 1.3.2**.
+Bei Bestell- und Serviceanfragen sind die Angaben des Typenschilds (**Seriennummer 0726051**, Modell **KNV-90**) zwingend (**Siehe Kapitel 1.3.2**).
 
 ---
 
-## 13.1.1 Zeichnungspaket für den Kunden (separates Dokument)
+## 13.1.1 Als separate Dokumente gelieferte Unterlagen
 
 | # | Dokument | Dateiname / Rev. | Anwendungsbereich |
 | :---: | :--- | :--- | :--- |
-| 1 | **Schaltplan** | [EKSİK] — Lieferpaket (PDF) | Schaltschrank, Motoren, Heizungen, Sicherheitskreis, Zuordnung MKŞ/RCCB/Schütz–Last, BLOWER-Schaltergruppen — siehe **3.4**, **5.3**, **11.3** |
-| 2 | **Aufstellungsplan (Layout) der Maschine** | [EKSİK] — Lieferpaket (PDF) | Abmessungen, Aufstellfläche, Anschlusspunkte (Luft, Wasser, Ablauf, Abluft), Hebepunkte — siehe **3.5**, **13.2** |
-| 3 | **P&ID-Schema** | [EKSİK] — Lieferung noch zu bestätigen | Leitungen von Tank, Pumpe, Filter, Düsen und Ölabscheider |
+| 1 | **EG-Konformitätserklärung** (2006/42/EG Anhang II A) | — | Wird mit der Maschine geliefert; Erklärung der Konformität der Maschine mit der Maschinenrichtlinie 2006/42/EG |
+| 2 | **Schaltplan** | Wird als Zusatzdokument geliefert | Schaltschrank, Motoren, Heizungen, Sicherheitskreis, Zuordnung MKŞ/RCCB/Schütz–Last, BLOWER-Schaltergruppen — **Siehe Kapitel 3.4, 5.3, 11.3** |
+| 3 | **Aufstellungsplan (Layout) der Maschine** | Wird als Zusatzdokument geliefert | Abmessungen, Aufstellfläche, Anschlusspunkte (Luft, Wasser, Ablauf, Abluft) — **Siehe Kapitel 3.5, 13.2** |
+| 4 | **Garantieurkunde** | — | Wird mit der Maschine geliefert; Garantiedauer und -bedingungen — **Siehe Kapitel 14.1** |
 
-**WARNUNG — Elektrik:** Vor Arbeiten anhand des Schaltplans die Maschine spannungsfrei schalten und **LOTO** anwenden (**Kapitel 2.4**).
-
-Der vollständige Dateiname/Revisionsstand des Schaltplans wird bei der Lieferung auf dem Paket angegeben; in der Anleitung ist kein fester Dateiname definiert.
+**HINWEIS:** Vor jeder Arbeit im Schaltschrank anhand des Schaltplans die Maschine spannungsfrei schalten und **LOTO** anwenden (**Siehe Kapitel 2.4**).
 
 ---
 
@@ -26,7 +25,7 @@ Die folgenden Inhalte werden **nicht** als separates PDF geliefert; sie befinden
 
 | Dokument | Kapitel | Beschreibung |
 | :--- | :--- | :--- |
-| Ersatzteilliste (BOM) | **13.3.1** | 40 Positionen; Bestellnummer, Kategorie, Lagerempfehlung — zusätzlich im Projektstammverzeichnis **0726051-YETSAN-KNV 90 PARCA LISTESI** |
+| Ersatzteilliste (BOM) | **13.3.1** | 39 Positionen; Bestellnummer, Kategorie, Lagerempfehlung |
 | Übersicht kritischer Teile | **9.1.5** | Betrieblich kritische Positionen — vollständige Liste **13.3** |
 | Verschleiß-/empfohlene Ersatzteile | **9.1.6** | Verbrauchspositionen für Wartung/Reinigung |
 | Störungstabelle (Symptom–Ursache–Abhilfe) | **11.1.2** | 13 Störungsszenarien |
@@ -47,10 +46,11 @@ Die folgenden Inhalte werden **nicht** als separates PDF geliefert; sie befinden
 | Sicherheitsrelais Omron G9SB2002AACDC241 | Datenblatt Omron G9SB | LED-Zustände, Reset-Logik (**11.7.1**) |
 | Klappenschalter Omron F3STGRNLPU21M1J8 | Datenblatt Omron | Montageabstand, Ausrichtung (**11.7.1**) |
 | Füllstandsensor VEGASWING 51 | Betriebsanleitung VEGA | Reinigung, Montage (**11.7.2**) |
+| Förderergetriebe XXC40/75 | Betriebs- und Wartungsunterlagen des Getriebeherstellers | Ölsorte, Ölmenge, Ölkontrolle (**9.1.4**) |
 | Castrol Tribol GR 100-1 PD | Sicherheitsdatenblatt (SDS) des Produkts | Abschmieren, PSA (**9.1.4**) |
 | VEIDEC-Reinigungsprodukte | SDS und Gebrauchsanweisung des Produkts | Reinigung (**10.1.7**) |
 
-Diese Dokumente sind bei den Komponentenherstellern erhältlich; ob sie im Lieferpaket enthalten sind, ist [EKSİK].
+Die Komponentenhandbücher (Delta VFD, GEMO DTH2, Omron G9SB und F3S, VEGASWING 51, Getriebe) sind auf Anfrage beim Hersteller erhältlich. Die Sicherheitsdatenblätter (SDS) für Schmierfett und Reinigungsprodukte sind beim jeweiligen Produktlieferanten erhältlich.
 
 ---
 
@@ -58,17 +58,18 @@ Diese Dokumente sind bei den Komponentenherstellern erhältlich; ob sie im Liefe
 
 | Dokument | Status | Hinweis |
 | :--- | :--- | :--- |
-| Pneumatikplan | [EKSİK] | Einziger Verbraucher (Ölabscheiderpumpe); die Leitung wird über den Schaltplan und die Anlageninstallation verwaltet |
+| Technische Unterlagen (2006/42/EG Anhang VII) | **Nicht geliefert** | Werden beim Hersteller aufbewahrt; nur auf begründetes Verlangen der zuständigen Behörde vorgelegt. Sicherheitskategorie / PL — **Siehe Kapitel 2.1.3** |
+| Pneumatikplan | **Nicht zutreffend** | Einziger pneumatischer Verbraucher (Membranpumpe des Ölabscheiders); die Leitung ist in **Kapitel 6.5** beschrieben |
 | Hydraulikplan | **Nicht zutreffend** | Hydrauliksystem nicht vorhanden |
-| Ersatzteilliste (BOM) — separates PDF | **Nicht zutreffend** | Enthalten — **13.3**; Quelle Stückliste (Produktbaum) **KNV 90 7500 ÜRÜN AĞACI.xlsm** |
+| P&ID | **Nicht geliefert** | Kein separates P&ID; Prozessablauf in **Kapitel 3.1** |
+| Ersatzteilliste (BOM) — separates Dokument | **Nicht zutreffend** | In der Anleitung enthalten — **Kapitel 13.3** |
 | I/O-Liste | **Nicht zutreffend** | Keine PLC |
 | PLC-Programmsicherung | **Nicht zutreffend** | Keine PLC |
 | HMI-Projektsicherung | **Nicht zutreffend** | Kein HMI |
-| CE-Dokumentation | [EKSİK] | Erforderlich zur Verifizierung der Sicherheitskategorie — auf Anfrage beim Hersteller |
-| Kalibrierzertifikate | [EKSİK] | Auf Anfrage beim Hersteller |
-| Gesamtmontagezeichnung | [EKSİK] | Layout wird als separates Dokument geliefert |
-| Hebezeichnung | [EKSİK] | Für den Transport zwingend — **4.1**; falls nicht vorhanden, Rücksprache mit dem Herstellerservice |
-| Bodenverankerungszeichnung | [EKSİK] | Verstellbare Füße — **5.2** |
+| Kalibrierzertifikate | **Nicht geliefert** | Nicht im Lieferumfang; auf Anfrage beim Hersteller |
+| Gesamtmontagezeichnung | **Nicht geliefert** | Kein separates Dokument; 3D-Ansichten in **Kapitel 3.1** |
+| Hebezeichnung | **Nicht geliefert** | Hebeverfahren und Gabelposition — **Siehe Kapitel 3.5.4** |
+| Bodenverankerungszeichnung | **Nicht zutreffend** | Die Maschine wird auf verstellbaren Füßen ohne Verankerung aufgestellt |
 
 ---
 
@@ -76,13 +77,13 @@ Diese Dokumente sind bei den Komponentenherstellern erhältlich; ob sie im Liefe
 
 | Bedarf | Zu konsultierendes Dokument / Kapitel |
 | :--- | :--- |
-| Aufstellfläche und Anordnung | Layout-PDF + **3.5** |
+| Aufstellfläche und Anordnung | Aufstellungsplan (Layout) + **3.5** |
 | Elektrischer Anschluss | Schaltplan + **3.3.3**, **5.3.3** |
 | Welcher MKŞ / RCCB versorgt welche Last | Schaltplan + **11.1.3**, **11.3.3** |
 | Zuordnung Schalter BLOWER 1/2–Motor | Schaltplan |
-| Betriebsbedingung des Abluftventilators | Schaltplan |
+| Betriebsbedingung des Abluftventilators | **3.4.3** + Schaltplan |
 | Störungsdiagnose | **11.1.2** + Schaltplan |
 | Alarmcode des Frequenzumrichters | Delta-Handbuch + **11.3.2** |
 | Sollwert des Thermostats | GEMO-Handbuch + **6.3.3** |
 | Ersatzteilbestellung | **13.3.1** + **1.3.4** |
-| Energieisolierung | **2.4** (LOTO — einzige Quelle) |
+| Energieisolierung | **2.4** (LOTO-Verfahren) |

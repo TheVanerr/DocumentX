@@ -9,20 +9,20 @@ Dieses Unterkapitel beschreibt den mit der Maschine gelieferten Aufstellungsplan
 | Parameter | Wert |
 | :--- | :--- |
 | Dokument | Aufstellungsplan (Layout) der Maschine |
-| Dateiname / Rev. | [EKSİK] |
+| Dateiname / Rev. | **Siehe Kapitel 13.1** |
 | Lieferung | Separates Dokument (PDF) — Lieferpaket |
-| Referenz in der Anleitung | **Kapitel 3.5** — Maschinenaufstellung |
+| Referenz in der Anleitung | **Kapitel 3.5** — Aufstellungsplan der Maschine |
 
-Der Aufstellungsplan enthält folgende Angaben oder sollte sie enthalten:
+Der Aufstellungsplan enthält folgende Angaben:
 
-- Außenabmessungen der Maschine (L × B × H) und minimale Aufstellfläche — Quelle der [EKSİK]-Werte in **Kapitel 3.3.1, 3.5.2**
+- Außenabmessungen der Maschine (L × B × H) und minimale Aufstellfläche (**Siehe Kapitel 3.3.1, 3.5.2**)
 - Zuführrichtung (**links**), Abführrichtung (**rechts**), Bediener-/Schaltschrankseite (**rechts**)
-- Anschlusspunkte und Durchmesser für Elektrik, Luft (AIR INLET), Wasser, Tankablass (TAHLİYE) und Abluftkamin
+- Anschlusspunkte und Durchmesser für Elektrik, Luft (AIR INLET), Wasser, Tankablass (TAHLİYE) und Abluftkamin (**Siehe Kapitel 3.3.5**)
 - Position der Ölabscheidereinheit und Schlauchführung
-- Gabelstapler-Hebepunkte und Schwerpunkt (Transport — siehe **4.1**)
-- Positionen der Not-Halt-Taster und Wartungsklappen
+- Anschlagpunkte für den Gabelstapler und Schwerpunkt (**Siehe Kapitel 3.5.4**)
+- Positionen der Not-Halt-Taster und Wartungsklappen (**Siehe Kapitel 3.5.5**)
 
-Das Layout ist die primäre Referenzzeichnung für Installation (**5**), Transport (**4**) und Anlagenplanung (**3.5**).
+Das Layout ist die primäre Referenzzeichnung für Installation (**Siehe Kapitel 5**), Transport (**Siehe Kapitel 4**) und Anlagenplanung (**Siehe Kapitel 3.5**).
 
 ---
 
@@ -44,9 +44,9 @@ Die Anleitung enthält 3D-Konstruktionsansichten der Maschine; diese sind keine 
 
 | Zeichnung | Status | Alternative Referenz |
 | :--- | :--- | :--- |
-| Gesamtmontagezeichnung | [EKSİK] | Layout-PDF + 3D-Ansichten in der Anleitung **3.1** |
-| Hebepunkte | [EKSİK] | Vor dem Transport beim Herstellerservice anfordern — **4.1** |
-| Bodenverankerung | [EKSİK] | Installation **5.2** — verstellbare Füße, keine Verankerung vorgesehen |
-| Pneumatikplan | [EKSİK] | Schaltplan + **6.5** (einziger Verbraucher) |
-| Hydraulikplan | Nicht zutreffend | — |
-| P&ID | [EKSİK] | Prozessablauf in der Anleitung **3.1** |
+| Gesamtmontagezeichnung | Nicht geliefert | Kein separates Dokument; 3D-Ansichten in **Kapitel 3.1** |
+| Anschlagpunkte | Nicht geliefert | Hebeverfahren und Gabelposition — **Siehe Kapitel 3.5.4** |
+| Bodenverankerung | Nicht zutreffend | Die Maschine wird auf verstellbaren Füßen ohne Verankerung aufgestellt — Nivellierung **Kapitel 5.2.3** |
+| Pneumatikplan | Nicht zutreffend | Einziger pneumatischer Verbraucher (Membranpumpe des Ölabscheiders); die Leitung ist in **Kapitel 6.5** beschrieben |
+| Hydraulikplan | Nicht zutreffend | Hydrauliksystem nicht vorhanden |
+| P&ID | Nicht geliefert | Kein separates P&ID; Prozessablauf in **Kapitel 3.1** |

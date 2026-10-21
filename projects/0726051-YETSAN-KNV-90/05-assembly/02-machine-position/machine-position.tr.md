@@ -12,15 +12,15 @@ Makine yerleştirilmeden önce kurulum alanı aşağıdaki koşulları karşıla
 
 | Parametre | Gereksinim | Referans |
 | :--- | :--- | :--- |
-| Montaj alanı min. boyut | [EKSİK] | Bölüm 3.5.2 |
-| Zemin düzgünlük toleransı | [EKSİK] | Bölüm 3.5.2 |
-| Zemin mukavemeti | [EKSİK] — sert, düz, suya dayanıklı | Bölüm 3.5.2 |
-| Minimum etraf boşluğu | [EKSİK] | Bölüm 3.5.2 |
-| Minimum tavan yüksekliği | [EKSİK] — egzoz bacası dahil | Bölüm 3.5.2 |
+| Montaj alanı min. boyut | Makine ölçülerine bakım, yükleme-boşaltma ve yağ ayırıcı ünitesi alanı eklenir | Bölüm 3.5.2 |
+| Zemin düzgünlük toleransı | Toplam kot farkı ayarlanabilir ayakların ayar aralığı içinde kalmalı | Bölüm 3.5.2 |
+| Zemin mukavemeti | Dolu çalışma ağırlığını güvenlik payıyla taşıyan endüstriyel beton; sert, düz, suya dayanıklı | Bölüm 3.5.2 |
+| Minimum etraf boşluğu | Ön, arka, giriş ve çıkış yanları için ayrı değerler | Bölüm 3.5.2 |
+| Minimum tavan yüksekliği | Egzoz fanı / baca üstünde boşluk; baca kanal güzergâhı ayrıca planlanır | Bölüm 3.5.2 |
 | Yağ ayırıcı ünitesi alanı | Makine yanında, hortum uzunluğu dahilinde | Bölüm 3.5.1 |
 | Atık su / drenaj | Tank TAHLİYE vanalarına erişim ve zemin drenajı önerilir | Bölüm 10.1.8 |
 
-Referans yerleşim planı teslim paketindeki layout çizimidir (**Bkz. Bölüm 3.5, 13.2**). Tank çevresinde su taşması ve filtre temizliğinde damlama olacağından zeminin kaymaz ve drenajlı olması önerilir.
+Referans yerleşim planı teslim paketindeki layout çizimidir (**Bkz. Bölüm 13.1**). Tank çevresinde su taşması ve filtre temizliğinde damlama olacağından zeminin kaymaz ve drenajlı olması önerilir.
 
 ---
 
@@ -37,7 +37,7 @@ Makine aşağıdaki yönlere göre konumlandırılmalıdır (**Bkz. Bölüm 3.5.
 
 Parçalar sol taraftan elle yüklenir, sağ taraftan elle alınır. Operatör paneli ve elektrik panosu sağ tarafta erişilebilir konumdadır; operatörün giriş, çıkış ve panel arasında güvenli yürüyüş yolu olmalıdır. Konveyör giriş ve çıkışındaki koruma kafesleri ve acil stop butonları engellenmemelidir.
 
-Forklift ile yerleştirme **Bölüm 4.1.4** prosedürüne göre yapılır; kaldırma noktaları ve ağırlık merkezi üretici çizimine göredir (**Bkz. Bölüm 3.5.4**).
+Forklift ile yerleştirme **Bölüm 4.1.4** prosedürüne göre yapılır; kaldırma noktaları ve ağırlık merkezi: **Bkz. Bölüm 3.5.4**.
 
 ---
 
@@ -46,21 +46,21 @@ Forklift ile yerleştirme **Bölüm 4.1.4** prosedürüne göre yapılır; kald�
 | Parametre | Değer |
 | :--- | :--- |
 | Seviye ayar mekanizması | Ayarlanabilir ayaklar |
-| Hizalama toleransı | [EKSİK] mm |
+| Hizalama toleransı | **≤ 1 mm/m** — boyuna ve enine, su terazisi ile |
 
 **Konumlandırma prosedürü**
 
 1. Makineyi forklift ile nihai konumuna getirin ve zemine oturtun (**Bkz. Bölüm 4.1.4**).
 2. Su terazisini konveyör hattı boyunca (uzun eksen) ve hatta dik (kısa eksen) yerleştirin.
 3. **Ayarlanabilir ayakları** çevirerek makineyi her iki eksende teraziye alın; uzun hatta terazi kontrolünü giriş, orta ve çıkış bölgelerinde tekrarlayın.
-4. Tüm ayakların zemine eşit temas ettiğini doğrulayın; boşta kalan ayak varsa yükseltin.
+4. Tüm ayakların zemine eşit temas ettiğini doğrulayın; boşta kalan ayağı zemine oturana kadar aşağı doğru ayarlayın.
 5. Ayak kontra somunlarını sıkın.
 6. Tank kapaklarının ve hücre bakım kapaklarının zorlanmadan kapandığını, manyetik switch'lerin hizalı olduğunu kontrol edin.
-7. Konveyör tel bandının elle çevrildiğinde her iki kenarda eşit ilerlediğini kontrol edin (enerji bağlı değilken).
+7. Konveyör tel bandının zincir dişlilere tam oturduğunu ve kenarlarının şaseye sürtmediğini gözle kontrol edin; bant hareketi **Bölüm 5.5.5** boş koşu testinde kontrol edilir.
 
-**Beklenen sonuç:** Makine terazide; konveyör tel bandı yanal sürtünmesiz; kapaklar switch'lerle hizalı.
+**Beklenen sonuç:** Makine her iki eksende tolerans içinde terazide; konveyör tel bandı yanal sürtünmesiz; kapaklar switch'lerle hizalı.
 
-**Anormal durum:** Zemin toleransı aşılıyorsa veya ayaklar ayar sınırına ulaşıyorsa zemin düzeltmesi yapılmadan operasyona geçmeyin.
+**Anormal durum:** Zemin düzgünlük toleransı (**Bkz. Bölüm 3.5.2**) aşılıyorsa veya ayaklar ayar sınırına ulaşıyorsa zemin düzeltmesi yapılmadan operasyona geçmeyin.
 
 Mekanik kurulum test sorusu: *Makine terazide mi?* (**Bkz. Bölüm 5.5.1**)
 

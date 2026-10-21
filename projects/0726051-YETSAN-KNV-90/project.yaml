@@ -14,6 +14,7 @@ extends: templates/base.yaml
 kapak:
   baslik: KNV 90 7500 2B
   seri: false
-  rev: ''
-  tarih: ''
+  rev: '00'
+  tarih: '21.10.2026'
   firma: DOLFIN
+  hazirlayan: Fatih GÜRAL

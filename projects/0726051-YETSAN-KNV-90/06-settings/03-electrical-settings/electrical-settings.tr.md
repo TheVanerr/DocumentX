@@ -15,7 +15,7 @@ Operatör paneli yapısı **Bölüm 3.4**'te anlatılmıştır; bu bölüm ayar 
 
 Pompalar, fanlar ve blowerlar doğrudan yol vermeli (kontaktör) motorlardır ve dönüş yönleri besleme faz sırasına bağlıdır; faz yönü kurulumda faz sıra rölesi ile doğrulanır (**Bkz. Bölüm 5.3.6**). Konveyör inverter ile sürülür ve yönü inverter parametresinde sabittir. Operasyon sırasında motor yönü değiştirme ayarı bulunmaz; ters dönüş arıza belirtisidir (**Bkz. Bölüm 11.3.1**).
 
-**DİKKAT — İnverter parametreleri:** Delta VFD004EL21W-1 parametrelerinin (yön, min/maks frekans, rampa) operatör tarafından değiştirilmesi konveyörün ters dönmesine veya 20 Hz altında durmasına yol açabilir. Parametre değişikliği yalnızca üretici yetkili servisi tarafından yapılır.
+**DİKKAT — Yetkisiz parametre değişikliği:** Delta VFD004EL21W-1 parametrelerinin (yön, min/maks frekans, rampa) operatör tarafından değiştirilmesi konveyörün ters dönmesine veya 20 Hz altında durmasına yol açabilir. Parametre değişikliğini yalnızca üretici yetkili servisine yaptırın.
 
 ---
 
@@ -31,31 +31,35 @@ Makinede encoder, servo veya pozisyon geri beslemesi bulunmaz; ayar uygulanmaz.
 
 ## 6.3.3 Termostat set değerleri (GEMO DTH2)
 
-| Parametre | Ayar yeri | Aralık |
+| Parametre | Ayar yeri | Set değeri |
 | :--- | :--- | :--- |
-| TANK 1 (yıkama) sıcaklığı | TANK 1 HEATER termostatı | [EKSİK] — su +70 °C'yi aşmamalı (**Bkz. Bölüm 3.3.5**) |
-| TANK 2 (durulama) sıcaklığı | TANK 2 HEATER termostatı | [EKSİK] — su +70 °C'yi aşmamalı |
-| Kurutma 1 hava sıcaklığı | DRYING 1 HEATER termostatı | [EKSİK] |
-| Kurutma 2 hava sıcaklığı | DRYING 2 HEATER termostatı | [EKSİK] |
+| TANK 1 (yıkama) sıcaklığı | TANK 1 HEATER termostatı | Fabrika set değeri yoktur — işletme belirler; banyo suyu +70 °C'yi aşmamalıdır (**Bkz. Bölüm 3.3.5**) |
+| TANK 2 (durulama) sıcaklığı | TANK 2 HEATER termostatı | Fabrika set değeri yoktur — işletme belirler; banyo suyu +70 °C'yi aşmamalıdır |
+| Kurutma 1 hava sıcaklığı | DRYING 1 HEATER termostatı | Fabrika set değeri yoktur — işlenen parça malzemesinin dayanım sıcaklığını aşmayacak şekilde işletme belirler |
+| Kurutma 2 hava sıcaklığı | DRYING 2 HEATER termostatı | Fabrika set değeri yoktur — işlenen parça malzemesinin dayanım sıcaklığını aşmayacak şekilde işletme belirler |
 | Analog basınç ölçeklendirme | Yok | — |
 
-Termostat, termokupl ile ölçtüğü anlık sıcaklığı ekranda gösterir ve set değere ulaşıldığında ilgili ısıtıcı kontaktörünü keser; sıcaklık düşünce yeniden devreye alır. Set değer proses gereksinimine (kir tipi, parça malzemesi, temizlik kimyasalı) göre kullanıcı firma tarafından belirlenir.
+Termostat, termokupl ile ölçtüğü anlık sıcaklığı ekranda gösterir ve set değere ulaşıldığında ilgili ısıtıcı kontaktörünü keser; sıcaklık düşünce yeniden devreye alır. Termostatların fabrika set değeri yoktur; işletme, set değerlerini proses gereksinimine (kir tipi, parça malzemesi, temizlik kimyasalı) göre belirler. Banyo suyu **+70 °C'yi aşmamalıdır** (**Bkz. Bölüm 3.3.5**). Kurutma havası sıcaklığı, işlenen parça malzemesinin dayanım sıcaklığını aşmayacak şekilde seçilir. Belirlenen değerler ürün bazında kaydedilir (**Bkz. Bölüm 8.2.3**).
 
 **Termostat set değeri ayar prosedürü**
 
 1. İlgili ısıtıcı anahtarını (ör. TANK 1 HEATER) **OFF** konumuna alın.
 2. Termostat ekranındaki anlık sıcaklığı okuyun.
-3. Termostatın set tuşuna basın; set değer ekranda yanıp sönerken **yukarı/aşağı ok** tuşları ile hedef sıcaklığı girin.
-4. Set tuşu ile onaylayın; ekran anlık sıcaklığa döner.
-5. Tankta yeterli su olduğunu (WASHING LEVEL lambası sönük) doğrulayın.
-6. Isıtıcı anahtarını **ON** alın; sıcaklığın set değere doğru yükseldiğini ve set değerde ısıtıcı kontaktörünün kesildiğini (sıcaklık artışının durduğunu) izleyin.
-7. Set değerleri **Bölüm 6.3.5** kontrol listesine ve bakım formuna kaydedin.
+3. Termostatın set tuşuna basın; set değer ekranda yanıp söner.
+4. **Yukarı/aşağı ok** tuşları ile hedef sıcaklığı girin.
+5. Set tuşu ile onaylayın; ekran anlık sıcaklığa döner.
+6. Isıtıcıyı açma koşulunu doğrulayın:
+   a. TANK 1 / TANK 2 HEATER: ilgili tankın kırmızı WASHING LEVEL lambası sönük olmalıdır.
+   b. DRYING 1 / DRYING 2 HEATER: ilgili kurutma fanı (DRYING 1 / DRYING 2 FAN) çalışıyor olmalıdır.
+7. Isıtıcı anahtarını **ON** konumuna alın.
+8. Sıcaklığın set değere doğru yükseldiğini ve set değerde ısıtıcı kontaktörünün kesildiğini (sıcaklık artışının durduğunu) izleyin.
+9. Set değerleri **Bölüm 6.3.5** kontrol listesine ve bakım formuna kaydedin.
 
 **Beklenen sonuç:** Anlık sıcaklık set değer civarında sabitlenir; ısıtıcı anahtarı ON kalsa da sıcaklık set değeri aşmaz.
 
 **Anormal durum:** Set değer gösterilmesine rağmen su ısınmaya devam ediyorsa termostat çıkışı veya kontaktör yapışmış olabilir (**Bkz. Bölüm 11.1.2 — Arıza 5**). Isıtıcı hiç devreye girmiyorsa seviye interlock'u, sigorta ve kaçak akım rölesini kontrol edin (**Bkz. Bölüm 11.3.3**).
 
-Termostat tuş yerleşimi ve ileri parametreleri için GEMO DTH2 kullanım kılavuzuna bakın (**Bkz. Bölüm 13.1**).
+Termostat tuş yerleşimi ve ileri parametreleri GEMO DTH2 kullanım kılavuzunda verilmiştir; bu kılavuz talep halinde imalatçıdan temin edilir (**Bkz. Bölüm 13.1.3**).
 
 ![Operatör paneli — GEMO DTH2 termostatlar](../../assets/3.4/operator-paneli.jpg)
 
@@ -77,7 +81,7 @@ Termostat tuş yerleşimi ve ileri parametreleri için GEMO DTH2 kullanım kıla
 4. **20 Hz altına düşürmeyin** — motor torku yük altında yetersiz kalır ve konveyör durabilir.
 5. Seçilen hızı proses kaydına yazın (**Bkz. Bölüm 8.2**).
 
-Hız, parçanın hücre içindeki temas süresini belirler: düşük hız daha uzun yıkama/kurutma, yüksek hız daha fazla parça/saat. Konveyör yük altında duruyorsa hızı artırın veya yükü azaltın; inverter alarm veriyorsa **Bölüm 11.3.2**'ye bakın.
+Hız, parçanın hücre içindeki temas süresini belirler: düşük hız daha uzun yıkama/kurutma, yüksek hız daha fazla parça/saat. Seçilen frekanstaki döngü süresi işletmede ölçülür (**Bkz. Bölüm 3.3.2**); ölçüm yöntemi için **Bkz. Bölüm 8.1.1**. Konveyör yük altında duruyorsa hızı artırın veya yükü azaltın; inverter alarm veriyorsa **Bkz. Bölüm 11.3.2**.
 
 ---
 
@@ -97,4 +101,4 @@ Hız, parçanın hücre içindeki temas süresini belirler: düşük hız daha u
 
 ---
 
-Operatör paneli yapısı için bkz. **Bölüm 3.4**; kapasite yönetimi için bkz. **Bölüm 8.2**.
+Operatör paneli yapısı için **Bkz. Bölüm 3.4**; kapasite yönetimi için **Bkz. Bölüm 8.2**.
