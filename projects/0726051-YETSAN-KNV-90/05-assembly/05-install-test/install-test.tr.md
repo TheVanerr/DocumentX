@@ -100,7 +100,7 @@ Boş koşu testi, makinenin parça olmadan sürekli çalışmasını doğrular; 
 
 **Anormal durum:** Bir fonksiyon durur veya RESET lambası sönerse makineyi durdurun; **Bölüm 11**'e bakın. Test tekrarlanmadan operasyona geçmeyin.
 
-Boş koşu testi başarılı ise makine **kullanıma hazır** kabul edilir (**Bkz. Bölüm 5.1.6**).
+Boş koşu testi başarılı ise makine **kullanıma hazır** kabul edilir (**Bkz. Bölüm 5.1.7**).
 
 ---
 

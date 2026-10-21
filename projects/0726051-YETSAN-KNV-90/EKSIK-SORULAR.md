@@ -1,15 +1,15 @@
 # 0726051-YETSAN KNV 90 12000 2B — Kalan sorular (21.10.2026)
 
-Cevaplar uygulandı. Kılavuzda **5** `[EKSİK]` kaldı (TR 5 + DE 5); hepsi S3'te ve yalnız Bölüm 3.3.1 tablosunda.
+Cevaplar uygulandı. Kılavuzda `[EKSİK]` **kalmadı** (TR 0 + DE 0). Açık konular: S17, S18 (teyit), S20 (isteğe bağlı ayrıntı).
 
 ---
 
 ## Kalan
 
-**S3.** Dış ölçüler L / W / H (mm; baca dahil en yüksek nokta), boş ağırlık ve dolu (çalışma) ağırlık (kg)? — Bölüm 3.3.1
+**S20.** (İsteğe bağlı) 5.1.3 birleştirme prosedürü genel adımlarla yazıldı. Ayrıntı verirseniz eklenir: şase bağlantı cıvatası ölçüsü / adedi, birleşimde conta veya silikon var mı, kablolar konnektörle mi klemens kutusundan mı bağlanıyor, tel bant ve zincir birleşimi nasıl yapılıyor, birleştirmeyi kim yapıyor (üretici servisi / müşteri)?
 Cevap:
 
-Not: Montaj alanı (3.5.2), tavan yüksekliği ve zemin mukavemeti bu değerlere bağlı formülle yazıldı; değerler gelince yalnız 3.3.1 güncellenir.
+Not: Montaj alanı (3.5.2), tavan yüksekliği ve zemin mukavemeti 3.3.1 değerlerine bağlı formülle yazılı.
 
 **S17.** Makine adı **KNV 90 7500 2B → KNV 90 12000 2B** olarak düzeltildi (21.10.2026). Ancak parça verileri proje kökündeki **KNV 90 7500 ÜRÜN AĞACI.xlsm**'den alınmıştı. 12000 ürün ağacı farklıysa gönderin. Özellikle şu üç komple kalem 7500 adıyla bırakıldı (kod uydurmamak için): **07 17686** POMPA KOMPLESİ, **07 17682** HASSAS FİLTRE KOMPLESİ, **07 17689** KURUTMA KOMPLESİ — Bölüm 9.1 ve 13.3. 12000'in kodları nedir?
 Cevap:
@@ -40,3 +40,5 @@ Cevap:
 | S15 | Redüktör çıkış ucunda | 3.1 görsel açıklaması "Konveyör çıkış ucu"; 3.5.3 |
 | S16 | Sayaç yok; kafes aletle açılır; ısıtıcılar kısa duruşta açık kalabilir; termostat kesince gösterge söner | 9.1.3 (sayaç yok), 3.1 / 3.5.3 / 9.1.4 (kafes aletle açılır), 12.2.2 korundu, 3.4.3 / 7 / 11.1 (termostat kesince ısıtıcı göstergesi söner — normal). Delta deşarj süresi: metin Delta kılavuzuna yönlendiriyor, değişmedi. |
 | D | Fatih GÜRAL | project.yaml `hazirlayan` ve DATA başlığı |
+| S3 | Layout C057536 + kullanıcı (21.10.2026) | 3.3.1 — L 12 250, W 2 210, H 2 290 mm; boş 4 500 kg; tank 750 L / 500 L; parça yükü 200–250 kg (tahmini); dolu ≈ 5 950–6 000 kg. 7.2.1 tank hacmine referans. 13.1 / 13.2.1 layout C057536 |
+| S19 | Makine boyca tam ortadan 2 gövde parçası hâlinde sevk edildi | 3.5.4 (sevkiyat parçaları, en ağır gövde parçası 3 000 kg), 4, 4.1 (her parça ayrı; ayırma ve birleşim yüzü koruma adımları), 5.1 (yeni 5.1.3 birleştirme; adımlar 1–12), 5.2/5.3 adım referansları, 12.1.3 (gövde parçalarını ayırma; tesis içi taşıma da iki parça) |

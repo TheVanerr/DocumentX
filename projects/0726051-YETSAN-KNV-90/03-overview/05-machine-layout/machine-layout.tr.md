@@ -77,12 +77,13 @@ Günlük ön filtre temizliği tank üst kapaklarından, haftalık torba filtre 
 
 | Parametre | Değer / Not |
 | :--- | :--- |
-| Sevkiyat parçaları | Ana gövde ve ayrı yağ ayırıcı ünitesi (iki parça) |
-| Taşıma ağırlığı — en ağır parça (ana gövde) | 3 000 kg |
-| Kaldırma yöntemi | Yalnız forklift — çatallar makine alt şasesindeki profillerin altına, ağırlık merkezine göre ortalanarak sokulur; makinenin alt kısmında şase dışında bileşen bulunmaz. Vinç ve travers ile kaldırma öngörülmemiştir. |
-| Ağırlık merkezi | Tanklar, pompalar ve elektrik panosu ön (operatör) uzun kenar boyunca yerleşiktir; ağırlık merkezi ön kenara doğru kayıktır. Tanklar boşaltılmadan taşınmaz. |
+| Sevkiyat parçaları | Makine gövdesi boyca tam ortadan ayrılmış **iki gövde parçası** + ayrı yağ ayırıcı ünitesi |
+| Taşıma ağırlığı — en ağır gövde parçası | 3 000 kg |
+| Boş ağırlık (toplam) | **Bkz. Bölüm 3.3.1** |
+| Kaldırma yöntemi | Yalnız forklift; her gövde parçası ayrı kaldırılır — çatallar alt şasedeki profillerin altına, ağırlık merkezine göre ortalanarak sokulur; makinenin alt kısmında şase dışında bileşen bulunmaz. Vinç ve travers ile kaldırma öngörülmemiştir. |
+| Ağırlık merkezi | Tanklar, pompalar ve elektrik panosu ön (operatör) uzun kenar boyunca yerleşiktir; ağırlık merkezi ön kenara doğru kayıktır. Gövde parçalarının ağırlıkları farklıdır. Tanklar boşaltılmadan taşınmaz. |
 
-Makineyi yalnızca forklift ile kaldırın: çatalları alt şase profillerinin altına, makine boyunca ağırlık merkezine göre ortalayarak ve makinenin tüm genişliğini taşıyacak derinlikte sokun. Kaldırmadan önce 10–15 cm yükseklikte denge testi yapın (**Bkz. Bölüm 4.1.4**). Tanklar dolu iken makine taşınmaz; sıvı çalkalanması ağırlık merkezini kaydırır ve devrilme riski oluşturur. Taşıma prosedürü **Bölüm 4.1**'de verilmiştir.
+Her gövde parçasını yalnızca forklift ile ve ayrı ayrı kaldırın: çatalları alt şase profillerinin altına, parça boyunca ağırlık merkezine göre ortalayarak ve parçanın tüm genişliğini taşıyacak derinlikte sokun. Her parçada kaldırmadan önce 10–15 cm yükseklikte ayrı denge testi yapın (**Bkz. Bölüm 4.1.4**). Birleştirilmiş makine bütün hâlde kaldırılmaz; yer değişikliğinde gövde parçaları ayrılarak taşınır (**Bkz. Bölüm 12.1.3**). Tanklar dolu iken makine taşınmaz; sıvı çalkalanması ağırlık merkezini kaydırır ve devrilme riski oluşturur. Taşıma prosedürü **Bölüm 4.1**'de verilmiştir.
 
 ![Ayarlanabilir ayaklar — makine şasesi](../../assets/3.5/ayarlanabilir-ayak.jpg)
 

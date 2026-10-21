@@ -1,6 +1,6 @@
 # 5.1 Maschinenmontage
 
-Die Maschine wird als Hauptkörper (Förderer, Tanks, Kammern, Trocknung, Abluftkamin, Schaltschrank) und separate **Ölabscheidereinheit** geliefert; am Hauptkörper werden bei der Installation keine Module demontiert. Wurde die Kamin-/Ventilatorgruppe wegen der Transporthöhe demontiert versandt, wird sie bei der Installation gemäß Anweisung des Herstellerservice wieder montiert (**Siehe Kapitel 4.1.2**). Die Montage umfasst das Absetzen der Maschine mit dem Gabelstapler in ihre Endposition, das Nivellieren, den Anschluss der Ölabscheidereinheit und die Herstellung der Versorgungsanschlüsse. Transport und Absetzen erfolgen gemäß dem Gabelstaplerverfahren in **Kapitel 4.1**.
+Der Maschinenkörper (Förderer, Tanks, Kammern, Trocknung, Abluftkamin, Schaltschrank) wird für den Transport genau in der Mitte der Länge geteilt und als **zwei Körperteile** geliefert; die **Ölabscheidereinheit** wird separat geliefert. Die Körperteile werden am Aufstellort wieder verbunden (**Siehe Kapitel 5.1.3**); darüber hinaus werden bei der Installation keine Module demontiert. Wurde die Kamin-/Ventilatorgruppe wegen der Transporthöhe demontiert versandt, wird sie bei der Installation gemäß Anweisung des Herstellerservice wieder montiert (**Siehe Kapitel 4.1.2**). Die Montage umfasst das Absetzen der Körperteile mit dem Gabelstapler in ihre Endposition, deren Verbinden, das Nivellieren, den Anschluss der Ölabscheidereinheit und die Herstellung der Versorgungsanschlüsse. Transport und Absetzen erfolgen gemäß dem Gabelstaplerverfahren in **Kapitel 4.1**.
 
 Dieses Kapitel gibt die Hauptschrittfolge der Montage an. Die Einzelheiten der Positionierung sind in **Kapitel 5.2**, die Anschlussverfahren in **Kapitel 5.3** und die Sicherheits- und Abnahmeprüfungen in **Kapitel 5.4** und **5.5** ausgeführt.
 
@@ -33,20 +33,46 @@ Die Montage in der folgenden Reihenfolge durchführen. Für die Montageschritte 
 
 | Schritt | Vorgang | Detailkapitel |
 | :---: | :--- | :--- |
-| 1 | Maschine mit dem Gabelstapler zum Aufstellbereich bringen und absetzen | Kapitel 4.1.4 |
-| 2 | Restliche Verpackung entfernen; Schadenskontrolle durchführen | Kapitel 4.1.3, 4.1.5 |
-| 3 | Maschine mit den Stellfüßen nivellieren | Kapitel 5.2.3 |
-| 4 | Ölabscheidereinheit neben der Maschine platzieren; Schläuche und Druckluftleitung anschließen | Kapitel 5.3.5 |
-| 5 | Druckluftanschluss herstellen; Druckregler auf 6 bar einstellen | Kapitel 5.3.1 |
-| 6 | Wasserleitung zur Tankbefüllstelle vorbereiten; Ablassventile (TAHLİYE) an die Abwasserleitung anschließen | Kapitel 5.3.2 |
-| 7 | Abluftkamin an die bauseitige Lüftung / nach außen anschließen | Kapitel 5.3.4 |
-| 8 | Drehstromversorgung und Erdung anschließen | Kapitel 5.3.3 |
-| 9 | Hauptschalter einschalten; Phasenfolge prüfen und ggf. korrigieren | Kapitel 5.3.6 |
-| 10 | Sicherheitsfunktionsprüfungen und Installationsabnahme abschließen | Kapitel 5.4, 5.5 |
+| 1 | Körperteile mit dem Gabelstapler zum Aufstellbereich bringen; das erste Körperteil in seiner Endposition absetzen | Kapitel 4.1.4, 5.2.2 |
+| 2 | Restliche Verpackung entfernen; Schadenskontrolle an beiden Körperteilen durchführen | Kapitel 4.1.3, 4.1.5 |
+| 3 | Das zweite Körperteil an der Verbindungsfläche des ersten Teils ausgerichtet absetzen | Kapitel 5.1.3 |
+| 4 | Körperteile verbinden; die über die Trennstelle laufenden Verbindungen wiederherstellen | Kapitel 5.1.3 |
+| 5 | Maschine mit den Stellfüßen nivellieren | Kapitel 5.2.3 |
+| 6 | Ölabscheidereinheit neben der Maschine platzieren; Schläuche und Druckluftleitung anschließen | Kapitel 5.3.5 |
+| 7 | Druckluftanschluss herstellen; Druckregler auf 6 bar einstellen | Kapitel 5.3.1 |
+| 8 | Wasserleitung zur Tankbefüllstelle vorbereiten; Ablassventile (TAHLİYE) an die Abwasserleitung anschließen | Kapitel 5.3.2 |
+| 9 | Abluftkamin an die bauseitige Lüftung / nach außen anschließen | Kapitel 5.3.4 |
+| 10 | Drehstromversorgung und Erdung anschließen | Kapitel 5.3.3 |
+| 11 | Hauptschalter einschalten; Phasenfolge prüfen und ggf. korrigieren | Kapitel 5.3.6 |
+| 12 | Sicherheitsfunktionsprüfungen und Installationsabnahme abschließen | Kapitel 5.4, 5.5 |
 
 ---
 
-## 5.1.3 Schritt 3 — Nivellieren
+## 5.1.3 Schritte 3–4 — Verbinden der Körperteile
+
+Der Maschinenkörper wird für den Straßentransport genau in der Mitte der Länge in zwei Teile geteilt versandt. Am Aufstellort werden die beiden Körperteile wieder zu einer Linie verbunden; Drahtgurt und Kette des Förderers, Abluftkanal und elektrische Kabel, die über die Trennstelle laufen, werden wieder angeschlossen. Das Verbinden erfolgt durch den Mechanikmonteur und die Elektrofachkraft gemäß Anweisung des Herstellerservice und gemäß Schaltplan (**Siehe Kapitel 13.1**). Werden die Körperteile ohne genaue Ausrichtung verbunden, bleibt der Drahtgurt an der Verbindungsstelle hängen, die Kette springt vom Kettenrad und die Kammerklappen schließen nicht fluchtend mit den Schaltern.
+
+**WARNUNG — Quetschen:** Beim Heranfahren des zweiten Körperteils an das erste können Hände, Füße und Körper zwischen den Verbindungsflächen gequetscht werden. Während des Heranfahrens dürfen sich keine Personen zwischen den beiden Teilen aufhalten; die Verbindungsflächen erst betreten, wenn der Gabelstapler steht und die Last abgesetzt ist.
+
+1. Das erste Körperteil an seiner Position gemäß Layout absetzen (**Siehe Kapitel 4.1.4, 5.2.2**).
+2. Das erste Körperteil mit den Stellfüßen nivellieren (**Siehe Kapitel 5.2.3**).
+3. Das zweite Körperteil mit dem Gabelstapler so an die Verbindungsfläche des ersten Teils heranfahren, dass die Förderrichtung links → rechts ist, und absetzen, ohne dass sich die Verbindungsflächen berühren.
+4. Mit den Füßen des zweiten Teils die Oberkante des Rahmens und die Seitenflächen beider Teile auf eine Linie bringen.
+5. Die Teile aneinanderschieben und die Rahmenverbindungsschrauben einsetzen; die Schrauben nach abgeschlossener Ausrichtung mit dem Standard-Anzugsdrehmoment anziehen.
+6. Die über die Trennstelle laufenden Verbindungen wiederherstellen:
+   a. Drahtgurt und Kette des Förderers
+   b. Abluftkanal
+   c. Elektrische Kabel — Leitungen für Motoren, Heizungen, Sensoren, Not-Halt und Klappenschalter (nur Elektrofachkraft, vor dem Anschluss der bauseitigen Versorgung)
+7. Durch Sichtprüfung sicherstellen, dass der Drahtgurt die Verbindungsstelle ohne Hängenbleiben passiert, die Kette vollständig auf den Kettenrädern sitzt und im unteren Rücklauf kein deutlicher Durchhang besteht (**Siehe Kapitel 6.1**). Ist eine Spannungs- oder Ausrichtungseinstellung erforderlich, nimmt der Herstellerservice sie vor.
+8. Prüfen, dass die Kammerklappen an der Verbindungsstelle ohne Kraftaufwand schließen und mit den Magnetschaltern fluchten.
+
+**HINWEIS:** Da die Not-Halt- und Klappenschalterleitungen über die Trennstelle laufen, müssen nach dem Verbinden die Sicherheitsprüfungen in **Kapitel 5.4** für alle Not-Halt-Taster und alle Wartungsklappen vollständig durchgeführt werden.
+
+**Erwartetes Ergebnis:** Beide Körperteile fluchten als eine Linie; an der Verbindungsstelle besteht kein Höhen- oder Seitenversatz; der Drahtgurt passiert die Verbindungsstelle ohne Hängenbleiben.
+
+---
+
+## 5.1.4 Schritt 5 — Nivellieren
 
 Die Maschine steht auf einem System aus **Stellfüßen**. Bei der langen Linienbauweise ist das Nivellieren entscheidend dafür, dass die Förderkette auf beiden Seiten gleichmäßig gespannt ist, der Tankfüllstand vom Füllstandsensor korrekt erfasst wird und die Kammerklappen fluchtend zu den Schaltern schließen. Ausrichttoleranz und Nivellierverfahren sind in **Kapitel 5.2.3** angegeben.
 
@@ -54,7 +80,7 @@ Die Maschine steht auf einem System aus **Stellfüßen**. Bei der langen Linienb
 
 ---
 
-## 5.1.4 Schritte 4–8 — Ölabscheider, Medien, Abluft und Elektroanschlüsse
+## 5.1.5 Schritte 6–10 — Ölabscheider, Medien, Abluft und Elektroanschlüsse
 
 Die Anschlussverfahren sind in **Kapitel 5.3** Schritt für Schritt angegeben. Zusammenfassung:
 
@@ -70,7 +96,7 @@ Nach dem Anschluss muss am Druckregler **6 bar** ablesbar sein; nach Einschalten
 
 ---
 
-## 5.1.5 Schritt 9 — Inbetriebnahme und Phasenprüfung
+## 5.1.6 Schritt 11 — Inbetriebnahme und Phasenprüfung
 
 1. Nach dem Anschluss der Drehstromversorgung an den Schaltschrank den Hauptschalter der Maschine in Stellung **ON** bringen.
 2. Den Ausgangszustand des Phasenfolgerelais **MKR-01** prüfen; gibt das Relais kein Ausgangssignal, ist die Phasenfolge vertauscht oder eine Phase fehlt.
@@ -82,7 +108,7 @@ Pumpen, Ventilatoren und Blower sind für eine Drehrichtung ausgelegt; eine fals
 
 ---
 
-## 5.1.6 Schritt 10 — Abschluss der Montage
+## 5.1.7 Schritt 12 — Abschluss der Montage
 
 Bevor die Maschine als **betriebsbereit** gilt, müssen die folgenden Prüfungen abgeschlossen sein:
 

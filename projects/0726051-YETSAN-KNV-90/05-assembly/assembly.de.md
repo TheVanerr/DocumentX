@@ -1,12 +1,12 @@
 # 5. MONTAGE UND INBETRIEBNAHME
 
-Dieses Kapitel beschreibt das Platzieren der Maschine **KNV 90 12000 2B** (Seriennummer **0726051**) am Aufstellort, das Nivellieren, die Medien- und Elektroanschlüsse, den Anschluss des Abluftkamins, den Anschluss der Ölabscheidereinheit, die Sicherheitsfunktionsprüfungen und die Inbetriebnahmeabnahme. Die Installation erfolgt nach Abschluss des Transports (**Siehe Kapitel 4**) und vor dem Übergang in den Betrieb (**Siehe Kapitel 7**). Elektroanschlüsse dürfen nur von einer Elektrofachkraft ausgeführt werden.
+Dieses Kapitel beschreibt das Platzieren der Maschine **KNV 90 12000 2B** (Seriennummer **0726051**) am Aufstellort, das Verbinden der beiden Körperteile, das Nivellieren, die Medien- und Elektroanschlüsse, den Anschluss des Abluftkamins, den Anschluss der Ölabscheidereinheit, die Sicherheitsfunktionsprüfungen und die Inbetriebnahmeabnahme. Die Installation erfolgt nach Abschluss des Transports (**Siehe Kapitel 4**) und vor dem Übergang in den Betrieb (**Siehe Kapitel 7**). Elektroanschlüsse dürfen nur von einer Elektrofachkraft ausgeführt werden.
 
 Da diese Maschine über kein HMI verfügt, erfolgt die Inbetriebnahmeabnahme über die Leuchten am Schaltschrank und durch physische Beobachtung (Motordrehrichtung, Druck, Leckagen). Montagedauer, Team und erforderliche Ausrüstung sind in **Kapitel 5.1.1** angegeben. Für das Platzieren wird ein **Gabelstapler** verwendet; Anschlagpunkte und Gabelposition: **Siehe Kapitel 3.5.4**. Abmessungen, Gewicht, Elektro- und Medienwerte sind in **Kapitel 3.3** angegeben; Aufstellort und Freiräume sind in **Kapitel 3.5.2** definiert.
 
 | Unterkapitel | Thema |
 | :--- | :--- |
-| **5.1** | Montageschritte — Platzieren, Verpackung, Nivellieren, Anschlüsse |
+| **5.1** | Montageschritte — Platzieren, Verpackung, Verbinden der Körperteile, Nivellieren, Anschlüsse |
 | **5.2** | Positionierung und Nivellierung der Maschine |
 | **5.3** | Systemanschlüsse — Druckluft, Wasser, Elektrik, Abluft, Ölabscheider, Phasenprüfung |
 | **5.4** | Prüfung der Sicherheitssysteme — Not-Halt (7), Klappenschalter (7), Phasenüberwachung, Bereitschaftszustand |

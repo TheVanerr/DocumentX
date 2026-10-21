@@ -77,12 +77,13 @@ Die tägliche Reinigung des Vorfilters erfolgt über die oberen Tankdeckel, die 
 
 | Parameter | Wert / Hinweis |
 | :--- | :--- |
-| Versandteile | Hauptkörper und separate Ölabscheidereinheit (zwei Teile) |
-| Transportgewicht — schwerstes Teil (Hauptkörper) | 3 000 kg |
-| Hebeverfahren | Nur mit Gabelstapler — die Gabeln werden unter die Profile des unteren Maschinenrahmens geschoben und auf den Schwerpunkt zentriert; im unteren Bereich der Maschine befindet sich außer dem Rahmen kein Bauteil. Anheben mit Kran und Traverse ist nicht vorgesehen. |
-| Schwerpunkt | Tanks, Pumpen und Schaltschrank sind entlang der vorderen Längsseite (Bedienerseite) angeordnet; der Schwerpunkt ist zur Vorderseite hin verschoben. Die Maschine wird nicht ohne Entleeren der Tanks transportiert. |
+| Versandteile | Maschinenkörper, genau in der Mitte der Länge geteilt, als **zwei Körperteile** + separate Ölabscheidereinheit |
+| Transportgewicht — schwerstes Körperteil | 3 000 kg |
+| Leergewicht (gesamt) | **Siehe Kapitel 3.3.1** |
+| Hebeverfahren | Nur mit Gabelstapler; jedes Körperteil wird einzeln angehoben — die Gabeln werden unter die Profile des unteren Rahmens geschoben und auf den Schwerpunkt zentriert; im unteren Bereich der Maschine befindet sich außer dem Rahmen kein Bauteil. Anheben mit Kran und Traverse ist nicht vorgesehen. |
+| Schwerpunkt | Tanks, Pumpen und Schaltschrank sind entlang der vorderen Längsseite (Bedienerseite) angeordnet; der Schwerpunkt ist zur Vorderseite hin verschoben. Die Körperteile haben unterschiedliche Gewichte. Die Maschine wird nicht ohne Entleeren der Tanks transportiert. |
 
-Heben Sie die Maschine nur mit dem Gabelstapler an: Schieben Sie die Gabeln unter die Profile des unteren Rahmens, entlang der Maschine auf den Schwerpunkt zentriert und so tief, dass die gesamte Maschinenbreite getragen wird. Führen Sie vor dem Transport einen Gleichgewichtstest in 10–15 cm Höhe durch (**Siehe Kapitel 4.1.4**). Die Maschine wird nicht mit gefüllten Tanks transportiert; das Schwappen der Flüssigkeit verlagert den Schwerpunkt und erzeugt Kippgefahr. Das Transportverfahren ist in **Kapitel 4.1** angegeben.
+Heben Sie jedes Körperteil nur mit dem Gabelstapler und einzeln an: Schieben Sie die Gabeln unter die Profile des unteren Rahmens, entlang des Teils auf den Schwerpunkt zentriert und so tief, dass die gesamte Breite des Teils getragen wird. Führen Sie für jedes Teil vor dem Transport einen separaten Gleichgewichtstest in 10–15 cm Höhe durch (**Siehe Kapitel 4.1.4**). Die verbundene Maschine wird nicht im Ganzen angehoben; bei einem Standortwechsel werden die Körperteile getrennt transportiert (**Siehe Kapitel 12.1.3**). Die Maschine wird nicht mit gefüllten Tanks transportiert; das Schwappen der Flüssigkeit verlagert den Schwerpunkt und erzeugt Kippgefahr. Das Transportverfahren ist in **Kapitel 4.1** angegeben.
 
 ![Stellfüße — Maschinengestell](../../assets/3.5/ayarlanabilir-ayak.jpg)
 

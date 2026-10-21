@@ -23,7 +23,7 @@ Die mit der Maschine bearbeitbaren Produkttypen sind wie folgt:
 | Allgemein | Industrielle Metallteile und vergleichbare Werkstücke |
 | Transportbedingung | Werkstücke, die von Hand auf den Drahtgurt des Förderers aufgelegt und entnommen werden können |
 | Werkstückbreite | Kleiner als die Drahtgurtbreite (850 mm) |
-| Werkstückquerschnitt | Muss die Eingangsöffnung der Kammer passieren, ohne an den PVC-Vorhängen und Düsen hängen zu bleiben |
+| Werkstückquerschnitt | Muss die Eingangsöffnung der Kammer (**Siehe Kapitel 3.3.1**) passieren, ohne an den PVC-Vorhängen und Düsen hängen zu bleiben |
 | Max. Werkstückgewicht | 50 kg |
 
 Die Werkstücke durchlaufen die Wasch- und Spülprozesse, wodurch die Oberflächenverschmutzung entfernt wird; anschließend wird das Wasser mit Blowern abgeblasen und die Oberflächenfeuchte in der Trocknungszone entfernt. Es liegt in der Verantwortung des Anwenderunternehmens, dass die zu bearbeitenden Werkstücke für die Prozessflüssigkeit, die bis zu +70 °C erreichende Tanktemperatur, die Temperatur der Trocknungsluft und die Tragfähigkeit des Förderers geeignet sind. Das Werkstück muss so auf dem Drahtgurt platziert werden, dass es nicht umkippt und den Eingangsquerschnitt der Kammer nicht überschreitet.

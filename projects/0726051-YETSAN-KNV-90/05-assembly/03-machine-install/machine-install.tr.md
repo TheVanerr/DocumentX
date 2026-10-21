@@ -1,6 +1,6 @@
 # 5.3 Sistem bağlantıları ve devreye alma
 
-Medya, egzoz, yağ ayırıcı ve elektrik bağlantıları **Bölüm 5.1 Adım 4–9** kapsamında uygulanır. Teknik bağlantı değerleri **Bölüm 3.3.3** (elektrik) ve **Bölüm 3.3.5** (hava/su) tablolarında verilmiştir; bu bölüm kurulum prosedürünü tanımlar.
+Medya, egzoz, yağ ayırıcı ve elektrik bağlantıları **Bölüm 5.1 Adım 6–11** kapsamında uygulanır. Teknik bağlantı değerleri **Bölüm 3.3.3** (elektrik) ve **Bölüm 3.3.5** (hava/su) tablolarında verilmiştir; bu bölüm kurulum prosedürünü tanımlar.
 
 Hidrolik sistem bulunmamaktadır. Vakum bağlantısı yoktur. Bu makinede HMI olmadığından bağlantı doğrulaması manometre, pano lambaları ve fiziksel gözlem ile yapılır.
 

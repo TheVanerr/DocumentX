@@ -24,7 +24,7 @@ Makine, tek bir start komutu yerine fonksiyon anahtarlarının belirli bir sıra
 
 1. İlgili tankın **TAHLİYE** vanasının kapalı olduğunu kontrol edin.
 2. Tank kapağını açın.
-3. Tesis su vanasını açarak tankı şebeke suyu veya arıtılmış su ile doldurun (**Bkz. Bölüm 3.3.5**).
+3. Tesis su vanasını açarak tankı şebeke suyu veya arıtılmış su ile doldurun (su kalitesi: **Bkz. Bölüm 3.3.5**; tank hacimleri: **Bkz. Bölüm 3.3.1**).
 4. Kırmızı **TANK 1 / TANK 2 WASHING LEVEL** lambası söndükten sonra, rezistanslar ve emiş filtresi tamamen su altında kalana kadar doldurmaya devam edin.
 5. Tesis su vanasını kapatın.
 6. Proses kimyasalı kullanılıyorsa üretici onaylı, asit içermeyen maddeyi tedarikçi dozajında ekleyin (**Bkz. Bölüm 3.2.4**).

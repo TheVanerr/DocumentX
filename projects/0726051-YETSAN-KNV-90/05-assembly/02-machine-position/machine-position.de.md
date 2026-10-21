@@ -1,6 +1,6 @@
 # 5.2 Positionierung der Maschine
 
-Die Positionierung legt die Endposition, Ausrichtung und Nivellierung der Maschine am Aufstellort fest. Die Arbeiten werden im Rahmen von **Kapitel 5.1 Schritt 3** ausgeführt und in diesem Kapitel ausführlich beschrieben. Eine falsche Positionierung beeinträchtigt den Zugang des Bedieners zum Beschicken/Entnehmen, das Öffnen der Wartungsklappen, den Öffnungsbereich der Tankdeckel, das vollständige Öffnen der Schaltschranktür und die Ausrichtung des Förderers.
+Die Positionierung legt die Endposition, Ausrichtung und Nivellierung der Maschine am Aufstellort fest. Die Arbeiten werden im Rahmen von **Kapitel 5.1 Schritte 1–5** ausgeführt und in diesem Kapitel ausführlich beschrieben. Eine falsche Positionierung beeinträchtigt den Zugang des Bedieners zum Beschicken/Entnehmen, das Öffnen der Wartungsklappen, den Öffnungsbereich der Tankdeckel, das vollständige Öffnen der Schaltschranktür und die Ausrichtung des Förderers.
 
 Die Platzanforderungen (Freiräume, Deckenhöhe, Seitendefinitionen) sind in **Kapitel 3.5** angegeben; hier wird das Installationsverfahren erläutert.
 

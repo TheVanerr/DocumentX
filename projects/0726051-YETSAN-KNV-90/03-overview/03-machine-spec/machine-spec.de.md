@@ -8,14 +8,21 @@ Dieses Kapitel fasst Abmessungen, Gewicht, Kapazität, Elektrik, Motoren/Heizung
 
 | Parameter | Einheit | Wert |
 | :--- | :---: | ---: |
-| Außenlänge (L) | mm | [EKSİK] |
-| Außenbreite (W) | mm | [EKSİK] |
-| Außenhöhe (H) — normal | mm | [EKSİK] |
-| Leergewicht — trocken | kg | [EKSİK] |
-| Betriebsgewicht — gefüllt | kg | [EKSİK] |
+| Außenlänge (L) — Gestell 11 800 + Schutzgitter am Auslaufende 450 | mm | 12 250 |
+| Außenbreite (W) — einschließlich Pumpen und Filter | mm | 2 210 |
+| Gestellbreite | mm | 1 400 |
+| Außenhöhe (H) — vom Boden bis zur Oberkante des Abluftventilators | mm | 2 290 |
+| Beladehöhe (Oberkante Drahtgurt) | mm | 940 |
+| Länge des Beladebereichs am Einlauf | mm | 750 |
+| Eingangsöffnung der Kammer (Breite × Höhe) | mm | 900 × 300 |
+| Leergewicht — trocken | kg | 4 500 |
+| Tankvolumen — TANK 1 (Waschtank) | L | 750 |
+| Tankvolumen — TANK 2 (Spültank) | L | 500 |
+| Werkstücklast auf dem Förderer — geschätzt, abhängig vom Kundenprozess | kg | 200–250 |
+| Betriebsgewicht — gefüllt (geschätzt) | kg | ≈ 5 950–6 000 |
 | Gestelltyp | — | Stellfüße |
 
-Die Maschine wird auf **Stellfüßen** aufgestellt, die ein Ausrichten und Nivellieren ermöglichen (**Siehe Kapitel 5.2.3**). Bei gefüllten Tanks steigt das Betriebsgewicht erheblich; vor Transport und Lagerung müssen die Tanks entleert werden (**Siehe Kapitel 4.1, 4.2**). Aufstellfläche und Freiräume sind in **Kapitel 3.5.2** angegeben; der Aufstellungsplan (Layout) der Maschine wird als separates Dokument geliefert (**Siehe Kapitel 13.1**).
+Die Maschine wird auf **Stellfüßen** aufgestellt, die ein Ausrichten und Nivellieren ermöglichen (**Siehe Kapitel 5.2.3**). Das Betriebsgewicht ergibt sich aus dem Leergewicht, rund 1 250 kg Prozesswasser in den Tanks (750 L + 500 L) und der Werkstücklast auf dem Förderer. Die Werkstücklast hängt von den bearbeiteten Teilen und der Beladehäufigkeit ab; sie ist dem Hersteller nicht genau bekannt und wurde mit 200–250 kg angesetzt. Ist eine höhere Werkstücklast auf der Linie zu erwarten, muss die Tragfähigkeit des Bodens mit der tatsächlichen Last berechnet werden (**Siehe Kapitel 3.5.2**). Vor Transport und Lagerung müssen die Tanks entleert werden (**Siehe Kapitel 4.1, 4.2**). Aufstellfläche und Freiräume sind in **Kapitel 3.5.2** angegeben; die Abmessungen stammen aus dem Aufstellungsplan **C057536**, der als separates Dokument geliefert wird (**Siehe Kapitel 13.1**). Der bauseitige Abluftkanal am Ventilatorausgang ist in der Außenhöhe nicht enthalten.
 
 ![3D-Seitenansicht — Förderlinie, Kammern und Abluftkamin](../../assets/3.3/3d-yan-gorunus.png)
 

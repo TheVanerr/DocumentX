@@ -9,18 +9,18 @@ Bu alt bölüm, makine ile teslim edilen layout çizimini, kılavuzdaki 3D gör�
 | Parametre | Değer |
 | :--- | :--- |
 | Doküman | Makine layout çizimi |
-| Dosya adı / rev | **Bkz. Bölüm 13.1** |
+| Dosya adı / rev | C057536 (**Bkz. Bölüm 13.1**) |
 | Teslim | Ayrı evrak (PDF) — teslim paketi |
 | Kılavuz referansı | **Bölüm 3.5** — Makine yerleşim planı |
 
 Layout çiziminde aşağıdaki bilgiler yer alır:
 
-- Makine dış ölçüleri (L × W × H) ve minimum kurulum alanı (**Bkz. Bölüm 3.3.1, 3.5.2**)
-- Besleme yönü (**sol**), boşaltma yönü (**sağ**), operatör/pano tarafı (**sağ**)
-- Elektrik, hava (AIR INLET), su, tank TAHLİYE ve egzoz bacası bağlantı noktaları ve çapları (**Bkz. Bölüm 3.3.5**)
-- Yağ ayırıcı ünitesinin konumu ve hortum güzergâhı
-- Forklift kaldırma noktaları ve ağırlık merkezi (**Bkz. Bölüm 3.5.4**)
-- Acil stop ve bakım kapağı konumları (**Bkz. Bölüm 3.5.5**)
+- Ön görünüş, yan görünüş ve izometrik görünüş
+- Makine dış ölçüleri (L × W × H) ve şase genişliği (**Bkz. Bölüm 3.3.1**)
+- Yükleme yüksekliği, giriş yükleme bölümü uzunluğu ve hücre giriş açıklığı (**Bkz. Bölüm 3.3.1**)
+- Besleme yönü (**GİRİŞ — sol**), boşaltma yönü (**ÇIKIŞ — sağ**) ve elektrik panosunun çıkış ucuna yakın konumu
+
+Bağlantı noktaları ve çapları, forklift kaldırma noktaları, acil stop ve bakım kapağı konumları layout çiziminde gösterilmez; bunlar için **Bkz. Bölüm 3.3.5, 3.5.4, 3.5.5**. Minimum kurulum alanı layout ölçülerinden **Bölüm 3.5.2**'deki formülle hesaplanır.
 
 Layout; kurulum (**Bkz. Bölüm 5**), taşıma (**Bkz. Bölüm 4**) ve tesis planlaması (**Bkz. Bölüm 3.5**) için birincil referans çizimidir.
 

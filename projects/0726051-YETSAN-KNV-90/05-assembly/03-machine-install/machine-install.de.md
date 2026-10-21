@@ -1,6 +1,6 @@
 # 5.3 Systemanschlüsse und Inbetriebnahme
 
-Die Medien-, Abluft-, Ölabscheider- und Elektroanschlüsse werden im Rahmen von **Kapitel 5.1 Schritte 4–9** ausgeführt. Die technischen Anschlusswerte sind in den Tabellen in **Kapitel 3.3.3** (Elektrik) und **Kapitel 3.3.5** (Druckluft/Wasser) angegeben; dieses Kapitel definiert das Installationsverfahren.
+Die Medien-, Abluft-, Ölabscheider- und Elektroanschlüsse werden im Rahmen von **Kapitel 5.1 Schritte 6–11** ausgeführt. Die technischen Anschlusswerte sind in den Tabellen in **Kapitel 3.3.3** (Elektrik) und **Kapitel 3.3.5** (Druckluft/Wasser) angegeben; dieses Kapitel definiert das Installationsverfahren.
 
 Ein Hydrauliksystem ist nicht vorhanden. Es gibt keinen Vakuumanschluss. Da diese Maschine über kein HMI verfügt, erfolgt die Anschlussprüfung über Manometer, Leuchten am Schaltschrank und physische Beobachtung.
 

@@ -23,7 +23,7 @@ Makine ile işlenebilir ürün tipleri aşağıdaki gibidir:
 | Genel | Endüstriyel metal ve benzeri parçalar |
 | Taşıma koşulu | Konveyör tel bandı üzerine elle yüklenip boşaltılabilen parçalar |
 | Parça genişliği | Tel bant genişliğinden (850 mm) küçük |
-| Parça kesiti | Hücre giriş açıklığından PVC perdelere ve nozullara takılmadan geçebilmeli |
+| Parça kesiti | Hücre giriş açıklığından (**Bkz. Bölüm 3.3.1**) PVC perdelere ve nozullara takılmadan geçebilmeli |
 | Maks. parça ağırlığı | 50 kg |
 
 Parçalar, yıkama ve durulama proseslerinden geçirilerek yüzey kirliliği giderilir; ardından blower ile su sıyrılır ve kurutma bölgesinde yüzey nemi alınır. İşlenecek parçaların proses sıvısına, +70 °C'ye kadar çıkabilen tank sıcaklığına, kurutma havası sıcaklığına ve konveyör taşıma kapasitesine uygun olması kullanıcı firmanın sorumluluğundadır. Parça, tel bant üzerinde devrilmeyecek ve hücre giriş kesitini aşmayacak şekilde yerleştirilmelidir.

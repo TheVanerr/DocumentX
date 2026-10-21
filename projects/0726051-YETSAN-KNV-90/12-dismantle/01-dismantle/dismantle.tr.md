@@ -58,7 +58,7 @@ Enerji kaynakları:
 
 | Parametre | Sıra |
 | :--- | :--- |
-| Demontaj sırası | Elektrik kes → tank boşalt → tesisat sök → yağ ayırıcı ünitesini ayır → mekanik parça çıkar |
+| Demontaj sırası | Elektrik kes → tank boşalt → tesisat sök → yağ ayırıcı ünitesini ayır → gövde parçalarını ayır → mekanik parça çıkar |
 
 **Demontaj prosedürü**
 
@@ -71,14 +71,15 @@ Enerji kaynakları:
    - Su dolum hattı ve tank TAHLİYE / atık su bağlantıları
    - Egzoz bacası kanalı
 5. **Yağ ayırıcı ünitesini ayırın** — hortumlar, hava hattı ve solenoid valf kablosu; üniteyi ayrı taşıyın.
-6. **Mekanik demontaj** — koruma kafesleri, PVC perdeler, hücre kapakları, egzoz fanı ve baca, tank kapakları; gerekiyorsa pompalar, blower/fan motorları ve konveyör redüktörü (parça kodları: **Bkz. Bölüm 13.3.1**). Redüktör ve pompa sökümünde yağ/su damlamasına karşı tava kullanın.
-7. **Elektrik panosu ve kablo demontajı** — LOTO altında; inverter, emniyet röleleri, kontaktörler ve kabloları elektrik/elektronik atık (WEEE) sınıfına ayırın.
-8. **Taşıma** — forklift ile; taşıma ağırlığı ve kaldırma noktaları için **Bkz. Bölüm 3.5.4**, taşıma prosedürü için **Bkz. Bölüm 4.1.4**.
-9. **Parçaları malzeme grubuna göre ayırın** — **Bkz. Bölüm 12.3**.
+6. **Gövde parçalarını ayırın** — ayrım noktasından geçen elektrik kabloları (yetkili elektrikçi), egzoz kanalı, konveyör tel bandı ve zinciri, şase bağlantı cıvataları; işlem **Bölüm 5.1.3** birleştirme adımlarının tersidir. Açık kablo uçlarını ve kanal ağızlarını kapatarak koruyun.
+7. **Mekanik demontaj** — koruma kafesleri, PVC perdeler, hücre kapakları, egzoz fanı ve baca, tank kapakları; gerekiyorsa pompalar, blower/fan motorları ve konveyör redüktörü (parça kodları: **Bkz. Bölüm 13.3.1**). Redüktör ve pompa sökümünde yağ/su damlamasına karşı tava kullanın.
+8. **Elektrik panosu ve kablo demontajı** — LOTO altında; inverter, emniyet röleleri, kontaktörler ve kabloları elektrik/elektronik atık (WEEE) sınıfına ayırın.
+9. **Taşıma** — forklift ile, her gövde parçası ayrı; taşıma ağırlığı ve kaldırma noktaları için **Bkz. Bölüm 3.5.4**, taşıma prosedürü için **Bkz. Bölüm 4.1.4**.
+10. **Parçaları malzeme grubuna göre ayırın** — **Bkz. Bölüm 12.3**.
 
-**NOT:** Tesis içi yer değişikliğinde yalnız adım 1–5 ve 8 uygulanır; makine ana gövdesi bütün hâlde taşınır. Tam demontaj yalnız hurdaya ayırma veya büyük tesis değişikliğinde uygulanır.
+**NOT:** Tesis içi yer değişikliğinde yalnız adım 1–6 ve 9 uygulanır; makine, sevkiyattaki gibi iki gövde parçasına ayrılarak taşınır. Tam demontaj yalnız hurdaya ayırma veya büyük tesis değişikliğinde uygulanır.
 
-**Beklenen sonuç:** Makine enerjiden izole; tanklar boş; tesisat sökülmüş; yağ ayırıcı ünitesi ayrı; parçalar taşınmaya veya bertarafa hazır.
+**Beklenen sonuç:** Makine enerjiden izole; tanklar boş; tesisat sökülmüş; yağ ayırıcı ünitesi ve gövde parçaları ayrı; parçalar taşınmaya veya bertarafa hazır.
 
 ---
 

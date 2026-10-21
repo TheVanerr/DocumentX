@@ -12,7 +12,7 @@ Sipariş ve servis taleplerinde makine kimlik etiketi bilgileri (**seri no 07260
 | :---: | :--- | :--- | :--- |
 | 1 | **AB Uygunluk Beyanı** (2006/42/AT Ek II-A) | — | Makine ile birlikte verilir; makinenin 2006/42/AT Makine Direktifi'ne uygunluk beyanı |
 | 2 | **Elektrik şeması** | Ek doküman olarak verilir | Pano, motor, ısıtıcı, emniyet devresi, MKŞ/RCCB/kontaktör–yük eşlemesi, BLOWER anahtar grupları — **Bkz. Bölüm 3.4, 5.3, 11.3** |
-| 3 | **Makine layout çizimi** | Ek doküman olarak verilir | Boyutlar, kurulum alanı, bağlantı noktaları (hava, su, drain, egzoz) — **Bkz. Bölüm 3.5, 13.2** |
+| 3 | **Makine layout çizimi** | C057536 — ek doküman (PDF) | Ön, yan ve izometrik görünüş; dış ölçüler, yükleme yüksekliği, hücre giriş açıklığı — **Bkz. Bölüm 3.3.1, 3.5, 13.2** |
 | 4 | **Garanti belgesi** | — | Makine ile birlikte verilir; garanti süresi ve koşulları — **Bkz. Bölüm 14.1** |
 
 **NOT:** Elektrik şemasına göre pano içinde yapılacak her çalışmadan önce makine enerjisini kesin ve **LOTO** uygulayın (**Bkz. Bölüm 2.4**).

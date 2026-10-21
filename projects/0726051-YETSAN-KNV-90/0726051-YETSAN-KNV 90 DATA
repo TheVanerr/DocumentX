@@ -111,11 +111,19 @@ Yetkinlik / eğitim gereksinimi: Operatör: makine start/stop ve güvenli parça
 
 
 [BOYUT_AGIRLIK]
-Dış genişlik W (mm): [EKSİK]
-Dış uzunluk L (mm): [EKSİK]
-Dış yükseklik H — normal (mm): [EKSİK]
-Boş ağırlık — kuru (kg): [EKSİK]
-Çalışma ağırlığı — dolu (kg): [EKSİK]
+# Kaynak: layout C057536 (KNV 90 2B PARÇA YIKAMA MAKİNESİ, proje kökü C057536.pdf); çizimde ağırlık hanesi boş (0.00); ağırlık, tank hacimleri ve parça yükü: kullanıcı bildirimi 21.10.2026
+Dış genişlik W (mm): 2210 (pompa / filtre çıkıntıları dahil)
+Şase genişliği (mm): 1400
+Dış uzunluk L (mm): 12250 (şase 11800 + çıkış ucu konveyör tahrik koruma kafesi 450)
+Dış yükseklik H — normal (mm): 2290 (zeminden egzoz fanı motoru üst noktasına; tesis baca kanalı hariç)
+Yükleme yüksekliği — tel bant üstü (mm): 940
+Giriş yükleme bölümü uzunluğu (mm): 750
+Hücre giriş açıklığı G × Y (mm): 900 × 300
+Boş ağırlık — kuru (kg): 4500
+Tank 1 (yıkama) hacmi (L): 750
+Tank 2 (durulama) hacmi (L): 500
+Konveyör üzerindeki parça yükü — tahmini (kg): 200–250 (müşteri prosesine bağlı; kesin değer bilinmez)
+Çalışma ağırlığı — dolu (kg): ≈ 5950–6000 (4500 boş + ≈ 1250 kg tank suyu + 200–250 kg parça yükü)
 Şase tipi (sabit ayak / ayarlanabilir ayak / ankraj): Ayarlanabilir ayak
 
 [KAPASITE_PROSES]
@@ -232,7 +240,7 @@ Uzaktan erişim (Evet/Hayır — protokol): Hayır
 
 
 [LAYOUT]
-Genel yerleşim planı dosya adı: Ek doküman olarak verilir
+Genel yerleşim planı dosya adı: C057536 — ek doküman (PDF)
 Operatör tarafı (ön / sol / sağ): Sağ (elektrik panosu / operatör paneli sağda)
 Besleme tarafı (giriş yönü): Makineye karşıdan bakıldığında sol — parça girişi
 Boşaltma tarafı (çıkış yönü): Makineye karşıdan bakıldığında sağ — parça çıkışı
@@ -250,9 +258,10 @@ Ağırlık merkezi notu: Tanklar, pompalar ve elektrik panosu ön (operatör) uz
 
 
 [TASIMA]
-Taşıma ağırlığı — demonte max parça (kg): 3000 (ana gövde — en ağır parça)
-Taşıma ağırlığı — montajlı (kg): Uygulanmaz — iki parça hâlinde taşınır (ana gövde + yağ ayırıcı ünitesi)
-Ambalaj tipi (kasa / shrink / konteyner): Streç film sarma + açık kasa araç üzerinde branda örtü; yağ ayırıcı ünitesi ayrı
+Sevkiyat parçaları: Makine gövdesi boyca tam ortadan ayrılmış 2 gövde parçası + ayrı yağ ayırıcı ünitesi (kullanıcı bildirimi 21.10.2026); gövde parçaları sahada birleştirilir — Bölüm 5.1.3
+Taşıma ağırlığı — demonte max parça (kg): 3000 (en ağır gövde parçası)
+Taşıma ağırlığı — montajlı (kg): Uygulanmaz — birleştirilmiş makine bütün hâlde kaldırılmaz; gövde parçaları ayrı taşınır
+Ambalaj tipi (kasa / shrink / konteyner): Her gövde parçası streç film sarma + açık kasa araç üzerinde branda örtü; birleşim yüzündeki kablo uçları ve kanal ağızları kapatılır; yağ ayırıcı ünitesi ayrı
 Kaldırma aparatı / travers referans çizimi: Yok — yalnız forklift (kılavuz Bölüm 3.5.4)
 Forklift çatal girişi var mı (Evet/Hayır): Evet — alt şase profilleri, ağırlık merkezine göre ortalanarak
 Taşıma sırasında sabitleme / bağlama: Şaseden en az 4 noktadan spanzet (cırcırlı kayış); ayaklar takozlanır; kayışlar kaplama, pano, boru ve bacaya yük bindirmez
@@ -282,7 +291,7 @@ Zemin mukavemet gereksinimi: Dolu çalışma ağırlığının 1,5 katını taş
 
 [MONTAJ_ADIMLARI]
 # Her adım: Sıra | Açıklama | Tork / tolerans | Not
-# Adımlar: kılavuz Bölüm 5.1.2. Makineye özel tork değeri yok — cıvatalı bağlantılar boyut ve dayanım sınıfına uygun standart sıkma torkuyla sıkılır
+# Adımlar: kılavuz Bölüm 5.1.2; gövde parçalarının birleştirilmesi Bölüm 5.1.3 (tel bant/zincir, egzoz kanalı, kablolar — üretici servisi talimatı ve elektrik şeması). Makineye özel tork değeri yok — cıvatalı bağlantılar boyut ve dayanım sınıfına uygun standart sıkma torkuyla sıkılır
 
 [KONUMLANDIRMA]
 Hizalama toleransı (mm): ≤ 1 mm/m, boyuna ve enine, su terazisi ile
@@ -585,7 +594,7 @@ Parça geri dönüşüm malzemeleri: Paslanmaz çelik gövde/tank, motorlar, kab
 Elektrik şeması dosya adı / rev: Ek doküman olarak verilir
 Pnömatik şema dosya adı / rev: Uygulanmaz — tek pnömatik tüketici (yağ ayırıcı diyafram pompası); Bölüm 6.5
 Hidrolik şema dosya adı / rev: Uygulanmaz — hidrolik yok
-Layout çizimi dosya adı / rev: Ek doküman olarak verilir
+Layout çizimi dosya adı / rev: C057536 (KNV 90 2B PARÇA YIKAMA MAKİNESİ) — ek doküman (PDF)
 Parça listesi (BOM) dosya adı / rev: KNV 90 7500 ÜRÜN AĞACI.xlsm (proje kökü) + [PARCA_LISTESI] / 0726051-YETSAN-KNV 90 PARCA LISTESI
 I/O listesi dosya adı / rev: Uygulanmaz — PLC yok
 PLC program yedek dosya adı: Uygulanmaz — PLC yok

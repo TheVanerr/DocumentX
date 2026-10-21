@@ -58,7 +58,7 @@ Energiequellen:
 
 | Parameter | Reihenfolge |
 | :--- | :--- |
-| Demontagereihenfolge | Strom trennen → Tanks entleeren → Versorgungsanschlüsse lösen → Ölabscheidereinheit abtrennen → mechanische Teile ausbauen |
+| Demontagereihenfolge | Strom trennen → Tanks entleeren → Versorgungsanschlüsse lösen → Ölabscheidereinheit abtrennen → Körperteile trennen → mechanische Teile ausbauen |
 
 **Demontageverfahren**
 
@@ -71,14 +71,15 @@ Energiequellen:
    - Wasserfüllleitung und Tank-Ablass- (TAHLİYE) / Abwasseranschlüsse
    - Kanal des Abluftkamins
 5. **Ölabscheidereinheit abtrennen** — Schläuche, Luftleitung und Kabel des Magnetventils; die Einheit getrennt transportieren.
-6. **Mechanische Demontage** — Schutzgitter, PVC-Vorhänge, Kammerklappen, Abluftventilator und Abluftkamin, Tankdeckel; bei Bedarf Pumpen, Blower-/Ventilatormotoren und Förderergetriebe (Teilenummern: **Siehe Kapitel 13.3.1**). Beim Ausbau von Getriebe und Pumpe eine Wanne gegen tropfendes Öl/Wasser verwenden.
-7. **Demontage von Schaltschrank und Kabeln** — unter LOTO; Frequenzumrichter, Sicherheitsrelais, Schütze und Kabel der Klasse Elektro-/Elektronikabfall (WEEE) zuordnen.
-8. **Transport** — mit Gabelstapler; zu Transportgewicht und Anschlagpunkten **Siehe Kapitel 3.5.4**, zum Transportverfahren **Siehe Kapitel 4.1.4**.
-9. **Teile nach Materialgruppe trennen** — **Siehe Kapitel 12.3**.
+6. **Körperteile trennen** — über die Trennstelle laufende elektrische Kabel (Elektrofachkraft), Abluftkanal, Drahtgurt und Kette des Förderers, Rahmenverbindungsschrauben; der Vorgang ist die Umkehrung der Verbindungsschritte in **Kapitel 5.1.3**. Offene Kabelenden und Kanalöffnungen abdecken und schützen.
+7. **Mechanische Demontage** — Schutzgitter, PVC-Vorhänge, Kammerklappen, Abluftventilator und Abluftkamin, Tankdeckel; bei Bedarf Pumpen, Blower-/Ventilatormotoren und Förderergetriebe (Teilenummern: **Siehe Kapitel 13.3.1**). Beim Ausbau von Getriebe und Pumpe eine Wanne gegen tropfendes Öl/Wasser verwenden.
+8. **Demontage von Schaltschrank und Kabeln** — unter LOTO; Frequenzumrichter, Sicherheitsrelais, Schütze und Kabel der Klasse Elektro-/Elektronikabfall (WEEE) zuordnen.
+9. **Transport** — mit Gabelstapler, jedes Körperteil einzeln; zu Transportgewicht und Anschlagpunkten **Siehe Kapitel 3.5.4**, zum Transportverfahren **Siehe Kapitel 4.1.4**.
+10. **Teile nach Materialgruppe trennen** — **Siehe Kapitel 12.3**.
 
-**HINWEIS:** Bei einem Standortwechsel innerhalb der Anlage werden nur die Schritte 1–5 und 8 angewendet; der Hauptkörper der Maschine wird im Ganzen transportiert. Die vollständige Demontage erfolgt nur bei Verschrottung oder größeren Anlagenänderungen.
+**HINWEIS:** Bei einem Standortwechsel innerhalb der Anlage werden nur die Schritte 1–6 und 9 angewendet; die Maschine wird wie beim Versand in zwei Körperteile getrennt transportiert. Die vollständige Demontage erfolgt nur bei Verschrottung oder größeren Anlagenänderungen.
 
-**Erwartetes Ergebnis:** Maschine von der Energie isoliert; Tanks leer; Versorgungsanschlüsse gelöst; Ölabscheidereinheit abgetrennt; Teile bereit für Transport oder Entsorgung.
+**Erwartetes Ergebnis:** Maschine von der Energie isoliert; Tanks leer; Versorgungsanschlüsse gelöst; Ölabscheidereinheit und Körperteile getrennt; Teile bereit für Transport oder Entsorgung.
 
 ---
 

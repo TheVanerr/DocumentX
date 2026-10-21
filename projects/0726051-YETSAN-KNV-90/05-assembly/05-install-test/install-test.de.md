@@ -100,7 +100,7 @@ Der Leerlauftest bestätigt den Dauerbetrieb der Maschine ohne Werkstücke; er p
 
 **Abweichung:** Stoppt eine Funktion oder erlischt die RESET-Leuchte, die Maschine stoppen; siehe **Kapitel 11**. Nicht in Betrieb gehen, bevor der Test wiederholt wurde.
 
-Ist der Leerlauftest erfolgreich, gilt die Maschine als **betriebsbereit** (**Siehe Kapitel 5.1.6**).
+Ist der Leerlauftest erfolgreich, gilt die Maschine als **betriebsbereit** (**Siehe Kapitel 5.1.7**).
 
 ---
 

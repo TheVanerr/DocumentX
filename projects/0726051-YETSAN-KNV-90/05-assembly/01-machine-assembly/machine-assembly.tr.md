@@ -1,6 +1,6 @@
 # 5.1 Makine montajı
 
-Makine, ana gövde (konveyör, tanklar, hücreler, kurutma, egzoz bacası, elektrik panosu) ve ayrı **yağ ayırıcı ünitesi** olarak teslim edilir; ana gövde üzerinde kurulumda modül sökülmez. Egzoz bacası / fan grubu taşıma yüksekliği nedeniyle demonte sevk edildiyse, kurulumda üretici servisinin talimatına göre yerine monte edilir (**Bkz. Bölüm 4.1.2**). Montaj, makinenin forklift ile nihai konumuna indirilmesi, teraziye alınması, yağ ayırıcı ünitesinin bağlanması ve tesisat bağlantılarının yapılmasını kapsar. Taşıma ve indirme **Bölüm 4.1** forklift prosedürüne göre yapılır.
+Makine gövdesi (konveyör, tanklar, hücreler, kurutma, egzoz bacası, elektrik panosu), taşınabilmesi için boyca tam ortadan ayrılarak **iki gövde parçası** hâlinde; **yağ ayırıcı ünitesi** ayrı olarak teslim edilir. Gövde parçaları kurulum yerinde yeniden birleştirilir (**Bkz. Bölüm 5.1.3**); bunun dışında kurulumda modül sökülmez. Egzoz bacası / fan grubu taşıma yüksekliği nedeniyle demonte sevk edildiyse, kurulumda üretici servisinin talimatına göre yerine monte edilir (**Bkz. Bölüm 4.1.2**). Montaj, gövde parçalarının forklift ile nihai konumuna indirilmesi, birleştirilmesi, teraziye alınması, yağ ayırıcı ünitesinin bağlanması ve tesisat bağlantılarının yapılmasını kapsar. Taşıma ve indirme **Bölüm 4.1** forklift prosedürüne göre yapılır.
 
 Bu bölüm montajın ana adım sırasını verir. Konumlandırma ayrıntıları **Bölüm 5.2**'de; bağlantı prosedürleri **Bölüm 5.3**'te; güvenlik ve doğrulama testleri **Bölüm 5.4** ve **5.5**'te detaylandırılmıştır.
 
@@ -33,20 +33,46 @@ Montajı aşağıdaki sırayla yapın. Montaj adımlarında makineye özel tork 
 
 | Adım | İşlem | Detay bölüm |
 | :---: | :--- | :--- |
-| 1 | Makineyi forklift ile kurulum alanına getirin ve indirin | Bölüm 4.1.4 |
-| 2 | Kalan ambalajı sökün; hasar kontrolü yapın | Bölüm 4.1.3, 4.1.5 |
-| 3 | Makineyi ayarlanabilir ayaklar ile teraziye alın | Bölüm 5.2.3 |
-| 4 | Yağ ayırıcı ünitesini makine yanına yerleştirin; hortum ve hava hattını bağlayın | Bölüm 5.3.5 |
-| 5 | Basınçlı hava bağlantısını yapın; regülatörü 6 bar'a ayarlayın | Bölüm 5.3.1 |
-| 6 | Su hattını tank dolum noktasına hazırlayın; TAHLİYE vanalarını atık su hattına bağlayın | Bölüm 5.3.2 |
-| 7 | Egzoz bacasını tesis havalandırmasına / dış ortama bağlayın | Bölüm 5.3.4 |
-| 8 | Trifaze elektrik beslemesini ve topraklamayı bağlayın | Bölüm 5.3.3 |
-| 9 | Ana şalteri açın; faz sırasını doğrulayın, gerekirse düzeltin | Bölüm 5.3.6 |
-| 10 | Güvenlik fonksiyon testlerini ve kurulum doğrulamasını tamamlayın | Bölüm 5.4, 5.5 |
+| 1 | Gövde parçalarını forklift ile kurulum alanına getirin; birinci gövde parçasını nihai konumuna indirin | Bölüm 4.1.4, 5.2.2 |
+| 2 | Kalan ambalajı sökün; her iki gövde parçasında hasar kontrolü yapın | Bölüm 4.1.3, 4.1.5 |
+| 3 | İkinci gövde parçasını birinci parçanın birleşim yüzüne hizalayarak indirin | Bölüm 5.1.3 |
+| 4 | Gövde parçalarını birleştirin; ayrım noktasından geçen bağlantıları yeniden yapın | Bölüm 5.1.3 |
+| 5 | Makineyi ayarlanabilir ayaklar ile teraziye alın | Bölüm 5.2.3 |
+| 6 | Yağ ayırıcı ünitesini makine yanına yerleştirin; hortum ve hava hattını bağlayın | Bölüm 5.3.5 |
+| 7 | Basınçlı hava bağlantısını yapın; regülatörü 6 bar'a ayarlayın | Bölüm 5.3.1 |
+| 8 | Su hattını tank dolum noktasına hazırlayın; TAHLİYE vanalarını atık su hattına bağlayın | Bölüm 5.3.2 |
+| 9 | Egzoz bacasını tesis havalandırmasına / dış ortama bağlayın | Bölüm 5.3.4 |
+| 10 | Trifaze elektrik beslemesini ve topraklamayı bağlayın | Bölüm 5.3.3 |
+| 11 | Ana şalteri açın; faz sırasını doğrulayın, gerekirse düzeltin | Bölüm 5.3.6 |
+| 12 | Güvenlik fonksiyon testlerini ve kurulum doğrulamasını tamamlayın | Bölüm 5.4, 5.5 |
 
 ---
 
-## 5.1.3 Adım 3 — Teraziye alma
+## 5.1.3 Adım 3–4 — Gövde parçalarının birleştirilmesi
+
+Makine gövdesi, karayolu taşıması için boyca tam ortadan iki parçaya ayrılarak sevk edilir. Kurulum yerinde iki gövde parçası tek hat olarak yeniden birleştirilir; ayrım noktasından geçen konveyör tel bandı ve zinciri, egzoz kanalı ve elektrik kabloları yeniden bağlanır. Birleştirme; mekanik montajcı ve yetkili elektrikçi tarafından, üretici servisinin talimatına ve elektrik şemasına (**Bkz. Bölüm 13.1**) göre yapılır. Gövde parçaları birbirine tam hizalanmadan birleştirilirse tel bant birleşim noktasında takılır, zincir dişliden kaçar ve hücre kapakları switch'lerle hizalı kapanmaz.
+
+**UYARI — Ezilme:** İkinci gövde parçası birinci parçaya yaklaştırılırken birleşim yüzleri arasında el, ayak ve gövde ezilebilir. Yaklaştırma sırasında iki parça arasında personel bulundurmayın; birleşim yüzlerine yalnızca forklift durduktan ve yük indirildikten sonra yaklaşın.
+
+1. Birinci gövde parçasını layout'taki konumuna indirin (**Bkz. Bölüm 4.1.4, 5.2.2**).
+2. Birinci gövde parçasını ayarlanabilir ayaklarla teraziye alın (**Bkz. Bölüm 5.2.3**).
+3. İkinci gövde parçasını, konveyör akış yönü sol → sağ olacak şekilde birinci parçanın birleşim yüzüne forklift ile yaklaştırın ve birleşim yüzleri birbirine değmeden indirin.
+4. İkinci parçanın ayaklarını ayarlayarak iki parçanın şase üst kotunu ve yan yüzlerini aynı hizaya getirin.
+5. Parçaları birbirine yanaştırın ve şase bağlantı cıvatalarını takın; cıvataları hizalama tamamlandıktan sonra standart sıkma torkuyla sıkın.
+6. Ayrım noktasından geçen bağlantıları yeniden yapın:
+   a. Konveyör tel bandı ve zinciri
+   b. Egzoz kanalı
+   c. Elektrik kabloları — motor, ısıtıcı, sensör, acil stop ve kapak switch hatları (yalnız yetkili elektrikçi, tesis beslemesi bağlanmadan önce)
+7. Tel bandın birleşim noktasında takılmadan geçtiğini, zincirin dişlilere tam oturduğunu ve alt dönüşte belirgin sarkma olmadığını gözle kontrol edin (**Bkz. Bölüm 6.1**). Gerginlik veya hiza ayarı gerekiyorsa ayarı üretici servisi yapar.
+8. Birleşim noktasındaki hücre kapaklarının zorlanmadan kapandığını ve manyetik switch'lerle hizalı olduğunu kontrol edin.
+
+**NOT:** Acil stop ve kapak switch hatları ayrım noktasından geçtiği için birleştirme sonrası **Bölüm 5.4** güvenlik testleri tüm acil stoplar ve tüm bakım kapakları için eksiksiz yapılmalıdır.
+
+**Beklenen sonuç:** İki gövde parçası tek hat olarak hizalı; birleşim noktasında kot ve yan yüz farkı yok; tel bant birleşim noktasından takılmadan geçiyor.
+
+---
+
+## 5.1.4 Adım 5 — Teraziye alma
 
 Makine **ayarlanabilir ayak** sistemi üzerine oturtulur. Uzun hat yapısında teraziye alma, konveyör zincirinin her iki yanda eşit gerilmesi, tank sıvı seviyesinin seviye sensörüne göre doğru okunması ve hücre kapaklarının switch'lerle hizalı kapanması için kritiktir. Hizalama toleransı ve teraziye alma prosedürü **Bölüm 5.2.3**'te verilmiştir.
 
@@ -54,7 +80,7 @@ Makine **ayarlanabilir ayak** sistemi üzerine oturtulur. Uzun hat yapısında t
 
 ---
 
-## 5.1.4 Adım 4–8 — Yağ ayırıcı, medya, egzoz ve elektrik bağlantıları
+## 5.1.5 Adım 6–10 — Yağ ayırıcı, medya, egzoz ve elektrik bağlantıları
 
 Bağlantı prosedürleri **Bölüm 5.3**'te adım adım verilmiştir. Özet:
 
@@ -70,7 +96,7 @@ Bağlantı sonrası hava regülatöründe **6 bar** okunmalı; ana şalter açı
 
 ---
 
-## 5.1.5 Adım 9 — Devreye alma ve faz kontrolü
+## 5.1.6 Adım 11 — Devreye alma ve faz kontrolü
 
 1. Trifaze besleme panoya bağlandıktan sonra makine ana şalterini **ON** konumuna alın.
 2. Faz sıra rölesi **MKR-01**'in çıkış durumunu kontrol edin; röle çıkış vermiyorsa faz sırası ters veya faz eksiktir.
@@ -82,7 +108,7 @@ Pompalar, fanlar ve blowerlar tek yönde çalışacak şekilde tasarlanmıştır
 
 ---
 
-## 5.1.6 Adım 10 — Montaj tamamlama
+## 5.1.7 Adım 12 — Montaj tamamlama
 
 Makine **kullanıma hazır** kabul edilmeden önce aşağıdaki testler tamamlanmalıdır:
 

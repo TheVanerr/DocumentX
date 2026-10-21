@@ -1,6 +1,6 @@
 # 5.2 Makine konumlandırma
 
-Konumlandırma, makinenin kurulum alanındaki nihai konumunu, yönünü ve seviyesini belirler. İşlemler **Bölüm 5.1 Adım 3** kapsamında uygulanır; bu bölümde detaylandırılır. Yanlış konumlandırma; operatörün yükleme/boşaltma erişimini, bakım kapaklarının açılımını, tank kapaklarının açılma alanını, pano kapağının tam açılmasını ve konveyör hizasını olumsuz etkiler.
+Konumlandırma, makinenin kurulum alanındaki nihai konumunu, yönünü ve seviyesini belirler. İşlemler **Bölüm 5.1 Adım 1–5** kapsamında uygulanır; bu bölümde detaylandırılır. Yanlış konumlandırma; operatörün yükleme/boşaltma erişimini, bakım kapaklarının açılımını, tank kapaklarının açılma alanını, pano kapağının tam açılmasını ve konveyör hizasını olumsuz etkiler.
 
 Alan gereksinimleri (etraf boşlukları, tavan yüksekliği, yön tanımları) **Bölüm 3.5**'te verilmiştir; burada kurulum prosedürü odaklı açıklanır.
 

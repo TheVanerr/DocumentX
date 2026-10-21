@@ -2,7 +2,7 @@
 
 **KNV 90 12000 2B** (seri no **0726051**) makinesinin fabrikadan sevkiyatı, saha içi taşınması, kurulum alanına indirilmesi ve geçici depolanması bu bölümde tanımlanır. Taşıma ve depolama sırasında oluşabilecek mekanik hasar, devrilme ve korozyon riskleri; doğru ekipman seçimi ve ortam koşullarına uyumla önlenir. Bu bölümde yalnızca taşıma ve depolama prosedürleri verilir; boyut, ağırlık ve ağırlık merkezi değerleri **Bölüm 3.3.1** ve **Bölüm 3.5.4**'te tanımlıdır.
 
-Makine, ana gövde (konveyör, tanklar, hücreler, kurutma ünitesi, egzoz bacası ve elektrik panosu) ve ayrı duran **yağ ayırıcı ünitesi** olmak üzere iki ana parça hâlinde sevk edilir. Ana gövde streç film ile sarılır ve açık kasa araç üzerinde branda ile örtülerek sevk edilir; yağ ayırıcı ünitesi ayrı taşınır. Taşıma ağırlığı ve kaldırma yöntemi **Bölüm 3.5.4**'te verilmiştir. Makine yalnızca forklift ile, alt şase profillerinden kaldırılır; elektrik panosundan, tank saclarından veya dış kaplamadan kaldırılmaz ve vinç ile sapanlanmaz.
+Makine gövdesi (konveyör, tanklar, hücreler, kurutma ünitesi, egzoz bacası ve elektrik panosu) boyca tam ortadan ayrılarak **iki gövde parçası** hâlinde; ayrı duran **yağ ayırıcı ünitesi** ise ayrıca sevk edilir. Her gövde parçası streç film ile sarılır ve açık kasa araç üzerinde branda ile örtülerek sevk edilir. Gövde parçaları kurulum yerinde birleştirilir (**Bkz. Bölüm 5.1.3**). Taşıma ağırlığı ve kaldırma yöntemi **Bölüm 3.5.4**'te verilmiştir. Her gövde parçası yalnızca forklift ile, alt şase profillerinden ayrı ayrı kaldırılır; elektrik panosundan, tank saclarından veya dış kaplamadan kaldırılmaz ve vinç ile sapanlanmaz.
 
 | Alt bölüm | Konu |
 | :--- | :--- |

@@ -24,7 +24,7 @@ Die Maschine wird nicht mit einem einzelnen Startbefehl, sondern durch das Einsc
 
 1. Prüfen, dass das **Ablassventil (TAHLİYE)** des betreffenden Tanks geschlossen ist.
 2. Den Tankdeckel öffnen.
-3. Das bauseitige Wasserventil öffnen und den Tank mit Leitungswasser oder aufbereitetem Wasser befüllen (**Siehe Kapitel 3.3.5**).
+3. Das bauseitige Wasserventil öffnen und den Tank mit Leitungswasser oder aufbereitetem Wasser befüllen (Wasserqualität: **Siehe Kapitel 3.3.5**; Tankvolumen: **Siehe Kapitel 3.3.1**).
 4. Nach dem Erlöschen der roten Leuchte **TANK 1 / TANK 2 WASHING LEVEL** weiter befüllen, bis die Heizstäbe und der Saugfilter vollständig unter Wasser liegen.
 5. Das bauseitige Wasserventil schließen.
 6. Wird eine Prozesschemikalie verwendet, das vom Hersteller freigegebene, säurefreie Mittel in der Dosierung des Lieferanten zugeben (**Siehe Kapitel 3.2.4**).

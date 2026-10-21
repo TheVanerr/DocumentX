@@ -8,14 +8,21 @@ Bu bölüm, **KNV 90 12000 2B** (seri no **0726051**) makinesine ait boyut, ağ�
 
 | Parametre | Birim | Değer |
 | :--- | :---: | ---: |
-| Dış uzunluk (L) | mm | [EKSİK] |
-| Dış genişlik (W) | mm | [EKSİK] |
-| Dış yükseklik (H) — normal | mm | [EKSİK] |
-| Boş ağırlık — kuru | kg | [EKSİK] |
-| Çalışma ağırlığı — dolu | kg | [EKSİK] |
+| Dış uzunluk (L) — şase 11 800 + çıkış ucu koruma kafesi 450 | mm | 12 250 |
+| Dış genişlik (W) — pompa ve filtre çıkıntıları dahil | mm | 2 210 |
+| Şase genişliği | mm | 1 400 |
+| Dış yükseklik (H) — zeminden egzoz fanı üst noktasına | mm | 2 290 |
+| Yükleme yüksekliği (tel bant üstü) | mm | 940 |
+| Giriş yükleme bölümü uzunluğu | mm | 750 |
+| Hücre giriş açıklığı (genişlik × yükseklik) | mm | 900 × 300 |
+| Boş ağırlık — kuru | kg | 4 500 |
+| Tank hacmi — TANK 1 (yıkama) | L | 750 |
+| Tank hacmi — TANK 2 (durulama) | L | 500 |
+| Konveyör üzerindeki parça yükü — tahmini, müşteri prosesine bağlı | kg | 200–250 |
+| Çalışma ağırlığı — dolu (tahmini) | kg | ≈ 5 950–6 000 |
 | Şase tipi | — | Ayarlanabilir ayak |
 
-Makine, **ayarlanabilir ayaklar** üzerinde terazi ve seviye ayarı yapılabilir şekilde kurulur (**Bkz. Bölüm 5.2.3**). Tanklar dolu iken çalışma ağırlığı belirgin şekilde artar; taşıma ve depolama öncesi tanklar boşaltılmalıdır (**Bkz. Bölüm 4.1, 4.2**). Kurulum alanı ve etraf boşlukları **Bölüm 3.5.2**'de verilmiştir; makine layout çizimi ayrı evrak olarak teslim edilir (**Bkz. Bölüm 13.1**).
+Makine, **ayarlanabilir ayaklar** üzerinde terazi ve seviye ayarı yapılabilir şekilde kurulur (**Bkz. Bölüm 5.2.3**). Çalışma ağırlığı; boş ağırlık, tanklardaki yaklaşık 1 250 kg proses suyu (750 L + 500 L) ve konveyör üzerindeki parça yükünün toplamıdır. Parça yükü işlenen parçaya ve yükleme sıklığına bağlıdır; üretici tarafından kesin olarak bilinemez ve hesapta 200–250 kg kabul edilmiştir. Hat üzerinde daha yüksek parça yükü öngörülüyorsa zemin mukavemeti gerçek yükle hesaplanmalıdır (**Bkz. Bölüm 3.5.2**). Taşıma ve depolama öncesi tanklar boşaltılmalıdır (**Bkz. Bölüm 4.1, 4.2**). Kurulum alanı ve etraf boşlukları **Bölüm 3.5.2**'de verilmiştir; ölçüler layout çizimi **C057536**'dan alınmıştır ve çizim ayrı evrak olarak teslim edilir (**Bkz. Bölüm 13.1**). Dış yüksekliğe, egzoz fanı çıkışına bağlanan tesis baca kanalı dahil değildir.
 
 ![3D yan görünüş — konveyör hattı, hücreler ve egzoz bacası](../../assets/3.3/3d-yan-gorunus.png)
 

@@ -12,7 +12,7 @@ Bei Bestell- und Serviceanfragen sind die Angaben des Typenschilds (**Seriennumm
 | :---: | :--- | :--- | :--- |
 | 1 | **EG-Konformitätserklärung** (2006/42/EG Anhang II A) | — | Wird mit der Maschine geliefert; Erklärung der Konformität der Maschine mit der Maschinenrichtlinie 2006/42/EG |
 | 2 | **Schaltplan** | Wird als Zusatzdokument geliefert | Schaltschrank, Motoren, Heizungen, Sicherheitskreis, Zuordnung MKŞ/RCCB/Schütz–Last, BLOWER-Schaltergruppen — **Siehe Kapitel 3.4, 5.3, 11.3** |
-| 3 | **Aufstellungsplan (Layout) der Maschine** | Wird als Zusatzdokument geliefert | Abmessungen, Aufstellfläche, Anschlusspunkte (Luft, Wasser, Ablauf, Abluft) — **Siehe Kapitel 3.5, 13.2** |
+| 3 | **Aufstellungsplan (Layout) der Maschine** | C057536 — Zusatzdokument (PDF) | Vorder-, Seiten- und isometrische Ansicht; Außenabmessungen, Beladehöhe, Eingangsöffnung der Kammer — **Siehe Kapitel 3.3.1, 3.5, 13.2** |
 | 4 | **Garantieurkunde** | — | Wird mit der Maschine geliefert; Garantiedauer und -bedingungen — **Siehe Kapitel 14.1** |
 
 **HINWEIS:** Vor jeder Arbeit im Schaltschrank anhand des Schaltplans die Maschine spannungsfrei schalten und **LOTO** anwenden (**Siehe Kapitel 2.4**).

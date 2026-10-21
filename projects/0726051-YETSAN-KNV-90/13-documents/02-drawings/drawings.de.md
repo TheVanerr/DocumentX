@@ -9,18 +9,18 @@ Dieses Unterkapitel beschreibt den mit der Maschine gelieferten Aufstellungsplan
 | Parameter | Wert |
 | :--- | :--- |
 | Dokument | Aufstellungsplan (Layout) der Maschine |
-| Dateiname / Rev. | **Siehe Kapitel 13.1** |
+| Dateiname / Rev. | C057536 (**Siehe Kapitel 13.1**) |
 | Lieferung | Separates Dokument (PDF) — Lieferpaket |
 | Referenz in der Anleitung | **Kapitel 3.5** — Aufstellungsplan der Maschine |
 
 Der Aufstellungsplan enthält folgende Angaben:
 
-- Außenabmessungen der Maschine (L × B × H) und minimale Aufstellfläche (**Siehe Kapitel 3.3.1, 3.5.2**)
-- Zuführrichtung (**links**), Abführrichtung (**rechts**), Bediener-/Schaltschrankseite (**rechts**)
-- Anschlusspunkte und Durchmesser für Elektrik, Luft (AIR INLET), Wasser, Tankablass (TAHLİYE) und Abluftkamin (**Siehe Kapitel 3.3.5**)
-- Position der Ölabscheidereinheit und Schlauchführung
-- Anschlagpunkte für den Gabelstapler und Schwerpunkt (**Siehe Kapitel 3.5.4**)
-- Positionen der Not-Halt-Taster und Wartungsklappen (**Siehe Kapitel 3.5.5**)
+- Vorderansicht, Seitenansicht und isometrische Ansicht
+- Außenabmessungen der Maschine (L × B × H) und Gestellbreite (**Siehe Kapitel 3.3.1**)
+- Beladehöhe, Länge des Beladebereichs am Einlauf und Eingangsöffnung der Kammer (**Siehe Kapitel 3.3.1**)
+- Zuführrichtung (**GİRİŞ — links**), Abführrichtung (**ÇIKIŞ — rechts**) und Lage des Schaltschranks nahe dem Auslaufende
+
+Anschlusspunkte und Durchmesser, Anschlagpunkte für den Gabelstapler sowie Positionen der Not-Halt-Taster und Wartungsklappen sind im Aufstellungsplan nicht dargestellt (**Siehe Kapitel 3.3.5, 3.5.4, 3.5.5**). Die minimale Aufstellfläche wird aus den Layoutmaßen mit der Formel in **Kapitel 3.5.2** berechnet.
 
 Das Layout ist die primäre Referenzzeichnung für Installation (**Siehe Kapitel 5**), Transport (**Siehe Kapitel 4**) und Anlagenplanung (**Siehe Kapitel 3.5**).
 
