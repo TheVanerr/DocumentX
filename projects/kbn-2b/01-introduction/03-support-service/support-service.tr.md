@@ -45,7 +45,7 @@ Makinenin güvenli ve verimli çalışması yalnızca üretici tarafından onayl
 Arızaların bir kısmı basit kontrollerle giderilebilir. Servis talebinde bulunmadan önce aşağıdaki kontrolleri yapın:
 
 - Tesisin makineyi besleyen sigortası açık ve **Ana şalter** "I" konumunda mı?
-- Tüm **Acil durdurma** butonları serbest (kurulu) konumda mı?
+- **Acil durdurma** butonu serbest (kurulu) konumda mı?
 - Kapak tam olarak kapalı mı? Kapak emniyet şalteri kapak kapanmadan programın başlamasını engeller.
 - HMI ekranında aktif bir alarm var mı? Varsa alarmın nedenini **Bölüm 11**'e göre giderin ve alarmı onaylayın (**Bkz. Bölüm 3.4.3**).
 - Her iki tanktaki sıvı seviyesi seviye şalterinin algılama seviyesinin üzerinde mi? Seviye şalteri, sıvı seviyesi düşükken o tankın ısıtıcısını çalıştırmaz.

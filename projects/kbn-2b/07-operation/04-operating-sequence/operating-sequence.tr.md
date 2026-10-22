@@ -20,7 +20,7 @@ Parçalar sepete, sepet taşıma arabasına çekilerek makinenin dışında yük
 
 1. Kapağı kapak kumandasıyla tam açın.
 2. Taşıma arabasını makinenin önüne, rayları kabin içindeki raylarla aynı hizada olacak şekilde yanaştırın.
-3. Arabayı, sepet çekilirken hareket etmeyecek şekilde sabitleyin.
+3. Arabanın frenli tekerleklerini kilitleyerek arabayı, sepet çekilirken hareket etmeyecek şekilde sabitleyin.
 4. Sepeti raylar üzerinde arabaya doğru yavaşça çekin ve arabanın üzerinde tam oturttuğunuzu kontrol edin.
 5. Parçaları sepete **Bölüm 8.2**'deki kurallara göre yerleştirin; yükü sepet üzerinde dengeli dağıtın (**Bkz. Bölüm 8.1.2**).
 6. Sepeti raylar üzerinde kabine doğru yavaşça itin ve kabin içinde sonuna kadar yerleştiğini kontrol edin.
