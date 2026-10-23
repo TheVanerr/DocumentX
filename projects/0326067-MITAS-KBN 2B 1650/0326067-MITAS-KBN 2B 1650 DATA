@@ -1,0 +1,808 @@
+# =============================================================================
+# MAKİNE VERİ DOSYASI (SSOT) — 0326067 MİTAŞ — KBN 2B P DS OTO 1500
+# =============================================================================
+# Bu dosya kılavuz yazımının TEK kaynağıdır. Bölüm .md dosyaları buradan beslenir.
+# Bilinmeyen değer: [EKSİK]. Uydurma yapılmamıştır.
+# Kaynaklar:
+#   [TP]  Makine tip plakası (fotoğraf, seri no 0326067)
+#   [ÜA]  Çok seviyeli ürün ağacı "KBN 2B 1500 P DS OTO.xlsm" (CNK_2026, 23.10.2026)
+#   [ŞEMA] Referans elektrik şeması "0326053-AKDENİZ-KBN 2B 1650 ELEKTRİK DİYAGRAMI.pdf"
+#          (EPLAN, 20.04.2026, aynı model ailesi; Mitaş makinesine özel şema değildir)
+#   [PLC] KKOut.html içindeki Mitaş PLC/HMI kullanım bilgileri (kontrol programı)
+#   [FOTO] Makine fotoğrafları (photos/, 20–21.10.2026)
+# Son güncelleme: 23.10.2026
+# Hazırlayan: [EKSİK]
+# Onaylayan: [EKSİK]
+# =============================================================================
+
+# =============================================================================
+# 0 — MAKİNE VE ÜRETİCİ BİLGİLERİ
+# =============================================================================
+
+[PROJE]
+Makine ticari adı: KBN 2B P DS OTO 1500 Parça Yıkama Makinesi
+Makine model kodu: KBN 2B P DS OTO 1500
+Marka: Dolfin
+Makine seri numarası: 0326067
+Sipariş numarası: 0326067
+Üretim yılı: 2026
+Makine tipi: Kabin tipi, dönen sepetli, iki banyolu (yıkama + durulama), sıcak hava kurutmalı endüstriyel parça yıkama makinesi
+Uygunluk işaretleri: CE, EAC
+İmalat / sevk tarihi: [EKSİK]
+Kılavuz dili: Türkçe (orijinal kullanım kılavuzu)
+Kılavuz revizyonu: 00
+
+[URETICI]
+Üretici firma adı: CNK Elektronik Makine San. A.Ş.
+Marka: Dolfin
+Fabrika adresi: Organize San. Böl. Orhan Işık Bulv. No:8
+İlçe: Sincan
+Şehir: Ankara
+Ülke: Türkiye
+Telefon: +90 312 267 30 15
+Fax: [EKSİK]
+Web sitesi: www.dolfintr.com
+E-posta: [EKSİK]
+Yetkili servis / teknik destek: CNK Elektronik Makine San. A.Ş. — Dolfin teknik servis
+
+[MUSTERI]
+Müşteri: Mitaş
+Kurulum yeri (adres): [EKSİK]
+Makineden sorumlu kişi: [EKSİK]
+
+[MODEL_VARYANTLARI]
+Varyant 1: KBN 2B P DS OTO 1500 — iki banyolu (yıkama + durulama), sıcak hava kurutmalı, pnömatik otomatik kapılı, ışık perdeli (bu makine)
+
+[GIRIS_GENEL]
+Kılavuz kapsamı (hangi makine, hangi opsiyonlar): Seri numarası 0326067 olan KBN 2B P DS OTO 1500 parça yıkama makinesi; yağ sıyırıcı, drenaj pompası, torba filtreler, pnömatik otomatik kapı ve ışık perdesi dahil
+Kılavuz hedef kitlesi (operatör / bakım / kurulum): Operatör, mekanik bakım personeli, elektrik bakım personeli, kurulum ve servis personeli
+Makine tipi kısa tanım (1-2 cümle): Parçalar kabin içindeki dönen sepette önce yıkama tankından, sonra durulama tankından basılan ısıtılmış sıvıyla yıkanır ve sıcak havayla kurutulur. Çevrim PLC ile otomatik yürütülür; sıcaklıklar ve süreler 7 reçetede saklanır.
+
+# =============================================================================
+# 02 — GÜVENLİK (safety)
+# =============================================================================
+
+[ACIL_DURDURMA]
+Acil stop butonu adedi: 1
+Acil stop konumları (fiziksel yer): Kumanda paneli (kabin kapısının sağında, elektrik panosunun ön yüzü)
+Acil stop devresi: OMRON G9SB-2002-A güvenlik rölesi; manuel reset (RESET butonu); PLC girişi I0.0
+Acil stop reset prosedürü: Butonu çevirerek bırakın, RESET butonuna basın, Hazırlık ve faz seçimlerini yeniden yapın (Bölüm 2.5)
+Acil stop sonrası makine durumu: Çevrim iptal; sepet motoru, pompalar, ısıtıcılar, fanlar, yağ sıyırıcı ve drenaj pompası durur; Hazırlık kapalı, üç faz Aktif, Yağ Sıyırıcı Pasif
+HMI mesajı: Error-229 Acil Stop Devrede
+
+[GUVENLIK_CIT]
+Emniyet kapısı / bariyer sayısı: 1 adet pnömatik, dikey hareketli kabin kapısı
+Kapı switch tipi / marka: Kapı kapalı sviçi L5K13MEP123 (1NO+1NC), PLC girişi I1.9
+Makine stop kategorisi (Cat.): [EKSİK]
+Işık perdesi var mı (Evet/Hayır — tip / marka): Evet — kapı açıklığının iki yanında OMRON ışık perdesi (el koruma sensörü, PLC girişi I1.11); model [EKSİK]
+Kapı silindiri tutma elemanı: Pilotlu kilit (pilot kumandalı çek valf), 4 adet
+Elektrik panosu kilidi: Anahtarlı kapı kilidi; "Panoların kapaklarını kilitli tutunuz" etiketi
+Pnömatik valf kutusu kilidi: Kilitli kapak; "Kilitli tut" etiketi
+
+[KKD]
+# Her satır: Görev | Kişisel koruyucu donanım
+Yükleme ve boşaltma: İş ayakkabısı, ısıya ve kesilmeye dayanıklı koruyucu eldiven, iş elbisesi
+Yıkama kimyasalı hazırlama ve tank doldurma: Kimyasala dayanıklı eldiven, göz koruyucu veya yüz siperi, kimyasala dayanıklı önlük, iş ayakkabısı
+Drenaj, tank ve filtre temizliği: Kimyasala dayanıklı eldiven, göz koruyucu, su geçirmez önlük, kaymaz iş ayakkabısı
+Mekanik bakım: İş ayakkabısı, koruyucu eldiven, göz koruyucu
+Elektrik bakımı: Alçak gerilim için yalıtkan eldiven (EN 60903) ve yalıtkan el aletleri (EN 60900)
+Çatı üstü çalışma (fanlar, ısıtıcı kutusu): Baret, işletme yüksekte çalışma talimatına göre platform ve düşüş önleme donanımı
+
+# =============================================================================
+# 03 — GENEL BAKIŞ (overview)
+# =============================================================================
+
+[MAKINE_TANIMI]
+Makinenin ana işlevi: Endüstriyel parçaların yüzeyindeki yağ, talaş, kir ve proses kalıntılarının su bazlı, ısıtılmış yıkama sıvısıyla yıkanması, durulanması ve sıcak havayla kurutulması
+Makine tipi (ör. dolum / paketleme / yıkama / konveyör): Kabin tipi, dönen sepetli, püskürtmeli parça yıkama makinesi
+Proses akışı özeti (adım adım): Hazırlık (tank ısıtma) → START → Yıkama → Geçiş 1 → Durulama → Geçiş 2 → Kurutma → Rezistans soğutma → Sepet konumlama
+Makine bileşenleri listesi (ana modüller): Kabin ünitesi (kabin, dönen sepet, püskürtme boruları, kapı, kurutma ve egzoz sistemi), tank ünitesi (yıkama ve durulama tankları, ısıtıcılar, filtreler, tahliye odası, yağ sıyırıcı, drenaj sistemi), proses pompaları, torba filtreler, pnömatik sistem, elektrik panosu ve kumanda paneli, yükleme arabası
+Opsiyon / varyant listesi (bu projeye özel): Yağ sıyırıcı, drenaj pompası, torba filtreler, pnömatik otomatik kapı, ışık perdesi
+
+[TANKLAR]
+Tank sayısı: 2 (yıkama tankı ve durulama tankı)
+Yıkama tankı kapak numarası: 1
+Durulama tankı kapak numarası: 2
+Tank malzemesi: AISI 316L paslanmaz çelik, 2 mm (ürün ağacı)
+Tank yalıtımı: XPS köpük levha + paslanmaz çelik kaplama
+Tank içi ayırıcılar: Paslanmaz çelik separatör sacları (AISI 316L)
+Ön filtre sepeti adedi ve tipi: 8 adet (her tankta 4), 16 mesh paslanmaz elekli
+Emiş filtresi adedi ve tipi: 2 adet (her pompa emişinde 1), Ø4 mm delikli paslanmaz sac
+Torba filtre gövdesi adedi: 2 gövde (her proses pompasının basma hattında 1)
+Torba filtre torbası (ölçü / gözenek): [EKSİK]
+Tank hacmi (L): [EKSİK]
+Tank doldurma: Elle (makinede otomatik dolum yoktur)
+Tank kapakları: Her tankta gazlı yaylı (amortisörlü) menteşeli kapak; tutamaklı
+Taşma hattı: Her tankta "TAŞMA HATTI" etiketli taşma çıkışı
+Drenaj: Her tankın altında "DRENAJ" etiketli küresel vana; ortak drenaj kolektörü
+Pompa–tank eşleşmesi: [EKSİK]
+
+[AMACLANAN_KULLANIM]
+Amaçlanan kullanım alanı: Endüstriyel üretim ve bakım tesislerinde metal parçaların su bazlı yıkama sıvısıyla yıkanması, durulanması ve kurutulması
+İşlenebilir ürün tipleri: Sepete ve kabin iç ölçülerine sığan; ısıtılmış su bazlı yıkama sıvısına, püskürtme basıncına ve kurutma sıcaklığına dayanıklı metal parçalar
+İşlenemez / yasak ürün tipleri: Solvent veya yanıcı sıvıyla temizlenmesi gereken parçalar; patlayıcı, radyoaktif ya da zehirli madde taşıyan parçalar; sıvı veya ısı ile zarar görecek parçalar; sepete sabitlenemeyen hafif parçalar; canlılar
+Kullanılabilir yıkama sıvısı: Su veya su bazlı endüstriyel yıkama kimyasalı çözeltisi (kimyasal tedarikçisinin önerdiği derişimde)
+Yasak sıvılar: Solvent, yanıcı ve parlayıcı sıvılar (makine etiketi: "Solvent kullanmayınız")
+Malzeme uyumu: Tank, boru ve kabin AISI 304 / 316L; teker ve burçlar POM (delrin); kızak PE-UHMW; contalar NBR, EPDM ve klingrit
+Ortam koşulları (iç mekan / dış mekan): Kapalı, çatılı üretim alanı; donma olmayan ortam
+Ortam sıcaklığı min / max (°C): [EKSİK]
+Operatör sayısı (min / max): Kumanda: 1 operatör; yükleme ve boşaltma: parça ağırlığına göre işletme belirler
+Yetkinlik / eğitim gereksinimi: Bu kılavuzla eğitilmiş, yetkilendirilmiş operatör; elektrik işleri için yetkili elektrikçi
+
+# --- 03.3 Teknik özellikler (machine-spec) ---
+
+[BOYUT_AGIRLIK]
+Dış genişlik W (mm): [EKSİK]
+Dış uzunluk L (mm): [EKSİK]
+Dış yükseklik H — normal (mm): [EKSİK]
+Boş ağırlık — kuru (kg): [EKSİK]
+Çalışma ağırlığı — dolu (kg): [EKSİK]
+Şase tipi (sabit ayak / ayarlanabilir ayak / ankraj): Ayarlanabilir ayak; M20 krom kaplı vidalı, kauçuk tabanlı takoz, M20 paslanmaz kontra somun
+Kabin gövdesi ayak sayısı: 8 (6 kenar ayağı + 2 orta ayak)
+Sevkiyat birimleri: 2 ana birim — kabin ünitesi ve tank ünitesi
+Gövde malzemesi: AISI 304 / 316L paslanmaz çelik; kabin içi AISI 316L
+Sepet nominal çapı (mm): [EKSİK]
+Sepet azami yükü (kg): [EKSİK]
+Azami parça yüksekliği (mm): [EKSİK]
+Kabin kapısı: Pnömatik, dikey hareketli, gözetleme pencereli, yalıtımlı
+
+[KAPASITE_PROSES]
+Proses adım sayısı: 3 işlem fazı (yıkama, durulama, kurutma) + 2 geçiş (süzülme) + rezistans soğutma + sepet konumlama
+Proses adı 1: Yıkama — yıkama tankındaki ısıtılmış sıvının dönen sepetteki parçalara püskürtülmesi
+Proses adı 2: Durulama — durulama tankındaki ısıtılmış sıvının parçalara püskürtülmesi
+Proses adı 3: Kurutma — ısıtılmış havanın kabine üflenmesi, egzoz fanının aralıklı çalışması
+Reçete sayısı: 7
+Döngü süresi nominal (sn): Reçeteye bağlı — hesap yöntemi Bölüm 8.1
+Nominal kapasite (adet/saat veya kg/saat): [EKSİK]
+# Tip plakası: Max. 85 °C
+Azami çalışma sıcaklığı (°C): 85
+
+[ELEKTRIK]
+Besleme gerilimi (V): 380
+Besleme frekansı (Hz): 50
+Faz sayısı: 3
+Besleme konfigürasyonu (3P+N+PE / vb.): 3P+N+PE (L1, L2, L3, N, PE)
+Toplam kurulu güç (kW): 49
+Isıtıcıların toplam gücü (kW): 38 (ürün ağacına göre 4 × 8 kW + kurutma 6 kW); referans şemaya göre 39
+Kumanda gerilimi: 24 V DC (MEAN WELL LRS-350-24); kontaktör bobinleri 220 V AC
+Ana şalter tipi / In (A): Kompakt şalter TM100D, 100 A (70–100 A ayarlı), döner kollu
+Ana şalter marka: Schneider Electric
+Faz koruma rölesi tipi: ENTES MKS-03 faz sırası ve faz kaybı rölesi (380 V AC)
+Kaçak akım rölelerinin dağılımı: F1 25 A 4P (motor devreleri); F2 40 A 4P (yıkama ısıtıcıları); F3 40 A 4P (durulama ısıtıcıları); F4 25 A 4P (kurutma ısıtıcısı)
+Maksimum akım çekişi (A): [EKSİK]
+Güç faktörü (cos φ): [EKSİK]
+Kısa devre akımı / ICC gereksinimi (kA): [EKSİK]
+Besleme kablosu kesiti (mm²): [EKSİK]
+Toplam sigorta / devre kesici değeri (A): [EKSİK]
+UPS / jeneratör gereksinimi (varsa): Yok
+
+[MOTOR_SURUCU_LISTESI]
+# Her satır: Motor | Güç (kW) | Devir (d/dk) | Marka / model | Koruma ve kumanda | Kaynak
+Sepet tahrik motoru: 0,37 | 1425 | ELK ZEL071MAC-PC-A0-000 (Δ230/Y400 V, 1,73/1,00 A, IE2, IP55) + sonsuz vida redüktör | F5 6 A + DELTA VFD004EL21W-1 sürücü; çıkış Q0.0 | Motor etiketi, ŞEMA
+Yıkama pompası motoru: 3,0 | [EKSİK] | [EKSİK] — Bölüm 3.3 pompa tablosu | Q1 GV2ME10 + K1; çıkış Q0.1 | ŞEMA
+Durulama pompası motoru: 3,0 | [EKSİK] | [EKSİK] — Bölüm 3.3 pompa tablosu | Q2 GV2ME10 + K2; çıkış Q0.2 | ŞEMA
+Kurutma fanı motoru: 0,37 | [EKSİK] | Salyangozlu fan ENA 2, hava soğutmalı, silikonlu | Q3 GV2ME06 + K3; çıkış Q0.3 | ÜA (ŞEMA: 0,75 kW)
+Egzoz fanı motoru: 0,37 | [EKSİK] | ERF 2 egzoz fanı | Q4 GV2ME05 + K4; çıkış Q0.4 | ŞEMA
+Yağ sıyırıcı motoru: [EKSİK] | [EKSİK] | Yağ sıyırıcı Tip 2 (disk) tahrik motoru | Motor koruma şalteri (Q5 veya Q6); çıkış Q0.5 | FOTO, PLC
+Drenaj pompası motoru: [EKSİK] | [EKSİK] | Santrifüj pompa, mavi gövdeli motor | Motor koruma şalteri (Q5 veya Q6); çıkış [EKSİK] | FOTO, PLC
+
+[POMPALAR]
+# Her satır: Pompa | Tip ve model | Etiket değerleri | Konum
+Yatay proses pompası: Yatay santrifüj, Atlantis blu elektropomp KAF 300T/304 | 3 HP; 3~ 380–400 V; 50 Hz; 2900 d/dk; 5,2 A; Hmaks 26 m; Qmaks 36 m³/h; giriş × çıkış 2" × 2"; yalıtım sınıfı F; MEI ≥ 0,40; üretim 06/2025 | Kabin altı, pompa sehpası üzerinde
+Dikey proses pompası: Dikey çok kademeli, LEO (model [EKSİK]) | [EKSİK] | Tank ünitesinin arka ucu, torba filtre girişinde
+Drenaj pompası: Santrifüj, mavi gövdeli motor (model [EKSİK]) | [EKSİK] | Tank ünitesinin yanı, drenaj kolektörünün ucunda
+
+[ISITICILAR]
+# Her satır: Isıtıcı | Güç | Eleman | Koruma ve kumanda
+Yıkama tankı ısıtıcıları: 2 × 8000 W (ÜA); referans şemada 2 × 8250 W | 220 V, 50 cm, 2" bağlantılı, dikişsiz AISI 304 borulu daldırma ısıtıcı; klingrit contalı | F10, F11 (16 A 3P) + K5, K6; kaçak akım F2; çıkış Q0.6
+Durulama tankı ısıtıcıları: 2 × 8000 W (ÜA); referans şemada 2 × 8250 W | 220 V, 50 cm, 2" bağlantılı, dikişsiz AISI 304 borulu daldırma ısıtıcı; klingrit contalı | F12, F13 (16 A 3P) + K7, K8; kaçak akım F3; çıkış Q0.7
+Kurutma ısıtıcısı: 6000 W (ŞEMA) | Çatıdaki ısıtıcı kutusunda, kurutma fanı çıkışında | F14 (16 A 3P) + K9; kaçak akım F4; çıkış Q1.0
+
+[SENSORLER]
+# Her satır: No | Sensör | Tip / model | Konum | PLC girişi | Operatör panelindeki gösterim
+S01: Yıkama tankı alt seviye | VEGASWING 51 (SG51) titreşimli çatal seviye şalteri | Yıkama tankı, pompa emiş seviyesi | I1.3 | Yıkama Tank Alt Seviye
+S02: Durulama tankı alt seviye | VEGASWING 51 (SG51) titreşimli çatal seviye şalteri | Durulama tankı, pompa emiş seviyesi | I1.4 | Durulama Tank Alt Seviye
+S03: Yıkama tahliye vanası açık | Silindir sensörü CS1-E (39CMSE020) | Tahliye odası, yıkama vanası silindiri | I1.5 | Yıkama Tahliye Açık
+S04: Yıkama tahliye vanası kapalı | Silindir sensörü CS1-E (39CMSE020) | Tahliye odası, yıkama vanası silindiri | I1.6 | Yıkama Tahliye Kapalı
+S05: Durulama tahliye vanası açık | Silindir sensörü CS1-E (39CMSE020) | Tahliye odası, durulama vanası silindiri | I1.7 | Durulama Tahliye Açık
+S06: Durulama tahliye vanası kapalı | Silindir sensörü CS1-E (39CMSE020) | Tahliye odası, durulama vanası silindiri | I1.8 | Durulama Tahliye Kapalı
+S07: Kapı kapalı sviçi | L5K13MEP123 (1NO+1NC) | Kabin kapısı | I1.9 | Kapak Kapalı
+S08: Sepet konum sensörü | SICK IME18-12NPSZC0S endüktif sensör, M18, algılama mesafesi 12 mm, M12 konnektör | Kabin içi sepet durdurma sensör düzeneği | I1.10 | Redüktör Pozisyon Sw
+S09: El koruma sensörü | OMRON ışık perdesi (model [EKSİK]) | Kapı açıklığının iki yanı | I1.11 | Gösterilmez
+S10: Hava basınç şalteri | DS1A3012, 1–12 bar, 1/4" | Basınçlı hava girişi | I2.0 | Gösterilmez (Error-235)
+S11: Yıkama tankı sıcaklığı | J tipi termokupl ETB30F06-5Ç | Yıkama tankı | CP1W-TS003 LOOP0 | Anlık Sıcaklık (YIKAMA)
+S12: Durulama tankı sıcaklığı | J tipi termokupl ETB30F06-5Ç | Durulama tankı | CP1W-TS003 LOOP1 | Anlık Sıcaklık (DURULAMA)
+S13: Kurutma sıcaklığı | J tipi termokupl (model [EKSİK]) | Kurutma hava hattı | CP1W-TS003 LOOP2 | Anlık Sıcaklık (KURUTMA)
+
+[SIKIŞTIRILMIŞ_HAVA_SU]
+Basınçlı hava girişi (bar): [EKSİK]
+Valf çalışma basıncı aralığı (bar): 1,5–8 (AirTAC 4V2 serisi valf etiketi)
+Hava giriş bağlantısı: 1/2" hızlı bağlantı (erkek jak) — "AIR INLET / HAVA GİRİŞİ" etiketi
+Hava şartlandırıcı: AirTAC GFR300-15 filtre regülatör, 1/2", manometreli
+Hava basınç şalteri ayar değeri (bar): [EKSİK]
+Hava kalitesi: Filtrelenmiş, yoğuşma suyu alınmış, yağsız basınçlı hava
+Hava tüketimi (NL/çevrim): [EKSİK]
+Su girişi basıncı (bar): Sabit su bağlantısı yok — tanklar elle doldurulur
+Su kalitesi / filtre gereksinimi: [EKSİK]
+Drain / atık su hattı çap (mm): [EKSİK]
+Drenaj bağlantıları: Tank drenaj vanaları → drenaj kolektörü → kolektör boşaltma vanası veya drenaj pompası
+Egzoz bağlantısı: Çatıdaki egzoz fanı baca dirseği; dış ortama kanal bağlantısı işletme tarafından yapılır
+
+[ORTAM_KOSULLARI]
+Çalışma sıcaklığı min / max (°C): [EKSİK]
+Depolama sıcaklığı min / max (°C): [EKSİK]
+Göreceli nem min / max (%): [EKSİK]
+Koruma sınıfı (IP): Sepet motoru IP55 (motor etiketi); elektrik panosu [EKSİK]
+Gürültü seviyesi (dB(A)): [EKSİK]
+
+# --- 03.4 Makine kontrolleri (machine-controls) ---
+
+[KONTROLLER]
+Ana kontrol panosu konumu: Kabin kapısının sağında; ön yüzünde kumanda paneli, üstünde kule lambası
+Pano koruma sınıfı (IP): [EKSİK]
+Pano boyutları W×H×D (mm): [EKSİK]
+HMI ekran boyutu (inch): 7
+HMI marka / model: OMRON NB7W-TW01B-V1
+PLC marka / model: OMRON CP2E
+PLC CPU model: [EKSİK]
+I/O modül özeti: CP2E + ek I/O ünitesi; CP1W-TS003 termokupl giriş ünitesi (J tipi, 3 kanal kullanılır)
+Sepet motoru sürücüsü: DELTA VFD004EL21W-1 (0,4 kW, 1~230 V giriş)
+Güvenlik rölesi tipi: OMRON G9SB-2002-A
+Ana şalter konumu: Elektrik panosu kapağı (döner kol)
+Start / Stop düğme konumu: Kumanda paneli, operatör panelinin altında
+Acil stop konumu: Kumanda paneli
+Mod seçici (Manuel / Otomatik / Bakım): Yok — manuel kumanda operatör panelindeki MANUEL KONTROL anahtarıyla açılır
+Jog / inching düğmeleri: Sepet Test (operatör paneli, basılı tutulan buton)
+Kapı butonları: KAPI AÇIK (yeşil) ve KAPI KAPALI (kırmızı); kumanda panelinde iki çift
+Sinyal lambaları listesi: Kule lambası (kırmızı / sarı / yeşil); ışıklı RESET butonu
+Operatör paneli dilleri: Türkçe, İngilizce
+Şifre seviyeleri (operatör / bakım / admin): Kurulum Sayfası yetkili kullanıcı şifresi ister; diğer sayfalar şifresizdir
+
+[KONTROL_FONKSIYONLARI]
+Ana ekran menü yapısı: Açılış Ekranı, Çalışma Sayfası, Ayar Sayfası, Manuel Sayfası, Alarm Sayfası, Kurulum Sayfası
+Alarm ekranı davranışı: Aktif alarmlar Alarm Sayfası'nda ve Çalışma Sayfası'ndaki kırmızı bantta görünür; nedeni giderilince kendiliğinden kalkar; ayrı reset butonu yoktur
+Reçete / program kayıt sayısı: 7 reçete; reçete ismi en fazla 20 karakter
+Trend / log kayıt süresi: Alarm geçmişi Kurulum Sayfası'nda tutulur; kayıt kapasitesi [EKSİK]
+Uzaktan erişim (Evet/Hayır — protokol): Hayır
+Çalışma süresi sayacı: Kurulum Sayfası — "Toplam Çalışma Zamanı" göstergesi
+
+[RECETE_PARAMETRELERI]
+# Her satır: Parametre | Ekran | Birim | Aralık | Not
+P01 Yıkama sıcaklık set değeri: Ayar Sayfası | °C | 0–70 | Reçeteye kaydedilir; Reçete Onay ile makinede geçerli olur
+P02 Yıkama süresi: Ayar Sayfası | Dk | 0–999 | Yalnızca yıkama pompası çalışırken sayılır
+P03 Durulama sıcaklık set değeri: Ayar Sayfası | °C | 0–70 | Reçeteye kaydedilir; Reçete Onay ile geçerli olur
+P04 Durulama süresi: Ayar Sayfası | Dk | 0–999 | Yalnızca durulama pompası çalışırken sayılır
+P05 Kurutma sıcaklık set değeri: Ayar Sayfası | °C | 0–120 | Reçeteye kaydedilir; Reçete Onay ile geçerli olur
+P06 Kurutma süresi: Ayar Sayfası | Dk | 0–999 | Faz başladığı andan sayılır; ardından 60 sn rezistans soğutma
+P07 Reçete ismi: Ayar ve Çalışma Sayfası | karakter | en fazla 20 | Tuş takımıyla yazılır
+P08 Faz seçimi (Aktif / Pasif): Çalışma Sayfası | — | Aktif / Pasif | Yalnızca çevrim dışında değişir; enerji kesintisi ve acil stoptan sonra üç faz Aktif gelir
+P09 Geçiş süresi: Kurulum Sayfası | Sn | 0–999 | Yetkili kullanıcı; reçeteden bağımsız
+P10 Egzoz çalışma süresi: Ayar Sayfası | Dk | 0–99 | 0 ise egzoz çalışmaz; reçeteden bağımsız
+P11 Egzoz bekleme süresi: Ayar Sayfası | Dk | 0–99 | 0 ise egzoz kurutma boyunca sürekli çalışır
+P12 Drenaj süresi: Ayar Sayfası | Sn | 0–999,9 | Alt seviyenin altına inildikten sonraki ek pompa süresi
+P13 Yağ sıyırıcı (Aktif / Pasif): Ayar Sayfası | — | Aktif / Pasif | Çevrimden bağımsız çalışır; enerji kesintisi ve acil stoptan sonra Pasif gelir
+P14 Yağ sıyırıcı çalışma süresi: Ayar Sayfası | Dk | 0–99 | 0 ise sıyırıcı çalışmaz
+P15 Yağ sıyırıcı bekleme süresi: Ayar Sayfası | Dk | 0–99 | 0 ise sıyırıcı sürekli çalışır
+P16 Saat / tarih: Kurulum Sayfası | — | Saat, Dk, Gün, Ay, Yıl | Yetkili kullanıcı; alarm kayıtlarının zamanı
+P17 Panel dili: Açılış Ekranı | — | Türkçe / İngilizce | Bayraklarla seçilir
+
+[KONTROL_SABITLERI]
+# Her satır: Fonksiyon | Değer | Açıklama
+Tank ısıtıcısı devreye girme farkı: 3 °C | Isıtıcı set − 3 °C'de açılır, set değerinde kapanır
+Rezistans soğutma süresi: 60 sn | Kurutma bitince ısıtıcı kapalıyken fanın ek çalışma süresi
+Tahliye vanası konum izleme süresi: 10 sn | Vana bu sürede konumuna gelmezse vana hatası verilir
+Kabin lambası açık kalma süresi: 60 sn | LAMBA butonuyla yanan lamba bu sürenin sonunda söner
+Sepet hızı: Normal / yavaş | Çevrimde normal hız; konumlamada ve Sepet Test'te yavaş hız
+
+# --- 03.5 Makine yerleşimi (machine-layout) ---
+
+[LAYOUT]
+Genel yerleşim planı dosya adı: [EKSİK]
+Operatör tarafı (ön / sol / sağ): Ön — kabin kapısı ve kumanda paneli
+Besleme tarafı (giriş yönü): Ön — kabin kapısından, yükleme arabasıyla
+Boşaltma tarafı (çıkış yönü): Ön — kabin kapısından
+Elektrik panosu: Kabin kapısının sağında (öne bakan dar yüzünde kumanda paneli, kapağı sağ yana açılır)
+Tank ünitesi: Kabinin sol yanında (önden bakışa göre)
+Bakım erişim bölgeleri: Ön (kapı, kumanda paneli, kabin altı pompa ve valf grubu); sağ (elektrik panosu); sol (tank ünitesi, tank kapakları, tahliye odası, yağ sıyırıcı, drenaj pompası, torba filtreler, dikey pompa, valf kutusu); çatı (kurutma fanı, ısıtıcı kutusu, egzoz fanı)
+Minimum etraf boşluğu — ön (mm): [EKSİK]
+Minimum etraf boşluği — arka (mm): [EKSİK]
+Minimum etraf boşluğu — yan (mm): [EKSİK]
+Minimum tavan yüksekliği (mm): [EKSİK]
+Vinç / forklift erişim noktaları: Kabin ünitesi ve tank ünitesi ayrı ayrı alttan forkliftle kaldırılır
+Ağırlık merkezi notu: [EKSİK]
+
+# =============================================================================
+# 04 — TAŞIMA (transport)
+# =============================================================================
+
+[TASIMA]
+Taşıma birimleri: Kabin ünitesi; tank ünitesi; yükleme arabası ve gevşek parçalar
+Taşıma ağırlığı — kabin ünitesi (kg): [EKSİK]
+Taşıma ağırlığı — tank ünitesi (kg): [EKSİK]
+Taşıma ağırlığı — demonte max parça (kg): [EKSİK]
+Ambalaj tipi (kasa / shrink / konteyner): Streç film ile sarılı, açık kasa kamyonla sevk
+Kaldırma aparatı / travers referans çizimi: [EKSİK]
+Forklift çatal girişi var mı (Evet/Hayır): Evet — birimler alttan forkliftle kaldırılır
+Taşıma sırasında sabitleme / bağlama: Birimler kamyon kasasına spanzetle bağlanır
+Nem koruma / korozyon koruma: Streç film
+Taşıma sıcaklığı aralığı (°C): [EKSİK]
+Taşıma yüksekliği max (m — deniz / kara): [EKSİK]
+
+[DEPOLAMA]
+Depolama pozisyonu (dikey / yatay): Çalışma pozisyonunda (ayaklar üzerinde, dik)
+Max depolama süresi (ay): [EKSİK]
+Depolama ortam koşulları: Kapalı, kuru, donma olmayan alan; tanklar ve hatlar tamamen boşaltılmış
+
+# =============================================================================
+# 05 — MONTAJ (assembly)
+# =============================================================================
+
+[MONTAJ_GENEL]
+Montajı yapan: Üretici (Dolfin) servis ekibi veya üretici gözetiminde işletme ekibi
+Montaj süresi tahmini (saat / gün): [EKSİK]
+Montaj ekip sayısı: [EKSİK]
+Gerekli vinç / ekipman: Kaldırma kapasitesi birim ağırlığından büyük forklift, su terazisi, ayak ayarı için anahtar takımı
+Montaj alanı min boyut (m × m): [EKSİK]
+Zemin düzgünlük toleransı (mm/m): [EKSİK]
+Zemin mukavemet gereksinimi: Makine, dolu tanklar ve yük ağırlığını taşıyan, su geçirmez, kaymaz beton zemin; değer [EKSİK]
+
+[MONTAJ_ADIMLARI]
+# Her satır: Adım | Açıklama
+Adım 1: Kabin ünitesini kurulum yerine konumlandırın ve terazileyin
+Adım 2: Tank ünitesini kabinin sol yanına konumlandırın, terazileyin ve kabin ünitesine hizalayın
+Adım 3: Tank ünitesi ile kabin arasındaki boru, tahliye ve kablo bağlantılarını yapın
+Adım 4: Sevkiyat için sökülen çatı ekipmanlarını ve aksesuarları takın
+Adım 5: Elektrik, basınçlı hava, drenaj ve egzoz bağlantılarını yapın
+Adım 6: Güvenlik ve kurulum testlerini yapın (Bölüm 5.4 ve 5.5)
+
+[KONUMLANDIRMA]
+Hizalama toleransı (mm): [EKSİK]
+Seviye ayar mekanizması (ayak tipi): M20 vidalı, kauçuk tabanlı ayarlanabilir ayak; M20 kontra somun
+
+[KURULUM_TEST]
+Mekanik kurulum test checklist: Bölüm 5.5
+Elektrik devreye alma test checklist: Bölüm 5.5
+Pnömatik / hidrolik dolum test: Bölüm 5.5 (pnömatik); hidrolik sistem yoktur
+Boş koşu test süresi (dk): [EKSİK]
+Güvenlik fonksiyon test listesi: Bölüm 5.4
+
+[ILETISIM]
+Fieldbus / protokol (Profinet / EtherCAT / Modbus / vb.): PLC ile operatör paneli arasında seri/Ethernet bağlantı (tip [EKSİK]); operatör paneli ile sepet motoru sürücüsü arasında haberleşme kablosu
+Üst sistem (MES / SCADA) bağlantısı: Yok
+I/O listesi dosya referansı: Bölüm 13.2
+
+# =============================================================================
+# 06 — AYARLAR (settings)
+# =============================================================================
+
+[MEKANIK_AYARLAR]
+Mekanik ayar noktaları listesi: Ayak yüksekliği; sepet konum sensörü mesafesi; kapı hızı (hız ayarlı dirsekler); kapı silindiri yastık ayarı; kapı kapalı sviçi konumu
+Referans / home pozisyon ayarı: Sepet başlangıç konumu = sepet konum sensörünün algıladığı konum
+Zincir / kayış gerginlik değeri: Yok (tahrik pinyon–kremayer ile)
+Mesafe / limit switch ayarları: Sepet konum sensörü algılama mesafesi 12 mm (nominal)
+Format değişim prosedürü özeti: Reçete seçimi ve Reçete Onay (Bölüm 6.5)
+
+[GUVENLIK_AYARLARI]
+Emniyet kapısı bypass (varsa — sadece bakım): Yok; güvenlik elemanları köprülenmez
+Işık perdesi ayar mesafesi (mm): [EKSİK]
+Acil stop test periyodu: Haftalık (Bölüm 9.1.3)
+
+[ELEKTRIK_AYARLARI]
+Motor yönü / faz kontrolü: ENTES MKS-03 faz sırası rölesi; ters fazda Error-410
+Encoder / feedback ayarı: Yok
+Analog ölçeklendirme (basınç / sıcaklık): J tipi termokupl, CP1W-TS003 (fabrika ayarı)
+Tarih / saat / dil ayarı: Operatör paneli — Kurulum Sayfası ve Açılış Ekranı
+Motor koruma şalteri ayarı: Motor etiketindeki nominal akım (Bölüm 6.3)
+
+[PNEOMATIK_AYARLAR]
+Regülatör basınç ayarı (bar): [EKSİK]
+Silindir hız ayarı: Kapı silindirleri — hız ayarlı dirsekler (2 adet)
+Sensör ON/OFF gecikmeleri (ms): Yok; tahliye vanası konum izleme süresi 10 sn
+
+# =============================================================================
+# 07 — OPERASYON (operation)
+# =============================================================================
+
+[CALISMA_MODLARI]
+Manuel mod açıklaması: Manuel Sayfası'nda MANUEL KONTROL anahtarı açıkken kurutma fanı, egzoz fanı ve tahliye vanaları elle kumanda edilir
+Otomatik mod açıklaması: START ile başlayan otomatik çevrim: Yıkama → Geçiş 1 → Durulama → Geçiş 2 → Kurutma → Rezistans soğutma → Sepet konumlama
+Bakım / setup modu: Sepet Test (sepeti yavaş döndürme), Drenaj, Manuel kumanda
+Step / tek adım modu: Yok
+Mod geçiş koşulları: Manuel kumanda, Sepet Test ve Drenaj yalnızca makine çevrimde değilken çalışır
+
+[BASLATMA]
+Devreye alma ön koşulları (checklist): Bölüm 7.2
+Güç açma sırası: Basınçlı hava → tank seviyeleri → ana şalter → acil stop kontrolü → RESET → operatör paneli
+Hava / su / vakum açma: Basınçlı hava çevrimden önce açılmalıdır; su bağlantısı yoktur; vakum yoktur
+Isıtma ön ısınma süresi (dk): [EKSİK]
+Start öncesi kontrol listesi: Bölüm 7.2
+İlk ürün / kurşun atma prosedürü: İlk çevrimde örnek parçayla yıkama ve kuruma sonucunu kontrol edin
+
+[KAPATMA]
+Normal stop prosedürü: STOP butonu — kontrollü duruş (Bölüm 7.3)
+Acil stop sonrası yeniden başlatma: Bölüm 2.5
+Güç kapatma sırası: Son çevrim bitişi → Hazırlık kapat → Yağ sıyırıcı Pasif → ana şalter → basınçlı hava
+Uzun süreli durdurma (hafta sonu) prosedürü: Bölüm 7.3
+
+[OPERASYON_SEKANS]
+Otomatik cycle adım 1: Yıkama — tahliye vanaları yıkama konumuna, yıkama pompası çalışır
+Otomatik cycle adım 2: Geçiş 1 — pompa durur, sepet döner, Geçiş Süresi kadar süzülme
+Otomatik cycle adım 3: Durulama — tahliye vanaları durulama konumuna, durulama pompası çalışır
+Otomatik cycle adım 4: Geçiş 2 — pompa durur, süzülme
+Otomatik cycle adım 5: Kurutma — kurutma fanı ve ısıtıcısı, egzoz aralıklı; ardından 60 sn rezistans soğutma ve sepet konumlama
+Cycle süresi nominal (sn): Reçeteye bağlı (Bölüm 8.1)
+Ürün giriş senaryosu: Yükleme arabasıyla kabin kapısından
+Ürün çıkış senaryosu: Kabin kapısından, yükleme arabasıyla
+Hata durumunda makine davranışı: Acil stopta anında durur; motor, kaçak akım, faz ve sürücü arızalarında çevrimi kendiliğinden durdurmaz (Bölüm 11)
+
+[KRONOLOJI]
+Günlük operasyon zaman çizelgesi: Bölüm 7.5
+Vardiya devir teslim maddeleri: Bölüm 7.5
+Shift başlangıç kontrol listesi: Bölüm 7.5
+
+[OPERASYON_DIGER]
+Format / ürün değişim süresi (dk): Reçete değişimi; mekanik format değişimi yoktur
+Fire / hurda yönetimi: Kabin ve filtrelerden toplanan talaş ve düşen parçalar işletmenin atık talimatına göre ayrılır
+Operatör müdahale noktaları: Kumanda paneli, operatör paneli, kabin kapısı, yükleme arabası, ön filtre sepetleri, tank kapakları
+
+# =============================================================================
+# 08 — KAPASİTE (capacity)
+# =============================================================================
+
+[URUN_KAPASITE]
+Nominal kapasite tablosu (ürün × adet/saat): [EKSİK]
+Test edilen kapasite (adet/saat): [EKSİK]
+Kapasite test koşulları: [EKSİK]
+Maksimum sürekli çalışma süresi (saat/gün): [EKSİK]
+
+[OZEL_KURULUM]
+Ürün A parametreleri: [EKSİK]
+Ürün B parametreleri: [EKSİK]
+Ürün C parametreleri: [EKSİK]
+Reçete no listesi: Operatör paneli ekran görüntülerinde (21.10.2026) seçili reçete "STANDART"; diğer reçeteler işletme tarafından tanımlanır
+STANDART reçete — yıkama: 60 °C / 15 Dk
+STANDART reçete — durulama: 50 °C / 10 Dk
+STANDART reçete — kurutma: 80 °C / 20 Dk
+Ekran görüntüsündeki reçeteden bağımsız ayarlar: Geçiş süresi 30 Sn; egzoz çalışma / bekleme 5 / 2 Dk; drenaj süresi 30,0 Sn; yağ sıyırıcı çalışma / bekleme 10 / 20 Dk
+
+# =============================================================================
+# 09 — BAKIM (maintenance)
+# =============================================================================
+
+[BAKIM_GENEL]
+Bakım felsefesi (önleyici / kestirimci): Önleyici bakım — periyodik plan Bölüm 9.1.3
+Bakım personeli yeterlilik seviyesi: Mekanik işler için eğitimli bakım teknisyeni; elektrik işleri için yetkili elektrikçi
+Lubrication chart dosya referansı: Bölüm 9.1.4
+
+[BAKIM_PERIYOT]
+Günlük bakım maddeleri: Bölüm 9.1.3 — günlük
+Haftalık bakım maddeleri: Bölüm 9.1.3 — haftalık
+Aylık bakım maddeleri: Bölüm 9.1.3 — aylık
+250 saat bakım maddeleri: Bölüm 9.1.3 — 3 aylık
+500 saat bakım maddeleri: Bölüm 9.1.3 — 6 aylık
+1000 saat bakım maddeleri: Bölüm 9.1.3 — yıllık
+Yıllık bakım maddeleri: Bölüm 9.1.3 — yıllık
+
+[BAKIM_YAGLAMA]
+Yağlama noktası listesi (konum / yağ tipi / periyot): Gresörlük yoktur; rulmanlar ZZ tipi (kapalı, ömür boyu yağlı)
+Gres tipi: Yok
+Redüktör yağ değişim: Redüktör üreticisinin etiketine göre — yağ tipi ve periyot [EKSİK]
+
+[BAKIM_YEDEK_PARCA]
+Kritik yedek parça listesi: Bölüm 9.1.5
+Önerilen stok miktarları: Bölüm 13.3
+Yedek parça sipariş kodu referansı: CNK stok kodu (ürün ağacı) veya üretici tip kodu
+
+[BAKIM_YEDEK_PARCA_NOT]
+# Bölüm 9.1.5 yalnızca Kritik + Tüketim özetini gösterir. Tam liste SSOT: [PARCA_LISTESI] → Bölüm 13.3
+
+# =============================================================================
+# 10 — TEMİZLİK (cleaning)
+# =============================================================================
+
+[TEMIZLIK]
+Temizlik tipi (kuru / ıslak / CIP / COP): Islak temizlik — elle; makine içi yıkama sıvısıyla
+Günlük temizlik prosedürü: Bölüm 10.1
+Haftalık derin temizlik: Bölüm 10.1
+Kullanılan temizlik maddeleri (onaylı liste): Su; yıkama kimyasalı tedarikçisinin önerdiği nötr veya hafif alkali temizleyiciler
+Yasak temizlik maddeleri: Solvent, yanıcı sıvılar, klor içeren ve aşındırıcı temizleyiciler, çelik yün ve tel fırça (paslanmaz yüzeylerde)
+Dezenfeksiyon prosedürü: Gerekmez
+Temizlik sonrası kurutma: Dış yüzeyler kuru bezle silinir
+Atık su / kimyasal bertaraf: Kullanılmış yıkama sıvısı, yağ ve çamur yerel çevre mevzuatına göre lisanslı atık firmasına verilir
+
+# =============================================================================
+# 11 — ARIZA GİDERME (troubleshooting)
+# =============================================================================
+
+[ALARM_LISTESI]
+# Her satır: Kod | Ekranda yazan | Grup | Makineye etkisi
+Error-229: Acil Stop Devrede | Güvenlik | Makine anında durur; çevrim iptal edilir
+Error-410: Faz Sırası Hatalı | Güvenlik | Uyarı; çevrim kendiliğinden durmaz
+Error-126: Redüktör Motor Hata | Motor | Sepet dönmez; çevrim kendiliğinden durmaz
+Error-100: Yıkama Pompası Motoru Hata | Motor | Yıkama pompası çalışmaz
+Error-101: Durulama Pompası Motoru Hata | Motor | Durulama pompası çalışmaz
+Error-111: Kurutma Fan Motoru Hata | Motor | Kurutma fanı ve kurutma ısıtıcısı çalışmaz
+Error-110: Egzoz Fan Motoru Hata | Motor | Egzoz fanı çalışmaz
+Error-130: Yağ Sıyırıcı Motor Hata | Motor | Yağ sıyırıcı çalışmaz
+Error-106: Drenaj Pompası Motoru Hata | Motor | Drenaj pompası çalışmaz
+Error-170: Isıtıcı Kaçak Akım F2 | Isıtıcı | Yıkama ısıtıcıları çalışmaz
+Error-171: Isıtıcı Kaçak Akım F3 | Isıtıcı | Durulama ısıtıcıları çalışmaz
+Error-172: Isıtıcı Kaçak Akım F4 | Isıtıcı | Kurutma ısıtıcısı çalışmaz
+Error-200: Yıkama Tankı Su Seviyesi Pompa Seviyesinin Altında | Seviye | Yıkama pompası ve ısıtıcısı durur
+Error-202: Durulama Tankı Su Seviyesi Pompa Seviyesinin Altında | Seviye | Durulama pompası ve ısıtıcısı durur
+Error-322: Yıkama Tahliye Vanası Açılamadı | Vana | Yıkama pompası çalışmaz
+Error-323: Yıkama Tahliye Vanası Kapanamadı | Vana | Durulama pompası çalışmaz
+Error-325: Durulama Tahliye Vanası Kapanamadı | Vana | Durulama vanası açılamadı; durulama pompası çalışmaz
+Error-326: Hücre Tahliye Vanası Açılamadı | Vana | Durulama vanası kapanamadı; yıkama pompası çalışmaz
+Error-422: Kapak Kapalı Değil | Kapı | Çevrim başlamaz
+Error-235: Giriş Hava Basıncı Düşük | Hava | Tahliye vanaları konum değiştiremez
+Error-150: Yıkama Tank Sıcaklığı Düşük | Sıcaklık | Çevrim başlamaz
+Error-151: Durulama Tank Sıcaklığı Düşük | Sıcaklık | Çevrim başlamaz
+
+[ARIZA_GENEL]
+Alarm kod listesi dosya referansı: [ALARM_LISTESI] — Bölüm 11.3 ve Ek A
+HMI alarm metinleri dili: Türkçe / İngilizce (panel diline göre)
+Servis çağrısı kriterleri: Bölüm 11.1
+
+[ELEKTRIK_ARIZA]
+Faz kaybı davranışı: Faz koruma rölesi uyarır, Error-410; çevrim kendiliğinden durmaz
+Motor koruma trip: İlgili Error kodu (100, 101, 106, 110, 111, 130); çevrim kendiliğinden durmaz
+Inverter alarm kodları özeti: Sürücü ekranındaki kod; DELTA VFD-EL kılavuzu; panelde Error-126
+Sensör kablo renk kodu: [EKSİK]
+
+[HIDROLIK_ARIZA]
+Basınç düşük alarm: Hidrolik sistem yoktur
+Yağ kaçağı noktaları: Sepet redüktörü
+Pompa sesi anormal: Bölüm 11.2
+
+[PNEOMATIK_ARIZA]
+Basınç düşük: Error-235
+Silindir yavaş / takılma: Bölüm 11.4
+Valf bobini arıza: Error-322, 323, 325, 326 veya kapı hareket etmez — Bölüm 11.4
+
+[SENSOR_ARIZA]
+Kritik sensör listesi (tip / konum): [SENSORLER] — Bölüm 3.3
+Sensör LED / durum göstergesi: Manuel Sayfası — GİRİŞ GÖZLEM lambaları
+
+# =============================================================================
+# 12 — DEMONTAJ (dismantle)
+# =============================================================================
+
+[DEMONTAJ]
+Demontaj ön koşulları: Tanklar, hatlar ve filtreler boşaltılmış; makine soğumuş; LOTO uygulanmış
+Enerji izolasyon prosedürü (LOTO): Bölüm 2.4
+Demontaj sırası: Bölüm 12.1
+Geri dönüşüm / bertaraf talimatı: Bölüm 12.3
+Tehlikeli madde (yağ / akü / kimyasal): Yıkama sıvısı, ayrılmış yağ, tank çamuru, redüktör yağı, elektronik kartlar
+Çevresel bertaraf gereksinimleri: Yerel çevre ve atık mevzuatı
+
+[DEVRE_DISI]
+Kalıcı devre dışı bırakma: Bölüm 12.2
+Geçici devre dışı bırakma: Bölüm 12.2
+
+[HURDA]
+Hurda değerlendirme: Bölüm 12.3
+Parça geri dönüşüm malzemeleri: Paslanmaz çelik (AISI 304, 316L, 420), alüminyum (redüktör flanşı), pirinç (vana ve bağlantılar), POM (delrin), PE-UHMW, HDPE, XPS yalıtım köpüğü, NBR / EPDM / PVC contalar, bakır kablolar, elektrik ve elektronik ekipman
+
+# =============================================================================
+# 13 — DÖKÜMANLAR (documents)
+# =============================================================================
+
+[DOKUMANLAR]
+Elektrik şeması dosya adı / rev: Referans: 0326053-AKDENİZ-KBN 2B 1650 ELEKTRİK DİYAGRAMI.pdf (20.04.2026, 15 sayfa); seri no 0326067'ye özel şema [EKSİK]
+Pnömatik şema dosya adı / rev: [EKSİK]
+Hidrolik şema dosya adı / rev: Yok
+Layout çizimi dosya adı / rev: [EKSİK]
+Parça listesi (BOM) dosya adı / rev: KBN 2B 1500 P DS OTO.xlsm (CNK_2026, 23.10.2026)
+I/O listesi dosya adı / rev: Bölüm 13.2 (referans şemadan)
+PLC program yedek dosya adı: [EKSİK]
+HMI proje yedek dosya adı: [EKSİK]
+PLC/HMI kullanım bilgileri: KKOut — KBN 2B Parça Yıkama Makinesi (Mitaş), kontrol sistemi ve operatör paneli kullanımı
+CE dosyası referansı: [EKSİK]
+AB / AT uygunluk beyanı: [EKSİK]
+Kalibrasyon sertifikaları: [EKSİK]
+P&ID dosya adı / rev: [EKSİK]
+
+[CIZIMLER]
+Genel montaj çizimi: [EKSİK]
+Kaldırma noktaları çizimi: [EKSİK]
+Zemin ankraj çizimi: Ankraj yoktur; makine ayarlanabilir ayaklar üzerinde durur
+Müşteriye teslim çizim paketi: Referans elektrik şeması; diğerleri [EKSİK]
+
+[PANO_EKIPMANLARI]
+# Her satır: Etiket | Ekipman | Marka / model | Değer | Görev
+(Ana şalter): Kompakt şalter, döner kollu | Schneider TM100D | 70–100 A | Makine ana beslemesi
+MKS-03: Faz koruma rölesi | ENTES MKS-03 | 380 V AC | Faz sırası ve faz kaybı izleme (I0.1)
+F1: Kaçak akım rölesi | Schneider A9R41425 | 25 A, 4P | Motor devreleri
+F2: Kaçak akım rölesi | F9R41440 | 40 A, 4P | Yıkama ısıtıcıları (I1.0, Error-170)
+F3: Kaçak akım rölesi | F9R41440 | 40 A, 4P | Durulama ısıtıcıları (I1.1, Error-171)
+F4: Kaçak akım rölesi | F9R41425 | 25 A, 4P | Kurutma ısıtıcısı (I1.2, Error-172)
+F5: Otomatik sigorta | Schneider A9F74106 | 6 A, 1P | Sepet motoru sürücüsü beslemesi
+F6: Otomatik sigorta | Schneider A9F74103 | 3 A, 1P | Yardımcı devre
+F7: Otomatik sigorta | Schneider A9F74106 | 6 A, 1P | 24 V DC güç kaynağı beslemesi
+F8: Otomatik sigorta | Schneider A9F74106 | 6 A, 1P | Kontaktör bobin devresi
+F9: Otomatik sigorta | Schneider A9F74110 | 10 A, 1P | Yardımcı devre
+F10, F11: Otomatik sigorta | Schneider A9K24316 | 16 A, 3P | Yıkama ısıtıcıları 1 ve 2
+F12, F13: Otomatik sigorta | Schneider A9K24316 | 16 A, 3P | Durulama ısıtıcıları 1 ve 2
+F14: Otomatik sigorta | Schneider A9K24316 | 16 A, 3P | Kurutma ısıtıcısı
+Q1, Q2: Motor koruma şalteri | Schneider GV2ME10 | 4–6,3 A | Yıkama ve durulama pompaları
+Q3: Motor koruma şalteri | Schneider GV2ME06 | 1–1,6 A | Kurutma fanı
+Q4: Motor koruma şalteri | Schneider GV2ME05 | 0,63–1 A | Egzoz fanı
+Q5, Q6: Motor koruma şalteri | [EKSİK] | [EKSİK] | Yağ sıyırıcı ve drenaj pompası (panoda mevcut, referans şemada yok)
+K1, K2: Kontaktör | Schneider LC1K0910M7 | 9 A, bobin 220 V AC | Yıkama ve durulama pompaları
+K3, K4: Kontaktör | Schneider LC1K0610M7 | 6 A, bobin 220 V AC | Kurutma fanı ve egzoz fanı
+K5–K9: Kontaktör | Schneider LC1K1610M7 | 16 A, bobin 220 V AC | Isıtıcılar (K5, K6 yıkama; K7, K8 durulama; K9 kurutma)
+R1–R20: Ara röle | [EKSİK] | Bobin 24 V DC | PLC çıkışlarının yük devrelerine aktarılması
+PS: Güç kaynağı | MEAN WELL LRS-350-24 | 24 V DC, 350 W | Kumanda devresi beslemesi
+PLC: Programlanabilir denetleyici | OMRON CP2E + ek I/O ünitesi | 24 V DC | Makine kumandası
+TS003: Termokupl giriş ünitesi | OMRON CP1W-TS003 | J tipi, 4 giriş | Tank ve kurutma sıcaklıkları
+HMI: Operatör paneli | OMRON NB7W-TW01B-V1 | 7 inç | Reçete, izleme, alarm
+VFD: Frekans invertörü | DELTA VFD004EL21W-1 | 0,4 kW, 1~230 V | Sepet motoru hız kontrolü (I0.6 hata)
+G9SB: Güvenlik rölesi | OMRON G9SB-2002-A | 24 V DC | Acil stop devresi, manuel reset (I0.0)
+
+[PLC_GIRISLER]
+# Her satır: Adres | Sinyal | Kaynak | Manuel Sayfası (Giriş Gözlem)
+I0.0: Acil stop bilgisi | Güvenlik rölesi G9SB-2002-A | Acil Stop
+I0.1: Faz sırası rölesi faz bilgisi | ENTES MKS-03 | Faz Sıra Bilgisi
+I0.2: START butonu | Kumanda paneli | Start Buton
+I0.3: STOP butonu | Kumanda paneli | Stop Buton
+I0.4: Kapak aç butonu | Kumanda paneli — KAPI AÇIK | Gösterilmez
+I0.5: Kapak kapat butonu | Kumanda paneli — KAPI KAPALI | Gösterilmez
+I0.6: Redüktör motoru hata | DELTA sürücü hata rölesi (RA–RC) | Redüktör Motor Hata
+I0.7: Yıkama pompası termik | Q1 yardımcı kontağı | Yıkama Pompa Termik
+I0.8: Durulama pompası termik | Q2 yardımcı kontağı | Durulama Pompa Termik
+I0.9: Kurutma fanı termik | Q3 yardımcı kontağı | Kurutma Fan Termik
+I0.10: Egzoz motoru termik | Q4 yardımcı kontağı | Egzoz Termik
+I0.11: Referans şemada etiketsiz | — | Sıyırıcı Termik (Mitaş — adres doğrulanmalı)
+I1.0: Kaçak akım F2 attı bilgisi | F2 yardımcı kontağı | Isıtıcı Kaçak Akım F2
+I1.1: Kaçak akım F3 attı bilgisi | F3 yardımcı kontağı | Isıtıcı Kaçak Akım F3
+I1.2: Kaçak akım F4 attı bilgisi | F4 yardımcı kontağı | Isıtıcı Kaçak Akım F4
+I1.3: Yıkama tankı alt seviye | VEGASWING 51 | Yıkama Tank Alt Seviye
+I1.4: Durulama tankı alt seviye | VEGASWING 51 | Durulama Tank Alt Seviye
+I1.5: Yıkama tahliye pistonu açık | CS1-E silindir sensörü | Yıkama Tahliye Açık
+I1.6: Yıkama tahliye pistonu kapalı | CS1-E silindir sensörü | Yıkama Tahliye Kapalı
+I1.7: Durulama tahliye pistonu açık | CS1-E silindir sensörü | Durulama Tahliye Açık
+I1.8: Durulama tahliye pistonu kapalı | CS1-E silindir sensörü | Durulama Tahliye Kapalı
+I1.9: Kapak kapandı sviçi | L5K13MEP123 | Kapak Kapalı
+I1.10: Pozisyon sviçi (sepet) | SICK IME18-12NPSZC0S | Redüktör Pozisyon Sw
+I1.11: El koruma sensörü | Işık perdesi | Gösterilmez
+I2.0: Hava bilgisi | Basınç şalteri DS1A3012 | Gösterilmez (Error-235)
+I2.1: Referans şemada yedek | — | Drenaj Pompa Termik (Mitaş — adres doğrulanmalı)
+
+[PLC_CIKISLAR]
+# Her satır: Adres | Sinyal | Ara röle | Kumanda edilen eleman
+Q0.0: Redüktör motoru çalıştır | R1 | DELTA sürücü çalıştırma girişi
+Q0.1: Yıkama pompası | R2 | K1
+Q0.2: Durulama pompası | R3 | K2
+Q0.3: Kurutma fanı | R4 | K3
+Q0.4: Aspiratör motoru (egzoz) | R5 | K4
+Q0.5: Sıyırıcı motoru | R6 | Yağ sıyırıcı kontaktörü
+Q0.6: Yıkama rezistansları | R7 | K5, K6
+Q0.7: Durulama rezistansları | R8 | K7, K8
+Q1.0: Kurutma rezistansı | R9 | K9
+Q1.1: Yıkama tahliye pistonu valf aç | R10 | Yıkama tahliye valfi — açma bobini
+Q1.2: Yıkama tahliye pistonu valf kapat | R11 | Yıkama tahliye valfi — kapatma bobini
+Q1.3: Durulama tahliye pistonu valf aç | R12 | Durulama tahliye valfi — açma bobini
+Q1.4: Durulama tahliye pistonu valf kapat | R13 | Durulama tahliye valfi — kapatma bobini
+Q1.5: Kırmızı lamba | R14 | Kule lambası — kırmızı
+Q1.6: Yeşil lamba | R15 | Kule lambası — yeşil
+Q1.7: Sarı lamba | R16 | Kule lambası — sarı
+Q2.0: Kapak aç valfi | R17 | Kapı valfi — açma bobini
+Q2.1: Kapak kapat valfi | R18 | Kapı valfi — kapatma bobini
+Q2.2: Yedek (referans şema) | R19 | —
+Q2.3: Yedek (referans şema) | R20 | —
+
+[PARCA_LISTESI_BILGI]
+Parça listesi (BOM) konumu: KBN 2B 1500 P DS OTO.xlsm
+Mekanik parça listesi referansı: Ürün ağacı (CNK stok kodları)
+Elektrik parça listesi referansı: Referans elektrik şeması ve pano fotoğrafları (üretici tip kodları)
+Wear part / aşınan parça listesi: Kategori "Tüketim" satırları
+
+[PARCA_LISTESI]
+# Her satır: Sipariş kodu | Parça adı | Kategori | Önerilen stok | Konum / fonksiyon | Gerekçe
+# Kategori: Kritik | Önerilen | Tüketim — ön değerler; kullanıcı düzeltebilir
+# Önerilen stok: üretici ön önerisi; işletme kullanımına göre güncellenir
+# --- Sepet ve tahrik ---
+07 00267: Yataklama tekeri komplesi Tip 4 (Ø100 POM teker, burç, 2 × 6006 ZZ rulman, 4 keçe, kapak) | Kritik | 3 adet | Sepeti taşıyan alt yataklama tekeri; makinede 3 adet | Aşınır; arızasında sepet sarsıntılı döner veya durur
+07 01218: Yataklama tekeri delrini Tip 4 (Ø100 beyaz POM) | Tüketim | 3 adet | Tip 4 teker komplesinin teker gövdesi | Yüzey aşınmasında yalnız teker değişir
+07 00264: Yataklama tekeri komplesi Tip 1 (Ø65 POM teker, burç) | Önerilen | 2 adet | Sepet yataklama tekeri (küçük tip); makinede 2 adet | Aşınır
+07 01248: Sepet teker delrini KBN orta destek (Ø40 POM) | Önerilen | 1 adet | Sepet orta destek tekeri; makinede 1 adet | Aşınır
+07 04397: KBN sepet göbeği komplesi (POM göbek, 2 × 6206 ZZ rulman, keçe, mil) | Kritik | 1 adet | Sepet merkez yatağı; makinede 1 adet | Arızasında sepet merkezden kaçar, pinyon kavraması bozulur
+07 00312: PYM 2 sepet göbeği delrini (Ø120 POM) | Önerilen | 1 adet | Sepet göbeği yatak burcu | Aşınır
+07 04011: KBN mil destek delrini (Ø100 siyah POM) | Önerilen | 1 adet | Pinyon mili destek yatağı | Aşınır
+10 03969: Dişli 6 modül 14 diş AISI 304 (tahrik pinyonu) | Kritik | 1 adet | Sepet kremayerini döndüren pinyon | Kırılırsa sepet dönmez; temin süresi uzundur
+07 03027: Redüktör dişli mili Tip 3 (Ø30 AISI 304) | Önerilen | 1 adet | Redüktörden pinyona tahrik mili | Kama yuvası ve yatak yüzeyi aşınır
+10 01020: Rulman 6006 ZZ | Tüketim | 4 adet | Tip 4 tekerler (6 adet) ve tahrik mili (1 adet) | Teker bakımında değişir
+10 01026: Rulman 6206 ZZ | Tüketim | 2 adet | Sepet göbeği (2 adet) | Göbek bakımında değişir
+10 00526: Yağ keçesi 42×30×7 (40789V) | Tüketim | 8 adet | Tip 4 tekerler (12 adet) ve tahrik mili (2 adet) | Rulmanı yıkama sıvısından korur
+10 00527: Yağ keçesi 35×62×10 (45831 V SKT) | Tüketim | 2 adet | Sepet göbeği (1 adet) | Göbek bakımında yenilenir
+10 00649: O-ring 2,00×58,00 | Tüketim | 3 adet | Tip 4 teker kapağı (3 adet) | Teker bakımında yenilenir
+10 00656: O-ring 3,00×60,00 | Tüketim | 2 adet | Sepet göbeği (1 adet) | Göbek bakımında yenilenir
+ZEL071MAC-PC-A0-000: Sepet tahrik motoru ELK, 0,37 kW, 1425 d/dk, Δ230/Y400 V, IE2, IP55 | Kritik | 1 adet | Redüktörlü sepet tahrik grubu | Arızasında sepet dönmez
+[EKSİK]-01: Sepet redüktörü, sonsuz vida dişli (model ve oran [EKSİK]) | Kritik | 1 adet | Sepet tahrik grubu | Arızasında sepet dönmez
+# --- Kapı sistemi ---
+10 03401: Pnömatik silindir Ø50×1200, manyetik, yastıklı | Kritik | 1 adet | Kapı kaldırma silindiri; makinede 2 adet | Arızasında kapı açılmaz veya kapanmaz
+10 01604: Küresel mafsal M16×1,5 | Önerilen | 2 adet | Kapı silindiri mil ucu; makinede 2 adet | Boşluk kapıda vuruntu yapar
+10 04813: Pnömatik valf 4V230E-08, 1/4", 5/3, çift bobin 24 V DC | Kritik | 1 adet | Kapı aç/kapat valfi | Arızasında kapı hareket etmez
+10 04515: Pilotlu kilit (pilot kumandalı çek valf) 1/4" 25PCV08G | Kritik | 2 adet | Kapı silindiri hattı; makinede 2 adet | Hava kesildiğinde kapıyı tutar — güvenlik
+10 02932: Pilotlu kilit 1/4" – Ø8 | Kritik | 2 adet | Kapı silindiri hattı; makinede 2 adet | Hava kesildiğinde kapıyı tutar — güvenlik
+10 03386: Hız ayarlı dirsek 1/4" – Ø8 | Önerilen | 2 adet | Kapı hızı ayarı; makinede 2 adet | Ayar kaybı, sızıntı
+10 04499: Kapı kızağı PE-UHMW 35×40 | Tüketim | 2,5 m | Kapı kayar kızağı; makinede 2,5 m | Aşınır
+10 13568: Fitil, sac geçme, 15 mm PVC/EPDM-TPE (TUL0010-K) | Tüketim | 2 m | Kapı kenar fitili; makinede 2 m | Yaşlanır, yırtılır
+10 03262: Sviç L5K13MEP123 (1NO+1NC) | Kritik | 1 adet | Kapı kapalı sviçi (I1.9) | Arızasında çevrim başlamaz (Error-422)
+[EKSİK]-02: Işık perdesi OMRON, verici + alıcı (model [EKSİK]) | Önerilen | 1 takım | Kapı açıklığı el koruma sensörü (I1.11) | Güvenlik fonksiyonu
+# --- Tahliye odası ---
+10 15432: Pnömatik silindir Ø80×100-S, manyetik, yastıklı | Önerilen | 1 adet | Tahliye vanası silindiri; makinede 2 adet | Arızasında vana konum alamaz
+10 15429: Piston lastiği, büyük çaplı | Tüketim | 2 adet | Tahliye vanası sızdırmazlık lastiği; makinede 2 adet | Aşınırsa sıvı yanlış tanka geçer
+07 14060: Su tahliye odası contası, büyük çaplı (NBR 3 mm) | Tüketim | 2 adet | Tahliye odası kapak contası; makinede 2 adet | Kapak sökümünde yenilenir
+10 05243: Silindir sensörü 39CMSE020 (CS1-E) | Kritik | 2 adet | Tahliye vanası konum sensörü (I1.5–I1.8); makinede 4 adet | Arızasında vana hatası, pompa çalışmaz
+10 07492: Pnömatik valf 4V220-08, 1/4", 5/2, çift bobin 24 V DC | Kritik | 1 adet | Tahliye vanası valfi; makinede 2 adet | Arızasında pompa çalışmaz
+# --- Pnömatik besleme ---
+10 01587: Filtre regülatör 1/2" GFR300-15 | Önerilen | 1 adet | Basınçlı hava girişi | Basınç ayarlanamaz
+[EKSİK]-03: Filtre elemanı, GFR300 filtre regülatör için | Tüketim | 2 adet | Basınçlı hava filtresi | Tıkanır, basınç düşer
+10 16858: Basınç şalteri 1–12 bar 1/4" DS1A3012 | Önerilen | 1 adet | Giriş hava basıncı izleme (I2.0) | Arızasında Error-235 hatalı çıkar veya çıkmaz
+10 00470: Taş filtre (susturucu) 1/4" | Tüketim | 2 adet | Valf egzoz susturucusu; makinede 5 adet | Tıkanırsa silindir yavaşlar
+10 01780: Taş filtre (susturucu) 1/8" | Tüketim | 2 adet | Valf egzoz susturucusu; makinede 4 adet | Tıkanırsa silindir yavaşlar
+10 02944: Pnömatik hortum Ø8 mm | Tüketim | 5 m | Besleme ve silindir hatları | Ezilme, yaşlanma
+10 00427: Pnömatik hortum Ø4 mm | Tüketim | 2 m | Pilot hatları | Ezilme, yaşlanma
+# --- Tank, filtre ve proses ---
+07 10214: Ön filtre NS komplesi (16 mesh paslanmaz elekli sepet) | Önerilen | 2 adet | Tank ön filtre sepeti; makinede 8 adet | Elek yırtılırsa talaş pompaya ulaşır
+10 01905: Tel elek 16 mesh, Ø0,5 mm tel, paslanmaz | Tüketim | 0,5 m² | Ön filtre elek onarımı | Elek yırtılması
+07 00670: Emiş filtresi komplesi (Ø4 mm delikli) | Önerilen | 1 adet | Pompa emiş filtresi; makinede 2 adet | Deforme olursa pompa korunmaz
+[EKSİK]-04: Torba filtre torbası (ölçü ve gözenek [EKSİK]) | Tüketim | 4 adet | Torba filtreler; makinede 2 gövde | Tıkanır, püskürtme basıncı düşer
+07 16791: Seviye sensörü VEGASWING 51 (SG51) | Kritik | 1 adet | Tank alt seviyesi (I1.3, I1.4); makinede 2 adet | Arızasında pompa ve ısıtıcı çalışmaz veya kuru çalışma koruması kaybolur
+10 02976: Termokupl ETB30F06-5Ç (J tipi) | Kritik | 1 adet | Tank sıcaklığı; makinede 2 adet | Arızasında ısıtma kontrolü bozulur
+[EKSİK]-05: Kurutma termokuplu, J tipi (model [EKSİK]) | Önerilen | 1 adet | Kurutma havası sıcaklığı | Kurutma sıcaklığı izlenemez
+07 15142: Rezistans komplesi 8000 W, 50 cm, 2", düz dikişsiz | Kritik | 1 adet | Tank ısıtıcısı; makinede 4 adet | Arızasında tank set sıcaklığına ulaşmaz
+07 00604: Rezistans klingrit contası | Tüketim | 4 adet | Isıtıcı bağlantı contası; makinede 4 adet | Isıtıcı sökümünde yenilenir
+[EKSİK]-06: Kurutma ısıtıcısı 6000 W (model [EKSİK]) | Önerilen | 1 adet | Çatıdaki ısıtıcı kutusu | Arızasında parçalar kurumaz
+10 00552: Küresel vana 2", pirinç gövdeli | Önerilen | 1 adet | Tank çıkış vanası; makinede 2 adet | Sızdırma, kol kırılması
+10 14859: Amortisör (gazlı yay) 60 N, L 430 mm, strok 175 mm | Önerilen | 2 adet | Tank kapağı; makinede 4 adet | Zayıflarsa kapak düşer — el sıkışma tehlikesi
+[EKSİK]-07: Mekanik salmastra, Atlantis KAF 300T/304 için | Önerilen | 1 adet | Yatay proses pompası | Mil sızıntısı
+KAF 300T/304: Yatay santrifüj pompa Atlantis blu, 3 HP, 380–400 V, 2900 d/dk | Önerilen | 1 adet | Kabin altı proses pompası | Arızasında ilgili faz yapılamaz
+[EKSİK]-08: Yağ sıyırıcı tahrik motoru (model [EKSİK]) | Önerilen | 1 adet | Yağ sıyırıcı | Tank yüzeyindeki yağ alınamaz
+# --- Kurutma ve egzoz ---
+07 17295: Salyangozlu fan ENA 2, 0,37 kW, hava soğutmalı, silikonlu | Önerilen | 1 adet | Kurutma fanı (çatı) | Arızasında kurutma yapılamaz (Error-111)
+# --- Elektrik ve elektronik ---
+LC1K1610M7: Kontaktör Schneider LC1K1610M7 (16 A, bobin 220 V AC) | Kritik | 2 adet | Isıtıcı kontaktörleri K5–K9; makinede 5 adet | Sık anahtarlanır, kontaklar aşınır
+LC1K0910M7: Kontaktör Schneider LC1K0910M7 (9 A, bobin 220 V AC) | Kritik | 1 adet | Pompa kontaktörleri K1, K2 | Arızasında pompa çalışmaz
+LC1K0610M7: Kontaktör Schneider LC1K0610M7 (6 A, bobin 220 V AC) | Önerilen | 1 adet | Fan kontaktörleri K3, K4 | Arızasında fan çalışmaz
+GV2ME10: Motor koruma şalteri Schneider GV2ME10 (4–6,3 A) | Önerilen | 1 adet | Q1, Q2 pompa koruması | Mekanizma arızası
+GV2ME06: Motor koruma şalteri Schneider GV2ME06 (1–1,6 A) | Önerilen | 1 adet | Q3 kurutma fanı koruması | Mekanizma arızası
+GV2ME05: Motor koruma şalteri Schneider GV2ME05 (0,63–1 A) | Önerilen | 1 adet | Q4 egzoz fanı koruması | Mekanizma arızası
+[EKSİK]-09: Ara röle, bobin 24 V DC (model [EKSİK]) | Tüketim | 3 adet | PLC çıkış röleleri R1–R20; makinede 20 adet | Kontak yapışması, bobin arızası
+G9SB-2002-A: Güvenlik rölesi OMRON G9SB-2002-A | Kritik | 1 adet | Acil stop devresi | Arızasında makine çalıştırılamaz
+VFD004EL21W-1: Frekans invertörü DELTA VFD004EL21W-1 (0,4 kW, 1~230 V) | Kritik | 1 adet | Sepet motoru sürücüsü | Arızasında sepet dönmez (Error-126)
+LRS-350-24: Güç kaynağı MEAN WELL LRS-350-24 (24 V DC, 350 W) | Kritik | 1 adet | Kumanda beslemesi | Arızasında PLC, panel ve sensörler enerjisiz kalır
+MKS-03: Faz koruma rölesi ENTES MKS-03 (380 V AC) | Önerilen | 1 adet | Faz sırası izleme (I0.1) | Arızasında Error-410
+CP1W-TS003: Termokupl giriş ünitesi OMRON CP1W-TS003 | Önerilen | 1 adet | Sıcaklık ölçümü | Arızasında sıcaklıklar okunamaz
+CP2E: PLC OMRON CP2E (tam model kodu [EKSİK]) | Önerilen | 1 adet | Makine kumandası — program yedeğiyle | Arızasında makine çalışmaz
+NB7W-TW01B-V1: Operatör paneli OMRON NB7W-TW01B-V1 (7 inç) | Önerilen | 1 adet | Reçete, izleme ve alarm ekranı — proje yedeğiyle | Arızasında makine kumanda edilemez
+A9K24316: Otomatik sigorta Schneider A9K24316 (16 A, 3P) | Önerilen | 1 adet | Isıtıcı sigortaları F10–F14 | Mekanizma arızası
+F9R41440: Kaçak akım rölesi 40 A, 4P (F9R41440) | Önerilen | 1 adet | Isıtıcı kaçak akım koruması F2, F3 | Test butonu arızası
+10 17992: Endüktif sensör SICK IME18-12NPSZC0S (M18) | Kritik | 1 adet | Sepet konum sensörü (I1.10) | Arızasında çevrim sonunda sepet durmaz
+10 04128: Sensör kablosu OMRON XS2F-M12PVC4S2M (M12, 4 uçlu, 2 m) | Önerilen | 1 adet | Sepet konum sensörü kablosu | Kablo hasarı
+[EKSİK]-10: Kule lambası kırmızı/sarı/yeşil (model [EKSİK]) | Tüketim | 1 adet | Elektrik panosu üstü | Lamba arızası
+[EKSİK]-11: Kabin lambası, LED (model [EKSİK]) | Tüketim | 1 adet | Kabin tavanı | Lamba arızası
+[EKSİK]-12: Buton ve kontak blokları (START, STOP, RESET, KAPI AÇIK, KAPI KAPALI, acil stop) | Önerilen | 1 takım | Kumanda paneli | Kontak arızası
+
+# =============================================================================
+# 14 — EKLER / SÖZLÜK / İNDEKS (index)
+# =============================================================================
+
+[EKLER]
+Ek A — Alarm listesi: Bölüm 14.1
+Ek B — Parametre listesi: Bölüm 14.1
+Ek C — Reçete örnekleri: Bölüm 14.1 — reçete kayıt formu
+Ek D — Garanti belgesi: [EKSİK]
+
+[SOZLUK]
+Terim 1 / açıklama: Bölüm 14.2
+Kısaltmalar (PLC, HMI, LOTO, RFID, P&ID, BOM vb.): Bölüm 14.2
+
+[INDEKS]
+Anahtar kelime listesi (opsiyonel): Uygulama dizini otomatik üretir
+
+# =============================================================================
+# SON — DOSYA SONU
+# =============================================================================

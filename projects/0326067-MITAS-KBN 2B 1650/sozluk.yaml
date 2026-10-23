@@ -1,0 +1,98 @@
+# Projeye özel terimler — 0326067 Mitaş KBN 2B P DS OTO 1500.
+# Ortak terimler: templates/sozluk.yaml (Ana şalter, Acil durdurma butonu, KKD, LOTO, Kumanda paneli, Redüktör, Basınçlı hava ...).
+# Operatör paneli ekran yazıları (ör. "Kapak Kapalı", "Rezistans Soğutma") olduğu gibi aktarıldığı için yasak listesine alınmadı.
+
+terimler:
+  - tr: Kabin kapısı
+    en: Cabin door
+    de: Kabinentür
+  - tr: Dönen sepet
+    en: Rotating basket
+    de: Drehkorb
+  - tr: Yıkama tankı
+    en: Wash tank
+    de: Waschtank
+  - tr: Durulama tankı
+    en: Rinse tank
+    de: Spültank
+  - tr: Tahliye odası
+    en: Drain chamber
+    de: Ablaufkammer
+  - tr: Tahliye vanası
+    en: Drain valve
+    de: Ablaufventil
+  - tr: Ön filtre sepeti
+    en: Pre-filter basket
+    de: Vorfilterkorb
+  - tr: Emiş filtresi
+    en: Suction filter
+    de: Saugfilter
+  - tr: Torba filtre
+    en: Bag filter
+    de: Beutelfilter
+  - tr: Yağ sıyırıcı
+    en: Oil skimmer
+    de: Ölskimmer
+  - tr: Drenaj pompası
+    en: Drain pump
+    de: Entleerungspumpe
+  - tr: Drenaj kolektörü
+    en: Drain manifold
+    de: Entleerungssammler
+  - tr: Kurutma fanı
+    en: Drying fan
+    de: Trocknungsgebläse
+  - tr: Egzoz fanı
+    en: Exhaust fan
+    de: Abluftventilator
+  - tr: Işık perdesi
+    en: Light curtain
+    de: Lichtvorhang
+  - tr: Kule lambası
+    en: Signal tower
+    de: Signalsäule
+  - tr: Operatör paneli
+    en: Operator panel
+    de: Bediengerät
+  - tr: Elektrik panosu
+    en: Electrical cabinet
+    de: Schaltschrank
+  - tr: Güvenlik rölesi
+    en: Safety relay
+    de: Sicherheitsrelais
+  - tr: Yükleme arabası
+    en: Loading trolley
+    de: Beladewagen
+  - tr: Reçete
+    en: Recipe
+    de: Rezept
+  - tr: Kaçak akım rölesi
+    en: Residual current device
+    de: Fehlerstromschutzschalter
+  - tr: Motor koruma şalteri
+    en: Motor protection circuit breaker
+    de: Motorschutzschalter
+  - tr: Seviye sensörü
+    en: Level sensor
+    de: Füllstandsensor
+  - tr: Termokupl
+    en: Thermocouple
+    de: Thermoelement
+  - tr: Yataklama tekeri
+    en: Support roller
+    de: Stützrolle
+  - tr: Pinyon
+    en: Pinion
+    de: Ritzel
+  - tr: Kremayer
+    en: Gear rack
+    de: Zahnstange
+  - tr: Pilotlu çek valf
+    en: Pilot-operated check valve
+    de: Entsperrbares Rückschlagventil
+  - tr: Filtre regülatör
+    en: Filter regulator
+    de: Filterregler
+  - tr: Frekans invertörü
+    en: Frequency inverter
+    de: Frequenzumrichter
